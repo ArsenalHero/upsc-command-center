@@ -1,4 +1,4 @@
-import type { AppData, Collection } from "../types";
+import type { AppData, Collection, PYQDraft } from "../types";
 import {
   studyTypes,
   errorTypes,
@@ -293,6 +293,105 @@ export function validateEntity(collection: Collection, v: unknown): void {
       r.marks > 0 && r.score <= r.marks,
       "Answer score must be at or below maximum marks.",
     );
+  if (collection === "pyqs" && r.attempt !== undefined) {
+    const a = r.attempt;
+    assert(obj(a), "Invalid question attempt.");
+    for (const key of [
+      "questionId",
+      "sessionId",
+      "booklet",
+      "attemptedAt",
+      "selectedOption",
+      "answerOption",
+      "outcome",
+      "grading",
+      "errorType",
+      "notes",
+      "response",
+      "sourceUrl",
+    ])
+      assert(
+        typeof a[key] === "string" && a[key].length < 200000,
+        `Invalid attempt ${key}.`,
+      );
+    assert(
+      a.questionId &&
+        a.sessionId &&
+        a.questionId.length < 200 &&
+        a.sessionId.length < 200,
+      "Missing question or practice session.",
+    );
+    assert(
+      Number.isInteger(a.questionNumber) &&
+        a.questionNumber > 0 &&
+        a.questionNumber <= 1000,
+      "Invalid question number.",
+    );
+    assert(
+      Number.isFinite(Date.parse(a.attemptedAt)) && a.attemptedAt.length <= 40,
+      "Invalid attempt timestamp.",
+    );
+    assert(
+      ["", "a", "b", "c", "d"].includes(a.selectedOption) &&
+        ["", "a", "b", "c", "d"].includes(a.answerOption),
+      "Invalid answer option.",
+    );
+    assert(
+      ["correct", "incorrect", "skipped", "ungraded", "written"].includes(
+        a.outcome,
+      ) && ["official", "self", "none"].includes(a.grading),
+      "Invalid marking result.",
+    );
+    assert(
+      Number.isFinite(a.seconds) && a.seconds >= 0 && a.seconds <= 86400,
+      "Question time must be between 0 and 24 hours.",
+    );
+    assert(
+      Number.isInteger(a.confidence) && a.confidence >= 1 && a.confidence <= 5,
+      "Confidence must be 1–5.",
+    );
+    assert(
+      a.errorType === "" || errorTypes.includes(a.errorType),
+      "Invalid mistake category.",
+    );
+    assert(
+      Number.isFinite(a.maximum) &&
+        a.maximum > 0 &&
+        (a.selfScore === null ||
+          (Number.isFinite(a.selfScore) &&
+            a.selfScore >= 0 &&
+            a.selfScore <= a.maximum)),
+      "Invalid self-assessed marks.",
+    );
+    assert(
+      r.correct === Number(a.outcome === "correct") &&
+        r.incorrect === Number(a.outcome === "incorrect"),
+      "Question result does not match its counts.",
+    );
+    assert(
+      (a.outcome !== "correct" && a.outcome !== "incorrect") ||
+        (a.selectedOption && a.grading !== "none"),
+      "A marked MCQ needs a selected option and marking basis.",
+    );
+    if (
+      a.grading === "official" &&
+      ["correct", "incorrect"].includes(a.outcome)
+    )
+      assert(
+        a.answerOption &&
+          (a.selectedOption === a.answerOption) === (a.outcome === "correct"),
+        "Result does not match the official key.",
+      );
+    if (a.outcome === "skipped")
+      assert(
+        a.selectedOption === "" && a.response === "",
+        "A skipped question cannot contain an answer.",
+      );
+    assert(
+      !a.sourceUrl || /^https:\/\//.test(a.sourceUrl),
+      "Invalid paper source.",
+    );
+  }
   if (collection === "subjects")
     assert(
       r.priority >= 1 &&
@@ -365,6 +464,7 @@ export function validateEntity(collection: Collection, v: unknown): void {
 export function validateData(input: unknown): AppData {
   assert(obj(input), "Backup must be a JSON object.");
   const d = input as AppData;
+  if (d.pyqDraft !== undefined) validatePYQDraft(d.pyqDraft);
   assert(
     d.schemaVersion === 1,
     "Unsupported backup version. Expected version 1.",
@@ -499,4 +599,57 @@ export function validateData(input: unknown): AppData {
     }
   });
   return d;
+}
+export function validatePYQDraft(d: PYQDraft): void {
+  assert(
+    obj(d) &&
+      typeof d.sessionId === "string" &&
+      d.sessionId.length > 0 &&
+      d.sessionId.length < 200,
+    "Invalid practice session.",
+  );
+  assert(
+    Array.isArray(d.questionIds) &&
+      d.questionIds.length > 0 &&
+      d.questionIds.length <= 1000 &&
+      d.questionIds.every(
+        (id) => typeof id === "string" && id.length > 0 && id.length < 200,
+      ) &&
+      new Set(d.questionIds).size === d.questionIds.length,
+    "Invalid practice questions.",
+  );
+  assert(
+    Number.isInteger(d.index) &&
+      d.index >= 0 &&
+      d.index <= d.questionIds.length,
+    "Invalid practice position.",
+  );
+  assert(
+    Number.isFinite(d.seconds) && d.seconds >= 0 && d.seconds <= 86400,
+    "Invalid practice timer.",
+  );
+  assert(
+    ["", "a", "b", "c", "d"].includes(d.selectedOption) &&
+      ["", "correct", "incorrect"].includes(d.selfOutcome),
+    "Invalid practice choice.",
+  );
+  assert(
+    Number.isInteger(d.confidence) &&
+      d.confidence >= 1 &&
+      d.confidence <= 5 &&
+      Number.isInteger(d.difficulty) &&
+      d.difficulty >= 1 &&
+      d.difficulty <= 5,
+    "Invalid confidence or difficulty.",
+  );
+  for (const key of ["errorType", "notes", "response", "selfScore"] as const)
+    assert(
+      typeof d[key] === "string" && d[key].length < 200000,
+      `Invalid practice ${key}.`,
+    );
+  assert(
+    (d.errorType === "" || errorTypes.includes(d.errorType)) &&
+      typeof d.revisionNeeded === "boolean",
+    "Invalid practice review details.",
+  );
 }

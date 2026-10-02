@@ -1,10 +1,6 @@
 export type Stage = "Prelims" | "Mains" | "Both" | "Optional" | "CSAT";
 export type TopicStatus =
-  | "Not Started"
-  | "In Progress"
-  | "Completed"
-  | "Revision Due"
-  | "Mastered";
+  "Not Started" | "In Progress" | "Completed" | "Revision Due" | "Mastered";
 export type RevisionStage =
   | "New topic"
   | "First learning"
@@ -232,7 +228,44 @@ export interface PYQRecord {
   difficulty: number;
   conceptGap: string;
   revisionNeeded: boolean;
+  attempt?: PYQAttemptDetails;
   demo?: boolean;
+}
+export type PYQOutcome =
+  "correct" | "incorrect" | "skipped" | "ungraded" | "written";
+export interface PYQAttemptDetails {
+  questionId: string;
+  sessionId: string;
+  questionNumber: number;
+  booklet: string;
+  attemptedAt: string;
+  selectedOption: string;
+  answerOption: string;
+  outcome: PYQOutcome;
+  grading: "official" | "self" | "none";
+  seconds: number;
+  confidence: number;
+  errorType: string;
+  notes: string;
+  response: string;
+  selfScore: number | null;
+  maximum: number;
+  sourceUrl: string;
+}
+export interface PYQDraft {
+  sessionId: string;
+  questionIds: string[];
+  index: number;
+  seconds: number;
+  selectedOption: string;
+  confidence: number;
+  difficulty: number;
+  errorType: string;
+  notes: string;
+  response: string;
+  selfScore: string;
+  selfOutcome: "" | "correct" | "incorrect";
+  revisionNeeded: boolean;
 }
 export interface Revision {
   id: string;
@@ -283,12 +316,7 @@ export type GoalMetric =
   | "PYQs"
   | "Syllabus %";
 export type WeightKey =
-  | "target"
-  | "focus"
-  | "accuracy"
-  | "revision"
-  | "questions"
-  | "answers";
+  "target" | "focus" | "accuracy" | "revision" | "questions" | "answers";
 export interface Settings {
   year: number;
   prelimsDate: string;
@@ -316,6 +344,7 @@ export interface Settings {
 }
 export interface AppData {
   demoDates?: { prelims: string; mains: string };
+  pyqDraft?: PYQDraft;
   schemaVersion: 1;
   settings: Settings;
   subjects: Subject[];
@@ -335,7 +364,7 @@ export interface AppData {
 }
 export type Collection = Exclude<
   keyof AppData,
-  "schemaVersion" | "settings" | "demoDates"
+  "schemaVersion" | "settings" | "demoDates" | "pyqDraft"
 >;
 export type Entity = AppData[Collection][number];
 export interface Filters {

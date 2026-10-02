@@ -879,67 +879,7 @@ export function MCQAnalysis() {
     </>
   );
 }
-export function PYQs() {
-  const { data } = useData(),
-    { filters, setFilters, a } = useAnalytics();
-  const records = data.pyqs.filter((p) => matches(p, filters)),
-    rows = data.topics
-      .map((t) => ({
-        name: t.name,
-        value: records.filter((p) => p.topicId === t.id).length,
-      }))
-      .filter((r) => r.value > 0)
-      .sort((a, b) => b.value - a.value)
-      .slice(0, 12);
-  return (
-    <>
-      <PageHeader
-        eyebrow="LEARN FROM THE QUESTIONS"
-        title="Previous year questions"
-        description="Connect question themes, concept gaps, and targeted revision."
-        action={<AddButton collection="pyqs" label="Add PYQ record" />}
-      />
-      <FilterBar filters={filters} onChange={setFilters} />
-      <div className="stats-grid three">
-        <DashboardCard title="PYQs practised" value={a.pyqs} />
-        <DashboardCard title="Question records" value={records.length} />
-        <DashboardCard
-          title="Revision flagged"
-          value={records.filter((p) => p.revisionNeeded).length}
-        />
-      </div>
-      <ChartCard
-        title="Topic frequency in your PYQ records"
-        description="Number of recorded PYQ entries per topic. This reflects your dataset and does not guarantee future exam questions."
-      >
-        <SimpleBars rows={rows} horizontal />
-      </ChartCard>
-      <RecordTable
-        collection="pyqs"
-        records={records}
-        columns={[
-          { key: "year", label: "Year" },
-          { key: "paper", label: "Paper" },
-          { key: "question", label: "Question" },
-          {
-            key: "topicId",
-            label: "Topic",
-            render: (r) => data.topics.find((t) => t.id === r.topicId)?.name,
-          },
-          {
-            key: "revisionNeeded",
-            label: "Revision",
-            render: (r) => (
-              <Badge tone={r.revisionNeeded ? "amber" : "green"}>
-                {r.revisionNeeded ? "Needed" : "Reviewed"}
-              </Badge>
-            ),
-          },
-        ]}
-      />
-    </>
-  );
-}
+export { default as PYQs } from "./PYQs";
 export function Tests() {
   const { data, setEditor } = useData(),
     { filters, setFilters, a } = useAnalytics();

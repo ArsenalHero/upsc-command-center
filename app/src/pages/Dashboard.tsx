@@ -89,7 +89,7 @@ export default function Dashboard() {
   const next = data.revisions
     .filter((r) => !r.completedDate)
     .sort((a, b) => a.dueDate.localeCompare(b.dueDate))[0];
-  const hasData = data.sessions.length || data.mcqs.length || data.tests.length;
+  const hasData = data.sessions.length || data.mcqs.length || data.tests.length || data.pyqs.some((p) => p.attempt);
   return (
     <>
       <PageHeader

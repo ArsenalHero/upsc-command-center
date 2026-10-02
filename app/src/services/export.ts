@@ -30,6 +30,7 @@ export const csvCell = (value: unknown) => {
 export function buildCSV(data: AppData, collection: Collection): string {
   const rows = data[collection].map((r: any) => ({
     ...r,
+    ...(collection === "pyqs" && r.attempt ? r.attempt : {}),
     subject: r.subjectId
       ? data.subjects.find((s) => s.id === r.subjectId)?.name
       : "",

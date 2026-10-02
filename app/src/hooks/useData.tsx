@@ -13,12 +13,18 @@ import type {
   Entity,
   Settings,
   StudySession,
+  PYQRecord,
+  PYQDraft,
 } from "../types";
 import {
   LocalStorageRepository,
   type DataRepository,
 } from "../services/repository";
-import { validateData, validateEntity } from "../services/validation";
+import {
+  validateData,
+  validateEntity,
+  validatePYQDraft,
+} from "../services/validation";
 import { createEmptyData } from "../data/defaults";
 import { createDemoData } from "../data/demo";
 import { dateKey, uid } from "../utils/date";
@@ -44,6 +50,8 @@ interface DataContextValue {
   reset: () => void;
   markRevision: (id: string) => void;
   setTopicStatus: (id: string, status: import("../types").TopicStatus) => void;
+  savePYQDraft: (draft: PYQDraft | undefined) => boolean;
+  submitPYQ: (record: PYQRecord, nextDraft: PYQDraft) => boolean;
 }
 const Context = createContext<DataContextValue | null>(null);
 export function DataProvider({
@@ -187,6 +195,41 @@ export function DataProvider({
         setEditor(null);
       }
       return ok;
+    },
+    [commit, notify],
+  );
+  const savePYQDraft = useCallback(
+    (draft: PYQDraft | undefined) => {
+      try {
+        if (draft) validatePYQDraft(draft);
+      } catch (e) {
+        notify((e as Error).message);
+        return false;
+      }
+      return commit((d) => {
+        if (draft) d.pyqDraft = structuredClone(draft);
+        else delete d.pyqDraft;
+      });
+    },
+    [commit, notify],
+  );
+  const submitPYQ = useCallback(
+    (record: PYQRecord, nextDraft: PYQDraft) => {
+      try {
+        validateEntity("pyqs", record);
+        validatePYQDraft(nextDraft);
+      } catch (e) {
+        notify((e as Error).message);
+        return false;
+      }
+      return commit((d) => {
+        if (d.pyqs.some((p) => p.id === record.id))
+          throw new Error(
+            "This attempt is already saved. Resume the next question.",
+          );
+        d.pyqs.push({ ...record, demo: false });
+        d.pyqDraft = structuredClone(nextDraft);
+      }, true);
     },
     [commit, notify],
   );
@@ -334,6 +377,8 @@ export function DataProvider({
         reset: () => replaceData(createEmptyData()),
         markRevision,
         setTopicStatus,
+        savePYQDraft,
+        submitPYQ,
       }}
     >
       {children}

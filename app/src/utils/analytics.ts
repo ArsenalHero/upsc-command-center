@@ -6,6 +6,7 @@ import type {
   Goal,
   Insight,
   WeightKey,
+  MCQRecord,
 } from "../types";
 import {
   addDays,
@@ -17,6 +18,7 @@ import {
   pct,
   round,
 } from "./date";
+import { attemptMCQs } from "./pyq";
 export const emptyFilters = (): Filters => ({
   from: addDays(dateKey(), -29),
   to: dateKey(),
@@ -107,20 +109,27 @@ export function aggregate(
   const linkedAnswers = new Set(
     data.answers.map((m) => m.studySessionId).filter(Boolean),
   );
-  const mcqs = data.mcqs.filter((m) => {
+  const allMCQs: (MCQRecord & { paper?: string; activity?: string })[] = [
+    ...data.mcqs,
+    ...attemptMCQs(data),
+  ];
+  const mcqs = allMCQs.filter((m) => {
     const linked = m.studySessionId
       ? sessionById.get(m.studySessionId)
       : undefined;
     return check({
       ...m,
       paper:
-        linked?.paper || data.subjects.find((s) => s.id === m.subjectId)?.paper,
-      activity: linked?.activity || (m.stage === "CSAT" ? "CSAT" : "MCQ"),
+        linked?.paper ||
+        m.paper ||
+        data.subjects.find((s) => s.id === m.subjectId)?.paper,
+      activity:
+        linked?.activity || m.activity || (m.stage === "CSAT" ? "CSAT" : "MCQ"),
       subtopicId: linked?.subtopicId,
     });
   });
   const orphanSessions = sessions.filter((s) => !linkedMCQs.has(s.id));
-  const attempted =
+  const gradedAttempted =
     sum(mcqs, (m) => m.attempted) +
     sum(orphanSessions, (s) => s.questionsAttempted);
   const correct =
@@ -160,29 +169,56 @@ export function aggregate(
   const completedRevisions = data.revisions.filter(
     (r) => r.completedDate && revisionCheck(r, r.completedDate),
   ).length;
-  const hours = round(sum(sessions, (s) => s.actualMinutes) / 60),
+  const questionAttempts = pyqs.filter((p) => p.attempt);
+  const ungradedQuestions = questionAttempts.filter(
+    (p) => p.stage !== "Mains" && p.attempt!.outcome === "ungraded",
+  ).length;
+  const attempted = gradedAttempted + ungradedQuestions;
+  const writtenPYQs = questionAttempts.filter(
+    (p) => p.attempt!.outcome === "written",
+  );
+  const answerScores = [
+    ...answers.map((a) => (a.score / a.marks) * 100),
+    ...writtenPYQs
+      .filter((p) => p.attempt!.selfScore !== null)
+      .map((p) => (p.attempt!.selfScore! / p.attempt!.maximum) * 100),
+  ];
+  const answerTimes = [
+    ...answers.map((a) => a.minutes),
+    ...writtenPYQs.map((p) => p.attempt!.seconds / 60),
+  ];
+  const practiceMinutes = sum(questionAttempts, (p) => p.attempt!.seconds / 60);
+  const hours = round(
+      (sum(sessions, (s) => s.actualMinutes) + practiceMinutes) / 60,
+    ),
     plannedHours = round(sum(sessions, (s) => s.plannedMinutes) / 60);
-  const studyDays = new Set(
-    sessions.filter((s) => s.actualMinutes > 0).map((s) => s.date),
-  ).size;
+  const studyDays = new Set([
+    ...sessions.filter((s) => s.actualMinutes > 0).map((s) => s.date),
+    ...questionAttempts
+      .filter((p) => p.attempt!.seconds > 0)
+      .map((p) => p.date),
+  ]).size;
   const a = {
     hours,
     plannedHours,
     attempted,
+    gradedQuestions: gradedAttempted,
+    ungradedQuestions,
     correct,
     incorrect,
-    accuracy: pct(correct, attempted),
+    accuracy: pct(correct, gradedAttempted),
     answers:
       answers.length +
+      writtenPYQs.length +
       sum(
         sessions.filter((s) => !linkedAnswers.has(s.id)),
         (s) => s.mainsAnswers,
       ),
-    answerScore: answers.length
-      ? round(sum(answers, (a) => (a.score / a.marks) * 100) / answers.length)
+    answerScore: answerScores.length
+      ? round(sum(answerScores, (score) => score) / answerScores.length)
       : null,
-    answerMinutes: answers.length
-      ? round(sum(answers, (a) => a.minutes) / answers.length)
+    answerMinutes: answerTimes.length
+      ? round(sum(answerTimes, (minutes) => minutes) / answerTimes.length)
       : null,
     essays: essays.length,
     tests: tests.length,
@@ -190,7 +226,12 @@ export function aggregate(
       ? round(sum(tests, (t) => (t.score / t.maximum) * 100) / tests.length)
       : null,
     pyqs:
-      sum(sessions, (s) => s.pyqs) + sum(pyqs, (p) => p.correct + p.incorrect),
+      sum(sessions, (s) => s.pyqs) +
+      sum(pyqs, (p) =>
+        p.attempt
+          ? Number(p.attempt.outcome !== "skipped")
+          : p.correct + p.incorrect,
+      ),
     revisions:
       completedRevisions + sum(sessions, (s) => Number(s.revisionDone)),
     revisionCompletion: pct(done.length, due.length),
@@ -249,7 +290,7 @@ export function aggregate(
     {
       key: "target" as const,
       label: "Hours / daily target",
-      value: sessions.length
+      value: studyDays
         ? Math.min(100, (hours / (settings.dailyHours * days)) * 100)
         : null,
     },
@@ -260,7 +301,7 @@ export function aggregate(
     },
     {
       key: "accuracy" as const,
-      label: "Correct / attempted MCQs",
+      label: "Correct / marked MCQs",
       value: a.accuracy,
     },
     {
@@ -300,9 +341,12 @@ export function aggregate(
   return a;
 }
 export function getStreak(data: AppData, anchor = dateKey()): number {
-  const days = new Set(
-    data.sessions.filter((s) => s.actualMinutes > 0).map((s) => s.date),
-  );
+  const days = new Set([
+    ...data.sessions.filter((s) => s.actualMinutes > 0).map((s) => s.date),
+    ...data.pyqs
+      .filter((p) => p.attempt && p.attempt.seconds > 0)
+      .map((p) => p.date),
+  ]);
   let day = days.has(anchor) ? anchor : addDays(anchor, -1),
     streak = 0;
   while (days.has(day) && streak < 3660) {
@@ -381,6 +425,28 @@ export function studyTrend(
       v.answers++;
       groups.set(a.date, v);
     });
+  data.pyqs
+    .filter(
+      (p) =>
+        p.attempt &&
+        matches({ ...p, activity: "PYQ" }, { ...filters, from, to }),
+    )
+    .forEach((p) => {
+      const v = groups.get(p.date) || {
+        actual: 0,
+        planned: 0,
+        questions: 0,
+        answers: 0,
+        revision: 0,
+        focus: 0,
+        count: 0,
+      };
+      v.actual += p.attempt!.seconds / 3600;
+      if (p.stage !== "Mains" && p.attempt!.outcome !== "skipped")
+        v.questions++;
+      if (p.attempt!.outcome === "written") v.answers++;
+      groups.set(p.date, v);
+    });
   return days.map((date) => {
     const g = groups.get(date);
     return {
@@ -390,15 +456,16 @@ export function studyTrend(
       questions: g?.questions || 0,
       answers: g?.answers || 0,
       revision: g?.revision || 0,
-      productivity: g?.count
-        ? round(
-            Math.min(
-              100,
-              (g.actual / data.settings.dailyHours) * 60 +
-                (g.focus / g.count) * 4,
-            ),
-          )
-        : 0,
+      productivity:
+        g && (g.count || g.actual)
+          ? round(
+              Math.min(
+                100,
+                (g.actual / data.settings.dailyHours) * 60 +
+                  (g.count ? (g.focus / g.count) * 4 : 0),
+              ),
+            )
+          : 0,
     };
   });
 }
@@ -408,7 +475,7 @@ export function subjectStats(data: AppData, from: string, to: string) {
     const measures = [
       a.coverage,
       a.revisionCompletion,
-      a.attempted >= data.settings.minimumSample ? a.accuracy : null,
+      a.gradedQuestions >= data.settings.minimumSample ? a.accuracy : null,
       a.testScore,
       a.answerScore,
     ];
@@ -428,7 +495,10 @@ export function subjectStats(data: AppData, from: string, to: string) {
             ? "Strong"
             : "Needs attention";
     const lastStudied =
-      data.sessions
+      [
+        ...data.sessions,
+        ...data.pyqs.filter((p) => p.attempt && p.attempt.seconds > 0),
+      ]
         .filter((s) => s.subjectId === subject.id && s.date <= to)
         .sort((a, b) => a.date.localeCompare(b.date))
         .at(-1)?.date || "";
@@ -514,7 +584,12 @@ export function goalValue(data: AppData, goal: Goal, anchor = dateKey()) {
   };
 }
 export function insights(data: AppData, from: string, to: string): Insight[] {
-  if (!data.sessions.length && !data.mcqs.length && !data.revisions.length)
+  if (
+    !data.sessions.length &&
+    !data.mcqs.length &&
+    !data.revisions.length &&
+    !data.pyqs.some((p) => p.attempt)
+  )
     return [];
   const current = aggregate(data, from, to),
     duration = daysBetween(from, to) + 1,
@@ -528,7 +603,7 @@ export function insights(data: AppData, from: string, to: string): Insight[] {
       addDays(from, -1),
       s.subject.id,
     );
-    const sample = s.attempted >= data.settings.minimumSample;
+    const sample = s.gradedQuestions >= data.settings.minimumSample;
     const lowAccuracy =
       sample &&
       s.accuracy !== null &&
@@ -583,7 +658,7 @@ export function insights(data: AppData, from: string, to: string): Insight[] {
     }
     if (
       sample &&
-      old.attempted >= data.settings.minimumSample &&
+      old.gradedQuestions >= data.settings.minimumSample &&
       old.accuracy !== null &&
       s.accuracy !== null &&
       s.accuracy - old.accuracy >= data.settings.trendThreshold
@@ -716,7 +791,9 @@ export function insights(data: AppData, from: string, to: string): Insight[] {
   return result.sort((a, b) => b.score - a.score);
 }
 export function errorSummary(data: AppData, filters: Partial<Filters>) {
-  const records = data.mcqs.filter((m) => matches(m, filters));
+  const records = [...data.mcqs, ...attemptMCQs(data)].filter((m) =>
+    matches(m, filters),
+  );
   const map = new Map<string, number>();
   records.forEach((m) =>
     Object.entries(m.errors).forEach(([name, n]) =>

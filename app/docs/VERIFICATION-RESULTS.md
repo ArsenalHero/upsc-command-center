@@ -6,7 +6,7 @@ Verified in the build environment on 2026-10-02:
 |---|---|
 | Dependency installation (`npm install`) | Passed |
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres tests | 26 passed, 0 failed |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 34 passed, 0 failed |
 | Real React app rendered in JSDOM | Passed |
 | First-time setup and actionable empty state | Passed in rendered UI |
 | Fictional demo loading and mode label | Passed in rendered UI |
@@ -14,6 +14,11 @@ Verified in the build environment on 2026-10-02:
 | Daily/weekly/monthly/quarterly/yearly report tabs | Passed in rendered UI |
 | Study form mutation persisted to LocalStorage | Passed in rendered UI |
 | Restoration into a fresh DOM from saved data | Passed |
+| Complete PYQ paper numbering, original image paths/crops and dropped-question keys | Passed: 220 questions |
+| PYQ subject/year filters, grading, notes, skips and repeat history | Passed in rendered UI |
+| Hidden-tab timer, paused draft restoration and elapsed seconds | Passed in rendered UI and timer tests |
+| Mains written answers and bounded self-assessed marks | Passed |
+| PYQ JSON round trip, flat CSV attempt columns and dashboard totals | Passed |
 | Production build and lazy imports (`npm run build`) | Passed |
 | Built HTML asset references and manifest icons | All present |
 | Generated service-worker JavaScript syntax | Passed |
@@ -21,9 +26,9 @@ Verified in the build environment on 2026-10-02:
 | 10,000-session aggregate + 14-subject health calculation | Approximately 70 ms in this environment |
 | Real browser screenshots and responsive geometry | Unavailable: browser-preview infrastructure not present |
 | Browser download UI, PWA installation/offline upgrade | Not executed in this environment |
-| Real Auth SDK and cloud flows against a simulated API | Passed; signup, resend, recovery, login, logout, study sync, cache cleanup, and two-user isolation |
+| Real Auth SDK and cloud flows against a simulated API | Passed; signup, resend, recovery, login, logout, study/PYQ sync, cache cleanup, and two-user isolation |
 | Actual Postgres migration and permissions | Passed locally with PGlite; anonymous rejection, row isolation, authorized writes, and conflicts |
-| Live Supabase accounts and email delivery | Not activated; no backend project connected |
+| Live Supabase accounts and email delivery | Not activated; plugin installation confirmed, project access/configuration not available in this session |
 | Optional WebMCP in a supported real browser context | Unavailable |
 
 These results distinguish functional DOM checks from browser visual verification. The app has responsive layout rules, but this document does not claim that desktop/mobile screenshots were inspected. Follow `docs/QA.md` for the remaining browser checks.

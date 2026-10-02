@@ -358,7 +358,7 @@ export function AccuracyChart({
     () =>
       dateRange(filters.from, filters.to)
         .map((date) => ({ date, ...aggregate(data, date, date, "", filters) }))
-        .filter((a) => a.attempted > 0),
+        .filter((a) => a.gradedQuestions > 0),
     [data, filters],
   );
   if (!rows.length) return <ChartEmpty />;

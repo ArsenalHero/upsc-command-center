@@ -293,6 +293,15 @@ try {
     () => workspaces.get(alice.id)?.payload.sessions.length === 1,
     "Study record did not sync",
   );
+  w.location.hash = "/pyqs";
+  await heading("Previous year questions");
+  w.document.querySelector('[aria-label="Practise 2024 Prelims GS-I question 1"]').click();
+  await heading("2024 · Prelims GS-I");
+  w.document.querySelector('input[name="pyq-option"][value="a"]').click();
+  await new Promise((r) => setTimeout(r, 10));
+  click("Submit answer");
+  await until(() => workspaces.get(alice.id)?.payload.pyqs.length === 1, "Question attempt did not sync to Alice's account");
+  assert.equal(workspaces.get(alice.id).payload.pyqs[0].attempt.questionId, "upsc-2024-prelims-gs1-a-001");
   w.location.hash = "/account";
   await heading("Your account");
   assert.match(w.document.body.textContent, /alice@example.test/);
@@ -315,7 +324,9 @@ try {
   click("Skip setup");
   await until(() => workspaces.has(bob.id), "Bob workspace did not sync");
   assert.equal(workspaces.get(bob.id).payload.sessions.length, 0);
+  assert.equal(workspaces.get(bob.id).payload.pyqs.length, 0);
   assert.equal(workspaces.get(alice.id).payload.sessions.length, 1);
+  assert.equal(workspaces.get(alice.id).payload.pyqs.length, 1);
   w.location.hash = "/account";
   await heading("Your account");
   assert.match(w.document.body.textContent, /bob@example.test/);
