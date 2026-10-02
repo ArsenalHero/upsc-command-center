@@ -1,34 +1,45 @@
-# Publish your UPSC website on GitHub Pages
+# UPSC Command Center
 
-This package contains the complete, already-built website. No Node.js installation or local build is needed. It has not yet been published to your GitHub account.
+Website: [arsenalhero.github.io/upsc-command-center](https://arsenalhero.github.io/upsc-command-center/)
 
-## Publish through GitHub's website
+A study tracker for UPSC preparation: syllabus, sessions, goals, practice, tests, revision, and reports. The complete React/TypeScript source is in `app/`; the built website is at this repository's root.
 
-1. Sign in to GitHub and open https://github.com/new.
-2. Name the repository `upsc-command-center`, choose **Public** for free GitHub Pages hosting, select **Add a README file**, and create the repository.
-3. Extract `upsc-github-pages.zip` on your computer.
-4. In your repository, choose **Add file → Upload files**. Drag in the contents of the extracted folder, including the `assets` folder. Upload the files, not the ZIP and not the enclosing folder. Include `.nojekyll` if your file manager shows it. Choose **Commit changes** to save to `main`.
-5. Check that `index.html` and the `assets` folder are directly at the repository root.
-6. Open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**. Select **main** and **/ (root)**, then click **Save**.
-7. When GitHub finishes publishing, the Pages settings show the live website address. For this repository name it is normally `https://YOUR_USERNAME.github.io/upsc-command-center/`. Use the exact address GitHub displays.
+## Account pages
 
-This prebuilt package uses **Deploy from a branch**. The separate full-source `upsc-command-center.zip` uses the GitHub Actions workflow described in its README.
+- [Log in](https://arsenalhero.github.io/upsc-command-center/#/login)
+- [Sign up](https://arsenalhero.github.io/upsc-command-center/#/signup)
+- [Reset password](https://arsenalhero.github.io/upsc-command-center/#/forgot-password)
 
-## Use the app
+**Real accounts and cloud sync are not activated yet.** The backend configuration is currently empty. Account forms are disabled until a Supabase project is configured. Guest tracking continues to work, and existing device records are preserved.
 
-Open the published website in a browser. Complete the setup wizard, skip it, or explore the clearly labeled fictional demo data. All study records are stored in that browser. Use **Settings → Export Data · JSON** to make backups and **Import Data** to transfer them to another browser or device.
+The implementation includes email/password authentication, confirmation/resend, password recovery, separate private study workspaces, queued cloud saves, pending-change backups, account cache cleanup at signout, and protection against stale saves from another device. It uses Supabase Auth and Postgres row-level security; browser-only password storage is not used.
 
-The build uses relative asset paths and hash routes, so repository subdirectories and page refreshes work without changing the repository name in the code. The app includes its install manifest and offline service worker.
+Follow [account/backend setup](app/docs/ACCOUNTS.md) to activate the database, public signup, correct redirect URLs, and public email delivery. Only the project URL and a **publishable** (or legacy anon) key belong in `app/public/auth-config.json` and the root `auth-config.json`. Private server keys and SMTP passwords must never be committed.
 
-## Later changes
+## Develop and publish
 
-The website runs entirely from these compiled files. To change the app, edit the separate full source project, run `npm ci` and `npm run build`, then replace this repository's website files with the new contents of `dist/`. Keep `.nojekyll`. Changes to the publishing branch trigger another deployment.
+Use Node.js 22+ and npm at the repository root:
 
-## If the site does not appear
+```bash
+npm ci
+npm run dev
+npm test
+npm run test:ui
+npm run build
+```
 
-- Confirm `index.html` is at the repository root and `assets` was uploaded with all its files.
-- Confirm Pages uses **main / (root)** and **Deploy from a branch**.
-- Check the repository's **Actions** tab for the Pages build and deployment result.
-- Use the published GitHub Pages address, rather than the repository's code address.
+`npm run build` builds the app workspace, generates its service worker, and copies the complete output from `app/dist/` to the repository root. Commit the changed source and generated site files together. Edit `app/src/` and `app/index.html`; the root `index.html` is generated output.
 
-Official GitHub instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Keep the existing GitHub Pages setting: **Deploy from a branch → main → / (root)**. A main-branch update triggers the Pages build/deployment. Check the Actions result for completion. Keep `.nojekyll`, every referenced `assets/` file, the manifest, and the icons. Old hashed assets can remain for visitors who already loaded an earlier build.
+
+## Use your workspace
+
+Choose Continue as guest to keep data in this browser. Use Settings to export JSON backups and restore them elsewhere. Once accounts are activated, log in on any device with the same email to load your private records. The Account page includes sync status, backups, optional import of guest records, and signout.
+
+Account and guest records are separate. Importing a guest workspace into an account asks for confirmation before replacing the account records. If another device has saved newer changes, the app asks you to export pending work and load the cloud copy instead of silently overwriting it.
+
+## Checks
+
+The test suite includes analytics/validation/storage checks, account cache isolation, failed-save retry, serialized writes, captured owner tokens, and actual PostgreSQL migration/permission tests with PGlite. Auth UI tests use the real Supabase SDK against a simulated API and cover signup, confirmation/resend, recovery callbacks, password changes, login/logout, study sync, and two-user isolation.
+
+These checks do not establish live Supabase setup or email delivery. Real browser visual checks and public signup/recovery checks remain part of activation. See [verification notes](app/docs/VERIFICATION-RESULTS.md) and [full app guide](app/README.md).
