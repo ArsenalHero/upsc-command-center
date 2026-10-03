@@ -15,6 +15,7 @@ import { SetupWizard } from "./components/SetupWizard";
 import { WebMCP } from "./services/webmcp";
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const DailyStudy = lazy(() => import("./pages/DailyStudy"));
+const Lectures = lazy(() => import("./pages/Lectures"));
 const Syllabus = lazy(() => import("./pages/Syllabus"));
 const Revision = lazy(() => import("./pages/Revision"));
 const WeakAreas = lazy(() => import("./pages/WeakAreas"));
@@ -135,6 +136,7 @@ function WorkspaceRouter() {
           <Route element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="daily-study" element={<DailyStudy />} />
+            <Route path="lectures" element={<Lectures />} />
             <Route path="syllabus" element={<Syllabus />} />
             <Route path="revision" element={<Revision />} />
             <Route path="weak-areas" element={<WeakAreas />} />

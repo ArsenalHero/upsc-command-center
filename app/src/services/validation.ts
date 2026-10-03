@@ -1,4 +1,4 @@
-import type { AppData, Collection, PYQDraft, PrelimsWorkspace } from "../types";
+import type { AppData, Collection, PYQDraft, PrelimsWorkspace, LectureWorkspace } from "../types";
 import {
   studyTypes,
   errorTypes,
@@ -563,6 +563,7 @@ export function validateData(input: unknown): AppData {
     series = new Set(
       d.catalog.filter((c) => c.type === "Test series").map((c) => c.id),
     );
+  if (d.lectures !== undefined) validateLectures(d.lectures, subjects);
   collections.forEach((c) =>
     d[c].forEach((r: any) => {
       if (r.resourceId)
@@ -657,6 +658,7 @@ export function validatePYQDraft(d: PYQDraft): void {
 
 export function validatePrelims(p: PrelimsWorkspace): void {
   assert(obj(p), "Invalid Prelims workspace.");
+  assert(p.autoAdvance === undefined || typeof p.autoAdvance === "boolean", "Invalid automatic next-question preference.");
   const ids = (a: unknown) => Array.isArray(a) && a.length <= 10000 && new Set(a).size === a.length && a.every(x => typeof x === "string" && x.length > 0 && x.length < 200);
   const filters = (f: unknown) => {
     assert(obj(f), "Invalid PYQ filters."); const v = f as Record<string, unknown>;
@@ -681,5 +683,27 @@ export function validatePrelims(p: PrelimsWorkspace): void {
     assert(["submitted", "visited", "review"].every(k => typeof (r as unknown as Record<string, unknown>)[k] === "boolean"), "Invalid question flags.");
     assert(typeof r.notes === "string" && r.notes.length < 200000 && typeof r.errorType === "string" && (!r.errorType || errorTypes.includes(r.errorType)), "Invalid review notes.");
     if (r.key) assert(obj(r.key) && ["official", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d"].includes(r.key.answer)) && [2, 2.5].includes(r.key.marks) && (r.key.status !== "official" || !!r.key.answer), "Invalid saved key.");
+  }
+}
+
+export function validateLectures(w: LectureWorkspace, subjects: Set<string>): void {
+  assert(obj(w) && Array.isArray(w.plans) && Array.isArray(w.logs), "Invalid lecture workspace.");
+  assert(w.plans.length <= 1000 && w.logs.length <= 100000, "Too many lecture records.");
+  const plans = new Set<string>(), usedSubjects = new Set<string>(), logs = new Set<string>(), days = new Set<string>();
+  const id = (value: unknown) => typeof value === "string" && value.length > 0 && value.length < 200;
+  for (const p of w.plans) {
+    assert(obj(p) && id(p.id) && !plans.has(p.id), "Invalid or duplicate lecture target.");
+    assert(subjects.has(p.subjectId) && !usedSubjects.has(p.subjectId), "Choose a valid subject with one lecture target per subject.");
+    assert(typeof p.course === "string" && p.course.length <= 200 && validDate(p.dueDate, true), "Invalid lecture course or deadline.");
+    assert(Number.isInteger(p.target) && p.target > 0 && p.target <= 10000, "Lecture targets must be whole numbers from 1 to 10,000.");
+    assert(Number.isInteger(p.dailyTarget) && p.dailyTarget >= 0 && p.dailyTarget <= 100, "Daily lecture targets must be whole numbers from 0 to 100.");
+    plans.add(p.id); usedSubjects.add(p.subjectId);
+  }
+  for (const l of w.logs) {
+    assert(obj(l) && id(l.id) && !logs.has(l.id) && plans.has(l.planId), "Invalid or duplicate lecture log.");
+    assert(validDate(l.date) && !days.has(`${l.planId}:${l.date}`), "Keep one daily entry per lecture subject; edit the existing entry to change its total.");
+    assert(Number.isInteger(l.completed) && l.completed >= 1 && l.completed <= 1000, "Daily completions must be whole numbers from 1 to 1,000.");
+    assert(Number.isInteger(l.minutes) && l.minutes >= 0 && l.minutes <= 1440 && typeof l.notes === "string" && l.notes.length <= 10000, "Invalid lecture duration or notes.");
+    logs.add(l.id); days.add(`${l.planId}:${l.date}`);
   }
 }

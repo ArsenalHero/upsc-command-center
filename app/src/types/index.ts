@@ -347,6 +347,7 @@ export interface AppData {
   demoDates?: { prelims: string; mains: string };
   pyqDraft?: PYQDraft;
   prelims?: PrelimsWorkspace;
+  lectures?: LectureWorkspace;
   schemaVersion: 1;
   settings: Settings;
   subjects: Subject[];
@@ -366,7 +367,7 @@ export interface AppData {
 }
 export type Collection = Exclude<
   keyof AppData,
-  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims"
+  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims" | "lectures"
 >;
 export type Entity = AppData[Collection][number];
 export interface PrelimsFilters {
@@ -384,8 +385,29 @@ export interface PrelimsSession {
   startedAt: string; endedAt?: string; deadline?: string;
 }
 export interface PrelimsWorkspace {
+  autoAdvance?: boolean;
   filters: PrelimsFilters; bookmarks: string[]; review: string[];
   session?: PrelimsSession; reports?: PrelimsSession[];
+}
+export interface LecturePlan {
+  id: string;
+  subjectId: string;
+  course: string;
+  target: number;
+  dailyTarget: number;
+  dueDate: string;
+}
+export interface LectureLog {
+  id: string;
+  planId: string;
+  date: string;
+  completed: number;
+  minutes: number;
+  notes: string;
+}
+export interface LectureWorkspace {
+  plans: LecturePlan[];
+  logs: LectureLog[];
 }
 export interface Filters {
   from: string;

@@ -4,7 +4,7 @@
 
 - `npm run typecheck`: checks the complete app's TypeScript, JSX, imports, and route components.
 - `npm run test`: exercises analytical invariants, validation, data persistence, date periods, and CSV escaping.
-- `npm run test:ui`: bundles and renders the real app in JSDOM; exercises setup, empty state, demo mode, all 19 route headings, each report tab, the actual study form, and saved-state restoration.
+- `npm run test:ui`: bundles and renders the real app in JSDOM; exercises setup, empty state, demo mode, all 20 route headings, each report tab, the actual study form, and saved-state restoration.
 - `npm run build`: compiles production assets, lazy route/chart chunks, and offline precache output.
 - `npm ci`: installs the reproducible dependency lockfile used by GitHub Actions.
 
@@ -35,4 +35,4 @@ The build environment's supervised browser preview was unavailable. These checks
 - Optional unit/topic names in demo data are fictional examples, not a complete official Optional syllabus.
 - Radar visuals show unmeasured dimensions at zero with a notice; exact data availability is represented with `—` in the matrix.
 - Optional WebMCP registration is feature-detected. A supported real browser context was unavailable for end-to-end validation.
-- GitHub deployment needs a repository chosen and created by its owner. The project is prepared, not deployed to an account.
+- GitHub deployment needs a repository chosen and created by its owner. The frontend is deployed to ArsenalHero/upsc-command-center on GitHub Pages.

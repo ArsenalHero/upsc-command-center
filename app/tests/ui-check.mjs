@@ -113,6 +113,7 @@ const saved = w.localStorage.getItem("upsc-command-center:v1");
 assert.ok(JSON.parse(saved).sessions.length > 400);
 const routes = [
   "daily-study",
+  "lectures",
   "syllabus",
   "prelims",
   "mains",
@@ -133,6 +134,7 @@ const routes = [
 ];
 const headings = [
   "Daily study",
+  "Lectures",
   "Syllabus tracker",
   "Prelims preparation",
   "Mains preparation",
@@ -218,7 +220,7 @@ assert.doesNotMatch(
 assert.match(rw.document.body.textContent, /Demo mode/);
 assert.equal(consoleMessages.length, 0, consoleMessages.join("\n"));
 globalThis.console.log(
-  "Rendered UI checks passed: setup, empty state, demo, 19 routes, all report periods, study form persistence, and refresh restoration. Responsive geometry and browser screenshots are not simulated by this test.",
+  "Rendered UI checks passed: setup, empty state, demo, 20 routes, all report periods, study form persistence, and refresh restoration. Responsive geometry and browser screenshots are not simulated by this test.",
 );
 dom.window.close();
 restored.window.close();

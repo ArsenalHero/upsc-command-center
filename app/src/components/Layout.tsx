@@ -34,6 +34,7 @@ import {
   NotebookPen,
   UserRound,
   Cloud,
+  PlayCircle,
 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { useAuth } from "../hooks/useAuth";
@@ -50,6 +51,7 @@ export const navigation = [
     group: "WORKSPACE",
   },
   { label: "Syllabus", path: "/syllabus", icon: BookOpen, group: "WORKSPACE" },
+  { label: "Lectures", path: "/lectures", icon: PlayCircle, group: "WORKSPACE" },
   { label: "Revision", path: "/revision", icon: RotateCcw, group: "WORKSPACE" },
   { label: "Goals", path: "/goals", icon: Target, group: "WORKSPACE" },
   {

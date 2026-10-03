@@ -302,6 +302,16 @@ try {
   click("Submit answer");
   await until(() => workspaces.get(alice.id)?.payload.pyqs.length === 1, "Question attempt did not sync to Alice's account");
   assert.equal(workspaces.get(alice.id).payload.pyqs[0].attempt.questionId, "upsc-2025-prelims-gs1-a-001");
+  w.location.hash = "/lectures"; await heading("Lectures");
+  click("Set lecture target");
+  await until(() => w.document.querySelector('dialog[open]'), "Lecture target form missing");
+  click("Save target");
+  await until(() => workspaces.get(alice.id)?.payload.lectures?.plans.length === 1, "Alice's lecture target did not sync");
+  click("Log lectures");
+  await until(() => w.document.querySelector('[aria-label="Lectures completed"]'), "Lecture log form missing");
+  click("Save daily progress");
+  await until(() => workspaces.get(alice.id)?.payload.lectures?.logs.length === 1, "Alice's lecture log did not sync");
+
   w.location.hash = "/account";
   await heading("Your account");
   assert.match(w.document.body.textContent, /alice@example.test/);
@@ -326,6 +336,8 @@ try {
   await until(() => workspaces.has(bob.id), "Bob workspace did not sync");
   assert.equal(workspaces.get(bob.id).payload.sessions.length, 0);
   assert.equal(workspaces.get(bob.id).payload.pyqs.length, 0);
+  assert.equal(workspaces.get(bob.id).payload.lectures, undefined);
+  assert.equal(workspaces.get(alice.id).payload.lectures.logs.length, 1);
   assert.equal(workspaces.get(alice.id).payload.sessions.length, 1);
   assert.equal(workspaces.get(alice.id).payload.pyqs.length, 1);
   w.location.hash = "/account";

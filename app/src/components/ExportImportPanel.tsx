@@ -170,7 +170,7 @@ export function ExportImportPanel() {
       {pending && (
         <ConfirmDialog
           title="Restore this backup?"
-          text={`Validated backup: ${pending.sessions.length} study sessions, ${pending.mcqs.length} MCQ records, ${pending.tests.length} tests, ${pending.topics.length} topics, and ${pending.revisions.length} revisions. This replaces your current ${data.sessions.length} sessions and all other data. Export your current workspace first if you want to keep it.`}
+          text={`Validated backup: ${pending.sessions.length} study sessions, ${pending.mcqs.length} MCQ records, ${pending.tests.length} tests, ${pending.topics.length} topics, ${pending.revisions.length} revisions, ${pending.lectures?.plans.length || 0} lecture targets and ${pending.lectures?.logs.length || 0} daily lecture entries. This replaces your current ${data.sessions.length} sessions and all other data. Export your current workspace first if you want to keep it.`}
           label="Restore backup"
           onClose={() => setPending(null)}
           onConfirm={() => replaceData(pending)}
@@ -187,7 +187,7 @@ export function ExportImportPanel() {
           }
           text={
             confirm === "demo"
-              ? `This replaces all current data (${data.sessions.length} sessions, ${data.tests.length} tests) with fictional demo records. Export a backup first if you need your current data.`
+              ? `This replaces all current data (${data.sessions.length} sessions, ${data.tests.length} tests, ${data.lectures?.logs.length || 0} daily lecture entries) with fictional demo records. Export a backup first if you need your current data.`
               : confirm === "clear-demo"
                 ? "This removes fictional demo records and resets the seeded syllabus progress. Your new personal records and custom topics remain."
                 : "This resets the current workspace and replaces its study records. If signed in, the reset also syncs to your account. Export a JSON backup first if you may need these records."

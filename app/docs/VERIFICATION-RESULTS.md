@@ -5,9 +5,9 @@ Verified in the build environment on 2026-10-03:
 | Check | Result |
 |---|---|
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 38 passed, 0 failed |
-| Real React app rendered in JSDOM (`npm run test:ui`) | All three suites passed |
-| First-time setup, empty state, demo mode and all 19 routes | Passed in rendered UI |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 41 passed, 0 failed |
+| Real React app rendered in JSDOM (`npm run test:ui`) | All four suites passed |
+| First-time setup, empty state, demo mode and all 20 routes | Passed in rendered UI |
 | Report periods, study form persistence and fresh-DOM restoration | Passed in rendered UI |
 | Active bank scope and complete Booklet A numbering | 2025 only: GS I 100 + CSAT II 80 |
 | Selectable text, semantic lists, matching tables and passages | 180 questions; ten GS tables and 29 CSAT passage items |
@@ -21,12 +21,16 @@ Verified in the build environment on 2026-10-03:
 | Exact negative marking, frozen keys and subject/topic/difficulty reports | Passed; one right plus three wrong cancels out in either paper |
 | Failed storage write, visible retry and duplicate-attempt prevention | Passed in rendered UI |
 | Version-1 history/backups, new sessions/reports and flat CSV columns | Passed |
-| Real Auth SDK and cloud flows against a simulated API | Passed; signup, recovery, login/logout, study/PYQ sync, cache cleanup and two-user isolation |
+| Continuous individual PYQ practice and optional automatic advance | Passed in rendered UI |
+| Lecture targets, independent subject totals and daily aggregation | Passed |
+| Lecture forms, edits without duplicate days, filters, chart periods, reload and failed-save retry | Passed in rendered UI |
+| Lecture JSON/CSV preservation, formula escaping and invalid-entry rejection | Passed |
+| Real Auth SDK and cloud flows against a simulated API | Passed; signup, recovery, login/logout, study/PYQ/lecture sync, cache cleanup and two-user isolation |
 | Actual Postgres migration and permissions in local PGlite | Passed; anonymous rejection, row isolation, authorized writes and conflicts |
 | Production build and lazy imports (`npm run build`) | Passed |
 | Built HTML asset references, manifest icons and service-worker syntax | Passed |
 | HashRouter and relative Vite base | Confirmed in source and production references |
-| Real browser screenshots and responsive geometry | Not executed; DOM tests do not verify visual layout |
+| Live browser visual inspection | Scheduled after publishing this update; responsive geometry is not simulated by DOM tests |
 | Browser download UI, PWA installation/offline upgrade | Not executed |
 | Live Supabase accounts and email delivery | Not activated; the public auth configuration is empty |
 | Optional WebMCP in a supported real browser context | Not executed |

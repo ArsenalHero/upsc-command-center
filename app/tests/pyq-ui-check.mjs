@@ -223,6 +223,13 @@ try {
   current.w.Storage.prototype.setItem=setItem; await click("Submit answer");
   assert.equal(current.data().pyqs.length,previous+1);
   assert.equal(new Set(current.data().pyqs.map(p=>p.id)).size,current.data().pyqs.length);
+  await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
+  await click("Browse"); await field("Search PYQs", ""); await click("Practise 2025 GS I Q1"); await heading("2025 · Prelims GS-I");
+  assert.equal(current.data().prelims.session.questionIds.length, 100);
+  current.w.document.querySelector('[aria-label="Automatically open next question after submit"]').click(); await wait();
+  const autoBefore=current.data().pyqs.length; await option(q1.answer); await click("Submit answer");
+  assert.equal(current.data().prelims.session.index, 1); assert.equal(current.data().pyqs.length, autoBefore+1); assert.match(text(), /Original Q2/);
+  assert.equal(current.data().prelims.autoAdvance, true);
   const expired=current.data();
   const old=expired.prelims.session;
   expired.prelims.session={...old,id:"expired-test",mode:"test",deadline:"2026-01-01T02:00:00Z",startedAt:"2026-01-01T00:00:00Z",responses:{[q1.id]:{option:"",seconds:0,confidence:3,errorType:"",notes:"",submitted:false,visited:true,review:false}}};
