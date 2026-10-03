@@ -30,11 +30,11 @@ Verified in the build environment on 2026-10-03:
 | Production build and lazy imports (`npm run build`) | Passed |
 | Built HTML asset references, manifest icons and service-worker syntax | Passed |
 | HashRouter and relative Vite base | Confirmed in source and production references |
-| Live browser visual inspection | Scheduled after publishing this update; responsive geometry is not simulated by DOM tests |
+| Live browser visual inspection | Passed on the deployed desktop site: Lectures dashboard, continuous PYQ navigation and report table spacing |
 | Browser download UI, PWA installation/offline upgrade | Not executed |
 | Live Supabase accounts and email delivery | Not activated; the public auth configuration is empty |
 | Optional WebMCP in a supported real browser context | Not executed |
 
-These results distinguish functional DOM checks from browser visual verification. Responsive CSS is present, but desktop/mobile screenshots have not been inspected. See [QA.md](QA.md) for remaining browser checks.
+These results distinguish functional DOM checks from browser visual verification. The deployed desktop Lectures dashboard and PYQ report were inspected and captured. In a fresh guest workspace, submitting GS I question 1 and selecting Next question opened question 2 directly. Responsive CSS is present; mobile screenshots have not been inspected. See [QA.md](QA.md) for remaining browser checks.
 
 The frontend is linked to `ArsenalHero/upsc-command-center` on GitHub Pages. The release is checked against the repository's Pages deployment after publication. Authentication remains disabled while `auth-config.json` is empty; a configured Supabase project, database migration, redirect URLs and public email delivery are needed to activate it. No live Supabase schema or auth setting was changed by this 2025-only update.

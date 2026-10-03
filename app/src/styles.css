@@ -4265,7 +4265,7 @@ small,
 .lecture-overall { background: linear-gradient(145deg,var(--surface),var(--primary-soft)); }
 .lecture-section-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .lecture-section-title h2 { font-size: 17px; line-height: 1.5; margin-top: 5px; }
-.lecture-section-title select { font-size: 12px; padding: 7px 10px; min-height: 34px; }
+.lecture-section-title select { width: auto; flex: none; min-width: 105px; max-width: 130px; font-size: 12px; padding: 7px 10px; min-height: 34px; }
 .lecture-section-title > svg { color: var(--primary); }
 .lecture-ring-area { display: flex; align-items: center; gap: 24px; margin: 20px 0 28px; }
 .lecture-ring-area .progress-ring { flex-shrink: 0; }
