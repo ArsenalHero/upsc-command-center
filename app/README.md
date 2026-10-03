@@ -19,6 +19,8 @@ Choose **Explore with fictional demo data** during setup or **Settings → Load 
 
 ## Main features
 
+- Optional spaced repetition in Revision: On/Off radio buttons, a saved 1–365 day interval, and automatic next reviews when a revision is completed. Completed history, calendar entries and JSON/CSV exports are preserved. See [revision rules](docs/REVISION.md).
+
 - PYQ bank: complete 2025 GS-I 100 + CSAT 80 with official keys, plus 1,173 uploaded Polity questions separated into UPSC CSE, State PSC, CDS/CAPF and Unlabelled collections. State/exam/year/stage filters, supplied explanations, five-choice support, saved answers/times/notes, reports and revision lists. See [PYQ sources and coverage](docs/PYQS.md).
 
 - Subject lecture targets, daily completion logs, course/deadline fields, completion rings, daily bars and an activity calendar; safe edits, JSON backups and lecture CSV export. See [lecture tracking](docs/LECTURES.md).

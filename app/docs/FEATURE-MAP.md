@@ -13,6 +13,7 @@
 | Trend, bar, donut, radar, heatmap, scatter, treemap | `src/charts/index.tsx` |
 | Daily timeline and weekly stacked bars | `src/pages/DailyStudy.tsx`, `StudyDetails`, `WeeklyStudyChart` |
 | Calendar, backlog, lifecycle, completion | `src/pages/Revision.tsx`, `TopicDetail` |
+| Optional spaced repetition with saved custom days and automatic next reviews | `src/pages/Revision.tsx`, `src/utils/revision.ts`, `src/hooks/useData.tsx` |
 | MCQ funnel, errors, repeated topics | MCQAnalysis view in `src/pages/Practice.tsx` |
 | Knowledge health, strength matrix, weak-topic list, priority quadrants | `src/pages/WeakAreas.tsx`, `subjectStats`, `topicStats` |
 | Configurable targets, allocation, importance, thresholds and weights | `src/pages/Settings.tsx`, `src/pages/Goals.tsx` |

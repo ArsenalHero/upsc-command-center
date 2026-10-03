@@ -10,6 +10,10 @@ The [PYQ section](https://arsenalhero.github.io/upsc-command-center/#/pyqs) cont
 
 Individual practice continues through the selected paper, with a Next question action beside feedback and a saved option to advance automatically after submission. Reports have spaced tables and an outcome infographic. Each attempt saves its answer, result, active time, confidence, mistake category, notes and review flag. Tests hide feedback until submission; drafts resume after reload, completed reports show score and performance breakdowns, and revision lists keep mistakes/bookmarks. Repeat attempts preserve history. Earlier years and Mains records remain in History and backups. All 80 CSAT and nine GS questions have checked study explanations; remaining GS reasoning is visibly awaiting verification. See [sources and data rules](app/docs/PYQS.md).
 
+## Spaced repetition
+
+In **Revision**, choose **On**, enter an interval of 1–365 whole days and select **Save settings**. Completing a revision schedules the same topic again after that interval, measured from the actual completion date. Completed records stay in history; repeat entries appear in the calendar. The saved preference is optional and defaults to Off. Changing it affects future completions; already scheduled reviews remain available. See [revision rules](app/docs/REVISION.md).
+
 ## Lectures
 
 The [Lectures workspace](https://arsenalhero.github.io/upsc-command-center/#/lectures) lets you set a total and daily target for each subject, name a course, set an optional deadline, and record the number completed each day. Completion rings, subject progress cards, daily bars and a 28-day activity calendar show totals through the selected day. Edit a daily total without duplicating it; JSON backups retain targets and logs, and lecture CSV exports include each day. See [lecture data rules](app/docs/LECTURES.md).

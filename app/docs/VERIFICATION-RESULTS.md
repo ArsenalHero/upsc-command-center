@@ -5,8 +5,10 @@ Verified in the build environment on 2026-10-03:
 | Check | Result |
 |---|---|
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 47 passed, 0 failed |
-| Real React app rendered in JSDOM (`npm run test:ui`) | All four suites passed |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ/revision tests | 52 passed, 0 failed |
+| Real React app rendered in JSDOM (`npm run test:ui`) | All five suites passed |
+| Spaced repetition interval, completion dates, duplicate prevention and legacy backup/export compatibility | Passed |
+| Revision On/Off radios, custom days, calendar entries, reload and atomic save failure/retry | Passed in rendered UI |
 | First-time setup, empty state, demo mode and all 20 routes | Passed in rendered UI |
 | Report periods, study form persistence and fresh-DOM restoration | Passed in rendered UI |
 | Active bank scope and complete Booklet A numbering | 1,353 entries: unchanged 2025 GS I 100 + CSAT II 80, plus 1,173 uploaded Polity questions |

@@ -11,6 +11,7 @@ export const COLORS = [
   "#ae72c0",
 ];
 export const defaultSettings: Settings = {
+  spacedRepetition: { enabled: false, days: 7 },
   year: new Date().getFullYear() + 1,
   prelimsDate: "",
   mainsDate: "",

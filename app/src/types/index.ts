@@ -282,6 +282,7 @@ export interface Revision {
   completedDate: string;
   stage: RevisionStage;
   notes: string;
+  repeatOf?: string;
   demo?: boolean;
 }
 export interface Resource {
@@ -325,6 +326,7 @@ export type GoalMetric =
 export type WeightKey =
   "target" | "focus" | "accuracy" | "revision" | "questions" | "answers";
 export interface Settings {
+  spacedRepetition?: { enabled: boolean; days: number };
   year: number;
   prelimsDate: string;
   mainsDate: string;

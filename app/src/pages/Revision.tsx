@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type FormEvent } from "react";
 import {
   Plus,
   ChevronLeft,
@@ -32,6 +32,39 @@ import {
 } from "../components/ui";
 import { RecordTable } from "../components/RecordTable";
 import { TopicDetail } from "../components/TopicDetail";
+import { defaultSpacedRepetition, validRepetitionDays } from "../utils/revision";
+
+function SpacedRepetition() {
+  const { data, updateSettings, notify } = useData();
+  const saved = data.settings.spacedRepetition || defaultSpacedRepetition;
+  const [enabled, setEnabled] = useState(saved.enabled), [days, setDays] = useState(String(saved.days));
+  useEffect(() => { setEnabled(saved.enabled); setDays(String(saved.days)); }, [saved.enabled, saved.days]);
+  const valid = days.trim() !== "" && validRepetitionDays(Number(days));
+  const dirty = enabled !== saved.enabled || (enabled && Number(days) !== saved.days);
+  const submit = (e: FormEvent) => {
+    e.preventDefault();
+    if (enabled && !valid) return;
+    if (updateSettings({ ...data.settings, spacedRepetition: { enabled, days: valid ? Number(days) : saved.days } }))
+      notify("Spaced repetition settings saved.");
+  };
+  return <section className="card spaced-repetition" aria-labelledby="spaced-repetition-title">
+    <div className="spaced-repetition-copy">
+      <span className="eyebrow">BUILD A RECALL ROUTINE</span>
+      <h2 id="spaced-repetition-title">Spaced repetition</h2>
+      <p>Complete a revision and the same topic is automatically scheduled again after your chosen number of days.</p>
+      <p className="small spaced-repetition-status" aria-live="polite"><Badge tone={saved.enabled ? "green" : "gray"}>{saved.enabled ? "On" : "Off"}</Badge>{saved.enabled ? `Saved interval: ${saved.days} ${saved.days === 1 ? "day" : "days"} after completion.` : "Turn it on when you want automatic repetition."}</p>
+    </div>
+    <form onSubmit={submit} className="spaced-repetition-form">
+      <fieldset><legend>Automatic repetition</legend><div className="spaced-repetition-radios">
+        <label><input type="radio" name="spaced-repetition" aria-label="Spaced repetition off" checked={!enabled} onChange={() => setEnabled(false)} />Off</label>
+        <label><input type="radio" name="spaced-repetition" aria-label="Spaced repetition on" checked={enabled} onChange={() => setEnabled(true)} />On</label>
+      </div></fieldset>
+      <div className="spaced-repetition-interval"><label>Repeat after<input type="number" aria-label="Repetition interval in days" aria-describedby="spaced-repetition-help" min={1} max={365} step={1} required={enabled} disabled={!enabled} value={days} onChange={e => setDays(e.target.value)} /></label><span>days</span></div>
+      <button className="btn primary" type="submit" disabled={!dirty || (enabled && !valid)}><RotateCcw size={16} />Save settings</button>
+      <p className="small muted spaced-repetition-help" id="spaced-repetition-help">{enabled && !valid ? "Enter a whole number from 1 to 365 days." : dirty ? "Save settings to apply your choice." : saved.enabled ? `Complete a revision today → next revision ${prettyDate(addDays(dateKey(), saved.days))}.` : "Your choice applies to future revision completions."}</p>
+    </form>
+  </section>;
+}
 export function RevisionCalendar({
   selected,
   onSelect,
@@ -165,6 +198,7 @@ export default function Revision() {
           </button>
         }
       />
+      <SpacedRepetition />
       <div className="stats-grid four">
         <DashboardCard
           title="Overdue revisions"
@@ -213,6 +247,7 @@ export default function Revision() {
                           ? "Due today"
                           : "Upcoming"}
                   </Badge>
+                  {r.repeatOf && <Badge tone="blue">Spaced repetition</Badge>}
                   <button
                     className="topic-name"
                     onClick={() => setTopicId(r.topicId)}

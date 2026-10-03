@@ -30,7 +30,8 @@ import {
 } from "../services/validation";
 import { createEmptyData } from "../data/defaults";
 import { createDemoData } from "../data/demo";
-import { dateKey, uid } from "../utils/date";
+import { dateKey, prettyDate, uid } from "../utils/date";
+import { completeRevision } from "../utils/revision";
 const guestRepository = new LocalStorageRepository();
 interface Editor {
   collection: Collection;
@@ -125,8 +126,17 @@ export function DataProvider({
       const ok = commit((d) => {
         const list = d[c] as Entity[];
         const idx = list.findIndex((r) => r.id === record.id);
+        const alreadyCompleted = c === "revisions" && !!d.revisions.find(r => r.id === record.id)?.completedDate;
         if (idx >= 0) list[idx] = record;
         else list.push(record);
+        if (c === "revisions" && !alreadyCompleted) {
+          const revision = d.revisions.find(r => r.id === record.id)!;
+          if (revision.completedDate) {
+            const completedDate = revision.completedDate;
+            revision.completedDate = "";
+            completeRevision(d, revision.id, completedDate);
+          }
+        }
         if (c === "topics") {
           const t = record as AppData["topics"][number];
           const old = ref.current.topics.find((x) => x.id === t.id);
@@ -354,21 +364,10 @@ export function DataProvider({
     if (ok) notify("Fictional demo records cleared.");
   };
   const markRevision = (id: string) => {
-    if (
-      commit((d) => {
-        const r = d.revisions.find((r) => r.id === id);
-        if (!r) return;
-        r.completedDate = dateKey();
-        const t = d.topics.find((t) => t.id === r.topicId);
-        if (t) {
-          t.demo = false;
-          t.revisionStage = r.stage;
-          t.status = "Completed";
-          t.statusHistory.push({ date: dateKey(), status: "Completed" });
-        }
-      }, true)
-    )
-      notify("Revision completed.");
+    if (!ref.current.revisions.some(r => r.id === id && !r.completedDate)) return;
+    let nextDate = "";
+    if (commit(d => { const next = completeRevision(d, id).next; nextDate = next && !next.completedDate ? next.dueDate : ""; }, true))
+      notify(nextDate ? `Revision completed. Next revision: ${prettyDate(nextDate)}.` : "Revision completed.");
   };
   const setTopicStatus = (
     id: string,

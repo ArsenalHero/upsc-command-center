@@ -9,7 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc -b --pretty false",
     "test": "node --import tsx --test tests/*.test.ts",
-    "test:ui": "node tests/ui-check.mjs && node tests/auth-ui-check.mjs && node --import tsx tests/pyq-ui-check.mjs && node --import tsx tests/lectures-ui-check.mjs"
+    "test:ui": "node tests/ui-check.mjs && node tests/auth-ui-check.mjs && node --import tsx tests/pyq-ui-check.mjs && node --import tsx tests/lectures-ui-check.mjs && node --import tsx tests/revision-ui-check.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

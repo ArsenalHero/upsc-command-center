@@ -1845,6 +1845,21 @@ small,
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   gap: 22px;
 }
+.spaced-repetition { display:grid; grid-template-columns:minmax(0, 1.1fr) minmax(0, 1fr); gap:28px; align-items:center; padding:24px; margin-bottom:24px; }
+.spaced-repetition-copy h2 { margin:8px 0 10px; }
+.spaced-repetition-copy p { max-width:530px; line-height:1.65; }
+.spaced-repetition-status { display:flex; gap:9px; align-items:center; flex-wrap:wrap; margin-bottom:0; }
+.spaced-repetition-form { display:flex; align-items:flex-end; gap:16px; flex-wrap:wrap; }
+.spaced-repetition-form fieldset { border:0; padding:0; margin:0; min-width:130px; }
+.spaced-repetition-form legend { margin-bottom:10px; font-size:.8rem; font-weight:600; }
+.spaced-repetition-radios { display:flex; gap:18px; min-height:42px; align-items:center; }
+.spaced-repetition-radios label { flex-direction:row; gap:7px; align-items:center; cursor:pointer; }
+.spaced-repetition-interval { display:flex; gap:8px; align-items:flex-end; }
+.spaced-repetition-interval label { gap:8px; }
+.spaced-repetition-interval input { width:90px; }
+.spaced-repetition-interval > span { padding-bottom:12px; font-size:.875rem; color:var(--muted); }
+.spaced-repetition-help { flex-basis:100%; margin:0; line-height:1.6; }
+@media(max-width:1000px) { .spaced-repetition { grid-template-columns:minmax(0,1fr); gap:20px; } }
 .calendar-weekdays {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));

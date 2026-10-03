@@ -6,6 +6,7 @@ import {
   topicStatuses,
 } from "../types";
 import { dateKey, parseDate } from "../utils/date";
+import { validRepetitionDays } from "../utils/revision";
 export const collections: Collection[] = [
   "subjects",
   "topics",
@@ -425,11 +426,14 @@ export function validateEntity(collection: Collection, v: unknown): void {
       "Invalid topic status history.",
     );
   }
-  if (collection === "revisions")
+  if (collection === "revisions") {
     assert(
       validDate(r.dueDate) && validDate(r.completedDate, true),
       "Invalid revision date.",
     );
+    if (r.repeatOf !== undefined)
+      assert(typeof r.repeatOf === "string" && r.repeatOf.length > 0 && r.repeatOf.length <= 2000 && r.repeatOf !== r.id, "Invalid spaced repetition source.");
+  }
   if (collection === "catalog")
     assert(
       [
@@ -473,6 +477,8 @@ export function validateData(input: unknown): AppData {
   );
   const s = d.settings;
   assert(obj(s), "Missing settings.");
+  if (s.spacedRepetition !== undefined)
+    assert(obj(s.spacedRepetition) && typeof s.spacedRepetition.enabled === "boolean" && validRepetitionDays(s.spacedRepetition.days), "Spaced repetition needs an on/off setting and a whole number from 1 to 365 days.");
   for (const key of [
     "year",
     "dailyHours",
