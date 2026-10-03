@@ -27,14 +27,16 @@ Verified in the build environment on 2026-10-03:
 | Lecture JSON/CSV preservation, formula escaping and invalid-entry rejection | Passed |
 | Real Auth SDK and cloud flows against a simulated API | Passed; signup, recovery, login/logout, study/PYQ/lecture sync, cache cleanup and two-user isolation |
 | Actual Postgres migration and permissions in local PGlite | Passed; anonymous rejection, row isolation, authorized writes and conflicts |
+| Live Supabase private workspace schema, grants and RLS | Passed; anonymous HTTP read rejected, direct client writes revoked, privileged writer kept outside the exposed schema |
+| Live Supabase security advisor | No notices |
 | Production build and lazy imports (`npm run build`) | Passed |
 | Built HTML asset references, manifest icons and service-worker syntax | Passed |
 | HashRouter and relative Vite base | Confirmed in source and production references |
 | Live browser visual inspection | Passed on the deployed desktop site: Lectures dashboard, continuous PYQ navigation and report table spacing |
 | Browser download UI, PWA installation/offline upgrade | Not executed |
-| Live Supabase accounts and email delivery | Not activated; the public auth configuration is empty |
+| Live Supabase accounts and email delivery | Project and private database connected; redirect/SMTP configuration and real signup/confirmation/login/recovery checks remain pending |
 | Optional WebMCP in a supported real browser context | Not executed |
 
 These results distinguish functional DOM checks from browser visual verification. The deployed desktop Lectures dashboard and PYQ report were inspected and captured. In a fresh guest workspace, submitting GS I question 1 and selecting Next question opened question 2 directly. Responsive CSS is present; mobile screenshots have not been inspected. See [QA.md](QA.md) for remaining browser checks.
 
-The frontend is linked to `ArsenalHero/upsc-command-center` on GitHub Pages. The release is checked against the repository's Pages deployment after publication. Authentication remains disabled while `auth-config.json` is empty; a configured Supabase project, database migration, redirect URLs and public email delivery are needed to activate it. No live Supabase schema or auth setting was changed by this 2025-only update.
+The frontend is linked to `ArsenalHero/upsc-command-center` on GitHub Pages. The release is checked against the repository's Pages deployment after publication. The Free-plan Supabase project is now created in Mumbai, the private workspace migration is applied, and `auth-config.json` contains only its public URL and publishable key. Email/password authentication and public signups are enabled with email confirmation required. Dashboard redirect URLs and custom SMTP still need configuration; live user-account and email-delivery checks remain pending. Passing local or simulated-API tests does not establish those remaining checks.

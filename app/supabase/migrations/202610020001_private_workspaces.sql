@@ -19,9 +19,14 @@ grant select on public.study_workspaces to authenticated;
 create policy "Read own study workspace" on public.study_workspaces
   for select to authenticated using ((select auth.uid()) = user_id);
 
--- Writes are only exposed through this function. It takes no user_id from the
--- caller, binds ownership to the verified JWT, and rejects stale revisions.
-create function public.save_study_workspace(p_payload jsonb, p_expected_revision bigint)
+-- Keep the privileged implementation outside the schemas exposed by the API.
+create schema workspace_private;
+revoke all on schema workspace_private from public, anon;
+grant usage on schema workspace_private to authenticated;
+
+-- This writer takes no user_id from the caller, binds ownership to the verified
+-- JWT, and rejects stale revisions. Direct table writes remain revoked.
+create function workspace_private.save_study_workspace(p_payload jsonb, p_expected_revision bigint)
 returns table (revision bigint, updated_at timestamptz)
 language plpgsql security definer set search_path = '' as $$
 declare
@@ -51,6 +56,16 @@ begin
   end if;
   return query select saved_revision, saved_at;
 end;
+$$;
+revoke all on function workspace_private.save_study_workspace(jsonb, bigint) from public, anon;
+grant execute on function workspace_private.save_study_workspace(jsonb, bigint) to authenticated;
+
+-- The browser RPC runs with the caller's privileges and delegates to the
+-- authenticated-only implementation. The private schema is not API-exposed.
+create function public.save_study_workspace(p_payload jsonb, p_expected_revision bigint)
+returns table (revision bigint, updated_at timestamptz)
+language sql security invoker set search_path = '' as $$
+  select * from workspace_private.save_study_workspace(p_payload, p_expected_revision);
 $$;
 revoke all on function public.save_study_workspace(jsonb, bigint) from public, anon;
 grant execute on function public.save_study_workspace(jsonb, bigint) to authenticated;

@@ -1,6 +1,6 @@
 # Accounts and private study records
 
-The frontend stays on GitHub Pages. Supabase provides password authentication and a Postgres database. The shipped `public/auth-config.json` has empty values until an actual backend is configured; account forms are disabled in that state and guest tracking remains available. No passwords are stored by the app's study-data repository.
+The frontend stays on GitHub Pages. Supabase provides password authentication and a Postgres database. The deployed configuration is connected to the Free-plan `upsc-command-center` project in Mumbai. The private workspace migration is applied, and live database permissions reject anonymous access. Website redirects and public email delivery are still pending dashboard configuration; real signup, delivered confirmation, recovery and two-device account tests have not been completed. Guest tracking remains available. No passwords are stored by the app's study-data repository.
 
 ## Activate a project
 
@@ -35,7 +35,7 @@ The frontend stays on GitHub Pages. Supabase provides password authentication an
 ## Privacy and persistence
 
 - The database has one `study_workspaces` row per authenticated user. Its JSON includes settings, subjects, syllabus topics, all practice/study records, resources, and goals.
-- The table uses row-level security. Only `authenticated` users can SELECT their own row; anonymous users have no table access. Direct client INSERT/UPDATE/DELETE are revoked. The save function derives ownership from `auth.uid()` and takes no user ID from the browser.
+- The table uses row-level security. Only `authenticated` users can SELECT their own row; anonymous users have no table access. Direct client INSERT/UPDATE/DELETE are revoked. The public save RPC uses caller privileges and delegates to an authenticated-only writer in the non-exposed `workspace_private` schema. That writer derives ownership from `auth.uid()` and takes no user ID from the browser.
 - Every save includes the last acknowledged revision. A stale save fails instead of overwriting another device's work. The Account page lets the student export pending records and explicitly load the latest cloud copy.
 - Pending edits are stored under an account-specific browser key, then uploaded serially. A successful authenticated cloud read is required before an account cache can be displayed. No private cached records appear after an unauthenticated/failed load.
 - Requests capture the original account's bearer token and stop after the workspace closes, so switching accounts cannot send the previous user's records under the new user's session.

@@ -22,9 +22,25 @@ test("Postgres enforces private ownership, anonymous access rejection, and stale
         "utf8",
       ),
     );
+    const writers = (await db.query<{ schema: string; definer: boolean }>(`
+      select n.nspname as schema, p.prosecdef as definer
+      from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+      where p.proname = 'save_study_workspace'
+      order by n.nspname;
+    `)).rows;
+    assert.deepEqual(writers, [
+      { schema: "public", definer: false },
+      { schema: "workspace_private", definer: true },
+    ]);
     await db.exec("set role anon;");
     await assert.rejects(
       () => db.query("select * from public.study_workspaces"),
+      /permission denied/,
+    );
+    await assert.rejects(
+      () => db.query("select * from workspace_private.save_study_workspace($1::jsonb, 0)", [
+        JSON.stringify(createEmptyData()),
+      ]),
       /permission denied/,
     );
     await assert.rejects(

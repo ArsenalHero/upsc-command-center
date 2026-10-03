@@ -1,6 +1,6 @@
 # UPSC Preparation Command Center
 
-A responsive UPSC CSE preparation web app with study tracking, analytics, sign-up/login pages, and private account storage through Supabase. The frontend runs on GitHub Pages. Guest mode works without a backend. Real accounts require the setup in [docs/ACCOUNTS.md](docs/ACCOUNTS.md); the current public configuration is empty and account forms remain disabled until it is activated.
+A responsive UPSC CSE preparation web app with study tracking, analytics, sign-up/login pages, and private account storage through Supabase. The frontend runs on GitHub Pages. Guest mode works without a backend. The public configuration is connected to the Free-plan `upsc-command-center` project, and its private workspace migration is applied. Website redirects, public email delivery and live account tests still need to be completed as described in [docs/ACCOUNTS.md](docs/ACCOUNTS.md).
 
 ## Get started
 
