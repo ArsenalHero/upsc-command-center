@@ -3,6 +3,7 @@ import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createEmptyData } from "../src/data/defaults.ts";
+import { validateData } from "../src/services/validation.ts";
 
 const bank = JSON.parse(
   readFileSync(new URL("../src/data/pyq-bank.json", import.meta.url), "utf8"),
@@ -135,8 +136,8 @@ async function option(value) {
 }
 
 try {
-  await heading("2025 Prelims PYQs");
-  assert.match(text(), /180 questions ready/);
+  await heading("PYQ question bank");
+  assert.match(text(), /1,353 questions ready/);
   await field("PYQ paper", "Prelims GS-I");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
@@ -166,11 +167,11 @@ try {
   assert.equal(current.data().pyqs[0].revisionNeeded,false);
   await click("Next question"); assert.match(text(), /Original Q2/);
   current.advance(12); await option(q2.answer); await click("Save & exit");
-  await heading("2025 Prelims PYQs");
+  await heading("PYQ question bank");
   const saved=current.w.localStorage.getItem(key);
   assert.equal(current.data().prelims.session.responses[q2.id].seconds,12);
   current=makeDOM(saved); allDOMs.push(current.dom);
-  await heading("2025 Prelims PYQs"); await click("Resume practice");
+  await heading("PYQ question bank"); await click("Resume practice");
   await heading("2025 · Prelims GS-I");
   assert.equal(current.w.document.querySelector('input[name="pyq-option"]:checked').value,q2.answer);
   current.advance(3); await click("Submit answer");
@@ -198,7 +199,7 @@ try {
   assert.equal(current.data().pyqs.length,before);
   assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
   assert.ok(!text().includes("Official answer:"));
-  await click("Mark for review"); await click("Save & exit"); await heading("2025 Prelims PYQs");
+  await click("Mark for review"); await click("Save & exit"); await heading("PYQ question bank");
   await click("Resume test"); await heading("2025 · Prelims GS-I");
   assert.match(text(), /Original Q10/); await click("Finish test"); await heading("Your paper report");
   const report=current.data().prelims.reports.at(-1);
@@ -235,9 +236,42 @@ try {
   expired.prelims.session={...old,id:"expired-test",mode:"test",deadline:"2026-01-01T02:00:00Z",startedAt:"2026-01-01T00:00:00Z",responses:{[q1.id]:{option:"",seconds:0,confidence:3,errorType:"",notes:"",submitted:false,visited:true,review:false}}};
   delete expired.prelims.session.endedAt;
   current=makeDOM(JSON.stringify(expired)); allDOMs.push(current.dom);
-  await heading("2025 Prelims PYQs"); await click("Resume test"); await heading("Your paper report");
+  await heading("PYQ question bank"); await click("Resume test"); await heading("Your paper report");
   assert.ok(current.data().prelims.session.endedAt);
   assert.equal(current.data().prelims.reports.at(-1).id,"expired-test");
+  current=makeDOM(); allDOMs.push(current.dom);
+  await heading("PYQ question bank"); await click("State PSC");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"571 questions");
+  await field("PYQ state","Chhattisgarh"); await field("PYQ year","2016");
+  await field("Search PYQs","POL5");
+  await click("Practise CGPSC 2016 · Part 5 Q101");
+  await heading("2016 · CGPSC · Polity MCQs");
+  assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
+  assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
+  current.advance(19); await option("e"); await click("Submit answer");
+  assert.match(text(), /Provided answer: E/); assert.match(text(), /Explanation from supplied material/);
+  const imported=current.data().pyqs.at(-1);
+  assert.equal(imported.attempt.selectedOption,"e"); assert.equal(imported.attempt.outcome,"correct");
+  assert.equal(imported.attempt.grading,"provided"); assert.equal(imported.attempt.seconds,19);
+  assert.equal(imported.attempt.examGroup,"State PSC"); assert.equal(imported.attempt.examState,"Chhattisgarh");
+  assert.equal(imported.attempt.sourceFile,"POL5.txt");
+  validateData(current.data());
+  await click("Next question");
+  assert.notEqual(current.data().prelims.session.index,0);
+  await click("Save & exit"); await heading("PYQ question bank");
+  current=makeDOM(current.w.localStorage.getItem(key)); allDOMs.push(current.dom);
+  await heading("PYQ question bank");
+  assert.equal(current.data().prelims.filters.examGroup,"State PSC");
+  assert.equal(current.data().prelims.filters.year,"2016");
+  assert.equal(current.data().pyqs.at(-1).attempt.selectedOption,"e");
+  await click("Resume practice"); await click("Finish practice"); await heading("Your paper report");
+  assert.match(text(), /1 right/); assert.match(text(), /penalty 0/);
+  await click("Back to question bank"); await click("Unlabelled");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
+  assert.match(text(), /Year not supplied/);
+  await click("CDS & CAPF");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"330 questions");
+  assert.deepEqual([...current.w.document.querySelector('[aria-label="PYQ state"]').options].map(o=>o.value),[""]);
   assert.deepEqual(messages,[]);
-  console.log("2025 PYQ UI passed: text/tables/passages, practice, active time, reload, metadata, skips, repeats, test secrecy, report, CSAT, failed-save recovery.");
+  console.log("PYQ UI passed: original papers, State PSC filters, five-choice grading, source labels, saved time, reload, Next question, reports, unlabelled and CDS/CAPF separation.");
 } finally { for(const dom of allDOMs) dom.window.close(); }

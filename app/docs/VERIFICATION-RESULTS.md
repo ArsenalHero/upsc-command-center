@@ -5,11 +5,16 @@ Verified in the build environment on 2026-10-03:
 | Check | Result |
 |---|---|
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 41 passed, 0 failed |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ tests | 47 passed, 0 failed |
 | Real React app rendered in JSDOM (`npm run test:ui`) | All four suites passed |
 | First-time setup, empty state, demo mode and all 20 routes | Passed in rendered UI |
 | Report periods, study form persistence and fresh-DOM restoration | Passed in rendered UI |
-| Active bank scope and complete Booklet A numbering | 2025 only: GS I 100 + CSAT II 80 |
+| Active bank scope and complete Booklet A numbering | 1,353 entries: unchanged 2025 GS I 100 + CSAT II 80, plus 1,173 uploaded Polity questions |
+| Full source-file audit of uploaded questions, options, answers and explanations | All 1,173 entries preserved; explanation text and source SHA-256 digests match |
+| Exam collection, state, year and shared-occurrence filtering | Passed; uploaded memberships UPSC CSE 272, State PSC 571, CDS/CAPF 330, Unlabelled 1, with one shared entry |
+| Five-choice questions and source Mains MCQs | Passed; 31 five-choice questions, six provided E answers; source Mains items remain objective |
+| Supplied answer grading, zero practice penalties and saved source/exam metadata | Passed in unit and rendered UI checks; supplied keys remain visibly distinct from official keys |
+| Imported State PSC filters, E answer/time persistence, reload and Next question | Passed in rendered UI; all original full-paper tests still contain exactly 100 GS or 80 CSAT items |
 | Selectable text, semantic lists, matching tables and passages | 180 questions; ten GS tables and 29 CSAT passage items |
 | Original English paper pages and official Series A key tables | Visually inspected; all 180 answers match the checked keys |
 | Scan-sensitive formulas, intervals, subscripts and option labels | Source checked; representative corrections covered by integrity tests |

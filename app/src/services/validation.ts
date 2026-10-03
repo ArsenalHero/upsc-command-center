@@ -332,14 +332,14 @@ export function validateEntity(collection: Collection, v: unknown): void {
       "Invalid attempt timestamp.",
     );
     assert(
-      ["", "a", "b", "c", "d"].includes(a.selectedOption) &&
-        ["", "a", "b", "c", "d"].includes(a.answerOption),
+      ["", "a", "b", "c", "d", "e"].includes(a.selectedOption) &&
+        ["", "a", "b", "c", "d", "e"].includes(a.answerOption),
       "Invalid answer option.",
     );
     assert(
       ["correct", "incorrect", "skipped", "ungraded", "written"].includes(
         a.outcome,
-      ) && ["official", "self", "none"].includes(a.grading),
+      ) && ["official", "provided", "self", "none"].includes(a.grading),
       "Invalid marking result.",
     );
     assert(
@@ -374,7 +374,7 @@ export function validateEntity(collection: Collection, v: unknown): void {
       "A marked MCQ needs a selected option and marking basis.",
     );
     if (
-      a.grading === "official" &&
+      ["official", "provided"].includes(a.grading) &&
       ["correct", "incorrect"].includes(a.outcome)
     )
       assert(
@@ -391,6 +391,7 @@ export function validateEntity(collection: Collection, v: unknown): void {
       !a.sourceUrl || /^https:\/\//.test(a.sourceUrl),
       "Invalid paper source.",
     );
+    for (const field of ["sourceFile", "examGroup", "examName", "examState", "examStage", "examLabels"]) assert(a[field] === undefined || (typeof a[field] === "string" && a[field].length < 2000), "Invalid saved exam metadata.");
   }
   if (collection === "subjects")
     assert(
@@ -631,7 +632,7 @@ export function validatePYQDraft(d: PYQDraft): void {
     "Invalid practice timer.",
   );
   assert(
-    ["", "a", "b", "c", "d"].includes(d.selectedOption) &&
+    ["", "a", "b", "c", "d", "e"].includes(d.selectedOption) &&
       ["", "correct", "incorrect"].includes(d.selfOutcome),
     "Invalid practice choice.",
   );
@@ -664,6 +665,7 @@ export function validatePrelims(p: PrelimsWorkspace): void {
     assert(obj(f), "Invalid PYQ filters."); const v = f as Record<string, unknown>;
     for (const k of ["paper", "subject", "topic", "difficulty", "status", "query"]) assert(typeof v[k] === "string" && (v[k] as string).length < 1000, "Invalid PYQ filter.");
     assert(v.subtopic === undefined || (typeof v.subtopic === "string" && v.subtopic.length < 1000), "Invalid PYQ subtopic.");
+    for (const k of ["year", "examGroup", "state", "exam", "examStage"]) assert(v[k] === undefined || (typeof v[k] === "string" && (v[k] as string).length < 1000), "Invalid PYQ exam filter.");
   };
   filters(p.filters); assert(ids(p.bookmarks) && ids(p.review), "Invalid bookmarks or review flags.");
   if (p.reports !== undefined) {
@@ -672,17 +674,17 @@ export function validatePrelims(p: PrelimsWorkspace): void {
   }
   if (!p.session) return; const s = p.session;
   assert(obj(s) && typeof s.id === "string" && s.id.length > 0 && s.id.length < 200 && ["practice", "test"].includes(s.mode), "Invalid PYQ session.");
-  assert(ids(s.questionIds) && s.questionIds.length > 0 && s.questionIds.length <= 180 && Number.isInteger(s.index) && s.index >= 0 && s.index < s.questionIds.length, "Invalid question position.");
+  assert(ids(s.questionIds) && s.questionIds.length > 0 && s.questionIds.length <= 2000 && Number.isInteger(s.index) && s.index >= 0 && s.index < s.questionIds.length, "Invalid question position.");
   assert(typeof s.startedAt === "string", "Missing start time.");
   for (const d of [s.startedAt, s.endedAt, s.deadline]) assert(d === undefined || (typeof d === "string" && d.length < 40 && Number.isFinite(Date.parse(d))), "Invalid session date.");
   filters(s.filters); assert(obj(s.responses) && Object.keys(s.responses).length <= s.questionIds.length, "Invalid responses.");
   for (const [id, r] of Object.entries(s.responses)) {
     assert(s.questionIds.includes(id) && obj(r), "Unknown question response.");
-    assert(["", "a", "b", "c", "d"].includes(r.option) && Number.isFinite(r.seconds) && r.seconds >= 0 && r.seconds <= 86400, "Invalid answer or time.");
+    assert(["", "a", "b", "c", "d", "e"].includes(r.option) && Number.isFinite(r.seconds) && r.seconds >= 0 && r.seconds <= 86400, "Invalid answer or time.");
     assert(Number.isInteger(r.confidence) && r.confidence >= 1 && r.confidence <= 5, "Invalid confidence.");
     assert(["submitted", "visited", "review"].every(k => typeof (r as unknown as Record<string, unknown>)[k] === "boolean"), "Invalid question flags.");
     assert(typeof r.notes === "string" && r.notes.length < 200000 && typeof r.errorType === "string" && (!r.errorType || errorTypes.includes(r.errorType)), "Invalid review notes.");
-    if (r.key) assert(obj(r.key) && ["official", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d"].includes(r.key.answer)) && [2, 2.5].includes(r.key.marks) && (r.key.status !== "official" || !!r.key.answer), "Invalid saved key.");
+    if (r.key) assert(obj(r.key) && ["official", "provided", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d", "e"].includes(r.key.answer)) && [1, 2, 2.5].includes(r.key.marks) && (!["official", "provided"].includes(r.key.status) || !!r.key.answer) && (r.key.negativeMarks === undefined || (Number.isFinite(r.key.negativeMarks) && r.key.negativeMarks >= 0 && r.key.negativeMarks <= r.key.marks)), "Invalid saved key.");
   }
 }
 

@@ -4375,3 +4375,12 @@ small,
 .prelims-result-legend i.wrong { background: var(--red); }
 @media(max-width:600px) { .prelims-report-summary { flex-direction: column; align-items: flex-start; gap: 20px; } .prelims-outcome-ring { width: 112px; height: 112px; } .prelims-report-headline h2 { font-size: 28px; } }
 .pyq-workspace .prelims-palette > .progress-block { display: block; }
+
+.prelims-exam-collections { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 20px; }
+.prelims-exam-collections .btn { gap:10px; border-radius:10px; }
+.prelims-exam-collections .btn span { padding:2px 8px; border-radius:6px; background:rgba(120,130,150,.12); font-size:12px; }
+.prelims-exam-collections .btn.primary span { background:rgba(255,255,255,.18); }
+.pyq-workspace .prelims-palette > div:not(.progress-block) { max-height:480px; overflow-y:auto; padding:4px; }
+.prelims-bank-row > div:first-child { min-width:0; }
+.prelims-bank-row p { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.prelims-bank-row .eyebrow { white-space:normal; line-height:1.7; }

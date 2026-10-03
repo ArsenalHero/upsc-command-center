@@ -19,7 +19,7 @@ Choose **Explore with fictional demo data** during setup or **Settings → Load 
 
 ## Main features
 
-- 2025-only Prelims PYQ bank: GS-I 100 + CSAT 80, text/tables/passages, official keys, practice and timed tests, saved answers/times/notes, reports and revision lists. See [PYQ sources and coverage](docs/PYQS.md).
+- PYQ bank: complete 2025 GS-I 100 + CSAT 80 with official keys, plus 1,173 uploaded Polity questions separated into UPSC CSE, State PSC, CDS/CAPF and Unlabelled collections. State/exam/year/stage filters, supplied explanations, five-choice support, saved answers/times/notes, reports and revision lists. See [PYQ sources and coverage](docs/PYQS.md).
 
 - Subject lecture targets, daily completion logs, course/deadline fields, completion rings, daily bars and an activity calendar; safe edits, JSON backups and lecture CSV export. See [lecture tracking](docs/LECTURES.md).
 - Continuous PYQ practice with a Next question button after grading and a saved automatic-advance preference.

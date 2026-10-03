@@ -243,7 +243,13 @@ export interface PYQAttemptDetails {
   selectedOption: string;
   answerOption: string;
   outcome: PYQOutcome;
-  grading: "official" | "self" | "none";
+  grading: "official" | "provided" | "self" | "none";
+  sourceFile?: string;
+  examGroup?: string;
+  examName?: string;
+  examState?: string;
+  examStage?: string;
+  examLabels?: string;
   seconds: number;
   confidence: number;
   errorType: string;
@@ -372,12 +378,17 @@ export type Collection = Exclude<
 export type Entity = AppData[Collection][number];
 export interface PrelimsFilters {
   subtopic?: string;
+  year?: string;
+  examGroup?: string;
+  state?: string;
+  exam?: string;
+  examStage?: string;
   paper: string; subject: string; topic: string; difficulty: string; status: string; query: string;
 }
 export interface PrelimsResponse {
   option: string; seconds: number; confidence: number; errorType: string; notes: string;
   submitted: boolean; visited: boolean; review: boolean;
-  key?: { answer: string | null; status: "official" | "pending" | "dropped"; marks: number };
+  key?: { answer: string | null; status: "official" | "provided" | "pending" | "dropped"; marks: number; negativeMarks?: number };
 }
 export interface PrelimsSession {
   id: string; mode: "practice" | "test"; questionIds: string[]; index: number;

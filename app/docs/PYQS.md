@@ -1,6 +1,27 @@
-# 2025 Prelims PYQ practice
+# PYQ question bank
 
-The active bank contains only UPSC CSE Prelims 2025: GS Paper I (100 questions) and CSAT Paper II (80 questions), English, Booklet A. Existing records from earlier years and Mains remain in History, dashboards and exports. Older `pyqDraft` and version-1 backups remain readable; new sessions use the optional `prelims` workspace field.
+The active bank contains 1,353 unique entries: the complete UPSC CSE Prelims 2025 GS Paper I (100 questions) and CSAT Paper II (80 questions), plus all 1,173 questions from nine user-supplied Polity text files. Existing records from earlier years and written Mains remain in History, dashboards and exports. Older `pyqDraft` and version-1 backups remain readable; new sessions use the optional `prelims` workspace field.
+
+## Uploaded Polity coverage
+
+| Source | Questions |
+|---|---:|
+| Polity1.txt | 143 |
+| POL2.txt | 206 |
+| POL3.txt | 71 |
+| POL4.txt | 100 |
+| POL5.txt | 154 |
+| POL6.txt | 240 |
+| POL7.txt | 63 |
+| POL8.txt | 98 |
+| POL9.txt | 98 |
+| Total unique source entries | 1,173 |
+
+Collections contain 272 uploaded UPSC CSE questions, 571 State PSC questions, 330 CDS/CAPF questions and one Unlabelled question. These membership counts overlap once: POL8 Q47 is labelled UPPCS Mains 2004 and UPSC CSE Prelims 2001. It has one stable question ID, appears under both labelled exams and matches the year of the selected occurrence. Polity1 Q38 retains both MPPSC years, 2010 and 1998. POL8 Q54 retains both UPPSC exam labels. POL2 Q67 has no supplied exam/year and remains Unlabelled, displayed as “Not supplied”; its CSV year is blank.
+
+The State PSC collection includes Uttar Pradesh, Bihar, Madhya Pradesh, Rajasthan, Jharkhand, Uttarakhand and Chhattisgarh, with individual exam and stage filters. Source labels are preserved alongside normalized exam names. English/Hindi question text, every option, the marked answer and each explanation were audited against all nine uploaded files. There are 31 questions with five options, including six answers marked E. Objective items labelled Mains remain MCQs and retain their source stage; they are not converted into essay tasks.
+
+Uploaded questions show **Provided answer** and **Explanation from supplied material**. These answers have not been independently verified against official answer keys. Practice marking is +1 right, 0 wrong/blank; it does not claim a State PSC marking scheme. Source question numbers are shown as Part/Q numbers, not invented official booklet numbers. Orphan citation markers in supplied prose are preserved as text without fabricated links.
 
 Questions are selectable text. Statements are semantic lists, ten GS matching questions are HTML tables, and all 29 CSAT comprehension items include their complete shared passage. No question images are displayed. Original numbering, options and mathematical symbols were checked against the original English paper pages. Subject/topic/subtopic and difficulty tags are editorial study classifications, not official UPSC metadata.
 
@@ -26,7 +47,7 @@ There are 89 checked editorial study explanations: all 80 CSAT items and nine GS
 
 ## Practice and tests
 
-Browse with combined paper, subject, topic, subtopic, difficulty, status and text filters. The year is fixed to 2025. Practice a filtered set, shuffle it, or select one question. Full papers retain original order and contain 100 GS or 80 CSAT questions. Test mode hides answers, explanations and key links until final submission. A 2-hour deadline is optional for full-paper tests and continues while the page is hidden or the active timer is paused.
+Browse with combined exam collection, state, exam, year, stage, paper, subject, topic, subtopic, difficulty, status and text filters. Practice a filtered set, shuffle it, or select one question. Full papers contain only the complete original 2025 papers in their original order: 100 GS or 80 CSAT questions. Uploaded subject collections are not represented as complete papers. Test mode hides answers, explanations and key links until final submission. A 2-hour deadline is optional for full-paper tests and continues while the page is hidden or the active timer is paused.
 
 Individual-question practice starts at that question and continues in original order within its paper and subject/topic/difficulty filters. The search and latest-result filters locate the starting question rather than reducing this continuous session to one item. Next question is available beside feedback and in the sticky footer; the optional automatic-advance preference is saved in the workspace. Practice submission locks the choice and its active time; metadata remains editable. Going back does not change the result. Skipping records time with a blank answer and zero marks. Test choices remain editable drafts until final submission. The question palette shows answered, visited, unseen and review states. A current session must be resumed and finished before another starts, so draft answers are not silently replaced.
 
@@ -38,10 +59,12 @@ Saved attempt records retain stable question ID, year, stage, paper, original nu
 
 Reports show attempted/right/wrong/unattempted totals, raw marks, penalty, final score, accuracy, active time and subject/topic/difficulty breakdowns, plus per-question review. Completed reports freeze the key used for scoring. Revision includes latest mistakes, skips, bookmarks, review flags, repeat mistakes and weak topics (latest-attempt accuracy below 60%). CSAT reports for complete papers show the 66/200 practice benchmark. No rank or percentile is fabricated without cohort data.
 
-Guest progress is browser-local. Configured accounts use the existing account-isolated repository and RLS-protected JSON workspace. The public site's auth configuration remains empty until Supabase is activated; this release does not claim that public signup or cross-device sync is enabled. See [ACCOUNTS.md](ACCOUNTS.md). No service-role key belongs in a public build.
+Guest progress is browser-local. Configured accounts use the existing account-isolated repository and RLS-protected JSON workspace; the Account page shows save and sync status. This content import does not change account configuration or database permissions. See [ACCOUNTS.md](ACCOUNTS.md). No service-role key belongs in a public build.
 
 JSON backups include sessions, completed reports, bookmarks, review flags, existing drafts and all historical records. Attempt CSV exports retain question parameters. Active public bank content is not copied into private workspace payloads, apart from the saved question text and source already required for history.
 
 ## Maintaining the bank
 
-Edit `src/data/pyq-bank.json`. Preserve existing question IDs. Check every number, option, matching cell, continuation, formula and passage against the original PDF and compare answers to the same booklet's official key. Keep incomplete reasoning explicitly flagged. The integrity tests cover exactly 2025/100+80, valid options/keys, text blocks and representative scan-sensitive symbols. Old image assets are retained for cached clients but are not used by this page.
+The original complete papers remain in `src/data/pyq-bank.json`. Preserve those IDs and validate official answers against the same booklet's key. Check every number, option, matching cell, continuation, formula and passage against the original PDF; keep incomplete reasoning explicitly flagged. Old image assets are retained for cached clients but are not used by this page.
+
+Uploaded Polity lives in `src/data/polity-bank.json`; the lazy PYQ page combines both banks. Regenerate it with `node scripts/import-polity.mjs <source-directory>`, using the nine exact source filenames. IDs are `polity-part-<part>-q-<number>` and retain the source file, question number and SHA-256 digest. The parser rejects invalid numbering, missing explanations, ambiguous answers, unsupported option boundaries and unrecognized exam labels. Preserve supplied answer status until an independent verification establishes the corresponding official key. Tests cover source counts, collection/year separation, fifth-choice grading, Mains MCQs, scoring snapshots, large sessions, saved metadata and export compatibility.

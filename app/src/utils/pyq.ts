@@ -14,12 +14,19 @@ export interface PYQQuestion {
   paper: string;
   number: number;
   booklet: string;
+  questionType?: "MCQ";
+  negativeMarks?: number;
+  examOccurrences?: { group: "UPSC CSE" | "State PSC" | "CDS & CAPF"; name: string; state: string; year: number; stage: string; label: string }[];
+  sourceFile?: string;
+  sourcePart?: number;
+  sourceQuestionNumber?: number;
+  sourceSha256?: string;
   subject: string;
   topic: string;
   question: string;
   options: Record<string, string>;
   answer: string | null;
-  keyStatus: "official" | "pending" | "dropped";
+  keyStatus: "official" | "provided" | "pending" | "dropped";
   marks: number;
   wordLimit: number;
   sourceUrl: string;
@@ -119,7 +126,7 @@ export function makeAttempt(
   let outcome: NonNullable<PYQRecord["attempt"]>["outcome"] = "ungraded";
   let grading: NonNullable<PYQRecord["attempt"]>["grading"] = "none";
   if (skip) outcome = "skipped";
-  else if (q.stage === "Mains") {
+  else if (q.stage === "Mains" && q.questionType !== "MCQ") {
     if (!response)
       throw new Error("Write an answer before saving, or skip this question.");
     outcome = "written";
@@ -129,16 +136,16 @@ export function makeAttempt(
       throw new Error(
         "Choose an option before submitting, or skip this question.",
       );
-    if (q.keyStatus === "official" && q.answer) {
+    if ((q.keyStatus === "official" || q.keyStatus === "provided") && q.answer) {
       outcome = choice === q.answer ? "correct" : "incorrect";
-      grading = "official";
+      grading = q.keyStatus;
     } else if (q.keyStatus === "pending" && draft.selfOutcome) {
       outcome = draft.selfOutcome;
       grading = "self";
     }
   }
   const selfScore =
-    !skip && q.stage === "Mains" && draft.selfScore !== ""
+    !skip && q.stage === "Mains" && q.questionType !== "MCQ" && draft.selfScore !== ""
       ? Number(draft.selfScore)
       : null;
   if (
@@ -178,6 +185,14 @@ export function makeAttempt(
       selfScore,
       maximum: q.marks,
       sourceUrl: q.sourceUrl,
+      ...(q.sourceFile ? {
+        sourceFile: q.sourceFile,
+        examGroup: q.examOccurrences?.[0]?.group || "Unlabelled",
+        examName: q.examOccurrences?.[0]?.name || "Not supplied",
+        examState: q.examOccurrences?.[0]?.state || "",
+        examStage: q.examOccurrences?.[0]?.stage || "Not supplied",
+        examLabels: q.examOccurrences?.map(e => e.label).join("; ") || "Not supplied",
+      } : {}),
     },
   };
 }

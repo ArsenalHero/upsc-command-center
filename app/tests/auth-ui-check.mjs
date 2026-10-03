@@ -294,7 +294,7 @@ try {
     "Study record did not sync",
   );
   w.location.hash = "/pyqs";
-  await heading("2025 Prelims PYQs");
+  await heading("PYQ question bank");
   w.document.querySelector('[aria-label="Practise 2025 GS I Q1"]').click();
   await heading("2025 · Prelims GS-I");
   w.document.querySelector('input[name="pyq-option"][value="a"]').click();
