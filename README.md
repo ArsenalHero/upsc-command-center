@@ -20,7 +20,7 @@ The [Lectures workspace](https://arsenalhero.github.io/upsc-command-center/#/lec
 - [Sign up](https://arsenalhero.github.io/upsc-command-center/#/signup)
 - [Reset password](https://arsenalhero.github.io/upsc-command-center/#/forgot-password)
 
-**The Supabase backend is connected; public account activation is still being completed.** The Free-plan `upsc-command-center` project is in Mumbai, and its private workspace migration is applied. The public browser configuration contains the project URL and publishable key. Website redirects and public confirmation/recovery email delivery must be configured and live-tested before public signup is considered ready. Guest tracking continues to work, and existing device records are preserved.
+**The Supabase backend is connected; public account activation is still being completed.** The Free-plan `upsc-command-center` project is in Mumbai, and its private workspace migration is applied. The public browser configuration contains the project URL and publishable key. The website URL and exact confirmation/recovery callbacks are saved, and email/password signups require email confirmation and passwords of at least eight characters. Custom email delivery must still be connected and live-tested before public signup is considered ready. Guest tracking continues to work, and existing device records are preserved.
 
 The implementation includes email/password authentication, confirmation/resend, password recovery, separate private study workspaces, queued cloud saves, pending-change backups, account cache cleanup at signout, and protection against stale saves from another device. It uses Supabase Auth and Postgres row-level security; browser-only password storage is not used.
 

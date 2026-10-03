@@ -1,6 +1,6 @@
 # Accounts and private study records
 
-The frontend stays on GitHub Pages. Supabase provides password authentication and a Postgres database. The deployed configuration is connected to the Free-plan `upsc-command-center` project in Mumbai. The private workspace migration is applied, and live database permissions reject anonymous access. Website redirects and public email delivery are still pending dashboard configuration; real signup, delivered confirmation, recovery and two-device account tests have not been completed. Guest tracking remains available. No passwords are stored by the app's study-data repository.
+The frontend stays on GitHub Pages. Supabase provides password authentication and a Postgres database. The deployed configuration is connected to the Free-plan `upsc-command-center` project in Mumbai. The private workspace migration is applied, and live database permissions reject anonymous access. The Site URL and the two exact confirmation/recovery URLs below are saved. Public email/password signups are enabled with email confirmation required and an eight-character password minimum. Custom SMTP is not configured, so public email delivery and real signup, delivered confirmation, recovery and two-device account tests remain pending. Guest tracking remains available. No passwords are stored by the app's study-data repository.
 
 ## Activate a project
 
