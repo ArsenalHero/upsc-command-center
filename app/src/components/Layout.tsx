@@ -42,6 +42,8 @@ import { useWorkspaceSync } from "../hooks/useWorkspaceSync";
 import { Modal, ConfirmDialog, ProgressBar } from "./ui";
 import type { Collection, Entity } from "../types";
 import { prettyDate, dateKey, daysBetween } from "../utils/date";
+import { workspaceExamLabel } from "../utils/examSettings";
+import { WorkspaceExamDialog } from "./WorkspaceExamDialog";
 export const navigation = [
   { label: "Dashboard", path: "/", icon: LayoutDashboard, group: "WORKSPACE" },
   {
@@ -217,7 +219,8 @@ export default function Layout() {
   const [drawer, setDrawer] = useState(false),
     [search, setSearch] = useState(false),
     [quick, setQuick] = useState(false),
-    [confirm, setConfirm] = useState(false);
+    [confirm, setConfirm] = useState(false),
+    [examDialog, setExamDialog] = useState(false);
   const location = useLocation();
   const current =
     navigation.find((n) => n.path === location.pathname) || navigation[0];
@@ -257,10 +260,11 @@ export default function Layout() {
           <small>COMMAND CENTER</small>
         </div>
       </div>
-      <div className="workspace-label">
+      <button type="button" className="workspace-label" aria-label="Choose personal workspace exam" onClick={() => { setDrawer(false); setExamDialog(true); }}>
         <span>Personal workspace</span>
-        <strong>CSE {data.settings.year}</strong>
-      </div>
+        <strong title={workspaceExamLabel(data.settings)}>{workspaceExamLabel(data.settings)}</strong>
+        <ChevronRight size={13} />
+      </button>
       <nav aria-label="Main navigation" className="side-nav">
         {["WORKSPACE", "PREPARATION", "PRACTICE", "REVIEW", "SETTINGS"].map(
           (group) => (
@@ -519,6 +523,7 @@ export default function Layout() {
         </button>
       </nav>
       {search && <GlobalSearch onClose={() => setSearch(false)} />}
+      {examDialog && <WorkspaceExamDialog onClose={() => setExamDialog(false)} />}
       <div className="toast-region" aria-live="polite" aria-atomic="true">
         {toast && (
           <div className="toast">

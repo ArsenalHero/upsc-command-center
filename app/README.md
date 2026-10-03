@@ -13,13 +13,14 @@ npm ci
 npm run dev
 ```
 
-Open the local address printed by Vite (port 4173 by default). First launch shows the login/signup page; choose Continue as guest to use device storage. Opening a new workspace shows a skippable six-step setup wizard. Enter your target year, Optional, daily study target, planned exam dates, weekly practice goals, and allocation percentages. Exam dates start blank; enter dates from your official calendar.
+Open the local address printed by Vite (port 4173 by default). First launch shows the login/signup page; choose Continue as guest to use device storage. Opening a new workspace shows a skippable six-step setup wizard. Choose UPSC CSE or State PSC, then enter your Optional, study targets, exam dates, practice goals, and allocation percentages. CSE 2027 uses the supplied 23 May Prelims and 20 August Mains dates; dates remain editable. State PSC requires your exam name and date.
 
 Choose **Explore with fictional demo data** during setup or **Settings → Load Demo Data** to explore a realistic six-month preparation history. Demo mode is clearly labeled. Loading demo data replaces the current workspace after confirmation if records already exist. Export a backup first. Clear Demo Data removes fictional records, clears unchanged fictional exam dates, and resets untouched seeded syllabus progress; personal entries, edited topics, and needed resource/series references remain.
 
 ## Main features
 
-- Optional spaced repetition in Revision: On/Off radio buttons, a saved 1–365 day interval, and automatic next reviews when a revision is completed. Completed history, calendar entries and JSON/CSV exports are preserved. See [revision rules](docs/REVISION.md).
+- Optional spaced repetition in Revision: a five-review 1–7–14–30–90 preset, custom 1–365 day intervals, an Off option, and automatic next reviews on completion. Existing custom preferences, completed history, calendar entries and JSON/CSV exports are preserved. See [revision rules](docs/REVISION.md).
+- Personal workspace exam selection for UPSC CSE or a named State PSC, editable dates, and live days/hours/minutes/seconds dashboard countdowns to the start of the exam date in IST. Switching exams keeps study data and both configurations. See [exam settings](docs/EXAMS.md).
 
 - PYQ bank: complete 2025 GS-I 100 + CSAT 80 with official keys, plus 1,173 uploaded Polity questions separated into UPSC CSE, State PSC, CDS/CAPF and Unlabelled collections. State/exam/year/stage filters, supplied explanations, five-choice support, saved answers/times/notes, reports and revision lists. See [PYQ sources and coverage](docs/PYQS.md).
 

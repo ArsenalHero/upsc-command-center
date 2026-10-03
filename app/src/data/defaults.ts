@@ -1,5 +1,6 @@
 import type { AppData, Subject, Topic, Settings } from "../types";
 import { dateKey } from "../utils/date";
+import { cseExamDates } from "../utils/examSettings";
 export const COLORS = [
   "#3158eb",
   "#865de5",
@@ -11,10 +12,13 @@ export const COLORS = [
   "#ae72c0",
 ];
 export const defaultSettings: Settings = {
-  spacedRepetition: { enabled: false, days: 7 },
+  spacedRepetition: { enabled: false, days: 7, mode: "preset" },
+  examType: "UPSC CSE",
+  statePscName: "",
+  statePscDate: "",
   year: new Date().getFullYear() + 1,
-  prelimsDate: "",
-  mainsDate: "",
+  prelimsDate: cseExamDates[new Date().getFullYear() + 1]?.prelims || "",
+  mainsDate: cseExamDates[new Date().getFullYear() + 1]?.mains || "",
   optional: "Sociology",
   dailyHours: 8,
   weeklyHours: 48,
@@ -375,6 +379,7 @@ export function createEmptyData(): AppData {
     schemaVersion: 1,
     settings: {
       ...defaultSettings,
+      spacedRepetition: { ...defaultSettings.spacedRepetition! },
       allocation: { ...defaultSettings.allocation },
       weights: { ...defaultSettings.weights },
     },

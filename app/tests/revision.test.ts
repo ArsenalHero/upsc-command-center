@@ -71,3 +71,54 @@ test("older workspaces stay opt-in; backups and revision CSV preserve settings a
     assert.equal(invalid.revisions[0].completedDate, ""); assert.equal(invalid.revisions.length, 1);
   }
 });
+
+test("the preset schedules days 1, 7, 14, 30 and 90 then finishes after five reviews", () => {
+  const data = fixture(); data.settings.spacedRepetition!.mode = "preset";
+  let review = completeRevision(data, "first-review", "2026-10-03").next!;
+  for (const [step, dueDate] of ["2026-10-04", "2026-10-10", "2026-10-17", "2026-11-02", "2027-01-01"].entries()) {
+    assert.equal(review.dueDate, dueDate); assert.equal(review.repetitionStep, step);
+    const result = completeRevision(data, review.id, dueDate);
+    if (step < 4) { assert.equal(result.created, true); review = result.next!; }
+    else { assert.equal(result.created, false); assert.equal(result.next, undefined); }
+  }
+  assert.equal(data.revisions.length, 6); assert.ok(data.revisions.every(r => r.completedDate));
+  const restored = validateData(JSON.parse(JSON.stringify(data)));
+  assert.equal(restored.revisions[5].repetitionStep, 4);
+  assert.match(buildCSV(restored, "revisions"), /"repetitionStep"/);
+});
+
+test("late preset completions shift the next review forward and preserve the current sequence step", () => {
+  const data = fixture(); data.settings.spacedRepetition!.mode = "preset";
+  const first = completeRevision(data, "first-review", "2026-10-03").next!;
+  const second = completeRevision(data, first.id, "2026-10-08").next!;
+  assert.equal(second.dueDate, "2026-10-14"); assert.equal(second.repetitionStep, 1);
+  assert.equal(first.dueDate, "2026-10-04"); assert.equal(first.completedDate, "2026-10-08");
+  assert.equal(completeRevision(data, second.id, "2026-10-14").next!.dueDate, "2026-10-21");
+});
+
+test("preset progress survives a matching manual review and switching to custom starts the chosen interval", () => {
+  const data = fixture(); data.settings.spacedRepetition!.mode = "preset";
+  data.revisions.push({ ...data.revisions[0], id: "manual", dueDate: "2026-10-04" });
+  const first = completeRevision(data, "first-review", "2026-10-03").next!;
+  assert.equal(first.id, "manual"); assert.equal(first.repetitionStep, 0); assert.equal(data.revisions.length, 2);
+  const second = completeRevision(data, first.id, "2026-10-04").next!;
+  assert.equal(second.dueDate, "2026-10-10");
+  data.settings.spacedRepetition = { enabled: true, mode: "custom", days: 3 };
+  const custom = completeRevision(data, second.id, "2026-10-10").next!;
+  assert.equal(custom.dueDate, "2026-10-13"); assert.equal(custom.repetitionStep, undefined);
+  data.settings.spacedRepetition.mode = "preset";
+  assert.equal(completeRevision(data, custom.id, "2026-10-13").next!.dueDate, "2026-10-14");
+});
+
+test("invalid preset modes and review steps are rejected before completion changes are saved", () => {
+  for (const step of [-1, 5, 1.5, "1", NaN] as any[]) {
+    const data = fixture(); data.revisions[0].repetitionStep = step;
+    assert.throws(() => validateData(data), /preset review step/);
+    assert.throws(() => completeRevision(data, "first-review", "2026-10-03"), /preset review step/);
+    assert.equal(data.revisions[0].completedDate, "");
+  }
+  const data = fixture(); (data.settings.spacedRepetition as any).mode = "unknown";
+  assert.throws(() => validateData(data), /Spaced repetition/);
+  assert.throws(() => completeRevision(data, "first-review", "2026-10-03"), /preset or custom/);
+  assert.equal(data.revisions[0].completedDate, "");
+});

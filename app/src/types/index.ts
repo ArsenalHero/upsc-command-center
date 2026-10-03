@@ -283,6 +283,7 @@ export interface Revision {
   stage: RevisionStage;
   notes: string;
   repeatOf?: string;
+  repetitionStep?: number;
   demo?: boolean;
 }
 export interface Resource {
@@ -326,7 +327,10 @@ export type GoalMetric =
 export type WeightKey =
   "target" | "focus" | "accuracy" | "revision" | "questions" | "answers";
 export interface Settings {
-  spacedRepetition?: { enabled: boolean; days: number };
+  spacedRepetition?: { enabled: boolean; days: number; mode?: "preset" | "custom" };
+  examType?: "UPSC CSE" | "State PSC";
+  statePscName?: string;
+  statePscDate?: string;
   year: number;
   prelimsDate: string;
   mainsDate: string;

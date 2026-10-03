@@ -32,36 +32,45 @@ import {
 } from "../components/ui";
 import { RecordTable } from "../components/RecordTable";
 import { TopicDetail } from "../components/TopicDetail";
-import { defaultSpacedRepetition, validRepetitionDays } from "../utils/revision";
+import { defaultSpacedRepetition, validRepetitionDays, presetReviewDays } from "../utils/revision";
 
 function SpacedRepetition() {
   const { data, updateSettings, notify } = useData();
   const saved = data.settings.spacedRepetition || defaultSpacedRepetition;
-  const [enabled, setEnabled] = useState(saved.enabled), [days, setDays] = useState(String(saved.days));
-  useEffect(() => { setEnabled(saved.enabled); setDays(String(saved.days)); }, [saved.enabled, saved.days]);
+  const savedMode = saved.mode || "custom";
+  const [enabled, setEnabled] = useState(saved.enabled), [days, setDays] = useState(String(saved.days)),
+    [mode, setMode] = useState<"preset" | "custom">(savedMode);
+  useEffect(() => { setEnabled(saved.enabled); setDays(String(saved.days)); setMode(savedMode); }, [saved.enabled, saved.days, savedMode]);
   const valid = days.trim() !== "" && validRepetitionDays(Number(days));
-  const dirty = enabled !== saved.enabled || (enabled && Number(days) !== saved.days);
+  const dirty = enabled !== saved.enabled || mode !== savedMode || (enabled && mode === "custom" && Number(days) !== saved.days);
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (enabled && !valid) return;
-    if (updateSettings({ ...data.settings, spacedRepetition: { enabled, days: valid ? Number(days) : saved.days } }))
+    if (enabled && mode === "custom" && !valid) return;
+    if (updateSettings({ ...data.settings, spacedRepetition: { enabled, mode, days: valid ? Number(days) : saved.days } }))
       notify("Spaced repetition settings saved.");
   };
   return <section className="card spaced-repetition" aria-labelledby="spaced-repetition-title">
     <div className="spaced-repetition-copy">
       <span className="eyebrow">BUILD A RECALL ROUTINE</span>
       <h2 id="spaced-repetition-title">Spaced repetition</h2>
-      <p>Complete a revision and the same topic is automatically scheduled again after your chosen number of days.</p>
-      <p className="small spaced-repetition-status" aria-live="polite"><Badge tone={saved.enabled ? "green" : "gray"}>{saved.enabled ? "On" : "Off"}</Badge>{saved.enabled ? `Saved interval: ${saved.days} ${saved.days === 1 ? "day" : "days"} after completion.` : "Turn it on when you want automatic repetition."}</p>
+      <p>Turn on the preset for five spaced reviews, or choose your own repeating interval. Each completed revision schedules the next review automatically.</p>
+      <ol className="repetition-sequence" aria-label="Preset review days">{presetReviewDays.map(day => <li key={day}><strong>{day}</strong><span>{day === 1 ? "day" : "days"}</span></li>)}</ol>
+      <p className="small spaced-repetition-status" aria-live="polite"><Badge tone={saved.enabled ? "green" : "gray"}>{saved.enabled ? "On" : "Off"}</Badge>{saved.enabled
+        ? savedMode === "preset" ? "Saved preset: days 1, 7, 14, 30 and 90." : `Saved interval: ${saved.days} ${saved.days === 1 ? "day" : "days"} after completion.`
+        : "Turn it on when you want automatic repetition."}</p>
     </div>
     <form onSubmit={submit} className="spaced-repetition-form">
       <fieldset><legend>Automatic repetition</legend><div className="spaced-repetition-radios">
         <label><input type="radio" name="spaced-repetition" aria-label="Spaced repetition off" checked={!enabled} onChange={() => setEnabled(false)} />Off</label>
-        <label><input type="radio" name="spaced-repetition" aria-label="Spaced repetition on" checked={enabled} onChange={() => setEnabled(true)} />On</label>
+        <label><input type="radio" name="spaced-repetition" aria-label="Spaced repetition on" checked={enabled && mode === "preset"} onChange={() => { setEnabled(true); setMode("preset"); }} />On · 1–7–14–30–90</label>
+        <label><input type="radio" name="spaced-repetition" aria-label="Custom repetition interval" checked={enabled && mode === "custom"} onChange={() => { setEnabled(true); setMode("custom"); }} />Custom</label>
       </div></fieldset>
-      <div className="spaced-repetition-interval"><label>Repeat after<input type="number" aria-label="Repetition interval in days" aria-describedby="spaced-repetition-help" min={1} max={365} step={1} required={enabled} disabled={!enabled} value={days} onChange={e => setDays(e.target.value)} /></label><span>days</span></div>
-      <button className="btn primary" type="submit" disabled={!dirty || (enabled && !valid)}><RotateCcw size={16} />Save settings</button>
-      <p className="small muted spaced-repetition-help" id="spaced-repetition-help">{enabled && !valid ? "Enter a whole number from 1 to 365 days." : dirty ? "Save settings to apply your choice." : saved.enabled ? `Complete a revision today → next revision ${prettyDate(addDays(dateKey(), saved.days))}.` : "Your choice applies to future revision completions."}</p>
+      <div className="spaced-repetition-interval"><label>Custom repeat after<input type="number" aria-label="Repetition interval in days" aria-describedby="spaced-repetition-help" min={1} max={365} step={1} required={enabled && mode === "custom"} disabled={!enabled || mode !== "custom"} value={days} onChange={e => setDays(e.target.value)} /></label><span>days</span></div>
+      <button className="btn primary" type="submit" disabled={!dirty || (enabled && mode === "custom" && !valid)}><RotateCcw size={16} />Save settings</button>
+      <p className="small muted spaced-repetition-help" id="spaced-repetition-help">{enabled && mode === "custom" && !valid ? "Enter a whole number from 1 to 365 days." : dirty ? "Save settings to apply your choice." : saved.enabled
+        ? savedMode === "preset" ? "On-time reviews fall on days 1, 7, 14, 30 and 90 after your first completion. Late completions shift later dates forward. The sequence ends after five reviews."
+          : `Complete a revision today → next revision ${prettyDate(addDays(dateKey(), saved.days))}.`
+        : "Your choice applies to future revision completions. Existing schedules stay in your calendar."}</p>
     </form>
   </section>;
 }
@@ -247,7 +256,7 @@ export default function Revision() {
                           ? "Due today"
                           : "Upcoming"}
                   </Badge>
-                  {r.repeatOf && <Badge tone="blue">Spaced repetition</Badge>}
+                  {r.repeatOf && <Badge tone="blue">Spaced repetition{r.repetitionStep === undefined ? "" : ` · Review ${r.repetitionStep + 1}/5`}</Badge>}
                   <button
                     className="topic-name"
                     onClick={() => setTopicId(r.topicId)}

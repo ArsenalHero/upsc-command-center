@@ -12,7 +12,11 @@ Individual practice continues through the selected paper, with a Next question a
 
 ## Spaced repetition
 
-In **Revision**, choose **On**, enter an interval of 1–365 whole days and select **Save settings**. Completing a revision schedules the same topic again after that interval, measured from the actual completion date. Completed records stay in history; repeat entries appear in the calendar. The saved preference is optional and defaults to Off. Changing it affects future completions; already scheduled reviews remain available. See [revision rules](app/docs/REVISION.md).
+In **Revision**, choose **On · 1–7–14–30–90** for five reviews targeting those days after the first completed revision. Each completion schedules the next review; late completions shift later dates forward. Choose **Custom** for a repeating interval of 1–365 whole days, or **Off** to stop further repeats. Select **Save settings** to apply your choice. Completed history and existing schedules remain available; preferences stay optional and older custom intervals are preserved. See [revision rules](app/docs/REVISION.md).
+
+## Personal workspace and exam countdowns
+
+Select **Personal workspace** in the sidebar to choose **UPSC CSE** or **State PSC**. State PSC asks for your exam name and exam date. The dashboard shows the selected State PSC target, or both CSE Prelims and Mains targets, with a live days/hours/minutes/seconds countdown. CSE 2027 uses the supplied dates of 23 May and 20 August; every date is editable. Countdowns target 00:00 IST on the exam date, not a paper start time. Switching exams preserves both configurations and saved study data. The same controls are available in setup and Settings. See [exam settings](app/docs/EXAMS.md).
 
 ## Lectures
 

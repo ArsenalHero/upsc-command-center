@@ -41,6 +41,9 @@ async function radio(enabled) {
   const el = current.w.document.querySelector(`[aria-label="Spaced repetition ${enabled ? "on" : "off"}"]`);
   assert.ok(el); el.click(); await wait();
 }
+async function custom() {
+  current.w.document.querySelector('[aria-label="Custom repetition interval"]').click(); await wait();
+}
 async function setInput(el,value) {
   assert.ok(el && !el.disabled); const w=current.w;
   const prototype = el.tagName === "SELECT" ? w.HTMLSelectElement.prototype : w.HTMLInputElement.prototype;
@@ -53,11 +56,12 @@ try {
   await ready();
   assert.equal(current.w.document.querySelector('[aria-label="Spaced repetition off"]').checked,true);
   assert.equal(interval().disabled,true);
-  await radio(true); await setInput(interval(),"0");
+  await radio(true); assert.equal(interval().disabled,true);
+  await custom(); await setInput(interval(),"0");
   assert.equal(current.w.document.querySelector('.spaced-repetition button[type="submit"]').disabled,true);
   assert.equal(current.data().settings.spacedRepetition,undefined);
   await setInput(interval(),"7"); await click("Save settings");
-  assert.deepEqual(current.data().settings.spacedRepetition,{enabled:true,days:7});
+  assert.deepEqual(current.data().settings.spacedRepetition,{enabled:true,mode:"custom",days:7});
   assert.match(text(),/Saved interval: 7 days/);
 
   const originalSet = current.w.Storage.prototype.setItem;
@@ -72,7 +76,7 @@ try {
   assert.match(text(),/Next revision:/);
 
   current = makeDOM(current.w.localStorage.getItem(key)); doms.push(current.dom); await ready();
-  assert.equal(current.w.document.querySelector('[aria-label="Spaced repetition on"]').checked,true);
+  assert.equal(current.w.document.querySelector('[aria-label="Custom repetition interval"]').checked,true);
   assert.equal(interval().value,"7"); assert.equal(current.data().revisions.length,4);
   const calendarDay = [...current.w.document.querySelectorAll(".calendar-day")].find(el => el.getAttribute("aria-label").startsWith(prettyDate(addDays(today,7),{day:"numeric",month:"long"})+","));
   assert.ok(calendarDay); calendarDay.click(); await wait();
@@ -84,7 +88,7 @@ try {
   assert.equal(current.data().revisions.length,4);
   assert.equal(current.data().revisions.find(r=>r.id===repeated.id).completedDate,today);
 
-  await radio(true); await setInput(interval(),"3"); await click("Save settings"); await click("Today");
+  await custom(); await setInput(interval(),"3"); await click("Save settings"); await click("Today");
   await click("Complete",agenda());
   repeated = current.data().revisions.find(r => r.repeatOf === "review-2");
   assert.equal(repeated.dueDate,addDays(today,3)); assert.equal(current.data().revisions.length,5);
@@ -96,6 +100,20 @@ try {
   const completedRow = [...current.w.document.querySelectorAll(".record-table tbody tr")].find(el=>el.textContent.includes(seed.topics[0].name));
   assert.ok(completedRow); await click("Edit Revision",completedRow); await click("Save changes");
   assert.equal(current.data().revisions.length,6);
+  await radio(true); await click("Save settings");
+  assert.equal(current.data().settings.spacedRepetition.mode,"preset"); assert.equal(interval().disabled,true);
+  await click("Schedule revision");
+  let dialog = current.w.document.querySelector('dialog[open]');
+  const subject = [...dialog.querySelectorAll('label')].find(el=>el.querySelector('span')?.textContent.startsWith('Subject') && el.querySelector('select'));
+  await setInput(subject.querySelector('select'),seed.topics[3].subjectId);
+  const topic = [...dialog.querySelectorAll('label')].find(el=>el.querySelector('span')?.textContent.startsWith('Topic') && el.querySelector('select'));
+  await setInput(topic.querySelector('select'),seed.topics[3].id); await click("Save record");
+  const created = current.data().revisions.find(r=>r.topicId===seed.topics[3].id);
+  await click("Today"); await click("Complete",agenda());
+  assert.equal(current.data().revisions.find(r=>r.repeatOf===created.id).dueDate,addDays(today,1));
+  current = makeDOM(current.w.localStorage.getItem(key)); doms.push(current.dom); await ready();
+  assert.equal(current.w.document.querySelector('[aria-label="Spaced repetition on"]').checked,true);
+  assert.match(text(),/Saved preset: days 1, 7, 14, 30 and 90/);
   validateData(current.data()); assert.deepEqual(messages,[]);
-  console.log("Revision UI passed: opt-in radio controls, custom interval, invalid input, atomic save failure/retry, automatic dates, calendar visibility, reload, changed interval, disabling and completed-record edits.");
+  console.log("Revision UI passed: preset/custom/off radios, preset scheduling and reload, custom interval, invalid input, atomic save failure/retry, automatic dates, calendar visibility, changed interval, disabling and completed-record edits.");
 } finally { for(const dom of doms) dom.window.close(); }

@@ -6,7 +6,7 @@ import {
   topicStatuses,
 } from "../types";
 import { dateKey, parseDate } from "../utils/date";
-import { validRepetitionDays } from "../utils/revision";
+import { validRepetitionDays, validPresetStep } from "../utils/revision";
 export const collections: Collection[] = [
   "subjects",
   "topics",
@@ -433,6 +433,8 @@ export function validateEntity(collection: Collection, v: unknown): void {
     );
     if (r.repeatOf !== undefined)
       assert(typeof r.repeatOf === "string" && r.repeatOf.length > 0 && r.repeatOf.length <= 2000 && r.repeatOf !== r.id, "Invalid spaced repetition source.");
+    if (r.repetitionStep !== undefined)
+      assert(validPresetStep(r.repetitionStep), "Invalid preset review step.");
   }
   if (collection === "catalog")
     assert(
@@ -478,7 +480,13 @@ export function validateData(input: unknown): AppData {
   const s = d.settings;
   assert(obj(s), "Missing settings.");
   if (s.spacedRepetition !== undefined)
-    assert(obj(s.spacedRepetition) && typeof s.spacedRepetition.enabled === "boolean" && validRepetitionDays(s.spacedRepetition.days), "Spaced repetition needs an on/off setting and a whole number from 1 to 365 days.");
+    assert(obj(s.spacedRepetition) && typeof s.spacedRepetition.enabled === "boolean" && validRepetitionDays(s.spacedRepetition.days)
+      && (s.spacedRepetition.mode === undefined || ["preset", "custom"].includes(s.spacedRepetition.mode)), "Spaced repetition needs a preset or custom mode, an on/off setting and a whole number from 1 to 365 days.");
+  assert(s.examType === undefined || ["UPSC CSE", "State PSC"].includes(s.examType), "Choose UPSC CSE or State PSC.");
+  assert(s.statePscName === undefined || (typeof s.statePscName === "string" && s.statePscName.length <= 120), "State PSC exam name must be at most 120 characters.");
+  assert(s.statePscDate === undefined || validDate(s.statePscDate, true), "Invalid State PSC exam date.");
+  if (s.examType === "State PSC")
+    assert(typeof s.statePscName === "string" && s.statePscName.trim().length > 0 && validDate(s.statePscDate), "Enter the State PSC exam name and exam date.");
   for (const key of [
     "year",
     "dailyHours",

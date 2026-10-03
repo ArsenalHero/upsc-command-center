@@ -248,13 +248,22 @@ small,
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+  width: calc(100% - 32px);
+  cursor: pointer;
+  text-align: left;
 }
+.workspace-label:hover { border-color: var(--primary); }
+.workspace-label > span { flex-shrink: 0; }
+.workspace-label > svg { flex-shrink: 0; color: var(--muted); }
 .workspace-label span {
   color: var(--muted);
   font-size: 0.75rem;
 }
 .workspace-label strong {
   font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .side-nav {
   padding: 4px 13px 16px;
@@ -1850,15 +1859,38 @@ small,
 .spaced-repetition-copy p { max-width:530px; line-height:1.65; }
 .spaced-repetition-status { display:flex; gap:9px; align-items:center; flex-wrap:wrap; margin-bottom:0; }
 .spaced-repetition-form { display:flex; align-items:flex-end; gap:16px; flex-wrap:wrap; }
-.spaced-repetition-form fieldset { border:0; padding:0; margin:0; min-width:130px; }
+.spaced-repetition-form fieldset { border:0; padding:0; margin:0; min-width:130px; flex-basis:100%; }
 .spaced-repetition-form legend { margin-bottom:10px; font-size:.8rem; font-weight:600; }
-.spaced-repetition-radios { display:flex; gap:18px; min-height:42px; align-items:center; }
+.spaced-repetition-radios { display:flex; gap:14px; min-height:42px; align-items:center; flex-wrap:wrap; }
 .spaced-repetition-radios label { flex-direction:row; gap:7px; align-items:center; cursor:pointer; }
 .spaced-repetition-interval { display:flex; gap:8px; align-items:flex-end; }
 .spaced-repetition-interval label { gap:8px; }
 .spaced-repetition-interval input { width:90px; }
 .spaced-repetition-interval > span { padding-bottom:12px; font-size:.875rem; color:var(--muted); }
 .spaced-repetition-help { flex-basis:100%; margin:0; line-height:1.6; }
+.repetition-sequence { display:flex; gap:10px; list-style:none; margin:18px 0; padding:0; }
+.repetition-sequence li { flex:1; max-width:64px; display:flex; flex-direction:column; text-align:center; padding:10px 6px; border:1px solid var(--border); border-radius:10px; background:var(--surface-alt); }
+.repetition-sequence strong { font-size:1.15rem; color:var(--primary); }
+.repetition-sequence span { font-size:.68rem; color:var(--muted); }
+.exam-settings-fields + .form-note { margin-top:14px; }
+.exam-countdowns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-bottom:24px; }
+.exam-countdowns.single { grid-template-columns:minmax(0,1fr); }
+.exam-countdown { padding:22px 24px; min-width:0; }
+.exam-countdown-heading { display:flex; align-items:center; gap:12px; }
+.exam-countdown-heading > div { flex:1; min-width:0; }
+.exam-countdown-heading h2 { margin:5px 0 0; font-size:1.05rem; overflow-wrap:anywhere; }
+.exam-countdown-heading .text-btn { flex-shrink:0; font-size:.75rem; }
+.exam-countdown-heading .eyebrow { font-size:.6rem; }
+.exam-countdown-icon { width:42px; height:42px; display:grid; place-items:center; border-radius:11px; background:var(--primary-soft); color:var(--primary); flex-shrink:0; }
+.exam-countdown-date { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin:18px 0 16px; font-size:.85rem; }
+.exam-countdown-date > span { font-size:.7rem; color:var(--muted); background:var(--surface-alt); padding:3px 7px; border-radius:5px; }
+.exam-countdown-digits { display:flex; gap:14px; }
+.exam-countdown-digits > div { display:flex; flex-direction:column; align-items:center; flex:1; padding:10px 4px; border:1px solid var(--border); border-radius:10px; background:var(--surface-alt); }
+.exam-countdown-digits strong { font-size:1.7rem; font-variant-numeric:tabular-nums; line-height:1.3; color:var(--text); }
+.exam-countdown-digits span { font-size:.67rem; color:var(--muted); margin-top:4px; }
+.exam-countdown-note { display:flex; gap:6px; align-items:center; margin:14px 0 0; line-height:1.5; }
+.exam-countdowns.single .exam-countdown-digits { max-width:540px; }
+@media(max-width:780px) { .exam-countdowns { grid-template-columns:minmax(0,1fr); gap:14px; } .exam-countdown { padding:20px; } .exam-countdown-digits { gap:8px; } }
 @media(max-width:1000px) { .spaced-repetition { grid-template-columns:minmax(0,1fr); gap:20px; } }
 .calendar-weekdays {
   display: grid;

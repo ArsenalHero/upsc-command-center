@@ -25,7 +25,6 @@ import {
   addDays,
   weekStart,
   monthStart,
-  daysBetween,
   number,
   prettyDate,
 } from "../utils/date";
@@ -43,6 +42,8 @@ import {
 import { DateRangeSelector, SubjectFilter } from "../components/Filters";
 import { PriorityPanel, InsightCard } from "../components/Insights";
 import { StudyDetails } from "../components/StudyDetails";
+import { ExamCountdowns } from "../components/ExamCountdowns";
+import { selectedExam, workspaceExamLabel } from "../utils/examSettings";
 import {
   StudyHoursChart,
   SubjectDistribution,
@@ -94,8 +95,8 @@ export default function Dashboard() {
     <>
       <PageHeader
         eyebrow="YOUR PREPARATION, AT A GLANCE"
-        title="UPSC PREPARATION COMMAND CENTER"
-        description={`${prettyDate(today, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · Target ${data.settings.year}`}
+        title={selectedExam(data.settings) === "State PSC" ? "STATE PSC PREPARATION WORKSPACE" : "UPSC PREPARATION COMMAND CENTER"}
+        description={`${prettyDate(today, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · Target ${workspaceExamLabel(data.settings)}`}
         action={
           <button
             className="btn primary"
@@ -106,6 +107,7 @@ export default function Dashboard() {
           </button>
         }
       />
+      <ExamCountdowns settings={data.settings} />
       <div className="dashboard-control">
         <div className="view-tabs">
           <span className="selected">Overview</span>
@@ -236,20 +238,6 @@ export default function Dashboard() {
             label: "Study streak",
             value: `${getStreak(data)} days`,
             icon: Flame,
-          },
-          {
-            label: "Days to Prelims",
-            value: data.settings.prelimsDate
-              ? Math.max(0, daysBetween(today, data.settings.prelimsDate))
-              : "Set date",
-            icon: CalendarDays,
-          },
-          {
-            label: "Days to Mains",
-            value: data.settings.mainsDate
-              ? Math.max(0, daysBetween(today, data.settings.mainsDate))
-              : "Set date",
-            icon: CalendarDays,
           },
         ].map((m) => (
           <div key={m.label}>

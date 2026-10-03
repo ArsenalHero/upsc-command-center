@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useData } from "../hooks/useData";
+import { workspaceExamLabel } from "../utils/examSettings";
 import {
   aggregate,
   emptyFilters,
@@ -177,7 +178,7 @@ export default function Reports() {
       `UPSC ${period} report`,
       `${from} to ${to}`,
       `Comparison: ${prevFrom} to ${previousTo}`,
-      `Targets: ${data.settings.year}`,
+      `Target exam: ${workspaceExamLabel(data.settings)}`,
       "",
       ...metrics.map(
         (m) =>

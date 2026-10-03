@@ -11,6 +11,7 @@ import { useData } from "../hooks/useData";
 import type { Settings as SettingsType, WeightKey } from "../types";
 import { PageHeader, Badge } from "../components/ui";
 import { ExportImportPanel } from "../components/ExportImportPanel";
+import { ExamSettingsFields } from "../components/ExamSettingsFields";
 const targets: [keyof SettingsType, string, string][] = [
   ["dailyHours", "Daily study hours", "hours"],
   ["weeklyHours", "Weekly study hours", "hours"],
@@ -48,17 +49,8 @@ export default function Settings() {
         <div className="settings-grid">
           <section className="card settings-section">
             <h2>Exam & preparation</h2>
+            <ExamSettingsFields settings={settings} onChange={setSettings} />
             <div className="form-grid">
-              <label>
-                Target UPSC year
-                <input
-                  type="number"
-                  min={2000}
-                  max={2200}
-                  value={settings.year}
-                  onChange={(e) => change("year", Number(e.target.value))}
-                />
-              </label>
               <label>
                 Optional subject
                 <input
@@ -66,27 +58,7 @@ export default function Settings() {
                   onChange={(e) => change("optional", e.target.value)}
                 />
               </label>
-              <label>
-                Prelims date
-                <input
-                  type="date"
-                  value={settings.prelimsDate}
-                  onChange={(e) => change("prelimsDate", e.target.value)}
-                />
-              </label>
-              <label>
-                Mains date
-                <input
-                  type="date"
-                  value={settings.mainsDate}
-                  onChange={(e) => change("mainsDate", e.target.value)}
-                />
-              </label>
             </div>
-            <p className="form-note">
-              Set your planned dates from the official exam calendar. Dates are
-              left blank until you enter them.
-            </p>
           </section>
           <section className="card settings-section">
             <h2>Study & practice targets</h2>

@@ -5,10 +5,13 @@ Verified in the build environment on 2026-10-03:
 | Check | Result |
 |---|---|
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres/PYQ/revision tests | 52 passed, 0 failed |
-| Real React app rendered in JSDOM (`npm run test:ui`) | All five suites passed |
-| Spaced repetition interval, completion dates, duplicate prevention and legacy backup/export compatibility | Passed |
-| Revision On/Off radios, custom days, calendar entries, reload and atomic save failure/retry | Passed in rendered UI |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ/revision/exam tests | 61 passed, 0 failed |
+| Real React app rendered in JSDOM (`npm run test:ui`) | All six suites passed |
+| Five-review 1–7–14–30–90 preset, late completion shifts, custom switches, completion dates, duplicates and legacy backup/export compatibility | Passed |
+| Revision preset/custom/off radios, calendar entries, reload and atomic save failure/retry | Passed in rendered UI |
+| State PSC setup and personal workspace selection, required name/date, CSE defaults and preserved settings on exam switches | Passed in unit and rendered UI checks |
+| Seconds countdown, explicit IST date boundary, expired dates, reload and dashboard timer cleanup | Passed in unit and rendered UI checks |
+| Setup default eight-hour target and complete State PSC wizard | Passed in rendered UI; corrected the previous step mismatch |
 | First-time setup, empty state, demo mode and all 20 routes | Passed in rendered UI |
 | Report periods, study form persistence and fresh-DOM restoration | Passed in rendered UI |
 | Active bank scope and complete Booklet A numbering | 1,353 entries: unchanged 2025 GS I 100 + CSAT II 80, plus 1,173 uploaded Polity questions |

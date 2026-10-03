@@ -10,8 +10,9 @@ import {
 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { Modal, ProgressBar } from "./ui";
+import { ExamSettingsFields } from "./ExamSettingsFields";
 const steps = [
-  "Your target year",
+  "Your target exam",
   "Your Optional",
   "Your study rhythm",
   "Your exam dates",
@@ -55,20 +56,8 @@ export function SetupWizard() {
           <h2>{steps[step]}</h2>
           {step === 0 && (
             <>
-              <p>Which UPSC CSE attempt are you preparing for?</p>
-              <label>
-                Target year
-                <input
-                  type="number"
-                  min={2000}
-                  max={2200}
-                  required
-                  value={settings.year}
-                  onChange={(e) =>
-                    setSettings((s) => ({ ...s, year: Number(e.target.value) }))
-                  }
-                />
-              </label>
+              <p>Choose UPSC CSE or the State PSC exam you are preparing for.</p>
+              <ExamSettingsFields settings={settings} onChange={setSettings} section="selection" />
               <button
                 type="button"
                 className="btn secondary"
@@ -120,7 +109,7 @@ export function SetupWizard() {
                   type="number"
                   min={0.1}
                   max={24}
-                  step=".5"
+                  step="any"
                   required
                   value={settings.dailyHours}
                   onChange={(e) =>
@@ -135,35 +124,7 @@ export function SetupWizard() {
           )}
           {step === 3 && (
             <>
-              <p>
-                Enter dates from your official calendar, or leave them blank and
-                set them later.
-              </p>
-              <div className="form-grid">
-                <label>
-                  Prelims date
-                  <input
-                    type="date"
-                    value={settings.prelimsDate}
-                    onChange={(e) =>
-                      setSettings((s) => ({
-                        ...s,
-                        prelimsDate: e.target.value,
-                      }))
-                    }
-                  />
-                </label>
-                <label>
-                  Mains date
-                  <input
-                    type="date"
-                    value={settings.mainsDate}
-                    onChange={(e) =>
-                      setSettings((s) => ({ ...s, mainsDate: e.target.value }))
-                    }
-                  />
-                </label>
-              </div>
+              <ExamSettingsFields settings={settings} onChange={setSettings} section="dates" />
             </>
           )}
           {step === 4 && (
