@@ -25,6 +25,17 @@ export interface PYQQuestion {
   sourceUrl: string;
   keyUrl: string;
   page: number;
+  subtopic?: string;
+  difficultyLabel?: "Easy" | "Moderate" | "Difficult";
+  verification?: "verified" | "required";
+  blocks?: { type: "paragraph" | "list" | "table" | "passage"; text?: string; items?: string[]; headers?: string[]; rows?: string[][] }[];
+  explanation?: {
+    justification: string; concept: string;
+    statements?: { label: string; verdict: string; reason: string }[];
+    options?: Record<string, string>;
+    references: { title: string; url: string; section?: string }[];
+    insight?: string; elimination?: string; relatedConcepts?: string[];
+  };
   sourceImage?: string;
   imageSlices?: {
     url: string;

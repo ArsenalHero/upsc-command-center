@@ -234,6 +234,7 @@ export interface PYQRecord {
 export type PYQOutcome =
   "correct" | "incorrect" | "skipped" | "ungraded" | "written";
 export interface PYQAttemptDetails {
+  sessionMode?: "practice" | "test";
   questionId: string;
   sessionId: string;
   questionNumber: number;
@@ -345,6 +346,7 @@ export interface Settings {
 export interface AppData {
   demoDates?: { prelims: string; mains: string };
   pyqDraft?: PYQDraft;
+  prelims?: PrelimsWorkspace;
   schemaVersion: 1;
   settings: Settings;
   subjects: Subject[];
@@ -364,9 +366,27 @@ export interface AppData {
 }
 export type Collection = Exclude<
   keyof AppData,
-  "schemaVersion" | "settings" | "demoDates" | "pyqDraft"
+  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims"
 >;
 export type Entity = AppData[Collection][number];
+export interface PrelimsFilters {
+  subtopic?: string;
+  paper: string; subject: string; topic: string; difficulty: string; status: string; query: string;
+}
+export interface PrelimsResponse {
+  option: string; seconds: number; confidence: number; errorType: string; notes: string;
+  submitted: boolean; visited: boolean; review: boolean;
+  key?: { answer: string | null; status: "official" | "pending" | "dropped"; marks: number };
+}
+export interface PrelimsSession {
+  id: string; mode: "practice" | "test"; questionIds: string[]; index: number;
+  responses: Record<string, PrelimsResponse>; filters: PrelimsFilters;
+  startedAt: string; endedAt?: string; deadline?: string;
+}
+export interface PrelimsWorkspace {
+  filters: PrelimsFilters; bookmarks: string[]; review: string[];
+  session?: PrelimsSession; reports?: PrelimsSession[];
+}
 export interface Filters {
   from: string;
   to: string;

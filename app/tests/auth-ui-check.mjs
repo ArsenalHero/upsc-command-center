@@ -294,17 +294,18 @@ try {
     "Study record did not sync",
   );
   w.location.hash = "/pyqs";
-  await heading("Previous year questions");
-  w.document.querySelector('[aria-label="Practise 2024 Prelims GS-I question 1"]').click();
-  await heading("2024 · Prelims GS-I");
+  await heading("2025 Prelims PYQs");
+  w.document.querySelector('[aria-label="Practise 2025 GS I Q1"]').click();
+  await heading("2025 · Prelims GS-I");
   w.document.querySelector('input[name="pyq-option"][value="a"]').click();
   await new Promise((r) => setTimeout(r, 10));
   click("Submit answer");
   await until(() => workspaces.get(alice.id)?.payload.pyqs.length === 1, "Question attempt did not sync to Alice's account");
-  assert.equal(workspaces.get(alice.id).payload.pyqs[0].attempt.questionId, "upsc-2024-prelims-gs1-a-001");
+  assert.equal(workspaces.get(alice.id).payload.pyqs[0].attempt.questionId, "upsc-2025-prelims-gs1-a-001");
   w.location.hash = "/account";
   await heading("Your account");
   assert.match(w.document.body.textContent, /alice@example.test/);
+  await until(() => w.document.querySelector(".storage-status.sync-synced"), "Alice's final question checkpoint did not finish syncing");
   click("Sign out");
   await heading("Welcome back.");
   assert.equal(
@@ -331,6 +332,7 @@ try {
   await heading("Your account");
   assert.match(w.document.body.textContent, /bob@example.test/);
   assert.doesNotMatch(w.document.body.textContent, /alice@example.test/);
+  await until(() => w.document.querySelector(".storage-status.sync-synced"), "Bob's setup did not finish syncing");
   click("Sign out");
   await heading("Welcome back.");
   const recovery = makeDOM(

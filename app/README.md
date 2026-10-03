@@ -19,6 +19,8 @@ Choose **Explore with fictional demo data** during setup or **Settings → Load 
 
 ## Main features
 
+- 2025-only Prelims PYQ bank: GS-I 100 + CSAT 80, text/tables/passages, official keys, practice and timed tests, saved answers/times/notes, reports and revision lists. See [PYQ sources and coverage](docs/PYQS.md).
+
 - Sign-up, login, signup confirmation/resend, password recovery, and an Account page for cloud sync, backup, importing guest data, and signout.
 - 19 preparation routes plus Account: Dashboard, Daily Study, Syllabus, Prelims, Mains, Optional, CSAT, Current Affairs, Answer Writing, Essay, MCQ Analysis, PYQs, Tests, Revision, Weak Areas, Goals, Reports, Resources, and Settings.
 - Full study form with start/end times, stage/paper, subject/topic/subtopic, resource/activity, planned and actual minutes, questions, marks, PYQs, answers, revision, focus, energy, difficulty, distraction, notes, gaps, and next revision date.

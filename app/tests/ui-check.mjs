@@ -142,7 +142,7 @@ const headings = [
   "Answer writing",
   "Essay practice",
   "MCQ analysis",
-  "Previous year questions",
+  "2025 Prelims PYQs",
   "Test series",
   "Revision planner",
   "Weak areas & knowledge health",

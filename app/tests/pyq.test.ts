@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { createEmptyData } from "../src/data/defaults";
 import {
   ActiveTimer,
@@ -21,11 +21,9 @@ const bank: PYQQuestion[] = JSON.parse(
 );
 const subjects = createEmptyData().subjects;
 const official = bank.find((q) => q.keyStatus === "official")!;
-const pending = bank.find(
-  (q) => q.stage === "Prelims" && q.keyStatus === "pending",
-)!;
-const dropped = bank.find((q) => q.keyStatus === "dropped")!;
-const mains = bank.find((q) => q.stage === "Mains")!;
+const pending = { ...official, id: "fixture-pending", answer: null, keyStatus: "pending" as const };
+const dropped = { ...official, id: "fixture-dropped", answer: null, keyStatus: "dropped" as const };
+const mains = { ...official, id: "fixture-mains", stage: "Mains" as const, answer: null, keyStatus: "pending" as const, marks: 10, wordLimit: 150 };
 const today = dateKey();
 const draft = (q: PYQQuestion, session = "practice") => ({
   ...newDraft([q.id], session),
@@ -33,55 +31,27 @@ const draft = (q: PYQQuestion, session = "practice") => ({
   selectedOption: q.answer || "a",
 });
 
-test("bank has complete numbered papers and local original images with valid crops", () => {
-  assert.equal(bank.length, 220);
-  assert.equal(new Set(bank.map((q) => q.id)).size, 220);
-  for (const [year, stage, count] of [
-    [2024, "Prelims", 100],
-    [2025, "Prelims", 100],
-    [2025, "Mains", 20],
-  ] as const) {
-    const qs = bank.filter((q) => q.year === year && q.stage === stage);
-    assert.deepEqual(
-      qs.map((q) => q.number).sort((a, b) => a - b),
-      Array.from({ length: count }, (_, i) => i + 1),
-    );
-  }
-  assert.deepEqual(
-    bank.filter((q) => q.keyStatus === "dropped").map((q) => q.number),
-    [20, 52, 57],
-  );
-  for (const q of bank) {
-    assert.ok(q.question.trim().length > 10);
-    assert.ok(
-      subjects.some((s) => s.name === q.subject),
-      q.subject,
-    );
-    if (q.stage === "Mains") {
-      assert.equal(q.marks, q.number <= 10 ? 10 : 15);
-      assert.equal(q.wordLimit, q.number <= 10 ? 150 : 250);
-    } else {
-      assert.ok(q.imageSlices?.length, q.id);
-      assert.equal(q.booklet, "A");
-      for (const s of q.imageSlices!) {
-        assert.ok(
-          existsSync(new URL(`../public/${s.url}`, import.meta.url)),
-          s.url,
-        );
-        const image = readFileSync(new URL(`../public/${s.url}`, import.meta.url));
-        assert.ok(image.length > 1000, `Empty or incomplete paper image: ${s.url}`);
-        assert.equal(image.subarray(0, 4).toString(), "RIFF");
-        assert.equal(image.subarray(8, 12).toString(), "WEBP");
-        assert.ok(s.x >= 0 && s.y >= 0 && s.width > 0 && s.height > 0);
-        assert.ok(
-          s.x + s.width <= s.imageWidth + 2 &&
-            s.y + s.height <= s.imageHeight + 2,
-          q.id,
-        );
-      }
+test("bank contains only the complete text-only 2025 GS and CSAT papers with official A keys", () => {
+  assert.equal(bank.length, 180);
+  assert.equal(new Set(bank.map(q => q.id)).size, 180);
+  for (const [stage, count, marks] of [["Prelims", 100, 2], ["CSAT", 80, 2.5]] as const) {
+    const qs = bank.filter(q => q.stage === stage);
+    assert.deepEqual(qs.map(q => q.number), Array.from({length: count}, (_, i) => i+1));
+    for (const q of qs) {
+      assert.equal(q.year, 2025); assert.equal(q.booklet, "A"); assert.equal(q.marks, marks);
+      assert.equal(q.keyStatus, "official"); assert.ok(["a","b","c","d"].includes(q.answer!));
+      assert.equal(q.verification, "verified"); assert.deepEqual(Object.keys(q.options), ["a","b","c","d"]);
+      assert.ok(q.blocks?.length); assert.ok(q.question.length > 10); assert.ok(q.sourceUrl.startsWith("https://")); assert.ok(q.keyUrl.startsWith("https://"));
+      assert.equal(q.imageSlices, undefined); assert.equal(q.sourceImage, undefined);
+      for (const value of Object.values(q.options)) assert.ok(value.trim());
     }
-    assert.equal(q.keyStatus === "official", q.answer !== null);
   }
+  assert.equal(bank[0].answer, "b"); assert.equal(bank[100].answer, "c");
+  assert.equal(bank.filter(q => q.blocks?.some(b => b.type === "table")).length, 10);
+  assert.equal(bank.filter(q => q.blocks?.some(b => b.type === "passage")).length, 29);
+  const find = (n: number) => bank.find(q => q.stage === "CSAT" && q.number === n)!;
+  assert.match(find(26).question, /4 ≤ x ≤ 8/); assert.equal(find(25).options.d, "23");
+  assert.match(find(59).question, /8⅔/); assert.match(find(69).question, /P ≤ 3 and Q ≤ 4/);
 });
 
 test("official marking snapshots choice, key, review fields and automatically flags wrong answers", () => {

@@ -15,6 +15,7 @@ import type {
   StudySession,
   PYQRecord,
   PYQDraft,
+  PrelimsWorkspace,
 } from "../types";
 import {
   LocalStorageRepository,
@@ -24,6 +25,7 @@ import {
   validateData,
   validateEntity,
   validatePYQDraft,
+  validatePrelims,
 } from "../services/validation";
 import { createEmptyData } from "../data/defaults";
 import { createDemoData } from "../data/demo";
@@ -52,6 +54,7 @@ interface DataContextValue {
   setTopicStatus: (id: string, status: import("../types").TopicStatus) => void;
   savePYQDraft: (draft: PYQDraft | undefined) => boolean;
   submitPYQ: (record: PYQRecord, nextDraft: PYQDraft) => boolean;
+  savePrelims: (workspace: PrelimsWorkspace, attempts?: PYQRecord[]) => boolean;
 }
 const Context = createContext<DataContextValue | null>(null);
 export function DataProvider({
@@ -233,6 +236,21 @@ export function DataProvider({
     },
     [commit, notify],
   );
+  const savePrelims = useCallback((workspace: PrelimsWorkspace, attempts: PYQRecord[] = []) => {
+    try { validatePrelims(workspace); attempts.forEach(r => validateEntity("pyqs", r)); }
+    catch (e) { notify((e as Error).message); return false; }
+    return commit(d => {
+      d.prelims = structuredClone(workspace);
+      for (const record of attempts) {
+        const existing = d.pyqs.findIndex(r => r.id === record.id);
+        if (existing < 0) d.pyqs.push({ ...record, demo: false });
+        else if (d.pyqs[existing].attempt && record.attempt) {
+          const old = d.pyqs[existing];
+          d.pyqs[existing] = { ...old, conceptGap: record.conceptGap, revisionNeeded: record.revisionNeeded, attempt: { ...old.attempt!, notes: record.attempt.notes, confidence: record.attempt.confidence, errorType: record.attempt.errorType } };
+        }
+      }
+    }, true);
+  }, [commit, notify]);
   const deleteRecord = useCallback(
     (c: Collection, id: string) => {
       const ok = commit((d) => {
@@ -379,6 +397,7 @@ export function DataProvider({
         setTopicStatus,
         savePYQDraft,
         submitPYQ,
+        savePrelims,
       }}
     >
       {children}

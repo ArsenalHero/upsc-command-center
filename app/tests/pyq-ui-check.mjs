@@ -7,8 +7,8 @@ import { createEmptyData } from "../src/data/defaults.ts";
 const bank = JSON.parse(
   readFileSync(new URL("../src/data/pyq-bank.json", import.meta.url), "utf8"),
 );
-const q1 = bank.find((q) => q.year === 2024 && q.number === 1);
-const q2 = bank.find((q) => q.year === 2024 && q.number === 2);
+const q1 = bank.find((q) => q.stage === "Prelims" && q.number === 1);
+const q2 = bank.find((q) => q.stage === "Prelims" && q.number === 2);
 const built = await build({
   entryPoints: ["src/main.tsx"],
   bundle: true,
@@ -135,156 +135,102 @@ async function option(value) {
 }
 
 try {
-  await heading("Previous year questions");
-  assert.match(text(), /220 questions ready/);
-  await click("Yearwise");
-  await field("PYQ year", "2024");
-  await field("PYQ stage", "Prelims");
-  assert.equal(
-    current.w.document.querySelector(".section-heading h2").textContent,
-    "100 questions",
-  );
+  await heading("2025 Prelims PYQs");
+  assert.match(text(), /180 questions ready/);
+  await field("PYQ paper", "Prelims GS-I");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
-  await heading("2024 · Prelims GS-I");
-  assert.match(text(), /Pause timer/);
-  assert.ok(
-    current.w.document
-      .querySelector("svg image")
-      .getAttribute("href")
-      .startsWith("./pyq/2024-"),
-  );
-  current.advance(20);
-  await option(q1.answer === "a" ? "b" : "a");
-  await field("Question confidence", "2");
-  await field("Question mistake category", "Conceptual");
-  await field("Question notes", "Revisit terrestrial radiation");
-  current.visibility(true);
-  await wait();
-  assert.equal(current.data().pyqDraft.seconds, 20);
-  current.advance(300);
-  current.visibility(false);
-  await click("Resume timer");
-  current.advance(5);
+  await heading("2025 · Prelims GS-I");
+  assert.equal(current.w.document.querySelector("svg image"),null);
+  assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
+  current.advance(20); await option("a");
+  await field("Question confidence","2");
+  await field("Question mistake category","Conceptual");
+  await field("Question notes","Revisit alternative funds");
+  current.visibility(true); await wait();
+  assert.equal(current.data().prelims.session.responses[q1.id].seconds,20);
+  current.advance(300); current.visibility(false); await wait();
+  current.advance(5); await click("Submit answer");
+  assert.equal(current.data().pyqs.length,1);
+  assert.equal(current.data().pyqs[0].attempt.outcome,"incorrect");
+  assert.equal(current.data().pyqs[0].attempt.seconds,25);
+  assert.equal(current.data().pyqs[0].attempt.confidence,2);
+  assert.match(text(), /Official answer: B/);
+  await field("Question notes","Updated after checking the key");
+  assert.equal(current.data().pyqs[0].attempt.notes,"Updated after checking the key");
+  assert.equal(current.data().pyqs.length,1);
+  await click("Marked for review");
+  assert.equal(current.data().pyqs[0].revisionNeeded,false);
+  current.advance(30); await field("Question notes","No scoring or time change");
+  assert.equal(current.data().pyqs[0].attempt.seconds,25);
+  assert.equal(current.data().pyqs[0].revisionNeeded,false);
+  await click("Next question"); assert.match(text(), /Original Q2/);
+  current.advance(12); await option(q2.answer); await click("Save & exit");
+  await heading("2025 Prelims PYQs");
+  const saved=current.w.localStorage.getItem(key);
+  assert.equal(current.data().prelims.session.responses[q2.id].seconds,12);
+  current=makeDOM(saved); allDOMs.push(current.dom);
+  await heading("2025 Prelims PYQs"); await click("Resume practice");
+  await heading("2025 · Prelims GS-I");
+  assert.equal(current.w.document.querySelector('input[name="pyq-option"]:checked').value,q2.answer);
+  current.advance(3); await click("Submit answer");
+  assert.equal(current.data().pyqs.length,2); assert.equal(current.data().pyqs[1].attempt.seconds,15);
+  await click("Next question"); assert.ok(current.w.document.querySelector(".prelims-text table"));
+  assert.match(text(), /Directorate of Enforcement/);
+  current.advance(4); await click("Skip question");
+  assert.equal(current.data().pyqs[2].attempt.outcome,"skipped");
+  assert.equal(current.data().pyqs[2].attempt.seconds,4);
+  await click("Finish practice"); await heading("Your paper report");
+  assert.equal(current.data().prelims.reports.length,1);
+  await click("Back to question bank"); await click("Revision");
+  assert.match(text(), /Latest mistakes/); await click("Practise latest mistakes");
+  await heading("2025 · Prelims GS-I"); await option(q1.answer); await click("Submit answer");
+  assert.equal(current.data().pyqs.filter(p=>p.attempt.questionId===q1.id).length,2);
+  await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
+  await click("Full papers");
+  current.w.document.querySelector('.prelims-check input').click(); await wait();
+  await click("Start GS test"); await heading("2025 · Prelims GS-I");
+  assert.equal(current.data().prelims.session.questionIds.length,100);
+  assert.equal(current.data().prelims.session.deadline,undefined);
+  const before=current.data().pyqs.length;
+  await option(q1.answer); current.advance(10); await click("Next question");
+  await option(q2.answer); await click("Go to question 10");
+  assert.equal(current.data().pyqs.length,before);
+  assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
+  assert.ok(!text().includes("Official answer:"));
+  await click("Mark for review"); await click("Save & exit"); await heading("2025 Prelims PYQs");
+  await click("Resume test"); await heading("2025 · Prelims GS-I");
+  assert.match(text(), /Original Q10/); await click("Finish test"); await heading("Your paper report");
+  const report=current.data().prelims.reports.at(-1);
+  assert.ok(report.endedAt); assert.equal(report.responses[q1.id].key.answer,q1.answer);
+  assert.equal(report.responses[q1.id].seconds,10);
+  assert.ok(current.data().pyqs.length>before);
+  await click("Back to question bank"); await click("Full papers"); await click("Start CSAT test");
+  await heading("2025 · CSAT Paper II");
+  assert.equal(current.data().prelims.session.questionIds.length,80);
+  assert.match(text(), /Maintaining an ecosystem/);
+  await option("c"); await click("Finish test"); await heading("Your paper report");
+  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"correct");
+  assert.equal(current.data().pyqs.at(-1).attempt.maximum,2.5);
+  await click("Back to question bank"); await click("Browse");
+  await field("PYQ paper","Prelims GS-I"); await field("Search PYQs","Bonds Hedge Funds");
+  await click("Practise 2025 GS I Q1"); await heading("2025 · Prelims GS-I"); await option("a");
+  const previous=current.data().pyqs.length, setItem=current.w.Storage.prototype.setItem;
+  current.w.Storage.prototype.setItem=function(k,v){if(k===key)throw new Error("Storage quota full");return setItem.call(this,k,v);};
   await click("Submit answer");
-  assert.equal(current.data().pyqs.length, 1);
-  const wrong = current.data().pyqs[0];
-  assert.equal(wrong.attempt.outcome, "incorrect");
-  assert.equal(wrong.attempt.seconds, 25);
-  assert.equal(wrong.attempt.confidence, 2);
-  assert.equal(wrong.revisionNeeded, true);
-  assert.equal(current.data().pyqDraft.index, 1);
-  await field("Question notes", "Updated after checking the official key");
-  await click("Save review notes");
-  assert.equal(
-    current.data().pyqs[0].attempt.notes,
-    "Updated after checking the official key",
-  );
-  await click("Next question");
-  assert.match(text(), /Original Q2/);
-  assert.equal(
-    current.w.document.querySelector('input[name="pyq-option"]:checked'),
-    null,
-  );
-  current.advance(12);
-  await option(q2.answer);
-  await click("Save & exit");
-  await heading("Previous year questions");
-  const saved = current.w.localStorage.getItem(key);
-  assert.equal(current.data().pyqDraft.index, 1);
-  assert.equal(current.data().pyqDraft.seconds, 12);
-  assert.equal(current.data().pyqDraft.selectedOption, q2.answer);
-
-  current = makeDOM(saved);
-  allDOMs.push(current.dom);
-  await heading("Previous year questions");
-  await click("Resume practice");
-  await heading("2024 · Prelims GS-I");
-  assert.match(text(), /Original Q2/);
-  assert.equal(
-    current.w.document.querySelector('input[name="pyq-option"]:checked').value,
-    q2.answer,
-  );
-  assert.equal(
-    current.w.document.querySelector('[aria-label="Question active time"]')
-      .textContent,
-    "00:12",
-  );
-  current.advance(600);
-  await click("Submit answer");
-  assert.equal(current.data().pyqs[1].attempt.seconds, 12);
-  assert.equal(current.data().pyqs[1].attempt.outcome, "correct");
-  await click("Next question");
-  current.advance(8);
-  await click("Skip & save time");
-  assert.equal(current.data().pyqs[2].attempt.outcome, "skipped");
-  assert.equal(current.data().pyqs[2].attempt.seconds, 8);
-  await click("Save & exit");
-  await heading("Previous year questions");
-  assert.equal(
-    current.data().pyqDraft.index,
-    3,
-    "Exiting the result must not overwrite the saved next position",
-  );
-  await field("PYQ year", "2024");
-  await field("PYQ status", "incorrect");
-  assert.equal(
-    current.w.document.querySelector(".section-heading h2").textContent,
-    "1 questions",
-  );
-  await click("Reattempt wrong questions");
-  await option(q1.answer);
-  await click("Submit answer");
-  await click("Finish practice");
-  await heading("Practice complete");
-  assert.equal(current.data().pyqs.length, 4);
-  assert.equal(
-    current.data().pyqs.filter((p) => p.attempt.questionId === q1.id).length,
-    2,
-  );
-  await click("Back to question bank");
-  await click("Reset filters");
-  await click("History");
-  assert.equal(
-    current.w.document.querySelectorAll(".pyq-history-row").length,
-    4,
-  );
-
-  await click("Subjectwise");
-  await field("PYQ subject", "Economy");
-  assert.ok(current.w.document.querySelectorAll(".pyq-bank-row").length);
-  assert.ok(
-    [...current.w.document.querySelectorAll(".pyq-bank-row")].every((row) =>
-      row.textContent.includes("Economy"),
-    ),
-  );
-  await click("Reset filters");
-  await field("PYQ year", "2025");
-  await field("PYQ stage", "Prelims");
-  await click("Practise 2025 Prelims GS-I question 1");
-  await option("a");
-  await click("Submit answer");
-  assert.equal(current.data().pyqs.at(-1).attempt.outcome, "ungraded");
-  assert.equal(current.data().pyqs.at(-1).attempt.grading, "none");
-  await click("Finish practice");
-  await click("Back to question bank");
-  await field("PYQ stage", "Mains");
-  await click("Practise 2025 GS-II question 1");
-  await field("Mains PYQ answer", "My answer about the governance issue.");
-  await field("Mains self-assessed marks", "6.5");
-  current.advance(45);
-  await click("Save answer");
-  assert.equal(current.data().pyqs.at(-1).attempt.outcome, "written");
-  assert.equal(current.data().pyqs.at(-1).attempt.selfScore, 6.5);
-  assert.equal(current.data().pyqs.at(-1).attempt.seconds, 45);
-  assert.equal(
-    current.data().mcqs.length,
-    0,
-    "Practice should not write duplicate MCQ entries",
-  );
-  assert.equal(messages.length, 0, messages.join("\n"));
-  console.log(
-    "PYQ UI checks passed: subject/year filters, real-paper images, hidden-tab timer, official marking, notes, draft reload, skipped time, repeats, unmarked keys and Mains answers.",
-  );
-} finally {
-  allDOMs.forEach((dom) => dom.window.close());
-}
+  assert.equal(current.data().pyqs.length,previous);
+  assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
+  current.w.Storage.prototype.setItem=setItem; await click("Submit answer");
+  assert.equal(current.data().pyqs.length,previous+1);
+  assert.equal(new Set(current.data().pyqs.map(p=>p.id)).size,current.data().pyqs.length);
+  const expired=current.data();
+  const old=expired.prelims.session;
+  expired.prelims.session={...old,id:"expired-test",mode:"test",deadline:"2026-01-01T02:00:00Z",startedAt:"2026-01-01T00:00:00Z",responses:{[q1.id]:{option:"",seconds:0,confidence:3,errorType:"",notes:"",submitted:false,visited:true,review:false}}};
+  delete expired.prelims.session.endedAt;
+  current=makeDOM(JSON.stringify(expired)); allDOMs.push(current.dom);
+  await heading("2025 Prelims PYQs"); await click("Resume test"); await heading("Your paper report");
+  assert.ok(current.data().prelims.session.endedAt);
+  assert.equal(current.data().prelims.reports.at(-1).id,"expired-test");
+  assert.deepEqual(messages,[]);
+  console.log("2025 PYQ UI passed: text/tables/passages, practice, active time, reload, metadata, skips, repeats, test secrecy, report, CSAT, failed-save recovery.");
+} finally { for(const dom of allDOMs) dom.window.close(); }

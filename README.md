@@ -6,9 +6,9 @@ A study tracker for UPSC preparation: syllabus, sessions, goals, practice, tests
 
 ## PYQ practice
 
-The [PYQ section](https://arsenalhero.github.io/upsc-command-center/#/pyqs) includes 220 questions: complete Prelims GS-I Set A papers from 2024 and 2025, and the complete 2025 Mains GS-II paper. Browse by subject or year, run a timed practice set, resume a saved draft, filter wrong answers or revision flags, and export full attempt history. Every submitted attempt keeps the selected answer, marking basis, active time, confidence, difficulty, mistake category and review notes. Repeat attempts remain separate.
+The [PYQ section](https://arsenalhero.github.io/upsc-command-center/#/pyqs) contains **2025 only**: 100 Prelims GS-I and 80 CSAT Booklet A questions, displayed as selectable text with original statements, tables and passages. Filter by subject, topic, subtopic, difficulty and status; practise a set or take a full paper with an optional 2-hour deadline. Both official answer keys are connected, including one-third negative marking.
 
-2024 Prelims uses the UPSC answer key; its three dropped questions are excluded from accuracy. The 2025 Prelims key is not connected in this version, so those results are explicitly unmarked or self-assessed. Mains supports written answers and optional self-assessed marks. Prelims practice displays the original paper images, with an OCR transcript for search/accessibility. Other years and papers are not yet included. See [sources and data rules](app/docs/PYQS.md).
+Each attempt saves its answer, result, active time, confidence, mistake category, notes and review flag. Tests hide feedback until submission; drafts resume after reload, completed reports show score and performance breakdowns, and revision lists keep mistakes/bookmarks. Repeat attempts preserve history. Earlier years and Mains records remain in History and backups. All 80 CSAT and nine GS questions have checked study explanations; remaining GS reasoning is visibly awaiting verification. See [sources and data rules](app/docs/PYQS.md).
 
 ## Account pages
 
@@ -46,6 +46,6 @@ Account and guest records are separate. Importing a guest workspace into an acco
 
 ## Checks
 
-The test suite includes analytics/validation/storage checks, PYQ paper completeness and grading, timer accounting, backups and exports, account cache isolation, failed-save retry, serialized writes, captured owner tokens, and actual PostgreSQL migration/permission tests with PGlite. Auth UI tests use the real Supabase SDK against a simulated API and cover signup, confirmation/resend, recovery callbacks, password changes, login/logout, study sync, and two-user isolation. PYQ UI tests cover subject/year filters, real-paper image references, hidden-tab timing, official marking, resumed drafts, review notes, skips, repeat history and Mains writing.
+The test suite includes analytics/validation/storage checks, PYQ paper completeness and grading, timer accounting, backups and exports, account cache isolation, failed-save retry, serialized writes, captured owner tokens, and actual PostgreSQL migration/permission tests with PGlite. Auth UI tests use the real Supabase SDK against a simulated API and cover signup, confirmation/resend, recovery callbacks, password changes, login/logout, study sync, and two-user isolation. PYQ UI tests cover combined filters, selectable text/tables/passages, hidden-tab timing, official marking, resumed drafts, review edits, skips, repeat history, test feedback secrecy, CSAT marking, expired deadlines and atomic failed-save recovery. Older Mains records remain covered by compatibility tests.
 
 These checks do not establish live Supabase setup or email delivery. Real browser visual checks and public signup/recovery checks remain part of activation. See [verification notes](app/docs/VERIFICATION-RESULTS.md) and [full app guide](app/README.md).

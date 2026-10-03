@@ -1,1176 +1,140 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  Play,
-  Pause,
-  ChevronRight,
-  ChevronLeft,
-  Search,
-  Download,
-  BookOpen,
-  Clock3,
-  CheckCircle2,
-  RotateCcw,
-  Flag,
-  ExternalLink,
-  Plus,
-} from "lucide-react";
+import { Bookmark, BookOpen, ChevronLeft, ChevronRight, Clock3, Download, Flag, Pause, Play, RotateCcw } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { useAuth } from "../hooks/useAuth";
-import type { PYQDraft, PYQRecord } from "../types";
+import { PageHeader, DashboardCard } from "../components/ui";
+import { exportCSV, exportJSON } from "../services/export";
+import type { PrelimsFilters, PrelimsResponse, PrelimsSession, PrelimsWorkspace, PYQRecord } from "../types";
 import { errorTypes } from "../types";
-import {
-  PageHeader,
-  DashboardCard,
-  Badge,
-  ProgressBar,
-  EmptyState,
-} from "../components/ui";
-import { RecordTable } from "../components/RecordTable";
-import { exportCSV } from "../services/export";
-import { prettyDate, round } from "../utils/date";
-import {
-  ActiveTimer,
-  attemptStats,
-  formatSeconds,
-  latestAttempts,
-  makeAttempt,
-  newDraft,
-  nextDraft,
-  type PYQQuestion,
-} from "../utils/pyq";
+import { ActiveTimer, attemptStats, formatSeconds, latestAttempts, type PYQQuestion } from "../utils/pyq";
+import { emptyFilters, emptyPrelims, emptyResponse, filterQuestions, keySnapshot, responseAttempt, sessionReport, shuffled, startSession } from "../utils/prelims";
 import bankData from "../data/pyq-bank.json";
 const bank = bankData as PYQQuestion[];
-const byId = new Map(bank.map((q) => [q.id, q]));
-const outcomes: Record<string, string> = {
-  correct: "Right",
-  incorrect: "Wrong",
-  skipped: "Skipped",
-  ungraded: "Unmarked",
-  written: "Written",
-};
-const tone = (outcome: string) =>
-  outcome === "correct"
-    ? "green"
-    : outcome === "incorrect"
-      ? "red"
-      : outcome === "skipped"
-        ? "amber"
-        : "blue";
-const original =
-  "https://www.upsc.gov.in/examinations/previous-question-papers";
-function OriginalQuestion({ q }: { q: PYQQuestion }) {
-  return (
-    <div className="pyq-question-text">
-      {q.imageSlices?.length ? (
-        <>
-          <div className="pyq-paper-images">
-            {q.imageSlices.map((slice, i) => (
-              <svg
-                key={i}
-                viewBox={`${slice.x} ${slice.y} ${slice.width} ${slice.height}`}
-                role="img"
-                aria-label={
-                  i === 0
-                    ? `Original UPSC question ${q.number}. ${q.question}`
-                    : "Question continued"
-                }
-              >
-                <image
-                  href={`${import.meta.env.BASE_URL || "./"}${slice.url}`}
-                  width={slice.imageWidth}
-                  height={slice.imageHeight}
-                />
-              </svg>
-            ))}
-          </div>
-          <details className="pyq-transcript">
-            <summary>Read text transcription</summary>
-            <p>{q.question}</p>
-            <p className="muted small">
-              Text extracted from the scan may contain transcription errors. The
-              original paper image above is the reference.
-            </p>
-          </details>
-        </>
-      ) : (
-        <p>{q.question}</p>
-      )}
-      <a
-        className="small pyq-source"
-        href={`${q.sourceUrl}#page=${q.page}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <ExternalLink size={13} />
-        UPSC paper · page {q.page}
-        {q.sourceUrl.includes("shankar") ? " (mirror)" : ""}
-      </a>
-    </div>
-  );
+const byId = new Map(bank.map(q => [q.id, q]));
+const unique = (values: string[]) => [...new Set(values)].sort();
+const number = (n: number) => Number(n.toFixed(2)).toString();
+const label = (q: PYQQuestion) => `2025 ${q.stage === "CSAT" ? "CSAT" : "GS I"} Q${q.number}`;
+const toggle = (ids: string[], id: string) => ids.includes(id) ? ids.filter(x => x !== id) : [...ids, id];
+const result = (q: PYQQuestion, r?: PrelimsResponse) => !r?.option ? "Skipped" : r.option === (r.key?.answer || q.answer) ? "Right" : "Wrong";
+
+function QuestionText({ q }: { q: PYQQuestion }) {
+  return <div className="prelims-text">{(q.blocks || [{ type: "paragraph", text: q.question }]).map((b, i) =>
+    b.type === "table" ? <div className="prelims-table-wrap" key={i}><table><caption>Question {q.number} · matching pairs</caption><thead><tr>{b.headers?.map(h => <th scope="col" key={h}>{h}</th>)}</tr></thead><tbody>{b.rows?.map((row, j) => <tr key={j}>{row.map((cell, k) => k === 0 ? <th scope="row" key={k}>{cell}</th> : <td key={k}>{cell}</td>)}</tr>)}</tbody></table></div>
+    : b.type === "list" ? <ul className="prelims-statements" key={i}>{b.items?.map((v, j) => <li key={j}>{v}</li>)}</ul>
+    : b.type === "passage" ? <section className="prelims-passage" key={i} aria-label="Reading passage"><strong>Read the passage</strong><p>{b.text}</p><small>Answer the related items using this passage only.</small></section>
+    : <p key={i}>{b.text}</p>)}</div>;
 }
+function Explanation({ q, answer = q.answer }: { q: PYQQuestion; answer?: string | null }) {
+  const e = q.explanation;
+  return <section className="prelims-explanation" aria-label="Answer and explanation"><h3>Official answer: {answer?.toUpperCase() || "Awaiting key"}</h3>{e ? <><h4>Study explanation</h4><p>{e.justification}</p><p><strong>Concept: </strong>{e.concept}</p>{e.statements?.map(s => <p key={s.label}><strong>{s.label} · {s.verdict}: </strong>{s.reason}</p>)}{e.options && <ul>{Object.entries(e.options).map(([k, v]) => <li key={k}><strong>{k.toUpperCase()}: </strong>{v}</li>)}</ul>}{e.elimination && <p><strong>Elimination: </strong>{e.elimination}</p>}{e.insight && <p><strong>Exam insight: </strong>{e.insight}</p>}{e.relatedConcepts?.length && <p><strong>Revise: </strong>{e.relatedConcepts.join(" · ")}</p>}{e.references.map((r, i) => <p className="small" key={i}><a href={r.url} target="_blank" rel="noreferrer">{r.title} ↗</a>{r.section && ` · ${r.section}`}</p>)}<p className="small muted">Study explanations are editorial notes. UPSC publishes the answer key.</p></> : <p>Detailed explanation: verification required. Use the original paper and official answer key linked below.</p>}<div className="prelims-actions"><a href={`${q.sourceUrl}#page=${q.page}`} target="_blank" rel="noreferrer">Original paper · page {q.page} ↗</a><a href={q.keyUrl} target="_blank" rel="noreferrer">Official UPSC key (PDF mirror) ↗</a></div></section>;
+}
+function Breakdown({ title, rows }: { title: string; rows: ReturnType<typeof sessionReport>["groups"][string] }) {
+  return <section className="card prelims-breakdown"><h3>{title}</h3><div className="table-wrap"><table><thead><tr><th>Category</th><th>Attempted</th><th>Right</th><th>Wrong</th><th>Accuracy</th><th>Active time</th></tr></thead><tbody>{Object.entries(rows).map(([name, g]) => <tr key={name}><th scope="row">{name}</th><td>{g.attempted}</td><td>{g.correct}</td><td>{g.incorrect}</td><td>{g.correct + g.incorrect ? `${number(100 * g.correct / (g.correct + g.incorrect))}%` : "—"}</td><td>{formatSeconds(g.seconds)}</td></tr>)}</tbody></table></div></section>;
+}
+function Report({ s, close, retry }: { s: PrelimsSession; close: () => void; retry: (qs: PYQQuestion[]) => void }) {
+  const r = sessionReport(s, byId);
+  const wrong = s.questionIds.map(id => byId.get(id)!).filter(q => q && result(q, s.responses[q.id]) === "Wrong");
+  return <><PageHeader eyebrow="2025 · SAVED REPORT" title="Your paper report" description={`${s.mode === "test" ? "Test" : "Practice"} · ${new Date(s.startedAt).toLocaleString()} · ${r.total} questions`} /><div className="prelims-actions"><button className="btn secondary" onClick={close}>Back to question bank</button><button className="btn primary" disabled={!wrong.length} onClick={() => retry(wrong)}>Retry wrong questions</button></div><div className="stats-grid four"><DashboardCard title="Final score" value={number(r.score)} detail={`Raw ${number(r.raw)} − penalty ${number(r.penalty)}`} /><DashboardCard title="Right / wrong" value={`${r.correct} / ${r.incorrect}`} detail={`${r.attempted} attempted · ${r.unattempted} unattempted`} /><DashboardCard title="Accuracy" value={r.accuracy === null ? "—" : `${number(r.accuracy)}%`} detail="Right ÷ graded attempts" /><DashboardCard title="Active time" value={formatSeconds(r.seconds)} detail={`${formatSeconds(r.total ? r.seconds / r.total : 0)} average per question`} /></div><p className="small muted">Each wrong answer loses one-third of the question’s marks. Unattempted questions receive zero. CSAT qualifying benchmark: 33% in a complete 200-mark paper.</p>{s.questionIds.length === 80 && s.questionIds.every(id => byId.get(id)?.stage === "CSAT") && <p className="card">CSAT benchmark: {r.score >= 66 ? "At or above" : "Below"} 66/200 (33%). This is a practice score.</p>}<Breakdown title="Subject performance" rows={r.groups.subject} /><Breakdown title="Topic performance" rows={r.groups.topic} /><Breakdown title="Difficulty performance" rows={r.groups.difficultyLabel} /><section className="card"><h2>Review every question</h2>{s.questionIds.map(id => { const q = byId.get(id), a = s.responses[id]; if (!q) return null; return <details className="prelims-review-row" key={id}><summary>{label(q)} · {result(q, a)} · {formatSeconds(a?.seconds || 0)}{a?.review ? " · Review" : ""}</summary><QuestionText q={q} /><ul className="prelims-review-options">{Object.entries(q.options).map(([k, v]) => <li key={k}>{k.toUpperCase()}. {v}{k === a?.option ? " · Your answer" : ""}</li>)}</ul><Explanation q={q} answer={a?.key?.answer || q.answer} />{a?.notes && <p><strong>Your notes: </strong>{a.notes}</p>}</details>; })}</section></>;
+}
+
 export default function PYQs() {
-  const { data, savePYQDraft, setEditor, saveRecord } = useData();
-  const { guest } = useAuth();
-  const [tab, setTab] = useState("Subjectwise"),
-    [subject, setSubject] = useState(""),
-    [year, setYear] = useState(""),
-    [stage, setStage] = useState(""),
-    [status, setStatus] = useState(""),
-    [query, setQuery] = useState(""),
-    [page, setPage] = useState(0),
-    [practising, setPractising] = useState(false),
-    [fresh, setFresh] = useState(false);
+  const { data, savePrelims, setEditor } = useData(); const { guest } = useAuth();
+  const w = data.prelims || emptyPrelims(); const f = w.filters;
+  const [tab, setTab] = useState("Browse"), [page, setPage] = useState(0), [active, setActive] = useState(false), [report, setReport] = useState<PrelimsSession>(), [timed, setTimed] = useState(true), [startHint, setStartHint] = useState("");
   const latest = useMemo(() => latestAttempts(data.pyqs), [data.pyqs]);
-  const scoped = useMemo(
-    () =>
-      bank.filter(
-        (q) =>
-          (!subject || q.subject === subject) &&
-          (!year || q.year === Number(year)) &&
-          (!stage || q.stage === stage) &&
-          (!query ||
-            `${q.question} ${q.subject} ${q.topic}`
-              .toLowerCase()
-              .includes(query.toLowerCase())),
-      ),
-    [subject, year, stage, query],
-  );
-  const filtered = scoped.filter((q) => {
-    const p = latest.get(q.id);
-    return (
-      !status ||
-      (status === "new"
-        ? !p
-        : status === "revision"
-          ? !!p?.revisionNeeded
-          : p?.attempt?.outcome === status)
-    );
-  });
-  const currentPage = Math.min(
-    page,
-    Math.max(0, Math.ceil(filtered.length / 10) - 1),
-  );
-  const ids = new Set(scoped.map((q) => q.id));
-  const records = data.pyqs.filter(
-    (p) => p.attempt && ids.has(p.attempt.questionId),
-  );
-  const stats = attemptStats(records);
-  const change = (setter: (s: string) => void, value: string) => {
-    setter(value);
-    setPage(0);
+  const filtered = filterQuestions(bank, f, latest, w.bookmarks, w.review);
+  const records = data.pyqs.filter(p => p.attempt && byId.has(p.attempt.questionId)); const stats = attemptStats(records);
+  const change = (k: keyof PrelimsFilters, value: string) => { if (savePrelims({ ...w, filters: { ...f, [k]: value } })) setPage(0); };
+  const start = (qs: PYQQuestion[], mode: "practice" | "test" = "practice", clock = false) => {
+    if (!qs.length) return;
+    if (w.session && !w.session.endedAt) { setStartHint("Resume and finish your current session before starting another. Your answers are saved."); return; }
+    setStartHint("");
+    const s = startSession(qs, mode, f, clock); s.responses[qs[0].id].review = w.review.includes(qs[0].id);
+    if (savePrelims({ ...w, session: s })) { setReport(undefined); setActive(true); }
   };
-  const start = (questions: PYQQuestion[]) => {
-    if (!questions.length) return;
-    if (savePYQDraft(newDraft(questions.map((q) => q.id)))) {
-      setFresh(true);
-      setPractising(true);
-    }
+  if (report) return <Report s={report} close={() => setReport(undefined)} retry={qs => start(qs)} />;
+  if (active && w.session) return <Session close={() => setActive(false)} report={s => { setActive(false); setReport(s); }} />;
+  const currentPage = Math.min(page, Math.max(0, Math.ceil(filtered.length / 10) - 1));
+  const pools = {
+    "Latest mistakes": bank.filter(q => latest.get(q.id)?.attempt?.outcome === "incorrect"),
+    "Skipped": bank.filter(q => latest.get(q.id)?.attempt?.outcome === "skipped"),
+    "Bookmarked": bank.filter(q => w.bookmarks.includes(q.id)),
+    "Marked for review": bank.filter(q => w.review.includes(q.id) || latest.get(q.id)?.revisionNeeded),
+    "Repeat mistakes": bank.filter(q => records.filter(a => a.attempt?.questionId === q.id && a.attempt.outcome === "incorrect").length > 1),
   };
-  const groups = [
-    ...new Set(
-      bank.map((q) => (tab === "Yearwise" ? String(q.year) : q.subject)),
-    ),
-  ].sort((a, b) =>
-    tab === "Yearwise" ? Number(b) - Number(a) : a.localeCompare(b),
-  );
-  if (practising && data.pyqDraft)
-    return (
-      <PracticeSession fresh={fresh} onClose={() => setPractising(false)} />
-    );
-  return (
-    <>
-      <PageHeader
-        eyebrow="OFFICIAL PAPERS · YOUR PRACTICE HISTORY"
-        title="Previous year questions"
-        description="Practise by subject or year. Every submitted attempt keeps its answer, result, time, and review notes."
-        action={
-          <button
-            className="btn secondary"
-            onClick={() => setEditor({ collection: "pyqs" })}
-          >
-            <Plus size={16} />
-            Log outside practice
-          </button>
-        }
-      />
-      <div className="pyq-coverage card">
-        <BookOpen size={23} />
-        <div>
-          <strong>{bank.length} questions ready to practise</strong>
-          <p>
-            Prelims GS-I: 2024 & 2025, complete papers · Mains GS-II: 2025,
-            complete paper. Subject tags are study categories assigned here.{" "}
-            <a href={original} target="_blank" rel="noreferrer">
-              All official UPSC papers ↗
-            </a>
-          </p>
-        </div>
-      </div>
-      <p className="pyq-save-note">
-        <CheckCircle2 size={15} />
-        {guest
-          ? "Guest mode: attempts are saved in this browser. Export a backup to keep a separate copy."
-          : "Attempts are saved to your preparation workspace. Check Account for cloud sync status."}
-      </p>
-      {data.pyqDraft &&
-        data.pyqDraft.index < data.pyqDraft.questionIds.length && (
-          <section className="card pyq-resume">
-            <div>
-              <strong>Your practice is waiting</strong>
-              <p>
-                Question {data.pyqDraft.index + 1} of{" "}
-                {data.pyqDraft.questionIds.length} · timer resumes paused
-              </p>
-            </div>
-            <button
-              className="btn primary"
-              onClick={() => {
-                setFresh(false);
-                setPractising(true);
-              }}
-            >
-              <Play size={16} />
-              Resume practice
-            </button>
-          </section>
-        )}
-      <div className="stats-grid four">
-        <DashboardCard
-          title="Unique questions practised"
-          value={stats.unique}
-          detail={`${stats.total} saved attempts`}
-        />
-        <DashboardCard
-          title="Right / wrong"
-          value={`${stats.correct} / ${stats.incorrect}`}
-          detail={`${stats.skipped} skipped · ${stats.ungraded} unmarked · ${stats.written} written`}
-        />
-        <DashboardCard
-          title="Accuracy"
-          value={stats.accuracy === null ? "—" : `${round(stats.accuracy)}%`}
-          detail={`${stats.selfMarked} self-marked results included; skipped and unmarked excluded`}
-        />
-        <DashboardCard
-          title="Time per question"
-          value={
-            stats.averageSeconds === null
-              ? "—"
-              : formatSeconds(stats.averageSeconds)
-          }
-          detail={`${formatSeconds(stats.seconds)} active time · ${stats.flagged} revision flags`}
-        />
-      </div>
-      <nav className="tabs" aria-label="PYQ views">
-        {["Subjectwise", "Yearwise", "History", "Manual logs"].map((name) => (
-          <button
-            className={tab === name ? "active" : ""}
-            aria-pressed={tab === name}
-            key={name}
-            onClick={() => setTab(name)}
-          >
-            {name}
-          </button>
-        ))}
-      </nav>
-      {tab === "Manual logs" ? (
-        <RecordTable
-          collection="pyqs"
-          records={data.pyqs.filter((p) => !p.attempt)}
-          title="Outside practice & existing PYQ logs"
-          columns={[
-            { key: "year", label: "Year" },
-            { key: "question", label: "Question / batch" },
-            { key: "correct", label: "Right" },
-            { key: "incorrect", label: "Wrong" },
-            { key: "conceptGap", label: "Concept gap" },
-          ]}
-        />
-      ) : (
-        <>
-          <section
-            className="card pyq-filters"
-            aria-label="Question bank filters"
-          >
-            <label>
-              <span>Subject</span>
-              <select
-                aria-label="PYQ subject"
-                value={subject}
-                onChange={(e) => change(setSubject, e.target.value)}
-              >
-                <option value="">All subjects</option>
-                {[...new Set(bank.map((q) => q.subject))].sort().map((s) => (
-                  <option key={s}>{s}</option>
-                ))}
-              </select>
-            </label>
-            <label>
-              <span>Year</span>
-              <select
-                aria-label="PYQ year"
-                value={year}
-                onChange={(e) => change(setYear, e.target.value)}
-              >
-                <option value="">All years</option>
-                {[...new Set(bank.map((q) => q.year))]
-                  .sort((a, b) => b - a)
-                  .map((y) => (
-                    <option key={y}>{y}</option>
-                  ))}
-              </select>
-            </label>
-            <label>
-              <span>Paper</span>
-              <select
-                aria-label="PYQ stage"
-                value={stage}
-                onChange={(e) => change(setStage, e.target.value)}
-              >
-                <option value="">All papers</option>
-                <option value="Prelims">Prelims GS-I</option>
-                <option value="Mains">Mains GS-II</option>
-              </select>
-            </label>
-            <label>
-              <span>Practice status</span>
-              <select
-                aria-label="PYQ status"
-                value={status}
-                onChange={(e) => change(setStatus, e.target.value)}
-              >
-                <option value="">All questions</option>
-                <option value="new">Not attempted</option>
-                <option value="incorrect">Wrong last time</option>
-                <option value="correct">Right last time</option>
-                <option value="skipped">Skipped last time</option>
-                <option value="ungraded">Unmarked</option>
-                <option value="written">Written</option>
-                <option value="revision">Revision needed</option>
-              </select>
-            </label>
-            <label className="pyq-search">
-              <span>Search questions & topics</span>
-              <div>
-                <Search size={16} />
-                <input
-                  aria-label="Search PYQ bank"
-                  value={query}
-                  onChange={(e) => change(setQuery, e.target.value)}
-                  placeholder="Parliament, climate, inflation…"
-                />
-              </div>
-            </label>
-            <button
-              className="btn secondary small-btn"
-              onClick={() => {
-                setSubject("");
-                setYear("");
-                setStage("");
-                setStatus("");
-                setQuery("");
-                setPage(0);
-              }}
-            >
-              Reset filters
-            </button>
-          </section>
-          {tab === "History" ? (
-            <AttemptHistory
-              records={records.filter(
-                (r) =>
-                  !status ||
-                  (status === "revision"
-                    ? r.revisionNeeded
-                    : status === "new"
-                      ? false
-                      : r.attempt!.outcome === status),
-              )}
-              onPractise={(id) => {
-                const q = byId.get(id);
-                if (q) start([q]);
-              }}
-              onReview={(r) =>
-                saveRecord("pyqs", { ...r, revisionNeeded: !r.revisionNeeded })
-              }
-            />
-          ) : (
-            <>
-              <div className="pyq-group-grid">
-                {groups.map((group) => {
-                  const qs = scoped.filter((q) =>
-                    tab === "Yearwise"
-                      ? String(q.year) === group
-                      : q.subject === group,
-                  );
-                  if (!qs.length) return null;
-                  const s = attemptStats(
-                    records.filter((r) =>
-                      qs.some((q) => q.id === r.attempt!.questionId),
-                    ),
-                  );
-                  const selected =
-                    tab === "Yearwise" ? year === group : subject === group;
-                  return (
-                    <button
-                      className={`card pyq-group ${selected ? "selected" : ""}`}
-                      aria-pressed={selected}
-                      key={group}
-                      onClick={() =>
-                        change(
-                          tab === "Yearwise" ? setYear : setSubject,
-                          selected ? "" : group,
-                        )
-                      }
-                    >
-                      <div>
-                        <strong>{group}</strong>
-                        <ChevronRight size={16} />
-                      </div>
-                      <p>
-                        {qs.length} questions · {s.unique} practised
-                      </p>
-                      <ProgressBar value={(s.unique / qs.length) * 100} />
-                      <span>
-                        {s.accuracy === null
-                          ? "Ready when you are"
-                          : `${round(s.accuracy)}% accuracy · ${s.incorrect} wrong`}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-              <div className="section-heading">
-                <div>
-                  <h2>{filtered.length} questions</h2>
-                  <p className="small muted">
-                    Filters use the most recent result; history keeps every
-                    attempt.
-                  </p>
-                </div>
-                <button
-                  className="btn primary"
-                  disabled={!filtered.length}
-                  onClick={() => start(filtered)}
-                >
-                  <Play size={16} />
-                  {status === "incorrect"
-                    ? "Reattempt wrong questions"
-                    : "Practise filtered questions"}
-                </button>
-              </div>
-              {filtered.length ? (
-                <section className="card pyq-bank-list">
-                  {filtered
-                    .slice(currentPage * 10, currentPage * 10 + 10)
-                    .map((q) => {
-                      const p = latest.get(q.id);
-                      return (
-                        <article className="pyq-bank-row" key={q.id}>
-                          <div className="pyq-row-number">
-                            {q.year}
-                            <strong>Q{q.number}</strong>
-                          </div>
-                          <div className="pyq-row-content">
-                            <div className="pyq-badges">
-                              <Badge tone="blue">{q.subject}</Badge>
-                              <span className="small muted">
-                                {q.paper}{" "}
-                                {q.booklet ? `· Set ${q.booklet}` : ""}
-                              </span>
-                              {q.keyStatus === "dropped" && (
-                                <Badge tone="amber">
-                                  Dropped from official scoring
-                                </Badge>
-                              )}
-                              {p?.attempt && (
-                                <Badge tone={tone(p.attempt.outcome)}>
-                                  {outcomes[p.attempt.outcome]}
-                                </Badge>
-                              )}
-                              {p?.revisionNeeded && <Flag size={13} />}
-                            </div>
-                            <p>
-                              {q.question.replace(/\s+/g, " ").slice(0, 210)}
-                              {q.question.length > 210 ? "…" : ""}
-                            </p>
-                            <span className="small muted">
-                              {q.topic}
-                              {p?.attempt
-                                ? ` · Last time ${formatSeconds(p.attempt.seconds)} · ${data.pyqs.filter((r) => r.attempt?.questionId === q.id).length} attempts`
-                                : ""}
-                            </span>
-                          </div>
-                          <button
-                            className="btn secondary small-btn"
-                            aria-label={`Practise ${q.year} ${q.paper} question ${q.number}`}
-                            onClick={() => start([q])}
-                          >
-                            Practise
-                            <ChevronRight size={14} />
-                          </button>
-                        </article>
-                      );
-                    })}
-                  <div className="pyq-pagination">
-                    <button
-                      className="btn secondary small-btn"
-                      disabled={currentPage === 0}
-                      onClick={() => setPage(currentPage - 1)}
-                    >
-                      <ChevronLeft size={14} />
-                      Previous
-                    </button>
-                    <span>
-                      Page {currentPage + 1} of{" "}
-                      {Math.ceil(filtered.length / 10)}
-                    </span>
-                    <button
-                      className="btn secondary small-btn"
-                      disabled={(currentPage + 1) * 10 >= filtered.length}
-                      onClick={() => setPage(currentPage + 1)}
-                    >
-                      Next
-                      <ChevronRight size={14} />
-                    </button>
-                  </div>
-                </section>
-              ) : (
-                <EmptyState
-                  title="No questions match these filters."
-                  text="Choose a different subject, year, or practice status."
-                />
-              )}
-              <p className="chart-note">
-                2024 answers follow the UPSC Series A key. Dropped questions are
-                excluded from accuracy. The 2025 Prelims key is not connected
-                here; those attempts can be self-marked or left unmarked. Mains
-                answers use optional self-assessed marks.
-              </p>
-            </>
-          )}
-        </>
-      )}
-    </>
-  );
+  return <><PageHeader eyebrow="UPSC CSE · 2025 ONLY" title="2025 Prelims PYQs" description="Read the original questions as text. Practise by subject, attempt a full paper, and build your revision list." action={<button className="btn secondary" onClick={() => setEditor({ collection: "pyqs" })}>Log outside practice</button>} /><div className="pyq-coverage card"><BookOpen size={26} /><div><strong>180 questions ready to practise</strong><p>2025 GS Paper I · 100 questions · CSAT Paper II · 80 questions · Booklet A · official answer keys</p></div></div><p className="pyq-save-note">{guest ? "Guest progress is saved in this browser. Export a backup to keep a separate copy." : "Progress is saved in your personal workspace. Account shows your cloud sync status."}</p>
+  {w.session && !w.session.endedAt && <section className="card pyq-resume"><div><strong>Continue your {w.session.mode}</strong><p>Question {w.session.index + 1} of {w.session.questionIds.length}{w.session.deadline ? " · 2-hour deadline continues while away" : " · active timer excludes time away"}</p></div><button className="btn primary" onClick={() => setActive(true)}>Resume {w.session.mode}</button></section>}
+  {startHint && <p role="status" className="card">{startHint}</p>}
+  <div className="stats-grid four"><DashboardCard title="Questions practised" value={stats.unique} detail={`${stats.total} saved 2025 attempts`} /><DashboardCard title="Right / wrong" value={`${stats.correct} / ${stats.incorrect}`} detail={`${stats.skipped} skipped`} /><DashboardCard title="Accuracy" value={stats.accuracy === null ? "—" : `${number(stats.accuracy)}%`} /><DashboardCard title="Active study time" value={formatSeconds(stats.seconds)} /></div>
+  <div className="tabs" role="tablist" aria-label="PYQ sections">{["Browse", "Full papers", "Revision", "Performance", "History"].map(t => <button key={t} role="tab" aria-selected={tab === t} className={tab === t ? "active" : ""} onClick={() => setTab(t)}>{t}</button>)}</div>
+  {tab === "Browse" && <><section className="card prelims-filters"><div className="prelims-subjects"><button className="btn secondary" onClick={() => { if (savePrelims({ ...w, filters: emptyFilters() })) setPage(0); }}>All subjects</button>{unique(bank.map(q => q.subject)).map(s => <button className={`btn ${f.subject === s ? "primary" : "secondary"}`} key={s} onClick={() => change("subject", s)}>{s}</button>)}</div><div className="prelims-filter-grid"><label>Year<select aria-label="PYQ year" value="2025" onChange={() => {}}><option>2025</option></select></label><label>Paper<select aria-label="PYQ paper" value={f.paper} onChange={e => change("paper", e.target.value)}><option value="">Both papers</option>{unique(bank.map(q => q.paper)).map(p => <option key={p}>{p}</option>)}</select></label><label>Subject<select aria-label="PYQ subject" value={f.subject} onChange={e => change("subject", e.target.value)}><option value="">All subjects</option>{unique(bank.map(q => q.subject)).map(p => <option key={p}>{p}</option>)}</select></label><label>Topic<select aria-label="PYQ topic" value={f.topic} onChange={e => change("topic", e.target.value)}><option value="">All topics</option>{unique(bank.filter(q => !f.subject || q.subject === f.subject).map(q => q.topic)).map(p => <option key={p}>{p}</option>)}</select></label><label>Subtopic<select aria-label="PYQ subtopic" value={f.subtopic || ""} onChange={e => change("subtopic", e.target.value)}><option value="">All subtopics</option>{unique(bank.filter(q => (!f.subject || q.subject === f.subject) && (!f.topic || q.topic === f.topic)).map(q => q.subtopic || "")).filter(Boolean).map(p => <option key={p}>{p}</option>)}</select></label><label>Difficulty<select aria-label="PYQ difficulty" value={f.difficulty} onChange={e => change("difficulty", e.target.value)}><option value="">All difficulty levels</option>{["Easy", "Moderate", "Difficult"].map(p => <option key={p}>{p}</option>)}</select></label><label>Status<select aria-label="PYQ status" value={f.status} onChange={e => change("status", e.target.value)}><option value="">All questions</option>{Object.entries({ attempted: "Attempted", unattempted: "Unattempted", correct: "Right", incorrect: "Wrong", skipped: "Skipped", bookmarked: "Bookmarked", review: "Marked for review" }).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label><label className="prelims-search">Search question, passage or topic<input type="search" aria-label="Search PYQs" value={f.query} onChange={e => change("query", e.target.value)} placeholder="Try: bonds, Constitution, inflation…" /></label></div><p className="small muted">Subject, topic and difficulty tags are study classifications assigned here.</p></section><div className="section-heading"><h2>{filtered.length} questions</h2><div className="prelims-actions"><button className="btn primary" disabled={!filtered.length} onClick={() => start(filtered)}>Practise filtered questions</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(shuffled(filtered))}>Shuffle practice</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(filtered, "test")}>Test filtered questions</button></div></div>{!filtered.length && <div className="card">No questions match these filters.</div>}{filtered.slice(currentPage * 10, (currentPage + 1) * 10).map(q => <article className="card prelims-bank-row" key={q.id}><div><span className="eyebrow">{label(q)} · {q.subject}</span><h3>{q.topic}</h3><p>{q.blocks?.find(b => b.type === "paragraph")?.text || q.question.slice(0, 160)}</p><span className="muted small">{q.difficultyLabel} · {latest.get(q.id)?.attempt?.outcome || "Unattempted"}</span></div><div className="prelims-actions"><button className="btn primary" aria-label={`Practise ${label(q)}`} onClick={() => start([q])}>Practise</button><button className="btn secondary" aria-label={`Bookmark ${label(q)}`} aria-pressed={w.bookmarks.includes(q.id)} onClick={() => savePrelims({ ...w, bookmarks: toggle(w.bookmarks, q.id) })}><Bookmark size={16} />{w.bookmarks.includes(q.id) ? "Bookmarked" : "Bookmark"}</button></div></article>)}<div className="prelims-actions"><button className="btn secondary" disabled={currentPage === 0} onClick={() => setPage(currentPage - 1)}>Previous page</button><span>Page {currentPage + 1} of {Math.max(1, Math.ceil(filtered.length / 10))}</span><button className="btn secondary" disabled={(currentPage + 1) * 10 >= filtered.length} onClick={() => setPage(currentPage + 1)}>Next page</button></div></>}
+  {tab === "Full papers" && <><label className="prelims-check"><input type="checkbox" checked={timed} onChange={e => setTimed(e.target.checked)} />Use a 2-hour test deadline</label><div className="prelims-paper-grid">{["Prelims", "CSAT"].map(stage => { const qs = bank.filter(q => q.stage === stage); return <section className="card" key={stage}><span className="eyebrow">2025 · BOOKLET A</span><h2>{stage === "CSAT" ? "CSAT Paper II" : "General Studies Paper I"}</h2><p>{qs.length} questions · 200 marks · 2 hours</p><p>Right +{qs[0].marks} · wrong −{number(qs[0].marks / 3)} · skip 0</p><div className="prelims-actions"><button className="btn secondary" onClick={() => start(qs)}>Practise {stage === "CSAT" ? "CSAT" : "GS"} paper</button><button className="btn primary" onClick={() => start(qs, "test", timed)}>Start {stage === "CSAT" ? "CSAT" : "GS"} test</button></div></section>; })}</div></>}
+  {tab === "Revision" && <div className="prelims-paper-grid">{Object.entries(pools).map(([name, qs]) => <section className="card" key={name}><h2>{name}</h2><p>{qs.length} questions</p><button className="btn primary" disabled={!qs.length} onClick={() => start(qs)}>Practise {name.toLowerCase()}</button></section>)}</div>}
+  {tab === "Performance" && <Performance records={records} retry={qs => start(qs)} />}
+  {tab === "History" && <><div className="prelims-actions"><button className="btn secondary" onClick={() => exportCSV(data, "pyqs")}><Download size={16} />Export attempts CSV</button><button className="btn secondary" onClick={() => exportJSON(data)}>Export full backup</button></div><section className="card"><h2>Saved paper reports</h2>{!(w.reports?.length) && <p>Complete a practice session or test to save its report.</p>}{[...(w.reports || [])].reverse().map(s => <div className="prelims-bank-row" key={s.id}><span>{s.mode} · {new Date(s.startedAt).toLocaleString()} · {s.questionIds.length} questions</span><button className="btn secondary" onClick={() => setReport(s)}>Open report</button></div>)}</section><section className="card"><h2>All saved attempts and study logs</h2><p className="small muted">Earlier years and Mains records remain here and in your backups.</p>{!data.pyqs.length && <p>No attempts yet.</p>}{[...data.pyqs].reverse().map(p => <details className="prelims-review-row" key={p.id}><summary>{p.year} · {p.paper} · {p.attempt ? `Q${p.attempt.questionNumber} · ${p.attempt.outcome} · ${formatSeconds(p.attempt.seconds)}` : p.date}</summary><p>{p.question}</p>{p.attempt && <p>Selected {p.attempt.selectedOption.toUpperCase() || "—"} · Answer {p.attempt.answerOption.toUpperCase() || "—"} · Confidence {p.attempt.confidence}/5 · {p.attempt.errorType}</p>}<p>{p.conceptGap}</p></details>)}</section></>}
+  </>;
 }
-function PracticeSession({
-  onClose,
-  fresh,
-}: {
-  onClose: () => void;
-  fresh: boolean;
-}) {
-  const { data, saveRecord } = useData();
-  const [autoStart, setAutoStart] = useState(fresh);
-  const [position, setPosition] = useState(data.pyqDraft!);
-  const q = byId.get(position.questionIds[position.index]);
-  const attempts = data.pyqs.filter(
-    (r) => r.attempt?.sessionId === position.sessionId,
-  );
-  const stats = attemptStats(attempts);
-  const [lastResult, setLastResult] = useState<PYQRecord | null>(null);
-  if (position.index >= position.questionIds.length)
-    return (
-      <>
-        <PageHeader
-          eyebrow="PRACTICE SAVED"
-          title="Practice complete"
-          description="Every attempt is in your PYQ history. Reattempts keep earlier results."
-        />
-        <div className="stats-grid four">
-          <DashboardCard title="Saved attempts" value={stats.total} />
-          <DashboardCard
-            title="Right / wrong"
-            value={`${stats.correct} / ${stats.incorrect}`}
-            detail={`${stats.skipped} skipped · ${stats.ungraded} unmarked · ${stats.written} written`}
-          />
-          <DashboardCard
-            title="Accuracy"
-            value={stats.accuracy === null ? "—" : `${round(stats.accuracy)}%`}
-          />
-          <DashboardCard
-            title="Active time"
-            value={formatSeconds(stats.seconds)}
-            detail={`${stats.flagged} flagged for revision`}
-          />
-        </div>
-        <button className="btn primary" onClick={onClose}>
-          <ChevronLeft size={16} />
-          Back to question bank
-        </button>
-        <AttemptHistory
-          records={attempts}
-          onReview={(r) =>
-            saveRecord("pyqs", { ...r, revisionNeeded: !r.revisionNeeded })
-          }
-        />
-      </>
-    );
-  if (!q)
-    return (
-      <EmptyState
-        title="This question is no longer in the bank."
-        text="Your submitted attempts are safe in History."
-        action="Back to bank"
-        onAction={onClose}
-      />
-    );
-  return (
-    <>
-      <PageHeader
-        eyebrow="TIMED PYQ PRACTICE"
-        title={`${q.year} · ${q.paper}`}
-        description={`Question ${position.index + 1} of ${position.questionIds.length} · Original Q${q.number}${q.booklet ? ` · Set ${q.booklet}` : ""}`}
-        action={
-          <button className="btn secondary" onClick={onClose}>
-            <ChevronLeft size={16} />
-            Save & exit
-          </button>
-        }
-      />
-      <ProgressBar
-        value={(attempts.length / position.questionIds.length) * 100}
-        label="Practice progress"
-        detail={`${attempts.length} of ${position.questionIds.length} saved`}
-      />
-      <QuestionPractice
-        key={`${position.sessionId}-${position.index}`}
-        q={q}
-        initial={position}
-        autoStart={autoStart}
-        onSaved={(r) => setLastResult(r)}
-        onNext={() => {
-          setPosition(data.pyqDraft!);
-          setLastResult(null);
-          setAutoStart(true);
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-      />
-      {lastResult && (
-        <p className="chart-note">
-          Saved: {outcomes[lastResult.attempt!.outcome]} ·{" "}
-          {formatSeconds(lastResult.attempt!.seconds)}. Your next question is
-          ready.
-        </p>
-      )}
-    </>
-  );
+function Performance({ records, retry }: { records: PYQRecord[]; retry: (qs: PYQQuestion[]) => void }) {
+  const latest = latestAttempts(records); const groups: Record<string, { attempted: number; correct: number; incorrect: number; seconds: number }> = {};
+  for (const r of latest.values()) { const q = byId.get(r.attempt!.questionId)!; const g = groups[q.topic] ||= { attempted: 0, correct: 0, incorrect: 0, seconds: 0 }; g.attempted += +!!r.attempt!.selectedOption; g.correct += r.correct; g.incorrect += r.incorrect; g.seconds += r.attempt!.seconds; }
+  const weak = Object.entries(groups).filter(([, g]) => g.correct + g.incorrect && g.correct / (g.correct + g.incorrect) < .6).map(([name]) => name);
+  return <><p className="muted">Latest attempt per question · weak topics have accuracy below 60%. Small samples can change quickly.</p><Breakdown title="Topic performance" rows={groups} /><section className="card"><h2>Weak topics</h2>{!weak.length && <p>No weak topics identified yet.</p>}{weak.map(t => <div className="prelims-bank-row" key={t}><span>{t}</span><button className="btn secondary" onClick={() => retry(bank.filter(q => q.topic === t))}>Revise topic</button></div>)}</section></>;
 }
-function QuestionPractice({
-  q,
-  initial,
-  onSaved,
-  onNext,
-  autoStart,
-}: {
-  q: PYQQuestion;
-  initial: PYQDraft;
-  autoStart: boolean;
-  onSaved: (r: PYQRecord) => void;
-  onNext: () => void;
-}) {
-  const { data, savePYQDraft, submitPYQ, saveRecord } = useData();
-  const [draft, setDraft] = useState(initial),
-    [running, setRunning] = useState(false),
-    [seconds, setSeconds] = useState(initial.seconds),
-    [result, setResult] = useState<PYQRecord | null>(null),
-    [error, setError] = useState("");
-  const ref = useRef(draft),
-    timer = useRef(new ActiveTimer(initial.seconds)),
-    saved = useRef(false),
-    busy = useRef(false),
-    checkpoint = useRef(savePYQDraft);
-  checkpoint.current = savePYQDraft;
-  const snapshot = () => ({
-    ...ref.current,
-    seconds: timer.current.seconds(performance.now()),
-  });
-  useEffect(() => {
-    let last = performance.now();
-    if (autoStart && !document.hidden) {
-      timer.current.start(performance.now());
-      setRunning(true);
-    }
-    const pause = () => {
-      timer.current.pause(performance.now());
-      setRunning(false);
-      if (!saved.current) checkpoint.current(snapshot());
-    };
-    const visibility = () => {
-      if (document.hidden) pause();
-    };
-    const tick = setInterval(() => {
-      const now = performance.now();
-      setSeconds(timer.current.seconds(now));
-      if (now - last >= 10000) {
-        if (!saved.current) checkpoint.current(snapshot());
-        last = now;
-      }
-    }, 250);
-    window.addEventListener("beforeunload", pause);
-    document.addEventListener("visibilitychange", visibility);
-    return () => {
-      clearInterval(tick);
-      window.removeEventListener("beforeunload", pause);
-      document.removeEventListener("visibilitychange", visibility);
-      timer.current.pause(performance.now());
-      if (!saved.current) checkpoint.current(snapshot());
-    };
-  }, []);
-  const change = (patch: Partial<PYQDraft>) => {
-    const next = { ...snapshot(), ...patch };
-    ref.current = next;
-    setDraft(next);
-    if (!saved.current) checkpoint.current(next);
-  };
-  const toggle = () => {
-    if (running) {
-      timer.current.pause(performance.now());
-      setRunning(false);
-      checkpoint.current(snapshot());
-    } else {
-      timer.current.start(performance.now());
-      setRunning(true);
-    }
-    setSeconds(timer.current.seconds(performance.now()));
-  };
+
+function Session({ close, report }: { close: () => void; report: (s: PrelimsSession) => void }) {
+  const { data, savePrelims } = useData();
+  const workspace = data.prelims!; const s = workspace.session!; const q = byId.get(s.questionIds[s.index]);
+  const wRef = useRef(workspace); const saveRef = useRef(savePrelims); wRef.current = workspace; saveRef.current = savePrelims;
+  const timer = useRef(new ActiveTimer(s.responses[s.questionIds[s.index]]?.seconds || 0));
+  const [paused, setPaused] = useState(false), [displayTime, setDisplayTime] = useState(0), [remaining, setRemaining] = useState(0), [hint, setHint] = useState("");
+  const pauseRef = useRef(false), finishing = useRef(false); const finishRef = useRef<() => void>(() => {});
+  const locked = s.mode === "practice" && !!s.responses[s.questionIds[s.index]]?.submitted;
+  const persist = (next: PrelimsWorkspace, attempts: PYQRecord[] = []) => { const ok = saveRef.current(next, attempts); if (ok) wRef.current = next; return ok; };
+  const snapshot = () => { const w = structuredClone(wRef.current), ss = w.session!, id = ss.questionIds[ss.index]; const r = ss.responses[id] ||= emptyResponse(); if (!(ss.mode === "practice" && r.submitted) && !ss.endedAt) r.seconds = timer.current.seconds(performance.now()); return w; };
+  const deadlinePassed = () => { const ss = wRef.current.session!; if (ss.deadline && Date.now() >= Date.parse(ss.deadline) && !ss.endedAt) { finishRef.current(); return true; } return false; };
+  const checkpoint = () => { const w = snapshot(); return JSON.stringify(w) === JSON.stringify(wRef.current) || persist(w); };
+  const edit = (fields: Partial<PrelimsResponse>) => { if (deadlinePassed()) return; const w = snapshot(), ss = w.session!, id = ss.questionIds[ss.index], r = ss.responses[id]; if (ss.endedAt || (ss.mode === "practice" && r.submitted && fields.option !== undefined)) return; Object.assign(r, fields); const question = byId.get(id)!; persist(w, r.submitted ? [responseAttempt(question, ss, r, data.subjects)] : []); };
   const submit = (skip = false) => {
-    if (busy.current || saved.current) return;
-    busy.current = true;
-    timer.current.pause(performance.now());
-    setRunning(false);
-    try {
-      const current = snapshot();
-      const r = makeAttempt(q, current, data.subjects, skip);
-      if (submitPYQ(r, nextDraft(current))) {
-        saved.current = true;
-        ref.current = { ...current, revisionNeeded: r.revisionNeeded };
-        setDraft(ref.current);
-        setResult(r);
-        onSaved(r);
-        setError("");
-      } else
-        setError(
-          "This attempt was not saved. Check the workspace notice, then try again.",
-        );
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      busy.current = false;
-      setSeconds(timer.current.seconds(performance.now()));
-    }
+    if (deadlinePassed()) return false;
+    const w = snapshot(), ss = w.session!, id = ss.questionIds[ss.index], r = ss.responses[id], question = byId.get(id)!;
+    if (ss.endedAt || r.submitted) return true;
+    if (ss.mode === "test") { if (skip) r.option = ""; return persist(w); }
+    if (!skip && !r.option) { setHint("Choose an option, or use Skip question."); return false; }
+    timer.current.pause(performance.now()); r.submitted = true; r.key = keySnapshot(question); if (skip) r.option = "";
+    r.review ||= !!r.option && r.option !== r.key.answer; const attempt = responseAttempt(question, ss, r, data.subjects);
+    if (r.review && !w.review.includes(id)) w.review.push(id);
+    if (!persist(w, [attempt])) { if (!pauseRef.current && !document.hidden) timer.current.start(performance.now()); return false; }
+    setHint(skip ? "Skipped. Time and notes saved." : "Answer saved."); return true;
   };
-  const a = result?.attempt;
-  return (
-    <section className="card pyq-practice">
-      <div className="pyq-practice-heading">
-        <div className="pyq-badges">
-          <Badge tone="blue">{q.subject}</Badge>
-          <span className="small muted">
-            {q.topic} · {q.marks} marks
-            {q.wordLimit ? ` · ${q.wordLimit} words` : ""}
-          </span>
-        </div>
-        <div className="pyq-timer">
-          <Clock3 size={17} />
-          <strong aria-label="Question active time">
-            {formatSeconds(seconds)}
-          </strong>
-          <button
-            className="btn secondary small-btn"
-            disabled={!!result}
-            onClick={toggle}
-          >
-            {running ? <Pause size={14} /> : <Play size={14} />}{" "}
-            {running
-              ? "Pause timer"
-              : seconds > 0
-                ? "Resume timer"
-                : "Start timer"}
-          </button>
-        </div>
-      </div>
-      <p className="small muted pyq-timer-note">
-        Active time only. New questions start the timer automatically. It pauses
-        when this tab is hidden and resumes paused after a reload.
-      </p>
-      <OriginalQuestion q={q} />
-      <fieldset className="pyq-answer-fields">
-        {q.stage === "Mains" ? (
-          <>
-            <label>
-              Your answer
-              <textarea
-                aria-label="Mains PYQ answer"
-                disabled={!!result}
-                value={draft.response}
-                rows={10}
-                maxLength={180000}
-                onChange={(e) => change({ response: e.target.value })}
-              />
-              <span className="small muted">
-                {draft.response.trim()
-                  ? draft.response.trim().split(/\s+/).length
-                  : 0}{" "}
-                words / {q.wordLimit} suggested
-              </span>
-            </label>
-            <label>
-              Self-assessed marks (optional)
-              <input
-                aria-label="Mains self-assessed marks"
-                disabled={!!result}
-                type="number"
-                min={0}
-                max={q.marks}
-                step="0.5"
-                value={draft.selfScore}
-                onChange={(e) => change({ selfScore: e.target.value })}
-              />
-            </label>
-          </>
-        ) : (
-          <>
-            <legend>Choose an answer from the original paper above</legend>
-            <div className="pyq-options">
-              {["a", "b", "c", "d"].map((option) => (
-                <label
-                  className={`pyq-option ${draft.selectedOption === option ? "selected" : ""} ${a?.answerOption === option ? "answer-right" : ""}`}
-                  key={option}
-                >
-                  <input
-                    type="radio"
-                    disabled={!!result}
-                    name="pyq-option"
-                    value={option}
-                    checked={draft.selectedOption === option}
-                    onChange={() => change({ selectedOption: option })}
-                  />
-                  <span>Option {option.toUpperCase()}</span>
-                </label>
-              ))}
-            </div>
-            {q.keyStatus === "pending" && (
-              <label>
-                Marking for this question
-                <select
-                  aria-label="Self marking"
-                  disabled={!!result}
-                  value={draft.selfOutcome}
-                  onChange={(e) =>
-                    change({
-                      selfOutcome: e.target.value as PYQDraft["selfOutcome"],
-                    })
-                  }
-                >
-                  <option value="">Leave unmarked — key not connected</option>
-                  <option value="correct">Right — self-assessed</option>
-                  <option value="incorrect">Wrong — self-assessed</option>
-                </select>
-                <span className="small muted">
-                  Self-mark only after checking a reliable answer key. The
-                  choice and time are kept even if left unmarked.
-                </span>
-              </label>
-            )}
-            {q.keyStatus === "dropped" && (
-              <p className="form-note">
-                UPSC dropped this question. Practice is saved unmarked and
-                excluded from accuracy.
-              </p>
-            )}
-          </>
-        )}
-        <div className="pyq-review-grid">
-          <label>
-            Confidence
-            <select
-              aria-label="Question confidence"
-              value={draft.confidence}
-              onChange={(e) => change({ confidence: Number(e.target.value) })}
-            >
-              {[1, 2, 3, 4, 5].map((n) => (
-                <option key={n} value={n}>
-                  {n} / 5{n === 1 ? " · Guessing" : n === 5 ? " · Certain" : ""}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Difficulty
-            <select
-              aria-label="Question difficulty"
-              value={draft.difficulty}
-              onChange={(e) => change({ difficulty: Number(e.target.value) })}
-            >
-              {[1, 2, 3, 4, 5].map((n) => (
-                <option key={n} value={n}>
-                  {n} / 5{n === 1 ? " · Easy" : n === 5 ? " · Hard" : ""}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Mistake category
-            <select
-              aria-label="Question mistake category"
-              value={draft.errorType}
-              onChange={(e) => change({ errorType: e.target.value })}
-            >
-              <option value="">Not classified</option>
-              {errorTypes.map((t) => (
-                <option key={t}>{t}</option>
-              ))}
-            </select>
-          </label>
-        </div>
-        <label>
-          Notes / concept gap
-          <textarea
-            aria-label="Question notes"
-            value={draft.notes}
-            rows={3}
-            maxLength={10000}
-            placeholder="What would help you solve this next time?"
-            onChange={(e) => change({ notes: e.target.value })}
-          />
-        </label>
-        <label className="checkbox-field">
-          <input
-            type="checkbox"
-            checked={draft.revisionNeeded}
-            onChange={(e) => change({ revisionNeeded: e.target.checked })}
-          />
-          Flag for revision (wrong answers are flagged automatically)
-        </label>
-      </fieldset>
-      {result && (
-        <button
-          className="btn secondary small-btn pyq-review-save"
-          onClick={() => {
-            const updated = {
-              ...result,
-              difficulty: draft.difficulty,
-              conceptGap: draft.notes,
-              revisionNeeded: draft.revisionNeeded,
-              attempt: {
-                ...result.attempt!,
-                confidence: draft.confidence,
-                errorType: draft.errorType,
-                notes: draft.notes,
-              },
-            };
-            if (saveRecord("pyqs", updated)) {
-              setResult(updated);
-              onSaved(updated);
-            }
-          }}
-        >
-          Save review notes
-        </button>
-      )}
-      {error && (
-        <p className="pyq-error" role="alert">
-          {error}
-        </p>
-      )}
-      {a ? (
-        <div className={`pyq-result ${tone(a.outcome)}`} role="status">
-          <div>
-            <Badge tone={tone(a.outcome)}>{outcomes[a.outcome]}</Badge>
-            <strong>
-              {a.grading === "official"
-                ? `UPSC answer: ${a.answerOption.toUpperCase()}`
-                : a.grading === "self"
-                  ? "Self-assessed result"
-                  : a.outcome === "skipped"
-                    ? "Skipped and saved"
-                    : "Saved without automatic marking"}
-            </strong>
-            <span>
-              {formatSeconds(a.seconds)} active time · confidence {a.confidence}
-              /5
-              {a.selfScore !== null
-                ? ` · ${a.selfScore}/${a.maximum} self-assessed marks`
-                : ""}
-            </span>
-            {q.keyUrl && (
-              <a href={q.keyUrl} target="_blank" rel="noreferrer">
-                View UPSC answer key ↗
-              </a>
-            )}
-          </div>
-          <button className="btn primary" onClick={onNext}>
-            {initial.index + 1 < initial.questionIds.length
-              ? "Next question"
-              : "Finish practice"}
-            <ChevronRight size={16} />
-          </button>
-        </div>
-      ) : (
-        <div className="pyq-practice-actions">
-          <button className="btn secondary" onClick={() => submit(true)}>
-            Skip & save time
-          </button>
-          <button className="btn primary" onClick={() => submit()}>
-            {q.stage === "Mains" ? "Save answer" : "Submit answer"}
-            <ChevronRight size={16} />
-          </button>
-        </div>
-      )}
-    </section>
-  );
-}
-function AttemptHistory({
-  records,
-  onPractise,
-  onReview,
-}: {
-  records: PYQRecord[];
-  onPractise?: (id: string) => void;
-  onReview: (r: PYQRecord) => void;
-}) {
-  const { data } = useData();
-  const [page, setPage] = useState(0);
-  const sorted = records
-    .slice()
-    .sort((a, b) =>
-      b.attempt!.attemptedAt.localeCompare(a.attempt!.attemptedAt),
-    );
-  const current = Math.min(
-    page,
-    Math.max(0, Math.ceil(sorted.length / 10) - 1),
-  );
-  return (
-    <section className="card pyq-history">
-      <div className="card-heading">
-        <div>
-          <h2>Attempt history</h2>
-          <p>Every attempt is separate, including repeat questions.</p>
-        </div>
-        <button
-          className="btn secondary small-btn"
-          disabled={!records.length}
-          onClick={() => exportCSV({ ...data, pyqs: records }, "pyqs")}
-        >
-          <Download size={14} />
-          Export attempts CSV
-        </button>
-      </div>
-      {sorted.length ? (
-        <div className="pyq-history-list">
-          {sorted.slice(current * 10, current * 10 + 10).map((r) => {
-            const a = r.attempt!;
-            const q = byId.get(a.questionId);
-            return (
-              <details className="pyq-history-row" key={r.id}>
-                <summary>
-                  <span>
-                    <strong>
-                      {r.year} · {r.paper} · Q{a.questionNumber}
-                    </strong>
-                    <span className="small muted">
-                      {prettyDate(r.date)} ·{" "}
-                      {q?.subject ||
-                        data.subjects.find((s) => s.id === r.subjectId)?.name ||
-                        "Unassigned"}
-                    </span>
-                  </span>
-                  <Badge tone={tone(a.outcome)}>{outcomes[a.outcome]}</Badge>
-                  <span>{formatSeconds(a.seconds)}</span>
-                </summary>
-                <div className="pyq-history-detail">
-                  <p>{r.question}</p>
-                  <div className="pyq-history-metrics">
-                    <span>
-                      Your choice:{" "}
-                      <strong>{a.selectedOption.toUpperCase() || "—"}</strong>
-                    </span>
-                    <span>
-                      Marking: <strong>{a.grading}</strong>
-                    </span>
-                    <span>
-                      Key:{" "}
-                      <strong>{a.answerOption.toUpperCase() || "—"}</strong>
-                    </span>
-                    <span>
-                      Confidence: <strong>{a.confidence}/5</strong>
-                    </span>
-                    <span>
-                      Difficulty: <strong>{r.difficulty}/5</strong>
-                    </span>
-                    <span>
-                      Mistake: <strong>{a.errorType || "—"}</strong>
-                    </span>
-                    {a.selfScore !== null && (
-                      <span>
-                        Self-assessed marks:{" "}
-                        <strong>
-                          {a.selfScore}/{a.maximum}
-                        </strong>
-                      </span>
-                    )}
-                  </div>
-                  {a.notes && (
-                    <p className="pyq-note">
-                      <strong>Notes</strong> {a.notes}
-                    </p>
-                  )}
-                  {a.response && (
-                    <p className="pyq-written-answer">{a.response}</p>
-                  )}
-                  <div className="button-group">
-                    <button
-                      className="btn secondary small-btn"
-                      onClick={() => onReview(r)}
-                    >
-                      <Flag size={13} />
-                      {r.revisionNeeded
-                        ? "Mark revision complete"
-                        : "Flag for revision"}
-                    </button>
-                    {onPractise && q && (
-                      <button
-                        className="btn secondary small-btn"
-                        onClick={() => onPractise(a.questionId)}
-                      >
-                        <RotateCcw size={13} />
-                        Reattempt
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </details>
-            );
-          })}
-        </div>
-      ) : (
-        <EmptyState
-          title="No saved question attempts yet."
-          text="Start practising a question to build your history."
-        />
-      )}
-      {sorted.length > 10 && (
-        <div className="pyq-pagination">
-          <button
-            className="btn secondary small-btn"
-            disabled={current === 0}
-            onClick={() => setPage(current - 1)}
-          >
-            Previous
-          </button>
-          <span>
-            Page {current + 1} of {Math.ceil(sorted.length / 10)}
-          </span>
-          <button
-            className="btn secondary small-btn"
-            disabled={(current + 1) * 10 >= sorted.length}
-            onClick={() => setPage(current + 1)}
-          >
-            Next
-          </button>
-        </div>
-      )}
-    </section>
-  );
+  const go = (index: number) => {
+    if (deadlinePassed()) return;
+    const w = snapshot(), ss = w.session!; if (ss.endedAt || index < 0 || index >= ss.questionIds.length) return;
+    ss.index = index; const id = ss.questionIds[index]; ss.responses[id] ||= { ...emptyResponse(), review: w.review.includes(id) }; ss.responses[id].visited = true;
+    if (persist(w)) { pauseRef.current = false; setPaused(false); setHint(""); }
+  };
+  const next = () => { const ss = wRef.current.session!, r = ss.responses[ss.questionIds[ss.index]]; if (ss.mode === "practice" && !r.submitted && !submit(!r.option)) return; if (ss.index < ss.questionIds.length - 1) go(ss.index + 1); else finishRef.current(); };
+  const finish = () => {
+    if (finishing.current) return; finishing.current = true;
+    const w = snapshot(), ss = w.session!; if (ss.endedAt) { report(ss); return; }
+    timer.current.pause(performance.now()); const attempts: PYQRecord[] = [];
+    for (const id of ss.questionIds) { const question = byId.get(id); if (!question) continue; const r = ss.responses[id] ||= { ...emptyResponse(), visited: false, review: w.review.includes(id) }; r.key ||= keySnapshot(question); if (r.visited && (ss.mode === "test" || !r.submitted)) { r.submitted = true; r.review ||= !!r.option && r.option !== r.key.answer; const a = responseAttempt(question, ss, r, data.subjects); if (r.review && !w.review.includes(id)) w.review.push(id); attempts.push(a); } }
+    ss.endedAt = new Date().toISOString(); w.reports = [...(w.reports || []).filter(r => r.id !== ss.id), structuredClone(ss)].slice(-1000);
+    if (persist(w, attempts)) report(ss); else { finishing.current = false; if (!pauseRef.current && !document.hidden) timer.current.start(performance.now()); }
+  };
+  finishRef.current = finish;
+  useEffect(() => {
+    const current = wRef.current.session!, id = current.questionIds[current.index]; timer.current = new ActiveTimer(current.responses[id]?.seconds || 0);
+    if (!pauseRef.current && !document.hidden && !(current.mode === "practice" && current.responses[id]?.submitted)) timer.current.start(performance.now());
+    setDisplayTime(timer.current.seconds(performance.now()));
+    const visibility = () => { if (document.hidden) { timer.current.pause(performance.now()); checkpoint(); } else if (!pauseRef.current && !locked) timer.current.start(performance.now()); };
+    const unload = () => { timer.current.pause(performance.now()); checkpoint(); };
+    document.addEventListener("visibilitychange", visibility); window.addEventListener("pagehide", unload);
+    let ticks = 0; const interval = window.setInterval(() => { setDisplayTime(timer.current.seconds(performance.now())); const current = wRef.current.session!; if (current.deadline) { setRemaining(Math.max(0, (Date.parse(current.deadline) - Date.now()) / 1000)); if (Date.now() >= Date.parse(current.deadline) && !current.endedAt) finishRef.current(); } if (++ticks % 20 === 0 && !current.endedAt) checkpoint(); }, 500);
+    if (current.deadline && Date.now() >= Date.parse(current.deadline)) finishRef.current();
+    return () => { clearInterval(interval); document.removeEventListener("visibilitychange", visibility); window.removeEventListener("pagehide", unload); timer.current.pause(performance.now()); };
+  }, [s.id, s.index, locked]);
+  useEffect(() => () => { timer.current.pause(performance.now()); const current = wRef.current.session; if (current && !current.endedAt) checkpoint(); }, []);
+  if (!q) return <div className="card"><p>This session contains a question outside the 2025 bank. Its history remains saved.</p><button className="btn secondary" onClick={close}>Back to question bank</button></div>;
+  const r = s.responses[q.id] || emptyResponse();
+  return <><PageHeader eyebrow={`${s.mode.toUpperCase()} · BOOKLET A · ORIGINAL ORDER`} title={`2025 · ${q.paper}`} description={`Question ${s.index + 1} of ${s.questionIds.length} · Original Q${q.number} · ${q.subject} · ${q.topic}`} /><div className="prelims-session-top"><div className="prelims-actions"><Clock3 size={18} /><strong aria-label="Question active time">{formatSeconds(displayTime)}</strong><span>active on this question</span>{!locked && <button className="btn secondary" onClick={() => { if (!paused) timer.current.pause(performance.now()); else if (!document.hidden) timer.current.start(performance.now()); pauseRef.current = !paused; setPaused(!paused); checkpoint(); }}>{paused ? <Play size={16} /> : <Pause size={16} />}{paused ? "Resume timer" : "Pause timer"}</button>}</div>{s.deadline && <strong aria-label="Test time remaining">{formatSeconds(remaining || Math.max(0, (Date.parse(s.deadline) - Date.now()) / 1000))} remaining · deadline continues while paused</strong>}<button className="btn secondary" onClick={() => { timer.current.pause(performance.now()); if (checkpoint()) close(); else if (!pauseRef.current && !document.hidden) timer.current.start(performance.now()); }}>Save & exit</button></div><div className="prelims-session-layout"><article className="card prelims-question-card"><div className="prelims-actions"><span className="eyebrow">{label(q)} · {q.difficultyLabel}</span><button className="btn secondary" aria-pressed={workspace.bookmarks.includes(q.id)} onClick={() => { const w = snapshot(); w.bookmarks = toggle(w.bookmarks, q.id); persist(w); }}><Bookmark size={15} />{workspace.bookmarks.includes(q.id) ? "Bookmarked" : "Bookmark question"}</button><button className="btn secondary" aria-pressed={r.review} onClick={() => { if (deadlinePassed()) return; const w = snapshot(), ss = w.session!, rr = ss.responses[q.id]; rr.review = !rr.review; w.review = rr.review ? unique([...w.review, q.id]) : w.review.filter(id => id !== q.id); persist(w, rr.submitted ? [responseAttempt(q, ss, rr, data.subjects)] : []); }}><Flag size={15} />{r.review ? "Marked for review" : "Mark for review"}</button></div><QuestionText q={q} /><fieldset className="prelims-options"><legend>Choose one answer</legend>{Object.entries(q.options).map(([k, v]) => <label className={r.option === k ? "selected" : ""} key={k}><input type="radio" name="pyq-option" value={k} checked={r.option === k} disabled={locked} onChange={() => edit({ option: k })} /><strong>{k.toUpperCase()}.</strong><span>{v}</span></label>)}</fieldset>{s.mode === "test" && <p className="small muted">Answers and explanations appear after you finish the test.</p>}<div className="prelims-actions">{s.mode === "practice" && !r.submitted && <button className="btn primary" onClick={() => submit()}>Submit answer</button>}{!locked && <button className="btn secondary" onClick={() => edit({ option: "" })}>Clear answer</button>}{!locked && <button className="btn secondary" onClick={() => { if (submit(true) && s.index < s.questionIds.length - 1) go(s.index + 1); }}>Skip question</button>}</div>{hint && <p role="status">{hint}</p>}{locked && <><p className={`prelims-feedback ${result(q, r).toLowerCase()}`}>{result(q, r)} · {formatSeconds(r.seconds)} saved</p><Explanation q={q} answer={r.key?.answer} /></>}<details className="prelims-notes"><summary>Confidence, mistake category & notes</summary><div className="prelims-filter-grid"><label>Confidence<select aria-label="Question confidence" value={r.confidence} onChange={e => edit({ confidence: Number(e.target.value) })}>{[1, 2, 3, 4, 5].map(n => <option key={n} value={n}>{n}/5</option>)}</select></label><label>Mistake category<select aria-label="Question mistake category" value={r.errorType} onChange={e => edit({ errorType: e.target.value })}><option value="">Choose category</option>{errorTypes.map(t => <option key={t}>{t}</option>)}</select></label></div><label>Personal notes<textarea aria-label="Question notes" value={r.notes} onChange={e => edit({ notes: e.target.value })} placeholder="What will you revise?" /></label><p className="small muted">Changes save automatically. Submitted answers and times stay fixed.</p></details><div className="prelims-actions prelims-navigation"><button className="btn secondary" disabled={s.index === 0} onClick={() => go(s.index - 1)}><ChevronLeft size={16} />Previous question</button><button className="btn primary" onClick={next}>Next question<ChevronRight size={16} /></button><button className="btn secondary" onClick={finish}>Finish {s.mode}</button></div></article><aside className="card prelims-palette"><h3>Question palette</h3><p className="small muted">Filled: answered · outline: visited · flag: review · grey: unseen</p><div>{s.questionIds.map((id, i) => { const a = s.responses[id]; return <button key={id} aria-label={`Go to question ${i + 1}`} aria-current={i === s.index ? "step" : undefined} className={`${a?.option ? "answered" : a?.visited ? "visited" : "unseen"} ${a?.review ? "review" : ""} ${i === s.index ? "current" : ""}`} onClick={() => go(i)}>{i + 1}{a?.review ? " ⚑" : ""}</button>; })}</div></aside></div></>;
 }

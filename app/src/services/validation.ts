@@ -1,4 +1,4 @@
-import type { AppData, Collection, PYQDraft } from "../types";
+import type { AppData, Collection, PYQDraft, PrelimsWorkspace } from "../types";
 import {
   studyTypes,
   errorTypes,
@@ -464,6 +464,7 @@ export function validateEntity(collection: Collection, v: unknown): void {
 export function validateData(input: unknown): AppData {
   assert(obj(input), "Backup must be a JSON object.");
   const d = input as AppData;
+  if (d.prelims !== undefined) validatePrelims(d.prelims);
   if (d.pyqDraft !== undefined) validatePYQDraft(d.pyqDraft);
   assert(
     d.schemaVersion === 1,
@@ -652,4 +653,33 @@ export function validatePYQDraft(d: PYQDraft): void {
       typeof d.revisionNeeded === "boolean",
     "Invalid practice review details.",
   );
+}
+
+export function validatePrelims(p: PrelimsWorkspace): void {
+  assert(obj(p), "Invalid Prelims workspace.");
+  const ids = (a: unknown) => Array.isArray(a) && a.length <= 10000 && new Set(a).size === a.length && a.every(x => typeof x === "string" && x.length > 0 && x.length < 200);
+  const filters = (f: unknown) => {
+    assert(obj(f), "Invalid PYQ filters."); const v = f as Record<string, unknown>;
+    for (const k of ["paper", "subject", "topic", "difficulty", "status", "query"]) assert(typeof v[k] === "string" && (v[k] as string).length < 1000, "Invalid PYQ filter.");
+    assert(v.subtopic === undefined || (typeof v.subtopic === "string" && v.subtopic.length < 1000), "Invalid PYQ subtopic.");
+  };
+  filters(p.filters); assert(ids(p.bookmarks) && ids(p.review), "Invalid bookmarks or review flags.");
+  if (p.reports !== undefined) {
+    assert(Array.isArray(p.reports) && p.reports.length <= 1000 && new Set(p.reports.map(r => r.id)).size === p.reports.length, "Invalid or duplicate session reports.");
+    for (const report of p.reports) { assert(!!report.endedAt, "A saved report must be complete."); validatePrelims({ filters: p.filters, bookmarks: [], review: [], session: report }); }
+  }
+  if (!p.session) return; const s = p.session;
+  assert(obj(s) && typeof s.id === "string" && s.id.length > 0 && s.id.length < 200 && ["practice", "test"].includes(s.mode), "Invalid PYQ session.");
+  assert(ids(s.questionIds) && s.questionIds.length > 0 && s.questionIds.length <= 180 && Number.isInteger(s.index) && s.index >= 0 && s.index < s.questionIds.length, "Invalid question position.");
+  assert(typeof s.startedAt === "string", "Missing start time.");
+  for (const d of [s.startedAt, s.endedAt, s.deadline]) assert(d === undefined || (typeof d === "string" && d.length < 40 && Number.isFinite(Date.parse(d))), "Invalid session date.");
+  filters(s.filters); assert(obj(s.responses) && Object.keys(s.responses).length <= s.questionIds.length, "Invalid responses.");
+  for (const [id, r] of Object.entries(s.responses)) {
+    assert(s.questionIds.includes(id) && obj(r), "Unknown question response.");
+    assert(["", "a", "b", "c", "d"].includes(r.option) && Number.isFinite(r.seconds) && r.seconds >= 0 && r.seconds <= 86400, "Invalid answer or time.");
+    assert(Number.isInteger(r.confidence) && r.confidence >= 1 && r.confidence <= 5, "Invalid confidence.");
+    assert(["submitted", "visited", "review"].every(k => typeof (r as unknown as Record<string, unknown>)[k] === "boolean"), "Invalid question flags.");
+    assert(typeof r.notes === "string" && r.notes.length < 200000 && typeof r.errorType === "string" && (!r.errorType || errorTypes.includes(r.errorType)), "Invalid review notes.");
+    if (r.key) assert(obj(r.key) && ["official", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d"].includes(r.key.answer)) && [2, 2.5].includes(r.key.marks) && (r.key.status !== "official" || !!r.key.answer), "Invalid saved key.");
+  }
 }
