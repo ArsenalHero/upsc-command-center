@@ -8,18 +8,18 @@ export const emptyPrelims = (): PrelimsWorkspace => ({ filters: emptyFilters(), 
 export const emptyResponse = (): PrelimsResponse => ({ option: "", seconds: 0, confidence: 3, errorType: "", notes: "", submitted: false, visited: true, review: false });
 export const keySnapshot = (q: PYQQuestion) => ({ answer: q.answer, status: q.keyStatus, marks: q.marks, negativeMarks: q.negativeMarks ?? q.marks / 3 });
 export function startSession(qs: PYQQuestion[], mode: "practice" | "test", filters: PrelimsFilters, timed = false, now = new Date()): PrelimsSession {
-  if (!qs.length || qs.length > 2000) throw new Error("Choose between 1 and 2,000 questions.");
+  if (!qs.length || qs.length > 5000) throw new Error("Choose between 1 and 5,000 questions.");
   return { id: uid(), mode, questionIds: qs.map(q => q.id), index: 0, responses: { [qs[0].id]: emptyResponse() }, filters: { ...filters }, startedAt: now.toISOString(), ...(timed ? { deadline: new Date(now.getTime() + 7200000).toISOString() } : {}) };
 }
 export function responseAttempt(q: PYQQuestion, s: PrelimsSession, r: PrelimsResponse, subjects: Subject[], now = new Date()): PYQRecord {
   const d = { ...newDraft(s.questionIds, s.id), index: s.questionIds.indexOf(q.id), seconds: r.seconds, selectedOption: r.option, confidence: r.confidence, notes: r.notes, errorType: r.errorType, revisionNeeded: r.review, difficulty: q.difficultyLabel === "Easy" ? 1 : q.difficultyLabel === "Difficult" ? 5 : 3 };
-  const saved = r.key ? { ...q, answer: r.key.answer, keyStatus: r.key.status, marks: r.key.marks } : q;
+  const saved = r.key ? { ...q, answer: r.key.answer, keyStatus: r.key.status, marks: r.key.marks, negativeMarks: r.key.negativeMarks ?? q.negativeMarks } : q;
   const record = makeAttempt(saved, d, subjects, !r.option, now); record.attempt!.sessionMode = s.mode; record.revisionNeeded = r.review;
   if (q.sourceFile) {
     const e = examOccurrences(q).find(e => (!s.filters.examGroup || e.group === s.filters.examGroup) && (!s.filters.state || e.state === s.filters.state) && (!s.filters.exam || e.name === s.filters.exam) && (!s.filters.examStage || e.stage === s.filters.examStage) && (!s.filters.year || String(e.year || "unknown") === s.filters.year)) || examOccurrences(q)[0];
     record.year = e.year;
     record.stage = e.stage === "Mains" ? "Mains" : "Prelims";
-    record.paper = `${e.name} · Polity MCQs`;
+    record.paper = `${e.name} · ${q.subject === "Polity & Governance" ? "Polity" : q.subject} MCQs`;
     Object.assign(record.attempt!, { examGroup: e.group, examName: e.name, examState: e.state, examStage: e.stage });
   }
   return record;

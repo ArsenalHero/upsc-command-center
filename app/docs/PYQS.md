@@ -1,6 +1,6 @@
 # PYQ question bank
 
-The active bank contains 1,353 unique entries: the complete UPSC CSE Prelims 2025 GS Paper I (100 questions) and CSAT Paper II (80 questions), plus all 1,173 questions from nine user-supplied Polity text files. Existing records from earlier years and written Mains remain in History, dashboards and exports. Older `pyqDraft` and version-1 backups remain readable; new sessions use the optional `prelims` workspace field.
+The active bank contains 2,206 unique entries: the complete UPSC CSE Prelims 2025 GS Paper I (100 questions) and CSAT Paper II (80 questions), all 1,173 questions from nine user-supplied Polity text files, and all 853 questions present in six user-supplied Geography files. Existing records from earlier years and written Mains remain in History, dashboards and exports. Older `pyqDraft` and version-1 backups remain readable; new sessions use the optional `prelims` workspace field.
 
 ## Uploaded Polity coverage
 
@@ -21,7 +21,23 @@ Collections contain 272 uploaded UPSC CSE questions, 571 State PSC questions, 33
 
 The State PSC collection includes Uttar Pradesh, Bihar, Madhya Pradesh, Rajasthan, Jharkhand, Uttarakhand and Chhattisgarh, with individual exam and stage filters. Source labels are preserved alongside normalized exam names. English/Hindi question text, every option, the marked answer and each explanation were audited against all nine uploaded files. There are 31 questions with five options, including six answers marked E. Objective items labelled Mains remain MCQs and retain their source stage; they are not converted into essay tasks.
 
-Uploaded questions show **Provided answer** and **Explanation from supplied material**. These answers have not been independently verified against official answer keys. Practice marking is +1 right, 0 wrong/blank; it does not claim a State PSC marking scheme. Source question numbers are shown as Part/Q numbers, not invented official booklet numbers. Orphan citation markers in supplied prose are preserved as text without fabricated links.
+## Uploaded Geography coverage
+
+| Source | Questions | Source numbering gaps |
+|---|---:|---|
+| GEO1.txt | 101 | None |
+| GEO2.txt | 120 | None |
+| GEO3.txt | 44 | None |
+| GEO4.txt | 189 | None |
+| GEO6(1).txt | 202 | Q41 |
+| GEO7(3).txt | 197 | Q47, Q50, Q51, Q55, Q59, Q61 |
+| Total unique source entries | 853 | |
+
+The Geography subject includes 853 uploaded questions plus 12 questions in the original 2025 GS paper, giving 865 entries. Uploaded exam collections contain 222 UPSC CSE, 383 State PSC and 248 CDS/CAPF questions, covering supplied exam years from 1990 to 2025. All entries have supplied exam labels. GEO4 Q107 retains UKPSC 2005 and RPSC RAS/RTS 1997 as distinct occurrences; GEO6 Q105 retains both UPPCS Mains and Prelims 2005. UP RO/ARO and Uttarakhand Lower Subordinate labels are classified under State PSC. Each question appears once within a collection, with the matching occurrence's state/year/stage used for filtering and attempt metadata.
+
+All supplied questions, options, marked answers and explanations were compared with the six source files. English/Hindi text, explanation paragraphs and the eight five-choice questions are retained. Source numbers and their gaps remain unchanged; missing numbers and an unsupplied GEO5 part are not filled with invented questions. File digests and counts are recorded in [GEOGRAPHY-SOURCES.json](GEOGRAPHY-SOURCES.json).
+
+Uploaded Polity and Geography questions show **Provided answer** and **Explanation from supplied material**. These answers have not been independently verified against official answer keys. Practice marking is +1 right, 0 wrong/blank; it does not claim a State PSC marking scheme. Source question numbers are shown as Part/Q numbers, not invented official booklet numbers. Orphan citation markers in supplied prose are preserved as text without fabricated links.
 
 Questions are selectable text. Statements are semantic lists, ten GS matching questions are HTML tables, and all 29 CSAT comprehension items include their complete shared passage. No question images are displayed. Original numbering, options and mathematical symbols were checked against the original English paper pages. Subject/topic/subtopic and difficulty tags are editorial study classifications, not official UPSC metadata.
 
@@ -47,7 +63,7 @@ There are 89 checked editorial study explanations: all 80 CSAT items and nine GS
 
 ## Practice and tests
 
-Browse with combined exam collection, state, exam, year, stage, paper, subject, topic, subtopic, difficulty, status and text filters. Practice a filtered set, shuffle it, or select one question. Full papers contain only the complete original 2025 papers in their original order: 100 GS or 80 CSAT questions. Uploaded subject collections are not represented as complete papers. Test mode hides answers, explanations and key links until final submission. A 2-hour deadline is optional for full-paper tests and continues while the page is hidden or the active timer is paused.
+Browse with combined exam collection, state, exam, year, stage, paper, subject, topic, subtopic, difficulty, status and text filters. Subject buttons include Geography and Polity; switching exams preserves the selected subject, and switching subjects clears the previous paper/topic/search. Practice a filtered set, shuffle it, or select one question. Saved sessions support up to 5,000 questions, including the full expanded bank. Full papers contain only the complete original 2025 papers in their original order: 100 GS or 80 CSAT questions. Uploaded subject collections are not represented as complete papers. Test mode hides answers, explanations and key links until final submission. A 2-hour deadline is optional for full-paper tests and continues while the page is hidden or the active timer is paused.
 
 Individual-question practice starts at that question and continues in original order within its paper and subject/topic/difficulty filters. The search and latest-result filters locate the starting question rather than reducing this continuous session to one item. Next question is available beside feedback and in the sticky footer; the optional automatic-advance preference is saved in the workspace. Practice submission locks the choice and its active time; metadata remains editable. Going back does not change the result. Skipping records time with a blank answer and zero marks. Test choices remain editable drafts until final submission. The question palette shows answered, visited, unseen and review states. A current session must be resumed and finished before another starts, so draft answers are not silently replaced.
 
@@ -67,4 +83,4 @@ JSON backups include sessions, completed reports, bookmarks, review flags, exist
 
 The original complete papers remain in `src/data/pyq-bank.json`. Preserve those IDs and validate official answers against the same booklet's key. Check every number, option, matching cell, continuation, formula and passage against the original PDF; keep incomplete reasoning explicitly flagged. Old image assets are retained for cached clients but are not used by this page.
 
-Uploaded Polity lives in `src/data/polity-bank.json`; the lazy PYQ page combines both banks. Regenerate it with `node scripts/import-polity.mjs <source-directory>`, using the nine exact source filenames. IDs are `polity-part-<part>-q-<number>` and retain the source file, question number and SHA-256 digest. The parser rejects invalid numbering, missing explanations, ambiguous answers, unsupported option boundaries and unrecognized exam labels. Preserve supplied answer status until an independent verification establishes the corresponding official key. Tests cover source counts, collection/year separation, fifth-choice grading, Mains MCQs, scoring snapshots, large sessions, saved metadata and export compatibility.
+Uploaded Polity lives in `src/data/polity-bank.json`; regenerate it with `node scripts/import-polity.mjs <source-directory>`, using the nine exact source filenames. Uploaded Geography lives in `src/data/geography-bank.json`; regenerate it with `node scripts/import-geography.mjs <source-directory>`, using the six exact filenames above. The lazy PYQ page combines all three banks without changing previous IDs. IDs are `polity-part-<part>-q-<number>` or `geography-part-<part>-q-<number>`, retaining the source file, question number and SHA-256 digest. Geography generation validates all expected counts and numbering gaps. Both parsers reject invalid numbering, missing explanations, ambiguous answers, unsupported option boundaries and unrecognized exam labels. Preserve supplied answer status until an independent verification establishes the corresponding official key. Tests cover source counts, collection/year separation, fifth-choice grading, Mains MCQs, scoring snapshots, large sessions, saved metadata and export compatibility.

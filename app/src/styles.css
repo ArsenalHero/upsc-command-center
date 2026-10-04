@@ -4225,6 +4225,7 @@ small,
 .prelims-feedback.wrong { color:#bf425a; background:rgba(222,102,127,.10); }
 .prelims-explanation { border-left:3px solid var(--primary); padding:18px 22px; margin:20px 0; background:rgba(49,88,235,.04); }
 .prelims-explanation p, .prelims-explanation li { line-height:1.75; margin:12px 0; }
+.prelims-explanation .prelims-provided-text { white-space:pre-wrap; }
 .prelims-explanation h4 { margin-top:18px; }
 .prelims-palette { position:sticky; top:20px; }
 .prelims-palette > div { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:18px; }

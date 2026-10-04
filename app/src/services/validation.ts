@@ -689,7 +689,7 @@ export function validatePrelims(p: PrelimsWorkspace): void {
   }
   if (!p.session) return; const s = p.session;
   assert(obj(s) && typeof s.id === "string" && s.id.length > 0 && s.id.length < 200 && ["practice", "test"].includes(s.mode), "Invalid PYQ session.");
-  assert(ids(s.questionIds) && s.questionIds.length > 0 && s.questionIds.length <= 2000 && Number.isInteger(s.index) && s.index >= 0 && s.index < s.questionIds.length, "Invalid question position.");
+  assert(ids(s.questionIds) && s.questionIds.length > 0 && s.questionIds.length <= 5000 && Number.isInteger(s.index) && s.index >= 0 && s.index < s.questionIds.length, "Invalid question position.");
   assert(typeof s.startedAt === "string", "Missing start time.");
   for (const d of [s.startedAt, s.endedAt, s.deadline]) assert(d === undefined || (typeof d === "string" && d.length < 40 && Number.isFinite(Date.parse(d))), "Invalid session date.");
   filters(s.filters); assert(obj(s.responses) && Object.keys(s.responses).length <= s.questionIds.length, "Invalid responses.");

@@ -17,5 +17,5 @@ export function matchesExam(q: PYQQuestion, f: PrelimsFilters) {
 export function questionLabel(q: PYQQuestion) {
   if (!q.sourceFile) return `${q.year} ${q.stage === "CSAT" ? "CSAT" : "GS I"} Q${q.number}`;
   const e = examOccurrences(q)[0];
-  return `${e.name} ${e.year || "Year not supplied"} · Part ${q.sourcePart} Q${q.number}`;
+  return `${e.name} ${e.year || "Year not supplied"} · ${q.subject === "Geography" ? "Geography · " : ""}Part ${q.sourcePart} Q${q.number}`;
 }

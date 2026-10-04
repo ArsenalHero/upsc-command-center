@@ -10,6 +10,9 @@ const bank = JSON.parse(
 );
 const q1 = bank.find((q) => q.stage === "Prelims" && q.number === 1);
 const q2 = bank.find((q) => q.stage === "Prelims" && q.number === 2);
+const geography = JSON.parse(readFileSync(new URL("../src/data/geography-bank.json", import.meta.url), "utf8"));
+const geo126 = geography.find(q => q.id === "geography-part-6-q-126");
+const geo127 = geography.find(q => q.id === "geography-part-6-q-127");
 const built = await build({
   entryPoints: ["src/main.tsx"],
   bundle: true,
@@ -137,7 +140,7 @@ async function option(value) {
 
 try {
   await heading("PYQ question bank");
-  assert.match(text(), /1,353 questions ready/);
+  assert.match(text(), /2,206 questions ready/);
   await field("PYQ paper", "Prelims GS-I");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
@@ -240,7 +243,7 @@ try {
   assert.ok(current.data().prelims.session.endedAt);
   assert.equal(current.data().prelims.reports.at(-1).id,"expired-test");
   current=makeDOM(); allDOMs.push(current.dom);
-  await heading("PYQ question bank"); await click("State PSC");
+  await heading("PYQ question bank"); await click("Polity & Governance"); await click("State PSC");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"571 questions");
   await field("PYQ state","Chhattisgarh"); await field("PYQ year","2016");
   await field("Search PYQs","POL5");
@@ -272,6 +275,52 @@ try {
   await click("CDS & CAPF");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"330 questions");
   assert.deepEqual([...current.w.document.querySelector('[aria-label="PYQ state"]').options].map(o=>o.value),[""]);
+  current=makeDOM(); allDOMs.push(current.dom);
+  await heading("PYQ question bank"); await click("Geography");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"865 questions");
+  await click("UPSC CSE");
+  assert.equal(current.data().prelims.filters.subject,"Geography");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"234 questions");
+  await field("PYQ year","2025");
+  assert.ok(current.w.document.querySelectorAll(".prelims-bank-row").length);
+  assert.ok([...current.w.document.querySelectorAll(".prelims-bank-row .eyebrow")].every(el => el.textContent.includes("2025")));
+  await click("State PSC");
+  assert.equal(current.data().prelims.filters.subject,"Geography");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"383 questions");
+  await field("PYQ state","Bihar"); await field("Search PYQs","GEO6 126");
+  await click("Practise BPSC 2019 · Geography · Part 6 Q126");
+  await heading("2019 · BPSC · Geography MCQs");
+  assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
+  assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
+  current.advance(27); await option("e"); await click("Submit answer");
+  assert.match(text(), /Provided answer: D/);
+  assert.equal(current.w.document.querySelector(".prelims-provided-text").textContent,geo126.explanation.justification);
+  const geoAttempt=current.data().pyqs.at(-1);
+  assert.equal(geoAttempt.attempt.outcome,"incorrect"); assert.equal(geoAttempt.attempt.seconds,27);
+  assert.equal(geoAttempt.attempt.examState,"Bihar");
+  assert.equal(geoAttempt.attempt.sourceFile,"GEO6(1).txt");
+  assert.equal(geoAttempt.paper,"BPSC · Geography MCQs");
+  await click("Next question"); await heading("2017 · BPSC · Geography MCQs");
+  assert.match(text(), /Source Q127/);
+  current.advance(11); await option(geo127.answer); await click("Submit answer");
+  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"correct");
+  assert.equal(current.data().pyqs.at(-1).attempt.seconds,11);
+  await click("Save & exit"); await heading("PYQ question bank");
+  current=makeDOM(current.w.localStorage.getItem(key)); allDOMs.push(current.dom);
+  await heading("PYQ question bank");
+  assert.equal(current.data().prelims.filters.subject,"Geography");
+  assert.equal(current.data().pyqs.at(-2).attempt.seconds,27);
+  validateData(current.data());
+  await click("Resume practice"); await click("Finish practice"); await heading("Your paper report");
+  assert.match(text(), /1 right/); assert.match(text(), /1 wrong/); assert.match(text(), /penalty 0/);
+  await click("Back to question bank"); await field("Search PYQs","");
+  await field("PYQ paper","BPSC · Geography MCQs"); await click("Polity & Governance");
+  assert.equal(current.data().prelims.filters.paper,"");
+  assert.ok(!text().includes("No questions match these filters."));
+  await click("Geography"); await click("CDS & CAPF");
+  assert.equal(current.data().prelims.filters.subject,"Geography");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"248 questions");
+  assert.deepEqual([...current.w.document.querySelector('[aria-label="PYQ state"]').options].map(o=>o.value),[""]);
   assert.deepEqual(messages,[]);
-  console.log("PYQ UI passed: original papers, State PSC filters, five-choice grading, source labels, saved time, reload, Next question, reports, unlabelled and CDS/CAPF separation.");
+  console.log("PYQ UI passed: original papers, Polity and Geography, subject/exam/year filters, five-choice grading, exact supplied explanations, saved time, reload, Next question, reports and CDS/CAPF separation.");
 } finally { for(const dom of allDOMs) dom.window.close(); }
