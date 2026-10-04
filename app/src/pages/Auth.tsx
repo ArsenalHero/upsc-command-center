@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 import { authRedirect } from "../services/authConfig";
+import { authErrorMessage } from "../services/authErrors";
 
 export type AuthMode = "login" | "signup" | "forgot" | "reset";
 const headings = {
@@ -70,12 +71,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
         const { error: loginError } = await auth.client.auth.signInWithPassword(
           { email: email.trim(), password },
         );
-        if (loginError)
-          throw new Error(
-            loginError.code === "email_not_confirmed"
-              ? "Please confirm your email before logging in."
-              : "We couldn't log you in. Check your email and password, then try again.",
-          );
+        if (loginError) throw loginError;
       } else if (mode === "signup") {
         const { error: signupError, data } = await auth.client.auth.signUp({
           email: email.trim(),
@@ -85,12 +81,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
             emailRedirectTo: authRedirect("email", window.location.href),
           },
         });
-        if (signupError)
-          throw new Error(
-            signupError.code === "weak_password"
-              ? "Choose a stronger password with at least 8 characters."
-              : "Your account could not be created. Please try again, or log in if you already have an account.",
-          );
+        if (signupError) throw signupError;
         if (!data.session && current === request.current)
           setSuccess(
             "Check your email for a confirmation link. Confirm your address, then log in to open your workspace.",
@@ -100,10 +91,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           await auth.client.auth.resetPasswordForEmail(email.trim(), {
             redirectTo: authRedirect("recovery", window.location.href),
           });
-        if (resetError)
-          throw new Error(
-            "We couldn't send a reset email right now. Please try again later.",
-          );
+        if (resetError) throw resetError;
         if (current === request.current)
           setSuccess(
             "If this email has an account, a password reset link will arrive shortly. Check your spam folder too.",
@@ -112,22 +100,20 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
         const { error: updateError } = await auth.client.auth.updateUser({
           password,
         });
-        if (updateError)
-          throw new Error(
-            "Your password could not be changed. Try a different password or request a new reset link.",
-          );
+        if (updateError) throw updateError;
         auth.finishRecovery();
         navigate("/", { replace: true });
       }
-      if (current === request.current) setPassword("");
+      if (current === request.current) { setPassword(""); setConfirm(""); }
     } catch (e) {
-      if (current === request.current) setError((e as Error).message);
+      if (current === request.current) setError(authErrorMessage(e, mode));
     } finally {
       if (current === request.current) setBusy(false);
     }
   }
   async function resend() {
     if (!auth.client || busy) return;
+    const current = ++request.current;
     setBusy(true);
     setError("");
     try {
@@ -139,15 +125,11 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
         },
       });
       if (resendError) throw resendError;
-      setSuccess(
-        "A confirmation email has been requested. Check your inbox and spam folder.",
-      );
-    } catch {
-      setError(
-        "We couldn't resend the email yet. Wait a moment and try again.",
-      );
+      if (current === request.current) setSuccess("A confirmation email has been requested. Check your inbox and spam folder.");
+    } catch (e) {
+      if (current === request.current) setError(authErrorMessage(e, "resend"));
     } finally {
-      setBusy(false);
+      if (current === request.current) setBusy(false);
     }
   }
   return (

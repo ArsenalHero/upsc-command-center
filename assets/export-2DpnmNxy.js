@@ -1,0 +1,7 @@
+import{y as u,c as r,aG as m}from"./index-D8jPpuzt.js";/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const l=[["path",{d:"M12 15V3",key:"m9g1x1"}],["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["path",{d:"m7 10 5 5 5-5",key:"brsn70"}]],f=u("download",l);function d(t,a,n){const o=new Blob([t],{type:n}),e=URL.createObjectURL(o),s=document.createElement("a");s.href=e,s.download=a,s.click(),setTimeout(()=>URL.revokeObjectURL(e),1500)}const j=t=>d(JSON.stringify({...t,exportedAt:new Date().toISOString()},null,2),`upsc-backup-${r()}.json`,"application/json");async function w(t){if(t.size>50*1024*1024)throw new Error("Backups must be smaller than 50 MB.");return m(JSON.parse(await t.text()))}const i=t=>{let a=typeof t=="object"?JSON.stringify(t):String(t??"");return/^[=+\-@\t\r]/.test(a)&&(a="'"+a),'"'+a.replaceAll('"','""')+'"'};function b(t,a){const n=t[a].map(e=>{var s,p;return{...e,...a==="pyqs"&&e.attempt?e.attempt:{},...a==="pyqs"&&!e.year?{year:""}:{},subject:e.subjectId?(s=t.subjects.find(c=>c.id===e.subjectId))==null?void 0:s.name:"",topic:e.topicId?(p=t.topics.find(c=>c.id===e.topicId))==null?void 0:p.name:""}}),o=[...new Set(n.flatMap(e=>Object.keys(e)))];return"\uFEFF"+[o.map(i).join(","),...n.map(e=>o.map(s=>i(e[s])).join(","))].join(`\r
+`)}const k=(t,a)=>d(b(t,a),`upsc-${a}-${r()}.csv`,"text/csv;charset=utf-8;");export{f as D,k as a,i as c,d,j as e,w as p};

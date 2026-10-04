@@ -22,6 +22,7 @@ vc.on("jsdomError", (e) => {
 });
 const apiCalls = [],
   workspaces = new Map();
+const failures = new Map();
 const alice = {
   id: "11111111-1111-1111-1111-111111111111",
   aud: "authenticated",
@@ -75,6 +76,8 @@ const fakeFetch = async (input, options = {}) => {
     body,
     owner: owner?.id,
   });
+  const failure = failures.get(url.pathname)?.shift();
+  if (failure) return json(failure.body, failure.status);
   if (url.pathname.endsWith("/auth-config.json"))
     return json({
       url: "https://test-project.supabase.co",
@@ -233,6 +236,26 @@ try {
   assert.equal(apiCalls.filter((c) => c.path.endsWith("/signup")).length, 0);
   fill("auth-confirm", "correct-password");
   await new Promise((r) => setTimeout(r, 10));
+  for (const email of [alice.email, bob.email]) {
+    const signupRequests = apiCalls.filter(c=>c.path.endsWith("/signup")).length;
+    fill("auth-email",email);
+    failures.set("/auth/v1/signup",[{status:500,body:{code:"unexpected_failure",msg:"Error sending confirmation email: SMTP 535 authentication failed"}}]);
+    await new Promise((r)=>setTimeout(r,10)); submit();
+    await new Promise((r)=>setTimeout(r,30));
+    await until(()=>apiCalls.filter(c=>c.path.endsWith("/signup")).length===signupRequests+1 && !w.document.querySelector("fieldset").disabled && w.document.querySelector('[role="alert"]')?.textContent.includes("website’s email service is unavailable"),"SMTP failure was hidden by a generic account error");
+    assert.equal(w.document.querySelector('[role="status"]'),null);
+    assert.equal(w.document.getElementById("auth-email").value,email);
+    assert.equal(w.document.getElementById("auth-password").value,"correct-password");
+    assert.equal(w.document.getElementById("auth-confirm").value,"correct-password");
+    assert.equal(w.document.querySelector("fieldset").disabled,false);
+    assert.doesNotMatch(w.document.body.textContent,/535|authentication failed|already have an account/);
+    assert.equal(workspaces.size,0);
+  }
+  fill("auth-email",alice.email);
+  failures.set("/auth/v1/signup",[{status:429,body:{code:"over_email_send_rate_limit",msg:"Email rate limit exceeded"}}]);
+  await new Promise((r)=>setTimeout(r,10)); submit();
+  await until(()=>w.document.body.textContent.includes("Please wait before trying again"),"Rate limit was hidden by a generic account error");
+  assert.equal(w.document.querySelector("fieldset").disabled,false);
   submit();
   await until(
     () => w.document.body.textContent.includes("Check your inbox"),
@@ -242,15 +265,23 @@ try {
     apiCalls.find((c) => c.path.endsWith("/signup")).query.get("redirect_to"),
     "https://example.test/upsc/?auth=confirm",
   );
+  failures.set("/auth/v1/resend",[{status:500,body:{code:"unexpected_failure",msg:"Error sending confirmation email"}}]);
+  click("Resend confirmation");
+  await until(()=>w.document.body.textContent.includes("We couldn’t resend your confirmation email"),"Resend SMTP failure missing");
+  assert.ok(![...w.document.querySelectorAll("button")].find(b=>b.textContent.trim()==="Resend confirmation").disabled);
   click("Resend confirmation");
   await until(
-    () => apiCalls.some((c) => c.path.endsWith("/resend")),
+    () => w.document.body.textContent.includes("A confirmation email has been requested"),
     "Resend was not called",
   );
   w.location.hash = "/forgot-password";
   await heading("Forgot your password?");
   fill("auth-email", alice.email);
   await new Promise((r) => setTimeout(r, 10));
+  failures.set("/auth/v1/recover",[{status:500,body:{code:"unexpected_failure",msg:"Error sending recovery email"}}]);
+  submit();
+  await until(()=>w.document.body.textContent.includes("We couldn’t send a password reset link"),"Recovery SMTP failure missing");
+  assert.ok(!w.document.body.textContent.includes("If this email has an account"));
   submit();
   await until(
     () => w.document.body.textContent.includes("If this email has an account"),
@@ -438,7 +469,7 @@ try {
   }
   assert.equal(messages.length, 0, messages.join("\n"));
   console.log(
-    "Auth UI checks passed: sign-up confirmation, resend, forgot password, recovery callback/password change, verification callback, invalid login, actual SDK login/logout, cloud save, cache cleanup, and two isolated accounts (simulated API).",
+    "Auth UI checks passed: SMTP failures across different emails, recoverable rate limits, signup/resend/recovery, confirmation callbacks, password changes, actual SDK login/logout, cloud save, cache cleanup and two isolated accounts (simulated API).",
   );
 } finally {
   dom.window.close();
