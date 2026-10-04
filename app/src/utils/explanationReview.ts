@@ -7,11 +7,15 @@ export function englishStudyText(text: string) {
       const parts = cell.split(/\s+\/\s+/);
       return parts.length === 2 && parts[0].trim() === parts[1].trim() ? parts[0].trim() : cell.trim();
     }
-    return cell.split(/\s+\/\s+/).filter(part => !/[\u0900-\u097f]/.test(part)).join(" / ").trim();
+    // Bilingual matching rows can place a second English value after a Hindi
+    // translation and a colon. Process each side before discarding translations.
+    return cell.split(/(\s*:\s*)/).map(part => /^\s*:\s*$/.test(part) ? part :
+      part.split(/\s+\/\s+/).filter(value => !/[\u0900-\u097f]/.test(value)).join(" / ").trim()
+    ).join("").replace(/:\s*$/, "").trim();
   }).filter(Boolean).join(" | ")).filter(Boolean).join("\n");
 }
 export const studyExplanation = (q: PYQQuestion): StudyExplanation | undefined => q.explanationReview?.explanation || q.explanation;
-export const explanationStatus = (q: PYQQuestion) => q.explanationReview?.status === "disputed" || q.keyConflict && q.keyStatus !== "official" ? "disputed" : q.suppliedExplanationIds?.length ? "source" : q.explanationReview?.status === "referenced" ? "referenced" : "source";
+export const explanationStatus = (q: PYQQuestion) => q.explanationReview?.status === "disputed" || q.keyConflict && q.keyStatus !== "official" && !Object.hasOwn(q.explanationReview || {}, "answer") ? "disputed" : q.explanationReview?.status === "referenced" ? "referenced" : "source";
 export const explanationStatusLabel = (q: PYQQuestion) => explanationStatus(q) === "source" && q.suppliedExplanationIds?.length ? "Explanation available" : ({ disputed: "Answer needs review", referenced: "Reference-reviewed explanation", source: "Explanation needs verification" })[explanationStatus(q)];
 const roman: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
 const tokens = (s: string) => new Set(englishStudyText(s).toLowerCase().match(/[a-z]{3,}/g) || []);

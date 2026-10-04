@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { suppliedExplanations, type SuppliedExplanation } from "../data/suppliedExplanations";
+import { reviewedLibraryQuestion } from "../data/reviewedLibrary";
+import { ReviewedExplanationText } from "./ReviewedExplanation";
 import { englishSourceHTML } from "../utils/englishQuestion";
 
 // These static fragments are validated against a tag/attribute allowlist by the importer.
@@ -30,14 +32,15 @@ export function SuppliedExplanationLibrary() {
   }, [subject, year, exam, query]);
   const current = Math.min(page, Math.max(0, Math.ceil(filtered.length / 10) - 1));
   const change = (set: (value: string) => void, value: string) => { set(value); setPage(0); };
+  const reviewed = opened ? reviewedLibraryQuestion(opened.id) : undefined;
   if (opened) return <section className="card supplied-explanation-detail" aria-label="Explanation detail">
     <button className="btn secondary" onClick={() => setOpened(undefined)}><ChevronLeft size={16} />Back to explanations</button>
     <p className="eyebrow">{opened.exam || "Exam not supplied"} · {opened.year || "Year not supplied"} · {opened.studySubject} · Q{opened.n}</p>
     <h2>{opened.topic}</h2>
     <SuppliedHTML html={opened.question} question />
     <ul className="supplied-options">{opened.options.map(([key, html]) => <li key={key}><strong>{key}.</strong><SuppliedHTML html={html} /></li>)}</ul>
-    <p className="prelims-answer-note"><strong>Answer: {opened.answer || "Awaiting key"}</strong></p>
-    <SuppliedExplanationText entry={opened} />
+    <p className="prelims-answer-note"><strong>Answer: {reviewed ? reviewed.answer?.toUpperCase() || "Awaiting key" : opened.answer || "Awaiting key"}</strong></p>
+    {reviewed?.explanationReview ? <>{reviewed.explanationReview.status === "disputed" && <p className="prelims-answer-note">Answer needs review</p>}<ReviewedExplanationText explanation={reviewed.explanationReview.explanation} /></> : <SuppliedExplanationText entry={opened} />}
   </section>;
   return <>
     <section className="card prelims-filters">
