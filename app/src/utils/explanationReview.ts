@@ -12,7 +12,7 @@ export function englishStudyText(text: string) {
 }
 export const studyExplanation = (q: PYQQuestion): StudyExplanation | undefined => q.explanationReview?.explanation || q.explanation;
 export const explanationStatus = (q: PYQQuestion) => q.explanationReview?.status === "disputed" || q.keyConflict && q.keyStatus !== "official" ? "disputed" : q.suppliedExplanationIds?.length ? "source" : q.explanationReview?.status === "referenced" ? "referenced" : "source";
-export const explanationStatusLabel = (q: PYQQuestion) => explanationStatus(q) === "source" && q.suppliedExplanationIds?.length ? "Supplied HTML explanation" : ({ disputed: "Answer needs review", referenced: "Reference-reviewed explanation", source: "Explanation needs verification" })[explanationStatus(q)];
+export const explanationStatusLabel = (q: PYQQuestion) => explanationStatus(q) === "source" && q.suppliedExplanationIds?.length ? "Explanation available" : ({ disputed: "Answer needs review", referenced: "Reference-reviewed explanation", source: "Explanation needs verification" })[explanationStatus(q)];
 const roman: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
 const tokens = (s: string) => new Set(englishStudyText(s).toLowerCase().match(/[a-z]{3,}/g) || []);
 const stop = new Set("the and for from that this with which above only both none all correct incorrect following statement statements given answer option options not are was were has have had been their its into one two three four these those".split(" "));
