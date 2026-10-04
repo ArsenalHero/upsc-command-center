@@ -312,6 +312,19 @@ try {
   click("Save daily progress");
   await until(() => workspaces.get(alice.id)?.payload.lectures?.logs.length === 1, "Alice's lecture log did not sync");
 
+  w.location.hash = "/books"; await heading("Books"); click("Add book");
+  await until(() => w.document.querySelector('[aria-label="Book title"]'), "Book form missing");
+  for (const [label, value] of [["Book title", "Alice's reading"], ["Total book chapters", "10"], ["Initial completed chapters", "1-4"], ["Initial revision count", "2"]]) {
+    const el = w.document.querySelector(`[aria-label="${label}"]`);
+    Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype, "value").set.call(el, value);
+    el.dispatchEvent(new w.Event("input", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 10));
+  }
+  click("Save book");
+  await until(() => workspaces.get(alice.id)?.payload.books?.logs.length === 2, "Alice's chapter and revision progress did not sync");
+  assert.deepEqual(workspaces.get(alice.id).payload.books.logs[0].chapters, [1,2,3,4]);
+  assert.equal(workspaces.get(alice.id).payload.books.logs[1].repeats, 2);
+
   w.location.hash = "/account";
   await heading("Your account");
   assert.match(w.document.body.textContent, /alice@example.test/);
@@ -337,6 +350,8 @@ try {
   assert.equal(workspaces.get(bob.id).payload.sessions.length, 0);
   assert.equal(workspaces.get(bob.id).payload.pyqs.length, 0);
   assert.equal(workspaces.get(bob.id).payload.lectures, undefined);
+  assert.equal(workspaces.get(bob.id).payload.books, undefined);
+  assert.equal(workspaces.get(alice.id).payload.books.logs.length, 2);
   assert.equal(workspaces.get(alice.id).payload.lectures.logs.length, 1);
   assert.equal(workspaces.get(alice.id).payload.sessions.length, 1);
   assert.equal(workspaces.get(alice.id).payload.pyqs.length, 1);

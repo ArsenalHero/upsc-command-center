@@ -17,6 +17,7 @@ import type {
   PYQDraft,
   PrelimsWorkspace,
   LectureWorkspace,
+  BookWorkspace,
 } from "../types";
 import {
   LocalStorageRepository,
@@ -58,6 +59,7 @@ interface DataContextValue {
   submitPYQ: (record: PYQRecord, nextDraft: PYQDraft) => boolean;
   savePrelims: (workspace: PrelimsWorkspace, attempts?: PYQRecord[]) => boolean;
   saveLectures: (workspace: LectureWorkspace) => boolean;
+  saveBooks: (workspace: BookWorkspace) => boolean;
 }
 const Context = createContext<DataContextValue | null>(null);
 export function DataProvider({
@@ -268,6 +270,11 @@ export function DataProvider({
     if (ok) notify("Lecture progress saved.");
     return ok;
   }, [commit, notify]);
+  const saveBooks = useCallback((workspace: BookWorkspace) => {
+    const ok = commit(d => { d.books = structuredClone(workspace); }, true);
+    if (ok) notify("Book progress saved.");
+    return ok;
+  }, [commit, notify]);
   const deleteRecord = useCallback(
     (c: Collection, id: string) => {
       const ok = commit((d) => {
@@ -405,6 +412,7 @@ export function DataProvider({
         submitPYQ,
         savePrelims,
         saveLectures,
+        saveBooks,
       }}
     >
       {children}

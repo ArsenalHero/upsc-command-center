@@ -3,8 +3,10 @@
 | Requested capability | Implementation |
 |---|---|
 | React, TypeScript, Vite, Tailwind, Recharts, Lucide | `package.json`, `vite.config.ts`, `src/main.tsx` |
-| 19 navigation pages and Pages-safe refresh | `src/App.tsx`, HashRouter, `src/components/Layout.tsx` |
+| Workspace and preparation navigation with Pages-safe refresh | `src/App.tsx`, HashRouter, `src/components/Layout.tsx` |
 | Full UPSC GS and CSAT topic master | `src/data/defaults.ts` |
+| Book reading by chapter lists/ranges, per-chapter revisions, full-book cycles, progress rings/maps and history | `src/pages/Books.tsx`, `src/utils/books.ts`, `AppData.books`, `docs/BOOKS.md` |
+| NCERT and publisher-backed suggested UPSC reading list with subject-prefilled book forms | `src/data/bookSuggestions.ts` |
 | Local persistence and future storage adapter | `src/services/repository.ts`, `src/hooks/useData.tsx` |
 | Full study, test, MCQ, answer, essay, ethics, CA, PYQ forms | `src/components/RecordForm.tsx` |
 | Optional and unlimited custom hierarchies | `src/pages/Syllabus.tsx`, Optional view in `src/pages/Practice.tsx` |

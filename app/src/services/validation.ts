@@ -1,4 +1,4 @@
-import type { AppData, Collection, PYQDraft, PrelimsWorkspace, LectureWorkspace } from "../types";
+import type { AppData, Collection, PYQDraft, PrelimsWorkspace, LectureWorkspace, BookWorkspace } from "../types";
 import {
   studyTypes,
   errorTypes,
@@ -579,6 +579,7 @@ export function validateData(input: unknown): AppData {
       d.catalog.filter((c) => c.type === "Test series").map((c) => c.id),
     );
   if (d.lectures !== undefined) validateLectures(d.lectures, subjects);
+  if (d.books !== undefined) validateBooks(d.books, subjects);
   collections.forEach((c) =>
     d[c].forEach((r: any) => {
       if (r.resourceId)
@@ -722,4 +723,38 @@ export function validateLectures(w: LectureWorkspace, subjects: Set<string>): vo
     assert(Number.isInteger(l.minutes) && l.minutes >= 0 && l.minutes <= 1440 && typeof l.notes === "string" && l.notes.length <= 10000, "Invalid lecture duration or notes.");
     logs.add(l.id); days.add(`${l.planId}:${l.date}`);
   }
+}
+export function validateBooks(w: BookWorkspace, subjects: Set<string>): void {
+  assert(obj(w) && Array.isArray(w.plans) && Array.isArray(w.logs), "Invalid book workspace.");
+  assert(w.plans.length <= 1000 && w.logs.length <= 100000, "Too many book records.");
+  const plans = new Map<string, number>(), logIds = new Set<string>();
+  const id = (value: unknown) => typeof value === "string" && value.length > 0 && value.length < 200;
+  for (const p of w.plans) {
+    assert(obj(p) && id(p.id) && !plans.has(p.id), "Invalid or duplicate book.");
+    assert(typeof p.title === "string" && p.title.trim().length > 0 && p.title.length <= 200, "Enter a book title of at most 200 characters.");
+    assert(typeof p.author === "string" && p.author.length <= 120 && typeof p.edition === "string" && p.edition.length <= 120, "Invalid book author or edition.");
+    assert(subjects.has(p.subjectId), "Choose a valid book subject.");
+    assert(Number.isInteger(p.totalChapters) && p.totalChapters >= 1 && p.totalChapters <= 1000, "Total chapters must be a whole number from 1 to 1,000.");
+    assert(Number.isInteger(p.revisionTarget) && p.revisionTarget >= 0 && p.revisionTarget <= 50, "Revision target must be a whole number from 0 to 50.");
+    plans.set(p.id, p.totalChapters);
+  }
+  const readDates = new Map<string, Map<number, string>>();
+  for (const l of w.logs) {
+    assert(obj(l) && id(l.id) && !logIds.has(l.id) && plans.has(l.bookId), "Invalid or duplicate book progress entry.");
+    assert(validDate(l.date) && l.date <= dateKey(), "Book progress needs a valid date on or before today.");
+    assert(["reading", "revision"].includes(l.kind), "Choose reading or revision.");
+    assert(Array.isArray(l.chapters) && l.chapters.length > 0 && l.chapters.length <= plans.get(l.bookId)!
+      && new Set(l.chapters).size === l.chapters.length
+      && l.chapters.every(n => Number.isInteger(n) && n >= 1 && n <= plans.get(l.bookId)!), "Chapter numbers must be unique and within this book's total. Keep the total at least as high as your recorded chapters.");
+    assert(Number.isInteger(l.repeats) && l.repeats >= 1 && l.repeats <= 1000 && (l.kind !== "reading" || l.repeats === 1), "Revisions must be a whole number from 1 to 1,000; first reading is counted once.");
+    assert(typeof l.notes === "string" && l.notes.length <= 5000, "Book notes must be at most 5,000 characters.");
+    logIds.add(l.id);
+    if (l.kind === "reading") {
+      const dates = readDates.get(l.bookId) || new Map<number, string>();
+      for (const n of l.chapters) if (!dates.has(n) || l.date < dates.get(n)!) dates.set(n, l.date);
+      readDates.set(l.bookId, dates);
+    }
+  }
+  for (const l of w.logs) if (l.kind === "revision")
+    assert(l.chapters.every(n => !!readDates.get(l.bookId)?.get(n) && readDates.get(l.bookId)!.get(n)! <= l.date), "Record these chapters as read on or before the revision date. Remove or correct related revision entries before removing their reading history.");
 }

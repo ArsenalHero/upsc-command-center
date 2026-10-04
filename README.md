@@ -18,6 +18,10 @@ In **Revision**, choose **On · 1–7–14–30–90** for five reviews targetin
 
 Select **Personal workspace** in the sidebar to choose **UPSC CSE** or **State PSC**. State PSC asks for your exam name and exam date. The dashboard shows the selected State PSC target, or both CSE Prelims and Mains targets, with a live days/hours/minutes/seconds countdown. CSE 2027 uses the supplied dates of 23 May and 20 August; every date is editable. Countdowns target 00:00 IST on the exam date, not a paper start time. Switching exams preserves both configurations and saved study data. The same controls are available in setup and Settings. See [exam settings](app/docs/EXAMS.md).
 
+## Books
+
+The [Books workspace](https://arsenalhero.github.io/upsc-command-center/#/books) tracks reading with chapter lists (`1,2,3`) and ranges (`1-4,7`), the total chapters in your edition, and dated revision counts. Progress rings show reading completion, revision bars keep each chapter's goal independent, and chapter maps show read/revised chapters. Full-book revision counts require every chapter to be reviewed. Edit or delete progress entries, filter by subject, and export JSON/CSV. A suggested list of NCERT foundations and subject references links to primary publishers and pre-fills the add-book form. See [book tracking](app/docs/BOOKS.md).
+
 ## Lectures
 
 The [Lectures workspace](https://arsenalhero.github.io/upsc-command-center/#/lectures) lets you set a total and daily target for each subject, name a course, set an optional deadline, and record the number completed each day. Completion rings, subject progress cards, daily bars and a 28-day activity calendar show totals through the selected day. Edit a daily total without duplicating it; JSON backups retain targets and logs, and lecture CSV exports include each day. See [lecture data rules](app/docs/LECTURES.md).

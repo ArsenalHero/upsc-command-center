@@ -19,6 +19,8 @@ Choose **Explore with fictional demo data** during setup or **Settings → Load 
 
 ## Main features
 
+- Book reading and revision tracking in Workspace → Books: chapter lists/ranges, total chapters, initial progress, per-chapter revision counts and targets, full-book cycles, percentage rings, chapter maps, editable history and JSON/CSV exports. Suggested NCERT and subject reference titles link to their publishers and prefill the add-book form. See [book tracking](docs/BOOKS.md).
+
 - Optional spaced repetition in Revision: a five-review 1–7–14–30–90 preset, custom 1–365 day intervals, an Off option, and automatic next reviews on completion. Existing custom preferences, completed history, calendar entries and JSON/CSV exports are preserved. See [revision rules](docs/REVISION.md).
 - Personal workspace exam selection for UPSC CSE or a named State PSC, editable dates, and live days/hours/minutes/seconds dashboard countdowns to the start of the exam date in IST. Switching exams keeps study data and both configurations. See [exam settings](docs/EXAMS.md).
 

@@ -54,6 +54,7 @@ export const navigation = [
   },
   { label: "Syllabus", path: "/syllabus", icon: BookOpen, group: "WORKSPACE" },
   { label: "Lectures", path: "/lectures", icon: PlayCircle, group: "WORKSPACE" },
+  { label: "Books", path: "/books", icon: Library, group: "WORKSPACE" },
   { label: "Revision", path: "/revision", icon: RotateCcw, group: "WORKSPACE" },
   { label: "Goals", path: "/goals", icon: Target, group: "WORKSPACE" },
   {

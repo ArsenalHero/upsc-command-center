@@ -1,12 +1,15 @@
 # Verification results
 
-Verified in the build environment on 2026-10-03:
+Verified in the build environment on 2026-10-04:
 
 | Check | Result |
 |---|---|
 | Full TypeScript app (`npm run typecheck`) | Passed |
-| Analytics/storage/auth/cache/validation/Postgres/PYQ/revision/exam tests | 61 passed, 0 failed |
-| Real React app rendered in JSDOM (`npm run test:ui`) | All six suites passed |
+| Analytics/storage/auth/cache/validation/Postgres/PYQ/revision/exam/book tests | 69 passed, 0 failed |
+| Real React app rendered in JSDOM (`npm run test:ui`) | All seven suites passed |
+| Chapter lists/ranges, deduplication, per-chapter revision credit, full-book cycles, weighted completion, valid histories and book JSON/CSV preservation | Passed |
+| Books forms, initial progress, chapter maps, safe edits, read-before-revision, subject filters, suggested books, reload and atomic failed-save retry | Passed in rendered UI |
+| Books saved through the real Auth SDK and existing private workspace transport | Passed against the simulated API; another user's account has no book records |
 | Five-review 1–7–14–30–90 preset, late completion shifts, custom switches, completion dates, duplicates and legacy backup/export compatibility | Passed |
 | Revision preset/custom/off radios, calendar entries, reload and atomic save failure/retry | Passed in rendered UI |
 | State PSC setup and personal workspace selection, required name/date, CSE defaults and preserved settings on exam switches | Passed in unit and rendered UI checks |
@@ -35,7 +38,7 @@ Verified in the build environment on 2026-10-03:
 | Lecture targets, independent subject totals and daily aggregation | Passed |
 | Lecture forms, edits without duplicate days, filters, chart periods, reload and failed-save retry | Passed in rendered UI |
 | Lecture JSON/CSV preservation, formula escaping and invalid-entry rejection | Passed |
-| Real Auth SDK and cloud flows against a simulated API | Passed; signup, recovery, login/logout, study/PYQ/lecture sync, cache cleanup and two-user isolation |
+| Real Auth SDK and cloud flows against a simulated API | Passed; signup, recovery, login/logout, study/PYQ/lecture/book sync, cache cleanup and two-user isolation |
 | Actual Postgres migration and permissions in local PGlite | Passed; anonymous rejection, row isolation, authorized writes and conflicts |
 | Live Supabase private workspace schema, grants and RLS | Passed; anonymous HTTP read rejected, direct client writes revoked, privileged writer kept outside the exposed schema |
 | Live Supabase security advisor | No notices |

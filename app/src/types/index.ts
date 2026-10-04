@@ -360,6 +360,7 @@ export interface AppData {
   pyqDraft?: PYQDraft;
   prelims?: PrelimsWorkspace;
   lectures?: LectureWorkspace;
+  books?: BookWorkspace;
   schemaVersion: 1;
   settings: Settings;
   subjects: Subject[];
@@ -379,7 +380,7 @@ export interface AppData {
 }
 export type Collection = Exclude<
   keyof AppData,
-  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims" | "lectures"
+  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims" | "lectures" | "books"
 >;
 export type Entity = AppData[Collection][number];
 export interface PrelimsFilters {
@@ -425,6 +426,28 @@ export interface LectureLog {
 export interface LectureWorkspace {
   plans: LecturePlan[];
   logs: LectureLog[];
+}
+export interface BookPlan {
+  id: string;
+  title: string;
+  author: string;
+  edition: string;
+  subjectId: string;
+  totalChapters: number;
+  revisionTarget: number;
+}
+export interface BookLog {
+  id: string;
+  bookId: string;
+  date: string;
+  kind: "reading" | "revision";
+  chapters: number[];
+  repeats: number;
+  notes: string;
+}
+export interface BookWorkspace {
+  plans: BookPlan[];
+  logs: BookLog[];
 }
 export interface Filters {
   from: string;

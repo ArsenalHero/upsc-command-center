@@ -4431,3 +4431,100 @@ small,
 .prelims-bank-row > div:first-child { min-width:0; }
 .prelims-bank-row p { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
 .prelims-bank-row .eyebrow { white-space:normal; line-height:1.7; }
+
+/* Book reading workspace */
+.book-actions, .book-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.book-toolbar, .book-section-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.book-toolbar { margin: 4px 0 24px; color: var(--muted); font-size: 12px; }
+.book-toolbar > span, .book-toolbar label, .book-section-title > span { display: flex; align-items: center; gap: 10px; }
+.book-toolbar label { margin: 0; }
+.book-toolbar select { min-width: 180px; }
+.book-kpis { margin-bottom: 24px; }
+.book-overview { padding: 26px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; background: linear-gradient(120deg,var(--surface),var(--primary-soft)); margin-bottom: 32px; }
+.book-ring-area { display: flex; align-items: center; gap: 24px; min-width: 0; }
+.book-ring-area .progress-ring { flex-shrink: 0; }
+.book-ring-area .progress-ring > strong { font-size: 25px; }
+.book-ring-area h2 { font-size: 23px; line-height: 1.4; margin: 6px 0; }
+.book-ring-area p { margin-bottom: 10px; color: var(--muted); font-size: 13px; }
+.book-revision-overview { padding-left: 30px; border-left: 1px solid var(--border); }
+.book-revision-overview .book-section-title { font-size: 13px; margin-bottom: 16px; }
+.book-revision-overview .book-section-title strong { color: var(--purple); font-size: 22px; }
+.book-revision-overview > p { color: var(--muted); font-size: 12px; line-height: 1.7; margin-top: 14px; }
+.book-section-title h2 { font-size: 18px; margin-top: 5px; }
+.book-shelf-heading { margin-bottom: 20px; }
+.book-shelf { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 22px; margin-bottom: 26px; }
+.book-card { padding: 24px; min-width: 0; border-top: 3px solid var(--book-color); }
+.book-card, .book-suggestion { margin-bottom: 0; }
+.book-card-head { display: flex; align-items: flex-start; gap: 12px; }
+.book-spine { flex-shrink: 0; width: 42px; height: 50px; border-radius: 5px 10px 10px 5px; background: var(--primary-soft); color: var(--book-color); border-left: 3px solid var(--book-color); display: flex; align-items: center; justify-content: center; }
+.book-card-head > div:nth-child(2) { flex: 1; min-width: 0; }
+.book-subject { color: var(--book-color); font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.book-card-head h3 { font-size: 16px; line-height: 1.45; margin-top: 4px; overflow-wrap: anywhere; }
+.book-card-head p { color: var(--muted); font-size: 11px; line-height: 1.6; margin-top: 4px; overflow-wrap: anywhere; }
+.book-card-controls { display: flex; flex-shrink: 0; gap: 2px; }
+.book-card-controls .icon-btn { width: 29px; height: 29px; }
+.book-card-progress { display: flex; align-items: center; gap: 22px; margin: 25px 0 22px; }
+.book-card-progress .progress-ring { flex-shrink: 0; }
+.book-card-progress .progress-ring > strong { font-size: 18px; }
+.book-card-progress > div > strong { font-size: 26px; }
+.book-card-progress strong > span { font-size: 12px; color: var(--muted); font-weight: 500; }
+.book-card-progress p { color: var(--muted); font-size: 12px; margin: 5px 0 8px; }
+.book-revision-stats { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; background: var(--surface-alt); border: 1px solid var(--border); border-radius: 10px; padding: 14px 12px; margin-bottom: 20px; }
+.book-revision-stats strong { display: block; font-size: 20px; color: var(--purple); }
+.book-revision-stats strong > span { color: var(--muted); font-size: 12px; font-weight: 500; }
+.book-revision-stats small { display: block; color: var(--muted); font-size: 10px; margin-top: 5px; line-height: 1.4; }
+.book-chapter-details { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 16px; }
+.book-chapter-details summary { font-size: 12px; font-weight: 650; cursor: pointer; }
+.book-chapter-details summary > span { font-weight: 400; color: var(--muted); display: block; overflow-wrap: anywhere; max-height: 42px; overflow: auto; margin: 6px 0 0 16px; line-height: 1.5; }
+.book-chapter-legend { display: flex; gap: 15px; flex-wrap: wrap; font-size: 10px; color: var(--muted); margin: 18px 0 12px; }
+.book-chapter-legend > span { display: flex; align-items: center; gap: 5px; }
+.book-chapter-legend i { width: 10px; height: 10px; border: 1px solid var(--border); border-radius: 3px; }
+.book-chapter-map { display: grid; grid-template-columns: repeat(auto-fill,minmax(34px,1fr)); gap: 6px; max-height: 245px; overflow: auto; padding: 2px; }
+.book-chapter-map > span { min-height: 37px; border: 1px solid var(--border); border-radius: 7px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; }
+.book-chapter-map small { font-size: 8px; margin-top: 1px; }
+.book-chapter-map .unread, .book-chapter-legend .unread { color: var(--muted); background: var(--surface-alt); }
+.book-chapter-map .read, .book-chapter-legend .read { background: var(--primary-soft); color: var(--primary); border-color: var(--primary); }
+.book-chapter-map .revised, .book-chapter-legend .revised { background: var(--green-soft); color: var(--green); border-color: var(--green); }
+.book-card-actions { margin-top: 22px; }
+.book-card-actions .btn { flex: 1; font-size: 11px; padding: 10px 12px; }
+.book-empty { padding: 32px 24px; text-align: center; margin-bottom: 26px; }
+.book-empty-icon { display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 16px; color: var(--primary); background: var(--primary-soft); margin: 0 auto 14px; }
+.book-empty h3 { font-size: 18px; }
+.book-empty p { font-size: 13px; color: var(--muted); max-width: 450px; line-height: 1.8; margin: 12px auto 20px; }
+.book-history { padding: 24px; margin-bottom: 34px; }
+.book-history .book-section-title { margin-bottom: 20px; }
+.book-history-empty { font-size: 12px; line-height: 1.8; color: var(--muted); padding: 10px 0; }
+.book-log-row { display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--border); padding: 15px 0; }
+.book-log-icon { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 9px; flex-shrink: 0; background: var(--primary-soft); color: var(--primary); }
+.book-log-icon.revision { color: var(--purple); background: var(--purple-soft); }
+.book-log-content { flex: 1; min-width: 0; }
+.book-log-content strong { font-size: 12px; overflow-wrap: anywhere; }
+.book-log-content p { margin-top: 4px; color: var(--muted); font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
+.book-log-notes { display: block; margin-top: 4px; }
+.book-log-row time { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+.book-log-row .icon-btn { width: 30px; height: 30px; flex-shrink: 0; }
+.book-export { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; border-top: 1px solid var(--border); margin-top: 10px; padding-top: 18px; }
+.book-export .text-btn { font-size: 11px; }
+.book-suggestion-intro { font-size: 12px; color: var(--muted); line-height: 1.8; margin: 14px 0 22px; max-width: 750px; }
+.book-suggestion-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.book-suggestion { padding: 20px; display: flex; flex-direction: column; min-width: 0; }
+.book-suggestion-tags { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-bottom: 13px; }
+.book-suggestion-tags .badge { font-size: 9px; }
+.book-suggestion h3 { font-size: 14px; line-height: 1.6; }
+.book-suggestion-author { font-size: 11px; color: var(--primary); margin: 5px 0 13px; }
+.book-suggestion p { font-size: 11px; line-height: 1.8; color: var(--muted); flex: 1; margin-bottom: 18px; }
+.book-suggestion-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 14px; border-top: 1px solid var(--border); }
+.book-suggestion-foot a { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 10px; text-decoration: none; }
+.book-suggestion-foot a:hover { color: var(--primary); text-decoration: underline; }
+.book-suggestion-foot .text-btn { font-size: 11px; }
+.book-form-intro { color: var(--muted); font-size: 12px; line-height: 1.8; margin-bottom: 20px; }
+.books-workspace label small { color: var(--muted); display: block; font-size: 10px; line-height: 1.6; margin-top: 6px; font-weight: 400; }
+.book-backfill { border: 1px solid var(--border); border-radius: 10px; padding: 18px 16px 2px; margin-top: 22px; }
+.book-backfill legend { padding: 0 7px; color: var(--primary); font-size: 11px; font-weight: 600; }
+.book-form-error { font-size: 12px; color: var(--red); background: var(--red-soft); border-radius: 8px; padding: 12px; margin-top: 18px; line-height: 1.7; }
+.book-fill-read { font-size: 11px; margin: -4px 0 16px; }
+.book-chapter-preview { background: var(--green-soft); color: var(--green); font-size: 11px; line-height: 1.7; padding: 10px 12px; border-radius: 8px; margin: 0 0 18px; }
+.book-chapter-preview.invalid { color: var(--red); background: var(--red-soft); }
+@media(max-width:1150px) { .book-suggestion-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .book-overview { gap: 22px; } .book-ring-area { gap: 16px; } }
+@media(max-width:900px) { .book-shelf { grid-template-columns: 1fr; } .book-overview { grid-template-columns: 1fr; } .book-revision-overview { border-left: 0; border-top: 1px solid var(--border); padding: 22px 0 0; } }
+@media(max-width:600px) { .book-actions { gap: 8px; } .book-actions .btn { font-size: 11px; padding: 10px 12px; } .book-toolbar label { width: 100%; } .book-toolbar select { min-width: 0; flex: 1; } .book-overview, .book-card, .book-history { padding: 18px; } .book-ring-area .progress-ring { width: 90px !important; height: 90px !important; } .book-ring-area h2 { font-size: 20px; } .book-ring-area .progress-ring > strong { font-size: 21px; } .book-suggestion-grid { grid-template-columns: 1fr; } .book-log-row { gap: 8px; flex-wrap: wrap; } .book-log-content { flex-basis: calc(100% - 44px); } .book-log-row time { margin-left: 42px; flex: 1; } }
