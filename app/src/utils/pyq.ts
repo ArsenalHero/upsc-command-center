@@ -21,6 +21,11 @@ export interface PYQQuestion {
   sourcePart?: number;
   sourceQuestionNumber?: number;
   sourceSha256?: string;
+  sourceTitle?: string;
+  sourceNotes?: string;
+  sourceVariants?: PYQQuestion[];
+  subjectMemberships?: { subject: string; topic: string }[];
+  keyConflict?: boolean;
   subject: string;
   topic: string;
   question: string;

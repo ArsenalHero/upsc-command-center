@@ -4223,6 +4223,7 @@ small,
 .prelims-feedback { padding:14px 18px; border-radius:9px; font-weight:700; background:rgba(237,158,54,.10); }
 .prelims-feedback.right { color:#15836e; background:rgba(24,165,147,.10); }
 .prelims-feedback.wrong { color:#bf425a; background:rgba(222,102,127,.10); }
+.prelims-feedback.ungraded { color:var(--primary); background:rgba(49,88,235,.06); }
 .prelims-explanation { border-left:3px solid var(--primary); padding:18px 22px; margin:20px 0; background:rgba(49,88,235,.04); }
 .prelims-explanation p, .prelims-explanation li { line-height:1.75; margin:12px 0; }
 .prelims-explanation .prelims-provided-text { white-space:pre-wrap; }

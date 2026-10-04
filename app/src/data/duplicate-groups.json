@@ -1,0 +1,984 @@
+[
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-006",
+    "duplicateIds": [
+      "geography-part-6-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-009",
+    "duplicateIds": [
+      "economy-part-4-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-024",
+    "duplicateIds": [
+      "economy-part-7-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-025",
+    "duplicateIds": [
+      "geography-part-2-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-026",
+    "duplicateIds": [
+      "geography-part-4-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-027",
+    "duplicateIds": [
+      "geography-part-4-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-029",
+    "duplicateIds": [
+      "geography-part-4-q-003"
+    ],
+    "keyConflict": true
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-030",
+    "duplicateIds": [
+      "economy-part-4-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-031",
+    "duplicateIds": [
+      "environment-pollution-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-032",
+    "duplicateIds": [
+      "environment-climate-action-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-033",
+    "duplicateIds": [
+      "environment-climate-change-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-034",
+    "duplicateIds": [
+      "environment-climate-action-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-035",
+    "duplicateIds": [
+      "environment-climate-action-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-036",
+    "duplicateIds": [
+      "environment-pollution-q-005"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-037",
+    "duplicateIds": [
+      "environment-biodiversity-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-038",
+    "duplicateIds": [
+      "environment-pollution-q-006"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-039",
+    "duplicateIds": [
+      "economy-part-7-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-040",
+    "duplicateIds": [
+      "environment-ecology-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-041",
+    "duplicateIds": [
+      "science-part-4-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-042",
+    "duplicateIds": [
+      "science-part-4-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-043",
+    "duplicateIds": [
+      "science-part-4-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-044",
+    "duplicateIds": [
+      "environment-pollution-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-045",
+    "duplicateIds": [
+      "environment-pollution-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-046",
+    "duplicateIds": [
+      "science-part-4-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-047",
+    "duplicateIds": [
+      "science-part-4-q-005"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-048",
+    "duplicateIds": [
+      "science-part-4-q-006"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-049",
+    "duplicateIds": [
+      "science-part-1-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-050",
+    "duplicateIds": [
+      "environment-pollution-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-051",
+    "duplicateIds": [
+      "polity-part-6-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-052",
+    "duplicateIds": [
+      "polity-part-9-q-003"
+    ],
+    "keyConflict": true
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-053",
+    "duplicateIds": [
+      "polity-part-3-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-054",
+    "duplicateIds": [
+      "polity-part-5-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-055",
+    "duplicateIds": [
+      "polity-part-2-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-056",
+    "duplicateIds": [
+      "polity-part-7-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-059",
+    "duplicateIds": [
+      "polity-part-5-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-063",
+    "duplicateIds": [
+      "economy-part-6-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-064",
+    "duplicateIds": [
+      "environment-climate-change-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-067",
+    "duplicateIds": [
+      "economy-part-6-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-069",
+    "duplicateIds": [
+      "economy-part-6-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-070",
+    "duplicateIds": [
+      "economy-part-4-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-076",
+    "duplicateIds": [
+      "geography-part-1-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-081",
+    "duplicateIds": [
+      "geography-part-6-q-002",
+      "science-part-4-q-009"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-082",
+    "duplicateIds": [
+      "economy-part-5-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-083",
+    "duplicateIds": [
+      "science-part-4-q-010"
+    ],
+    "keyConflict": true
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-084",
+    "duplicateIds": [
+      "science-part-4-q-011"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-085",
+    "duplicateIds": [
+      "environment-pollution-q-007"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-086",
+    "duplicateIds": [
+      "polity-part-5-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-087",
+    "duplicateIds": [
+      "polity-part-6-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-088",
+    "duplicateIds": [
+      "polity-part-6-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-090",
+    "duplicateIds": [
+      "environment-climate-action-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-091",
+    "duplicateIds": [
+      "polity-part-7-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-093",
+    "duplicateIds": [
+      "polity-part-9-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-094",
+    "duplicateIds": [
+      "science-part-4-q-007"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-095",
+    "duplicateIds": [
+      "science-part-4-q-008"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-096",
+    "duplicateIds": [
+      "polity-part-9-q-002"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-046",
+    "duplicateIds": [
+      "polity-part-6-q-165"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-054",
+    "duplicateIds": [
+      "polity-part-3-q-007"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-137",
+    "duplicateIds": [
+      "polity-part-6-q-168"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-138",
+    "duplicateIds": [
+      "polity-part-6-q-169"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-139",
+    "duplicateIds": [
+      "polity-part-6-q-178"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-141",
+    "duplicateIds": [
+      "polity-part-6-q-189"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-003",
+    "duplicateIds": [
+      "polity-part-6-q-014"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-041",
+    "duplicateIds": [
+      "polity-part-2-q-051"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-042",
+    "duplicateIds": [
+      "polity-part-2-q-053"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-043",
+    "duplicateIds": [
+      "polity-part-2-q-055"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-044",
+    "duplicateIds": [
+      "polity-part-2-q-058"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-045",
+    "duplicateIds": [
+      "polity-part-2-q-060"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-046",
+    "duplicateIds": [
+      "polity-part-2-q-062"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-048",
+    "duplicateIds": [
+      "polity-part-2-q-066"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-049",
+    "duplicateIds": [
+      "polity-part-2-q-069"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-050",
+    "duplicateIds": [
+      "polity-part-2-q-076"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-155",
+    "duplicateIds": [
+      "polity-part-6-q-180"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-161",
+    "duplicateIds": [
+      "polity-part-6-q-187"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-166",
+    "duplicateIds": [
+      "polity-part-9-q-076"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-174",
+    "duplicateIds": [
+      "polity-part-6-q-202"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-183",
+    "duplicateIds": [
+      "polity-part-6-q-213"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-190",
+    "duplicateIds": [
+      "polity-part-4-q-081"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-192",
+    "duplicateIds": [
+      "polity-part-4-q-085"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-2-q-200",
+    "duplicateIds": [
+      "polity-part-4-q-088"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-3-q-004",
+    "duplicateIds": [
+      "polity-part-6-q-015"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-3-q-011",
+    "duplicateIds": [
+      "polity-part-6-q-025"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-3-q-065",
+    "duplicateIds": [
+      "polity-part-6-q-185"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-3-q-068",
+    "duplicateIds": [
+      "polity-part-6-q-194"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-3-q-069",
+    "duplicateIds": [
+      "polity-part-6-q-195"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-5-q-011",
+    "duplicateIds": [
+      "polity-part-7-q-006"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-5-q-017",
+    "duplicateIds": [
+      "polity-part-5-q-106"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-5-q-118",
+    "duplicateIds": [
+      "polity-part-9-q-080"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-5-q-126",
+    "duplicateIds": [
+      "polity-part-9-q-081"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-6-q-013",
+    "duplicateIds": [
+      "polity-part-9-q-009"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-6-q-216",
+    "duplicateIds": [
+      "polity-part-9-q-087"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-8-q-005",
+    "duplicateIds": [
+      "polity-part-9-q-010"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-8-q-090",
+    "duplicateIds": [
+      "polity-part-9-q-092"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-1-q-005",
+    "duplicateIds": [
+      "geography-part-1-q-010"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-1-q-006",
+    "duplicateIds": [
+      "geography-part-1-q-017"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-1-q-007",
+    "duplicateIds": [
+      "geography-part-1-q-022"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-002",
+    "duplicateIds": [
+      "geography-part-7-q-006"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-007",
+    "duplicateIds": [
+      "geography-part-2-q-032"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-008",
+    "duplicateIds": [
+      "geography-part-2-q-039"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-009",
+    "duplicateIds": [
+      "geography-part-2-q-052"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-010",
+    "duplicateIds": [
+      "geography-part-2-q-106"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-017",
+    "duplicateIds": [
+      "science-part-4-q-092"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-023",
+    "duplicateIds": [
+      "geography-part-7-q-026"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-026",
+    "duplicateIds": [
+      "geography-part-2-q-031"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-027",
+    "duplicateIds": [
+      "geography-part-2-q-033"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-028",
+    "duplicateIds": [
+      "geography-part-2-q-036"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-029",
+    "duplicateIds": [
+      "geography-part-2-q-037"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-2-q-030",
+    "duplicateIds": [
+      "geography-part-2-q-038"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-007",
+    "duplicateIds": [
+      "geography-part-4-q-039"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-008",
+    "duplicateIds": [
+      "geography-part-3-q-016"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-009",
+    "duplicateIds": [
+      "geography-part-3-q-018"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-010",
+    "duplicateIds": [
+      "geography-part-3-q-021"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-011",
+    "duplicateIds": [
+      "geography-part-3-q-030"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-012",
+    "duplicateIds": [
+      "geography-part-3-q-033"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-013",
+    "duplicateIds": [
+      "geography-part-3-q-036"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-014",
+    "duplicateIds": [
+      "geography-part-3-q-038"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-3-q-015",
+    "duplicateIds": [
+      "geography-part-3-q-044"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-4-q-015",
+    "duplicateIds": [
+      "environment-climate-change-q-010"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-4-q-022",
+    "duplicateIds": [
+      "environment-ecology-q-017"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-4-q-029",
+    "duplicateIds": [
+      "science-part-4-q-145"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-4-q-067",
+    "duplicateIds": [
+      "environment-climate-change-q-032"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-4-q-106",
+    "duplicateIds": [
+      "geography-part-6-q-194"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-6-q-010",
+    "duplicateIds": [
+      "economy-part-6-q-008"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-6-q-015",
+    "duplicateIds": [
+      "economy-part-7-q-016"
+    ]
+  },
+  {
+    "canonicalId": "geography-part-6-q-028",
+    "duplicateIds": [
+      "economy-part-7-q-046"
+    ]
+  },
+  {
+    "canonicalId": "environment-biodiversity-q-019",
+    "duplicateIds": [
+      "science-part-1-q-005"
+    ]
+  },
+  {
+    "canonicalId": "environment-biodiversity-q-026",
+    "duplicateIds": [
+      "environment-climate-action-q-019"
+    ]
+  },
+  {
+    "canonicalId": "environment-biodiversity-q-034",
+    "duplicateIds": [
+      "environment-climate-action-q-022"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-014",
+    "duplicateIds": [
+      "environment-ecology-q-011"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-061",
+    "duplicateIds": [
+      "environment-climate-action-q-061"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-062",
+    "duplicateIds": [
+      "environment-climate-action-q-062"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-063",
+    "duplicateIds": [
+      "environment-climate-action-q-063"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-064",
+    "duplicateIds": [
+      "environment-climate-action-q-064"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-065",
+    "duplicateIds": [
+      "environment-climate-action-q-065"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-066",
+    "duplicateIds": [
+      "environment-climate-action-q-066"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-067",
+    "duplicateIds": [
+      "environment-climate-action-q-067"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-068",
+    "duplicateIds": [
+      "environment-climate-action-q-068"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-069",
+    "duplicateIds": [
+      "environment-climate-action-q-069"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-070",
+    "duplicateIds": [
+      "environment-climate-action-q-070"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-071",
+    "duplicateIds": [
+      "environment-climate-action-q-071"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-072",
+    "duplicateIds": [
+      "environment-climate-action-q-072"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-073",
+    "duplicateIds": [
+      "environment-climate-action-q-073"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-074",
+    "duplicateIds": [
+      "environment-climate-action-q-074"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-075",
+    "duplicateIds": [
+      "environment-climate-action-q-075"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-076",
+    "duplicateIds": [
+      "environment-climate-action-q-076"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-077",
+    "duplicateIds": [
+      "environment-climate-action-q-077"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-078",
+    "duplicateIds": [
+      "environment-climate-action-q-078"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-change-q-079",
+    "duplicateIds": [
+      "environment-climate-action-q-079"
+    ]
+  },
+  {
+    "canonicalId": "environment-climate-action-q-021",
+    "duplicateIds": [
+      "environment-pollution-q-021"
+    ]
+  },
+  {
+    "canonicalId": "environment-ecology-q-024",
+    "duplicateIds": [
+      "science-part-1-q-041"
+    ]
+  },
+  {
+    "canonicalId": "environment-ecology-q-044",
+    "duplicateIds": [
+      "economy-part-4-q-043"
+    ]
+  },
+  {
+    "canonicalId": "environment-pollution-q-019",
+    "duplicateIds": [
+      "science-part-1-q-012"
+    ]
+  },
+  {
+    "canonicalId": "environment-pollution-q-027",
+    "duplicateIds": [
+      "science-part-4-q-069"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-018",
+    "duplicateIds": [
+      "science-part-4-q-076"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-020",
+    "duplicateIds": [
+      "science-part-4-q-072"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-021",
+    "duplicateIds": [
+      "science-part-4-q-086"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-024",
+    "duplicateIds": [
+      "science-part-4-q-107"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-044",
+    "duplicateIds": [
+      "science-part-4-q-131"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-047",
+    "duplicateIds": [
+      "science-part-4-q-155"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-051",
+    "duplicateIds": [
+      "science-part-4-q-152"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-052",
+    "duplicateIds": [
+      "science-part-4-q-137"
+    ]
+  },
+  {
+    "canonicalId": "science-part-1-q-247",
+    "duplicateIds": [
+      "science-part-3-q-830"
+    ]
+  },
+  {
+    "canonicalId": "science-part-2-q-557",
+    "duplicateIds": [
+      "science-part-2-q-567"
+    ]
+  },
+  {
+    "canonicalId": "science-part-4-q-123",
+    "duplicateIds": [
+      "science-part-4-q-126"
+    ]
+  }
+]

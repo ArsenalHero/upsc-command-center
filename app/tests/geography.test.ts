@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { createEmptyData } from "../src/data/defaults";
-import { geographyBank, originalBank, questionBank } from "../src/data/questionBank";
+import { geographyBank, originalBank, polityBank } from "../src/data/questionBank";
 import { emptyFilters, emptyPrelims, emptyResponse, filterQuestions, keySnapshot, responseAttempt, sessionReport, startSession } from "../src/utils/prelims";
 import { matchesExam, questionLabel } from "../src/utils/exams";
 import { validateData } from "../src/services/validation";
@@ -81,6 +81,7 @@ test("Geography five-choice answers save time, result, subject and a frozen prov
 });
 
 test("the expanded bank supports a complete 2,206-question saved session and retains original papers", () => {
+  const questionBank = [...originalBank, ...polityBank, ...geographyBank];
   assert.equal(questionBank.length, 2206); assert.equal(new Set(questionBank.map(q => q.id)).size, 2206);
   assert.deepEqual(["Prelims", "CSAT"].map(stage => originalBank.filter(q => q.stage === stage).length), [100, 80]);
   const data = createEmptyData();

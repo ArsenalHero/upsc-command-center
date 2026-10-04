@@ -14,8 +14,12 @@ export function matchesExam(q: PYQQuestion, f: PrelimsFilters) {
     && (!f.examStage || e.stage === f.examStage)
     && (!f.year || String(e.year || "unknown") === f.year));
 }
-export function questionLabel(q: PYQQuestion) {
-  if (!q.sourceFile) return `${q.year} ${q.stage === "CSAT" ? "CSAT" : "GS I"} Q${q.number}`;
-  const e = examOccurrences(q)[0];
-  return `${e.name} ${e.year || "Year not supplied"} · ${q.subject === "Geography" ? "Geography · " : ""}Part ${q.sourcePart} Q${q.number}`;
+export function selectedExam(q: PYQQuestion, f: Partial<PrelimsFilters> = {}) {
+  return examOccurrences(q).find(e => (!f.examGroup || e.group === f.examGroup) && (!f.state || e.state === f.state) && (!f.exam || e.name === f.exam) && (!f.examStage || e.stage === f.examStage) && (!f.year || String(e.year || "unknown") === f.year)) || examOccurrences(q)[0];
+}
+export function questionLabel(q: PYQQuestion, f: Partial<PrelimsFilters> = {}) {
+  const e = selectedExam(q, f), primary = examOccurrences(q)[0];
+  const display = e === primary ? q : q.sourceVariants?.find(copy => examOccurrences(copy).some(occurrence => occurrence.group === e.group && occurrence.name === e.name && occurrence.year === e.year && occurrence.stage === e.stage)) || q;
+  if (!display.sourceFile) return `${display.year} ${display.stage === "CSAT" ? "CSAT" : "GS I"} Q${display.number}`;
+  return `${e.name} ${e.year || "Year not supplied"} · ${display.sourceTitle ? `${display.sourceTitle} Q${display.number}` : `${display.subject === "Geography" ? "Geography · " : ""}Part ${display.sourcePart} Q${display.number}`}`;
 }

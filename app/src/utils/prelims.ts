@@ -2,6 +2,7 @@ import type { PrelimsFilters, PrelimsResponse, PrelimsSession, PrelimsWorkspace,
 import { uid } from "./date";
 import { makeAttempt, newDraft, type PYQQuestion } from "./pyq";
 import { examOccurrences, matchesExam } from "./exams";
+import { matchesSubject, questionTopics } from "./questionCollections";
 
 export const emptyFilters = (): PrelimsFilters => ({ paper: "", subject: "", topic: "", subtopic: "", difficulty: "", status: "", query: "", year: "", examGroup: "", state: "", exam: "", examStage: "" });
 export const emptyPrelims = (): PrelimsWorkspace => ({ filters: emptyFilters(), bookmarks: [], review: [] });
@@ -46,16 +47,17 @@ export function filterQuestions(bank: PYQQuestion[], f: PrelimsFilters, latest: 
   const terms = f.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   return bank.filter(q => {
     if (!matchesExam(q, f)) return false;
-    if ((f.paper && q.paper !== f.paper) || (f.subject && q.subject !== f.subject) || (f.topic && q.topic !== f.topic) || (f.subtopic && q.subtopic !== f.subtopic) || (f.difficulty && q.difficultyLabel !== f.difficulty)) return false;
+    if ((f.paper && q.paper !== f.paper) || !matchesSubject(q, f.subject) || (f.topic && !questionTopics(q, f.subject).includes(f.topic)) || (f.subtopic && q.subtopic !== f.subtopic) || (f.difficulty && q.difficultyLabel !== f.difficulty)) return false;
     const a = latest.get(q.id)?.attempt;
     if (f.status === "attempted" && !a?.selectedOption) return false;
     if (f.status === "unattempted" && a?.selectedOption) return false;
     if (["correct", "incorrect", "skipped"].includes(f.status) && a?.outcome !== f.status) return false;
     if (f.status === "bookmarked" && !bookmarks.includes(q.id)) return false;
     if (f.status === "review" && !review.includes(q.id) && !latest.get(q.id)?.revisionNeeded) return false;
-    return terms.every(t => [q.year, q.paper, q.number, q.subject, q.topic, q.subtopic, q.sourceFile, ...(q.examOccurrences || []).flatMap(e => [e.label, e.name, e.state, e.year]), q.question, ...Object.values(q.options), ...(q.blocks || []).flatMap(b => [b.text || "", ...(b.items || []), ...(b.rows || []).flat()])].join(" ").toLowerCase().includes(t));
+    return terms.every(t => [q.year, q.paper, q.number, ...questionSubjectsForSearch(q), q.subtopic, q.sourceFile, ...(q.examOccurrences || []).flatMap(e => [e.label, e.name, e.state, e.year]), q.question, ...Object.values(q.options), ...(q.blocks || []).flatMap(b => [b.text || "", ...(b.items || []), ...(b.rows || []).flat()]), ...(q.sourceVariants || []).flatMap(copy => [copy.sourceFile, copy.number, copy.sourceTitle, copy.question])].join(" ").toLowerCase().includes(t));
   });
 }
+const questionSubjectsForSearch = (q: PYQQuestion) => (q.subjectMemberships || [{ subject: q.subject, topic: q.topic }]).flatMap(m => [m.subject, m.topic]);
 export function shuffled<T>(items: T[]): T[] {
   const result = [...items]; for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; } return result;
 }
