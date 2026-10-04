@@ -409,6 +409,7 @@ try {
   assert.match(text(),/1,165 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
   const beforePreview=JSON.stringify(current.data());
   await click("Review explanation 2025 GS I Q1"); await heading("Question explanation");
+  assert.deepEqual([...current.w.document.querySelectorAll('[aria-label="Answer choices"] li')].map(el=>el.textContent),Object.entries(q1.options).map(([key,value])=>key.toUpperCase()+"."+value));
   assert.match(text(),/Explanation from supplied HTML/); assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.ok(!text().includes("Review every option")); assert.ok(!/[\u0900-\u097f]/.test(text()));
   assert.equal(JSON.stringify(current.data()),beforePreview);
