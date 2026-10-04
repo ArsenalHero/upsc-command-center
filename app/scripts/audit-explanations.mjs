@@ -1,9 +1,9 @@
 import { writeFileSync } from "node:fs";
-import { questionBank, historyEconomyBank } from "../src/data/questionBank.ts";
+import { questionBank, ancientCultureBank, rawQuestionBank } from "../src/data/questionBank.ts";
 import { completeOptionExplanation, explanationStatus, optionReviews } from "../src/utils/explanationReview.ts";
 
 // Run with: node --import tsx scripts/audit-explanations.mjs
-const summary = { checkedOn: "2026-10-04", sourceQuestions: historyEconomyBank.length, uniqueQuestions: questionBank.length,
+const summary = { checkedOn: "2026-10-04", sourceQuestions: ancientCultureBank.length, allSourceQuestions: rawQuestionBank.length, uniqueQuestions: questionBank.length,
   statuses: {}, completeOptionExplanations: 0, optionsNeedingSeparateExplanation: 0, questionsNeedingSeparateOptionExplanation: 0, reviewedQuestions: [] };
 for (const q of questionBank) {
   const status = explanationStatus(q); summary.statuses[status] = (summary.statuses[status] || 0) + 1;

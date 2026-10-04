@@ -420,5 +420,143 @@
       ]
     },
     "issue": "Corrects the upload's overbroad claim that NFTs cannot participate in commercial transactions."
+  },
+  "culture-heritage-part-1-q-001": {
+    "status": "referenced",
+    "reviewedOn": "2026-10-04",
+    "explanation": {
+      "concept": "World Heritage inscription dates",
+      "justification": "Only entries 1 and 3 were inscribed in 2023: Santiniketan and the Sacred Ensembles of the Hoysalas. Rani-ki-Vav was inscribed in 2014, and the Mahabodhi Temple Complex in 2002. Count the inscription year, rather than the age of the monument or the year of its nomination.",
+      "options": {
+        "a": "One is too few: both Santiniketan (1) and the Sacred Ensembles of the Hoysalas (3) were inscribed in 2023.",
+        "b": "Two is correct: entries 1 and 3 have the 2023 inscription date in UNESCO records.",
+        "c": "Three would incorrectly include either Rani-ki-Vav (2014) or the Mahabodhi Temple Complex (2002).",
+        "d": "All four is incorrect: entries 2 and 4 were inscribed before 2023."
+      },
+      "references": [
+        {
+          "title": "UNESCO: Santiniketan",
+          "url": "https://whc.unesco.org/en/list/1375/",
+          "section": "Date of inscription: 2023"
+        },
+        {
+          "title": "UNESCO: Rani-ki-Vav",
+          "url": "https://whc.unesco.org/en/list/922",
+          "section": "Date of inscription: 2014"
+        },
+        {
+          "title": "UNESCO: Sacred Ensembles of the Hoysalas",
+          "url": "https://whc.unesco.org/en/list/1670",
+          "section": "Date of inscription: 2023"
+        },
+        {
+          "title": "UNESCO: Mahabodhi Temple Complex",
+          "url": "https://whc.unesco.org/en/list/1056",
+          "section": "Date of inscription: 2002"
+        }
+      ]
+    }
+  },
+  "culture-heritage-part-1-q-002": {
+    "status": "referenced",
+    "reviewedOn": "2026-10-04",
+    "explanation": {
+      "concept": "Intangible heritage chronology within the exam options",
+      "justification": "Among these four options, Garba of Gujarat was inscribed most recently, in 2023. The other dates are Chhau dance in 2010, Kumbh Mela in 2017 and Durga Puja in Kolkata in 2021. This compares the choices in the 2024 question; it does not claim that Garba remains the latest Indian inscription today.",
+      "options": {
+        "a": "Chhau dance was inscribed in 2010, before the other three options.",
+        "b": "Durga Puja in Kolkata was inscribed in 2021, later than Chhau and Kumbh Mela but earlier than Garba.",
+        "c": "Garba of Gujarat was inscribed in 2023, making it the latest among the four listed choices.",
+        "d": "Kumbh Mela was inscribed in 2017, before Durga Puja and Garba."
+      },
+      "references": [
+        {
+          "title": "UNESCO Intangible Cultural Heritage: India",
+          "url": "https://ich.unesco.org/en/state/india-IN?cp=IN&topic=en-state",
+          "section": "Inscribed elements and years"
+        }
+      ]
+    }
+  },
+  "history-medieval-part-3-q-101": {
+    "status": "disputed",
+    "reviewedOn": "2026-10-04",
+    "answer": null,
+    "issue": "None of the supplied choices states the core military function of the Mir Bakhshi. The marked land-revenue answer belongs to the revenue administration.",
+    "explanation": {
+      "concept": "Distinguishing military and revenue offices",
+      "justification": "The Mir Bakhshi processed mansabdar appointments and pay certification, inspected soldiers and horses, and presented military matters to the emperor. The diwan supervised revenue and accounts. The upload marks supervision of land-revenue officials, but that does not describe the Mir Bakhshi. A verified original question or official key is needed to resolve the defective choices.",
+      "options": {
+        "a": "Tax collection from farmers is a revenue function, not the military recruitment, inspection and pay-certification duties described for the Mir Bakhshi.",
+        "b": "General income and expenditure accounts were supervised through the diwan. The Mir Bakhshi certified military pay, which is a different responsibility.",
+        "c": "Justice does not describe the military personnel and inspection functions of the Mir Bakhshi.",
+        "d": "This is the uploaded answer, but supervision of revenue officials belongs to the diwan. The military function needed for a sound answer is absent."
+      },
+      "references": [
+        {
+          "title": "IGNOU: Mughal Administration",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/20236/1/Unit-14.pdf",
+          "section": "14.3.3 Diwani Kul and 14.3.4 Mir Bakhshi"
+        }
+      ]
+    }
+  },
+  "history-ancient-rulers-q-113": {
+    "status": "disputed",
+    "reviewedOn": "2026-10-04",
+    "answer": null,
+    "issue": "The supplied note does not identify a text or inscription supporting the exact phrase protector of the Varna system. The source key needs verification.",
+    "explanation": {
+      "concept": "An epithet needs specific evidence",
+      "justification": "The upload marks Pushyamitra Sunga and gives a general discussion of Vedic ritual. That does not establish the specific epithet asked for, nor does it examine the other rulers. Until the historical wording and the original Chhattisgarh 2013 key are checked, no choice is certified for grading.",
+      "options": {
+        "a": "Marked in the upload. Its general discussion of ritual is insufficient to establish that this ruler is the holder of the exact epithet.",
+        "b": "Kharavela is not examined in the supplied explanation. A reference is still needed to rule this choice in or out.",
+        "c": "Gautamiputra Satakarni is not examined in the supplied explanation. That omission is material when testing a claim about the Varna system.",
+        "d": "The option supplies only the name Vasudev. The ruler and the textual context must be identified before the epithet can be assessed.",
+        "e": "Samudragupta is not examined in the supplied explanation. His exclusion has not been documented by the upload."
+      },
+      "references": []
+    }
+  },
+  "culture-literature-performing-arts-q-073": {
+    "status": "disputed",
+    "reviewedOn": "2026-10-04",
+    "answer": null,
+    "issue": "The upload treats a traditional attribution of the tabla as a documented invention. No identifiable historical evidence is supplied for that claim.",
+    "explanation": {
+      "concept": "Traditional attribution versus documented instrument history",
+      "justification": "The source marks Amir Khusrau and also credits him with the sitar, without naming evidence for either invention. A customary attribution should not be presented as established historical proof. The original paper/key and a reliable history of the instrument are required before certifying the answer.",
+      "options": {
+        "a": "Adil Shah is neither fully identified nor discussed in the source note. The upload provides no evidence connecting this choice to the introduction of the tabla.",
+        "b": "Amir Khusrau is the marked source choice. The note asserts invention but supplies no historical document or instrument evidence supporting it.",
+        "c": "Tansen is not evaluated in the source note. No reason for excluding this option is documented there.",
+        "d": "Baiju Bawara is not evaluated in the source note. A reliable instrument-history reference is still needed."
+      },
+      "references": []
+    }
+  },
+  "history-medieval-part-5-q-201": {
+    "status": "disputed",
+    "reviewedOn": "2026-10-04",
+    "answer": null,
+    "issue": "The uploaded Deva Raya II attribution conflicts with the broader attribution on Karnataka Tourism. Initial construction and later works must be distinguished.",
+    "explanation": {
+      "concept": "Foundation versus later additions to a monument",
+      "justification": "The upload selects Deva Raya II for the Hazara Rama Temple. Karnataka Tourism associates the Hazara Rama Temple with monuments from Krishnadeva Raya’s time. That is a conflict requiring a more precise archaeological construction chronology and the original MPPSC key; the tourism summary alone does not settle the temple’s foundation.",
+      "options": {
+        "a": "Karnataka Tourism associates the temple with monuments from Krishnadeva Raya’s period. Whether this concerns initial construction or later works needs clarification.",
+        "b": "The supplied note does not explain why Deva Raya I is excluded. A reference for the initial construction is required.",
+        "c": "Deva Raya II is marked in the upload, without an identified construction inscription or archaeological citation. The conflicting attribution remains unresolved.",
+        "d": "The upload does not test Harihara I against a referenced temple construction date. That missing chronology prevents a complete elimination."
+      },
+      "references": [
+        {
+          "title": "Karnataka Tourism: Vijayanagara",
+          "url": "https://karnatakatourism.org/en/destinations/vijayanagara",
+          "section": "History of Vijayanagara"
+        }
+      ]
+    }
   }
 }

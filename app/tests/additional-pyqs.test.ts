@@ -34,8 +34,8 @@ test("all 13 supplied files preserve 2,469 questions, numbering, explanations an
 });
 
 test("the visible bank removes repeated entries while preserving every raw ID and source version", () => {
-  assert.equal(rawQuestionBank.length, 6627); assert.equal(questionBank.length, 6371);
-  assert.equal(new Set(questionBank.map(q => questionFingerprint(q))).size, 6371);
+  assert.equal(rawQuestionBank.length, 7882); assert.equal(questionBank.length, 7536);
+  assert.equal(new Set(questionBank.map(q => questionFingerprint(q) )).size, 7536);
   const old = new Set(rawQuestionBank.slice(0, 2206).map(q => q.id));
   const additionalIds = new Set(additionalBank.map(q => q.id));
   assert.equal(questionBank.filter(q => !old.has(q.id) && additionalIds.has(q.id)).length, 2386);
@@ -120,5 +120,5 @@ test("additional parser supports unindented choices, option codes, incomplete ye
 
 test("the expanded unique bank can be saved and resumed as one filtered session", () => {
   const data = createEmptyData(); data.prelims = { ...emptyPrelims(), session: startSession(questionBank, "practice", emptyFilters()) };
-  assert.equal(validateData(JSON.parse(JSON.stringify(data))).prelims!.session!.questionIds.length, 6371);
+  assert.equal(validateData(JSON.parse(JSON.stringify(data))).prelims!.session!.questionIds.length, 7536);
 });

@@ -67,9 +67,39 @@
     ]
   },
   {
+    "canonicalId": "upsc-2025-prelims-gs1-a-013",
+    "duplicateIds": [
+      "history-medieval-part-2-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-014",
+    "duplicateIds": [
+      "history-ancient-rulers-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-015",
+    "duplicateIds": [
+      "history-ancient-rulers-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-016",
+    "duplicateIds": [
+      "history-ancient-rulers-q-003"
+    ]
+  },
+  {
     "canonicalId": "upsc-2025-prelims-gs1-a-017",
     "duplicateIds": [
       "history-ancient-part-1-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-018",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-001"
     ]
   },
   {
@@ -324,6 +354,12 @@
     "canonicalId": "upsc-2025-prelims-gs1-a-071",
     "duplicateIds": [
       "history-modern-part-4-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-072",
+    "duplicateIds": [
+      "culture-art-architecture-q-001"
     ]
   },
   {
@@ -1188,6 +1224,36 @@
     ]
   },
   {
+    "canonicalId": "history-ancient-part-4-q-214",
+    "duplicateIds": [
+      "history-medieval-part-1-q-159"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-1-q-085",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-131"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-1-q-086",
+    "duplicateIds": [
+      "history-medieval-part-3-q-155"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-2-q-155",
+    "duplicateIds": [
+      "culture-religious-traditions-q-114"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-2-q-156",
+    "duplicateIds": [
+      "culture-religious-traditions-q-115"
+    ]
+  },
+  {
     "canonicalId": "history-modern-part-4-q-009",
     "duplicateIds": [
       "history-modern-part-6-q-207"
@@ -1512,6 +1578,42 @@
     ]
   },
   {
+    "canonicalId": "history-modern-part-5-q-144",
+    "duplicateIds": [
+      "culture-religious-traditions-q-113"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-193",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-167"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-216",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-132"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-221",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-133"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-231",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-112"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-237",
+    "duplicateIds": [
+      "culture-religious-traditions-q-129"
+    ]
+  },
+  {
     "canonicalId": "economy-part-1-q-008",
     "duplicateIds": [
       "economy-part-3-q-033"
@@ -1527,6 +1629,439 @@
     "canonicalId": "economy-part-2-q-036",
     "duplicateIds": [
       "economy-part-3-q-094"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-021",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-019"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-023",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-021"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-027",
+    "duplicateIds": [
+      "culture-heritage-part-1-q-027"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-032",
+    "duplicateIds": [
+      "culture-art-architecture-q-045"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-046",
+    "duplicateIds": [
+      "culture-religious-traditions-q-057"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-055",
+    "duplicateIds": [
+      "culture-art-architecture-q-091"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-059",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-100"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-060",
+    "duplicateIds": [
+      "culture-art-architecture-q-097"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-061",
+    "duplicateIds": [
+      "culture-art-architecture-q-098"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-062",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-102"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-086",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-206"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-103",
+    "duplicateIds": [
+      "culture-art-architecture-q-179"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-105",
+    "duplicateIds": [
+      "culture-art-architecture-q-182"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-120",
+    "duplicateIds": [
+      "culture-art-architecture-q-130"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-127",
+    "duplicateIds": [
+      "culture-art-architecture-q-149"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-035",
+    "duplicateIds": [
+      "culture-heritage-part-1-q-032"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-042",
+    "duplicateIds": [
+      "culture-art-architecture-q-048"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-052",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-058"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-057",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-038"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-059",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-039"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-061",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-042"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-073",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-066"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-096",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-054"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-102",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-061"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-138",
+    "duplicateIds": [
+      "culture-art-architecture-q-183"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-150",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-086"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-151",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-200"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-152",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-090"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-155",
+    "duplicateIds": [
+      "culture-art-architecture-q-200"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-165",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-083"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-1-q-194",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-093"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-014",
+    "duplicateIds": [
+      "culture-heritage-part-1-q-011"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-039",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-038"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-041",
+    "duplicateIds": [
+      "culture-art-architecture-q-043"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-042",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-043"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-055",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-036"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-063",
+    "duplicateIds": [
+      "culture-art-architecture-q-060"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-066",
+    "duplicateIds": [
+      "culture-art-architecture-q-062"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-071",
+    "duplicateIds": [
+      "culture-art-architecture-q-065"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-073",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-062"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-075",
+    "duplicateIds": [
+      "culture-art-architecture-q-070"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-080",
+    "duplicateIds": [
+      "culture-heritage-part-2-q-045"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-111",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-089"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-113",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-091"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-114",
+    "duplicateIds": [
+      "culture-religious-traditions-q-078"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-117",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-103"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-133",
+    "duplicateIds": [
+      "culture-religious-traditions-q-110"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-140",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-106"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-146",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-110"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-157",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-114"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-160",
+    "duplicateIds": [
+      "culture-art-architecture-q-191"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-4-q-162",
+    "duplicateIds": [
+      "culture-religious-traditions-q-136"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-4-q-173",
+    "duplicateIds": [
+      "culture-art-architecture-q-196"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-4-q-179",
+    "duplicateIds": [
+      "culture-religious-traditions-q-139"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-4-q-191",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-176"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-4-q-200",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-074"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-204",
+    "duplicateIds": [
+      "culture-art-architecture-q-190"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-206",
+    "duplicateIds": [
+      "culture-art-architecture-q-172"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-207",
+    "duplicateIds": [
+      "culture-art-architecture-q-173"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-208",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-087"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-215",
+    "duplicateIds": [
+      "culture-heritage-part-3-q-079"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-216",
+    "duplicateIds": [
+      "culture-art-architecture-q-203",
+      "culture-art-architecture-q-205"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-220",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-184"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-224",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-187"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-225",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-188"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-226",
+    "duplicateIds": [
+      "culture-art-architecture-q-163"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-227",
+    "duplicateIds": [
+      "culture-art-architecture-q-165"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-231",
+    "duplicateIds": [
+      "culture-art-architecture-q-168"
+    ]
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-235",
+    "duplicateIds": [
+      "culture-art-architecture-q-116"
+    ]
+  },
+  {
+    "canonicalId": "culture-religious-traditions-q-039",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-034"
+    ]
+  },
+  {
+    "canonicalId": "culture-religious-traditions-q-090",
+    "duplicateIds": [
+      "culture-literature-performing-arts-q-173"
+    ]
+  },
+  {
+    "canonicalId": "culture-art-architecture-q-202",
+    "duplicateIds": [
+      "culture-art-architecture-q-204"
     ]
   }
 ]

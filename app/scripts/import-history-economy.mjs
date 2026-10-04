@@ -19,16 +19,16 @@ export const historyEconomySources = [
   { file: "ECO2.txt", slug: "economy-part-2", title: "Economy 2", subject: "Economy", topic: "Public finance & fiscal policy", part: 2, first: 1, last: 94, count: 94, fiveOptions: [67] },
   { file: "ECO3.txt", slug: "economy-part-3", title: "Economy 3", subject: "Economy", topic: "Banking, money & financial markets", part: 3, first: 1, last: 199, count: 199 },
 ];
-const isExamTag = text => /UPSC|UPPCS|UPPSC|UPBEO|UPLOWER|UPROARO|UPUDA|MPPCS|BPSC|BPCS|RASRTS|JHARKHAND|JPSC|CGPSC|CHHATTISAGARH|CHHATTISGARH|UTTARANCHAL|UTTARAKHAND|UTTRAKHAND|CAPF|CDS/.test(text.replace(/[^a-z]/gi, "").toUpperCase());
+const isExamTag = text => /UPSC|UPPCS|UPPSC|UPBEO|UPLOWER|UPROARO|UPUDA|MPPCS|MPPSC|BPSC|BPCS|RASRTS|JHARKHAND|JPSC|CGPSC|CHHATTISAGARH|CHHATTISGARH|UTTARANCHAL|UTTARAKHAND|UTTRAKHAND|CAPF|CDS/.test(text.replace(/[^a-z]/gi, "").toUpperCase());
 
 export function historyEconomyExamOccurrences(tag) {
   const clean = tag.replace(/^[-\s]+|[-\s]+$/g, "");
   let previousPrefix = "";
-  return clean.split(/\s*,\s*|\s*&\s*/).map(part => {
+  return clean.split(/\s*,(?![^()]*\))\s*|\s*&\s*/).map(part => {
     const yearOnly = /^\d{4}$/.test(part);
     const full = yearOnly ? previousPrefix + part : part;
     if (!yearOnly) previousPrefix = full.replace(/\b(?:19|20)\d{2}\b.*$/, "");
-    const normalized = full.replace(/Uttaranchal|Uttrakhand/gi, "Uttarakhand").replace(/Chhattisagarh/gi, "Chhattisgarh");
+    const normalized = full.replace(/Uttaranchal|Uttrakhand/gi, "Uttarakhand").replace(/Chhattisagarh/gi, "Chhattisgarh").replace(/M\.?\s*P\.?\s*P\.?\s*S\.?\s*C\.?/gi, "MPPCS");
     const parsed = parseAdditionalExam(normalized);
     if (normalized.replace(/[^a-z]/gi, "").toUpperCase().includes("UPBEO")) parsed.name = "UPPSC BEO";
     if (normalized.replace(/[^a-z]/gi, "").toUpperCase().includes("UTTARAKHANDUDALDA")) parsed.name = "UKPSC UDA/LDA";
@@ -36,15 +36,14 @@ export function historyEconomyExamOccurrences(tag) {
   });
 }
 
-export function parseHistoryEconomySource(text, fileName) {
-  const source = historyEconomySources.find(s => s.file === fileName);
+export function parseHistoryEconomySource(text, fileName, source = historyEconomySources.find(s => s.file === fileName)) {
   if (!source) throw new Error(`Unexpected source file: ${fileName}`);
   const headers = [...text.matchAll(/^\s*Q\s*(\d+)\.\s*/gm)];
   if (!headers.length || text.slice(0, headers[0].index).replace(/^\uFEFF/, "").trim()) throw new Error(`Invalid question headers: ${fileName}`);
   const sha256 = createHash("sha256").update(text).digest("hex");
   return headers.map((m, i) => {
     const number = Number(m[1]), where = `${fileName} Q${number}`;
-    if (number !== source.first + i) throw new Error(`Unexpected numbering: ${where}`);
+    if (number !== (source.numbers?.[i] ?? source.first + i)) throw new Error(`Unexpected numbering: ${where}`);
     const raw = text.slice(m.index + m[0].length, headers[i + 1]?.index ?? text.length).trim();
     const separator = raw.indexOf("Ex:");
     if (separator < 0) throw new Error(`Missing explanation: ${where}`);
@@ -77,7 +76,7 @@ export function parseHistoryEconomySource(text, fileName) {
       marks: 1, negativeMarks: 0, wordLimit: 0, sourceUrl: "", keyUrl: "", page: 0, verification: "required",
       examOccurrences: occurrences, sourceFile: fileName, sourcePart: source.part, sourceTitle: source.title,
       sourceQuestionNumber: number, sourceSha256: sha256,
-      ...(notes.length ? { sourceNotes: notes.join("\n") } : {}),
+      ...((notes.length || source.numberNotes?.[number]) ? { sourceNotes: [...notes, source.numberNotes?.[number]].filter(Boolean).join("\n") } : {}),
       explanation: { justification: explanation, concept: "", references: [] },
     };
   });

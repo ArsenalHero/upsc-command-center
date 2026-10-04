@@ -15,7 +15,7 @@ import { validateData } from "../src/services/validation";
 test("13 new History/Economy sources retain all 1,952 questions, explanations, choices and provenance", () => {
   const manifest = JSON.parse(readFileSync(new URL("../docs/HISTORY-ECONOMY-SOURCES.json", import.meta.url), "utf8"));
   assert.equal(historyEconomyBank.length, 1952);
-  assert.equal(new Set(rawQuestionBank.map(q => q.id)).size, 6627);
+  assert.equal(new Set(rawQuestionBank.map(q => q.id)).size, 7882);
   assert.deepEqual(["History", "Economy"].map(s => historyEconomyBank.filter(q => q.subject === s).length), [1497,455]);
   assert.equal(historyEconomyBank.filter(q => !q.answer).length, 3);
   for (const source of historyEconomySources) {
@@ -51,7 +51,7 @@ test("exam labels preserve multiple years, State PSC identity and unlabelled que
 });
 
 test("duplicate imports keep old IDs, official keys and every original source version", () => {
-  assert.equal(questionBank.length,6371);
+  assert.equal(questionBank.length,7536);
   assert.equal(historyEconomyBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,92);
   const duplicate=historyEconomyBank.find(q=>q.id==="economy-part-3-q-002")!, official=questionById.get(canonicalQuestionId(duplicate.id))!;
   assert.equal(duplicate.answer,"d"); assert.equal(official.answer,"a"); assert.equal(official.keyStatus,"official");

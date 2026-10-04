@@ -268,5 +268,35 @@
     "canonicalId": "history-ancient-part-1-q-019",
     "duplicateId": "history-ancient-part-4-q-228",
     "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "history-medieval-part-3-q-133",
+    "duplicateId": "culture-religious-traditions-q-110",
+    "reason": "Identical Sulh-i-kul statements and answer codes; supplied escaped newline formatting differs."
+  },
+  {
+    "canonicalId": "history-medieval-part-5-q-235",
+    "duplicateId": "culture-art-architecture-q-116",
+    "reason": "Identical Buland Darwaza assertion/reason; option B has a minor spelling/article variation, with the same four outcomes."
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-042",
+    "duplicateId": "culture-literature-performing-arts-q-043",
+    "reason": "Identical Babur memoirs assertion/reason and all four outcome choices; supplied newline formatting differs."
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-221",
+    "duplicateId": "culture-literature-performing-arts-q-133",
+    "reason": "Identical Philosophy of the Bomb question and four people; Bhagal Singh is a source misspelling of Bhagat Singh."
+  },
+  {
+    "canonicalId": "history-ancient-rulers-q-027",
+    "duplicateId": "culture-heritage-part-1-q-027",
+    "reason": "Identical Gupta silver coin question and four coin types; Nisc is a source spelling variant of Nishka."
+  },
+  {
+    "canonicalId": "history-medieval-part-2-q-055",
+    "duplicateId": "culture-heritage-part-2-q-036",
+    "reason": "Identical Akbar currency assertion/reason; only the article in option B differs."
   }
 ]

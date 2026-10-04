@@ -1,15 +1,16 @@
 {
   "checkedOn": "2026-10-04",
-  "sourceQuestions": 1952,
-  "uniqueQuestions": 6371,
+  "sourceQuestions": 1255,
+  "allSourceQuestions": 7882,
+  "uniqueQuestions": 7536,
   "statuses": {
-    "referenced": 12,
-    "source": 6353,
-    "disputed": 6
+    "referenced": 14,
+    "source": 7512,
+    "disputed": 10
   },
-  "completeOptionExplanations": 18,
-  "optionsNeedingSeparateExplanation": 13247,
-  "questionsNeedingSeparateOptionExplanation": 4790,
+  "completeOptionExplanations": 24,
+  "optionsNeedingSeparateExplanation": 16032,
+  "questionsNeedingSeparateOptionExplanation": 5769,
   "reviewedQuestions": [
     {
       "id": "upsc-2025-prelims-gs1-a-001",
@@ -176,6 +177,59 @@
       "references": [
         "https://investor.sebi.gov.in/pdf/1315462034888.pdf",
         "https://www.investor.gov/introduction-investing/investing-basics/what-risk"
+      ]
+    },
+    {
+      "id": "history-ancient-rulers-q-113",
+      "status": "disputed",
+      "answer": null,
+      "issue": "The supplied note does not identify a text or inscription supporting the exact phrase protector of the Varna system. The source key needs verification.",
+      "references": []
+    },
+    {
+      "id": "history-medieval-part-3-q-101",
+      "status": "disputed",
+      "answer": null,
+      "issue": "None of the supplied choices states the core military function of the Mir Bakhshi. The marked land-revenue answer belongs to the revenue administration.",
+      "references": [
+        "https://egyankosh.ac.in/bitstream/123456789/20236/1/Unit-14.pdf"
+      ]
+    },
+    {
+      "id": "history-medieval-part-5-q-201",
+      "status": "disputed",
+      "answer": null,
+      "issue": "The uploaded Deva Raya II attribution conflicts with the broader attribution on Karnataka Tourism. Initial construction and later works must be distinguished.",
+      "references": [
+        "https://karnatakatourism.org/en/destinations/vijayanagara"
+      ]
+    },
+    {
+      "id": "culture-literature-performing-arts-q-073",
+      "status": "disputed",
+      "answer": null,
+      "issue": "The upload treats a traditional attribution of the tabla as a documented invention. No identifiable historical evidence is supplied for that claim.",
+      "references": []
+    },
+    {
+      "id": "culture-heritage-part-1-q-001",
+      "status": "referenced",
+      "answer": "b",
+      "issue": "",
+      "references": [
+        "https://whc.unesco.org/en/list/1375/",
+        "https://whc.unesco.org/en/list/922",
+        "https://whc.unesco.org/en/list/1670",
+        "https://whc.unesco.org/en/list/1056"
+      ]
+    },
+    {
+      "id": "culture-heritage-part-1-q-002",
+      "status": "referenced",
+      "answer": "c",
+      "issue": "",
+      "references": [
+        "https://ich.unesco.org/en/state/india-IN?cp=IN&topic=en-state"
       ]
     }
   ]

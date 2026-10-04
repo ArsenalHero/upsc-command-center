@@ -1,6 +1,6 @@
 # History and Economy import
 
-The 13 attached files contain 1,952 source questions: 1,497 History and 455 Economy. Ancient History has 251 questions; Modern History has 1,246. The bank adds 1,860 unique entries after merging 92 repetitions. There are now 6,371 visible practice questions and 6,627 preserved source entries.
+The 13 attached files contain 1,952 source questions: 1,497 History and 455 Economy. Ancient History has 251 questions; Modern History has 1,246. This release added 1,860 unique entries after merging 92 repetitions. At the time of this release, there were 6,371 visible practice questions and 6,627 preserved source entries. Later additions are documented in ANCIENT-CULTURE-IMPORT.md.
 
 Import metadata and SHA-256 hashes are in HISTORY-ECONOMY-SOURCES.json. The original bilingual explanations, marked answers, choices and source numbering remain in history-economy-bank.json. Unmarked answer bodies stay unmarked in the raw data. State PSC, UPSC CSE and CDS/CAPF labels remain separate; multiple exam occurrences remain searchable by the corresponding year. An unlabelled question retains an unknown exam/year.
 

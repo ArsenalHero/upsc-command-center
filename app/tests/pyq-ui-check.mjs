@@ -143,7 +143,7 @@ async function option(value) {
 
 try {
   await heading("PYQ question bank");
-  assert.match(text(), /6,371 unique questions ready/);
+  assert.match(text(), /7,536 unique questions ready/);
   await field("PYQ paper", "Prelims GS-I");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
@@ -404,7 +404,7 @@ try {
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank");
-  assert.match(text(),/1,860 new questions/); assert.match(text(),/Ancient History, Modern History and Economy/);
+  assert.match(text(),/1,165 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
   const beforePreview=JSON.stringify(current.data());
   await click("Review explanation 2025 GS I Q1"); await heading("Question explanation");
   assert.match(text(),/Reference-reviewed explanation/); assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
@@ -433,6 +433,35 @@ try {
   await option("c"); await click("Submit answer");
   assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,5);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded");
+  validateData(current.data());
+  current=makeDOM(); allDOMs.push(current.dom);
+  await heading("PYQ question bank");
+  await field("PYQ subject","Art & Culture"); await field("PYQ year","2024"); await field("Search PYQs","Garba");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
+  const beforeCulturePreview=JSON.stringify(current.data());
+  await click("Review explanation UPSC CSE 2024 · Cultural Heritage 1 Q2"); await heading("Question explanation");
+  assert.match(text(),/Reference-reviewed explanation/); assert.match(text(),/2024 question/);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  for(const year of [2010,2021,2023,2017]) assert.match(current.w.document.querySelector(".prelims-explanation").textContent,new RegExp(String(year)));
+  assert.ok(current.w.document.querySelector('.prelims-explanation a[href*="ich.unesco.org"]'));
+  assert.equal(JSON.stringify(current.data()),beforeCulturePreview);
+  await click("Back to question bank"); await heading("PYQ question bank");
+  await field("PYQ subject","History"); await field("PYQ year",""); await field("Search PYQs","Mir Bakshi"); await field("PYQ explanation quality","disputed");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
+  await click("Practise filtered questions"); await heading("2004 · UPPCS · History MCQs");
+  current.advance(17); await option("d"); await click("Submit answer");
+  assert.match(text(),/military function/); assert.match(text(),/Answer saved · awaiting key/);
+  assert.equal(current.data().pyqs.at(-1).attempt.seconds,17); assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded");
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  await click("Finish practice"); await heading("Your paper report"); assert.match(text(),/0 wrong/);
+  current=makeDOM(); allDOMs.push(current.dom);
+  await heading("PYQ question bank"); await field("PYQ subject","History"); await click("State PSC"); await field("PYQ state","Chhattisgarh"); await field("PYQ year","2013"); await field("Search PYQs","AM2 protector");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
+  await click("Practise filtered questions"); await heading("2013 · CGPSC · History MCQs");
+  assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
+  current.advance(21); await option("a"); await click("Submit answer");
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,5);
+  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,21);
   validateData(current.data());
   assert.deepEqual(messages,[]);
   console.log("PYQ UI passed: History/Economy imports, explanation-quality filters, all-option panels and reference links, disputed five-choice grading, duplicate source versions, old IDs/bookmarks/progress, saved time, reload, Next question, reports and original full papers.");
