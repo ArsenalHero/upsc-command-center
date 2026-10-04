@@ -7,6 +7,20 @@ import type {
 } from "../types";
 import { dateKey, uid } from "./date";
 
+export interface StudyExplanation {
+  justification: string; concept: string;
+  statements?: { label: string; verdict: string; reason: string }[];
+  options?: Record<string, string>;
+  references: { title: string; url: string; section?: string }[];
+  insight?: string; elimination?: string; relatedConcepts?: string[];
+}
+export interface ExplanationReview {
+  status: "referenced" | "disputed";
+  reviewedOn: string;
+  issue?: string;
+  answer?: string | null;
+  explanation: StudyExplanation;
+}
 export interface PYQQuestion {
   id: string;
   year: number;
@@ -26,6 +40,9 @@ export interface PYQQuestion {
   sourceVariants?: PYQQuestion[];
   subjectMemberships?: { subject: string; topic: string }[];
   keyConflict?: boolean;
+  explanationReview?: ExplanationReview;
+  explanationSourceId?: string;
+  suppliedAnswer?: string | null;
   subject: string;
   topic: string;
   question: string;
@@ -41,13 +58,7 @@ export interface PYQQuestion {
   difficultyLabel?: "Easy" | "Moderate" | "Difficult";
   verification?: "verified" | "required";
   blocks?: { type: "paragraph" | "list" | "table" | "passage"; text?: string; items?: string[]; headers?: string[]; rows?: string[][] }[];
-  explanation?: {
-    justification: string; concept: string;
-    statements?: { label: string; verdict: string; reason: string }[];
-    options?: Record<string, string>;
-    references: { title: string; url: string; section?: string }[];
-    insight?: string; elimination?: string; relatedConcepts?: string[];
-  };
+  explanation?: StudyExplanation;
   sourceImage?: string;
   imageSlices?: {
     url: string;

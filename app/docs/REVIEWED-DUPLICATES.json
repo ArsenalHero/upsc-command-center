@@ -208,5 +208,65 @@
     "canonicalId": "science-part-1-q-051",
     "duplicateId": "science-part-4-q-152",
     "reason": "Same complete prompt and labelled UPSC exam/year; reviewed choice differences are a source transcription or wording variation. Retain both supplied versions and explanations under one practice entry."
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-012",
+    "duplicateId": "history-modern-part-4-q-001",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-017",
+    "duplicateId": "history-ancient-part-1-q-001",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-075",
+    "duplicateId": "history-modern-part-1-q-001",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-020",
+    "duplicateId": "history-modern-part-4-q-002",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-007",
+    "duplicateId": "economy-part-3-q-004",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "polity-part-6-q-034",
+    "duplicateId": "economy-part-2-q-032",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "environment-ecology-q-043",
+    "duplicateId": "economy-part-1-q-040",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-077",
+    "duplicateId": "history-modern-part-6-q-077",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-015",
+    "duplicateId": "history-ancient-part-2-q-030",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "economy-part-7-q-197",
+    "duplicateId": "history-modern-part-5-q-102",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-016",
+    "duplicateId": "history-ancient-part-2-q-035",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-019",
+    "duplicateId": "history-ancient-part-4-q-228",
+    "reason": "Reviewed English stem and every choice: same tested facts, numerical values, polarity and answer. Differences are punctuation, bilingual formatting, articles, equivalent numbering, table headers or non-payment spelling; all source versions remain accessible."
   }
 ]

@@ -11,6 +11,7 @@ import { emptyFilters, emptyPrelims, emptyResponse, filterQuestions, keySnapshot
 import { originalBank, questionBank as bank, questionById as byId, canonicalQuestionId, canonicalRecords, latestBankAttempts } from "../data/questionBank";
 import { examGroups, examOccurrences, matchesExam, questionLabel, selectedExam } from "../utils/exams";
 import { matchesSubject, questionSubjects, questionTopics } from "../utils/questionCollections";
+import { cleanStudyText, explanationStatus, explanationStatusLabel, optionReviews, studyExplanation } from "../utils/explanationReview";
 import deduplication from "../../docs/DEDUPLICATION.json";
 const unique = (values: string[]) => [...new Set(values)].sort();
 const number = (n: number) => Number(n.toFixed(2)).toString();
@@ -19,28 +20,32 @@ const toggle = (ids: string[], id: string) => ids.includes(id) ? ids.filter(x =>
 const result = (q: PYQQuestion, r?: PrelimsResponse) => !r?.option ? "Skipped" : !["official", "provided"].includes(r.key?.status || q.keyStatus) || !(r.key?.answer || q.answer) ? "Ungraded" : r.option === (r.key?.answer || q.answer) ? "Right" : "Wrong";
 
 function QuestionText({ q }: { q: PYQQuestion }) {
-  return <div className="prelims-text">{(q.blocks || q.question.split(/\n\n/).map(text => ({ type: "paragraph", text }))).map((b, i) =>
+  return <div className="prelims-text">{(q.blocks || cleanStudyText(q.question).split(/\n\n/).map(text => ({ type: "paragraph", text }))).map((b, i) =>
     b.type === "table" ? <div className="prelims-table-wrap" key={i}><table><caption>Question {q.number} · matching pairs</caption><thead><tr>{b.headers?.map(h => <th scope="col" key={h}>{h}</th>)}</tr></thead><tbody>{b.rows?.map((row, j) => <tr key={j}>{row.map((cell, k) => k === 0 ? <th scope="row" key={k}>{cell}</th> : <td key={k}>{cell}</td>)}</tr>)}</tbody></table></div>
     : b.type === "list" ? <ul className="prelims-statements" key={i}>{b.items?.map((v, j) => <li key={j}>{v}</li>)}</ul>
     : b.type === "passage" ? <section className="prelims-passage" key={i} aria-label="Reading passage"><strong>Read the passage</strong><p>{b.text}</p><small>Answer the related items using this passage only.</small></section>
     : <p key={i}>{b.text}</p>)}</div>;
 }
 function Explanation({ q, answer = q.answer }: { q: PYQQuestion; answer?: string | null }) {
-  const e = q.explanation, imported = !!q.sourceFile;
+  const e = studyExplanation(q), imported = !!q.sourceFile, status = explanationStatus(q), notes = optionReviews(q);
   return <section className="prelims-explanation" aria-label="Answer and explanation">
-    <h3>{imported ? "Provided answer" : "Official answer"}: {answer?.toUpperCase() || "Awaiting key"}</h3>
+    <div className={`prelims-explanation-status ${status}`}><strong>{explanationStatusLabel(q)}</strong>{q.explanationReview && <span>Reviewed {q.explanationReview.reviewedOn}</span>}</div>
+    <h3>{q.keyStatus === "official" ? "Official answer" : q.explanationReview?.status === "referenced" ? "Reference-backed editorial answer" : "Provided answer"}: {answer?.toUpperCase() || "Awaiting key"}</h3>
+    {q.explanationReview?.issue && <p className="prelims-answer-note">{q.explanationReview.issue}</p>}
     {e ? <>
-      <h4>{imported ? "Explanation from supplied material" : "Study explanation"}</h4>
-      <p className={imported ? "prelims-provided-text" : undefined}>{e.justification}</p>
+      <h4>{q.explanationReview ? "Editorial explanation" : imported || q.explanationSourceId ? "Explanation from supplied material" : "Study explanation"}</h4>
+      <p className="prelims-provided-text">{cleanStudyText(e.justification)}</p>
       {e.concept && <p><strong>Concept: </strong>{e.concept}</p>}
       {e.statements?.map(s => <p key={s.label}><strong>{s.label} · {s.verdict}: </strong>{s.reason}</p>)}
-      {e.options && <ul>{Object.entries(e.options).map(([k, v]) => <li key={k}><strong>{k.toUpperCase()}: </strong>{v}</li>)}</ul>}
       {e.elimination && <p><strong>Elimination: </strong>{e.elimination}</p>}
       {e.insight && <p><strong>Exam insight: </strong>{e.insight}</p>}
       {!!e.relatedConcepts?.length && <p><strong>Revise: </strong>{e.relatedConcepts.join(" · ")}</p>}
       {e.references.map((r, i) => <p className="small" key={i}><a href={r.url} target="_blank" rel="noreferrer">{r.title} ↗</a>{r.section && ` · ${r.section}`}</p>)}
-      <p className="small muted">{imported ? "Answer and explanation supplied in the uploaded study material; independent verification is pending." : "Study explanations are editorial notes. UPSC publishes the answer key."}</p>
+      <p className="small muted">{status === "referenced" ? "Editorial reasoning checked against the references above. An official answer key is a separate source." : "Supplied and earlier study notes still require independent verification. An official answer key alone does not verify every explanatory claim."}</p>
     </> : <p>Detailed explanation: verification required. Use the original paper and official answer key linked below.</p>}
+    <h4>Review every option</h4><div className="prelims-option-reviews">{notes.map(note => <article key={note.key} className={`prelims-option-review ${note.basis}`}><div><strong>{note.key.toUpperCase()}. {cleanStudyText(note.text)}</strong><span className="small muted">{{ reference: status === "referenced" ? "Reference-reviewed reasoning" : "Editorial review · answer disputed", source: "Context from supplied study notes", code: "Code comparison with supplied answer", missing: "Separate explanation needed" }[note.basis]}</span></div><p className="prelims-provided-text">{note.reason}</p></article>)}</div>
+    {status !== "referenced" && <p className="small muted">Each choice is shown so coverage gaps remain visible. Code comparisons describe the supplied selection; they do not independently verify its historical or scientific facts.</p>}
+    {q.explanationReview && q.explanation && <details className="prelims-review-row"><summary>Original supplied explanation and answer</summary><strong>Source answer: {q.suppliedAnswer?.toUpperCase() || "Not marked in source"}</strong><p className="prelims-provided-text">{q.explanation.justification}</p></details>}
     {imported && <p className="small"><strong>Source: </strong>{q.sourceFile} · Q{q.sourceQuestionNumber}<br />{q.examOccurrences?.map(e => e.label).join(" · ") || "Exam and year not supplied"}</p>}
     {q.sourceNotes && <p className="prelims-provided-text small">{q.sourceNotes}</p>}
     {q.keyConflict && <p className="small muted">{q.keyStatus === "official" ? "Source copies use different answers. This practice entry uses the official key." : "Supplied copies disagree on the answer. Your choice and time are saved without right/wrong grading until the key is verified."}</p>}
@@ -66,9 +71,10 @@ export default function PYQs() {
   const { data, savePrelims, setEditor } = useData(); const { guest } = useAuth();
   const stored = data.prelims || emptyPrelims();
   const w = { ...stored, bookmarks: [...new Set(stored.bookmarks.map(canonicalQuestionId))], review: [...new Set(stored.review.map(canonicalQuestionId))] }, f = w.filters;
-  const [tab, setTab] = useState("Browse"), [page, setPage] = useState(0), [active, setActive] = useState(false), [report, setReport] = useState<PrelimsSession>(), [timed, setTimed] = useState(true), [startHint, setStartHint] = useState("");
+  const [tab, setTab] = useState("Browse"), [page, setPage] = useState(0), [active, setActive] = useState(false), [report, setReport] = useState<PrelimsSession>(), [timed, setTimed] = useState(true), [startHint, setStartHint] = useState(""), [explanationFilter, setExplanationFilter] = useState("");
+  const [preview, setPreview] = useState<PYQQuestion>();
   const latest = useMemo(() => latestBankAttempts(data.pyqs), [data.pyqs]);
-  const filtered = filterQuestions(bank, f, latest, w.bookmarks, w.review);
+  const filtered = filterQuestions(bank, f, latest, w.bookmarks, w.review).filter(q => !explanationFilter || explanationStatus(q) === explanationFilter);
   const collection = bank.filter(q => matchesExam(q, f) && matchesSubject(q, f.subject));
   const collectionIds = new Set(collection.map(q => q.id));
   const records = canonicalRecords(data.pyqs.filter(p => p.attempt && collectionIds.has(canonicalQuestionId(p.attempt.questionId)))), stats = attemptStats(records);
@@ -93,7 +99,7 @@ export default function PYQs() {
     } catch (e) { setStartHint((e as Error).message); }
   };
   const sequence = (q: PYQQuestion) => {
-    const qs = filterQuestions(bank, { ...f, paper: q.paper, query: "", status: "" }, latest, w.bookmarks, w.review);
+    const qs = filterQuestions(bank, { ...f, paper: q.paper, query: "", status: "" }, latest, w.bookmarks, w.review).filter(next => !explanationFilter || explanationStatus(next) === explanationFilter);
     return qs.slice(qs.findIndex(next => next.id === q.id));
   };
   const facetBank = bank.filter(q => (!f.examGroup || matchesExam(q, { ...emptyFilters(), examGroup: f.examGroup })) && matchesSubject(q, f.subject));
@@ -104,6 +110,7 @@ export default function PYQs() {
   const groupCount = (group: string) => bank.filter(q => matchesSubject(q, f.subject) && matchesExam(q, { ...emptyFilters(), examGroup: group })).length;
   if (report) return <div className="pyq-workspace"><Report s={report} close={() => setReport(undefined)} retry={qs => start(qs)} /></div>;
   if (active && w.session) return <div className="pyq-workspace"><Session close={() => setActive(false)} report={s => { setActive(false); setReport(s); }} /></div>;
+  if (preview) return <div className="pyq-workspace"><PageHeader eyebrow="QUESTION & EXPLANATION REVIEW" title="Question explanation" description={`${label(preview, f)} · ${preview.subject}`} /><div className="prelims-actions"><button className="btn secondary" onClick={() => setPreview(undefined)}><ChevronLeft size={16} />Back to question bank</button></div><article className="card"><QuestionText q={preview} /><Explanation q={preview} /></article></div>;
   const currentPage = Math.min(page, Math.max(0, Math.ceil(filtered.length / 10) - 1));
   const pools = {
     "Latest mistakes": collection.filter(q => latest.get(q.id)?.attempt?.outcome === "incorrect"),
@@ -114,7 +121,8 @@ export default function PYQs() {
   };
   return <div className="pyq-workspace">
     <PageHeader eyebrow="UPSC · STATE PSC · SUBJECTWISE PYQs" title="PYQ question bank" description="Choose your subject, exam and year. Practise in English and Hindi, review explanations, and track every attempt." action={<button className="btn secondary" onClick={() => setEditor({ collection: "pyqs" })}>Log outside practice</button>} />
-    <div className="pyq-coverage card"><BookOpen size={26} /><div><strong>{bank.length.toLocaleString()} unique questions ready to practise</strong><p>{deduplication.newUniqueQuestions.toLocaleString()} new questions · Environment, Economy and Science & Technology<br />Repeated versions share one entry with all source explanations · full 2025 papers: 100 GS I + 80 CSAT</p></div></div>
+    <div className="pyq-coverage card"><BookOpen size={26} /><div><strong>{bank.length.toLocaleString()} unique questions ready to practise</strong><p>{deduplication.newUniqueQuestions.toLocaleString()} new questions · Ancient History, Modern History and Economy<br />{deduplication.uploadedDuplicates} repeated uploads merged · full 2025 papers: 100 GS I + 80 CSAT</p></div></div>
+    <div className="pyq-explanation-note"><strong>Explanation quality is visible.</strong><p>Reference-reviewed notes include option-by-option reasons and named sources. Uploaded notes remain labelled for verification; disputed answers save your choice and time without adding a right or wrong result.</p></div>
     <p className="pyq-save-note">{guest ? "Guest progress is saved in this browser. Export a backup to keep a separate copy." : "Progress is saved in your personal workspace. Account shows your cloud sync status."}</p>
     {w.session && !w.session.endedAt && <section className="card pyq-resume"><div><strong>Continue your {w.session.mode}</strong><p>Question {w.session.index + 1} of {w.session.questionIds.length}{w.session.deadline ? " · 2-hour deadline continues while away" : " · active timer excludes time away"}</p></div><button className="btn primary" onClick={() => setActive(true)}>Resume {w.session.mode}</button></section>}
     {startHint && <p role="status" className="card">{startHint}</p>}
@@ -138,13 +146,14 @@ export default function PYQs() {
           <label>Subtopic<select aria-label="PYQ subtopic" value={f.subtopic || ""} onChange={e => change("subtopic", e.target.value)}><option value="">All subtopics</option>{unique(facetBank.filter(q => !f.topic || questionTopics(q, f.subject).includes(f.topic)).map(q => q.subtopic || "")).filter(Boolean).map(p => <option key={p}>{p}</option>)}</select></label>
           <label>Difficulty<select aria-label="PYQ difficulty" value={f.difficulty} onChange={e => change("difficulty", e.target.value)}><option value="">All difficulty levels</option>{["Easy", "Moderate", "Difficult"].map(p => <option key={p}>{p}</option>)}</select></label>
           <label>Status<select aria-label="PYQ status" value={f.status} onChange={e => change("status", e.target.value)}><option value="">All questions</option>{Object.entries({ attempted: "Attempted", unattempted: "Unattempted", correct: "Right", incorrect: "Wrong", skipped: "Skipped", bookmarked: "Bookmarked", review: "Marked for review" }).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
+          <label>Explanation quality<select aria-label="PYQ explanation quality" value={explanationFilter} onChange={e => { setExplanationFilter(e.target.value); setPage(0); }}><option value="">All explanations</option><option value="referenced">Reference-reviewed</option><option value="source">Needs verification</option><option value="disputed">Answer needs review</option></select></label>
           <label className="prelims-search">Search question, exam or topic<input type="search" aria-label="Search PYQs" value={f.query} onChange={e => change("query", e.target.value)} placeholder="Try: Monsoon, BPSC, GEO6, Constitution…" /></label>
         </div>
         <p className="small muted">Exam labels and years come from the source material. Topic tags are study classifications. Questions without a supplied exam or complete year stay available without a guessed label.</p>
       </section>
       <div className="section-heading"><h2>{filtered.length} questions</h2><div className="prelims-actions"><button className="btn primary" disabled={!filtered.length} onClick={() => start(filtered)}>Practise filtered questions</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(shuffled(filtered))}>Shuffle practice</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(filtered, "test")}>Test filtered questions</button></div></div>
       {!filtered.length && <div className="card">No questions match these filters.</div>}
-      {filtered.slice(currentPage * 10, (currentPage + 1) * 10).map(q => <article className="card prelims-bank-row" key={q.id}><div><span className="eyebrow">{label(q, f)} · {q.subject}</span><h3>{q.topic}</h3><p>{q.blocks?.find(b => b.type === "paragraph")?.text || q.question.slice(0, 160)}</p><span className="muted small">{q.sourceFile ? q.examOccurrences?.map(e => e.label).join(" · ") || "Exam and year not supplied" : q.difficultyLabel} · {latest.get(q.id)?.attempt?.outcome || "Unattempted"}</span></div><div className="prelims-actions"><button className="btn primary" aria-label={`Practise ${label(q, f)}`} onClick={() => start(sequence(q))}>Practise</button><button className="btn secondary" aria-label={`Bookmark ${label(q, f)}`} aria-pressed={w.bookmarks.includes(q.id)} onClick={() => savePrelims({ ...w, bookmarks: toggle(w.bookmarks, q.id) })}><Bookmark size={16} />{w.bookmarks.includes(q.id) ? "Bookmarked" : "Bookmark"}</button></div></article>)}
+      {filtered.slice(currentPage * 10, (currentPage + 1) * 10).map(q => <article className="card prelims-bank-row" key={q.id}><div><span className="eyebrow">{label(q, f)} · {q.subject}</span><h3>{q.topic}</h3><p>{cleanStudyText(q.blocks?.find(b => b.type === "paragraph")?.text || q.question.slice(0, 160))}</p><span className="muted small">{q.sourceFile ? q.examOccurrences?.map(e => e.label).join(" · ") || "Exam and year not supplied" : q.difficultyLabel} · {latest.get(q.id)?.attempt?.outcome || "Unattempted"}</span><span className={`prelims-quality-badge ${explanationStatus(q)}`}>{explanationStatusLabel(q)}</span></div><div className="prelims-actions"><button className="btn primary" aria-label={`Practise ${label(q, f)}`} onClick={() => start(sequence(q))}>Practise</button><button className="btn secondary" aria-label={`Review explanation ${label(q, f)}`} onClick={() => setPreview(q)}>Review explanation</button><button className="btn secondary" aria-label={`Bookmark ${label(q, f)}`} aria-pressed={w.bookmarks.includes(q.id)} onClick={() => savePrelims({ ...w, bookmarks: toggle(w.bookmarks, q.id) })}><Bookmark size={16} />{w.bookmarks.includes(q.id) ? "Bookmarked" : "Bookmark"}</button></div></article>)}
       <div className="prelims-actions"><button className="btn secondary" disabled={currentPage === 0} onClick={() => setPage(currentPage - 1)}>Previous page</button><span>Page {currentPage + 1} of {Math.max(1, Math.ceil(filtered.length / 10))}</span><button className="btn secondary" disabled={(currentPage + 1) * 10 >= filtered.length} onClick={() => setPage(currentPage + 1)}>Next page</button></div>
     </>}
     {tab === "Full papers" && <>

@@ -1,0 +1,182 @@
+{
+  "checkedOn": "2026-10-04",
+  "sourceQuestions": 1952,
+  "uniqueQuestions": 6371,
+  "statuses": {
+    "referenced": 12,
+    "source": 6353,
+    "disputed": 6
+  },
+  "completeOptionExplanations": 18,
+  "optionsNeedingSeparateExplanation": 13247,
+  "questionsNeedingSeparateOptionExplanation": 4790,
+  "reviewedQuestions": [
+    {
+      "id": "upsc-2025-prelims-gs1-a-001",
+      "status": "referenced",
+      "answer": "b",
+      "issue": "",
+      "references": [
+        "https://www.sebi.gov.in/media/press-releases/may-2012/sebi-notifies-sebi-alternative-investment-funds-regulations-2012_22799.html"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-002",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "Uploaded ECO3 Q2 marks D. The original 2025 paper's official answer A is retained.",
+      "references": [
+        "https://rbi.org.in/scripts/PublicationsView.aspx?Id=18086",
+        "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1354"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-004",
+      "status": "referenced",
+      "answer": "b",
+      "issue": "",
+      "references": [
+        "https://www.sebi.gov.in/legal/circulars/may-2021/business-responsibility-and-sustainability-reporting-by-listed-entities_50096.html"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-007",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "",
+      "references": [
+        "https://www.investor.gov/introduction-investing/investing-basics/what-risk"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-010",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "",
+      "references": [
+        "https://ncert.nic.in/textbook/pdf/leec105.pdf"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-061",
+      "status": "referenced",
+      "answer": "d",
+      "issue": "",
+      "references": [
+        "https://ncert.nic.in/textbook/pdf/leec105.pdf"
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-065",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "",
+      "references": [
+        "https://ncert.nic.in/textbook/pdf/leec105.pdf"
+      ]
+    },
+    {
+      "id": "science-part-4-q-036",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "Corrects the upload's overbroad claim that NFTs cannot participate in commercial transactions.",
+      "references": [
+        "https://ethereum.org/nft/"
+      ]
+    },
+    {
+      "id": "history-ancient-part-3-q-063",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "Ptolemy II replaces the source's Ptolemy III; the supplied country answer remains correct.",
+      "references": [
+        "https://ignca.gov.in/Asi_data/42413.pdf",
+        "https://ignca.gov.in/Asi_data/35389.pdf"
+      ]
+    },
+    {
+      "id": "history-ancient-part-3-q-068",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "Corrected explanatory date to the 1836 guide and clarified the name Thomsen.",
+      "references": [
+        "https://johnevans.ashmus.ox.ac.uk/visions/dansk-oldtid.html"
+      ]
+    },
+    {
+      "id": "history-ancient-part-4-q-101",
+      "status": "disputed",
+      "answer": null,
+      "issue": "Combined claim C is defective and the options offer no unambiguous combination.",
+      "references": [
+        "https://asi.nic.in/pdf/Excavation-at-Kalibangan-Part-II-min-1-compressed_compressed.pdf"
+      ]
+    },
+    {
+      "id": "history-modern-part-1-q-055",
+      "status": "disputed",
+      "answer": null,
+      "issue": "Unlabelled source item contains an unsupported generalisation; retained for review.",
+      "references": []
+    },
+    {
+      "id": "history-modern-part-4-q-164",
+      "status": "disputed",
+      "answer": null,
+      "issue": "The historical mover is absent, and the supplied D contradicts the act asked in the stem.",
+      "references": [
+        "https://en.banglapedia.org/index.php/Muslim_League"
+      ]
+    },
+    {
+      "id": "history-modern-part-6-q-029",
+      "status": "referenced",
+      "answer": "c",
+      "issue": "No answer was marked in the question body. Chronology supports editorial C; use NCERT's dates rather than the differing supplied years.",
+      "references": [
+        "https://www.ncert.nic.in/textbook/pdf/hess202.pdf"
+      ]
+    },
+    {
+      "id": "history-modern-part-6-q-030",
+      "status": "referenced",
+      "answer": "a",
+      "issue": "Unmarked source answer; drafting remarks in the upload are replaced by referenced editorial reasoning.",
+      "references": [
+        "https://www.india.gov.in/explore-india/facts-of-india/national-identity/national-song",
+        "https://packolkata.imd.gov.in/panchang/en/explanation",
+        "https://knowindia.india.gov.in/my-india-my-pride/indian-tricolor.php",
+        "https://www.india.gov.in/explore-india/facts-of-india/national-identity/national-anthem"
+      ]
+    },
+    {
+      "id": "economy-part-1-q-120",
+      "status": "disputed",
+      "answer": null,
+      "issue": "All four statements are broadly defensible as written; an incorrect choice cannot be safely selected.",
+      "references": [
+        "https://www.ncert.nic.in/textbook/pdf/leec102.pdf",
+        "https://fred.stlouisfed.org/series/GDPPOT"
+      ]
+    },
+    {
+      "id": "economy-part-2-q-067",
+      "status": "disputed",
+      "answer": null,
+      "issue": "Ambiguous C-versus-E choice: the supplied definition omits components of the current account.",
+      "references": [
+        "https://rbi.org.in/scriptS/PublicationsView.aspx?id=9479"
+      ]
+    },
+    {
+      "id": "economy-part-3-q-135",
+      "status": "disputed",
+      "answer": null,
+      "issue": "Imprecise definition and unverified key; C must not be taught as a promise of returns.",
+      "references": [
+        "https://investor.sebi.gov.in/pdf/1315462034888.pdf",
+        "https://www.investor.gov/introduction-investing/investing-basics/what-risk"
+      ]
+    }
+  ]
+}

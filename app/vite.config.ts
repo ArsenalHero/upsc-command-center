@@ -17,6 +17,16 @@ export default defineConfig(({ mode }) => {
     strictPort: true,
     allowedHosts: ["terminal.local"],
   },
-  build: { chunkSizeWarningLimit: 900 },
+  build: {
+    chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          const bank = id.match(/\/src\/data\/([^/]+-bank)\.json$/);
+          return bank ? `questions-${bank[1]}` : undefined;
+        },
+      },
+    },
+  },
   };
 });

@@ -87,8 +87,8 @@ test("the expanded bank supports a complete 2,206-question saved session and ret
   const data = createEmptyData();
   data.prelims = { ...emptyPrelims(), session: startSession(questionBank, "practice", emptyFilters()) };
   assert.equal(validateData(JSON.parse(JSON.stringify(data))).prelims!.session!.questionIds.length, 2206);
-  const tooMany = Array.from({ length: 5001 }, (_, i) => ({ ...questionBank[0], id: `limit-${i}` }));
-  assert.throws(() => startSession(tooMany, "practice", emptyFilters()), /5,000/);
+  const tooMany = Array.from({ length: 10001 }, (_, i) => ({ ...questionBank[0], id: `limit-${i}` }));
+  assert.throws(() => startSession(tooMany, "practice", emptyFilters()), /10,000/);
   data.prelims.session!.questionIds = tooMany.map(q => q.id);
   assert.throws(() => validateData(data), /question position/);
 });

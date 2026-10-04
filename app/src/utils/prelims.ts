@@ -9,7 +9,7 @@ export const emptyPrelims = (): PrelimsWorkspace => ({ filters: emptyFilters(), 
 export const emptyResponse = (): PrelimsResponse => ({ option: "", seconds: 0, confidence: 3, errorType: "", notes: "", submitted: false, visited: true, review: false });
 export const keySnapshot = (q: PYQQuestion) => ({ answer: q.answer, status: q.keyStatus, marks: q.marks, negativeMarks: q.negativeMarks ?? q.marks / 3 });
 export function startSession(qs: PYQQuestion[], mode: "practice" | "test", filters: PrelimsFilters, timed = false, now = new Date()): PrelimsSession {
-  if (!qs.length || qs.length > 5000) throw new Error("Choose between 1 and 5,000 questions.");
+  if (!qs.length || qs.length > 10000) throw new Error("Choose between 1 and 10,000 questions.");
   return { id: uid(), mode, questionIds: qs.map(q => q.id), index: 0, responses: { [qs[0].id]: emptyResponse() }, filters: { ...filters }, startedAt: now.toISOString(), ...(timed ? { deadline: new Date(now.getTime() + 7200000).toISOString() } : {}) };
 }
 export function responseAttempt(q: PYQQuestion, s: PrelimsSession, r: PrelimsResponse, subjects: Subject[], now = new Date()): PYQRecord {

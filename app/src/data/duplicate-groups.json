@@ -1,14 +1,87 @@
 [
   {
+    "canonicalId": "upsc-2025-prelims-gs1-a-001",
+    "duplicateIds": [
+      "economy-part-3-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-002",
+    "duplicateIds": [
+      "economy-part-3-q-002"
+    ],
+    "keyConflict": true
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-003",
+    "duplicateIds": [
+      "economy-part-2-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-004",
+    "duplicateIds": [
+      "economy-part-3-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-005",
+    "duplicateIds": [
+      "economy-part-2-q-001"
+    ]
+  },
+  {
     "canonicalId": "upsc-2025-prelims-gs1-a-006",
     "duplicateIds": [
       "geography-part-6-q-001"
     ]
   },
   {
+    "canonicalId": "upsc-2025-prelims-gs1-a-007",
+    "duplicateIds": [
+      "economy-part-3-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-008",
+    "duplicateIds": [
+      "economy-part-3-q-005"
+    ]
+  },
+  {
     "canonicalId": "upsc-2025-prelims-gs1-a-009",
     "duplicateIds": [
       "economy-part-4-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-010",
+    "duplicateIds": [
+      "economy-part-2-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-012",
+    "duplicateIds": [
+      "history-modern-part-4-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-017",
+    "duplicateIds": [
+      "history-ancient-part-1-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-019",
+    "duplicateIds": [
+      "history-ancient-part-1-q-002"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-020",
+    "duplicateIds": [
+      "history-modern-part-4-q-002"
     ]
   },
   {
@@ -212,6 +285,12 @@
     ]
   },
   {
+    "canonicalId": "upsc-2025-prelims-gs1-a-060",
+    "duplicateIds": [
+      "economy-part-2-q-007"
+    ]
+  },
+  {
     "canonicalId": "upsc-2025-prelims-gs1-a-063",
     "duplicateIds": [
       "economy-part-6-q-002"
@@ -242,9 +321,39 @@
     ]
   },
   {
+    "canonicalId": "upsc-2025-prelims-gs1-a-071",
+    "duplicateIds": [
+      "history-modern-part-4-q-003"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-073",
+    "duplicateIds": [
+      "history-modern-part-4-q-004"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-074",
+    "duplicateIds": [
+      "history-modern-part-4-q-005"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-075",
+    "duplicateIds": [
+      "history-modern-part-1-q-001"
+    ]
+  },
+  {
     "canonicalId": "upsc-2025-prelims-gs1-a-076",
     "duplicateIds": [
       "geography-part-1-q-001"
+    ]
+  },
+  {
+    "canonicalId": "upsc-2025-prelims-gs1-a-078",
+    "duplicateIds": [
+      "history-modern-part-2-q-002"
     ]
   },
   {
@@ -331,6 +440,13 @@
     "canonicalId": "upsc-2025-prelims-gs1-a-096",
     "duplicateIds": [
       "polity-part-9-q-002"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-1-q-013",
+    "duplicateIds": [
+      "history-modern-part-5-q-100",
+      "history-modern-part-6-q-100"
     ]
   },
   {
@@ -538,6 +654,12 @@
     ]
   },
   {
+    "canonicalId": "polity-part-6-q-034",
+    "duplicateIds": [
+      "economy-part-2-q-032"
+    ]
+  },
+  {
     "canonicalId": "polity-part-6-q-216",
     "duplicateIds": [
       "polity-part-9-q-087"
@@ -550,9 +672,27 @@
     ]
   },
   {
+    "canonicalId": "polity-part-8-q-052",
+    "duplicateIds": [
+      "economy-part-1-q-072"
+    ]
+  },
+  {
     "canonicalId": "polity-part-8-q-090",
     "duplicateIds": [
       "polity-part-9-q-092"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-9-q-014",
+    "duplicateIds": [
+      "economy-part-2-q-013"
+    ]
+  },
+  {
+    "canonicalId": "polity-part-9-q-049",
+    "duplicateIds": [
+      "history-modern-part-6-q-274"
     ]
   },
   {
@@ -898,6 +1038,12 @@
     ]
   },
   {
+    "canonicalId": "environment-ecology-q-043",
+    "duplicateIds": [
+      "economy-part-1-q-040"
+    ]
+  },
+  {
     "canonicalId": "environment-ecology-q-044",
     "duplicateIds": [
       "economy-part-4-q-043"
@@ -913,6 +1059,30 @@
     "canonicalId": "environment-pollution-q-027",
     "duplicateIds": [
       "science-part-4-q-069"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-4-q-016",
+    "duplicateIds": [
+      "economy-part-3-q-052"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-6-q-018",
+    "duplicateIds": [
+      "economy-part-2-q-014"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-7-q-018",
+    "duplicateIds": [
+      "economy-part-3-q-039"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-7-q-197",
+    "duplicateIds": [
+      "history-modern-part-5-q-102"
     ]
   },
   {
@@ -976,9 +1146,387 @@
     ]
   },
   {
+    "canonicalId": "science-part-4-q-036",
+    "duplicateIds": [
+      "economy-part-1-q-004"
+    ]
+  },
+  {
     "canonicalId": "science-part-4-q-123",
     "duplicateIds": [
       "science-part-4-q-126"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-015",
+    "duplicateIds": [
+      "history-ancient-part-2-q-030"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-016",
+    "duplicateIds": [
+      "history-ancient-part-2-q-035"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-018",
+    "duplicateIds": [
+      "history-ancient-part-4-q-178"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-019",
+    "duplicateIds": [
+      "history-ancient-part-4-q-228"
+    ]
+  },
+  {
+    "canonicalId": "history-ancient-part-1-q-020",
+    "duplicateIds": [
+      "history-ancient-part-4-q-245"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-4-q-009",
+    "duplicateIds": [
+      "history-modern-part-6-q-207"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-041",
+    "duplicateIds": [
+      "history-modern-part-6-q-041"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-042",
+    "duplicateIds": [
+      "history-modern-part-6-q-042"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-043",
+    "duplicateIds": [
+      "history-modern-part-6-q-043"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-044",
+    "duplicateIds": [
+      "history-modern-part-6-q-044"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-045",
+    "duplicateIds": [
+      "history-modern-part-6-q-045"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-046",
+    "duplicateIds": [
+      "history-modern-part-6-q-046"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-047",
+    "duplicateIds": [
+      "history-modern-part-6-q-047"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-048",
+    "duplicateIds": [
+      "history-modern-part-6-q-048"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-049",
+    "duplicateIds": [
+      "history-modern-part-6-q-049"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-050",
+    "duplicateIds": [
+      "history-modern-part-6-q-050"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-052",
+    "duplicateIds": [
+      "history-modern-part-6-q-052"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-053",
+    "duplicateIds": [
+      "history-modern-part-6-q-053"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-054",
+    "duplicateIds": [
+      "history-modern-part-6-q-054"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-055",
+    "duplicateIds": [
+      "history-modern-part-6-q-055"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-056",
+    "duplicateIds": [
+      "history-modern-part-6-q-056"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-058",
+    "duplicateIds": [
+      "history-modern-part-6-q-058"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-059",
+    "duplicateIds": [
+      "history-modern-part-6-q-059"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-060",
+    "duplicateIds": [
+      "history-modern-part-6-q-060"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-061",
+    "duplicateIds": [
+      "history-modern-part-6-q-061"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-063",
+    "duplicateIds": [
+      "history-modern-part-6-q-063"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-064",
+    "duplicateIds": [
+      "history-modern-part-6-q-064"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-065",
+    "duplicateIds": [
+      "history-modern-part-6-q-065"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-066",
+    "duplicateIds": [
+      "history-modern-part-6-q-066"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-067",
+    "duplicateIds": [
+      "history-modern-part-6-q-067"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-068",
+    "duplicateIds": [
+      "history-modern-part-6-q-068"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-069",
+    "duplicateIds": [
+      "history-modern-part-6-q-069"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-070",
+    "duplicateIds": [
+      "history-modern-part-6-q-070"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-071",
+    "duplicateIds": [
+      "history-modern-part-6-q-071"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-073",
+    "duplicateIds": [
+      "history-modern-part-6-q-073"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-074",
+    "duplicateIds": [
+      "history-modern-part-6-q-074"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-075",
+    "duplicateIds": [
+      "history-modern-part-6-q-075"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-076",
+    "duplicateIds": [
+      "history-modern-part-6-q-076"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-077",
+    "duplicateIds": [
+      "history-modern-part-6-q-077"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-078",
+    "duplicateIds": [
+      "history-modern-part-6-q-078"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-079",
+    "duplicateIds": [
+      "history-modern-part-6-q-079"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-080",
+    "duplicateIds": [
+      "history-modern-part-6-q-080"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-081",
+    "duplicateIds": [
+      "history-modern-part-6-q-081"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-082",
+    "duplicateIds": [
+      "history-modern-part-6-q-082"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-083",
+    "duplicateIds": [
+      "history-modern-part-6-q-083"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-084",
+    "duplicateIds": [
+      "history-modern-part-6-q-084"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-085",
+    "duplicateIds": [
+      "history-modern-part-6-q-085"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-086",
+    "duplicateIds": [
+      "history-modern-part-6-q-086"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-087",
+    "duplicateIds": [
+      "history-modern-part-6-q-087"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-088",
+    "duplicateIds": [
+      "history-modern-part-6-q-088"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-090",
+    "duplicateIds": [
+      "history-modern-part-6-q-090"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-091",
+    "duplicateIds": [
+      "history-modern-part-6-q-091"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-093",
+    "duplicateIds": [
+      "history-modern-part-6-q-093"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-094",
+    "duplicateIds": [
+      "history-modern-part-6-q-094"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-096",
+    "duplicateIds": [
+      "history-modern-part-6-q-096"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-097",
+    "duplicateIds": [
+      "history-modern-part-6-q-097"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-098",
+    "duplicateIds": [
+      "history-modern-part-6-q-098"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-099",
+    "duplicateIds": [
+      "history-modern-part-6-q-099"
+    ]
+  },
+  {
+    "canonicalId": "history-modern-part-5-q-119",
+    "duplicateIds": [
+      "history-modern-part-6-q-211"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-1-q-008",
+    "duplicateIds": [
+      "economy-part-3-q-033"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-2-q-015",
+    "duplicateIds": [
+      "economy-part-3-q-049"
+    ]
+  },
+  {
+    "canonicalId": "economy-part-2-q-036",
+    "duplicateIds": [
+      "economy-part-3-q-094"
     ]
   }
 ]
