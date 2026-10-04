@@ -1,0 +1,35 @@
+name: Validate reviewed PYQ explanations
+on:
+  push:
+    branches:
+      - codex/authentic-explanations-20261004
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          package-manager-cache: false
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Check types
+        run: npm run typecheck
+      - name: Test data and grading
+        run: npm test
+      - name: Test application flows
+        run: npm run test:ui
+      - name: Build GitHub Pages
+        run: npm run build
+      - name: Commit checked build to staging branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b codex/authentic-explanations-build-${GITHUB_SHA}
+          git add assets index.html sw.js .nojekyll
+          git diff --cached --quiet || git commit -m "Build validated PYQ explanations"
+          git push origin HEAD:refs/heads/codex/authentic-explanations-build-${GITHUB_SHA}
