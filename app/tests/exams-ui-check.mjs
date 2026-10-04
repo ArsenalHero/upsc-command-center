@@ -75,7 +75,9 @@ try {
   current = open(JSON.stringify(current.data())); opened.push(current);
   await until(()=>current.w.document.querySelector("h1")?.textContent==="UPSC PREPARATION COMMAND CENTER","Reloaded dashboard did not open");
   assert.match(current.w.document.querySelector('.exam-countdowns').textContent,/24 May 2027|May 24, 2027/);
-  await route("/settings","Preparation settings"); assert.equal(current.callbacks.size,0);
+  await route("/settings","Preparation settings");
+  await until(()=>current.callbacks.size===0,"Dashboard countdown timer did not stop after leaving the dashboard");
+  assert.equal(current.callbacks.size,0);
   await input(byLabel("Exam selection"),"State PSC"); assert.equal(byLabel("State PSC exam date").value,"2027-03-14");
   await input(byLabel("State PSC exam name"),"UPPSC PCS 2027"); await input(byLabel("State PSC exam date"),"2027-04-11"); await click("Save settings");
   await route("/","STATE PSC PREPARATION WORKSPACE");

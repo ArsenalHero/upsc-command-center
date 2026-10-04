@@ -1,3 +1,4 @@
+import { englishQuestion } from "../src/utils/englishQuestion";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -44,7 +45,7 @@ test("the visible bank removes repeated entries while preserving every raw ID an
     assert.ok(questionById.has(q.id));
     const canonical = questionById.get(canonicalQuestionId(q.id))!;
     assert.ok(questionBank.includes(canonical));
-    if (canonical.id !== q.id) assert.ok(canonical.sourceVariants!.some(copy => copy.id === q.id && copy.explanation?.justification === q.explanation?.justification));
+    if (canonical.id !== q.id) assert.ok(canonical.sourceVariants!.some(copy => copy.id === q.id && copy.explanation?.justification === englishQuestion(q).explanation?.justification));
   }
 });
 

@@ -42,6 +42,7 @@ export interface PYQQuestion {
   keyConflict?: boolean;
   explanationReview?: ExplanationReview;
   explanationSourceId?: string;
+  suppliedExplanationIds?: string[];
   suppliedAnswer?: string | null;
   subject: string;
   topic: string;

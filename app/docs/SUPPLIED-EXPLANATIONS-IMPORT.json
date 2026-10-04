@@ -1,0 +1,15 @@
+{
+  "sourceFile": "pyq-problems-and-explanations.html",
+  "sourceSha256": "f78f8914c3db6db3d1abd5a1292fa93047e28dd914309d404618cc345da8a6d2",
+  "explanationTextSha256": "21b7c3f7d0266a55cbf881b113337902cc64dd77634c0cd8cbca938e990015a6",
+  "questionAndOptionTextSha256": "d2cc7d3d12d6789504f1cf1d285cd968fa59b4e2ded4e6d94b3f1bc2ec1c06ac",
+  "explanations": 8039,
+  "directlyLinkedSourceExplanations": 4868,
+  "linkedQuestionIds": 5050,
+  "linkedCanonicalQuestions": 4757,
+  "availableInExplanationLibrary": 8039,
+  "existingPracticeQuestions": 7536,
+  "hindiFragmentsRemovedFromDisplay": 2,
+  "matching": "Exact English question text after punctuation/list-marker normalization and identical options in the same letter order; ambiguous matches remain in the complete explanation library.",
+  "sourceText": "All source question, option and explanation HTML is preserved exactly in the imported data. Display removes Hindi fragments only. No editorial rewriting or additional option review panels."
+}

@@ -1,3 +1,4 @@
+import { englishQuestion } from "../src/utils/englishQuestion";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
@@ -56,7 +57,7 @@ test("duplicate imports keep old IDs, official keys and every original source ve
   const duplicate=historyEconomyBank.find(q=>q.id==="economy-part-3-q-002")!, official=questionById.get(canonicalQuestionId(duplicate.id))!;
   assert.equal(duplicate.answer,"d"); assert.equal(official.answer,"a"); assert.equal(official.keyStatus,"official");
   assert.equal(questionById.get(duplicate.id)!.answer,"a");
-  assert.ok(official.sourceVariants!.some(q=>q.id===duplicate.id && q.answer==="d" && q.explanation?.justification===duplicate.explanation?.justification));
+  assert.ok(official.sourceVariants!.some(q=>q.id===duplicate.id && q.answer==="d" && q.explanation?.justification===englishQuestion(duplicate).explanation?.justification));
   for(const q of originalBank) assert.deepEqual([questionById.get(q.id)!.question,questionById.get(q.id)!.options,questionById.get(q.id)!.answer],[q.question,q.options,q.answer]);
 });
 

@@ -6,6 +6,8 @@ import { createEmptyData } from "../src/data/defaults.ts";
 import { validateData } from "../src/services/validation.ts";
 import { emptyFilters, emptyPrelims, emptyResponse, keySnapshot, responseAttempt, startSession } from "../src/utils/prelims.ts";
 import { cleanStudyText } from "../src/utils/explanationReview.ts";
+import { englishQuestion, englishSourceHTML } from "../src/utils/englishQuestion.ts";
+import { suppliedExplanations } from "../src/data/suppliedExplanations.ts";
 
 const bank = JSON.parse(
   readFileSync(new URL("../src/data/pyq-bank.json", import.meta.url), "utf8"),
@@ -297,7 +299,7 @@ try {
   assert.equal(current.w.document.querySelector(".prelims-explanation"),null);
   current.advance(27); await option("e"); await click("Submit answer");
   assert.match(text(), /Provided answer: D/);
-  assert.equal(current.w.document.querySelector(".prelims-provided-text").textContent,geo126.explanation.justification);
+  assert.equal(current.w.document.querySelector(".prelims-provided-text").textContent,englishQuestion(geo126).explanation.justification);
   const geoAttempt=current.data().pyqs.at(-1);
   assert.equal(geoAttempt.attempt.outcome,"incorrect"); assert.equal(geoAttempt.attempt.seconds,27);
   assert.equal(geoAttempt.attempt.examState,"Bihar");
@@ -348,7 +350,7 @@ try {
   assert.match(text(), /Other source versions & explanations/);
   const copy=[...current.w.document.querySelectorAll(".prelims-source-versions details")].find(el=>el.querySelector("summary").textContent==="BIODIVERSITY.txt · Q1");
   assert.ok(copy);
-  assert.equal(copy.querySelector(".prelims-provided-text").textContent,additional.find(q=>q.id==="environment-biodiversity-q-001").explanation.justification);
+  assert.equal(copy.querySelector(".prelims-provided-text").textContent,englishQuestion(additional.find(q=>q.id==="environment-biodiversity-q-001")).explanation.justification);
   assert.equal(current.data().pyqs.at(-1).attempt.grading,"official");
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
   current=makeDOM(); allDOMs.push(current.dom);
@@ -363,7 +365,7 @@ try {
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"incorrect");
   assert.equal(current.data().pyqs.at(-1).attempt.seconds,12);
   assert.equal(current.data().pyqs.at(-1).attempt.sourceFile,"GENS3.txt");
-  assert.equal(current.w.document.querySelector(".prelims-provided-text").textContent,cleanStudyText(additional.find(q=>q.id==="science-part-3-q-869").explanation.justification));
+  assert.equal(current.w.document.querySelector(".prelims-provided-text").textContent,cleanStudyText(englishQuestion(additional.find(q=>q.id==="science-part-3-q-869")).explanation.justification));
   await click("Next question"); assert.match(text(), /Source Q870/);
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
   current=makeDOM(); allDOMs.push(current.dom);
@@ -407,7 +409,8 @@ try {
   assert.match(text(),/1,165 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
   const beforePreview=JSON.stringify(current.data());
   await click("Review explanation 2025 GS I Q1"); await heading("Question explanation");
-  assert.match(text(),/Reference-reviewed explanation/); assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  assert.match(text(),/Explanation from supplied HTML/); assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
+  assert.ok(!text().includes("Review every option")); assert.ok(!/[\u0900-\u097f]/.test(text()));
   assert.equal(JSON.stringify(current.data()),beforePreview);
   await click("Back to question bank"); await heading("PYQ question bank");
   await field("PYQ subject","History"); await field("Search PYQs","MH6 chronological annexed");
@@ -415,7 +418,7 @@ try {
   await click("Practise filtered questions"); await heading("2004 · UPSC CSE · History MCQs");
   current.advance(19); await option("c"); await click("Submit answer");
   assert.match(text(),/Reference-backed editorial answer: C/);
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.ok(current.w.document.querySelector('.prelims-explanation a[href*="hess202.pdf"]'));
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"correct"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,19);
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
@@ -424,14 +427,14 @@ try {
   await click("Practise filtered questions"); await heading("2000 · UPPCS · History MCQs");
   current.advance(11); await option("d"); await click("Submit answer");
   assert.match(text(),/Answer saved · awaiting key/); assert.match(text(),/Fazlul Huq/);
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,11);
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
   await field("PYQ subject","Economy"); await field("Search PYQs","ECO2 Current Account Deficit");
   await click("Practise filtered questions"); await heading("2017 · CGPSC · Economy MCQs");
   assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
   await option("c"); await click("Submit answer");
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,5);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded");
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
@@ -440,10 +443,13 @@ try {
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
   const beforeCulturePreview=JSON.stringify(current.data());
   await click("Review explanation UPSC CSE 2024 · Cultural Heritage 1 Q2"); await heading("Question explanation");
-  assert.match(text(),/Reference-reviewed explanation/); assert.match(text(),/2024 question/);
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  assert.match(text(),/Explanation from supplied HTML/);
+  assert.ok(!/[\u0900-\u097f]/.test(text()));
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   for(const year of [2010,2021,2023,2017]) assert.match(current.w.document.querySelector(".prelims-explanation").textContent,new RegExp(String(year)));
-  assert.ok(current.w.document.querySelector('.prelims-explanation a[href*="ich.unesco.org"]'));
+  const expectedGarba=current.w.document.createElement("div");
+  expectedGarba.innerHTML=englishSourceHTML(suppliedExplanations.find(e=>e.id==="q-1394").explanation);
+  assert.equal(current.w.document.querySelector(".prelims-supplied-html").innerHTML,expectedGarba.innerHTML);
   assert.equal(JSON.stringify(current.data()),beforeCulturePreview);
   await click("Back to question bank"); await heading("PYQ question bank");
   await field("PYQ subject","History"); await field("PYQ year",""); await field("Search PYQs","Mir Bakshi"); await field("PYQ explanation quality","disputed");
@@ -452,7 +458,7 @@ try {
   current.advance(17); await option("d"); await click("Submit answer");
   assert.match(text(),/military function/); assert.match(text(),/Answer saved · awaiting key/);
   assert.equal(current.data().pyqs.at(-1).attempt.seconds,17); assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded");
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,4);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   await click("Finish practice"); await heading("Your paper report"); assert.match(text(),/0 wrong/);
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank"); await field("PYQ subject","History"); await click("State PSC"); await field("PYQ state","Chhattisgarh"); await field("PYQ year","2013"); await field("Search PYQs","AM2 protector");
@@ -460,9 +466,33 @@ try {
   await click("Practise filtered questions"); await heading("2013 · CGPSC · History MCQs");
   assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
   current.advance(21); await option("a"); await click("Submit answer");
-  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,5);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,21);
   validateData(current.data());
+  current=makeDOM(); allDOMs.push(current.dom);
+  await heading("PYQ question bank");
+  const beforeLibrary=JSON.stringify(current.data());
+  await click("Supplied explanations");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"8,039 supplied explanations");
+  await click("Read supplied explanation Q1");
+  assert.ok(current.w.document.querySelector(".source-question table"));
+  assert.ok(!/[\u0900-\u097f]/.test(text())); assert.ok(!text().includes("Review every option"));
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
+  const expectedSource=current.w.document.createElement("div"); expectedSource.innerHTML=englishSourceHTML(suppliedExplanations[0].explanation);
+  assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedSource.innerHTML);
+  assert.equal(JSON.stringify(current.data()),beforeLibrary);
+  await click("Back to supplied explanations");
+  await field("Supplied explanation subject","Art & Culture"); await field("Supplied explanation year","2024"); await field("Search supplied explanations","Garba");
+  await click("Read supplied explanation Q1395");
+  assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedGarba.innerHTML);
+  await click("Back to supplied explanations"); await click("Clear explanation filters");
+  const tableSource=suppliedExplanations.find(e=>e.explanation.includes("<table>"));
+  await field("Supplied explanation subject",tableSource.studySubject); await field("Supplied explanation year",tableSource.year); await field("Supplied explanation exam",tableSource.exam); await field("Search supplied explanations",tableSource.questionText.replace(/\s+/g," "));
+  await click(`Read supplied explanation Q${tableSource.n}`);
+  assert.ok(current.w.document.querySelector(".prelims-supplied-explanation table"));
+  expectedSource.innerHTML=englishSourceHTML(tableSource.explanation);
+  assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedSource.innerHTML);
+  assert.equal(JSON.stringify(current.data()),beforeLibrary);
   assert.deepEqual(messages,[]);
-  console.log("PYQ UI passed: History/Economy imports, explanation-quality filters, all-option panels and reference links, disputed five-choice grading, duplicate source versions, old IDs/bookmarks/progress, saved time, reload, Next question, reports and original full papers.");
+  console.log("PYQ UI passed: English-only questions, exact supplied HTML explanations, removed option-review panels, complete searchable explanation library, disputed five-choice grading, duplicate source versions, saved progress/time, Next question, reports and original full papers.");
 } finally { for(const dom of allDOMs) dom.window.close(); }

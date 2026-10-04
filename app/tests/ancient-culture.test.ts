@@ -1,3 +1,4 @@
+import { englishQuestion } from "../src/utils/englishQuestion";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
@@ -58,13 +59,13 @@ test("90 repeats merge while every source variant and old question ID remain ava
   const duplicate=ancientCultureBank.find(q=>q.id==="culture-literature-performing-arts-q-133")!;
   assert.equal(canonicalQuestionId(duplicate.id),canonicalQuestionId("history-modern-part-6-q-221"));
   const primary=questionById.get(canonicalQuestionId(duplicate.id))!;
-  assert.ok(primary.sourceVariants?.some(q=>q.id===duplicate.id&&q.explanation?.justification===duplicate.explanation?.justification));
-  assert.equal(questionById.get(duplicate.id)!.question,duplicate.question);
+  assert.ok(primary.sourceVariants?.some(q=>q.id===duplicate.id&&q.explanation?.justification===englishQuestion(duplicate).explanation?.justification));
+  assert.equal(questionById.get(duplicate.id)!.question,englishQuestion(duplicate).question);
 });
 
 test("UNESCO reviews explain every option and scope latest to the exam's choices", () => {
   for(const id of ["culture-heritage-part-1-q-001","culture-heritage-part-1-q-002"]){
-    const q=questionById.get(id)!; assert.equal(explanationStatus(q),"referenced"); assert.ok(completeOptionExplanation(q));
+    const q=questionById.get(id)!; assert.equal(q.explanationReview?.status,"referenced"); assert.equal(explanationStatus(q),"source"); assert.ok(completeOptionExplanation(q));
     assert.ok(q.explanationReview!.explanation.references.length);
     assert.equal(ancientCultureBank.find(q=>q.id===id)!.keyStatus,"provided");
   }
