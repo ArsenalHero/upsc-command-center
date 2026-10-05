@@ -75,6 +75,7 @@ const rpc=(owner,op,p)=>{const run=queryQueue.catch(()=>{}).then(async()=>{await
 await rpc(alice.id,"profile",{displayName:"Manager"});
 const coaching=await rpc(alice.id,"admin-coaching",{name:"FORUM IAS"});
 const testId=(await rpc(alice.id,"admin-test",{code:"UI-MOCK",name:"UI validation mock",paper:"GS-I",kind:"Sectional",year:2027,series:"Browser checks",duration:30,positive:2,negative:0.5,status:"active",coachingId:coaching.id,questions:["Alpha","Beta","Gamma"].map(topic=>({question:`Which ${topic} choice is correct?`,options:{a:"One",b:"Two",c:"Three",d:"Four"},correct:"a",explanation:"Verified explanation appears only after submission.",subject:"Polity",topic,positive:2,negative:0.5}))})).id;
+await db.exec("reset role");await db.query("insert into mock_private.report_documents(test_id,kind,title,items) values($1,'recall','Recall Sheet · PT-01',$2::jsonb)",[testId,JSON.stringify([{number:1,title:"Constituent Assembly",text:"Members were indirectly elected by Provincial Legislative Assemblies."},{number:2,title:"Preamble",text:"The Constitution derives its authority from the people."},{number:3,title:"Fundamental Rights",text:"Fundamental Rights limit government power."}])]);
 const payload=createEmptyData();payload.settings.setupCompleted=true;workspaces.set(bob.id,{payload,revision:1,updated_at:new Date().toISOString()});
 const fakeFetch = async (input, options = {}) => {
   const url = new URL(String(input)),
@@ -230,7 +231,7 @@ const submit = () =>
 w.eval(built.outputFiles[0].text);
 try{
  await until(()=>w.document.body.textContent.includes("UI validation mock"),"Public catalogue");
- assert.ok(w.document.body.textContent.includes("MUROF SAI"));
+ assert.ok(w.document.body.textContent.includes("MUROF SAI"));click("View syllabus");await until(()=>w.document.body.textContent.includes("Test syllabus"),"Syllabus popup");click("Close syllabus");
  w.location.hash=`/tests/prelims/${testId}`;
  await until(()=>w.document.body.textContent.includes("Keep every attempt in your own account"),"Guest sign-in gate");
  assert.ok(!w.document.body.textContent.includes("Verified explanation"));
@@ -243,6 +244,8 @@ try{
  const choose=text=>{const value=text==='One'?'a':'b';const input=w.document.querySelector(`input[value="${value}"]`);assert.ok(input);input.click();};
  choose("One");await new Promise(r=>setTimeout(r,40));click("Save & Next");await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Save and next");choose("Two");await new Promise(r=>setTimeout(r,40));click("Mark for review");await new Promise(r=>setTimeout(r,30));click("Save & exit");await until(()=>w.document.body.textContent.includes("My Tests"),"Save and exit");
  const history=await rpc(bob.id,"history",{});const attemptId=history[0].id;w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Resume question");click("Submit test");await until(()=>w.document.body.textContent.includes("Confirm submission"),"Submission confirmation");click("Confirm submission");await until(()=>w.document.body.textContent.includes("UI validation mock · Result"),"Submitted report");const result=await rpc(bob.id,"attempt",{attemptId});assert.equal(result.result.score,1.5);assert.equal(result.result.incorrect,1);click("Questions");await until(()=>w.document.body.textContent.includes("Verified explanation appears only after submission."),"Post-submission explanations");
+ click("Recall Sheet");await until(()=>w.document.body.textContent.includes("Fundamental Rights limit government power."),"Protected text recall sheet");assert.equal(w.document.querySelectorAll(".mock-recall-entry").length,3);assert.ok(!w.document.querySelector("iframe"));assert.ok(!w.document.body.textContent.includes("Download PDF"));assert.ok(apiCalls.some(c=>c.body.op==="report-document"));
+ const recallSearch=w.document.querySelector('[aria-label="Search recall sheet"]');Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"Q2");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===1,"Search recall entries by number");assert.ok(w.document.querySelector(".mock-recall-entry").textContent.includes("Q2. Preamble"));Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===3,"Restore full recall sheet");
  click("Community Comparison");await until(()=>w.document.body.textContent.includes("5"),"Honest community threshold");
  assert.deepEqual(messages,[]);console.log("Mock UI checks passed: guest catalogue, safe login return, private exam, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
 }finally{dom.window.close();await queryQueue.catch(()=>{});await db.close();}
