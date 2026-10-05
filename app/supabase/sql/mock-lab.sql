@@ -17,6 +17,13 @@ create table if not exists mock_private.tests (
  status text not null default 'draft' check(status in ('draft','active','archived','closed')), questions jsonb not null default '[]',
  question_count integer not null default 0, maximum numeric not null default 0, created_at timestamptz not null default now()
 );
+alter table mock_private.tests add column if not exists listed boolean not null default true;
+create table if not exists mock_private.report_documents (
+ test_id uuid not null references mock_private.tests(id), kind text not null check(kind='recall'),
+ title text not null, items jsonb not null check(jsonb_typeof(items)='array' and jsonb_array_length(items)>0), primary key(test_id,kind)
+);
+alter table mock_private.report_documents enable row level security;
+revoke all on mock_private.report_documents from public,anon,authenticated;
 create table if not exists mock_private.profiles (
  user_id uuid primary key references auth.users(id) on delete cascade,
  display_name text not null check(length(display_name) between 2 and 30 and display_name !~ '@'),
@@ -94,6 +101,7 @@ $$;
 create or replace function mock_private.attempt_public(a mock_private.attempts) returns jsonb language sql stable set search_path='' as $$
  select jsonb_build_object('id',a.id,'testId',a.test_id,'test',a.test_info,'mode',a.mode,'eligible',a.eligible,'status',a.status,'startedAt',a.started_at,'deadline',a.deadline,
  'submittedAt',a.submitted_at,'answers',a.answers,'index',a.current_index,'sequence',a.save_seq,'serverNow',clock_timestamp(),
+ 'reportDocuments',case when a.status='submitted' then (select coalesce(jsonb_agg(jsonb_build_object('kind',d.kind,'title',d.title,'itemCount',jsonb_array_length(d.items)) order by d.kind),'[]') from mock_private.report_documents d where d.test_id=a.test_id) else '[]'::jsonb end,
  'questions',case when a.status='running' then mock_private.safe_questions(a.questions) else a.questions end,'result',a.result);
 $$;
 create or replace function mock_private.save_answers(aid uuid,p jsonb) returns void language plpgsql set search_path='' as $$
@@ -125,11 +133,11 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  name_n text; cid uuid; n integer; maximum_n numeric; newq jsonb; coach text; seq text;
  begin
  if op in ('catalog','detail') then
- if op='detail' then select * into t from mock_private.tests where id=(p->>'testId')::uuid and status<>'draft' and publish_at<=now();
+ if op='detail' then select * into t from mock_private.tests where id=(p->>'testId')::uuid and listed and status<>'draft' and publish_at<=now();
  if not found then raise exception 'Test not available'; end if;
  perform mock_private.expire(t.id); select jsonb_build_object('count',count(*),'mean',avg(score),'median',percentile_cont(0.5) within group(order by score),'highest',max(score),'accuracy',avg(accuracy),'seconds',avg(elapsed)) into stats from mock_private.attempts where test_id=t.id and eligible and status='submitted';
  return jsonb_build_object('test',mock_private.test_public(t),'statistics',case when (stats->>'count')::integer>=5 then stats else null end); end if;
- select coalesce(jsonb_agg(mock_private.test_public(x)),'[]') into rows from (select * from mock_private.tests x where status<>'draft' and publish_at<=now()
+ select coalesce(jsonb_agg(mock_private.test_public(x)),'[]') into rows from (select * from mock_private.tests x where listed and status<>'draft' and publish_at<=now()
  and (coalesce(p->>'search','')='' or (name||' '||code||' '||syllabus) ilike '%'||(p->>'search')||'%')
  and (coalesce(p->>'paper','')='' or paper=p->>'paper') and (coalesce(p->>'kind','')='' or kind=p->>'kind')
  and (coalesce(p->>'year','')='' or year=(p->>'year')::integer) and (coalesce(p->>'series','')='' or series=p->>'series')
@@ -142,11 +150,11 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  or p->>'participation'='Bookmarked' and exists(select 1 from mock_private.profiles pp where pp.user_id=u and x.id=any(pp.bookmarks)))
  and question_count>=coalesce((p->>'minQuestions')::integer,0) and duration<=coalesce((p->>'maxDuration')::integer,300)
  order by year desc,created_at desc,id limit limit_n+1 offset offset_n) x;
- select jsonb_build_object('coaching',(select coalesce(jsonb_agg(jsonb_build_object('id',id,'name',display_name) order by display_name),'[]') from mock_private.coaching),
- 'years',(select coalesce(jsonb_agg(year order by year desc),'[]') from (select distinct year from mock_private.tests where status<>'draft') y),
- 'series',(select coalesce(jsonb_agg(series order by series),'[]') from (select distinct series from mock_private.tests where status<>'draft') y),
- 'subjects',(select coalesce(jsonb_agg(subject order by subject),'[]') from (select distinct unnest(subjects) subject from mock_private.tests where status<>'draft') y),
- 'topics',(select coalesce(jsonb_agg(topic order by topic),'[]') from (select distinct unnest(topics) topic from mock_private.tests where status<>'draft') y)) into meta;
+ select jsonb_build_object('coaching',(select coalesce(jsonb_agg(jsonb_build_object('id',id,'name',display_name) order by display_name),'[]') from mock_private.coaching c where exists(select 1 from mock_private.tests t where t.coaching_id=c.id and t.listed and t.status<>'draft')),
+ 'years',(select coalesce(jsonb_agg(year order by year desc),'[]') from (select distinct year from mock_private.tests where listed and status<>'draft') y),
+ 'series',(select coalesce(jsonb_agg(series order by series),'[]') from (select distinct series from mock_private.tests where listed and status<>'draft') y),
+ 'subjects',(select coalesce(jsonb_agg(subject order by subject),'[]') from (select distinct unnest(subjects) subject from mock_private.tests where listed and status<>'draft') y),
+ 'topics',(select coalesce(jsonb_agg(topic order by topic),'[]') from (select distinct unnest(topics) topic from mock_private.tests where listed and status<>'draft') y)) into meta;
  return jsonb_build_object('tests',rows,'facets',meta); end if;
  if u is null or not exists(select 1 from auth.users where id=u and not coalesce(is_anonymous,false) and email_confirmed_at is not null) then raise exception 'Sign in with a verified account to participate'; end if;
  select coalesce(raw_app_meta_data->>'mock_admin','false')='true' into admin from auth.users where id=u;
@@ -198,7 +206,7 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  perform mock_private.expire(tid,u);
  if tid is not null then
  select * into t from mock_private.tests where id=tid for share;
- if not found or t.status<>'active' or t.publish_at>now() or t.scheduled_at>now() or t.closes_at<=now() then raise exception 'This test is not open for new attempts'; end if;
+ if not found or not t.listed or t.status<>'active' or t.publish_at>now() or t.scheduled_at>now() or t.closes_at<=now() then raise exception 'This test is not open for new attempts'; end if;
  select * into a from mock_private.attempts where test_id=tid and user_id=u and status='running';
  if found then return mock_private.attempt_public(a); end if;
  if (select count(*) from mock_private.attempts where test_id=tid and user_id=u)>=t.attempt_limit then raise exception 'Attempt limit reached'; end if;
@@ -215,6 +223,12 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  values(u,tid,meta,qs,case when tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible) then 'official' else 'practice' end,
  tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible),now()+make_interval(mins=>(meta->>'duration')::integer)) returning * into a;
  return mock_private.attempt_public(a); end if;
+ if op='report-document' then
+ select * into a from mock_private.attempts where id=(p->>'attemptId')::uuid and user_id=u;
+ if not found then raise exception 'Attempt not found'; end if;
+ if a.status<>'submitted' then raise exception 'Submit the test before opening report documents'; end if;
+ select jsonb_build_object('kind',d.kind,'title',d.title,'items',d.items) into rows from mock_private.report_documents d where d.test_id=a.test_id and d.kind=p->>'kind';
+ if rows is null then raise exception 'Report document not available'; end if; return rows; end if;
  if op in ('save','submit','attempt','annotate') then
  aid=(p->>'attemptId')::uuid; select * into a from mock_private.attempts where id=aid and user_id=u for update;
  if not found then raise exception 'Attempt not found'; end if;
