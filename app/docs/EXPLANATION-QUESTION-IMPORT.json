@@ -1,0 +1,26 @@
+{
+  "reviewedOn": "2026-10-05",
+  "explanationEntries": 8039,
+  "previousUniqueQuestions": 7535,
+  "addedUniqueQuestions": 412,
+  "uniqueBankQuestions": 7947,
+  "classifications": {
+    "represented": 6223,
+    "possible-repeat": 1375,
+    "held": 29,
+    "added": 412
+  },
+  "subjects": {
+    "Art & Culture": 2,
+    "Environment": 18,
+    "Geography": 327,
+    "History": 55,
+    "Polity & Governance": 10
+  },
+  "examGroups": {
+    "UPSC CSE": 144,
+    "State PSC": 166,
+    "CDS & CAPF": 102
+  },
+  "explanationPolicy": "Original explanation HTML and option letters are retained. New keys are supplied keys, not claimed official keys. Missing attribution, missing diagrams, truncated questions and ambiguous/repeated choices are held outside practice."
+}

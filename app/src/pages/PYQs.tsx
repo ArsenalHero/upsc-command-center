@@ -15,7 +15,7 @@ import { cleanStudyText, englishStudyText, explanationStatus, explanationStatusL
 import { suppliedExplanations, suppliedExplanationsFor } from "../data/suppliedExplanations";
 import { ReviewedExplanationText } from "../components/ReviewedExplanation";
 import { SuppliedExplanationLibrary, SuppliedExplanationText } from "../components/SuppliedExplanations";
-import deduplication from "../../docs/DEDUPLICATION.json";
+import gapImport from "../../docs/EXPLANATION-QUESTION-IMPORT.json";
 const unique = (values: string[]) => [...new Set(values)].sort();
 const number = (n: number) => Number(n.toFixed(2)).toString();
 const label = questionLabel;
@@ -105,8 +105,8 @@ export default function PYQs() {
   };
   return <div className="pyq-workspace">
     <PageHeader eyebrow="UPSC · STATE PSC · SUBJECTWISE PYQs" title="PYQ question bank" description="Choose your subject, exam and year. Practise in English, read explanations, and track every attempt." action={<button className="btn secondary" onClick={() => setEditor({ collection: "pyqs" })}>Log outside practice</button>} />
-    <div className="pyq-coverage card"><BookOpen size={26} /><div><strong>{bank.length.toLocaleString()} unique questions ready to practise</strong><p>{deduplication.newUniqueQuestions.toLocaleString()} new questions · Ancient &amp; Medieval History and Art &amp; Culture<br />{deduplication.uploadedDuplicates} repeated uploads merged · full 2025 papers: 100 GS I + 80 CSAT</p></div></div>
-    <div className="pyq-explanation-note"><strong>{suppliedExplanations.length.toLocaleString()} explanations available.</strong><p>Read explanations, tables and notes in the Explanations tab. Filter by subject, year or exam.</p></div>
+    <div className="pyq-coverage card"><BookOpen size={26} /><div><strong>{bank.length.toLocaleString()} unique questions ready to practise</strong><p>{gapImport.addedUniqueQuestions.toLocaleString()} missing PYQs added after checking for repeats<br />Full 2025 papers: 100 GS I + 80 CSAT</p></div></div>
+    <div className="pyq-explanation-note"><strong>{suppliedExplanations.length.toLocaleString()} explanation entries.</strong><p>This includes repeated questions and alternative explanations, so it is not a count of unique questions. Read them by subject, year or exam in the Explanations tab.</p></div>
     <p className="pyq-save-note">{guest ? "Guest progress is saved in this browser. Export a backup to keep a separate copy." : "Progress is saved in your personal workspace. Account shows your cloud sync status."}</p>
     {w.session && !w.session.endedAt && <section className="card pyq-resume"><div><strong>Continue your {w.session.mode}</strong><p>Question {w.session.index + 1} of {w.session.questionIds.length}{w.session.deadline ? " · 2-hour deadline continues while away" : " · active timer excludes time away"}</p></div><button className="btn primary" onClick={() => setActive(true)}>Resume {w.session.mode}</button></section>}
     {startHint && <p role="status" className="card">{startHint}</p>}

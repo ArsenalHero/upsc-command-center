@@ -1,3 +1,4 @@
+import gapImport from "../docs/EXPLANATION-QUESTION-IMPORT.json";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -217,7 +218,7 @@ test("the reading library applies the same reviewed correction and retains unmod
   assert.equal(reviewedLibraryQuestion("q-1394"),undefined);
   const first=suppliedExplanationsFor(questionById.get(gsId(1))!)[0];
   assert.equal(reviewedLibraryQuestion(first.id),undefined);
-  assert.equal(questionBank.length,7535);
+  assert.equal(questionBank.length,gapImport.uniqueBankQuestions);
 });
 
 test("the repaired matching table has one visible entry and preserves its older alias and recorded timing", () => {

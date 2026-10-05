@@ -1,3 +1,4 @@
+import gapImport from "../docs/EXPLANATION-QUESTION-IMPORT.json";
 import { englishQuestion } from "../src/utils/englishQuestion";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -35,8 +36,8 @@ test("all 13 supplied files preserve 2,469 questions, numbering, explanations an
 });
 
 test("the visible bank removes repeated entries while preserving every raw ID and source version", () => {
-  assert.equal(rawQuestionBank.length, 7882); assert.equal(questionBank.length, 7535);
-  assert.equal(new Set(questionBank.map(q => questionFingerprint(q) )).size, 7535);
+  assert.equal(rawQuestionBank.length, 7882 + gapImport.addedUniqueQuestions); assert.equal(questionBank.length, gapImport.uniqueBankQuestions);
+  assert.equal(new Set(questionBank.map(q => questionFingerprint(q) )).size, gapImport.uniqueBankQuestions);
   const old = new Set(rawQuestionBank.slice(0, 2206).map(q => q.id));
   const additionalIds = new Set(additionalBank.map(q => q.id));
   assert.equal(questionBank.filter(q => !old.has(q.id) && additionalIds.has(q.id)).length, 2386);
@@ -81,7 +82,7 @@ test("merged questions retain subject membership and match each exam/year occurr
   for (const year of ["2020", "2021"]) assert.equal(matchesExam(dual, { ...emptyFilters(), examGroup: "State PSC", state: "Uttar Pradesh", year }), true);
   assert.equal(matchesExam(dual, { ...emptyFilters(), state: "Bihar", year: "2020" }), false);
   const state = filterQuestions(questionBank, { ...emptyFilters(), subject: "Environment", examGroup: "State PSC" }, new Map(), [], []);
-  assert.equal(state.length, 276);
+  assert.equal(state.length, 282);
   assert.match(questionLabel(dual, { year: "2020" }), /2020/);
 });
 
@@ -121,5 +122,5 @@ test("additional parser supports unindented choices, option codes, incomplete ye
 
 test("the expanded unique bank can be saved and resumed as one filtered session", () => {
   const data = createEmptyData(); data.prelims = { ...emptyPrelims(), session: startSession(questionBank, "practice", emptyFilters()) };
-  assert.equal(validateData(JSON.parse(JSON.stringify(data))).prelims!.session!.questionIds.length, 7535);
+  assert.equal(validateData(JSON.parse(JSON.stringify(data))).prelims!.session!.questionIds.length, gapImport.uniqueBankQuestions);
 });
