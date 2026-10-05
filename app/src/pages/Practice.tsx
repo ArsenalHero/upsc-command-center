@@ -1,4 +1,7 @@
 import { useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
+import "../mock.css";
 import {
   Plus,
   Target,
@@ -880,4 +883,126 @@ export function MCQAnalysis() {
   );
 }
 export { default as PYQs } from "./PYQs";
-export { default as Tests } from "./MockLab";
+export function Tests() {
+  const { data, setEditor } = useData(),
+    { filters, setFilters, a } = useAnalytics(),
+    auth = useAuth(),
+    navigate = useNavigate();
+  const records = data.tests.filter(
+    (t) =>
+      matches(t, filters) &&
+      (!filters.testType || t.seriesId === filters.testType),
+  );
+  const errors = new Map<string, number>();
+  records.forEach((t) =>
+    Object.entries(t.errors).forEach(([n, v]) =>
+      errors.set(n, (errors.get(n) || 0) + v),
+    ),
+  );
+  const rows = [...errors].map(([name, value]) => ({ name, value }));
+  const sorted = records.slice().sort((a, b) => a.date.localeCompare(b.date));
+  return (
+    <>
+      <PageHeader
+        eyebrow="MEASURE. REVIEW. ADJUST."
+        title="Test series"
+        description="See performance as percentages, review weaknesses, and keep an error log."
+        action={
+          <div className="button-group">
+            <button
+              className="btn secondary"
+              onClick={() =>
+                setEditor({
+                  collection: "catalog",
+                  preset: { type: "Test series" },
+                })
+              }
+            >
+              <Plus size={16} />
+              Add Test Series
+            </button>
+            <AddButton collection="tests" label="Log test" />
+          </div>
+        }
+      />
+      <div className="button-group manual-test-actions" aria-label="Test actions">
+        <AddButton collection="tests" label="Add Log" />
+        <button className="btn secondary" onClick={() => {
+          const returnTo = "/tests/prelims/discover";
+          navigate(auth.user ? returnTo : "/login", auth.user ? undefined : {
+            state: { returnTo, mockAccessRequired: true },
+          });
+        }}><BookOpen size={16} />Mock Test</button>
+      </div>
+      <FilterBar filters={filters} onChange={setFilters} />
+      <div className="stats-grid three">
+        <DashboardCard title="Tests recorded" value={a.tests} />
+        <DashboardCard title="Average score" value={number(a.testScore, "%")} />
+        <DashboardCard
+          title="Latest vs previous"
+          value={
+            sorted.at(-1)
+              ? `${round((sorted.at(-1)!.score / sorted.at(-1)!.maximum) * 100)}%`
+              : "—"
+          }
+          detail={
+            <TrendBadge
+              current={
+                sorted.at(-1)
+                  ? (sorted.at(-1)!.score / sorted.at(-1)!.maximum) * 100
+                  : null
+              }
+              previous={
+                sorted.at(-2)
+                  ? (sorted.at(-2)!.score / sorted.at(-2)!.maximum) * 100
+                  : null
+              }
+              threshold={data.settings.trendThreshold}
+              percentage
+            />
+          }
+        />
+      </div>
+      <div className="chart-grid two">
+        <ChartCard
+          title="Test score and accuracy trend"
+          description="Percentage scores and question accuracy use separate calculations. Ranks are optional and not used to predict selection."
+        >
+          <TestPerformance data={data} filters={filters} />
+        </ChartCard>
+        <ChartCard
+          title="Test mistake types"
+          description="Total primary error categories recorded while reviewing your tests."
+        >
+          <SimpleBars rows={rows} horizontal />
+        </ChartCard>
+      </div>
+      <ChartCard
+        title="Subject weakness heatmap"
+        description="Combines coverage, revision, MCQs, PYQs, tests, answers, and recency. Sample sizes and thresholds matter."
+      >
+        <WeakTopicHeatmap data={data} filters={filters} />
+      </ChartCard>
+      <RecordTable
+        collection="tests"
+        records={records}
+        columns={[
+          { key: "date", label: "Date", render: (r) => prettyDate(r.date) },
+          { key: "name", label: "Test" },
+          { key: "stage", label: "Stage" },
+          {
+            key: "score",
+            label: "Score",
+            render: (r) => `${r.score}/${r.maximum}`,
+          },
+          {
+            key: "percentage",
+            label: "Percentage",
+            render: (r) => `${round((r.score / r.maximum) * 100)}%`,
+          },
+          { key: "rank", label: "Rank", render: (r) => r.rank || "—" },
+        ]}
+      />
+    </>
+  );
+}
