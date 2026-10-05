@@ -523,7 +523,7 @@ try {
   assert.equal(current.data().pyqs[0].attempt.questionId,gap.id); assert.equal(current.data().pyqs[0].attempt.outcome,"correct");
   expectedSource.innerHTML=englishSourceHTML(suppliedExplanations.find(e=>e.id==="q-1238").explanation);
   assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedSource.innerHTML);
-  await click("Next question"); assert.equal(current.data().prelims.session.index,1);
+  await click("View report"); await heading("Your paper report"); assert.match(text(),/1 right/);
   assert.deepEqual(messages,[]);
   console.log("PYQ UI passed: clean explanation headings without source/file metadata, exact English explanations and tables, complete searchable library, disputed five-choice grading, saved progress/time, Next question, reports and original full papers.");
 } finally { for(const dom of allDOMs) dom.window.close(); }
