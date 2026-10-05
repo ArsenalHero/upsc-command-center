@@ -145,7 +145,7 @@ const headings = [
   "Essay practice",
   "MCQ analysis",
   "PYQ question bank",
-  "Test series",
+  "Prelims Mock Test Lab",
   "Revision planner",
   "Weak areas & knowledge health",
   "Goals & progress",

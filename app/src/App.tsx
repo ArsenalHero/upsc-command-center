@@ -123,7 +123,7 @@ function WorkspaceRouter() {
         mode={modes[location.pathname]}
       />
     );
-  if (!auth.user && !auth.guest) return <Navigate to="/login" replace />;
+  if (!auth.user && !auth.guest && !location.pathname.startsWith("/tests")) return <Navigate to="/login" replace />;
   return (
     <WorkspaceProvider key={auth.user?.id || "guest"}>
       <Suspense
@@ -150,7 +150,7 @@ function WorkspaceRouter() {
             {practiceComponents.map((Page, i) => (
               <Route
                 key={practiceRoutes[i]}
-                path={practiceRoutes[i]}
+                path={practiceRoutes[i] === "tests" ? "tests/*" : practiceRoutes[i]}
                 element={<Page />}
               />
             ))}
@@ -159,7 +159,7 @@ function WorkspaceRouter() {
         </Routes>
       </Suspense>
       <GlobalEditor />
-      <SetupWizard />
+      {(!location.pathname.startsWith("/tests") || auth.user || auth.guest) && <SetupWizard />}
       <WebMCP />
     </WorkspaceProvider>
   );
