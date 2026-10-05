@@ -7,6 +7,10 @@ export function englishStudyText(text: string) {
       const parts = cell.split(/\s+\/\s+/);
       return parts.length === 2 && parts[0].trim() === parts[1].trim() ? parts[0].trim() : cell.trim();
     }
+    // A complete English entry containing its own colon is followed by a
+    // translated entry; its translated numeric suffix must not be retained twice.
+    const bilingualParts = cell.split(/\s+\/\s+/);
+    if (bilingualParts[0].includes(":")) return bilingualParts.filter(value => !/[\u0900-\u097f]/.test(value)).join(" / ").trim();
     // Bilingual matching rows can place a second English value after a Hindi
     // translation and a colon. Process each side before discarding translations.
     return cell.split(/(\s*:\s*)/).map(part => /^\s*:\s*$/.test(part) ? part :

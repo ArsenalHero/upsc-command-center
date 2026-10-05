@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { questionBank, questionById, rawQuestionBank, originalBank } from "../src/data/questionBank";
+import { questionBank, questionById, rawQuestionBank, originalBank, canonicalQuestionId } from "../src/data/questionBank";
 import { reviewedLibraryQuestion } from "../src/data/reviewedLibrary";
 import { suppliedExplanationsFor } from "../src/data/suppliedExplanations";
 import { englishQuestion } from "../src/utils/englishQuestion";
@@ -192,6 +192,7 @@ test("old answer snapshots keep their outcomes and time after a correction, incl
 
 test("both English matching columns survive removal of Hindi translations", () => {
   assert.equal(englishStudyText("Party / दल : Leader / नेता"),"Party : Leader");
+  assert.equal(englishStudyText("Hindu Marriage Act: 1955 / हिंदू विवाह अधिनियम: 1955"),"Hindu Marriage Act: 1955");
   assert.match(englishStudyText("1. Cassini / कैसिनी : Saturn / शनि"),/Cassini.*Saturn/);
   const party=questionById.get("polity-part-1-q-051")!.question;
   for (const word of ["Mukherjee","Rajagopalachari","Jagjivan Ram","Narendra Dev"]) assert.ok(party.includes(word),word);
@@ -206,15 +207,30 @@ test("both English matching columns survive removal of Hindi translations", () =
 });
 
 test("the reading library applies the same reviewed correction and retains unmodified explanations elsewhere", () => {
-  const q=questionById.get("history-ancient-rulers-q-113")!,entries=suppliedExplanationsFor(q);
+  const q=questionById.get("history-medieval-part-5-q-201")!,entries=suppliedExplanationsFor(q);
   assert.ok(entries.length);
   for(const e of entries) {
     const reviewed=reviewedLibraryQuestion(e.id)!;
-    assert.equal(reviewed.answer,"c");
-    assert.match(reviewed.explanationReview!.explanation.justification,/Gautamiputra Satakarni/);
+    assert.equal(reviewed.answer,"b");
+    assert.match(reviewed.explanationReview!.explanation.justification,/Deva Raya I/);
   }
   assert.equal(reviewedLibraryQuestion("q-1394"),undefined);
   const first=suppliedExplanationsFor(questionById.get(gsId(1))!)[0];
   assert.equal(reviewedLibraryQuestion(first.id),undefined);
-  assert.equal(questionBank.length,7536);
+  assert.equal(questionBank.length,7535);
+});
+
+test("the repaired matching table has one visible entry and preserves its older alias and recorded timing", () => {
+  const alias="culture-literature-performing-arts-q-144",primary="history-modern-part-6-q-239";
+  assert.equal(canonicalQuestionId(alias),primary);
+  assert.ok(!questionBank.some(q=>q.id===alias));
+  const q=questionById.get(primary)!;
+  assert.ok(q.sourceVariants!.some(copy=>copy.id===alias));
+  for(const value of ["Sumit Sarkar","Shahid Amin","Ranajit Guha","Bipan Chandra","Economic Nationalism","Property for Bengal","Swadeshi Movement","Chauri Chaura"]) assert.ok(q.question.includes(value),value);
+  const old=rawById.get(alias)!,s=startSession([old],"practice",emptyFilters());
+  const response={...emptyResponse(),option:"a",seconds:31,submitted:true,key:keySnapshot(old)};
+  s.responses[alias]=response;
+  assert.equal(responseAttempt(questionById.get(alias)!,s,response,[]).attempt!.outcome,"correct");
+  const report=sessionReport(s,questionById);
+  assert.deepEqual([report.correct,report.incorrect,report.seconds],[1,0,31]);
 });

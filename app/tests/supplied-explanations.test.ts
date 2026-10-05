@@ -28,7 +28,7 @@ test("all 8,039 supplied explanations and all question/options HTML match the re
 test("every question retains its identity, marking and English choices while applying only the reviewed keys", () => {
   const old = buildQuestionCollections(rawQuestionBank, groups, reviews as Record<string, ExplanationReview>);
   const reviewed = buildQuestionCollections(rawQuestionBank, groups, { ...reviews, ...coachingReviews } as Record<string, ExplanationReview>);
-  assert.equal(questionBank.length, 7536); assert.equal(questionById.size, old.byId.size);
+  assert.equal(questionBank.length, 7535); assert.equal(questionById.size, old.byId.size);
   for (const [id, before] of old.byId) {
     const after = questionById.get(id)!;
     for (const key of ["id", "marks", "negativeMarks"] as const) assert.deepEqual(after[key], before[key], `${id} ${key}`);

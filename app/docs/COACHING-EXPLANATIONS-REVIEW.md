@@ -7,3 +7,5 @@ Each referenced record links to the material checked. Coaching answers remain pr
 Original question banks and the 8,039 supplied explanations are retained. The interface uses reviewed overlays for corrected items in both practice and the reading library; other supplied English HTML remains intact. Saved attempts and their original key snapshots keep their scores and time.
 
 The companion JSON lists every reviewed question, status, method and reference. Other questions remain flagged for verification; this review does not certify the entire imported bank.
+
+The English matching-table repair exposed one repeated historian/book question. The two CDS 2016 (II) versions are now consolidated into one visible entry while both raw IDs, choices, source versions and historical attempt snapshots remain available. The visible bank contains 7,535 questions.

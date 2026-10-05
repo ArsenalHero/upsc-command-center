@@ -53,9 +53,9 @@ test("re-exam commas and MPPSC spelling preserve the correct exam identity and y
   assert.equal(mp.group,"State PSC"); assert.equal(mp.name,"MPPSC"); assert.equal(mp.year,1995);
 });
 
-test("90 repeats merge while every source variant and old question ID remain available", () => {
-  assert.equal(questionBank.length,7536);
-  assert.equal(ancientCultureBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,90);
+test("91 repeats merge while every source variant and old question ID remain available", () => {
+  assert.equal(questionBank.length,7535);
+  assert.equal(ancientCultureBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,91);
   const duplicate=ancientCultureBank.find(q=>q.id==="culture-literature-performing-arts-q-133")!;
   assert.equal(canonicalQuestionId(duplicate.id),canonicalQuestionId("history-modern-part-6-q-221"));
   const primary=questionById.get(canonicalQuestionId(duplicate.id))!;
