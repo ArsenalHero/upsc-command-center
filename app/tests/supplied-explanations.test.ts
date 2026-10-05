@@ -10,6 +10,7 @@ import { explanationStatus } from "../src/utils/explanationReview";
 import { matchText, parseExplanationFile, sourceHTMLText, validateSourceHTML } from "../scripts/import-supplied-explanations.mjs";
 import groups from "../src/data/duplicate-groups.json";
 import reviews from "../src/data/explanation-reviews.json";
+import coachingReviews from "../src/data/coaching-explanation-reviews.json";
 import type { ExplanationReview } from "../src/utils/pyq";
 
 const audit = JSON.parse(readFileSync(new URL("../docs/SUPPLIED-EXPLANATIONS-IMPORT.json", import.meta.url), "utf8"));
@@ -24,12 +25,14 @@ test("all 8,039 supplied explanations and all question/options HTML match the re
   assert.equal(suppliedExplanations.reduce((total, e) => total + (e.explanation.match(/<table>/g) || []).length, 0), 118);
 });
 
-test("every practice and legacy question keeps its ID, choice letters, answer, grading and marking while displaying English only", () => {
+test("every question retains its identity, marking and English choices while applying only the reviewed keys", () => {
   const old = buildQuestionCollections(rawQuestionBank, groups, reviews as Record<string, ExplanationReview>);
-  assert.equal(questionBank.length, 7536); assert.equal(questionById.size, old.byId.size);
+  const reviewed = buildQuestionCollections(rawQuestionBank, groups, { ...reviews, ...coachingReviews } as Record<string, ExplanationReview>);
+  assert.equal(questionBank.length, 7535); assert.equal(questionById.size, old.byId.size);
   for (const [id, before] of old.byId) {
     const after = questionById.get(id)!;
-    for (const key of ["id", "answer", "keyStatus", "marks", "negativeMarks", "suppliedAnswer"] as const) assert.deepEqual(after[key], before[key], `${id} ${key}`);
+    for (const key of ["id", "marks", "negativeMarks"] as const) assert.deepEqual(after[key], before[key], `${id} ${key}`);
+    for (const key of ["answer", "keyStatus", "suppliedAnswer"] as const) assert.deepEqual(after[key], reviewed.byId.get(id)![key], `${id} reviewed ${key}`);
     assert.deepEqual(Object.keys(after.options), Object.keys(before.options));
     assert.ok(!/[\u0900-\u097f]/.test(JSON.stringify({ question: after.question, options: after.options, blocks: after.blocks, explanation: after.explanation, review: after.explanationReview, versions: after.sourceVariants })), id);
     assert.ok(after.question.trim(), id); assert.ok(Object.values(after.options).every(v => v.trim()), id);
@@ -46,7 +49,7 @@ test("linked explanations use the same option letters and wording without assign
   assert.equal(matched, audit.linkedCanonicalQuestions);
   assert.equal(suppliedExplanationsFor(questionById.get("upsc-2025-prelims-gs1-a-001")!)[0].id, "q-5369");
   assert.equal(suppliedExplanationsFor(questionById.get("culture-heritage-part-1-q-002")!)[0].id, "q-1394");
-  assert.equal(explanationStatus(questionById.get("culture-heritage-part-1-q-002")!), "source");
+  assert.equal(explanationStatus(questionById.get("culture-heritage-part-1-q-002")!), "referenced");
   assert.equal(explanationStatus(questionById.get("history-medieval-part-3-q-101")!), "disputed");
 });
 

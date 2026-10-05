@@ -53,9 +53,9 @@ test("re-exam commas and MPPSC spelling preserve the correct exam identity and y
   assert.equal(mp.group,"State PSC"); assert.equal(mp.name,"MPPSC"); assert.equal(mp.year,1995);
 });
 
-test("90 repeats merge while every source variant and old question ID remain available", () => {
-  assert.equal(questionBank.length,7536);
-  assert.equal(ancientCultureBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,90);
+test("91 repeats merge while every source variant and old question ID remain available", () => {
+  assert.equal(questionBank.length,7535);
+  assert.equal(ancientCultureBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,91);
   const duplicate=ancientCultureBank.find(q=>q.id==="culture-literature-performing-arts-q-133")!;
   assert.equal(canonicalQuestionId(duplicate.id),canonicalQuestionId("history-modern-part-6-q-221"));
   const primary=questionById.get(canonicalQuestionId(duplicate.id))!;
@@ -65,7 +65,7 @@ test("90 repeats merge while every source variant and old question ID remain ava
 
 test("UNESCO reviews explain every option and scope latest to the exam's choices", () => {
   for(const id of ["culture-heritage-part-1-q-001","culture-heritage-part-1-q-002"]){
-    const q=questionById.get(id)!; assert.equal(q.explanationReview?.status,"referenced"); assert.equal(explanationStatus(q),"source"); assert.ok(completeOptionExplanation(q));
+    const q=questionById.get(id)!; assert.equal(q.explanationReview?.status,"referenced"); assert.equal(explanationStatus(q),"referenced"); assert.ok(completeOptionExplanation(q));
     assert.ok(q.explanationReview!.explanation.references.length);
     assert.equal(ancientCultureBank.find(q=>q.id===id)!.keyStatus,"provided");
   }
@@ -73,7 +73,7 @@ test("UNESCO reviews explain every option and scope latest to the exam's choices
 });
 
 test("disputed historical attributions save time without a wrong result and keep supplied answers", () => {
-  for(const id of ["history-medieval-part-3-q-101","history-ancient-rulers-q-113","culture-literature-performing-arts-q-073","history-medieval-part-5-q-201"]){
+  for(const id of ["history-medieval-part-3-q-101","culture-literature-performing-arts-q-073"]){
     const q=questionById.get(id)!, raw=ancientCultureBank.find(q=>q.id===id)!;
     assert.equal(explanationStatus(q),"disputed"); assert.equal(q.answer,null); assert.equal(q.keyStatus,"pending");
     assert.equal(q.suppliedAnswer,raw.answer); assert.ok(raw.answer); assert.ok(completeOptionExplanation(q));

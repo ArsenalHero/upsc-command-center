@@ -52,7 +52,7 @@ test("exam labels preserve multiple years, State PSC identity and unlabelled que
 });
 
 test("duplicate imports keep old IDs, official keys and every original source version", () => {
-  assert.equal(questionBank.length,7536);
+  assert.equal(questionBank.length,7535);
   assert.equal(historyEconomyBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,92);
   const duplicate=historyEconomyBank.find(q=>q.id==="economy-part-3-q-002")!, official=questionById.get(canonicalQuestionId(duplicate.id))!;
   assert.equal(duplicate.answer,"d"); assert.equal(official.answer,"a"); assert.equal(official.keyStatus,"official");

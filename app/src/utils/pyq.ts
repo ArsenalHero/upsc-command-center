@@ -19,6 +19,7 @@ export interface ExplanationReview {
   reviewedOn: string;
   issue?: string;
   answer?: string | null;
+  preferReviewedExplanation?: boolean;
   explanation: StudyExplanation;
 }
 export interface PYQQuestion {

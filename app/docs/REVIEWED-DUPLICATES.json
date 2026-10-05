@@ -298,5 +298,10 @@
     "canonicalId": "history-medieval-part-2-q-055",
     "duplicateId": "culture-heritage-part-2-q-036",
     "reason": "Identical Akbar currency assertion/reason; only the article in option B differs."
+  },
+  {
+    "canonicalId": "history-modern-part-6-q-239",
+    "duplicateId": "culture-literature-performing-arts-q-144",
+    "reason": "Complete English historian/book pairs, all four answer codes and the CDS 2016 (II) occurrence agree. The copies differ only in bilingual table layout and punctuation; keep one visible entry and preserve both raw IDs and historical attempts."
   }
 ]

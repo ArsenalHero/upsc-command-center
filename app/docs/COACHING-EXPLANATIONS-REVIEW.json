@@ -1,0 +1,2728 @@
+{
+  "reviewedOn": "2026-10-04",
+  "scope": "Review missing and unverified explanations, preserving final official keys and saved attempt snapshots.",
+  "counts": {
+    "reviewed": 187,
+    "referenced": 179,
+    "disputed": 8,
+    "missingGSFilled": 19,
+    "csatReviewed": 80
+  },
+  "policy": [
+    "Use question-specific coaching solutions and primary references where the coaching material conflicts or needs qualification.",
+    "Write English explanations covering the listed statements and choices; keep source references outside the question interface.",
+    "Do not promote a provided coaching answer to an official answer.",
+    "Withhold grading where the evidence or available choices does not establish one defensible answer.",
+    "Preserve original imported question banks and supplied HTML; apply reviewed overlays to practice and the reading library.",
+    "Leave other unverified questions flagged until their specific wording and answer can be established."
+  ],
+  "questions": [
+    {
+      "id": "upsc-2025-prelims-gs1-a-003",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "With reference to the Government of India, consider the following information: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/with-reference-to-the-government-of-india-consider-the-following-information-organization-some-of-its-functions-it-works-82069b4e-ca22-422f-bef0-46bc126139d1"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-009",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Circular economy, emissions and resource use — PYQ 2025",
+          "url": "https://www.pmfias.com/circular-economy-emissions-resources-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-011",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Raja Ram Mohan Roy — UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/consider-the-following-statements-about-raja-ram-mohan/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-014",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Q. Who among the following rulers in ancient India had assumed the titles 'Mattavilasa', 'Vichitrachitta' and 'Gunabhara'? - Sociology OWL",
+          "url": "https://upscsociology.in/who-among-the-following-rulers-in-ancient-india-had-assumed-the-titles-mattavilasa-vichitrachitta-and-gunabhara/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-015",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Fa-hien visited India under which ruler? PYQ 2025 — Answer",
+          "url": "https://www.pmfias.com/fa-hien-travelled-during-chandragupta-ii-reign-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-016",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Who among the following led a successful military campaign against the kingdom of Srivijaya? | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/who-among-the-following-led-a-successful-military-campaign-against-the-kingdom-of-srivijaya-b721a3b6-825e-4826-b1c0-8b46c5be57dd"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-021",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "NATO membership among listed countries — PYQ 2025",
+          "url": "https://www.pmfias.com/how-many-of-the-following-are-members-of/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-022",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following countries: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-countriesi-boliviaii-braziliii-colombiaiv-ecuadorv-paraguayvi-venezuelaandes-mountains-pass-throu-e6ba7565-f420-44b7-a847-7a4a7a892816"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-023",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following water bodies - Civilsdaily",
+          "url": "https://www.civilsdaily.com/prelims/consider-the-following-water-bodies/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-028",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statementsstatement-iin-the-context-of-effect-of-water-on-rocks-chalk-is-known-as-a-very-permeabl-8254ada1-dba7-4ce0-b626-f646a9b56e0b"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-030",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements about the Rashtriya Gokul Mission: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statements-about-the-rashtriya-gokul-missioni-it-is-important-for-the-upliftment-of-rural-poor-as-8a989c70-8d9e-41dd-af7c-2947354436d0"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-033",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statementsstatement-i-scientific-studies-suggest-that-a-shift-is-taking-place-in-the-earths-rotat-4604d3e6-b396-43a5-b34e-dd909a137946"
+        },
+        {
+          "title": "NASA-Funded Studies Explain How Climate Is Changing Earth’s Rotation - NASA",
+          "url": "https://www.nasa.gov/missions/grace/nasa-funded-studies-explain-how-climate-is-changing-earths-rotation/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-035",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Which one of the following launched the 'Nature Solutions Finance Hub for Asia and the Pacific'? | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/which-one-of-the-following-launched-the-nature-solutions-finance-hub-for-asia-and-the-pacific-63691581-ad38-4a8c-9246-1ada8e8294e4"
+        },
+        {
+          "title": "Nature Solutions Finance Hub - Masatsugu Asakawa | Asian Development Bank",
+          "url": "https://www.adb.org/news/speeches/nature-solution-finance-hub-masatsugu-asakawa"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-038",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements - Civilsdaily",
+          "url": "https://www.civilsdaily.com/prelims/consider-the-following-statements-17/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-039",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following pairs: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-pairsplant-descriptioni-cassava-woody-shrubii-ginger-herb-with-pseudostemiii-malabar-spinach-herb-e29aa32e-e089-4e40-a0c1-41263ea8d12a"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-044",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Which Items Contain Plastic? — UPSC Prelims PYQ 2025",
+          "url": "https://www.pmfias.com/items-containing-plastic-cigarette-eyeglass-tyres-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-047",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Majorana 1 chip and deep learning — UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/majorana-1-chip-aws-deep-learning-pyq-2025/"
+        },
+        {
+          "title": "Microsoft unveils Majorana 1, the world’s first quantum processor powered by topological qubits   - Microsoft Switzerland News Center",
+          "url": "https://news.microsoft.com/de-ch/2025/02/19/microsoft-unveils-majorana-1-the-worlds-first-quantum-processor-powered-by-topological-qubits/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-048",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Monoclonal antibodies UPSC Prelims PYQ 2025 — answer & explanation",
+          "url": "https://www.pmfias.com/monoclonal-antibodies-upsc-prelims-pyq-2025/"
+        },
+        {
+          "title": "Nipah Virus Infection - West Bengal State, India (2026) Q&A",
+          "url": "https://cdn.who.int/media/docs/default-source/searo/whe/pem/niv-wb-india2026qnawebinar.pdf?download=true&sfvrsn=5ba9203b_3"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-052",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following pairs: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-pairsstate-descriptioni-arunachal-pradesh-the-capital-is-named-after-a-fort-and-the-state-has-two-2de24b3c-e6f4-4071-844d-5f96f2139022"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-057",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "With reference to India, consider the following pairs: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/with-reference-to-india-consider-the-following-pairs-organization-union-ministry-i-the-national-automotive-board-ministr-cc54db70-361b-4b44-880a-842aa0e09ad2"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-062",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "INSTC route: India to Central Asia to Europe via Iran — UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/instc-route-india-central-asia-europe-via-iran-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        },
+        {
+          "title": "Embassy of India, Baku: INSTC links Indian ports to Azerbaijan and Russia through Iran",
+          "url": "https://www.indianembassybaku.gov.in/section/press-releases/india-azerbaijan-5th-inter-governmental-commission-meeting-in-delhi/"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-066",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "15th Finance Commission recommendations – UPSC Prelims PYQ 2025",
+          "url": "https://www.pmfias.com/15th-finance-commission-recommendations-pyq-2025/"
+        },
+        {
+          "title": "The Report of the Fifteenth Finance Commission",
+          "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1693868&lang=2&reg=48"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-068",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "RTGS vs NEFT settlement and charges – UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/rtgs-vs-neft-settlement-charges-pyq-2025/"
+        },
+        {
+          "title": "FAQs - Reserve Bank of India",
+          "url": "https://www.rbi.org.in/scripts/FS_FAQs.aspx?Id=65"
+        },
+        {
+          "title": "Reports- Reserve Bank of India",
+          "url": "https://www.rbi.org.in/scripts/PublicationReportDetails.aspx?ID=1169"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-070",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements about 'PM Surya Ghar Muft Bijli Yojana': | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statements-about-pm-surya-ghar-muft-bijli-yojanai-it-targets-installation-of-one-crore-solar-roof-cb23e6b7-411b-410a-89c3-cce7d83253f2"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-078",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Who founded the Self-Respect Movement? | UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/self-respect-movement-founder-periyar-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-079",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Botswana, Chile, Indonesia — resource matches | UPSC PYQ 2025",
+          "url": "https://www.pmfias.com/botswana-chile-indonesia-resource-matching-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-080",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the Consider the following pairs: Region-Country: 1) Mallorca-Italy . 2) Normandy-Spainpairs: Country-Resource-rich in :1) Botswana-Diamond. 2) Chile-Lithium. [2025] - PMF IAS",
+          "url": "https://www.pmfias.com/consider-the-consider-the-following-pairs-region-country/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-084",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "With reference to India's defence, consider the following pairs: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/with-reference-to-indias-defence-consider-the-following-pairsaircraft-type-descriptioni-dornier-maritime-patrol-aircraft-18b0bd80-5c5c-45c9-ab16-c012086b54d4"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-089",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "UPSC Prelims PYQ 2025: Minor minerals — State and Centre powers",
+          "url": "https://www.pmfias.com/minor-minerals-state-rule-making-central-notification-upsc-prelims-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-090",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Which organization has enacted the Nature Restoration Law (NRL) to tackle climate change and biodiversity loss? | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/which-organization-has-enacted-the-nature-restoration-law-nrl-to-tackle-climate-change-and-biodiversity-loss-a51a3809-258e-483b-86af-cd5a4966379f"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-092",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements in respect of BIMSTEC: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statements-in-respect-of-bimsteci-it-is-a-regional-organization-consisting-of-seven-member-states-444efbf4-fef9-489f-bd85-d349eee4d31b"
+        },
+        {
+          "title": "History - Home-The Bay of Bengal Initiative for Multi-Sectoral Technical and Economic",
+          "url": "https://www.bimstec.org/index.php/history"
+        },
+        {
+          "title": "Remarks by H.E. Tenzin Lekphell, Secretary General of BIMSTEC",
+          "url": "https://bimstec.org/images/content_page_pdf/1696742575_Remarks%20SG%20on%20rejuvanting%20in%20partnership%20-%20role%20of%20BIMSTEC%20India%20Visit%20-24.08.2022.pdf"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-093",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Who sits on the Gandhi Peace Prize jury? UPSC Prelims PYQ 2025",
+          "url": "https://www.pmfias.com/gandhi-peace-prize-jury-composition-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-094",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "GAGAN: system benefits — UPSC Prelims PYQ 2025",
+          "url": "https://www.pmfias.com/gagan-benefits-coverage-upsc-prelims-pyq-2025/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-097",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Q. Consider the following statements with regard to BRICS : - Sociology OWL",
+          "url": "https://upscsociology.in/q-consider-the-following-statements-with-regard-to-brics/"
+        },
+        {
+          "title": "Consider the following statements with regard to BRICS: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statements-with-regard-to-bricsi-th-brics-summit-was-held-under-the-chairship-of-russia-in-kazani-c921e424-5ef5-478c-a12c-352aaee5fcf5"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-098",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Consider the following statements about the Lokpal: I. The power of Lokpal applies to public servants of India, but not to Indian public servants posted outside India. II. The Chairperson or a Member shall not be a Member of Parliament or a Member of the Legislature of any State or Union Territory, and only the Chief Justice of India, whether incumbent or retired, has to be its Chairperson. III. The Chairperson or a Member shall not be a person of less than forty-five years of age on the date of assuming office as the Chairperson or Member, as the case may be. IV. Lokpal cannot inquire into allegations of corruption against a sitting Prime Minister of India. Which of the statements given above is/are correct? |ForumIAS",
+          "url": "https://forumias.com/blog/question/consider-the-following-statements-about-the-lokpal-i-the-power-of-lokpal-applies-to-public-servants-of-india-but-not-to-indian-public-servants-posted-outside-india-ii-the-chairperson-or-a-member/"
+        },
+        {
+          "title": "Q. Consider the following statements about Lokpal: - Sociology OWL",
+          "url": "https://upscsociology.in/q-consider-the-following-statements-about-lokpal/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-099",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Q. Consider the following statements in respect of the first Kho Kho World Cup: - Sociology OWL",
+          "url": "https://upscsociology.in/q-consider-the-following-statements-in-respect-of-the-first-kho-kho-world-cup/"
+        },
+        {
+          "title": "Consider the following statements in respect of the Kho Kho World Cup: | UPSC Prelims 2025 GS Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statements-in-respect-of-the-kho-kho-world-cupi-the-event-was-held-in-delhi-indiaii-indian-men-be-4d1a9779-f0ce-446a-a770-ec30c77995fe"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-100",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "UPSC 2025 Sports & Awards: Gandhi Peace Prize Jury, First Kho Kho World Cup and 45th Chess Olympiad Explained - Anantam IAS",
+          "url": "https://anantamias.com/upsc-2025-gandhi-peace-prize-kho-kho-chess-olympiad/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-029",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "Q. I. Without the atmosphere, temperature would be well below freezing point everywhere on the Earth's surface. - Sociology OWL",
+          "url": "https://upscsociology.in/q-i-without-the-atmosphere-temperature-would-be-well-below-freezing-point-everywhere-on-the-earths-surface/"
+        },
+        {
+          "title": "Greenhouse Effect Archives - NASA Science",
+          "url": "https://science.nasa.gov/greenhouse-effect/"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-gs1-a-002",
+      "status": "referenced",
+      "method": "Question-specific coaching material checked against the final Series A key; factual qualifications added where needed.",
+      "references": [
+        {
+          "title": "RBI: Financial accounts and income statement guide",
+          "url": "https://rbi.org.in/scripts/PublicationsView.aspx?Id=18086",
+          "section": "Income and printing expenditure"
+        },
+        {
+          "title": "RBI Annual Report: printing notes is expenditure",
+          "url": "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1354",
+          "section": "Chapter XII"
+        },
+        {
+          "title": "UPSC final 2025 GS-I answer key, Series A (scan hosted by ForumIAS)",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-GS-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "history-ancient-rulers-q-113",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "Post-Mauryan / Pre-Gupta Period – Old Year Questions and Answers - IAS Book",
+          "url": "https://www.iasbook.com/post-mauryan-period-questions/"
+        },
+        {
+          "title": "CGPSC Prelims Exam., 2013  General Studies (Paper-I) Solved Paper.pmd",
+          "url": "https://iasexamportal.com/sites/default/files/CGPSC-Prelims-Exam-2013-GS-Paper-I.pdf"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-2-q-067",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "[Solved] What is Current Account Deficit (CAD) ?",
+          "url": "https://testbook.com/question-answer/what-is-current-account-deficit-cad--607fd91d482521a6834f1aa6"
+        }
+      ]
+    },
+    {
+      "id": "history-medieval-part-5-q-201",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "IGNOU: Southern Dimension—The Glory of Vijayanagara, Hazara Rama Temple",
+          "url": "https://www.egyankosh.ac.in/bitstream/123456789/109032/1/Theme-II.pdf"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-002",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "The Constitutional Development of India - Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/constitutional-development-of-india-questions/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-015",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "[Solved] Which of the following statements relating to the Government",
+          "url": "https://testbook.com/question-answer/which-of-the-following-statements-relating-to-the--5d4aca9dfdb8bb4cf6d6844d"
+        },
+        {
+          "title": "UK legislation: Government of India Act 1858",
+          "url": "https://www.legislation.gov.uk/ukpga/Vict/21-22/106/pdfs/ukpga_18580106_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-016",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Exact question and choice text cross-checked; reviewed key remains provided, not official.",
+      "references": [
+        {
+          "title": "Which of the following statements relating to the Indian Councils Act, 1861 is/are correct?1. The Act introduced a grain of popular element by including non-official members in the Governor-General’s Executive Council.2. The members were nominated and their functions were confined exclusively to consideration of legislative proposals placed before it by the Governor-General.3. The Governor-General did not have effective legislative power.Select the correct answer using the code given below.",
+          "url": "https://prepp.in/question/which-of-the-following-statements-relating-to-the-6448f5cb128ecdff9f523973"
+        },
+        {
+          "title": "Testbook: Indian Councils Act 1861, CDS 2018 exact question",
+          "url": "https://testbook.com/question-answer/which-of-the-following-statements-relating-to-the--5d4acb33fdb8bb4cf6d68450"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-1-q-120",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": [
+        {
+          "title": "NCERT: National Income Accounting",
+          "url": "https://www.ncert.nic.in/textbook/pdf/leec102.pdf",
+          "section": "Section 2.4"
+        },
+        {
+          "title": "Federal Reserve / CBO: Real Potential GDP",
+          "url": "https://fred.stlouisfed.org/series/GDPPOT"
+        }
+      ]
+    },
+    {
+      "id": "history-ancient-part-4-q-101",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": [
+        {
+          "title": "ASI: Excavations at Kalibangan, Part II",
+          "url": "https://asi.nic.in/pdf/Excavation-at-Kalibangan-Part-II-min-1-compressed_compressed.pdf",
+          "section": "Chapter 13 · Arrowheads in Harappan levels"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-4-q-164",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": [
+        {
+          "title": "Asiatic Society of Bangladesh: Muslim League",
+          "url": "https://en.banglapedia.org/index.php/Muslim_League",
+          "section": "Fazlul Huq and the Lahore Resolution"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-1-q-055",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": []
+    },
+    {
+      "id": "economy-part-3-q-135",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": [
+        {
+          "title": "SEBI investor education: securities glossary",
+          "url": "https://investor.sebi.gov.in/pdf/1315462034888.pdf",
+          "section": "Blue Chip · page 9"
+        },
+        {
+          "title": "US SEC investor education: investment risk",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/what-risk",
+          "section": "Creditor status and repayment priority"
+        }
+      ]
+    },
+    {
+      "id": "history-medieval-part-3-q-101",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": [
+        {
+          "title": "IGNOU: Mughal Administration",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/20236/1/Unit-14.pdf",
+          "section": "14.3.3 Diwani Kul and 14.3.4 Mir Bakhshi"
+        }
+      ]
+    },
+    {
+      "id": "culture-literature-performing-arts-q-073",
+      "status": "disputed",
+      "answer": null,
+      "method": "Defective choices or historical attribution remain unresolved; factual explanation corrected and grading withheld.",
+      "references": []
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-001",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Maintaining an ecosystem just to conserve biodiversity will affect its commercial potential as well as the livelihoods dependent on the ecosystem. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-maintaining-an-ecosystem-just-to-conserve-biodiversity-will-affect-its-commercial-potential-as-well-as-the-livelihoods-dependent-on-the-ecosystem/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-002",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Maintaining an ecosystem just to conserve biodiversity will affect its commercial potential as well as the livelihoods dependent on the ecosystem. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-maintaining-an-ecosystem-just-to-conserve-biodiversity-will-affect-its-commercial-potential-as-well-as-the-livelihoods-dependent-on-the-ecosystem/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-003",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: The history of renewable energy suggests there is a steep learning curve, meaning that, as more is produced, costs fall rapidly because of economies of scale and learning by doing. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-the-history-of-renewable-energy-suggests-there-is-a-steep-learning-curve-meaning-that-as-more-is-produced-costs-fall-rapidly-because-of-economies-of-scale-and-learning-by-doing/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-004",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: The history of renewable energy suggests there is a steep learning curve, meaning that, as more is produced, costs fall rapidly because of economies of scale and learning by doing. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-the-history-of-renewable-energy-suggests-there-is-a-steep-learning-curve-meaning-that-as-more-is-produced-costs-fall-rapidly-because-of-economies-of-scale-and-learning-by-doing/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-005",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A natural number N is such that it can be expressed as N = p + q + r, where p, q and r are distinct factors of N. How many numbers below 50 have this property? - Sociology OWL",
+          "url": "https://upscsociology.in/a-natural-number-n-is-such-that-it-can-be-expressed-as-n-p-q-r-where-p-q-and-r-are-distinct-factors-of-n-how-many-numbers-below-50-have-this-property/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-006",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "UPSC CSAT 2025: Q6. Three prime numbers p, q and r, each less than 20, are such that p − q = q − r. How many distinct… · Answer & Explanation | deepmentor",
+          "url": "https://deepmentor.co/csat/pyq/2025/2025-csat-Q06-quant-three-primes-arithmetic-progression"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-007",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. How many possible values of (p + q + r) are there satisfying 1/p + 1/q + 1/r = 1, where p, q and r are natural numbers (not necessarily distinct)? - Sociology OWL",
+          "url": "https://upscsociology.in/q-how-many-possible-values-of-p-q-r-are-there-satisfying-1-p-1-q-1-r-1-where-p-q-and-r-are-natural-numbers-not-necessarily-distinct/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-008",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What comes at X and Y respectively in the following sequence? January, January, December, October, X, March, October, Y, September - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-comes-at-x-and-y-respectively-in-the-following-sequence-january-january-december-october-x-march-october-y-september/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-009",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Team X scored a total of N runs in 20 overs. Team Y tied the score in 10% less overs. Had team Y's average run rate (runs per over) been 50% higher, the scores would have been tied in 12 overs. How many runs were scored by team X? - Sociology OWL",
+          "url": "https://upscsociology.in/q-team-x-scored-a-total-of-n-runs-in-20-overs-team-y-tied-the-score-in-10-less-overs-had-team-ys-average-run-rate-runs-per-over-been-50-higher-the-scores-would-have-been-tied-in-12-overs-how/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-010",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. The price (p) of a commodity is first increased by k%; then decreased by k%; again increased by k%; and again decreased by k%. If the new price is q, then what is the relation between p and q? - Sociology OWL",
+          "url": "https://upscsociology.in/q-the-price-p-of-a-commodity-is-first-increased-by-k-then-decreased-by-k-again-increased-by-k-and-again-decreased-by-k-if-the-new-price-is-q-then-what-is-the-relation-between-p-and-q/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-011",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Each State in India faces a distinctive set of challenges regarding the impact of warming, but also offers its own set of opportunities for reducing emissions depending on its natural resources. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-each-state-in-india-faces-a-distinctive-set-of-challenges-regarding-the-impact-of-warming-but-also-offers-its-own-set-of-opportunities-for-reducing-emissions-depending-on-its-natural-resou/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-012",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Each State in India faces a distinctive set of challenges regarding the impact of warming, but also offers its own set of opportunities for reducing emissions depending on its natural resources. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-each-state-in-india-faces-a-distinctive-set-of-challenges-regarding-the-impact-of-warming-but-also-offers-its-own-set-of-opportunities-for-reducing-emissions-depending-on-its-natural-resou/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-013",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: If the social inequality is the most acutely felt social problem in India, insecurity, more than poverty, is the most acutely felt economic problem. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-if-the-social-inequality-is-the-most-acutely-felt-social-problem-in-india-insecurity-more-than-poverty-is-the-most-acutely-felt-economic-problem/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-014",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: If the social inequality is the most acutely felt social problem in India, insecurity, more than poverty, is the most acutely felt economic problem. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-if-the-social-inequality-is-the-most-acutely-felt-social-problem-in-india-insecurity-more-than-poverty-is-the-most-acutely-felt-economic-problem/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-015",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A solid cube is painted yellow on all its faces. The cube is then cut into 60 smaller but equal pieces by making the minimum number of cuts. Which of the following statements is/are correct? - Sociology OWL",
+          "url": "https://upscsociology.in/q-a-solid-cube-is-painted-yellow-on-all-its-faces-the-cube-is-then-cut-into-60-smaller-but-equal-pieces-by-making-the-minimum-number-of-cuts-which-of-the-following-statements-is-are-correct/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-016",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If 7 * 24 = 25 and 12 * 16 = 20, then what is 16 * 63 equal to? - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-7-24-25-and-12-16-20-then-what-is-16-63-equal-to/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-017",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. The petrol price shot up by 10% as a result of the hike in crude oil prices. The price of petrol before the hike was ₹90 per litre. A person travels 2200 km every month and his car gives a mileage of 16 km per litre. By how many km should he reduce his travel if he wants to maintain his expenditure at the previous level? - Sociology OWL",
+          "url": "https://upscsociology.in/q-the-petrol-price-shot-up-by-10-as-a-result-of-the-hike-in-crude-oil-prices-the-price-of-petrol-before-the-hike-was-%E2%82%B990-per-litre-a-person-travels-2200-km-every-month-and-his-car-gives-a-m/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-018",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A 4-digit number N is such that when divided by 3, 5, 6, 9 leaves a remainder 1, 3, 4, 7 respectively. What is the smallest value of N? - Sociology OWL",
+          "url": "https://upscsociology.in/q-a-4-digit-number-n-is-such-that-when-divided-by-3-5-6-9-leaves-a-remainder-1-3-4-7-respectively-what-is-the-smallest-value-of-n/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-019",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Consider the following statements: | UPSC Prelims 2025 CSAT Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/consider-the-following-statementsi-if-a-le-b-c-d-e-f-ge-g-h-then-b-is-always-greater-than-eii-if-p-q-r-ge-s-t-le-u-v-w-t-88de5844-a02e-4597-8d03-c465dbad09ec"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-020",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "UPSC CSAT 2025 Quantitative Ability: What is the unit digit | Ease My Prep",
+          "url": "https://easemyprep.in/pyq/csat/quantitative-ability/2025/2025_12_A_7"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-021",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: One of the dismal realities of the agricultural sector in independent India has been that it never experienced a high-growth phase, unlike the non-agricultural economy. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-one-of-the-dismal-realities-of-the-agricultural-sector-in-independent-india-has-been-that-it-never-experienced-a-high-growth-phase-unlike-the-non-agricultural-economy/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-022",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: One of the dismal realities of the agricultural sector in independent India has been that it never experienced a high-growth phase, unlike the non-agricultural economy. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-one-of-the-dismal-realities-of-the-agricultural-sector-in-independent-india-has-been-that-it-never-experienced-a-high-growth-phase-unlike-the-non-agricultural-economy/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-023",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In our country, handlooms are equated with a culture that ensures a continuity of tradition. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-our-country-handlooms-are-equated-with-a-culture-that-ensures-a-continuity-of-tradition/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-024",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In our country, handlooms are equated with a culture that ensures a continuity of tradition. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-our-country-handlooms-are-equated-with-a-culture-that-ensures-a-continuity-of-tradition/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-025",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Consider the first 100 natural numbers. How many of them are not divisible by any one of 2, 3, 5, 7 and 9? - Sociology OWL",
+          "url": "https://upscsociology.in/q-consider-the-first-100-natural-numbers-how-many-of-them-are-not-divisible-by-any-one-of-2-3-5-7-and-9/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-026",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If 4 ≤ x ≤ 8 and 2 ≤ y ≤ 7, then what is the ratio of maximum value of (x + y) to minimum value of (x - y)? - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-4-%E2%89%A4-x-%E2%89%A4-8-and-2-%E2%89%A4-y-%E2%89%A4-7-then-what-is-the-ratio-of-maximum-value-of-x-y-to-minimum-value-of-x-y/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-027",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Let both p and k be prime numbers such that (p² + k) is also a prime number less than 30. What is the number of possible values of k? - Sociology OWL",
+          "url": "https://upscsociology.in/q-let-both-p-and-k-be-prime-numbers-such-that-p%C2%B2-k-is-also-a-prime-number-less-than-30-what-is-the-number-of-possible-values-of-k/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-028",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. There are n sets of numbers each having only three positive integers with LCM equal to 1001 and HCF equal to 1. What is the value of n? - Sociology OWL",
+          "url": "https://upscsociology.in/q-there-are-n-sets-of-numbers-each-having-only-three-positive-integers-with-lcm-equal-to-1001-and-hcf-equal-to-1-what-is-the-value-of-n/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-029",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Let PQR be a 3-digit number, PPT be a 3-digit number and PS be a 2-digit number, where P, Q, R, S, T are distinct non-zero digits. Further, PQR - PS = PPT. If Q = 3 and T < 6, then what is the number of possible values of (R, S)? - Sociology OWL",
+          "url": "https://upscsociology.in/q-let-pqr-be-a-3-digit-number-ppt-be-a-3-digit-number-and-ps-be-a-2-digit-number-where-p-q-r-s-t-are-distinct-non-zero-digits-further-pqr-ps-ppt-if-q-3-and-t-6-then-what-is-the-numb/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-030",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "[Solved] Consider the sequence.  AB_CC_A_BCCC_BBC_C that follo",
+          "url": "https://testbook.com/question-answer/consider-the-sequence-ab_cc_a_bccc_bbc_c--6834328e9765a73c802641ef"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-031",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In our country, regrettably, teaching and learning for the examination have been our forte but the new demands of society and the future of work require critical and independent thinking, - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-our-country-regrettably-teaching-and-learning-for-the-examination-have-been-our-forte-but-the-new-demands-of-society-and-the-future-of-work-require-critical-and-independent-thinking/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-032",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In our country, regrettably, teaching and learning for the examination have been our forte but the new demands of society and the future of work require critical and independent thinking, - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-our-country-regrettably-teaching-and-learning-for-the-examination-have-been-our-forte-but-the-new-demands-of-society-and-the-future-of-work-require-critical-and-independent-thinking/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-033",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: If there is inequality in the pattern of population growth, there is greater inequality in food production and utilization. - Sociology OWL",
+          "url": "https://upscsociology.in/if-there-is-inequality-in-the-pattern-of-population-growth-there-is-greater-inequality-in-food-production-and-utilization/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-034",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: If there is inequality in the pattern of population growth, there is greater inequality in food production and utilization. - Sociology OWL",
+          "url": "https://upscsociology.in/if-there-is-inequality-in-the-pattern-of-population-growth-there-is-greater-inequality-in-food-production-and-utilization/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-035",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What is the maximum value of n such that 7 × 343 × 385 × 1000 × 2401 × 77777 is divisible by 35ⁿ? - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-is-the-maximum-value-of-n-such-that-7-x-343-x-385-x-1000-x-2401-x-77777-is-divisible-by-35%E2%81%BF/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-036",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What is X in the sequence 24, X, 12, 18, 36, 90? - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-is-x-in-the-sequence-24-x-12-18-36-90/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-037",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "P and Q walk along a circular track. They start at 5:00 am. from the same point in opposite directions. P walks at an average speed of $5$ rounds per hour and Q walks at an average speed of $3$ rounds per hour. How many times will they cross each other between 5:20 a.m. and 7:00 a.m.? | UPSC Prelims 2025 CSAT Answer",
+          "url": "https://superkalam.com/upsc-prelims/previous-year-question-paper/2025/p-and-q-walk-along-a-circular-track-they-start-at-am-from-the-same-point-in-opposite-directions-p-walks-at-an-average-sp-7335d3f0-6693-4a6d-ae25-c5dd33a3e65d"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-038",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If P = +, Q = -, R = ×, S = ÷, then insert the proper notations between the successive numbers in the equation 60_15_3_20_4 = 20: - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-p-q-r-x-s-%C3%B7-then-insert-the-proper-notations-between-the-successive-numbers-in-the-equation-60_15_3_20_4-20/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-039",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A tram overtakes 2 persons X and Y walking at an average speed of 3 km/hr and 4 km/hr in the same direction and completely passes them in 8 seconds and 9 seconds respectively. What is the length of the tram? - Sociology OWL",
+          "url": "https://upscsociology.in/q-a-tram-overtakes-2-persons-x-and-y-walking-at-an-average-speed-of-3-km-hr-and-4-km-hr-in-the-same-direction-and-completely-passes-them-in-8-seconds-and-9-seconds-respectively-what-is-the-length-of/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-040",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If N² = 12345678987654321, then how many digits does the number N have? - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-n%C2%B2-12345678987654321-then-how-many-digits-does-the-number-n-have/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-041",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Over the next 30 years, many countries are promising to move to net-zero carbon, implying that household emissions will have to be cut to close to nothing. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-over-the-next-30-years-many-countries-are-promising-to-move-to-net-zero-carbon-implying-that-household-emissions-will-have-to-be-cut-to-close-to-nothing/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-042",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Over the next 30 years, many countries are promising to move to net-zero carbon, implying that household emissions will have to be cut to close to nothing. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-over-the-next-30-years-many-countries-are-promising-to-move-to-net-zero-carbon-implying-that-household-emissions-will-have-to-be-cut-to-close-to-nothing/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-043",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In only 50 years, the world's consumption of raw materials has nearly quadrupled, to more than 100 billion tons. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-only-50-years-the-worlds-consumption-of-raw-materials-has-nearly-quadrupled-to-more-than-100-billion-tons/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-044",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: In only 50 years, the world's consumption of raw materials has nearly quadrupled, to more than 100 billion tons. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-in-only-50-years-the-worlds-consumption-of-raw-materials-has-nearly-quadrupled-to-more-than-100-billion-tons/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-045",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A set (X) of 20 pipes can fill 70% of a tank in 14 minutes. Another set (Y) of 10 pipes fills 3/8th of the tank in 6 minutes. A third set (Z) of 16 pipes can empty half of the tank in 20 minutes. If half of the pipes of set X are closed and only half of the pipes of set Y are open, and all pipes of the set (Z) are open, then how long will it take to fill 50% of the tank? - Sociology OWL",
+          "url": "https://upscsociology.in/q-a-set-x-of-20-pipes-can-fill-70-of-a-tank-in-14-minutes-another-set-y-of-10-pipes-fills-3-8th-of-the-tank-in-6-minutes-a-third-set-z-of-16-pipes-can-empty-half-of-the-tank-in-20-minutes-if/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-046",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If n is a natural number, then what is the number of distinct remainders of (1ⁿ + 2ⁿ) when divided by 4? - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-n-is-a-natural-number-then-what-is-the-number-of-distinct-remainders-of-1%E2%81%BF-2%E2%81%BF-when-divided-by-4/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-047",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Let P = QQQ be a 3-digit number. What is the HCF of P and 481? - Sociology OWL",
+          "url": "https://upscsociology.in/q-let-p-qqq-be-a-3-digit-number-what-is-the-hcf-of-p-and-481/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-048",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What is the 489th digit in the number 123456789101112...? - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-is-the-489th-digit-in-the-number-123456789101112/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-049",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. A mobile phone has been stolen. There are 3 suspects P, Q and R. They were questioned knowing that only one of them is guilty. Their responses are as follows: - Sociology OWL",
+          "url": "https://upscsociology.in/q-a-mobile-phone-has-been-stolen-there-are-3-suspects-p-q-and-r-they-were-questioned-knowing-that-only-one-of-them-is-guilty-their-responses-are-as-follows/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-050",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Three teams P, Q, R participated in a tournament in which the teams play with one another exactly once. A win fetches a team 2 points and a draw 1 point. A team gets no point for a loss. Each team scored exactly one goal in the tournament. The team P got 3 points, Q got 2 points and R got 1 point. Which of the following statements is/are correct? - Sociology OWL",
+          "url": "https://upscsociology.in/q-three-teams-p-q-r-participated-in-a-tournament-in-which-the-teams-play-with-one-another-exactly-once-a-win-fetches-a-team-2-points-and-a-draw-1-point-a-team-gets-no-point-for-a-loss-each-team/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-051",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: It is hard to predict how changes in the climate and the atmosphere's chemistry will affect the prevalence and virulence of agricultural diseases. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-it-is-hard-to-predict-how-changes-in-the-climate-and-the-atmospheres-chemistry-will-affect-the-prevalence-and-virulence-of-agricultural-diseases/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-052",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: It is hard to predict how changes in the climate and the atmosphere's chemistry will affect the prevalence and virulence of agricultural diseases. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-it-is-hard-to-predict-how-changes-in-the-climate-and-the-atmospheres-chemistry-will-affect-the-prevalence-and-virulence-of-agricultural-diseases/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-053",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: A good statesman, like any other sensible human being, learns more from his opponents than from his fervent supporters. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-a-good-statesman-like-any-other-sensible-human-being-learns-more-from-his-opponents-than-from-his-fervent-supporters/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-054",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: A good statesman, like any other sensible human being, learns more from his opponents than from his fervent supporters. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-a-good-statesman-like-any-other-sensible-human-being-learns-more-from-his-opponents-than-from-his-fervent-supporters/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-055",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. P is the brother of Q and R. S is R's mother. T is P's father. How many of the following statements are definitely true? - Sociology OWL",
+          "url": "https://upscsociology.in/q-p-is-the-brother-of-q-and-r-s-is-rs-mother-t-is-ps-father-how-many-of-the-following-statements-are-definitely-true/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-056",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If NO is coded as 210, NOT is coded as 4200 and NOTE is coded as 21000, then how is NOTES coded? - Sociology OWL",
+          "url": "https://upscsociology.in/if-no-is-coded-as-210-not-is-coded-as-4200-and-note-is-coded-as-21000-then-how-is-notes-coded/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-057",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. If FRANCE is coded as 654321 and GERMANY is coded as 9158437, then how is YEMEN coded? - Sociology OWL",
+          "url": "https://upscsociology.in/q-if-france-is-coded-as-654321-and-germany-is-coded-as-9158437-then-how-is-yemen-coded/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-058",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. The 5-digit number PQRST (all distinct digits) is such that T ≠ 0. P is thrice T. S is greater than Q by 4, while Q is greater than R by 3. How many such 5-digit numbers are possible? - Sociology OWL",
+          "url": "https://upscsociology.in/q-the-5-digit-number-pqrst-all-distinct-digits-is-such-that-t-%E2%89%A0-0-p-is-thrice-t-s-is-greater-than-q-by-4-while-q-is-greater-than-r-by-3-how-many-such-5-digit-numbers-are-possible/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-059",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. X can complete one-third of a certain work in 6 days, Y can complete one-third of the same work in 8 days and Z can complete three-fourth of the same work in 12 days. All of them work together for n days and then X and Z quit and Y alone finishes the remaining work in 8 2/3 days. What is n equal to? - Sociology OWL",
+          "url": "https://upscsociology.in/q-x-can-complete-one-third-of-a-certain-work-in-6-days-y-can-complete-one-third-of-the-same-work-in-8-days-and-z-can-complete-three-fourth-of-the-same-work-in-12-days-all-of-them-work-together-for/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-060",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What is X in the sequence 1, 3, 6, 11, 18, X, 42? - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-is-x-in-the-sequence-1-3-6-11-18-x-42/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-061",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: There has been no democracy that has grown economically without corporate capitalism. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-there-has-been-no-democracy-that-has-grown-economically-without-corporate-capitalism/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-062",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: There has been no democracy that has grown economically without corporate capitalism. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-there-has-been-no-democracy-that-has-grown-economically-without-corporate-capitalism/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-063",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "63) Answer- C",
+          "url": "https://iasgyan.sgp1.digitaloceanspaces.com/pdf/UPSC_CSE_PRELIMS_2025_CSAT_ANSWER_KEY_WITH_EXPLANATION.pdf"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-064",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. There exists a natural number which when increased by 50% can have its number of factors unchanged. - Sociology OWL",
+          "url": "https://upscsociology.in/q-there-exists-a-natural-number-which-when-increased-by-50-can-have-its-number-of-factors-unchanged/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-065",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. There are 7 places A, B, C, D, E, F and G in a city connected by various roads AB, AC, CD, DE, BF, EG and FG. A is 6 km south of B. A is 10 km west of C. D is 5 km east of E. C is 6 km north of D. F is 9 km west of B. F is 12 km north of G. A person travels from D to F through these roads. What is the distance covered by the person? - Sociology OWL",
+          "url": "https://upscsociology.in/q-there-are-7-places-a-b-c-d-e-f-and-g-in-a-city-connected-by-various-roads-ab-ac-cd-de-bf-eg-and-fg-a-is-6-km-south-of-b-a-is-10-km-west-of-c-d-is-5-km-east-of-e-c-is-6-km-north-of-d/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-066",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. In a certain code if 64 is written as 343 and 216 is written as 729, then how is 512 written in that code? - Sociology OWL",
+          "url": "https://upscsociology.in/in-a-certain-code-if-64-is-written-as-343-and-216-is-written-as-729-then-how-is-512-written-in-that-code/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-067",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. What is the remainder when 9³ + 9⁴ + 9⁵ + 9⁶ + … + 9¹⁰⁰ is divided by 6? - Sociology OWL",
+          "url": "https://upscsociology.in/q-what-is-the-remainder-when-9%C2%B3-9%E2%81%B4-9%E2%81%B5-9%E2%81%B6-9%C2%B9%E2%81%B0%E2%81%B0-is-divided-by-6/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-068",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Question: What is the smallest 1-digit number having exactly 4 distinct factors? - Sociology OWL",
+          "url": "https://upscsociology.in/q-question-what-is-the-smallest-1-digit-number-having-exactly-4-distinct-factors/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-069",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Question: Let P, Q, R, S be distinct non-zero digits. If PP × PQ = RRSS, where P ≤ 3 and Q ≤ 4, then what is Q equal to? - Sociology OWL",
+          "url": "https://upscsociology.in/q-question-let-p-q-r-s-be-distinct-non-zero-digits-if-pp-x-pq-rrss-where-p-%E2%89%A4-3-and-q-%E2%89%A4-4-then-what-is-q-equal-to/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-070",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Question: How is Q related to P? Statement I: P has two sisters, R and S. - Sociology OWL",
+          "url": "https://upscsociology.in/q-question-how-is-q-related-to-p-statement-i-p-has-two-sisters-r-and-s/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-071",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: A single number for inflation is an aggregate across different commodities and services - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-a-single-number-for-inflation-is-an-aggregate-across-different-commodities-and-services/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-072",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Paragraph: Trust stands commonly defined as being vulnerable to others. - Sociology OWL",
+          "url": "https://upscsociology.in/paragraph-trust-stands-commonly-defined-as-being-vulnerable-to-others/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-073",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Question: In a football match, team P playing against Q was behind by 3 goals with 10 minutes remaining. Does team P win the match? - Sociology OWL",
+          "url": "https://upscsociology.in/q-question-in-a-football-match-team-p-playing-against-q-was-behind-by-3-goals-with-10-minutes-remaining-does-team-p-win-the-match/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-074",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "UPSC CSAT 2025 Logical Reasoning: A question is given | Ease My Prep",
+          "url": "https://easemyprep.in/pyq/csat/logical-reasoning/2025/2025_13_E_2"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-075",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. In a T20 cricket match, three players X, Y and Z scored a total of 37 runs. The ratio of number of runs scored by X to the number of runs scored by Y is equal to ratio of number of runs scored by Y to number of runs scored by Z. - Sociology OWL",
+          "url": "https://upscsociology.in/q-in-a-t20-cricket-match-three-players-x-y-and-z-scored-a-total-of-37-runs-the-ratio-of-number-of-runs-scored-by-x-to-the-number-of-runs-scored-by-y-is-equal-to-ratio-of-number-of-runs-scored-by-y/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-076",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Let p + q = 10, where p, q are integers. Value-I = Maximum value of p × q when p, q are positive integers. - Sociology OWL",
+          "url": "https://upscsociology.in/q-let-p-q-10-where-p-q-are-integers-value-i-maximum-value-of-p-x-q-when-p-q-are-positive-integers/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-077",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Consider a set of 11 numbers: Value-I = Minimum value of the average of the numbers of the set when they are consecutive integers ≥ -5. - Sociology OWL",
+          "url": "https://upscsociology.in/q-consider-a-set-of-11-numbers-value-i-minimum-value-of-the-average-of-the-numbers-of-the-set-when-they-are-consecutive-integers-%E2%89%A5-5/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-078",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. The average of three numbers p, q and r is k. p is as much more than the average as q is less than the average. What is the value of r? - Sociology OWL",
+          "url": "https://upscsociology.in/q-the-average-of-three-numbers-p-q-and-r-is-k-p-is-as-much-more-than-the-average-as-q-is-less-than-the-average-what-is-the-value-of-r/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-079",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. Let x be a real number between 0 and 1. Which of the following statements is/are correct? I. x² > x³. II. x > √x. - Sociology OWL",
+          "url": "https://upscsociology.in/q-let-x-be-a-real-number-between-0-and-1-which-of-the-following-statements-is-are-correct-i-x%C2%B2-x%C2%B3-ii-x-%E2%88%9Ax/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "upsc-2025-prelims-csat-a-080",
+      "status": "referenced",
+      "method": "Specific coaching solution compared with the final Series A key and independently checked against the exact constraints or passage. Official grading is retained.",
+      "references": [
+        {
+          "title": "Q. The difference between any two natural numbers is 10. What can be said about the natural numbers which are divisible by 5 and lie between these two numbers? - Sociology OWL",
+          "url": "https://upscsociology.in/q-the-difference-between-any-two-natural-numbers-is-10-what-can-be-said-about-the-natural-numbers-which-are-divisible-by-5-and-lie-between-these-two-numbers/"
+        },
+        {
+          "title": "UPSC final 2025 CSAT answer key, Series A",
+          "url": "https://forumias.com/blog/wp-content/uploads/2026/05/UPSC-2025-Answerkey-CSAT-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-042",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which of the following features were borrowed by the Constit",
+          "url": "https://testbook.com/question-answer/which-of-the-following-features-were-borrowed-by-t--5be01f828734b132f4f6c896"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-7-q-078",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Telegraphic Plateau is a part of -",
+          "url": "https://testbook.com/question-answer/ques--5fb6430fb5d6a979a20b2333"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-041",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] The concept of 'Basic Structure of the Constitution was",
+          "url": "https://testbook.com/question-answer/the-concept-of-basic-structure-of-the-constit--62a7e5fe8a3fdc0fdc4ce664/amp"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-108",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] The Supreme Court has held that hoisting the National Flag a",
+          "url": "https://testbook.com/question-answer/the-supreme-court-has-held-that-hoisting-the-natio--607d37b3924366342f00b46d/amp"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-195",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which one of the following statements relating to cultural a",
+          "url": "https://testbook.com/question-answer/which-one-of-the-following-statements-relating-to--5bf668342ec56e27ff364123/amp"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-5-q-144",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Who was the President of the Constituent Assembly?",
+          "url": "https://testbook.com/question-answer/who-was-the-president-of-the-constituent-assembly--6079a1f9a250c735e9d51980/amp"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-6-q-100",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which of the following is a Parliamentary Committee relating",
+          "url": "https://testbook.com/question-answer/which-of-the-following-is-a-parliamentary-committe--627bc0530aea073dd8ffaa4e/amp"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-1-q-003",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Asteroids vs Comets: Key differences (PYQ 2011)",
+          "url": "https://www.pmfias.com/difference-asteroids-comets-upsc-prelims-pyq-2011/"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-2-q-003",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Consider the following statements: 1. In a seismograph, P w",
+          "url": "https://testbook.com/question-answer/consider-the-following-statements1-in-a-seismo--6472fcf54052bd00ff90ffd6"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-2-q-013",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "7) Consider the following statements:",
+          "url": "https://www.pmfias.com/wp-content/uploads/2024/07/UPSC-CSE-Prelims-GS-2024-Detailed-Solutions-By-PMF-IAS.pdf"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-2-q-019",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Atlas Mountains matched to North-Western Africa — UPSC PYQ 2013",
+          "url": "https://www.pmfias.com/atlas-mountains-north-western-africa-pyq-2013/"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-7-q-212",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved]  A clove represents to which of the following?",
+          "url": "https://testbook.com/question-answer/a-clove-represents-to-which-of-the-following--6182318039f1a9d6c369f61b"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-3-q-009",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "First woman & first Muslim Presidents of INC — UPSC PYQ 2015",
+          "url": "https://www.pmfias.com/first-woman-first-muslim-presidents-inc-upsc-prelims-pyq-2015/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-8-q-061",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Choose the correct alternative: The Chairman of a Joint Pub",
+          "url": "https://testbook.com/question-answer/choose-the-correct-alternativethe-chairman-of-a--5ffd8d2fc64d5cd32c499314"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-6-q-147",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Match List I with List-II and select the correct answer usin",
+          "url": "https://testbook.com/question-answer/match-list-i-with-list-ii-and-select-the-correct-a--5f15566a0a90072e4606d262"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-4-q-055",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Gandhi's instructions before Quit India — PYQ 2005",
+          "url": "https://www.pmfias.com/gandhi-instructions-eve-quit-india-upsc-prelims-pyq-2005/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-6-q-147",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Match the articles related to State Legislature :",
+          "url": "https://testbook.com/question-answer/match-the-articles-related-to-state-legislature--620f4aff8a1c872b28d7b475"
+        }
+      ]
+    },
+    {
+      "id": "science-part-2-q-447",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] In which of the following groups of organisms, is food mater",
+          "url": "https://testbook.com/question-answer/in-which-of-the-following-groups-of-organisms-is--61973d65302e409606709912"
+        }
+      ]
+    },
+    {
+      "id": "science-part-4-q-032",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "UPSC Prelims PYQ 2022: Short-Range Communication Technologies",
+          "url": "https://www.pmfias.com/short-range-communication-cctv-rfid-wlan-pyq-2022/"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-5-q-157",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] From the options given below, find the correct combination o",
+          "url": "https://testbook.com/question-answer/from-the-options-given-below-find-the-correct-com--5f84111830e317f2d249d691"
+        },
+        {
+          "title": "Gokhale: The Indian Moderates and the British Raj 9781400870493 - DOKUMEN.PUB",
+          "url": "https://dokumen.pub/gokhale-the-indian-moderates-and-the-british-raj-9781400870493.html"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-140",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] What is correct about external emergency as per Article 352?",
+          "url": "https://testbook.com/question-answer/what-is-correct-about-external-emergency-as-per-ar--607ffe62cbd00a00b0309519"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-040",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Right to Education has been included into the Fundamental Ri",
+          "url": "https://testbook.com/question-answer/ques--62a7ae80c45a88d5013c2428"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-123",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Directive Principles of State Policy - Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/directive-principles-of-state-policy-questions/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-6-q-050",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which of the following is/are stated in the Constitutio",
+          "url": "https://testbook.com/question-answer/which-of-the-following-isare-stated-in-thec--67b9b737290a305f778ea78c/amp"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-6-q-161",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Match List I with List-II and select the correct answer using the code given below the lists:List – I(Ethnic Territorial Segment)List II(Related Occupational pattern) A. Maruta Makkal  1. Pastoralists  B. Kuravan Makkal  2. Fishing people  C. Mullai Makkal  3. Ploughmen  D. Neytal Makkal 4. Hill people",
+          "url": "https://prepp.in/question/match-list-i-with-list-ii-and-select-the-correct-a-6448f5ba128ecdff9f5231b2"
+        }
+      ]
+    },
+    {
+      "id": "culture-heritage-part-2-q-035",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Match List-I with List-II and select the correct answer usin",
+          "url": "https://testbook.com/question-answer/ques--5fa4033ee5a90b9ccdf41e19"
+        },
+        {
+          "title": "ECONOMIC ORGANISATION",
+          "url": "https://www.lkouniv.ac.in/site/writereaddata/siteContent/202003291621086195tara_bhatt_anthro_ECONOMIC_ORGANISATION.pdf"
+        }
+      ]
+    },
+    {
+      "id": "science-part-3-q-868",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] The process of breaking down organic matter by microorganism",
+          "url": "https://testbook.com/question-answer/the-process-of-breaking-down-organic-matter-by-mic--675c107189505582e816be22"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-5-q-118",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Which is NOT under Ministry of Home Affairs? Explained",
+          "url": "https://prepp.in/question/which-one-among-the-following-departments-authorit-6632cc6d0368feeaa561ca51"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-5-q-129",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which one among the following statements pertaining to the P",
+          "url": "https://testbook.com/question-answer/which-one-among-the-following-statements-pertainin--6086cd3efca5d63ebaa558cf/amp"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-079",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "The Preamble - Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/preamble-questions/"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-4-q-066",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Poverty And Unemployment – Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/poverty-unemployment-questions/"
+        }
+      ]
+    },
+    {
+      "id": "science-part-4-q-313",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Steps of Recombinant DNA technology are given below: A. Ide",
+          "url": "https://testbook.com/question-answer/steps-of-recombinant-dna-technology-are-given-belo--60193fcc3bf53acf8c316193"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-3-q-018",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Viceroy during Rowlatt Act passage — who? (UPSC PYQ 2008)",
+          "url": "https://www.pmfias.com/rowlatt-act-viceroy-chelmsford-upsc-prelims-pyq-2008/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-043",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] On 26th November, 1949, which of the following provisions of",
+          "url": "https://testbook.com/question-answer/on-26th-november-1949-which-of-the-following-pro--5fc7c6565531dd8a575d5801"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-2-q-162",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] The elected President of the All India Kisan Sabha, which me",
+          "url": "https://testbook.com/question-answer/the-elected-president-of-the-all-india-kisan-sabha--5d4ad9bafdb8bb4cf6d684ce"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-2-q-032",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] A British citizen staying in India cannot claim Right to ___",
+          "url": "https://testbook.com/question-answer/a-british-citizen-staying-in-india-cannot-claim-ri--603f24955fc7c05c5ba9da4e"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-5-q-111",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "The Council of Ministers – Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/council-of-ministers-questions/"
+        }
+      ]
+    },
+    {
+      "id": "science-part-2-q-395",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] The blood pressure of a normal human being is found to be 12",
+          "url": "https://testbook.com/question-answer/the-blood-pressure-of-a-normal-human-being-is-foun--643cec254cf7323e575c5024"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-3-q-024",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "In India, which one of the following is responsible for maintaining price stability by controlling inflation?",
+          "url": "https://vajiramandravi.com/upsc-exam/in-india-which-one-of-the-following-is-responsible-for-maintaining-price-stability-by-controlling-inflation/"
+        }
+      ]
+    },
+    {
+      "id": "environment-pollution-q-050",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Consider the following statements:",
+          "url": "https://vajiramandravi.com/upsc-exam/consider-the-following-statements-104/"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-6-q-306",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Who introduced 'Financial Decentralisation' in India",
+          "url": "https://testbook.com/question-answer/who-introduced-financial-decentralisation39--62582b651c1b8f0753580286"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-1-q-036",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Given below are two statements, one is labelled as Assertion",
+          "url": "https://testbook.com/question-answer/given-below-are-two-statements-one-is-labelled-as--67b9c1d2a75bd70e214d10de/amp"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-4-q-047",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Which of the following committees was set up in India for id",
+          "url": "https://testbook.com/question-answer/which-of-the-following-committees-was-set-up-in-in--601d602271a8fbd91797f66a"
+        },
+        {
+          "title": "Identification of Urban Poor",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=93133"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-1-q-013",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "East India Company and Nawabs of Bengal– Old Year Questions and Answers - IAS Book",
+          "url": "https://www.iasbook.com/east-india-company-nawabs-of-bengal-questions/"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-2-q-095",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Social-Religious Movements One Liner Questions & Answers - IAS Book",
+          "url": "https://www.iasbook.com/social-religious-movements-one-liner/"
+        }
+      ]
+    },
+    {
+      "id": "economy-part-4-q-007",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Consider the following statements in relation to Janani Suraksha Yojana: 1) It is a safe motherhood intervention of the State Health Departments. 2) Its objective is to reduce maternal and neonatal mortality among poor pregnant women. [2023] - PMF IAS",
+          "url": "https://www.pmfias.com/consider-the-following-statements-in-relation-to-janani/"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-3-q-001",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "Who of the following was/were actively associated with the Ghadar Party? Barindra Kumar Ghosh? Jogesh Chandra Chatterjee? Rash Behari Bose? [2022] - PMF IAS",
+          "url": "https://www.pmfias.com/who-of-the-following-was-were-actively-associated/"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-7-q-009",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question and answer choice checked in relevant coaching material. Explanation rewritten in English with qualifications for imprecise wording, historical context and source errors.",
+      "references": [
+        {
+          "title": "[Solved] Consider the following countries: 1. Bulgaria 2. Czech Rep",
+          "url": "https://testbook.com/question-answer/consider-the-following-countries1-bulgaria2--6472fb0f8c17e9d6f9b22b91"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-049",
+      "status": "referenced",
+      "answer": "d",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "The Constitutional Development of India - Old Year Questions - IAS Book",
+          "url": "https://www.iasbook.com/constitutional-development-of-india-questions/"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-1-q-051",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "[Solved] Consider the following pairs:   Party",
+          "url": "https://testbook.com/question-answer/consider-the-following-pairs--666e9cabcddeeb8572c94bc9"
+        }
+      ]
+    },
+    {
+      "id": "polity-part-5-q-112",
+      "status": "referenced",
+      "answer": "a",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "[Solved] President of India exercises his powers",
+          "url": "https://testbook.com/question-answer/ques--607d392d45fd51f7b8b0f7d9"
+        }
+      ]
+    },
+    {
+      "id": "science-part-4-q-121",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "Which of the following pairs is/are correctly matched? - Vajiram & Ravi",
+          "url": "https://vajiramandravi.com/upsc-exam/which-of-the-following-pairs-is-are-correctly-matched/"
+        }
+      ]
+    },
+    {
+      "id": "science-part-4-q-225",
+      "status": "referenced",
+      "answer": "c",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "Match List – I with List – II and select the…: UPPSC 2019 Q107 | UnlockIAS",
+          "url": "https://www.unlockias.in/uppsc-2019-prelims-question-paper/q107-match-list-list-select-correct-answer-using"
+        },
+        {
+          "title": "NLEP",
+          "url": "https://www.dghs.mohfw.gov.in/nlep.php"
+        }
+      ]
+    },
+    {
+      "id": "history-modern-part-5-q-151",
+      "status": "referenced",
+      "answer": "b",
+      "method": "Question wording and complete option mapping manually checked against the cited reference.",
+      "references": [
+        {
+          "title": "[Solved] Match the following and choose the correct answer:",
+          "url": "https://testbook.com/question-answer/match-the-following-and-choose-the-correct-answer--675c0eaba00d4ae5d63e275a"
+        }
+      ]
+    },
+    {
+      "id": "geography-part-1-q-098",
+      "status": "disputed",
+      "answer": null,
+      "method": "Scientific statements checked against NASA; no valid listed choice, so grading is withheld.",
+      "references": [
+        {
+          "title": "Venus: Facts - NASA Science",
+          "url": "https://science.nasa.gov/venus/venus-facts/"
+        },
+        {
+          "title": "Ganymede",
+          "url": "https://science.nasa.gov/jupiter/moons/ganymede/"
+        },
+        {
+          "title": "New Webb Image Captures Clearest View of Neptune's Rings in Decades - NASA Science",
+          "url": "https://www.nasa.gov/solar-system/new-webb-image-captures-clearest-view-of-neptunes-rings-in-decades/"
+        },
+        {
+          "title": "Mars Moons - NASA Science",
+          "url": "https://science.nasa.gov/mars/moons/"
+        }
+      ]
+    }
+  ]
+}

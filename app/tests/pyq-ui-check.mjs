@@ -145,7 +145,7 @@ async function option(value) {
 
 try {
   await heading("PYQ question bank");
-  assert.match(text(), /7,536 unique questions ready/);
+  assert.match(text(), /7,535 unique questions ready/);
   await field("PYQ paper", "Prelims GS-I");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
@@ -404,7 +404,7 @@ try {
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank");
-  assert.match(text(),/1,165 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
+  assert.match(text(),/1,164 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
   const beforePreview=JSON.stringify(current.data());
   await click("Review explanation 2025 GS I Q1"); await heading("Question explanation");
   assert.deepEqual([...current.w.document.querySelectorAll('[aria-label="Answer choices"] li')].map(el=>el.textContent),Object.entries(q1.options).map(([key,value])=>key.toUpperCase()+"."+value));
@@ -431,12 +431,15 @@ try {
   assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,11);
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
-  await field("PYQ subject","Economy"); await field("Search PYQs","ECO2 Current Account Deficit");
+  await click("State PSC"); await field("PYQ state","Chhattisgarh"); await field("PYQ year","2017");
+  await field("PYQ explanation quality",""); await field("PYQ subject","Economy"); await field("Search PYQs","ECO2 Current Account Deficit");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
   await click("Practise filtered questions"); await heading("2017 · CGPSC · Economy MCQs");
   assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
   await option("c"); await click("Submit answer");
   assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
-  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded");
+  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"correct");
+  assert.match(text(),/net income|transfers|services/i);
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank");
@@ -467,9 +470,10 @@ try {
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
   await click("Practise filtered questions"); await heading("2013 · CGPSC · History MCQs");
   assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
-  current.advance(21); await option("a"); await click("Submit answer");
+  current.advance(21); await option("c"); await click("Submit answer");
   assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
-  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,21);
+  assert.equal(current.data().pyqs.at(-1).attempt.outcome,"correct"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,21);
+  assert.match(text(),/Gautamiputra Satakarni/); assert.match(text(),/Answer: C/);
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank");
@@ -488,6 +492,15 @@ try {
   await field("Explanation subject","Art & Culture"); await field("Explanation year","2024"); await field("Search explanations","Garba");
   await click("Read explanation Q1395");
   assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedGarba.innerHTML);
+  await click("Back to explanations"); await click("Clear explanation filters");
+  await field("Search explanations","Hazara temple");
+  const hazaraEntry=suppliedExplanations.find(e=>e.id==="q-784");
+  assert.ok(hazaraEntry);
+  await click(`Read explanation Q${hazaraEntry.n}`);
+  assert.match(text(),/Answer: B/); assert.match(text(),/Deva Raya I/);
+  assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
+  assert.doesNotMatch(text(),/Source:|supplied HTML|\.txt\b|pyq-problems-and-explanations\.html/i);
+  assert.equal(JSON.stringify(current.data()),beforeLibrary);
   await click("Back to explanations"); await click("Clear explanation filters");
   const tableSource=suppliedExplanations.find(e=>e.explanation.includes("<table>"));
   await field("Explanation subject",tableSource.studySubject); await field("Explanation year",tableSource.year); await field("Explanation exam",tableSource.exam); await field("Search explanations",tableSource.questionText.replace(/\s+/g," "));

@@ -13,6 +13,7 @@ import { examGroups, examOccurrences, matchesExam, questionLabel, selectedExam }
 import { matchesSubject, questionSubjects, questionTopics } from "../utils/questionCollections";
 import { cleanStudyText, englishStudyText, explanationStatus, explanationStatusLabel, studyExplanation } from "../utils/explanationReview";
 import { suppliedExplanations, suppliedExplanationsFor } from "../data/suppliedExplanations";
+import { ReviewedExplanationText } from "../components/ReviewedExplanation";
 import { SuppliedExplanationLibrary, SuppliedExplanationText } from "../components/SuppliedExplanations";
 import deduplication from "../../docs/DEDUPLICATION.json";
 const unique = (values: string[]) => [...new Set(values)].sort();
@@ -32,18 +33,11 @@ function Explanation({ q, answer = q.answer }: { q: PYQQuestion; answer?: string
   const e = studyExplanation(q), status = explanationStatus(q), supplied = suppliedExplanationsFor(q);
   return <section className="prelims-explanation" aria-label="Answer and explanation">
     {status === "disputed" && <div className="prelims-explanation-status disputed"><strong>Answer needs review</strong></div>}
-    <h3>{q.keyStatus === "official" ? "Official answer" : "Answer"}: {answer?.toUpperCase() || "Awaiting key"}</h3>
+    <h3>{q.keyStatus === "official" ? "Official answer" : "Answer"}: {q.answer?.toUpperCase() || "Awaiting key"}</h3>
+    {answer && answer !== q.answer && <p className="prelims-answer-note">This saved attempt was graded with answer {answer.toUpperCase()}. Its recorded result is unchanged.</p>}
     {status === "disputed" && q.explanationReview?.issue && <p className="prelims-answer-note">{q.explanationReview.issue}</p>}
-    {supplied.length ? <><SuppliedExplanationText entry={supplied[0]} />{supplied.slice(1).map(entry => <details className="prelims-review-row" key={entry.id}><summary>Additional explanation</summary><SuppliedExplanationText entry={entry} /></details>)}</> : e ? <>
-      <h4>Explanation</h4>
-      <p className="prelims-provided-text">{cleanStudyText(e.justification)}</p>
-      {e.concept && <p><strong>Concept: </strong>{e.concept}</p>}
-      {e.statements?.map(s => <p key={s.label}><strong>{s.label} · {s.verdict}: </strong>{s.reason}</p>)}
-      {e.elimination && <p><strong>Elimination: </strong>{e.elimination}</p>}
-      {e.insight && <p><strong>Exam insight: </strong>{e.insight}</p>}
-      {!!e.relatedConcepts?.length && <p><strong>Revise: </strong>{e.relatedConcepts.join(" · ")}</p>}
-    </> : <p>Detailed explanation is not available yet.</p>}
-    {q.keyConflict && q.keyStatus !== "official" && <p className="small muted">The answer key needs verification. Your choice and time are saved without right/wrong grading.</p>}
+    {!(q.explanationReview?.preferReviewedExplanation || q.explanationReview?.status === "disputed") && supplied.length ? <><SuppliedExplanationText entry={supplied[0]} />{supplied.slice(1).map(entry => <details className="prelims-review-row" key={entry.id}><summary>Additional explanation</summary><SuppliedExplanationText entry={entry} /></details>)}</> : e ? <ReviewedExplanationText explanation={e} /> : <p>Detailed explanation is not available yet.</p>}
+    {status === "disputed" && q.keyStatus === "pending" && <p className="small muted">The answer key needs verification. Your choice and time are saved without right/wrong grading.</p>}
   </section>;
 }
 function Breakdown({ title, rows }: { title: string; rows: ReturnType<typeof sessionReport>["groups"][string] }) {
