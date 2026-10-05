@@ -35,6 +35,8 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
     location = useLocation();
   const requested = location.state?.returnTo;
   const returnTo = typeof requested === "string" && /^\/tests\/[a-zA-Z0-9/-]+$/.test(requested) ? requested : "/";
+  const mockAccessRequired = !!location.state?.mockAccessRequired;
+  const authFlowState = mockAccessRequired ? { returnTo, mockAccessRequired: true } : location.state;
   const [name, setName] = useState(""),
     [email, setEmail] = useState("");
   const [password, setPassword] = useState(""),
@@ -138,7 +140,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
   return (
     <main className="auth-page">
       <section className="auth-story" aria-label="UPSC Command Center">
-        <Link to="/login" className="auth-brand">
+        <Link to="/login" state={authFlowState} className="auth-brand">
           <span className="auth-brand-icon">
             <BarChart3 size={25} />
           </span>
@@ -202,10 +204,10 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
         <div className="auth-form-wrap">
           {(mode === "login" || mode === "signup") && (
             <div className="auth-tabs" aria-label="Account access">
-              <Link className={mode === "login" ? "active" : ""} to="/login">
+              <Link className={mode === "login" ? "active" : ""} to="/login" state={authFlowState}>
                 Log in
               </Link>
-              <Link className={mode === "signup" ? "active" : ""} to="/signup">
+              <Link className={mode === "signup" ? "active" : ""} to="/signup" state={authFlowState}>
                 Sign up
               </Link>
             </div>
@@ -215,6 +217,12 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           </span>
           <h1>{headings[mode]}</h1>
           <p className="auth-description">{descriptions[mode]}</p>
+          {mockAccessRequired && (
+            <div className="auth-notice" role="status">
+              <strong>Sign-in is required to access Mock Tests.</strong>
+              <span>After signing in, verify your license key to continue.</span>
+            </div>
+          )}
           {mode === "reset" && validReset && (
             <p className="auth-description">
               Updating the password for {auth.user?.email}.
@@ -237,7 +245,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           {mode === "reset" && !validReset && (
             <p className="auth-message error" role="alert">
               Open the password reset link from your email to choose a new
-              password. <Link to="/forgot-password">Request a new link</Link>.
+              password. <Link to="/forgot-password" state={authFlowState}>Request a new link</Link>.
             </p>
           )}
           {error && (
@@ -259,7 +267,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
                   {busy ? "Sending…" : "Resend confirmation"}
                 </button>
               )}
-              <Link className="btn primary" to="/login">
+              <Link className="btn primary" to="/login" state={authFlowState}>
                 Back to log in <ArrowRight size={16} />
               </Link>
             </div>
@@ -378,9 +386,9 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           )}
           {mode === "login" && (
             <div className="auth-links">
-              <Link to="/forgot-password">Forgot password?</Link>
+              <Link to="/forgot-password" state={authFlowState}>Forgot password?</Link>
               <span>
-                New here? <Link to="/signup">Create an account</Link>
+                New here? <Link to="/signup" state={authFlowState}>Create an account</Link>
               </span>
             </div>
           )}
@@ -393,7 +401,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           {(mode === "forgot" || mode === "reset") && !success && (
             <Link
               className="auth-back"
-              to="/login"
+              to="/login" state={authFlowState}
               onClick={() => {
                 if (auth.user) auth.finishRecovery();
               }}

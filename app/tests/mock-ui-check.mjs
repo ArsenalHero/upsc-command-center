@@ -2,7 +2,8 @@ import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
 import {PGlite} from "@electric-sql/pglite";
-import {readFileSync} from "node:fs";
+import {fixtureLicense,prepareMockDatabase,setMockUser} from "./mock-license-fixture.ts";
+import {mkdirSync,readFileSync,readdirSync,writeFileSync} from "node:fs";
 import {createEmptyData} from "../src/data/defaults.ts";
 
 // Run the actual Auth SDK and React forms against a deterministic fake API.
@@ -49,6 +50,7 @@ const token = (user) =>
   "." +
   base64({
     sub: user.id,
+    session_id: user.id,
     aud: "authenticated",
     role: "authenticated",
     exp: tokenExpiry,
@@ -68,15 +70,17 @@ const json = (data, status = 200) =>
     },
   });
 const db=new PGlite();
-await db.exec(`create role anon;create role authenticated;create schema auth;create table auth.users(id uuid primary key,email_confirmed_at timestamptz,is_anonymous boolean default false,raw_app_meta_data jsonb default '{}');create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;grant usage on schema auth to anon,authenticated;insert into auth.users values('${alice.id}',now(),false,'{"mock_admin":true}'),('${bob.id}',now(),false,'{}');`);
-await db.exec(readFileSync("supabase/sql/mock-lab.sql","utf8"));
+await prepareMockDatabase(db,[{id:alice.id,admin:true},{id:bob.id}]);
 let queryQueue=Promise.resolve();
-const rpc=(owner,op,p)=>{const run=queryQueue.catch(()=>{}).then(async()=>{await db.exec(`reset role;select set_config('request.jwt.claim.sub','${owner||""}',false);set role ${owner?"authenticated":"anon"};`);return (await db.query("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p||{})])).rows[0].data;});queryQueue=run;return run;};
+const rpc=(owner,op,p)=>{const run=queryQueue.catch(()=>{}).then(async()=>{await setMockUser(db,owner||null);return (await db.query("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p||{})])).rows[0].data;});queryQueue=run;return run;};
+await rpc(alice.id,"verify-license",{licenseKey:fixtureLicense});
 await rpc(alice.id,"profile",{displayName:"Manager"});
 const coaching=await rpc(alice.id,"admin-coaching",{name:"FORUM IAS"});
 const testId=(await rpc(alice.id,"admin-test",{code:"UI-MOCK",name:"UI validation mock",paper:"GS-I",kind:"Sectional",year:2027,series:"Browser checks",duration:30,positive:2,negative:0.5,status:"active",coachingId:coaching.id,questions:["Alpha","Beta","Gamma"].map(topic=>({question:`Which ${topic} choice is correct?`,options:{a:"One",b:"Two",c:"Three",d:"Four"},correct:"a",explanation:"Verified explanation appears only after submission.",subject:"Polity",topic,positive:2,negative:0.5}))})).id;
 await db.exec("reset role");await db.query("insert into mock_private.report_documents(test_id,kind,title,items) values($1,'recall','Recall Sheet · PT-01',$2::jsonb)",[testId,JSON.stringify([{number:1,title:"Constituent Assembly",text:"Members were indirectly elected by Provincial Legislative Assemblies."},{number:2,title:"Preamble",text:"The Constitution derives its authority from the people."},{number:3,title:"Fundamental Rights",text:"Fundamental Rights limit government power."}])]);
-const payload=createEmptyData();payload.settings.setupCompleted=true;workspaces.set(bob.id,{payload,revision:1,updated_at:new Date().toISOString()});
+const payload=createEmptyData();payload.settings.setupCompleted=true;
+payload.tests.push({id:"existing-manual-log",date:"2026-10-02",name:"Existing manual result",seriesId:"",subjectId:"",topicId:"",stage:"Prelims",score:70,maximum:100,rank:0,attempted:0,correct:0,strongTopics:"",weakTopics:"",errors:{},notes:"Original review note"});
+workspaces.set(bob.id,{payload,revision:1,updated_at:new Date().toISOString()});
 const fakeFetch = async (input, options = {}) => {
   const url = new URL(String(input)),
     body = options.body ? JSON.parse(options.body) : {};
@@ -116,6 +120,8 @@ const fakeFetch = async (input, options = {}) => {
         400,
       );
     signedIn = body.email === bob.email ? bob : alice;
+    const sessionRun=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("insert into auth.sessions(id,user_id) values($1,$1) on conflict(id) do nothing",[signedIn.id]);});
+    queryQueue=sessionRun;await sessionRun;
     return json({
       access_token: token(signedIn),
       refresh_token: "refresh-" + signedIn.id,
@@ -131,6 +137,8 @@ const fakeFetch = async (input, options = {}) => {
     return json({ user: owner });
   }
   if (url.pathname.endsWith("/logout")) {
+    const run=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("delete from auth.sessions where id=$1",[owner.id]);});
+    queryQueue=run;await run;
     signedIn = null;
     return new Response(null, { status: 204 });
   }
@@ -191,7 +199,7 @@ function makeDOM(url = "https://example.test/upsc/#/login") {
   };
   return dom;
 }
-const dom = makeDOM("https://example.test/upsc/#/tests/prelims/discover"),
+const dom = makeDOM("https://example.test/upsc/#/tests"),
   w = dom.window;
 const until = async (predicate, message) => {
   for (let i = 0; i < 160; i++) {
@@ -228,24 +236,71 @@ const submit = () =>
   w.document
     .querySelector("form")
     .dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+const capture = (name) => {
+  if (!process.env.MOCK_VISUAL_DIR) return;
+  const css=readdirSync("dist/assets").filter(f=>f.endsWith(".css")).map(f=>readFileSync("dist/assets/"+f,"utf8")).join("\n");
+  const snapshot=w.document.documentElement.cloneNode(true);
+  snapshot.querySelectorAll("script").forEach(s=>s.remove());
+  const style=w.document.createElement("style");style.textContent=css;snapshot.querySelector("head").appendChild(style);
+  mkdirSync(process.env.MOCK_VISUAL_DIR,{recursive:true});
+  writeFileSync(process.env.MOCK_VISUAL_DIR+"/"+name+".html","<!doctype html>"+snapshot.outerHTML);
+};
 w.eval(built.outputFiles[0].text);
 try{
- await until(()=>w.document.body.textContent.includes("UI validation mock"),"Public catalogue");
- assert.ok(w.document.body.textContent.includes("MUROF SAI"));click("View syllabus");await until(()=>w.document.body.textContent.includes("Test syllabus"),"Syllabus popup");click("Close syllabus");
- w.location.hash=`/tests/prelims/${testId}`;
- await until(()=>w.document.body.textContent.includes("Keep every attempt in your own account"),"Guest sign-in gate");
- assert.ok(!w.document.body.textContent.includes("Verified explanation"));
- [...w.document.querySelectorAll("a")].find(e=>e.textContent.trim()==="Log in"&&e.closest(".mock-gate")).click();
- await heading("Welcome back.");fill("auth-email",bob.email);fill("auth-password","correct-password");await new Promise(r=>setTimeout(r,30));submit();
- await until(()=>w.document.querySelector('[aria-label="Leaderboard display name"]'),"Login returns to selected test");
+ await heading("Test series");
+ for(const button of ["Add Test Series","Log test","Add Log","Mock Test"])assert.ok([...w.document.querySelectorAll("button")].some(b=>b.textContent.trim()===button));
+ assert.ok(!apiCalls.some(c=>c.body.op==="catalog"));
+ click("Add Log");await until(()=>w.document.querySelector("dialog[open]")?.textContent.includes("Add Test"),"Existing manual result editor");
+ const logFields=[...w.document.querySelectorAll("dialog[open] label")].map(l=>l.textContent);
+ assert.ok(logFields.some(l=>l.includes("Test name")));assert.ok(logFields.some(l=>l.includes("Maximum marks")));
+ click("Cancel");click("Mock Test");await heading("Welcome back.");
+ assert.ok(w.document.body.textContent.includes("Sign-in is required to access Mock Tests."));
+ assert.ok(!w.document.body.textContent.includes("UI validation mock"));
+ const signup=[...w.document.querySelectorAll("a")].find(a=>a.textContent.trim()==="Sign up");signup.click();await heading("Start your journey.");
+ [...w.document.querySelectorAll("a")].find(a=>a.textContent.trim()==="Log in").click();await heading("Welcome back.");
+ assert.ok(w.document.body.textContent.includes("Sign-in is required to access Mock Tests."));
+ fill("auth-email",bob.email);fill("auth-password","correct-password");await new Promise(r=>setTimeout(r,30));submit();
+ await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"Server license check");
+ w.localStorage.setItem("mock-license-verified","true");w.sessionStorage.setItem("mock-license-verified","true");
+ const checksBefore=apiCalls.filter(c=>c.body.op==="license-status").length;w.location.hash=`/tests/prelims/${testId}`;
+ await until(()=>apiCalls.filter(c=>c.body.op==="license-status").length>checksBefore,"Direct URL access rechecked");
+ await until(()=>w.document.getElementById("mock-license-key")&&!w.document.getElementById("mock-license-key").disabled,"Direct test URL requires license");
+ assert.ok(!apiCalls.some(c=>c.body.op==="catalog"||c.body.op==="detail"));
+ capture("mock-license");
+ fill("mock-license-key","incorrect-key");await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.body.textContent.includes("Invalid license key. Please enter a valid license key."),"Wrong license retry");
+ assert.ok(!w.document.body.textContent.includes("UI validation mock"));
+ fill("mock-license-key",fixtureLicense);await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.querySelector('[aria-label="Leaderboard display name"]'),"License verification returns to selected test");
  const name=w.document.querySelector('[aria-label="Leaderboard display name"]');Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(name,"BrowserLearner");name.dispatchEvent(new w.Event("input",{bubbles:true}));await new Promise(r=>setTimeout(r,30));click("Start test");
  await until(()=>w.document.body.textContent.includes("Which Alpha choice"),"Test starts");
+ capture("mock-exam");
  assert.ok(!w.document.body.textContent.includes("Verified explanation"));
+ assert.ok(w.document.querySelector('progress[aria-label="Answer progress"]'));assert.ok(w.document.querySelector('[aria-label="Question states"]'));
  const choose=text=>{const value=text==='One'?'a':'b';const input=w.document.querySelector(`input[value="${value}"]`);assert.ok(input);input.click();};
  choose("One");await new Promise(r=>setTimeout(r,40));click("Save & Next");await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Save and next");choose("Two");await new Promise(r=>setTimeout(r,40));click("Mark for review");await new Promise(r=>setTimeout(r,30));click("Save & exit");await until(()=>w.document.body.textContent.includes("My Tests"),"Save and exit");
  const history=await rpc(bob.id,"history",{});const attemptId=history[0].id;w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Resume question");click("Submit test");await until(()=>w.document.body.textContent.includes("Confirm submission"),"Submission confirmation");click("Confirm submission");await until(()=>w.document.body.textContent.includes("UI validation mock · Result"),"Submitted report");const result=await rpc(bob.id,"attempt",{attemptId});assert.equal(result.result.score,1.5);assert.equal(result.result.incorrect,1);click("Questions");await until(()=>w.document.body.textContent.includes("Verified explanation appears only after submission."),"Post-submission explanations");
  click("Recall Sheet");await until(()=>w.document.body.textContent.includes("Fundamental Rights limit government power."),"Protected text recall sheet");assert.equal(w.document.querySelectorAll(".mock-recall-entry").length,3);assert.ok(!w.document.querySelector("iframe"));assert.ok(!w.document.body.textContent.includes("Download PDF"));assert.ok(apiCalls.some(c=>c.body.op==="report-document"));
  const recallSearch=w.document.querySelector('[aria-label="Search recall sheet"]');Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"Q2");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===1,"Search recall entries by number");assert.ok(w.document.querySelector(".mock-recall-entry").textContent.includes("Q2. Preamble"));Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===3,"Restore full recall sheet");
  click("Community Comparison");await until(()=>w.document.body.textContent.includes("5"),"Honest community threshold");
- assert.deepEqual(messages,[]);console.log("Mock UI checks passed: guest catalogue, safe login return, private exam, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
+ w.location.hash="/tests";await heading("Test series");await until(()=>w.document.querySelector("table")?.textContent.includes("Existing manual result"),"Existing manual history preserved");
+ click("Add Log");await until(()=>w.document.querySelector("dialog[open]"),"Manual Add Log still opens after mocks");
+ const fillManual=(label,value)=>{const input=[...w.document.querySelectorAll("dialog[open] label")].find(l=>l.querySelector("span")?.textContent?.trim().startsWith(label))?.querySelector("input");assert.ok(input,"Manual field "+label);Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(input,value);input.dispatchEvent(new w.Event("input",{bubbles:true}));};
+ fillManual("Test name","New manual result");fillManual("Score","80");fillManual("Maximum marks","100");await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.querySelector("table")?.textContent.includes("New manual result"),"Manual save creates history row");
+ await until(()=>workspaces.get(bob.id).payload.tests.some(t=>t.name==="New manual result"),"Existing workspace API saves manual result");
+ assert.equal(workspaces.get(bob.id).payload.tests.find(t=>t.id==="existing-manual-log").notes,"Original review note");
+ const originalRow=[...w.document.querySelectorAll("tr")].find(r=>r.textContent.includes("Existing manual result"));
+ originalRow.querySelector('[aria-label="Edit Test"]').click();await until(()=>w.document.querySelector("dialog[open]")?.textContent.includes("Edit Test"),"Manual edit preserved");fillManual("Score","75");await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>workspaces.get(bob.id).payload.tests.find(t=>t.id==="existing-manual-log").score===75,"Manual update persists");
+ click("Mock Test");await until(()=>w.document.body.textContent.includes("UI validation mock"),"Verified session remembers access");assert.ok(!w.document.getElementById("mock-license-key"));
+ click("View syllabus");await until(()=>w.document.body.textContent.includes("Test syllabus"),"Syllabus popup preserved");click("Close syllabus");
+ w.location.hash="/account";await heading("Your account");click("Sign out");await heading("Welcome back.");
+ w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.location.hash==="#/login"&&w.document.body.textContent.includes("Sign-in is required"),"Direct attempt URL cannot bypass sign-in");
+ assert.ok(!w.document.body.textContent.includes("Which Beta choice"));assert.ok(!w.document.body.textContent.includes("Verified explanation"));
+ fill("auth-email",bob.email);fill("auth-password","correct-password");await new Promise(r=>setTimeout(r,30));submit();
+ await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"New sign-in requires fresh license");
+ assert.ok(!w.document.querySelector(".mock-exam"));w.location.hash="/tests";await heading("Test series");
+ await until(()=>w.document.querySelector("table")?.textContent.includes("Existing manual result"),"Manual history remains available without mock license");
+ assert.deepEqual(messages,[]);console.log("Mock UI checks passed: manual Add Log preserved, signed-in license gate, wrong-key retry, direct-URL protection, private exam, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
 }finally{dom.window.close();await queryQueue.catch(()=>{});await db.close();}

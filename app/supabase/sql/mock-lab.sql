@@ -1,6 +1,28 @@
 -- Prelims Mock Test Lab. Private tables/keys; one checked RPC API.
 create schema if not exists mock_private;
 revoke all on schema mock_private from public;
+-- The shared license is provisioned privately by an administrator, never in source.
+-- Grants use the server-validated Auth session claim and disappear on sign-out.
+create table if not exists mock_private.license_config (
+ singleton boolean primary key default true check(singleton),
+ key_salt bytea not null check(octet_length(key_salt)=32),
+ key_hash bytea not null check(octet_length(key_hash)=32),
+ version uuid not null default gen_random_uuid()
+);
+create table if not exists mock_private.license_grants (
+ session_id uuid primary key references auth.sessions(id) on delete cascade,
+ user_id uuid not null references auth.users(id) on delete cascade,
+ license_version uuid not null, verified_at timestamptz not null default now()
+);
+create index if not exists mock_license_user on mock_private.license_grants(user_id);
+create table if not exists mock_private.license_checks (
+ user_id uuid primary key references auth.users(id) on delete cascade,
+ window_start timestamptz not null default now(), failures integer not null default 0
+);
+alter table mock_private.license_config enable row level security;
+alter table mock_private.license_grants enable row level security;
+alter table mock_private.license_checks enable row level security;
+revoke all on mock_private.license_config,mock_private.license_grants,mock_private.license_checks from public,anon,authenticated;
 create table if not exists mock_private.coaching (
  id uuid primary key default gen_random_uuid(), canonical_name text not null unique,
  display_name text not null, created_at timestamptz not null default now()
@@ -131,7 +153,40 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  declare u uuid=auth.uid(); admin boolean=false; a mock_private.attempts; t mock_private.tests; tid uuid; aid uuid; qs jsonb; q jsonb; r jsonb; profile mock_private.profiles;
  rows jsonb; meta jsonb; mine jsonb; stats jsonb; limit_n integer=least(100,greatest(1,coalesce((p->>'limit')::integer,24))); offset_n integer=least(100000,greatest(0,coalesce((p->>'offset')::integer,0)));
  name_n text; cid uuid; n integer; maximum_n numeric; newq jsonb; coach text; seq text;
+ session_text text=auth.jwt()->>'session_id'; session_uuid uuid; signed_in boolean=false; authorized boolean=false;
+ license mock_private.license_config; attempts_n integer; entered_key text;
  begin
+ if session_text ~ '^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$' then session_uuid=session_text::uuid; end if;
+ signed_in=u is not null
+   and exists(select 1 from auth.users where id=u and not coalesce(is_anonymous,false) and email_confirmed_at is not null)
+   and exists(select 1 from auth.sessions where id=session_uuid and user_id=u and (not_after is null or not_after>now()));
+ select * into license from mock_private.license_config where singleton;
+ authorized=signed_in and exists(select 1 from mock_private.license_grants
+   where session_id=session_uuid and user_id=u and license_version=license.version);
+ if op='license-status' then
+   if u is not null and not signed_in then raise exception 'Sign in with a verified account to access Mock Tests' using errcode='PT401'; end if;
+   return jsonb_build_object('authorized',authorized);
+ end if;
+ if not signed_in then raise exception 'Sign in with a verified account to access Mock Tests' using errcode='PT401'; end if;
+ if op='verify-license' then
+   insert into mock_private.license_checks(user_id) values(u) on conflict(user_id) do nothing;
+   select failures into attempts_n from mock_private.license_checks where user_id=u for update;
+   if (select window_start from mock_private.license_checks where user_id=u)<=clock_timestamp()-interval '1 minute' then
+     update mock_private.license_checks set window_start=clock_timestamp(),failures=0 where user_id=u; attempts_n=0;
+   end if;
+   if attempts_n>=10 then return jsonb_build_object('authorized',false,'retryAfter',greatest(1,ceil(extract(epoch from (select window_start+interval '1 minute'-clock_timestamp() from mock_private.license_checks where user_id=u)))::integer)); end if;
+   entered_key=p->>'licenseKey';
+   if entered_key is not null and octet_length(entered_key)<=256
+      and license.key_hash=pg_catalog.sha256(license.key_salt||pg_catalog.convert_to(entered_key,'UTF8')) then
+     insert into mock_private.license_grants(session_id,user_id,license_version) values(session_uuid,u,license.version)
+       on conflict(session_id) do update set user_id=excluded.user_id,license_version=excluded.license_version,verified_at=now();
+     update mock_private.license_checks set failures=0 where user_id=u;
+     return jsonb_build_object('authorized',true);
+   end if;
+   update mock_private.license_checks set failures=failures+1 where user_id=u;
+   return jsonb_build_object('authorized',false);
+ end if;
+ if not authorized then raise exception 'License verification is required to access Mock Tests' using errcode='PT403'; end if;
  if op in ('catalog','detail') then
  if op='detail' then select * into t from mock_private.tests where id=(p->>'testId')::uuid and listed and status<>'draft' and publish_at<=now();
  if not found then raise exception 'Test not available'; end if;
@@ -156,7 +211,6 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  'subjects',(select coalesce(jsonb_agg(subject order by subject),'[]') from (select distinct unnest(subjects) subject from mock_private.tests where listed and status<>'draft') y),
  'topics',(select coalesce(jsonb_agg(topic order by topic),'[]') from (select distinct unnest(topics) topic from mock_private.tests where listed and status<>'draft') y)) into meta;
  return jsonb_build_object('tests',rows,'facets',meta); end if;
- if u is null or not exists(select 1 from auth.users where id=u and not coalesce(is_anonymous,false) and email_confirmed_at is not null) then raise exception 'Sign in with a verified account to participate'; end if;
  select coalesce(raw_app_meta_data->>'mock_admin','false')='true' into admin from auth.users where id=u;
  if op='identity' then select * into profile from mock_private.profiles where user_id=u; return jsonb_build_object('profile',case when found then to_jsonb(profile)-'user_id' else null end,'admin',admin); end if;
  if op='profile' then name_n=trim(p->>'displayName');

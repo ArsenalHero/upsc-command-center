@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { fixtureLicense, prepareMockDatabase, setMockUser } from "./mock-license-fixture";
 import { PGlite } from "@electric-sql/pglite";
 import { reverseInstituteDisplayName,importMockQuestions,parseMockCSV } from "../src/utils/mockLab";
 test("institute spelling reverses individual words only; CSV supports quoted explanations and rejects repeats",()=>{
@@ -9,36 +9,71 @@ test("institute spelling reverses individual words only; CSV supports quoted exp
  const row={question:"Which item is correct?",options:{a:"First",b:"Second",c:"Third",d:"Fourth"},correct:"a",explanation:"The first choice is the correct item.",subject:"Polity",topic:"Institutions"};
  assert.equal(importMockQuestions(JSON.stringify([row]))[0].correct,"a");assert.throws(()=>importMockQuestions(JSON.stringify([row,row])),/repeats/);
 });
+test("mock access requires an active verified Auth session and exact server license, with no browser or account bypass",async()=>{
+ const db=new PGlite(),bob="22222222-2222-4222-8222-222222222222",eve="33333333-3333-4333-8333-333333333333";
+ const newSession="44444444-4444-4444-8444-444444444444";
+ try {
+  await prepareMockDatabase(db,[{id:bob},{id:eve}]);
+  const api=async(op:string,p:unknown={})=>(await db.query<{data:any}>("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p)])).rows[0].data;
+  await setMockUser(db,null);
+  assert.deepEqual(await api("license-status"),{authorized:false});
+  for(const op of ["catalog","detail","start","attempt","history","report-document","verify-license"])await assert.rejects(api(op),/Sign in/);
+  await setMockUser(db,bob);
+  for(const op of ["catalog","detail","start","attempt","history","report-document"])await assert.rejects(api(op,{authorized:true,licenseVerified:true}),/License verification/);
+  for(const key of ["wrong",fixtureLicense.toUpperCase()," "+fixtureLicense,fixtureLicense+" ","",null])assert.deepEqual(await api("verify-license",{licenseKey:key}),{authorized:false});
+  for(const table of ["license_config","license_grants","license_checks"])await assert.rejects(db.query(`select * from mock_private.${table}`),/permission denied/);
+  await assert.rejects(db.query("insert into mock_private.license_grants(session_id,user_id,license_version) values($1,$1,gen_random_uuid())",[bob]),/permission denied/);
+  assert.deepEqual(await api("verify-license",{licenseKey:fixtureLicense}),{authorized:true});
+  assert.deepEqual(await api("license-status"),{authorized:true});
+  assert.deepEqual((await api("catalog")).tests,[]);
+  await setMockUser(db,eve);
+  assert.deepEqual(await api("license-status",{session_id:bob,user_id:bob,authorized:true}),{authorized:false});
+  await assert.rejects(api("history"),/License verification/);
+  // A valid key without a real session cannot create a grant, even for a known user.
+  await setMockUser(db,bob,newSession);await assert.rejects(api("verify-license",{licenseKey:fixtureLicense}),/Sign in/);
+  await db.exec("reset role");await db.query("insert into auth.sessions(id,user_id) values($1,$2)",[newSession,bob]);
+  await setMockUser(db,bob,newSession);assert.deepEqual(await api("license-status"),{authorized:false});
+  await assert.rejects(api("catalog"),/License verification/);
+  await api("verify-license",{licenseKey:fixtureLicense});
+  // Rotation, expiry and sign-out revoke permission on the server.
+  await db.exec("reset role");await db.exec("update mock_private.license_config set version=gen_random_uuid()");
+  await setMockUser(db,bob,newSession);assert.deepEqual(await api("license-status"),{authorized:false});await api("verify-license",{licenseKey:fixtureLicense});
+  await db.exec("reset role");await db.query("update auth.sessions set not_after=now()-interval '1 second' where id=$1",[newSession]);
+  await setMockUser(db,bob,newSession);await assert.rejects(api("license-status"),/Sign in/);await assert.rejects(api("catalog"),/Sign in/);
+  await db.exec("reset role");await db.query("delete from auth.sessions where id=$1",[newSession]);
+  await setMockUser(db,bob,newSession);await assert.rejects(api("license-status"),/Sign in/);await assert.rejects(api("history"),/Sign in/);
+  await db.exec("reset role");assert.equal((await db.query<{count:number}>("select count(*)::integer count from mock_private.license_grants where session_id=$1",[newSession])).rows[0].count,0);
+ } finally { await db.close(); }
+});
 test("real Postgres API isolates answers, scores on the server, locks first attempts and protects participant privacy",async()=>{
  const db=new PGlite();const admin="11111111-1111-4111-8111-111111111111",bob="22222222-2222-4222-8222-222222222222",eve="33333333-3333-4333-8333-333333333333";
  try{
- await db.exec(`create role anon; create role authenticated; create schema auth; create table auth.users(id uuid primary key,email_confirmed_at timestamptz,is_anonymous boolean default false,raw_app_meta_data jsonb default '{}'); create function auth.uid() returns uuid language sql as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid $$; grant usage on schema auth to anon,authenticated; insert into auth.users values('${admin}',now(),false,'{"mock_admin":true}'),('${bob}',now(),false,'{}'),('${eve}',now(),false,'{}');`);
- await db.exec(readFileSync(new URL("../supabase/sql/mock-lab.sql",import.meta.url),"utf8"));
- const as=async(user:string|null)=>{await db.exec(`reset role; select set_config('request.jwt.claim.sub','${user||""}',false); set role ${user?"authenticated":"anon"};`);};
+ await prepareMockDatabase(db,[{id:admin,admin:true},{id:bob},{id:eve}]);
+ const as=async(user:string|null)=>setMockUser(db,user);
  const api=async(op:string,p:unknown={})=>(await db.query<{data:any}>("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p)])).rows[0].data;
- await as(null);assert.deepEqual((await api("catalog")).tests,[]);await assert.rejects(api("start"),/Sign in/);
- await as(admin);await api("profile",{displayName:"MockManager"});const coaching=await api("admin-coaching",{name:"FORUM IAS"});assert.equal(coaching.name,"MUROF SAI");
+ await as(null);assert.deepEqual(await api("license-status"),{authorized:false});await assert.rejects(api("catalog"),/Sign in/);await assert.rejects(api("start"),/Sign in/);
+ await as(admin);await api("verify-license",{licenseKey:fixtureLicense});await api("profile",{displayName:"MockManager"});const coaching=await api("admin-coaching",{name:"FORUM IAS"});assert.equal(coaching.name,"MUROF SAI");
  const questions=["Alpha","Beta","Gamma"].map(topic=>({question:`Question ${topic}: which choice is correct?`,options:{a:"One",b:"Two",c:"Three",d:"Four"},correct:"a",explanation:"Choice one is the correct answer based on the stated premise.",subject:"Polity",topic,positive:2,negative:0.5}));
  const testId=(await api("admin-test",{code:"UNIT-GS",name:"Backend Test",paper:"GS-I",kind:"Sectional",year:2027,series:"Validation",duration:30,positive:2,negative:0.5,status:"active",coachingId:coaching.id,questions})).id;
  await db.exec("reset role");await db.query("insert into mock_private.report_documents(test_id,kind,title,items) values($1,'recall','Recall Sheet · PT-01',$2::jsonb)",[testId,JSON.stringify([{number:1,title:"Constituent Assembly",text:"Members were indirectly elected by Provincial Legislative Assemblies."},{number:2,title:"Preamble",text:"The Constitution derives its authority from the people."},{number:3,title:"Fundamental Rights",text:"Fundamental Rights limit government power."}])]);
- await as(null);await assert.rejects(api("report-document",{}),/Sign in/);const catalog=await api("catalog");assert.equal(catalog.tests[0].question_count,3);assert.ok(!JSON.stringify(catalog).includes('"correct":'));assert.ok(!JSON.stringify(catalog).includes("FORUM IAS"));
- await as(bob);await assert.rejects(api("admin-test",{}),/Administrator/);await api("profile",{displayName:"LearnerB"});const attempt=await api("start",{testId});assert.equal(attempt.eligible,true);assert.ok(!JSON.stringify(attempt.questions).includes('"correct":'));assert.ok(!JSON.stringify(attempt.questions).includes("explanation"));
+ await as(null);await assert.rejects(api("report-document",{}),/Sign in/);await as(admin);const catalog=await api("catalog");assert.equal(catalog.tests[0].question_count,3);assert.ok(!JSON.stringify(catalog).includes('"correct":'));assert.ok(!JSON.stringify(catalog).includes("FORUM IAS"));
+ await as(bob);await assert.rejects(api("detail",{testId}),/License verification/);await api("verify-license",{licenseKey:fixtureLicense});await assert.rejects(api("admin-test",{}),/Administrator/);await api("profile",{displayName:"LearnerB"});const attempt=await api("start",{testId});assert.equal(attempt.eligible,true);assert.ok(!JSON.stringify(attempt.questions).includes('"correct":'));assert.ok(!JSON.stringify(attempt.questions).includes("explanation"));
  assert.equal(attempt.reportDocuments.length,0);await assert.rejects(api("report-document",{attemptId:attempt.id,kind:"recall"}),/Submit/);
  assert.equal((await api("start",{testId})).id,attempt.id);
  const ids=attempt.questions.map((q:any)=>q.id);const answers={[ids[0]]:{option:"a",visited:true,seconds:2},[ids[1]]:{option:"b",visited:true,seconds:3}};
  await api("save",{attemptId:attempt.id,sequence:1,index:1,answers});await api("save",{attemptId:attempt.id,sequence:1,index:0,answers:{}});assert.equal((await api("attempt",{attemptId:attempt.id})).answers[ids[0]].option,"a");
  await assert.rejects(api("save",{attemptId:attempt.id,sequence:2,answers:{[ids[0]]:{option:"z"}}}),/Invalid answer/);
- await as(eve);await assert.rejects(api("attempt",{attemptId:attempt.id}),/not found/);await assert.rejects(api("report-document",{attemptId:attempt.id,kind:"recall"}),/not found/);await assert.rejects(db.query("select * from mock_private.report_documents"),/permission denied/);await assert.rejects(api("leaderboard",{testId}),/Join/);await assert.rejects(db.query("select * from mock_private.attempts"),/permission denied/);
+ await as(eve);await api("verify-license",{licenseKey:fixtureLicense});await assert.rejects(api("attempt",{attemptId:attempt.id}),/not found/);await assert.rejects(api("report-document",{attemptId:attempt.id,kind:"recall"}),/not found/);await assert.rejects(db.query("select * from mock_private.report_documents"),/permission denied/);await assert.rejects(api("leaderboard",{testId}),/Join/);await assert.rejects(db.query("select * from mock_private.attempts"),/permission denied/);
  await as(bob);const done=await api("submit",{attemptId:attempt.id,score:999999,eligible:false});assert.equal(done.result.score,1.5);assert.equal(done.reportDocuments[0].kind,"recall");assert.equal(done.reportDocuments[0].itemCount,3);const recall=await api("report-document",{attemptId:attempt.id,kind:"recall"});assert.equal(recall.items.length,3);assert.equal(recall.items[2].text,"Fundamental Rights limit government power.");assert.ok(!JSON.stringify(done).includes("Members were indirectly"));await as(eve);await assert.rejects(api("report-document",{attemptId:attempt.id,kind:"recall"}),/not found/);await as(bob);assert.equal(done.result.correct,1);assert.equal(done.result.incorrect,1);assert.equal(done.result.unattempted,1);assert.equal(done.result.accuracy,50);assert.ok(done.questions[0].correct);assert.equal(done.position.rank,1);assert.equal(done.position.percentile,50);assert.equal(done.community.mean,undefined);
  assert.equal((await api("submit",{attemptId:attempt.id})).result.score,1.5);const practice=await api("start",{testId});assert.equal(practice.eligible,false);await api("submit",{attemptId:practice.id,answers:Object.fromEntries(practice.questions.map((q:any)=>[q.id,{option:"a"}])),sequence:1});assert.equal((await api("leaderboard",{testId})).mine.score,1.5);
  const board=JSON.stringify(await api("leaderboard",{testId}));for(const hidden of ["user_id","attempt_id",bob,"note","email"])assert.ok(!board.includes(hidden));
  await api("annotate",{attemptId:attempt.id,questionId:ids[1],note:"Private note",errorType:"Concept Gap",bookmarked:true,revisionDate:"2026-10-12"});assert.equal((await api("notebook"))[0].question.response.note,"Private note");assert.equal((await api("notebook",{selection:"bookmarks"})).length,1);
  await as(bob);await api("bookmark-test",{testId});assert.equal((await api("catalog",{participation:"Bookmarked"})).tests.length,1);const totals=await api("summary");assert.equal(totals.mocks,2);assert.equal(totals.fullLength,0);assert.ok(totals.weakTopics.length);assert.equal(totals.subjects[0].name,'Polity');assert.equal(totals.comparisons[0].mocks,2);assert.ok((await api('attempt',{attemptId:practice.id})).historyBaseline.count>=1);
- for(let n=4;n<=7;n++){const person=`00000000-0000-4000-8000-${String(n).padStart(12,"0")}`;await db.exec("reset role");await db.query("insert into auth.users(id,email_confirmed_at) values($1,now())",[person]);await as(person);await api("profile",{displayName:`Learner${n}`});const run=await api("start",{testId});await api("submit",{attemptId:run.id,sequence:1,answers:Object.fromEntries(run.questions.map((q:any)=>[q.id,{option:n===4?"b":"a"}]))});}
+ for(let n=4;n<=7;n++){const person=`00000000-0000-4000-8000-${String(n).padStart(12,"0")}`;await db.exec("reset role");await db.query("insert into auth.users(id,email_confirmed_at) values($1,now())",[person]);await db.query("insert into auth.sessions(id,user_id) values($1,$1)",[person]);await as(person);await api("verify-license",{licenseKey:fixtureLicense});await api("profile",{displayName:`Learner${n}`});const run=await api("start",{testId});await api("submit",{attemptId:run.id,sequence:1,answers:Object.fromEntries(run.questions.map((q:any)=>[q.id,{option:n===4?"b":"a"}]))});}
  await as(bob);const community=(await api("attempt",{attemptId:attempt.id})).community;assert.equal(community.participants,5);assert.ok(community.histogram.length>0);assert.equal(community.curve.length,101);assert.ok(community.sample.some((row:any)=>row.mine));assert.ok(!JSON.stringify(community.sample).includes(bob));
  await as(admin);await assert.rejects(api("admin-test",{id:testId,code:"UNIT-GS",name:"Changed",paper:"GS-I",kind:"Sectional",year:2027,duration:30,questions}),/immutable/);
  await as(bob);const review=await api("start",{selection:"mistakes",paper:"GS-I"});assert.equal(review.eligible,false);assert.equal(review.questions.length,1);assert.equal(review.testId,null);
  await db.exec("reset role");await db.query("update mock_private.attempts set deadline=now()-interval '1 second' where id=$1",[review.id]);await as(bob);const expired=await api("attempt",{attemptId:review.id});assert.equal(expired.status,"submitted");assert.equal(expired.result.unattempted,1);
- await db.exec("reset role");await db.query("update mock_private.tests set listed=false where id=$1",[testId]);await as(null);assert.equal((await api("catalog")).tests.length,0);await assert.rejects(api("detail",{testId}),/available/);await as(bob);assert.equal((await api("attempt",{attemptId:attempt.id})).result.score,1.5);
+ await db.exec("reset role");await db.query("update mock_private.tests set listed=false where id=$1",[testId]);await as(bob);assert.equal((await api("catalog")).tests.length,0);await assert.rejects(api("detail",{testId}),/available/);await as(bob);assert.equal((await api("attempt",{attemptId:attempt.id})).result.score,1.5);
  }finally{await db.close();}
 });

@@ -25,6 +25,8 @@ const Reports = lazy(() => import("./pages/Reports"));
 const Resources = lazy(() => import("./pages/Resources"));
 const Settings = lazy(() => import("./pages/Settings"));
 const Account = lazy(() => import("./pages/Account"));
+const MockAccess = lazy(() => import("./pages/MockAccess"));
+const MockLab = lazy(() => import("./pages/MockLab"));
 const practices = [
   "Prelims",
   "Mains",
@@ -150,10 +152,11 @@ function WorkspaceRouter() {
             {practiceComponents.map((Page, i) => (
               <Route
                 key={practiceRoutes[i]}
-                path={practiceRoutes[i] === "tests" ? "tests/*" : practiceRoutes[i]}
+                path={practiceRoutes[i]}
                 element={<Page />}
               />
             ))}
+            <Route path="tests/*" element={<MockAccess><MockLab /></MockAccess>} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
