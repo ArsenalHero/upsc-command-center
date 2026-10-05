@@ -1,3 +1,4 @@
+import gapImport from "../docs/EXPLANATION-QUESTION-IMPORT.json";
 import { englishQuestion } from "../src/utils/englishQuestion";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -12,7 +13,7 @@ import { completeOptionExplanation, explanationStatus } from "../src/utils/expla
 test("all 12 new sources preserve 1,255 records, bilingual notes and all 47 five-choice questions", () => {
   const manifest = JSON.parse(readFileSync(new URL("../docs/ANCIENT-CULTURE-SOURCES.json", import.meta.url), "utf8"));
   assert.equal(manifest.length,12); assert.equal(ancientCultureBank.length,1255);
-  assert.equal(rawQuestionBank.length,7882); assert.equal(new Set(rawQuestionBank.map(q=>q.id)).size,7882);
+  assert.equal(rawQuestionBank.length,7882 + gapImport.addedUniqueQuestions); assert.equal(new Set(rawQuestionBank.map(q=>q.id)).size,7882 + gapImport.addedUniqueQuestions);
   assert.equal(ancientCultureBank.filter(q=>Object.keys(q.options).length===5).length,47);
   assert.deepEqual(["History","Art & Culture"].map(subject=>ancientCultureBank.filter(q=>q.subject===subject).length),[567,688]);
   for(const source of ancientCultureSources){
@@ -54,7 +55,7 @@ test("re-exam commas and MPPSC spelling preserve the correct exam identity and y
 });
 
 test("91 repeats merge while every source variant and old question ID remain available", () => {
-  assert.equal(questionBank.length,7535);
+  assert.equal(questionBank.length,gapImport.uniqueBankQuestions);
   assert.equal(ancientCultureBank.filter(q=>canonicalQuestionId(q.id)!==q.id).length,91);
   const duplicate=ancientCultureBank.find(q=>q.id==="culture-literature-performing-arts-q-133")!;
   assert.equal(canonicalQuestionId(duplicate.id),canonicalQuestionId("history-modern-part-6-q-221"));

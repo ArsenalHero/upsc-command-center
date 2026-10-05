@@ -45,7 +45,7 @@ export function SuppliedExplanationLibrary() {
   return <>
     <section className="card prelims-filters">
       <h2>Explanation library</h2>
-      <p>Explore {suppliedExplanations.length.toLocaleString()} explanations by subject, year and exam.</p>
+      <p>Explore {suppliedExplanations.length.toLocaleString()} explanation entries by subject, year and exam. Entries can cover the same question more than once; the practice bank counts unique questions.</p>
       <div className="prelims-filter-grid">
         <label>Subject<select aria-label="Explanation subject" value={subject} onChange={e => change(setSubject, e.target.value)}><option value="">All subjects</option>{subjects.map(s => <option key={s}>{s}</option>)}</select></label>
         <label>Year<select aria-label="Explanation year" value={year} onChange={e => change(setYear, e.target.value)}><option value="">All years</option>{years.map(y => <option key={y}>{y}</option>)}</select></label>

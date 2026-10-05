@@ -55,7 +55,7 @@ export function groupDuplicates(questions, reviewed = []) {
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const bank = name => JSON.parse(readFileSync(new URL(`../src/data/${name}.json`, import.meta.url), "utf8"));
-  const originals = bank("pyq-bank"), old = [...originals, ...bank("polity-bank"), ...bank("geography-bank"), ...bank("additional-bank"), ...bank("history-economy-bank")], incoming = bank("ancient-culture-bank"), questions = [...old, ...incoming];
+  const originals = bank("pyq-bank"), old = [...originals, ...bank("polity-bank"), ...bank("geography-bank"), ...bank("additional-bank"), ...bank("history-economy-bank")], incoming = bank("ancient-culture-bank"), explanationGap = bank("explanation-gap-bank"), questions = [...old, ...incoming, ...explanationGap];
   const reviews = JSON.parse(readFileSync(new URL("../docs/REVIEWED-DUPLICATES.json", import.meta.url), "utf8"));
   const groups = groupDuplicates(questions, reviews), incomingIds = new Set(incoming.map(q => q.id)), oldIds = new Set(old.map(q => q.id));
   const byId = new Map(questions.map(q => [q.id, q]));
@@ -70,7 +70,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     newUniqueQuestions: groups.filter(group => incomingIds.has(group.canonicalId)).length,
     uploadedDuplicates: incoming.length - groups.filter(group => incomingIds.has(group.canonicalId)).length,
     existingDuplicateEntries: groups.flatMap(group => group.duplicateIds).filter(id => oldIds.has(id)).length,
-    uniqueBankQuestions: groups.length, duplicateGroups: duplicates.length,
+    addedExplanationQuestions: explanationGap.length, uniqueBankQuestions: groups.length, duplicateGroups: duplicates.length,
   };
   writeFileSync(new URL("../docs/DEDUPLICATION.json", import.meta.url), JSON.stringify(summary, null, 2) + "\n");
   console.log(JSON.stringify(summary));

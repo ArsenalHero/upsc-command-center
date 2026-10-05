@@ -145,7 +145,7 @@ async function option(value) {
 
 try {
   await heading("PYQ question bank");
-  assert.match(text(), /7,535 unique questions ready/);
+  assert.match(text(), /7,947 unique questions ready/);
   await field("PYQ paper", "Prelims GS-I");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"100 questions");
   await click("Practise filtered questions");
@@ -249,7 +249,7 @@ try {
   assert.equal(current.data().prelims.reports.at(-1).id,"expired-test");
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank"); await click("Polity & Governance"); await click("State PSC");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"562 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"564 questions");
   await field("PYQ state","Chhattisgarh"); await field("PYQ year","2016");
   await field("Search PYQs","POL5");
   await click("Practise CGPSC 2016 · Part 5 Q101");
@@ -282,16 +282,16 @@ try {
   assert.deepEqual([...current.w.document.querySelector('[aria-label="PYQ state"]').options].map(o=>o.value),[""]);
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank"); await click("Geography");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"836 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1163 questions");
   await click("UPSC CSE");
   assert.equal(current.data().prelims.filters.subject,"Geography");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"223 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"328 questions");
   await field("PYQ year","2025");
   assert.ok(current.w.document.querySelectorAll(".prelims-bank-row").length);
   assert.ok([...current.w.document.querySelectorAll(".prelims-bank-row .eyebrow")].every(el => el.textContent.includes("2025")));
   await click("State PSC");
   assert.equal(current.data().prelims.filters.subject,"Geography");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"371 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"491 questions");
   await field("PYQ state","Bihar"); await field("Search PYQs","GEO6 126");
   await click("Practise BPSC 2019 · Geography · Part 6 Q126");
   await heading("2019 · BPSC · Geography MCQs");
@@ -324,13 +324,13 @@ try {
   assert.ok(!text().includes("No questions match these filters."));
   await click("Geography"); await click("CDS & CAPF");
   assert.equal(current.data().prelims.filters.subject,"Geography");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"242 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"344 questions");
   assert.deepEqual([...current.w.document.querySelector('[aria-label="PYQ state"]').options].map(o=>o.value),[""]);
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank"); await click("Environment");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"577 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"595 questions");
   await click("State PSC");
-  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"276 questions");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"282 questions");
   await field("PYQ state","Uttar Pradesh"); await field("PYQ year","2020");
   await field("Search PYQs","ENV 35");
   await click("Practise UPPCS 2020 · Ecology & Environment Q35");
@@ -404,7 +404,7 @@ try {
   validateData(current.data());
   current=makeDOM(); allDOMs.push(current.dom);
   await heading("PYQ question bank");
-  assert.match(text(),/1,164 new questions/); assert.match(text(),/Ancient & Medieval History and Art & Culture/);
+  assert.match(text(),/7,947 unique questions/); assert.match(text(),/412 missing PYQs added/); assert.match(text(),/8,039 explanation entries/);
   const beforePreview=JSON.stringify(current.data());
   await click("Review explanation 2025 GS I Q1"); await heading("Question explanation");
   assert.deepEqual([...current.w.document.querySelectorAll('[aria-label="Answer choices"] li')].map(el=>el.textContent),Object.entries(q1.options).map(([key,value])=>key.toUpperCase()+"."+value));
@@ -509,6 +509,21 @@ try {
   expectedSource.innerHTML=englishSourceHTML(tableSource.explanation);
   assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedSource.innerHTML);
   assert.equal(JSON.stringify(current.data()),beforeLibrary);
+  // Newly recovered State PSC PYQs use the same saved-answer and timing flow.
+  current=makeDOM(); allDOMs.push(current.dom); await heading("PYQ question bank");
+  await field("PYQ subject","Art & Culture"); await click("State PSC");
+  await field("Search PYQs","Saundarananda was the composition");
+  assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
+  const newRow=current.w.document.querySelector(".prelims-bank-row");
+  newRow.querySelector("button").click(); await wait();
+  await heading("1991 · MPPSC · Art & Culture MCQs");
+  const gap=JSON.parse(readFileSync(new URL("../src/data/explanation-gap-bank.json",import.meta.url),"utf8")).find(q=>q.id==="supplied-pyq-q-1238");
+  current.advance(17); current.w.document.querySelector(`input[name="pyq-option"][value="${gap.answer}"]`).click(); await wait(); await click("Submit answer");
+  assert.match(text(),/Correct answer/); assert.equal(current.data().pyqs[0].attempt.seconds,17);
+  assert.equal(current.data().pyqs[0].attempt.questionId,gap.id); assert.equal(current.data().pyqs[0].attempt.outcome,"correct");
+  expectedSource.innerHTML=englishSourceHTML(suppliedExplanations.find(e=>e.id==="q-1238").explanation);
+  assert.equal(current.w.document.querySelector(".prelims-supplied-explanation .prelims-supplied-html").innerHTML,expectedSource.innerHTML);
+  await click("Next question"); assert.equal(current.data().prelims.session.index,1);
   assert.deepEqual(messages,[]);
   console.log("PYQ UI passed: clean explanation headings without source/file metadata, exact English explanations and tables, complete searchable library, disputed five-choice grading, saved progress/time, Next question, reports and original full papers.");
 } finally { for(const dom of allDOMs) dom.window.close(); }

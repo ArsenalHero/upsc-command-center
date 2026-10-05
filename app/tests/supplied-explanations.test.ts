@@ -1,3 +1,4 @@
+import gapImport from "../docs/EXPLANATION-QUESTION-IMPORT.json";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -28,7 +29,7 @@ test("all 8,039 supplied explanations and all question/options HTML match the re
 test("every question retains its identity, marking and English choices while applying only the reviewed keys", () => {
   const old = buildQuestionCollections(rawQuestionBank, groups, reviews as Record<string, ExplanationReview>);
   const reviewed = buildQuestionCollections(rawQuestionBank, groups, { ...reviews, ...coachingReviews } as Record<string, ExplanationReview>);
-  assert.equal(questionBank.length, 7535); assert.equal(questionById.size, old.byId.size);
+  assert.equal(questionBank.length, gapImport.uniqueBankQuestions); assert.equal(questionById.size, old.byId.size);
   for (const [id, before] of old.byId) {
     const after = questionById.get(id)!;
     for (const key of ["id", "marks", "negativeMarks"] as const) assert.deepEqual(after[key], before[key], `${id} ${key}`);
@@ -46,7 +47,7 @@ test("linked explanations use the same option letters and wording without assign
     if (entries.length) matched++;
     for (const e of entries) assert.deepEqual(e.options.map(([key, html]) => [key.toLowerCase(), matchText(sourceHTMLText(html))]), Object.entries(q.options).map(([key, text]) => [key, matchText(text)]), q.id);
   }
-  assert.equal(matched, audit.linkedCanonicalQuestions);
+  assert.equal(matched, audit.linkedCanonicalQuestions + gapImport.addedUniqueQuestions);
   assert.equal(suppliedExplanationsFor(questionById.get("upsc-2025-prelims-gs1-a-001")!)[0].id, "q-5369");
   assert.equal(suppliedExplanationsFor(questionById.get("culture-heritage-part-1-q-002")!)[0].id, "q-1394");
   assert.equal(explanationStatus(questionById.get("culture-heritage-part-1-q-002")!), "referenced");

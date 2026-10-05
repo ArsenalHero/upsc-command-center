@@ -69,7 +69,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const bytes = readFileSync(process.argv[2]), records = parseExplanationFile(bytes.toString("utf8"));
   if (records.length !== 8039) throw new Error(`Expected 8,039 source explanations, found ${records.length}.`);
   const bank = name => JSON.parse(readFileSync(new URL(`../src/data/${name}-bank.json`, import.meta.url), "utf8"));
-  const raw = ["pyq", "polity", "geography", "additional", "history-economy", "ancient-culture"].flatMap(bank);
+  const raw = ["pyq", "polity", "geography", "additional", "history-economy", "ancient-culture", "explanation-gap"].flatMap(bank);
   const groups = JSON.parse(readFileSync(new URL("../src/data/duplicate-groups.json", import.meta.url), "utf8"));
   const canonical = new Map(raw.map(q => [q.id, q.id]));
   for (const group of groups) for (const id of group.duplicateIds) canonical.set(id, group.canonicalId);
@@ -91,6 +91,17 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     if (JSON.stringify(Object.entries(primary.options).map(([key, value]) => [key, matchText(value)])) === JSON.stringify(Object.entries(options).map(([key, value]) => [key, matchText(value)]))) targets.add(canonicalId);
     for (const id of targets) (matches[id] ||= []).push(record.id);
     linkedSourceIds.add(record.id);
+  }
+  // Reviewed gap entries have reconstructed statement labels, so retain their explicit links.
+  // Still require the original option letters and wording before attaching an explanation.
+  const recordsById = new Map(records.map(record => [record.id, record]));
+  for (const q of raw.filter(q => q.id.startsWith("supplied-pyq-"))) {
+    for (const id of q.suppliedExplanationIds || []) {
+      const entry = recordsById.get(id);
+      if (!entry || JSON.stringify(entry.options.map(([key, html]) => [key.toLowerCase(), matchText(sourceHTMLText(html))])) !== JSON.stringify(Object.entries(q.options).map(([key, value]) => [key, matchText(value)]))) throw new Error(`Changed reviewed explanation choices: ${q.id}`);
+      if (!(matches[q.id] || []).includes(id)) (matches[q.id] ||= []).push(id);
+      linkedSourceIds.add(id);
+    }
   }
   const chunkSize = 1000;
   const displayRecords = records.map(record => ({ ...record, studySubject: studySubject(record), questionText: sourceHTMLText(record.question) }));
