@@ -431,8 +431,8 @@ try {
   assert.equal(current.w.document.querySelectorAll(".prelims-option-review").length,0);
   assert.equal(current.data().pyqs.at(-1).attempt.outcome,"ungraded"); assert.equal(current.data().pyqs.at(-1).attempt.seconds,11);
   await click("Finish practice"); await heading("Your paper report"); await click("Back to question bank");
-  await field("PYQ explanation quality",""); await field("PYQ subject","Economy"); await field("Search PYQs","ECO2 Current Account Deficit");
   await click("State PSC"); await field("PYQ state","Chhattisgarh"); await field("PYQ year","2017");
+  await field("PYQ explanation quality",""); await field("PYQ subject","Economy"); await field("Search PYQs","ECO2 Current Account Deficit");
   assert.equal(current.w.document.querySelector(".section-heading h2").textContent,"1 questions");
   await click("Practise filtered questions"); await heading("2017 · CGPSC · Economy MCQs");
   assert.equal(current.w.document.querySelectorAll('input[name="pyq-option"]').length,5);
