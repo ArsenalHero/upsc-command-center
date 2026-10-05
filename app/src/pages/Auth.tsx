@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   ArrowRight,
   BarChart3,
@@ -31,7 +31,10 @@ const descriptions = {
 };
 export default function AuthPage({ mode }: { mode: AuthMode }) {
   const auth = useAuth(),
-    navigate = useNavigate();
+    navigate = useNavigate(),
+    location = useLocation();
+  const requested = location.state?.returnTo;
+  const returnTo = typeof requested === "string" && /^\/tests\/[a-zA-Z0-9/-]+$/.test(requested) ? requested : "/";
   const [name, setName] = useState(""),
     [email, setEmail] = useState("");
   const [password, setPassword] = useState(""),
@@ -49,8 +52,8 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
   );
   useEffect(() => {
     if (auth.user && !auth.recovery && (mode === "login" || mode === "signup"))
-      navigate("/", { replace: true });
-  }, [auth.user, auth.recovery, mode, navigate]);
+      navigate(returnTo, { replace: true });
+  }, [auth.user, auth.recovery, mode, navigate, returnTo]);
   const needsPassword = mode !== "forgot",
     newPassword = mode === "signup" || mode === "reset";
   const validReset = !!auth.user && auth.recovery;

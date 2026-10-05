@@ -1,4 +1,4 @@
-name: Validate reviewed PYQ explanations
+name: Validate Prelims Mock Lab
 on:
   push:
     branches:
