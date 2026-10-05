@@ -180,7 +180,16 @@ function ActivityCalendar({activity}:{activity:{day:string;mocks:number;question
 
 function MockPreferences(){const api=useMockAPI();const [name,setName]=useState(''),[target,setTarget]=useState(75),[message,setMessage]=useState('');useEffect(()=>{let live=true;api<any>('identity').then(d=>{if(live&&d.profile){setName(d.profile.display_name);setTarget(d.profile.target_accuracy);}}).catch(()=>{});return()=>{live=false;};},[api]);return <details className="card"><summary>Display name and target accuracy</summary><p>Your display name appears on leaderboards. Target accuracy sets your personal revision threshold.</p><label>Display name<input aria-label="Mock profile display name" value={name} maxLength={30} onChange={e=>setName(e.target.value)}/></label><label>Target accuracy (%)<input type="number" min={1} max={100} value={target} onChange={e=>setTarget(Number(e.target.value))}/></label><button className="btn secondary" disabled={name.trim().length<2||target<1||target>100} onClick={async()=>{try{await api('profile',{displayName:name,targetAccuracy:target});setMessage('Preferences saved.');}catch(e){setMessage((e as Error).message);}}}>Save preferences</button><p role="status">{message}</p></details>;}
 
-function MockSyllabus({test}:{test:MockTest}){const [open,setOpen]=useState(false);return <><button className="btn secondary" onClick={()=>setOpen(true)}>View syllabus</button>{open&&<Modal title="Test syllabus" onClose={()=>setOpen(false)}><p className="eyebrow">{test.coaching} · {test.year}</p><h3>{test.name}</h3><p className="mock-syllabus-text">{test.syllabus||'Syllabus details have not been added for this mock.'}</p><p>{test.question_count} questions · {test.duration} minutes · {fmtMock(test.maximum)} marks</p><button className="btn primary" onClick={()=>setOpen(false)}>Close syllabus</button></Modal>}</>;}
+function MockSyllabus({test}:{test:MockTest}){
+ const [open,setOpen]=useState(false);
+ return <><button className="btn secondary" onClick={()=>setOpen(true)}>View syllabus</button>
+  {open&&<Modal title="Test syllabus" onClose={()=>setOpen(false)}>
+   <div className="modal-body mock-syllabus-body"><p className="eyebrow">{test.coaching} · {test.year}</p><h3>{test.name}</h3><p className="mock-syllabus-text">{test.syllabus||'Syllabus details have not been added for this mock.'}</p><p>{test.question_count} questions · {test.duration} minutes · {fmtMock(test.maximum)} marks</p></div>
+   <div className="modal-foot"><button className="btn secondary" onClick={()=>setOpen(false)}>Close syllabus</button></div>
+  </Modal>}
+ </>;
+}
+
 type RecallDocument={title:string;items:{number:number;title:string;text:string}[]};
 function MockRecallSheet({attempt}:{attempt:MockAttempt}){
  const api=useMockAPI(),[document,setDocument]=useState<RecallDocument|null>(null),[query,setQuery]=useState(''),[busy,setBusy]=useState(true),[error,setError]=useState('');

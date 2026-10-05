@@ -4,3 +4,5 @@
 .mock-calendar-wrap{overflow-x:auto;padding:10px 0}.mock-calendar{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,12px);grid-auto-columns:12px;gap:3px;width:max-content}.mock-calendar span{background:var(--track);border-radius:2px}.mock-calendar .has-activity{background:#2563eb}.mock-bookmark-test{margin-top:7px;font-size:12px}
 
 .mock-syllabus-text{white-space:pre-line;line-height:1.7}.mock-recall-sheet{display:grid;gap:18px}.mock-recall-toolbar{display:grid;gap:14px}.mock-recall-toolbar h3{margin:0}.mock-recall-entry{display:grid;gap:10px;border-left:3px solid #2563eb}.mock-recall-entry h4,.mock-recall-entry p{margin:0}.mock-recall-entry h4{font-size:17px;line-height:1.5}.mock-recall-toolbar [role=status]{color:var(--muted);font-size:13px}
+
+dialog.modal:has(.mock-syllabus-body){margin:auto;width:min(720px,calc(100vw - 32px))}.mock-syllabus-body{display:grid;gap:16px}.mock-syllabus-body p,.mock-syllabus-body h3{margin:0}
