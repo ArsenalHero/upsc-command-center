@@ -27,6 +27,7 @@ vc.on("jsdomError", (e) => {
 const apiCalls = [],
   workspaces = new Map();
 const failures = new Map();
+const rpcHolds = new Map();
 const alice = {
   id: "11111111-1111-1111-1111-111111111111",
   aud: "authenticated",
@@ -45,12 +46,12 @@ const bob = {
 const base64 = (object) =>
   Buffer.from(JSON.stringify(object)).toString("base64url");
 const tokenExpiry = Math.floor(Date.now() / 1000) + 3600;
-const token = (user) =>
+const token = (user, sessionId = user.id) =>
   base64({ alg: "HS256", typ: "JWT" }) +
   "." +
   base64({
     sub: user.id,
-    session_id: user.id,
+    session_id: sessionId,
     aud: "authenticated",
     role: "authenticated",
     exp: tokenExpiry,
@@ -61,6 +62,8 @@ const users = new Map([
   [token(bob), bob],
 ]);
 let signedIn = null;
+let activeSessionId = null, nextRefreshSessionId = null;
+const tokenSessions = new Map([[token(alice),alice.id],[token(bob),bob.id]]);
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
     status,
@@ -72,7 +75,7 @@ const json = (data, status = 200) =>
 const db=new PGlite();
 await prepareMockDatabase(db,[{id:alice.id,admin:true},{id:bob.id}]);
 let queryQueue=Promise.resolve();
-const rpc=(owner,op,p)=>{const run=queryQueue.catch(()=>{}).then(async()=>{await setMockUser(db,owner||null);return (await db.query("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p||{})])).rows[0].data;});queryQueue=run;return run;};
+const rpc=(owner,op,p,sessionId)=>{const run=queryQueue.catch(()=>{}).then(async()=>{await setMockUser(db,owner||null,sessionId ?? (owner===signedIn?.id?activeSessionId:owner) ?? null);return (await db.query("select public.mock_lab($1,$2::jsonb) data",[op,JSON.stringify(p||{})])).rows[0].data;});queryQueue=run;return run;};
 await rpc(alice.id,"verify-license",{licenseKey:fixtureLicense});
 await rpc(alice.id,"profile",{displayName:"Manager"});
 const coaching=await rpc(alice.id,"admin-coaching",{name:"FORUM IAS"});
@@ -100,7 +103,7 @@ const fakeFetch = async (input, options = {}) => {
       url: "https://test-project.supabase.co",
       publishableKey: "sb_publishable_example",
     });
-  if(url.pathname.endsWith("/rpc/mock_lab")){try{return json(await rpc(owner?.id,body.op,body.p));}catch(e){return json({message:e.message,code:e.code},400);}}
+  if(url.pathname.endsWith("/rpc/mock_lab")){try{if(rpcHolds.has(body.op))await rpcHolds.get(body.op);return json(await rpc(owner?.id,body.op,body.p,tokenSessions.get(bearer)));}catch(e){return json({message:e.message,code:e.code},400);}}
   if (url.pathname.endsWith("/signup"))
     return json({ user: { ...alice, email: body.email } });
   if (url.pathname.endsWith("/resend") || url.pathname.endsWith("/recover"))
@@ -114,16 +117,20 @@ const fakeFetch = async (input, options = {}) => {
       user: alice,
     });
   if (url.pathname.endsWith("/token")) {
-    if (body.password !== "correct-password")
+    const refreshing=!!body.refresh_token;
+    if (!refreshing && body.password !== "correct-password")
       return json(
         { code: "invalid_credentials", message: "Invalid login credentials" },
         400,
       );
-    signedIn = body.email === bob.email ? bob : alice;
-    const sessionRun=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("insert into auth.sessions(id,user_id) values($1,$1) on conflict(id) do nothing",[signedIn.id]);});
+    if(!refreshing)signedIn = body.email === bob.email ? bob : alice;
+    activeSessionId=refreshing?(nextRefreshSessionId||activeSessionId):signedIn.id;
+    nextRefreshSessionId=null;
+    const sessionRun=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("insert into auth.sessions(id,user_id) values($1,$2) on conflict(id) do nothing",[activeSessionId,signedIn.id]);});
     queryQueue=sessionRun;await sessionRun;
+    const accessToken=token(signedIn,activeSessionId);users.set(accessToken,signedIn);tokenSessions.set(accessToken,activeSessionId);
     return json({
-      access_token: token(signedIn),
+      access_token: accessToken,
       refresh_token: "refresh-" + signedIn.id,
       expires_in: 3600,
       token_type: "bearer",
@@ -137,9 +144,10 @@ const fakeFetch = async (input, options = {}) => {
     return json({ user: owner });
   }
   if (url.pathname.endsWith("/logout")) {
-    const run=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("delete from auth.sessions where id=$1",[owner.id]);});
+    const run=queryQueue.catch(()=>{}).then(async()=>{await db.exec("reset role");await db.query("delete from auth.sessions where id=$1",[tokenSessions.get(bearer)]);});
     queryQueue=run;await run;
     signedIn = null;
+    activeSessionId = null;
     return new Response(null, { status: 204 });
   }
   if (url.pathname.endsWith("/study_workspaces")) {
@@ -267,10 +275,22 @@ try{
  await until(()=>w.document.getElementById("mock-license-key")&&!w.document.getElementById("mock-license-key").disabled,"Direct test URL requires license");
  assert.ok(!apiCalls.some(c=>c.body.op==="catalog"||c.body.op==="detail"));
  capture("mock-license");
- fill("mock-license-key","incorrect-key");await new Promise(r=>setTimeout(r,30));submit();
+ const statusCalls=()=>apiCalls.filter(c=>c.body.op==="license-status").length;
+ const recheck=async()=>{const before=statusCalls();w.dispatchEvent(new w.Event("focus"));await until(()=>statusCalls()>before,"Background access recheck");await queryQueue.catch(()=>{});await new Promise(r=>setTimeout(r,30));};
+ const licenseInput=w.document.getElementById("mock-license-key");
+ fill("mock-license-key","incorrect-key");await new Promise(r=>setTimeout(r,30));await recheck();
+ assert.equal(w.document.getElementById("mock-license-key"),licenseInput,"Tab focus retains the license input");
+ assert.equal(licenseInput.value,"incorrect-key","Tab focus retains the entered key");
+ submit();
  await until(()=>w.document.body.textContent.includes("Invalid license key. Please enter a valid license key."),"Wrong license retry");
  assert.ok(!w.document.body.textContent.includes("UI validation mock"));
+ let releaseVerification;rpcHolds.set("verify-license",new Promise(resolve=>{releaseVerification=resolve;}));
  fill("mock-license-key",fixtureLicense);await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.body.textContent.includes("Verifying…"),"Verification pending");
+ const pendingChecks=statusCalls();w.dispatchEvent(new w.Event("focus"));await new Promise(r=>setTimeout(r,30));
+ assert.equal(statusCalls(),pendingChecks,"Focus does not cancel an in-flight verification");
+ assert.ok(w.document.getElementById("mock-license-key").disabled);
+ releaseVerification();rpcHolds.delete("verify-license");
  await until(()=>w.document.querySelector('[aria-label="Leaderboard display name"]'),"License verification returns to selected test");
  const name=w.document.querySelector('[aria-label="Leaderboard display name"]');Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(name,"BrowserLearner");name.dispatchEvent(new w.Event("input",{bubbles:true}));await new Promise(r=>setTimeout(r,30));click("Start test");
  await until(()=>w.document.body.textContent.includes("Which Alpha choice"),"Test starts");
@@ -278,7 +298,37 @@ try{
  assert.ok(!w.document.body.textContent.includes("Verified explanation"));
  assert.ok(w.document.querySelector('progress[aria-label="Answer progress"]'));assert.ok(w.document.querySelector('[aria-label="Question states"]'));
  const choose=text=>{const value=text==='One'?'a':'b';const input=w.document.querySelector(`input[value="${value}"]`);assert.ok(input);input.click();};
- choose("One");await new Promise(r=>setTimeout(r,40));click("Save & Next");await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Save and next");choose("Two");await new Promise(r=>setTimeout(r,40));click("Mark for review");await new Promise(r=>setTimeout(r,30));click("Save & exit");await until(()=>w.document.body.textContent.includes("My Tests"),"Save and exit");
+ choose("One");await new Promise(r=>setTimeout(r,40));await queryQueue;
+ const questionCard=w.document.querySelector(".mock-question"),attemptLoads=apiCalls.filter(c=>c.body.op==="attempt").length;
+ await recheck();assert.equal(w.document.querySelector(".mock-question"),questionCard,"Focus keeps the active exam mounted");
+ assert.equal(apiCalls.filter(c=>c.body.op==="attempt").length,attemptLoads,"Focus does not reload the exam");
+ assert.ok(w.document.querySelector('input[value="a"]').checked);
+ failures.set("/rest/v1/rpc/mock_lab",[{body:{message:"Connection temporarily unavailable",code:"test_connection_failure"},status:400}]);
+ await recheck();assert.equal(w.document.querySelector(".mock-question"),questionCard,"A failed background check keeps the exam and selected answer");
+ assert.ok(w.document.querySelector('input[value="a"]').checked);
+ // Exercise token renewal through the real SDK's tab-visibility listener.
+ const renewSession=async(nextId)=>{
+  const storageKey="upsc-auth-session", session=JSON.parse(w.localStorage.getItem(storageKey));
+  assert.ok(session);session.expires_at=Math.floor(Date.now()/1000)+10;
+  w.localStorage.setItem(storageKey,JSON.stringify(session));nextRefreshSessionId=nextId||null;
+  const refreshes=()=>apiCalls.filter(c=>c.path.endsWith("/token")&&c.body.refresh_token).length, before=refreshes();
+  w.document.dispatchEvent(new w.Event("visibilitychange"));
+  await until(()=>refreshes()>before,"Actual SDK refresh event");
+  await queryQueue;await new Promise(r=>setTimeout(r,80));
+ };
+ await renewSession();assert.equal(w.document.querySelector(".mock-question"),questionCard,"Token refresh in the same session keeps the exam mounted");
+ const freshSession="44444444-4444-4444-8444-444444444444";
+ await renewSession(freshSession);await heading("Verify your license key");assert.ok(!w.document.querySelector(".mock-exam"),"Same user with a new Auth session must verify again");
+ fill("mock-license-key",fixtureLicense);await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.body.textContent.includes("Which Alpha choice"),"New session resumes only after server verification");
+ assert.ok(w.document.querySelector('input[value="a"]').checked);
+ // A server denial still removes the exam and demands real re-verification.
+ await queryQueue;await db.exec("reset role");await db.query("delete from mock_private.license_grants where user_id=$1",[bob.id]);
+ await recheck();await heading("Verify your license key");assert.ok(!w.document.querySelector(".mock-exam"));
+ fill("mock-license-key",fixtureLicense);await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.body.textContent.includes("Which Alpha choice"),"Authorized exam resumes after grant restoration");
+ assert.ok(w.document.querySelector('input[value="a"]').checked,"Saved answer survives license re-verification");
+ click("Save & Next");await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Save and next");choose("Two");await new Promise(r=>setTimeout(r,40));click("Mark for review");await new Promise(r=>setTimeout(r,30));click("Save & exit");await until(()=>w.document.body.textContent.includes("My Tests"),"Save and exit");
  const history=await rpc(bob.id,"history",{});const attemptId=history[0].id;w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Resume question");click("Submit test");await until(()=>w.document.body.textContent.includes("Confirm submission"),"Submission confirmation");click("Confirm submission");await until(()=>w.document.body.textContent.includes("UI validation mock · Result"),"Submitted report");const result=await rpc(bob.id,"attempt",{attemptId});assert.equal(result.result.score,1.5);assert.equal(result.result.incorrect,1);click("Questions");await until(()=>w.document.body.textContent.includes("Verified explanation appears only after submission."),"Post-submission explanations");
  click("Recall Sheet");await until(()=>w.document.body.textContent.includes("Fundamental Rights limit government power."),"Protected text recall sheet");assert.equal(w.document.querySelectorAll(".mock-recall-entry").length,3);assert.ok(!w.document.querySelector("iframe"));assert.ok(!w.document.body.textContent.includes("Download PDF"));assert.ok(apiCalls.some(c=>c.body.op==="report-document"));
  const recallSearch=w.document.querySelector('[aria-label="Search recall sheet"]');Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"Q2");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===1,"Search recall entries by number");assert.ok(w.document.querySelector(".mock-recall-entry").textContent.includes("Q2. Preamble"));Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype,"value").set.call(recallSearch,"");recallSearch.dispatchEvent(new w.Event("input",{bubbles:true}));await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===3,"Restore full recall sheet");
@@ -302,5 +352,5 @@ try{
  await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"New sign-in requires fresh license");
  assert.ok(!w.document.querySelector(".mock-exam"));w.location.hash="/tests";await heading("Test series");
  await until(()=>w.document.querySelector("table")?.textContent.includes("Existing manual result"),"Manual history remains available without mock license");
- assert.deepEqual(messages,[]);console.log("Mock UI checks passed: manual Add Log preserved, signed-in license gate, wrong-key retry, direct-URL protection, private exam, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
+ assert.deepEqual(messages,[]);console.log("Mock UI checks passed: manual Add Log preserved, signed-in license gate, wrong-key retry, direct-URL protection, license input and exam preserved on focus, pending verification, temporary connection failure, token renewal, new-session verification, server revocation, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
 }finally{dom.window.close();await queryQueue.catch(()=>{});await db.close();}
