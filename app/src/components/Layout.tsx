@@ -257,8 +257,8 @@ export default function Layout() {
           <BarChart3 size={23} />
         </span>
         <div>
-          <strong>UPSC</strong>
-          <small>COMMAND CENTER</small>
+          <strong>Golden Gate</strong>
+          <small>UPSC PREPARATION</small>
         </div>
       </div>
       <button type="button" className="workspace-label" aria-label="Choose personal workspace exam" onClick={() => { setDrawer(false); setExamDialog(true); }}>
@@ -452,7 +452,7 @@ export default function Layout() {
           <Outlet />
         </main>
         <footer className="app-footer">
-          <span>UPSC Command Center</span>
+          <span>Golden Gate</span>
           <span>
             Your data. Your preparation. <Database size={12} />{" "}
             {sync.cloud
@@ -545,3 +545,4 @@ export default function Layout() {
     </div>
   );
 }
+

@@ -123,7 +123,7 @@ export default function MockAccess({ children }: { children: ReactNode }) {
       <Link className="mock-back-link" to="/tests"><ArrowLeft size={16} />Back to Tests</Link>
       <div className="card mock-access-card">
         <div className="mock-access-icon"><LockKeyhole size={27} aria-hidden="true" /></div>
-        <span className="eyebrow">MOCK TEST ACCESS</span>
+        <span className="eyebrow">GOLDEN GATE · MOCK TEST ACCESS</span>
         <h1 id="mock-access-title">Verify your license key</h1>
         <p className="muted">One quick check before you begin. Your mock attempts and reports stay in your own account.</p>
         <div className="mock-access-steps" aria-label="Access steps">
@@ -146,3 +146,4 @@ export default function MockAccess({ children }: { children: ReactNode }) {
     </section>
   );
 }
+

@@ -927,7 +927,7 @@ export function Tests() {
       />
       <div className="button-group manual-test-actions" aria-label="Test actions">
         <AddButton collection="tests" label="Add Log" />
-        <button className="btn secondary" onClick={() => {
+        <button className="btn mock-test-trigger" onClick={() => {
           const returnTo = "/tests/prelims/discover";
           navigate(auth.user ? returnTo : "/login", auth.user ? undefined : {
             state: { returnTo, mockAccessRequired: true },
@@ -1006,3 +1006,4 @@ export function Tests() {
     </>
   );
 }
+

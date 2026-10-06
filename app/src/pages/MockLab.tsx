@@ -21,7 +21,7 @@ export default function MockLab(){
  const child=tail[1],attemptId=tail[2];
  if(child==="attempt"&&attemptId)return auth.user?<MockExam key={attemptId} id={attemptId}/>:<SignIn/>;
  const privateView=["my-tests","reports","mistakes","bookmarks","leaderboards","admin"].includes(view)||child==="result"||child==="leaderboard";
- return <div className="mock-lab"><PageHeader eyebrow="PLAN. PRACTICE. ANALYSE. IMPROVE." title="Prelims Mock Test Lab" description="GS Paper I and CSAT Paper II · Timed mocks, participant rankings and a clearer plan for your next revision."/>
+ return <div className="mock-lab"><PageHeader eyebrow="PRELIMS MOCK TESTS" title="Golden Gate" description="GS Paper I and CSAT Paper II · Timed mocks, participant rankings and a clearer plan for your next revision."/>
  <nav className="mock-nav" aria-label="Mock test sections">{nav.map(([path,title])=><Link key={path} aria-current={view===path?'page':undefined} to={`${root}/${path}`}>{title}</Link>)}{identity.admin&&<Link to={`${root}/admin`}>Manage Tests</Link>}</nav>
  {!auth.user&&<p className="mock-browse-note">Browse the catalogue freely. <Link to="/login">Sign in</Link> when you are ready to attempt a mock.</p>}
  {privateView&&!auth.user?<SignIn/>:child==="result"&&attemptId?<MockReport key={attemptId} id={attemptId} target={identity.profile?.target_accuracy||75}/>:child==="leaderboard"?<MockLeaderboard testId={view}/>:view==="admin"?<MockAdmin allowed={identity.admin}/>:view==="my-tests"||view==="reports"?<MockHistoryPage reports={view==="reports"}/>:view==="mistakes"||view==="bookmarks"?<MockNotebook bookmarks={view==="bookmarks"}/>:view==="leaderboards"?<LeaderboardDirectory/>:/^[0-9a-f-]{36}$/.test(view)?<MockDetails id={view} profile={identity.profile} onProfile={()=>api<typeof identity>("identity").then(setIdentity)}/>:<MockCatalogue view={view}/>}
@@ -47,7 +47,7 @@ function MockCatalogue({view}:{view:string}){
  <DemoPreview/>
  </>;
 }
-function BookEmblem(){return <><span>GS I</span><span>CSAT</span><small>PRELIMS MOCK LAB</small></>;}
+function BookEmblem(){return <><span>GS I</span><span>CSAT</span><small>GOLDEN GATE</small></>;}
 function MockCard({test:t,user}:{test:MockTest;user:boolean}){return <article className="card mock-test-card"><div className="mock-card-top"><span className="mock-paper">{t.paper}</span><span>{t.year} · {t.status}</span></div><p className="eyebrow">{t.coaching} · {t.series}</p><h3>{t.name}</h3><p>{t.subjects.join(" · ")}</p><div className="mock-card-stats"><span><strong>{t.question_count}</strong>Questions</span><span><strong>{fmtMock(t.maximum)}</strong>Marks</span><span><strong>{t.duration}m</strong>Duration</span></div><p className="muted small">{t.kind} · {t.difficulty} · {t.participants} eligible submissions</p><div className="button-group"><MockSyllabus test={t}/><Link className="btn primary" to={`${root}/${t.id}`}>{user?"Start / view details":"View details"}<ArrowRight size={15}/></Link><Link className="btn secondary" to={`${root}/${t.id}/leaderboard`}>Leaderboard</Link></div></article>;}
 function DemoPreview(){const [open,setOpen]=useState(false);return <section className="card mock-demo"><strong>Explore how a report looks</strong><p>Fictional preview data. No demo participant enters a real leaderboard.</p><button className="btn secondary" onClick={()=>setOpen(!open)}>{open?"Close preview":"View demo report"}</button>{open&&<div><p className="mock-demo-label">DEMO DATA · FICTIONAL PREVIEW</p><div className="stats-grid four"><DashboardCard title="Demo score" value="108 / 200"/><DashboardCard title="Demo accuracy" value="72%"/><DashboardCard title="Demo percentile" value="84.2"/><DashboardCard title="Demo rank" value="159 / 1,000"/></div><MockChart title="Demo subject accuracy" help="Fictional values illustrate the subject analysis layout; they are not participant results." rows={[{name:'Polity',value:80},{name:'Geography',value:65},{name:'Environment',value:59}]}/></div>}</section>;}
 function MockDetails({id,profile,onProfile}:{id:string;profile?:{display_name:string};onProfile:()=>void}){
@@ -206,3 +206,4 @@ function MockRecallSheet({attempt}:{attempt:MockAttempt}){
   {!busy&&document&&!items.length&&<p className="card">No recall entries match your search.</p>}
  </section>;
 }
+
