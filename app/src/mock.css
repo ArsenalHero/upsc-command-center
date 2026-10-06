@@ -215,7 +215,7 @@ dialog.modal:has(.mock-syllabus-body){margin:auto;width:min(720px,calc(100vw - 3
 .mock-lab .mock-leaderboard-tools select{height:44px;min-height:44px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:9px;font-size:12px;font-weight:400;color:var(--text)}
 .mock-participant-search{display:flex;flex-direction:row;align-items:center;gap:10px;min-width:0;height:44px;padding:0 12px;background:var(--surface);border:1px solid var(--border);border-radius:9px;color:var(--muted)}
 .mock-participant-search>svg{flex:0 0 16px}
-.mock-lab .mock-participant-search input{flex:1 1 0;width:0;min-width:0;height:42px;min-height:42px;background:transparent;border:0;border-radius:8px;padding:10px 0;font-size:12px;font-weight:400;box-shadow:none;color:var(--text)}
+.mock-lab .mock-leaderboard-tools .mock-participant-search input{flex:1 1 0;width:0;min-width:0;height:42px;min-height:42px;background:transparent;border:0;border-radius:8px;padding:10px 0;font-size:12px;font-weight:400;box-shadow:none;color:var(--text)}
 .mock-participant-search input::placeholder{color:var(--muted);opacity:1}
 .mock-participant-search:focus-within{outline:2px solid var(--primary-soft);outline-offset:2px;border-color:var(--primary)}
 .mock-lab .mock-participant-search input:focus-visible{outline:none}
