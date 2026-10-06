@@ -55,7 +55,6 @@ import {
   TestPerformance,
   AccuracyChart,
 } from "../charts";
-import { MockDashboard } from "./MockLab";
 export default function Dashboard() {
   const { data, setEditor, loadDemo } = useData();
   const [filters, setFilters] = useState(emptyFilters),
@@ -109,7 +108,6 @@ export default function Dashboard() {
         }
       />
       <ExamCountdowns settings={data.settings} />
-      <MockDashboard />
       <div className="dashboard-control">
         <div className="view-tabs">
           <span className="selected">Overview</span>
