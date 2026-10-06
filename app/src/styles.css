@@ -4547,10 +4547,3 @@ small,
 .supplied-options > li { display:flex; align-items:baseline; gap:12px; }
 .supplied-options .prelims-supplied-html p { margin:0; }
 .supplied-explanation-pages { justify-content:center; margin:20px 0; flex-wrap:wrap; }
-
-/* Dedicated Mock Test action. */
-.btn.mock-test-trigger{background:#f97316;border-color:#f97316;color:#142033;font-weight:700;min-height:44px;padding:11px 19px;box-shadow:0 4px 12px #f9731626;transition:background .16s,box-shadow .16s}
-.btn.mock-test-trigger:hover{background:#fb8a36;border-color:#fb8a36;filter:none;box-shadow:0 5px 16px #f9731630}
-.btn.mock-test-trigger:active{background:#f3650c;border-color:#f3650c;box-shadow:none}
-.btn.mock-test-trigger:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){.btn.mock-test-trigger{transition:none}}
