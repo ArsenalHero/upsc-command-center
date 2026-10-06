@@ -1,4 +1,6 @@
 import paperData from "../data/cse-paper-archive.json";
+import textData from "../data/cse-text-papers-bank.json";
+import type { PYQQuestion } from "./pyq";
 
 export interface ArchivedPaper {
   id: string; year: number; paper: "gs" | "csat"; title: string; booklet: string;
@@ -8,6 +10,8 @@ export interface ArchivedPaper {
   answers: string[]; droppedQuestions: number[];
 }
 export const archivedPapers = paperData as ArchivedPaper[];
+export const archivedTextPapers = textData as unknown as Record<string, PYQQuestion[]>;
+export const archivedPaperQuestions = (paper: ArchivedPaper) => archivedTextPapers[paper.id] || [];
 
 export interface PaperAttempt {
   id: string; paperId: string; booklet: string; keySha256: string;

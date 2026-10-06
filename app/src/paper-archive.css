@@ -32,6 +32,9 @@
 .paper-time span, .paper-time small { color: var(--muted); font-size: .72rem; }
 .paper-time strong { font-size: 1.65rem; font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
 .paper-reader-layout { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(285px, 1fr); gap: 1rem; align-items: start; }
+.paper-text-question { min-width: 0; }
+.paper-text-question .prelims-text { overflow-wrap: anywhere; }
+.paper-study-note > .prelims-text { margin-top: 1rem; }
 .paper-pdf { padding: 1rem; min-width: 0; }
 .paper-pdf-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; font-size: .76rem; padding: .2rem 0 .8rem; }
 .paper-pdf-bar span { color: var(--muted); }
