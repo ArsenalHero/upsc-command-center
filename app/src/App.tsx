@@ -96,7 +96,7 @@ function BootRouter() {
   if (loading)
     return (
       <div className="page-loading" role="status">
-        Opening Golden Gate…
+        Opening UPSC Command Center…
       </div>
     );
   // Auth callbacks can use the URL fragment. Mount the hash router only after
@@ -167,4 +167,3 @@ function WorkspaceRouter() {
     </WorkspaceProvider>
   );
 }
-

@@ -4548,11 +4548,7 @@ small,
 .supplied-options .prelims-supplied-html p { margin:0; }
 .supplied-explanation-pages { justify-content:center; margin:20px 0; flex-wrap:wrap; }
 
-/* Golden Gate identity and the dedicated Mock Test action. */
-.brand strong,.auth-page .auth-brand strong{display:block;letter-spacing:-.035em;white-space:nowrap;font-weight:750}
-.brand strong{font-size:18px;line-height:1.25}
-.brand small,.auth-page .auth-brand small{font-size:10px;letter-spacing:.14em;line-height:1.6}
-.brand-icon,.auth-page .auth-brand-icon{background:#172b49;box-shadow:0 3px 10px #172b4914}
+/* Dedicated Mock Test action. */
 .btn.mock-test-trigger{background:#f97316;border-color:#f97316;color:#142033;font-weight:700;min-height:44px;padding:11px 19px;box-shadow:0 4px 12px #f9731626;transition:background .16s,box-shadow .16s}
 .btn.mock-test-trigger:hover{background:#fb8a36;border-color:#fb8a36;filter:none;box-shadow:0 5px 16px #f9731630}
 .btn.mock-test-trigger:active{background:#f3650c;border-color:#f3650c;box-shadow:none}

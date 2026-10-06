@@ -96,7 +96,7 @@ export default function Dashboard() {
     <>
       <PageHeader
         eyebrow="YOUR PREPARATION, AT A GLANCE"
-        title={selectedExam(data.settings) === "State PSC" ? "STATE PSC PREPARATION WORKSPACE" : "Golden Gate"}
+        title={selectedExam(data.settings) === "State PSC" ? "STATE PSC PREPARATION WORKSPACE" : "UPSC PREPARATION COMMAND CENTER"}
         description={`${prettyDate(today, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · Target ${workspaceExamLabel(data.settings)}`}
         action={
           <button
@@ -404,4 +404,3 @@ export default function Dashboard() {
     </>
   );
 }
-

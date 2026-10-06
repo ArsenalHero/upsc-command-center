@@ -139,14 +139,14 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
   }
   return (
     <main className="auth-page">
-      <section className="auth-story" aria-label="Golden Gate">
+      <section className="auth-story" aria-label="UPSC Command Center">
         <Link to="/login" state={authFlowState} className="auth-brand">
           <span className="auth-brand-icon">
             <BarChart3 size={25} />
           </span>
           <span>
-            <strong>Golden Gate</strong>
-            <small>UPSC PREPARATION</small>
+            <strong>UPSC</strong>
+            <small>COMMAND CENTER</small>
           </span>
         </Link>
         <div className="auth-story-content">
@@ -434,10 +434,9 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           )}
         </div>
         <p className="auth-form-footer">
-          Golden Gate · Your data. Your preparation.
+          UPSC Command Center · Your data. Your preparation.
         </p>
       </section>
     </main>
   );
 }
-
