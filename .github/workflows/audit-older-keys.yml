@@ -1,0 +1,22 @@
+name: Audit historical UPSC keys
+on:
+  push:
+    branches: [codex/2012-2020-paper-import]
+    paths: ['app/scripts/audit-older-keys.py', '.github/workflows/audit-older-keys.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y tesseract-ocr
+      - run: pip install pymupdf
+      - run: python app/scripts/audit-older-keys.py
+      - name: Checkpoint key audit
+        run: |
+          git config user.name "ArsenalHero"
+          git config user.email "315202046+ArsenalHero@users.noreply.github.com"
+          git add app/scripts/data/older-key-audit
+          git commit -m "Checkpoint visual and OCR audit of UPSC historical final keys"
+          git push origin HEAD:codex/2012-2020-paper-import
