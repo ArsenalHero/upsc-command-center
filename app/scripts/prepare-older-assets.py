@@ -22,7 +22,9 @@ maps={2012:{48:31,49:31,50:32,51:33,52:33,53:34},2013:{17:7,18:8,19:8,20:9,21:10
 for y in [2012,2013,2014,2016]:
     suffix={2012:'2012-UPSC-CSAT-PAper-2-Solved-English1.pdf',2013:'2013-UPSC-CSAT-Paper-2-Solved-English1.pdf',2014:'2014-UPSC-CSAT-Paper-2-Solved-English1.pdf',2016:None}[y]
     url='https://iasbaba.com/wp-content/uploads/2015/05/'+suffix if suffix else 'https://www.ungist.com/uploads/pdfs/UPSC_CSAT_2016_Question_Paper_with_Answer_Key.pdf'
-    doc=fitz.open(stream=download(url),filetype='pdf')
+    pdfpath=cache/f'csat-{y}.pdf'
+    if not pdfpath.exists(): pdfpath.write_bytes(download(url))
+    doc=fitz.open(pdfpath)
     texts=[]
     for pg in doc:
         if y==2016:
@@ -31,14 +33,18 @@ for y in [2012,2013,2014,2016]:
         texts.append(text)
     (cache/f'csat-{y}.txt').write_text('\n'.join(texts))
     for n,idx in maps.get(y,{}).items():
-        page=doc[idx]; candidates=[l for l in lines(page) if re.match(r'^'+str(n)+r'\.\s',l['text'].strip())]
+        page=doc[idx]; candidates=[l for l in lines(page) if re.match(r'^'+str(n)+r'\.(?:\s|$)',l['text'].strip())]
+        if not candidates:
+            for j in range(max(0,idx-1),min(len(doc),idx+2)):
+                candidates=[l for l in lines(doc[j]) if re.match(r'^'+str(n)+r'\.(?:\s|$)',l['text'].strip())]
+                if candidates: idx=j;page=doc[j];break
         assert candidates,(y,n,idx)
         top=candidates[0]['bbox'][1]-3
         if y==2012 and n==51: top=60
         pieces=[]
         for j in range(idx,min(idx+3,len(doc))):
             page=doc[j]; start=top if j==idx else 65
-            stops=[l['bbox'][1]-3 for l in lines(page) if l['bbox'][1]>start+3 and (re.match(r'^Solution\s*:',l['text'].strip(),re.I) or re.match(r'^'+str(n+1)+r'\.\s',l['text'].strip()))]
+            stops=[l['bbox'][1]-3 for l in lines(page) if l['bbox'][1]>start+3 and (re.match(r'^Solution\s*:',l['text'].strip(),re.I) or re.match(r'^'+str(n+1)+r'\.(?:\s|$)',l['text'].strip()))]
             bottom=min(stops) if stops else page.rect.height-55
             pix=page.get_pixmap(matrix=fitz.Matrix(2,2),clip=fitz.Rect(65,start,page.rect.width-55,bottom))
             pieces.append(pix.tobytes('png'))

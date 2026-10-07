@@ -29,7 +29,7 @@
 29|Random monthly selection need not rotate hosts or exclude earlier winners. A member could be selected several times or not at all, so the exact number cannot be predicted. One is an expected average, not a guaranteed outcome.
 30|The intended pattern is a monthly budget of ₹2,400: 40×60=50×48=60×40. At ₹80 per litre, that budget buys 30 litres, A. The displayed 75×30 entry is inconsistent with constant spending; retain the official answer while noting the imperfect data pattern.
 31|Continue the cyclic arrangement of the symbols and their orientations from the problem figures; figure A completes the pattern. Compare the whole configuration with the preceding figures rather than selecting a shape solely because it resembles the last one.
-32|Apply the column-wise numerical relationship in the displayed matrix consistently across its completed entries; the missing value is five, A. The matrix is supplied with the question so the calculation can be checked against each completed column.
+32|Each bottom entry equals n(n−1), where n is the entry above it: 3×2=6, 8×7=56, 10×9=90, 2×1=2 and 1×0=0. Thus n(n−1)=20 gives n=5 among the choices. A fits every column.
 33|Consecutive differences are 6,8,10,12: 7,13,21,31,43. The missing term is 13. The pattern increases the difference by two each time, rather than multiplying every term by a fixed factor.
 34|The four supplied pieces can be assembled into figure D with their outlines matching and without overlap or unused area. Check the external boundary and internal joins together; a similar-looking silhouette that cannot use all four pieces fails.
 35|Eight half-credit answers equal four full-question marks. If that is 40% of the test total n, then 4/n=0.40, so n=10. The attempted count is different from the total question count.
@@ -76,5 +76,5 @@
 76|Reports of sightings, possible extraterrestrial life and actual space travel do not identify what UFOs are or where they originate. D is the only warranted conclusion. Possibility and a claim of observation are not proof of origin or intelligence.
 77|ABCABC=1000×ABC+ABC=1001×ABC. Dividing by nonzero ABC gives DEED=1001. Therefore D=1 and E=0, C. The repeated three-digit block determines the multiplier directly.
 78|The graph places the 1990 price within the ₹10–₹20 interval without fixing an exact interpolated value. C is the intended reading. Do not invent exact precision beyond the plotted information.
-79|Charts of expenditure proportions do not reveal the families' total budgets. Amount spent on food equals food share times total spending, so absolute food expenditures cannot be compared from proportions alone. The valid conclusion is the inability to compare, D.
+79|The charts include total spending: A spends 50% of ₹20,000=₹10,000 on food; B spends 10% of ₹1,00,000=₹10,000. The amounts are equal, C. Compare percentages multiplied by their own totals, rather than percentages alone.
 80|The speed order is Usha > Kamala > Swati > Priti. Priti is slowest, B. Convert each comparison to one chain before choosing the endpoint.
