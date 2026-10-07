@@ -1,0 +1,31 @@
+name: Validate historical paper import
+on:
+  push:
+    branches: [codex/2012-2020-paper-import]
+permissions:
+  contents: read
+concurrency:
+  group: older-paper-import
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Check recovered source checkpoint
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs'; import zlib from 'node:zlib'; import assert from 'node:assert/strict';
+          const p=JSON.parse(zlib.gunzipSync(fs.readFileSync('app/scripts/data/cse-older-import.checkpoint.json.gz')));
+          assert.equal(Object.keys(p.keys).length,18);
+          for(let y=2012;y<=2020;y++){assert.equal(p.gs[y].length,100);assert.equal(p.csat[y].length,80);}
+          assert.equal(p.keys['csat-2014'].answers.filter(a=>a==='E').length,6);
+          console.log('Recovered all 18 papers and UPSC final-key tables.');
+          NODE
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
