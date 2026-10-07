@@ -1,0 +1,21 @@
+name: Prepare historical paper figures
+on:
+  push:
+    branches: [codex/2012-2020-paper-import]
+    paths: ['app/scripts/prepare-older-assets.py', '.github/workflows/prepare-older-assets.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pymupdf pillow
+      - run: python app/scripts/prepare-older-assets.py
+      - name: Checkpoint source figures and native text
+        run: |
+          git config user.name "ArsenalHero"
+          git config user.email "315202046+ArsenalHero@users.noreply.github.com"
+          git add app/public/paper-figures app/scripts/data/older-source-text app/scripts/data/older-key-audit/*.jpg
+          git commit -m "Preserve source figures, tables and audit-sized official keys"
+          git push origin HEAD:codex/2012-2020-paper-import
