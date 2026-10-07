@@ -74,7 +74,19 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=8) as e:list(e.map(webass
 keysdir=root/'scripts/data/older-key-audit'
 for path in keysdir.glob('*.png'):
     im=Image.open(path).convert('RGB');im.thumbnail((1800,2300));im.save(path.with_suffix('.jpg'),quality=92)
-# Record images before adding original-paper fallbacks.
+# Recover figures omitted or inaccessible in the web reprint from the original
+# 2018 Series A paper. Coordinates are measured on a 952-pixel-wide page.
+original=cache/'csat-2018-original.pdf'
+if not original.exists(): original.write_bytes(download('https://forumias.com/blog/wp-content/uploads/2021/01/csat-2018-question-paper.pdf'))
+assert hashlib.sha256(original.read_bytes()).hexdigest()=='538d51e886e3244b6c12f70821d8e1f584cac3bbc266cf9cc369c018628e92cb'
+doc=fitz.open(original)
+for label,idx,coords,ns in [('steel',6,(495,285,927,576),[11,12,13]),('cube',8,(60,280,425,395),[14,15,16]),('q62-original',30,(155,830,395,943),[62]),('q66-options',32,(545,700,765,1168),[66]),('q70-options',34,(565,936,934,1178),[70]),('q71-original',36,(50,265,460,865),[71])]:
+    page=doc[idx]; scale=page.rect.width/952
+    pix=page.get_pixmap(matrix=fitz.Matrix(2.5,2.5),clip=fitz.Rect(*(v*scale for v in coords)))
+    name=f'csat-2018-{label}.jpg';Image.frombytes('RGB',[pix.width,pix.height],pix.samples).save(out/name,quality=92)
+    for n in ns:manifest[f'2018-{n}']=(manifest.get(f'2018-{n}',[]) if 'options' in label else [])+[name]
+manifest['2018-64']=manifest['2018-63']
+doc.close()
 (out/'older-figures.json').write_text(json.dumps(manifest,indent=2))
 print('FIGURES',json.dumps(manifest))
 print('SOURCE_TEXT',json.dumps({str(y):len((cache/f'csat-{y}.txt').read_text()) for y in [2012,2013,2014,2016]}))

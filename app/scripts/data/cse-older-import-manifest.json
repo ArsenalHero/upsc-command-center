@@ -1,0 +1,472 @@
+{
+  "verifiedOn": "2026-10-07",
+  "addedPapers": 18,
+  "addedQuestions": 1620,
+  "archivePapers": 26,
+  "archiveQuestions": 2340,
+  "sourceFiles": [
+    {
+      "file": "gs-2012-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/csp2012_p1_ans_keys.pdf",
+      "sha256": "e0e3661bcacdd62c76bbe10c23edb2cceab646d094bbd48dee7070a09e066569"
+    },
+    {
+      "file": "csat-2012-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/csp2012_p2_ans_keys.pdf",
+      "sha256": "172f5dacff9ac8e48682ce237f028e697d632d13eb1a94b99c405c7b245c5dbd"
+    },
+    {
+      "file": "gs-2012-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2012_paper_1_solution.pdf",
+      "sha256": "8146a5dce2264aafd04b39f859131f9ea2b5ef3de7057fac1190bd1a736adc77"
+    },
+    {
+      "file": "csat-2012-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/03/CSAT-2012-II.pdf",
+      "sha256": "54c7839298af46f8e8ee042abfa8d46faa04567803476645a6a8c8eeab396e17"
+    },
+    {
+      "file": "gs-2013-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/CSP_2013_KEYS-1-1.pdf",
+      "sha256": "582f5f77999dfe02944278f21c32816491f630099d419cb8ac543e1c882caba1"
+    },
+    {
+      "file": "csat-2013-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/CSP_2013_KEYS-2-pdf-1.pdf",
+      "sha256": "efab8ae611f965e3392ad27a312fe40e6c2a1605b064c5957f1ce5b9f7289ae0"
+    },
+    {
+      "file": "gs-2013-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2013_paper_1_sol.pdf",
+      "sha256": "6bff039d492287726e104ea28bda78d5c6c8b1d9212265195666b927afd6a63c"
+    },
+    {
+      "file": "csat-2013-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/03/CSAT2013-download-pdf.pdf",
+      "sha256": "12f91d72372523888a7168e32225f9a4f2fc5bd925530ba3fdd10c018e5f7bc1"
+    },
+    {
+      "file": "gs-2014-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/AnsKeyCSP-14-GS_Ipdf.pdf",
+      "sha256": "2c4a77531961fd5798fa9df743d2d54a65e7ca4dfb9b930a73e15c1873500eeb"
+    },
+    {
+      "file": "csat-2014-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/AnsKeyCSP-14-GS_II-pdf.pdf",
+      "sha256": "a2ae86a4afbe3d17b6566117b5f181daad5e9174e1b342401b15cb919886960b"
+    },
+    {
+      "file": "gs-2014-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2014_paper_1_sol.pdf",
+      "sha256": "ca65456ef36e90996f4facf1708ec449e39cae22525ee93876889af036f02fae"
+    },
+    {
+      "file": "csat-2014-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/CSAT-2014.pdf",
+      "sha256": "07c55f63516bd9ac9f943d8648430d9974fb9ee1c658b0f8382686acb6d7bed7"
+    },
+    {
+      "file": "gs-2015-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/AnsKeyCSP-15-GS_I-pdf.pdf",
+      "sha256": "6190bfb2d8b2a0d930c43dc1c1a5c813610fc737bb261ebf5015358dc93c4d5a"
+    },
+    {
+      "file": "csat-2015-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/AnsKeyCSP-15-GS_II-pdf.pdf",
+      "sha256": "c736ec4855a444ee9f7d8a3c5128c2e54e6eb7231be2b7da224b29cba15c36b5"
+    },
+    {
+      "file": "gs-2015-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2015_paper_1_sol.pdf",
+      "sha256": "9d1f281d34d47311bc69b4d628fccbb2a1203fc5db212a13ea95c333ca0e0cfb"
+    },
+    {
+      "file": "csat-2015-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/CSAT-2015.pdf",
+      "sha256": "2c2ba01ff4a1f7203bd2d7f2d62e21836fc9c91b603c27106ec6ad20ce82f9dd"
+    },
+    {
+      "file": "gs-2016-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/CSP_16_GS_Paper_I.pdf",
+      "sha256": "376ec3a203b1f9589f70c6d1d5d98a1676bee85a043e1f6dec9c46beb72b4971"
+    },
+    {
+      "file": "csat-2016-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/02/CSP_16_GS_Paper_II.pdf",
+      "sha256": "bd85bc5e8295a4a769f82a8b72968892af5a3cbb41aaefa3386fc1034e96f51c"
+    },
+    {
+      "file": "gs-2016-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2016_paper_1_sol.pdf",
+      "sha256": "112e6d2db46b80da823cff467cce1d7dddd5eff18378f7dc91ed2656ede2cba0"
+    },
+    {
+      "file": "csat-2016-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/CSAT-2016.pdf",
+      "sha256": "ff128d16338395a45ac0337e42ebce7511866fad243a1c7973ef74592da2af4a"
+    },
+    {
+      "file": "gs-2017-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2020/09/Anskey-CSP-17-GS-I.pdf",
+      "sha256": "d54a16143ce343a08fbc05e6b52298128c957450b0a1e0a17d44392550f10716"
+    },
+    {
+      "file": "csat-2017-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/AnsKeyCSP-17-GS_2.pdf",
+      "sha256": "6cc1901ea2496e6d81c0be42063ef353559171d55390a19558ff90e40e0a4399"
+    },
+    {
+      "file": "gs-2017-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2017_paper_1_sol.pdf",
+      "sha256": "5d85e1c207d6f958fcd7029ab38b02f1b9b504c15caa622add6ab34ac9646f14"
+    },
+    {
+      "file": "csat-2017-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/CSAT-2017.pdf",
+      "sha256": "f0554f93539f5b697d17d2f2561b481a16376872b26cb25c5f04c99e59700749"
+    },
+    {
+      "file": "gs-2018-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/AnsKeyCSP-18-GS_I_2.pdf",
+      "sha256": "1d92f9b37dc3d17e605bd281e40bc1ee122b012f7177c6dc6be173dbf4f81738"
+    },
+    {
+      "file": "csat-2018-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/AnsKeyCSP-18-GS_II_2.pdf",
+      "sha256": "42a0d77c632fb2eb7d35f66b740a44e49b9383a08c9e9a6927b5b198c8373751"
+    },
+    {
+      "file": "gs-2018-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2018_paper_1_sol.pdf",
+      "sha256": "ff175a6d8770fd39340b9bf00feb02801379f72c4a381d4d4d75e38e34459785"
+    },
+    {
+      "file": "csat-2018-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/01/csat-2018-question-paper.pdf",
+      "sha256": "538d51e886e3244b6c12f70821d8e1f584cac3bbc266cf9cc369c018628e92cb"
+    },
+    {
+      "file": "gs-2019-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2020/09/AnsKeyCSP-19-GS_I_2.pdf",
+      "sha256": "2e530aab9609904cff700cc0952196f16fb6a48982223ae1f381404af75b6bcc"
+    },
+    {
+      "file": "csat-2019-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2020/09/AnsKeyCSP-19-GS_II_2.pdf",
+      "sha256": "d14a7cd718f8bf0bf5866307ec31bab32a448fbf7be1e01635a6d5ce4c582095"
+    },
+    {
+      "file": "gs-2019-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/Analysis_Apprach_Source_Strategy_General_Studies_Pre_Paper_2019.pdf",
+      "sha256": "9c7fb89e16d747bc5511c8eac209c83e131aefa5726b21f809c466b1bf9f90b2"
+    },
+    {
+      "file": "csat-2019-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/03/Prelims-Question-Paper-II-2019.pdf",
+      "sha256": "9a966879e1f4f48c35ca8cea63a35267615e1170a7add0437a17452315b32081"
+    },
+    {
+      "file": "gs-2020-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/01/UPSC-Prelims-2020-official-answer-key.pdf",
+      "sha256": "09bcfe6e1eed812a3fa2f898830910c5e71d24942dd6c851fcf5710b27840024"
+    },
+    {
+      "file": "csat-2020-key-mirror.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2022/01/upsc-prelims-2020-answer-key-CSAT.pdf",
+      "sha256": "c3caeb68315b9cf52ab72f69af300d72b9403dc133e5528764ef291da4161967"
+    },
+    {
+      "file": "gs-2020-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/Analysis_Apprach_Source_Strategy_General_Studies_Pre_paper_2020.pdf",
+      "sha256": "feeed8ada38a49828eece9ab46ba9b31e09464ff57150e466292a952f8bb3ee2"
+    },
+    {
+      "file": "csat-2020-original.pdf",
+      "url": "https://forumias.com/blog/wp-content/uploads/2021/03/CSP_2020_GS_Paper-2.pdf",
+      "sha256": "81fd97b06e01dae24c6f376bb9ca5593fd4347c0c5ddafedaef1aae91a572840"
+    },
+    {
+      "file": "csat-2012-text.pdf",
+      "url": "https://iasbaba.com/wp-content/uploads/2015/05/2012-UPSC-CSAT-PAper-2-Solved-English1.pdf",
+      "sha256": "8d912139d011e5ae84b6778c10305954ac2d97bfee423f8f5ef0e79b567bf4d3"
+    },
+    {
+      "file": "csat-2013-text.pdf",
+      "url": "https://iasbaba.com/wp-content/uploads/2015/05/2013-UPSC-CSAT-Paper-2-Solved-English1.pdf",
+      "sha256": "915d6788a32efcfa6fba501d812f5bc5a4cba07e669bbc74f85fdbaa2ecd2249"
+    },
+    {
+      "file": "csat-2014-text.pdf",
+      "url": "https://iasbaba.com/wp-content/uploads/2015/05/2014-UPSC-CSAT-Paper-2-Solved-English1.pdf",
+      "sha256": "ef3ad99f1bf89243e6dcc14c9a1ca919a8b75105eccf04575476b2c61d11b995"
+    },
+    {
+      "file": "csat-2016-text.pdf",
+      "url": "https://www.ungist.com/uploads/pdfs/UPSC_CSAT_2016_Question_Paper_with_Answer_Key.pdf",
+      "sha256": "f2f354e999c5876bc46cacf0993ca5b84c1b7d181e01a25b28f55f0f4960ed9c"
+    },
+    {
+      "file": "csat-2017-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/prelims_2017_paper_2_sol.pdf",
+      "sha256": "983704bbbae8674375247e9e055022d68f6f346e733866927411e6fae3a20ce3"
+    },
+    {
+      "file": "csat-2020-reference.pdf",
+      "url": "https://cdn.visionias.in/value_added_material/UPSC-CSAT-2020-SET-C.pdf",
+      "sha256": "83c749cd6dde201327f26aacd71a550268538cf9c85b8a4b734bf2a6e7d7f1b0"
+    },
+    {
+      "file": "csat-2014-native.pdf",
+      "url": "https://cdn-images.prepp.in/public/image/UPSC_CSE_Prelims_Paper_2_CSAT_Question_Paper_August_24_2014__71a5edaf65dbf703636dacce8b30513a.pdf",
+      "sha256": "ba14b2025bfa61c1d3b94e3197b8e01c9747ea65378ec5545353e3c0d6033307"
+    },
+    {
+      "file": "csat-2015-web.html",
+      "url": "https://examvictor.com/about-csat/csat-previous-year-papers/csat-2015-question-paper/",
+      "sha256": "f0b60e7113e45b4f23838389530375eb5c911a28730b2720b45ba7c6e1592013"
+    },
+    {
+      "file": "csat-2018-web.html",
+      "url": "https://www.upscprep.com/upsc-prelims-2018-csat-previous-year-questions/",
+      "sha256": "b3143adee61be1f7bf8caffdc76bae49a4759caeddf33b493d4e3bc588072059"
+    },
+    {
+      "file": "csat-2019-web.html",
+      "url": "https://www.upscprep.com/upsc-csat-2019-previous-year-question/",
+      "sha256": "3cce95d31dc8f3e1ef33fcf333a899b796ba6b570e3c56e0c650d41ce3c66b5a"
+    }
+  ],
+  "figures": [
+    {
+      "file": "csat-2012-q48.jpg",
+      "sha256": "ef3afa7235c5295cfcd94887b25cdcd34ca0670630fb2434a89a0065bf0966ac"
+    },
+    {
+      "file": "csat-2012-q49.jpg",
+      "sha256": "ae2eccd8cdf03d5402c7c1a4957bc4a7737ce7bd78510223f2506f8d53e3e17e"
+    },
+    {
+      "file": "csat-2012-q50.jpg",
+      "sha256": "6f9fbb441de01d50dc81916601554215e9464751109279a700ce2637c9bea58e"
+    },
+    {
+      "file": "csat-2012-q51.jpg",
+      "sha256": "b0cc3517a4ff21f58c99997ba72e1f1ab12d82f330da0d80762c7259f80f3661"
+    },
+    {
+      "file": "csat-2012-q52.jpg",
+      "sha256": "72f14aedb04f4117761ff1ff27b649fbea91a39ed4c5afbf1af66bb282ea107c"
+    },
+    {
+      "file": "csat-2012-q53.jpg",
+      "sha256": "55d0ae334f11989418c189b389dd604c3f2491d66db3fab8dd08b6321fadd21a"
+    },
+    {
+      "file": "csat-2013-professors.jpg",
+      "sha256": "0e9737ec6375dc0dbf24264a0e233a63b3d9e23aa4c76d7c81e663e1c933cd04"
+    },
+    {
+      "file": "csat-2013-q17.jpg",
+      "sha256": "76e21144f938d98de3c237fdfd246505fb08ac0267b1d2c743d978de0be79a5c"
+    },
+    {
+      "file": "csat-2013-q18.jpg",
+      "sha256": "0b0f5cd2cb59d0c598a3ed95970e3cc481267a1e1dbba1c7d3eeb55b28eb417b"
+    },
+    {
+      "file": "csat-2013-q19.jpg",
+      "sha256": "e97b1dacd6677e67c77f55e034c8abedaccd27b042488079ade8d3e8d25600a5"
+    },
+    {
+      "file": "csat-2013-q20.jpg",
+      "sha256": "10109bbe4618a859bf079ef88cdb286ad75a047b266a766dcbc57a744dda7c12"
+    },
+    {
+      "file": "csat-2013-q21.jpg",
+      "sha256": "554b1480bef5b856d6566ed654d31599ef4fdbcc361c4521df59fdba7dd2a678"
+    },
+    {
+      "file": "csat-2013-q23.jpg",
+      "sha256": "092457cf6bd4ea07bcf2e12843a574c442939e502bdf9453f01a51e069e8199b"
+    },
+    {
+      "file": "csat-2013-q24.jpg",
+      "sha256": "88bf3f4da954dd5c406de33bc82cf78ff89257ac60aee8078fbd890312275efb"
+    },
+    {
+      "file": "csat-2013-q30.jpg",
+      "sha256": "6502bd2d1111bca37637621b6227fab9d9df11d48407b4ec3167ed7f81129865"
+    },
+    {
+      "file": "csat-2014-profits.jpg",
+      "sha256": "b6e3b583011e5cc331c37709af17946d5834cc14ef9a5eaeeb6a4245852927d8"
+    },
+    {
+      "file": "csat-2014-q13.jpg",
+      "sha256": "d9cbb102bb5a98c04e890c0231b02d6cd4cb7beed274e7936a23cb4bb2af1733"
+    },
+    {
+      "file": "csat-2014-q14.jpg",
+      "sha256": "45e5a94117c5fd8b6bdd6557838f514a8ce052d882fa99ea38f9efcec2ee802f"
+    },
+    {
+      "file": "csat-2014-q15.jpg",
+      "sha256": "793219fa15fe1e80b1edabc94b53c834327828d0e09bbcfeaeab706db37c9877"
+    },
+    {
+      "file": "csat-2014-q16.jpg",
+      "sha256": "ae86aae4dc37af997dbb2ebc7ed33ee906efa04bce64aa45a7254da57a303e22"
+    },
+    {
+      "file": "csat-2014-q17.jpg",
+      "sha256": "00fe3cb18c3e1fb6f2b8c29ac68ea1eb7bcda75344b6d076536afd73b0ed15d2"
+    },
+    {
+      "file": "csat-2014-q18.jpg",
+      "sha256": "938535e5bb8757b782332b8a2dd97aa7c4388e8bdb18b2cc3bdbbbb87651d358"
+    },
+    {
+      "file": "csat-2014-q19.jpg",
+      "sha256": "63623d6666598a6cbf91b5f1c5172513caa68ca197b996dd00526a044768e83b"
+    },
+    {
+      "file": "csat-2014-q20.jpg",
+      "sha256": "eff7ae260379da8e8ab6cfbb78cf375d3d5879176836e55f4eefcdef2ed7c064"
+    },
+    {
+      "file": "csat-2015-q31-1.jpg",
+      "sha256": "cf638b062b74dd67187c2780e047d313b6a5b8461e5f7eeb53f344a69f6e83b5"
+    },
+    {
+      "file": "csat-2015-q31-2.jpg",
+      "sha256": "b9bc23740b20120cedd0159ce821036ae33e9b91b22a755943c0692624776b68"
+    },
+    {
+      "file": "csat-2015-q31-3.jpg",
+      "sha256": "37c036cd3a0b3eb81d7d2575599af6ec7a32763822b96d2bed544fc6b0e2b7bd"
+    },
+    {
+      "file": "csat-2015-q31-4.jpg",
+      "sha256": "b1ead9c53a340aac53ebacfc5c1ffed10030d9d59e805ef358dd6e9dc10f4fb9"
+    },
+    {
+      "file": "csat-2015-q31-5.jpg",
+      "sha256": "653af8c265fa1e58afbb8a58272b2812eaa710c32b975e2c7a9b8557fe211f31"
+    },
+    {
+      "file": "csat-2015-q32-1.jpg",
+      "sha256": "127beed545b54825dfeddf9b266ce15f9197030c8c24eee14d979c366137c843"
+    },
+    {
+      "file": "csat-2015-q34-1.jpg",
+      "sha256": "9c7da0ce028a97defd15dab3f922cc5be629616986f6bd95f7e41c3273c2588d"
+    },
+    {
+      "file": "csat-2015-q34-2.jpg",
+      "sha256": "684ae934a20ac1fdd4d4cff1f2c70889ea7966ead7074cf16f417a4be1db7ed8"
+    },
+    {
+      "file": "csat-2015-q34-3.jpg",
+      "sha256": "7e508e6e2170da2e578e539a53416ecf0fb6ef2e492bacfb25e3ef39e8719d29"
+    },
+    {
+      "file": "csat-2015-q34-4.jpg",
+      "sha256": "3c3c67df1ab9a36fa0058b4d857dd5a71dc73a815817e2741e0497c5a213a47f"
+    },
+    {
+      "file": "csat-2015-q34-5.jpg",
+      "sha256": "7fc52225e3cce81960cbaf3a408cc30e1a5d7cc3ad05526cdc6c38407fcc3079"
+    },
+    {
+      "file": "csat-2015-q72-1.jpg",
+      "sha256": "c5c074f3cf47cc0896e35dd1dc4993fe87dbf0b38af0bbd58d5d3bbf7c96dda6"
+    },
+    {
+      "file": "csat-2015-q78-1.jpg",
+      "sha256": "0d875a488e197bef15ab104897a35adadd9e66655e716b8dd27d7e02689c195b"
+    },
+    {
+      "file": "csat-2015-q79-1.jpg",
+      "sha256": "af63a7eac28075bac3e2bd9ad6aab1919d17fe384262da8b0f4d810527fc3b38"
+    },
+    {
+      "file": "csat-2018-cube.jpg",
+      "sha256": "d4083dbcf60ee99bc3c02da97a5299f4b3fafcef076e33cec3ffd6ed49753b42"
+    },
+    {
+      "file": "csat-2018-q1-1.jpg",
+      "sha256": "06643f5223736084b0aa996dc67e45af0c43ff5e7ea637fab0bb9c17d34ed33f"
+    },
+    {
+      "file": "csat-2018-q3-1.jpg",
+      "sha256": "a21a52367addc070814a4df68efada40234a63a1f030d1a8f387552a988c9c6b"
+    },
+    {
+      "file": "csat-2018-q5-1.jpg",
+      "sha256": "6b1d98d6d85318deacd9026b34fcd3e1f27e66475ffc41b0b53cc69f836a7194"
+    },
+    {
+      "file": "csat-2018-q61-1.jpg",
+      "sha256": "1b2512f3706ee7b9338c034d1663ab070a210ffedda5a7e332934a0ceb97b6e6"
+    },
+    {
+      "file": "csat-2018-q62-original.jpg",
+      "sha256": "fc032d3c56e1d6c6fbad40b88e7c27174c7312be600064555b0b651068b6422b"
+    },
+    {
+      "file": "csat-2018-q63-1.jpg",
+      "sha256": "bd5268c368c68fce5d09538944bba329a757b6431cb85e1d5bf04293293870b0"
+    },
+    {
+      "file": "csat-2018-q65-1.jpg",
+      "sha256": "5b7bd38fa4a3a9d5ab91ff69d22ea32ea4ecb6f2956083c06b3c055f90583a7f"
+    },
+    {
+      "file": "csat-2018-q66-1.jpg",
+      "sha256": "4f59173d253c02d26cf5eac1a5209ec02a09876105e6ed4fb9ab60ea1db3ca3d"
+    },
+    {
+      "file": "csat-2018-q66-options.jpg",
+      "sha256": "93b11201b3e626566d48dea3f4683a8298c9bffe88440345580e07f5ec435e7f"
+    },
+    {
+      "file": "csat-2018-q67-1.jpg",
+      "sha256": "1ef7e99c06ba1c2bf5c18f937412eb115314361e1eddf4501264102d5ff81633"
+    },
+    {
+      "file": "csat-2018-q70-1.jpg",
+      "sha256": "17b2485a7a89729771778d9d7f26ba4360500c9ac9cab816b1200e9191318aaa"
+    },
+    {
+      "file": "csat-2018-q70-options.jpg",
+      "sha256": "1f2fabd29f72af838784d1e6f3d2fc4dc18934e734f8bb1417574355c5ce778c"
+    },
+    {
+      "file": "csat-2018-q71-original.jpg",
+      "sha256": "78e37076c4dec8476a9f7c93d86de8c36dda0880433f0613a78eb5ea529e7312"
+    },
+    {
+      "file": "csat-2018-q73-1.jpg",
+      "sha256": "3a974e055e7d371550f8c0d189b2332612abaea200672f0e0f0bf58e6f80ecb4"
+    },
+    {
+      "file": "csat-2018-q76-1.jpg",
+      "sha256": "518f8de68ec4f0ced48e5c5c8cb5a82d929f173dd1367c08b6f4fc3f998dba57"
+    },
+    {
+      "file": "csat-2018-steel.jpg",
+      "sha256": "051d6032d2a0a5787d5462ada4c7d4b5782a4d83989b1ccf2ae9aaf71ecf0a03"
+    }
+  ],
+  "keyPublisher": "Union Public Service Commission",
+  "keyHosting": "UPSC-issued final-key PDFs preserved on ForumIAS; the direct UPSC archive was unavailable during retrieval.",
+  "officialKeyArchiveUrl": "https://www.upsc.gov.in/examinations/answer-key/archives",
+  "explanations": "Editorial study explanations and previously supplied compatible explanations. UPSC publishes answer keys, not these explanations.",
+  "historicalScoring": {
+    "csat2012": "Questions 74–80 carry no negative marking.",
+    "csat2013": "Questions 75–80 carry no negative marking.",
+    "csat2014": "English-comprehension questions 39–44 excluded; 74 scored questions, maximum 185.",
+    "csatQualifying": "33% qualifying threshold applies from 2015; 2012–2014 CSAT was included in merit.",
+    "practiceNormalization": "Maximum marks divided by the number of scored questions; X and E items excluded."
+  }
+}
