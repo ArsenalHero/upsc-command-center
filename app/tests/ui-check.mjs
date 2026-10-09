@@ -164,6 +164,52 @@ for (let i = 0; i < routes.length; i++) {
   await navigate(routes[i], headings[i]);
   assert.doesNotMatch(text(), /We couldn't open this view/, routes[i]);
 }
+const changeField = async (el, value) => {
+  assert.ok(el, "Missing control");
+  const proto = el.tagName === "SELECT" ? w.HTMLSelectElement.prototype : w.HTMLInputElement.prototype;
+  Object.getOwnPropertyDescriptor(proto, "value").set.call(el, value);
+  el.dispatchEvent(new w.Event(el.tagName === "SELECT" ? "change" : "input", { bubbles: true }));
+  await wait();
+};
+// Closing optional filters keeps their selections active and visible in the count.
+await navigate("pyqs", "PYQ question bank");
+const advanced = w.document.querySelector(".prelims-advanced-filters");
+assert.equal(advanced.open, false);
+advanced.querySelector("summary").click();
+assert.equal(advanced.open, true);
+await changeField(w.document.querySelector('[aria-label="PYQ status"]'), "unattempted");
+await changeField(w.document.querySelector('[aria-label="PYQ year"]'), "2020");
+const filteredCount = w.document.querySelector(".section-heading h2").textContent;
+assert.notEqual(filteredCount, "0 questions");
+advanced.querySelector("summary").click();
+assert.equal(advanced.open, false);
+assert.equal(w.document.querySelector('[aria-label="PYQ status"]').value, "unattempted");
+assert.equal(w.document.querySelector(".section-heading h2").textContent, filteredCount);
+assert.match(advanced.querySelector("summary").textContent, /1 applied/);
+await changeField(w.document.querySelector('[aria-label="PYQ status"]'), "");
+await changeField(w.document.querySelector('[aria-label="PYQ year"]'), "");
+// Syllabus status controls still save after the responsive row restructuring.
+await navigate("syllabus", "Syllabus tracker");
+const topicStatus = w.document.querySelector(".syllabus-row .status-select");
+const topicName = topicStatus.getAttribute("aria-label").replace("Status of ", "");
+const nextStatus = [...topicStatus.options].find(o => o.value !== topicStatus.value).value;
+await changeField(topicStatus, nextStatus);
+assert.equal(JSON.parse(w.localStorage.getItem("upsc-command-center:v1")).topics.find(t => t.name === topicName).status, nextStatus);
+// Appearance changes apply on save; target inputs describe their units.
+await navigate("settings", "Preparation settings");
+const dailyTarget = w.document.querySelector('[aria-label="Daily study hours"]');
+assert.equal(w.document.getElementById(dailyTarget.getAttribute("aria-describedby")).textContent, "hours");
+w.document.querySelector('.theme-options input[value="dark"]').click();
+await wait();
+clickText("Save settings");
+await wait();
+assert.equal(w.document.documentElement.dataset.theme, "dark");
+assert.equal(JSON.parse(w.localStorage.getItem("upsc-command-center:v1")).settings.theme, "dark");
+w.document.querySelector('.theme-options input[value="light"]').click();
+await wait();
+clickText("Save settings");
+await wait();
+assert.equal(w.document.documentElement.dataset.theme, "light");
 // Reports render each period, including rolling quarterly comparisons.
 await navigate("reports", "Preparation reports");
 for (const period of ["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"]) {
@@ -264,7 +310,7 @@ rw.eval(built.outputFiles[0].text);
 await until(
   () =>
     rw.document.querySelector("h1")?.textContent ===
-    "UPSC PREPARATION COMMAND CENTER",
+    "Your preparation",
   "Restored dashboard did not finish rendering",
 );
 assert.doesNotMatch(
@@ -274,7 +320,7 @@ assert.doesNotMatch(
 assert.match(rw.document.body.textContent, /Demo mode/);
 assert.equal(consoleMessages.length, 0, consoleMessages.join("\n"));
 globalThis.console.log(
-  "Rendered UI checks passed: setup, empty state, demo, 20 routes, all report periods, quick study logging, PYQ results, revision reminders, recent context, overnight duration, editing, and refresh restoration. Responsive geometry and browser screenshots are not simulated by this test.",
+  "Rendered UI checks passed: setup, empty state, demo, 20 routes, retained optional filters, syllabus status changes, saved themes and target units, all report periods, quick study logging, PYQ results, revision reminders, recent context, overnight duration, editing, and refresh restoration. Responsive geometry and browser screenshots are not simulated by this test.",
 );
 dom.window.close();
 restored.window.close();

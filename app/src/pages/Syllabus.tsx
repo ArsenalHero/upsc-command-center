@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useSearchParams } from "react-router-dom";
 import {
   Plus,
@@ -53,8 +53,8 @@ export function SyllabusTree({
     return (
       <div key={t.id}>
         <div
-          className="syllabus-row"
-          style={{ paddingLeft: `${Math.min(depth, 5) * 18 + 12}px` }}
+          className={`syllabus-row${children.length ? " syllabus-parent" : ""}`}
+          style={{ "--topic-depth": Math.min(depth, 5) } as CSSProperties}
         >
           {children.length ? (
             <button

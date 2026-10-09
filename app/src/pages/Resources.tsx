@@ -51,6 +51,7 @@ export default function Resources() {
       {tab === "Resources" ? (
         <RecordTable
           collection="resources"
+          className="resource-records"
           columns={[
             {
               key: "name",

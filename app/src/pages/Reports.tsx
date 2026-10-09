@@ -217,49 +217,51 @@ export default function Reports() {
           </button>
         }
       />
-      <div className="reports-toolbar">
-        <div className="tabs" role="tablist" aria-label="Report period">
-          {["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"].map((p) => (
-            <button
-              key={p}
-              role="tab"
-              aria-selected={p === period}
-              className={period === p ? "active" : ""}
-              onClick={() => setPeriod(p)}
-            >
-              {p}
-            </button>
-          ))}
+      <section className="report-controls" aria-label="Report controls">
+        <div className="reports-toolbar">
+          <div className="tabs" role="tablist" aria-label="Report period">
+            {["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"].map((p) => (
+              <button
+                key={p}
+                role="tab"
+                aria-selected={p === period}
+                className={period === p ? "active" : ""}
+                onClick={() => setPeriod(p)}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+          <label className="report-date">
+            Period containing
+            <input
+              type="date"
+              aria-label="Report period date"
+              value={anchor}
+              max={dateKey()}
+              onChange={(e) => {
+                if (e.target.value) setAnchor(e.target.value);
+              }}
+            />
+          </label>
         </div>
-        <label className="report-date">
-          Period containing
-          <input
-            type="date"
-            aria-label="Report period date"
-            value={anchor}
-            max={dateKey()}
-            onChange={(e) => {
-              if (e.target.value) setAnchor(e.target.value);
-            }}
-          />
-        </label>
-      </div>
-      <div className="report-period-line">
-        <span>
-          <CalendarDays size={16} />
-          {prettyDate(from)}–
-          {prettyDate(to, { day: "numeric", month: "short", year: "numeric" })}
-          {period === "Quarterly" && " · rolling 3 months"}
-        </span>
-        <label className="check-label">
-          <input
-            type="checkbox"
-            checked={comparable}
-            onChange={(e) => setComparable(e.target.checked)}
-          />
-          Compare equal elapsed days
-        </label>
-      </div>
+        <div className="report-period-line">
+          <span>
+            <CalendarDays size={16} />
+            {prettyDate(from)}–
+            {prettyDate(to, { day: "numeric", month: "short", year: "numeric" })}
+            {period === "Quarterly" && " · rolling 3 months"}
+          </span>
+          <label className="check-label">
+            <input
+              type="checkbox"
+              checked={comparable}
+              onChange={(e) => setComparable(e.target.checked)}
+            />
+            Compare equal elapsed days
+          </label>
+        </div>
+      </section>
       {end > dateKey() && (
         <div className="info-banner">
           <strong>Partial period</strong> · Current data runs through{" "}

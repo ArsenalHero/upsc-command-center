@@ -19,6 +19,7 @@ export function RecordTable({
   records,
   columns,
   title,
+  className = "",
 }: {
   collection: Collection;
   records?: Entity[];
@@ -28,6 +29,7 @@ export function RecordTable({
     render?: (r: any) => React.ReactNode;
   }[];
   title?: string;
+  className?: string;
 }) {
   const { data, setEditor, deleteRecord } = useData(),
     [query, setQuery] = useState(""),
@@ -82,7 +84,7 @@ export function RecordTable({
     },
   ];
   return (
-    <section className="card records-card">
+    <section className={`card records-card ${className}`}>
       <div className="card-heading">
         <h2>{title || `${formTitles[collection] || collection} records`}</h2>
         <button

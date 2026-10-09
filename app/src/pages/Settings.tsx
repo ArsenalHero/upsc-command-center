@@ -67,6 +67,8 @@ export default function Settings() {
                 <label key={key}>
                   {label}
                   <input
+                    aria-label={label}
+                    aria-describedby={`target-${key}-unit`}
                     type="number"
                     min={key === "dailyHours" ? 0.1 : 0}
                     max={
@@ -80,6 +82,7 @@ export default function Settings() {
                     value={Number(settings[key])}
                     onChange={(e) => change(key, Number(e.target.value))}
                   />
+                  <small className="field-unit" id={`target-${key}-unit`}>{unit}</small>
                 </label>
               ))}
             </div>
@@ -268,7 +271,10 @@ export default function Settings() {
                 );
               })}
             </div>
-            <h3>Subject importance & allocation</h3>
+          </section>
+          <section className="card settings-section settings-subjects">
+            <h2>Subject priorities</h2>
+            <p className="form-note">Choose a subject to adjust its importance and share of your study time.</p>
             <div className="subject-settings">
               {data.subjects.map((s) => (
                 <button
