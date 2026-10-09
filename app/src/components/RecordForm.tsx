@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import type { Collection, Entity, AppData, Stage } from "../types";
+import type { Collection, Entity, AppData, Stage, StudySession } from "../types";
 import {
   errorTypes,
   revisionStages,
@@ -10,6 +10,8 @@ import {
 import { useData } from "../hooks/useData";
 import { uid, dateKey } from "../utils/date";
 import { Modal } from "./ui";
+import { StudySessionFields } from "./StudySessionFields";
+import { initialStudyValues, studyContext } from "../utils/studyForm";
 interface Field {
   key: string;
   label: string;
@@ -354,7 +356,9 @@ export function RecordForm({
           (t) =>
             data.subjects.find((s) => s.id === t.subjectId)?.paper === "GS-IV",
         )?.id || "";
-    return { ...base, ...record, ...preset };
+    return collection === "sessions"
+      ? initialStudyValues(data, base, record as StudySession | undefined, preset)
+      : { ...base, ...record, ...preset };
   });
   const change = (key: string, value: any) =>
     setValues((v) => {
@@ -370,6 +374,18 @@ export function RecordForm({
           next.paper = s.paper;
         }
       }
+      if (collection === "sessions" && key === "topicId") next.subtopicId = "";
+      if (collection === "sessions" && key === "activity") {
+        if (value === "Revision") next.revisionDone = true;
+        else if (v.activity === "Revision") next.revisionDone = false;
+        if (value === "PYQ" && !next.pyqs) next.pyqs = Number(next.questionsAttempted) || 0;
+      }
+      if (collection === "sessions" && key === "actualMinutes") {
+        next.startTime = "";
+        next.endTime = "";
+      }
+      if (collection === "sessions" && key === "questionsAttempted" && next.activity === "PYQ")
+        next.pyqs = Number(value) || 0;
       if (
         ["attempted", "correct", "questionsAttempted"].includes(key) &&
         ["mcqs", "sessions"].includes(collection)
@@ -435,8 +451,7 @@ export function RecordForm({
             (!values.subjectId || t.subjectId === values.subjectId) &&
             t.id !== values.id &&
             (field.key !== "subtopicId" ||
-              !values.topicId ||
-              t.parentId === values.topicId),
+              (!!values.topicId && t.parentId === values.topicId)),
         )
         .map((t) => {
           const parent = data.topics.find((p) => p.id === t.parentId);
@@ -447,6 +462,93 @@ export function RecordForm({
         });
     return [];
   };
+  const renderField = (field: Field) => {
+    const label = field.label + (field.required ? " *" : "");
+    const select = [
+      "select",
+      "subject",
+      "topic",
+      "parent",
+      "resource",
+      "activity",
+      "series",
+      "paper",
+    ].includes(field.type);
+    return (
+      <label
+        key={field.key}
+        className={`${field.type === "textarea" ? "span-2" : ""} ${field.type === "checkbox" ? "check-label" : ""}`}
+      >
+        {field.type === "checkbox" ? (
+          <>
+            <input
+              type="checkbox"
+              name={field.key}
+              checked={values[field.key] || false}
+              onChange={(e) => change(field.key, e.target.checked)}
+            />
+            <span>{label}</span>
+          </>
+        ) : (
+          <>
+            <span>{label}</span>
+            {select ? (
+              <select
+                name={field.key}
+                required={field.required}
+                value={values[field.key] ?? ""}
+                onChange={(e) =>
+                  change(
+                    field.key,
+                    field.type === "parent"
+                      ? e.target.value || null
+                      : e.target.value,
+                  )
+                }
+              >
+                <option value="">
+                  {field.type === "parent"
+                    ? "Top level (no parent)"
+                    : "Select…"}
+                </option>
+                {choices(field).map((v) => (
+                  <option key={v.value} value={v.value}>
+                    {v.label}
+                  </option>
+                ))}
+              </select>
+            ) : field.type === "textarea" ? (
+              <textarea
+                name={field.key}
+                required={field.required}
+                rows={3}
+                value={values[field.key] || ""}
+                onChange={(e) => change(field.key, e.target.value)}
+              />
+            ) : (
+              <input
+                name={field.key}
+                type={field.type}
+                required={field.required}
+                value={values[field.key] ?? ""}
+                min={field.min}
+                max={field.max}
+                step={field.type === "number" ? "any" : undefined}
+                onChange={(e) =>
+                  change(
+                    field.key,
+                    field.type === "number"
+                      ? (collection === "sessions" && field.key === "actualMinutes" && e.target.value === "" ? "" : Number(e.target.value))
+                      : e.target.value,
+                  )
+                }
+              />
+            )}
+          </>
+        )}
+      </label>
+    );
+  };
   return (
     <Modal
       title={`${record ? "Edit" : "Add"} ${formTitles[collection] || collection}`}
@@ -456,95 +558,19 @@ export function RecordForm({
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          saveRecord(collection, values as Entity);
+          if (collection === "sessions") {
+            if (values.nextRevisionDate && !values.topicId) return;
+            saveRecord(collection, { ...values, actualMinutes: Number(values.actualMinutes) } as Entity);
+          } else saveRecord(collection, values as Entity);
         }}
       >
         <div className="modal-body">
-          <div className="form-grid">
-            {fieldSchemas[collection].map((field) => {
-              const label = field.label + (field.required ? " *" : "");
-              const select = [
-                "select",
-                "subject",
-                "topic",
-                "parent",
-                "resource",
-                "activity",
-                "series",
-                "paper",
-              ].includes(field.type);
-              return (
-                <label
-                  key={field.key}
-                  className={`${field.type === "textarea" ? "span-2" : ""} ${field.type === "checkbox" ? "check-label" : ""}`}
-                >
-                  {field.type === "checkbox" ? (
-                    <>
-                      <input
-                        type="checkbox"
-                        checked={values[field.key] || false}
-                        onChange={(e) => change(field.key, e.target.checked)}
-                      />
-                      <span>{label}</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>{label}</span>
-                      {select ? (
-                        <select
-                          required={field.required}
-                          value={values[field.key] ?? ""}
-                          onChange={(e) =>
-                            change(
-                              field.key,
-                              field.type === "parent"
-                                ? e.target.value || null
-                                : e.target.value,
-                            )
-                          }
-                        >
-                          <option value="">
-                            {field.type === "parent"
-                              ? "Top level (no parent)"
-                              : "Select…"}
-                          </option>
-                          {choices(field).map((v) => (
-                            <option key={v.value} value={v.value}>
-                              {v.label}
-                            </option>
-                          ))}
-                        </select>
-                      ) : field.type === "textarea" ? (
-                        <textarea
-                          required={field.required}
-                          rows={3}
-                          value={values[field.key] || ""}
-                          onChange={(e) => change(field.key, e.target.value)}
-                        />
-                      ) : (
-                        <input
-                          type={field.type}
-                          required={field.required}
-                          value={values[field.key] ?? ""}
-                          min={field.min}
-                          max={field.max}
-                          step={field.type === "number" ? "any" : undefined}
-                          onChange={(e) =>
-                            change(
-                              field.key,
-                              field.type === "number"
-                                ? Number(e.target.value)
-                                : e.target.value,
-                            )
-                          }
-                        />
-                      )}
-                    </>
-                  )}
-                </label>
-              );
-            })}
-          </div>
+          {collection === "sessions" ? (
+            <StudySessionFields data={data} values={values as StudySession} editing={!!record} change={change}
+              repeat={(session) => setValues((v) => ({ ...v, ...studyContext(data, session), revisionDone: session.activity === "Revision" }))}
+              renderField={(key, extra) => renderField({ ...fieldSchemas.sessions.find((f) => f.key === key)!, ...extra })}
+            />
+          ) : <div className="form-grid">{fieldSchemas[collection].map(renderField)}</div>}
           {["mcqs", "tests"].includes(collection) && (
             <fieldset className="error-fields">
               <legend>
@@ -571,13 +597,6 @@ export function RecordForm({
               </div>
             </fieldset>
           )}
-          {collection === "sessions" && (
-            <p className="form-note">
-              Questions and mock tests logged here feed the practice charts
-              automatically. Schedule a next revision date to add it to your
-              calendar.
-            </p>
-          )}
           {collection === "topics" && (
             <p className="form-note">
               Use the parent field to build units, topics, and unlimited levels
@@ -589,9 +608,9 @@ export function RecordForm({
           <button type="button" className="btn secondary" onClick={onClose}>
             Cancel
           </button>
-          <button type="submit" className="btn primary">
+          <button type="submit" className="btn primary" disabled={collection === "sessions" && !!values.nextRevisionDate && !values.topicId}>
             <Plus size={16} />
-            {record ? "Save changes" : "Save record"}
+            {record ? "Save changes" : collection === "sessions" ? "Save session" : "Save record"}
           </button>
         </div>
       </form>
