@@ -2,6 +2,7 @@ import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
 import { createEmptyData } from "../src/data/defaults.ts";
+import earlierPapers from "../src/data/cse-2015-2018-bank.ts";
 
 const built = await build({ entryPoints: ["src/main.tsx"], bundle: true, write: false, format: "iife", platform: "browser", target: "es2022", loader: { ".css": "empty" }, define: { "import.meta.env": JSON.stringify({ PROD: false }) }, jsx: "automatic" });
 const errors = [];
@@ -36,8 +37,8 @@ const choose = async (option) => { const el = w.document.querySelector(`input[na
 const finish = async (mode) => { await click(`Finish ${mode}`); await until(() => w.document.querySelector("h1")?.textContent === "Your paper report", "Report did not save"); };
 
 await papers();
-assert.deepEqual([...w.document.querySelectorAll(".paper-year")].map(el => el.querySelector("h3").textContent), ["2025", "2024", "2023", "2022", "2021", "2020", "2019"]);
-for (const year of [2025, 2020, 2019]) {
+assert.deepEqual([...w.document.querySelectorAll(".paper-year")].map(el => el.querySelector("h3").textContent), ["2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015"]);
+for (const year of [2025, 2020, 2019, 2018, 2017, 2016, 2015]) {
   const section = w.document.querySelector(`[aria-label="${year} Civil Services papers"]`);
   assert.match(section.textContent, /100 questions/); assert.match(section.textContent, /80 questions/);
 }
@@ -94,8 +95,57 @@ await click("Go to question 18", true);
 assert.deepEqual([...w.document.querySelectorAll(".prelims-text thead th")].map(el => el.textContent), ["Group", "Average marks in English", "Average marks in Hindi"]);
 await choose("a"); await finish("test");
 assert.equal(saved().prelims.reports.length, 4);
-await click("Back to question bank"); await click("History");
-assert.equal([...w.document.querySelectorAll("button")].filter(b => b.textContent === "Open report").length, 4);
+await click("Back to question bank"); await papers();
+
+// All eight earlier papers share the editor and preserve their booklet's key.
+for (const year of [2018, 2017, 2016, 2015]) {
+  const gs = earlierPapers.filter(q => q.year === year && q.stage === "Prelims");
+  await click(`Practise ${year} GS paper`, true);
+  assert.equal(saved().prelims.session.questionIds.length, 100);
+  await choose(gs[0].answer); await click("Submit answer");
+  assert.match(text(), /Correct answer/);
+  assert.ok(w.document.querySelector('[aria-label="Answer and explanation"]'));
+  await finish("practice"); await click("Back to question bank"); await papers();
+
+  const csat = earlierPapers.filter(q => q.year === year && q.stage === "CSAT");
+  await click(`Start ${year} CSAT test`, true);
+  assert.equal(saved().prelims.session.questionIds.length, 80);
+  s = saved().prelims.session;
+  assert.equal(Date.parse(s.deadline) - Date.parse(s.startedAt), 7200000);
+  await choose(csat[0].answer);
+  const passage = csat.find(q => q.blocks?.some(b => b.type === "passage"));
+  assert.ok(passage, `${year} has shared reading passages`);
+  await click(`Go to question ${passage.number}`, true);
+  assert.ok(w.document.querySelector('[aria-label="Reading passage"]'));
+  const diagram = csat.find(q => q.sourceImage);
+  if (diagram) {
+    await click(`Go to question ${diagram.number}`, true);
+    const image = w.document.querySelector(".prelims-question-figure img");
+    assert.ok(image); assert.equal(image.getAttribute("src"), diagram.sourceImage);
+    assert.equal(image.alt, diagram.sourceImageAlt);
+  }
+  if (year === 2015) {
+    await click("Go to question 71", true); await choose("a");
+    await click("Save & exit");
+    const persisted2015 = w.localStorage.getItem("upsc-command-center:v1");
+    w.close(); w = createWindow(persisted2015);
+    await until(() => text().includes("Resume test"), "2015 scaled test did not reload");
+    await click("Resume test");
+    assert.match(text(), /Question 71 of 80/);
+    assert.equal(w.document.querySelector('input[value="a"][name="pyq-option"]').checked, true);
+  }
+  await finish("test"); assert.match(text(), /CSAT benchmark/);
+  if (year === 2015) {
+    assert.match(w.document.querySelector(".prelims-result-legend").textContent, /1 dropped · excluded/);
+    assert.equal(saved().pyqs.find(p => p.year === 2015 && p.attempt.questionNumber === 71).attempt.maximum, 0);
+  }
+  await click("Back to question bank"); await papers();
+}
+assert.equal(saved().prelims.reports.length, 12);
+await click("History");
+assert.equal([...w.document.querySelectorAll("button")].filter(b => b.textContent === "Open report").length, 12);
+await click("Open report");
+assert.match(text(), /Your paper report/);
 assert.equal(errors.length, 0, errors.join("\n"));
 w.close();
-console.log("CSE paper UI checks passed: 4 paper launches, practice feedback, timed tests, passage/table rendering, dropped items, bookmark/notes, refresh/resume and 4 saved reports.");
+console.log("CSE paper UI checks passed: 12 paper launches, practice feedback, timed tests, passages/tables/diagrams, dropped items, bookmark/notes, refresh/resume and 12 saved reports.");

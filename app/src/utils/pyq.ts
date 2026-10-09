@@ -62,6 +62,7 @@ export interface PYQQuestion {
   blocks?: { type: "paragraph" | "list" | "table" | "passage"; text?: string; items?: string[]; headers?: string[]; rows?: string[][] }[];
   explanation?: StudyExplanation;
   sourceImage?: string;
+  sourceImageAlt?: string;
   imageSlices?: {
     url: string;
     x: number;

@@ -1,0 +1,2334 @@
+[
+  {
+    "id": "upsc-2016-prelims-gs1-a-051",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 51,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Humanitarian organisations",
+    "question": "'Doctors Without Borders (Medecins Sans Frontieres)', often in the news, is",
+    "options": {
+      "a": "a division of World Health Organization",
+      "b": "a non-governmental international organization",
+      "c": "an inter-governmental agency sponsored by European Union",
+      "d": "a specialized agency of the United Nations"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Doctors Without Borders (Medecins Sans Frontieres)', often in the news, is"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Médecins Sans Frontières is an independent international humanitarian medical organisation. It is not a UN, WHO or European Union agency.",
+      "concept": "Humanitarian organisations",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-052",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 52,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "With reference to an initiative called 'The Economics of Ecosystems and Biodiversity (TEEB)', which of the following statements is/are correct?\n\n1. It is an initiative hosted by UNEP, IMF and World Economic Forum.\n2. It is a global initiative that focuses on drawing attention to the economic benefits of biodiversity.\n3. It presents an approach that can help decision-makers recognize, demonstrate and capture the value of ecosystems and biodiversity.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to an initiative called 'The Economics of Ecosystems and Biodiversity (TEEB)', which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is an initiative hosted by UNEP, IMF and World Economic Forum.\n2. It is a global initiative that focuses on drawing attention to the economic benefits of biodiversity.\n3. It presents an approach that can help decision-makers recognize, demonstrate and capture the value of ecosystems and biodiversity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "TEEB is a global initiative that focuses on \"making nature's values visible\" by drawing attention to the economic benefits of biodiversity and guiding decision-makers to recognize its value (Statements 2 and 3 are correct).  However, it was launched by Germany and the European Commission, not hosted by the IMF and World Economic Forum (Statement 1 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-053",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 53,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "With reference to 'Red Sanders', sometimes seen in the news, consider the following statements:\n\n1. It is a tree species found in a part of South India.\n2. It is one of the most important trees in the tropical rain forest areas of South India.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Red Sanders', sometimes seen in the news, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is a tree species found in a part of South India.\n2. It is one of the most important trees in the tropical rain forest areas of South India."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Red Sanders is endemic to South India (Andhra Pradesh), making Statement 1 correct.  However, it grows in dry deciduous forests and rocky, hilly regions, not in tropical rainforests, making Statement 2 incorrect.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-054",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 54,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Which of the following statements is/are correct?\n\nProper design and effective implementation of UN-REDD+ Programme can significantly contribute to\n\n1. protection of biodiversity\n2. resilience of forest ecosystems\n3. poverty reduction\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Proper design and effective implementation of UN-REDD+ Programme can significantly contribute to"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. protection of biodiversity\n2. resilience of forest ecosystems\n3. poverty reduction"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The REDD+ (Reducing Emissions from Deforestation and forest Degradation) mechanism offers financial incentives to developing countries to protect their forests.  By doing so, it inherently protects biodiversity, enhances forest resilience, and supports the sustainable livelihoods of forest-dependent communities, contributing to poverty reduction.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-055",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 55,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "What is 'Greenhouse Gas Protocol'?",
+    "options": {
+      "a": "It is an international accounting tool for government and business leaders to understand, quantify and manage greenhouse gas emissions",
+      "b": "It is an initiative of the United Nations to offer financial incentives to developing countries to reduce greenhouse gas emissions and to adopt eco-friendly technologies",
+      "c": "It is inter-governmental agreement ratified by all the member countries of the United Nations to reduce greenhouse gas emissions to specified levels by the year 2022",
+      "d": "It is one of the multilateral REDD+ initiatives hosted by the World Bank"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is 'Greenhouse Gas Protocol'?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Greenhouse Gas Protocol is the most widely used international accounting framework and standard for government and business leaders to measure, quantify, and manage greenhouse gas emissions, developed by the WRI and WBCSD.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-056",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 56,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Public finance & fiscal policy",
+    "question": "With reference to 'Financial Stability and Development Council', consider the following statements:\n\n1. It is an organ of NITI Aayog.\n2. It is headed by the Union Finance Minister.\n3. It monitors macroprudential supervision of the economy.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Financial Stability and Development Council', consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is an organ of NITI Aayog.\n2. It is headed by the Union Finance Minister.\n3. It monitors macroprudential supervision of the economy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The FSDC is an apex-level body constituted by the Ministry of Finance (not an organ of NITI Aayog), making statement 1 incorrect. It is chaired by the Union Finance Minister and performs macroprudential supervision and financial stability coordination.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-057",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 57,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "With reference to 'Agenda 21', sometimes seen in the news, consider the following statements:\n\n1. It is a global action plan for sustainable development.\n2. It originated in the World Summit on Sustainable Development held in Johannesburg in 2002.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Agenda 21', sometimes seen in the news, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is a global action plan for sustainable development.\n2. It originated in the World Summit on Sustainable Development held in Johannesburg in 2002."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Agenda 21 is a non-binding, voluntary global action plan of the UN regarding sustainable development (Statement 1 is correct).  However, it originated at the historic Earth Summit (UN Conference on Environment and Development) held in Rio de Janeiro in 1992, not Johannesburg in 2002 (Statement 2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-058",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 58,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · social & religious reform",
+    "question": "Satya Shodhak Samaj organized",
+    "options": {
+      "a": "a movement for upliftment of tribals in Bihar",
+      "b": "a temple-entry movement in Gujarat",
+      "c": "an anti-caste movement in Maharashtra",
+      "d": "a peasant movement in Punjab"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Satya Shodhak Samaj organized"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Satya Shodhak Samaj was founded by Jyotirao Phule on September 24, 1873, and its goal was to fight against Brahminical domination and uplift downtrodden groups such as women and shudras in Maharashtra.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-059",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 59,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "General science · collection 1",
+    "question": "Which of the following statements is/are correct?\n\nViruses can infect\n\n1. bacteria\n2. fungi\n3. plants\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Viruses can infect"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. bacteria\n2. fungi\n3. plants"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Viruses are capable of infecting all types of host organisms including plants (algal viruses), animals, fungi (mycoviruses), and bacteria (bacteriophages).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-060",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 60,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International taxation",
+    "question": "The term 'Base Erosion and Profit Shifting' is sometimes seen in the news in the context of",
+    "options": {
+      "a": "mining operation by multinational companies in resource-rich but backward areas",
+      "b": "curbing of the tax evasion by multinational companies",
+      "c": "exploitation of genetic resources of a country by multinational companies",
+      "d": "lack of consideration of environmental costs in the planning and implementation of developmental projects"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The term 'Base Erosion and Profit Shifting' is sometimes seen in the news in the context of"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Base erosion and profit shifting describes strategies that move profits away from where economic activity occurs to reduce tax. International BEPS measures target such multinational tax avoidance.",
+      "concept": "International taxation",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-061",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 61,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "National manufacturing policy",
+    "question": "Recently, India's first 'National Investment and Manufacturing Zone' was proposed to be set up in",
+    "options": {
+      "a": "Andhra Pradesh",
+      "b": "Gujarat",
+      "c": "Maharashtra",
+      "d": "Uttar Pradesh"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, India's first 'National Investment and Manufacturing Zone' was proposed to be set up in"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The relevant first approved NIMZ was at Prakasam in Andhra Pradesh. The answer concerns the development announced before the 2016 examination.",
+      "concept": "National manufacturing policy",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-062",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 62,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Infrastructure & industries",
+    "question": "What is/are the purpose/purposes of 'District Mineral Foundations' in India?\n\n1. Promoting mineral exploration activities in mineral-rich districts\n2. Protecting the interests of the persons affected by mining operations\n3. Authorizing State Governments to issue licences for mineral exploration\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are the purpose/purposes of 'District Mineral Foundations' in India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Promoting mineral exploration activities in mineral-rich districts\n2. Protecting the interests of the persons affected by mining operations\n3. Authorizing State Governments to issue licences for mineral exploration"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "District Mineral Foundations are statutory non-profit trusts established under the MMDR Amendment Act, 2015. Their sole objective is to work for the interest and benefit of persons and areas affected by mining-related operations, as prescribed by the State Government. They do not promote exploration or issue licenses.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-063",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 63,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Social Development",
+    "topic": "Digital education",
+    "question": "'SWAYAM', an initiative of the Government of India, aims at",
+    "options": {
+      "a": "promoting the Self Help Groups in rural areas",
+      "b": "providing financial and technical assistance to young start-up entrepreneurs",
+      "c": "promoting the education and health of adolescent girls",
+      "d": "providing affordable and quality education to the citizens for free"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'SWAYAM', an initiative of the Government of India, aims at"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "SWAYAM provides online courses to make quality education more accessible and affordable. Course content can be accessed free, although certification may involve a paid examination.",
+      "concept": "Digital education",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-064",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 64,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Constitutional development",
+    "question": "The Montague-Chelmsford Proposals were related to",
+    "options": {
+      "a": "social reforms",
+      "b": "educational reforms",
+      "c": "reforms in police administration",
+      "d": "constitutional reforms"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Montague-Chelmsford Proposals were related to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Montagu-Chelmsford proposals led to the Government of India Act 1919 and its constitutional changes, including provincial dyarchy. They were constitutional reforms.",
+      "concept": "Constitutional development",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-065",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 65,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Art, architecture & monuments",
+    "question": "What is/are common to the two historical places known as Ajanta and Mahabalipuram?\n\n1. Both were built in the same period.\n2. Both belong to the same religious denomination.\n3. Both have rock-cut monuments.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "1 and 3 only",
+      "d": "None of the statements given above is correct"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are common to the two historical places known as Ajanta and Mahabalipuram?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Both were built in the same period.\n2. Both belong to the same religious denomination.\n3. Both have rock-cut monuments."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Only statement 3 is correct, as both Ajanta and Mahabalipuram feature magnificent rock-cut architecture. Statement 1 is incorrect because Ajanta dates from 2nd century BCE to 6th century CE, while Mahabalipuram monuments were built in the 7th–8th century CE. Statement 2 is incorrect because Ajanta is exclusively Buddhist, whereas Mahabalipuram represents Hindu monuments.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-066",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 66,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Bitcoin payments",
+    "question": "With reference to 'Bitcoins', sometimes seen in the news, which of the following statements is/are correct?\n\n1. Bitcoins are tracked by the Central Banks of the countries.\n2. Anyone with a Bitcoin address can send and receive Bitcoins from anyone else with a Bitcoin address.\n3. Online payments can be sent without either side knowing the identity of the other.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Bitcoins', sometimes seen in the news, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Bitcoins are tracked by the Central Banks of the countries.\n2. Anyone with a Bitcoin address can send and receive Bitcoins from anyone else with a Bitcoin address.\n3. Online payments can be sent without either side knowing the identity of the other."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Bitcoin has no central-bank issuer. Anyone with a Bitcoin address can send or receive payments, and the parties need not disclose their real-world identities to each other. Statements 2 and 3 are correct. Transactions are recorded publicly on the blockchain, so this does not mean they are untraceable.",
+      "concept": "Bitcoin payments",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-067",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 67,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "New Development Bank",
+    "question": "Consider the following statements:\n\n1. New Development Bank has been set up by APEC.\n2. The headquarters of New Development Bank is in Shanghai.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. New Development Bank has been set up by APEC.\n2. The headquarters of New Development Bank is in Shanghai."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The New Development Bank was established by BRICS, not APEC, and has its headquarters in Shanghai. Only statement 2 is correct.",
+      "concept": "New Development Bank",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-068",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 68,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Western Ghats",
+    "question": "'Gadgil Committee Report' and 'Kasturirangan Committee Report', sometimes seen in the news, are related to",
+    "options": {
+      "a": "constitutional reforms",
+      "b": "Ganga Action Plan",
+      "c": "linking of rivers",
+      "d": "protection of Western Ghats"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Gadgil Committee Report' and 'Kasturirangan Committee Report', sometimes seen in the news, are related to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Gadgil and Kasturirangan committees examined conservation and ecologically sensitive areas in the Western Ghats. Their reports concern balancing protection and development in that region.",
+      "concept": "Western Ghats",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-069",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 69,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · social & religious reform",
+    "question": "Consider the following:\n\n1. Calcutta Unitarian Committee\n2. Tabernacle of New Dispensation\n3. Indian Reform Association\n\nKeshab Chandra Sen is associated with the establishment of which of the above?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Calcutta Unitarian Committee\n2. Tabernacle of New Dispensation\n3. Indian Reform Association"
+      },
+      {
+        "type": "paragraph",
+        "text": "Keshab Chandra Sen is associated with the establishment of which of the above?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Keshav Chandra Sen is associated with the establishment of the Tabernacle of New Dispensation (founded in 1868) and the Indian Reform Association (founded in 1870). He was not associated with the Calcutta Unitarian Committee, which was founded by Raja Ram Mohan Roy, Dwarkanath Tagore, and William Adam in 1823.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-070",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 70,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Gulf Cooperation Council",
+    "question": "Which of the following is not a member of 'Gulf Cooperation Council'?",
+    "options": {
+      "a": "Iran",
+      "b": "Saudi Arabia",
+      "c": "Oman",
+      "d": "Kuwait"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is not a member of 'Gulf Cooperation Council'?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The GCC comprises Bahrain, Kuwait, Oman, Qatar, Saudi Arabia and the United Arab Emirates. Iran is not a member.",
+      "concept": "Gulf Cooperation Council",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-071",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 71,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Development, welfare & government schemes",
+    "question": "What is/are the purpose/purposes of Government's 'Sovereign Gold Bond Scheme' and 'Gold Monetization Scheme'?\n\n1. To bring the idle gold lying with Indian households into the economy\n2. To promote FDI in the gold and jewellery sector\n3. To reduce India's dependence on gold imports\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are the purpose/purposes of Government's 'Sovereign Gold Bond Scheme' and 'Gold Monetization Scheme'?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. To bring the idle gold lying with Indian households into the economy\n2. To promote FDI in the gold and jewellery sector\n3. To reduce India's dependence on gold imports"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Launched in 2015, the primary purpose of these schemes was to mobilize the idle gold lying in households and institutions into the economy for productive use (Statement 1 correct), and to reduce the country's reliance on gold imports (Statement 3 correct). Promoting FDI in the gold sector was not an objective (Statement 2 incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-072",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 72,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Belt and Road Initiative",
+    "question": "'Belt and Road Initiative' is sometimes mentioned in the news in the context of the affairs of",
+    "options": {
+      "a": "African Union",
+      "b": "Brazil",
+      "c": "European Union",
+      "d": "China"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Belt and Road Initiative' is sometimes mentioned in the news in the context of the affairs of"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "China launched the Belt and Road Initiative to promote infrastructure and connectivity along land and maritime routes. It is a Chinese initiative.",
+      "concept": "Belt and Road Initiative",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-073",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 73,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Microenterprise finance",
+    "question": "Pradhan Mantri MUDRA Yojana is aimed at",
+    "options": {
+      "a": "bringing the small entrepreneurs into formal financial system",
+      "b": "providing loans to poor farmers for cultivating particular crops",
+      "c": "providing pensions to old and destitute persons",
+      "d": "funding the voluntary organizations involved in the promotion of skill development and employment generation"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Pradhan Mantri MUDRA Yojana is aimed at"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "MUDRA provides access to institutional finance for small and micro enterprises. Its purpose is to bring small entrepreneurs into the formal financial system.",
+      "concept": "Microenterprise finance",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-074",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 74,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "Indian geography & resources",
+    "question": "In which of the following regions of India are shale gas resources found?\n\n1. Cambay Basin\n2. Cauvery Basin\n3. Krishna-Godavari Basin\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In which of the following regions of India are shale gas resources found?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Cambay Basin\n2. Cauvery Basin\n3. Krishna-Godavari Basin"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Oil Shales are usually fine-grained sedimentary rocks containing relatively large amounts of organic matter from which significant quantities of shale oil and combustible gas can be extracted by destructive distillation. Shale gas can emerge as an important new source of energy in the country. India has several Shale Formations which seem to hold shale gas. The Shale Gas Formations are spread over several sedimentary basins, such as, Gangetic plain, Gujarat, Rajasthan, Andhra Pradesh and other coastal areas in the country including hydrocarbon-bearing ones Cambay, Assam Arkan & Damodar Basins have large shale deposits. Various developmental activities are going on in Gandhar area of Cambay Basin, Krishna-Godavari Basin, Cauvery Basin and Assam & Assam Arkan Basin. ONGC is presently carrying out shale gas and oil exploration in four onland basins, namely, Cambay, KG, Cauvery, Assam and Assam-Arakan. A total of twelve exploratory locations for shale gas and oil are available for drilling in 2016-17 and subsequent year. In addition, coring and other data collection are planned in suitable exploratory wells in identified blocks. ONGC has drilled 18 wells so far and one well is under drilling. So far 69 cores have been collected in 17 wells.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-075",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 75,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International economic reports",
+    "question": "'Global Financial Stability Report' is prepared by the",
+    "options": {
+      "a": "European Central Bank",
+      "b": "International Monetary Fund",
+      "c": "International Bank for Reconstruction and Development",
+      "d": "Organization for Economic Cooperation and Development"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Global Financial Stability Report' is prepared by the"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The International Monetary Fund produces the Global Financial Stability Report. It examines financial-system risks and vulnerabilities.",
+      "concept": "International economic reports",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-076",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 76,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Atal Pension Yojana",
+    "question": "Regarding 'Atal Pension Yojana', which of the following statements is/are correct?\n\n1. It is minimum guaranteed pension scheme mainly targeted at unorganized sector workers.\n2. Only one member of a family can join the scheme.\n3. Same amount of pension is guaranteed for the spouse for life after subscriber's death.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Regarding 'Atal Pension Yojana', which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is minimum guaranteed pension scheme mainly targeted at unorganized sector workers.\n2. Only one member of a family can join the scheme.\n3. Same amount of pension is guaranteed for the spouse for life after subscriber's death."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "APY guarantees a minimum pension, particularly targeting unorganised-sector workers, and provides the same pension to the spouse after the subscriber’s death. There is no one-subscriber-per-family restriction.",
+      "concept": "Atal Pension Yojana",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-077",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 77,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Regional trade",
+    "question": "The term 'Regional Comprehensive Economic Partnership' often appears in the news in the context of the affairs of a group of countries known as",
+    "options": {
+      "a": "G20",
+      "b": "ASEAN",
+      "c": "SCO",
+      "d": "SAARC"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The term 'Regional Comprehensive Economic Partnership' often appears in the news in the context of the affairs of a group of countries known as"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "RCEP negotiations were initiated around ASEAN and its free-trade agreement partners. The grouping associated with the term in 2016 was ASEAN.",
+      "concept": "Regional trade",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-078",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 78,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Energy efficiency",
+    "question": "On which of the following can you find the Bureau of Energy Efficiency Star Label?\n\n1. Ceiling fans\n2. Electric geysers\n3. Tubular fluorescent lamps\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "On which of the following can you find the Bureau of Energy Efficiency Star Label?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Ceiling fans\n2. Electric geysers\n3. Tubular fluorescent lamps"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "BEE’s star-labelling programme covered all three listed product categories: ceiling fans, electric geysers and tubular fluorescent lamps. Such labels communicate relative energy efficiency.",
+      "concept": "Energy efficiency",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-079",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 79,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "India is an important member of the 'International Thermonuclear Experimental Reactor'. If this experiment succeeds, what is the immediate advantage for India?",
+    "options": {
+      "a": "It can use thorium in place of uranium for power generation",
+      "b": "It can attain a global role in satellite navigation",
+      "c": "It can drastically improve the efficiency of its fission reactors in power generation",
+      "d": "It can build fusion reactors for power generation"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "India is an important member of the 'International Thermonuclear Experimental Reactor'. If this experiment succeeds, what is the immediate advantage for India?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The aim of the ITER project is to determine whether nuclear fusion can be a source of energy and electricity in the future. A success means India can build fusion reactors for power generation.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-080",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 80,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "South Indian institutions",
+    "question": "In the context of the history of India, consider the following pairs:\n\n | Term | Description\n1. | Eripatti | Land, revenue from which was set apart for the maintenance of the village tank\n2. | Taniyurs | Villages donated to a single Brahmin or a group of Brahmins\n3. | Ghatikas | Colleges generally attached to the temples\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "a": "1 and 2",
+      "b": "3 only",
+      "c": "2 and 3",
+      "d": "1 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of the history of India, consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "No.",
+          "Term",
+          "Description"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Eripatti",
+            "Land, revenue from which was set apart for the maintenance of the village tank"
+          ],
+          [
+            "2.",
+            "Taniyurs",
+            "Villages donated to a single Brahmin or a group of Brahmins"
+          ],
+          [
+            "3.",
+            "Ghatikas",
+            "Colleges generally attached to the temples"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above is/are correctly matched?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Eripatti land revenue funded village-tank maintenance and ghatikas were educational institutions often associated with temples. Taniyurs were separate revenue or administrative units, not the stated Brahmin land grants.",
+      "concept": "South Indian institutions",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-081",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 81,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "International Solar Alliance",
+    "question": "Consider the following statements:\n\n1. The International Solar Alliance was launched at the United Nations Climate Change Conference in 2015.\n2. The Alliance includes all the member countries of the United Nations.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The International Solar Alliance was launched at the United Nations Climate Change Conference in 2015.\n2. The Alliance includes all the member countries of the United Nations."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The International Solar Alliance was launched at the Paris climate conference in 2015. Its original focus was countries between the Tropics of Cancer and Capricorn, rather than every UN member.",
+      "concept": "International Solar Alliance",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-082",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 82,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "European Stability Mechanism",
+    "question": "'European Stability Mechanism', sometimes seen in the news, is an",
+    "options": {
+      "a": "agency created by EU to deal with the impact of millions of refugees arriving from Middle East",
+      "b": "agency of EU that provides financial assistance to eurozone countries",
+      "c": "agency of EU to deal with all the bilateral and multilateral agreements on trade",
+      "d": "agency of EU to deal with the conflicts arising among the member countries"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'European Stability Mechanism', sometimes seen in the news, is an"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The ESM provides financial assistance to euro-area members in financial difficulty. It concerns eurozone financial stability rather than refugee policy or trade negotiations.",
+      "concept": "European Stability Mechanism",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-083",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 83,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Drip irrigation",
+    "question": "Which of the following is/are the advantage/advantages of practising drip irrigation?\n\n1. Reduction in weed\n2. Reduction in soil salinity\n3. Reduction in soil erosion\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "1 and 3 only",
+      "d": "None of the above is an advantage of practising drip irrigation"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is/are the advantage/advantages of practising drip irrigation?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Reduction in weed\n2. Reduction in soil salinity\n3. Reduction in soil erosion"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Drip irrigation wets a small area near plant roots, limiting weed growth and reducing runoff and soil erosion. Reduction of soil salinity is not an assured general advantage, so 1 and 3 are selected.",
+      "concept": "Drip irrigation",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-084",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 84,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Social Development",
+    "topic": "DigiLocker",
+    "question": "Regarding 'DigiLocker', sometimes seen in the news, which of the following statements is/are correct?\n\n1. It is a digital locker system offered by the Government under Digital India Programme.\n2. It allows you to access your e-documents irrespective of your physical location.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Regarding 'DigiLocker', sometimes seen in the news, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is a digital locker system offered by the Government under Digital India Programme.\n2. It allows you to access your e-documents irrespective of your physical location."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "DigiLocker is a Government digital-document service under Digital India. Users can obtain and access their electronic records remotely, so both statements are correct.",
+      "concept": "DigiLocker",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-085",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 85,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "Recently, linking of which of the following rivers was undertaken?",
+    "options": {
+      "a": "Cauvery and Tungabhadra",
+      "b": "Godavari and Krishna",
+      "c": "Mahanadi and Sone",
+      "d": "Narmada and Tapti"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, linking of which of the following rivers was undertaken?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Pattiseema lift irrigation project is a river interlinking project which connects Godavari river to Krishna river. Pattiseema scheme will help revive Krishna delta. The first pump of this Godavari-Krishna linking project was installed and switched on in September 2015. It will benefit the people especially farmers in the Krishna deltain terms of timely availability and adequate quantities of water. Under the National Perspective Plan (NPP) prepared by Ministry of Water Resources, NWDA has already identified 14 links under Himalayan Rivers Component and 16 links under Peninsular Rivers Component for inter basin transfer of water",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-086",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 86,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "In the cities of our country, which among the following atmospheric gases are normally considered in calculating the value of Air Quality Index?\n\n1. Carbon dioxide\n2. Carbon monoxide\n3. Nitrogen dioxide\n4. Sulfur dioxide\n5. Methane\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1, 2 and 3 only",
+      "b": "2, 3 and 4 only",
+      "c": "1, 4 and 5 only",
+      "d": "1, 2, 3, 4 and 5"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the cities of our country, which among the following atmospheric gases are normally considered in calculating the value of Air Quality Index?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Carbon dioxide\n2. Carbon monoxide\n3. Nitrogen dioxide\n4. Sulfur dioxide\n5. Methane"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The National Air Quality Index (AQI) in India is calculated based on eight primary pollutants: PM10, PM2.5, Nitrogen Dioxide ($NO_2$), Sulfur Dioxide ($SO_2$), Carbon Monoxide (CO), Ozone ($O_3$), Ammonia ($NH_3$), and Lead (Pb).  It does not include Carbon dioxide or Methane, which are global warming gases rather than direct local air quality pollutants.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-087",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 87,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "With reference to 'Astrosat', the astronomical observatory launched by India, which of the following statements is/are correct?\n\n1. Other than USA and Russia, India is the only country to have launched a similar observatory into space.\n2. Astrosat is a 2000 kg satellite placed in an orbit at 1650 km above the surface of the Earth.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Astrosat', the astronomical observatory launched by India, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Other than USA and Russia, India is the only country to have launched a similar observatory into space.\n2. Astrosat is a 2000 kg satellite placed in an orbit at 1650 km above the surface of the Earth."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "India is not the only country; Japan and Europe have also launched similar space observatories (Statement 1 is incorrect). Astrosat has a lift-off mass of 1515 kg (not 2000 kg) and is placed in a 650 km orbit (not 1650 km) (Statement 2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-088",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 88,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "With reference to the economic history of medieval India, the term 'Araghatta' refers to",
+    "options": {
+      "a": "bonded labour",
+      "b": "land grants made to military officers",
+      "c": "waterwheel used in the irrigation of land",
+      "d": "wasteland converted to cultivated land"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the economic history of medieval India, the term 'Araghatta' refers to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Araghatta refers to a Persian wheel or mechanical waterwheel equipped with pots along its circumference, used in medieval India to lift water from open wells for field irrigation.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-089",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 89,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Heritage & cultural traditions",
+    "question": "With reference to the cultural history of India, the memorizing of chronicles, dynastic histories and epic tales was the profession of who of the following?",
+    "options": {
+      "a": "Shramana",
+      "b": "Parivraajaka",
+      "c": "Agrahaarika",
+      "d": "Maagadha"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the cultural history of India, the memorizing of chronicles, dynastic histories and epic tales was the profession of who of the following?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The memorizing of chronicles, dynastic histories, or epic tales was the specialized work of a group of people known as the sutas and magadhas. Shramanas were ascetics leading a strict self-denying lifestyle, Parivraajaka was a wandering renunciant ascetic, and Agrahaarika referred to a land grant given to priests.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-090",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 90,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "State butterflies",
+    "question": "Recently, for the first time in our country, which of the following States has declared a particular butterfly as 'State Butterfly'?",
+    "options": {
+      "a": "Arunachal Pradesh",
+      "b": "Himachal Pradesh",
+      "c": "Karnataka",
+      "d": "Maharashtra"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, for the first time in our country, which of the following States has declared a particular butterfly as 'State Butterfly'?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Maharashtra designated the Blue Mormon as its State butterfly in 2015, the first Indian State to adopt such a designation.",
+      "concept": "State butterflies",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-091",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 91,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Consider the following statements:\n\nThe Mangalyaan launched by ISRO\n\n1. is also called the Mars Orbiter Mission\n2. made India the second country to have a spacecraft orbit the Mars after USA\n3. made India the only country to be successful in making its spacecraft orbit the Mars in its very first attempt\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Mangalyaan launched by ISRO"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. is also called the Mars Orbiter Mission\n2. made India the second country to have a spacecraft orbit the Mars after USA\n3. made India the only country to be successful in making its spacecraft orbit the Mars in its very first attempt"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Mangalyaan is also called the Mars Orbiter Mission (MOM). India was the fourth entity to reach Mars (after USA, Soviet Union, and ESA), making statement 2 incorrect, but India was the first to succeed in its maiden attempt (Statement 3 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-092",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 92,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · nationalism & revolutionary movements",
+    "question": "What was the main reason for the split in the Indian National Congress at Surat in 1907?",
+    "options": {
+      "a": "Introduction of communalism into Indian politics by Lord Minto",
+      "b": "Extremists' lack of faith in the capacity of the moderates to negotiate with the British Government",
+      "c": "Foundation of Muslim League",
+      "d": "Aurobindo Ghosh's inability to be elected as the President of the Indian National Congress"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What was the main reason for the split in the Indian National Congress at Surat in 1907?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Extremists wanted to extend the Swadeshi and Boycott movement across India and had lost faith in the Moderates' constitutional negotiation methods, which led to rigid positions and the Surat Split in 1907.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-093",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 93,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · Gandhian & mass movements",
+    "question": "The plan of Sir Stafford Cripps envisaged that after the Second World War",
+    "options": {
+      "a": "India should be granted complete independence",
+      "b": "India should be partitioned into two before granting independence",
+      "c": "India should be made a republic with the condition that she will join the Commonwealth",
+      "d": "India should be given Dominion status"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The plan of Sir Stafford Cripps envisaged that after the Second World War"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Cripps Mission (1942) proposed that an Indian Union with Dominion Status would be set up after the Second World War.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-094",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 94,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "Indian regions",
+    "question": "Consider the following pairs:\n\n | Famous place | Region\n1. | Bodhgaya | Baghelkhand\n2. | Khajuraho | Bundelkhand\n3. | Shirdi | Vidarbha\n4. | Nasik (Nashik) | Malwa\n5. | Tirupati | Rayalaseema\n\nWhich of the pairs given above are correctly matched?",
+    "options": {
+      "a": "1, 2 and 4",
+      "b": "2, 3, 4 and 5",
+      "c": "2 and 5 only",
+      "d": "1, 3, 4 and 5"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "No.",
+          "Famous place",
+          "Region"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Bodhgaya",
+            "Baghelkhand"
+          ],
+          [
+            "2.",
+            "Khajuraho",
+            "Bundelkhand"
+          ],
+          [
+            "3.",
+            "Shirdi",
+            "Vidarbha"
+          ],
+          [
+            "4.",
+            "Nasik (Nashik)",
+            "Malwa"
+          ],
+          [
+            "5.",
+            "Tirupati",
+            "Rayalaseema"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above are correctly matched?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Khajuraho belongs to Bundelkhand and Tirupati to Rayalaseema. Bodhgaya, Shirdi and Nashik do not belong to the regions paired with them here. Only pairs 2 and 5 are correct.",
+      "concept": "Indian regions",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-095",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 95,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Constitutional structure & amendments",
+    "question": "The Parliament of India acquires the power to legislate on any item in the State List in the national interest if a resolution to that effect is passed by the",
+    "options": {
+      "a": "Lok Sabha by a simple majority of its total membership",
+      "b": "Lok Sabha by a majority of not less than two-thirds of its total membership",
+      "c": "Rajya Sabha by a simple majority of its total membership",
+      "d": "Rajya Sabha by a majority of not less than two-thirds of its members present and voting"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Parliament of India acquires the power to legislate on any item in the State List in the national interest if a resolution to that effect is passed by the"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Under Article 249, the Parliament can legislate on a State List subject in national interest if the Rajya Sabha passes a resolution supported by not less than two-thirds of the members present and voting.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-096",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 96,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "Recently, which of the following States has explored the possibility of constructing an artificial inland port to be connected to sea by a long navigational channel?",
+    "options": {
+      "a": "Andhra Pradesh",
+      "b": "Chhattisgarh",
+      "c": "Karnataka",
+      "d": "Rajasthan"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, which of the following States has explored the possibility of constructing an artificial inland port to be connected to sea by a long navigational channel?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "To develop inland shipping port, Rajasthan is developing a channel along the Kutch Creek at Jalore which would be connected to the Arabian sea. If implemented, Rajasthan will not remain a landlocked state.",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-097",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 97,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "With reference to the Agreement at the UNFCCC Meeting in Paris in 2015, which of the following statements is/are correct?\n\n1. The Agreement was signed by all the member countries of the UN and it will go into effect in 2017.\n2. The Agreement aims to limit the greenhouse gas emissions so that the rise in average global temperature by the end of this century does not exceed 2 °C or even 1.5 °C above pre-industrial levels.\n3. Developed countries acknowledged their historical responsibility in global warming and committed to donate $ 1000 billion a year from 2020 to help developing countries to cope with climate change.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the Agreement at the UNFCCC Meeting in Paris in 2015, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The Agreement was signed by all the member countries of the UN and it will go into effect in 2017.\n2. The Agreement aims to limit the greenhouse gas emissions so that the rise in average global temperature by the end of this century does not exceed 2 °C or even 1.5 °C above pre-industrial levels.\n3. Developed countries acknowledged their historical responsibility in global warming and committed to donate $ 1000 billion a year from 2020 to help developing countries to cope with climate change."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Paris Agreement aims to limit global temperature rise to well below 2°C, preferably to $1.5^{\\circ}C$ (Statement 2 is correct).  Not all UN members signed it initially, and its major climate action targets were intended to start post-2020, not 2017 (Statement 1 is incorrect).  The climate finance commitment by developed countries was $100 billion per year, not $1000 billion (Statement 3 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-098",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 98,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Consider the following statements:\n\n1. The Sustainable Development Goals were first proposed in 1972 by a global think tank called the 'Club of Rome'.\n2. The Sustainable Development Goals have to be achieved by 2030.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The Sustainable Development Goals were first proposed in 1972 by a global think tank called the 'Club of Rome'.\n2. The Sustainable Development Goals have to be achieved by 2030."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Sustainable Development Goals (SDGs) were set up in 2015 by the United Nations General Assembly, not the Club of Rome in 1972 (Statement 1 is incorrect).  The 17 interlinked global goals are intended to be achieved by the year 2030 (Statement 2 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-099",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 99,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "A recent movie titled The Man Who Knew Infinity is based on the biography of",
+    "options": {
+      "a": "S. Ramanujan",
+      "b": "S. Chandrasekhar",
+      "c": "S. N. Bose",
+      "d": "C. V. Raman"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A recent movie titled The Man Who Knew Infinity is based on the biography of"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The 2015 movie \"The Man Who Knew Infinity\" depicts the life and mathematical contributions of the legendary Indian mathematician Srinivasa Ramanujan.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-100",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 100,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Local government",
+    "question": "Consider the following statements:\n\n1. The minimum age prescribed for any person to be a member of Panchayat is 25 years.\n2. A Panchayat reconstituted after premature dissolution continues only for the remainder period.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The minimum age prescribed for any person to be a member of Panchayat is 25 years.\n2. A Panchayat reconstituted after premature dissolution continues only for the remainder period."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The minimum age for a Panchayat member is 21 years, not 25 (Statement 1 is incorrect). A Panchayat reconstituted after premature dissolution continues only for the remainder of the period (Statement 2 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  }
+]

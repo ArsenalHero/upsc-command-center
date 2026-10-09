@@ -1,0 +1,2348 @@
+[
+  {
+    "id": "upsc-2016-prelims-gs1-a-001",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 1,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Lapse of bills",
+    "question": "Which of the following statements is/are correct?\n\n1. A Bill pending in the Lok Sabha lapses on its prorogation.\n2. A Bill pending in the Rajya Sabha, which has not been passed by the Lok Sabha, shall not lapse on dissolution of the Lok Sabha.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. A Bill pending in the Lok Sabha lapses on its prorogation.\n2. A Bill pending in the Rajya Sabha, which has not been passed by the Lok Sabha, shall not lapse on dissolution of the Lok Sabha."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Prorogation ends a session and does not cause pending bills to lapse. A Rajya Sabha bill not yet passed by the Lok Sabha also survives the Lok Sabha’s dissolution. Only statement 2 is correct.",
+      "concept": "Lapse of bills",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-002",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 2,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Global Hunger Index",
+    "question": "Which of the following is/are the indicator/indicators used by IFPRI to compute the Global Hunger Index Report?\n\n1. Undernourishment\n2. Child stunting\n3. Child mortality\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1, 2 and 3",
+      "d": "1 and 3 only"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is/are the indicator/indicators used by IFPRI to compute the Global Hunger Index Report?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Undernourishment\n2. Child stunting\n3. Child mortality"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The GHI methodology used at the time included undernourishment, child wasting, child stunting and child mortality. All three indicators listed in this question belong to that set.",
+      "concept": "Global Hunger Index",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-003",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 3,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Fiscal deficits",
+    "question": "There has been a persistent deficit budget year after year. Which action/actions of the following can be taken by the Government to reduce the deficit?\n\n1. Reducing revenue expenditure\n2. Introducing new welfare schemes\n3. Rationalizing subsidies\n4. Reducing import duty\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "There has been a persistent deficit budget year after year. Which action/actions of the following can be taken by the Government to reduce the deficit?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Reducing revenue expenditure\n2. Introducing new welfare schemes\n3. Rationalizing subsidies\n4. Reducing import duty"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Cutting revenue expenditure and rationalising subsidies reduce government spending and can narrow the deficit. New welfare expenditure or reduced import duties can widen it. Statements 1 and 3 are correct.",
+      "concept": "Fiscal deficits",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-004",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 4,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "The establishment of 'Payment Banks' is being allowed in India to promote financial inclusion. Which of the following statements is/are correct in this context?\n\n1. Mobile telephone companies and supermarket chains that are owned and controlled by residents are eligible to be promoters of Payment Banks.\n2. Payment Banks can issue both credit cards and debit cards.\n3. Payment Banks cannot undertake lending activities.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "1 and 3 only",
+      "c": "2 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The establishment of 'Payment Banks' is being allowed in India to promote financial inclusion. Which of the following statements is/are correct in this context?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Mobile telephone companies and supermarket chains that are owned and controlled by residents are eligible to be promoters of Payment Banks.\n2. Payment Banks can issue both credit cards and debit cards.\n3. Payment Banks cannot undertake lending activities."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Resident-owned mobile telcos, supermarket chains, and professionals are eligible to promote Payment Banks to advance digital inclusion (Statement 1 correct). Payment Banks are restricted from undertaking any lending activities or issuing credit cards (Statement 2 false, Statement 3 correct). They can only accept demand deposits (up to specified limits) and issue ATM/debit cards.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-005",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 5,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "With reference to 'LiFi', recently in the news, which of the following statements is/are correct?\n\n1. It uses light as the medium for high-speed data transmission.\n2. It is a wireless technology and is several times faster than 'WiFi'.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'LiFi', recently in the news, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It uses light as the medium for high-speed data transmission.\n2. It is a wireless technology and is several times faster than 'WiFi'."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "LiFi is a wireless communication technology that uses visible light to transmit data at high speeds, and it is said to be about 100 times faster than existing WiFi offerings.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-006",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 6,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "The term 'Intended Nationally Determined Contributions' is sometimes seen in the news in the context of",
+    "options": {
+      "a": "pledges made by the European countries to rehabilitate refugees from the war-affected Middle East",
+      "b": "plan of action outlined by the countries of the world to combat climate change",
+      "c": "capital contributed by the member countries in the establishment of Asian Infrastructure Investment Bank",
+      "d": "plan of action outlined by the countries of the world regarding Sustainable Development Goals"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The term 'Intended Nationally Determined Contributions' is sometimes seen in the news in the context of"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Intended Nationally Determined Contributions (INDCs) are non-binding national plans highlighting climate actions, including climate-related targets for greenhouse gas emission reductions, outlined by countries under the Paris Agreement to combat climate change.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-007",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 7,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Development, welfare & government schemes",
+    "question": "Which one of the following is a purpose of 'UDAY', a scheme of the Government?",
+    "options": {
+      "a": "Providing technical and financial assistance to start-up entrepreneurs in the field of renewable sources of energy",
+      "b": "Providing electricity to every household in the country by 2018",
+      "c": "Replacing the coal-based power plants with natural gas, nuclear, solar, wind and tidal power plants over a period of time",
+      "d": "Providing for financial turnaround and revival of power distribution companies"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is a purpose of 'UDAY', a scheme of the Government?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Ujwal DISCOM Assurance Yojana (UDAY) was launched in 2015 to improve the operational and financial turnaround and revival of state-owned Power Distribution Companies (DISCOMs).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-008",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 8,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Masala bonds",
+    "question": "With reference to 'IFC Masala Bonds', sometimes seen in the news, which of the statements given below is/are correct?\n\n1. The International Finance Corporation, which offers these bonds, is an arm of the World Bank.\n2. They are the rupee-denominated bonds and are a source of debt financing for the public and private sector.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'IFC Masala Bonds', sometimes seen in the news, which of the statements given below is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The International Finance Corporation, which offers these bonds, is an arm of the World Bank.\n2. They are the rupee-denominated bonds and are a source of debt financing for the public and private sector."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "IFC belongs to the World Bank Group. Masala bonds are offshore debt instruments denominated in Indian rupees and can finance public or private borrowers. Both statements are correct.",
+      "concept": "Masala bonds",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-009",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 9,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "Regarding the taxation system of Krishna Deva, the ruler of Vijayanagar, consider the following statements:\n\n1. The tax rate on land was fixed depending on the quality of the land.\n2. Private owners of workshops paid an industries tax.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Regarding the taxation system of Krishna Deva, the ruler of Vijayanagar, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The tax rate on land was fixed depending on the quality of the land.\n2. Private owners of workshops paid an industries tax."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Both statements are correct. In the Vijayanagara Empire under Krishnadevaraya, land assessment was categorized based on soil fertility and irrigation, and professional taxes were levied on commercial workshops and crafts.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-010",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 10,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Literature, music & performing arts",
+    "question": "Which one of the following books of ancient India has the love story of the son of the founder of Sunga dynasty?",
+    "options": {
+      "a": "Swapnavasavadatta",
+      "b": "Malavikagnimitra",
+      "c": "Meghadoota",
+      "d": "Ratnavali"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following books of ancient India has the love story of the son of the founder of Sunga dynasty?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Kalidasa's classical Sanskrit play 'Malavikagnimitram' dramatizes the romantic love story of Emperor Agnimitra (the son of Sunga dynasty founder Pushyamitra Sunga) and Malavika, an exiled princess living as a handmaiden.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-011",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 11,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International trade & institutions",
+    "question": "In the context of which of the following do you sometimes find the terms 'amber box, blue box and green box' in the news?",
+    "options": {
+      "a": "WTO affairs",
+      "b": "SAARC affairs",
+      "c": "UNFCCC affairs",
+      "d": "India-EU negotiations on FTA"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of which of the following do you sometimes find the terms 'amber box, blue box and green box' in the news?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "In World Trade Organization (WTO) terminology, agricultural domestic support (subsidies) are categorized into colored \"Boxes\": the Green Box (permitted, minimal distortion), Amber Box (must be reduced), and Blue Box (subsidies tied to production-limiting programs) under the Agreement on Agriculture.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-012",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 12,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Public finance & fiscal policy",
+    "question": "Which of the following is/are included in the capital budget of the Government of India?\n\n1. Expenditure on acquisition of assets like roads, buildings, machinery, etc.\n2. Loans received from foreign governments\n3. Loans and advances granted to the States and Union Territories\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is/are included in the capital budget of the Government of India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Expenditure on acquisition of assets like roads, buildings, machinery, etc.\n2. Loans received from foreign governments\n3. Loans and advances granted to the States and Union Territories"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Capital Budget includes capital expenditure (acquisition of physical assets like roads/buildings and granting loans to states) as well as capital receipts (borrowings and loans received from foreign governments). Thus, all three items are included.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-013",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 13,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "What is/are the importance/importances of the United Nations Convention to Combat Desertification?\n\n1. It aims to promote effective action through innovative national programmes and supportive international partnerships.\n2. It has a special/particular focus on South Asia and North Africa regions, and its Secretariat facilitates the allocation of major portion of financial resources to these regions.\n3. It is committed to bottom-up approach, encouraging the participation of local people in combating the desertification.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are the importance/importances of the United Nations Convention to Combat Desertification?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It aims to promote effective action through innovative national programmes and supportive international partnerships.\n2. It has a special/particular focus on South Asia and North Africa regions, and its Secretariat facilitates the allocation of major portion of financial resources to these regions.\n3. It is committed to bottom-up approach, encouraging the participation of local people in combating the desertification."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The UNCCD aims to promote effective action through national programs and international partnerships (Statement 1 is correct) and explicitly encourages a bottom-up approach by involving local communities (Statement 3 is correct).  It does not have a specific, exclusive financial focus on South Asia and North Africa; its focus is global, originally emphasizing Africa as a whole, but not strictly the combination mentioned (Statement 2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-014",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 14,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "IMF Special Drawing Rights",
+    "question": "Recently, which one of the following currencies has been proposed to be added to the basket of IMF's SDR?",
+    "options": {
+      "a": "Rouble",
+      "b": "Rand",
+      "c": "Indian Rupee",
+      "d": "Renminbi"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, which one of the following currencies has been proposed to be added to the basket of IMF's SDR?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The IMF approved inclusion of China’s renminbi in the SDR currency basket in 2015, with the change taking effect in October 2016. The examination refers to that proposed addition.",
+      "concept": "IMF Special Drawing Rights",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-015",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 15,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International trade & institutions",
+    "question": "With reference to the International Monetary and Financial Committee (IMFC), consider the following statements:\n\n1. IMFC discusses matters of concern affecting the global economy, and advises the International Monetary Fund (IMF) on the direction of its work.\n2. The World Bank participates as observer in IMFC's meetings.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the International Monetary and Financial Committee (IMFC), consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. IMFC discusses matters of concern affecting the global economy, and advises the International Monetary Fund (IMF) on the direction of its work.\n2. The World Bank participates as observer in IMFC's meetings."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The International Monetary and Financial Committee (IMFC) discusses major issues concerning the global economy and advises the IMF's Board of Governors on policy directions (Statement 1 is correct). Several international institutions, explicitly including the World Bank, participate in IMFC meetings on an observer basis (Statement 2 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-016",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 16,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Social Development",
+    "topic": "Manual scavenging",
+    "question": "'Rashtriya Garima Abhiyaan' is a national campaign to",
+    "options": {
+      "a": "rehabilitate the homeless and destitute persons and provide them with suitable sources of livelihood",
+      "b": "release the sex workers from their practice and provide them with alternative sources of livelihood",
+      "c": "eradicate the practice of manual scavenging and rehabilitate the manual scavengers",
+      "d": "release the bonded labourers from their bondage and rehabilitate them"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Rashtriya Garima Abhiyaan' is a national campaign to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Rashtriya Garima Abhiyaan campaigns against manual scavenging and seeks dignity, liberation and rehabilitation for people engaged in the practice.",
+      "concept": "Manual scavenging",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-017",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 17,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Heritage & cultural traditions",
+    "question": "With reference to the cultural history of medieval India, consider the following statements:\n\n1. Siddhas (Sittars) of Tamil region were monotheistic and condemned idolatry.\n2. Lingayats of Kannada region questioned the theory of rebirth and rejected the caste hierarchy.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the cultural history of medieval India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Siddhas (Sittars) of Tamil region were monotheistic and condemned idolatry.\n2. Lingayats of Kannada region questioned the theory of rebirth and rejected the caste hierarchy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Both statements are correct. The Siddhas of the Tamil region believed in the oneness of the transcendental being and roundly condemned idolatry. Similarly, the Lingayats, led by Basavanna in the Kannada region, challenged the idea of caste and the \"pollution\" attributed to certain groups by Brahmanas, while also questioning the theory of rebirth.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-018",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 18,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International trade & institutions",
+    "question": "Which of the following best describes the term 'import cover', sometimes seen in the news?",
+    "options": {
+      "a": "It is the ratio of value of imports to the Gross Domestic Product of a country",
+      "b": "It is the total value of imports of a country in a year",
+      "c": "It is the ratio between the value of exports and that of imports between two countries",
+      "d": "It is the number of months of imports that could be paid for by a country's international reserves"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following best describes the term 'import cover', sometimes seen in the news?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Import cover is an essential macroeconomic indicator that measures the number of months of imports a country can safely sustain and pay for using its available international foreign exchange reserves.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-019",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 19,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Communities in the news",
+    "question": "Consider the following pairs:\n\n | Community sometimes mentioned in the news | In the affairs of\n1. | Kurd | Bangladesh\n2. | Madhesi | Nepal\n3. | Rohingya | Myanmar\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "a": "1 and 2",
+      "b": "2 only",
+      "c": "2 and 3",
+      "d": "3 only"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "No.",
+          "Community sometimes mentioned in the news",
+          "In the affairs of"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Kurd",
+            "Bangladesh"
+          ],
+          [
+            "2.",
+            "Madhesi",
+            "Nepal"
+          ],
+          [
+            "3.",
+            "Rohingya",
+            "Myanmar"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above is/are correctly matched?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Madhesis are associated with Nepal and Rohingyas with Myanmar. Kurds are associated with West Asian countries such as Turkey, Iraq, Iran and Syria, rather than Bangladesh.",
+      "concept": "Communities in the news",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-020",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 20,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Chemical Weapons Convention",
+    "question": "With reference to 'Organization for the Prohibition of Chemical Weapons (OPCW)', consider the following statements:\n\n1. It is an organization of European Union in working relation with NATO and WHO.\n2. It monitors chemical industry to prevent new weapons from emerging.\n3. It provides assistance and protection to States (Parties) against chemical weapons threats.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Organization for the Prohibition of Chemical Weapons (OPCW)', consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is an organization of European Union in working relation with NATO and WHO.\n2. It monitors chemical industry to prevent new weapons from emerging.\n3. It provides assistance and protection to States (Parties) against chemical weapons threats."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "OPCW implements the Chemical Weapons Convention and verifies chemical-industry activities while assisting States against chemical threats. It is an independent intergovernmental organisation, not an EU organ.",
+      "concept": "Chemical Weapons Convention",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-021",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 21,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Crop insurance",
+    "question": "With reference to 'Pradhan Mantri Fasal Bima Yojana', consider the following statements:\n\n1. Under this scheme, farmers will have to pay a uniform premium of two percent for any crop they cultivate in any season of the year.\n2. This scheme covers post-harvest losses arising out of cyclones and unseasonal rains.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Pradhan Mantri Fasal Bima Yojana', consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Under this scheme, farmers will have to pay a uniform premium of two percent for any crop they cultivate in any season of the year.\n2. This scheme covers post-harvest losses arising out of cyclones and unseasonal rains."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "PMFBY’s farmer premium rates vary:2% for kharif food/oilseed crops,1.5% for rabi crops and 5% for annual commercial/horticultural crops. Specified post-harvest losses are covered, making only statement 2 correct.",
+      "concept": "Crop insurance",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-022",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 22,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "In which of the following regions of India are you most likely to come across the 'Great Indian Hornbill' in its natural habitat?",
+    "options": {
+      "a": "Sand deserts of northwest India",
+      "b": "Higher Himalayas of Jammu and Kashmir",
+      "c": "Salt marshes of western Gujarat",
+      "d": "Western Ghats"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In which of the following regions of India are you most likely to come across the 'Great Indian Hornbill' in its natural habitat?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Great Indian Hornbill is a large, fruit-eating bird whose natural habitat in India is predominantly in the dense, moist forests of the Western Ghats and the Nilgiris.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-023",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 23,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Ganga conservation",
+    "question": "Which of the following are the key features of 'National Ganga River Basin Authority (NGRBA)'?\n\n1. River basin is the unit of planning and management.\n2. It spearheads the river conservation efforts at the national level.\n3. One of the Chief Ministers of the States through which the Ganga flows becomes the Chairman of NGRBA on rotation basis.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following are the key features of 'National Ganga River Basin Authority (NGRBA)'?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. River basin is the unit of planning and management.\n2. It spearheads the river conservation efforts at the national level.\n3. One of the Chief Ministers of the States through which the Ganga flows becomes the Chairman of NGRBA on rotation basis."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "NGRBA used the river basin as its planning unit and led national conservation efforts. It was chaired by the Prime Minister, not a rotating State Chief Minister.",
+      "concept": "Ganga conservation",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-024",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 24,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Neem-coated urea",
+    "question": "Why does the Government of India promote the use of 'Neem-coated Urea' in agriculture?",
+    "options": {
+      "a": "Release of Neem oil in the soil increases nitrogen fixation by the soil microorganisms",
+      "b": "Neem coating slows down the rate of dissolution of urea in the soil",
+      "c": "Nitrous oxide, which is a greenhouse gas, is not at all released into atmosphere by crop fields",
+      "d": "It is a combination of a weedicide and a fertilizer for particular crops"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Why does the Government of India promote the use of 'Neem-coated Urea' in agriculture?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Neem coating slows the availability of nitrogen and reduces losses, improving fertiliser-use efficiency. It does not completely eliminate nitrous oxide emissions or turn urea into a crop-specific weedicide.",
+      "concept": "Neem-coated urea",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-025",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 25,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Union & state executive",
+    "question": "Consider the following statements:\n\n1. The Chief Secretary in a State is appointed by the Governor of that State.\n2. The Chief Secretary in a State has a fixed tenure.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The Chief Secretary in a State is appointed by the Governor of that State.\n2. The Chief Secretary in a State has a fixed tenure."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The Chief Secretary of a state is appointed by the Chief Minister of the state, not the Governor, and does not have a fixed tenure.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-026",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 26,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Stand Up India",
+    "question": "With reference to 'Stand Up India Scheme', which of the following statements is/are correct?\n\n1. Its purpose is to promote entrepreneurship among SC/ST and women entrepreneurs.\n2. It provides for refinance through SIDBI.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Stand Up India Scheme', which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Its purpose is to promote entrepreneurship among SC/ST and women entrepreneurs.\n2. It provides for refinance through SIDBI."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Stand Up India promotes SC/ST and women entrepreneurs through bank lending for greenfield enterprises. The scheme also includes SIDBI-supported refinance arrangements. Both statements are correct.",
+      "concept": "Stand Up India",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-027",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 27,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "The FAO accords the status of 'Globally Important Agricultural Heritage System (GIAHS)' to traditional agricultural systems. What is the overall goal of this initiative?\n\n1. To provide modern technology, training in modern farming methods and financial support to local communities of identified GIAHS so as to greatly enhance their agricultural productivity\n2. To identify and safeguard eco-friendly traditional farm practices and their associated landscapes, agricultural biodiversity and knowledge systems of the local communities\n3. To provide Geographical Indication status to all the varieties of agricultural produce in such identified GIAHS\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The FAO accords the status of 'Globally Important Agricultural Heritage System (GIAHS)' to traditional agricultural systems. What is the overall goal of this initiative?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. To provide modern technology, training in modern farming methods and financial support to local communities of identified GIAHS so as to greatly enhance their agricultural productivity\n2. To identify and safeguard eco-friendly traditional farm practices and their associated landscapes, agricultural biodiversity and knowledge systems of the local communities\n3. To provide Geographical Indication status to all the varieties of agricultural produce in such identified GIAHS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The GIAHS initiative is about identifying and safeguarding living, evolving traditional agricultural systems, their landscapes, biodiversity, and local knowledge (Statement 2 is correct).  It does not aim to replace these with modern technology/farming methods (Statement 1 is incorrect) nor does it provide Geographical Indication status (Statement 3 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-028",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 28,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "Which of the following is/are tributary/tributaries of Brahmaputra?\n\n1. Dibang\n2. Kameng\n3. Lohit\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is/are tributary/tributaries of Brahmaputra?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Dibang\n2. Kameng\n3. Lohit"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "All of the given rivers are tributaries of Brahmaputra. Option 1 and 3 are correct. Lohit originates in Tibet, flows through Arunachal Pradesh, before it is joined by Dibang in Assam where it flows into Brahmaputra. The Bhupen Hazarika Setuis constructed on River Lohit. Option 2 is correct. Kameng river also called as Bharali is a right bank tributrary of Brahmaputra. It originates near Indo-Tibet border in Tawang and meets Brahmaputra near Tezpur in Assam.",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-029",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 29,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "The term 'Core Banking Solutions' is sometimes seen in the news. Which of the following statements best describes/describe this term?\n\n1. It is a networking of a bank's branches which enables customers to operate their accounts from any branch of the bank on its network regardless of where they open their accounts.\n2. It is an effort to increase RBI's control over commercial banks through computerization.\n3. It is a detailed procedure by which a bank with huge non-performing assets is taken over by another bank.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The term 'Core Banking Solutions' is sometimes seen in the news. Which of the following statements best describes/describe this term?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is a networking of a bank's branches which enables customers to operate their accounts from any branch of the bank on its network regardless of where they open their accounts.\n2. It is an effort to increase RBI's control over commercial banks through computerization.\n3. It is a detailed procedure by which a bank with huge non-performing assets is taken over by another bank."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Core Banking Solution (CBS) is an interconnected networking of all branches of a bank, allowing customers to access banking services and operate their accounts seamlessly from any networked branch anywhere, regardless of their home branch. It is a customer-centric operational networking technology, not an RBI control mechanism or an NPA bank takeover procedure.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-030",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 30,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate agreements",
+    "question": "Consider the following pairs:\n\n | Terms sometimes seen in the news | Their origin\n1. | Annex–I Countries | Cartagena Protocol\n2. | Certified Emissions Reductions | Nagoya Protocol\n3. | Clean Development Mechanism | Kyoto Protocol\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "No.",
+          "Terms sometimes seen in the news",
+          "Their origin"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Annex–I Countries",
+            "Cartagena Protocol"
+          ],
+          [
+            "2.",
+            "Certified Emissions Reductions",
+            "Nagoya Protocol"
+          ],
+          [
+            "3.",
+            "Clean Development Mechanism",
+            "Kyoto Protocol"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above is/are correctly matched?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "AnnexI is a UNFCCC classification; Certified Emission Reductions arise from the Kyoto Protocol’s Clean Development Mechanism. Only the CDM–Kyoto pair is correctly matched.",
+      "concept": "Climate agreements",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-031",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 31,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "In the context of the developments in Bioinformatics, the term 'transcriptome', sometimes seen in the news, refers to",
+    "options": {
+      "a": "a range of enzymes used in genome editing",
+      "b": "the full range of mRNA molecules expressed by an organism",
+      "c": "the description of the mechanism of gene expression",
+      "d": "a mechanism of genetic mutations taking place in cells"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of the developments in Bioinformatics, the term 'transcriptome', sometimes seen in the news, refers to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The transcriptome is the set of all RNA transcripts, including the full range of mRNA molecules expressed by an individual or a population of cells.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-032",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 32,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Social Development",
+    "topic": "Immunisation",
+    "question": "'Mission Indradhanush' launched by the Government of India pertains to",
+    "options": {
+      "a": "immunization of children and pregnant women",
+      "b": "construction of smart cities across the country",
+      "c": "India's own search for the Earth-like planets in outer space",
+      "d": "New Educational Policy"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Mission Indradhanush' launched by the Government of India pertains to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Mission Indradhanush targets children and pregnant women who have missed routine immunisation. Its purpose is vaccination coverage rather than education, space research or smart cities.",
+      "concept": "Immunisation",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-033",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 33,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Which of the following best describes/describe the aim of 'Green India Mission' of the Government of India?\n\n1. Incorporating environmental benefits and costs into the Union and State Budgets thereby implementing the 'green accounting'\n2. Launching the second green revolution to enhance agricultural output so as to ensure food security to one and all in the future\n3. Restoring and enhancing forest cover and responding to climate change by a combination of adaptation and mitigation measures\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following best describes/describe the aim of 'Green India Mission' of the Government of India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Incorporating environmental benefits and costs into the Union and State Budgets thereby implementing the 'green accounting'\n2. Launching the second green revolution to enhance agricultural output so as to ensure food security to one and all in the future\n3. Restoring and enhancing forest cover and responding to climate change by a combination of adaptation and mitigation measures"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The National Mission for Green India (GIM) is a dedicated mission under the National Action Plan on Climate Change (NAPCC).  Its precise aim is to protect, restore, and enhance India's diminishing forest cover while comprehensively responding to climate change through combined adaptation and mitigation measures.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-034",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 34,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Social Development",
+    "topic": "Food labelling",
+    "question": "With reference to pre-packaged items in India, it is mandatory to the manufacturer to put which of the following information on the main label, as per the Food Safety and Standards (Packaging and Labelling) Regulations, 2011?\n\n1. List of ingredients including additives\n2. Nutrition information\n3. Recommendations, if any, made by the medical profession about the possibility of any allergic reactions\n4. Vegetarian/non-vegetarian\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1, 2 and 3",
+      "b": "2, 3 and 4",
+      "c": "1, 2 and 4",
+      "d": "1 and 4 only"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to pre-packaged items in India, it is mandatory to the manufacturer to put which of the following information on the main label, as per the Food Safety and Standards (Packaging and Labelling) Regulations, 2011?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. List of ingredients including additives\n2. Nutrition information\n3. Recommendations, if any, made by the medical profession about the possibility of any allergic reactions\n4. Vegetarian/non-vegetarian"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The 2011 food-labelling regulations required ingredient lists, nutritional information and vegetarian/non-vegetarian identification. General medical-profession recommendations about allergic reactions were not the listed mandatory label item.",
+      "concept": "Food labelling",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-035",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 35,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Wireless connectivity",
+    "question": "'Project Loon', sometimes seen in the news, is related to",
+    "options": {
+      "a": "waste management technology",
+      "b": "wireless communication technology",
+      "c": "solar power production technology",
+      "d": "water conservation technology"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Project Loon', sometimes seen in the news, is related to"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Project Loon explored high-altitude balloons as a way to provide internet connectivity. It therefore concerned wireless communication technology.",
+      "concept": "Wireless connectivity",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-036",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 36,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Rooftop solar",
+    "question": "'Net metering' is sometimes seen in the news in the context of promoting the",
+    "options": {
+      "a": "production and use of solar energy by the households/consumers",
+      "b": "use of piped natural gas in the kitchens of households",
+      "c": "installation of CNG kits in motorcars",
+      "d": "installation of water meters in urban households"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'Net metering' is sometimes seen in the news in the context of promoting the"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Net metering measures both electricity drawn from the grid and surplus generation exported to it. It enables households with rooftop solar to receive credit for exported electricity.",
+      "concept": "Rooftop solar",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-037",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 37,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Doing Business reports",
+    "question": "India’s ranking in the ‘Ease of Doing Business Index’ is sometimes seen in the news. Which of the following has declared that ranking?",
+    "options": {
+      "a": "Organization for Economic Cooperation and Development (OECD)",
+      "b": "World Economic Forum",
+      "c": "World Bank",
+      "d": "World Trade Organization (WTO)"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "India’s ranking in the ‘Ease of Doing Business Index’ is sometimes seen in the news. Which of the following has declared that ranking?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The World Bank published the Doing Business ranking relevant to the 2016 question. The historical answer remains World Bank, even though the series was subsequently discontinued.",
+      "concept": "Doing Business reports",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-038",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 38,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "Banjaras during the medieval period of Indian history were generally",
+    "options": {
+      "a": "agriculturists",
+      "b": "warriors",
+      "c": "weavers",
+      "d": "traders"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Banjaras during the medieval period of Indian history were generally"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Banjaras were the predominant nomadic merchant-traders of medieval India who specialized in transporting bulk commodities like grain, salt, ghee, and pulses across vast distances using large caravans of bullocks (tanda).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-039",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 39,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Art, architecture & monuments",
+    "question": "Who of the following had first deciphered the edicts of Emperor Ashoka?",
+    "options": {
+      "a": "Georg Bühler",
+      "b": "James Prinsep",
+      "c": "Max Müller",
+      "d": "William Jones"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Who of the following had first deciphered the edicts of Emperor Ashoka?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "In 1837 CE, James Prinsep, an English scholar and assay master at the Calcutta mint of the East India Company, became the first person to decipher the Brahmi and Kharosthi scripts used in Emperor Ashoka's edicts.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-040",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 40,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Judiciary",
+    "question": "With reference to the ‘Gram Nyayalaya Act’, which of the following statements is/are correct?\n\n1. As per the Act, Gram Nyayalayas can hear only civil cases and not criminal cases.\n2. The Act allows local social activists as mediators/reconciliators.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the ‘Gram Nyayalaya Act’, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. As per the Act, Gram Nyayalayas can hear only civil cases and not criminal cases.\n2. The Act allows local social activists as mediators/reconciliators."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Gram Nyayalayas can try criminal cases as well as civil suits, making statement 1 incorrect. The Act explicitly provides for mediation by social workers, making statement 2 correct.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-041",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 41,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Trans-Pacific Partnership",
+    "question": "With reference to the ‘Trans-Pacific Partnership’, consider the following statements:\n\n1. It is an agreement among all the Pacific Rim countries except China and Russia.\n2. It is a strategic alliance for the purpose of maritime security only.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the ‘Trans-Pacific Partnership’, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is an agreement among all the Pacific Rim countries except China and Russia.\n2. It is a strategic alliance for the purpose of maritime security only."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The TPP was a trade agreement among a limited group of Pacific economies, not every Pacific Rim country except China and Russia. It was not solely a maritime-security alliance.",
+      "concept": "Trans-Pacific Partnership",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-042",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 42,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "India-Africa summits",
+    "question": "Consider the following statements:\n\nThe India-Africa Summit\n\n1. held in 2015 was the third such Summit\n2. was actually initiated by Jawaharlal Nehru in 1951\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "The India-Africa Summit"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. held in 2015 was the third such Summit\n2. was actually initiated by Jawaharlal Nehru in 1951"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The 2015 India-Africa Forum Summit was the third, following summits in 2008 and 2011. The process was not started in 1951 by Jawaharlal Nehru.",
+      "concept": "India-Africa summits",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-043",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 43,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Bank lending rates",
+    "question": "What is/are the purpose/purposes of the ‘Marginal Cost of Funds based Lending Rate (MCLR)’ announced by RBI?\n\n1. These guidelines help improve the transparency in the methodology followed by banks for determining the interest rates on advances.\n2. These guidelines help ensure availability of bank credit at interest rates which are fair to the borrowers as well as the banks.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are the purpose/purposes of the ‘Marginal Cost of Funds based Lending Rate (MCLR)’ announced by RBI?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. These guidelines help improve the transparency in the methodology followed by banks for determining the interest rates on advances.\n2. These guidelines help ensure availability of bank credit at interest rates which are fair to the borrowers as well as the banks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "RBI introduced MCLR to make banks’ loan-pricing methods more transparent and help ensure credit pricing is fair to borrowers and banks. Both stated purposes are correct.",
+      "concept": "Bank lending rates",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-044",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 44,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "What is/are unique about ‘Kharai camel’, a breed found in India?\n\n1. It is capable of swimming up to three kilometres in seawater.\n2. It survives by grazing on mangroves.\n3. It lives in the wild and cannot be domesticated.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is/are unique about ‘Kharai camel’, a breed found in India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is capable of swimming up to three kilometres in seawater.\n2. It survives by grazing on mangroves.\n3. It lives in the wild and cannot be domesticated."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Kharai camels (found in Gujarat) are unique because they swim long distances in the sea to reach their primary food source, mangroves (Statements 1 and 2 are correct).  They are not entirely wild; they are domesticated and serve as a livelihood for nomadic tribes like the Jats and Rabaris (Statement 3 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-045",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 45,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Indian biodiversity",
+    "question": "Recently, our scientists have discovered a new and distinct species of banana plant which attains a height of about 11 metres and has orange-coloured fruit pulp. In which part of India has it been discovered?",
+    "options": {
+      "a": "Andaman Islands",
+      "b": "Anaimalai Forests",
+      "c": "Maikala Hills",
+      "d": "Tropical rain forests of northeast"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, our scientists have discovered a new and distinct species of banana plant which attains a height of about 11 metres and has orange-coloured fruit pulp. In which part of India has it been discovered?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "The tall banana species Musa indandamanensis was discovered in the Andaman Islands. Its large stature and orange fruit pulp are the clues in the question.",
+      "concept": "Indian biodiversity",
+      "references": [
+        {
+          "title": "UPSC CSE2016 final key · SeriesA",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1"
+        }
+      ]
+    },
+    "sourceNotes": "Editorial study note checked against the final key’s correct option; UPSC publishes the answer key, not these explanations."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-046",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 46,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Which one of the following is the best description of ‘INS Astradharini’, that was in the news recently?",
+    "options": {
+      "a": "Amphibious warfare ship",
+      "b": "Nuclear-powered submarine",
+      "c": "Torpedo launch and recovery vessel",
+      "d": "Nuclear-powered aircraft carrier"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is the best description of ‘INS Astradharini’, that was in the news recently?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "INS Astradharini is an indigenously designed and built torpedo launch and recovery vessel (TLRV) built for the Indian Navy.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-047",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 47,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "What is ‘Greased Lightning–10 (GL–10)’, recently in the news?",
+    "options": {
+      "a": "Electric plane tested by NASA",
+      "b": "Solar-powered two-seater aircraft designed by Japan",
+      "c": "Space observatory launched by China",
+      "d": "Reusable rocket designed by ISRO"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is ‘Greased Lightning–10 (GL–10)’, recently in the news?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "GL-10 is a battery-powered 10-engine remotely piloted plane (electric plane) designed and developed by NASA that can take off like a helicopter and fly like an airplane.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-048",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 48,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Agriculture & allied sectors",
+    "question": "With reference to 'Initiative for Nutritional Security through Intensive Millets Promotion', which of the following statements is/are correct?\n\n1. This initiative aims to demonstrate the improved production and post-harvest technologies, and to demonstrate value addition techniques, in an integrated manner, with cluster approach.\n2. Poor, small, marginal and tribal farmers have larger stake in this scheme.\n3. An important objective of the scheme is to encourage farmers of commercial crops to shift to millet cultivation by offering them free kits of critical inputs of nutrients and microirrigation equipment.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "1 and 2 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to 'Initiative for Nutritional Security through Intensive Millets Promotion', which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. This initiative aims to demonstrate the improved production and post-harvest technologies, and to demonstrate value addition techniques, in an integrated manner, with cluster approach.\n2. Poor, small, marginal and tribal farmers have larger stake in this scheme.\n3. An important objective of the scheme is to encourage farmers of commercial crops to shift to millet cultivation by offering them free kits of critical inputs of nutrients and microirrigation equipment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "INSIMP is designed to increase millet production by demonstrating improved pre- and post-harvest tech and value addition (1 correct). Since millets are primarily grown in dry/remote areas by resource-poor, tribal, and marginal farmers, they hold the largest stake (2 correct). However, it does not aim to shift commercial farmers to millets, nor does it provide free micro-irrigation equipment kits (seed/fertilizer kits are provided), making statement 3 incorrect.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-049",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 49,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · nationalism & revolutionary movements",
+    "question": "The 'Swadeshi' and 'Boycott' were adopted as methods of struggle for the first time during the",
+    "options": {
+      "a": "agitation against the Partition of Bengal",
+      "b": "Home Rule Movement",
+      "c": "Non-Cooperation Movement",
+      "d": "visit of the Simon Commission to India"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The 'Swadeshi' and 'Boycott' were adopted as methods of struggle for the first time during the"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Swadeshi and Boycott were adopted as effective methods of protest for the first time during the anti-partition agitation following Lord Curzon's decision to partition Bengal in 1905.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  },
+  {
+    "id": "upsc-2016-prelims-gs1-a-050",
+    "year": 2016,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 50,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Religion & philosophical traditions",
+    "question": "With reference to the religious history of India, consider the following statements:\n\n1. The concept of Bodhisattva is central to Hinayana sect of Buddhism.\n2. Bodhisattva is a compassionate one on his way to enlightenment.\n3. Bodhisattva delays achieving his own salvation to help all sentient beings on their path to it.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "2 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://www.minimalistias.com/pyqs/prelims/2016",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2016-GS-1.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the religious history of India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The concept of Bodhisattva is central to Hinayana sect of Buddhism.\n2. Bodhisattva is a compassionate one on his way to enlightenment.\n3. Bodhisattva delays achieving his own salvation to help all sentient beings on their path to it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "sourceTitle": "UPSC CSE 2016 General Studies Paper I · Series A",
+    "explanation": {
+      "justification": "Statement 1 is incorrect because the concept of Bodhisattva is central to Mahayana Buddhism, not Hinayana. Statements 2 and 3 are correct as a Bodhisattva is a compassionate being who renounces immediate entrance into nirvana to save suffering beings in the world.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Editorial study note matched by question wording and the final key’s correct-option wording; the UPSC final key controls scoring."
+  }
+]

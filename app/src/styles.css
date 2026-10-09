@@ -4205,7 +4205,10 @@ small,
 .prelims-session-layout { display:grid; grid-template-columns:minmax(0,1fr) 230px; gap:22px; align-items:start; }
 .prelims-question-card { padding:28px; }
 .prelims-text { font:18px/1.8 Georgia,"Times New Roman",serif; overflow-wrap:anywhere; }
-.prelims-text p { margin:20px 0; }
+.prelims-text p { margin:20px 0; white-space:pre-line; }
+.prelims-question-figure { margin:22px 0; }
+.prelims-question-figure img { display:block; max-width:100%; height:auto; border-radius:8px; background:white; }
+.prelims-question-figure figcaption { margin-top:8px; font:12px/1.6 system-ui,sans-serif; color:var(--muted); }
 .prelims-statements { list-style:none; padding-left:0; margin:18px 0; }
 .prelims-statements li { padding:7px 0 7px 14px; border-left:2px solid var(--border); margin:9px 0; }
 .prelims-passage { padding:20px 24px; background:var(--surface-secondary,rgba(49,88,235,.04)); border:1px solid var(--border); border-radius:12px; margin:24px 0; }

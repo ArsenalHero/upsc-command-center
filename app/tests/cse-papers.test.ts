@@ -118,7 +118,7 @@ test("invalid scaled snapshots are rejected while pinned scores remain stable", 
   const qs = paper(2020, "Prelims"), s = session(qs);
   respond(s, qs[0]);
   const w = { ...emptyPrelims(), session: s };
-  for (const marks of [-1, 3, NaN, Infinity]) {
+  for (const marks of [-1, 3.01, NaN, Infinity]) {
     const invalid = structuredClone(w); invalid.session.responses[qs[0].id].key!.marks = marks;
     assert.throws(() => validatePrelims(invalid), /Invalid saved key/);
   }

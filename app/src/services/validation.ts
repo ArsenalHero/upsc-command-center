@@ -703,7 +703,7 @@ export function validatePrelims(p: PrelimsWorkspace): void {
     assert(typeof r.notes === "string" && r.notes.length < 200000 && typeof r.errorType === "string" && (!r.errorType || errorTypes.includes(r.errorType)), "Invalid review notes.");
     // Complete papers can scale marks after UPSC drops items. Retain these
     // exact key snapshots, including zero marks for dropped questions.
-    if (r.key) assert(obj(r.key) && ["official", "provided", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d", "e"].includes(r.key.answer)) && Number.isFinite(r.key.marks) && r.key.marks >= 0 && r.key.marks <= 2.5 && (r.key.marks > 0 || r.key.status === "dropped") && (!["official", "provided"].includes(r.key.status) || !!r.key.answer) && (r.key.negativeMarks === undefined || (Number.isFinite(r.key.negativeMarks) && r.key.negativeMarks >= 0 && r.key.negativeMarks <= r.key.marks)), "Invalid saved key.");
+    if (r.key) assert(obj(r.key) && ["official", "provided", "pending", "dropped"].includes(r.key.status) && (r.key.answer === null || ["a", "b", "c", "d", "e"].includes(r.key.answer)) && Number.isFinite(r.key.marks) && r.key.marks >= 0 && r.key.marks <= 3 && (r.key.marks > 0 || r.key.status === "dropped") && (!["official", "provided"].includes(r.key.status) || !!r.key.answer) && (r.key.negativeMarks === undefined || (Number.isFinite(r.key.negativeMarks) && r.key.negativeMarks >= 0 && r.key.negativeMarks <= r.key.marks)), "Invalid saved key.");
   }
 }
 
