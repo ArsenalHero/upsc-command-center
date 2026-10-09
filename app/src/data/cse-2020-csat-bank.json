@@ -1,0 +1,3964 @@
+[
+  {
+    "id": "upsc-2020-prelims-csat-a-001",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 1,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following is best Implied in the passage?",
+    "options": {
+      "a": "Strong measures need to be taken to reduce the rural to urban migration of labour.",
+      "b": "The working condition in construction and unregistered manufacturing needs to be improved.",
+      "c": "service sector has been reducing the problem of unemployment.",
+      "d": "Increased social sector spending is imperative for large-scale job creation."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In India, over the last decade or so, labour has been departing agriculture, but is only going to construction and unregistered manufacturing which are not markedly better jobs. Services, where labour tends to be most productive, are not generating the additional jobs the country needs. India will need 24 million or so jobs over the next decade. The new sector, e-commerce, can at best close only half the jobs gap. Only those sectors that drive domestic demand such as health and education can comfortably fill the other half."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is best Implied in the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage says e-commerce can fill only part of the jobs gap and that health and education can fill the remainder. Increased social-sector spending is the supported implication.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-002",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 2,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "On the basis of the above passage, the following assumptions have been made:\n\n1. State should have some institutions to ensure its appropriate role in a digital society.\n\n2. State should ensure that private parties do not violate the citizens' right to privacy.\n\n3. Digital economy is not compatible with the idea of not violating the citizens’ privacy.\n\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 and 2",
+      "b": "3 Only",
+      "c": "1 and 3",
+      "d": "2 only"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In India, the current focus on the right to privacy is based on some new realities of the digital age. A right is a substantive right only if it works in all situations, and for everyone. A right to free expression for an individual about her exploitation, for instance, is meaningless without actual availability of security that guarantees that private force cannot be used to thwart this right. The role of the State, therefore, is not just to abstain from preventing rightful free expression, but also to actively ensure that private parties are not able to block it."
+      },
+      {
+        "type": "paragraph",
+        "text": "On the basis of the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. State should have some institutions to ensure its appropriate role in a digital society."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. State should ensure that private parties do not violate the citizens' right to privacy."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Digital economy is not compatible with the idea of not violating the citizens’ privacy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The State must both protect rights and prevent private parties from blocking them. This supports institutions for the digital age and protection of privacy, but not a claim that privacy is incompatible with the digital economy.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-003",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 3,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": {
+      "a": "Rivers and other wetlands should be protected under Ramsar Convention.",
+      "b": "Engineering water systems should be modernized and further augmented.",
+      "c": "wetlands need to be reinforced as more than just open sources or water.",
+      "d": "Water supply should not be free of cost so as to prevent its misuse or overuse."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "One of the biggest ironies around water is that it comes from rivers and other wetlands. Yet it is seen as divorced from them. While water is used as a resource, public policy does not always grasp that it is a part of the natural ecosystem. Efforts at engineering water systems are thus efforts at augmenting water supply rather than strengthening the capacities of ecological systems."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is the most logical and rational inference that can be made from the above passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage criticises treating wetlands merely as sources for engineered water supply. The inference is to recognise and strengthen their ecological role.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-004",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 4,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following statements best implies the suggestion given by the author of the passage?",
+    "options": {
+      "a": "Distribute your wealth across different kinds of assets so that your risks would be minimized.",
+      "b": "Risk-taking behaviour should be a necessary component of your Personality if you want to generate wealth.",
+      "c": "while making investments, find a trustworthy asset management organization which would manage your wealth for you.",
+      "d": "You should know that investing your money is a risky business."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Asset allocation is the most important investment decision we will ever make, and sadly, most of us do not give that decision the importance it deserves. We are adamant about seeking predictability with our future. We tend to think of investing in risky assets as extremely volatile and value eroding. We also dislike fluctuating returns and the loss of control of investment. We think our money is best left idle unproductive but safe. There is no asset that is risk-free. We could lose our jobs, our homes can lose value, our banks can go bankrupt, our bonds can default, the government can collapse and companies we chose fondly may cease to exist. But we cannot live life assuming that all these extreme events are waiting to happen, and all at the same time. All these extreme forms or risks we know will not manifest at the same time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following statements best implies the suggestion given by the author of the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The examples show that different assets face different risks and all risks need not occur together. Diversifying assets therefore reduces concentration of risk.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-005",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 5,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "with reference to the above passage, the following assumptions have been made:\n\n1. Biotechnology regulation is an evolving process.\n2. Participation of people is needed in policy decisions regarding biotechnology regulation.\n3. Biotechnology regulation should take into account socio-economic aspects in decision-making.\n4. Wider involvement of political executive in biotechnology regulation improves its effectiveness in dealing with the country’s trade Policies and international obligations.\nWhich of the above assumptions are valid?",
+    "options": {
+      "a": "1, 2 and 4 only",
+      "b": "1 and 3 only",
+      "c": "2, 3 and 4 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Although most of the Genetically Modified (GM) crops cultivated now are genetically engineered for a single trait, in future, crops genetically engineered for more than one trait will be the norm. Thus, biotechnology's role in agriculture and the regulation or the same cannot be understood solely in the context of the current generation of GM crops. Instead, there is a need to take a comprehensive look, taking into account various aspects, including socio-economic impacts, so that the potential or the technology can be harnessed while minimizing negative impacts. Given the importance of biotechnology in developing varieties that can help in climate change mitigation and adaptation, not using biotechnology as a part of the climate change action plan cannot be an option. Domestic regulation of biotechnology cannot be viewed in isolation of trade policy and obligations under various international treaties and conventions."
+      },
+      {
+        "type": "paragraph",
+        "text": "with reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Biotechnology regulation is an evolving process.\n2. Participation of people is needed in policy decisions regarding biotechnology regulation.\n3. Biotechnology regulation should take into account socio-economic aspects in decision-making.\n4. Wider involvement of political executive in biotechnology regulation improves its effectiveness in dealing with the country’s trade Policies and international obligations.\nWhich of the above assumptions are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Future multi-trait GM crops make regulation an evolving process, and the passage explicitly calls for socio-economic assessment. The specific claims about public participation and political executives are not established.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-006",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 6,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following statements best implies the crux of the passage?",
+    "options": {
+      "a": "Precautionary principle is not given importance in current debate on developing GM crops.",
+      "b": "Biotechnology is not currently used in climate change mitigation and adaptation mechanisms.",
+      "c": "Biotechnology’s role is not confined to the current priorities of developing GM crops.",
+      "d": "The negative Impacts of not biotechnology are properly understood."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Although most of the Genetically Modified (GM) crops cultivated now are genetically engineered for a single trait, in future, crops genetically engineered for more than one trait will be the norm. Thus, biotechnology's role in agriculture and the regulation or the same cannot be understood solely in the context of the current generation of GM crops. Instead, there is a need to take a comprehensive look, taking into account various aspects, including socio-economic impacts, so that the potential or the technology can be harnessed while minimizing negative impacts. Given the importance of biotechnology in developing varieties that can help in climate change mitigation and adaptation, not using biotechnology as a part of the climate change action plan cannot be an option. Domestic regulation of biotechnology cannot be viewed in isolation of trade policy and obligations under various international treaties and conventions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following statements best implies the crux of the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage looks beyond the current generation of single-trait crops towards wider uses and impacts of biotechnology. Its role is therefore not confined to current GM-crop priorities.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-007",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 7,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many zeroes are there at the end of the following product?\n\n1 x 5 x 10 x 15 x 20 x 25 x 30 x 35 x 40 x 45 x 50 x 55 x 60",
+    "options": {
+      "a": "10",
+      "b": "12",
+      "c": "14",
+      "d": "15"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many zeroes are there at the end of the following product?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1 x 5 x 10 x 15 x 20 x 25 x 30 x 35 x 40 x 45 x 50 x 55 x 60"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Trailing zeroes require pairs of 2 and 5. The product has ten factors of 2 and more factors of 5, so it ends in ten zeroes.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-008",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 8,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Let XYZ be a three-digit number, where (x + y + Z) is not a multiple of 3. Then (XYZ + YZX + ZXY) is not divisible by",
+    "options": {
+      "a": "3",
+      "b": "9",
+      "c": "37",
+      "d": "(X + Y + Z)"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Let XYZ be a three-digit number, where (x + y + Z) is not a multiple of 3. Then (XYZ + YZX + ZXY) is not divisible by"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "XYZ+YZX+ZXY=111(X+Y+Z)=3×37×(X+Y+Z). Since the digit sum is not divisible by 3, the sum is not divisible by 9.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-009",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 9,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Let p, q, r and s be natural numbers such that p - 2016 = q + 2017 = r – 2018 = s + 2019 which one of the following is the largest natural number?",
+    "options": {
+      "a": "p",
+      "b": "q",
+      "c": "r",
+      "d": "s"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Let p, q, r and s be natural numbers such that p - 2016 = q + 2017 = r – 2018 = s + 2019 which one of the following is the largest natural number?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Let the common value be k. Then p=k+2016, q=k−2017, r=k+2018 and s=k−2019. The largest is r.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-010",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 10,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many five-digit prime numbers can be obtained by using all the digits 1, 2, 3, 4 and 5 without repetition of digits?",
+    "options": {
+      "a": "Zero",
+      "b": "One",
+      "c": "Nine",
+      "d": "Ten"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many five-digit prime numbers can be obtained by using all the digits 1, 2, 3, 4 and 5 without repetition of digits?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Every permutation has digit sum 15, making it divisible by 3. None of these five-digit numbers is prime.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-011",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 11,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "In the sum ⊗ + 1⊗ + 5⊗ + ⊗⊗ + ⊗1 = 1⊗⊗, for which digit does the symbol ⊗ stand?",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the sum ⊗ + 1⊗ + 5⊗ + ⊗⊗ + ⊗1 = 1⊗⊗, for which digit does the symbol ⊗ stand?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Writing the repeated digit as x gives x+(10+x)+(50+x)+11x+(10x+1)=100+11x. Thus 24x+61=100+11x, so x=3.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-012",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 12,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "If you have two straight sticks of length 7.5 feet and 3.25 feet, what is the minimum length can you measure?",
+    "options": {
+      "a": "0.05 foot",
+      "b": "0.25 foot",
+      "c": "1 foot",
+      "d": "3.25 feet"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "If you have two straight sticks of length 7.5 feet and 3.25 feet, what is the minimum length can you measure?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Convert to quarter-feet: the sticks have lengths 30 and 13 units. Their greatest common divisor is 1 unit, equal to 0.25 foot.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-013",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 13,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A simple mathematical operation in each number of the sequence 14, 18, 20, 24, 30, 32, ..... results in a sequence with respect to prime numbers. Which one of the following is the next number in the sequence?",
+    "options": {
+      "a": "34",
+      "b": "36",
+      "c": "38",
+      "d": "40"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A simple mathematical operation in each number of the sequence 14, 18, 20, 24, 30, 32, ..... results in a sequence with respect to prime numbers. Which one of the following is the next number in the sequence?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Subtract 1 from the listed terms to obtain consecutive primes 13,17,19,23,29,31. The next prime is 37, so the next term is 38.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-014",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 14,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "One page is torn from a booklet whose pages are numbered in the usual manner starting from the first page as 1. The sum of the numbers on the remaining pages Is 195. The torn page contains which of the following numbers?",
+    "options": {
+      "a": "5, 6",
+      "b": "7, 8",
+      "c": "9, 10",
+      "d": "11, 12"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "One page is torn from a booklet whose pages are numbered in the usual manner starting from the first page as 1. The sum of the numbers on the remaining pages Is 195. The torn page contains which of the following numbers?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "A 20-page booklet has page-number sum 210. The missing sum is 210−195=15, corresponding to the two sides of a torn leaf numbered 7 and 8.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-015",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 15,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Consider the following arrangement that has some missing letters:\n\nabab_b_bcb_dcdcded_d\n\nThe missing letters which complete the arrangement are",
+    "options": {
+      "a": "a, b, c, d",
+      "b": "a, b, d, e",
+      "c": "a, c, c, e",
+      "d": "b, c, d, e"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following arrangement that has some missing letters:"
+      },
+      {
+        "type": "paragraph",
+        "text": "abab_b_bcb_dcdcded_d"
+      },
+      {
+        "type": "paragraph",
+        "text": "The missing letters which complete the arrangement are"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Complete the successive alternating-letter arrangement. The required missing letters, in order, are a,c,c,e, matching option C.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-016",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 16,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Let A3BC and DE2F be four-digit numbers where each letter represents a different digit greater than 3. If the sum of the numbers is 15902, then what is the difference between the values of A and D?",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Let A3BC and DE2F be four-digit numbers where each letter represents a different digit greater than 3. If the sum of the numbers is 15902, then what is the difference between the values of A and D?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The units produce a carry of 1 and the tens column fixes B=7. The hundreds column fixes E=5. The remaining distinct digits put A and D at 6 and 9, giving a difference of 3.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-017",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 17,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two statements S1 and S2 are given below followed by a Question:\n\nS1: There are not more than two figures on any page of a 51-page book.\n\nS2: There is at least one figure on every page.\n\nQuestion:\n\nAre there more than 100 figures in that book?\n\nWhich one of the following is correct in respect of the above Statements and the Question?",
+    "options": {
+      "a": "Both S1 and S2 are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "b": "S1 alone is sufficient to answer the Question.",
+      "c": "S1 and S2 together are not sufficient to answer the Question.",
+      "d": "S2 alone is sufficient to answer the Question."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two statements S1 and S2 are given below followed by a Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "S1: There are not more than two figures on any page of a 51-page book."
+      },
+      {
+        "type": "paragraph",
+        "text": "S2: There is at least one figure on every page."
+      },
+      {
+        "type": "paragraph",
+        "text": "Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Are there more than 100 figures in that book?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is correct in respect of the above Statements and the Question?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Together, the statements allow between 51 and 102 figures. Both totals at most 100 and totals above 100 remain possible, so the question cannot be decided.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-018",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 18,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Consider the following data:\n\n | Average marks in English | Average marks in Hindi\nGirls | 9 | 8\nBoys | 8 | 7\nOverall average marks | 8.8 | X\n\nWhat is the value of x in the above table?",
+    "options": {
+      "a": "7.8",
+      "b": "7.6",
+      "c": "7.4",
+      "d": "7.2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following data:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Group",
+          "Average marks in English",
+          "Average marks in Hindi"
+        ],
+        "rows": [
+          [
+            "Girls",
+            "9",
+            "8"
+          ],
+          [
+            "Boys",
+            "8",
+            "7"
+          ],
+          [
+            "Overall average marks",
+            "8.8",
+            "X"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "What is the value of x in the above table?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The English overall average 8.8 gives girls:boys=4:1. Applying that ratio to Hindi gives (4×8+1×7)/5=7.8.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-019",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 19,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A family of two generations consisting of six members P, Q, R, S, T and U has three males and three females. There are two married couples and two unmarried siblings. U is P’s daughter and Q is R’s mother-in-law. T is an unmarried male and S is a male. Which one of the following is correct?",
+    "options": {
+      "a": "R is U's husband.",
+      "b": "R is S's wife.",
+      "c": "S is unmarried.",
+      "d": "None of the above"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A family of two generations consisting of six members P, Q, R, S, T and U has three males and three females. There are two married couples and two unmarried siblings. U is P’s daughter and Q is R’s mother-in-law. T is an unmarried male and S is a male. Which one of the following is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The two-generation and marriage constraints put Q and P in the older couple, with U their daughter and T an unmarried son. R is married to S, so R is S’s wife.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-020",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 20,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "If in a particular year 12th January is a Sunday, then which one of the following is correct?",
+    "options": {
+      "a": "15th July is a Sunday if the year is a leap year.",
+      "b": "15th July is a Sunday if the year is not a leap year.",
+      "c": "12th July is a Sunday if the year is a leap year.",
+      "d": "12th July is not a Sunday if the year is a leap year."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "If in a particular year 12th January is a Sunday, then which one of the following is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "In a leap year, the elapsed days from 12 January to 12 July total 182, a multiple of seven. Hence 12 July is also Sunday.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-021",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 21,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Relying on foreign investment in the long run is not an economically sound policy.\n2. Policies must be undertaken to reduce volatility in foreign private investment.\n3. Policies must be undertaken to strengthen domestic private investment.\n4. Public investment should be given priority over private investment.\n5. Substantial public investment in education and health should be undertaken.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1, 2 and 4",
+      "b": "1, 3 and 5",
+      "c": "2, 4 and 5",
+      "d": "3 only"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Private investment in general is volatile. Foreign private investment is more volatile because the available investment avenues are significantly greater (i.e., the entire world). Therefore, the responsibility of providing employment cannot be left to Foreign Direct investment (FDl). The current FDI inflows are volatile over time and across sectors and regions, which is a necessary consequence of their search for the highest returns. The adverse consequences are unstable employment and an accentuation of income and regional inequalities. A probable positive consequence of foreign investment is the inflow of new technology and its subsequent diffusion. However, the technology diffusion is not at all certain because the existing state of physical and human capital in India may prove inadequate for the diffusion."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Relying on foreign investment in the long run is not an economically sound policy.\n2. Policies must be undertaken to reduce volatility in foreign private investment.\n3. Policies must be undertaken to strengthen domestic private investment.\n4. Public investment should be given priority over private investment.\n5. Substantial public investment in education and health should be undertaken.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage explains volatile FDI, uneven employment effects and uncertain technology diffusion when domestic physical and human capital is inadequate. The accepted inferences are 1, 3 and 5; the stronger assurances about FDI do not follow.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-022",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 22,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, which of the following could be the most rational and practical implications for India?\n\n1. Inter-linking of rivers should be undertaken.\n2. A network of dams and canals should be built across the country for proper distribution of water.\n3. Farmers should be provided easy loans for digging borewells.\n4. Usage of water for agriculture should be regulated by law.\n5. Distribution of river water among regions should be regulated by the Union Government.\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2",
+      "b": "2, 4 and 5",
+      "c": "1, 3 and 4",
+      "d": "2, 3 and 5"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Many opportunities to harness the highly skewed, seasonal and spatial distribution of monsoon flows, which occur in a four-month period from June to September annually, have been lost. Since these few months account for most or the rainfall and consequent freshwater availability, the need for holding rainwater in reservoirs, for subsequently releasing it for use over the year, is a necessity nobody can afford to overlook. Climate change will continue to affect weather conditions and create water shortages and excesses. While millions suffer from droughts and floods, waters in the country's many rivers flow unutilized, and are discharged into the sea every year."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, which of the following could be the most rational and practical implications for India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Inter-linking of rivers should be undertaken.\n2. A network of dams and canals should be built across the country for proper distribution of water.\n3. Farmers should be provided easy loans for digging borewells.\n4. Usage of water for agriculture should be regulated by law.\n5. Distribution of river water among regions should be regulated by the Union Government.\nSelect the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The argument calls for storing concentrated monsoon rainfall for use through the year. Rainwater storage can reduce dependence on variable flows, and appropriate storage infrastructure is needed. The accepted implications are 1 and 2.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-023",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 23,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Lower tax rates in a country invariably translate into greater investments in higher education.\n2. Investment in the education of children ensures their economic freedom.\n3. Economic freedom has a positive impact on building up human capital.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "People will invest in education whenever they are granted the economic freedom to fully enjoy benefits Again, this is for the obvious reason that the return on education increases as the level of economic freedom rises. When people, thanks to lower tax rates, are allowed to retain of the higher income that they gain from incremental level of education, it makes sense to invest in education. On the other hand, when the government decides to tax the higher income of educated individuals at even higher rates, it makes very little sense to invest in educating oneself further. The same incentives apply to parents who decide on whether to invest in their children's education."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Lower tax rates in a country invariably translate into greater investments in higher education.\n2. Investment in the education of children ensures their economic freedom.\n3. Economic freedom has a positive impact on building up human capital.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage links incentives for educational investment to the after-tax returns people can retain. Greater economic freedom strengthens those incentives. It does not establish either of the other broad assumptions, so only assumption 3 is accepted.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-024",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 24,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "What is the most logical and crucial message conveyed by the passage?",
+    "options": {
+      "a": "Urban local bodies must recover costs through user charges.",
+      "b": "Urban local bodies are not efficient enough to meet the water requirements of our cities.",
+      "c": "Water shortage in our cities is a perennial problem that cannot be solved.",
+      "d": "In view of the water crisis in our cities, there is an urgent need to limit the population of cities by adopting an upper limit of population size."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Our urban bodies cannot possibly ensure sustainable delivery of water in our cities unless financing mechanisms are put in place. Water delivery requires heavy investment in collecting it from a natural source, treating it to make it potable, and laying a distribution network of pipes for delivery to the users. It also requires investments in sewerage infrastructure and sewage treatment plants so that the sewers can carry the wastewater to these plants to ensure that no untreated sewage is discharged back into natural water bodies. If our cities were rich enough to meet the entire cost, water could be delivered free. They are not."
+      },
+      {
+        "type": "paragraph",
+        "text": "What is the most logical and crucial message conveyed by the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Sustainable water delivery requires funding for collection, treatment, distribution and wastewater management. Since cities cannot cover all costs without revenue, recovering costs through user charges is the key message.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-025",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 25,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Rich cities only can ensure sustainable delivery of water.\n2. Sustainable delivery of water in cities means much more than supplying water to households.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Our urban bodies cannot possibly ensure sustainable delivery of water in our cities unless financing mechanisms are put in place. Water delivery requires heavy investment in collecting it from a natural source, treating it to make it potable, and laying a distribution network of pipes for delivery to the users. It also requires investments in sewerage infrastructure and sewage treatment plants so that the sewers can carry the wastewater to these plants to ensure that no untreated sewage is discharged back into natural water bodies. If our cities were rich enough to meet the entire cost, water could be delivered free. They are not."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Rich cities only can ensure sustainable delivery of water.\n2. Sustainable delivery of water in cities means much more than supplying water to households.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage describes treatment and sewerage as well as household supply, supporting assumption 2. It does not say only rich cities can achieve sustainable delivery; financing can support other cities.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-026",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 26,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Structural and rural transformation is impossible when farms are mainly small and marginal.\n2. A good price incentive can trigger investments in agriculture.\n3. India needs to build value chains for high-value agri-products like livestock and horticulture.\n4. Higher global prices of agricultural commodities are essential for India's poverty reduction.\nWhich of the above assumptions are valid?",
+    "options": {
+      "a": "1 and 3",
+      "b": "2 and 4",
+      "c": "2 and 3",
+      "d": "3 and 4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In India, agriculture still engages about half of workforce, and about 85 per cent of its farms mall and marginal. Compared to China Vietnam, which have experienced fast structural and rural transformation, India's story is of slow transformation. As a result, poverty reduction in India was at a much slower pace during 1988—2014, compared to China and Vietnam. India's poverty reduction was slow during 1988-2005, but during 2005-2012, it accelerated dramatically—almost three times faster than during the earlier period. What did India do during this period? Research reveals that the relative price scenario changed significantly (by more than 50%) in favour of agriculture in the wake of rising global prices. This boosted private investments in agriculture by more than 50%. As a result, agri-GDP growth touched 4.1% during 2007-2012 as against 2.4% during 2002—2007. The net surplus or agri-trade touched $25 billion in 2013-2014: real farm wages rose by 7% per annum. All this led to unprecedented fall in poverty."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Structural and rural transformation is impossible when farms are mainly small and marginal.\n2. A good price incentive can trigger investments in agriculture.\n3. India needs to build value chains for high-value agri-products like livestock and horticulture.\n4. Higher global prices of agricultural commodities are essential for India's poverty reduction.\nWhich of the above assumptions are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Higher price incentives are linked to investment and poverty reduction in the passage. The accepted assumptions are 2 and 3; small farms do not make transformation impossible, and higher global prices are not shown to be an essential condition in every case.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-027",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 27,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following statements best reflects the critical message of the passage?",
+    "options": {
+      "a": "India should create large- scale off-farm rural employment to reduce poverty in the near future.",
+      "b": "India should create a large number of farmer producer companies",
+      "c": "Private investment in agriculture should be given priority over public investment.",
+      "d": "Inclusive agricultural growth is key to reduce poverty in the near future."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In India, agriculture still engages about half of workforce, and about 85 per cent of its farms mall and marginal. Compared to China Vietnam, which have experienced fast structural and rural transformation, India's story is of slow transformation. As a result, poverty reduction in India was at a much slower pace during 1988—2014, compared to China and Vietnam. India's poverty reduction was slow during 1988-2005, but during 2005-2012, it accelerated dramatically—almost three times faster than during the earlier period. What did India do during this period? Research reveals that the relative price scenario changed significantly (by more than 50%) in favour of agriculture in the wake of rising global prices. This boosted private investments in agriculture by more than 50%. As a result, agri-GDP growth touched 4.1% during 2007-2012 as against 2.4% during 2002—2007. The net surplus or agri-trade touched $25 billion in 2013-2014: real farm wages rose by 7% per annum. All this led to unprecedented fall in poverty."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following statements best reflects the critical message of the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The example attributes rapid poverty reduction to agricultural growth, investment and farm wages. Inclusive agricultural growth, rather than any single organisational model, is its central message.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-028",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 28,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two Statements S 1 and S2 are given below with regard to four numbers P, Q, R and S followed by a Question:\n\nS1: R is greater-than P as well as Q.\n\nS2: S is not the largest one.\n\nAmong four numbers P, Q, R and S which one is the largest?\n\nWhich one of the following is correct in respect of the above Statements and the Question?",
+    "options": {
+      "a": "S1 alone is sufficient to answer the Question.",
+      "b": "S2 alone is sufficient to answer the Question.",
+      "c": "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "d": "S1 and s2 together are not sufficient to answer the Question."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two Statements S 1 and S2 are given below with regard to four numbers P, Q, R and S followed by a Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "S1: R is greater-than P as well as Q."
+      },
+      {
+        "type": "paragraph",
+        "text": "S2: S is not the largest one."
+      },
+      {
+        "type": "paragraph",
+        "text": "Among four numbers P, Q, R and S which one is the largest?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is correct in respect of the above Statements and the Question?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "S1 makes R larger than P and Q. S2 rules out S as the largest. Together they identify R, while neither statement alone does.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-029",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 29,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two Statements Si and S2 are given below followed by a Question:\n\nS1: n is a prime number.\n\nS2: n leaves a remainder of 1 when divided by 4.\n\nIf n is a unique natural number between 10 and 20, then what is n?\n\nWhich one of the following is correct in respect of the above Statements and the Question?",
+    "options": {
+      "a": "S1 alone is sufficient to answer the Question.",
+      "b": "S2 alone is sufficient to answer the Question.",
+      "c": "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "d": "S1 and S2 together are not sufficient to answer the Question."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two Statements Si and S2 are given below followed by a Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "S1: n is a prime number."
+      },
+      {
+        "type": "paragraph",
+        "text": "S2: n leaves a remainder of 1 when divided by 4."
+      },
+      {
+        "type": "paragraph",
+        "text": "If n is a unique natural number between 10 and 20, then what is n?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is correct in respect of the above Statements and the Question?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "S1 permits primes 11,13,17,19; S2 permits 13 and 17. Their intersection still contains two numbers, so the statements do not determine a unique n.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-030",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 30,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two Statements S1 and S2 are given below with regard to two numbers followed by a Question:\n\nS1: Their product is 21.\n\nS2: Their sum is 10.\n\nQuestion:\n\nWhat are the two numbers?\n\nWhich one of the following is correct in respect of the above Statements and the Question?",
+    "options": {
+      "a": "S1 alone is sufficient to answer the Question.",
+      "b": "S2 alone is sufficient to answer the Question.",
+      "c": "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "d": "S1 and S2 together are not sufficient to answer the Question."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two Statements S1 and S2 are given below with regard to two numbers followed by a Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "S1: Their product is 21."
+      },
+      {
+        "type": "paragraph",
+        "text": "S2: Their sum is 10."
+      },
+      {
+        "type": "paragraph",
+        "text": "Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "What are the two numbers?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is correct in respect of the above Statements and the Question?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The sum and product together give t²−10t+21=0, whose roots are 3 and 7. Either statement alone admits other possible pairs.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-031",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 31,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A man walks down the backside of his house straight 25 meters, then turns to the right and walks 50 meters again; then he turns towards left and again walks 25 meters. If his house faces to the East, what is his direction from the starting point?",
+    "options": {
+      "a": "South-East",
+      "b": "South-west",
+      "c": "North-East",
+      "d": "North-west"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A man walks down the backside of his house straight 25 meters, then turns to the right and walks 50 meters again; then he turns towards left and again walks 25 meters. If his house faces to the East, what is his direction from the starting point?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Facing east, walking behind the house goes west. The right turn goes north and the following left turn goes west again, leaving the man northwest of the start.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-032",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 32,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two Statements are given followed by two Conclusions:\n\nStatements:\n\nAll numbers are divisible by 2.\n\nAll numbers are divisible by 3.\n\nConclusion-I\n\nAll numbers are divisible by 6.\n\nConclusion-Il\n\nAll numbers are divisible by 4.\n\nWhich of the above Conclusions logically follows/follow from the two given Statements?",
+    "options": {
+      "a": "Only Conclusion-I",
+      "b": "Only Conclusion-II",
+      "c": "Neither Conclusion-I nor conclusion-II",
+      "d": "Both Conclusions-I and Conclusion-II"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two Statements are given followed by two Conclusions:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "All numbers are divisible by 2."
+      },
+      {
+        "type": "paragraph",
+        "text": "All numbers are divisible by 3."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conclusion-I"
+      },
+      {
+        "type": "paragraph",
+        "text": "All numbers are divisible by 6."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conclusion-Il"
+      },
+      {
+        "type": "paragraph",
+        "text": "All numbers are divisible by 4."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the above Conclusions logically follows/follow from the two given Statements?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Divisibility by both 2 and 3 implies divisibility by their least common multiple, 6. It does not imply divisibility by 4: 6 is a counterexample.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-033",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 33,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Two Statements are given followed by two Conclusions:\n\nStatements:\n\nAll cats are dogs.\n\nAll cats are black.\n\nConclusion-I:\n\nAll dogs are black.\n\nConclusion-II:\n\nSome dogs are not black.\n\nWhich of the above Conclusions logically follows/follow from the two given Statements disregarding commonly known facts?",
+    "options": {
+      "a": "Only Conclusion-I",
+      "b": "Only Conclusion-II",
+      "c": "Neither Conclusion-I nor Conclusion-II",
+      "d": "Both Conclusions-I and Conclusion-Il"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Two Statements are given followed by two Conclusions:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "All cats are dogs."
+      },
+      {
+        "type": "paragraph",
+        "text": "All cats are black."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conclusion-I:"
+      },
+      {
+        "type": "paragraph",
+        "text": "All dogs are black."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conclusion-II:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Some dogs are not black."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the above Conclusions logically follows/follow from the two given Statements disregarding commonly known facts?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Cats lie within both dogs and black things, but nothing fixes the colour of all non-cat dogs. Neither all dogs being black nor some dogs not being black necessarily follows.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-034",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 34,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Consider the following sequence of numbers:\n\n5 1 4 7 3 9 8 5 7 2 6 3 1 5\n\n8 6 3 8 5 2 2 4 3 4 9 6\n\nHow many odd numbers are followed by the odd number in the above sequence?",
+    "options": {
+      "a": "5",
+      "b": "6",
+      "c": "7",
+      "d": "8"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following sequence of numbers:"
+      },
+      {
+        "type": "paragraph",
+        "text": "5 1 4 7 3 9 8 5 7 2 6 3 1 5"
+      },
+      {
+        "type": "paragraph",
+        "text": "8 6 3 8 5 2 2 4 3 4 9 6"
+      },
+      {
+        "type": "paragraph",
+        "text": "How many odd numbers are followed by the odd number in the above sequence?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Count adjacent odd–odd pairs in the sequence. They are (5,1), (7,3), (3,9), (5,7), (3,1) and (1,5), giving six.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-035",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 35,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A is 16th from the left end in a row or boys and V is 18th from the right end. Q is 11th from A towards the right and 3rd from V towards the right end. How many boys are there in the row?",
+    "options": {
+      "a": "40",
+      "b": "41",
+      "c": "42",
+      "d": "Cannot be determined due to insufficient data"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A is 16th from the left end in a row or boys and V is 18th from the right end. Q is 11th from A towards the right and 3rd from V towards the right end. How many boys are there in the row?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Q is at position 16+11=27 from the left. V is three places to Q’s left, at 24. Being eighteenth from the right gives 24+18−1=41 boys.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-036",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 36,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Three Statements S1, S2 and S3 are given below followed by a Question:\n\nS1: C is younger than D, but older than A and B.\n\nS2: D is the oldest.\n\nS3: A is older than B.\n\nQuestion:\n\nWho among A, B, C and D is the youngest?\n\nWhich one of the following is correct in respect of the above Statements and the Question?",
+    "options": {
+      "a": "S1 alone is sufficient to answer the Question.",
+      "b": "S1 and S2 together are sufficient to answer the Question.",
+      "c": "S2 and S3 together are sufficient to answer the Question.",
+      "d": "S1 and S3 together are sufficient to answer the Question."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Three Statements S1, S2 and S3 are given below followed by a Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "S1: C is younger than D, but older than A and B."
+      },
+      {
+        "type": "paragraph",
+        "text": "S2: D is the oldest."
+      },
+      {
+        "type": "paragraph",
+        "text": "S3: A is older than B."
+      },
+      {
+        "type": "paragraph",
+        "text": "Question:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Who among A, B, C and D is the youngest?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is correct in respect of the above Statements and the Question?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "S1 puts C above A and B in age, but does not order A and B. Adding S3 places A above B, making B youngest. S2 alone adds no needed ordering of A and B.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-037",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 37,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many integers are there between 1 and 100 which have 4 as a digit but are not divisible by 4?",
+    "options": {
+      "a": "5",
+      "b": "11",
+      "c": "12",
+      "d": "13"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many integers are there between 1 and 100 which have 4 as a digit but are not divisible by 4?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Nineteen numbers contain the digit 4. Seven of them, 4,24,40,44,48,64,84, are divisible by 4. The remaining count is 19−7=12.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-038",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 38,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Let x, y be the volumes; m, n be the masses of two metallic cubes P and Q respectively. Each side of Q is two times that of P and mass of Q is two times that of P. Let u = m / x and V = n / y. which one or the following is correct?",
+    "options": {
+      "a": "u = 4v",
+      "b": "u = 2v",
+      "c": "v = u",
+      "d": "v = 4u"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Let x, y be the volumes; m, n be the masses of two metallic cubes P and Q respectively. Each side of Q is two times that of P and mass of Q is two times that of P. Let u = m / x and V = n / y. which one or the following is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Doubling a side multiplies volume by 8 while mass is only doubled. Therefore v=(2m)/(8x)=u/4, so u=4v.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-039",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 39,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "The average age of a teacher and three students is 20 years. If all the three students are of same age and the difference between the age of the teacher and each student is 20 years, then what is the age of the teacher?",
+    "options": {
+      "a": "25 years",
+      "b": "30 years",
+      "c": "35 years",
+      "d": "45 years"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The average age of a teacher and three students is 20 years. If all the three students are of same age and the difference between the age of the teacher and each student is 20 years, then what is the age of the teacher?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Let each student be s and the teacher s+20. Their total is 80, so 4s+20=80, s=15 and the teacher is 35.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-040",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 40,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A person bought a car and sold it for Rs. 3, 00,000. If he incurred a loss of 20%, then how much did he spend to buy the car?",
+    "options": {
+      "a": "Rs. 3, 60,000",
+      "b": "Rs. 3, 65,000",
+      "c": "Rs. 3, 70,000",
+      "d": "Rs. 3, 75,000"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A person bought a car and sold it for Rs. 3, 00,000. If he incurred a loss of 20%, then how much did he spend to buy the car?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The sale price is 80% of the cost price. Cost=300000/0.8=Rs. 375,000.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-041",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 41,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one or the following statements best reflects the critical message or the passage?",
+    "options": {
+      "a": "For introducing any foreign plant into a country, the soil and climate conditions of that country should be suitable.",
+      "b": "As a staple food of a country, tuber crops like potato cannot replace cereal crops.",
+      "c": "Some or the fungal infections or plants cannot be prevented or stopped from spreading across large areas.",
+      "d": "Relying on a homogeneous food source is not desirable."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Spanish ships in the late 16th century first brought the potato tuber from South America to Europe whereby in the early 19th century, it bad become a reliable backup to cereal crops, particularly in the cold, rain-soaked soils of Ireland. The Irish were soon almost wholly dependent on the potato as their staple food. And they were planting primarily one prodigious variety, the ‘Lumper' potato, whose genetic frailty would be cruelly exposed by the fungus 'Phytophthora infestans’. In 1845, spores of the deadly fungus began spreading across the country, destroying nearly all the Lumpers in its path. The resulting famine killed or displaced millions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one or the following statements best reflects the critical message or the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The potato-blight example illustrates the danger of dependence on one homogeneous food source. Diversity reduces the exposure to a single crop failure.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-042",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 42,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, which of the following is/are the most rational and practical implication/ Implications?\n\n1. India’s Public Distribution System should be monitored by the Union Government.\n2. Girls should be encouraged to delay marriage and first pregnancy.\n3. Mothers should be encouraged to breastfeed their children immediately after birth.\n4. The supply of safe drinking water and proper sanitation facilities to all should be ensured.\n5. Authorities should ensure the vaccination as prescribed\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1, 2, 3 and 4",
+      "b": "2, 3, 4 and 5",
+      "c": "1 only",
+      "d": "3 and 5 only"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "India is at once among the fastest growing global economies and home to the largest number of malnourished children in the world. There are regions where malnutrition is not the exception but the norm. And across the country, malnutrition is the cause of death for roughly half the 1-3 million children who die before their fifth birthday each year. Even those children who survive suffer permanently from the damage that has already been done to their bodies and minds from not getting enough of the right foods and nutrients. Around 44 million children under 5 are stunted. That makes it harder for them to learn in school and subsequently earn a living as adults. Their lifetime earnings potential is almost a quarter less than that or their healthy peers."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, which of the following is/are the most rational and practical implication/ Implications?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. India’s Public Distribution System should be monitored by the Union Government.\n2. Girls should be encouraged to delay marriage and first pregnancy.\n3. Mothers should be encouraged to breastfeed their children immediately after birth.\n4. The supply of safe drinking water and proper sanitation facilities to all should be ensured.\n5. Authorities should ensure the vaccination as prescribed\nSelect the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage supports delaying early pregnancies, early breastfeeding, clean water and sanitation, and vaccination. It does not specifically establish Union-government monitoring of the PDS as the necessary implication.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-043",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 43,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which of the following are the most rational inferences that can be made from the passage?\n\n1. Farmers' income will be higher with pulse cultivation than with paddy cultivation.\n2. Pulse cultivation causes less pollution as compared to paddy cultivation.\n3. Pulse straw can be used to improve soil quality.\n4. In the context of northern Indian agriculture, paddy straw has no usefulness.\n5. Mechanized agriculture is the main cause for stubble burning.\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "2, 3 and 5",
+      "b": "1, 4 and 5",
+      "c": "2 and 3 only",
+      "d": "1 and 4 only"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "The pulse variety ‘Pusa Arhar 16’ has the potential to be grown in the paddy-growing of Punjab, Haryana and Uttar Pradesh and eventually in all of India. Its yield (about 2000 kg/hectare) will be significantly greater than those of the existing varieties and because its size will be uniform, it will be amenable to mechanical harvesting, an attractive feature for farmers in northern India who currently use this technology for paddy. Most important, Arhar straw, unlike paddy straw, is green arid can be ploughed back into the soil. In Paddy straw, the problem is the high silica content, which does not allow for easy decomposition. In the case of Arhar, the farmer, even after combine harvesting, just needs to run a rotovator to cut the leftover straw into pieces, which can be ploughed back and will decompose very fast. AU this is difficult with leftover paddy stalks that cannot be easily salvaged or ploughed back. Farmers, therefore, choose the easiest option of simply burning it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the following are the most rational inferences that can be made from the passage?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Farmers' income will be higher with pulse cultivation than with paddy cultivation.\n2. Pulse cultivation causes less pollution as compared to paddy cultivation.\n3. Pulse straw can be used to improve soil quality.\n4. In the context of northern Indian agriculture, paddy straw has no usefulness.\n5. Mechanized agriculture is the main cause for stubble burning.\nSelect the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage contrasts polluting paddy-stubble disposal with pulse cultivation and soil benefits of pulse straw. Statements 2 and 3 follow; the stronger income, uselessness and mechanisation claims do not.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-044",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 44,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. High risks involved in holding maximum water in reservoirs are due to our over-dependence on hydro power projects.\n2. Storage capacity of dams should not be fully used before or during monsoon season.\n3. Role of dams in flood control is underestimated in India.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2-only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In India, authorities always look to store the maximum amount of water in reservoirs during the monsoon season, which is then used for irrigation and generation of electricity during the summer months. It is an internationally accepted practice that the water level or a reservoir should be kept below a certain level before the onset of monsoon season. This is so that when monsoon rains come, there is space to store the excess rainwater and also so that water can be released in a regulated manner. But the authorities store the maximum amount of water in reservoirs even before the close of the monsoon, only to ensure greater electricity generation and irrigation."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. High risks involved in holding maximum water in reservoirs are due to our over-dependence on hydro power projects.\n2. Storage capacity of dams should not be fully used before or during monsoon season.\n3. Role of dams in flood control is underestimated in India.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage warns about dam operation and monsoon flood risks, implying the need for storage space. It does not attribute all risks to hydropower dependence or establish underestimation of flood-control roles. Only statement 2 is accepted.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-045",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 45,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which of the following is/are the most rational and logical Inference/ Inferences that can be made from the passage?\n\n1. It is essential to rethink and redefine the economic role of the state in the quest for development.\n2. India has not made effective implementation of its policies in social sectors nor made sufficient investments in them.\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Economic liberalization in India was shaped largely by the economic problems of the government than by the economic priorities of the people or by the long-term development objectives. Thus, there were limitations in conception and design which have been subsequently validated by experience. Jobless growth, persistent poverty and rising inequality have mounted as problems since economic liberalization began. And all these years later, four quiet crises confront the economy: agriculture infrastructure, industrialization and education as constraints on the country’s future prospects. These problems must be resolved if economic growth has to be sustained and transformed into meaningful development."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the following is/are the most rational and logical Inference/ Inferences that can be made from the passage?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is essential to rethink and redefine the economic role of the state in the quest for development.\n2. India has not made effective implementation of its policies in social sectors nor made sufficient investments in them.\nSelect the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The argument questions a narrow economic role for the State and identifies inadequate implementation or investment in social sectors. Both inferences are accepted.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-046",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 46,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. India's economy needs to be greatly integrated with global economy so as to create large number of jobs and to sustain its growth momentum.\n2. Economic liberalization would cause large economic growth which would reduce poverty and create sufficient employment in the long run.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Economic liberalization in India was shaped largely by the economic problems of the government than by the economic priorities of the people or by the long-term development objectives. Thus, there were limitations in conception and design which have been subsequently validated by experience. Jobless growth, persistent poverty and rising inequality have mounted as problems since economic liberalization began. And all these years later, four quiet crises confront the economy: agriculture infrastructure, industrialization and education as constraints on the country’s future prospects. These problems must be resolved if economic growth has to be sustained and transformed into meaningful development."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. India's economy needs to be greatly integrated with global economy so as to create large number of jobs and to sustain its growth momentum.\n2. Economic liberalization would cause large economic growth which would reduce poverty and create sufficient employment in the long run.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage does not establish that greater global integration or liberalisation automatically produces sufficient jobs and poverty reduction. Neither proposed assumption follows.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-047",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 47,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A shop owner offers the following discount options on an article to a customer:\n\n1. Successive discounts of 10% and 20%, and then pay a service tax of 10%\n2. Successive discounts of 20% and 10%, and then pay a service tax of 10%\n3. Pay a service tax of 10% first, then successive discounts of 20% and 10%\nWhich one of the following is correct?",
+    "options": {
+      "a": "1 only is the best option for the customer.",
+      "b": "2 only is the best option for the customer.",
+      "c": "3 only is the best option for the customer.",
+      "d": "All the options are equally good for the customer."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A shop owner offers the following discount options on an article to a customer:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Successive discounts of 10% and 20%, and then pay a service tax of 10%\n2. Successive discounts of 20% and 10%, and then pay a service tax of 10%\n3. Pay a service tax of 10% first, then successive discounts of 20% and 10%\nWhich one of the following is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "All three methods multiply the original price by 0.9×0.8×1.1. Multiplication is commutative, so the payable amount is the same.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-048",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 48,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "The letters from A to Z are numbered from 1 to 26 respectively. If GHI = 1578 and DEF = 912, then what is ABC equal to?",
+    "options": {
+      "a": "492",
+      "b": "468",
+      "c": "262",
+      "d": "246"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The letters from A to Z are numbered from 1 to 26 respectively. If GHI = 1578 and DEF = 912, then what is ABC equal to?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Concatenate the alphabetical positions and double the resulting number. GHI gives 789×2=1578 and DEF gives 456×2=912. Thus ABC gives 123×2=246.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-049",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 49,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "What is the missing term in the following?\n\nACPQ : BESU:: MNGI: @",
+    "options": {
+      "a": "NPJL",
+      "b": "NOJM",
+      "c": "NPIL",
+      "d": "NPJM"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is the missing term in the following?"
+      },
+      {
+        "type": "paragraph",
+        "text": "ACPQ : BESU:: MNGI: @"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The four positions advance by 1,2,3,4 letters: A→B, C→E, P→S, Q→U. Applying the same increments to MNGI gives NPJM.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-050",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 50,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "what is the largest number among the following?",
+    "options": {
+      "a": "(1/2)^(-6)",
+      "b": "(1/4)^(-3)",
+      "c": "(1/3)^(-4)",
+      "d": "(1/6)^(-2)"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "what is the largest number among the following?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Negative powers invert the fractions: the values are 64,64,81 and 36 respectively. The largest is (1/3)^(-4)=81.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-051",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 51,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "What is the greatest length x such that 3 ½ m and 8 ¾ m are integral multiples of x?",
+    "options": {
+      "a": "1 ½ m",
+      "b": "1 1/3 m",
+      "c": "1 ¼ m",
+      "d": "1 ¾ m"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is the greatest length x such that 3 ½ m and 8 ¾ m are integral multiples of x?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "In quarter-metres the lengths are 14 and 35. Their greatest common divisor is 7 quarter-metres, or 1¾ m.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-052",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 52,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Consider the following data:\n\nYear | Birth rate | Death rate\n1911 - 1921 | 48.1 | 35.5\n1921 - 1931 | 46.4 | 36.3\n1931 - 1941 | 45.2 | 31.2\n1941 - 1951 | 39.9 | 27.4\n1951 - 1961 | 41.7 | 22.8\n1961 - 1971 | 41.1 | 18.9\n1971 - 1981 | 37.1 | 14.8\n\nFor which period was the natural growth rate maximum?",
+    "options": {
+      "a": "1911 - 1921",
+      "b": "1941 - 1951",
+      "c": "1961 - 1971",
+      "d": "1971 - 1981"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following data:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Year",
+          "Birth rate",
+          "Death rate"
+        ],
+        "rows": [
+          [
+            "1911 - 1921",
+            "48.1",
+            "35.5"
+          ],
+          [
+            "1921 - 1931",
+            "46.4",
+            "36.3"
+          ],
+          [
+            "1931 - 1941",
+            "45.2",
+            "31.2"
+          ],
+          [
+            "1941 - 1951",
+            "39.9",
+            "27.4"
+          ],
+          [
+            "1951 - 1961",
+            "41.7",
+            "22.8"
+          ],
+          [
+            "1961 - 1971",
+            "41.1",
+            "18.9"
+          ],
+          [
+            "1971 - 1981",
+            "37.1",
+            "14.8"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "For which period was the natural growth rate maximum?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Subtract death rate from birth rate for each period. The highest listed difference is 37.1−14.8=22.3 for 1971–1981.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-053",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 53,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "The recurring decimal representation 1.272727... is equivalent to",
+    "options": {
+      "a": "13/11",
+      "b": "14/11",
+      "c": "127/99",
+      "d": "137/99"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The recurring decimal representation 1.272727... is equivalent to"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Let x=1.272727…. Then 100x−x=126, so x=126/99=14/11.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-054",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 54,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "What is the least four-digit number when divided by 3, 4, 5 and 6 leaves a remainder 2 in each case?",
+    "options": {
+      "a": "1012",
+      "b": "1022",
+      "c": "1122",
+      "d": "1222"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is the least four-digit number when divided by 3, 4, 5 and 6 leaves a remainder 2 in each case?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The number must be 2 more than a multiple of LCM(3,4,5,6)=60. The smallest such four-digit number is 60×17+2=1022.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-055",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 55,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "In adult Population or a city, 40% men and 30% women are married. What is the percentage of married adult population if no man marries more than one woman and no woman marries more than one man; and there are no widows and widowers?",
+    "options": {
+      "a": "33 1/7%",
+      "b": "34%",
+      "c": "34 2/7%",
+      "d": "35%"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In adult Population or a city, 40% men and 30% women are married. What is the percentage of married adult population if no man marries more than one woman and no woman marries more than one man; and there are no widows and widowers?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Equal numbers of married men and women give 0.4M=0.3W, hence M:W=3:4. The married fraction is (0.4×3+0.3×4)/7=12/35, or 34 2/7%.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-056",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 56,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "What is the remainder when 51 x 27 x 35 x 62 x 75 is divided by 100?",
+    "options": {
+      "a": "50",
+      "b": "25",
+      "c": "5",
+      "d": "1"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is the remainder when 51 x 27 x 35 x 62 x 75 is divided by 100?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Work modulo 100. The even factor 62 and factor 75, with the remaining odd factors, make the product end in 50. The remainder is 50.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-057",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 57,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A sum of Rs. 2,500 is distributed among X, Y and Z in the ratio 1/2 : 3/4 : 5/6 . What is the difference between the maximum share and the minimum share?",
+    "options": {
+      "a": "Rs. 300",
+      "b": "Rs. 350",
+      "c": "Rs. 400",
+      "d": "Rs. 450"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A sum of Rs. 2,500 is distributed among X, Y and Z in the ratio 1/2 : 3/4 : 5/6 . What is the difference between the maximum share and the minimum share?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Multiplying the ratio by 12 gives 6:9:10. The 25 ratio units divide Rs. 2,500 into Rs. 600, 900 and 1,000, a difference of Rs. 400.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-058",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 58,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "For what value of n, the sum of digits in the number (10^n + 1) is 2?",
+    "options": {
+      "a": "For n= 0 only",
+      "b": "For any whole number n",
+      "c": "For any positive integer n only",
+      "d": "For any real number n"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "For what value of n, the sum of digits in the number (10^n + 1) is 2?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "For positive integer n, 10^n+1 has two digits 1 and all remaining digits 0. For n=0 it is 2. Thus every whole number n has digit sum 2.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-059",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 59,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "In a class, there are three groups A, B and C. If one student from group A and two students from group B are shifted to group C, then what happens to the average weight of the students of the class?",
+    "options": {
+      "a": "It increases.",
+      "b": "It decreases.",
+      "c": "It remains the same.",
+      "d": "No conclusion can be drawn due to insufficient data."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In a class, there are three groups A, B and C. If one student from group A and two students from group B are shifted to group C, then what happens to the average weight of the students of the class?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Moving students between groups changes neither the class’s total weight nor its total number of students. The class average remains unchanged.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-060",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 60,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many different sums can be formed with the denominations Rs. 50, Rs. 100, Rs. 200, Rs. 500 and Rs. 2,000 taking at least three denominations at a time?",
+    "options": {
+      "a": "16",
+      "b": "15",
+      "c": "14",
+      "d": "10"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many different sums can be formed with the denominations Rs. 50, Rs. 100, Rs. 200, Rs. 500 and Rs. 2,000 taking at least three denominations at a time?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Choose at least three of five denominations: C(5,3)+C(5,4)+C(5,5)=10+5+1=16 different sums.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-061",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 61,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": {
+      "a": "Indian banking system is not able to help the country in its economic growth.",
+      "b": "Economic reforms that started in 1991 have not helped in improving the economy to expected levels.",
+      "c": "India lacks the institutional mechanism to deal with the failure of banks.",
+      "d": "Encouraging the foreign investments in our industrial sector is a good alternative to this sector's dependence on banks for credit."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Paaaage-1\n\nBank credit to the industrial sector has started shrinking. Its decline has been a serious concern as credit growth is essential to revive investment. The problem's Origins lie in the incomplete reforms of the last 25 years. An institutional change that should have followed the 1991 reforms should have been setting up of a resolution corporation for banks. In a market economy with booms and busts, banks should be allowed to be set up and to fail. Today, we cannot shut down banks because there is no proper system to shut them down. Weak loss-making banks continue to need more capital."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is the most logical and rational inference that can be made from the above passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage specifically identifies the missing resolution corporation and lack of a proper system for closing failed banks. The supported inference is that India lacks the institutional mechanism for dealing with bank failure.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-062",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 62,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "Which one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": {
+      "a": "India's commitment to reduce emissions by 33% is unlikely to be achieved.",
+      "b": "India should import gas rather than invest in renewable resources.",
+      "c": "Getting renewable resources to market too soon may be costly.",
+      "d": "India should put in more efforts in the exploration of natural gas."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "India has tremendous potential for solar energy. We all realize that we have to stop burning fossil fuels to meet our energy needs. But certain renewable resources are still going through their cost Curves and learning curves to get the required amount of output. The Indian Government has strongly committed to its targets of reducing emissions by 33 percent by 2030, and towards this it has initiated a strong push towards a gas-based economy and has also invested heavily in renewable energy. However, business houses are wary of investing too heavily in renewable energy at a time when the technology is not yet ready."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is the most logical and rational inference that can be made from the above passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage warns that immature renewable technologies can be expensive when deployed before their costs fall sufficiently. Getting them to market too soon can therefore be costly.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-063",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 63,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Governments often provide inefficient and costly subsidies for technologies that may not be ready in the near future.\n2. India’s commitment of reducing emissions by 33% by 2030 shall be on the basis of gas-based economy.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "India has tremendous potential for solar energy. We all realize that we have to stop burning fossil fuels to meet our energy needs. But certain renewable resources are still going through their cost Curves and learning curves to get the required amount of output. The Indian Government has strongly committed to its targets of reducing emissions by 33 percent by 2030, and towards this it has initiated a strong push towards a gas-based economy and has also invested heavily in renewable energy. However, business houses are wary of investing too heavily in renewable energy at a time when the technology is not yet ready."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Governments often provide inefficient and costly subsidies for technologies that may not be ready in the near future.\n2. India’s commitment of reducing emissions by 33% by 2030 shall be on the basis of gas-based economy.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The warning about costly support for technologies still on a learning curve supports assumption 1. The passage does not establish that the entire emissions commitment must be fulfilled through a gas-based economy.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-064",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 64,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "With reference to the above passage, the following assumptions have been made:\n\n1. Genome editing does not require the transfer of genes from one plant to another.\n2. Through genome editing, the chosen genes can be altered precisely in a manner akin to the natural process that helps plants to adapt to the environmental factors.\nWhich of the above assumptions is/are valid?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Genome editing is different from genome modification. Genome editing typically involves finding the part of a plant genome that could be changed to render it less vulnerable to disease, or resistant to certain herbicides, or to increase yields. Researchers use ‘molecular scissors’ to dissect the genome and repair it, Which is a process that occurs naturally when plants are under attack from diseases and can throw up new mutations that enable the plant to survive future attacks. This evolutionary process can effectively be speeded up now that it is possible to examine plant genomes in detail in laboratories, and create mechanisms through which the relevant genes can be altered very precisely."
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the above passage, the following assumptions have been made:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Genome editing does not require the transfer of genes from one plant to another.\n2. Through genome editing, the chosen genes can be altered precisely in a manner akin to the natural process that helps plants to adapt to the environmental factors.\nWhich of the above assumptions is/are valid?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Genome editing changes selected parts of a plant’s own genome, rather than requiring transfer of genes from another plant. The passage also describes targeted alteration akin to adaptation. Both assumptions are accepted.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-065",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 65,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "In the context of India, which one of the following statements best reflects the critical message of the passage?",
+    "options": {
+      "a": "In India, the drainage networks are not separate for sewerage and storm water.",
+      "b": "Urban local bodies do not have enough resources and legislative authority to deal with the problems or waste management.",
+      "c": "Solid waste management should be integrated with the maintenance of drainage and sewerage networks.",
+      "d": "Bad management of solid waste and sewerage systems by our municipalities is the reason for drinking water shortages in our cities."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "Many people understand the connection n solid waste management and health in terms of the consequences of unattended heaps of garbage which become home for flies and other Vermin. However, there is another aspect that is not well-understood, that is, what happens when unscientific solid waste management combines with poor drainage and dumping of untreated sewage into drains which are meant to carry storm water during rains. The result is choked drains which are full of stagnant water breeding mosquitoes, resulting in the spread of water-borne diseases."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the context of India, which one of the following statements best reflects the critical message of the passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage links unattended solid waste with blocked drainage and sewerage. Its critical message is to integrate solid-waste management with maintenance of those networks.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-066",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 66,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Reading comprehension",
+    "question": "What is the most logical inference from the above passage?",
+    "options": {
+      "a": "State shall not interfere with the religious affairs of the Citizens.",
+      "b": "Religious freedom under the Constitution is open to State intervention",
+      "c": "Religious freedom of the citizens is not covered under fundamental rights.",
+      "d": "Religious practices of any Community are immune to State laws."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "passage",
+        "text": "In Part III of the constitution which assures people certain fundamental rights, Article 25 proclaims that “all persons are equally entitled to freedom of conscience and the right freely to profess, practice and propagate religion”. What people fail to notice is that this Proclamation is prefixed with the words “subject to public order, morality, health and to the other provisions of this Part”, Which set conditions precedent for the legal protection of religious practices of any Community. The closing words of this prefatory rider in Article 25 virtually constitute a subordination clause placing other fundamental rights mentioned in Part Ill over and above the right to religious freedom. Among those other fundamental rights is the rights to equality before law and equal protection of laws-assured at the outset and elaborated in later articles to mean, inter alia, that the State shall not deny equal protection of laws to any person or group of persons on the basis of religion alone."
+      },
+      {
+        "type": "paragraph",
+        "text": "What is the most logical inference from the above passage?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The passage notes constitutional qualifications to religious freedom. It therefore permits State intervention within those qualifications rather than making every practice immune from law.",
+      "concept": "Reading comprehension",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-067",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 67,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many different 5-letter words (with or without meaning) can be constructed using all the letters of the word ‘DELHI’ so that each word has to start with D and end with I?",
+    "options": {
+      "a": "24",
+      "b": "18",
+      "c": "12",
+      "d": "6"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many different 5-letter words (with or without meaning) can be constructed using all the letters of the word ‘DELHI’ so that each word has to start with D and end with I?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Fix D first and I last. The remaining E,L,H can be arranged in 3!=6 ways.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-068",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 68,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A bottle contains 20 litres of liquid A. 4 litres of liquid A is taken out of it d replaced by same quantity of liquid B. Again 4 litre of the mixture is taken out and replaced by same quantity of liquid B. What is the ratio of quantity of liquid A to that of liquid B in the final mixture?",
+    "options": {
+      "a": "4 : 1",
+      "b": "5 : 1",
+      "c": "16 : 9",
+      "d": "17 : 8"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A bottle contains 20 litres of liquid A. 4 litres of liquid A is taken out of it d replaced by same quantity of liquid B. Again 4 litre of the mixture is taken out and replaced by same quantity of liquid B. What is the ratio of quantity of liquid A to that of liquid B in the final mixture?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The remaining quantity of A is 20(1−4/20)²=12.8 litres. B is 7.2 litres, giving A:B=16:9.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-069",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 69,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "The average score of a batsman after his 50th innings was 46.4. After 60th innings, his average Score increases by 2.6. What was his average score in the last ten innings?",
+    "options": {
+      "a": "122",
+      "b": "91",
+      "c": "62",
+      "d": "49"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The average score of a batsman after his 50th innings was 46.4. After 60th innings, his average Score increases by 2.6. What was his average score in the last ten innings?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The last ten innings total 60×49−50×46.4=620 runs. Their average is 620/10=62.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-070",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 70,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "As a result of 25% hike in the price of rice per kg, a person is able to purchase 6 kg less rice for Rs. 1,200. What Was the Original price of rice per kg?",
+    "options": {
+      "a": "Rs. 30",
+      "b": "Rs. 40",
+      "c": "Rs. 50",
+      "d": "Rs. 60"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "As a result of 25% hike in the price of rice per kg, a person is able to purchase 6 kg less rice for Rs. 1,200. What Was the Original price of rice per kg?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "At original price p, the quantities are 1200/p and 1200/(1.25p). Their difference is 240/p=6, giving p=Rs. 40.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-071",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 71,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A person can complete 20% of work in 8 days and another person y can complete 25% of the same work in 6 days. If they work together, in how many days will 40% of the work be completed?",
+    "options": {
+      "a": "6",
+      "b": "8",
+      "c": "10",
+      "d": "12"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A person can complete 20% of work in 8 days and another person y can complete 25% of the same work in 6 days. If they work together, in how many days will 40% of the work be completed?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The daily work rates are 0.2/8=1/40 and 0.25/6=1/24. Together they complete 1/15 daily, so 40% takes 0.4×15=6 days.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-072",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 72,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A car travels from a place X to place Y at an average speed of v km/hr from y to X at an average speed of 2v km/hr, again from X to y at an average speed of 3v km/hr and again from y to x at an average speed of 4v km/hr. Then the average speed of the car for the entire journey",
+    "options": {
+      "a": "is less than v km/hr",
+      "b": "lies between v and 2v km/hr",
+      "c": "lies between 2v and 3v km/hr",
+      "d": "lies between 3v and 4v km/hr"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A car travels from a place X to place Y at an average speed of v km/hr from y to X at an average speed of 2v km/hr, again from X to y at an average speed of 3v km/hr and again from y to x at an average speed of 4v km/hr. Then the average speed of the car for the entire journey"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "For four equal distances, average speed is 4v/(1+1/2+1/3+1/4)=48v/25=1.92v, between v and 2v.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-073",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 73,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Consider the following statements:\n\n1. The minimum number of points of intersection of a square and a circle is 2.\n2. The maximum number of points of intersection of a square and a circle is 8.\nWhich of the above statements is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The minimum number of points of intersection of a square and a circle is 2.\n2. The maximum number of points of intersection of a square and a circle is 8.\nWhich of the above statements is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "A circle and a square may have no intersections. Each of the four sides can intersect a circle twice, allowing a maximum of eight. Only statement 2 is correct.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-074",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 74,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A man takes half time in rowing a certain distance downstream than upstream. What is the ratio or the speed in still water to the speed of current?",
+    "options": {
+      "a": "1 : 2",
+      "b": "2 : 1",
+      "c": "1 : 3",
+      "d": "3 : 1"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A man takes half time in rowing a certain distance downstream than upstream. What is the ratio or the speed in still water to the speed of current?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Equal distances and half the downstream time imply downstream speed is twice upstream speed. With still-water speed u and current c, u+c=2(u−c), so u:c=3:1.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-075",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 75,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "How many pairs of natural numbers are there such that the difference of whose squares is 63?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "How many pairs of natural numbers are there such that the difference of whose squares is 63?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Write a²−b²=(a−b)(a+b)=63. The positive factor pairs (1,63), (3,21) and (7,9) each give one natural-number pair, for three pairs.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-076",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 76,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "Which one of the following will have minimum change in its value if s is added to both numerator and the denominator of the fractions 2/3, 3/4, 4/5 and 5/6?",
+    "options": {
+      "a": "2/3",
+      "b": "3/4",
+      "c": "4/5",
+      "d": "5/6"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following will have minimum change in its value if s is added to both numerator and the denominator of the fractions 2/3, 3/4, 4/5 and 5/6?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The positive change from adding s is s/[b(b+s)] for fractions (b−1)/b. It decreases as b increases, so 5/6 has the smallest change.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-077",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 77,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A digit n > 3 is divisible by 3 but not divisible by 6. Which one of the following is divisible by 4?",
+    "options": {
+      "a": "2n",
+      "b": "3n",
+      "c": "2n + 4",
+      "d": "3n + 1"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A digit n > 3 is divisible by 3 but not divisible by 6. Which one of the following is divisible by 4?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "The only digit greater than 3 divisible by 3 but not 6 is 9. Then 3n+1=28 is divisible by 4.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-078",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 78,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "If 1 litre of water weighs 1 kg, then how many cubic millimeters of water will weigh 0.1 gm?",
+    "options": {
+      "a": "1",
+      "b": "10",
+      "c": "100",
+      "d": "1000"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "If 1 litre of water weighs 1 kg, then how many cubic millimeters of water will weigh 0.1 gm?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "One litre is 1,000,000 mm³ and 1000 g. Thus 0.1 g corresponds to 1,000,000×0.1/1000=100 mm³.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-079",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 79,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A vessel full of water weighs 40 kg. If it is one-third filled, its weight becomes 20 kg. What is the weight of the empty vessel?",
+    "options": {
+      "a": "10 kg",
+      "b": "15 kg",
+      "c": "20 kg",
+      "d": "25 kg"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A vessel full of water weighs 40 kg. If it is one-third filled, its weight becomes 20 kg. What is the weight of the empty vessel?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Let empty-vessel weight be v and full water weight be w. From v+w=40 and v+w/3=20, w=30 and v=10 kg.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2020-prelims-csat-a-080",
+    "year": 2020,
+    "stage": "CSAT",
+    "paper": "CSAT Paper II",
+    "number": 80,
+    "booklet": "A",
+    "questionType": "MCQ",
+    "subject": "CSAT",
+    "topic": "Quantitative aptitude & reasoning",
+    "question": "A frog tries to come out of a dried well 4.5 m deep with slippery walls. Every time the frog jumps 30 cm, slides down 15 cm. what is the number of jumps required for the frog to come out of the well?",
+    "options": {
+      "a": "28",
+      "b": "29",
+      "c": "30",
+      "d": "31"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.5,
+    "negativeMarks": 0.8333333333333334,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2020-csat-set-a",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A frog tries to come out of a dried well 4.5 m deep with slippery walls. Every time the frog jumps 30 cm, slides down 15 cm. what is the number of jumps required for the frog to come out of the well?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2020 CSAT Paper II · Series A",
+    "explanation": {
+      "justification": "Before the last jump the net gain is 15 cm per jump. After 28 jumps the frog is at 420 cm; the 29th jump reaches 450 cm and it escapes without sliding back.",
+      "concept": "Quantitative aptitude & reasoning",
+      "references": [
+        {
+          "title": "UPSC CSE 2020 final answer key · Series A",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2020-CSAT.pdf#page=1"
+        }
+      ]
+    }
+  }
+]

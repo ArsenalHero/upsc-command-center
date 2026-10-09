@@ -23,7 +23,9 @@ export default defineConfig(({ mode }) => {
       output: {
         manualChunks(id) {
           const bank = id.match(/\/src\/data\/([^/]+-bank)\.json$/);
-          return bank ? `questions-${bank[1]}` : undefined;
+          if (bank) return `questions-${bank[1]}`;
+          const support = id.match(/\/src\/data\/(coaching-explanation-reviews|supplied-explanation-matches|explanation-reviews|duplicate-groups)\.json$/);
+          return support ? `question-support-${support[1]}` : undefined;
         },
       },
     },

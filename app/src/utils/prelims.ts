@@ -26,12 +26,13 @@ export function responseAttempt(q: PYQQuestion, s: PrelimsSession, r: PrelimsRes
   return record;
 }
 export function sessionReport(s: PrelimsSession, bank: Map<string, PYQQuestion>) {
-  let correct = 0, incorrect = 0, ungraded = 0, attempted = 0, raw = 0, penalty = 0, seconds = 0;
+  let correct = 0, incorrect = 0, ungraded = 0, attempted = 0, dropped = 0, raw = 0, penalty = 0, seconds = 0;
   const groups: Record<string, Record<string, { attempted: number; correct: number; incorrect: number; seconds: number }>> = { subject: {}, topic: {}, difficultyLabel: {} };
   for (const id of s.questionIds) {
     const q = bank.get(id), r = s.responses[id]; if (!q) continue;
     const key = r?.key || keySnapshot(q), time = r?.seconds || 0;
     seconds += time;
+    if (key.status === "dropped") { dropped++; continue; }
     const graded = ["official", "provided"].includes(key.status) && !!key.answer;
     const right = !!r?.option && graded && r.option === key.answer;
     const wrong = !!r?.option && graded && !right;
@@ -41,7 +42,7 @@ export function sessionReport(s: PrelimsSession, bank: Map<string, PYQQuestion>)
       group.attempted += +!!r?.option; group.correct += +right; group.incorrect += +wrong; group.seconds += time;
     }
   }
-  return { total: s.questionIds.length, attempted, correct, incorrect, ungraded, unattempted: s.questionIds.length - attempted, raw, penalty, score: raw - penalty, seconds, accuracy: correct + incorrect ? 100 * correct / (correct + incorrect) : null, groups };
+  return { total: s.questionIds.length, attempted, correct, incorrect, ungraded, dropped, unattempted: s.questionIds.length - attempted - dropped, raw, penalty, score: raw - penalty, seconds, accuracy: correct + incorrect ? 100 * correct / (correct + incorrect) : null, groups };
 }
 export function filterQuestions(bank: PYQQuestion[], f: PrelimsFilters, latest: Map<string, PYQRecord>, bookmarks: string[], review: string[]) {
   const terms = f.query.trim().toLowerCase().split(/\s+/).filter(Boolean);

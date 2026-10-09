@@ -1,4 +1,5 @@
 import originals from "./pyq-bank.json";
+import earlierPapers from "./cse-2019-2020-bank";
 import polity from "./polity-bank.json";
 import geography from "./geography-bank.json";
 import additional from "./additional-bank.json";
@@ -13,7 +14,7 @@ import { englishQuestion } from "../utils/englishQuestion";
 import type { ExplanationReview, PYQQuestion } from "../utils/pyq";
 import { buildQuestionCollections } from "../utils/questionCollections";
 
-export const originalBank = originals as PYQQuestion[];
+export const originalBank = [...originals, ...earlierPapers] as PYQQuestion[];
 export const polityBank = polity as PYQQuestion[];
 export const geographyBank = geography as PYQQuestion[];
 export const additionalBank = additional as PYQQuestion[];
