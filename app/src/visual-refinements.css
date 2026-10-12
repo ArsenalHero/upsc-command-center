@@ -471,3 +471,211 @@
   .report-controls,
   .prelims-filters { display: none; }
 }
+
+/* Everyday actions and clear recovery paths for common tasks. */
+.workspace-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: -3px 0 24px;
+}
+
+.workspace-shortcuts .btn {
+  min-height: 46px;
+  font-size: 0.8125rem;
+}
+
+.shortcut-count {
+  display: inline-block;
+  padding: 3px 7px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.search-help {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.search-section-title {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.search-results {
+  margin-top: 10px;
+  gap: 4px;
+}
+
+.search-results button {
+  padding: 13px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.search-results button:hover,
+.search-results button:focus-visible {
+  background: var(--surface-alt);
+  border-color: var(--border);
+}
+
+.search-results button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.search-no-results,
+.pyq-no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.search-no-results > svg,
+.pyq-no-results > svg {
+  color: var(--primary);
+}
+
+.search-no-results p,
+.pyq-no-results p {
+  color: var(--muted);
+  max-width: 420px;
+  font-size: 0.875rem;
+}
+
+.pyq-active-filters {
+  margin: -6px 0 24px;
+  padding: 16px 18px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.pyq-filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.pyq-filter-summary .text-btn {
+  padding: 5px 0;
+}
+
+.pyq-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pyq-filter-chips button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  padding: 8px 11px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.pyq-filter-chips button > span:first-child {
+  overflow-wrap: anywhere;
+}
+
+.pyq-filter-chips button > span:last-child {
+  color: var(--muted);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.pyq-filter-chips button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.settings-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-change-status {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.settings-change-status.pending {
+  color: var(--amber);
+}
+
+.revision-agenda .revision-agenda-tabs {
+  margin: 0 20px 2px;
+}
+
+.agenda-due-date {
+  margin-left: 9px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.revision-reminder-settings {
+  margin-bottom: 22px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.revision-reminder-settings > summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.revision-reminder-settings > summary::-webkit-details-marker { display: none; }
+.revision-reminder-settings > summary > svg:first-child { color: var(--primary); }
+.revision-reminder-settings > summary > svg:last-child { margin-left: auto; color: var(--muted); }
+.revision-reminder-settings[open] > summary > svg:last-child { transform: rotate(90deg); }
+.revision-reminder-settings > summary strong { display: block; font-size: 0.875rem; font-weight: 600; }
+.revision-reminder-settings > summary small { display: block; color: var(--muted); font-size: 0.75rem; margin-top: 5px; }
+.revision-reminder-settings > .spaced-repetition { border: 0; border-radius: 0; border-top: 1px solid var(--border); margin: 0; box-shadow: none; }
+.revision-reminder-settings > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: -3px; }
+
+@media (max-width: 760px) {
+  .workspace-shortcuts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .workspace-shortcuts .btn { padding: 11px 10px; min-height: 50px; justify-content: center; }
+  .settings-header-actions { width: 100%; justify-content: space-between; }
+  .settings-header-actions .btn { width: auto; }
+  .pyq-active-filters { padding: 14px; }
+  .pyq-filter-chips button { min-height: 40px; }
+  .revision-reminder-settings > summary { padding: 17px 16px; }
+  .revision-agenda .revision-agenda-tabs { margin-left: 16px; margin-right: 16px; }
+}
+
+@media print {
+  .workspace-shortcuts,
+  .pyq-active-filters,
+  .settings-header-actions,
+  .revision-reminder-settings { display: none; }
+}

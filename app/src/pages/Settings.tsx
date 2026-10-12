@@ -29,18 +29,26 @@ export default function Settings() {
   const { data, updateSettings, setEditor, notify } = useData(),
     [settings, setSettings] = useState(data.settings),
     [newCategory, setNewCategory] = useState("");
-  useEffect(() => setSettings(data.settings), [data.settings]);
+  const savedSettings = JSON.stringify(data.settings);
+  // Other record edits clone the workspace without changing saved settings.
+  useEffect(() => setSettings(data.settings), [savedSettings]);
   const change = (key: keyof SettingsType, value: any) =>
     setSettings((s) => ({ ...s, [key]: value }));
   const total = Object.values(settings.allocation).reduce((a, b) => a + b, 0);
+  const dirty = JSON.stringify(settings) !== savedSettings;
   return (
     <>
       <PageHeader
         eyebrow="MAKE IT YOURS"
         title="Preparation settings"
         description="Configure targets, priorities, allocation, thresholds, and transparent productivity scoring."
+        action={<div className="settings-header-actions">
+          <span className={`settings-change-status ${dirty ? "pending" : ""}`} role="status">{dirty ? "Unsaved changes" : "Settings saved"}</span>
+          <button className="btn primary" type="submit" form="preparation-settings" disabled={!dirty}><Save size={16} />Save settings</button>
+        </div>}
       />
       <form
+        id="preparation-settings"
         onSubmit={(e) => {
           e.preventDefault();
           if (updateSettings(settings)) notify("Preparation settings saved.");
@@ -302,7 +310,7 @@ export default function Settings() {
           </section>
         </div>
         <div className="settings-save">
-          <button className="btn primary" type="submit">
+          <button className="btn primary" type="submit" disabled={!dirty}>
             <Save size={16} />
             Save settings
           </button>

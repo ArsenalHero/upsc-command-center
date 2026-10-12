@@ -176,6 +176,7 @@ export function RevisionCalendar({
 export default function Revision() {
   const { data, setEditor, markRevision } = useData(),
     [selected, setSelected] = useState(dateKey),
+    [view, setView] = useState<"due" | "date">("due"),
     [topicId, setTopicId] = useState<string | null>(null);
   const today = dateKey(),
     pending = data.revisions.filter((r) => !r.completedDate),
@@ -186,6 +187,9 @@ export default function Revision() {
       [data, today],
     );
   const selectedRecords = data.revisions.filter((r) => r.dueDate === selected);
+  const ready = [...overdue, ...due].sort((a, b) => a.dueDate.localeCompare(b.dueDate));
+  const agenda = view === "due" ? ready : selectedRecords;
+  const repetition = data.settings.spacedRepetition || defaultSpacedRepetition;
   return (
     <>
       <PageHeader
@@ -198,7 +202,7 @@ export default function Revision() {
             onClick={() =>
               setEditor({
                 collection: "revisions",
-                preset: { dueDate: selected },
+                preset: { dueDate: view === "due" ? today : selected },
               })
             }
           >
@@ -207,7 +211,6 @@ export default function Revision() {
           </button>
         }
       />
-      <SpacedRepetition />
       <div className="stats-grid four">
         <DashboardCard
           title="Overdue revisions"
@@ -227,15 +230,19 @@ export default function Revision() {
         />
       </div>
       <div className="revision-layout">
-        <RevisionCalendar selected={selected} onSelect={setSelected} />
+        <RevisionCalendar selected={selected} onSelect={date => { setSelected(date); setView("date"); }} />
         <section className="card revision-agenda">
           <div className="card-heading">
-            <h2>{prettyDate(selected, { day: "numeric", month: "long" })}</h2>
-            <Badge>{selectedRecords.length} topics</Badge>
+            <h2>{view === "due" ? "Ready to revise" : prettyDate(selected, { day: "numeric", month: "long" })}</h2>
+            <Badge>{agenda.length} topics</Badge>
           </div>
-          {selectedRecords.length ? (
+          <div className="revision-agenda-tabs tabs" role="tablist" aria-label="Revision agenda view">
+            <button role="tab" aria-selected={view === "due"} className={view === "due" ? "active" : ""} onClick={() => setView("due")}>Due & overdue{ready.length > 0 && <span className="shortcut-count">{ready.length}</span>}</button>
+            <button role="tab" aria-selected={view === "date"} className={view === "date" ? "active" : ""} onClick={() => setView("date")}>Selected date</button>
+          </div>
+          {agenda.length ? (
             <div className="agenda-list">
-              {selectedRecords.map((r) => (
+              {agenda.map((r) => (
                 <article className="agenda-item" key={r.id}>
                   <Badge
                     tone={
@@ -256,6 +263,7 @@ export default function Revision() {
                           ? "Due today"
                           : "Upcoming"}
                   </Badge>
+                  {view === "due" && <span className="agenda-due-date">Due {prettyDate(r.dueDate)}</span>}
                   {r.repeatOf && <Badge tone="blue">Spaced repetition{r.repetitionStep === undefined ? "" : ` · Review ${r.repetitionStep + 1}/5`}</Badge>}
                   <button
                     className="topic-name"
@@ -296,19 +304,23 @@ export default function Revision() {
             </div>
           ) : (
             <EmptyState
-              title="Nothing scheduled."
-              text="Choose a topic and plan your next recall session."
+              title={view === "due" ? "You're up to date." : "Nothing scheduled."}
+              text={view === "due" ? "No pending reviews are due. Choose a date to look ahead, or schedule your next review." : "Choose a topic and plan your next recall session."}
               action="Schedule revision"
               onAction={() =>
                 setEditor({
                   collection: "revisions",
-                  preset: { dueDate: selected },
+                  preset: { dueDate: view === "due" ? today : selected },
                 })
               }
             />
           )}
         </section>
       </div>
+      <details className="revision-reminder-settings">
+        <summary><RotateCcw size={18} /><span><strong>Automatic spaced reviews</strong><small>{repetition.enabled ? repetition.mode === "preset" ? "On · reviews at 1, 7, 14, 30 and 90 days" : `On · every ${repetition.days} days after completion` : "Off · choose a repeat schedule"}</small></span><ChevronRight size={18} /></summary>
+        <SpacedRepetition />
+      </details>
       <section className="card revision-lifecycle">
         <div className="card-heading">
           <h2>Learning to mastery</h2>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Plus } from "lucide-react";
 import type { Collection, Entity, AppData, Stage, StudySession } from "../types";
 import {
@@ -9,7 +9,7 @@ import {
 } from "../types";
 import { useData } from "../hooks/useData";
 import { uid, dateKey } from "../utils/date";
-import { Modal } from "./ui";
+import { Modal, ConfirmDialog } from "./ui";
 import { StudySessionFields } from "./StudySessionFields";
 import { initialStudyValues, studyContext } from "../utils/studyForm";
 interface Field {
@@ -360,6 +360,13 @@ export function RecordForm({
       ? initialStudyValues(data, base, record as StudySession | undefined, preset)
       : { ...base, ...record, ...preset };
   });
+  const initialValues = useRef(JSON.stringify(values));
+  const [confirmDiscard, setConfirmDiscard] = useState(false);
+  const dirty = JSON.stringify(values) !== initialValues.current;
+  const requestClose = () => {
+    if (dirty) setConfirmDiscard(true);
+    else onClose();
+  };
   const change = (key: string, value: any) =>
     setValues((v) => {
       const next = { ...v, [key]: value };
@@ -550,9 +557,10 @@ export function RecordForm({
     );
   };
   return (
+    <>
     <Modal
       title={`${record ? "Edit" : "Add"} ${formTitles[collection] || collection}`}
-      onClose={onClose}
+      onClose={requestClose}
       wide
     >
       <form
@@ -605,7 +613,7 @@ export function RecordForm({
           )}
         </div>
         <div className="modal-foot">
-          <button type="button" className="btn secondary" onClick={onClose}>
+          <button type="button" className="btn secondary" onClick={requestClose}>
             Cancel
           </button>
           <button type="submit" className="btn primary" disabled={collection === "sessions" && !!values.nextRevisionDate && !values.topicId}>
@@ -615,6 +623,16 @@ export function RecordForm({
         </div>
       </form>
     </Modal>
+    {confirmDiscard && <ConfirmDialog
+      title="Discard unsaved changes?"
+      text="Your changes have not been saved. Keep editing to finish your entry, or discard these changes."
+      label="Discard changes"
+      cancelLabel="Keep editing"
+      danger
+      onClose={() => setConfirmDiscard(false)}
+      onConfirm={onClose}
+    />}
+    </>
   );
 }
 export const StudySessionForm = RecordForm;

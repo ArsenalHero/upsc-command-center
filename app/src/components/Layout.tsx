@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
@@ -105,110 +105,72 @@ export const navigation = [
   { label: "Account", path: "/account", icon: UserRound, group: "SETTINGS" },
 ];
 export function GlobalSearch({ onClose }: { onClose: () => void }) {
-  const { data, setEditor } = useData(),
-    navigate = useNavigate(),
-    [query, setQuery] = useState("");
+  const { data, setEditor } = useData(), navigate = useNavigate();
+  const [query, setQuery] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null), resultsRef = useRef<HTMLDivElement>(null);
+  type Result = { id: string; label: string; type: string; collection?: Collection; record?: Entity; path?: string; keywords?: string };
   const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (q.length < 2) return [];
-    const found: {
-      id: string;
-      label: string;
-      type: string;
-      collection?: Collection;
-      record?: Entity;
-      path?: string;
-    }[] = [];
-    data.subjects
-      .filter((s) => s.name.toLowerCase().includes(q))
-      .forEach((s) =>
-        found.push({
-          id: s.id,
-          label: s.name,
-          type: "Subject",
-          path: `/syllabus?subject=${s.id}`,
-        }),
-      );
-    data.topics
-      .filter((t) => `${t.name} ${t.notes}`.toLowerCase().includes(q))
-      .forEach((t) =>
-        found.push({
-          id: t.id,
-          label: t.name,
-          type: "Topic",
-          path: `/syllabus?topic=${t.id}`,
-        }),
-      );
-    for (const collection of [
-      "sessions",
-      "tests",
-      "pyqs",
-      "resources",
-      "currentAffairs",
-      "answers",
-      "essays",
-      "mcqs",
-    ] as Collection[])
-      data[collection].forEach((r: any) => {
-        if (JSON.stringify(r).toLowerCase().includes(q))
-          found.push({
-            id: r.id,
-            label:
-              r.name ||
-              r.title ||
-              r.question ||
-              r.topic ||
-              r.notes ||
-              "Study record",
-            type: collection,
-            collection,
-            record: r,
-          });
+    const q = query.trim().toLowerCase(), terms = q.split(/\s+/).filter(Boolean);
+    const matches = (value: string) => terms.every(term => value.toLowerCase().includes(term));
+    const commands: Result[] = [
+      { id: "action:study", label: "Log study session", type: "Quick action", collection: "sessions", keywords: "add record minutes hours study" },
+      { id: "page:papers", label: "Full CSE papers · 2015–2025", type: "Page", path: "/pyqs?section=papers", keywords: "previous year question papers pyq gs csat cse upsc prelims past 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025" },
+      { id: "action:mcq", label: "Log MCQ practice", type: "Quick action", collection: "mcqs", keywords: "add questions accuracy multiple choice" },
+      { id: "action:answer", label: "Log Mains answer", type: "Quick action", collection: "answers", keywords: "add answer writing mains practice" },
+      ...navigation.map(n => ({ id: `page:${n.path}`, label: n.label, type: "Page", path: n.path,
+        keywords: n.path === "/pyqs" ? "previous year questions practice question bank" : n.path === "/revision" ? "due overdue review reminders recall" : n.path === "/reports" ? "analytics progress performance" : n.path.replaceAll("-", " ") })),
+    ];
+    if (q.length < 2) {
+      const shortcuts = ["action:study", "page:papers", "page:/pyqs", "page:/revision", "page:/daily-study", "page:/reports"];
+      return shortcuts.map(id => commands.find(c => c.id === id)!);
+    }
+    const found: Result[] = commands.filter(c => matches(`${c.label} ${c.keywords || ""}`));
+    data.subjects.filter(s => matches(s.name)).forEach(s => found.push({
+      id: `subject:${s.id}`, label: s.name, type: "Subject", path: `/syllabus?subject=${s.id}`,
+    }));
+    data.topics.filter(t => matches(`${t.name} ${t.notes}`)).forEach(t => found.push({
+      id: `topic:${t.id}`, label: t.name, type: "Topic", path: `/syllabus?topic=${t.id}`,
+    }));
+    const collections = { sessions: "Study session", tests: "Test", pyqs: "PYQ record", resources: "Resource", currentAffairs: "Current affairs", answers: "Mains answer", essays: "Essay", mcqs: "MCQ practice" } as const;
+    for (const [collection, type] of Object.entries(collections))
+      data[collection as keyof typeof collections].forEach((r: any) => {
+        if (matches(JSON.stringify(r))) found.push({ id: `${collection}:${r.id}`, label: r.name || r.title || r.question || r.topic || r.notes || type, type, collection: collection as Collection, record: r });
       });
     return found.slice(0, 35);
   }, [data, query]);
+  const open = (result: Result) => {
+    onClose();
+    if (result.path) navigate(result.path);
+    else if (result.collection) setEditor({ collection: result.collection, record: result.record });
+  };
+  const searching = query.trim().length >= 2;
   return (
-    <Modal title="Search your preparation" onClose={onClose}>
+    <Modal title="Search & quick navigation" onClose={onClose}>
       <div className="modal-body search-modal">
         <div className="input-icon">
           <Search size={19} />
-          <input
-            autoFocus
-            aria-label="Universal search"
-            placeholder="Topics, notes, tests, PYQs, resources…"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
+          <input ref={inputRef} autoFocus aria-label="Universal search" aria-describedby="global-search-help"
+            placeholder="Find a page, topic, note or record…" value={query} onChange={e => setQuery(e.target.value)}
+            onKeyDown={e => {
+              if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+                const buttons = resultsRef.current?.querySelectorAll<HTMLButtonElement>("button");
+                if (buttons?.length) { e.preventDefault(); buttons[e.key === "ArrowDown" ? 0 : buttons.length - 1].focus(); }
+              } else if (e.key === "Enter" && searching && results.length) { e.preventDefault(); open(results[0]); }
+            }} />
         </div>
-        {query.trim().length < 2 ? (
-          <p className="muted">
-            Type at least two characters to search your workspace.
-          </p>
-        ) : results.length ? (
-          <div className="search-results">
-            {results.map((r) => (
-              <button
-                key={r.id}
-                onClick={() => {
-                  onClose();
-                  if (r.path) navigate(r.path);
-                  else if (r.collection)
-                    setEditor({ collection: r.collection, record: r.record });
-                }}
-              >
-                <span>
-                  <strong>{r.label.slice(0, 120)}</strong>
-                  <small>{r.type}</small>
-                </span>
-                <ChevronRight size={16} />
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p className="muted">
-            No matching records. Try a subject or topic name.
-          </p>
-        )}
+        <p className="search-help" id="global-search-help">{searching ? "Pages, subjects and saved records. Use ↑ ↓ to choose and Enter to open." : "Jump to a page or start an entry. Type two or more characters to search."}</p>
+        <h3 className="search-section-title">{searching ? `${results.length} ${results.length === 1 ? "result" : "results"}` : "Quick shortcuts"}</h3>
+        {results.length ? <div className="search-results" ref={resultsRef} onKeyDown={e => {
+          if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+          const buttons = [...(resultsRef.current?.querySelectorAll<HTMLButtonElement>("button") || [])];
+          const index = buttons.indexOf(e.target as HTMLButtonElement);
+          if (index < 0) return;
+          e.preventDefault();
+          if (e.key === "ArrowUp" && index === 0) inputRef.current?.focus();
+          else buttons[(index + (e.key === "ArrowDown" ? 1 : -1) + buttons.length) % buttons.length]?.focus();
+        }}>{results.map(r => <button key={r.id} onClick={() => open(r)}>
+          <span><strong>{r.label.slice(0, 120)}</strong><small>{r.type}</small></span><ChevronRight size={16} />
+        </button>)}</div> : <div className="search-no-results"><Search size={24} /><strong>No matches yet</strong><p>Try a page name such as “Papers”, or a subject, topic or note.</p><button className="text-btn" onClick={() => { setQuery(""); inputRef.current?.focus(); }}>Show shortcuts</button></div>}
       </div>
     </Modal>
   );
@@ -237,6 +199,10 @@ export default function Layout() {
     const handler = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
+        const input = document.querySelector<HTMLInputElement>('dialog[open] [aria-label="Universal search"]');
+        if (input) { input.focus(); return; }
+        // Keep background navigation from replacing an entry in an open form.
+        if (document.querySelector("dialog[open]")) return;
         setSearch(true);
       }
       if (e.key === "Escape") {
@@ -366,7 +332,7 @@ export default function Layout() {
               aria-label="Search your preparation"
             >
               <Search size={17} />
-              <span>Search anything…</span>
+              <span>Search or go to…</span>
               <kbd>⌘ K</kbd>
             </button>
             <NavLink

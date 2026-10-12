@@ -271,6 +271,7 @@ export function ConfirmDialog({
   onConfirm,
   onClose,
   label = "Confirm",
+  cancelLabel = "Cancel",
   danger = false,
 }: {
   title: string;
@@ -278,6 +279,7 @@ export function ConfirmDialog({
   onConfirm: () => void;
   onClose: () => void;
   label?: string;
+  cancelLabel?: string;
   danger?: boolean;
 }) {
   return (
@@ -287,7 +289,7 @@ export function ConfirmDialog({
       </div>
       <div className="modal-foot">
         <button className="btn secondary" onClick={onClose}>
-          Cancel
+          {cancelLabel}
         </button>
         <button
           className={`btn ${danger ? "danger" : "primary"}`}

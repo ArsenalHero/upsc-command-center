@@ -44,6 +44,7 @@ import { PriorityPanel, InsightCard } from "../components/Insights";
 import { StudyDetails } from "../components/StudyDetails";
 import { ExamCountdowns } from "../components/ExamCountdowns";
 import { selectedExam, workspaceExamLabel } from "../utils/examSettings";
+import { recentStudySessions, studyContext } from "../utils/studyForm";
 import {
   StudyHoursChart,
   SubjectDistribution,
@@ -91,22 +92,21 @@ export default function Dashboard() {
     .filter((r) => !r.completedDate)
     .sort((a, b) => a.dueDate.localeCompare(b.dueDate))[0];
   const hasData = data.sessions.length || data.mcqs.length || data.tests.length || data.pyqs.some((p) => p.attempt);
+  const recent = recentStudySessions(data)[0];
+  const readyRevisions = data.revisions.filter(r => !r.completedDate && r.dueDate <= today).length;
   return (
     <>
       <PageHeader
         eyebrow="YOUR PREPARATION, AT A GLANCE"
         title={selectedExam(data.settings) === "State PSC" ? "State PSC overview" : "Your preparation"}
         description={`${prettyDate(today, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · Target ${workspaceExamLabel(data.settings)}`}
-        action={
-          <button
-            className="btn primary"
-            onClick={() => setEditor({ collection: "sessions" })}
-          >
-            <Plus size={17} />
-            Log study session
-          </button>
-        }
       />
+      <nav className="workspace-shortcuts" aria-label="Everyday study shortcuts">
+        <button className="btn primary" onClick={() => setEditor({ collection: "sessions", preset: recent ? { ...studyContext(data, recent), date: today } : undefined })} title={recent ? `Continue ${data.subjects.find(s => s.id === recent.subjectId)?.name || "your subject"} · ${recent.activity}. Enter fresh study time.` : undefined}><Plus size={17} />Log study session</button>
+        <Link className="btn secondary" to="/pyqs"><Target size={17} />Practise PYQs</Link>
+        <Link className="btn secondary" to="/pyqs?section=papers"><BookOpen size={17} />Full papers</Link>
+        <Link className="btn secondary" to="/revision"><RotateCcw size={17} />Revisions{readyRevisions > 0 && <span className="shortcut-count">{readyRevisions} due</span>}</Link>
+      </nav>
       <ExamCountdowns settings={data.settings} />
       <div className="dashboard-control">
         <div className="view-tabs">

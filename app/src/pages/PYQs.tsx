@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Bookmark, BookOpen, ChevronLeft, ChevronRight, Clock3, Download, Flag, Pause, Play, RotateCcw, Target, CheckCircle2, BarChart3 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { useAuth } from "../hooks/useAuth";
@@ -48,15 +49,25 @@ function Report({ s, close, retry }: { s: PrelimsSession; close: () => void; ret
 
 export default function PYQs() {
   const { data, savePrelims, setEditor } = useData(); const { guest, user } = useAuth();
-  const stored = data.prelims || emptyPrelims();
-  const w = { ...stored, bookmarks: [...new Set(stored.bookmarks.map(canonicalQuestionId))], review: [...new Set(stored.review.map(canonicalQuestionId))] }, f = w.filters;
-  const [tab, setTab] = useState("Browse"), [page, setPage] = useState(0), [active, setActive] = useState(false), [report, setReport] = useState<PrelimsSession>(), [timed, setTimed] = useState(true), [startHint, setStartHint] = useState(""), [explanationFilter, setExplanationFilter] = useState("");
+  const [params, setParams] = useSearchParams();
+  const sections: Record<string, string> = { browse: "Browse", explanations: "Explanations", papers: "Full papers", revision: "Revision", performance: "Performance", history: "History" };
+  const tab = sections[params.get("section") || "browse"] || "Browse";
+  const setTab = (label: string) => {
+    if (label === tab) return;
+    const next = new URLSearchParams(params), key = Object.keys(sections).find(key => sections[key] === label) || "browse";
+    if (key === "browse") next.delete("section"); else next.set("section", key);
+    setParams(next);
+    setPage(0);
+  };
+  const stored = useMemo(() => data.prelims || emptyPrelims(), [data.prelims]);
+  const w = useMemo(() => ({ ...stored, bookmarks: [...new Set(stored.bookmarks.map(canonicalQuestionId))], review: [...new Set(stored.review.map(canonicalQuestionId))] }), [stored]), f = w.filters;
+  const [page, setPage] = useState(0), [active, setActive] = useState(false), [report, setReport] = useState<PrelimsSession>(), [timed, setTimed] = useState(true), [startHint, setStartHint] = useState(""), [explanationFilter, setExplanationFilter] = useState("");
   const [preview, setPreview] = useState<PYQQuestion>();
   const latest = useMemo(() => latestBankAttempts(data.pyqs), [data.pyqs]);
-  const filtered = filterQuestions(bank, f, latest, w.bookmarks, w.review).filter(q => !explanationFilter || explanationStatus(q) === explanationFilter);
-  const collection = bank.filter(q => matchesExam(q, f) && matchesSubject(q, f.subject));
-  const collectionIds = new Set(collection.map(q => q.id));
-  const records = canonicalRecords(data.pyqs.filter(p => p.attempt && collectionIds.has(canonicalQuestionId(p.attempt.questionId)))), stats = attemptStats(records);
+  const filtered = useMemo(() => filterQuestions(bank, f, latest, w.bookmarks, w.review).filter(q => !explanationFilter || explanationStatus(q) === explanationFilter), [f, latest, w.bookmarks, w.review, explanationFilter]);
+  const collection = useMemo(() => bank.filter(q => matchesExam(q, f) && matchesSubject(q, f.subject)), [f]);
+  const collectionIds = useMemo(() => new Set(collection.map(q => q.id)), [collection]);
+  const records = useMemo(() => canonicalRecords(data.pyqs.filter(p => p.attempt && collectionIds.has(canonicalQuestionId(p.attempt.questionId)))), [data.pyqs, collectionIds]), stats = useMemo(() => attemptStats(records), [records]);
   const change = (k: keyof PrelimsFilters, value: string) => {
     const next = { ...f, [k]: value };
     if (k === "subject") { next.paper = ""; next.topic = ""; next.subtopic = ""; next.query = ""; }
@@ -64,6 +75,14 @@ export default function PYQs() {
     if (k === "state") next.exam = "";
     if (savePrelims({ ...w, filters: next })) setPage(0);
   };
+  const resetFilters = () => {
+    if (savePrelims({ ...w, filters: { ...emptyFilters(), examGroup: f.examGroup } })) { setExplanationFilter(""); setPage(0); }
+  };
+  const filterFields: [keyof PrelimsFilters, string][] = [["year", "Year"], ["state", "State"], ["exam", "Exam"], ["examStage", "Stage"], ["paper", "Paper"], ["subject", "Subject"], ["topic", "Topic"], ["subtopic", "Subtopic"], ["difficulty", "Difficulty"], ["status", "Status"], ["query", "Search"]];
+  const statusLabels: Record<string, string> = { attempted: "Attempted", unattempted: "Unattempted", correct: "Right", incorrect: "Wrong", skipped: "Skipped", bookmarked: "Bookmarked", review: "Marked for review" };
+  const explanationLabels: Record<string, string> = { referenced: "Reference-reviewed", source: "Needs verification", disputed: "Answer needs review" };
+  const activeFilters = filterFields.filter(([key]) => !!f[key]);
+  const filterCount = activeFilters.length + +!!explanationFilter;
   const selectExam = (value: string) => {
     const next = { ...emptyFilters(), subject: f.subject, examGroup: value };
     if (savePrelims({ ...w, filters: next })) { setPage(0); setTab("Browse"); }
@@ -81,8 +100,8 @@ export default function PYQs() {
     const qs = filterQuestions(bank, { ...f, paper: q.paper, query: "", status: "" }, latest, w.bookmarks, w.review).filter(next => !explanationFilter || explanationStatus(next) === explanationFilter);
     return qs.slice(qs.findIndex(next => next.id === q.id));
   };
-  const facetBank = bank.filter(q => (!f.examGroup || matchesExam(q, { ...emptyFilters(), examGroup: f.examGroup })) && matchesSubject(q, f.subject));
-  const facetExams = facetBank.flatMap(q => examOccurrences(q)).filter(e => !f.examGroup || e.group === f.examGroup);
+  const facetBank = useMemo(() => bank.filter(q => (!f.examGroup || matchesExam(q, { ...emptyFilters(), examGroup: f.examGroup })) && matchesSubject(q, f.subject)), [f.examGroup, f.subject]);
+  const facetExams = useMemo(() => facetBank.flatMap(q => examOccurrences(q)).filter(e => !f.examGroup || e.group === f.examGroup), [facetBank, f.examGroup]);
   const years = [...new Set(facetExams.filter(e => !f.state || e.state === f.state).map(e => e.year))].sort((a, b) => b - a);
   const states = unique(facetExams.map(e => e.state).filter(Boolean));
   const exams = unique(facetExams.filter(e => !f.state || e.state === f.state).map(e => e.name));
@@ -92,13 +111,13 @@ export default function PYQs() {
   if (preview) return <div className="pyq-workspace"><PageHeader eyebrow="QUESTION & EXPLANATION REVIEW" title="Question explanation" description={`${label(preview, f)} · ${preview.subject}`} /><div className="prelims-actions"><button className="btn secondary" onClick={() => setPreview(undefined)}><ChevronLeft size={16} />Back to question bank</button></div><article className="card"><QuestionText q={preview} /><ul className="supplied-options" aria-label="Answer choices">{Object.entries(preview.options).map(([key, value]) => <li key={key}><strong>{key.toUpperCase()}.</strong><span>{value}</span></li>)}</ul><Explanation q={preview} /></article></div>;
   const currentPage = Math.min(page, Math.max(0, Math.ceil(filtered.length / 10) - 1));
   const advancedFilterCount = [f.state, f.paper, f.topic, f.subtopic, f.difficulty, f.status, explanationFilter].filter(Boolean).length;
-  const pools = {
+  const pools = tab === "Revision" ? {
     "Latest mistakes": collection.filter(q => latest.get(q.id)?.attempt?.outcome === "incorrect"),
     "Skipped": collection.filter(q => latest.get(q.id)?.attempt?.outcome === "skipped"),
     "Bookmarked": collection.filter(q => w.bookmarks.includes(q.id)),
     "Marked for review": collection.filter(q => w.review.includes(q.id) || latest.get(q.id)?.revisionNeeded),
     "Repeat mistakes": collection.filter(q => records.filter(a => a.attempt?.questionId === q.id && a.attempt.outcome === "incorrect").length > 1),
-  };
+  } : {};
   const fullPaperYear = (year: number) => <section className="paper-year" aria-label={`${year} Civil Services papers`} key={year}>
     <div className="paper-year-label"><h3>{year}</h3><span>Civil Services Preliminary Examination</span></div>
     <div className="prelims-paper-grid">{(["Prelims", "CSAT"] as const).map(stage => {
@@ -153,8 +172,12 @@ export default function PYQs() {
           <div className="prelims-subjects" role="group" aria-label="PYQ subject collections"><button className={`btn ${!f.subject ? "primary" : "secondary"}`} aria-pressed={!f.subject} onClick={() => change("subject", "")}>All subjects</button>{unique(bank.flatMap(questionSubjects)).map(s => <button className={`btn ${f.subject === s ? "primary" : "secondary"}`} aria-pressed={f.subject === s} key={s} onClick={() => change("subject", s)}>{s}</button>)}</div>
         </details>
       </section>
-      <div className="section-heading"><h2>{filtered.length} questions</h2><div className="prelims-actions"><button className="btn primary" disabled={!filtered.length} onClick={() => start(filtered)}>Practise filtered questions</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(shuffled(filtered))}>Shuffle practice</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(filtered, "test")}>Test filtered questions</button></div></div>
-      {!filtered.length && <div className="card">No questions match these filters.</div>}
+      {filterCount > 0 && <div className="pyq-active-filters" aria-label="Applied question filters">
+        <div className="pyq-filter-summary"><span>{filterCount} {filterCount === 1 ? "filter" : "filters"} applied</span><button className="text-btn" onClick={resetFilters}>Clear filters</button></div>
+        <div className="pyq-filter-chips">{activeFilters.map(([key, title]) => <button key={key} onClick={() => change(key, "")} aria-label={`Remove ${title.toLowerCase()} filter`}><span>{title}: {key === "status" ? statusLabels[f.status] || f.status : key === "year" && f.year === "unknown" ? "Not supplied" : f[key]}</span><span aria-hidden="true">×</span></button>)}{explanationFilter && <button onClick={() => { setExplanationFilter(""); setPage(0); }} aria-label="Remove explanation filter"><span>Explanation: {explanationLabels[explanationFilter]}</span><span aria-hidden="true">×</span></button>}</div>
+      </div>}
+      <div className="section-heading"><h2>{filtered.length.toLocaleString()} questions</h2><div className="prelims-actions"><button className="btn primary" disabled={!filtered.length} onClick={() => start(filtered)}>Practise filtered questions</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(shuffled(filtered))}>Shuffle practice</button><button className="btn secondary" disabled={!filtered.length} onClick={() => start(filtered, "test")}>Test filtered questions</button></div></div>
+      {!filtered.length && <section className="card pyq-no-results" role="status"><BookOpen size={28} /><h3>No questions match these filters</h3><p>Remove a filter or clear them to see the questions in this exam collection.</p>{filterCount > 0 && <button className="btn secondary" onClick={resetFilters}>Show all questions in this collection</button>}</section>}
       {filtered.slice(currentPage * 10, (currentPage + 1) * 10).map(q => <article className="card prelims-bank-row" key={q.id}><div><span className="eyebrow">{label(q, f)} · {q.subject}</span><h3>{q.topic}</h3><p>{cleanStudyText(q.blocks?.find(b => b.type === "paragraph")?.text || q.question.slice(0, 160))}</p><span className="muted small">{q.sourceFile ? q.examOccurrences?.map(e => e.label).join(" · ") || "Exam and year not supplied" : q.difficultyLabel} · {latest.get(q.id)?.attempt?.outcome || "Unattempted"}</span><span className={`prelims-quality-badge ${explanationStatus(q)}`}>{explanationStatusLabel(q)}</span></div><div className="prelims-actions"><button className="btn primary" aria-label={`Practise ${label(q, f)}`} onClick={() => start(sequence(q))}>Practise</button><button className="btn secondary" aria-label={`Review explanation ${label(q, f)}`} onClick={() => setPreview(q)}>Review explanation</button><button className="btn secondary" aria-label={`Bookmark ${label(q, f)}`} aria-pressed={w.bookmarks.includes(q.id)} onClick={() => savePrelims({ ...w, bookmarks: toggle(w.bookmarks, q.id) })}><Bookmark size={16} />{w.bookmarks.includes(q.id) ? "Bookmarked" : "Bookmark"}</button></div></article>)}
       <div className="prelims-actions"><button className="btn secondary" disabled={currentPage === 0} onClick={() => setPage(currentPage - 1)}>Previous page</button><span>Page {currentPage + 1} of {Math.max(1, Math.ceil(filtered.length / 10))}</span><button className="btn secondary" disabled={(currentPage + 1) * 10 >= filtered.length} onClick={() => setPage(currentPage + 1)}>Next page</button></div>
     </>}

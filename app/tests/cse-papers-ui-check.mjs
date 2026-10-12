@@ -31,8 +31,9 @@ const until = async (predicate, message) => {
 const click = async (value, aria = false) => {
   const el = [...w.document.querySelectorAll("button")].find(b => aria ? b.getAttribute("aria-label") === value : b.textContent.trim() === value);
   assert.ok(el, `Missing button ${value}`); assert.equal(el.disabled, false); el.click(); await wait();
+  if (el.getAttribute("role") === "tab") await until(() => w.document.querySelector('[aria-label="PYQ sections"] [aria-selected="true"]')?.textContent === value, `Section ${value} did not open`);
 };
-const papers = async () => { await until(() => w.document.querySelector("h1")?.textContent === "PYQ question bank", "Question bank did not load"); await click("Full papers"); };
+const papers = async () => { await until(() => w.document.querySelector("h1")?.textContent === "PYQ question bank", "Question bank did not load"); await click("Full papers"); await until(() => w.document.querySelectorAll(".paper-year").length === 11, "Full paper years did not render"); };
 const choose = async (option) => { const el = w.document.querySelector(`input[name="pyq-option"][value="${option}"]`); assert.ok(el); el.click(); await wait(); };
 const finish = async (mode) => { await click(`Finish ${mode}`); await until(() => w.document.querySelector("h1")?.textContent === "Your paper report", "Report did not save"); };
 
@@ -146,6 +147,20 @@ await click("History");
 assert.equal([...w.document.querySelectorAll("button")].filter(b => b.textContent === "Open report").length, 12);
 await click("Open report");
 assert.match(text(), /Your paper report/);
+await click("Back to question bank");
+await click("Browse");
+await until(() => w.document.querySelector('[aria-label="PYQ year"]'), "Browse filters did not open");
+const progressBeforeReset = JSON.stringify({ reports: saved().prelims.reports, bookmarks: saved().prelims.bookmarks, review: saved().prelims.review, session: saved().prelims.session, attempts: saved().pyqs });
+for (const [name, value] of [["PYQ year", "2017"], ["PYQ status", "bookmarked"]]) {
+  const control = w.document.querySelector(`[aria-label="${name}"]`);
+  Object.getOwnPropertyDescriptor(w.HTMLSelectElement.prototype, "value").set.call(control, value);
+  control.dispatchEvent(new w.Event("change", { bubbles: true }));
+  await wait();
+}
+await click("Clear filters");
+assert.equal(w.document.querySelector('[aria-label="PYQ year"]').value, "");
+assert.equal(w.document.querySelector('[aria-label="PYQ status"]').value, "");
+assert.equal(JSON.stringify({ reports: saved().prelims.reports, bookmarks: saved().prelims.bookmarks, review: saved().prelims.review, session: saved().prelims.session, attempts: saved().pyqs }), progressBeforeReset, "Clearing filters changed saved paper progress");
 assert.equal(errors.length, 0, errors.join("\n"));
 w.close();
-console.log("CSE paper UI checks passed: 12 paper launches, practice feedback, timed tests, passages/tables/diagrams, dropped items, bookmark/notes, refresh/resume and 12 saved reports.");
+console.log("CSE paper UI checks passed: 12 paper launches, practice feedback, timed tests, passages/tables/diagrams, dropped items, bookmark/notes, refresh/resume, 12 saved reports and filter resets that preserve progress.");
