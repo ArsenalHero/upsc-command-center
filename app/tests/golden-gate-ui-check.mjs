@@ -1,0 +1,136 @@
+import { build } from "esbuild";
+import { JSDOM, VirtualConsole } from "jsdom";
+import assert from "node:assert/strict";
+
+const built = await build({
+  stdin: { contents: 'import React from "react"; import {createRoot} from "react-dom/client"; import {HashRouter,Routes,Route} from "react-router-dom"; import MockLab from "./src/pages/MockLab"; import MockAccess from "./src/pages/MockAccess"; function Harness(){const [version,update]=React.useState(0);globalThis.rerenderGate=()=>update(n=>n+1);return <HashRouter><Routes><Route path="/tests/prelims/*" element={<MockAccess key={version}><MockLab/></MockAccess>}/><Route path="/login" element={<h1>Test sign-in</h1>}/></Routes></HashRouter>}createRoot(document.getElementById("root")).render(<Harness/>);', resolveDir: process.cwd(), loader: "tsx" },
+  bundle: true, write: false, format: "iife", platform: "browser", jsx: "automatic",
+  loader: { ".css": "empty" }, define: { "import.meta.env": JSON.stringify({ PROD: false }) },
+  plugins: [{ name: "test-only-account-fixtures", setup(b) {
+    b.onResolve({ filter: /\/hooks\/use(Auth|Data)$/ }, args => ({ path: args.path.endsWith("useAuth") ? "auth" : "data", namespace: "fixture" }));
+    b.onLoad({ filter: /.*/, namespace: "fixture" }, args => ({ contents: args.path === "auth" ? "export const useAuth=()=>globalThis.gateAuth;" : "export const useData=()=>globalThis.gateData;", loader: "js" }));
+  } }],
+});
+const errors = [], calls = [], downloads = [];
+const vc = new VirtualConsole();
+vc.on("jsdomError", error => { if (!String(error).includes("navigation")) errors.push(String(error)); });
+const dom = new JSDOM('<html><body><div id="root"></div></body></html>', { url: "https://example.test/upsc/#/tests/prelims/discover", runScripts: "outside-only", pretendToBeVisual: true, virtualConsole: vc });
+const w = dom.window;
+w.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} });
+w.scrollTo = () => {};
+w.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
+w.HTMLDialogElement.prototype.showModal = function () { this.setAttribute("open", ""); };
+w.HTMLDialogElement.prototype.close = function () { this.removeAttribute("open"); };
+w.URL.createObjectURL = blob => { downloads.push(blob); return "blob:test-summary"; };
+w.URL.revokeObjectURL = () => {};
+const id = n => `00000000-0000-4000-8000-${String(n).padStart(12,"0")}`;
+const tests = Array.from({ length: 15 }, (_, i) => ({ id: id(i+1), code: `MOCK-${i+1}`, name: `Example mock ${i+1}`, coachingId: "academy", coaching: "Example Academy", series: "Prelims 2027", year: 2027, paper: i % 2 ? "CSAT" : "GS-I", kind: i % 3 ? "Full Length" : "Sectional", subjects: ["Polity"], topics: ["Constitution"], syllabus: "Constitution, rights and governance.", difficulty: "Moderate", duration: 30+i*10, positive: 2, negative: 2/3, question_count: 20, maximum: 40, participants: i*3, started: i, attempt_limit: 3, status: "active", language: "English", leaderboard: true }));
+const questions = [
+  { id: "q1", question: "What is the purpose of constitutional rights?", options: { a: "Protect liberties", b: "Limit all voting", c: "Remove courts", d: "Replace legislation" }, correct: "a", explanation: "Constitutional rights protect individual liberties.", subject: "Polity", topic: "Rights", difficulty: "Moderate", positive: 2, negative: 2/3, outcome: "Correct", net: 2, response: { option: "a", seconds: 30, review: false, visited: true, confidence: "High", strategy: "Recall" } },
+  { id: "q2", question: "Which principle guides constitutional governance?", options: { a: "Arbitrary power", b: "Rule of law", c: "No checks", d: "No legislature" }, correct: "b", explanation: "The rule of law guides constitutional governance.", subject: "Polity", topic: "Governance", difficulty: "Moderate", positive: 2, negative: 2/3, outcome: "Incorrect", net: -2/3, response: { option: "a", seconds: 30, review: true, visited: true, confidence: "Low", strategy: "Guess", errorType: "Concept Gap", revisionDate: "2000-01-01", bookmarked: true, note: "Revisit the governance principles." } },
+];
+const result = { questions, count: 2, attempted: 2, correct: 1, incorrect: 1, unattempted: 0, gross: 2, negative: 2/3, score: 4/3, maximum: 4, accuracy: 50, attemptRate: 100, seconds: 60 };
+const completed = { id: id(101), testId: tests[0].id, test: tests[0], status: "submitted", eligible: true, mode: "official", startedAt: "2026-10-12T10:00:00Z", submittedAt: "2026-10-12T10:01:00Z", deadline: "2026-10-12T12:00:00Z", serverNow: "2026-10-12T10:01:00Z", questions, answers: {}, index: 0, sequence: 0, result };
+const running = { ...completed, id: id(102), status: "running", result: undefined };
+const licensedAccounts = new Set();
+const client = { auth: { onAuthStateChange(fn) { fn("INITIAL_SESSION", { access_token: `fixture.${w.btoa(JSON.stringify({session_id:"test-session"}))}.fixture` }); return { data: { subscription: { unsubscribe() {} } } }; } }, async rpc(name, { op, p }) {
+  calls.push({ op, p, userId: w.gateAuth.user?.id });
+  if (op === "license-status") return { data: { authorized: licensedAccounts.has(w.gateAuth.user.id) }, error: null };
+  if (op === "verify-license") { if (p.licenseKey === "valid-test-key") licensedAccounts.add(w.gateAuth.user.id); return { data: { authorized: licensedAccounts.has(w.gateAuth.user.id) }, error: null }; }
+  if (!licensedAccounts.has(w.gateAuth.user.id)) return { data: null, error: { message: "Permission denied" } };
+  let data;
+  if (op === "identity") data = { profile: { display_name: "Example learner", target_accuracy: 75 }, admin: false };
+  else if (op === "catalog") {
+    const rows = tests.filter(t => (!p.paper || t.paper === p.paper) && (!p.kind || t.kind === p.kind) && (!p.search || t.name.toLowerCase().includes(p.search.toLowerCase())) && (!p.year || String(t.year) === p.year) && (!p.maxDuration || t.duration <= Number(p.maxDuration)));
+    data = { tests: rows.slice(p.offset || 0, (p.offset || 0) + (p.limit || 12) + 1), facets: { coaching: [{id:"academy",name:"Example Academy"}], years:[2027], series:["Prelims 2027"], subjects:["Polity"], topics:["Constitution"] } };
+  } else if (op === "history") data = [running, completed];
+  else if (op === "detail") data = { test: tests.find(t => t.id === p.testId) || tests[0] };
+  else if (op === "attempt") data = completed;
+  else if (op === "notebook") data = questions.filter(q=>p.selection==="bookmarks"?q.response.bookmarked:q.outcome==="Incorrect").map(question => ({ attemptId: completed.id, test: tests[0], question }));
+  else if (op === "summary") data = { mocks:1, gs:1, csat:0, accuracy:50, negative:2/3, thisMonth:1, subjects:[], weakTopics:[], activity:[], comparisons:[] };
+  else if (op === "bookmark-test") data = { bookmarked: true };
+  else if (op === "start") data = running;
+  else throw new Error(`Unexpected test operation: ${op}`);
+  return { data, error: null };
+} };
+w.gateAuth = { user: {id:"account-one"}, client, signOut: async () => {} };
+w.gateData = { data: { settings:{year:2027}, subjects:[{id:"polity",name:"Polity",stage:"Prelims"}], topics:[] }, saveRecord:()=>true, notify:()=>{} };
+w.eval(built.outputFiles[0].text);
+const wait = () => new Promise(r => setTimeout(r,80));
+const until = async (fn, message) => { for(let i=0;i<160;i++){ if(fn())return; await wait(); } assert.ok(fn(), `${message}; ${w.document.body.textContent.slice(-900)}`); };
+const click = async (text) => { const el=[...w.document.querySelectorAll("button")].find(e=>e.textContent.trim()===text); assert.ok(el,`Missing button ${text}`); assert.equal(el.disabled,false); el.click(); await wait(); };
+const setField = async (selector, value) => { const el=w.document.querySelector(selector); assert.ok(el,selector); const proto=el.tagName==="SELECT"?w.HTMLSelectElement.prototype:w.HTMLInputElement.prototype; Object.getOwnPropertyDescriptor(proto,"value").set.call(el,value); el.dispatchEvent(new w.Event(el.tagName==="SELECT"?"change":"input",{bubbles:true})); await wait(); };
+const navigate = async path => { w.location.hash=path; await wait(); };
+await until(()=>w.document.querySelector("h1")?.textContent==="Verify your license key","License gate did not open");
+assert.equal(w.document.querySelector('.golden-catalogue'),null);
+assert.equal(calls.some(c=>c.op==="catalog"),false);
+await setField('[name="licenseKey"]',"valid-test-key");
+await click("Verify & continue");
+await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Catalogue did not load after verification");
+assert.equal(w.document.querySelector('[aria-label="Mock test sections"]').querySelectorAll('a').length,5);
+assert.ok(w.document.querySelector('[aria-label="Your mock shortcuts"] a[href*="attempt"]'));
+const compareButtons=[...w.document.querySelectorAll('[aria-label^="Compare Example mock"]')];
+compareButtons[0].click();await wait();compareButtons[1].click();await wait();
+await click("Compare 2 tests");
+assert.equal(w.document.querySelectorAll('.golden-comparison thead th').length,3);
+assert.match(w.document.querySelector('.golden-comparison').textContent,/Constitution, rights and governance/);
+assert.equal(calls.some(c=>c.op==="start"),false,"Comparison must not start an attempt");
+await click("Close comparison");
+compareButtons[2].click();await wait();compareButtons[3].click();await wait();
+assert.equal(w.document.querySelectorAll('.golden-compare-tray > div:first-child button').length,3);
+assert.match(w.document.body.textContent,/Choose up to three tests/);
+await click("Clear");
+await click("CSAT Paper II");
+await until(()=>!w.document.querySelector('.golden-loading')&&w.document.querySelectorAll('.golden-test-card').length===7,"CSAT preset did not filter");
+assert.equal(w.document.querySelector('[aria-label="Mock Paper"]').value,"CSAT");
+await click("Save this search");
+assert.match(w.localStorage.getItem('golden-gate:search:account-one:discover'),/CSAT/);
+await click("Reset filters");
+await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Reset did not restore tests");
+await click("Use saved search");
+await until(()=>w.document.querySelectorAll('.golden-test-card').length===7,"Saved search did not restore filters");
+await click("Reset filters");
+await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Catalogue did not reset");
+await setField('[aria-label="Sort mock tests on this page"]',"duration");
+assert.match(w.document.querySelector('.golden-test-card h3').textContent,/Example mock 1$/);
+await click("Next tests");
+await until(()=>w.document.querySelector('.golden-test-card h3')?.textContent==="Example mock 13","Pagination did not load the next page");
+await navigate('/tests/prelims/csat');
+await until(()=>w.document.querySelector('[aria-label="Mock Paper"]')?.value==="CSAT"&&!w.document.querySelector('.golden-loading'),"CSAT collection did not open");
+await click("Reset filters");
+assert.equal(w.document.querySelector('[aria-label="Mock Paper"]').value,"CSAT","Collection reset must retain its defining paper");
+await navigate('/tests/prelims/my-tests');
+await until(()=>w.document.querySelectorAll('.mock-history-list article').length===2,"History did not load");
+await setField('[aria-label="Mock history status"]',"running");
+assert.equal(w.document.querySelectorAll('.mock-history-list article').length,1);
+await navigate('/tests/prelims/reports');
+await until(()=>w.document.querySelectorAll('.mock-history-list article').length===1,"Reports did not show the submitted attempt");
+await navigate(`/tests/prelims/${tests[0].id}/result/${completed.id}`);
+await until(()=>[...w.document.querySelectorAll('button')].some(b=>b.textContent.includes('Download summary')),"Score report did not open");
+await click("Download summary");
+assert.equal(downloads.length,1);
+await navigate('/tests/prelims/mistakes');
+await until(()=>w.document.querySelectorAll('[aria-label="Search mock notebook page"]').length===1,"Notebook did not open");
+await until(()=>w.document.body.textContent.includes('Governance'),"Notebook questions did not load");
+await setField('[aria-label="Mock notebook review focus"]',"due");
+assert.match(w.document.body.textContent,/1 matching questions on this page/);
+await setField('[aria-label="Search mock notebook page"]',"no_matching_question_zzz");
+assert.match(w.document.body.textContent,/No loaded questions match these filters/);
+await click("Reset notebook filters");
+assert.match(w.document.body.textContent,/1 matching questions on this page/);
+const reviewLink=[...w.document.querySelectorAll('a')].find(a=>a.textContent.trim()==="Review this topic");
+assert.ok(reviewLink); reviewLink.click();
+await until(()=>w.document.querySelector('.mock-review-question'),"Notebook link did not open question explanations");
+assert.match(w.document.querySelector('.mock-review-question').textContent,/Governance/);
+w.gateAuth = {...w.gateAuth,user:{id:"account-two"}};
+w.rerenderGate();await wait();
+await navigate('/tests/prelims/discover');
+await until(()=>w.document.querySelector("h1")?.textContent==="Verify your license key","Another account must verify its own access");
+assert.equal(w.document.querySelector('.golden-catalogue'),null);
+await setField('[name="licenseKey"]',"valid-test-key");
+await click("Verify & continue");
+await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Second account catalogue did not load");
+assert.equal([...w.document.querySelectorAll('button')].some(b=>b.textContent.trim()==="Use saved search"),false,"Saved searches must stay in their account scope");
+assert.equal(errors.length,0,errors.join('\n'));
+console.log('Golden Gate UI checks passed: license gate, catalogue, presets, saved search isolation, comparison limits, pagination, personal shortcuts, history, reports and notebook filters. Browser geometry is not simulated.');
+w.close();
