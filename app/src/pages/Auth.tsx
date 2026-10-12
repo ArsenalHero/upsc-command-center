@@ -15,6 +15,7 @@ import {
 import { useAuth } from "../hooks/useAuth";
 import { authRedirect } from "../services/authConfig";
 import { authErrorMessage } from "../services/authErrors";
+import { BrandMark } from "../components/BrandMark";
 
 export type AuthMode = "login" | "signup" | "forgot" | "reset";
 const headings = {
@@ -142,7 +143,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
       <section className="auth-story" aria-label="UPSC Command Center">
         <Link to="/login" state={authFlowState} className="auth-brand">
           <span className="auth-brand-icon">
-            <BarChart3 size={25} />
+            <BrandMark />
           </span>
           <span>
             <strong>UPSC</strong>

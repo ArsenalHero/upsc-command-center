@@ -44,6 +44,7 @@ import type { Collection, Entity } from "../types";
 import { prettyDate, dateKey, daysBetween } from "../utils/date";
 import { workspaceExamLabel } from "../utils/examSettings";
 import { WorkspaceExamDialog } from "./WorkspaceExamDialog";
+import { BrandMark } from "./BrandMark";
 export const navigation = [
   { label: "Dashboard", path: "/", icon: LayoutDashboard, group: "WORKSPACE" },
   {
@@ -254,7 +255,7 @@ export default function Layout() {
     <>
       <div className="brand">
         <span className="brand-icon">
-          <BarChart3 size={23} />
+          <BrandMark />
         </span>
         <div>
           <strong>UPSC</strong>
