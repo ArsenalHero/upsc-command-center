@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
@@ -47,6 +47,8 @@ import { workspaceExamLabel } from "../utils/examSettings";
 import { WorkspaceExamDialog } from "./WorkspaceExamDialog";
 import { BrandMark } from "./BrandMark";
 import { AppearanceSettings } from "./AppearanceSettings";
+import { useToday } from "../hooks/useToday";
+import { currentPage, matchingPages } from "../utils/workspaceUX";
 export const navigation = [
   { label: "Dashboard", path: "/", icon: LayoutDashboard, group: "WORKSPACE" },
   {
@@ -177,6 +179,25 @@ export function GlobalSearch({ onClose }: { onClose: () => void }) {
     </Modal>
   );
 }
+function WorkspaceNavigation({ mobile = false, onNavigate, onExam }: { mobile?: boolean; onNavigate: () => void; onExam: () => void }) {
+  const { data } = useData(), sync = useWorkspaceSync(), today = useToday();
+  const [query, setQuery] = useState("");
+  const visible = matchingPages(navigation, query);
+  const due = data.revisions.filter(r => !r.completedDate && r.dueDate <= today).length;
+  return <>
+    <div className="brand"><span className="brand-icon"><BrandMark /></span><div><strong>UPSC</strong><small>COMMAND CENTER</small></div></div>
+    <button type="button" className="workspace-label" aria-label="Choose personal workspace exam" onClick={onExam}><span>Personal workspace</span><strong title={workspaceExamLabel(data.settings)}>{workspaceExamLabel(data.settings)}</strong><ChevronRight size={13} /></button>
+    {mobile && <div className="navigation-search"><Search size={16} /><input type="search" autoFocus aria-label="Find a page" placeholder="Find a page…" value={query} onChange={e => setQuery(e.target.value)} />{query && <button type="button" className="icon-btn" aria-label="Clear page search" onClick={() => setQuery("")}><X size={15} /></button>}</div>}
+    <nav aria-label={mobile ? "All pages" : "Main navigation"} className="side-nav">
+      {["WORKSPACE", "PREPARATION", "PRACTICE", "REVIEW", "SETTINGS"].map(group => {
+        const pages = visible.filter(n => n.group === group);
+        return pages.length ? <div className="nav-group" key={group}><div className="nav-group-label">{group}</div>{pages.map(n => <NavLink key={n.path} to={n.path} end={n.path === "/"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={onNavigate}><n.icon size={18} /><span>{n.label}</span>{n.path === "/revision" && due > 0 && <span className="nav-counter" aria-label={`${due} revisions due`}>{due}</span>}</NavLink>)}</div> : null;
+      })}
+      {!visible.length && <div className="navigation-no-results"><Search size={22} /><strong>No pages found</strong><p>Try “papers”, “revision” or “themes”.</p><button type="button" className="text-btn" onClick={() => setQuery("")}>Show all pages</button></div>}
+    </nav>
+    <NavLink to="/account" className="sidebar-bottom" onClick={onNavigate}>{sync.cloud ? <Cloud size={16} /> : <Database size={16} />}<div><strong>{sync.cloud ? "Your private account" : "Guest workspace"}</strong><small>{sync.status.message}</small></div></NavLink>
+  </>;
+}
 export default function Layout() {
   const auth = useAuth(),
     sync = useWorkspaceSync();
@@ -189,8 +210,8 @@ export default function Layout() {
     [examDialog, setExamDialog] = useState(false);
   const [appearanceDialog, setAppearanceDialog] = useState(false);
   const location = useLocation();
-  const current =
-    navigation.find((n) => n.path === location.pathname) || navigation[0];
+  const current = currentPage(navigation, location.pathname) || navigation[0];
+  const quickWrap = useRef<HTMLDivElement>(null), quickButton = useRef<HTMLButtonElement>(null);
   const demo =
     data.sessions.some((s) => s.demo) || data.mcqs.some((m) => m.demo);
   useEffect(() => {
@@ -198,6 +219,13 @@ export default function Layout() {
     setQuick(false);
     window.scrollTo({ top: 0 });
   }, [location.pathname]);
+  useEffect(() => {
+    if (!quick) return;
+    quickWrap.current?.querySelector<HTMLElement>('[role="menuitem"]')?.focus();
+    const dismiss = (event: PointerEvent) => { if (event.target instanceof Node && !quickWrap.current?.contains(event.target)) setQuick(false); };
+    document.addEventListener("pointerdown", dismiss);
+    return () => document.removeEventListener("pointerdown", dismiss);
+  }, [quick]);
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "k") {
@@ -220,70 +248,6 @@ export default function Layout() {
     const dark = document.documentElement.dataset.theme === "dark";
     updateAppearance({}, dark ? "light" : "dark");
   };
-  const NavContent = () => (
-    <>
-      <div className="brand">
-        <span className="brand-icon">
-          <BrandMark />
-        </span>
-        <div>
-          <strong>UPSC</strong>
-          <small>COMMAND CENTER</small>
-        </div>
-      </div>
-      <button type="button" className="workspace-label" aria-label="Choose personal workspace exam" onClick={() => { setDrawer(false); setExamDialog(true); }}>
-        <span>Personal workspace</span>
-        <strong title={workspaceExamLabel(data.settings)}>{workspaceExamLabel(data.settings)}</strong>
-        <ChevronRight size={13} />
-      </button>
-      <nav aria-label="Main navigation" className="side-nav">
-        {["WORKSPACE", "PREPARATION", "PRACTICE", "REVIEW", "SETTINGS"].map(
-          (group) => (
-            <div className="nav-group" key={group}>
-              <div className="nav-group-label">{group}</div>
-              {navigation
-                .filter((n) => n.group === group)
-                .map((n) => (
-                  <NavLink
-                    key={n.path}
-                    to={n.path}
-                    end={n.path === "/"}
-                    className={({ isActive }) =>
-                      isActive ? "nav-link active" : "nav-link"
-                    }
-                    onClick={() => setDrawer(false)}
-                  >
-                    <n.icon size={18} />
-                    <span>{n.label}</span>
-                    {n.path === "/revision" &&
-                      data.revisions.filter(
-                        (r) => !r.completedDate && r.dueDate < dateKey(),
-                      ).length > 0 && (
-                        <span className="nav-counter">
-                          {
-                            data.revisions.filter(
-                              (r) => !r.completedDate && r.dueDate < dateKey(),
-                            ).length
-                          }
-                        </span>
-                      )}
-                  </NavLink>
-                ))}
-            </div>
-          ),
-        )}
-      </nav>
-      <NavLink to="/account" className="sidebar-bottom">
-        {sync.cloud ? <Cloud size={16} /> : <Database size={16} />}
-        <div>
-          <strong>
-            {sync.cloud ? "Your private account" : "Guest workspace"}
-          </strong>
-          <small>{sync.status.message}</small>
-        </div>
-      </NavLink>
-    </>
-  );
   return (
     <div className="app-shell">
       <div className="workspace-wallpaper" aria-hidden="true" />
@@ -298,29 +262,17 @@ export default function Layout() {
         Skip to content
       </a>
       <aside className="sidebar">
-        <NavContent />
+        <WorkspaceNavigation onNavigate={() => setDrawer(false)} onExam={() => setExamDialog(true)} />
       </aside>
-      {drawer && (
-        <>
-          <div className="drawer-backdrop" onClick={() => setDrawer(false)} />
-          <aside className="mobile-drawer" aria-label="All pages">
-            <button
-              className="icon-btn drawer-close"
-              aria-label="Close navigation"
-              onClick={() => setDrawer(false)}
-            >
-              <X size={20} />
-            </button>
-            <NavContent />
-          </aside>
-        </>
-      )}
+      {drawer && <Modal title="All pages" className="navigation-drawer" closeLabel="Close navigation" onClose={() => setDrawer(false)}><div className="navigation-drawer-content"><WorkspaceNavigation mobile onNavigate={() => setDrawer(false)} onExam={() => { setDrawer(false); setExamDialog(true); }} /></div></Modal>}
       <div className="main-shell">
         <header className="topbar">
           <div className="breadcrumb">
             <button
               className="icon-btn mobile-menu-btn"
               aria-label="Open navigation"
+              aria-haspopup="dialog"
+              aria-expanded={drawer}
               onClick={() => setDrawer(true)}
             >
               <Menu size={21} />
@@ -422,7 +374,7 @@ export default function Layout() {
           </div>
         )}
         <main id="main-content" tabIndex={-1} className="main-content">
-          <Outlet />
+          <Suspense fallback={<div className="route-loading" role="status"><span className="route-loading-icon"><BookOpen size={22} /></span><strong>Opening your study page…</strong><div className="route-loading-placeholder" aria-hidden="true"><i /><i /><i /></div></div>}><Outlet /></Suspense>
         </main>
         <footer className="app-footer">
           <span>UPSC Command Center</span>
@@ -434,9 +386,17 @@ export default function Layout() {
           </span>
         </footer>
       </div>
-      <div className="quick-add-wrap">
+      <div className="quick-add-wrap" ref={quickWrap} onBlur={e => { if (!(e.relatedTarget instanceof Node) || !e.currentTarget.contains(e.relatedTarget)) setQuick(false); }}>
         {quick && (
-          <div className="quick-menu" role="menu" aria-label="Quick add">
+          <div className="quick-menu" role="menu" aria-label="Quick add" onKeyDown={e => {
+            const items = Array.from(e.currentTarget.querySelectorAll<HTMLElement>('[role="menuitem"]'));
+            const index = items.indexOf(document.activeElement as HTMLElement);
+            if (["ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) {
+              e.preventDefault();
+              items[e.key === "Home" ? 0 : e.key === "End" ? items.length - 1 : (index + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length]?.focus();
+            }
+            if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); setQuick(false); quickButton.current?.focus(); }
+          }}>
             {(
               [
                 {
@@ -461,6 +421,7 @@ export default function Layout() {
                 key={i.collection}
                 onClick={() => {
                   setQuick(false);
+                  quickButton.current?.focus();
                   setEditor({ collection: i.collection });
                 }}
               >
@@ -474,6 +435,8 @@ export default function Layout() {
           className={`quick-add ${quick ? "open" : ""}`}
           aria-label={quick ? "Close quick add" : "Quick add"}
           aria-expanded={quick}
+          aria-haspopup="menu"
+          ref={quickButton}
           onClick={() => setQuick(!quick)}
         >
           {quick ? <X size={24} /> : <Plus size={25} />}
@@ -491,7 +454,7 @@ export default function Layout() {
             <span>{n.label}</span>
           </NavLink>
         ))}
-        <button onClick={() => setDrawer(!drawer)} aria-label="More pages">
+        <button onClick={() => setDrawer(!drawer)} aria-label="More pages" aria-haspopup="dialog" aria-expanded={drawer}>
           <MoreHorizontal size={20} />
           <span>More</span>
         </button>

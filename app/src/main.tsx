@@ -4,6 +4,7 @@ import "./styles.css";
 import "./auth.css";
 import "./visual-refinements.css";
 import "./appearance.css";
+import "./workspace-improvements.css";
 createRoot(document.getElementById("root")!).render(<App />);
 if (import.meta.env.PROD && "serviceWorker" in navigator) {
   window.addEventListener("load", () => {

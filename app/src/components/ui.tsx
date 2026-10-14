@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useId, useRef, type ReactNode } from "react";
 import {
   Plus,
   Info,
@@ -224,16 +224,20 @@ export function Modal({
   children,
   onClose,
   wide = false,
+  className = "",
+  closeLabel = "Close dialog",
 }: {
   title: string;
   children: ReactNode;
   onClose: () => void;
   wide?: boolean;
+  className?: string;
+  closeLabel?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null),
-    previous = useRef<Element | null>(null);
+    previous = useRef<Element | null>(document.activeElement);
+  const titleId = useId();
   useEffect(() => {
-    previous.current = document.activeElement;
     ref.current?.showModal();
     return () => {
       if (previous.current instanceof HTMLElement) previous.current.focus();
@@ -242,7 +246,8 @@ export function Modal({
   return (
     <dialog
       ref={ref}
-      className={`modal ${wide ? "wide" : ""}`}
+      className={`modal ${wide ? "wide" : ""} ${className}`}
+      aria-labelledby={titleId}
       onCancel={(e) => {
         e.preventDefault();
         onClose();
@@ -252,10 +257,10 @@ export function Modal({
       }}
     >
       <div className="modal-head">
-        <h2>{title}</h2>
+        <h2 id={titleId}>{title}</h2>
         <button
           className="icon-btn"
-          aria-label="Close dialog"
+          aria-label={closeLabel}
           onClick={onClose}
         >
           <X size={21} />

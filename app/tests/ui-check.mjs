@@ -108,6 +108,9 @@ assert.equal(
 clickText("Explore with demo data");
 await wait();
 assert.match(text(), /Demo mode/);
+assert.equal(w.document.querySelector(".analytics-toggle").getAttribute("aria-expanded"), "false");
+w.document.querySelector(".analytics-toggle").click();
+await wait();
 assert.match(text(), /Your next focus/i);
 const saved = w.localStorage.getItem("upsc-command-center:v1");
 assert.ok(JSON.parse(saved).sessions.length > 400);

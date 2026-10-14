@@ -4,13 +4,14 @@ import {
   Target,
   CheckCircle2,
   BookOpen,
-  Plus,
   Flame,
   Sparkles,
   CalendarDays,
   ChevronRight,
   RotateCcw,
   PenLine,
+  BarChart3,
+  ChevronDown,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useData } from "../hooks/useData";
@@ -21,7 +22,6 @@ import {
   insights,
 } from "../utils/analytics";
 import {
-  dateKey,
   addDays,
   weekStart,
   monthStart,
@@ -44,7 +44,9 @@ import { PriorityPanel, InsightCard } from "../components/Insights";
 import { StudyDetails } from "../components/StudyDetails";
 import { ExamCountdowns } from "../components/ExamCountdowns";
 import { selectedExam, workspaceExamLabel } from "../utils/examSettings";
-import { recentStudySessions, studyContext } from "../utils/studyForm";
+import { StudyToday } from "../components/StudyToday";
+import { useToday } from "../hooks/useToday";
+import { useAuth } from "../hooks/useAuth";
 import {
   StudyHoursChart,
   SubjectDistribution,
@@ -58,6 +60,16 @@ import {
 } from "../charts";
 export default function Dashboard() {
   const { data, setEditor, loadDemo } = useData();
+  const { user } = useAuth();
+  const analyticsKey = `upsc:dashboard-analytics:${user?.id || "guest"}`;
+  const [analyticsOpen, setAnalyticsOpen] = useState(() => {
+    try { return localStorage.getItem(analyticsKey) === "open"; } catch { return false; }
+  });
+  const toggleAnalytics = () => {
+    const open = !analyticsOpen;
+    setAnalyticsOpen(open);
+    try { localStorage.setItem(analyticsKey, open ? "open" : "closed"); } catch { /* The view still works when browser storage is unavailable. */ }
+  };
   const [filters, setFilters] = useState(emptyFilters),
     [radarId, setRadarId] = useState(
       data.subjects.find((s) => s.name.includes("Polity"))?.id ||
@@ -65,35 +77,34 @@ export default function Dashboard() {
         "",
     ),
     [day, setDay] = useState<string | null>(null);
-  const today = dateKey();
+  const today = useToday();
   const a = useMemo(
     () => aggregate(data, filters.from, filters.to, "", filters),
     [data, filters],
   );
   const daily = useMemo(() => aggregate(data, today, today), [data, today]);
   const weekly = useMemo(
-    () => aggregate(data, weekStart(), today),
+    () => aggregate(data, weekStart(today), today),
     [data, today],
   );
   const monthly = useMemo(
-    () => aggregate(data, monthStart(), today),
+    () => aggregate(data, monthStart(today), today),
     [data, today],
   );
   const before = useMemo(
-    () => aggregate(data, addDays(weekStart(), -7), addDays(today, -7)),
+    () => aggregate(data, addDays(weekStart(today), -7), addDays(today, -7)),
     [data, today],
   );
   const priorities = useMemo(
-    () => insights(data, filters.from, filters.to),
-    [data, filters],
+    () => analyticsOpen ? insights(data, filters.from, filters.to) : [],
+    [data, filters, analyticsOpen],
   );
+  const nextFocus = priorities.find(i => i.kind !== "improving");
   const dailyPct = (daily.hours / data.settings.dailyHours) * 100;
   const next = data.revisions
     .filter((r) => !r.completedDate)
     .sort((a, b) => a.dueDate.localeCompare(b.dueDate))[0];
   const hasData = data.sessions.length || data.mcqs.length || data.tests.length || data.pyqs.some((p) => p.attempt);
-  const recent = recentStudySessions(data)[0];
-  const readyRevisions = data.revisions.filter(r => !r.completedDate && r.dueDate <= today).length;
   return (
     <>
       <PageHeader
@@ -101,13 +112,10 @@ export default function Dashboard() {
         title={selectedExam(data.settings) === "State PSC" ? "State PSC overview" : "Your preparation"}
         description={`${prettyDate(today, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · Target ${workspaceExamLabel(data.settings)}`}
       />
-      <nav className="workspace-shortcuts" aria-label="Everyday study shortcuts">
-        <button className="btn primary" onClick={() => setEditor({ collection: "sessions", preset: recent ? { ...studyContext(data, recent), date: today } : undefined })} title={recent ? `Continue ${data.subjects.find(s => s.id === recent.subjectId)?.name || "your subject"} · ${recent.activity}. Enter fresh study time.` : undefined}><Plus size={17} />Log study session</button>
-        <Link className="btn secondary" to="/pyqs"><Target size={17} />Practise PYQs</Link>
-        <Link className="btn secondary" to="/pyqs?section=papers"><BookOpen size={17} />Full papers</Link>
-        <Link className="btn secondary" to="/revision"><RotateCcw size={17} />Revisions{readyRevisions > 0 && <span className="shortcut-count">{readyRevisions} due</span>}</Link>
-      </nav>
-      <ExamCountdowns settings={data.settings} />
+      <StudyToday today={today} />
+      {!hasData && <div className="dashboard-first-step"><p><Sparkles size={15} /><span><strong>No study data yet.</strong> Your progress appears as you log sessions and practise questions.</span></p><button type="button" className="text-btn" onClick={loadDemo}>Explore with demo data<ChevronRight size={14} /></button></div>}
+      <div className="dashboard-countdowns"><ExamCountdowns settings={data.settings} /></div>
+      <section className="dashboard-analysis" aria-labelledby="dashboard-analysis-title"><div className="analysis-toolbar"><button type="button" className="analytics-toggle" aria-expanded={analyticsOpen} aria-controls="dashboard-analytics-content" onClick={toggleAnalytics}><span className="analytics-icon"><BarChart3 size={20} /></span><span><strong id="dashboard-analysis-title">Study trends & insights</strong><small>Hours, accuracy, syllabus and study balance</small></span><ChevronDown size={18} className={analyticsOpen ? "expanded" : ""} /></button><Link className="text-btn" to="/reports">Performance reports<ChevronRight size={14} /></Link></div><div id="dashboard-analytics-content" hidden={!analyticsOpen}>{analyticsOpen && <>
       <div className="dashboard-control">
         <div className="view-tabs">
           <span className="selected">Overview</span>
@@ -247,13 +255,13 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
-      {priorities.find((i) => i.kind !== "improving") && (
+      {nextFocus && (
         <div className="focus-strip">
           <Sparkles size={20} />
           <div>
             <div className="eyebrow">YOUR NEXT FOCUS</div>
-            <h3>{priorities[0].title}</h3>
-            <p>{priorities[0].observation}</p>
+            <h3>{nextFocus.title}</h3>
+            <p>{nextFocus.observation}</p>
           </div>
           <Link to="/weak-areas">View priorities</Link>
         </div>
@@ -398,6 +406,7 @@ export default function Dashboard() {
           </section>
         </>
       )}
+      </>}</div></section>
       {day && <StudyDetails date={day} onClose={() => setDay(null)} />}
     </>
   );

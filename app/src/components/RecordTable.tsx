@@ -7,6 +7,7 @@ import {
   Plus,
   ChevronLeft,
   ChevronRight,
+  X,
 } from "lucide-react";
 import type { Collection, Entity } from "../types";
 import { useData } from "../hooks/useData";
@@ -14,6 +15,7 @@ import { exportCSV } from "../services/export";
 import { prettyDate } from "../utils/date";
 import { EmptyState, ConfirmDialog, Badge } from "./ui";
 import { formTitles } from "./RecordForm";
+import { recordSearchIndex, matchingRecords } from "../utils/workspaceUX";
 export function RecordTable({
   collection,
   records,
@@ -36,19 +38,17 @@ export function RecordTable({
     [page, setPage] = useState(0),
     [remove, setRemove] = useState<string | null>(null);
   const list = records || data[collection];
+  const searchIndex = useMemo(() => recordSearchIndex(data, list), [list, data.subjects, data.topics, data.resources, data.catalog]);
   const filtered = useMemo(
     () =>
-      list
-        .filter((r) =>
-          JSON.stringify(r).toLowerCase().includes(query.toLowerCase()),
-        )
+      matchingRecords(searchIndex, query)
         .slice()
         .sort((a: any, b: any) =>
           String(b.date || b.dueDate || "").localeCompare(
             String(a.date || a.dueDate || ""),
           ),
         ),
-    [list, query],
+    [searchIndex, query],
   );
   const count = Math.max(1, Math.ceil(filtered.length / 10));
   const current = Math.min(page, count - 1);
@@ -100,13 +100,14 @@ export function RecordTable({
         <Search size={16} />
         <input
           aria-label="Search records"
-          placeholder="Search these records…"
+          placeholder="Search subject, topic or notes…"
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
             setPage(0);
           }}
         />
+        {query && <button type="button" className="icon-btn" aria-label="Clear record search" onClick={() => { setQuery(""); setPage(0); }}><X size={15} /></button>}
         <span className="small muted">{filtered.length} records</span>
       </div>
       {visible.length ? (
@@ -185,17 +186,17 @@ export function RecordTable({
           }
           text={
             query
-              ? "Try another search term."
+              ? "Search by subject, topic, date or notes, or clear your search."
               : "Start with your first entry to build this analysis."
           }
-          onAction={query ? undefined : () => setEditor({ collection })}
-          action={`Add ${formTitles[collection] || "record"}`}
+          onAction={query ? () => { setQuery(""); setPage(0); } : () => setEditor({ collection })}
+          action={query ? "Clear search" : `Add ${formTitles[collection] || "record"}`}
         />
       )}
       {remove && (
         <ConfirmDialog
           title="Delete this record?"
-          text="This removes the record from your local workspace. An exported backup can restore it. Subjects and topics with linked records must be kept until those records are removed."
+          text="This removes the record from your preparation workspace. An exported backup can restore it. Subjects and topics with linked records must be kept until those records are removed."
           onClose={() => setRemove(null)}
           onConfirm={() => deleteRecord(collection, remove)}
           label="Delete record"
