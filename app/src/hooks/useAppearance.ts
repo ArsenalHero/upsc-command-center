@@ -23,5 +23,5 @@ export function useAppearance(settings: Settings) {
     document.addEventListener("visibilitychange", refresh);
     return () => { window.clearInterval(timer); document.removeEventListener("visibilitychange", refresh); };
   }, [appearance.wallpaper]);
-  return { appearance, wallpaper: selectedLandscape(appearance.wallpaper, day), resolvedTheme: settings.theme === "system" ? (deviceDark ? "dark" : "light") : settings.theme };
+  return { appearance, wallpaper: selectedLandscape(appearance.wallpaper, day, appearance.favourites), resolvedTheme: settings.theme === "system" ? (deviceDark ? "dark" : "light") : settings.theme };
 }

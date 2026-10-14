@@ -742,6 +742,8 @@ export function validateBooks(w: BookWorkspace, subjects: Set<string>): void {
     assert(subjects.has(p.subjectId), "Choose a valid book subject.");
     assert(Number.isInteger(p.totalChapters) && p.totalChapters >= 1 && p.totalChapters <= 1000, "Total chapters must be a whole number from 1 to 1,000.");
     assert(Number.isInteger(p.revisionTarget) && p.revisionTarget >= 0 && p.revisionTarget <= 50, "Revision target must be a whole number from 0 to 50.");
+    assert(p.dailyTarget === undefined || Number.isInteger(p.dailyTarget) && p.dailyTarget >= 0 && p.dailyTarget <= 1000, "Daily chapter goal must be a whole number from 0 to 1,000.");
+    assert(p.dueDate === undefined || p.dueDate === "" || validDate(p.dueDate), "Enter a valid book reading deadline.");
     plans.set(p.id, p.totalChapters);
   }
   const readDates = new Map<string, Map<number, string>>();

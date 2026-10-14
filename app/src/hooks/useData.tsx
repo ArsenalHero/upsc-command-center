@@ -100,15 +100,16 @@ export function DataProvider({
   useEffect(() => {
     const root = document.documentElement;
     root.dataset.palette = appearance.palette;
-    root.dataset.wallpaper = wallpaper?.id || "none";
-    root.style.setProperty("--wallpaper-image", wallpaper ? `url("${new URL(wallpaper.src, document.baseURI).href}")` : "none");
+    root.dataset.wallpaper = !appearance.paused && wallpaper?.id || "none";
+    root.style.setProperty("--wallpaper-image", wallpaper && !appearance.paused ? `url("${new URL(wallpaper.src, document.baseURI).href}")` : "none");
     root.style.setProperty("--wallpaper-visibility", String(appearance.visibility / 100));
     root.style.setProperty("--wallpaper-blur", `${appearance.blur}px`);
+    root.style.setProperty("--wallpaper-position", appearance.position || "center");
     return () => {
       delete root.dataset.palette; delete root.dataset.wallpaper;
-      ["--wallpaper-image", "--wallpaper-visibility", "--wallpaper-blur"].forEach(key => root.style.removeProperty(key));
+      ["--wallpaper-image", "--wallpaper-visibility", "--wallpaper-blur", "--wallpaper-position"].forEach(key => root.style.removeProperty(key));
     };
-  }, [appearance.palette, appearance.visibility, appearance.blur, wallpaper?.id]);
+  }, [appearance.palette, appearance.visibility, appearance.blur, appearance.paused, appearance.position, wallpaper?.id]);
   const commit = useCallback(
     (mutate: (d: AppData) => void, fullValidation = false) => {
       try {

@@ -14,9 +14,11 @@ export const landscapeWallpapers = [
   { id: "forest", name: "Forest lake", description: "Green trees & morning mist", src: "./wallpapers/forest-lake.webp", thumbnail: "./wallpapers/forest-lake-thumb.webp" },
   { id: "coast", name: "Coastal sunset", description: "Quiet waves & golden light", src: "./wallpapers/coastal-sunset.webp", thumbnail: "./wallpapers/coastal-sunset-thumb.webp" },
   { id: "meadows", name: "Green meadows", description: "Rolling hills & open skies", src: "./wallpapers/green-meadows.webp", thumbnail: "./wallpapers/green-meadows-thumb.webp" },
+  { id: "waterfall", name: "Woodland waterfall", description: "Flowing water & green woodland", src: "./wallpapers/woodland-waterfall.webp", thumbnail: "./wallpapers/woodland-waterfall-thumb.webp" },
+  { id: "dunes", name: "Desert dawn", description: "Golden dunes & a quiet horizon", src: "./wallpapers/desert-dawn.webp", thumbnail: "./wallpapers/desert-dawn-thumb.webp" },
 ] as const;
 
-export const defaultAppearance: AppearanceSettings = { palette: "blue", wallpaper: "none", visibility: 40, blur: 2 };
+export const defaultAppearance: AppearanceSettings = { palette: "blue", wallpaper: "none", visibility: 40, blur: 2, favourites: [], position: "center", paused: false };
 const bounded = (value: unknown, fallback: number, min: number, max: number) =>
   typeof value === "number" && Number.isFinite(value) ? Math.round(Math.min(max, Math.max(min, value))) : fallback;
 
@@ -29,15 +31,20 @@ export function normalizeAppearance(input: unknown): AppearanceSettings {
       ? value.wallpaper as AppearanceSettings["wallpaper"] : "none",
     visibility: bounded(value.visibility, defaultAppearance.visibility, 10, 55),
     blur: bounded(value.blur, defaultAppearance.blur, 0, 12),
+    favourites: landscapeWallpapers.filter(w => Array.isArray(value.favourites) && value.favourites.includes(w.id)).map(w => w.id),
+    position: value.position === "left" || value.position === "right" ? value.position : "center",
+    paused: value.paused === true,
   };
 }
 
-export function selectedLandscape(selection: AppearanceSettings["wallpaper"], day = dateKey()) {
+export function selectedLandscape(selection: AppearanceSettings["wallpaper"], day = dateKey(), favourites: AppearanceSettings["favourites"] = []) {
   if (selection === "none") return undefined;
   if (selection !== "daily") return landscapeWallpapers.find(w => w.id === selection);
   const [year, month, date] = day.split("-").map(Number);
   const ordinal = Math.floor(Date.UTC(year, month - 1, date) / 86400000);
-  return landscapeWallpapers[((ordinal % landscapeWallpapers.length) + landscapeWallpapers.length) % landscapeWallpapers.length];
+  const selected = landscapeWallpapers.filter(w => favourites.includes(w.id));
+  const pool = selected.length ? selected : landscapeWallpapers;
+  return pool[((ordinal % pool.length) + pool.length) % pool.length];
 }
 
 // Preparation edits have their own Save button; appearance saves immediately.

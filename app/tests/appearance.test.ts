@@ -20,7 +20,7 @@ test("older backups gain plain appearance without changing preparation data", ()
 });
 
 test("appearance rejects arbitrary URLs and bounds readability controls", () => {
-  assert.deepEqual(normalizeAppearance({ palette: "unknown", wallpaper: 'https://example.test/track.jpg', visibility: 100, blur: -100, custom: true }), { palette: "blue", wallpaper: "none", visibility: 55, blur: 0 });
+  assert.deepEqual(normalizeAppearance({ palette: "unknown", wallpaper: 'https://example.test/track.jpg', visibility: 100, blur: -100, custom: true }), { ...defaultAppearance, visibility: 55, blur: 0 });
   assert.deepEqual(normalizeAppearance({ palette: "forest", wallpaper: "daily", visibility: NaN, blur: Infinity }), { ...defaultAppearance, palette: "forest", wallpaper: "daily" });
   assert.equal(normalizeAppearance({ visibility: -1, blur: 99 }).visibility, 10);
   assert.equal(normalizeAppearance({ blur: 99 }).blur, 12);

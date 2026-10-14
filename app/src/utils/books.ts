@@ -1,5 +1,5 @@
 import type { AppData, BookWorkspace } from "../types";
-import { dateKey } from "./date";
+import { dateKey, daysBetween } from "./date";
 import { csvCell } from "../services/export";
 
 export const emptyBooks = (): BookWorkspace => ({ plans: [], logs: [] });
@@ -37,6 +37,9 @@ export function bookStats(w: BookWorkspace, subjectId = "", anchor = dateKey()) 
   const books = w.plans.filter(p => !subjectId || p.subjectId === subjectId).map(p => {
     const logs = w.logs.filter(l => l.bookId === p.id && l.date <= anchor);
     const read = new Set(logs.filter(l => l.kind === "reading").flatMap(l => l.chapters));
+    const firstRead = new Map<number, string>();
+    for (const l of logs) if (l.kind === "reading") for (const n of l.chapters)
+      if (!firstRead.has(n) || l.date < firstRead.get(n)!) firstRead.set(n, l.date);
     const revisionCounts = new Map<number, number>();
     for (const l of logs) if (l.kind === "revision") for (const n of l.chapters)
       revisionCounts.set(n, (revisionCounts.get(n) || 0) + l.repeats);
@@ -44,7 +47,13 @@ export function bookStats(w: BookWorkspace, subjectId = "", anchor = dateKey()) 
     const chapterReviews = chapters.reduce((sum, c) => sum + c.revisions, 0);
     const fullRevisions = Math.min(...chapters.map(c => c.revisions));
     const reviewCredit = chapters.reduce((sum, c) => sum + Math.min(p.revisionTarget, c.revisions), 0);
+    const daysLeft = p.dueDate ? daysBetween(anchor, p.dueDate) + 1 : null;
     return { ...p, chapters, logs, completed: read.size, remaining: p.totalChapters - read.size,
+      readingToday: [...firstRead.values()].filter(day => day === anchor).length,
+      nextUnread: chapters.find(c => !c.read)?.number,
+      nextRevision: chapters.filter(c => c.read && c.revisions < p.revisionTarget).sort((a, b) => a.revisions - b.revisions || a.number - b.number)[0]?.number,
+      neededPerDay: daysLeft !== null && daysLeft > 0 ? Math.ceil((p.totalChapters - read.size) / daysLeft) : null,
+      lastActivity: logs.reduce((latest, l) => l.date > latest ? l.date : latest, ""),
       progress: 100 * read.size / p.totalChapters, chapterReviews, fullRevisions, reviewCredit,
       revisedChapters: chapters.filter(c => c.revisions > 0).length,
       revisionProgress: p.revisionTarget ? 100 * reviewCredit / (p.totalChapters * p.revisionTarget) : 0 };
@@ -58,8 +67,8 @@ export function bookStats(w: BookWorkspace, subjectId = "", anchor = dateKey()) 
 }
 
 export function buildBookCSV(data: AppData) {
-  const w = data.books || emptyBooks(), rows: unknown[][] = [["Book", "Author", "Edition", "Subject", "Total chapters", "Completed chapters", "Reading %", "Revision target", "Full book revisions", "Chapter reviews", "Revision target %"]];
-  for (const b of bookStats(w).books) rows.push([b.title, b.author, b.edition, data.subjects.find(s => s.id === b.subjectId)?.name || "", b.totalChapters, formatChapters(b.chapters.filter(c => c.read).map(c => c.number)), Math.round(b.progress * 100) / 100, b.revisionTarget, b.fullRevisions, b.chapterReviews, Math.round(b.revisionProgress * 100) / 100]);
+  const w = data.books || emptyBooks(), rows: unknown[][] = [["Book", "Author", "Edition", "Subject", "Total chapters", "Completed chapters", "Reading %", "Revision target", "Full book revisions", "Chapter reviews", "Revision target %", "Daily chapter goal", "Reading deadline"]];
+  for (const b of bookStats(w).books) rows.push([b.title, b.author, b.edition, data.subjects.find(s => s.id === b.subjectId)?.name || "", b.totalChapters, formatChapters(b.chapters.filter(c => c.read).map(c => c.number)), Math.round(b.progress * 100) / 100, b.revisionTarget, b.fullRevisions, b.chapterReviews, Math.round(b.revisionProgress * 100) / 100, b.dailyTarget || 0, b.dueDate || ""]);
   rows.push([], ["Date", "Book", "Activity", "Chapters", "Revision times for each chapter", "Notes"]);
   for (const l of [...w.logs].sort((a, b) => a.date.localeCompare(b.date))) rows.push([l.date, w.plans.find(p => p.id === l.bookId)?.title || "", l.kind, formatChapters(l.chapters), l.kind === "revision" ? l.repeats : "", l.notes]);
   return "\ufeff" + rows.map(row => row.map(csvCell).join(",")).join("\r\n");

@@ -1,8 +1,19 @@
-import type { AppData, LectureWorkspace } from "../types";
-import { addDays, dateKey, dateRange, daysBetween, weekStart } from "./date";
+import type { AppData, LectureLog, LectureWorkspace } from "../types";
+import { addDays, dateKey, dateRange, daysBetween, uid, weekStart } from "./date";
 import { csvCell } from "../services/export";
 
 export const emptyLectures = (): LectureWorkspace => ({ plans: [], logs: [] });
+export type LectureDayUpdate = Pick<LectureLog, "planId" | "completed" | "minutes" | "notes">;
+// A daily total replaces that day's entry; selected rows never add duplicate logs.
+export function updateLectureDay(w: LectureWorkspace, date: string, rows: LectureDayUpdate[]): LectureWorkspace {
+  const ids = new Set(rows.map(r => r.planId));
+  if (ids.size !== rows.length) throw new Error("Select each lecture subject once.");
+  const entries = rows.map(row => ({ ...row, date, id: w.logs.find(l => l.planId === row.planId && l.date === date)?.id || uid() }));
+  return { ...w, logs: [...w.logs.filter(l => l.date !== date || !ids.has(l.planId)), ...entries] };
+}
+export function lectureNeedsAttention(p: { remaining: number; dueDate: string; neededPerDay: number | null; dailyTarget: number }) {
+  return p.remaining > 0 && !!p.dueDate && (p.neededPerDay === null || p.neededPerDay > p.dailyTarget);
+}
 export function lectureStats(w: LectureWorkspace, anchor = dateKey(), subjectId = "") {
   const plans = w.plans.filter(p => !subjectId || p.subjectId === subjectId);
   const ids = new Set(plans.map(p => p.id));

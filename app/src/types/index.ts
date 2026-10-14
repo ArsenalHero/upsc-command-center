@@ -326,11 +326,15 @@ export type GoalMetric =
   | "Syllabus %";
 export type WeightKey =
   "target" | "focus" | "accuracy" | "revision" | "questions" | "answers";
+export type LandscapeId = "mountains" | "forest" | "coast" | "meadows" | "waterfall" | "dunes";
 export interface AppearanceSettings {
   palette: "blue" | "forest" | "violet" | "rose" | "sand";
-  wallpaper: "none" | "mountains" | "forest" | "coast" | "meadows" | "daily";
+  wallpaper: "none" | LandscapeId | "daily";
   visibility: number;
   blur: number;
+  favourites?: LandscapeId[];
+  position?: "left" | "center" | "right";
+  paused?: boolean;
 }
 export interface Settings {
   spacedRepetition?: { enabled: boolean; days: number; mode?: "preset" | "custom" };
@@ -442,6 +446,8 @@ export interface BookPlan {
   subjectId: string;
   totalChapters: number;
   revisionTarget: number;
+  dailyTarget?: number;
+  dueDate?: string;
 }
 export interface BookLog {
   id: string;

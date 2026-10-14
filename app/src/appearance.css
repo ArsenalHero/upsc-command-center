@@ -13,7 +13,7 @@
 :root[data-theme="dark"] .btn.primary { color:var(--bg); }
 
 .app-shell { position:relative; isolation:isolate; }
-.workspace-wallpaper { display:none; position:fixed; inset:-18px; z-index:-1; pointer-events:none; background-image:var(--wallpaper-image,none); background-size:cover; background-position:center; opacity:var(--wallpaper-visibility,.4); filter:blur(var(--wallpaper-blur,2px)); }
+.workspace-wallpaper { display:none; position:fixed; inset:-18px; z-index:-1; pointer-events:none; background-image:var(--wallpaper-image,none); background-size:cover; background-position:var(--wallpaper-position,center); opacity:var(--wallpaper-visibility,.4); filter:blur(var(--wallpaper-blur,2px)); }
 :root[data-wallpaper]:not([data-wallpaper="none"]) .workspace-wallpaper { display:block; }
 :root[data-wallpaper]:not([data-wallpaper="none"]) .main-content { background:color-mix(in srgb,var(--bg) 82%,transparent); border-radius:20px; margin:22px auto; width:calc(100% - 40px); }
 :root[data-wallpaper]:not([data-wallpaper="none"]) .page-header { background:var(--surface); border:1px solid var(--border); border-radius:15px; padding:20px; }
