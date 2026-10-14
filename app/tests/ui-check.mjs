@@ -269,7 +269,7 @@ const topicName = topicStatus.getAttribute("aria-label").replace("Status of ", "
 const nextStatus = [...topicStatus.options].find(o => o.value !== topicStatus.value).value;
 await changeField(topicStatus, nextStatus);
 assert.equal(JSON.parse(w.localStorage.getItem("upsc-command-center:v1")).topics.find(t => t.name === topicName).status, nextStatus);
-// Appearance changes apply on save; target inputs describe their units.
+// Appearance saves immediately; preparation targets keep their explicit Save action.
 await navigate("settings", "Preparation settings");
 const dailyTarget = w.document.querySelector('[aria-label="Daily study hours"]');
 assert.equal(w.document.getElementById(dailyTarget.getAttribute("aria-describedby")).textContent, "hours");

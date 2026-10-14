@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import {
   Save,
   Plus,
-  Sun,
-  Moon,
-  Monitor,
   SlidersHorizontal,
 } from "lucide-react";
 import { useData } from "../hooks/useData";
@@ -12,6 +9,8 @@ import type { Settings as SettingsType, WeightKey } from "../types";
 import { PageHeader, Badge } from "../components/ui";
 import { ExportImportPanel } from "../components/ExportImportPanel";
 import { ExamSettingsFields } from "../components/ExamSettingsFields";
+import { AppearanceSettings } from "../components/AppearanceSettings";
+import { preparationSettingsKey } from "../utils/appearance";
 const targets: [keyof SettingsType, string, string][] = [
   ["dailyHours", "Daily study hours", "hours"],
   ["weeklyHours", "Weekly study hours", "hours"],
@@ -29,13 +28,13 @@ export default function Settings() {
   const { data, updateSettings, setEditor, notify } = useData(),
     [settings, setSettings] = useState(data.settings),
     [newCategory, setNewCategory] = useState("");
-  const savedSettings = JSON.stringify(data.settings);
+  const savedSettings = preparationSettingsKey(data.settings);
   // Other record edits clone the workspace without changing saved settings.
   useEffect(() => setSettings(data.settings), [savedSettings]);
   const change = (key: keyof SettingsType, value: any) =>
     setSettings((s) => ({ ...s, [key]: value }));
   const total = Object.values(settings.allocation).reduce((a, b) => a + b, 0);
-  const dirty = JSON.stringify(settings) !== savedSettings;
+  const dirty = preparationSettingsKey(settings) !== savedSettings;
   return (
     <>
       <PageHeader
@@ -47,11 +46,12 @@ export default function Settings() {
           <button className="btn primary" type="submit" form="preparation-settings" disabled={!dirty}><Save size={16} />Save settings</button>
         </div>}
       />
+      <AppearanceSettings />
       <form
         id="preparation-settings"
         onSubmit={(e) => {
           e.preventDefault();
-          if (updateSettings(settings)) notify("Preparation settings saved.");
+          if (updateSettings({ ...settings, theme: data.settings.theme, appearance: data.settings.appearance })) notify("Preparation settings saved.");
         }}
       >
         <div className="settings-grid">
@@ -255,30 +255,6 @@ export default function Settings() {
               Every component is capped at 100%. Focus is average focus × 10.
               Practice and hours use your daily targets.
             </p>
-          </section>
-          <section className="card settings-section">
-            <h2>Appearance</h2>
-            <div className="theme-options">
-              {(["light", "dark", "system"] as const).map((mode, i) => {
-                const Icon = [Sun, Moon, Monitor][i];
-                return (
-                  <label
-                    key={mode}
-                    className={settings.theme === mode ? "selected" : ""}
-                  >
-                    <Icon size={20} />
-                    <input
-                      type="radio"
-                      name="theme"
-                      value={mode}
-                      checked={settings.theme === mode}
-                      onChange={() => change("theme", mode)}
-                    />
-                    {mode.charAt(0).toUpperCase() + mode.slice(1)}
-                  </label>
-                );
-              })}
-            </div>
           </section>
           <section className="card settings-section settings-subjects">
             <h2>Subject priorities</h2>

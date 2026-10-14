@@ -326,6 +326,12 @@ export type GoalMetric =
   | "Syllabus %";
 export type WeightKey =
   "target" | "focus" | "accuracy" | "revision" | "questions" | "answers";
+export interface AppearanceSettings {
+  palette: "blue" | "forest" | "violet" | "rose" | "sand";
+  wallpaper: "none" | "mountains" | "forest" | "coast" | "meadows" | "daily";
+  visibility: number;
+  blur: number;
+}
 export interface Settings {
   spacedRepetition?: { enabled: boolean; days: number; mode?: "preset" | "custom" };
   examType?: "UPSC CSE" | "State PSC";
@@ -353,6 +359,7 @@ export interface Settings {
   allocation: Record<string, number>;
   weights: Record<WeightKey, number>;
   theme: "light" | "dark" | "system";
+  appearance?: AppearanceSettings;
   setupCompleted: boolean;
 }
 export interface AppData {

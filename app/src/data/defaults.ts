@@ -1,6 +1,7 @@
 import type { AppData, Subject, Topic, Settings } from "../types";
 import { dateKey } from "../utils/date";
 import { cseExamDates } from "../utils/examSettings";
+import { defaultAppearance } from "../utils/appearance";
 export const COLORS = [
   "#3158eb",
   "#865de5",
@@ -54,6 +55,7 @@ export const defaultSettings: Settings = {
     answers: 10,
   },
   theme: "light",
+  appearance: { ...defaultAppearance },
   setupCompleted: false,
 };
 const master: [string, Subject["stage"], string, string[]][] = [

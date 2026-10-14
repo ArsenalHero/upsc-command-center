@@ -18,6 +18,7 @@ import type {
   PrelimsWorkspace,
   LectureWorkspace,
   BookWorkspace,
+  AppearanceSettings,
 } from "../types";
 import {
   LocalStorageRepository,
@@ -33,6 +34,8 @@ import { createEmptyData } from "../data/defaults";
 import { createDemoData } from "../data/demo";
 import { dateKey, prettyDate, uid } from "../utils/date";
 import { completeRevision } from "../utils/revision";
+import { normalizeAppearance } from "../utils/appearance";
+import { useAppearance } from "./useAppearance";
 const guestRepository = new LocalStorageRepository();
 interface Editor {
   collection: Collection;
@@ -49,6 +52,7 @@ interface DataContextValue {
   saveRecord: (c: Collection, r: Entity) => boolean;
   deleteRecord: (c: Collection, id: string) => void;
   updateSettings: (s: Settings) => boolean;
+  updateAppearance: (patch: Partial<AppearanceSettings>, mode?: Settings["theme"]) => boolean;
   replaceData: (d: AppData) => void;
   loadDemo: () => void;
   clearDemo: () => void;
@@ -81,6 +85,7 @@ export function DataProvider({
     [toast, setToast] = useState(""),
     [editor, setEditor] = useState<Editor | null>(null);
   const ref = useRef(data);
+  const { appearance, wallpaper, resolvedTheme } = useAppearance(data.settings);
   const notify = useCallback((t: string) => setToast(t), []);
   useEffect(() => {
     if (!toast) return;
@@ -89,15 +94,21 @@ export function DataProvider({
   }, [toast]);
   useEffect(() => {
     const mode = data.settings.theme;
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
-    const apply = () => {
-      document.documentElement.dataset.theme =
-        mode === "system" ? (media.matches ? "dark" : "light") : mode;
+    document.documentElement.dataset.theme = resolvedTheme;
+    document.documentElement.dataset.mode = mode;
+  }, [data.settings.theme, resolvedTheme]);
+  useEffect(() => {
+    const root = document.documentElement;
+    root.dataset.palette = appearance.palette;
+    root.dataset.wallpaper = wallpaper?.id || "none";
+    root.style.setProperty("--wallpaper-image", wallpaper ? `url("${new URL(wallpaper.src, document.baseURI).href}")` : "none");
+    root.style.setProperty("--wallpaper-visibility", String(appearance.visibility / 100));
+    root.style.setProperty("--wallpaper-blur", `${appearance.blur}px`);
+    return () => {
+      delete root.dataset.palette; delete root.dataset.wallpaper;
+      ["--wallpaper-image", "--wallpaper-visibility", "--wallpaper-blur"].forEach(key => root.style.removeProperty(key));
     };
-    apply();
-    media.addEventListener("change", apply);
-    return () => media.removeEventListener("change", apply);
-  }, [data.settings.theme]);
+  }, [appearance.palette, appearance.visibility, appearance.blur, wallpaper?.id]);
   const commit = useCallback(
     (mutate: (d: AppData) => void, fullValidation = false) => {
       try {
@@ -304,6 +315,13 @@ export function DataProvider({
       }, true),
     [commit],
   );
+  const updateAppearance = useCallback(
+    (patch: Partial<AppearanceSettings>, mode?: Settings["theme"]) => commit(d => {
+      d.settings.appearance = normalizeAppearance({ ...normalizeAppearance(d.settings.appearance), ...patch });
+      if (mode) d.settings.theme = mode;
+    }, true),
+    [commit],
+  );
   const replaceData = useCallback(
     (d: AppData) => {
       try {
@@ -402,6 +420,7 @@ export function DataProvider({
         saveRecord,
         deleteRecord,
         updateSettings,
+        updateAppearance,
         replaceData,
         loadDemo: () => replaceData(createDemoData()),
         clearDemo,

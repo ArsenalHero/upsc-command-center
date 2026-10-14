@@ -7,6 +7,7 @@ import {
 } from "../types";
 import { dateKey, parseDate } from "../utils/date";
 import { validRepetitionDays, validPresetStep } from "../utils/revision";
+import { normalizeAppearance } from "../utils/appearance";
 export const collections: Collection[] = [
   "subjects",
   "topics",
@@ -481,6 +482,7 @@ export function validateData(input: unknown): AppData {
   );
   const s = d.settings;
   assert(obj(s), "Missing settings.");
+  s.appearance = normalizeAppearance(s.appearance);
   if (s.spacedRepetition !== undefined)
     assert(obj(s.spacedRepetition) && typeof s.spacedRepetition.enabled === "boolean" && validRepetitionDays(s.spacedRepetition.days)
       && (s.spacedRepetition.mode === undefined || ["preset", "custom"].includes(s.spacedRepetition.mode)), "Spaced repetition needs a preset or custom mode, an on/off setting and a whole number from 1 to 365 days.");

@@ -35,6 +35,7 @@ import {
   UserRound,
   Cloud,
   PlayCircle,
+  Palette,
 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { useAuth } from "../hooks/useAuth";
@@ -45,6 +46,7 @@ import { prettyDate, dateKey, daysBetween } from "../utils/date";
 import { workspaceExamLabel } from "../utils/examSettings";
 import { WorkspaceExamDialog } from "./WorkspaceExamDialog";
 import { BrandMark } from "./BrandMark";
+import { AppearanceSettings } from "./AppearanceSettings";
 export const navigation = [
   { label: "Dashboard", path: "/", icon: LayoutDashboard, group: "WORKSPACE" },
   {
@@ -178,13 +180,14 @@ export function GlobalSearch({ onClose }: { onClose: () => void }) {
 export default function Layout() {
   const auth = useAuth(),
     sync = useWorkspaceSync();
-  const { data, error, toast, setEditor, updateSettings, clearDemo } =
+  const { data, error, toast, setEditor, updateSettings, updateAppearance, clearDemo } =
     useData();
   const [drawer, setDrawer] = useState(false),
     [search, setSearch] = useState(false),
     [quick, setQuick] = useState(false),
     [confirm, setConfirm] = useState(false),
     [examDialog, setExamDialog] = useState(false);
+  const [appearanceDialog, setAppearanceDialog] = useState(false);
   const location = useLocation();
   const current =
     navigation.find((n) => n.path === location.pathname) || navigation[0];
@@ -215,7 +218,7 @@ export default function Layout() {
   }, []);
   const toggleTheme = () => {
     const dark = document.documentElement.dataset.theme === "dark";
-    updateSettings({ ...data.settings, theme: dark ? "light" : "dark" });
+    updateAppearance({}, dark ? "light" : "dark");
   };
   const NavContent = () => (
     <>
@@ -283,6 +286,7 @@ export default function Layout() {
   );
   return (
     <div className="app-shell">
+      <div className="workspace-wallpaper" aria-hidden="true" />
       <a
         href="#main-content"
         className="skip-link"
@@ -360,6 +364,7 @@ export default function Layout() {
                 <Moon size={19} />
               )}
             </button>
+            <button type="button" className="icon-btn appearance-trigger" aria-label="Open themes and wallpapers" title="Themes and wallpapers" onClick={() => setAppearanceDialog(true)}><Palette size={19} /></button>
             {auth.user ? (
               <NavLink
                 to="/account"
@@ -388,6 +393,7 @@ export default function Layout() {
             )}
           </div>
         </header>
+        {appearanceDialog && <Modal title="Personalise your study space" wide onClose={() => setAppearanceDialog(false)}><div className="modal-body appearance-modal-body"><AppearanceSettings compact /></div></Modal>}
         {sync.cloud &&
           (sync.status.state === "error" ||
             sync.status.state === "conflict") && (
