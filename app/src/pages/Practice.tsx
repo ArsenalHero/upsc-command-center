@@ -882,7 +882,7 @@ export function MCQAnalysis() {
     </>
   );
 }
-export { default as PYQs } from "./PYQs";
+
 export function Tests() {
   const { data, setEditor } = useData(),
     { filters, setFilters, a } = useAnalytics(),

@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build && node scripts/generate-sw.mjs",
+    "build": "tsc -b && vite build && node scripts/generate-sw.mjs && node scripts/check-performance.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc -b --pretty false",
     "test": "node --import tsx --test tests/*.test.ts",
     "test:ui": "node tests/ui-check.mjs && node --import tsx tests/cse-papers-ui-check.mjs && node tests/auth-ui-check.mjs && node --import tsx tests/pyq-ui-check.mjs && node --import tsx tests/paper-archive-ui-check.mjs && node --import tsx tests/lectures-ui-check.mjs && node --import tsx tests/revision-ui-check.mjs && node --import tsx tests/exams-ui-check.mjs && node --import tsx tests/books-ui-check.mjs && node --import tsx tests/mock-ui-check.mjs",
     "test:appearance": "node --import tsx --test tests/appearance.test.ts && node tests/appearance-ui-check.mjs",
     "test:workspace-ux": "node --import tsx --test tests/workspace-ux.test.ts && node tests/workspace-ux-ui-check.mjs",
-    "test:learning": "node --import tsx --test tests/learning-workflows.test.ts && node --import tsx tests/learning-ui-check.mjs"
+    "test:learning": "node --import tsx --test tests/learning-workflows.test.ts && node --import tsx tests/learning-ui-check.mjs",
+    "test:performance": "node --import tsx --test tests/performance.test.ts tests/offline.test.ts && node scripts/check-performance.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

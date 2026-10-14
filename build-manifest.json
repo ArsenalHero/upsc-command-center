@@ -1,0 +1,626 @@
+{
+  "_Filters-CPKXthFz.js": {
+    "file": "assets/Filters-CPKXthFz.js",
+    "name": "Filters",
+    "imports": [
+      "index.html",
+      "_sliders-horizontal-BWjqAeGa.js"
+    ]
+  },
+  "_Insights-CvZXpeoY.js": {
+    "file": "assets/Insights-CvZXpeoY.js",
+    "name": "Insights",
+    "imports": [
+      "index.html",
+      "_sparkles-DNgf6qTp.js"
+    ]
+  },
+  "_RecordTable-CN2qFHLx.js": {
+    "file": "assets/RecordTable-CN2qFHLx.js",
+    "name": "RecordTable",
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_trash-2--amAvJNL.js"
+    ]
+  },
+  "_ScatterChart-hqPQhrWZ.js": {
+    "file": "assets/ScatterChart-hqPQhrWZ.js",
+    "name": "ScatterChart",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_StudyDetails-D2oRWvCR.js": {
+    "file": "assets/StudyDetails-D2oRWvCR.js",
+    "name": "StudyDetails",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_TopicDetail-CZhuBAZC.js": {
+    "file": "assets/TopicDetail-CZhuBAZC.js",
+    "name": "TopicDetail",
+    "imports": [
+      "index.html",
+      "_index-C6CthGwN.js"
+    ]
+  },
+  "_export-CCA8XlKB.js": {
+    "file": "assets/export-CCA8XlKB.js",
+    "name": "export",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_external-link-Bt_NivK-.js": {
+    "file": "assets/external-link-Bt_NivK-.js",
+    "name": "external-link",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_flag-CBlx00SV.js": {
+    "file": "assets/flag-CBlx00SV.js",
+    "name": "flag",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_flame-BWk_1PWX.js": {
+    "file": "assets/flame-BWk_1PWX.js",
+    "name": "flame",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_index-C6CthGwN.js": {
+    "file": "assets/index-C6CthGwN.js",
+    "name": "index",
+    "imports": [
+      "index.html",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  },
+  "_mock-hYIfEe7S.css": {
+    "file": "assets/mock-hYIfEe7S.css",
+    "src": "_mock-hYIfEe7S.css"
+  },
+  "_pencil-DtQ79XK0.js": {
+    "file": "assets/pencil-DtQ79XK0.js",
+    "name": "pencil",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_question-support-coaching-explanation-reviews-CHpTMyK6.js": {
+    "file": "assets/question-support-coaching-explanation-reviews-CHpTMyK6.js",
+    "name": "question-support-coaching-explanation-reviews"
+  },
+  "_question-support-duplicate-groups-BkhUSMDh.js": {
+    "file": "assets/question-support-duplicate-groups-BkhUSMDh.js",
+    "name": "question-support-duplicate-groups"
+  },
+  "_question-support-explanation-reviews-BbeWaun-.js": {
+    "file": "assets/question-support-explanation-reviews-BbeWaun-.js",
+    "name": "question-support-explanation-reviews"
+  },
+  "_question-support-supplied-explanation-matches-DB0rOuv2.js": {
+    "file": "assets/question-support-supplied-explanation-matches-DB0rOuv2.js",
+    "name": "question-support-supplied-explanation-matches"
+  },
+  "_questions-additional-bank-Bip9ucbu.js": {
+    "file": "assets/questions-additional-bank-Bip9ucbu.js",
+    "name": "questions-additional-bank"
+  },
+  "_questions-ancient-culture-bank-BzjRdZff.js": {
+    "file": "assets/questions-ancient-culture-bank-BzjRdZff.js",
+    "name": "questions-ancient-culture-bank"
+  },
+  "_questions-cse-2015-csat-part-1-bank-HRxE_idS.js": {
+    "file": "assets/questions-cse-2015-csat-part-1-bank-HRxE_idS.js",
+    "name": "questions-cse-2015-csat-part-1-bank"
+  },
+  "_questions-cse-2015-csat-part-2-bank-5A1p1aPz.js": {
+    "file": "assets/questions-cse-2015-csat-part-2-bank-5A1p1aPz.js",
+    "name": "questions-cse-2015-csat-part-2-bank"
+  },
+  "_questions-cse-2015-gs1-part-1-bank-CPPVNyCf.js": {
+    "file": "assets/questions-cse-2015-gs1-part-1-bank-CPPVNyCf.js",
+    "name": "questions-cse-2015-gs1-part-1-bank"
+  },
+  "_questions-cse-2015-gs1-part-2-bank-39YSEk5F.js": {
+    "file": "assets/questions-cse-2015-gs1-part-2-bank-39YSEk5F.js",
+    "name": "questions-cse-2015-gs1-part-2-bank"
+  },
+  "_questions-cse-2016-csat-part-1-bank-es-AEO6-.js": {
+    "file": "assets/questions-cse-2016-csat-part-1-bank-es-AEO6-.js",
+    "name": "questions-cse-2016-csat-part-1-bank"
+  },
+  "_questions-cse-2016-csat-part-2-bank-orKBNlZ3.js": {
+    "file": "assets/questions-cse-2016-csat-part-2-bank-orKBNlZ3.js",
+    "name": "questions-cse-2016-csat-part-2-bank"
+  },
+  "_questions-cse-2016-gs1-part-1-bank-BfGoR1DS.js": {
+    "file": "assets/questions-cse-2016-gs1-part-1-bank-BfGoR1DS.js",
+    "name": "questions-cse-2016-gs1-part-1-bank"
+  },
+  "_questions-cse-2016-gs1-part-2-bank-DZdAk3jV.js": {
+    "file": "assets/questions-cse-2016-gs1-part-2-bank-DZdAk3jV.js",
+    "name": "questions-cse-2016-gs1-part-2-bank"
+  },
+  "_questions-cse-2017-csat-part-1-bank-DeCgwz2K.js": {
+    "file": "assets/questions-cse-2017-csat-part-1-bank-DeCgwz2K.js",
+    "name": "questions-cse-2017-csat-part-1-bank"
+  },
+  "_questions-cse-2017-csat-part-2-bank-N0l0Oysn.js": {
+    "file": "assets/questions-cse-2017-csat-part-2-bank-N0l0Oysn.js",
+    "name": "questions-cse-2017-csat-part-2-bank"
+  },
+  "_questions-cse-2017-gs1-part-1-bank-XVOR3gxv.js": {
+    "file": "assets/questions-cse-2017-gs1-part-1-bank-XVOR3gxv.js",
+    "name": "questions-cse-2017-gs1-part-1-bank"
+  },
+  "_questions-cse-2017-gs1-part-2-bank-OQLuJ5vu.js": {
+    "file": "assets/questions-cse-2017-gs1-part-2-bank-OQLuJ5vu.js",
+    "name": "questions-cse-2017-gs1-part-2-bank"
+  },
+  "_questions-cse-2018-csat-part-1-bank-D-Azzns3.js": {
+    "file": "assets/questions-cse-2018-csat-part-1-bank-D-Azzns3.js",
+    "name": "questions-cse-2018-csat-part-1-bank"
+  },
+  "_questions-cse-2018-csat-part-2-bank-Dziyfj84.js": {
+    "file": "assets/questions-cse-2018-csat-part-2-bank-Dziyfj84.js",
+    "name": "questions-cse-2018-csat-part-2-bank"
+  },
+  "_questions-cse-2018-gs1-part-1-bank-Cw4QjPYM.js": {
+    "file": "assets/questions-cse-2018-gs1-part-1-bank-Cw4QjPYM.js",
+    "name": "questions-cse-2018-gs1-part-1-bank"
+  },
+  "_questions-cse-2018-gs1-part-2-bank-r26lwsNW.js": {
+    "file": "assets/questions-cse-2018-gs1-part-2-bank-r26lwsNW.js",
+    "name": "questions-cse-2018-gs1-part-2-bank"
+  },
+  "_questions-cse-2019-csat-bank-8j2X4Ooh.js": {
+    "file": "assets/questions-cse-2019-csat-bank-8j2X4Ooh.js",
+    "name": "questions-cse-2019-csat-bank"
+  },
+  "_questions-cse-2019-gs1-part-1-bank-B4UTbp5e.js": {
+    "file": "assets/questions-cse-2019-gs1-part-1-bank-B4UTbp5e.js",
+    "name": "questions-cse-2019-gs1-part-1-bank"
+  },
+  "_questions-cse-2019-gs1-part-2-bank-CRsszVoq.js": {
+    "file": "assets/questions-cse-2019-gs1-part-2-bank-CRsszVoq.js",
+    "name": "questions-cse-2019-gs1-part-2-bank"
+  },
+  "_questions-cse-2020-csat-bank-40DuH3b1.js": {
+    "file": "assets/questions-cse-2020-csat-bank-40DuH3b1.js",
+    "name": "questions-cse-2020-csat-bank"
+  },
+  "_questions-cse-2020-gs1-part-1-bank-BZ21O2I9.js": {
+    "file": "assets/questions-cse-2020-gs1-part-1-bank-BZ21O2I9.js",
+    "name": "questions-cse-2020-gs1-part-1-bank"
+  },
+  "_questions-cse-2020-gs1-part-2-bank-BuoZmvKz.js": {
+    "file": "assets/questions-cse-2020-gs1-part-2-bank-BuoZmvKz.js",
+    "name": "questions-cse-2020-gs1-part-2-bank"
+  },
+  "_questions-cse-text-papers-bank-309hExJl.js": {
+    "file": "assets/questions-cse-text-papers-bank-309hExJl.js",
+    "name": "questions-cse-text-papers-bank"
+  },
+  "_questions-explanation-gap-bank-DwaZVn-M.js": {
+    "file": "assets/questions-explanation-gap-bank-DwaZVn-M.js",
+    "name": "questions-explanation-gap-bank"
+  },
+  "_questions-geography-bank-C3wNVKKO.js": {
+    "file": "assets/questions-geography-bank-C3wNVKKO.js",
+    "name": "questions-geography-bank"
+  },
+  "_questions-history-economy-bank-DsHjbe9v.js": {
+    "file": "assets/questions-history-economy-bank-DsHjbe9v.js",
+    "name": "questions-history-economy-bank"
+  },
+  "_questions-polity-bank-QtNVIOEO.js": {
+    "file": "assets/questions-polity-bank-QtNVIOEO.js",
+    "name": "questions-polity-bank"
+  },
+  "_questions-pyq-bank-B4Jow1Ms.js": {
+    "file": "assets/questions-pyq-bank-B4Jow1Ms.js",
+    "name": "questions-pyq-bank"
+  },
+  "_questions-supplied-explanations-1-bank-CYRYKk2I.js": {
+    "file": "assets/questions-supplied-explanations-1-bank-CYRYKk2I.js",
+    "name": "questions-supplied-explanations-1-bank"
+  },
+  "_questions-supplied-explanations-2-bank-DNb2yjM7.js": {
+    "file": "assets/questions-supplied-explanations-2-bank-DNb2yjM7.js",
+    "name": "questions-supplied-explanations-2-bank"
+  },
+  "_questions-supplied-explanations-3-bank-BWcc9M7v.js": {
+    "file": "assets/questions-supplied-explanations-3-bank-BWcc9M7v.js",
+    "name": "questions-supplied-explanations-3-bank"
+  },
+  "_questions-supplied-explanations-4-bank-FBNefW2x.js": {
+    "file": "assets/questions-supplied-explanations-4-bank-FBNefW2x.js",
+    "name": "questions-supplied-explanations-4-bank"
+  },
+  "_questions-supplied-explanations-5-bank-Ww7ncEo4.js": {
+    "file": "assets/questions-supplied-explanations-5-bank-Ww7ncEo4.js",
+    "name": "questions-supplied-explanations-5-bank"
+  },
+  "_questions-supplied-explanations-6-bank-DnDLb-Ua.js": {
+    "file": "assets/questions-supplied-explanations-6-bank-DnDLb-Ua.js",
+    "name": "questions-supplied-explanations-6-bank"
+  },
+  "_questions-supplied-explanations-7-bank-DcArGWn9.js": {
+    "file": "assets/questions-supplied-explanations-7-bank-DcArGWn9.js",
+    "name": "questions-supplied-explanations-7-bank"
+  },
+  "_questions-supplied-explanations-8-bank-DsTVGtJ8.js": {
+    "file": "assets/questions-supplied-explanations-8-bank-DsTVGtJ8.js",
+    "name": "questions-supplied-explanations-8-bank"
+  },
+  "_questions-supplied-explanations-9-bank-B2x9cbY-.js": {
+    "file": "assets/questions-supplied-explanations-9-bank-B2x9cbY-.js",
+    "name": "questions-supplied-explanations-9-bank"
+  },
+  "_shield-check-D3tsPdik.js": {
+    "file": "assets/shield-check-D3tsPdik.js",
+    "name": "shield-check",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_sliders-horizontal-BWjqAeGa.js": {
+    "file": "assets/sliders-horizontal-BWjqAeGa.js",
+    "name": "sliders-horizontal",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_sparkles-DNgf6qTp.js": {
+    "file": "assets/sparkles-DNgf6qTp.js",
+    "name": "sparkles",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_trash-2--amAvJNL.js": {
+    "file": "assets/trash-2--amAvJNL.js",
+    "name": "trash-2",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_upload-BoaJguGX.js": {
+    "file": "assets/upload-BoaJguGX.js",
+    "name": "upload",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index-jWRIb7hV.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/@supabase/supabase-js/dist/index.mjs",
+      "src/pages/Dashboard.tsx",
+      "src/pages/DailyStudy.tsx",
+      "src/pages/Lectures.tsx",
+      "src/pages/Books.tsx",
+      "src/pages/Syllabus.tsx",
+      "src/pages/Revision.tsx",
+      "src/pages/WeakAreas.tsx",
+      "src/pages/Goals.tsx",
+      "src/pages/Reports.tsx",
+      "src/pages/Resources.tsx",
+      "src/pages/Settings.tsx",
+      "src/pages/Account.tsx",
+      "src/pages/MockAccess.tsx",
+      "src/pages/MockLab.tsx",
+      "src/pages/PYQs.tsx",
+      "src/pages/Practice.tsx"
+    ],
+    "css": [
+      "assets/index-B7HPH1Ot.css"
+    ]
+  },
+  "node_modules/@supabase/supabase-js/dist/index.mjs": {
+    "file": "assets/index-D5bMjAqh.js",
+    "name": "index",
+    "src": "node_modules/@supabase/supabase-js/dist/index.mjs",
+    "isDynamicEntry": true
+  },
+  "src/pages/Account.tsx": {
+    "file": "assets/Account-7HrUZ44j.js",
+    "name": "Account",
+    "src": "src/pages/Account.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_shield-check-D3tsPdik.js",
+      "_upload-BoaJguGX.js"
+    ]
+  },
+  "src/pages/Books.tsx": {
+    "file": "assets/Books-DYhnKjbF.js",
+    "name": "Books",
+    "src": "src/pages/Books.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_pencil-DtQ79XK0.js",
+      "_trash-2--amAvJNL.js",
+      "_external-link-Bt_NivK-.js"
+    ]
+  },
+  "src/pages/DailyStudy.tsx": {
+    "file": "assets/DailyStudy-C2kqe1Lc.js",
+    "name": "DailyStudy",
+    "src": "src/pages/DailyStudy.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_RecordTable-CN2qFHLx.js",
+      "_StudyDetails-D2oRWvCR.js",
+      "_index-C6CthGwN.js",
+      "_export-CCA8XlKB.js",
+      "_trash-2--amAvJNL.js",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  },
+  "src/pages/Dashboard.tsx": {
+    "file": "assets/Dashboard-ttw3CN9g.js",
+    "name": "Dashboard",
+    "src": "src/pages/Dashboard.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_StudyDetails-D2oRWvCR.js",
+      "_sparkles-DNgf6qTp.js"
+    ],
+    "dynamicImports": [
+      "src/pages/DashboardAnalytics.tsx"
+    ]
+  },
+  "src/pages/DashboardAnalytics.tsx": {
+    "file": "assets/DashboardAnalytics-Cg0-yzER.js",
+    "name": "DashboardAnalytics",
+    "src": "src/pages/DashboardAnalytics.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Filters-CPKXthFz.js",
+      "_Insights-CvZXpeoY.js",
+      "_index-C6CthGwN.js",
+      "_sparkles-DNgf6qTp.js",
+      "_flame-BWk_1PWX.js",
+      "_sliders-horizontal-BWjqAeGa.js",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  },
+  "src/pages/Goals.tsx": {
+    "file": "assets/Goals-Bt0LulEn.js",
+    "name": "Goals",
+    "src": "src/pages/Goals.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_trash-2--amAvJNL.js"
+    ]
+  },
+  "src/pages/Lectures.tsx": {
+    "file": "assets/Lectures-DqTXxIfj.js",
+    "name": "Lectures",
+    "src": "src/pages/Lectures.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_flame-BWk_1PWX.js",
+      "_pencil-DtQ79XK0.js",
+      "_trash-2--amAvJNL.js"
+    ]
+  },
+  "src/pages/MockAccess.tsx": {
+    "file": "assets/MockAccess-ioXeosIb.js",
+    "name": "MockAccess",
+    "src": "src/pages/MockAccess.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_shield-check-D3tsPdik.js"
+    ],
+    "css": [
+      "assets/mock-hYIfEe7S.css"
+    ]
+  },
+  "src/pages/MockLab.tsx": {
+    "file": "assets/MockLab-B8S2dxOY.js",
+    "name": "MockLab",
+    "src": "src/pages/MockLab.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_ScatterChart-hqPQhrWZ.js",
+      "_export-CCA8XlKB.js",
+      "_sliders-horizontal-BWjqAeGa.js",
+      "_flag-CBlx00SV.js",
+      "_sparkles-DNgf6qTp.js",
+      "_shield-check-D3tsPdik.js"
+    ],
+    "css": [
+      "assets/MockLab-BqdYO9HZ.css",
+      "assets/mock-hYIfEe7S.css"
+    ]
+  },
+  "src/pages/PYQs.tsx": {
+    "file": "assets/PYQs-DdJt2BVe.js",
+    "name": "PYQs",
+    "src": "src/pages/PYQs.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_questions-pyq-bank-B4Jow1Ms.js",
+      "_questions-cse-2019-gs1-part-1-bank-B4UTbp5e.js",
+      "_questions-cse-2019-gs1-part-2-bank-CRsszVoq.js",
+      "_questions-cse-2019-csat-bank-8j2X4Ooh.js",
+      "_questions-cse-2020-gs1-part-1-bank-BZ21O2I9.js",
+      "_questions-cse-2020-gs1-part-2-bank-BuoZmvKz.js",
+      "_questions-cse-2020-csat-bank-40DuH3b1.js",
+      "_questions-cse-2015-gs1-part-1-bank-CPPVNyCf.js",
+      "_questions-cse-2015-gs1-part-2-bank-39YSEk5F.js",
+      "_questions-cse-2015-csat-part-1-bank-HRxE_idS.js",
+      "_questions-cse-2015-csat-part-2-bank-5A1p1aPz.js",
+      "_questions-cse-2016-gs1-part-1-bank-BfGoR1DS.js",
+      "_questions-cse-2016-gs1-part-2-bank-DZdAk3jV.js",
+      "_questions-cse-2016-csat-part-1-bank-es-AEO6-.js",
+      "_questions-cse-2016-csat-part-2-bank-orKBNlZ3.js",
+      "_questions-cse-2017-gs1-part-1-bank-XVOR3gxv.js",
+      "_questions-cse-2017-gs1-part-2-bank-OQLuJ5vu.js",
+      "_questions-cse-2017-csat-part-1-bank-DeCgwz2K.js",
+      "_questions-cse-2017-csat-part-2-bank-N0l0Oysn.js",
+      "_questions-cse-2018-gs1-part-1-bank-Cw4QjPYM.js",
+      "_questions-cse-2018-gs1-part-2-bank-r26lwsNW.js",
+      "_questions-cse-2018-csat-part-1-bank-D-Azzns3.js",
+      "_questions-cse-2018-csat-part-2-bank-Dziyfj84.js",
+      "_questions-polity-bank-QtNVIOEO.js",
+      "_questions-geography-bank-C3wNVKKO.js",
+      "_questions-additional-bank-Bip9ucbu.js",
+      "_questions-history-economy-bank-DsHjbe9v.js",
+      "_questions-ancient-culture-bank-BzjRdZff.js",
+      "_questions-explanation-gap-bank-DwaZVn-M.js",
+      "_question-support-duplicate-groups-BkhUSMDh.js",
+      "_question-support-explanation-reviews-BbeWaun-.js",
+      "_question-support-coaching-explanation-reviews-CHpTMyK6.js",
+      "_question-support-supplied-explanation-matches-DB0rOuv2.js",
+      "_questions-supplied-explanations-1-bank-CYRYKk2I.js",
+      "_questions-supplied-explanations-2-bank-DNb2yjM7.js",
+      "_questions-supplied-explanations-3-bank-BWcc9M7v.js",
+      "_questions-supplied-explanations-4-bank-FBNefW2x.js",
+      "_questions-supplied-explanations-5-bank-Ww7ncEo4.js",
+      "_questions-supplied-explanations-6-bank-DnDLb-Ua.js",
+      "_questions-supplied-explanations-7-bank-DcArGWn9.js",
+      "_questions-supplied-explanations-8-bank-DsTVGtJ8.js",
+      "_questions-supplied-explanations-9-bank-B2x9cbY-.js",
+      "_questions-cse-text-papers-bank-309hExJl.js",
+      "_flag-CBlx00SV.js"
+    ],
+    "css": [
+      "assets/PYQs-CjsI3GH_.css"
+    ]
+  },
+  "src/pages/Practice.tsx": {
+    "file": "assets/Practice-Bv2Wyjgm.js",
+    "name": "Practice",
+    "src": "src/pages/Practice.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Filters-CPKXthFz.js",
+      "_RecordTable-CN2qFHLx.js",
+      "_Insights-CvZXpeoY.js",
+      "_index-C6CthGwN.js",
+      "src/pages/Syllabus.tsx",
+      "_sliders-horizontal-BWjqAeGa.js",
+      "_export-CCA8XlKB.js",
+      "_trash-2--amAvJNL.js",
+      "_sparkles-DNgf6qTp.js",
+      "_ScatterChart-hqPQhrWZ.js",
+      "_TopicDetail-CZhuBAZC.js"
+    ],
+    "css": [
+      "assets/mock-hYIfEe7S.css"
+    ]
+  },
+  "src/pages/Reports.tsx": {
+    "file": "assets/Reports-DpEhZ7hp.js",
+    "name": "Reports",
+    "src": "src/pages/Reports.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Insights-CvZXpeoY.js",
+      "_index-C6CthGwN.js",
+      "_export-CCA8XlKB.js",
+      "_sparkles-DNgf6qTp.js",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  },
+  "src/pages/Resources.tsx": {
+    "file": "assets/Resources-Dg-GhBY_.js",
+    "name": "Resources",
+    "src": "src/pages/Resources.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_RecordTable-CN2qFHLx.js",
+      "_external-link-Bt_NivK-.js",
+      "_export-CCA8XlKB.js",
+      "_trash-2--amAvJNL.js"
+    ]
+  },
+  "src/pages/Revision.tsx": {
+    "file": "assets/Revision-CaKkX24k.js",
+    "name": "Revision",
+    "src": "src/pages/Revision.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_RecordTable-CN2qFHLx.js",
+      "_TopicDetail-CZhuBAZC.js",
+      "_export-CCA8XlKB.js",
+      "_trash-2--amAvJNL.js",
+      "_index-C6CthGwN.js",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  },
+  "src/pages/Settings.tsx": {
+    "file": "assets/Settings-BUUCvRuP.js",
+    "name": "Settings",
+    "src": "src/pages/Settings.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-CCA8XlKB.js",
+      "_upload-BoaJguGX.js",
+      "_trash-2--amAvJNL.js"
+    ]
+  },
+  "src/pages/Syllabus.tsx": {
+    "file": "assets/Syllabus-BCroREUE.js",
+    "name": "Syllabus",
+    "src": "src/pages/Syllabus.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_index-C6CthGwN.js",
+      "_TopicDetail-CZhuBAZC.js",
+      "_Filters-CPKXthFz.js",
+      "_ScatterChart-hqPQhrWZ.js",
+      "_sliders-horizontal-BWjqAeGa.js"
+    ]
+  },
+  "src/pages/WeakAreas.tsx": {
+    "file": "assets/WeakAreas-BDOyyQNr.js",
+    "name": "WeakAreas",
+    "src": "src/pages/WeakAreas.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Filters-CPKXthFz.js",
+      "_Insights-CvZXpeoY.js",
+      "_index-C6CthGwN.js",
+      "_TopicDetail-CZhuBAZC.js",
+      "_sliders-horizontal-BWjqAeGa.js",
+      "_sparkles-DNgf6qTp.js",
+      "_ScatterChart-hqPQhrWZ.js"
+    ]
+  }
+}

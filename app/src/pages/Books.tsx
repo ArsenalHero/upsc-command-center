@@ -1,4 +1,4 @@
-import { useState, type CSSProperties, type FormEvent } from "react";
+import { useMemo, useState, type CSSProperties, type FormEvent } from "react";
 import { CalendarDays, ChevronLeft, ChevronRight, Search, BookOpen, CheckCircle2, Download, ExternalLink, Library, Pencil, Plus, RotateCcw, Target, Trash2 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { DashboardCard, Modal, PageHeader, ProgressBar, ProgressRing } from "../components/ui";
@@ -8,10 +8,12 @@ import { bookStats, buildBookCSV, emptyBooks, formatChapters, parseChapters } fr
 import { bookSuggestions, type BookSuggestion } from "../data/bookSuggestions";
 import { download, exportJSON } from "../services/export";
 import { validateBooks } from "../services/validation";
+import { useToday } from "../hooks/useToday";
 
 export default function Books() {
   const { data, saveBooks } = useData();
-  const workspace = data.books || emptyBooks();
+  const workspace = useMemo(() => data.books || emptyBooks(), [data.books]);
+  const today = useToday();
   const [subject, setSubject] = useState("");
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("all");
@@ -20,7 +22,7 @@ export default function Books() {
   const [entry, setEntry] = useState<{ bookId?: string; kind?: BookLog["kind"]; log?: BookLog; initialChapters?: number[] }>();
   const [deleting, setDeleting] = useState<{ book?: BookPlan; log?: BookLog }>();
   const [allHistory, setAllHistory] = useState(false);
-  const stats = bookStats(workspace, subject);
+  const stats = useMemo(() => bookStats(workspace, subject, today), [workspace, subject, today]);
   const query = search.trim().toLocaleLowerCase();
   const shelf = stats.books.filter(b => {
     const name = data.subjects.find(s => s.id === b.subjectId)?.name || "";
@@ -111,7 +113,7 @@ function ProgressForm({ bookId, kind: initialKind, log, initialChapters = [], cl
   const [error, setError] = useState("");
   const [page, setPage] = useState(0);
   const book = w.plans.find(p => p.id === selected);
-  const current = bookStats(w, "", date).books.find(p => p.id === selected);
+  const current = useMemo(() => bookStats({ plans: w.plans.filter(p => p.id === selected), logs: w.logs }, "", date).books[0], [w, selected, date]);
   const read = current?.chapters.filter(c => c.read).map(c => c.number) || [];
   let preview: number[] = [], previewError = "";
   if (book && chapters.trim()) try { preview = parseChapters(chapters, book.totalChapters); } catch (e) { previewError = (e as Error).message; }

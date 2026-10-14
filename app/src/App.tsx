@@ -52,7 +52,7 @@ const practiceRoutes = [
   "tests",
 ];
 const practiceComponents = practices.map((name) =>
-  lazy(() =>
+  name === "PYQs" ? lazy(() => import("./pages/PYQs")) : lazy(() =>
     import("./pages/Practice").then((module) => ({ default: module[name] })),
   ),
 );

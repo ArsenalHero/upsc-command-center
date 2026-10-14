@@ -8,7 +8,8 @@ export type LectureDayUpdate = Pick<LectureLog, "planId" | "completed" | "minute
 export function updateLectureDay(w: LectureWorkspace, date: string, rows: LectureDayUpdate[]): LectureWorkspace {
   const ids = new Set(rows.map(r => r.planId));
   if (ids.size !== rows.length) throw new Error("Select each lecture subject once.");
-  const entries = rows.map(row => ({ ...row, date, id: w.logs.find(l => l.planId === row.planId && l.date === date)?.id || uid() }));
+  const saved = new Map(w.logs.filter(l => l.date === date).map(l => [l.planId, l.id]));
+  const entries = rows.map(row => ({ ...row, date, id: saved.get(row.planId) || uid() }));
   return { ...w, logs: [...w.logs.filter(l => l.date !== date || !ids.has(l.planId)), ...entries] };
 }
 export function lectureNeedsAttention(p: { remaining: number; dueDate: string; neededPerDay: number | null; dailyTarget: number }) {
@@ -18,13 +19,17 @@ export function lectureStats(w: LectureWorkspace, anchor = dateKey(), subjectId 
   const plans = w.plans.filter(p => !subjectId || p.subjectId === subjectId);
   const ids = new Set(plans.map(p => p.id));
   const logs = w.logs.filter(l => ids.has(l.planId) && l.date <= anchor);
+  const totals = new Map(plans.map(p => [p.id, { completed: 0, today: 0, minutes: 0 }]));
+  for (const log of logs) {
+    const value = totals.get(log.planId)!;
+    value.completed += log.completed; value.minutes += log.minutes;
+    if (log.date === anchor) value.today += log.completed;
+  }
   const subjects = plans.map(p => {
-    const entries = logs.filter(l => l.planId === p.id);
-    const completed = entries.reduce((n, l) => n + l.completed, 0);
+    const { completed, today, minutes } = totals.get(p.id)!;
     const remaining = Math.max(0, p.target - completed);
-    const today = entries.filter(l => l.date === anchor).reduce((n, l) => n + l.completed, 0);
     const daysLeft = p.dueDate ? daysBetween(anchor, p.dueDate) + 1 : null;
-    return { ...p, completed, remaining, today, progress: Math.min(100, 100 * completed / p.target), minutes: entries.reduce((n, l) => n + l.minutes, 0), neededPerDay: daysLeft && daysLeft > 0 ? Math.ceil(remaining / daysLeft) : null };
+    return { ...p, completed, remaining, today, progress: Math.min(100, 100 * completed / p.target), minutes, neededPerDay: daysLeft && daysLeft > 0 ? Math.ceil(remaining / daysLeft) : null };
   });
   const target = subjects.reduce((n, p) => n + p.target, 0);
   const completed = subjects.reduce((n, p) => n + p.completed, 0);

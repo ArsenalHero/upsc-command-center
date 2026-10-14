@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
     allowedHosts: ["terminal.local"],
   },
   build: {
+    manifest: "build-manifest.json",
     chunkSizeWarningLimit: 900,
     rollupOptions: {
       output: {

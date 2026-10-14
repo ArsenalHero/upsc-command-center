@@ -1,4 +1,4 @@
-import { useState, type CSSProperties, type FormEvent } from "react";
+import { useMemo, useState, type CSSProperties, type FormEvent } from "react";
 import { Search, ListChecks, CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Download, Flame, Pencil, PlayCircle, Plus, Target, Trash2 } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { PageHeader, DashboardCard, Modal, ConfirmDialog, ProgressBar, ProgressRing } from "../components/ui";
@@ -10,13 +10,15 @@ import { validateLectures } from "../services/validation";
 
 export default function Lectures() {
   const { data, saveLectures } = useData();
-  const w = data.lectures || emptyLectures();
+  const w = useMemo(() => data.lectures || emptyLectures(), [data.lectures]);
   const [date, setDate] = useState(dateKey), [subject, setSubject] = useState(""), [span, setSpan] = useState(14), [history, setHistory] = useState(false);
   const [plan, setPlan] = useState<LecturePlan | "new">(), [entry, setEntry] = useState<{ planId?: string; log?: LectureLog }>();
   const [deleting, setDeleting] = useState<LectureLog>();
   const [batch, setBatch] = useState(false);
   const [search, setSearch] = useState(""), [status, setStatus] = useState("all"), [sort, setSort] = useState("deadline");
-  const stats = lectureStats(w, date, subject), days = lectureDays(w, date, span, subject), heatmap = lectureDays(w, date, 28, subject);
+  const stats = useMemo(() => lectureStats(w, date, subject), [w, date, subject]);
+  const days = useMemo(() => lectureDays(w, date, span, subject), [w, date, span, subject]);
+  const heatmap = useMemo(() => lectureDays(w, date, 28, subject), [w, date, subject]);
   const daily = stats.logs.filter(l => history || l.date === date).sort((a, b) => b.date.localeCompare(a.date) || a.planId.localeCompare(b.planId));
   const max = Math.max(1, ...days.map(d => d.completed));
   const name = (subjectId: string) => data.subjects.find(s => s.id === subjectId)?.name || "Subject";

@@ -1,4 +1,4 @@
-import type { AppData, BookWorkspace } from "../types";
+import type { AppData, BookLog, BookWorkspace } from "../types";
 import { dateKey, daysBetween } from "./date";
 import { csvCell } from "../services/export";
 
@@ -34,15 +34,20 @@ export function formatChapters(chapters: number[]): string {
 }
 
 export function bookStats(w: BookWorkspace, subjectId = "", anchor = dateKey()) {
-  const books = w.plans.filter(p => !subjectId || p.subjectId === subjectId).map(p => {
-    const logs = w.logs.filter(l => l.bookId === p.id && l.date <= anchor);
-    const read = new Set(logs.filter(l => l.kind === "reading").flatMap(l => l.chapters));
+  const plans = w.plans.filter(p => !subjectId || p.subjectId === subjectId);
+  const byBook = new Map<string, BookLog[]>(plans.map(p => [p.id, []]));
+  for (const log of w.logs) if (log.date <= anchor) byBook.get(log.bookId)?.push(log);
+  const books = plans.map(p => {
+    const logs = byBook.get(p.id)!;
+    const read = new Set<number>();
     const firstRead = new Map<number, string>();
-    for (const l of logs) if (l.kind === "reading") for (const n of l.chapters)
-      if (!firstRead.has(n) || l.date < firstRead.get(n)!) firstRead.set(n, l.date);
     const revisionCounts = new Map<number, number>();
-    for (const l of logs) if (l.kind === "revision") for (const n of l.chapters)
-      revisionCounts.set(n, (revisionCounts.get(n) || 0) + l.repeats);
+    for (const l of logs) for (const n of l.chapters) {
+      if (l.kind === "reading") {
+        read.add(n);
+        if (!firstRead.has(n) || l.date < firstRead.get(n)!) firstRead.set(n, l.date);
+      } else revisionCounts.set(n, (revisionCounts.get(n) || 0) + l.repeats);
+    }
     const chapters = Array.from({ length: p.totalChapters }, (_, i) => ({ number: i + 1, read: read.has(i + 1), revisions: revisionCounts.get(i + 1) || 0 }));
     const chapterReviews = chapters.reduce((sum, c) => sum + c.revisions, 0);
     const fullRevisions = Math.min(...chapters.map(c => c.revisions));
