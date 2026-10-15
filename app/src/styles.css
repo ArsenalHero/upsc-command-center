@@ -1465,6 +1465,10 @@ small,
   gap: 10px;
 }
 .modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
