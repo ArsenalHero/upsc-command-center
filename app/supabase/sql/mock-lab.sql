@@ -74,6 +74,24 @@ alter table mock_private.profiles enable row level security;
 alter table mock_private.attempts enable row level security;
 revoke all on all tables in schema mock_private from public,anon,authenticated;
 
+-- A mock participant is either an existing account or a private browser guest.
+-- Guest bearer tokens are 256 random bits and only their SHA-256 hashes are stored.
+create table if not exists mock_private.participants (
+ id uuid primary key default gen_random_uuid(),
+ account_id uuid unique references auth.users(id) on delete cascade,
+ guest_token_hash bytea unique check(octet_length(guest_token_hash)=32),
+ license_version uuid, window_start timestamptz not null default now(), failures integer not null default 0,
+ constraint mock_participant_identity check((account_id is not null) <> (guest_token_hash is not null)),
+ constraint mock_account_identity check(account_id is null or account_id=id)
+);
+alter table mock_private.participants enable row level security;
+revoke all on mock_private.participants from public,anon,authenticated;
+insert into mock_private.participants(id,account_id) select id,id from auth.users on conflict(id) do nothing;
+alter table mock_private.profiles drop constraint if exists profiles_user_id_fkey;
+alter table mock_private.profiles add constraint profiles_user_id_fkey foreign key(user_id) references mock_private.participants(id) on delete cascade;
+alter table mock_private.attempts drop constraint if exists attempts_user_id_fkey;
+alter table mock_private.attempts add constraint attempts_user_id_fkey foreign key(user_id) references mock_private.participants(id) on delete cascade;
+
 create or replace function mock_private.reverse_name(input text) returns text language sql immutable set search_path='' as $$
  select string_agg(case when token ~ '[[:alnum:]]' then reverse(token) else token end,'' order by n)
  from regexp_matches(trim(input),'[[:alnum:]''’]+|[^[:alnum:]''’]+','g') with ordinality as x(parts,n)
@@ -155,19 +173,45 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  name_n text; cid uuid; n integer; maximum_n numeric; newq jsonb; coach text; seq text;
  session_text text=auth.jwt()->>'session_id'; session_uuid uuid; signed_in boolean=false; authorized boolean=false;
  license mock_private.license_config; attempts_n integer; entered_key text;
+ guest_token text=p->>'guestToken'; guest_hash bytea; is_guest boolean=false; retry_at timestamptz;
  begin
  if session_text ~ '^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$' then session_uuid=session_text::uuid; end if;
  signed_in=u is not null
    and exists(select 1 from auth.users where id=u and not coalesce(is_anonymous,false) and email_confirmed_at is not null)
    and exists(select 1 from auth.sessions where id=session_uuid and user_id=u and (not_after is null or not_after>now()));
+ -- An invalid account session must never fall back to guest authorization.
+ if u is not null and not signed_in then raise exception 'Sign in with a verified account to access Mock Tests' using errcode='PT401'; end if;
  select * into license from mock_private.license_config where singleton;
- authorized=signed_in and exists(select 1 from mock_private.license_grants
-   where session_id=session_uuid and user_id=u and license_version=license.version);
+ if signed_in then
+   insert into mock_private.participants(id,account_id) values(u,u) on conflict(id) do nothing;
+   authorized=exists(select 1 from mock_private.license_grants where session_id=session_uuid and user_id=u and license_version=license.version);
+ elsif guest_token ~ '^[0-9a-f]{64}$' then
+   is_guest=true; guest_hash=pg_catalog.sha256(pg_catalog.convert_to(guest_token,'UTF8'));
+   if op='verify-license' then
+     insert into mock_private.participants(guest_token_hash) values(guest_hash) on conflict(guest_token_hash) do nothing;
+   end if;
+   select id,license_version=license.version into u,authorized from mock_private.participants where guest_token_hash=guest_hash;
+   authorized=coalesce(authorized,false);
+ end if;
  if op='license-status' then
-   if u is not null and not signed_in then raise exception 'Sign in with a verified account to access Mock Tests' using errcode='PT401'; end if;
    return jsonb_build_object('authorized',authorized);
  end if;
- if not signed_in then raise exception 'Sign in with a verified account to access Mock Tests' using errcode='PT401'; end if;
+ if not signed_in and (not is_guest or u is null) then raise exception 'Sign in or verify your license key as a guest to access Mock Tests' using errcode='PT401'; end if;
+ if op='verify-license' and is_guest then
+   select failures,window_start+interval '1 minute' into attempts_n,retry_at from mock_private.participants where id=u for update;
+   if retry_at<=clock_timestamp() then
+     update mock_private.participants set window_start=clock_timestamp(),failures=0 where id=u; attempts_n=0;
+   end if;
+   if attempts_n>=10 then return jsonb_build_object('authorized',false,'retryAfter',greatest(1,ceil(extract(epoch from retry_at-clock_timestamp()))::integer)); end if;
+   entered_key=p->>'licenseKey';
+   if entered_key is not null and octet_length(entered_key)<=256
+      and license.key_hash=pg_catalog.sha256(license.key_salt||pg_catalog.convert_to(entered_key,'UTF8')) then
+     update mock_private.participants set license_version=license.version,failures=0 where id=u;
+     return jsonb_build_object('authorized',true);
+   end if;
+   update mock_private.participants set failures=failures+1 where id=u;
+   return jsonb_build_object('authorized',false);
+ end if;
  if op='verify-license' then
    insert into mock_private.license_checks(user_id) values(u) on conflict(user_id) do nothing;
    select failures into attempts_n from mock_private.license_checks where user_id=u for update;
@@ -211,7 +255,7 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  'subjects',(select coalesce(jsonb_agg(subject order by subject),'[]') from (select distinct unnest(subjects) subject from mock_private.tests where listed and status<>'draft') y),
  'topics',(select coalesce(jsonb_agg(topic order by topic),'[]') from (select distinct unnest(topics) topic from mock_private.tests where listed and status<>'draft') y)) into meta;
  return jsonb_build_object('tests',rows,'facets',meta); end if;
- select coalesce(raw_app_meta_data->>'mock_admin','false')='true' into admin from auth.users where id=u;
+ admin=signed_in and exists(select 1 from auth.users where id=u and raw_app_meta_data->>'mock_admin'='true');
  if op='identity' then select * into profile from mock_private.profiles where user_id=u; return jsonb_build_object('profile',case when found then to_jsonb(profile)-'user_id' else null end,'admin',admin); end if;
  if op='profile' then name_n=trim(p->>'displayName');
  if name_n is null or name_n !~ '^[[:alnum:] _-]{2,30}$' then raise exception 'Use 2–30 letters, numbers, spaces, underscores or hyphens for your leaderboard name'; end if;
@@ -255,6 +299,7 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  on conflict(id) do update set code=excluded.code,name=excluded.name,coaching_id=excluded.coaching_id,series=excluded.series,year=excluded.year,paper=excluded.paper,kind=excluded.kind,subjects=excluded.subjects,topics=excluded.topics,syllabus=excluded.syllabus,difficulty=excluded.difficulty,duration=excluded.duration,positive=excluded.positive,negative=excluded.negative,scheduled_at=excluded.scheduled_at,closes_at=excluded.closes_at,publish_at=excluded.publish_at,attempt_limit=excluded.attempt_limit,leaderboard=excluded.leaderboard,status=excluded.status,questions=excluded.questions,question_count=n,maximum=maximum_n;
  return jsonb_build_object('id',tid); end if;
  if op='start' then
+ if is_guest then insert into mock_private.profiles(user_id,display_name) values(u,'Guest-'||left(replace(u::text,'-',''),24)) on conflict(user_id) do nothing; end if;
  if not exists(select 1 from mock_private.profiles where user_id=u) then raise exception 'Choose your leaderboard display name first'; end if;
  tid=nullif(p->>'testId','')::uuid; perform pg_advisory_xact_lock(hashtextextended(u::text||coalesce(tid::text,'mistakes'),0));
  perform mock_private.expire(tid,u);
@@ -274,8 +319,8 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  meta=jsonb_build_object('name','Practice my mistakes','paper',coalesce(p->>'paper','GS-I'),'kind','Revision Test','coaching','Command Centre','year',extract(year from now()),'duration',greatest(5,jsonb_array_length(qs)*2),'maximum',(select sum((q->>'positive')::numeric) from jsonb_array_elements(qs) q));
  end if;
  insert into mock_private.attempts(user_id,test_id,test_info,questions,mode,eligible,deadline)
- values(u,tid,meta,qs,case when tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible) then 'official' else 'practice' end,
- tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible),now()+make_interval(mins=>(meta->>'duration')::integer)) returning * into a;
+ values(u,tid,meta,qs,case when not is_guest and tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible) then 'official' else 'practice' end,
+ not is_guest and tid is not null and coalesce(p->>'mode','official')='official' and t.leaderboard and not exists(select 1 from mock_private.attempts where user_id=u and test_id=tid and eligible),now()+make_interval(mins=>(meta->>'duration')::integer)) returning * into a;
  return mock_private.attempt_public(a); end if;
  if op='report-document' then
  select * into a from mock_private.attempts where id=(p->>'attemptId')::uuid and user_id=u;

@@ -36,7 +36,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
     location = useLocation();
   const requested = location.state?.returnTo;
   const returnTo = typeof requested === "string" && /^\/tests\/[a-zA-Z0-9/-]+$/.test(requested) ? requested : "/";
-  const mockAccessRequired = !!location.state?.mockAccessRequired;
+  const mockAccessRequired = returnTo.startsWith("/tests/");
   const authFlowState = mockAccessRequired ? { returnTo, mockAccessRequired: true } : location.state;
   const [name, setName] = useState(""),
     [email, setEmail] = useState("");
@@ -220,8 +220,8 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
           <p className="auth-description">{descriptions[mode]}</p>
           {mockAccessRequired && (
             <div className="auth-notice" role="status">
-              <strong>Sign-in is required to access Mock Tests.</strong>
-              <span>After signing in, verify your license key to continue.</span>
+              <strong>Login is optional for mock tests.</strong>
+              <span>Continue as a guest with your license key, or sign in for ranked attempts.</span>
             </div>
           )}
           {mode === "reset" && validReset && (
@@ -419,7 +419,7 @@ export default function AuthPage({ mode }: { mode: AuthMode }) {
                 className="btn secondary auth-guest"
                 onClick={() => {
                   auth.enterGuest();
-                  navigate("/", { replace: true });
+                  navigate(returnTo, { replace: true });
                 }}
               >
                 Continue as guest

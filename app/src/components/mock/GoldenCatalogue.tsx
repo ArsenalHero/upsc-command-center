@@ -50,7 +50,7 @@ export function GoldenCatalogue({ view, api, userId, preparationYear, syllabus, 
     else if (selected.length < 3) { setSelected(s => [...s, test]); setMessage(""); }
     else setMessage("Choose up to three tests. Remove one to compare another.");
   };
-  const saveSearch = () => { try { const next = Object.fromEntries(Object.entries(filters).filter(([, value]) => value)); localStorage.setItem(storageKey, JSON.stringify(next)); setSaved(next); setMessage("Search saved in this browser for this account."); } catch { setMessage("This browser could not save your search. Your filters are still applied."); } };
+  const saveSearch = () => { try { const next = Object.fromEntries(Object.entries(filters).filter(([, value]) => value)); localStorage.setItem(storageKey, JSON.stringify(next)); setSaved(next); setMessage("Search saved in this browser."); } catch { setMessage("This browser could not save your search. Your filters are still applied."); } };
   const removeSaved = () => { try { localStorage.removeItem(storageKey); setSaved(null); setMessage("Saved search removed."); } catch { setMessage("The saved search could not be removed from this browser."); } };
 
   return <div className="golden-catalogue">

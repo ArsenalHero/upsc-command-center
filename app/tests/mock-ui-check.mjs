@@ -207,7 +207,7 @@ function makeDOM(url = "https://example.test/upsc/#/login") {
   };
   return dom;
 }
-const dom = makeDOM("https://example.test/upsc/#/tests"),
+let dom = makeDOM("https://example.test/upsc/#/tests"),
   w = dom.window;
 const until = async (predicate, message) => {
   for (let i = 0; i < 160; i++) {
@@ -261,12 +261,37 @@ try{
  click("Add Log");await until(()=>w.document.querySelector("dialog[open]")?.textContent.includes("Add Test"),"Existing manual result editor");
  const logFields=[...w.document.querySelectorAll("dialog[open] label")].map(l=>l.textContent);
  assert.ok(logFields.some(l=>l.includes("Test name")));assert.ok(logFields.some(l=>l.includes("Maximum marks")));
- click("Cancel");click("Mock Test");await heading("Welcome back.");
- assert.ok(w.document.body.textContent.includes("Sign-in is required to access Mock Tests."));
- assert.ok(!w.document.body.textContent.includes("UI validation mock"));
- const signup=[...w.document.querySelectorAll("a")].find(a=>a.textContent.trim()==="Sign up");signup.click();await heading("Start your journey.");
- [...w.document.querySelectorAll("a")].find(a=>a.textContent.trim()==="Log in").click();await heading("Welcome back.");
- assert.ok(w.document.body.textContent.includes("Sign-in is required to access Mock Tests."));
+ click("Cancel");click("Mock Test");await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"Guest license form ready");
+ assert.ok(w.document.body.textContent.includes("No login needed"));
+ assert.ok(!apiCalls.some(c=>c.path.endsWith("/token")||c.path.endsWith("/signup")),"Opening guest mocks never starts account authentication");
+ fill("mock-license-key",fixtureLicense);await new Promise(r=>setTimeout(r,30));submit();
+ await until(()=>w.document.body.textContent.includes("Guest practice · no login needed"),"Guest licence opens catalogue");
+ w.location.hash=`/tests/prelims/${testId}`;
+ await until(()=>[...w.document.querySelectorAll("button")].some(b=>b.textContent==="Start test as guest"),"Guest detail and direct URL");
+ assert.ok(!w.document.querySelector('[aria-label="Leaderboard display name"]'),"Guests have no required name form");
+ click("Start test as guest");await until(()=>w.document.body.textContent.includes("Which Alpha choice"),"Guest test starts");
+ const guestAttemptId=w.location.hash.split("/").at(-1), guestToken=w.localStorage.getItem("upsc-mock-guest-token");
+ assert.equal(guestToken.length,64);assert.ok(!w.document.body.textContent.includes("Verified explanation"));
+ w.document.querySelector('input[value="a"]').click();await new Promise(r=>setTimeout(r,40));await queryQueue;
+ click("Save & Next");await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Guest next question");
+ w.document.querySelector('input[value="b"]').click();await new Promise(r=>setTimeout(r,40));await queryQueue;
+ click("Save & exit");await until(()=>w.document.body.textContent.includes("My Tests"),"Guest save and exit");
+ // Recreate the complete app with only persisted browser storage, like a reload.
+ const savedStorage=Object.fromEntries(Object.keys(w.localStorage).map(key=>[key,w.localStorage.getItem(key)]));
+ dom.window.close();dom=makeDOM(`https://example.test/upsc/#/tests/prelims/${testId}/attempt/${guestAttemptId}`);w=dom.window;
+ for(const [key,value] of Object.entries(savedStorage))w.localStorage.setItem(key,value);
+ w.eval(built.outputFiles[0].text);
+ await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Guest resume after full app reload");
+ assert.ok(w.document.querySelector('input[value="b"]').checked);
+ click("Submit test");await until(()=>w.document.body.textContent.includes("Confirm submission"),"Guest confirmation");click("Confirm submission");
+ await until(()=>w.document.body.textContent.includes("UI validation mock · Result"),"Guest results");
+ const guestDone=await rpc(null,"attempt",{attemptId:guestAttemptId,guestToken});
+ assert.equal(guestDone.result.score,1.5);assert.equal(guestDone.eligible,false);assert.equal(guestDone.position,null);
+ click("Questions");await until(()=>w.document.body.textContent.includes("Verified explanation appears only after submission."),"Guest post-submit explanations");
+ click("Recall Sheet");await until(()=>w.document.querySelectorAll(".mock-recall-entry").length===3,"Guest recall sheet");
+ w.location.hash="/tests/prelims/reports";await until(()=>w.document.body.textContent.includes("My Prelims Mock Performance"),"Guest report history");
+ assert.ok(!apiCalls.some(c=>c.path.endsWith("/token")||c.path.endsWith("/signup")),"Complete guest workflow needs no login or signup");
+ [...w.document.querySelectorAll("a")].find(a=>a.textContent==="Sign in for ranked attempts").click();await heading("Welcome back.");apiCalls.length=0;
  fill("auth-email",bob.email);fill("auth-password","correct-password");await new Promise(r=>setTimeout(r,30));submit();
  await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"Server license check");
  w.localStorage.setItem("mock-license-verified","true");w.sessionStorage.setItem("mock-license-verified","true");
@@ -346,11 +371,12 @@ try{
  click("Mock Test");await until(()=>w.document.body.textContent.includes("UI validation mock"),"Verified session remembers access");assert.ok(!w.document.getElementById("mock-license-key"));
  click("View syllabus");await until(()=>w.document.body.textContent.includes("Test syllabus"),"Syllabus popup preserved");click("Close syllabus");
  w.location.hash="/account";await heading("Your account");click("Sign out");await heading("Welcome back.");
- w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.location.hash==="#/login"&&w.document.body.textContent.includes("Sign-in is required"),"Direct attempt URL cannot bypass sign-in");
+ w.location.hash=`/tests/prelims/${testId}/attempt/${attemptId}`;await until(()=>w.document.body.textContent.includes("Attempt not found"),"Guest cannot open an account attempt");
  assert.ok(!w.document.body.textContent.includes("Which Beta choice"));assert.ok(!w.document.body.textContent.includes("Verified explanation"));
+ [...w.document.querySelectorAll("a")].find(a=>a.textContent==="Sign in to view an account attempt").click();await heading("Welcome back.");
  fill("auth-email",bob.email);fill("auth-password","correct-password");await new Promise(r=>setTimeout(r,30));submit();
  await heading("Verify your license key");await until(()=>w.document.getElementById("mock-license-key"),"New sign-in requires fresh license");
  assert.ok(!w.document.querySelector(".mock-exam"));w.location.hash="/tests";await heading("Test series");
  await until(()=>w.document.querySelector("table")?.textContent.includes("Existing manual result"),"Manual history remains available without mock license");
- assert.deepEqual(messages,[]);console.log("Mock UI checks passed: manual Add Log preserved, signed-in license gate, wrong-key retry, direct-URL protection, license input and exam preserved on focus, pending verification, temporary connection failure, token renewal, new-session verification, server revocation, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
+ assert.deepEqual(messages,[]);console.log("Mock UI checks passed: guest start, full reload and resume, submit, private result and recall sheet without login; account isolation; manual Add Log preserved, signed-in license gate, wrong-key retry, direct-URL protection, license input and exam preserved on focus, pending verification, temporary connection failure, token renewal, new-session verification, server revocation, Save & Next, review flags, exit/resume, confirmation, server score and explanation release.");
 }finally{dom.window.close();await queryQueue.catch(()=>{});await db.close();}

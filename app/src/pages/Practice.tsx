@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../hooks/useAuth";
 import "../mock.css";
 import {
   Plus,
@@ -886,7 +885,6 @@ export function MCQAnalysis() {
 export function Tests() {
   const { data, setEditor } = useData(),
     { filters, setFilters, a } = useAnalytics(),
-    auth = useAuth(),
     navigate = useNavigate();
   const records = data.tests.filter(
     (t) =>
@@ -927,12 +925,7 @@ export function Tests() {
       />
       <div className="button-group manual-test-actions" aria-label="Test actions">
         <AddButton collection="tests" label="Add Log" />
-        <button className="btn secondary" onClick={() => {
-          const returnTo = "/tests/prelims/discover";
-          navigate(auth.user ? returnTo : "/login", auth.user ? undefined : {
-            state: { returnTo, mockAccessRequired: true },
-          });
-        }}><BookOpen size={16} />Mock Test</button>
+        <button className="btn secondary" onClick={() => navigate("/tests/prelims/discover")}><BookOpen size={16} />Mock Test</button>
       </div>
       <FilterBar filters={filters} onChange={setFilters} />
       <div className="stats-grid three">

@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight, KeyRound, LockKeyhole, ShieldCheck } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
+import { mockOwnerKey, mockSessionParams } from "../services/mockSession";
 import "../mock.css";
 
 type AccessState = { userId: string; sessionId: string; path: string; status: "checking" | "locked" | "granted" | "error" };
@@ -15,7 +16,7 @@ function authSessionId(token?: string) {
 
 export default function MockAccess({ children }: { children: ReactNode }) {
   const auth = useAuth(), location = useLocation(), navigate = useNavigate();
-  const userId = auth.user?.id || "", path = location.pathname;
+  const userId = mockOwnerKey(auth.user?.id), path = location.pathname;
   const [access, setAccess] = useState<AccessState | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [key, setKey] = useState(""), [error, setError] = useState(""), [busy, setBusy] = useState(false);
@@ -51,7 +52,7 @@ export default function MockAccess({ children }: { children: ReactNode }) {
       setError(""); setBusy(false); setKey("");
     }
     try {
-      const { data, error: rpcError } = await auth.client.rpc("mock_lab", { op: "license-status", p: {} });
+      const { data, error: rpcError } = await auth.client.rpc("mock_lab", { op: "license-status", p: mockSessionParams(auth.user?.id) });
       if (current !== request.current) return;
       if (rpcError) {
         if (/Sign in/i.test(rpcError.message)) {
@@ -76,7 +77,7 @@ export default function MockAccess({ children }: { children: ReactNode }) {
         }
       }
     } finally { if (current === request.current) checking.current = false; }
-  }, [auth.client, navigate, userId, sessionId, path, publish]);
+  }, [auth.client, auth.user?.id, navigate, userId, sessionId, path, publish]);
 
   useEffect(() => {
     void check();
@@ -98,7 +99,7 @@ export default function MockAccess({ children }: { children: ReactNode }) {
     checking.current = false; verifying.current = true;
     setBusy(true); setError("");
     try {
-      const { data, error: rpcError } = await auth.client.rpc("mock_lab", { op: "verify-license", p: { licenseKey: enteredKey } });
+      const { data, error: rpcError } = await auth.client.rpc("mock_lab", { op: "verify-license", p: { licenseKey: enteredKey, ...mockSessionParams(auth.user?.id) } });
       if (current !== request.current) return;
       setKey("");
       if (rpcError) {
@@ -116,7 +117,6 @@ export default function MockAccess({ children }: { children: ReactNode }) {
     } finally { if (current === request.current) { verifying.current = false; setBusy(false); } }
   }
 
-  if (!auth.user) return <Navigate to="/login" replace state={flowState} />;
   if (status === "granted") return <>{children}</>;
   return (
     <section className="mock-access" aria-labelledby="mock-access-title">
@@ -125,9 +125,9 @@ export default function MockAccess({ children }: { children: ReactNode }) {
         <div className="mock-access-icon"><LockKeyhole size={27} aria-hidden="true" /></div>
         <span className="eyebrow">GOLDEN GATE · MOCK TEST ACCESS</span>
         <h1 id="mock-access-title">Verify your license key</h1>
-        <p className="muted">One quick check before you begin. Your mock attempts and reports stay in your own account.</p>
+        <p className="muted">{auth.user ? "Your mock attempts and reports stay in your account." : "No login needed. Enter your license key to start. Your attempts and reports stay linked to this browser."}</p>
         <div className="mock-access-steps" aria-label="Access steps">
-          <span><ShieldCheck size={16} />Signed in</span>
+          <span><ShieldCheck size={16} />{auth.user ? "Signed in" : "Guest access"}</span>
           <span aria-current="step"><KeyRound size={16} />License verification</span>
         </div>
         {status === "checking" ? <p className="mock-access-status" role="status">Checking your access…</p>
@@ -137,7 +137,7 @@ export default function MockAccess({ children }: { children: ReactNode }) {
             <input ref={field} id="mock-license-key" name="licenseKey" type="password" autoComplete="off" autoCapitalize="none" autoCorrect="off" spellCheck={false}
               placeholder="Enter your license key" value={key} onChange={e => setKey(e.target.value)} maxLength={256} required disabled={busy}
               aria-invalid={!!error} aria-describedby={error ? "mock-license-help mock-license-error" : "mock-license-help"} />
-            <p id="mock-license-help" className="small muted">Access is verified securely for this sign-in session.</p>
+            <p id="mock-license-help" className="small muted">{auth.user ? "Access is verified securely for this sign-in session." : "Verified securely. No email, password or account required."}</p>
             {error && <p id="mock-license-error" className="mock-error" role="alert">{error}</p>}
             <button className="btn primary" type="submit" disabled={busy || !key}>{busy ? "Verifying…" : "Verify & continue"}<ArrowRight size={16} /></button>
           </form>}

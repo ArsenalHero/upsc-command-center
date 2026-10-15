@@ -319,7 +319,9 @@ try {
     () => w.document.body.textContent.includes("Add Study Session"),
     "Study form missing",
   );
-  click("Save record");
+  click("60m");
+  await new Promise((r) => setTimeout(r, 30));
+  click("Save session");
   await until(
     () => workspaces.get(alice.id)?.payload.sessions.length === 1,
     "Study record did not sync",
@@ -437,7 +439,7 @@ try {
     await until(
       () =>
         rw.document.querySelector("h1")?.textContent ===
-        "UPSC PREPARATION COMMAND CENTER",
+        "Your preparation",
       "Recovery did not return to the workspace",
     );
   } finally {
@@ -452,7 +454,7 @@ try {
     await until(
       () =>
         cw.document.querySelector("h1")?.textContent ===
-        "UPSC PREPARATION COMMAND CENTER",
+        "Your preparation",
       "Email verification callback did not open workspace",
     );
     assert.equal(cw.location.search, "");
