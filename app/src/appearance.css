@@ -12,7 +12,7 @@
 :root[data-theme="dark"][data-palette="rose"] { --primary:#f6a0bd; --primary-soft:#472b37; --bg:#23171c; --surface:#31222a; --surface-alt:#3b2a32; --border:#523b46; --track:#462f3a; }
 :root[data-theme="dark"][data-palette="sand"] { --primary:#ecc58b; --primary-soft:#423627; --bg:#211c15; --surface:#30291f; --surface-alt:#3a3227; --border:#4f4435; --track:#433a2e; }
 .btn.primary { background:var(--primary); color:#fff; box-shadow:0 2px 4px color-mix(in srgb,var(--primary) 10%,transparent); }
-:root[data-theme="dark"] .btn.primary { color:var(--bg); }
+:root[data-theme="dark"] .btn.primary, :root[data-theme="dark"] .quick-add { color:var(--bg); }
 
 .app-shell { position:relative; isolation:isolate; }
 .workspace-wallpaper { display:none; position:fixed; inset:-18px; z-index:-1; pointer-events:none; background-image:var(--wallpaper-image,none); background-size:cover; background-position:var(--wallpaper-position,center); opacity:var(--wallpaper-visibility,.4); filter:blur(var(--wallpaper-blur,2px)); }

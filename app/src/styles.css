@@ -2525,10 +2525,10 @@ small,
   height: 51px;
   display: grid;
   place-items: center;
-  background: #3158eb;
+  background: var(--primary);
   color: white;
   border-radius: 15px;
-  box-shadow: 0 5px 22px #3158eb35;
+  box-shadow: 0 5px 22px color-mix(in srgb, var(--primary) 21%, transparent);
 }
 .quick-menu {
   position: absolute;
