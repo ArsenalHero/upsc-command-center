@@ -1,3 +1,4 @@
+import { completeWelcome } from "./welcome-fixture.mjs";
 import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
@@ -10,6 +11,7 @@ vc.on("jsdomError", error => { if (!String(error).includes("navigation")) errors
 function open(saved, analytics = "closed") {
   const dom = new JSDOM('<html><body><div id="root"></div></body></html>', { url: "https://example.test/upsc/#/", runScripts: "outside-only", pretendToBeVisual: true, virtualConsole: vc });
   const w = dom.window;
+  w.localStorage.setItem("upsc-guest-profile:v1", JSON.stringify({name:"Workspace learner"}));
   w.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} });
   w.structuredClone = globalThis.structuredClone; w.scrollTo = () => {};
   w.fetch = async () => ({ ok: true, json: async () => ({ url: "", publishableKey: "" }) });
@@ -29,6 +31,7 @@ const click = async selector => { const el = w.document.querySelector(selector);
 const change = async (input, value) => { Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype, "value").set.call(input, value); input.dispatchEvent(new w.Event("input", { bubbles: true })); await wait(); };
 const stored = () => JSON.parse(w.localStorage.getItem("upsc-command-center:v1"));
 await until(() => w.document.querySelector(".study-today"), "Today dashboard did not render");
+await completeWelcome(w);
 assert.match(w.document.querySelector(".today-time").textContent, /6h/);
 assert.match(w.document.querySelector(".today-remaining").textContent, /2h remaining/);
 assert.equal(w.document.querySelector('.today-progress [role="progressbar"]').getAttribute("aria-valuenow"), "75");
@@ -111,6 +114,7 @@ const savedAnalytics = w.localStorage.getItem("upsc:dashboard-analytics:guest");
 const saved = w.localStorage.getItem("upsc-command-center:v1");
 w.close(); w = open(saved, savedAnalytics);
 await until(() => w.document.querySelector(".study-today"), "Reload did not restore dashboard");
+await completeWelcome(w);
 assert.equal(w.document.querySelector(".analytics-toggle").getAttribute("aria-expanded"), "true");
 assert.equal(stored().sessions.length, 2);
 assert.equal(stored().settings.theme, "dark");

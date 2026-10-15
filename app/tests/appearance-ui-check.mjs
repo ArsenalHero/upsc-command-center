@@ -1,3 +1,4 @@
+import { completeWelcome } from "./welcome-fixture.mjs";
 import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
@@ -8,9 +9,10 @@ const vc = new VirtualConsole();
 vc.on("jsdomError", error => { if (!String(error).includes("navigation")) errors.push(String(error)); });
 const wait = () => new Promise(resolve => setTimeout(resolve, 60));
 const until = async (predicate, message) => { for (let n = 0; n < 80; n++) { if (predicate()) return; await wait(); } assert.ok(predicate(), message); };
-function createWindow(saved) {
+function createWindow(saved, profile) {
   const dom = new JSDOM('<html><body><div id="root"></div></body></html>', { url: "https://example.test/upsc/#/", runScripts: "outside-only", pretendToBeVisual: true, virtualConsole: vc });
   const w = dom.window;
+  if (profile) w.localStorage.setItem("upsc-guest-profile:v1", profile);
   const listeners = new Set();
   const media = { matches: false, addEventListener(event, fn) { listeners.add(fn); }, removeEventListener(event, fn) { listeners.delete(fn); } };
   w.matchMedia = () => media;
@@ -32,8 +34,7 @@ const change = async (el, value) => { const setter = Object.getOwnPropertyDescri
 const stored = () => JSON.parse(w.localStorage.getItem("upsc-command-center:v1"));
 await until(() => w.document.querySelector("h1"), "Login not rendered");
 await clickText("Continue as guest");
-await until(() => w.document.body.textContent.includes("Set up your preparation workspace"), "Guest setup not rendered");
-await clickText("Skip setup");
+await completeWelcome(w, "Appearance learner");
 await click('[aria-label="Open themes and wallpapers"]');
 assert.ok(w.document.querySelector("dialog[open]"));
 assert.equal(w.document.querySelectorAll("dialog .appearance-palette").length, 5);
@@ -81,10 +82,12 @@ assert.equal(stored().settings.appearance.palette, "violet");
 assert.equal(stored().settings.appearance.wallpaper, "forest");
 assert.equal(stored().settings.theme, "dark");
 const saved = w.localStorage.getItem("upsc-command-center:v1");
-w.close(); w = createWindow(saved);
+const profile = w.localStorage.getItem("upsc-guest-profile:v1");
+w.close(); w = createWindow(saved, profile);
 await until(() => w.document.querySelector("h1"), "Reload not rendered");
 if ([...w.document.querySelectorAll("button")].some(el => el.textContent.trim() === "Continue as guest")) await clickText("Continue as guest");
 await until(() => w.document.querySelector('[aria-label="Open themes and wallpapers"]'), "Reloaded workspace not rendered");
+await completeWelcome(w);
 assert.equal(w.document.documentElement.dataset.palette, "violet");
 assert.equal(w.document.documentElement.dataset.wallpaper, "forest");
 assert.equal(w.document.documentElement.dataset.theme, "dark");

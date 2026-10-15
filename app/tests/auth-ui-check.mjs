@@ -1,3 +1,4 @@
+import { completeWelcome } from "./welcome-fixture.mjs";
 import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
@@ -312,6 +313,8 @@ try {
   );
   click("Skip setup");
   await until(() => workspaces.has(alice.id), "Alice setup did not sync");
+  await completeWelcome(w);
+  assert.equal(w.localStorage.getItem("upsc-guest-profile:v1"),null,"Account greetings do not create guest profiles");
   w.location.hash = "/daily-study";
   await heading("Daily study");
   click("Add study session");

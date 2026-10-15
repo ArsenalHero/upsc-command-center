@@ -1,3 +1,4 @@
+import { completeWelcome } from "./welcome-fixture.mjs";
 import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
@@ -95,9 +96,7 @@ assert.ok(w.document.querySelector('input[autocomplete="new-password"]'));
 w.location.hash = "/forgot-password";
 await until(() => w.document.querySelector("h1")?.textContent === "Forgot your password?", "Password recovery page did not open");
 clickText("Continue as guest");
-await until(() => text().includes("Set up your preparation workspace"), "Guest setup did not open");
-assert.match(text(), /Set up your preparation workspace/);
-clickText("Skip setup");
+await completeWelcome(w, "UI learner");
 await wait();
 assert.match(text(), /No study data yet/);
 assert.equal(
@@ -402,6 +401,7 @@ const restored = new JSDOM(
   },
 );
 const rw = restored.window;
+rw.localStorage.setItem("upsc-guest-profile:v1", w.localStorage.getItem("upsc-guest-profile:v1"));
 rw.localStorage.setItem(
   "upsc-command-center:v1",
   w.localStorage.getItem("upsc-command-center:v1"),
@@ -426,6 +426,7 @@ assert.doesNotMatch(
   rw.document.body.textContent,
   /Set up your preparation workspace/,
 );
+await completeWelcome(rw);
 assert.match(rw.document.body.textContent, /Demo mode/);
 assert.equal(consoleMessages.length, 0, consoleMessages.join("\n"));
 globalThis.console.log(

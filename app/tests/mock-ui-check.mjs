@@ -1,3 +1,4 @@
+import { completeWelcome } from "./welcome-fixture.mjs";
 import { build } from "esbuild";
 import { JSDOM, VirtualConsole } from "jsdom";
 import assert from "node:assert/strict";
@@ -256,6 +257,7 @@ const capture = (name) => {
 w.eval(built.outputFiles[0].text);
 try{
  await heading("Test series");
+ await completeWelcome(w, "Mock learner");
  for(const button of ["Add Test Series","Log test","Add Log","Mock Test"])assert.ok([...w.document.querySelectorAll("button")].some(b=>b.textContent.trim()===button));
  assert.ok(!apiCalls.some(c=>c.body.op==="catalog"));
  click("Add Log");await until(()=>w.document.querySelector("dialog[open]")?.textContent.includes("Add Test"),"Existing manual result editor");
@@ -281,6 +283,7 @@ try{
  dom.window.close();dom=makeDOM(`https://example.test/upsc/#/tests/prelims/${testId}/attempt/${guestAttemptId}`);w=dom.window;
  for(const [key,value] of Object.entries(savedStorage))w.localStorage.setItem(key,value);
  w.eval(built.outputFiles[0].text);
+ await completeWelcome(w);
  await until(()=>w.document.body.textContent.includes("Which Beta choice"),"Guest resume after full app reload");
  assert.ok(w.document.querySelector('input[value="b"]').checked);
  click("Submit test");await until(()=>w.document.body.textContent.includes("Confirm submission"),"Guest confirmation");click("Confirm submission");

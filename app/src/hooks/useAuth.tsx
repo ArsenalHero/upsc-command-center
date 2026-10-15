@@ -9,6 +9,7 @@ import type { SupabaseClient, User } from "@supabase/supabase-js";
 import { loadAuthClient } from "../services/supabase";
 import { readAuthCallback, type AuthConfig } from "../services/authConfig";
 import { STORAGE_KEY } from "../services/repository";
+import { loadGuestName, normalizeGuestName, persistGuestName, nextGuestQuote } from "../services/guestProfile";
 
 const MODE_KEY = "upsc-workspace-mode";
 interface AuthState {
@@ -18,6 +19,11 @@ interface AuthState {
   loading: boolean;
   recovery: boolean;
   guest: boolean;
+  guestName: string;
+  welcomeQuote: string;
+  welcomeOpen: boolean;
+  saveGuestName(name: string): boolean;
+  dismissWelcome(): void;
   error: string;
   enterGuest(): void;
   leaveGuest(): void;
@@ -37,10 +43,10 @@ function initialGuest() {
     const mode = sessionStorage.getItem(MODE_KEY);
     return (
       mode === "guest" ||
-      (mode === null && localStorage.getItem(STORAGE_KEY) !== null)
+      (mode === null && (!!loadGuestName() || localStorage.getItem(STORAGE_KEY) !== null))
     );
   } catch {
-    return false;
+    return !!loadGuestName();
   }
 }
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -51,6 +57,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [guest, setGuest] = useState(initialGuest);
   const [recovery, setRecovery] = useState(false),
     [error, setError] = useState("");
+  const [guestName, setGuestName] = useState(loadGuestName);
+  const [welcomeQuote, setWelcomeQuote] = useState(nextGuestQuote);
+  const [welcomeOpen, setWelcomeOpen] = useState(true);
+  useEffect(() => {
+    const reopened = (event: PageTransitionEvent) => {
+      if (event.persisted) { setWelcomeQuote(nextGuestQuote()); setWelcomeOpen(true); }
+    };
+    window.addEventListener("pageshow", reopened);
+    return () => window.removeEventListener("pageshow", reopened);
+  }, []);
   useEffect(() => {
     let active = true,
       booting = true,
@@ -196,10 +212,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         loading,
         recovery,
         guest,
+        guestName,
+        welcomeQuote,
+        welcomeOpen,
+        saveGuestName(name) {
+          const clean = normalizeGuestName(name);
+          if (!clean) return false;
+          const stored = persistGuestName(clean);
+          setGuestName(clean);
+          rememberMode("guest"); setGuest(true);
+          return stored;
+        },
+        dismissWelcome() { setWelcomeOpen(false); },
         error,
         enterGuest() {
           rememberMode("guest");
           setGuest(true);
+          setWelcomeOpen(true);
         },
         leaveGuest() {
           rememberMode("account");

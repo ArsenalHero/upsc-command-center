@@ -12,6 +12,7 @@ import AuthPage, { type AuthMode } from "./pages/Auth";
 import Layout from "./components/Layout";
 import { GlobalEditor } from "./components/RecordForm";
 import { SetupWizard } from "./components/SetupWizard";
+import { WelcomeDialog } from "./components/WelcomeDialog";
 import { WebMCP } from "./services/webmcp";
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const DailyStudy = lazy(() => import("./pages/DailyStudy"));
@@ -162,7 +163,8 @@ function WorkspaceRouter() {
         </Routes>
       </Suspense>
       <GlobalEditor />
-      {(!location.pathname.startsWith("/tests") || auth.user || auth.guest) && <SetupWizard />}
+      {auth.user && <SetupWizard />}
+      <WelcomeDialog />
       <WebMCP />
     </WorkspaceProvider>
   );
