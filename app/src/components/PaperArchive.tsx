@@ -119,6 +119,6 @@ export default function PaperArchive({ renderExplanation, storageScope = "guest"
         <div className="paper-card-links"><a href={p.paperUrl} target="_blank" rel="noopener noreferrer">Original PDF ↗</a><a href={`${p.keyUrl}#page=${p.keyPage}`} target="_blank" rel="noopener noreferrer">Official key ↗</a>{!!explanationCount && <button onClick={() => study(p)}>{explanationCount} questions & explanations →</button>}</div>
       </article>;
     })}</div></section>)}
-    <div className="paper-archive-footer"><p>Question papers and keys: Union Public Service Commission. Linked copies: ForumIAS / IASbaba. Questions and choices are selectable text. Explanations use your supplied study material and editorial solutions; UPSC’s final keys determine scoring. Answer sheets save in this browser, separately for each account; download a backup to keep a copy.</p><button className="btn secondary" disabled={!runs.length} onClick={downloadBackup}>Download paper answers</button></div>
+    <div className="paper-archive-footer"><button className="btn secondary" disabled={!runs.length} onClick={downloadBackup}>Download paper answers</button></div>
   </section>;
 }

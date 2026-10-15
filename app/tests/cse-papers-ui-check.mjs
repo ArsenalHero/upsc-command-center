@@ -15,6 +15,8 @@ const createWindow = (saved) => {
   w.structuredClone = globalThis.structuredClone;
   w.fetch = async () => ({ ok: true, json: async () => ({ url: "", publishableKey: "" }) });
   w.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
+  w.HTMLDialogElement.prototype.showModal = function () { this.setAttribute("open", ""); };
+  w.HTMLDialogElement.prototype.close = function () { this.removeAttribute("open"); };
   w.localStorage.setItem("upsc-command-center:v1", saved);
   w.eval(built.outputFiles[0].text);
   return w;
