@@ -248,7 +248,7 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  or p->>'participation'='Completed' and exists(select 1 from mock_private.attempts aa where aa.test_id=x.id and aa.user_id=u and aa.status='submitted')
  or p->>'participation'='Bookmarked' and exists(select 1 from mock_private.profiles pp where pp.user_id=u and x.id=any(pp.bookmarks)))
  and question_count>=coalesce((p->>'minQuestions')::integer,0) and duration<=coalesce((p->>'maxDuration')::integer,300)
- order by year desc,created_at desc,id limit limit_n+1 offset offset_n) x;
+ order by year desc,scheduled_at asc nulls last,lower(series),regexp_replace(lower(code),'[0-9]+','','g'),nullif(substring(code from '([0-9]+)$'),'')::numeric,lower(code),id limit limit_n+1 offset offset_n) x;
  select jsonb_build_object('coaching',(select coalesce(jsonb_agg(jsonb_build_object('id',id,'name',display_name) order by display_name),'[]') from mock_private.coaching c where exists(select 1 from mock_private.tests t where t.coaching_id=c.id and t.listed and t.status<>'draft')),
  'years',(select coalesce(jsonb_agg(year order by year desc),'[]') from (select distinct year from mock_private.tests where listed and status<>'draft') y),
  'series',(select coalesce(jsonb_agg(series order by series),'[]') from (select distinct series from mock_private.tests where listed and status<>'draft') y),

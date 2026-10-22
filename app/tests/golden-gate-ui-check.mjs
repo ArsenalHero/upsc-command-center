@@ -24,7 +24,7 @@ w.HTMLDialogElement.prototype.close = function () { this.removeAttribute("open")
 w.URL.createObjectURL = blob => { downloads.push(blob); return "blob:test-summary"; };
 w.URL.revokeObjectURL = () => {};
 const id = n => `00000000-0000-4000-8000-${String(n).padStart(12,"0")}`;
-const tests = Array.from({ length: 15 }, (_, i) => ({ id: id(i+1), code: `MOCK-${i+1}`, name: `Example mock ${i+1}`, coachingId: "academy", coaching: "Example Academy", series: "Prelims 2027", year: 2027, paper: i % 2 ? "CSAT" : "GS-I", kind: i % 3 ? "Full Length" : "Sectional", subjects: ["Polity"], topics: ["Constitution"], syllabus: "Constitution, rights and governance.", difficulty: "Moderate", duration: 30+i*10, positive: 2, negative: 2/3, question_count: 20, maximum: 40, participants: i*3, started: i, attempt_limit: 3, status: "active", language: "English", leaderboard: true }));
+const tests = Array.from({ length: 15 }, (_, i) => ({ id: id(i+1), code: `MOCK-${i+1}`, name: `Example mock ${i+1}`, coachingId: "academy", coaching: "Example Academy", series: "Prelims 2027", year: 2027, paper: i % 2 ? "CSAT" : "GS-I", kind: i % 3 ? "Full Length" : "Sectional", subjects: ["Polity"], topics: ["Constitution"], syllabus: "Constitution, rights and governance.", difficulty: "Moderate", duration: 30+i*10, positive: 2, negative: 2/3, question_count: 20, maximum: 40, participants: i*3, started: i, attempt_limit: 3, status: "active", language: "English", leaderboard: true, scheduled_at: `2026-11-${String(i+1).padStart(2,"0")}T05:30:00Z` }));
 const questions = [
   { id: "q1", question: "What is the purpose of constitutional rights?", options: { a: "Protect liberties", b: "Limit all voting", c: "Remove courts", d: "Replace legislation" }, correct: "a", explanation: "Constitutional rights protect individual liberties.", subject: "Polity", topic: "Rights", difficulty: "Moderate", positive: 2, negative: 2/3, outcome: "Correct", net: 2, response: { option: "a", seconds: 30, review: false, visited: true, confidence: "High", strategy: "Recall" } },
   { id: "q2", question: "Which principle guides constitutional governance?", options: { a: "Arbitrary power", b: "Rule of law", c: "No checks", d: "No legislature" }, correct: "b", explanation: "The rule of law guides constitutional governance.", subject: "Polity", topic: "Governance", difficulty: "Moderate", positive: 2, negative: 2/3, outcome: "Incorrect", net: -2/3, response: { option: "a", seconds: 30, review: true, visited: true, confidence: "Low", strategy: "Guess", errorType: "Concept Gap", revisionDate: "2000-01-01", bookmarked: true, note: "Revisit the governance principles." } },
@@ -43,11 +43,13 @@ const client = { auth: { onAuthStateChange(fn) { fn("INITIAL_SESSION", { access_
   else if (op === "catalog") {
     const rows = tests.filter(t => (!p.paper || t.paper === p.paper) && (!p.kind || t.kind === p.kind) && (!p.search || t.name.toLowerCase().includes(p.search.toLowerCase())) && (!p.year || String(t.year) === p.year) && (!p.maxDuration || t.duration <= Number(p.maxDuration)));
     data = { tests: rows.slice(p.offset || 0, (p.offset || 0) + (p.limit || 12) + 1), facets: { coaching: [{id:"academy",name:"Example Academy"}], years:[2027], series:["Prelims 2027"], subjects:["Polity"], topics:["Constitution"] } };
-  } else if (op === "history") data = [running, completed];
+  } else if (op === "history") data = w.emptyGateHistory ? [] : [running, completed];
   else if (op === "detail") data = { test: tests.find(t => t.id === p.testId) || tests[0] };
   else if (op === "attempt") data = completed;
-  else if (op === "notebook") data = questions.filter(q=>p.selection==="bookmarks"?q.response.bookmarked:q.outcome==="Incorrect").map(question => ({ attemptId: completed.id, test: tests[0], question }));
+  else if (op === "notebook") data = w.emptyGateNotebook ? [] : questions.filter(q=>p.selection==="bookmarks"?q.response.bookmarked:q.outcome==="Incorrect").map(question => ({ attemptId: completed.id, test: tests[0], question }));
   else if (op === "summary") data = { mocks:1, gs:1, csat:0, accuracy:50, negative:2/3, thisMonth:1, subjects:[], weakTopics:[], activity:[], comparisons:[] };
+  else if (op === "profile") data = { display_name: p.displayName };
+  else if (op === "championship") data = { rows: [], rules: `${p.paper}: complete five eligible mocks to qualify.` };
   else if (op === "bookmark-test") data = { bookmarked: true };
   else if (op === "start") data = running;
   else throw new Error(`Unexpected test operation: ${op}`);
@@ -69,6 +71,8 @@ await click("Verify & continue");
 await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Catalogue did not load after verification");
 assert.equal(w.document.querySelector('[aria-label="Mock test sections"]').querySelectorAll('a').length,5);
 assert.ok(w.document.querySelector('[aria-label="Your mock shortcuts"] a[href*="attempt"]'));
+assert.equal(w.document.querySelector('[aria-label="Sort mock tests on this page"] option').textContent,"Schedule sequence");
+assert.match(w.document.querySelector('.golden-schedule').textContent,/1 Nov 2026/);
 const compareButtons=[...w.document.querySelectorAll('[aria-label^="Compare Example mock"]')];
 compareButtons[0].click();await wait();compareButtons[1].click();await wait();
 await click("Compare 2 tests");
@@ -101,6 +105,14 @@ await click("Reset filters");
 assert.equal(w.document.querySelector('[aria-label="Mock Paper"]').value,"CSAT","Collection reset must retain its defining paper");
 await navigate('/tests/prelims/my-tests');
 await until(()=>w.document.querySelectorAll('.mock-history-list article').length===2,"History did not load");
+const preferences = w.document.querySelector(".mock-preferences");
+preferences.querySelector("summary").click(); await wait();
+assert.equal(preferences.open, true);
+await setField('[aria-label="Mock profile display name"]', "Renamed learner");
+await setField('.mock-preferences input[type="number"]', "80");
+await click("Save preferences");
+assert.match(preferences.textContent, /Preferences saved/);
+assert.ok(calls.some(c=>c.op==="profile"&&c.p.displayName==="Renamed learner"&&c.p.targetAccuracy===80));
 await setField('[aria-label="Mock history status"]',"running");
 assert.equal(w.document.querySelectorAll('.mock-history-list article').length,1);
 await navigate('/tests/prelims/reports');
@@ -122,6 +134,21 @@ const reviewLink=[...w.document.querySelectorAll('a')].find(a=>a.textContent.tri
 assert.ok(reviewLink); reviewLink.click();
 await until(()=>w.document.querySelector('.mock-review-question'),"Notebook link did not open question explanations");
 assert.match(w.document.querySelector('.mock-review-question').textContent,/Governance/);
+w.emptyGateHistory = true;
+await navigate('/tests/prelims/reports');
+await until(()=>w.document.querySelector('.mock-empty-state h3')?.textContent==='No mocks attempted yet.',"Empty reports did not explain the next step");
+assert.ok([...w.document.querySelectorAll('a')].some(a=>a.textContent.includes('Take your first mock')));
+assert.match(w.document.body.textContent,/Topics to revisit will appear here/);
+assert.match(w.document.body.textContent,/No completed mocks in the last year/);
+w.emptyGateNotebook = true;
+await navigate('/tests/prelims/bookmarks');
+await until(()=>w.document.querySelector('.mock-empty-state h3')?.textContent==='No bookmarked mock questions yet.',"Empty bookmarks did not explain how to save questions");
+assert.equal([...w.document.querySelectorAll('button')].find(b=>b.textContent.includes('Practise bookmarked questions')).disabled,true);
+await navigate('/tests/prelims/leaderboards');
+await until(()=>w.document.querySelector('.mock-championship-rules')?.textContent.includes('GS-I:'),"Championship rules did not load");
+await setField('[aria-label="Championship paper"]',"CSAT");
+await until(()=>w.document.querySelector('.mock-championship-rules')?.textContent.includes('CSAT:'),"Changing the championship paper did not refresh eligibility rules");
+assert.match(w.document.querySelector('.mock-championship-empty').textContent,/No participants meet/);
 w.gateAuth = {...w.gateAuth,user:{id:"account-two"}};
 w.rerenderGate();await wait();
 await navigate('/tests/prelims/discover');
