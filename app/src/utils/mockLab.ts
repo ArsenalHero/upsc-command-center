@@ -10,7 +10,18 @@ export const mockKinds=["Sectional","Full Length","Topic Test","Revision Test","
 export const mockErrors=["Concept Gap","Fact Forgotten","Confused Options","Overthinking","Poor Elimination","Guessing","Question Misread","Current Affairs Gap","Silly Mistake","Time Pressure"];
 export const reverseInstituteDisplayName=(name:string)=>name.trim().replace(/[\p{L}\p{N}'’]+/gu,word=>Array.from(word).reverse().join(""));
 export const newMockResponse=():MockResponse=>({option:"",review:false,visited:false,seconds:0,confidence:"",strategy:""});
-export const fmtMock=(value:number|undefined,unit="")=>value==null?"—":`${Number(value.toFixed(2))}${unit}`;
+export const fmtMock=(value:number|undefined,unit="")=>value==null||!Number.isFinite(value)?"—":`${Number(value.toFixed(2))}${unit}`;
+export function mockPenaltyLabel(positive:number,negative:number){
+ return positive>0&&negative>0&&Math.abs(negative-positive/3)<1e-10?`⅓ of ${fmtMock(positive)} (${fmtMock(negative)} approx.)`:`${fmtMock(negative)}`;
+}
+export function mockMarkingGroups(qs:MockQuestion[]){
+ const groups=new Map<string,{positive:number;negative:number;correct:number;incorrect:number;unattempted:number;gross:number;deductions:number}>();
+ for(const q of qs){const key=`${q.positive}:${q.negative}`;const g=groups.get(key)||{positive:q.positive,negative:q.negative,correct:0,incorrect:0,unattempted:0,gross:0,deductions:0};
+  if(q.outcome==='Correct'){g.correct++;g.gross+=q.positive;}else if(q.outcome==='Incorrect'){g.incorrect++;g.deductions+=q.negative;}else g.unattempted++;
+  groups.set(key,g);
+ }
+ return [...groups.values()];
+}
 export const mockTime=(seconds:number)=>`${Math.floor(Math.max(0,seconds)/60)}:${String(Math.floor(Math.max(0,seconds))%60).padStart(2,"0")}`;
 export function groupMockQuestions(qs:MockQuestion[],key:"subject"|"topic"|"errorType"|"confidence"|"strategy"|"difficulty"){
  const groups=new Map<string,{name:string;questions:number;attempted:number;correct:number;incorrect:number;net:number;negative:number;seconds:number;accuracy:number;attemptRate:number;scorePercent:number}>();

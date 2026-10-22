@@ -16,7 +16,7 @@ export function coreChunks(manifest) {
     for (const dependency of chunk.imports || []) visit(dependency);
   }
   for (const [key, chunk] of Object.entries(manifest)) {
-    if (chunk.isEntry || chunk.isDynamicEntry && (key.startsWith("src/pages/") && key !== "src/pages/PYQs.tsx" || key.startsWith("node_modules/"))) visit(key);
+    if (chunk.isEntry || chunk.isDynamicEntry && ((key.startsWith("src/pages/") || chunk.name === "MockLab") && key !== "src/pages/PYQs.tsx" || key.startsWith("node_modules/"))) visit(key);
   }
   if ([...files].some(file => /\/(?:questions-|question-support-)/.test(file))) throw new Error("A core page eagerly imports the question library.");
   return [...files].sort();

@@ -1,84 +1,108 @@
 {
-  "_Filters-XD3pjoH0.js": {
-    "file": "assets/Filters-XD3pjoH0.js",
+  "_Filters-CUNGuj9y.js": {
+    "file": "assets/Filters-CUNGuj9y.js",
     "name": "Filters",
     "imports": [
       "index.html",
-      "_sliders-horizontal-diYpSNNC.js"
+      "_sliders-horizontal-BzfmySl9.js"
     ]
   },
-  "_Insights-t6z5wpyZ.js": {
-    "file": "assets/Insights-t6z5wpyZ.js",
+  "_Insights-Te68qt8z.js": {
+    "file": "assets/Insights-Te68qt8z.js",
     "name": "Insights",
     "imports": [
       "index.html"
     ]
   },
-  "_RecordTable-B5i9dsh2.js": {
-    "file": "assets/RecordTable-B5i9dsh2.js",
+  "_MockLab-DtcuQVbV.css": {
+    "file": "assets/MockLab-DtcuQVbV.css",
+    "src": "_MockLab-DtcuQVbV.css"
+  },
+  "_MockLab-_5N7zoVF.js": {
+    "file": "assets/MockLab-_5N7zoVF.js",
+    "name": "MockLab",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_export-U2noKTOd.js",
+      "_sliders-horizontal-BzfmySl9.js",
+      "_flag-C5gbTGTP.js",
+      "_mockSession-CvKa-H_x.js",
+      "_shield-check-Bqhf05hI.js"
+    ],
+    "dynamicImports": [
+      "src/components/mock/MockCharts.tsx"
+    ],
+    "css": [
+      "assets/MockLab-DtcuQVbV.css",
+      "assets/mock-hYIfEe7S.css"
+    ]
+  },
+  "_RecordTable-DtNKdPHs.js": {
+    "file": "assets/RecordTable-DtNKdPHs.js",
     "name": "RecordTable",
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
-      "_trash-2-DOwJyOk6.js"
+      "_export-U2noKTOd.js",
+      "_trash-2-CDBA-ozK.js"
     ]
   },
-  "_ScatterChart-9CNODBt2.js": {
-    "file": "assets/ScatterChart-9CNODBt2.js",
+  "_ScatterChart-COnHKmz8.js": {
+    "file": "assets/ScatterChart-COnHKmz8.js",
     "name": "ScatterChart",
     "imports": [
       "index.html"
     ]
   },
-  "_StudyDetails-DsWZtnr4.js": {
-    "file": "assets/StudyDetails-DsWZtnr4.js",
+  "_StudyDetails-C6PoqPzg.js": {
+    "file": "assets/StudyDetails-C6PoqPzg.js",
     "name": "StudyDetails",
     "imports": [
       "index.html"
     ]
   },
-  "_TopicDetail-C0U2EuL2.js": {
-    "file": "assets/TopicDetail-C0U2EuL2.js",
+  "_TopicDetail-DmRHyKm0.js": {
+    "file": "assets/TopicDetail-DmRHyKm0.js",
     "name": "TopicDetail",
     "imports": [
       "index.html",
-      "_index-DDD01pk-.js"
+      "_index-t2fuELXe.js"
     ]
   },
-  "_export-DBNpZ0Em.js": {
-    "file": "assets/export-DBNpZ0Em.js",
+  "_export-U2noKTOd.js": {
+    "file": "assets/export-U2noKTOd.js",
     "name": "export",
     "imports": [
       "index.html"
     ]
   },
-  "_external-link-EXPjV8mJ.js": {
-    "file": "assets/external-link-EXPjV8mJ.js",
+  "_external-link-B5nxfGBB.js": {
+    "file": "assets/external-link-B5nxfGBB.js",
     "name": "external-link",
     "imports": [
       "index.html"
     ]
   },
-  "_flag-HbFhtvu3.js": {
-    "file": "assets/flag-HbFhtvu3.js",
+  "_flag-C5gbTGTP.js": {
+    "file": "assets/flag-C5gbTGTP.js",
     "name": "flag",
     "imports": [
       "index.html"
     ]
   },
-  "_flame-zwOoCCy6.js": {
-    "file": "assets/flame-zwOoCCy6.js",
+  "_flame-D3_vJIwP.js": {
+    "file": "assets/flame-D3_vJIwP.js",
     "name": "flame",
     "imports": [
       "index.html"
     ]
   },
-  "_index-DDD01pk-.js": {
-    "file": "assets/index-DDD01pk-.js",
+  "_index-t2fuELXe.js": {
+    "file": "assets/index-t2fuELXe.js",
     "name": "index",
     "imports": [
       "index.html",
-      "_ScatterChart-9CNODBt2.js"
+      "_ScatterChart-COnHKmz8.js"
     ]
   },
   "_mock-hYIfEe7S.css": {
@@ -89,8 +113,8 @@
     "file": "assets/mockSession-CvKa-H_x.js",
     "name": "mockSession"
   },
-  "_pencil-Df2Tej0U.js": {
-    "file": "assets/pencil-Df2Tej0U.js",
+  "_pencil-C32WaYrP.js": {
+    "file": "assets/pencil-C32WaYrP.js",
     "name": "pencil",
     "imports": [
       "index.html"
@@ -268,36 +292,36 @@
     "file": "assets/questions-supplied-explanations-9-bank-B2x9cbY-.js",
     "name": "questions-supplied-explanations-9-bank"
   },
-  "_shield-check-DRnBOGN-.js": {
-    "file": "assets/shield-check-DRnBOGN-.js",
+  "_shield-check-Bqhf05hI.js": {
+    "file": "assets/shield-check-Bqhf05hI.js",
     "name": "shield-check",
     "imports": [
       "index.html"
     ]
   },
-  "_sliders-horizontal-diYpSNNC.js": {
-    "file": "assets/sliders-horizontal-diYpSNNC.js",
+  "_sliders-horizontal-BzfmySl9.js": {
+    "file": "assets/sliders-horizontal-BzfmySl9.js",
     "name": "sliders-horizontal",
     "imports": [
       "index.html"
     ]
   },
-  "_trash-2-DOwJyOk6.js": {
-    "file": "assets/trash-2-DOwJyOk6.js",
+  "_trash-2-CDBA-ozK.js": {
+    "file": "assets/trash-2-CDBA-ozK.js",
     "name": "trash-2",
     "imports": [
       "index.html"
     ]
   },
-  "_upload-RwsiYY1p.js": {
-    "file": "assets/upload-RwsiYY1p.js",
+  "_upload-WtrAjdB5.js": {
+    "file": "assets/upload-WtrAjdB5.js",
     "name": "upload",
     "imports": [
       "index.html"
     ]
   },
   "index.html": {
-    "file": "assets/index-Cz_R8NUq.js",
+    "file": "assets/index-ZWz9Owm-.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -316,7 +340,7 @@
       "src/pages/Settings.tsx",
       "src/pages/Account.tsx",
       "src/pages/MockAccess.tsx",
-      "src/pages/MockLab.tsx",
+      "_MockLab-_5N7zoVF.js",
       "src/pages/PYQs.tsx",
       "src/pages/Practice.tsx"
     ],
@@ -330,138 +354,138 @@
     "src": "node_modules/@supabase/supabase-js/dist/index.mjs",
     "isDynamicEntry": true
   },
+  "src/components/mock/MockCharts.tsx": {
+    "file": "assets/MockCharts-DIvUqhgh.js",
+    "name": "MockCharts",
+    "src": "src/components/mock/MockCharts.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_MockLab-_5N7zoVF.js",
+      "_ScatterChart-COnHKmz8.js",
+      "_export-U2noKTOd.js",
+      "_sliders-horizontal-BzfmySl9.js",
+      "_flag-C5gbTGTP.js",
+      "_mockSession-CvKa-H_x.js",
+      "_shield-check-Bqhf05hI.js"
+    ],
+    "css": [
+      "assets/mock-hYIfEe7S.css"
+    ]
+  },
   "src/pages/Account.tsx": {
-    "file": "assets/Account-DBb4mNds.js",
+    "file": "assets/Account-BxrnM84j.js",
     "name": "Account",
     "src": "src/pages/Account.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
-      "_shield-check-DRnBOGN-.js",
-      "_upload-RwsiYY1p.js"
+      "_export-U2noKTOd.js",
+      "_shield-check-Bqhf05hI.js",
+      "_upload-WtrAjdB5.js"
     ]
   },
   "src/pages/Books.tsx": {
-    "file": "assets/Books-B1Oe5YfF.js",
+    "file": "assets/Books-Yr5XSS57.js",
     "name": "Books",
     "src": "src/pages/Books.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
-      "_pencil-Df2Tej0U.js",
-      "_trash-2-DOwJyOk6.js",
-      "_external-link-EXPjV8mJ.js"
+      "_export-U2noKTOd.js",
+      "_pencil-C32WaYrP.js",
+      "_trash-2-CDBA-ozK.js",
+      "_external-link-B5nxfGBB.js"
     ]
   },
   "src/pages/DailyStudy.tsx": {
-    "file": "assets/DailyStudy-BSX0R98D.js",
+    "file": "assets/DailyStudy-CprSH9bD.js",
     "name": "DailyStudy",
     "src": "src/pages/DailyStudy.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_RecordTable-B5i9dsh2.js",
-      "_StudyDetails-DsWZtnr4.js",
-      "_index-DDD01pk-.js",
-      "_export-DBNpZ0Em.js",
-      "_trash-2-DOwJyOk6.js",
-      "_ScatterChart-9CNODBt2.js"
+      "_RecordTable-DtNKdPHs.js",
+      "_StudyDetails-C6PoqPzg.js",
+      "_index-t2fuELXe.js",
+      "_export-U2noKTOd.js",
+      "_trash-2-CDBA-ozK.js",
+      "_ScatterChart-COnHKmz8.js"
     ]
   },
   "src/pages/Dashboard.tsx": {
-    "file": "assets/Dashboard-DEE1miwI.js",
+    "file": "assets/Dashboard-BjTTOPWt.js",
     "name": "Dashboard",
     "src": "src/pages/Dashboard.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_StudyDetails-DsWZtnr4.js"
+      "_StudyDetails-C6PoqPzg.js"
     ],
     "dynamicImports": [
       "src/pages/DashboardAnalytics.tsx"
     ]
   },
   "src/pages/DashboardAnalytics.tsx": {
-    "file": "assets/DashboardAnalytics-DozfBdwz.js",
+    "file": "assets/DashboardAnalytics-BWLpnTqy.js",
     "name": "DashboardAnalytics",
     "src": "src/pages/DashboardAnalytics.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Filters-XD3pjoH0.js",
-      "_Insights-t6z5wpyZ.js",
-      "_index-DDD01pk-.js",
-      "_flame-zwOoCCy6.js",
-      "_sliders-horizontal-diYpSNNC.js",
-      "_ScatterChart-9CNODBt2.js"
+      "_Filters-CUNGuj9y.js",
+      "_Insights-Te68qt8z.js",
+      "_index-t2fuELXe.js",
+      "_flame-D3_vJIwP.js",
+      "_sliders-horizontal-BzfmySl9.js",
+      "_ScatterChart-COnHKmz8.js"
     ]
   },
   "src/pages/Goals.tsx": {
-    "file": "assets/Goals-CZeDpLIF.js",
+    "file": "assets/Goals-BTMpwNy5.js",
     "name": "Goals",
     "src": "src/pages/Goals.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_trash-2-DOwJyOk6.js"
+      "_trash-2-CDBA-ozK.js"
     ]
   },
   "src/pages/Lectures.tsx": {
-    "file": "assets/Lectures-B8HWMjZL.js",
+    "file": "assets/Lectures-CVcjUR3Z.js",
     "name": "Lectures",
     "src": "src/pages/Lectures.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
-      "_flame-zwOoCCy6.js",
-      "_pencil-Df2Tej0U.js",
-      "_trash-2-DOwJyOk6.js"
+      "_export-U2noKTOd.js",
+      "_flame-D3_vJIwP.js",
+      "_pencil-C32WaYrP.js",
+      "_trash-2-CDBA-ozK.js"
     ]
   },
   "src/pages/MockAccess.tsx": {
-    "file": "assets/MockAccess-CzMqZKkD.js",
+    "file": "assets/MockAccess-Dv8bhd5R.js",
     "name": "MockAccess",
     "src": "src/pages/MockAccess.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
       "_mockSession-CvKa-H_x.js",
-      "_shield-check-DRnBOGN-.js"
+      "_shield-check-Bqhf05hI.js"
     ],
     "css": [
-      "assets/mock-hYIfEe7S.css"
-    ]
-  },
-  "src/pages/MockLab.tsx": {
-    "file": "assets/MockLab-CYI-mtJ2.js",
-    "name": "MockLab",
-    "src": "src/pages/MockLab.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_ScatterChart-9CNODBt2.js",
-      "_export-DBNpZ0Em.js",
-      "_sliders-horizontal-diYpSNNC.js",
-      "_flag-HbFhtvu3.js",
-      "_mockSession-CvKa-H_x.js",
-      "_shield-check-DRnBOGN-.js"
-    ],
-    "css": [
-      "assets/MockLab-COtUEdb-.css",
       "assets/mock-hYIfEe7S.css"
     ]
   },
   "src/pages/PYQs.tsx": {
-    "file": "assets/PYQs-iYXy6F5S.js",
+    "file": "assets/PYQs-BIpyI6qR.js",
     "name": "PYQs",
     "src": "src/pages/PYQs.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
+      "_export-U2noKTOd.js",
       "_questions-pyq-bank-B4Jow1Ms.js",
       "_questions-cse-2019-gs1-part-1-bank-B4UTbp5e.js",
       "_questions-cse-2019-gs1-part-2-bank-CRsszVoq.js",
@@ -505,114 +529,114 @@
       "_questions-supplied-explanations-8-bank-DsTVGtJ8.js",
       "_questions-supplied-explanations-9-bank-B2x9cbY-.js",
       "_questions-cse-text-papers-bank-309hExJl.js",
-      "_flag-HbFhtvu3.js"
+      "_flag-C5gbTGTP.js"
     ],
     "css": [
       "assets/PYQs-CjsI3GH_.css"
     ]
   },
   "src/pages/Practice.tsx": {
-    "file": "assets/Practice-Dzsb0yQt.js",
+    "file": "assets/Practice-CsDHktQd.js",
     "name": "Practice",
     "src": "src/pages/Practice.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Filters-XD3pjoH0.js",
-      "_RecordTable-B5i9dsh2.js",
-      "_Insights-t6z5wpyZ.js",
-      "_index-DDD01pk-.js",
+      "_Filters-CUNGuj9y.js",
+      "_RecordTable-DtNKdPHs.js",
+      "_Insights-Te68qt8z.js",
+      "_index-t2fuELXe.js",
       "src/pages/Syllabus.tsx",
-      "_sliders-horizontal-diYpSNNC.js",
-      "_export-DBNpZ0Em.js",
-      "_trash-2-DOwJyOk6.js",
-      "_ScatterChart-9CNODBt2.js",
-      "_TopicDetail-C0U2EuL2.js"
+      "_sliders-horizontal-BzfmySl9.js",
+      "_export-U2noKTOd.js",
+      "_trash-2-CDBA-ozK.js",
+      "_ScatterChart-COnHKmz8.js",
+      "_TopicDetail-DmRHyKm0.js"
     ],
     "css": [
       "assets/mock-hYIfEe7S.css"
     ]
   },
   "src/pages/Reports.tsx": {
-    "file": "assets/Reports-DNWgFT2Q.js",
+    "file": "assets/Reports-DKBXjHve.js",
     "name": "Reports",
     "src": "src/pages/Reports.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Insights-t6z5wpyZ.js",
-      "_index-DDD01pk-.js",
-      "_export-DBNpZ0Em.js",
-      "_ScatterChart-9CNODBt2.js"
+      "_Insights-Te68qt8z.js",
+      "_index-t2fuELXe.js",
+      "_export-U2noKTOd.js",
+      "_ScatterChart-COnHKmz8.js"
     ]
   },
   "src/pages/Resources.tsx": {
-    "file": "assets/Resources-BKxEsK9H.js",
+    "file": "assets/Resources-BX9tptE3.js",
     "name": "Resources",
     "src": "src/pages/Resources.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_RecordTable-B5i9dsh2.js",
-      "_external-link-EXPjV8mJ.js",
-      "_export-DBNpZ0Em.js",
-      "_trash-2-DOwJyOk6.js"
+      "_RecordTable-DtNKdPHs.js",
+      "_external-link-B5nxfGBB.js",
+      "_export-U2noKTOd.js",
+      "_trash-2-CDBA-ozK.js"
     ]
   },
   "src/pages/Revision.tsx": {
-    "file": "assets/Revision-BFIIZM68.js",
+    "file": "assets/Revision-BU7OA8y_.js",
     "name": "Revision",
     "src": "src/pages/Revision.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_RecordTable-B5i9dsh2.js",
-      "_TopicDetail-C0U2EuL2.js",
-      "_export-DBNpZ0Em.js",
-      "_trash-2-DOwJyOk6.js",
-      "_index-DDD01pk-.js",
-      "_ScatterChart-9CNODBt2.js"
+      "_RecordTable-DtNKdPHs.js",
+      "_TopicDetail-DmRHyKm0.js",
+      "_export-U2noKTOd.js",
+      "_trash-2-CDBA-ozK.js",
+      "_index-t2fuELXe.js",
+      "_ScatterChart-COnHKmz8.js"
     ]
   },
   "src/pages/Settings.tsx": {
-    "file": "assets/Settings-PUsr4NL5.js",
+    "file": "assets/Settings-DM53P9ux.js",
     "name": "Settings",
     "src": "src/pages/Settings.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_export-DBNpZ0Em.js",
-      "_upload-RwsiYY1p.js",
-      "_trash-2-DOwJyOk6.js"
+      "_export-U2noKTOd.js",
+      "_upload-WtrAjdB5.js",
+      "_trash-2-CDBA-ozK.js"
     ]
   },
   "src/pages/Syllabus.tsx": {
-    "file": "assets/Syllabus-BgB0SGsc.js",
+    "file": "assets/Syllabus-DCIpQT2K.js",
     "name": "Syllabus",
     "src": "src/pages/Syllabus.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_index-DDD01pk-.js",
-      "_TopicDetail-C0U2EuL2.js",
-      "_Filters-XD3pjoH0.js",
-      "_ScatterChart-9CNODBt2.js",
-      "_sliders-horizontal-diYpSNNC.js"
+      "_index-t2fuELXe.js",
+      "_TopicDetail-DmRHyKm0.js",
+      "_Filters-CUNGuj9y.js",
+      "_ScatterChart-COnHKmz8.js",
+      "_sliders-horizontal-BzfmySl9.js"
     ]
   },
   "src/pages/WeakAreas.tsx": {
-    "file": "assets/WeakAreas-2bdmRbmD.js",
+    "file": "assets/WeakAreas-BMqoM_AE.js",
     "name": "WeakAreas",
     "src": "src/pages/WeakAreas.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Filters-XD3pjoH0.js",
-      "_Insights-t6z5wpyZ.js",
-      "_index-DDD01pk-.js",
-      "_TopicDetail-C0U2EuL2.js",
-      "_sliders-horizontal-diYpSNNC.js",
-      "_ScatterChart-9CNODBt2.js"
+      "_Filters-CUNGuj9y.js",
+      "_Insights-Te68qt8z.js",
+      "_index-t2fuELXe.js",
+      "_TopicDetail-DmRHyKm0.js",
+      "_sliders-horizontal-BzfmySl9.js",
+      "_ScatterChart-COnHKmz8.js"
     ]
   }
 }

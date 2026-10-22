@@ -340,6 +340,11 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
  update mock_private.attempts set answers=jsonb_set(answers,array[name_n],r,true),result=jsonb_set(result,'{questions}',(select jsonb_agg(case when q->>'id'=name_n then q||jsonb_build_object('response',r) else q end order by n) from jsonb_array_elements(result->'questions') with ordinality x(q,n))) where id=a.id;
  end if;
  select * into a from mock_private.attempts where id=aid;
+ -- Compact acknowledgement for background autosaves. The ownership check,
+ -- answer validation, sequence lock and expiry handling above still apply.
+ if op='save' and p->>'compact'='true' then
+ return jsonb_build_object('id',a.id,'testId',a.test_id,'status',a.status,'sequence',a.save_seq,'serverNow',clock_timestamp());
+ end if;
  rows=mock_private.attempt_public(a);
  if a.status='submitted' and a.test_id is not null then
  perform mock_private.expire(a.test_id); select to_jsonb(b)-'user_id'-'attempt_id' into mine from mock_private.board(a.test_id) b where b.user_id=u;

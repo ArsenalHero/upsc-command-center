@@ -55,6 +55,12 @@ test("offline build follows static dependencies and keeps question libraries out
   };
   assert.deepEqual(coreChunks(manifest), ["./assets/app.css", "./assets/app.js", "./assets/books.js", "./assets/shared.js"]);
   assert.throws(() => coreChunks({ ...manifest, "src/pages/Books.tsx": { ...manifest["src/pages/Books.tsx"], imports: ["questions"] } }), /eagerly imports/);
+  const withMockChunks = coreChunks({ ...manifest,
+    "_MockLab-shared.js": { file: "assets/MockLab.js", name: "MockLab", isDynamicEntry: true, imports: ["shared"], dynamicImports: ["src/components/mock/MockCharts.tsx"] },
+    "src/components/mock/MockCharts.tsx": { file: "assets/MockCharts.js", isDynamicEntry: true, imports: ["shared"] },
+  });
+  assert.ok(withMockChunks.includes("./assets/MockLab.js"), "The exam shell remains available offline after charts are split out");
+  assert.ok(!withMockChunks.includes("./assets/MockCharts.js"), "Optional report charts load on demand");
 });
 
 test("worker installs the study shell and landscapes without fetching question banks", async () => {

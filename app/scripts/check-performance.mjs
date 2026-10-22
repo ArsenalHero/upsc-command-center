@@ -15,6 +15,10 @@ function dependencies(roots) {
 }
 const initial = dependencies([entry, "src/pages/Dashboard.tsx"]);
 const practice = dependencies([entry, "src/pages/Practice.tsx"]);
+const mockEntry = Object.keys(manifest).find(key => key === "src/pages/MockLab.tsx" || manifest[key].name === "MockLab" && manifest[key].isDynamicEntry);
+assert.ok(mockEntry, "Missing mock exam entry");
+const mockExam = dependencies([entry, mockEntry]);
+assert.ok(!mockExam.some(file => /MockCharts|ScatterChart|questions-|question-support-/.test(file)), "Timed mock exams eagerly load report charts or question banks");
 const offline = JSON.parse(readFileSync(`${root}/sw.js`, "utf8").match(/const FILES=(\[.*?\]);/)[1]);
 const size = files => files.reduce((total, file) => total + statSync(`${root}/${file}`).size, 0);
 const dashboardBytes = size(initial), offlineBytes = size(offline.filter(file => file !== "./"));
