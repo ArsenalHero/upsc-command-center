@@ -45,3 +45,36 @@ test("catalogue follows the schedule across pagination, filters and natural code
     assert.deepEqual(codeList(await api({ limit: 12, offset: 12, guestToken })), codeList(second));
   } finally { await db.close(); }
 });
+
+test("catalogue totals count every published mock and refresh independently of filters and pagination", async () => {
+  const db = new PGlite(), account = "11111111-1111-4111-8111-111111111111";
+  const api = async (op: string, p: Record<string, unknown> = {}) =>
+    (await db.query<{ data: any }>("select public.mock_lab($1,$2::jsonb) data", [op, JSON.stringify(p)])).rows[0].data;
+  try {
+    await prepareMockDatabase(db, [{ id: account }]);
+    await setMockUser(db, account);
+    await assert.rejects(api("catalog-summary"), /License verification is required/);
+    await api("verify-license", { licenseKey: fixtureLicense });
+    assert.deepEqual(await api("catalog-summary"), { tests: 0, questions: 0 });
+    await db.exec("reset role");
+    await db.exec(`insert into mock_private.tests(code,name,year,paper,kind,status,listed,publish_at,question_count,series,duration,positive,negative)
+      select v.*,'Totals fixture',120,2,2.0/3 from (values ('GS','GS',2027,'GS-I','Full Length','active',true,now(),100),
+      ('CSAT','CSAT',2027,'CSAT','Full Length','closed',true,now(),80),
+      ('OLD','OLD',2026,'GS-I','Sectional','archived',true,now(),40),
+      ('DRAFT','DRAFT',2027,'GS-I','Full Length','draft',true,now(),100),
+      ('HIDDEN','HIDDEN',2027,'GS-I','Full Length','active',false,now(),100),
+      ('FUTURE','FUTURE',2027,'GS-I','Full Length','active',true,now()+interval '1 day',100)) v`);
+    await setMockUser(db, account);
+    assert.deepEqual(await api("catalog-summary", { paper: "CSAT", limit: 1, offset: 100, search: "missing" }), { tests: 3, questions: 220 });
+    assert.equal((await api("catalog", { limit: 1 })).tests.length, 2);
+    await setMockUser(db, null);
+    const guestToken = "ac".repeat(32);
+    await api("verify-license", { licenseKey: fixtureLicense, guestToken });
+    assert.deepEqual(await api("catalog-summary", { guestToken }), { tests: 3, questions: 220 });
+    await db.exec("reset role");
+    await db.query("update mock_private.tests set question_count=200 where code='GS'");
+    await setMockUser(db, null);
+    assert.deepEqual(await api("catalog-summary", { guestToken }), { tests: 3, questions: 320 });
+    await assert.rejects(api("catalog-summary"), /Sign in or verify your license key/);
+  } finally { await db.close(); }
+});

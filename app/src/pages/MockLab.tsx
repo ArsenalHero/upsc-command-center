@@ -9,6 +9,7 @@ import type { ComponentProps } from "react";
 import { fmtMock,groupMockQuestions,importMockQuestions,mockErrors,mockInsights,mockKinds,mockPenaltyLabel,mockTime,newMockResponse,reverseInstituteDisplayName,type MockAttempt,type MockHistory,type MockQuestion,type MockResponse,type MockTest,type Position } from "../utils/mockLab";
 import { MockScoring } from "../components/mock/MockScoring";
 import { GoldenCatalogue } from "../components/mock/GoldenCatalogue";
+import { MockQuestionTotal } from "../components/mock/MockQuestionTotal";
 import { goldenSummaryCSV } from "../utils/goldenGate";
 import { download } from "../services/export";
 import { dateKey } from "../utils/date";
@@ -37,7 +38,7 @@ export default function MockLab(){
  const child=tail[1],attemptId=tail[2];
  const navView=child==='result'?'reports':child==='leaderboard'?'leaderboards':/^[0-9a-f-]{36}$/.test(view)?'discover':view;
  if(child==="attempt"&&attemptId)return <MockExam key={attemptId} id={attemptId}/>;
- return <div className="mock-lab"><PageHeader eyebrow="UPSC PRELIMS MOCK TESTS" title="Golden Gate" description="GS Paper I and CSAT Paper II · Timed mocks, participant rankings and a clearer plan for your next revision."/>
+ return <div className="mock-lab"><PageHeader eyebrow="UPSC PRELIMS MOCK TESTS" title="Golden Gate" description="GS Paper I and CSAT Paper II · Timed mocks, participant rankings and a clearer plan for your next revision." action={<MockQuestionTotal api={api}/>}/>
  <nav className="mock-nav" aria-label="Mock test sections">{nav.map(([path,title])=><Link key={path} aria-current={(navView===path||(path==="discover"&&collections.some(([p])=>p===navView))||(path==="mistakes"&&navView==="bookmarks"))?'page':undefined} to={`${root}/${path}`}>{title}</Link>)}{identity.admin&&<Link to={`${root}/admin`}>Manage Tests</Link>}</nav>
  {collections.some(([path])=>path===view)&&<nav className="golden-collection-nav" aria-label="Mock collections">{collections.map(([path,label])=><Link key={path} aria-current={view===path?'page':undefined} to={`${root}/${path}`}>{label}</Link>)}</nav>}
  {(view==="mistakes"||view==="bookmarks")&&<nav className="golden-collection-nav" aria-label="Review collections"><Link to={`${root}/mistakes`} aria-current={view==="mistakes"?'page':undefined}>My mistakes</Link><Link to={`${root}/bookmarks`} aria-current={view==="bookmarks"?'page':undefined}>Bookmarked questions</Link></nav>}

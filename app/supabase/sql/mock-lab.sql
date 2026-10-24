@@ -231,6 +231,10 @@ create or replace function mock_private.api(op text,p jsonb default '{}') return
    return jsonb_build_object('authorized',false);
  end if;
  if not authorized then raise exception 'License verification is required to access Mock Tests' using errcode='PT403'; end if;
+ if op='catalog-summary' then
+   return (select jsonb_build_object('tests',count(*),'questions',coalesce(sum(question_count),0))
+     from mock_private.tests where listed and status<>'draft' and publish_at<=now());
+ end if;
  if op in ('catalog','detail') then
  if op='detail' then select * into t from mock_private.tests where id=(p->>'testId')::uuid and listed and status<>'draft' and publish_at<=now();
  if not found then raise exception 'Test not available'; end if;

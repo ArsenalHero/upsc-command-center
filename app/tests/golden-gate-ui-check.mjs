@@ -40,6 +40,10 @@ const client = { auth: { onAuthStateChange(fn) { fn("INITIAL_SESSION", { access_
   if (!licensedAccounts.has(w.gateAuth.user.id)) return { data: null, error: { message: "Permission denied" } };
   let data;
   if (op === "identity") data = { profile: { display_name: "Example learner", target_accuracy: 75 }, admin: false };
+  else if (op === "catalog-summary") {
+    if (w.failGateCount) throw new Error("Count request failed");
+    data = w.gateCountOverride || { questions: tests.reduce((n, t) => n + t.question_count, 0), tests: tests.length };
+  }
   else if (op === "catalog") {
     const rows = tests.filter(t => (!p.paper || t.paper === p.paper) && (!p.kind || t.kind === p.kind) && (!p.search || t.name.toLowerCase().includes(p.search.toLowerCase())) && (!p.year || String(t.year) === p.year) && (!p.maxDuration || t.duration <= Number(p.maxDuration)));
     data = { tests: rows.slice(p.offset || 0, (p.offset || 0) + (p.limit || 12) + 1), facets: { coaching: [{id:"academy",name:"Example Academy"}], years:[2027], series:["Prelims 2027"], subjects:["Polity"], topics:["Constitution"] } };
@@ -69,6 +73,8 @@ assert.equal(calls.some(c=>c.op==="catalog"),false);
 await setField('[name="licenseKey"]',"valid-test-key");
 await click("Verify & continue");
 await until(()=>w.document.querySelectorAll('.golden-test-card').length===12,"Catalogue did not load after verification");
+await until(()=>w.document.querySelector('.mock-question-total strong')?.textContent==="300","Header must count all mocks, including those on later pages");
+assert.match(w.document.querySelector('.mock-question-total').textContent,/Total questions300Across 15 mock tests/);
 assert.equal(w.document.querySelector('[aria-label="Mock test sections"]').querySelectorAll('a').length,5);
 assert.ok(w.document.querySelector('[aria-label="Your mock shortcuts"] a[href*="attempt"]'));
 assert.equal(w.document.querySelector('[aria-label="Sort mock tests on this page"] option').textContent,"Schedule sequence");
@@ -86,6 +92,7 @@ assert.match(w.document.body.textContent,/Choose up to three tests/);
 await click("Clear");
 await click("CSAT Paper II");
 await until(()=>!w.document.querySelector('.golden-loading')&&w.document.querySelectorAll('.golden-test-card').length===7,"CSAT preset did not filter");
+assert.equal(w.document.querySelector('.mock-question-total strong').textContent,"300","Paper filters must not change the overall question count");
 assert.equal(w.document.querySelector('[aria-label="Mock Paper"]').value,"CSAT");
 await click("Save this search");
 assert.match(w.localStorage.getItem('golden-gate:search:account-one:discover'),/CSAT/);
@@ -99,6 +106,15 @@ await setField('[aria-label="Sort mock tests on this page"]',"duration");
 assert.match(w.document.querySelector('.golden-test-card h3').textContent,/Example mock 1$/);
 await click("Next tests");
 await until(()=>w.document.querySelector('.golden-test-card h3')?.textContent==="Example mock 13","Pagination did not load the next page");
+assert.equal(w.document.querySelector('.mock-question-total strong').textContent,"300");
+w.gateCountOverride={questions:4300,tests:66};w.dispatchEvent(new w.Event("focus"));
+await until(()=>w.document.querySelector('.mock-question-total strong')?.textContent==="4,300","Returning to the tab must refresh newly added questions");
+w.gateCountOverride={questions:0,tests:0};w.dispatchEvent(new w.Event("focus"));
+await until(()=>w.document.querySelector('.mock-question-total strong')?.textContent==="0","An empty catalogue must show an authentic zero");
+w.failGateCount=true;w.dispatchEvent(new w.Event("focus"));
+await until(()=>w.document.querySelector('.mock-question-total button')?.textContent==="Retry count","A failed count must offer retry");
+w.failGateCount=false;delete w.gateCountOverride;await click("Retry count");
+await until(()=>w.document.querySelector('.mock-question-total strong')?.textContent==="300","Retry must recover the catalogue count");
 await navigate('/tests/prelims/csat');
 await until(()=>w.document.querySelector('[aria-label="Mock Paper"]')?.value==="CSAT"&&!w.document.querySelector('.golden-loading'),"CSAT collection did not open");
 await click("Reset filters");
