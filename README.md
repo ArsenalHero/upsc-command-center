@@ -4,6 +4,14 @@ Website: [arsenalhero.github.io/upsc-command-center](https://arsenalhero.github.
 
 A study tracker for UPSC preparation: syllabus, sessions, goals, practice, tests, revision, and reports. The complete React/TypeScript source is in `app/`; the built website is at this repository's root.
 
+## Aurum subject practice
+
+[Golden Gate → Aurum](https://arsenalhero.github.io/upsc-command-center/#/tests/prelims/aurum) lets you choose one or multiple subjects, PYQs / mock test questions / both, and 1–100 questions per set. It shows fresh-question availability, saves progress automatically, supports resume after a reload, and provides answer explanations and a completion summary.
+
+Questions allocated to any Aurum set stay excluded from future sets, including skipped or unfinished questions. Matching content in different sources and repeated uploads shares one identity; updating a question under its existing source ID does not reset its history. Exhausted selections ask you to choose fewer questions, more subjects or another source. Account history follows the account across devices; guest history remains linked to the browser's existing Golden Gate guest identity. Aurum is untimed practice, separate from ranked mock attempts.
+
+Apply the Aurum backend migration before deploying its frontend; see [setup and verification](app/docs/AURUM.md).
+
 ## PYQ practice
 
 The [PYQ section](https://arsenalhero.github.io/upsc-command-center/#/pyqs) contains **4,511 unique questions**. It includes the complete 2025 UPSC Booklet A papers (100 GS-I and 80 CSAT) and supplied Polity, Geography, Environment, Economy and Science & Technology collections. The latest 13 files contain 2,469 source questions: 2,386 unique additions and 83 repeated versions. Another 81 repeated entries in the previous bank are grouped. Each repeated question has one practice entry, with every source version and explanation retained. Existing question IDs, saved sessions and historical grading remain readable.
