@@ -21,6 +21,13 @@ export type AurumState = {
   seen: string[]; seenIds: string[]; mocks: AurumCandidate[]; active: AurumSession | null; latest: AurumSession | null;
   completed: number; practised: number;
 };
+export type AurumPreview = Omit<AurumSession, "questions" | "answers">;
+export type AurumCatalog = {
+  source: AurumSource; selected: string[]; available: number;
+  sources: Record<AurumSource, number>;
+  subjects: ({ name: string } & Record<AurumSource, number>)[];
+  active: AurumPreview | null; latest: AurumPreview | null; completed: number; practised: number;
+};
 export const aurumSources: { id: AurumSource; label: string; description: string }[] = [
   { id: "pyq", label: "PYQs", description: "Previous year questions" },
   { id: "mock", label: "Mock test questions", description: "From Golden Gate mocks" },

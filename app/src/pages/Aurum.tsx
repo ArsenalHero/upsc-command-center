@@ -1,111 +1,121 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, CheckCircle2, Layers3, Play, RefreshCw, ShieldCheck, Sparkles } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Layers3, Play, RefreshCw, Search, ShieldCheck, Shuffle, Sparkles } from "lucide-react";
 import type { GoldenAPI } from "../components/mock/GoldenCatalogue";
 import { Modal, ProgressBar } from "../components/ui";
 import { QuestionText } from "../components/QuestionText";
 import { ReviewedExplanationText } from "../components/ReviewedExplanation";
 import type { PYQQuestion } from "../utils/pyq";
-import { aurumCount, aurumPool, aurumSources, chooseAurumQuestions, type AurumCandidate, type AurumSession, type AurumSource, type AurumState } from "../utils/aurum";
+import { aurumSources, type AurumCatalog, type AurumPreview, type AurumSession, type AurumSource } from "../utils/aurum";
 import "../aurum.css";
 
 export default function Aurum({ api }: { api: GoldenAPI }) {
-  const [state, setState] = useState<AurumState | null>(null), [bank, setBank] = useState<AurumCandidate[]>([]);
+  const [catalog, setCatalog] = useState<AurumCatalog | null>(null), [catalogKey, setCatalogKey] = useState("");
   const [source, setSource] = useState<AurumSource>("both"), [subjects, setSubjects] = useState<string[]>([]);
   const [count, setCount] = useState("10"), [search, setSearch] = useState("");
   const [session, setSession] = useState<AurumSession | null>(null), [error, setError] = useState("");
   const [loading, setLoading] = useState(true), [busy, setBusy] = useState(false), [reload, setReload] = useState(0);
-  const requestId = useRef<string | null>(null);
+  const requestId = useRef<string | null>(null), cache = useRef(new Map<string, AurumCatalog>());
+  const queryKey = JSON.stringify([source, [...subjects].sort()]);
 
   useEffect(() => {
     let live = true;
-    setLoading(true); setError("");
-    Promise.all([api<AurumState>("aurum-state"), import("../data/aurumBank").then(m => m.loadAurumPYQs())])
-      .then(([next, pyqs]) => { if (live) { setState(next); setBank(pyqs); } })
-      .catch(e => { if (live) setError(e.message); })
-      .finally(() => { if (live) setLoading(false); });
-    return () => { live = false; };
-  }, [api, reload]);
+    setError("");
+    const cached = cache.current.get(queryKey);
+    if (cached) { setCatalog(cached); setCatalogKey(queryKey); setLoading(false); return; }
+    setLoading(true);
+    // Coalesce quick checkbox changes; never download question bodies at setup.
+    const timer = setTimeout(() => {
+      const [selectedSource, selectedSubjects] = JSON.parse(queryKey);
+      api<AurumCatalog>("aurum-catalog", { source: selectedSource, subjects: selectedSubjects })
+        .then(next => { if (live) { cache.current.set(queryKey, next); setCatalog(next); setCatalogKey(queryKey); } })
+        .catch(e => { if (live) setError(e.message); })
+        .finally(() => { if (live) setLoading(false); });
+    }, catalog ? 100 : 0);
+    return () => { live = false; clearTimeout(timer); };
+  }, [api, queryKey, reload]);
 
-  const candidates = useMemo(() => [...bank, ...(state?.mocks || [])], [bank, state?.mocks]);
-  const seen = useMemo(() => [...(state?.seen || []), ...(state?.seenIds || [])], [state?.seen, state?.seenIds]);
-  const fresh = useMemo(() => aurumPool(candidates, seen, source), [candidates, seen, source]);
-  const names = useMemo(() => [...new Set(candidates.flatMap(q => q.subjects))].sort(), [candidates]);
-  const pool = useMemo(() => aurumPool(candidates, seen, source, subjects), [candidates, seen, source, subjects]);
-  const available = aurumCount(pool), n = Number(count);
-  const valid = subjects.length > 0 && Number.isInteger(n) && n >= 1 && n <= 100 && n <= available;
-  const counts = useMemo(() => new Map(names.map(s => [s, aurumCount(fresh.filter(q => q.subjects.includes(s)))])), [names, fresh]);
+  const names = catalog?.subjects.map(s => s.name) || [];
+  const counts = new Map(catalog?.subjects.map(s => [s.name, s[source]]) || []);
+  const matching = names.filter(s => s.toLowerCase().includes(search.toLowerCase()));
+  const ready = !!catalog && catalogKey === queryKey && !loading;
+  const available = ready ? catalog.available : 0, n = Number(count);
+  const valid = ready && subjects.length > 0 && Number.isInteger(n) && n >= 1 && n <= 100 && n <= available;
+  const selectedSource = aurumSources.find(s => s.id === source)!;
 
+  function refresh() { cache.current.clear(); setReload(v => v + 1); }
   async function start() {
     if (!valid || busy) return;
     setBusy(true); setError("");
     try {
       requestId.current ||= crypto.randomUUID();
-      const next = await api<AurumSession>("aurum-start", {
-        requestId: requestId.current, source, subjects, count: n, questions: chooseAurumQuestions(pool, n, source),
-      });
-      requestId.current = null;
-      setSession(next);
+      const next = await api<AurumSession>("aurum-start-v2", { requestId: requestId.current, source, subjects, count: n });
+      requestId.current = null; setSession(next);
     } catch (e) { setError((e as Error).message); }
     finally { setBusy(false); }
   }
-  function back() { setSession(null); setReload(v => v + 1); }
+  async function openSession(preview: AurumPreview) {
+    setBusy(true); setError("");
+    try { setSession(await api<AurumSession>("aurum-session", { sessionId: preview.id })); }
+    catch (e) { setError((e as Error).message); }
+    finally { setBusy(false); }
+  }
+  function back() { setSession(null); refresh(); }
 
   if (session) return <AurumPractice key={session.id} initial={session} api={api} onBack={back} />;
   return <div className="aurum">
     <section className="aurum-hero">
-      <div><span className="eyebrow">GOLDEN GATE · SUBJECT PRACTICE</span><h2>Aurum<span>A little practice. A fresh perspective.</span></h2>
-        <p>Choose your subjects. Set your pace. Build a practice set from PYQs, mock tests, or a mix of both.</p>
-        <span className="aurum-promise"><ShieldCheck size={16} />Fresh questions in every new set</span>
-      </div><div className="aurum-emblem" aria-hidden="true"><Sparkles size={39} /><span>Au</span><small>AURUM</small></div>
+      <div><span className="eyebrow">GOLDEN GATE / SUBJECT PRACTICE</span><h2>Aurum<span>A focused set. A fresh start.</span></h2>
+        <p>Your subjects, your pace. Practise with PYQs, mock questions, or both.</p>
+        <div className="aurum-hero-details"><span><ShieldCheck size={14} />No repeats</span><span><CheckCircle2 size={14} />Progress saved</span><span>Untimed practice</span></div>
+      </div><div className="aurum-emblem" aria-hidden="true"><span>Au</span><Sparkles size={20} /></div>
     </section>
-    {loading ? <div className="card aurum-loading" role="status">Preparing your fresh question pool…</div>
-      : !state ? <section className="card aurum-empty" role="alert"><h3>We couldn’t open Aurum</h3><p>{error}</p><button className="btn primary" onClick={() => setReload(v => v + 1)}>Retry</button></section>
-      : <>
-        {state.active && <section className="card aurum-resume"><div><Play size={22} /><div><h3>Your practice is waiting</h3>
-          <p>{state.active.summary.answered} of {state.active.summary.total} questions reviewed · {state.active.subjects.join(" · ")}</p></div></div>
-          <button className="btn primary" onClick={() => setSession(state.active)}>Resume practice<ArrowRight size={16} /></button></section>}
-        <div className="aurum-builder">
-          <section className="card aurum-config" aria-label="Build an Aurum practice set">
-            <fieldset className="aurum-fieldset"><legend><span>01</span>Choose your question source</legend>
-              <div className="aurum-source-grid">{aurumSources.map(s => <label key={s.id} className={source === s.id ? "selected" : ""}>
-                <input type="radio" name="aurum-source" value={s.id} checked={source === s.id} onChange={() => setSource(s.id)} />
-                <span><strong>{s.label}</strong><small>{s.description}</small></span>{source === s.id && <Check size={16} aria-hidden="true" />}
-              </label>)}</div>
-            </fieldset>
-            <fieldset className="aurum-fieldset"><legend><span>02</span>Select one or more subjects</legend>
-              <div className="aurum-subject-tools"><input type="search" aria-label="Find an Aurum subject" placeholder="Find a subject…" value={search} onChange={e => setSearch(e.target.value)} />
-                <button type="button" className="text-btn" onClick={() => setSubjects(names.filter(s => (counts.get(s) || 0) > 0))}>Select all available</button>
-                <button type="button" className="text-btn" disabled={!subjects.length} onClick={() => setSubjects([])}>Clear</button></div>
-              <div className="aurum-subject-grid">{names.filter(s => s.toLowerCase().includes(search.toLowerCase())).map(s => <label key={s} className={`${subjects.includes(s) ? "selected" : ""} ${!counts.get(s) ? "exhausted" : ""}`}>
-                <input type="checkbox" checked={subjects.includes(s)} onChange={e => setSubjects(previous => e.target.checked ? [...previous, s] : previous.filter(v => v !== s))} />
-                <span>{s}<small>{counts.get(s) || 0} fresh</small></span>
-              </label>)}</div>
-              {!names.some(s => s.toLowerCase().includes(search.toLowerCase())) && <p className="muted">No subjects match your search.</p>}
-            </fieldset>
-            <fieldset className="aurum-fieldset"><legend><span>03</span>How many questions?</legend>
-              <div className="aurum-count-controls"><label htmlFor="aurum-count">Number of questions<input id="aurum-count" type="number" inputMode="numeric" min={1} max={Math.min(100, available) || 100} step={1} value={count} onChange={e => setCount(e.target.value)} aria-describedby="aurum-count-help" /></label>
-                <div className="aurum-quick-count" role="group" aria-label="Quick question counts">{[5, 10, 20, 50].map(value => <button key={value} aria-pressed={n === value} disabled={value > available || !subjects.length} onClick={() => setCount(String(value))}>{value}</button>)}</div></div>
-              <p id="aurum-count-help" className="small muted">Choose 1–100 questions, up to the number available in your selection.</p>
-            </fieldset>
-          </section>
-          <aside className="card aurum-set-summary" aria-label="Your practice set">
-            <span className="aurum-summary-icon"><Layers3 size={24} /></span><h3>Your next practice</h3>
-            <div className="aurum-available" aria-live="polite"><strong>{subjects.length ? available.toLocaleString() : "—"}</strong><span>fresh questions available</span></div>
-            <dl><div><dt>Source</dt><dd>{aurumSources.find(s => s.id === source)?.label}</dd></div><div><dt>Subjects</dt><dd>{subjects.length || "Choose below"}</dd></div><div><dt>Set size</dt><dd>{Number.isInteger(n) && n > 0 ? n : "—"}</dd></div></dl>
-            {!!subjects.length && !available && <p className="aurum-notice" role="status">You’ve used every question in this selection. Add subjects or change the source to keep practising.</p>}
-            {!!subjects.length && available > 0 && n > available && <p className="aurum-notice" role="status">Only {available} fresh questions remain. Choose a smaller set or add subjects.</p>}
-            {!!subjects.length && (!Number.isInteger(n) || n < 1 || n > 100) && <p className="aurum-notice" role="status">Enter a whole number from 1 to 100.</p>}
-            {error && <p className="mock-error" role="alert">{error}</p>}
-            {error && <button className="text-btn" onClick={() => { requestId.current = null; setReload(v => v + 1); }}><RefreshCw size={14} />Refresh available questions</button>}
-            <button className="btn primary" disabled={!valid || busy || !!state.active} onClick={() => void start()}>{busy ? "Creating your set…" : state.active ? "Resume your current set above" : "Start practice"}<ArrowRight size={16} /></button>
-            {!subjects.length && <p className="small muted">Select a subject to begin.</p>}
-            <p className="aurum-save-note"><ShieldCheck size={16} />Questions from every Aurum set stay excluded from future sets, including skipped questions. Your progress saves automatically.</p>
-            {source === "both" && subjects.length > 0 && <p className="small muted">{aurumCount(pool.filter(q => q.origin === "pyq"))} PYQs · {aurumCount(pool.filter(q => q.origin === "mock"))} mock questions. Duplicates count once; a mixed set uses both sources when available.</p>}
-          </aside>
-        </div>
-        <section className="aurum-history"><p><CheckCircle2 size={16} />{state.practised} questions reserved across {state.completed} completed sets</p>
-          {state.latest && <button className="text-btn" onClick={() => setSession(state.latest)}>Review latest set<ArrowRight size={14} /></button>}</section>
-      </>}
+    {catalog?.active && <section className="card aurum-resume"><div><Play size={20} /><div><h3>Pick up where you left off</h3>
+      <p>{catalog.active.summary.answered} of {catalog.active.summary.total} reviewed · {catalog.active.subjects.join(" · ")}</p></div></div>
+      <button className="btn primary" disabled={busy} onClick={() => void openSession(catalog.active!)}>Resume practice<ArrowRight size={15} /></button></section>}
+    <div className="aurum-builder">
+      <section className="card aurum-config" aria-label="Build an Aurum practice set">
+        <fieldset className="aurum-fieldset"><legend><span>01</span>Question source</legend>
+          <div className="aurum-source-grid">{aurumSources.map(s => <label key={s.id} className={source === s.id ? "selected" : ""}>
+            <input type="radio" name="aurum-source" value={s.id} checked={source === s.id} onChange={() => setSource(s.id)} />
+            <span className="aurum-source-icon" aria-hidden="true">{s.id === "pyq" ? <BookOpen size={18} /> : s.id === "mock" ? <Layers3 size={18} /> : <Shuffle size={18} />}</span>
+            <span className="aurum-source-text"><strong>{s.label}</strong><small>{s.description}</small></span>
+          </label>)}</div>
+        </fieldset>
+        <fieldset className="aurum-fieldset"><legend><span>02</span>Your subjects <small>{subjects.length ? `${subjects.length} selected` : "Choose one or more"}</small></legend>
+          <div className="aurum-subject-tools"><div className="aurum-search"><Search size={15} aria-hidden="true" /><input type="search" aria-label="Find an Aurum subject" placeholder="Search subjects" value={search} onChange={e => setSearch(e.target.value)} /></div>
+            <div><button type="button" className="text-btn" disabled={!names.length} onClick={() => setSubjects(names.filter(s => (counts.get(s) || 0) > 0))}>Select all available</button>
+            <button type="button" className="text-btn" disabled={!subjects.length} onClick={() => setSubjects([])}>Clear</button></div></div>
+          <div className="aurum-subject-grid" aria-busy={!catalog && loading}>{!catalog && loading ? Array.from({ length: 18 }, (_, i) => <div className="aurum-subject-skeleton" key={i} aria-hidden="true" />)
+            : matching.map(s => <label key={s} className={`${subjects.includes(s) ? "selected" : ""} ${!counts.get(s) ? "exhausted" : ""}`}>
+              <input type="checkbox" checked={subjects.includes(s)} onChange={e => setSubjects(previous => e.target.checked ? [...previous, s] : previous.filter(v => v !== s))} />
+              <span>{s}</span><small aria-label={`${counts.get(s) || 0} fresh questions`}>{(counts.get(s) || 0).toLocaleString()}</small>
+            </label>)}</div>
+          {!catalog && loading && <p className="aurum-pool-status" role="status">Loading subjects…</p>}
+          {catalog && !matching.length && <p className="muted">No subjects match your search.</p>}
+          {catalog && <p className="aurum-subject-help">Counts show fresh questions in each subject.</p>}
+        </fieldset>
+        <fieldset className="aurum-fieldset"><legend><span>03</span>Set size</legend>
+          <div className="aurum-count-controls"><label htmlFor="aurum-count"><span>Number of questions</span><input id="aurum-count" type="number" inputMode="numeric" min={1} max={Math.min(100, available) || 100} step={1} value={count} onChange={e => setCount(e.target.value)} aria-describedby="aurum-count-help" /></label>
+            <div className="aurum-quick-count" role="group" aria-label="Quick question counts">{[5, 10, 20, 50].map(value => <button key={value} aria-pressed={n === value} disabled={!ready || value > available || !subjects.length} onClick={() => setCount(String(value))}>{value}</button>)}</div></div>
+          <p id="aurum-count-help" className="small muted">Up to 100 questions. You can save and leave at any time.</p>
+        </fieldset>
+      </section>
+      <aside className="card aurum-set-summary" aria-label="Your practice set">
+        <div className="aurum-summary-heading"><span className="aurum-summary-icon"><Layers3 size={19} /></span><div><span className="eyebrow">READY WHEN YOU ARE</span><h3>Your practice set</h3></div></div>
+        <div className="aurum-available" aria-live="polite" aria-busy={!ready}><strong>{ready ? available.toLocaleString() : "…"}</strong><span>{subjects.length ? "fresh questions in your selection" : "fresh questions to explore"}</span></div>
+        <dl><div><dt>Source</dt><dd>{selectedSource.label}</dd></div><div><dt>Subjects</dt><dd>{subjects.length ? `${subjects.length} selected` : "None selected"}</dd></div><div><dt>Set size</dt><dd>{Number.isInteger(n) && n > 0 ? `${n} questions` : "—"}</dd></div></dl>
+        {!!subjects.length && ready && !available && <p className="aurum-notice" role="status">You’ve used every question in this selection. Add subjects or change the source to keep practising.</p>}
+        {!!subjects.length && ready && available > 0 && n > available && <p className="aurum-notice" role="status">Only {available} fresh questions remain. Choose a smaller set or add subjects.</p>}
+        {!!subjects.length && (!Number.isInteger(n) || n < 1 || n > 100) && <p className="aurum-notice" role="status">Enter a whole number from 1 to 100.</p>}
+        {error && <div className="aurum-error"><p className="mock-error" role="alert">{error}</p><button className="text-btn" onClick={refresh}><RefreshCw size={14} />Try again</button></div>}
+        <button className="btn primary" disabled={!valid || busy || !!catalog?.active} onClick={() => void start()}>{busy ? "Opening practice…" : catalog?.active ? "Resume your current set above" : "Start practice"}<ArrowRight size={16} /></button>
+        <p className="aurum-start-help">{!subjects.length ? "Select your subjects to begin." : !ready ? "Checking fresh questions…" : "A fresh set, made for your selection."}</p>
+        <div className="aurum-save-note"><ShieldCheck size={17} /><p>Previously used questions stay out of future sets. Your progress saves automatically.</p></div>
+        {source === "both" && ready && subjects.length > 0 && <div className="aurum-source-counts"><span>{catalog.sources.pyq.toLocaleString()} PYQs</span><span>{catalog.sources.mock.toLocaleString()} mock questions</span><small>Shared questions count once.</small></div>}
+      </aside>
+    </div>
+    {catalog && <section className="aurum-history"><p><CheckCircle2 size={15} />{catalog.practised.toLocaleString()} questions reserved · {catalog.completed} sets completed</p>
+      {catalog.latest && <button className="text-btn" disabled={busy} onClick={() => void openSession(catalog.latest!)}>Review latest set<ArrowRight size={14} /></button>}</section>}
   </div>;
 }
 
