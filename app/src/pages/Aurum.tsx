@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Layers3, Play, RefreshCw, Search, ShieldCheck, Shuffle, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Layers3, Play, RefreshCw, Search, ShieldCheck, Shuffle } from "lucide-react";
 import type { GoldenAPI } from "../components/mock/GoldenCatalogue";
 import { Modal, ProgressBar } from "../components/ui";
 import { QuestionText } from "../components/QuestionText";
@@ -67,7 +67,15 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
       <div><span className="eyebrow">GOLDEN GATE / SUBJECT PRACTICE</span><h2>Aurum<span>A focused set. A fresh start.</span></h2>
         <p>Your subjects, your pace. Practise with PYQs, mock questions, or both.</p>
         <div className="aurum-hero-details"><span><ShieldCheck size={14} />No repeats</span><span><CheckCircle2 size={14} />Progress saved</span><span>Untimed practice</span></div>
-      </div><div className="aurum-emblem" aria-hidden="true"><span>Au</span><Sparkles size={20} /></div>
+      </div>
+      <div className="aurum-emblem" role="img" aria-label="Au: gold, atomic number 79">
+        <div className="aurum-element-face" aria-hidden="true">
+          <div className="aurum-element-top"><span className="aurum-element-number">79</span><span className="aurum-element-mass">196.96657</span></div>
+          <span className="aurum-element-symbol">Au</span>
+          <span className="aurum-element-name">GOLD</span>
+          <span className="aurum-element-configuration">[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>1</sup></span>
+        </div>
+      </div>
     </section>
     {catalog?.active && <section className="card aurum-resume"><div><Play size={20} /><div><h3>Pick up where you left off</h3>
       <p>{catalog.active.summary.answered} of {catalog.active.summary.total} reviewed · {catalog.active.subjects.join(" · ")}</p></div></div>
