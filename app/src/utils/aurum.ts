@@ -13,10 +13,13 @@ export type AurumCandidate = {
   subject: string; subjects: string[]; sourceLabel: string; question?: AurumQuestion;
 };
 export type AurumAnswer = { option: string; outcome: "correct" | "incorrect" | "skipped" };
+export type AurumReviewFilter = "all" | "incorrect" | "correct" | "skipped" | "flagged";
+export type AurumOpenRequest = { sessionId: string; questionId?: string; filter?: AurumReviewFilter };
+export type AurumSummary = { total: number; answered: number; correct: number; incorrect: number; skipped: number };
 export type AurumSession = {
   id: string; source: AurumSource; subjects: string[]; status: "running" | "completed";
   startedAt: string; completedAt?: string; questions: AurumQuestion[]; answers: Record<string, AurumAnswer>;
-  summary: { total: number; answered: number; correct: number; incorrect: number; skipped: number };
+  summary: AurumSummary; flags?: string[];
 };
 export type AurumState = {
   seen: string[]; seenIds: string[]; mocks: AurumCandidate[]; active: AurumSession | null; latest: AurumSession | null;
@@ -29,6 +32,23 @@ export type AurumCatalog = {
   subjects: ({ name: string } & Record<AurumSource, number>)[];
   active: AurumPreview | null; latest: AurumPreview | null; completed: number; practised: number;
 };
+export type AurumFlagReceipt = { sessionId: string; questionId: string; flagged: boolean; flags: string[] };
+export type AurumHistoryItem = AurumPreview & { completedAt?: string; flagged: number };
+export type AurumHistory = { items: AurumHistoryItem[]; total: number; offset: number; limit: number };
+export type AurumBreakdown = AurumSummary & { name: string; flagged: number };
+export type AurumAnalysis = {
+  overall: AurumSummary & { flagged: number }; sets: number; completedSets: number; runningSets: number;
+  subjects: AurumBreakdown[]; sources: AurumBreakdown[]; recent: AurumHistoryItem[];
+};
+export type AurumReviewItem = {
+  sessionId: string; questionId: string; questionNumber: number; subject: string; topic: string; source: "pyq" | "mock";
+  stem: string; outcome: AurumAnswer["outcome"] | null; flagged: boolean; startedAt: string; sessionStatus: string;
+};
+export type AurumReview = {
+  items: AurumReviewItem[]; total: number; offset: number; limit: number; subjects: string[];
+  counts: { all: number; incorrect: number; correct: number; skipped: number; flagged: number };
+};
+export const aurumAccuracy = (s: Pick<AurumSummary, "correct" | "incorrect">) => s.correct + s.incorrect ? 100 * s.correct / (s.correct + s.incorrect) : null;
 export const aurumSources: { id: AurumSource; label: string; description: string }[] = [
   { id: "pyq", label: "PYQs", description: "Previous year questions" },
   { id: "mock", label: "Mock test questions", description: "From Golden Gate mocks" },
