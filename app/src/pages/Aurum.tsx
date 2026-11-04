@@ -1,23 +1,34 @@
-import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Layers3, Play, RefreshCw, Search, ShieldCheck, Shuffle } from "lucide-react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { ArrowLeft, ArrowRight, BarChart3, BookOpen, CheckCircle2, Flag, Layers3, Play, RefreshCw, Search, ShieldCheck, Shuffle } from "lucide-react";
 import type { GoldenAPI } from "../components/mock/GoldenCatalogue";
 import { Modal, ProgressBar } from "../components/ui";
 import { QuestionText } from "../components/QuestionText";
 import { ReviewedExplanationText } from "../components/ReviewedExplanation";
 import type { PYQQuestion } from "../utils/pyq";
-import { aurumSources, aurumSubjects, type AurumCatalog, type AurumPreview, type AurumSession, type AurumSource } from "../utils/aurum";
+import { aurumSources, aurumSubjects, type AurumCatalog, type AurumFlagReceipt, type AurumOpenRequest, type AurumReviewFilter, type AurumSession, type AurumSource } from "../utils/aurum";
+import { OutcomeGraphic } from "../components/aurum/OutcomeGraphic";
 import "../aurum.css";
 
+const AurumInsights = lazy(() => import("../components/aurum/AurumInsights"));
+const root = "/tests/prelims/aurum";
+
 export default function Aurum({ api }: { api: GoldenAPI }) {
+  const location = useLocation(), navigate = useNavigate();
+  const section = location.pathname.endsWith("/analysis") ? "analysis" : location.pathname.endsWith("/review") ? "review" : "practice";
   const [catalog, setCatalog] = useState<AurumCatalog | null>(null), [catalogKey, setCatalogKey] = useState("");
   const [source, setSource] = useState<AurumSource>("both"), [subjects, setSubjects] = useState<string[]>([]);
   const [count, setCount] = useState("10"), [search, setSearch] = useState("");
   const [session, setSession] = useState<AurumSession | null>(null), [error, setError] = useState("");
+  const [selection, setSelection] = useState<AurumOpenRequest | null>(null);
   const [loading, setLoading] = useState(true), [busy, setBusy] = useState(false), [reload, setReload] = useState(0);
   const requestId = useRef<string | null>(null), cache = useRef(new Map<string, AurumCatalog>());
+  const routeKey = `${location.pathname}${location.search}`, currentRoute = useRef(routeKey); currentRoute.current = routeKey;
   const queryKey = JSON.stringify([source, [...subjects].sort()]);
 
+  useEffect(() => { setSession(null); setSelection(null); setError(""); }, [location.pathname]);
   useEffect(() => {
+    if (section !== "practice" || session) return;
     let live = true;
     setError("");
     const cached = cache.current.get(queryKey);
@@ -32,7 +43,7 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
         .finally(() => { if (live) setLoading(false); });
     }, catalog ? 100 : 0);
     return () => { live = false; clearTimeout(timer); };
-  }, [api, queryKey, reload]);
+  }, [api, queryKey, reload, section, session?.id]);
 
   const names = [...aurumSubjects];
   const counts = new Map(catalog?.subjects.map(s => [s.name, s[source]]) || []);
@@ -46,22 +57,29 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
   async function start() {
     if (!valid || busy) return;
     setBusy(true); setError("");
+    const openingRoute = routeKey;
     try {
       requestId.current ||= crypto.randomUUID();
       const next = await api<AurumSession>("aurum-start-v2", { requestId: requestId.current, source, subjects, count: n });
-      requestId.current = null; setSession(next);
-    } catch (e) { setError((e as Error).message); }
+      requestId.current = null; cache.current.clear();
+      if (currentRoute.current === openingRoute) { setSelection(null); setSession(next); }
+    } catch (e) { if (currentRoute.current === openingRoute) setError((e as Error).message); }
     finally { setBusy(false); }
   }
-  async function openSession(preview: AurumPreview) {
+  async function openSession(request: AurumOpenRequest) {
+    if (busy) return;
     setBusy(true); setError("");
-    try { setSession(await api<AurumSession>("aurum-session", { sessionId: preview.id })); }
-    catch (e) { setError((e as Error).message); }
+    const openingRoute = routeKey;
+    try { const saved = await api<AurumSession>("aurum-session", { sessionId: request.sessionId }); if (currentRoute.current === openingRoute) { setSelection(request); setSession(saved); } }
+    catch (e) { if (currentRoute.current === openingRoute) setError((e as Error).message); }
     finally { setBusy(false); }
   }
-  function back() { setSession(null); refresh(); }
+  function back() { setSession(null); setSelection(null); refresh(); }
+  function go(view: "practice" | "analysis" | "review", filter?: AurumReviewFilter) {
+    back(); navigate(`${root}${view === "practice" ? "" : `/${view}`}${filter ? `?filter=${filter}` : ""}`);
+  }
 
-  if (session) return <AurumPractice key={session.id} initial={session} api={api} onBack={back} />;
+  if (session) return <AurumPractice key={session.id} initial={session} api={api} initialQuestionId={selection?.questionId} initialFilter={selection?.filter} onBack={back} onNewSet={() => go("practice")} onAnalysis={() => go("analysis")} onReview={filter => go("review", filter)} />;
   return <div className="aurum">
     <section className="aurum-hero">
       <div><span className="eyebrow">GOLDEN GATE / SUBJECT PRACTICE</span><h2>Aurum<span>A focused set. A fresh start.</span></h2>
@@ -77,9 +95,11 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
         </div>
       </div>
     </section>
+    <nav className="aurum-tabs" aria-label="Aurum sections"><Link to={root} aria-current={section === "practice" ? "page" : undefined}><Play size={15} />Practice</Link><Link to={`${root}/analysis`} aria-current={section === "analysis" ? "page" : undefined}><BarChart3 size={15} />Analysis &amp; history</Link><Link to={`${root}/review`} aria-current={section === "review" ? "page" : undefined}><Flag size={15} />Review questions</Link></nav>
+    {section !== "practice" ? <>{error && <p className="mock-error" role="alert">{error}</p>}<Suspense fallback={<p className="card aurum-report-loading" role="status">Opening your saved practice…</p>}><AurumInsights api={api} view={section} opening={busy} onOpen={openSession} /></Suspense></> : <>
     {catalog?.active && <section className="card aurum-resume"><div><Play size={20} /><div><h3>Pick up where you left off</h3>
       <p>{catalog.active.summary.answered} of {catalog.active.summary.total} reviewed · {catalog.active.subjects.join(" · ")}</p></div></div>
-      <button className="btn primary" disabled={busy} onClick={() => void openSession(catalog.active!)}>Resume practice<ArrowRight size={15} /></button></section>}
+      <button className="btn primary" disabled={busy} onClick={() => void openSession({ sessionId: catalog.active!.id })}>Resume practice<ArrowRight size={15} /></button></section>}
     <div className="aurum-builder">
       <section className="card aurum-config" aria-label="Build an Aurum practice set">
         <fieldset className="aurum-fieldset"><legend><span>01</span>Question source</legend>
@@ -123,19 +143,30 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
       </aside>
     </div>
     {catalog && <section className="aurum-history"><p><CheckCircle2 size={15} />{catalog.practised.toLocaleString()} questions reserved · {catalog.completed} sets completed</p>
-      {catalog.latest && <button className="text-btn" disabled={busy} onClick={() => void openSession(catalog.latest!)}>Review latest set<ArrowRight size={14} /></button>}</section>}
+      {catalog.latest && <button className="text-btn" disabled={busy} onClick={() => void openSession({ sessionId: catalog.latest!.id })}>Review latest set<ArrowRight size={14} /></button>}</section>}
+    </>}
   </div>;
 }
 
-function AurumPractice({ initial, api, onBack }: { initial: AurumSession; api: GoldenAPI; onBack: () => void }) {
-  const [session, setSession] = useState(initial), [index, setIndex] = useState(() => Math.max(0, initial.questions.findIndex(q => !initial.answers[q.id])));
-  const [option, setOption] = useState(""), [busy, setBusy] = useState(false), [error, setError] = useState("");
-  const [confirm, setConfirm] = useState(false);
+function AurumPractice({ initial, api, initialQuestionId, initialFilter = "all", onBack, onNewSet, onAnalysis, onReview }: {
+  initial: AurumSession; api: GoldenAPI; initialQuestionId?: string; initialFilter?: AurumReviewFilter;
+  onBack: () => void; onNewSet: () => void; onAnalysis: () => void; onReview: (filter: AurumReviewFilter) => void;
+}) {
+  const [session, setSession] = useState(initial), [index, setIndex] = useState(() => {
+    const focused = initial.questions.findIndex(q => q.id === initialQuestionId);
+    return focused >= 0 ? focused : Math.max(0, initial.questions.findIndex(q => !initial.answers[q.id]));
+  });
+  const [choice, setChoice] = useState({ questionId: "", option: "" }), [busy, setBusy] = useState(false), [error, setError] = useState("");
+  const [confirm, setConfirm] = useState(false), [filter, setFilter] = useState<AurumReviewFilter>(initialFilter);
   const heading = useRef<HTMLHeadingElement>(null);
-  const q = session.questions[index], answer = session.answers[q.id], summary = session.summary;
-  useEffect(() => { setOption(""); heading.current?.focus(); }, [index]);
+  const completed = session.status === "completed", flags = session.flags || [], summary = session.summary;
+  const visible = session.questions.map((q, i) => ({ q, i })).filter(({ q }) => !completed || filter === "all" || (filter === "flagged" ? flags.includes(q.id) : session.answers[q.id]?.outcome === filter)).map(({ i }) => i);
+  const active = visible.includes(index) ? index : visible[0] ?? 0, position = visible.indexOf(active);
+  const q = visible.length ? session.questions[active] : undefined, answer = q ? session.answers[q.id] : undefined;
+  const option = choice.questionId === q?.id ? choice.option : "";
+  useEffect(() => { heading.current?.focus(); }, [active, q?.id]);
   async function save(skip = false) {
-    if (busy || (!skip && !option)) return;
+    if (!q || busy || (!skip && !option)) return;
     setBusy(true); setError("");
     try { setSession(await api<AurumSession>("aurum-answer", { sessionId: session.id, questionId: q.id, option: skip ? "" : option })); }
     catch (e) { setError((e as Error).message); }
@@ -147,35 +178,49 @@ function AurumPractice({ initial, api, onBack }: { initial: AurumSession; api: G
     catch (e) { setError((e as Error).message); }
     finally { setBusy(false); }
   }
+  async function toggleFlag() {
+    if (!q || busy) return;
+    setBusy(true); setError("");
+    try {
+      const saved = await api<AurumFlagReceipt>("aurum-flag", { sessionId: session.id, questionId: q.id, flagged: !flags.includes(q.id) });
+      setSession(previous => ({ ...previous, flags: saved.flags }));
+    } catch (e) { setError((e as Error).message); }
+    finally { setBusy(false); }
+  }
+  const filters: [AurumReviewFilter, string, number][] = [["all", "All questions", summary.total], ["incorrect", "Wrong", summary.incorrect], ["flagged", "Flagged", flags.length], ["correct", "Correct", summary.correct], ["skipped", "Skipped", summary.skipped]];
   return <div className="aurum aurum-practice">
     <div className="aurum-practice-top"><button className="text-btn" onClick={onBack} disabled={busy}><ArrowLeft size={16} />{session.status === "running" ? "Save & leave" : "Back to Aurum"}</button><span><ShieldCheck size={14} />{busy ? "Saving…" : "Progress saved"}</span></div>
     <section className="card aurum-practice-heading"><div><span className="eyebrow">AURUM · {session.status === "completed" ? "SET COMPLETE" : "YOUR PRACTICE SET"}</span><h2>{session.subjects.join(" · ")}</h2><p>{summary.answered} of {summary.total} reviewed · Untimed practice</p></div>
       <div className="aurum-score"><strong>{summary.correct}</strong><span>correct</span><strong>{summary.incorrect}</strong><span>incorrect</span><strong>{summary.skipped}</strong><span>skipped</span></div>
       <ProgressBar value={100 * summary.answered / summary.total} /></section>
-    {session.status === "completed" && <section className="card aurum-complete" role="status"><CheckCircle2 size={28} /><div><h3>Practice complete</h3><p>{summary.correct} correct out of {summary.correct + summary.incorrect} attempted. Review the questions below, or build a fresh set.</p></div><button className="btn primary" onClick={onBack}>Build another set<ArrowRight size={16} /></button></section>}
+    {completed && <>
+      <section className="card aurum-complete" role="status"><CheckCircle2 size={28} /><div><h3>Practice complete</h3><p>{summary.correct} correct out of {summary.correct + summary.incorrect} attempted. Your results and flags stay saved for later.</p></div><button className="btn primary" onClick={onNewSet}>Build another set<ArrowRight size={16} /></button></section>
+      <div className="aurum-completion-analysis"><OutcomeGraphic summary={summary} title="This set · right vs wrong" /><section className="card aurum-review-shortcuts"><span className="eyebrow">YOUR NEXT STEP</span><h3>Turn practice into progress</h3><p>Review a mistake, save a question with a flag, or see how you are doing across all your sets.</p><button className="btn primary" onClick={onAnalysis}><BarChart3 size={16} />Overall analysis &amp; history</button><button className="text-btn" onClick={() => onReview("incorrect")}>All wrong questions<ArrowRight size={14} /></button><button className="text-btn" onClick={() => onReview("flagged")}><Flag size={14} />Your flagged questions</button></section></div>
+      <div className="aurum-review-filter-bar" role="group" aria-label="Filter this set">{filters.map(([key, label, total]) => <button key={key} disabled={busy} aria-pressed={filter === key} onClick={() => setFilter(key)}>{label}<span>{total}</span></button>)}</div>
+    </>}
+    {error && <p className="mock-error" role="alert">{error}</p>}
     <div className="aurum-question-layout">
-      <section className="card aurum-question" aria-label="Practice question">
-        <div className="aurum-question-meta"><span className="aurum-origin">{q.origin === "pyq" ? "PYQ" : "MOCK"}</span><span>{q.subject} · {q.topic}</span></div>
-        <h3 ref={heading} tabIndex={-1}>Question {index + 1} of {session.questions.length}</h3>
-        <QuestionText q={{ question: q.question, blocks: q.blocks, number: index + 1, sourceImage: q.sourceImage, sourceImageAlt: q.sourceImageAlt || `${q.sourceLabel} diagram` } as PYQQuestion} />
+      {q ? <section className="card aurum-question" aria-label="Practice question">
+        <div className="aurum-question-toolbar"><div className="aurum-question-meta"><span className="aurum-origin">{q.origin === "pyq" ? "PYQ" : "MOCK"}</span><span>{q.subject} · {q.topic}</span></div><button className="aurum-flag-btn" disabled={busy} aria-pressed={flags.includes(q.id)} onClick={() => void toggleFlag()}><Flag size={15} />{flags.includes(q.id) ? "Flagged" : "Flag question"}</button></div>
+        <h3 ref={heading} tabIndex={-1}>Question {active + 1} of {session.questions.length}</h3>
+        <QuestionText q={{ question: q.question, blocks: q.blocks, number: active + 1, sourceImage: q.sourceImage, sourceImageAlt: q.sourceImageAlt || `${q.sourceLabel} diagram` } as PYQQuestion} />
         <fieldset className="aurum-options" disabled={busy || !!answer}><legend className="sr-only">Choose an answer</legend>{Object.entries(q.options).map(([key, text]) =>
           <label key={key} className={`${(answer?.option || option) === key ? "selected" : ""} ${answer && q.correct === key ? "correct" : ""} ${answer?.outcome === "incorrect" && answer.option === key ? "incorrect" : ""}`}>
-            <input type="radio" name={`aurum-answer-${q.id}`} value={key} checked={(answer?.option || option) === key} onChange={() => setOption(key)} /><strong>{key.toUpperCase()}</strong><span>{text}</span>
+            <input type="radio" name={`aurum-answer-${q.id}`} value={key} checked={(answer?.option || option) === key} onChange={() => setChoice({ questionId: q.id, option: key })} /><strong>{key.toUpperCase()}</strong><span>{text}</span>
             {answer && q.correct === key && <CheckCircle2 size={18} aria-label="Correct answer" />}
           </label>)}</fieldset>
         {answer && <section className={`aurum-feedback ${answer.outcome}`} aria-live="polite"><h4>{answer.outcome === "correct" ? "Correct" : answer.outcome === "skipped" ? "Skipped" : "Keep learning"} · Answer {q.correct?.toUpperCase()}</h4>
           {q.explanation ? typeof q.explanation === "string" ? <p>{q.explanation}</p> : <ReviewedExplanationText explanation={q.explanation} /> : <p>An explanation hasn’t been supplied for this question.</p>}
         </section>}
         <p className="small muted">{q.sourceLabel}</p>
-        {error && <p className="mock-error" role="alert">{error}</p>}
-        <div className="button-group aurum-question-actions"><button className="btn secondary" disabled={index === 0 || busy} onClick={() => setIndex(v => v - 1)}>Previous</button>
+        <div className="button-group aurum-question-actions"><button className="btn secondary" disabled={position <= 0 || busy} onClick={() => setIndex(visible[position - 1])}>Previous</button>
           {!answer ? <><button className="btn secondary" disabled={busy} onClick={() => void save(true)}>Skip question</button><button className="btn primary" disabled={!option || busy} onClick={() => void save()}>{busy ? "Saving…" : "Check answer"}</button></>
-            : index < session.questions.length - 1 ? <button className="btn primary" disabled={busy} onClick={() => setIndex(v => v + 1)}>Next question<ArrowRight size={16} /></button>
-              : <button className="btn primary" disabled={busy} onClick={() => { const next = session.questions.findIndex(question => !session.answers[question.id]); if (next >= 0) setIndex(next); else onBack(); }}>{session.status === "completed" ? "Build another set" : "Next unanswered question"}<ArrowRight size={16} /></button>}
+            : position < visible.length - 1 ? <button className="btn primary" disabled={busy} onClick={() => setIndex(visible[position + 1])}>Next question<ArrowRight size={16} /></button>
+              : <button className="btn primary" disabled={busy} onClick={() => { const next = session.questions.findIndex(question => !session.answers[question.id]); if (completed) onNewSet(); else if (next >= 0) setIndex(next); else onBack(); }}>{completed ? "Build another set" : "Next unanswered question"}<ArrowRight size={16} /></button>}
         </div>
-      </section>
-      <aside className="card aurum-palette"><h3>Your questions</h3><div role="group" aria-label="Practice question navigation">{session.questions.map((question, i) => <button key={question.id} disabled={busy} className={`${session.answers[question.id]?.outcome || ""} ${index === i ? "current" : ""}`} aria-label={`Question ${i + 1}${session.answers[question.id] ? `, ${session.answers[question.id].outcome}` : ", unanswered"}`} aria-current={index === i ? "step" : undefined} onClick={() => setIndex(i)}>{i + 1}</button>)}</div>
-        <p className="small muted">Checked answers are final. Skip a question to reveal its answer.</p>
+      </section> : <section className="card aurum-report-empty"><h3>No {filter === "incorrect" ? "wrong" : filter} questions in this set</h3><p>{filter === "flagged" ? "Open any question and use its flag to save it for later." : "Choose another filter to keep reviewing."}</p><button className="btn secondary" onClick={() => setFilter("all")}>Show all questions</button></section>}
+      <aside className="card aurum-palette"><h3>{completed ? `${visible.length} questions to review` : "Your questions"}</h3><div role="group" aria-label="Practice question navigation">{visible.map(i => { const question = session.questions[i]; return <button key={question.id} disabled={busy} className={`${session.answers[question.id]?.outcome || ""} ${active === i ? "current" : ""}`} aria-label={`Question ${i + 1}${session.answers[question.id] ? `, ${session.answers[question.id].outcome}` : ", unanswered"}${flags.includes(question.id) ? ", flagged" : ""}`} aria-current={active === i ? "step" : undefined} onClick={() => setIndex(i)}>{i + 1}{flags.includes(question.id) && <Flag size={9} aria-hidden="true" />}</button>; })}</div>
+        <p className="small muted">{completed ? "Results stay saved. Flag questions to find them in Review questions anytime." : "Checked answers are final. Skip a question to reveal its answer."}</p>
         {session.status === "running" && <button className="btn secondary" disabled={busy} onClick={() => setConfirm(true)}>Finish this set</button>}
       </aside>
     </div>

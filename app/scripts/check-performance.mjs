@@ -23,6 +23,7 @@ const aurumEntry = Object.keys(manifest).find(key => manifest[key].name === "Aur
 assert.ok(aurumEntry, "Missing Aurum entry");
 const aurum = dependencies([entry, mockEntry, aurumEntry]);
 assert.ok(!aurum.some(file => /questions-|question-support-|aurumBank|questionBank/.test(file)), "Aurum setup eagerly loads the question library");
+assert.ok(!aurum.some(file => /AurumInsights/.test(file)), "Aurum setup eagerly loads analysis and review screens");
 assert.ok(!(manifest[aurumEntry].dynamicImports || []).some(key => /aurumBank|questionBank|questions-/.test(key)), "Aurum setup downloads the full bank after mounting");
 const offline = JSON.parse(readFileSync(`${root}/sw.js`, "utf8").match(/const FILES=(\[.*?\]);/)[1]);
 const size = files => files.reduce((total, file) => total + statSync(`${root}/${file}`).size, 0);
