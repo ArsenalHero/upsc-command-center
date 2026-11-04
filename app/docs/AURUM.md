@@ -2,6 +2,8 @@
 
 Open **Golden Gate → Aurum** (`#/tests/prelims/aurum`) after the existing license verification. Choose PYQs, mock questions, or both; select one or multiple subjects and a whole-number count from 1 to 100. The displayed availability counts unique, unused questions in the selected pool. A mixed set includes both sources when at least two distinct questions from the two sources are available. Source overlaps count once. Only MCQs with a usable answer key enter the PYQ pool.
 
+The subject picker offers exactly **Polity, Geography, AMAC, Modern History, Economy, CSAT, Science & Technology**, in that order. AMAC combines Ancient History, Medieval History, and Art & Culture. Existing generic History entries use their topic tags to separate AMAC from Modern History. Other subject tags stay in the source bank but do not appear in Aurum's selectable pool. Relabelling preserves source IDs, fingerprints, previous sessions and exclusions.
+
 Practice is untimed. Check or skip each question to reveal its key and supplied explanation. Checked responses are final. Save & leave, then Resume practice, to continue at the next unanswered question. Finishing early marks the remaining questions skipped. The completion summary and latest-set review remain available.
 
 ## Permanent exclusion
@@ -14,7 +16,7 @@ Account participants keep the same history on every device. Guests use the exist
 
 ## Backend setup
 
-For an existing Golden Gate deployment, apply `supabase/migrations/20261104031926_aurum_subject_practice.sql`, then `supabase/migrations/20261104045009_aurum_fast_setup.sql` before publishing the frontend. For a fresh install, run `supabase/sql/mock-lab.sql` first, then both Aurum migrations. The migrations are idempotent and check their dispatcher anchors. Existing sessions, exclusions, license verification, account/session validation, guest authorization, mock attempts and rankings stay intact.
+For an existing Golden Gate deployment, apply `supabase/migrations/20261104031926_aurum_subject_practice.sql`, `supabase/migrations/20261104045009_aurum_fast_setup.sql`, then `supabase/migrations/20261104060906_aurum_subject_choices.sql` before publishing the frontend. For a fresh install, run `supabase/sql/mock-lab.sql` first, then these migrations in order. The migrations are idempotent and check their dispatcher anchors. Existing sessions, exclusions, license verification, account/session validation, guest authorization, mock attempts and rankings stay intact.
 
 The session, exclusion and catalogue tables live in the private schema, have RLS enabled and no client table grants. Their helper functions have no client EXECUTE grants. All Aurum operations are dispatched through the existing checked `mock_lab` RPC after the license/session boundary. Owner identity comes from that boundary, never request JSON. Unchecked question answers and explanations are stripped.
 

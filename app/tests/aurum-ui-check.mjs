@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { fixtureLicense, prepareMockDatabase, setMockUser } from "./mock-license-fixture.ts";
 import { aurumPYQs } from "../src/utils/aurum.ts";
+import { aurumSubjects } from "../src/utils/aurum.ts";
 
 const db = new PGlite(), owner = "11111111-1111-4111-8111-111111111111";
 const options = { a: "The correct choice", b: "Second choice", c: "Third choice", d: "Fourth choice" };
@@ -50,6 +51,7 @@ const mount = async () => {
   assert.equal(w.document.querySelectorAll('[name="aurum-source"]').length, 3, "Source controls render before catalogue data arrives");
   await until(() => w.document.querySelector('.aurum-subject-grid input'), "Subjects did not load");
   await ready();
+  assert.deepEqual([...w.document.querySelectorAll('.aurum-subject-grid label > span')].map(s=>s.textContent),[...aurumSubjects]);
   assert.equal(w.getComputedStyle(w.document.querySelector('.aurum-source-grid label')).flexDirection, 'row', 'Global stacked-label styles must not stack source cards');
   assert.equal(w.getComputedStyle(w.document.querySelector('.aurum-subject-grid label')).display, 'grid', 'Subjects use compact horizontal rows');
 };
@@ -57,6 +59,7 @@ try {
   await prepareMockDatabase(db, [{ id: owner, admin: true }]);
   await db.exec(readFileSync(new URL("../supabase/migrations/20261104031926_aurum_subject_practice.sql", import.meta.url), "utf8"));
   await db.exec(readFileSync(new URL("../supabase/migrations/20261104045009_aurum_fast_setup.sql", import.meta.url), "utf8"));
+  await db.exec(readFileSync(new URL("../supabase/migrations/20261104060906_aurum_subject_choices.sql", import.meta.url), "utf8"));
   for (const q of await aurumPYQs(questions)) await db.query(`insert into mock_private.aurum_question_index(origin,source_id,fingerprint,subject,subjects,question)
     values('pyq',$1,$2,$3,$4,$5::jsonb)`, [q.sourceId,q.fingerprint,q.subject,q.subjects,JSON.stringify(q.question)]);
   await setMockUser(db, owner); await rpc("verify-license", { licenseKey: fixtureLicense });
