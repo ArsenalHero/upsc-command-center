@@ -5,7 +5,7 @@ import { Modal, ProgressBar } from "../components/ui";
 import { QuestionText } from "../components/QuestionText";
 import { ReviewedExplanationText } from "../components/ReviewedExplanation";
 import type { PYQQuestion } from "../utils/pyq";
-import { aurumSources, type AurumCatalog, type AurumPreview, type AurumSession, type AurumSource } from "../utils/aurum";
+import { aurumSources, aurumSubjects, type AurumCatalog, type AurumPreview, type AurumSession, type AurumSource } from "../utils/aurum";
 import "../aurum.css";
 
 export default function Aurum({ api }: { api: GoldenAPI }) {
@@ -34,7 +34,7 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
     return () => { live = false; clearTimeout(timer); };
   }, [api, queryKey, reload]);
 
-  const names = catalog?.subjects.map(s => s.name) || [];
+  const names = [...aurumSubjects];
   const counts = new Map(catalog?.subjects.map(s => [s.name, s[source]]) || []);
   const matching = names.filter(s => s.toLowerCase().includes(search.toLowerCase()));
   const ready = !!catalog && catalogKey === queryKey && !loading;
@@ -83,7 +83,7 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
         </fieldset>
         <fieldset className="aurum-fieldset"><legend><span>02</span>Your subjects <small>{subjects.length ? `${subjects.length} selected` : "Choose one or more"}</small></legend>
           <div className="aurum-subject-tools"><div className="aurum-search"><Search size={15} aria-hidden="true" /><input type="search" aria-label="Find an Aurum subject" placeholder="Search subjects" value={search} onChange={e => setSearch(e.target.value)} /></div>
-            <div><button type="button" className="text-btn" disabled={!names.length} onClick={() => setSubjects(names.filter(s => (counts.get(s) || 0) > 0))}>Select all available</button>
+            <div><button type="button" className="text-btn" disabled={!catalog} onClick={() => setSubjects(names.filter(s => (counts.get(s) || 0) > 0))}>Select all available</button>
             <button type="button" className="text-btn" disabled={!subjects.length} onClick={() => setSubjects([])}>Clear</button></div></div>
           <div className="aurum-subject-grid" aria-busy={!catalog && loading}>{!catalog && loading ? Array.from({ length: 18 }, (_, i) => <div className="aurum-subject-skeleton" key={i} aria-hidden="true" />)
             : matching.map(s => <label key={s} className={`${subjects.includes(s) ? "selected" : ""} ${!counts.get(s) ? "exhausted" : ""}`}>
@@ -92,7 +92,7 @@ export default function Aurum({ api }: { api: GoldenAPI }) {
             </label>)}</div>
           {!catalog && loading && <p className="aurum-pool-status" role="status">Loading subjects…</p>}
           {catalog && !matching.length && <p className="muted">No subjects match your search.</p>}
-          {catalog && <p className="aurum-subject-help">Counts show fresh questions in each subject.</p>}
+          {catalog && <p className="aurum-subject-help">AMAC: Ancient &amp; Medieval History, Art &amp; Culture. Counts show fresh questions.</p>}
         </fieldset>
         <fieldset className="aurum-fieldset"><legend><span>03</span>Set size</legend>
           <div className="aurum-count-controls"><label htmlFor="aurum-count"><span>Number of questions</span><input id="aurum-count" type="number" inputMode="numeric" min={1} max={Math.min(100, available) || 100} step={1} value={count} onChange={e => setCount(e.target.value)} aria-describedby="aurum-count-help" /></label>

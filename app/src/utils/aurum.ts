@@ -1,6 +1,7 @@
 import type { PYQQuestion, StudyExplanation } from "./pyq";
 
 export type AurumSource = "pyq" | "mock" | "both";
+export const aurumSubjects = ["Polity", "Geography", "AMAC", "Modern History", "Economy", "CSAT", "Science & Technology"] as const;
 export type AurumQuestion = {
   id: string; origin: "pyq" | "mock"; sourceId: string; sourceLabel: string;
   fingerprint?: string; testId?: string; question: string; subject: string; topic: string;
@@ -36,10 +37,18 @@ export const aurumSources: { id: AurumSource; label: string; description: string
 
 export function aurumSubject(value: string) {
   const aliases: Record<string, string> = {
-    "economics": "Economy", "polity & governance": "Polity", "art and culture": "Art & Culture",
+    "economics": "Economy", "polity & governance": "Polity", "art and culture": "AMAC", "art & culture": "AMAC",
+    "ancient history": "AMAC", "medieval history": "AMAC", "ancient india": "AMAC", "medieval india": "AMAC", "amac": "AMAC",
     "science and technology": "Science & Technology", "science and tech": "Science & Technology",
   };
   return aliases[value.trim().toLowerCase()] || value.trim();
+}
+export function aurumQuestionSubject(subject: string, topic = "") {
+  const name = aurumSubject(subject);
+  if (name !== "History" && name !== "History & Culture") return name;
+  const tag = topic.toLowerCase();
+  if (/modern|colonial|freedom|national|gandhi|independence|charter|cabinet|santhal|satyagraha/.test(tag)) return "Modern History";
+  return /ancient|medieval|prehistor|maury|buddh|ashok|bhakti|feudalis|south indian|(^|[^a-z])art([^a-z]|$)|cultur|architect|archaeolog|heritage|temple|dynast|philosoph|performing|festival|dance|craft|painting|textile|classical/.test(tag) ? "AMAC" : "Modern History";
 }
 
 // The server uses exactly this normalization. Option order, punctuation and
@@ -56,12 +65,12 @@ export async function aurumPYQs(bank: PYQQuestion[]): Promise<AurumCandidate[]> 
   return Promise.all(bank.filter(q => (q.stage !== "Mains" || q.questionType === "MCQ") &&
     !!q.answer && !!q.options[q.answer] && q.keyStatus !== "dropped" && q.keyStatus !== "pending")
     .map(async q => ({
-      origin: "pyq" as const, sourceId: q.id, fingerprint: await aurumFingerprint(q), subject: aurumSubject(q.subject),
-      subjects: [...new Set([q.subject, ...(q.subjectMemberships || []).map(s => s.subject)].map(aurumSubject))],
+      origin: "pyq" as const, sourceId: q.id, fingerprint: await aurumFingerprint(q), subject: aurumQuestionSubject(q.subject, q.topic),
+      subjects: [...new Set([{subject:q.subject,topic:q.topic}, ...(q.subjectMemberships || [])].map(s => aurumQuestionSubject(s.subject, s.topic)))],
       sourceLabel: q.sourceTitle || `${q.year} · ${q.paper} · Q${q.number}`,
       question: {
         id: q.id, sourceId: q.id, origin: "pyq" as const, sourceLabel: q.sourceTitle || `${q.year} · ${q.paper} · Q${q.number}`,
-        question: q.question, options: q.options, correct: q.answer!, subject: aurumSubject(q.subject), topic: q.topic,
+        question: q.question, options: q.options, correct: q.answer!, subject: aurumQuestionSubject(q.subject, q.topic), topic: q.topic,
         explanation: q.explanationReview?.explanation || q.explanation,
         blocks: q.blocks, sourceImage: q.sourceImage, sourceImageAlt: q.sourceImageAlt, sourceUrl: q.sourceUrl,
       },
