@@ -19,9 +19,15 @@ const mockEntry = Object.keys(manifest).find(key => key === "src/pages/MockLab.t
 assert.ok(mockEntry, "Missing mock exam entry");
 const mockExam = dependencies([entry, mockEntry]);
 assert.ok(!mockExam.some(file => /MockCharts|ScatterChart|questions-|question-support-/.test(file)), "Timed mock exams eagerly load report charts or question banks");
+const aurumEntry = Object.keys(manifest).find(key => manifest[key].name === "Aurum" && manifest[key].isDynamicEntry);
+assert.ok(aurumEntry, "Missing Aurum entry");
+const aurum = dependencies([entry, mockEntry, aurumEntry]);
+assert.ok(!aurum.some(file => /questions-|question-support-|aurumBank|questionBank/.test(file)), "Aurum setup eagerly loads the question library");
+assert.ok(!(manifest[aurumEntry].dynamicImports || []).some(key => /aurumBank|questionBank|questions-/.test(key)), "Aurum setup downloads the full bank after mounting");
 const offline = JSON.parse(readFileSync(`${root}/sw.js`, "utf8").match(/const FILES=(\[.*?\]);/)[1]);
 const size = files => files.reduce((total, file) => total + statSync(`${root}/${file}`).size, 0);
 const dashboardBytes = size(initial), offlineBytes = size(offline.filter(file => file !== "./"));
+assert.ok(size(aurum) < 800_000, `Aurum shell exceeded 800 KB: ${size(aurum)}`);
 assert.ok(dashboardBytes < 600_000, `Dashboard startup exceeded 600 KB: ${dashboardBytes}`);
 assert.ok(offlineBytes < 6_000_000, `Offline startup exceeded 6 MB: ${offlineBytes}`);
 assert.ok(!initial.some(file => /DashboardAnalytics|ScatterChart|questions-|question-support-/.test(file)), "The dashboard eagerly loads charts or question banks");

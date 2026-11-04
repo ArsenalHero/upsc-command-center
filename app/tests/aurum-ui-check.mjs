@@ -16,20 +16,18 @@ const questions = ["Polity", "Economy", "Polity", "Economy"].map((subject, n) =>
 const built = await build({
   stdin: { contents: 'import React from "react";import {createRoot} from "react-dom/client";import Aurum from "./src/pages/Aurum";createRoot(document.getElementById("root")).render(<Aurum api={globalThis.aurumAPI}/>);', loader: "tsx", resolveDir: process.cwd() },
   bundle: true, write: false, format: "iife", platform: "browser", jsx: "automatic", loader: { ".css": "empty" },
-  plugins: [{ name: "fixture-reviewed-bank", setup(b) {
-    b.onResolve({ filter: /data\/aurumBank$/ }, () => ({ path: "bank", namespace: "fixture" }));
-    b.onLoad({ filter: /.*/, namespace: "fixture" }, () => ({ contents: "export const loadAurumPYQs=async()=>globalThis.aurumBank;" }));
-  } }],
 });
-const errors = [], starts = [];
-let dom, w, failAnswer = false;
+assert.equal(built.outputFiles[0].text.includes("loadAurumPYQs"), false, "The rendered setup must not import the full PYQ bank");
+const errors = [], starts = [], calls = [];
+let dom, w, failAnswer = false, delayNextCatalog = false;
 const rpc = async (op, p = {}) => (await db.query("select public.mock_lab($1,$2::jsonb) data", [op, JSON.stringify(p)])).rows[0].data;
 const wait = () => new Promise(r => setTimeout(r, 35));
 const until = async (fn, label) => { for (let i = 0; i < 150; i++) { if (fn()) return; await wait(); } assert.ok(fn(), `${label}: ${w.document.body.textContent.slice(-700)}`); };
 const click = async text => { const b = [...w.document.querySelectorAll("button")].find(e => e.textContent.trim() === text); assert.ok(b, `Missing ${text}`); assert.equal(b.disabled, false, `${text} disabled`); b.click(); await wait(); };
 const field = async (selector, value) => { const input = w.document.querySelector(selector); assert.ok(input, selector); Object.getOwnPropertyDescriptor(w.HTMLInputElement.prototype, "value").set.call(input, value); input.dispatchEvent(new w.Event("input", { bubbles: true })); await wait(); };
-const subjects = async () => { for (const input of w.document.querySelectorAll('.aurum-subject-grid input')) if (!input.checked) { input.click(); await wait(); } };
-const source = async value => { w.document.querySelector(`[name="aurum-source"][value="${value}"]`).click(); await wait(); };
+const ready = async () => until(() => w.document.querySelector('.aurum-available')?.getAttribute('aria-busy') === 'false', "Counts did not settle");
+const subjects = async () => { for (const input of w.document.querySelectorAll('.aurum-subject-grid input')) if (!input.checked) { input.click(); await wait(); } await ready(); };
+const source = async value => { w.document.querySelector(`[name="aurum-source"][value="${value}"]`).click(); await wait(); await ready(); };
 const mount = async () => {
   dom?.window.close();
   const vc = new VirtualConsole(); vc.on("jsdomError", e => errors.push(String(e)));
@@ -37,17 +35,30 @@ const mount = async () => {
   w.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} });
   w.HTMLDialogElement.prototype.showModal = function () { this.setAttribute("open", ""); };
   w.HTMLDialogElement.prototype.close = function () { this.removeAttribute("open"); };
-  w.aurumBank = await aurumPYQs(questions);
+  const style = w.document.createElement('style');
+  style.textContent = 'label{display:flex;flex-direction:column}' + readFileSync(new URL('../src/aurum.css', import.meta.url), 'utf8');
+  w.document.head.appendChild(style);
   w.aurumAPI = async (op, p = {}) => {
+    calls.push({ op, p });
+    if (op === 'aurum-catalog' && calls.length === 1) await new Promise(r => setTimeout(r, 300));
+    if (op === 'aurum-catalog' && delayNextCatalog) { delayNextCatalog = false; await new Promise(r => setTimeout(r, 350)); }
     if (op === "aurum-answer" && failAnswer) { failAnswer = false; throw Error("Connection test unavailable. Try again."); }
-    const data = await rpc(op, p); if (op === "aurum-start") starts.push(data); return data;
+    const data = await rpc(op, p); if (op === "aurum-start-v2") starts.push(data); return data;
   };
   w.eval(built.outputFiles[0].text);
   await until(() => w.document.querySelector(".aurum-builder"), "Builder did not load");
+  assert.equal(w.document.querySelectorAll('[name="aurum-source"]').length, 3, "Source controls render before catalogue data arrives");
+  await until(() => w.document.querySelector('.aurum-subject-grid input'), "Subjects did not load");
+  await ready();
+  assert.equal(w.getComputedStyle(w.document.querySelector('.aurum-source-grid label')).flexDirection, 'row', 'Global stacked-label styles must not stack source cards');
+  assert.equal(w.getComputedStyle(w.document.querySelector('.aurum-subject-grid label')).display, 'grid', 'Subjects use compact horizontal rows');
 };
 try {
   await prepareMockDatabase(db, [{ id: owner, admin: true }]);
   await db.exec(readFileSync(new URL("../supabase/migrations/20261104031926_aurum_subject_practice.sql", import.meta.url), "utf8"));
+  await db.exec(readFileSync(new URL("../supabase/migrations/20261104045009_aurum_fast_setup.sql", import.meta.url), "utf8"));
+  for (const q of await aurumPYQs(questions)) await db.query(`insert into mock_private.aurum_question_index(origin,source_id,fingerprint,subject,subjects,question)
+    values('pyq',$1,$2,$3,$4,$5::jsonb)`, [q.sourceId,q.fingerprint,q.subject,q.subjects,JSON.stringify(q.question)]);
   await setMockUser(db, owner); await rpc("verify-license", { licenseKey: fixtureLicense });
   await rpc("admin-test", { code: "AURUM-UI", name: "UI source mock", year: 2027, series: "Validation", paper: "GS-I", kind: "Sectional", duration: 30, positive: 2, negative: .5, status: "active",
     questions: ["Polity", "Economy", "Economy"].map((subject, n) => ({ question: `Mock practice question ${n}: which statement follows?`, subject, topic: "Foundations", options, correct: "a", explanation: "The first option is correct from the premise." })) });
@@ -66,6 +77,8 @@ try {
   await source("both"); await field("#aurum-count", "2"); await click("Start practice");
   await until(() => w.document.querySelector(".aurum-question"), "Practice did not start");
   assert.equal(new Set(starts[0].questions.map(q => q.origin)).size, 2);
+  assert.equal(Object.hasOwn(calls.find(c => c.op === 'aurum-start-v2').p, 'questions'), false, 'Only the requested filters/count are sent when starting');
+  assert.equal(calls.some(c => c.op === 'aurum-state'), false, 'Setup must not request the large legacy pool');
   assert.equal(w.document.querySelector(".aurum-feedback"), null);
   w.document.querySelector('.aurum-options input[value="a"]').click(); await wait();
   failAnswer = true; await click("Check answer");
@@ -93,6 +106,16 @@ try {
   await click("Finish set");
   await until(() => w.document.querySelector(".aurum-complete"), "Finish did not save");
   assert.equal((await rpc("aurum-state")).practised, 4);
+  await click("Build another set"); await ready();
+  await click("Clear"); await ready();
+  delayNextCatalog = true;
+  const inputs = [...w.document.querySelectorAll('.aurum-subject-grid input')];
+  inputs[0].click(); await new Promise(r => setTimeout(r, 150));
+  inputs[1].click(); await wait(); await ready();
+  const currentAvailable = w.document.querySelector('.aurum-available strong').textContent;
+  await new Promise(r => setTimeout(r, 450));
+  assert.equal(w.document.querySelector('.aurum-available strong').textContent, currentAvailable, 'A slower response for an older selection must not overwrite the current counts');
+  assert.equal(w.document.querySelector('.aurum-available').getAttribute('aria-busy'), 'false');
   assert.equal(errors.length, 0, errors.join("\n"));
-  console.log("Aurum UI passed: subjects, all sources, count validation, answer secrecy, retry, reload/resume, completion and no repeats.");
+  console.log("Aurum UI passed: lightweight setup, horizontal controls, subjects, source counts, validation, secret answers, retry, reload/resume and no repeats.");
 } finally { dom?.window.close(); await db.close(); }

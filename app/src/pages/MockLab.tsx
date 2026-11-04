@@ -25,7 +25,7 @@ const root="/tests/prelims";
 const mockLocalDate=(s?:string)=>s?new Date(Date.parse(s)-new Date(s).getTimezoneOffset()*60000).toISOString().slice(0,16):'';
 export function useMockAPI(){const {client,user}=useAuth();return useCallback(async<T,>(op:string,p:Record<string,unknown>={}):Promise<T>=>{
  if(!client)throw Error("The test service is not available. Please try again shortly.");
- const controller=op==='save'?new AbortController():null,timer=controller?setTimeout(()=>controller.abort(),12000):undefined;
+ const controller=op==='save'||op.startsWith('aurum-')?new AbortController():null,timer=controller?setTimeout(()=>controller.abort(),12000):undefined;
  try{let request=client.rpc("mock_lab",{op,p:{...p,...mockSessionParams(user?.id)}});if(controller&&typeof request.abortSignal==='function')request=request.abortSignal(controller.signal);const {data,error}=await request;if(error)throw Error(/permission denied|does not exist|schema cache|violates|invalid input syntax/i.test(error.message)?'The request could not be completed. Check the test details and try again.':error.message);return data as T;}catch(error){if(controller?.signal.aborted)throw Error('The connection is taking too long. Reconnect to sync your answers.');throw error;}finally{if(timer)clearTimeout(timer);}
  },[client,user?.id]);}
 function Loading(){return <p className="card mock-panel" role="status">Opening the mock test lab…</p>;}
