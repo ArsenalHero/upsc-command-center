@@ -19,6 +19,7 @@ import "../mock.css";
 import "../golden-gate.css";
 import "../mock-results.css";
 const LazyMockChart=lazy(()=>import("../components/mock/MockCharts").then(m=>({default:m.MockChart})));
+const Aurum=lazy(()=>import("./Aurum"));
 function MockChart(props:ComponentProps<typeof import("../components/mock/MockCharts").MockChart>){return <Suspense fallback={<p className="card mock-panel" role="status">Loading analysis chart…</p>}><LazyMockChart {...props}/></Suspense>;}
 const root="/tests/prelims";
 const mockLocalDate=(s?:string)=>s?new Date(Date.parse(s)-new Date(s).getTimezoneOffset()*60000).toISOString().slice(0,16):'';
@@ -29,7 +30,7 @@ export function useMockAPI(){const {client,user}=useAuth();return useCallback(as
  },[client,user?.id]);}
 function Loading(){return <p className="card mock-panel" role="status">Opening the mock test lab…</p>;}
 function ErrorNote({message}:{message:string}){return message?<p className="mock-error" role="alert">{message}</p>:null;}
-const nav=[['discover','Explore tests'],['my-tests','My tests'],['reports','Reports'],['mistakes','Review hub'],['leaderboards','Rankings']];
+const nav=[['discover','Explore tests'],['aurum','Aurum'],['my-tests','My tests'],['reports','Reports'],['mistakes','Review hub'],['leaderboards','Rankings']];
 const collections=[['discover','All mocks'],['csat','CSAT'],['sectional','Sectional'],['full-length','Full length'],['coaching','By coaching'],['series','By series'],['years','By year']];
 export default function MockLab(){
  const auth=useAuth(),api=useMockAPI(),location=useLocation();const [identity,setIdentity]=useState<{profile?:{display_name:string;target_accuracy:number};admin:boolean}>({admin:false});
@@ -43,7 +44,7 @@ export default function MockLab(){
  {collections.some(([path])=>path===view)&&<nav className="golden-collection-nav" aria-label="Mock collections">{collections.map(([path,label])=><Link key={path} aria-current={view===path?'page':undefined} to={`${root}/${path}`}>{label}</Link>)}</nav>}
  {(view==="mistakes"||view==="bookmarks")&&<nav className="golden-collection-nav" aria-label="Review collections"><Link to={`${root}/mistakes`} aria-current={view==="mistakes"?'page':undefined}>My mistakes</Link><Link to={`${root}/bookmarks`} aria-current={view==="bookmarks"?'page':undefined}>Bookmarked questions</Link></nav>}
  {!auth.user&&<p className="mock-browse-note"><ShieldCheck size={16} aria-hidden="true"/>Guest practice · no login needed. Resume tests and view reports in this browser. Clearing browser data removes guest access. <Link to="/login" state={{returnTo:location.pathname}}>Sign in for ranked attempts</Link>.</p>}
- {child==="result"&&attemptId?<MockReport key={attemptId} id={attemptId} target={identity.profile?.target_accuracy||75}/>:child==="leaderboard"?<MockLeaderboard testId={view}/>:view==="admin"?<MockAdmin allowed={identity.admin}/>:view==="my-tests"||view==="reports"?<MockHistoryPage reports={view==="reports"}/>:view==="mistakes"||view==="bookmarks"?<MockNotebook bookmarks={view==="bookmarks"}/>:view==="leaderboards"?<LeaderboardDirectory/>:/^[0-9a-f-]{36}$/.test(view)?<MockDetails id={view} profile={identity.profile} onProfile={()=>api<typeof identity>("identity").then(setIdentity)}/>:<MockCatalogue view={view}/>}
+ {view==="aurum"?<Suspense fallback={<Loading/>}><Aurum api={api}/></Suspense>:child==="result"&&attemptId?<MockReport key={attemptId} id={attemptId} target={identity.profile?.target_accuracy||75}/>:child==="leaderboard"?<MockLeaderboard testId={view}/>:view==="admin"?<MockAdmin allowed={identity.admin}/>:view==="my-tests"||view==="reports"?<MockHistoryPage reports={view==="reports"}/>:view==="mistakes"||view==="bookmarks"?<MockNotebook bookmarks={view==="bookmarks"}/>:view==="leaderboards"?<LeaderboardDirectory/>:/^[0-9a-f-]{36}$/.test(view)?<MockDetails id={view} profile={identity.profile} onProfile={()=>api<typeof identity>("identity").then(setIdentity)}/>:<MockCatalogue view={view}/>}
  </div>;
 }
 type Catalogue={tests:MockTest[];facets:{coaching:{id:string;name:string}[];years:number[];series:string[];subjects:string[];topics:string[]}};

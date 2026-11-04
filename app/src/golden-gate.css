@@ -30,6 +30,12 @@
 .golden-collection-nav a[aria-current] { border-color: var(--gate-border); color: var(--gate-gold); background: var(--gate-soft); }
 .golden-collection-nav a:hover { color: var(--text); text-decoration: none; }
 .golden-catalogue { display: grid; gap: 24px; min-width: 0; }
+.aurum-entry { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 21px 24px; border: 1px solid var(--gate-border); border-radius: 14px; background: var(--gate-soft); color: var(--gate-gold); }
+.aurum-entry > div { display: flex; align-items: center; gap: 14px; }
+.aurum-entry strong { display: block; font-size: 15px; margin-bottom: 5px; }
+.aurum-entry p { font-size: 12px; margin: 0; line-height: 1.7; }
+.aurum-entry svg { flex-shrink: 0; }
+.aurum-entry:hover { text-decoration: none; }
 .golden-hero { display: grid; grid-template-columns: minmax(0,1fr) 210px; align-items: center; gap: 35px; padding: 37px 40px; border-radius: 22px; background: linear-gradient(125deg,#18273b,#213b56); color: #fff; overflow: hidden; }
 .golden-hero .eyebrow { color: #e9c588; font-size: 10px; letter-spacing: .18em; }
 .golden-hero h2 { font-size: clamp(27px,3vw,39px); line-height: 1.2; margin: 13px 0 15px; letter-spacing: -.045em; }
