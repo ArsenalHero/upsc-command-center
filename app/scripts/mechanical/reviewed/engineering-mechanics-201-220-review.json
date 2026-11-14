@@ -1,0 +1,601 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-49-201",
+      "number": 201,
+      "status": "verified",
+      "answer": "b",
+      "note": "The limiting slope before downward sliding is the angle of repose; tanα=μs for the ideal block.",
+      "question": "A body of weight W is placed on an inclined plane. The angle made by the plane with the horizontal when the body is on the point of moving down is called",
+      "options": {
+        "a": "angle of inclination",
+        "b": "angle of repose",
+        "c": "angle of friction",
+        "d": "angle of limiting friction"
+      },
+      "explanation": "Angle of repose: It is the angle of inclination from the horizontal plane at which a body starts moving down (sliding), or is in impending motion.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Angle of Repose"
+    },
+    {
+      "id": "mech-engineering-mechanics-50-202",
+      "number": 202,
+      "status": "disputed",
+      "answer": null,
+      "note": "The rolling-resistance coefficient is given as0.3 without units or definition. The printed0.5N requires a resistance length0.3mm; a dimensionless coefficient0.3 gives150N instead.",
+      "question": "A steel wheel of600mm diameter is on a horizontal steel rail and carries a load of500N. The coefficient of rolling resistance is0.3. The force in newtons necessary to roll the wheel along the rail is",
+      "options": {
+        "a": "0.5",
+        "b": "5",
+        "c": "1.5",
+        "d": "150"
+      },
+      "explanation": "Diameter d=600mm, hence r=300mm. Load W=500N. The source uses a dimensional rolling-resistance length b=0.3mm, giving FR=Wb/r=500×0.3/300=0.5N. Horizontal balance gives P−FR=0, soP=0.5N.\nThe stem omits the length unit. If0.3 instead denotes the dimensionless ratio FR/W, the result is150N. Both interpretations match supplied choices, so the item is ungraded.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "Diameter of wheel(d)=600mm; r=300mm. Load(W)=500N. Coefficient of rolling resistance(μR)=0.3. Let rolling friction beFR.\nResolving horizontal forces(ΣFH=0): P−FR=0; P=FR …(i).\nResolving vertical force(ΣFV=0).\nRolling friction FR=W×μR/r=(500×0.3)/300=0.5N.\nFrom equation(i), P=0.5N.",
+      "subtopic": "Rolling Resistance and Units"
+    },
+    {
+      "id": "mech-engineering-mechanics-50-203",
+      "number": 203,
+      "status": "verified",
+      "answer": "a",
+      "note": "Limiting friction is the maximum static friction at impending slip, rather than the friction at every static load. The adjacent answer box is included in full.",
+      "question": "The maximum value of frictional force acting on a body when it is just about to start moving is called:",
+      "options": {
+        "a": "limiting friction",
+        "b": "static friction",
+        "c": "dynamic friction",
+        "d": "none of these"
+      },
+      "explanation": "Limiting friction: The maximum friction that can be generated between two static surfaces in contact. Once an applied force exceeds the limiting friction, motion occurs. For two dry surfaces, limiting friction is the product of the normal reaction force and the coefficient of limiting friction.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceAnswer": "a",
+      "subtopic": "Limiting Static Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-50-204",
+      "number": 204,
+      "status": "verified",
+      "answer": "c",
+      "note": "At impending motion,100=0.2R givesR=500N. Vertical equilibrium givesT=981−500=481N.",
+      "question": "A block weighing981N rests on a horizontal surface with coefficient of frictionμ=0.2. A vertical cable provides partial support as shown. A man pulls horizontally with100N. What is the cable tensionT if the man is just able to move the block to the right?",
+      "options": {
+        "a": "176.2N",
+        "b": "196.0N",
+        "c": "481.0N",
+        "d": "981.0N"
+      },
+      "explanation": "Given W=981N,μ=0.2 and horizontal pulling force100N. Let the normal reaction at the bottom of the block beR.\nF=μR at limiting friction.\n100N=μR, soR=100/0.2=500N.\nFrom the vertical free-body diagram,T+R=W.\nT=W−R=981−500=481N.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Friction with Partial Vertical Support"
+    },
+    {
+      "id": "mech-engineering-mechanics-51-205",
+      "number": 205,
+      "status": "verified",
+      "answer": "a",
+      "note": "Both blocks have accelerationF/(M+m); contact is the only horizontal force on the smaller block, givingmF/(M+m).",
+      "question": "Two blocks of massesM andm touch on a horizontal frictionless floor. A horizontal forceF applied to the heavier block accelerates both to the right. The force between the blocks is",
+      "options": {
+        "a": "mF/(M+m)",
+        "b": "MF/m",
+        "c": "mF/M",
+        "d": "(M+m)F/m"
+      },
+      "explanation": "Let the force between the blocks beF′.\nF′=ma …(1).\nFor the complete system,F=(M+m)a, so a=F/(M+m).\nUsing the separate free-body diagrams and substituting in(1):F′=mF/(m+M).",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Contact Force Between Accelerating Blocks"
+    },
+    {
+      "id": "mech-engineering-mechanics-51-206",
+      "number": 206,
+      "status": "corrected",
+      "answer": "a",
+      "note": "Wall friction opposes downward sliding of the upper end and acts upward. The printed final sentence instead says towards the wall. An unrestrained ladder under weight alone cannot be static on a perfectly smooth floor.",
+      "question": "On a ladder resting on smooth ground and leaning against a rough vertical wall, the force of friction acts",
+      "options": {
+        "a": "upward at its upper end",
+        "b": "towards the wall at the upper end",
+        "c": "towards the wall at the lower end",
+        "d": "downward at its upper end"
+      },
+      "explanation": "For a downward sliding tendency of the upper end, friction at the rough wall acts upward along the wall, option(a). The wall normal is horizontal; it is not friction.\nAt the smooth ground μ₁=0 and floor friction is zero. A free leaning ladder cannot remain static under its weight alone in this configuration: horizontal equilibrium would require zero wall normal and hence zero wall friction, leaving no balancing moment. The direction statement concerns contact with a downward sliding tendency, not a claim that this unsupported static arrangement is possible.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "At the wall,F₂=μ₂S(friction force). At the ground,F₁=μR.\nFor smooth ground μ₁=0.\nOn a ladder resting on a smooth ground and leaning against rough vertical wall, the force of friction acts towards the wall at the upper end.",
+      "subtopic": "Ladder Contact and Friction Direction"
+    },
+    {
+      "id": "mech-engineering-mechanics-51-207",
+      "number": 207,
+      "status": "disputed",
+      "answer": null,
+      "note": "The printed245.25N assumes a horizontal force. With direction unrestricted, the least upward pull is about237.93N at tanθ=μ; no listed value matches that minimum.",
+      "question": "A rectangular block of mass100kg rests on a rough horizontal floor with coefficient of friction0.25. The minimum force required to move the block is:",
+      "options": {
+        "a": "2452.5N",
+        "b": "245.25N",
+        "c": "2.4525N",
+        "d": "24.525N"
+      },
+      "explanation": "For a horizontal force,R=mg and limiting friction isμmg=0.25×100×9.81=245.25N, the printed answer(b).\nIf the pulling direction can be chosen, an upward pull at angleθ reduces the normal force. At impending slide,P=μmg/(cosθ+μsinθ). This is least when tanθ=μ, givingPmin=μmg/√(1+μ²)≈237.93N. The stem does not restrict the force to horizontal, so its minimum is ambiguous and this item is ungraded.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "Given m=100kg,μ=0.25.\nMinimum force required,F=μR.\nF=μmg=0.25×100×9.81=245.25N.",
+      "subtopic": "Least Pull and Direction of Applied Force"
+    },
+    {
+      "id": "mech-engineering-mechanics-51-208",
+      "number": 208,
+      "status": "corrected",
+      "answer": "a",
+      "note": "Using the source’sg=10m/s² approximation, motion begins at2.4s. Integratinga=2.5t−4 gives6.4m/s. The printed integral has+4, while the subsequent evaluation correctly uses−4.",
+      "question": "A10kg wooden block is initially at rest, as shown. The applied force increases linearly from0 to100N in4s. Static and kinetic friction coefficients are0.6 and0.4. The velocity at t=4s, in m/s, is",
+      "options": {
+        "a": "6.4",
+        "b": "0",
+        "c": "7.5",
+        "d": "5"
+      },
+      "explanation": "Given m=10kg,μs=0.6,μk=0.4. The source usesg=10m/s².\nMaximum static friction=μsN=0.6mg=0.6×100=60N.\nApplied forceP(t)=(100/4)t=25tN.\nThe block starts when25t>60, hence t>60/25=2.4s.\nAfter motion begins,Fnet=Fapplied−Fkinetic=25t−μkN=25t−0.4×100=25t−40.\nNewton’s law:25t−40=10dv/dt, so dv/dt=2.5t−4.\n∫₂.₄⁴(2.5t−4)dt=∫₀ᵛdv.\n[2.5t²/2−4t]₂.₄⁴=v−0.\nv=1.25(4²−2.4²)−4(4−2.4)=6.4m/s.\nUsingg=9.81 instead gives about6.63m/s; the listed6.4 follows the source’s approximation.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "Given m=10kg,μs=0.6,μk=0.4.\nStatic friction=μsN=0.6mg=0.6×100=60N.\nApplied force at time t=(100/4)t=25t.\nMotion begins when25t>60; t>60/25; t>2.4s.\nNewton’s second law:Fnet=m dv/dt.\nFnet=Fapp−kinetic friction(as the body moves after2.4s)=25t−μkN=25t−0.4×100=25t−40.\nThus25t−40=10dv/dt.\nAt4s:∫₂.₄⁴(2.5t+4)dt=∫₀ᵛdv.\n[2.5t²/2−4t]₂.₄⁴=v−0.\nv=1.25(4²−2.4²)−4(4−2.4).\nv=6.4m/s.",
+      "subtopic": "Time-Varying Force and Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-52-209",
+      "number": 209,
+      "status": "verified",
+      "answer": "a",
+      "note": "The vector moment isr×F=(√3−2)k≈−0.27kN m, withk the unit vector normal to thexy plane.",
+      "question": "A forceF of magnitude1N acts in thexy plane at(2m,4m), making60° with the positive x axis. Its torque about the origin, in N m, is",
+      "options": {
+        "a": "−0.27k",
+        "b": "0.27i",
+        "c": "−0.27i",
+        "d": "0.27k"
+      },
+      "explanation": "Given F=1N in thexy plane,θ=60° to thex axis, andA(2m,4m).\nF=1(cos60°i+sin60°j)=(1/2)i+(√3/2)j.\nPosition vectorr=2i+4j.\nTorqueτ=r×F=(2i+4j)×[(1/2)i+(√3/2)j].\nThe determinant has rows(i,j,k),(2,4,0),(1/2,√3/2,0).\nτ=i(0−0)−j(0−0)+k(√3−2)=(√3−2)k≈−0.27 k (N m).",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Dynamics — Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work–energy theorem and mechanical energy"
+        }
+      ],
+      "subtopic": "Vector Moment of a Force"
+    },
+    {
+      "id": "mech-engineering-mechanics-52-210",
+      "number": 210,
+      "status": "verified",
+      "answer": "c",
+      "note": "The normal reaction equals100N and the limiting friction is60N, soμ=0.6.",
+      "question": "A body weighing100N is placed on a rough horizontal plane. What is the coefficient of friction if a horizontal force of60N just causes it to slide?",
+      "options": {
+        "a": "0.4",
+        "b": "0.5",
+        "c": "0.6",
+        "d": "0.9"
+      },
+      "explanation": "R=100N.\nFriction force=μR.\n60=μ×100.\nμ=0.6.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Coefficient of Limiting Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-52-211",
+      "number": 211,
+      "status": "disputed",
+      "answer": null,
+      "note": "The source’s own capstan and beam-equilibrium calculation gives109.03N(g=9.81), or111.14N(g=10). None matches the offered100.7N or another choice.",
+      "question": "A uniform beam of mass density74kg/m and length1.8m is suspended symmetrically as shown. Find the maximum forceP supported without tipping. The coefficient of static friction between cord and cylinder is7/22.",
+      "options": {
+        "a": "100.7N",
+        "b": "200.9N",
+        "c": "150.8N",
+        "d": "50.2N"
+      },
+      "explanation": "The contact angle isπ and the limiting tension ratioT₁/T₂=e^(μθ)=e.\nW=74×9.81×1.8=1306.692N. Vertical balance givesP=T₁+T₂−W.\nMoments about the left end give0.75T₁+1.05T₂=0.9W.\nWithT₁=eT₂, T₂=0.9W/(0.75e+1.05), givingP≈109.03N.\nThe complete printed calculation below reaches the same approximate result but then selects100.7N. No listed value matches, so the item is ungraded.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "Assume beam as UDL beam.\nμ=7/22; angle of contactθ=π.\nW=74×9.81×1.8=1306.692N.\nFor maximum forceT₁>T₂, soT₁/T₂=e^(μθ)=e^[(7/22)π]=e¹=2.718.\nΣFV=0:T₁+T₂=P+W=P+1306.692.\nP=3.718T₂−1306.692 …(i).\nΣMA=0:−T₁×0.75−T₂×1.05+1306.692×0.9=0.\n2.718T₂×0.75+T₂×1.05=1176.0228.\nT₂=1176.0228/3.0885=380.7747N.\nT₁=2.718T₂=1034.945N.\nFrom(i),P=109.028N.\nIfg=10m/s²,P=111.1417N.\nSo, option(a)≈100.7N.",
+      "subtopic": "Capstan Friction and Beam Equilibrium"
+    },
+    {
+      "id": "mech-engineering-mechanics-53-212",
+      "number": 212,
+      "status": "corrected",
+      "answer": "c",
+      "note": "Withg=9.81,N≈224.79N and kinetic friction44.96N down the plane, matching45N. The source usesg=10 and obtains46.6N; its direction is correct but the approximation does not give the listed number.",
+      "question": "A forceF pulls a50kg block as shown. Determine the magnitude and direction of friction whenF=400N.",
+      "options": {
+        "a": "45N up the plane",
+        "b": "80N up the plane",
+        "c": "45N down the plane",
+        "d": "80N down the plane"
+      },
+      "explanation": "Normal balance on the30° plane:Fsin30°+N=mgcos30°.\nN=50×9.81cos30°−400sin30°≈224.79N.\nThe upward drive without friction is400cos30°−50×9.81sin30°≈101.16N.\nMaximum static frictionμsN=0.25×224.79≈56.20N cannot prevent upward motion. Friction is therefore kinetic and down the plane:\nFk=μkN=0.2×224.79≈44.96N≈45N, option(c).\nThe source’sg=10 calculation givesN=233N,Fs=58.25N,upward drive96.4N andFk=46.6N. The source’s full working is retained below.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "ΣFy=0:Fsinθ+N=mgcosθ.\nN=50×10×cos30°−400×sin30°=233N.\nIf(a)Fcosθ>mgsinθ+fs,friction is kinetic.\n(b)Fcosθ≤mgsinθ+fs,friction is static.\nStatic frictionFs=μsN=0.25×233=58.25N.\nKinetic frictionFk=μkN=0.2×233=46.6N.\nNet force along the plane=Fcos30°−Wsin30°=400(√3/2)−500(1/2)=96.4N.\nHence friction is kinetic and46.6N down the plane.",
+      "subtopic": "Inclined Pull: Static or Kinetic Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-53-213",
+      "number": 213,
+      "status": "corrected",
+      "answer": "b",
+      "note": "For a uniform solid sphere, the limiting coefficient is(2/7)tanθ, including equality. The printed strict condition is the intended threshold. A hollow or nonuniform sphere has a different inertia.",
+      "question": "A sphere of massm rolls without slipping on a plane inclined atθ. Which condition should be satisfied for pure rolling?",
+      "options": {
+        "a": "μ<(1/7)tanθ",
+        "b": "μ>(2/7)tanθ",
+        "c": "μ>(5/7)tanθ",
+        "d": "μ>(3/7)tanθ"
+      },
+      "explanation": "The required friction ratio isf/N=tanθ/[1+R²/k²],wherek is radius of gyration andI=mk².\nFor a uniform solid sphere,I=(2/5)mR²=mk², hencek²=(2/5)R².\nf/N=tanθ/[1+R²/((2/5)R²)]=(2/7)tanθ.\nPure rolling requiresμs≥(2/7)tanθ. Option(b) gives the intended threshold using a strict inequality; equality is the limiting case. Other sphere mass distributions need their own moment of inertia.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "A spherem rolls without slipping down an inclineθ.\nCoefficient of frictionμ>tanθ/[1+R²/k²] …(i),wherek is radius of gyration.\nMoment of inertiaI=(2/5)mR²=mk².\nk²=(2/5)R² …(ii).\nFrom(i),(ii):μ>tanθ/[1+R²/((2/5)R²)]=(2/7)tanθ.",
+      "subtopic": "Pure Rolling of a Solid Sphere"
+    },
+    {
+      "id": "mech-engineering-mechanics-53-214",
+      "number": 214,
+      "status": "disputed",
+      "answer": null,
+      "note": "The stem gives a100N pull but also says impending motion. Actual static friction is100N at rest; limiting friction at impending slip is500N. These conditions are inconsistent.",
+      "question": "A box weighing1000N is on the ground with coefficient of friction0.5. When pulled by a100N horizontal force, the friction developed between the box and ground at impending motion is",
+      "options": {
+        "a": "50N",
+        "b": "75N",
+        "c": "100N",
+        "d": "500N"
+      },
+      "explanation": "N=W=1000N,so maximum static friction isμN=0.5×1000=500N.\nUnder the stated100N pull,the box remains at rest and actual friction balances the pull:f=100N,option(c).\nAt impending motion,f=500N,option(d),requiring a larger pull. The simultaneous conditions in the stem are inconsistent,so this item is ungraded.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "GivenW=1000N,μ=0.5,P=100N.\nFrictional forceF=μN=0.5×1000(sinceN=W)=500N.\nBecause the applied100N is less than limiting friction,the body is at rest. As long as the body is at rest,F=P=100N.",
+      "subtopic": "Actual versus Limiting Static Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-53-215",
+      "number": 215,
+      "status": "verified",
+      "answer": "c",
+      "note": "For a uniform ladder,the height is12m and the minimum required coefficient is5/(2×12)=0.2083≈0.21. Larger coefficients also permit equilibrium.",
+      "question": "A13m ladder leans against a smooth vertical wall with its lower end5m from the wall. What coefficient of friction between ladder and floor is required for equilibrium?",
+      "options": {
+        "a": "0.29",
+        "b": "0.25",
+        "c": "0.21",
+        "d": "0.11"
+      },
+      "explanation": "Using equilibrium equations,N₂=μ₁N₁.\nN₁=W;wall frictionμ₂N₂=0 because the wall is smooth.\nTaking moments aboutA:\nW×2.5+μ₁N₁×12=N₁×5.\nWithN₁=W,μ₁=(5−2.5)/12=0.2083≈0.21.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Ladder Limiting Equilibrium"
+    },
+    {
+      "id": "mech-engineering-mechanics-54-216",
+      "number": 216,
+      "status": "verified",
+      "answer": "a",
+      "note": "At impending downward slip,μ=tan30°=1/√3.",
+      "question": "A body weighing50N is on a plane inclined30° to the horizontal and is in limiting equilibrium. The coefficient of friction is",
+      "options": {
+        "a": "1/√3",
+        "b": "√3",
+        "c": "1/(50√3)",
+        "d": "√3/5"
+      },
+      "explanation": "Givenmg=50N,θ=30°.\nFor limiting equilibrium,mgsin30°=μR=μmgcos30°.\nμ=tan30°=1/√3.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Angle of Repose and Limiting Equilibrium"
+    },
+    {
+      "id": "mech-engineering-mechanics-54-217",
+      "number": 217,
+      "status": "verified",
+      "answer": "b",
+      "note": "For a block that actually slides down from rest,work–energy givesv²=2gh(1−μcotθ). Downward acceleration requires tanθ>μ.",
+      "question": "A block of massm slides down an inclined plane from rest,with coefficient of frictionμ,as shown. What is its velocity at the lowest point?",
+      "options": {
+        "a": "2gh(1−μcotθ)",
+        "b": "√[2gh(1−μcotθ)]",
+        "c": "√[2ghμ(1−cotθ)]",
+        "d": "√[2gh(1−μsinθ)]",
+        "e": "√[2gh(μ−tanθ)]"
+      },
+      "explanation": "Kinetic energy at the lowest point is\n(1/2)mv²=mgh−energy lost to friction\n=mgh−μR[h/sinθ]\n=mgh−μmgcosθ[h/sinθ].\nThusv=√[2gh(1−μcotθ)].\nThe distance covered along the plane ish/sinθ.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "MIT OpenCourseWare: Dynamics — Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work–energy theorem and mechanical energy"
+        }
+      ],
+      "subtopic": "Sliding Down a Rough Incline: Work–Energy"
+    },
+    {
+      "id": "mech-engineering-mechanics-54-218",
+      "number": 218,
+      "status": "corrected",
+      "answer": "b",
+      "note": "The capstan equation givesμmin=ln3/π≈0.3497. The source uses masses3m andm as tensions instead of3mg andmg;g cancels in the ratio,so the answer is unchanged.",
+      "question": "What is the minimum coefficientμ of friction between the rope and fixed shaft that prevents the unbalanced cylinders from moving?",
+      "options": {
+        "a": "μ=0.333",
+        "b": "μ=0.350",
+        "c": "μ=0.253",
+        "d": "μ=0.372"
+      },
+      "explanation": "The hanging masses are3m andm,so static tensions areT₁=3mg andT₂=mg.\nAt impending slip,T₁/T₂=e^(μθ). The contact angleθ=πradians.\n3mg/(mg)=e^(μπ),hence3=e^(μπ).\nln3=μπ,soμ=ln3/π≈0.3497≈0.350.\nThe source’s3m andm omitg from the tensions,but not from their dimensionless ratio.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "sourceExplanation": "T₂=m,T₁=3m.\nT₁/T₂=e^(μθ).\nθis the contact angle between rope and cylinder;θ=πradian.\n3m/m=e^(μπ).\n3=e^(μπ).\n1.098=μπ.\nμ=0.349≈0.35.",
+      "subtopic": "Belt and Rope Friction: Capstan Equation"
+    },
+    {
+      "id": "mech-engineering-mechanics-54-219",
+      "number": 219,
+      "status": "verified",
+      "answer": "d",
+      "note": "In the intended dry-contact model,surface material/condition affectsμs and normal load affectsFmax=μsN. Weight determinesN only when other normal-direction forces are absent.",
+      "question": "Limiting friction depends upon",
+      "options": {
+        "a": "materials of the bodies in contact",
+        "b": "weight of the body to be moved",
+        "c": "roughness of the contacting surfaces",
+        "d": "all of the above"
+      },
+      "explanation": "Limiting friction is the maximum frictional force when a body just begins to slide over another body. It depends on:\n• Materials of the bodies in contact.\n• Weight of the body to be moved.\n• Roughness of the contacting surfaces of the two bodies.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ],
+      "subtopic": "Factors Affecting Limiting Friction"
+    },
+    {
+      "id": "mech-engineering-mechanics-55-220",
+      "number": 220,
+      "status": "corrected",
+      "answer": "c",
+      "note": "For a steady full cycle travelling4A against constant frictionμN,the energy loss is4μNA. The additional printed claim of periodic free motion needs qualification because amplitudes decrease.",
+      "question": "The energy dissipated during a full cycle by dry-friction damping,in terms of maximum amplitudeA and friction forceμN,is",
+      "options": {
+        "a": "μNA",
+        "b": "2μNA",
+        "c": "4μNA",
+        "d": "3μNA"
+      },
+      "explanation": "Dry-friction or Coulomb damping occurs at a sliding contact. Friction opposes relative velocity and depends on the normal force.\nThe source lists:nonlinear equation of motion;unchanged ideal sliding-segment frequency;oscillatory motion;eventual rest in free vibration;and linearly decreasing successive peak amplitudes. A decreasing-amplitude free response is not strictly periodic,though the ideal sliding half-cycles have equal durations.\nFor a full cycle travelling4A:\nΔW=μN×4A=4μNA.\nThe source also gives the harmonic-balance approximation for forced steady sliding:\nA=(F₀/K)√{[1−(4μN/(πF₀))²]/[1−(ω/ωn)²]²}.\nThis is conditional on its sliding/forcing assumptions;it is not a general free-response amplitude formula.",
+      "transcriptionReviewed": true,
+      "references": [
+        {
+          "title": "IIT Bombay / NPTEL: Systems with Coulomb Damping",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112101096/Mod%2010/Lect4/10.4_1.html",
+          "section": "Dry-friction model and amplitude decay"
+        },
+        {
+          "title": "Victoria University: Mechanical Vibrations",
+          "url": "https://www.staff.vu.edu.au/vrouillard/Mechanical%20Vibrations%20WEB/Mechanical%20Vibrations.pdf",
+          "section": "Coulomb-damping energy loss per cycle"
+        }
+      ],
+      "sourceExplanation": "Dry Friction Damping(or)Coulomb Damping:Dry friction damping occurs at the interface between two bodies in relative motion with contact. As shown,the friction force opposes relative velocity and depends on normal force.\nCharacteristics:\n• The equation of motion is nonlinear with Coulomb damping.\n• Natural frequency is unchanged by Coulomb damping.\n• Motion is periodic with Coulomb damping.\n• The system comes to rest after some time with Coulomb damping.\n• Amplitude reduces linearly with Coulomb damping.\nEnergy dissipated in a full cycle:ΔW=4μNA.\nWhereA=(F₀/K){[1−(4μN/(πF₀))²]/[1−(ω/ωn)²]²}¹ᐟ².",
+      "subtopic": "Coulomb Damping and Energy Dissipation"
+    }
+  ],
+  "audit": {
+    "range": [
+      201,
+      220
+    ],
+    "totalReviewed": 20,
+    "complete": true,
+    "method": "Restored previously visually reconciled complete source text and independent calculations for the byte-identical selected PDF."
+  }
+}

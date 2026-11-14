@@ -370,6 +370,7 @@ export interface AppData {
   demoDates?: { prelims: string; mains: string };
   pyqDraft?: PYQDraft;
   prelims?: PrelimsWorkspace;
+  mechanical?: import("../utils/mechanical").MechanicalWorkspace;
   lectures?: LectureWorkspace;
   books?: BookWorkspace;
   schemaVersion: 1;
@@ -391,7 +392,7 @@ export interface AppData {
 }
 export type Collection = Exclude<
   keyof AppData,
-  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims" | "lectures" | "books"
+  "schemaVersion" | "settings" | "demoDates" | "pyqDraft" | "prelims" | "lectures" | "books" | "mechanical"
 >;
 export type Entity = AppData[Collection][number];
 export interface PrelimsFilters {

@@ -1,0 +1,3218 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-37-121",
+      "status": "verified",
+      "answer": "a",
+      "question": "A circular disc of radius R rolls without slipping at a velocity V. The magnitude of the velocity at point P shown in the figure is",
+      "options": {
+        "a": "√3 V",
+        "b": "(√3/2) V",
+        "c": "V/2",
+        "d": "√2 V"
+      },
+      "explanation": "Given: circular disc radius R and translational velocity V, rolling without slipping.\nV_cm = Rω = V. In the velocity construction θ = 60°.\nMagnitude of velocity at point P:\nv_P = √[(V sin θ)² + (V + V cos θ)²]\n= √[(V sin 60°)² + V²(1 + cos 60°)²]\n= √[(V√3/2)² + V²(1 + 1/2)²]\n= √[V²(3/4) + V²(3/2)²]\n= √[V²(3/4 + 9/4)]\n= V√(12/4)\n= V√3.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1 Rolling without slipping"
+        }
+      ],
+      "figures": [
+        {
+          "page": 23,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            356.67,
+            129.0,
+            472.0,
+            207.33
+          ],
+          "units": "pdf-points",
+          "alt": "Disc rolling to the right; radius to P is 30° above horizontal."
+        },
+        {
+          "page": 23,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            334.33,
+            298.67,
+            475.67,
+            404.67
+          ],
+          "units": "pdf-points",
+          "alt": "Velocity construction at P showing translation V and clockwise rotational velocity ωR = V."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-37-122",
+      "status": "verified",
+      "answer": "b",
+      "question": "The tension in the cable supporting a lift moving upwards is twice the tension when the lift moves downwards. What is the acceleration of the lift?",
+      "options": {
+        "a": "g/4",
+        "b": "g/3",
+        "c": "g/2",
+        "d": "g"
+      },
+      "explanation": "Case I: upward acceleration a.\nT₁ − mg = ma. …(1)\nCase II: downward acceleration of the same magnitude a.\nmg − T₂ = ma. …(2)\nGiven T₁ = 2T₂. From equations (1) and (2):\nmg − T₂ = 2T₂ − mg\n3T₂ = 2mg\nT₂ = (2/3)mg.\nSubstituting T₂ in equation (2):\nmg − (2/3)mg = ma\nTherefore a = g/3.",
+      "transcriptionReviewed": true,
+      "note": "Complete source calculation transcribed and independently checked. As assumed in the printed solution, the upward and downward accelerations have equal magnitude; direction of velocity alone would not determine acceleration.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            103.0,
+            107.0,
+            166.0,
+            177.67
+          ],
+          "units": "pdf-points",
+          "alt": "Upward-accelerating lift: T₁ upward, mg downward and acceleration a upward."
+        },
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            103.33,
+            196.67,
+            168.33,
+            267.0
+          ],
+          "units": "pdf-points",
+          "alt": "Downward-accelerating lift: T₂ upward, mg downward and acceleration a downward."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-123",
+      "status": "verified",
+      "answer": "b",
+      "question": "When a jet plane flying at 300 m/s is at the very top of its trajectory, the apparent weight of a passenger is one half of the actual weight. Find the radius of curvature R of the flight path at this point. Use g = 10 m/s².",
+      "options": {
+        "a": "22 km",
+        "b": "18 km",
+        "c": "30 km",
+        "d": "16 km"
+      },
+      "explanation": "V = 300 m/s. Let the actual weight of the passenger be W and the apparent weight be W′.\nAt the top of the curved path:\nW′ = W − mω²R = W − mV²/R.\nGiven W′ = W/2 and m = W/g:\nW/2 = W − WV²/(Rg).\nTherefore R = 2V²/g\n= 2(300)²/10\n= 18,000 m\n= 18 km.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "4.4 Centripetal acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            140.67,
+            458.25,
+            217.67,
+            505.92
+          ],
+          "units": "pdf-points",
+          "alt": "Top of convex flight path with vertical radius of curvature R."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-124",
+      "status": "verified",
+      "answer": "b",
+      "question": "A roller of weight W is rolled over the wooden block shown in the figure. The horizontal pull required just to cause the motion is",
+      "options": {
+        "a": "W/2",
+        "b": "√3 W",
+        "c": "W",
+        "d": "2W"
+      },
+      "explanation": "Resolving the geometry shown:\na = R cos 60°\nb = R cos 30°.\nTaking moments about the corner of the wooden block at the point of impending rotation:\nΣM = 0\nWb = Fa\nF = Wb/a\n= W cos 30°/cos 60°\n= W√3.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            363.0,
+            208.0,
+            465.33,
+            262.0
+          ],
+          "units": "pdf-points",
+          "alt": "Roller touching a block corner; radius to the corner is 30° below the horizontal pull F."
+        },
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            351.67,
+            324.0,
+            482.33,
+            405.0
+          ],
+          "units": "pdf-points",
+          "alt": "Roller free-body geometry with moment arms a = R cos 60° and b = R cos 30°."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-125",
+      "status": "verified",
+      "answer": "b",
+      "question": "An electric lift is moving downward with an acceleration of g/3. The vertical force between a passenger in the lift and its floor is equal to",
+      "options": {
+        "a": "3/4 of the passenger’s weight",
+        "b": "2/3 of the passenger’s weight",
+        "c": "The passenger’s weight",
+        "d": "4/3 of the passenger’s weight"
+      },
+      "explanation": "Given a = g/3 downward.\nThe vertical contact force on the floor is\nF = mg − ma\n= m(g − a)\n= m(g − g/3)\n= 2mg/3.\nThus it is two thirds of the passenger’s weight.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            329.33,
+            670.67,
+            493.33,
+            740.33
+          ],
+          "units": "pdf-points",
+          "alt": "Passenger force diagram: contact F upward, weight mg downward, downward acceleration and upward inertia force −ma."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-126",
+      "status": "verified",
+      "answer": "d",
+      "question": "A body of mass 10 kg moving with a velocity of 1 m/s is acted upon by a force of 50 N for two seconds. The final velocity of the body is",
+      "options": {
+        "a": "22 m/s",
+        "b": "1 m/s",
+        "c": "√21 m/s",
+        "d": "11 m/s"
+      },
+      "explanation": "m = 10 kg, u = 1 m/s, F = 50 N, t = 2 s.\nF = ma, so a = 50/10 = 5 m/s².\nv = u + at\n= 1 + 5 × 2\n= 11 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Source and complete calculation reconciled. The printed answer assumes the force acts along the initial velocity, as is conventional in this one-dimensional question; without its direction the final velocity is not unique.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-127",
+      "status": "corrected",
+      "answer": "b",
+      "question": "The ratio of the radii of planets P₁ and P₂ is k and the ratio of their accelerations due to gravity is s. The ratio of their escape velocities is",
+      "options": {
+        "a": "ks",
+        "b": "√(ks)",
+        "c": "√(k/s)",
+        "d": "√(s/k)"
+      },
+      "explanation": "Escape speed is the minimum speed required to leave a planet’s gravitational field without further propulsion. It must overcome the gravitational attraction. The formula contains G, the universal gravitational constant, and the unit of escape speed is m/s.\nv_esc = √(2GM/R), where g = GM/R².\nHence v_esc = √[2gR²M/(MR)] = √(2gR).\nGiven R₁/R₂ = k and g₁/g₂ = s, the ratio is\nv₁/v₂ = √[(g₁R₁)/(g₂R₂)] = √(sk).",
+      "transcriptionReviewed": true,
+      "note": "Answer (b) is correct. The source definition incorrectly calls escape velocity the maximum velocity; it is the minimum escape speed. All supplied derivation steps are preserved with this definition corrected.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy",
+          "section": "13.3 Escape speed"
+        }
+      ],
+      "sourceExplanation": "The escape velocity is maximum velocity required to leave planet. It must overcome the pull of gravity. The formula of escape velocity contains a constant G which is called the “Universal gravitational constant”. The unit of escape velocity is m/sec (m/s).\nv_esc = √(2GM/R), where g = GM/R².\nSo v_esc = √[2gR²M/(MR)] = √(2gR).\nRatio of escape velocity is given as: R₁/R₂ = k, g₁/g₂ = s.\nv₁/v₂ = √[(g₁R₁)/(g₂R₂)] = √(sk)."
+    },
+    {
+      "id": "mech-engineering-mechanics-39-128",
+      "status": "verified",
+      "answer": "d",
+      "question": "Which of the following is not a scalar quantity?",
+      "options": {
+        "a": "Time",
+        "b": "Mass",
+        "c": "Volume",
+        "d": "Acceleration"
+      },
+      "explanation": "Acceleration has magnitude as well as direction, so it is a vector quantity.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-129",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 10 kg mass is hung from two light, inextensible strings as shown. The tension in the horizontal string is nearly",
+      "options": {
+        "a": "49 N",
+        "b": "57 N",
+        "c": "100 N",
+        "d": "0 N"
+      },
+      "explanation": "From the free-body diagram:\nT₁ sin 60° = mg\nT₁(√3/2) = 10 × 9.81\nT₁ = (20 × 9.81)/√3.\nAlso T₁ cos 60° = T₂, so\nT₂ = [(20 × 9.81)/√3] × (1/2)\n= (10 × 9.81)/√3\n≈ 56.64 N (the source prints 56.63 N after its intermediate rounding).\nTension in the horizontal string T₂ ≈ 57 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            377.33,
+            182.67,
+            454.0,
+            226.33
+          ],
+          "units": "pdf-points",
+          "alt": "10 kg mass held by a horizontal string and an inclined string at 60° to horizontal, shown in the supplied solution."
+        },
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            349.0,
+            237.0,
+            475.67,
+            326.67
+          ],
+          "units": "pdf-points",
+          "alt": "Free-body diagram of the 10 kg mass with T₁, its components, T₂ and weight mg."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-130",
+      "status": "verified",
+      "answer": "a",
+      "question": "The free-body diagram of a body is a diagram showing",
+      "options": {
+        "a": "All the forces, including the reactions at the supports or surfaces",
+        "b": "The forces, but not showing the reactions at the supports or surfaces",
+        "c": "All the forces and the supports or surfaces",
+        "d": "Only the reactions at the supports or surfaces of the body"
+      },
+      "explanation": "To identify clearly the various forces acting on a body in equilibrium, draw its free-body diagram. Only then can the equilibrium equations of the body be written.\nTo draw the free-body diagram of a body, remove all supports (such as a wall, floor, hinge or any other body) and replace them by the reactions which those supports exert on the body.\nThe illustration replaces the floor beneath a weighted circular body with the upward reaction R_A at A.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Free-Body Diagrams",
+          "url": "https://engineeringstatics.org/Chapter_05-free-body-diagrams.html",
+          "section": "Replace supports with their reaction forces"
+        }
+      ],
+      "figures": [
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            335.67,
+            677.67,
+            481.67,
+            739.0
+          ],
+          "units": "pdf-points",
+          "alt": "Supported circular body with weight W compared with its free-body diagram showing W and reaction R_A."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-131",
+      "status": "disputed",
+      "answer": null,
+      "question": "If three forces P, Q and R keep a body in equilibrium, the angle between P and Q is 90° and R acts vertically downward, then the magnitudes of R and Q respectively in terms of P are",
+      "options": {
+        "a": "P/√2, √2 P",
+        "b": "√2 P, P/√2",
+        "c": "P, √2 P",
+        "d": "√2 P, P"
+      },
+      "explanation": "The printed answer (d) follows only after imposing the extra assumption that P and Q are symmetric about the vertical. This is not stated in the question.\nThe complete printed solution uses Lami’s theorem with angles 135°, 135° and 90°:\nP/sin 135° = Q/sin 135° = R/sin 90°.\nFrom P/sin 135° = R/sin 90°:\nP/(1/√2) = R, so R = √2 P.\nFrom Q/sin 135° = P/sin 135°, Q = P.\nHowever, the given information P ⟂ Q and a vertically downward R does not establish the two 135° angles. In general, R² = P² + Q², and Q/P can vary with the inclination of P and Q. The stem therefore has no unique answer.",
+      "transcriptionReviewed": true,
+      "note": "The source adds equal 135° angles only in its solution figure. The stem provides no symmetry or inclination condition; Q/P is free, so no unique listed answer can be graded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "According to Lami’s theorem, using the solution figure with angles 135°, 135° and 90°:\nP/sin 135° = Q/sin 135° = R/sin 90°.\nFrom P/sin 135° = R/sin 90°:\nP/(1/√2) = R ⇒ R = √2 P.\nFrom Q/sin 135° = P/sin 135°:\nQ = P.\nAnswer (d).",
+      "figures": [
+        {
+          "page": 26,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            124.67,
+            213.08,
+            235.33,
+            324.42
+          ],
+          "units": "pdf-points",
+          "alt": "Printed solution assumes forces P and Q make equal 135° angles with downward R; that symmetry is not specified by the stem."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-132",
+      "status": "verified",
+      "answer": "c",
+      "question": "A rigid body will be in equilibrium under the action of two forces only when:",
+      "options": {
+        "a": "Forces have the same magnitude, same line of action and same sense",
+        "b": "Forces have the same magnitude and same line of action",
+        "c": "Forces have the same magnitude, same line of action and opposite senses",
+        "d": "Forces have the same magnitude"
+      },
+      "explanation": "A rigid body will be in equilibrium under the action of two forces only when the forces have the same magnitude, the same line of action and opposite senses.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-133",
+      "status": "verified",
+      "answer": "d",
+      "question": "The resultant of two forces A and B is perpendicular to A. The angle between A and B is",
+      "options": {
+        "a": "cos⁻¹(A/B)",
+        "b": "cos⁻¹(B/A)",
+        "c": "cos⁻¹(−B/A)",
+        "d": "cos⁻¹(−A/B)",
+        "e": "tan⁻¹(B/A)"
+      },
+      "explanation": "For forces A and B with included angle α, the resultant makes angle θ with A, where\ntan θ = B sin α/(A + B cos α).\nGiven θ = 90°, the horizontal component must vanish:\nA + B cos α = 0\nA = −B cos α\nα = cos⁻¹(−A/B).\nThus the angle between A and B is cos⁻¹(−A/B). A real nonzero perpendicular resultant requires B > A; the limiting B = A case has zero resultant.",
+      "transcriptionReviewed": true,
+      "note": "Five choices restored from the scan. The source algebra is correct; its solution figure places α next to the wrong angle. In this transcription α consistently means the included angle between A and B, and the undefined “1/0” notation is expressed as a vanishing horizontal component.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 26,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            342.33,
+            129.67,
+            474.67,
+            211.0
+          ],
+          "units": "pdf-points",
+          "alt": "Source force construction: A horizontal, resultant R vertical, B oblique. The printed α arc is misplaced; α in the algebra is the included angle between A and B."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-134",
+      "status": "corrected",
+      "answer": "c",
+      "question": "Concurrent forces of 2, √3, 5, √3 and 2 kN act at one angular point of a regular hexagon towards the remaining five angular points, in order. Determine the magnitude and direction of the resultant force.",
+      "options": {
+        "a": "R = 10 kN; α = 0°",
+        "b": "R = 12 kN; α = 180°",
+        "c": "R = 10 kN; α = 60°",
+        "d": "R = 20 kN; α = 0°",
+        "e": "R = 10 kN; α = 90°"
+      },
+      "explanation": "Resolving all forces horizontally:\nΣH = 2 cos 0° + √3 cos 30° + 5 cos 60° + √3 cos 90° + 2 cos 120°\n= 2 + √3(√3/2) + 5(1/2) + √3(0) + 2(−1/2)\n= 5 kN.\nResolving all forces vertically:\nΣV = 2 sin 0° + √3 sin 30° + 5 sin 60° + √3 sin 90° + 2 sin 120°\n= 0 + √3/2 + 5√3/2 + √3 + 2(√3/2)\n= 5√3 kN ≈ 8.66 kN.\nMagnitude of the resultant:\nR = √[(ΣH)² + (ΣV)²]\n= √[5² + (5√3)²]\n= 10 kN.\nDirection of the resultant from the first force:\ntan α = ΣV/ΣH = 8.66/5 ≈ 1.732\nα ≈ 60°.",
+      "transcriptionReviewed": true,
+      "note": "Five choices restored. Answer (c) is correct; the source final direction line prints 9.99/8.66 = 1.732, which is false. It must be ΣV/ΣH = 8.66/5. Complete component derivation retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "Resolving all forces horizontally:\nΣH = 2 cos 0° + √3 cos 30° + 5 cos 60° + √3 cos 90° + 2 cos 120°\n= 2 + √3(√3/2) + 5(1/2) + √3(0) + 2(−1/2)\n= 5 kN.\nResolving all forces vertically:\nΣV = 2 sin 0° + √3 sin 30° + 5 sin 60° + √3 sin 90° + 2 sin 120°\n= 0 + √3/2 + 5√3/2 + √3 + 2(√3/2)\n= 8.66 kN.\nR = √[(ΣH)² + (ΣV)²] = √[5² + 8.66²] = 9.99 ≃ 10 kN.\nDirection: tan θ = ΣV/ΣH = 9.99/8.66 = 1.732.\nθ = 59.99 ≃ 60°. Answer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-40-135",
+      "status": "verified",
+      "answer": "e",
+      "question": "A particle in equilibrium cannot have",
+      "options": {
+        "a": "Linear motion with constant speed",
+        "b": "Constant velocity",
+        "c": "Zero acceleration",
+        "d": "Zero velocity",
+        "e": "Curvilinear motion with constant speed"
+      },
+      "explanation": "A particle is said to be in equilibrium if the net force acting on it is zero. By Newton’s second law, its acceleration is then zero.\nConsequently, the particle is either at rest (zero velocity) or moving with a constant velocity, that is, with constant speed in a straight line. Curvilinear motion at nonzero constant speed requires an acceleration due to the changing direction of velocity.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "4.4 Centripetal acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-136",
+      "status": "verified",
+      "answer": "c",
+      "question": "The force applied to a body of mass 100 kg to produce an acceleration of 5 m/s² is",
+      "options": {
+        "a": "20 N",
+        "b": "100 N",
+        "c": "500 N",
+        "d": "None of these"
+      },
+      "explanation": "F = ma\n= 100 × 5\n= 500 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-137",
+      "status": "verified",
+      "answer": "b",
+      "question": "Two parallel forces of 100 kN and 75 kN act on a body and have a resultant of 25 kN. The two forces are",
+      "options": {
+        "a": "Like parallel forces",
+        "b": "Unlike parallel forces",
+        "c": "Concurrent forces",
+        "d": "None of the above"
+      },
+      "explanation": "We know that R² = P² + Q² + 2PQ cos θ.\nTaking a signed parallel force convention, P = 100 kN and Q = −75 kN, with θ = 0°:\nR² = 100² + (−75)² + 2(100)(−75) cos 0°\n= 625.\nR = √625 = 25 kN.\nHence the two forces are unlike parallel forces, acting in opposite directions.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-138",
+      "status": "verified",
+      "answer": "b",
+      "question": "The angle between two forces P and Q is α. The resultant of these forces is",
+      "options": {
+        "a": "√(P² + Q² + 2PQ sin α)",
+        "b": "√(P² + Q² + 2PQ cos α)",
+        "c": "√(P² + Q²)",
+        "d": "√(P² + Q² − 2PQ cos α)"
+      },
+      "explanation": "Parallelogram law of forces: if two forces acting simultaneously on a particle are represented in magnitude and direction by the adjacent sides of a parallelogram, their resultant is represented in magnitude and direction by the diagonal through their common point of application.\nR = √(P² + Q² + 2PQ cos α).\nThe direction is given by\ntan θ = Q sin α/(P + Q cos α),\nwhere θ is the angle made by the resultant R with P.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            134.0,
+            657.5,
+            234.33,
+            724.5
+          ],
+          "units": "pdf-points",
+          "alt": "Parallelogram of forces P and Q, resultant diagonal R and angular labels."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-139",
+      "status": "verified",
+      "answer": "c",
+      "question": "If a suspended body is struck at the centre of percussion, the pressure on the axis passing through the point of suspension will be",
+      "options": {
+        "a": "Maximum",
+        "b": "Minimum",
+        "c": "Zero",
+        "d": "Infinity"
+      },
+      "explanation": "If a suspended body is struck at its centre of percussion, the impulsive reaction on the axis through the point of suspension is zero.\nThe centre of oscillation is also the centre of percussion. It is the point at which a blow can be applied to a suspended rigid body so that the impulsive reaction at the support is zero.",
+      "transcriptionReviewed": true,
+      "note": "Complete source definition reconciled and answer checked. “Pressure” and “reaction” here refer to the impulsive effect of the blow, as required by the centre-of-percussion definition; the static weight reaction does not vanish.",
+      "references": [
+        {
+          "title": "Harvard Natural Sciences Lecture Demonstrations: Center of Percussion",
+          "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/center-percussion",
+          "section": "Zero impulsive reaction at the support"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            375.67,
+            242.83,
+            442.33,
+            327.17
+          ],
+          "units": "pdf-points",
+          "alt": "Suspended body showing suspension O, centre of mass a and centre of percussion c."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-140",
+      "status": "verified",
+      "answer": "a",
+      "question": "The horizontal and vertical components of a force of 200 N acting on a body at an angle of 30° with the horizontal are",
+      "options": {
+        "a": "100√3 N and 100 N",
+        "b": "200√3 N and 200 N",
+        "c": "400/√3 N and 400 N",
+        "d": "300√3 N and 300 N"
+      },
+      "explanation": "Horizontal component = 200 cos 30°\nF_H = 100√3 N.\nVertical component = 200 sin 30°\nF_V = 100 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            370.0,
+            508.58,
+            454.33,
+            587.58
+          ],
+          "units": "pdf-points",
+          "alt": "Resolution of a 200 N force at 30° into horizontal 200 cos 30° and vertical 200 sin 30° components."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-141",
+      "status": "verified",
+      "answer": "a",
+      "question": "What is the thrust at point A in the post shown in the figure?",
+      "options": {
+        "a": "0.866 kN",
+        "b": "0.5 kN",
+        "c": "1.388 kN",
+        "d": "1 kN"
+      },
+      "explanation": "Thrust at A is the vertical component of the 1 kN force.\nThrust = 1 sin 60°\n= 0.866 kN.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            355.67,
+            659.42,
+            472.33,
+            743.42
+          ],
+          "units": "pdf-points",
+          "alt": "Bent post ABC fixed at A with a 1 kN load at C acting 60° below horizontal."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-42-142",
+      "status": "verified",
+      "answer": "b",
+      "question": "A ball of weight 100 N is tied to a smooth wall by a cord making an angle of 30° to the wall. The tension in the cord is",
+      "options": {
+        "a": "200 N",
+        "b": "200/√3 N",
+        "c": "100 N",
+        "d": "50√3 N"
+      },
+      "explanation": "From the free-body diagram of the ball, the forces are cord tension T, horizontal wall reaction R and downward weight W.\nBy Lami’s theorem:\nT/sin 90° = W/sin 120° = R/sin 150°.\nTherefore\nT/sin 90° = W/sin 120° = 100/(√3/2) = 200/√3,\nso T = 200/√3 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 28,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            113.67,
+            271.0,
+            244.33,
+            344.67
+          ],
+          "units": "pdf-points",
+          "alt": "Ball supported against a vertical smooth wall and its force diagram showing tension 30° to vertical, horizontal R and weight W."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-42-143",
+      "status": "corrected",
+      "answer": "b",
+      "question": "In the given figure, when β = α, the components f₁ and f₂ of force F on either side are given by",
+      "options": {
+        "a": "f₁ = f₂ = F cos α/sin(α + β)",
+        "b": "f₁ = f₂ = F sin α/sin(α + β)",
+        "c": "f₁ = f₂ = F cos α/cos(α + β)",
+        "d": "f₁ = f₂ = F sin α/sin α",
+        "e": "f₁ = f₂ = F sin α/sin β"
+      },
+      "explanation": "Resolve F into components f₁ and f₂ along the two indicated oblique directions. The component directions make angles β and α with F.\nFor the force triangle, or by applying Lami’s theorem to f₁, f₂ and the equilibrant −F:\nf₁/sin α = f₂/sin β = F/sin(α + β).\nHence\nf₁ = F sin α/sin(α + β),\nf₂ = F sin β/sin(α + β).\nWith α = β:\nf₁ = f₂ = F sin α/sin(α + β)\n= F/(2 cos α).\nThe component magnitudes are positive; no arbitrary removal of a minus sign is required.",
+      "transcriptionReviewed": true,
+      "note": "Answer (b) is correct. The printed derivation treats resultant F as an equilibrating force, obtains negative components, then discards the sign. The complete relation is corrected by using −F in equilibrium (or the force triangle); all original steps are preserved separately.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        },
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "sourceExplanation": "Using Lami’s theorem:\nf₁/sin α = f₂/sin β = F/sin[360° − (α + β)].\nSo f₁ = −F sin α/sin(α + β),\nf₂ = −F sin β/sin(α + β), with α = β.\nThen f₁ = f₂ = F sin α/sin(α + β).\n[Negative not considered in answer.] Answer (b).",
+      "figures": [
+        {
+          "page": 28,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            145.67,
+            469.17,
+            214.33,
+            524.5
+          ],
+          "units": "pdf-points",
+          "alt": "Force F and two oblique component directions f₁ above and f₂ below, making β and α with F."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-42-144",
+      "status": "verified",
+      "answer": "a",
+      "question": "If the sum of all the forces acting on a moving object is zero, the object will",
+      "options": {
+        "a": "Continue moving with constant velocity",
+        "b": "Accelerate uniformly",
+        "c": "Change the direction of motion",
+        "d": "Slow down and stop"
+      },
+      "explanation": "Continue moving with constant velocity.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-42-145",
+      "status": "disputed",
+      "answer": null,
+      "question": "Two equal and mutually perpendicular forces of magnitude P act at a point. Their resultant force will be",
+      "options": {
+        "a": "P√2, at an angle of 30° with the line of action of either force",
+        "b": "P√2, at an angle of 45° with the line of action of each force",
+        "c": "P√2, at an angle of 45° with the line of action of each force",
+        "d": "Zero"
+      },
+      "explanation": "The resultant has magnitude P√2 and makes an angle of 45° with the line of action of each force. The source prints this same correct result as both (b) and (c), so a unique choice cannot be graded.",
+      "transcriptionReviewed": true,
+      "note": "The scan confirms that choices (b) and (c) are identical and both correct. Source key (b) cannot support a unique-choice grade.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "P√2, at an angle of 45° with the line of action of each force. Answer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-42-146",
+      "status": "verified",
+      "answer": "a",
+      "question": "One end of a uniform ladder of length L and weight W rests against a rough vertical wall, and the other end rests on rough horizontal ground. The coefficient of friction f is the same at each end. The inclination of the ladder to the horizontal when it is on the point of slipping is",
+      "options": {
+        "a": "tan⁻¹[(1 − f²)/(2f)]",
+        "b": "tan⁻¹[(1 + f²)/(2f)]",
+        "c": "tan⁻¹[2f/(1 + f²)]",
+        "d": "tan⁻¹[2f/(1 − f²)]"
+      },
+      "explanation": "The supplied answer is θ = tan⁻¹[(1 − f²)/(2f)].\nIndependent check at impending downward slip: let N_g and N_w be the normal reactions at the ground and wall. The limiting frictions are fN_g toward the wall at the foot and fN_w upward at the wall.\nHorizontal equilibrium: N_w = fN_g.\nVertical equilibrium: N_g + fN_w = W, so N_g = W/(1 + f²).\nTaking moments about the foot:\nN_w L sin θ + fN_w L cos θ = (WL/2) cos θ.\nTherefore f sin θ + f² cos θ = [(1 + f²)/2] cos θ,\nwhich gives tan θ = (1 − f²)/(2f).",
+      "transcriptionReviewed": true,
+      "note": "The source supplies only the answer formula. It is fully transcribed and independently derived here from limiting friction and moment balance for the ordinary slipping configuration.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/12-2-examples-of-static-equilibrium",
+          "section": "12.2 Ladder force and moment equilibrium"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-42-147",
+      "status": "corrected",
+      "answer": "c",
+      "question": "In the following figure, the tension in rope AC is",
+      "options": {
+        "a": "17.32 N",
+        "b": "56.60 N",
+        "c": "169.90 N",
+        "d": "113.20 N"
+      },
+      "explanation": "By Lami’s theorem at A:\nT_AC/sin 120° = T_AD/sin 90° = T_AB/sin 150°.\nThe hanging mass gives T_AB = 10 kgf = 10 × 9.81 N.\nThus T_AD/sin 90° = T_AB/sin 150°:\nT_AD/1 = 10/0.5, giving T_AD = 20 kgf.\nAlso T_AC/sin 120° = T_AD/sin 90°,\nso T_AC = 20 sin 120° kgf\n= 20 × 0.866 × 9.81 N\n= 169.91 N, approximately 169.90 N.",
+      "transcriptionReviewed": true,
+      "note": "Source answer (c) is correct. The source intermediate tensions labelled kg are actually kgf, and one intermediate sine value is misprinted as 0.860 before the next line uses 0.866. Units and that typo are corrected; every supplied calculation step is retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "sourceExplanation": "From Lami’s theorem:\nAC/sin 120° = AD/sin 90° = AB/sin 150°.\nAD/sin 90° = AB/sin 150° ⇒ AD/1 = 10/0.5.\nAD = 20 kg.\nAC/sin 120° = AD/sin 90°.\nAC = 20 × sin 120° = 20 × 0.860 kg\n= 20 × 0.866 × 9.81 N.\nAC = 169.91 N. Answer (c).",
+      "figures": [
+        {
+          "page": 28,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            359.33,
+            632.0,
+            465.33,
+            712.33
+          ],
+          "units": "pdf-points",
+          "alt": "Three ropes meet at A: AC horizontal to the left, AD inclined 30° upward to the right, and AB supporting a 10 kg mass."
+        },
+        {
+          "page": 29,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            122.67,
+            106.25,
+            242.33,
+            176.58
+          ],
+          "units": "pdf-points",
+          "alt": "Annotated three-rope geometry showing the angles used in Lami’s theorem."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-43-148",
+      "status": "verified",
+      "answer": "d",
+      "question": "Two forces each equal to P/2 act at right angles. Their effect may be neutralized by a third force along their bisector in the opposite direction with magnitude",
+      "options": {
+        "a": "P",
+        "b": "P/2",
+        "c": "√2 P",
+        "d": "P/√2"
+      },
+      "explanation": "Given F₁ = F₂ = P/2 and the angle between them is 90°.\nResultant magnitude:\nF = √(F₁² + F₂² + 2F₁F₂ cos 90°)\n= √[(P/2)² + (P/2)² + 0]\n= √(P²/2)\n= P/√2.\nAn equal force opposite to this resultant neutralizes the two forces.",
+      "transcriptionReviewed": true,
+      "note": "Entire boxed explanation recovered visually, including the radical calculation that OCR dropped below its recorded text boundary.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-43-149",
+      "status": "verified",
+      "answer": "d",
+      "question": "The resultant of forces P = −2i − 3j and Q = 3i − 4j lies in which quadrant, reckoned anticlockwise?",
+      "options": {
+        "a": "First",
+        "b": "Second",
+        "c": "Third",
+        "d": "Fourth"
+      },
+      "explanation": "Fourth quadrant. Adding the vectors gives R = (−2 + 3)i + (−3 − 4)j = i − 7j, with positive x and negative y components.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-43-150",
+      "status": "verified",
+      "answer": "c",
+      "question": "The polygon of forces is useful for computing the resultant of",
+      "options": {
+        "a": "Concurrent spatial forces",
+        "b": "Coplanar parallel forces",
+        "c": "Coplanar concurrent forces",
+        "d": "Coplanar collinear forces"
+      },
+      "explanation": "Coplanar concurrent forces.",
+      "transcriptionReviewed": true,
+      "note": "Full source answer transcribed. In the usual planar graphical force-polygon method, the intended general force system is coplanar concurrent forces; vector addition itself can of course be extended to spatial forces.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-43-151",
+      "status": "verified",
+      "answer": "b",
+      "question": "The quantity whose dimensions are M²L²T⁻³ could be the product of",
+      "options": {
+        "a": "Force and velocity",
+        "b": "Mass and power",
+        "c": "Force and pressure",
+        "d": "Force and distance"
+      },
+      "explanation": "Dimensional check:\nProduct = mass × power\n= M × [force × velocity], since power P = F · v\n= M × M(L/T²)(L/T)\n= M²L²T⁻³.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis",
+          "section": "1.4 Dimensions of products and powers"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+          "section": "7.4 Power P = F · v"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-43-152",
+      "status": "disputed",
+      "answer": null,
+      "question": "In the case of concurrent coplanar forces, the condition of equilibrium is",
+      "options": {
+        "a": "ΣH = 0, ΣV = 0, ΣM = 0",
+        "b": "ΣH = 0, ΣV = 0",
+        "c": "ΣH = 0, ΣM = 0",
+        "d": "ΣV = 0, ΣM = 0"
+      },
+      "explanation": "For concurrent coplanar forces, the independent equilibrium conditions are ΣH = 0 and ΣV = 0, as printed in answer (b).\nAll force lines pass through one point, so their moment about that point is automatically zero; when the net force is zero their moment about every other point is also zero. Thus option (a), which adds ΣM = 0, is also true. The question does not ask specifically for the minimal independent set, so its single-choice wording is ambiguous.",
+      "transcriptionReviewed": true,
+      "note": "Source (b) is the minimal independent set, but (a) is also a valid equilibrium condition. Because the stem does not request the independent/minimal set, a unique grade would penalize a mathematically correct choice.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "sourceExplanation": "In the case of concurrent coplanar forces, the conditions of equilibrium are ΣH = 0 and ΣV = 0. Answer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-43-153",
+      "status": "disputed",
+      "answer": null,
+      "question": "If a body is in equilibrium, which of the following is true?",
+      "options": {
+        "a": "There is no force acting on the body",
+        "b": "The resultant of all forces is zero, but the moment of the forces about any point is not zero",
+        "c": "The moment of the forces about any point is zero, but the resultant of all forces is not zero",
+        "d": "Both (b) and (c)"
+      },
+      "explanation": "No option correctly states the general equilibrium conditions. A rigid body in equilibrium must have both zero resultant force and zero resultant moment:\nΣF = 0 and ΣM = 0.\nOption (a) is unnecessarily restrictive: forces may act and balance. Option (b) permits a nonzero resultant moment, and option (c) permits a nonzero resultant force. Their conjunction in (d) is not equilibrium.",
+      "transcriptionReviewed": true,
+      "note": "Confirmed genuine source-key error: the book prints (d), although both (b) and (c) explicitly violate equilibrium. None of the choices states the required simultaneous zero force and moment.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "sourceExplanation": "Both (b) and (c). Answer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-43-154",
+      "status": "corrected",
+      "answer": "c",
+      "question": "Four forces P, 2P, 3P and 4P act along the sides of a square, taken in order. The resultant force is",
+      "options": {
+        "a": "Zero",
+        "b": "√5 P",
+        "c": "2√2 P",
+        "d": "2P"
+      },
+      "explanation": "From the square force diagram, the net horizontal force is\nF_H = P − 3P = −2P.\nThe net vertical force is\nF_V = 2P − 4P = −2P.\nTherefore the resultant magnitude is\nR = √(F_H² + F_V²)\n= √[(−2P)² + (−2P)²]\n= √(4P² + 4P²)\n= √(8P²)\n= 2√2 P.",
+      "transcriptionReviewed": true,
+      "note": "Answer (c) is correct. The printed solution incorrectly writes ΣH = 0 and ΣV = 0 immediately before finding nonzero components. Those false zero equalities are removed; the complete component and magnitude calculation is preserved.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "Net horizontal force, ΣH = 0:\nF_H = P − 3P = −2P.\nNet vertical force, ΣV = 0:\nF_V = 2P − 4P = −2P.\nResultant R = √(F_H² + F_V²)\n= √[(−2P)² + (−2P)²]\n= √(4P² + 4P²)\n= √(8P²)\n= 2√2 P. Answer (c).",
+      "figures": [
+        {
+          "page": 29,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            344.0,
+            484.58,
+            479.0,
+            609.25
+          ],
+          "units": "pdf-points",
+          "alt": "Square ABCD with sequential side forces P to the right, 2P up, 3P left and 4P down."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-155",
+      "status": "verified",
+      "answer": "d",
+      "question": "According to Newton’s law of gravitation, the force of attraction between bodies of masses m₁ and m₂ situated a distance d apart is given by",
+      "options": {
+        "a": "F = Gm₁m₂²/d²",
+        "b": "F = Gm₁²m₂/d²",
+        "c": "F = Gm₁²m₂²/d²",
+        "d": "F = Gm₁m₂/d²"
+      },
+      "explanation": "According to Newton’s law of gravitation:\nF = Gm₁m₂/d².",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation",
+          "section": "13.1 F = Gm₁m₂/r²"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-156",
+      "status": "corrected",
+      "answer": "d",
+      "question": "An elevator weighing 10 kN attains an upward velocity of 4 m/s in 2 s with uniform acceleration. The tension in the wire rope is nearly",
+      "options": {
+        "a": "6 kN",
+        "b": "8 kN",
+        "c": "10 kN",
+        "d": "12 kN"
+      },
+      "explanation": "Given elevator weight W = 10 kN = 10 × 10³ N, final upward velocity v = 4 m/s and time t = 2 s. Taking the initial velocity as zero:\nv = u + at\n4 = 0 + 2a\n a = 2 m/s².\nFor the elevator:\nT − mg = ma\nT = m(g + a)\n= mg(1 + a/g)\n= 10(1 + 2/9.81) kN\n≈ 12.04 kN, so the nearest choice is 12 kN.",
+      "transcriptionReviewed": true,
+      "note": "Source answer (d) is correct for the rest-to-4 m/s motion assumed by its solution. The printed kinematic lines v = u − at and u = 2a are inconsistent; corrected to v = u + at and 4 = 2a. The printed “upward force, v” is velocity. All force calculation steps are retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "sourceExplanation": "Given elevator weight W = 10 kN = 10 × 10³ N.\nUpward force, v = 4 m/s.\nTime t = 2 s.\nv = u − at.\nu = 2 × a ⇒ a = 2 m/s².\nF_net ⇒ T − mg = ma.\nT = m(g + a).\nT = mg(1 + a/g)\n= 10(1 + 2/9.81).\nTension in wire T = 12.03 kN. Answer (d).",
+      "figures": [
+        {
+          "page": 30,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            146.0,
+            331.5,
+            210.67,
+            410.83
+          ],
+          "units": "pdf-points",
+          "alt": "Elevator with upward cable tension T and acceleration effect ma, and downward weight mg = W."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-157",
+      "status": "verified",
+      "answer": "a",
+      "question": "A force F = 10i + 8j − 5k acts at point P(2, 5, 6). What is the moment of the force about point Q(3, 1, 4)?",
+      "options": {
+        "a": "−36i + 15j − 48k",
+        "b": "18i + 16j − 37k",
+        "c": "32i − 31j − 4k",
+        "d": "Zero"
+      },
+      "explanation": "Moment magnitude is force times perpendicular distance. In vector form, the moment about Q is\nM_Q = (P − Q) × F = F × (Q − P).\nThe supplied solution uses PQ = Q − P:\nPQ = (3i + j + 4k) − (2i + 5j + 6k)\n= i − 4j − 2k.\nThus\nM_Q = F × PQ\n= (10i + 8j − 5k) × (i − 4j − 2k)\n= i[8(−2) − (−5)(−4)] − j[10(−2) − (−5)(1)] + k[10(−4) − 8(1)]\n= i(−16 − 20) − j(−20 + 5) + k(−40 − 8)\n= −36i + 15j − 48k.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-158",
+      "status": "verified",
+      "answer": "c",
+      "question": "A moving fluid mass may be brought to a static-equilibrium form by applying an imaginary inertia force equal in magnitude and opposite in direction to the accelerating force. This is called",
+      "options": {
+        "a": "Pascal’s law",
+        "b": "Archimedes’ principle",
+        "c": "D’Alembert’s principle",
+        "d": "None of the above"
+      },
+      "explanation": "D’Alembert’s principle states that, under the action of the applied (effective) force and the inertia force, a body is in dynamic equilibrium.\nIts purpose is to convert a dynamics problem into an equivalent statics problem.\nThe inertia force always acts opposite to the direction of acceleration, not necessarily opposite to the direction of motion.\nIn symbols, ΣF − ma = 0, with inertia force −ma.",
+      "transcriptionReviewed": true,
+      "note": "Source choices, key (c), and all three explanation points recovered from the scan; parser had merged explanation text into the options. Independently checked by rearranging ΣF = ma as ΣF − ma = 0.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-159",
+      "status": "verified",
+      "answer": "d",
+      "question": "How many equations are used for the equilibrium of a particle in space?",
+      "options": {
+        "a": "2",
+        "b": "5",
+        "c": "4",
+        "d": "3"
+      },
+      "explanation": "The source gives answer (d), 3. A particle in three-dimensional space requires ΣF_x = 0, ΣF_y = 0 and ΣF_z = 0; it has no independent moment equations.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-160",
+      "status": "verified",
+      "answer": "a",
+      "question": "Two forces of 10 N and 20 N act at a point perpendicular to each other. What is their resultant?",
+      "options": {
+        "a": "22.36 N",
+        "b": "23.63 N",
+        "c": "26.23 N",
+        "d": "21.36 N"
+      },
+      "explanation": "Given P = 10 N, Q = 20 N and θ = 90°.\nR = √(P² + Q² + 2PQ cos θ)\n= √[10² + 20² + 2(10)(20) cos 90°]\n= √500\n≈ 22.36 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-44-161",
+      "status": "verified",
+      "answer": "c",
+      "question": "A body of mass 10 kg is placed in a lift moving upward with an acceleration of 2 m/s². What is its apparent weight for g = 9 m/s²?",
+      "options": {
+        "a": "90 N",
+        "b": "70 N",
+        "c": "110 N",
+        "d": "105 N"
+      },
+      "explanation": "Apparent weight N = ma + mg\n= m(a + g)\n= 10(2 + 9)\n= 10 × 11\n= 110 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 30,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            378.0,
+            666.33,
+            450.0,
+            741.33
+          ],
+          "units": "pdf-points",
+          "alt": "Body in an upward-accelerating lift; normal force N upward and weight mg downward."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-162",
+      "status": "verified",
+      "answer": "b",
+      "question": "If a number of forces act at a point, their resultant is given by",
+      "options": {
+        "a": "(ΣV)² + |ΣH|²",
+        "b": "√[(ΣV)² + (ΣH)²]",
+        "c": "(ΣV)² · (ΣH)² · 2(ΣV || ΣH)",
+        "d": "√[(ΣV)² − (ΣH)² · 2(ΣV)(ΣH)]"
+      },
+      "explanation": "For coplanar forces acting at a point, sum the horizontal and vertical components:\nΣH = F₂ cos β + F₃ cos θ + F₁ cos α,\nΣV = F₁ sin α + F₃ sin θ + F₂ sin β.\nThe resultant magnitude is\nR = √[(ΣV)² + (ΣH)²].",
+      "transcriptionReviewed": true,
+      "note": "Full formula choices and component explanation reconciled visually; the source prints malformed/dimensionally inconsistent distractor (c), retained as printed. Correct magnitude (b) follows from perpendicular components. Diagram component labels contain minor inconsistencies; the equations give the intended assignments.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 31,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            86.33,
+            286.08,
+            283.67,
+            389.08
+          ],
+          "units": "pdf-points",
+          "alt": "Three concurrent oblique forces resolved into horizontal and vertical components, as drawn in the source."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-163",
+      "status": "verified",
+      "answer": "b",
+      "question": "What is the resultant of two forces P and Q, with P > Q, acting along the same straight line in opposite directions?",
+      "options": {
+        "a": "P + Q",
+        "b": "P − Q",
+        "c": "P/Q",
+        "d": "Q/P"
+      },
+      "explanation": "The forces P and Q act along a straight line in opposite directions, with P > Q.\nR = √(P² + Q² + 2PQ cos 180°)\n= √(P² + Q² − 2PQ)\n= √[(P − Q)²]\n= P − Q, in the direction of P.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 31,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            131.33,
+            542.5,
+            226.0,
+            560.83
+          ],
+          "units": "pdf-points",
+          "alt": "Collinear opposite forces P and Q."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-164",
+      "status": "verified",
+      "answer": "a",
+      "question": "One kgf/cm² converted to SI units is",
+      "options": {
+        "a": "0.0981 MPa",
+        "b": "0.981 Pa",
+        "c": "10⁴ Pa",
+        "d": "1 P"
+      },
+      "explanation": "1 kgf/cm² = 1 × 9.81 × 10⁴ Pa\n= 0.0981 × 10⁶ Pa\n= 0.0981 MPa.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis",
+          "section": "1.4 Dimensions of products and powers"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-165",
+      "status": "verified",
+      "answer": "c",
+      "question": "Two bodies of different masses M_A and M_B are dropped from heights a and b respectively. What is the ratio of the times taken to fall through these distances in vacuum?",
+      "options": {
+        "a": "a : b",
+        "b": "b : a",
+        "c": "√a : √b",
+        "d": "a² : b²"
+      },
+      "explanation": "During free fall the acceleration is g.\nv = u + gt.\nFor initial velocity u = 0, v = gt, so t ∝ v.\nSince v = √(2gh), t ∝ √(2gh) ∝ √h for the same g.\nThe bodies of masses M_A and M_B are dropped from heights a and b respectively, so\nt_A/t_B = √(a/b).\nThe required ratio is √a : √b.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-166",
+      "status": "verified",
+      "answer": "a",
+      "question": "Two forces P and P√2 act on a particle in directions inclined at 135° to each other. Find the magnitude of the resultant.",
+      "options": {
+        "a": "P",
+        "b": "P√2",
+        "c": "5P",
+        "d": "None of these"
+      },
+      "explanation": "Resultant force:\nR² = P² + (P√2)² + 2(P)(P√2) cos 135°\n= P² + 2P² + 2√2 P² cos 135°\n= P² + 2P² − 2P²\n= P².\nTherefore R = P.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-167",
+      "status": "verified",
+      "answer": "a",
+      "question": "Two bodies of masses M and 2M are connected by a light inextensible string passing over a smooth pulley, with mass M on the left. Then",
+      "options": {
+        "a": "The tensions on both sides of the string are equal",
+        "b": "The left-side tension is twice the right-side tension",
+        "c": "The left-side tension is half the right-side tension",
+        "d": "None of the above"
+      },
+      "explanation": "The source gives answer (a): the tension on both sides of the string is equal. This is the ideal light-string, smooth-pulley model; the unequal masses determine the acceleration, not unequal tensions in the ideal string.",
+      "transcriptionReviewed": true,
+      "note": "Entire supplied answer recovered. Verified under the standard ideal pulley assumption used by the source (no pulley rotational-inertia or bearing-friction correction).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-168",
+      "status": "verified",
+      "answer": "b",
+      "question": "In rigid-body mechanics, equilibrium must be satisfied with respect to",
+      "options": {
+        "a": "Only forces",
+        "b": "Both forces and moments",
+        "c": "Energy",
+        "d": "Geometry"
+      },
+      "explanation": "For rigid-body equilibrium, both the force equations and moment equations must be satisfied:\nΣF_x = ΣF_y = ΣF_z = 0,\nΣM_x = ΣM_y = ΣM_z = 0.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-45-169",
+      "status": "verified",
+      "answer": "c",
+      "question": "Which theorem is used for equilibrium of a particle acted on by three concurrent coplanar forces?",
+      "options": {
+        "a": "Varignon’s theorem",
+        "b": "Parallelogram theorem",
+        "c": "Lami’s theorem",
+        "d": "Pythagoras’ theorem"
+      },
+      "explanation": "Lami’s theorem: when three concurrent coplanar forces act in equilibrium, each force is proportional to the sine of the angle between the other two forces.\nMathematically,\nP/sin α = Q/sin β = R/sin γ,\nwhere α is between Q and R, β between R and P, and γ between P and Q.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Tezpur University Virtual Engineering Mechanics Laboratory",
+          "url": "https://www.tezu.ernet.in/dmech/people/New_Faculty_Details/VKM/Experiment_EM/EXp1.html",
+          "section": "Force balance, parallelogram law and Lami’s theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 32,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            131,
+            164.5,
+            236,
+            255.5
+          ],
+          "units": "pdf-points",
+          "alt": "Three concurrent forces P, Q and R with opposite angles α, β and γ for Lami’s theorem."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-46-170",
+      "status": "verified",
+      "answer": "c",
+      "question": "The condition of static equilibrium of a planar force system is",
+      "options": {
+        "a": "ΣF = 0",
+        "b": "ΣM = 0",
+        "c": "ΣF = 0 and ΣM = 0",
+        "d": "None of these"
+      },
+      "explanation": "ΣF = 0 and ΣM = 0.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-46-171",
+      "status": "verified",
+      "answer": "c",
+      "question": "Consider the following statements for a system of forces:\n1. Two or more forces that act at the same point are called coplanar forces.\n2. Two or more forces whose directed arrows lie in the same plane are called concurrent forces.\n3. Varignon’s theorem states that the moment of several concurrent coplanar forces about any point O in their plane equals the moment of their resultant about O.\n4. Lami’s theorem states that if a body is in equilibrium under three forces, each force is proportional to the sine of the angle between the other forces.\nWhich statements are correct?",
+      "options": {
+        "a": "1, 2 and 4 only",
+        "b": "1 and 4 only",
+        "c": "3 and 4 only",
+        "d": "1, 2 and 3 only"
+      },
+      "explanation": "The correct statements are:\n• Varignon’s theorem: the moment of several concurrent coplanar forces about any point O in their plane equals the moment of their resultant about O.\n• Lami’s theorem: if a body is in equilibrium under three concurrent coplanar forces, each force is proportional to the sine of the angle between the other two forces.\nThese are statements 3 and 4. Statements 1 and 2 interchange the definitions of concurrent and coplanar forces.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Tezpur University Virtual Engineering Mechanics Laboratory",
+          "url": "https://www.tezu.ernet.in/dmech/people/New_Faculty_Details/VKM/Experiment_EM/EXp1.html",
+          "section": "Force balance, parallelogram law and Lami’s theorem"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-46-172",
+      "status": "verified",
+      "answer": "d",
+      "question": "When trying to turn a key in a lock, which of the following is applied?",
+      "options": {
+        "a": "Coplanar force",
+        "b": "Lever",
+        "c": "Moment",
+        "d": "Couple"
+      },
+      "explanation": "When trying to turn a key in a lock, a couple is applied.\nA couple consists of two equal and opposite forces whose lines of action are different.\nThe moment of the couple is P × x, where x is the perpendicular separation of the force lines.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ],
+      "figures": [
+        {
+          "page": 32,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            375.5,
+            169.5,
+            460.5,
+            214
+          ],
+          "units": "pdf-points",
+          "alt": "Equal opposite forces P separated by distance x, creating a couple."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-46-173",
+      "status": "verified",
+      "answer": "b",
+      "question": "A couple produces",
+      "options": {
+        "a": "Translatory motion",
+        "b": "Rotational motion",
+        "c": "Combined translatory and rotational motions",
+        "d": "None of these"
+      },
+      "explanation": "A couple consists of two parallel forces equal in magnitude, opposite in sense and having different lines of action. Its resultant force is zero, so it produces a rotational effect without a translational acceleration.",
+      "transcriptionReviewed": true,
+      "note": "Complete definition transcribed. The source’s phrase “only rotational motion” is interpreted as the effect produced by a pure couple; a pre-existing centre-of-mass velocity is not removed by a couple.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-46-174",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A jib crane consists of a rigid beam BC supported by an elastic rod AB and hinged at C. Determine the deflection of point B when a load of 16 kN is applied. Take E = 200 GPa and rod area A_c = 300 mm². The geometry is shown.",
+      "options": {
+        "a": "1.23 mm",
+        "b": "4.56 mm",
+        "c": "2.46 mm",
+        "d": "5.23 mm"
+      },
+      "explanation": "The rod length is\nL_AB = 2000/cos 30° = 2309.40 mm.\nTaking moments about C for the rigid horizontal beam gives T sin 30° = W, so\nT = 16 × 2 = 32 kN.\nThe axial extension of rod AB is\nδ_AB = TL_AB/(AE)\n= (32 × 10³ × 2309.40)/(300 × 200 × 10³)\n≈ 1.23 mm.\nThis is the extension along the rod, not the deflection of point B. Since BC is rigid and hinged at C, the first-order motion of B is vertical. The rod extension is the projection of that displacement onto AB:\nδ_AB = δ_B sin 30°.\nTherefore\nδ_B = δ_AB/sin 30°\n≈ 1.23168/0.5\n= 2.46336 mm ≈ 2.46 mm.\nThe correct option for the deflection of B is (c).",
+      "transcriptionReviewed": true,
+      "note": "Definite source-key error: printed (a) is rod extension, while the requested displacement of B is extension/sin30° = 2.46 mm, option (c). The complete printed computation is retained separately; the correction adds rigid-beam displacement compatibility.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/12-3-stress-strain-and-elastic-modulus",
+          "section": "12.3 Axial elongation ΔL = FL/(AY)"
+        }
+      ],
+      "sourceExplanation": "L_AB = 2000/cos 30° = 2309.40 mm.\nF_y = 0.\nT sin 30° = W.\nT = 16 × 2 = 32 kN.\nδL = TL_AB/(AE)\n= (32 × 10³ × 2309.40)/(300 × 200 × 10³).\nδL = 1.23 mm.\nAnswer (a).",
+      "figures": [
+        {
+          "page": 32,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            356.33,
+            418.75,
+            479.0,
+            513.75
+          ],
+          "units": "pdf-points",
+          "alt": "Rigid horizontal beam BC of length 2000 mm hinged at C, elastic rod AB at 30° with area 300 mm², and downward 16 kN load at B."
+        },
+        {
+          "page": 32,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            367.0,
+            558.75,
+            460.33,
+            642.08
+          ],
+          "units": "pdf-points",
+          "alt": "Source force construction at B with rod force T at 30°, vertical component T sin30° and load W."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-175",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 20 kg load is supported as shown. Assuming the pulley is ideal and the equilibrium configuration is as shown, determine the tension in cable CD.",
+      "options": {
+        "a": "250 N",
+        "b": "200.4 N",
+        "c": "150.2 N",
+        "d": "100 N"
+      },
+      "explanation": "For an ideal pulley, the two portions of the rope each exert 20 × 9.81 N on C. The inclined rope makes 45° with the horizontal.\nHorizontal equilibrium:\nΣF_x = 0\n20 × 9.81 cos 45° = T cos θ\nT cos θ = 138.73 N. …(i)\nVertical equilibrium:\nΣF_y = 0\nT sin θ = 20 × 9.81 − 20 × 9.81 sin 45°\n= 20 × 9.81(1 − sin 45°)\n= 57.4656 N. …(ii)\nSquaring and adding (i) and (ii):\nT² = 138.73² + 57.4656²,\nso T ≈ 150.16 N ≈ 150.2 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 33,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            93.0,
+            139.92,
+            267.67,
+            225.58
+          ],
+          "units": "pdf-points",
+          "alt": "Ideal pulley C supported by cable CD; rope AC is at 45° and the other end supports 20 kg. C is 600 mm below the support level."
+        },
+        {
+          "page": 33,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            128.0,
+            271.92,
+            263.0,
+            362.58
+          ],
+          "units": "pdf-points",
+          "alt": "Free-body diagram at C with two rope tensions of 20g and supporting tension T at θ."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-176",
+      "status": "verified",
+      "answer": "c",
+      "question": "For a many-particle system with mutually interacting particles, conservation of angular momentum requires that the interaction forces between two particles be",
+      "options": {
+        "a": "Equal and opposite",
+        "b": "Equal, opposite and attractive",
+        "c": "Equal, opposite and along the line joining the two particles",
+        "d": "Equal, opposite, along the line joining the particles and keeping their separation fixed"
+      },
+      "explanation": "The interaction forces between two particles must be equal, opposite and directed along the line joining them. These central internal forces give zero net internal torque and therefore do not change total angular momentum.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-177",
+      "status": "verified",
+      "answer": "c",
+      "question": "Two noncollinear parallel equal forces acting in opposite directions",
+      "options": {
+        "a": "Balance each other",
+        "b": "Constitute a moment",
+        "c": "Constitute a couple",
+        "d": "Constitute a moment of a couple"
+      },
+      "explanation": "Two noncollinear parallel equal forces acting in opposite directions constitute a couple.\nFor force magnitude P and perpendicular separation d, the couple moment is\nC = P × d,\nclockwise for the arrangement shown.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ],
+      "figures": [
+        {
+          "page": 33,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            373,
+            116.75,
+            451.67,
+            173.5
+          ],
+          "units": "pdf-points",
+          "alt": "Opposite parallel forces P separated by distance d produce a clockwise couple."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-178",
+      "status": "corrected",
+      "answer": "c",
+      "question": "The tendency to rotate a body about an axis is also called",
+      "options": {
+        "a": "Moment of inertia",
+        "b": "Moment of a couple",
+        "c": "Torque",
+        "d": "Force"
+      },
+      "explanation": "The tendency of a force to rotate a body about an axis is called torque. Torque is the moment of the force; the component about a specified axis determines its turning effect about that axis.\nIn vector form τ = r × F, where r is the position vector from the moment reference to the point of application. The magnitude is F times the perpendicular moment arm.",
+      "transcriptionReviewed": true,
+      "note": "Answer (c) is correct. Source language describes the cross product as force and distance, which reverses the correct ordered vector formula. The correction explicitly uses r × F and distinguishes axis torque from force direction; the complete printed explanation is preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ],
+      "sourceExplanation": "The tendency of rotation of the body along any axis is also called the torque. It is the moment of the force acting perpendicular to the direction of the axis of rotation.\nThat is, the moment is the cross product of the force and the distance between the axis and the point of action. Answer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-47-179",
+      "status": "verified",
+      "answer": "b",
+      "question": "In an impact problem, which condition must always be satisfied?",
+      "options": {
+        "a": "Total kinetic energy remains unchanged",
+        "b": "Total linear momentum remains unchanged",
+        "c": "The magnitude of total linear momentum is multiplied by the coefficient of restitution",
+        "d": "None of the above"
+      },
+      "explanation": "During an impact or collision of an isolated system, total linear momentum remains unchanged. Kinetic energy need not remain unchanged unless the collision is elastic.",
+      "transcriptionReviewed": true,
+      "note": "The complete supplied statement is retained with its standard isolated-system assumption made explicit: external impulse must be negligible for the colliding system. Under that collision model, answer (b) is correct.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-2-impulse-and-collisions",
+          "section": "9.2 Impulse and momentum"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-180",
+      "status": "verified",
+      "answer": "d",
+      "question": "Impulse gives a measure of the product of",
+      "options": {
+        "a": "Force and velocity",
+        "b": "Force and acceleration",
+        "c": "Force and displacement",
+        "d": "Force and time"
+      },
+      "explanation": "The impulse experienced by an object equals its change in momentum.\nFor a constant force:\nImpulse = F t,\nF t = m Δv.\nThus impulse is the product of force and time.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-2-impulse-and-collisions",
+          "section": "9.2 Impulse and momentum"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-181",
+      "status": "verified",
+      "answer": "b",
+      "question": "A ______ is formed by two equal-magnitude, opposite-direction forces displaced by a perpendicular distance.",
+      "options": {
+        "a": "Bending moment",
+        "b": "Couple",
+        "c": "Shear moment",
+        "d": "None of these"
+      },
+      "explanation": "A couple is formed by two forces equal in magnitude and opposite in direction, with their lines of action separated by a perpendicular distance.\nCouple moment = P × a, in N·m.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ],
+      "figures": [
+        {
+          "page": 33,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            373.67,
+            613.75,
+            453.33,
+            656.75
+          ],
+          "units": "pdf-points",
+          "alt": "Equal and opposite forces P with perpendicular separation a."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-47-182",
+      "status": "verified",
+      "answer": "c",
+      "question": "The unit of a couple moment is",
+      "options": {
+        "a": "kN",
+        "b": "kN/m",
+        "c": "kN·m",
+        "d": "kN/m²"
+      },
+      "explanation": "The moment of a couple equals either force multiplied by the perpendicular distance between the two lines of action.\nIts SI unit is N·m; kN·m is the corresponding kilonewton-metre unit among the choices.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-183",
+      "status": "verified",
+      "answer": "a",
+      "question": "The dimensions of moment of momentum are",
+      "options": {
+        "a": "ML²T⁻¹",
+        "b": "MT⁻¹",
+        "c": "ML²T⁻³",
+        "d": "MT⁻³"
+      },
+      "explanation": "Angular momentum L = r × p; for fixed-axis rigid-body rotation its axial component is Iω.\nIts dimensions are ML²T⁻¹.\nIts SI unit is kg·m²·s⁻¹.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum",
+          "section": "11.2 Angular momentum L = r × p and net external torque"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis",
+          "section": "1.4 Dimensions of products and powers"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-184",
+      "status": "verified",
+      "answer": "a",
+      "question": "A zero net external torque acting on a system results in conservation of",
+      "options": {
+        "a": "Angular momentum",
+        "b": "Linear momentum",
+        "c": "Angular velocity",
+        "d": "Energy"
+      },
+      "explanation": "Conservation of angular momentum: if the net external torque on a system is zero, its angular momentum is conserved.\nτ_external = dJ/dt = 0.\nThe source writes this as d(mvr)/dt = 0 and dJ/dt = 0, with J denoting angular momentum. The scalar mvr applies when r and v are perpendicular; the general definition is J = r × mv.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum",
+          "section": "11.3 Conservation when net external torque is zero"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-185",
+      "status": "verified",
+      "answer": "b",
+      "question": "What is the moment of a force?",
+      "options": {
+        "a": "The sum of a force and its distance from an axis",
+        "b": "The product of a force and its distance from an axis",
+        "c": "The first derivative of force with respect to its axis",
+        "d": "None of these"
+      },
+      "explanation": "The moment of a force about a point or axis is found by multiplying force F by its perpendicular distance L from the axis, called the lever arm.\nMoment = perpendicular distance × force\nM = L × F.",
+      "transcriptionReviewed": true,
+      "note": "The full source explanation explicitly defines the distance in choice (b) as the perpendicular lever arm.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ],
+      "figures": [
+        {
+          "page": 34,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            134.0,
+            556.58,
+            232.33,
+            604.92
+          ],
+          "units": "pdf-points",
+          "alt": "Force F acts downward at lever arm L from the fixed reference."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-186",
+      "status": "verified",
+      "answer": "c",
+      "question": "The statement “the moment of any force is equal to the algebraic sum of the moments of the components of that force” is known as",
+      "options": {
+        "a": "Varignon’s theorem",
+        "b": "Principle of moments",
+        "c": "Both (a) and (b)",
+        "d": "None of these"
+      },
+      "explanation": "The principle of moments, also called Varignon’s theorem, states that the moment of any force equals the algebraic sum of the moments of the components of that force.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-187",
+      "status": "disputed",
+      "answer": null,
+      "question": "The action of a couple on a body ______ if we change both the magnitudes of the forces and the arm of the couple in such a way that the moment of the couple [printed stem ends here].",
+      "options": {
+        "a": "Does not change",
+        "b": "Always changes",
+        "c": "Becomes zero",
+        "d": "Cannot be determined"
+      },
+      "explanation": "The complete supplied explanation is: the action of a couple on a body does not change if both force magnitudes and the arm are changed so that the couple moment remains unchanged.\nThis is the correct equivalent-couple principle. However, the printed stem stops at “the moment of the couple” and omits “remains unchanged”, so it does not actually state the condition required for the intended answer (a).",
+      "transcriptionReviewed": true,
+      "note": "The scan confirms an incomplete printed sentence, not an OCR loss. Its explanation supplies “remains unchanged”, which would make (a) correct; the unfinished question is not uniquely gradable.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ],
+      "sourceExplanation": "The action of a couple on a body does not change if we change both the magnitudes of the forces and the arm of the couple in such a way that the moment of the couple remains unchanged. Answer (a)."
+    },
+    {
+      "id": "mech-engineering-mechanics-48-188",
+      "status": "verified",
+      "answer": "d",
+      "question": "A flat road has a curved segment of radius 105 m. A vehicle negotiating it is on the point of slipping on its tyres and rolling over at the same speed. With coefficient of friction 0.4, this speed is",
+      "options": {
+        "a": "18 m/s",
+        "b": "25 m/s",
+        "c": "32 m/s",
+        "d": "20 m/s"
+      },
+      "explanation": "Given μ = 0.4 and curve radius r = 105 m.\nAt the onset of lateral slipping, the limiting tyre-road friction supplies the centripetal force (or balances the centrifugal force in the vehicle’s rotating frame):\nμmg = mv²/r.\nTherefore v = √(μgr)\n= √(0.4 × 9.81 × 105)\n≈ 20.30 m/s (the source quotes 20.29 m/s).\nThe nearest choice is 20 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Full source calculation retained and checked. The friction equality is a limiting condition at impending lateral slip, rather than a property of every pure-rolling state.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "4.4 Centripetal acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-48-189",
+      "status": "disputed",
+      "answer": null,
+      "question": "The algebraic sum of moments of two unlike parallel forces about any point in their plane will be",
+      "options": {
+        "a": "Zero",
+        "b": "Constant",
+        "c": "Always anticlockwise",
+        "d": "Always clockwise"
+      },
+      "explanation": "The source answer “constant” is valid for a couple, which requires the two opposite parallel forces to be equal in magnitude.\nThe question says only “unlike parallel forces”, so equality is not given. If their magnitudes differ, the resultant force is nonzero and the sum of moments changes when the reference point changes:\nM_B = M_A − r_AB × R.\nThus none of the listed statements is generally valid for the stated force pair.",
+      "transcriptionReviewed": true,
+      "note": "The source assumes equal opposite forces without saying they are equal. Unlike parallel forces need not form a couple, so the claimed reference-independent constant moment is not generally true.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        },
+        {
+          "title": "Engineering Statics: Equivalent Transformations",
+          "url": "https://engineeringstatics.org/equivalent-tranformations.html",
+          "section": "Equivalent force-couple systems"
+        }
+      ],
+      "sourceExplanation": "The algebraic sum of their moments about any point in their plane is constant and equal to the moment of a couple. Answer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-48-190",
+      "status": "verified",
+      "answer": "b",
+      "question": "If a force F acts on a rigid body at point P, it can be replaced by",
+      "options": {
+        "a": "An equal, opposite and parallel force F at Q together with a couple",
+        "b": "An equal, parallel and same-sense force F at Q together with a couple",
+        "c": "A moment at Q only",
+        "d": "An equal, opposite and parallel force F only at Q"
+      },
+      "explanation": "A force F acting at point P on a rigid body may be replaced by an equal force in the same direction and sense at Q together with a couple.\nThe required couple is the moment of the original force about Q:\nM_Q = (P − Q) × F.\nIn the shown perpendicular geometry its magnitude is F times the separation PQ. The added couple preserves the original system’s force and moment.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equivalent Transformations",
+          "url": "https://engineeringstatics.org/equivalent-tranformations.html",
+          "section": "Equivalent force-couple systems"
+        }
+      ],
+      "figures": [
+        {
+          "page": 34,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            378,
+            518,
+            446,
+            566
+          ],
+          "units": "pdf-points",
+          "alt": "Force F acting at P on a rigid body, with another point Q below P."
+        },
+        {
+          "page": 34,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            328,
+            690,
+            500,
+            742
+          ],
+          "units": "pdf-points",
+          "alt": "Equal-and-opposite added forces at Q show replacement by the original force translated to Q plus a couple of magnitude F·PQ."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-191",
+      "status": "verified",
+      "answer": "d",
+      "question": "A 12 kN force produces a moment of 96 kN·m. The moment arm is",
+      "options": {
+        "a": "2 m",
+        "b": "4 m",
+        "c": "6 m",
+        "d": "8 m"
+      },
+      "explanation": "Given F = 12 kN and T = 96 kN·m.\nSince T = Fd,\nd = T/F = 96/12 = 8 m.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-192",
+      "status": "corrected",
+      "answer": "d",
+      "question": "Which of the following statements about a couple is correct?",
+      "options": {
+        "a": "The algebraic sum of the forces constituting the couple is zero",
+        "b": "The algebraic sum of the moments of the forces constituting the couple is the same about any point",
+        "c": "A couple cannot be balanced by a single force but can be balanced only by a couple of opposite sense",
+        "d": "All statements"
+      },
+      "explanation": "All statements are correct when statement (b) refers to the moments of the forces:\n(a) The vector resultant of the two forces in a couple is zero.\n(b) The algebraic sum of their moments is the same about every reference point.\n(c) A nonzero couple cannot be balanced by a single force; it requires an equal couple of opposite sense.",
+      "transcriptionReviewed": true,
+      "note": "The source choice (b) reads “the algebraic sum of the force, constituting the couple, about any point is same”. The missing word “moments” is corrected explicitly; with that correction, its key (d) is sound.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ],
+      "sourceExplanation": "All statements are correct. Answer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-49-193",
+      "status": "verified",
+      "answer": "a",
+      "question": "Varignon’s theorem is related to",
+      "options": {
+        "a": "Principle of moments",
+        "b": "Principle of momentum",
+        "c": "Principle of force",
+        "d": "Principle of inertia"
+      },
+      "explanation": "Principle of moments.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-194",
+      "status": "verified",
+      "answer": "d",
+      "question": "The dimensions of angular velocity are",
+      "options": {
+        "a": "M⁰L¹T⁻¹",
+        "b": "M⁰L²T⁻¹",
+        "c": "M⁰L⁰T⁻²",
+        "d": "M⁰L⁰T⁻¹"
+      },
+      "explanation": "M⁰L⁰T⁻¹. Angular velocity is angle per unit time, and plane angle is dimensionless.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis",
+          "section": "1.4 Dimensions of products and powers"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-195",
+      "status": "disputed",
+      "answer": null,
+      "question": "Opening a Limca bottle is due to",
+      "options": {
+        "a": "Moment",
+        "b": "Couple",
+        "c": "Torque",
+        "d": "Parallel forces"
+      },
+      "explanation": "The source gives “moment”, choice (a). A bottle opener uses the moment of an applied force about the cap contact; that turning moment is also called torque. Since choice (c) is “torque”, the choices are not mutually exclusive.",
+      "transcriptionReviewed": true,
+      "note": "Moment of a force and torque are synonymous here, so both (a) and (c) describe the turning effect. The printed answer (a) is not unique.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ],
+      "sourceExplanation": "Moment. Answer (a)."
+    },
+    {
+      "id": "mech-engineering-mechanics-49-196",
+      "status": "verified",
+      "answer": "a",
+      "question": "Cycle pedalling is an example of",
+      "options": {
+        "a": "Couple",
+        "b": "Moment",
+        "c": "Two equal and opposite forces",
+        "d": "Two unequal parallel forces"
+      },
+      "explanation": "The supplied answer is “couple”. This is the usual idealized example with opposite tangential forces on opposite pedals producing a turning couple about the crank axis.",
+      "transcriptionReviewed": true,
+      "note": "Source contains only the one-word answer. Verified as the conventional ideal two-pedal couple model; an actual single-pedal force alone instead produces a force and moment.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-197",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 10 m rod with mass 100 kg is fixed at one end in a wall. For the uniform horizontal rod shown, the moment about its fixed end is",
+      "options": {
+        "a": "1000 N·m",
+        "b": "9810 N·m",
+        "c": "4905 N·m",
+        "d": "500 N·m"
+      },
+      "explanation": "Given rod length L = 10 m and mass m = 100 kg. The source diagram shows a uniform horizontal rod, whose weight acts at L/2 from the wall.\nMoment about the fixed end A:\nM = 100 × 9.81 × (10/2)\n= 4905 N·m.",
+      "transcriptionReviewed": true,
+      "note": "Complete calculation and previously OCR-omitted diagram recovered. The source calls 100 kg a “weight” but uses it as mass; units are clarified, and the horizontal uniform-rod geometry is supplied by the source’s solution diagram.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ],
+      "figures": [
+        {
+          "page": 35,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            127,
+            694,
+            237,
+            741
+          ],
+          "units": "pdf-points",
+          "alt": "Source solution geometry: horizontal 10 m rod AB fixed at A with the 100 kg mass/weight acting at its midpoint."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-198",
+      "status": "verified",
+      "answer": "b",
+      "question": "For a person on a smooth floor surface, what kind of reaction is produced under the foot?",
+      "options": {
+        "a": "Horizontal reaction",
+        "b": "Vertical reaction",
+        "c": "Horizontal and vertical reactions",
+        "d": "No reaction"
+      },
+      "explanation": "A smooth floor produces a reaction normal to its surface, so the reaction under the foot is vertical.",
+      "transcriptionReviewed": true,
+      "note": "Source says “while walking”; a perfectly smooth ideal floor cannot provide horizontal traction, but the requested contact reaction is still solely vertical. Full supplied answer retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Free-Body Diagrams",
+          "url": "https://engineeringstatics.org/Chapter_05-free-body-diagrams.html",
+          "section": "Replace supports with their reaction forces"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-199",
+      "status": "verified",
+      "answer": "a",
+      "question": "The coefficient of friction depends on",
+      "options": {
+        "a": "Nature of the surfaces",
+        "b": "Shape of the surfaces",
+        "c": "Strength of the surfaces",
+        "d": "Area of contact"
+      },
+      "explanation": "The coefficient of friction depends on the nature of the contacting surfaces.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-49-200",
+      "status": "disputed",
+      "answer": null,
+      "question": "Static friction is always ______ dynamic friction.",
+      "options": {
+        "a": "Equal to",
+        "b": "Less than",
+        "c": "Greater than",
+        "d": "Both (a) and (b)"
+      },
+      "explanation": "Static friction develops between contacting surfaces when an external force tends to move them but no relative sliding occurs. It adjusts to the required value up to a limit: 0 ≤ f_s ≤ μ_sN.\nDynamic or kinetic friction resists relative sliding between surfaces and has magnitude approximately μ_kN in the elementary dry-friction model.\nThe source states that static friction is always greater than kinetic friction and writes μ_s > μ_k. That comparison is normally intended for the limiting static force μ_sN, not the actual static force. An actual static force can be zero or smaller than kinetic friction. Therefore no “always” choice is generally correct as the question is written.",
+      "transcriptionReviewed": true,
+      "note": "The source confuses actual self-adjusting static friction with its limiting value. The literal “always greater” claim and its key (c) are invalid; a revised question about limiting static friction would have the intended answer.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "sourceExplanation": "Static friction: the frictional force developed between mating surfaces when subjected to external force but there is no relative motion between them.\n(μ_s > μ_k) — always.\nDynamic or kinetic friction: the force resisting relative movement of surfaces when they are in motion.\nThe static friction between two surfaces is always higher than the kinetic friction.\nAnswer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-55-221",
+      "status": "verified",
+      "answer": "a",
+      "question": "For moderate speeds, kinetic friction remains approximately constant, but it ______ slightly with the ______ of speed.",
+      "options": {
+        "a": "Decreases; increase",
+        "b": "Decreases; decrease",
+        "c": "Increases; increase",
+        "d": "Increases; decrease"
+      },
+      "explanation": "The magnitude of kinetic friction bears an approximately constant ratio to the normal reaction between the two surfaces. This ratio is generally slightly smaller than that for limiting static friction.\nFor moderate speeds, kinetic friction is approximately constant. In the elementary empirical law used here, it decreases slightly as speed increases.",
+      "transcriptionReviewed": true,
+      "note": "Full supplied explanation reconciled. Answer (a) matches the approximate velocity-weakening dry-friction rule also described by NPTEL; this is an empirical approximation, not a universal material law.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 7: Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Approximate kinetic-friction dependence on speed"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-55-222",
+      "status": "verified",
+      "answer": "b",
+      "question": "A body of weight 1000 N rests on a rough horizontal surface with coefficient of friction 0.25. The magnitude of the horizontal force required to move it is",
+      "options": {
+        "a": "2000 N",
+        "b": "250 N",
+        "c": "500 N",
+        "d": "1000 N"
+      },
+      "explanation": "The body’s weight is W = 1000 N, so the normal reaction on the horizontal surface is R = 1000 N. The coefficient of friction is μ = 0.25.\nThe horizontal force required at impending motion is\nF = μR\n= 0.25 × 1000\n= 250 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 41,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            345.0,
+            138.5,
+            482.67,
+            204.5
+          ],
+          "units": "pdf-points",
+          "alt": "1000 N block with normal reaction 1000 N, opposing limiting friction μR and unknown horizontal force F."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-55-223",
+      "status": "corrected",
+      "answer": "d",
+      "question": "A 10 kg body is initially stationary on a 45° inclined plane. The coefficient of dynamic friction is 0.5. It slides down the plane and attains 20 m/s. The distance travelled along the plane is",
+      "options": {
+        "a": "45 m",
+        "b": "80 m",
+        "c": "78.76 m",
+        "d": "57.76 m"
+      },
+      "explanation": "Taking forces along the 45° incline:\nmg sin 45° − μN = ma.\nSince N = mg cos 45° and μ = 0.5,\na = [mg sin 45° − 0.5mg cos 45°]/m\n= (9.81 − 0.5 × 9.81)/√2\n≈ 3.468 m/s².\nFor distance s from rest:\nv² = u² + 2as\n20² = 0 + 2 × 3.468 × s,\ns = 20²/(2 × 3.468)\n≈ 57.67 m.\nThe intended and closest choice is (d), printed as 57.76 m; its digits appear transposed.",
+      "transcriptionReviewed": true,
+      "note": "Source key (d) identifies the intended choice, but its 57.76 m is inconsistent with the correct printed calculation 57.67 m (57.664 m using unrounded g = 9.81). Source also drops s from the intermediate v² equation. Correct full derivation provided while the literal choices remain preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "sourceExplanation": "Balancing forces along the inclined plane:\nmg sin45° − μN = ma.\na = [mg sin45° − 0.5mg cos45°]/m.\na = [(9.81 − 0.5 × 9.81) × 1]/√2.\na = 3.468 m/s².\nDistance travelled along the plane:\nv² = u² + 2as.\n20² = 0 + 2 × 3.468.\ns = 20²/(2 × 3.468).\ns = 57.67 m. Answer (d).",
+      "figures": [
+        {
+          "page": 41,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            375.33,
+            330.58,
+            448.33,
+            385.92
+          ],
+          "units": "pdf-points",
+          "alt": "Body M on a plane inclined 45° to the horizontal."
+        },
+        {
+          "page": 41,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            363.67,
+            457.58,
+            469.67,
+            525.25
+          ],
+          "units": "pdf-points",
+          "alt": "Force diagram of the sliding body showing weight components, normal reaction and upslope kinetic friction; source label N = 0.5 should read μ = 0.5."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-55-224",
+      "status": "corrected",
+      "answer": "b",
+      "question": "A 5 kg block slides from rest down a frictionless plane inclined 30° to the horizontal. What is its speed after travelling 3.6 m along the plane? Take g = 10 m/s².",
+      "options": {
+        "a": "5 m/s",
+        "b": "6 m/s",
+        "c": "7 m/s",
+        "d": "8 m/s"
+      },
+      "explanation": "Given g = 10 m/s², distance s = 3.6 m, mass m = 5 kg and initial velocity u = 0.\nApplying Newton’s second law along the incline:\nΣF = ma\nmg sin 30° − μR = ma.\nBecause the plane is frictionless, μ = 0:\nmg sin 30° = ma\n a = g sin 30° = 10 × 1/2 = 5 m/s².\nThen\nv² = u² + 2as\n= 0² + 2 × 5 × 3.6\n= 36,\nso v = 6 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Answer (b) and all numerical steps are correct. The source labels ΣF = ma an “equilibrium condition”, although a = 5 m/s²; corrected to Newton’s second law, with the entire original explanation preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "sourceExplanation": "Given g = 10 m/s², s = 3.6 m, m = 5 kg, u = 0.\nAt equilibrium condition:\nΣF = ma.\nmg sin30° − μR = ma.\nmg sin30° = ma (μ = 0).\na = g sin30° = 10 × 1/2.\na = 5 m/s².\nv² = u² + 2as = 0² + 2 × 5 × 3.6.\nv² = 2 × 5 × 3.6.\nv² = 36.\nv = 6 m/s. Answer (b).",
+      "figures": [
+        {
+          "page": 42,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            102.67,
+            191.25,
+            254.33,
+            266.92
+          ],
+          "units": "pdf-points",
+          "alt": "5 kg block on a frictionless 30° incline with weight mg, downslope component mg sin30° and acceleration down the plane."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-56-225",
+      "status": "verified",
+      "answer": "c",
+      "question": "The maximum inclination of a plane to the horizontal at which a body remains in equilibrium with friction preventing motion is termed",
+      "options": {
+        "a": "Angle of wedge",
+        "b": "Angle of equilibrium",
+        "c": "Angle of repose",
+        "d": "All the given answers"
+      },
+      "explanation": "The maximum inclination of a plane at which a body can remain in equilibrium on it with friction preventing sliding is called the angle of repose.\nAngle of repose = angle of limiting friction.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-56-226",
+      "status": "verified",
+      "answer": "c",
+      "question": "A body of weight W is to be moved up a rough plane inclined at α to the horizontal. The effort P applied parallel to the plane at impending upward motion is given by (μ = tan φ)",
+      "options": {
+        "a": "P = W tan α",
+        "b": "P = W tan(α + φ)",
+        "c": "P = W(sin α + μ cos α)",
+        "d": "P = W(cos α + μ sin α)"
+      },
+      "explanation": "Let N be the normal reaction, α the plane’s inclination, P the effort applied parallel to the plane, μ the coefficient of friction and W the body’s weight.\nNormal reaction:\nN = W cos α. …(i)\nAt impending upward motion, force balance parallel to the plane gives\nP = W sin α + μN. …(ii)\nFrom (i) and (ii):\nP = W sin α + μW cos α\n= W(sin α + μ cos α).\nHere μ = tan φ, with φ the angle of friction.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 42,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            365.67,
+            107.92,
+            462.67,
+            255.92
+          ],
+          "units": "pdf-points",
+          "alt": "Body being pulled up an incline by effort P, with N, weight W, components W sinα and W cosα, and downslope friction μN."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-56-227",
+      "status": "verified",
+      "answer": "c",
+      "question": "The 50 kg crate shown slides down a 15° incline with initial velocity 10 m/s. The coefficient of friction is 0.4. What is its normal reaction?",
+      "options": {
+        "a": "233.80 N",
+        "b": "133.42 N",
+        "c": "473.80 N",
+        "d": "500 N"
+      },
+      "explanation": "Given m = 50 kg, g = 9.81 m/s² and μ = 0.4.\nNormal reaction:\nR = mg cos 15°\n= 50 × 9.81 × cos 15°\n≈ 473.79 N (the source quotes 473.78 N).\nThis agrees with the listed 473.80 N to the precision of the choices.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 42,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            352.33,
+            448.25,
+            481.33,
+            514.92
+          ],
+          "units": "pdf-points",
+          "alt": "Crate sliding down a 15° incline with initial velocity 10 m/s and μ = 0.4."
+        },
+        {
+          "page": 42,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            337.33,
+            557.58,
+            517.33,
+            642.25
+          ],
+          "units": "pdf-points",
+          "alt": "Inclined-crate force diagram with normal R, weight mg and its components."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-56-228",
+      "status": "verified",
+      "answer": "d",
+      "question": "A block weighing 100 N rests on a surface with coefficient of friction 0.3. A horizontal force of 20 N is applied. What is the friction force acting on the block?",
+      "options": {
+        "a": "30 N",
+        "b": "100 N",
+        "c": "50 N",
+        "d": "20 N"
+      },
+      "explanation": "Given weight W = 100 N, coefficient μ = 0.3 and applied horizontal force P = 20 N.\nThe normal reaction is R = 100 N.\nThe maximum available static friction is\nF_max = μR\n= 0.3 × 100\n= 30 N.\nBecause the applied 20 N is smaller than this limit, the block remains at rest and actual friction balances the applied force:\nf_s = 20 N.",
+      "transcriptionReviewed": true,
+      "note": "All supplied calculation steps and the final 20 N answer recovered. The computed 30 N is explicitly labelled limiting friction, distinguishing it from the actual 20 N force as the source’s final comparison intends.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 43,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            102.33,
+            141.42,
+            239.33,
+            257.75
+          ],
+          "units": "pdf-points",
+          "alt": "100 N block with upward reaction R, 20 N applied horizontal force and opposing static friction on a surface with μ = 0.3."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-229",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 2 kg block rests on a rough horizontal surface with coefficient of friction 0.1. A horizontal force of 1 N is applied as shown. The friction force is",
+      "options": {
+        "a": "Zero",
+        "b": "1 N",
+        "c": "1.96 N",
+        "d": "1.20 N"
+      },
+      "explanation": "The limiting friction force between the block and surface is\n2 × 0.1 × 9.8 = 1.96 N.\nThe applied force is only 1 N, less than the limiting friction. Therefore the actual static friction is 1 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 43,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            143.0,
+            396.83,
+            222.0,
+            419.17
+          ],
+          "units": "pdf-points",
+          "alt": "A horizontal 1 N force acts on a 2 kg block resting on the surface, as shown in the source solution."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-230",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 1 kg block rests on a horizontal surface with coefficient of friction μ = 0.1. A force of 0.8 N is applied as shown. The friction force is",
+      "options": {
+        "a": "Zero",
+        "b": "0.8 N",
+        "c": "0.89 N",
+        "d": "1.2 N"
+      },
+      "explanation": "Given μ_s = 0.1 and P = 0.8 N.\nThe normal force is N = 9.81 N.\nThe limiting friction is\nF_max = μ_sN\n= 0.1 × 9.81\n= 0.981 N.\nSince the applied force is smaller than μ_sN, the actual static friction equals the applied force, namely 0.8 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 43,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            126.67,
+            520.0,
+            229.33,
+            557.67
+          ],
+          "units": "pdf-points",
+          "alt": "A horizontal force of 0.8 N pushes a 1 kg block on a rough surface."
+        },
+        {
+          "page": 43,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            170.67,
+            618.0,
+            259.33,
+            649.67
+          ],
+          "units": "pdf-points",
+          "alt": "Source repeats the 1 kg block and applied 0.8 N force for the limiting-friction check."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-231",
+      "status": "verified",
+      "answer": "b",
+      "question": "A lathe tailstock weighs 120 kgf, and the coefficient of friction at its slides is 0.12. The horizontal force in kgf required to slide the tailstock is",
+      "options": {
+        "a": "1000",
+        "b": "14.4",
+        "c": "120.12",
+        "d": "120"
+      },
+      "explanation": "Frictional force F = μN.\nF = 0.12 × 120 kgf\n= 14.4 kgf.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-232",
+      "status": "verified",
+      "answer": "b",
+      "question": "If the angle of friction is zero, a body will experience",
+      "options": {
+        "a": "Infinite friction",
+        "b": "Zero friction",
+        "c": "Friction acting normal to the plane",
+        "d": "None of the above"
+      },
+      "explanation": "Given angle of friction φ = 0°.\ntan φ = μ,\nso μ = tan 0° = 0.\nThus friction is zero.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-233",
+      "status": "verified",
+      "answer": "c",
+      "question": "The transverse slope generally provided on a road curve is known as",
+      "options": {
+        "a": "Angle of repose",
+        "b": "Angle of friction",
+        "c": "Angle of banking",
+        "d": "Angle of reaction"
+      },
+      "explanation": "Angle of banking.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-234",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 40 kg crate rests on an accelerating cart. The coefficient of friction between cart and crate is 0.5. What is the maximum cart acceleration for which the crate does not slip?",
+      "options": {
+        "a": "0.25 m/s²",
+        "b": "2.45 m/s²",
+        "c": "4.90 m/s²",
+        "d": "1.225 m/s²"
+      },
+      "explanation": "The horizontal force needed to accelerate the crate is supplied by static friction.\nAt the maximum acceleration without slip:\nma = μmg,\na_max = μg\n= 0.5 × 9.81\n= 4.905 m/s²,\ncorresponding to the listed 4.90 m/s².",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-57-235",
+      "status": "verified",
+      "answer": "b",
+      "question": "The coefficient of friction between a pulley and belt is halved. If the initial belt tension ratio is 5, what is its new value?",
+      "options": {
+        "a": "2",
+        "b": "2.236",
+        "c": "4.47",
+        "d": "3.64"
+      },
+      "explanation": "Given μ₁ = μ and μ₂ = μ/2. Initially T₁/T₂ = 5.\nAt limiting belt traction,\nT₁/T₂ = exp(μ₁θ),\nso exp(μθ) = 5.\nWith the same wrap angle, the new limiting ratio is\n(T₁/T₂)_new = exp(μ₂θ)\n= exp(μθ/2).\nSquaring both sides:\n[(T₁/T₂)_new]² = [exp(μθ/2)]²\n= exp(μθ)\n= 5.\nTherefore (T₁/T₂)_new = √5 = 2.236.",
+      "transcriptionReviewed": true,
+      "note": "All four choices and every step of the two-column explanation restored. The source applies the capstan equality, hence the ratio is the limiting traction ratio at unchanged wrap angle; for arbitrary loads below slip the actual tension ratio need not change solely with μ.",
+      "references": [
+        {
+          "title": "Engineering Statics: Flexible Belts",
+          "url": "https://engineeringstatics.org/Chapter_09-flexible-belt-friction.html",
+          "section": "9.5.2 Flat belt limiting tension ratio"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-58-236",
+      "status": "verified",
+      "answer": "a",
+      "question": "A body of weight 600 N on a horizontal surface is on the point of moving when a horizontal force of 200√3 N is applied. The angle of friction is",
+      "options": {
+        "a": "30°",
+        "b": "45°",
+        "c": "60°",
+        "d": "90°"
+      },
+      "explanation": "Weight W = 600 N, so the normal reaction R = 600 N.\nAt impending motion, applied horizontal force P = 200√3 N equals the limiting friction F.\nFrom triangle AOC:\ntan θ = AC/OA = P/R\n= 200√3/600\n= √3/3\n= 1/√3.\nThus μ = tan θ = 1/√3,\nand θ = 30°.",
+      "transcriptionReviewed": true,
+      "note": "Complete last two equations μ = tanθ = 1/√3 and θ = 30° recovered visually below the OCR boundary.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 44,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            113.33,
+            370.5,
+            251.67,
+            490.83
+          ],
+          "units": "pdf-points",
+          "alt": "Applied force P, weight W, normal R, limiting friction F and resultant contact reaction forming the angle of friction θ."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-58-237",
+      "status": "disputed",
+      "answer": null,
+      "question": "A sphere of mass m and radius R rolls without slipping on a horizontal rough surface. If its mass-centre acceleration is a, what is the magnitude of the friction force?",
+      "options": {
+        "a": "(1/5)ma",
+        "b": "(2/5)ma",
+        "c": "(3/5)ma",
+        "d": "(4/5)ma"
+      },
+      "explanation": "The complete source calculation is:\nTorque T = Iα.\nFor a uniform solid sphere I = (2/5)mR² and rolling without slipping gives α = a/R.\nIf friction is the only force producing a moment about the centre,\nF_f R = (2/5)mR²(a/R),\nso F_f = (2/5)ma, the intended answer (b).\nHowever, the stem specifies neither the sphere’s mass distribution nor the applied driving force or torque. In general, F_f R + τ_other = I(a/R), so the acceleration alone does not determine friction without these assumptions. The item needs the uniform-solid-sphere/no-other-central-torque conditions before it can be graded uniquely.",
+      "transcriptionReviewed": true,
+      "note": "Entire printed derivation and choices are clear, but its I = 2mR²/5 and friction-only torque assumptions are absent from the stem. Printed (b) is conditional, so automatic grading is withheld.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1 Rolling without slipping"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ],
+      "sourceExplanation": "We know torque T = Iα.\nF_f R = (2/5)mR²(a/R), with α = a/R.\nF_f = (2/5)ma.\nAnswer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-58-238",
+      "status": "verified",
+      "answer": "c",
+      "question": "If friction force or sliding velocity varies with distance or time and produces oscillations, it is called",
+      "options": {
+        "a": "Cold weld",
+        "b": "Adhesion",
+        "c": "Stick-slip phenomenon",
+        "d": "Ploughing of a hard asperity"
+      },
+      "explanation": "If friction force or sliding velocity varies with distance or time and produces the characteristic alternating sticking and slipping oscillation, the phenomenon is called stick-slip.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "MIT 18.353J Nonlinear Dynamics, lecture materials",
+          "url": "https://math.mit.edu/classes/18.353J/Lectures/index.html",
+          "section": "Lecture 15: relaxation oscillations due to friction (stick-slip)"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-58-239",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A flexible inextensible chain of length L and total weight wL lies on a frictionless table with an initial overhang a. If released from rest, its speed v as it leaves the table is",
+      "options": {
+        "a": "(g/L)√(L² − a²)",
+        "b": "(g/L)√(L² + a²)",
+        "c": "√[(g/L)(L² − a²)]",
+        "d": "√[(g/L)(L² + a²)]"
+      },
+      "explanation": "Let w be the weight per unit length, so total weight is wL and total mass m = wL/g. The chain is initially at rest, with length a hanging over the edge.\nTaking the tabletop as zero potential energy:\nU_i = −wa(a/2) = −wa²/2.\nWhen the chain just leaves the table it hangs through length L:\nU_f = −wL(L/2) = −wL²/2.\nThe increase in kinetic energy equals the decrease in potential energy:\n(1/2)mv² = U_i − U_f\n= wL²/2 − wa²/2.\nSubstituting m = wL/g:\n(1/2)(wL/g)v² = (w/2)(L² − a²).\nTherefore\nv = √[(g/L)(L² − a²)].",
+      "transcriptionReviewed": true,
+      "note": "Answer (c) is correct. Full formula options and dropped final two lines recovered. The source calls positive downward energy magnitudes “P.E.” and writes change in KE equals change in PE; corrected to ΔK = −ΔU using negative potential energies below the tabletop. Original full derivation retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Increase in kinetic energy equals decrease in potential energy"
+        }
+      ],
+      "sourceExplanation": "Initial P.E. for the above position = W a(a/2).\nFinal P.E. for the chain = W L(L/2) = W(L²/2).\nChange in K.E. of chain = change in P.E.\n(1/2)mv² = W(L²/2) − W(a²/2).\n(1/2)(WL/g)v² = (W/2)(L² − a²).\nv = √[(g/L)(L² − a²)].\nAnswer (c).",
+      "figures": [
+        {
+          "page": 44,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            367.67,
+            434.75,
+            457.67,
+            511.08
+          ],
+          "units": "pdf-points",
+          "alt": "Chain initially lying a distance L − a along the tabletop with a length a hanging vertically over a frictionless edge."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-58-240",
+      "status": "verified",
+      "answer": "b",
+      "question": "A block of mass M supports another block of mass m and is moved horizontally with acceleration increasing from zero. If μ is the coefficient of static friction between the blocks, the acceleration at which the upper block begins to slip is",
+      "options": {
+        "a": "μm/g",
+        "b": "μg",
+        "c": "−μmM/(m + M)",
+        "d": "None of the above"
+      },
+      "explanation": "For the smaller upper block:\nN = mg.\nAt impending slipping, the horizontal force needed to accelerate it equals the maximum static friction:\nma = μN\n= μmg.\nTherefore a = μg.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ],
+      "figures": [
+        {
+          "page": 45,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            137.67,
+            93.33,
+            226.0,
+            142.0
+          ],
+          "units": "pdf-points",
+          "alt": "Upper block m rests on lower block M, which accelerates horizontally to the right."
+        },
+        {
+          "page": 45,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            73.33,
+            188.0,
+            293.67,
+            287.0
+          ],
+          "units": "pdf-points",
+          "alt": "Block arrangement and upper-block force diagram with N upward, mg downward, limiting friction μN rightward and inertia force ma leftward."
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "totalReviewed": 100,
+    "counts": {
+      "verified": 79,
+      "corrected": 12,
+      "disputed": 9
+    },
+    "range": [
+      [
+        121,
+        200
+      ],
+      [
+        221,
+        240
+      ]
+    ],
+    "excludedRange": {
+      "range": [
+        201,
+        220
+      ],
+      "owner": "root"
+    },
+    "issues": [
+      {
+        "id": "mech-engineering-mechanics-39-127",
+        "status": "corrected",
+        "note": "Answer (b) is correct. The source definition incorrectly calls escape velocity the maximum velocity; it is the minimum escape speed. All supplied derivation steps are preserved with this definition corrected."
+      },
+      {
+        "id": "mech-engineering-mechanics-40-131",
+        "status": "disputed",
+        "note": "The source adds equal 135° angles only in its solution figure. The stem provides no symmetry or inclination condition; Q/P is free, so no unique listed answer can be graded."
+      },
+      {
+        "id": "mech-engineering-mechanics-40-134",
+        "status": "corrected",
+        "note": "Five choices restored. Answer (c) is correct; the source final direction line prints 9.99/8.66 = 1.732, which is false. It must be ΣV/ΣH = 8.66/5. Complete component derivation retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-42-143",
+        "status": "corrected",
+        "note": "Answer (b) is correct. The printed derivation treats resultant F as an equilibrating force, obtains negative components, then discards the sign. The complete relation is corrected by using −F in equilibrium (or the force triangle); all original steps are preserved separately."
+      },
+      {
+        "id": "mech-engineering-mechanics-42-145",
+        "status": "disputed",
+        "note": "The scan confirms that choices (b) and (c) are identical and both correct. Source key (b) cannot support a unique-choice grade."
+      },
+      {
+        "id": "mech-engineering-mechanics-42-147",
+        "status": "corrected",
+        "note": "Source answer (c) is correct. The source intermediate tensions labelled kg are actually kgf, and one intermediate sine value is misprinted as 0.860 before the next line uses 0.866. Units and that typo are corrected; every supplied calculation step is retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-43-152",
+        "status": "disputed",
+        "note": "Source (b) is the minimal independent set, but (a) is also a valid equilibrium condition. Because the stem does not request the independent/minimal set, a unique grade would penalize a mathematically correct choice."
+      },
+      {
+        "id": "mech-engineering-mechanics-43-153",
+        "status": "disputed",
+        "note": "Confirmed genuine source-key error: the book prints (d), although both (b) and (c) explicitly violate equilibrium. None of the choices states the required simultaneous zero force and moment."
+      },
+      {
+        "id": "mech-engineering-mechanics-43-154",
+        "status": "corrected",
+        "note": "Answer (c) is correct. The printed solution incorrectly writes ΣH = 0 and ΣV = 0 immediately before finding nonzero components. Those false zero equalities are removed; the complete component and magnitude calculation is preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-44-156",
+        "status": "corrected",
+        "note": "Source answer (d) is correct for the rest-to-4 m/s motion assumed by its solution. The printed kinematic lines v = u − at and u = 2a are inconsistent; corrected to v = u + at and 4 = 2a. The printed “upward force, v” is velocity. All force calculation steps are retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-46-174",
+        "status": "corrected",
+        "note": "Definite source-key error: printed (a) is rod extension, while the requested displacement of B is extension/sin30° = 2.46 mm, option (c). The complete printed computation is retained separately; the correction adds rigid-beam displacement compatibility."
+      },
+      {
+        "id": "mech-engineering-mechanics-47-178",
+        "status": "corrected",
+        "note": "Answer (c) is correct. Source language describes the cross product as force and distance, which reverses the correct ordered vector formula. The correction explicitly uses r × F and distinguishes axis torque from force direction; the complete printed explanation is preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-48-187",
+        "status": "disputed",
+        "note": "The scan confirms an incomplete printed sentence, not an OCR loss. Its explanation supplies “remains unchanged”, which would make (a) correct; the unfinished question is not uniquely gradable."
+      },
+      {
+        "id": "mech-engineering-mechanics-48-189",
+        "status": "disputed",
+        "note": "The source assumes equal opposite forces without saying they are equal. Unlike parallel forces need not form a couple, so the claimed reference-independent constant moment is not generally true."
+      },
+      {
+        "id": "mech-engineering-mechanics-49-192",
+        "status": "corrected",
+        "note": "The source choice (b) reads “the algebraic sum of the force, constituting the couple, about any point is same”. The missing word “moments” is corrected explicitly; with that correction, its key (d) is sound."
+      },
+      {
+        "id": "mech-engineering-mechanics-49-195",
+        "status": "disputed",
+        "note": "Moment of a force and torque are synonymous here, so both (a) and (c) describe the turning effect. The printed answer (a) is not unique."
+      },
+      {
+        "id": "mech-engineering-mechanics-49-200",
+        "status": "disputed",
+        "note": "The source confuses actual self-adjusting static friction with its limiting value. The literal “always greater” claim and its key (c) are invalid; a revised question about limiting static friction would have the intended answer."
+      },
+      {
+        "id": "mech-engineering-mechanics-55-223",
+        "status": "corrected",
+        "note": "Source key (d) identifies the intended choice, but its 57.76 m is inconsistent with the correct printed calculation 57.67 m (57.664 m using unrounded g = 9.81). Source also drops s from the intermediate v² equation. Correct full derivation provided while the literal choices remain preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-55-224",
+        "status": "corrected",
+        "note": "Answer (b) and all numerical steps are correct. The source labels ΣF = ma an “equilibrium condition”, although a = 5 m/s²; corrected to Newton’s second law, with the entire original explanation preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-58-237",
+        "status": "disputed",
+        "note": "Entire printed derivation and choices are clear, but its I = 2mR²/5 and friction-only torque assumptions are absent from the stem. Printed (b) is conditional, so automatic grading is withheld."
+      },
+      {
+        "id": "mech-engineering-mechanics-58-239",
+        "status": "corrected",
+        "note": "Answer (c) is correct. Full formula options and dropped final two lines recovered. The source calls positive downward energy magnitudes “P.E.” and writes change in KE equals change in PE; corrected to ΔK = −ΔU using negative potential energies below the tabletop. Original full derivation retained."
+      }
+    ]
+  }
+}

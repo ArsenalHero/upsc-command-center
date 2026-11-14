@@ -1,0 +1,6194 @@
+[
+  {
+    "question": 1,
+    "id": "mech-engineering-mechanics-15-1",
+    "page": 1,
+    "printedPage": 15,
+    "bbox": [
+      143.0,
+      371.0,
+      223.0,
+      434.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-15-1-explanation-1-9201978917.svg",
+    "width": 320,
+    "height": 252
+  },
+  {
+    "question": 3,
+    "id": "mech-engineering-mechanics-15-3",
+    "page": 1,
+    "printedPage": 15,
+    "bbox": [
+      352.0,
+      444.75,
+      476.0,
+      510.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-15-3-explanation-1-b2d0096500.svg",
+    "width": 496,
+    "height": 261
+  },
+  {
+    "question": 6,
+    "id": "mech-engineering-mechanics-16-6",
+    "page": 2,
+    "printedPage": 16,
+    "bbox": [
+      145.0,
+      499.5,
+      217.0,
+      576.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-16-6-explanation-1-8ee9c94d35.svg",
+    "width": 288,
+    "height": 306
+  },
+  {
+    "question": 11,
+    "id": "mech-engineering-mechanics-17-11",
+    "page": 3,
+    "printedPage": 17,
+    "bbox": [
+      143.0,
+      146.0,
+      220.0,
+      223.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-17-11-question-1-3b57dcbda4.svg",
+    "width": 308,
+    "height": 308
+  },
+  {
+    "question": 11,
+    "id": "mech-engineering-mechanics-17-11",
+    "page": 3,
+    "printedPage": 17,
+    "bbox": [
+      152.0,
+      334.0,
+      217.0,
+      400.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-17-11-explanation-2-ce7d6cac7f.svg",
+    "width": 260,
+    "height": 264
+  },
+  {
+    "question": 12,
+    "id": "mech-engineering-mechanics-17-12",
+    "page": 3,
+    "printedPage": 17,
+    "bbox": [
+      102.0,
+      662.0,
+      260.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-17-12-explanation-1-787875e642.svg",
+    "width": 632,
+    "height": 320
+  },
+  {
+    "question": 17,
+    "id": "mech-engineering-mechanics-18-17",
+    "page": 4,
+    "printedPage": 18,
+    "bbox": [
+      116.0,
+      468.0,
+      253.0,
+      560.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-18-17-explanation-1-6544e62db5.svg",
+    "width": 548,
+    "height": 368
+  },
+  {
+    "question": 29,
+    "id": "mech-engineering-mechanics-19-29",
+    "page": 5,
+    "printedPage": 19,
+    "bbox": [
+      313.0,
+      556.0,
+      515.0,
+      634.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-19-29-explanation-1-f795c0553f.svg",
+    "width": 808,
+    "height": 312
+  },
+  {
+    "question": 30,
+    "id": "mech-engineering-mechanics-20-30",
+    "page": 6,
+    "printedPage": 20,
+    "bbox": [
+      132.0,
+      169.0,
+      218.0,
+      250.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-20-30-question-1-73a055e0e6.svg",
+    "width": 344,
+    "height": 324
+  },
+  {
+    "question": 32,
+    "id": "mech-engineering-mechanics-20-32",
+    "page": 6,
+    "printedPage": 20,
+    "bbox": [
+      84.0,
+      621.0,
+      274.0,
+      703.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-20-32-question-1-8106b365e1.svg",
+    "width": 760,
+    "height": 328
+  },
+  {
+    "question": 32,
+    "id": "mech-engineering-mechanics-20-32",
+    "page": 6,
+    "printedPage": 20,
+    "bbox": [
+      330.0,
+      107.0,
+      499.0,
+      175.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-20-32-explanation-2-966c77a3ee.svg",
+    "width": 676,
+    "height": 272
+  },
+  {
+    "question": 32,
+    "id": "mech-engineering-mechanics-20-32",
+    "page": 6,
+    "printedPage": 20,
+    "bbox": [
+      378.0,
+      175.0,
+      451.0,
+      229.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-20-32-explanation-3-e6d97da36b.svg",
+    "width": 292,
+    "height": 216
+  },
+  {
+    "question": 34,
+    "id": "mech-engineering-mechanics-20-34",
+    "page": 6,
+    "printedPage": 20,
+    "bbox": [
+      363.0,
+      654.0,
+      463.0,
+      708.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-20-34-explanation-1-11dc3b17b1.svg",
+    "width": 400,
+    "height": 216
+  },
+  {
+    "question": 36,
+    "id": "mech-engineering-mechanics-21-36",
+    "page": 7,
+    "printedPage": 21,
+    "bbox": [
+      91.0,
+      508.0,
+      273.0,
+      652.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-21-36-explanation-1-13e37a2b96.svg",
+    "width": 728,
+    "height": 576
+  },
+  {
+    "question": 41,
+    "id": "mech-engineering-mechanics-21-41",
+    "page": 7,
+    "printedPage": 21,
+    "bbox": [
+      364.0,
+      674.0,
+      464.0,
+      744.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-21-41-question-1-9155c2c317.svg",
+    "width": 400,
+    "height": 280
+  },
+  {
+    "question": 42,
+    "id": "mech-engineering-mechanics-22-42",
+    "page": 8,
+    "printedPage": 22,
+    "bbox": [
+      100.0,
+      394.0,
+      269.0,
+      465.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-22-42-explanation-1-4c82b514ca.svg",
+    "width": 676,
+    "height": 284
+  },
+  {
+    "question": 43,
+    "id": "mech-engineering-mechanics-22-43",
+    "page": 8,
+    "printedPage": 22,
+    "bbox": [
+      147.0,
+      596.0,
+      210.0,
+      707.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-22-43-question-1-441ad9d137.svg",
+    "width": 252,
+    "height": 444
+  },
+  {
+    "question": 43,
+    "id": "mech-engineering-mechanics-22-43",
+    "page": 8,
+    "printedPage": 22,
+    "bbox": [
+      369.0,
+      105.0,
+      464.0,
+      219.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-22-43-explanation-2-ef512e67d1.svg",
+    "width": 380,
+    "height": 456
+  },
+  {
+    "question": 43,
+    "id": "mech-engineering-mechanics-22-43",
+    "page": 8,
+    "printedPage": 22,
+    "bbox": [
+      361.0,
+      427.0,
+      486.0,
+      520.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-22-43-explanation-3-6be73e8dfa.svg",
+    "width": 500,
+    "height": 372
+  },
+  {
+    "question": 48,
+    "id": "mech-engineering-mechanics-23-48",
+    "page": 9,
+    "printedPage": 23,
+    "bbox": [
+      161.0,
+      593.0,
+      202.0,
+      663.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-23-48-explanation-1-97e2afb1fe.svg",
+    "width": 164,
+    "height": 280
+  },
+  {
+    "question": 49,
+    "id": "mech-engineering-mechanics-23-49",
+    "page": 9,
+    "printedPage": 23,
+    "bbox": [
+      363.0,
+      181.0,
+      465.0,
+      237.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-23-49-question-1-9ef78c7f76.svg",
+    "width": 408,
+    "height": 224
+  },
+  {
+    "question": 49,
+    "id": "mech-engineering-mechanics-23-49",
+    "page": 9,
+    "printedPage": 23,
+    "bbox": [
+      329.0,
+      284.0,
+      498.0,
+      386.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-23-49-explanation-2-b8f5c2ce89.svg",
+    "width": 676,
+    "height": 408
+  },
+  {
+    "question": 50,
+    "id": "mech-engineering-mechanics-23-50",
+    "page": 9,
+    "printedPage": 23,
+    "bbox": [
+      370.0,
+      630.0,
+      455.0,
+      712.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-23-50-explanation-1-dda100f7b0.svg",
+    "width": 340,
+    "height": 328
+  },
+  {
+    "question": 51,
+    "id": "mech-engineering-mechanics-24-51",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      123.0,
+      299.0,
+      244.0,
+      373.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-24-51-explanation-1-691953571e.svg",
+    "width": 484,
+    "height": 296
+  },
+  {
+    "question": 51,
+    "id": "mech-engineering-mechanics-24-51",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      140.0,
+      385.0,
+      224.0,
+      482.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-24-51-explanation-2-72f81d4fbc.svg",
+    "width": 336,
+    "height": 388
+  },
+  {
+    "question": 52,
+    "id": "mech-engineering-mechanics-24-52",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      99.0,
+      622.0,
+      266.0,
+      707.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-24-52-question-1-7fb42e2023.svg",
+    "width": 668,
+    "height": 340
+  },
+  {
+    "question": 52,
+    "id": "mech-engineering-mechanics-24-52",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      370.0,
+      105.0,
+      456.0,
+      182.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-24-52-explanation-2-af85e35983.svg",
+    "width": 344,
+    "height": 308
+  },
+  {
+    "question": 53,
+    "id": "mech-engineering-mechanics-24-53",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      370.0,
+      275.5,
+      458.0,
+      347.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-24-53-question-1-1683043c98.svg",
+    "width": 352,
+    "height": 286
+  },
+  {
+    "question": 53,
+    "id": "mech-engineering-mechanics-24-53",
+    "page": 10,
+    "printedPage": 24,
+    "bbox": [
+      323.0,
+      394.0,
+      522.0,
+      503.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-24-53-explanation-2-db4f5b3dbb.svg",
+    "width": 796,
+    "height": 436
+  },
+  {
+    "question": 56,
+    "id": "mech-engineering-mechanics-25-56",
+    "page": 11,
+    "printedPage": 25,
+    "bbox": [
+      92.0,
+      364.0,
+      273.0,
+      449.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-25-56-explanation-1-bb3b8d209c.svg",
+    "width": 724,
+    "height": 340
+  },
+  {
+    "question": 57,
+    "id": "mech-engineering-mechanics-25-57",
+    "page": 11,
+    "printedPage": 25,
+    "bbox": [
+      130.0,
+      537.0,
+      236.0,
+      620.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-25-57-explanation-1-641ac74b22.svg",
+    "width": 424,
+    "height": 332
+  },
+  {
+    "question": 61,
+    "id": "mech-engineering-mechanics-25-61",
+    "page": 11,
+    "printedPage": 25,
+    "bbox": [
+      378.0,
+      552.0,
+      452.0,
+      624.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-25-61-question-1-18bec38f6a.svg",
+    "width": 296,
+    "height": 288
+  },
+  {
+    "question": 61,
+    "id": "mech-engineering-mechanics-25-61",
+    "page": 11,
+    "printedPage": 25,
+    "bbox": [
+      468.0,
+      668.0,
+      521.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-25-61-explanation-2-dd9fcb1112.svg",
+    "width": 212,
+    "height": 296
+  },
+  {
+    "question": 63,
+    "id": "mech-engineering-mechanics-26-63",
+    "page": 12,
+    "printedPage": 26,
+    "bbox": [
+      125.0,
+      289.0,
+      239.0,
+      367.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-26-63-explanation-1-2d737d44e3.svg",
+    "width": 456,
+    "height": 312
+  },
+  {
+    "question": 71,
+    "id": "mech-engineering-mechanics-27-71",
+    "page": 13,
+    "printedPage": 27,
+    "bbox": [
+      133.0,
+      602.0,
+      232.0,
+      709.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-27-71-question-1-344c2192f0.svg",
+    "width": 396,
+    "height": 428
+  },
+  {
+    "question": 71,
+    "id": "mech-engineering-mechanics-27-71",
+    "page": 13,
+    "printedPage": 27,
+    "bbox": [
+      307.0,
+      106.0,
+      434.0,
+      282.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-27-71-explanation-2-326393e454.svg",
+    "width": 508,
+    "height": 704
+  },
+  {
+    "question": 71,
+    "id": "mech-engineering-mechanics-27-71",
+    "page": 13,
+    "printedPage": 27,
+    "bbox": [
+      439.0,
+      105.0,
+      521.0,
+      294.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-27-71-explanation-3-dac7d09f72.svg",
+    "width": 328,
+    "height": 756
+  },
+  {
+    "question": 76,
+    "id": "mech-engineering-mechanics-28-76",
+    "page": 14,
+    "printedPage": 28,
+    "bbox": [
+      146.0,
+      611.0,
+      220.0,
+      667.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-28-76-explanation-1-970abcd84e.svg",
+    "width": 296,
+    "height": 224
+  },
+  {
+    "question": 77,
+    "id": "mech-engineering-mechanics-28-77",
+    "page": 14,
+    "printedPage": 28,
+    "bbox": [
+      363.0,
+      149.0,
+      467.0,
+      247.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-28-77-explanation-1-f00561ecab.svg",
+    "width": 416,
+    "height": 392
+  },
+  {
+    "question": 79,
+    "id": "mech-engineering-mechanics-28-79",
+    "page": 14,
+    "printedPage": 28,
+    "bbox": [
+      355.0,
+      553.0,
+      474.0,
+      606.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-28-79-question-1-b5ae6a0256.svg",
+    "width": 476,
+    "height": 212
+  },
+  {
+    "question": 79,
+    "id": "mech-engineering-mechanics-28-79",
+    "page": 14,
+    "printedPage": 28,
+    "bbox": [
+      359.0,
+      665.0,
+      469.0,
+      716.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-28-79-explanation-2-5aefae20e9.svg",
+    "width": 440,
+    "height": 204
+  },
+  {
+    "question": 84,
+    "id": "mech-engineering-mechanics-29-84",
+    "page": 15,
+    "printedPage": 29,
+    "bbox": [
+      342.0,
+      453.0,
+      487.0,
+      475.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-29-84-explanation-1-bb90e6cbdc.svg",
+    "width": 580,
+    "height": 88
+  },
+  {
+    "question": 85,
+    "id": "mech-engineering-mechanics-29-85",
+    "page": 15,
+    "printedPage": 29,
+    "bbox": [
+      307.0,
+      623.0,
+      522.0,
+      694.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-29-85-explanation-1-49dea3f4ec.svg",
+    "width": 860,
+    "height": 284
+  },
+  {
+    "question": 86,
+    "id": "mech-engineering-mechanics-30-86",
+    "page": 16,
+    "printedPage": 30,
+    "bbox": [
+      97.0,
+      223.0,
+      273.0,
+      282.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-30-86-explanation-1-42079486dd.svg",
+    "width": 704,
+    "height": 236
+  },
+  {
+    "question": 87,
+    "id": "mech-engineering-mechanics-30-87",
+    "page": 16,
+    "printedPage": 30,
+    "bbox": [
+      87.0,
+      402.0,
+      275.0,
+      489.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-30-87-explanation-1-6f802fdb56.svg",
+    "width": 752,
+    "height": 348
+  },
+  {
+    "question": 89,
+    "id": "mech-engineering-mechanics-30-89",
+    "page": 16,
+    "printedPage": 30,
+    "bbox": [
+      384.0,
+      94.0,
+      443.0,
+      160.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-30-89-explanation-1-5c9da6969f.svg",
+    "width": 236,
+    "height": 264
+  },
+  {
+    "question": 91,
+    "id": "mech-engineering-mechanics-30-91",
+    "page": 16,
+    "printedPage": 30,
+    "bbox": [
+      339.0,
+      578.0,
+      489.0,
+      714.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-30-91-explanation-1-bb892b1660.svg",
+    "width": 600,
+    "height": 544
+  },
+  {
+    "question": 93,
+    "id": "mech-engineering-mechanics-31-93",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      112.0,
+      394.0,
+      252.0,
+      454.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-31-93-question-1-213f3316f9.svg",
+    "width": 560,
+    "height": 240
+  },
+  {
+    "question": 93,
+    "id": "mech-engineering-mechanics-31-93",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      154.0,
+      516.0,
+      214.0,
+      567.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-31-93-explanation-2-059fefe574.svg",
+    "width": 240,
+    "height": 204
+  },
+  {
+    "question": 93,
+    "id": "mech-engineering-mechanics-31-93",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      146.0,
+      617.0,
+      227.0,
+      666.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-31-93-explanation-3-ded966bfc6.svg",
+    "width": 324,
+    "height": 196
+  },
+  {
+    "question": 94,
+    "id": "mech-engineering-mechanics-31-94",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      373.0,
+      137.0,
+      453.0,
+      210.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-31-94-question-1-d334be87ac.svg",
+    "width": 320,
+    "height": 292
+  },
+  {
+    "question": 94,
+    "id": "mech-engineering-mechanics-31-94",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      376.0,
+      274.0,
+      453.0,
+      342.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-31-94-explanation-2-4ee955125c.svg",
+    "width": 308,
+    "height": 272
+  },
+  {
+    "question": 95,
+    "id": "mech-engineering-mechanics-31-95",
+    "page": 17,
+    "printedPage": 31,
+    "bbox": [
+      361.0,
+      581.0,
+      465.0,
+      673.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-31-95-explanation-1-59f44ea0e4.svg",
+    "width": 416,
+    "height": 368
+  },
+  {
+    "question": 99,
+    "id": "mech-engineering-mechanics-32-99",
+    "page": 18,
+    "printedPage": 32,
+    "bbox": [
+      82.0,
+      631.0,
+      287.0,
+      727.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-32-99-explanation-1-b6c0a492fb.svg",
+    "width": 820,
+    "height": 384
+  },
+  {
+    "question": 100,
+    "id": "mech-engineering-mechanics-32-100",
+    "page": 18,
+    "printedPage": 32,
+    "bbox": [
+      366.0,
+      317.0,
+      464.0,
+      388.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-32-100-explanation-1-98366728b1.svg",
+    "width": 392,
+    "height": 284
+  },
+  {
+    "question": 102,
+    "id": "mech-engineering-mechanics-33-102",
+    "page": 19,
+    "printedPage": 33,
+    "bbox": [
+      108.0,
+      104.0,
+      258.0,
+      215.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-33-102-question-1-a910538d33.svg",
+    "width": 600,
+    "height": 444
+  },
+  {
+    "question": 102,
+    "id": "mech-engineering-mechanics-33-102",
+    "page": 19,
+    "printedPage": 33,
+    "bbox": [
+      139.0,
+      297.0,
+      237.0,
+      379.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-33-102-explanation-2-1b8442ffc8.svg",
+    "width": 392,
+    "height": 328
+  },
+  {
+    "question": 105,
+    "id": "mech-engineering-mechanics-33-105",
+    "page": 19,
+    "printedPage": 33,
+    "bbox": [
+      393.0,
+      267.0,
+      434.0,
+      327.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-33-105-explanation-1-44e4806658.svg",
+    "width": 164,
+    "height": 240
+  },
+  {
+    "question": 106,
+    "id": "mech-engineering-mechanics-33-106",
+    "page": 19,
+    "printedPage": 33,
+    "bbox": [
+      346.0,
+      476.0,
+      484.0,
+      563.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-33-106-question-1-74123e8323.svg",
+    "width": 552,
+    "height": 348
+  },
+  {
+    "question": 106,
+    "id": "mech-engineering-mechanics-33-106",
+    "page": 19,
+    "printedPage": 33,
+    "bbox": [
+      343.0,
+      650.0,
+      489.0,
+      741.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-33-106-explanation-2-29ed7169c2.svg",
+    "width": 584,
+    "height": 364
+  },
+  {
+    "question": 106,
+    "id": "mech-engineering-mechanics-33-106",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      135.0,
+      109.0,
+      233.0,
+      215.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-33-106-explanation-3-f87545937f.svg",
+    "width": 392,
+    "height": 424
+  },
+  {
+    "question": 108,
+    "id": "mech-engineering-mechanics-34-108",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      135.0,
+      603.0,
+      228.0,
+      698.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-34-108-question-1-4d01e4923d.svg",
+    "width": 372,
+    "height": 380
+  },
+  {
+    "question": 108,
+    "id": "mech-engineering-mechanics-34-108",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      343.0,
+      108.0,
+      481.0,
+      235.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-34-108-explanation-2-87112cf105.svg",
+    "width": 552,
+    "height": 508
+  },
+  {
+    "question": 108,
+    "id": "mech-engineering-mechanics-34-108",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      367.0,
+      239.0,
+      456.0,
+      331.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-34-108-explanation-3-5834025dc2.svg",
+    "width": 356,
+    "height": 368
+  },
+  {
+    "question": 108,
+    "id": "mech-engineering-mechanics-34-108",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      368.0,
+      342.0,
+      477.0,
+      447.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-34-108-explanation-4-accab1425d.svg",
+    "width": 436,
+    "height": 420
+  },
+  {
+    "question": 108,
+    "id": "mech-engineering-mechanics-34-108",
+    "page": 20,
+    "printedPage": 34,
+    "bbox": [
+      333.0,
+      524.0,
+      486.0,
+      641.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-34-108-explanation-5-f2da371aee.svg",
+    "width": 612,
+    "height": 468
+  },
+  {
+    "question": 109,
+    "id": "mech-engineering-mechanics-35-109",
+    "page": 21,
+    "printedPage": 35,
+    "bbox": [
+      126.0,
+      144.0,
+      239.0,
+      230.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-35-109-question-1-3370f9432c.svg",
+    "width": 452,
+    "height": 344
+  },
+  {
+    "question": 109,
+    "id": "mech-engineering-mechanics-35-109",
+    "page": 21,
+    "printedPage": 35,
+    "bbox": [
+      124.0,
+      302.0,
+      242.0,
+      406.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-35-109-explanation-2-0664117605.svg",
+    "width": 472,
+    "height": 416
+  },
+  {
+    "question": 112,
+    "id": "mech-engineering-mechanics-35-112",
+    "page": 21,
+    "printedPage": 35,
+    "bbox": [
+      364.0,
+      365.0,
+      460.0,
+      384.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-35-112-explanation-1-d0a26aa741.svg",
+    "width": 384,
+    "height": 76
+  },
+  {
+    "question": 114,
+    "id": "mech-engineering-mechanics-35-114",
+    "page": 21,
+    "printedPage": 35,
+    "bbox": [
+      352.0,
+      594.0,
+      474.0,
+      710.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-35-114-question-1-fb74a81ccc.svg",
+    "width": 488,
+    "height": 464
+  },
+  {
+    "question": 114,
+    "id": "mech-engineering-mechanics-35-114",
+    "page": 22,
+    "printedPage": 36,
+    "bbox": [
+      83.0,
+      109.4,
+      183.0,
+      262.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-35-114-explanation-2-bccd0af87c.svg",
+    "width": 400,
+    "height": 613
+  },
+  {
+    "question": 114,
+    "id": "mech-engineering-mechanics-35-114",
+    "page": 22,
+    "printedPage": 36,
+    "bbox": [
+      180.0,
+      132.0,
+      288.0,
+      247.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-35-114-explanation-3-36507e7394.svg",
+    "width": 432,
+    "height": 460
+  },
+  {
+    "question": 116,
+    "id": "mech-engineering-mechanics-36-116",
+    "page": 22,
+    "printedPage": 36,
+    "bbox": [
+      140.0,
+      584.0,
+      227.0,
+      660.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-36-116-explanation-1-f2403e7282.svg",
+    "width": 348,
+    "height": 304
+  },
+  {
+    "question": 118,
+    "id": "mech-engineering-mechanics-36-118",
+    "page": 22,
+    "printedPage": 36,
+    "bbox": [
+      373.0,
+      322.0,
+      451.0,
+      381.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-36-118-explanation-1-634bd3235a.svg",
+    "width": 312,
+    "height": 236
+  },
+  {
+    "question": 118,
+    "id": "mech-engineering-mechanics-36-118",
+    "page": 22,
+    "printedPage": 36,
+    "bbox": [
+      375.0,
+      510.0,
+      455.0,
+      572.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-36-118-explanation-2-ca4d08a28e.svg",
+    "width": 320,
+    "height": 248
+  },
+  {
+    "question": 119,
+    "id": "mech-engineering-mechanics-37-119",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      146.0,
+      214.0,
+      217.0,
+      259.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-119-explanation-1-4758bf24bb.svg",
+    "width": 284,
+    "height": 180
+  },
+  {
+    "question": 120,
+    "id": "mech-engineering-mechanics-37-120",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      130.0,
+      399.6,
+      234.0,
+      470.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-37-120-question-1-431de3d04b.svg",
+    "width": 416,
+    "height": 282
+  },
+  {
+    "question": 120,
+    "id": "mech-engineering-mechanics-37-120",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      164.0,
+      525.5,
+      284.0,
+      613.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-120-explanation-2-0258dc152f.svg",
+    "width": 480,
+    "height": 350
+  },
+  {
+    "question": 120,
+    "id": "mech-engineering-mechanics-37-120",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      92.0,
+      530.0,
+      158.0,
+      600.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-120-explanation-3-f911a011fe.svg",
+    "width": 264,
+    "height": 280
+  },
+  {
+    "question": 121,
+    "id": "mech-engineering-mechanics-37-121",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      356.67,
+      129.0,
+      472.0,
+      207.33
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-37-121-question-1-d61b1f2f49.svg",
+    "width": 462,
+    "height": 314
+  },
+  {
+    "question": 121,
+    "id": "mech-engineering-mechanics-37-121",
+    "page": 23,
+    "printedPage": 37,
+    "bbox": [
+      334.33,
+      298.67,
+      475.67,
+      404.67
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-121-explanation-2-a6777a5557.svg",
+    "width": 566,
+    "height": 425
+  },
+  {
+    "question": 122,
+    "id": "mech-engineering-mechanics-37-122",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      103.0,
+      107.0,
+      166.0,
+      177.67
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-122-explanation-1-5f0e60c6f1.svg",
+    "width": 252,
+    "height": 283
+  },
+  {
+    "question": 122,
+    "id": "mech-engineering-mechanics-37-122",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      103.33,
+      196.67,
+      168.33,
+      267.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-37-122-explanation-2-b6dcebceef.svg",
+    "width": 261,
+    "height": 282
+  },
+  {
+    "question": 123,
+    "id": "mech-engineering-mechanics-38-123",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      140.67,
+      458.25,
+      217.67,
+      505.92
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-38-123-question-1-58f138ca0b.svg",
+    "width": 309,
+    "height": 191
+  },
+  {
+    "question": 124,
+    "id": "mech-engineering-mechanics-38-124",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      363.0,
+      208.0,
+      465.33,
+      262.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-38-124-question-1-cb35864b3e.svg",
+    "width": 410,
+    "height": 216
+  },
+  {
+    "question": 124,
+    "id": "mech-engineering-mechanics-38-124",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      351.67,
+      324.0,
+      482.33,
+      405.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-38-124-explanation-2-b0015f5b0b.svg",
+    "width": 524,
+    "height": 324
+  },
+  {
+    "question": 125,
+    "id": "mech-engineering-mechanics-38-125",
+    "page": 24,
+    "printedPage": 38,
+    "bbox": [
+      329.33,
+      670.67,
+      493.33,
+      740.33
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-38-125-explanation-1-eb95ca328f.svg",
+    "width": 657,
+    "height": 280
+  },
+  {
+    "question": 129,
+    "id": "mech-engineering-mechanics-39-129",
+    "page": 25,
+    "printedPage": 39,
+    "bbox": [
+      377.33,
+      182.67,
+      454.0,
+      226.33
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-39-129-question-1-cf72c16213.svg",
+    "width": 307,
+    "height": 176
+  },
+  {
+    "question": 129,
+    "id": "mech-engineering-mechanics-39-129",
+    "page": 25,
+    "printedPage": 39,
+    "bbox": [
+      349.0,
+      237.0,
+      475.67,
+      326.67
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-39-129-explanation-2-6e1963a070.svg",
+    "width": 507,
+    "height": 359
+  },
+  {
+    "question": 130,
+    "id": "mech-engineering-mechanics-39-130",
+    "page": 25,
+    "printedPage": 39,
+    "bbox": [
+      335.67,
+      677.67,
+      481.67,
+      739.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-39-130-explanation-1-6a5451a9fd.svg",
+    "width": 585,
+    "height": 246
+  },
+  {
+    "question": 131,
+    "id": "mech-engineering-mechanics-40-131",
+    "page": 26,
+    "printedPage": 40,
+    "bbox": [
+      124.67,
+      213.08,
+      235.33,
+      324.42
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-40-131-explanation-1-cc4b7cd2e5.svg",
+    "width": 444,
+    "height": 446
+  },
+  {
+    "question": 133,
+    "id": "mech-engineering-mechanics-40-133",
+    "page": 26,
+    "printedPage": 40,
+    "bbox": [
+      342.33,
+      129.67,
+      474.67,
+      211.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-40-133-explanation-1-228d2260ba.svg",
+    "width": 530,
+    "height": 326
+  },
+  {
+    "question": 138,
+    "id": "mech-engineering-mechanics-41-138",
+    "page": 27,
+    "printedPage": 41,
+    "bbox": [
+      134.0,
+      657.5,
+      234.33,
+      724.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-41-138-explanation-1-86e8e0af6c.svg",
+    "width": 402,
+    "height": 268
+  },
+  {
+    "question": 139,
+    "id": "mech-engineering-mechanics-41-139",
+    "page": 27,
+    "printedPage": 41,
+    "bbox": [
+      375.67,
+      242.83,
+      442.33,
+      327.17
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-41-139-explanation-1-2ec9157572.svg",
+    "width": 268,
+    "height": 338
+  },
+  {
+    "question": 140,
+    "id": "mech-engineering-mechanics-41-140",
+    "page": 27,
+    "printedPage": 41,
+    "bbox": [
+      370.0,
+      508.58,
+      454.33,
+      587.58
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-41-140-explanation-1-d4b1dd9d2c.svg",
+    "width": 338,
+    "height": 317
+  },
+  {
+    "question": 141,
+    "id": "mech-engineering-mechanics-41-141",
+    "page": 27,
+    "printedPage": 41,
+    "bbox": [
+      355.67,
+      659.42,
+      472.33,
+      743.42
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-41-141-question-1-046670878d.svg",
+    "width": 468,
+    "height": 337
+  },
+  {
+    "question": 142,
+    "id": "mech-engineering-mechanics-42-142",
+    "page": 28,
+    "printedPage": 42,
+    "bbox": [
+      113.67,
+      271.0,
+      244.33,
+      344.67
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-42-142-explanation-1-156d3f1590.svg",
+    "width": 524,
+    "height": 295
+  },
+  {
+    "question": 143,
+    "id": "mech-engineering-mechanics-42-143",
+    "page": 28,
+    "printedPage": 42,
+    "bbox": [
+      145.67,
+      469.17,
+      214.33,
+      524.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-42-143-question-1-b83ed17e9b.svg",
+    "width": 276,
+    "height": 222
+  },
+  {
+    "question": 147,
+    "id": "mech-engineering-mechanics-42-147",
+    "page": 28,
+    "printedPage": 42,
+    "bbox": [
+      359.33,
+      632.0,
+      465.33,
+      712.33
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-42-147-question-1-5854c4ddb5.svg",
+    "width": 425,
+    "height": 322
+  },
+  {
+    "question": 147,
+    "id": "mech-engineering-mechanics-42-147",
+    "page": 29,
+    "printedPage": 43,
+    "bbox": [
+      122.67,
+      106.25,
+      242.33,
+      176.58
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-42-147-explanation-2-4c4dcee3ff.svg",
+    "width": 480,
+    "height": 282
+  },
+  {
+    "question": 154,
+    "id": "mech-engineering-mechanics-43-154",
+    "page": 29,
+    "printedPage": 43,
+    "bbox": [
+      344.0,
+      484.58,
+      479.0,
+      609.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-43-154-explanation-1-a20e482374.svg",
+    "width": 540,
+    "height": 499
+  },
+  {
+    "question": 156,
+    "id": "mech-engineering-mechanics-44-156",
+    "page": 30,
+    "printedPage": 44,
+    "bbox": [
+      146.0,
+      331.5,
+      210.67,
+      410.83
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-44-156-explanation-1-2059597d2a.svg",
+    "width": 259,
+    "height": 318
+  },
+  {
+    "question": 161,
+    "id": "mech-engineering-mechanics-44-161",
+    "page": 30,
+    "printedPage": 44,
+    "bbox": [
+      378.0,
+      666.33,
+      450.0,
+      741.33
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-44-161-explanation-1-106fef9ce1.svg",
+    "width": 288,
+    "height": 301
+  },
+  {
+    "question": 162,
+    "id": "mech-engineering-mechanics-45-162",
+    "page": 31,
+    "printedPage": 45,
+    "bbox": [
+      86.33,
+      286.08,
+      283.67,
+      389.08
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-45-162-explanation-1-8a2e227f60.svg",
+    "width": 790,
+    "height": 413
+  },
+  {
+    "question": 163,
+    "id": "mech-engineering-mechanics-45-163",
+    "page": 31,
+    "printedPage": 45,
+    "bbox": [
+      131.33,
+      542.5,
+      226.0,
+      560.83
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-45-163-explanation-1-7e00dbb26c.svg",
+    "width": 379,
+    "height": 74
+  },
+  {
+    "question": 169,
+    "id": "mech-engineering-mechanics-45-169",
+    "page": 32,
+    "printedPage": 46,
+    "bbox": [
+      131.0,
+      164.5,
+      236.0,
+      255.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-45-169-explanation-1-8a28e4ff7d.svg",
+    "width": 420,
+    "height": 364
+  },
+  {
+    "question": 172,
+    "id": "mech-engineering-mechanics-46-172",
+    "page": 32,
+    "printedPage": 46,
+    "bbox": [
+      375.5,
+      169.5,
+      460.5,
+      214.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-46-172-explanation-1-e4e7879610.svg",
+    "width": 340,
+    "height": 178
+  },
+  {
+    "question": 174,
+    "id": "mech-engineering-mechanics-46-174",
+    "page": 32,
+    "printedPage": 46,
+    "bbox": [
+      356.33,
+      418.75,
+      479.0,
+      513.75
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-46-174-question-1-6e8cd57cdc.svg",
+    "width": 491,
+    "height": 380
+  },
+  {
+    "question": 174,
+    "id": "mech-engineering-mechanics-46-174",
+    "page": 32,
+    "printedPage": 46,
+    "bbox": [
+      367.0,
+      558.75,
+      460.33,
+      642.08
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-46-174-explanation-2-ee1d619e76.svg",
+    "width": 374,
+    "height": 334
+  },
+  {
+    "question": 175,
+    "id": "mech-engineering-mechanics-47-175",
+    "page": 33,
+    "printedPage": 47,
+    "bbox": [
+      93.0,
+      139.92,
+      267.67,
+      225.58
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-47-175-question-1-8b1d49f24f.svg",
+    "width": 699,
+    "height": 344
+  },
+  {
+    "question": 175,
+    "id": "mech-engineering-mechanics-47-175",
+    "page": 33,
+    "printedPage": 47,
+    "bbox": [
+      128.0,
+      271.92,
+      263.0,
+      362.58
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-47-175-explanation-2-602b7fbce7.svg",
+    "width": 540,
+    "height": 364
+  },
+  {
+    "question": 177,
+    "id": "mech-engineering-mechanics-47-177",
+    "page": 33,
+    "printedPage": 47,
+    "bbox": [
+      373.0,
+      116.75,
+      451.67,
+      173.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-47-177-explanation-1-fb7049d7d9.svg",
+    "width": 315,
+    "height": 227
+  },
+  {
+    "question": 181,
+    "id": "mech-engineering-mechanics-47-181",
+    "page": 33,
+    "printedPage": 47,
+    "bbox": [
+      373.67,
+      613.75,
+      453.33,
+      656.75
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-47-181-explanation-1-075a51bc1d.svg",
+    "width": 320,
+    "height": 172
+  },
+  {
+    "question": 185,
+    "id": "mech-engineering-mechanics-48-185",
+    "page": 34,
+    "printedPage": 48,
+    "bbox": [
+      134.0,
+      556.58,
+      232.33,
+      604.92
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-48-185-explanation-1-c425c5fc7e.svg",
+    "width": 394,
+    "height": 194
+  },
+  {
+    "question": 190,
+    "id": "mech-engineering-mechanics-48-190",
+    "page": 34,
+    "printedPage": 48,
+    "bbox": [
+      378.0,
+      518.0,
+      446.0,
+      566.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-48-190-question-1-53283f15a2.svg",
+    "width": 272,
+    "height": 192
+  },
+  {
+    "question": 190,
+    "id": "mech-engineering-mechanics-48-190",
+    "page": 34,
+    "printedPage": 48,
+    "bbox": [
+      328.0,
+      690.0,
+      500.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-48-190-explanation-2-870f6cacb4.svg",
+    "width": 688,
+    "height": 208
+  },
+  {
+    "question": 197,
+    "id": "mech-engineering-mechanics-49-197",
+    "page": 35,
+    "printedPage": 49,
+    "bbox": [
+      127.0,
+      694.0,
+      237.0,
+      741.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-49-197-question-1-952cb5bbe2.svg",
+    "width": 440,
+    "height": 188
+  },
+  {
+    "question": 201,
+    "id": "mech-engineering-mechanics-49-201",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      116.0,
+      126.0,
+      247.0,
+      204.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-49-201-explanation-1-271c145114.svg",
+    "width": 524,
+    "height": 312
+  },
+  {
+    "question": 202,
+    "id": "mech-engineering-mechanics-50-202",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      80.0,
+      414.75,
+      279.0,
+      503.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-50-202-explanation-1-af88cc76aa.svg",
+    "width": 796,
+    "height": 353
+  },
+  {
+    "question": 203,
+    "id": "mech-engineering-mechanics-50-203",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      333.0,
+      168.75,
+      486.5,
+      242.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-50-203-explanation-1-86a5d170a3.svg",
+    "width": 614,
+    "height": 293
+  },
+  {
+    "question": 204,
+    "id": "mech-engineering-mechanics-50-204",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      341.0,
+      330.0,
+      491.0,
+      400.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-50-204-question-1-aadd5c3354.svg",
+    "width": 600,
+    "height": 282
+  },
+  {
+    "question": 204,
+    "id": "mech-engineering-mechanics-50-204",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      339.5,
+      500.5,
+      480.0,
+      568.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-50-204-explanation-2-92f0887664.svg",
+    "width": 562,
+    "height": 270
+  },
+  {
+    "question": 204,
+    "id": "mech-engineering-mechanics-50-204",
+    "page": 36,
+    "printedPage": 50,
+    "bbox": [
+      333.0,
+      643.0,
+      459.0,
+      705.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-50-204-explanation-3-eecd3f9f1d.svg",
+    "width": 504,
+    "height": 248
+  },
+  {
+    "question": 205,
+    "id": "mech-engineering-mechanics-51-205",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      142.0,
+      155.5,
+      226.0,
+      194.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-51-205-question-1-34f14a3b7c.svg",
+    "width": 336,
+    "height": 156
+  },
+  {
+    "question": 205,
+    "id": "mech-engineering-mechanics-51-205",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      125.0,
+      357.0,
+      245.0,
+      423.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-51-205-explanation-2-40aa23b438.svg",
+    "width": 480,
+    "height": 264
+  },
+  {
+    "question": 205,
+    "id": "mech-engineering-mechanics-51-205",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      113.0,
+      433.5,
+      255.0,
+      484.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-51-205-explanation-3-3211895d2c.svg",
+    "width": 568,
+    "height": 202
+  },
+  {
+    "question": 206,
+    "id": "mech-engineering-mechanics-51-206",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      113.0,
+      657.5,
+      253.0,
+      740.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-51-206-explanation-1-815659f8c9.svg",
+    "width": 560,
+    "height": 330
+  },
+  {
+    "question": 208,
+    "id": "mech-engineering-mechanics-51-208",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      326.0,
+      368.0,
+      499.0,
+      458.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-51-208-question-1-8e9c2131aa.svg",
+    "width": 692,
+    "height": 360
+  },
+  {
+    "question": 208,
+    "id": "mech-engineering-mechanics-51-208",
+    "page": 37,
+    "printedPage": 51,
+    "bbox": [
+      345.0,
+      506.0,
+      476.0,
+      614.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-51-208-explanation-2-6aa77e6e13.svg",
+    "width": 524,
+    "height": 433
+  },
+  {
+    "question": 209,
+    "id": "mech-engineering-mechanics-52-209",
+    "page": 38,
+    "printedPage": 52,
+    "bbox": [
+      135.0,
+      445.75,
+      228.0,
+      506.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-52-209-explanation-1-2aa7574827.svg",
+    "width": 372,
+    "height": 241
+  },
+  {
+    "question": 210,
+    "id": "mech-engineering-mechanics-52-210",
+    "page": 38,
+    "printedPage": 52,
+    "bbox": [
+      363.0,
+      184.5,
+      467.0,
+      239.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-52-210-explanation-1-f52a28783c.svg",
+    "width": 416,
+    "height": 220
+  },
+  {
+    "question": 211,
+    "id": "mech-engineering-mechanics-52-211",
+    "page": 38,
+    "printedPage": 52,
+    "bbox": [
+      350.0,
+      347.0,
+      482.0,
+      433.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-52-211-question-1-fdf0200b73.svg",
+    "width": 528,
+    "height": 344
+  },
+  {
+    "question": 211,
+    "id": "mech-engineering-mechanics-52-211",
+    "page": 38,
+    "printedPage": 52,
+    "bbox": [
+      344.0,
+      517.0,
+      486.0,
+      595.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-52-211-explanation-2-1d9796c9c9.svg",
+    "width": 568,
+    "height": 314
+  },
+  {
+    "question": 212,
+    "id": "mech-engineering-mechanics-53-212",
+    "page": 39,
+    "printedPage": 53,
+    "bbox": [
+      126.0,
+      205.25,
+      243.0,
+      278.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-53-212-question-1-b5a70027d9.svg",
+    "width": 468,
+    "height": 293
+  },
+  {
+    "question": 212,
+    "id": "mech-engineering-mechanics-53-212",
+    "page": 39,
+    "printedPage": 53,
+    "bbox": [
+      111.0,
+      345.5,
+      250.0,
+      430.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-53-212-explanation-2-d1b3a153e0.svg",
+    "width": 556,
+    "height": 339
+  },
+  {
+    "question": 213,
+    "id": "mech-engineering-mechanics-53-213",
+    "page": 39,
+    "printedPage": 53,
+    "bbox": [
+      354.0,
+      137.75,
+      473.0,
+      215.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-53-213-explanation-1-a8976eb449.svg",
+    "width": 476,
+    "height": 309
+  },
+  {
+    "question": 214,
+    "id": "mech-engineering-mechanics-53-214",
+    "page": 39,
+    "printedPage": 53,
+    "bbox": [
+      365.0,
+      548.5,
+      458.0,
+      620.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-53-214-explanation-1-ae6c712c36.svg",
+    "width": 372,
+    "height": 286
+  },
+  {
+    "question": 215,
+    "id": "mech-engineering-mechanics-53-215",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      141.5,
+      137.5,
+      228.0,
+      229.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-53-215-explanation-1-0561d2eed7.svg",
+    "width": 346,
+    "height": 366
+  },
+  {
+    "question": 216,
+    "id": "mech-engineering-mechanics-54-216",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      127.0,
+      430.0,
+      236.0,
+      483.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-54-216-explanation-1-11fd1d12df.svg",
+    "width": 436,
+    "height": 212
+  },
+  {
+    "question": 217,
+    "id": "mech-engineering-mechanics-54-217",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      125.0,
+      598.0,
+      235.5,
+      652.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-54-217-question-1-55bbc84864.svg",
+    "width": 442,
+    "height": 218
+  },
+  {
+    "question": 217,
+    "id": "mech-engineering-mechanics-54-217",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      357.0,
+      143.8,
+      471.0,
+      203.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-54-217-explanation-2-85881e212f.svg",
+    "width": 456,
+    "height": 237
+  },
+  {
+    "question": 218,
+    "id": "mech-engineering-mechanics-54-218",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      379.0,
+      312.0,
+      442.0,
+      382.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-54-218-question-1-3c37d150a3.svg",
+    "width": 252,
+    "height": 280
+  },
+  {
+    "question": 218,
+    "id": "mech-engineering-mechanics-54-218",
+    "page": 40,
+    "printedPage": 54,
+    "bbox": [
+      375.0,
+      424.5,
+      454.0,
+      508.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-54-218-explanation-2-9787777658.svg",
+    "width": 316,
+    "height": 335
+  },
+  {
+    "question": 220,
+    "id": "mech-engineering-mechanics-55-220",
+    "page": 41,
+    "printedPage": 55,
+    "bbox": [
+      83.0,
+      268.0,
+      282.5,
+      322.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-55-220-explanation-1-749d27d700.svg",
+    "width": 798,
+    "height": 216
+  },
+  {
+    "question": 222,
+    "id": "mech-engineering-mechanics-55-222",
+    "page": 41,
+    "printedPage": 55,
+    "bbox": [
+      345.0,
+      138.5,
+      482.67,
+      204.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-55-222-explanation-1-ac4139aacd.svg",
+    "width": 551,
+    "height": 264
+  },
+  {
+    "question": 223,
+    "id": "mech-engineering-mechanics-55-223",
+    "page": 41,
+    "printedPage": 55,
+    "bbox": [
+      375.33,
+      330.58,
+      448.33,
+      385.92
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-55-223-question-1-ac053d5a2a.svg",
+    "width": 293,
+    "height": 222
+  },
+  {
+    "question": 223,
+    "id": "mech-engineering-mechanics-55-223",
+    "page": 41,
+    "printedPage": 55,
+    "bbox": [
+      363.67,
+      457.58,
+      469.67,
+      525.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-55-223-explanation-2-cbf5ac745c.svg",
+    "width": 425,
+    "height": 271
+  },
+  {
+    "question": 224,
+    "id": "mech-engineering-mechanics-55-224",
+    "page": 42,
+    "printedPage": 56,
+    "bbox": [
+      102.67,
+      191.25,
+      254.33,
+      266.92
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-55-224-explanation-1-a236680d33.svg",
+    "width": 608,
+    "height": 303
+  },
+  {
+    "question": 226,
+    "id": "mech-engineering-mechanics-56-226",
+    "page": 42,
+    "printedPage": 56,
+    "bbox": [
+      365.67,
+      107.92,
+      462.67,
+      255.92
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-56-226-explanation-1-3efea270b0.svg",
+    "width": 389,
+    "height": 593
+  },
+  {
+    "question": 227,
+    "id": "mech-engineering-mechanics-56-227",
+    "page": 42,
+    "printedPage": 56,
+    "bbox": [
+      352.33,
+      448.25,
+      481.33,
+      514.92
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-56-227-question-1-9f100ffcc8.svg",
+    "width": 517,
+    "height": 267
+  },
+  {
+    "question": 227,
+    "id": "mech-engineering-mechanics-56-227",
+    "page": 42,
+    "printedPage": 56,
+    "bbox": [
+      337.33,
+      557.58,
+      517.33,
+      642.25
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-56-227-explanation-2-d71ffecbb0.svg",
+    "width": 721,
+    "height": 339
+  },
+  {
+    "question": 228,
+    "id": "mech-engineering-mechanics-56-228",
+    "page": 43,
+    "printedPage": 57,
+    "bbox": [
+      102.33,
+      141.42,
+      239.33,
+      257.75
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-56-228-explanation-1-ed22e2a7c6.svg",
+    "width": 549,
+    "height": 466
+  },
+  {
+    "question": 229,
+    "id": "mech-engineering-mechanics-57-229",
+    "page": 43,
+    "printedPage": 57,
+    "bbox": [
+      143.0,
+      396.83,
+      222.0,
+      419.17
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-57-229-question-1-c4c9b5f0d4.svg",
+    "width": 316,
+    "height": 90
+  },
+  {
+    "question": 230,
+    "id": "mech-engineering-mechanics-57-230",
+    "page": 43,
+    "printedPage": 57,
+    "bbox": [
+      126.67,
+      520.0,
+      229.33,
+      557.67
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-57-230-question-1-a4f62e9dc7.svg",
+    "width": 412,
+    "height": 151
+  },
+  {
+    "question": 230,
+    "id": "mech-engineering-mechanics-57-230",
+    "page": 43,
+    "printedPage": 57,
+    "bbox": [
+      170.67,
+      618.0,
+      259.33,
+      649.67
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-57-230-explanation-2-1b329a3fcc.svg",
+    "width": 356,
+    "height": 127
+  },
+  {
+    "question": 236,
+    "id": "mech-engineering-mechanics-58-236",
+    "page": 44,
+    "printedPage": 58,
+    "bbox": [
+      113.33,
+      370.5,
+      251.67,
+      490.83
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-58-236-explanation-1-ad79fcdae4.svg",
+    "width": 554,
+    "height": 482
+  },
+  {
+    "question": 239,
+    "id": "mech-engineering-mechanics-58-239",
+    "page": 44,
+    "printedPage": 58,
+    "bbox": [
+      367.67,
+      434.75,
+      457.67,
+      511.08
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-58-239-explanation-1-393cd30e63.svg",
+    "width": 361,
+    "height": 306
+  },
+  {
+    "question": 240,
+    "id": "mech-engineering-mechanics-58-240",
+    "page": 45,
+    "printedPage": 59,
+    "bbox": [
+      137.67,
+      93.33,
+      226.0,
+      142.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-58-240-question-1-9806453772.svg",
+    "width": 354,
+    "height": 195
+  },
+  {
+    "question": 240,
+    "id": "mech-engineering-mechanics-58-240",
+    "page": 45,
+    "printedPage": 59,
+    "bbox": [
+      73.33,
+      188.0,
+      293.67,
+      287.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-58-240-explanation-2-a49a22716d.svg",
+    "width": 882,
+    "height": 396
+  },
+  {
+    "question": 241,
+    "id": "mech-engineering-mechanics-59-241",
+    "page": 45,
+    "printedPage": 59,
+    "bbox": [
+      126.0,
+      422.0,
+      239.0,
+      477.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-59-241-explanation-1-a52b195372.svg",
+    "width": 452,
+    "height": 220
+  },
+  {
+    "question": 249,
+    "id": "mech-engineering-mechanics-60-249",
+    "page": 46,
+    "printedPage": 60,
+    "bbox": [
+      110.0,
+      383.0,
+      251.0,
+      463.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-60-249-explanation-1-f4135d6089.svg",
+    "width": 564,
+    "height": 320
+  },
+  {
+    "question": 250,
+    "id": "mech-engineering-mechanics-60-250",
+    "page": 46,
+    "printedPage": 60,
+    "bbox": [
+      132.0,
+      648.0,
+      229.0,
+      719.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-60-250-explanation-1-48b43d0e0c.svg",
+    "width": 388,
+    "height": 284
+  },
+  {
+    "question": 252,
+    "id": "mech-engineering-mechanics-60-252",
+    "page": 46,
+    "printedPage": 60,
+    "bbox": [
+      384.0,
+      405.0,
+      442.0,
+      425.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-60-252-explanation-1-5bfb19e345.svg",
+    "width": 232,
+    "height": 80
+  },
+  {
+    "question": 252,
+    "id": "mech-engineering-mechanics-60-252",
+    "page": 46,
+    "printedPage": 60,
+    "bbox": [
+      374.0,
+      469.0,
+      453.0,
+      485.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-60-252-explanation-2-a5216dcbca.svg",
+    "width": 316,
+    "height": 64
+  },
+  {
+    "question": 254,
+    "id": "mech-engineering-mechanics-61-254",
+    "page": 47,
+    "printedPage": 61,
+    "bbox": [
+      121.0,
+      284.0,
+      240.0,
+      396.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-61-254-explanation-1-a8157de1d6.svg",
+    "width": 476,
+    "height": 448
+  },
+  {
+    "question": 256,
+    "id": "mech-engineering-mechanics-61-256",
+    "page": 47,
+    "printedPage": 61,
+    "bbox": [
+      357.0,
+      189.0,
+      468.0,
+      277.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-61-256-explanation-1-037980da04.svg",
+    "width": 444,
+    "height": 352
+  },
+  {
+    "question": 257,
+    "id": "mech-engineering-mechanics-61-257",
+    "page": 47,
+    "printedPage": 61,
+    "bbox": [
+      340.0,
+      446.0,
+      484.0,
+      560.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-61-257-explanation-1-014580702c.svg",
+    "width": 576,
+    "height": 456
+  },
+  {
+    "question": 258,
+    "id": "mech-engineering-mechanics-61-258",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      137.0,
+      91.0,
+      227.0,
+      188.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-61-258-question-1-9c6b011c15.svg",
+    "width": 360,
+    "height": 388
+  },
+  {
+    "question": 258,
+    "id": "mech-engineering-mechanics-61-258",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      110.0,
+      230.0,
+      249.0,
+      334.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-61-258-explanation-2-53868c398f.svg",
+    "width": 556,
+    "height": 416
+  },
+  {
+    "question": 259,
+    "id": "mech-engineering-mechanics-62-259",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      133.0,
+      597.0,
+      230.0,
+      743.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-62-259-question-1-129de4bfb6.svg",
+    "width": 388,
+    "height": 584
+  },
+  {
+    "question": 259,
+    "id": "mech-engineering-mechanics-62-259",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      366.0,
+      168.0,
+      463.0,
+      306.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-62-259-explanation-2-4dfb0eab2d.svg",
+    "width": 388,
+    "height": 552
+  },
+  {
+    "question": 260,
+    "id": "mech-engineering-mechanics-62-260",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      368.0,
+      497.0,
+      458.0,
+      551.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-62-260-question-1-2fc9cdd6dc.svg",
+    "width": 360,
+    "height": 216
+  },
+  {
+    "question": 260,
+    "id": "mech-engineering-mechanics-62-260",
+    "page": 48,
+    "printedPage": 62,
+    "bbox": [
+      351.0,
+      598.0,
+      479.0,
+      677.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-62-260-explanation-2-f144ab8192.svg",
+    "width": 512,
+    "height": 316
+  },
+  {
+    "question": 261,
+    "id": "mech-engineering-mechanics-63-261",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      109.0,
+      267.0,
+      253.0,
+      374.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-63-261-question-1-71e3cc6722.svg",
+    "width": 576,
+    "height": 428
+  },
+  {
+    "question": 261,
+    "id": "mech-engineering-mechanics-63-261",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      80.0,
+      451.0,
+      278.0,
+      600.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-261-explanation-2-9832f5fd53.svg",
+    "width": 792,
+    "height": 596
+  },
+  {
+    "question": 262,
+    "id": "mech-engineering-mechanics-63-262",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      350.0,
+      230.0,
+      475.0,
+      318.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-262-explanation-1-a34d61c693.svg",
+    "width": 500,
+    "height": 352
+  },
+  {
+    "question": 263,
+    "id": "mech-engineering-mechanics-63-263",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      343.0,
+      409.0,
+      481.0,
+      451.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-63-263-question-1-e13dd6cffa.svg",
+    "width": 552,
+    "height": 168
+  },
+  {
+    "question": 263,
+    "id": "mech-engineering-mechanics-63-263",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      341.0,
+      501.0,
+      490.0,
+      558.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-263-explanation-2-bac4cbd34a.svg",
+    "width": 596,
+    "height": 228
+  },
+  {
+    "question": 263,
+    "id": "mech-engineering-mechanics-63-263",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      371.0,
+      591.0,
+      459.0,
+      663.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-263-explanation-3-d57383b055.svg",
+    "width": 352,
+    "height": 288
+  },
+  {
+    "question": 263,
+    "id": "mech-engineering-mechanics-63-263",
+    "page": 49,
+    "printedPage": 63,
+    "bbox": [
+      384.0,
+      682.0,
+      435.0,
+      740.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-263-explanation-4-b88fd1cb95.svg",
+    "width": 204,
+    "height": 232
+  },
+  {
+    "question": 263,
+    "id": "mech-engineering-mechanics-63-263",
+    "page": 50,
+    "printedPage": 64,
+    "bbox": [
+      79.0,
+      149.0,
+      281.0,
+      224.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-63-263-explanation-5-455b1e7cb2.svg",
+    "width": 808,
+    "height": 300
+  },
+  {
+    "question": 265,
+    "id": "mech-engineering-mechanics-64-265",
+    "page": 50,
+    "printedPage": 64,
+    "bbox": [
+      352.0,
+      306.0,
+      482.0,
+      393.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-64-265-explanation-1-b9d4596a7b.svg",
+    "width": 520,
+    "height": 348
+  },
+  {
+    "question": 267,
+    "id": "mech-engineering-mechanics-64-267",
+    "page": 51,
+    "printedPage": 65,
+    "bbox": [
+      129.0,
+      94.0,
+      232.0,
+      174.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-64-267-explanation-1-316e6d9d7d.svg",
+    "width": 412,
+    "height": 320
+  },
+  {
+    "question": 269,
+    "id": "mech-engineering-mechanics-65-269",
+    "page": 51,
+    "printedPage": 65,
+    "bbox": [
+      112.0,
+      514.0,
+      250.0,
+      581.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-65-269-explanation-1-224404995f.svg",
+    "width": 552,
+    "height": 268
+  },
+  {
+    "question": 272,
+    "id": "mech-engineering-mechanics-65-272",
+    "page": 51,
+    "printedPage": 65,
+    "bbox": [
+      364.0,
+      376.0,
+      463.0,
+      468.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-65-272-explanation-1-6fcf7af180.svg",
+    "width": 396,
+    "height": 368
+  },
+  {
+    "question": 280,
+    "id": "mech-engineering-mechanics-66-280",
+    "page": 52,
+    "printedPage": 66,
+    "bbox": [
+      342.0,
+      286.0,
+      485.0,
+      361.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-66-280-explanation-1-8b03e72085.svg",
+    "width": 572,
+    "height": 300
+  },
+  {
+    "question": 283,
+    "id": "mech-engineering-mechanics-67-283",
+    "page": 53,
+    "printedPage": 67,
+    "bbox": [
+      127.0,
+      159.0,
+      240.0,
+      207.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-67-283-question-1-d3ee57d28f.svg",
+    "width": 452,
+    "height": 192
+  },
+  {
+    "question": 283,
+    "id": "mech-engineering-mechanics-67-283",
+    "page": 53,
+    "printedPage": 67,
+    "bbox": [
+      123.0,
+      302.0,
+      243.0,
+      377.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-67-283-explanation-2-f5a0fe1e1c.svg",
+    "width": 480,
+    "height": 300
+  },
+  {
+    "question": 284,
+    "id": "mech-engineering-mechanics-67-284",
+    "page": 53,
+    "printedPage": 67,
+    "bbox": [
+      145.0,
+      639.0,
+      238.0,
+      732.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-67-284-question-1-7249f6c5c4.svg",
+    "width": 372,
+    "height": 372
+  },
+  {
+    "question": 284,
+    "id": "mech-engineering-mechanics-67-284",
+    "page": 53,
+    "printedPage": 67,
+    "bbox": [
+      145.0,
+      639.0,
+      238.0,
+      732.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-67-284-explanation-2-466c159b63.svg",
+    "width": 372,
+    "height": 372
+  },
+  {
+    "question": 288,
+    "id": "mech-engineering-mechanics-67-288",
+    "page": 54,
+    "printedPage": 68,
+    "bbox": [
+      128.0,
+      133.0,
+      235.0,
+      199.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-67-288-explanation-1-2ced300173.svg",
+    "width": 428,
+    "height": 264
+  },
+  {
+    "question": 291,
+    "id": "mech-engineering-mechanics-68-291",
+    "page": 54,
+    "printedPage": 68,
+    "bbox": [
+      159.0,
+      553.0,
+      208.0,
+      598.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-68-291-explanation-1-41372c9b6c.svg",
+    "width": 196,
+    "height": 180
+  },
+  {
+    "question": 292,
+    "id": "mech-engineering-mechanics-68-292",
+    "page": 54,
+    "printedPage": 68,
+    "bbox": [
+      355.0,
+      106.0,
+      470.0,
+      162.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-68-292-explanation-1-42d9774fd3.svg",
+    "width": 460,
+    "height": 224
+  },
+  {
+    "question": 293,
+    "id": "mech-engineering-mechanics-68-293",
+    "page": 54,
+    "printedPage": 68,
+    "bbox": [
+      349.0,
+      338.0,
+      476.0,
+      408.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-68-293-explanation-1-f618315326.svg",
+    "width": 508,
+    "height": 280
+  },
+  {
+    "question": 294,
+    "id": "mech-engineering-mechanics-68-294",
+    "page": 54,
+    "printedPage": 68,
+    "bbox": [
+      376.0,
+      537.0,
+      444.0,
+      591.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-68-294-explanation-1-fd819890f2.svg",
+    "width": 272,
+    "height": 216
+  },
+  {
+    "question": 296,
+    "id": "mech-engineering-mechanics-69-296",
+    "page": 55,
+    "printedPage": 69,
+    "bbox": [
+      133.0,
+      183.0,
+      230.0,
+      234.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-69-296-explanation-1-3e12fea4f0.svg",
+    "width": 388,
+    "height": 204
+  },
+  {
+    "question": 298,
+    "id": "mech-engineering-mechanics-69-298",
+    "page": 55,
+    "printedPage": 69,
+    "bbox": [
+      129.0,
+      350.0,
+      239.0,
+      432.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-69-298-question-1-41e762c10f.svg",
+    "width": 440,
+    "height": 328
+  },
+  {
+    "question": 298,
+    "id": "mech-engineering-mechanics-69-298",
+    "page": 55,
+    "printedPage": 69,
+    "bbox": [
+      129.0,
+      518.0,
+      239.0,
+      602.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-69-298-explanation-2-ba618051f2.svg",
+    "width": 440,
+    "height": 336
+  },
+  {
+    "question": 301,
+    "id": "mech-engineering-mechanics-69-301",
+    "page": 56,
+    "printedPage": 70,
+    "bbox": [
+      143.0,
+      106.0,
+      221.0,
+      153.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-69-301-explanation-1-b784fe41cb.svg",
+    "width": 312,
+    "height": 188
+  },
+  {
+    "question": 304,
+    "id": "mech-engineering-mechanics-70-304",
+    "page": 56,
+    "printedPage": 70,
+    "bbox": [
+      361.0,
+      121.0,
+      465.0,
+      201.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-70-304-explanation-1-358ac79523.svg",
+    "width": 416,
+    "height": 320
+  },
+  {
+    "question": 305,
+    "id": "mech-engineering-mechanics-70-305",
+    "page": 56,
+    "printedPage": 70,
+    "bbox": [
+      361.0,
+      457.0,
+      465.0,
+      543.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-70-305-explanation-1-d92f315cdc.svg",
+    "width": 416,
+    "height": 344
+  },
+  {
+    "question": 306,
+    "id": "mech-engineering-mechanics-70-306",
+    "page": 57,
+    "printedPage": 71,
+    "bbox": [
+      120.0,
+      107.0,
+      243.0,
+      185.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-70-306-explanation-1-1a836c919b.svg",
+    "width": 492,
+    "height": 312
+  },
+  {
+    "question": 309,
+    "id": "mech-engineering-mechanics-71-309",
+    "page": 57,
+    "printedPage": 71,
+    "bbox": [
+      316.0,
+      234.0,
+      510.0,
+      315.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-71-309-explanation-1-6758d51984.svg",
+    "width": 776,
+    "height": 324
+  },
+  {
+    "question": 319,
+    "id": "mech-engineering-mechanics-72-319",
+    "page": 58,
+    "printedPage": 72,
+    "bbox": [
+      367.0,
+      570.0,
+      461.0,
+      669.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-72-319-explanation-1-d3b26ab261.svg",
+    "width": 376,
+    "height": 396
+  },
+  {
+    "question": 320,
+    "id": "mech-engineering-mechanics-73-320",
+    "page": 59,
+    "printedPage": 73,
+    "bbox": [
+      135.0,
+      232.0,
+      230.0,
+      322.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-73-320-explanation-1-1279a3d411.svg",
+    "width": 380,
+    "height": 360
+  },
+  {
+    "question": 321,
+    "id": "mech-engineering-mechanics-73-321",
+    "page": 59,
+    "printedPage": 73,
+    "bbox": [
+      99.0,
+      550.0,
+      261.0,
+      640.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-73-321-question-1-8b973ba174.svg",
+    "width": 648,
+    "height": 360
+  },
+  {
+    "question": 321,
+    "id": "mech-engineering-mechanics-73-321",
+    "page": 59,
+    "printedPage": 73,
+    "bbox": [
+      99.0,
+      550.0,
+      261.0,
+      640.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-73-321-explanation-2-221789c1ea.svg",
+    "width": 648,
+    "height": 360
+  },
+  {
+    "question": 325,
+    "id": "mech-engineering-mechanics-73-325",
+    "page": 60,
+    "printedPage": 74,
+    "bbox": [
+      113.0,
+      106.0,
+      254.0,
+      245.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-73-325-question-1-4bcdfbca49.svg",
+    "width": 564,
+    "height": 556
+  },
+  {
+    "question": 325,
+    "id": "mech-engineering-mechanics-73-325",
+    "page": 60,
+    "printedPage": 74,
+    "bbox": [
+      113.0,
+      106.0,
+      254.0,
+      245.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-73-325-explanation-2-3ac9b1aec2.svg",
+    "width": 564,
+    "height": 556
+  },
+  {
+    "question": 327,
+    "id": "mech-engineering-mechanics-74-327",
+    "page": 60,
+    "printedPage": 74,
+    "bbox": [
+      117.0,
+      566.0,
+      238.0,
+      677.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-74-327-question-1-d3e4bfb493.svg",
+    "width": 484,
+    "height": 444
+  },
+  {
+    "question": 327,
+    "id": "mech-engineering-mechanics-74-327",
+    "page": 60,
+    "printedPage": 74,
+    "bbox": [
+      359.0,
+      149.0,
+      469.0,
+      235.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-74-327-explanation-2-a4832ea2b9.svg",
+    "width": 440,
+    "height": 344
+  },
+  {
+    "question": 330,
+    "id": "mech-engineering-mechanics-74-330",
+    "page": 61,
+    "printedPage": 75,
+    "bbox": [
+      133.0,
+      117.0,
+      232.0,
+      199.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-74-330-explanation-1-db4616581a.svg",
+    "width": 396,
+    "height": 328
+  },
+  {
+    "question": 331,
+    "id": "mech-engineering-mechanics-75-331",
+    "page": 61,
+    "printedPage": 75,
+    "bbox": [
+      113.0,
+      311.0,
+      253.0,
+      391.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-75-331-explanation-1-1f1b70157b.svg",
+    "width": 560,
+    "height": 320
+  },
+  {
+    "question": 332,
+    "id": "mech-engineering-mechanics-75-332",
+    "page": 61,
+    "printedPage": 75,
+    "bbox": [
+      326.0,
+      106.0,
+      503.0,
+      191.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-75-332-explanation-1-a636c5420a.svg",
+    "width": 708,
+    "height": 340
+  },
+  {
+    "question": 334,
+    "id": "mech-engineering-mechanics-75-334",
+    "page": 62,
+    "printedPage": 76,
+    "bbox": [
+      90.0,
+      96.0,
+      275.0,
+      181.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-75-334-explanation-1-0a86c0aaf0.svg",
+    "width": 740,
+    "height": 340
+  },
+  {
+    "question": 336,
+    "id": "mech-engineering-mechanics-76-336",
+    "page": 62,
+    "printedPage": 76,
+    "bbox": [
+      126.0,
+      430.0,
+      238.0,
+      529.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-76-336-explanation-1-8a3bad7d6c.svg",
+    "width": 448,
+    "height": 396
+  },
+  {
+    "question": 337,
+    "id": "mech-engineering-mechanics-76-337",
+    "page": 62,
+    "printedPage": 76,
+    "bbox": [
+      330.0,
+      219.0,
+      496.0,
+      323.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-76-337-explanation-1-7be9819a76.svg",
+    "width": 664,
+    "height": 416
+  },
+  {
+    "question": 338,
+    "id": "mech-engineering-mechanics-76-338",
+    "page": 62,
+    "printedPage": 76,
+    "bbox": [
+      316.0,
+      497.0,
+      509.0,
+      554.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-76-338-explanation-1-8885ac8147.svg",
+    "width": 772,
+    "height": 228
+  },
+  {
+    "question": 339,
+    "id": "mech-engineering-mechanics-76-339",
+    "page": 62,
+    "printedPage": 76,
+    "bbox": [
+      385.0,
+      645.0,
+      441.0,
+      703.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-76-339-question-1-51f6c6e412.svg",
+    "width": 224,
+    "height": 232
+  },
+  {
+    "question": 339,
+    "id": "mech-engineering-mechanics-76-339",
+    "page": 63,
+    "printedPage": 77,
+    "bbox": [
+      106.0,
+      106.0,
+      199.0,
+      190.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-76-339-explanation-2-00fa11b29f.svg",
+    "width": 372,
+    "height": 336
+  },
+  {
+    "question": 341,
+    "id": "mech-engineering-mechanics-77-341",
+    "page": 63,
+    "printedPage": 77,
+    "bbox": [
+      150.0,
+      474.0,
+      213.0,
+      525.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-77-341-question-1-6fdd9e4b70.svg",
+    "width": 252,
+    "height": 204
+  },
+  {
+    "question": 342,
+    "id": "mech-engineering-mechanics-77-342",
+    "page": 63,
+    "printedPage": 77,
+    "bbox": [
+      355.0,
+      173.0,
+      478.0,
+      245.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-77-342-explanation-1-81b4d9f22b.svg",
+    "width": 492,
+    "height": 288
+  },
+  {
+    "question": 343,
+    "id": "mech-engineering-mechanics-77-343",
+    "page": 63,
+    "printedPage": 77,
+    "bbox": [
+      362.0,
+      384.0,
+      466.0,
+      452.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-77-343-explanation-1-83b33df584.svg",
+    "width": 416,
+    "height": 272
+  },
+  {
+    "question": 347,
+    "id": "mech-engineering-mechanics-78-347",
+    "page": 64,
+    "printedPage": 78,
+    "bbox": [
+      129.0,
+      263.0,
+      249.0,
+      340.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-78-347-question-1-3b58759797.svg",
+    "width": 480,
+    "height": 308
+  },
+  {
+    "question": 347,
+    "id": "mech-engineering-mechanics-78-347",
+    "page": 64,
+    "printedPage": 78,
+    "bbox": [
+      129.0,
+      263.0,
+      249.0,
+      340.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-78-347-explanation-2-784105c08d.svg",
+    "width": 480,
+    "height": 308
+  },
+  {
+    "question": 351,
+    "id": "mech-engineering-mechanics-78-351",
+    "page": 64,
+    "printedPage": 78,
+    "bbox": [
+      345.0,
+      398.0,
+      439.0,
+      451.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-78-351-explanation-1-a39574eb14.svg",
+    "width": 376,
+    "height": 212
+  },
+  {
+    "question": 352,
+    "id": "mech-engineering-mechanics-78-352",
+    "page": 64,
+    "printedPage": 78,
+    "bbox": [
+      359.0,
+      631.0,
+      461.0,
+      742.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-78-352-question-1-3bec772a00.svg",
+    "width": 408,
+    "height": 444
+  },
+  {
+    "question": 352,
+    "id": "mech-engineering-mechanics-78-352",
+    "page": 64,
+    "printedPage": 78,
+    "bbox": [
+      359.0,
+      631.0,
+      461.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-78-352-explanation-2-9863f248c2.svg",
+    "width": 408,
+    "height": 444
+  },
+  {
+    "question": 353,
+    "id": "mech-engineering-mechanics-79-353",
+    "page": 65,
+    "printedPage": 79,
+    "bbox": [
+      143.0,
+      214.0,
+      218.0,
+      285.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-79-353-question-1-65ee30b87b.svg",
+    "width": 300,
+    "height": 284
+  },
+  {
+    "question": 353,
+    "id": "mech-engineering-mechanics-79-353",
+    "page": 65,
+    "printedPage": 79,
+    "bbox": [
+      108.0,
+      345.0,
+      221.0,
+      453.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-79-353-explanation-2-73c341e0de.svg",
+    "width": 452,
+    "height": 432
+  },
+  {
+    "question": 354,
+    "id": "mech-engineering-mechanics-79-354",
+    "page": 65,
+    "printedPage": 79,
+    "bbox": [
+      136.0,
+      647.0,
+      219.0,
+      719.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-79-354-explanation-1-cb0c90e9e2.svg",
+    "width": 332,
+    "height": 288
+  },
+  {
+    "question": 355,
+    "id": "mech-engineering-mechanics-79-355",
+    "page": 65,
+    "printedPage": 79,
+    "bbox": [
+      362.0,
+      167.0,
+      462.0,
+      221.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-79-355-explanation-1-eae65b6831.svg",
+    "width": 400,
+    "height": 216
+  },
+  {
+    "question": 356,
+    "id": "mech-engineering-mechanics-79-356",
+    "page": 65,
+    "printedPage": 79,
+    "bbox": [
+      359.0,
+      334.0,
+      470.0,
+      418.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-79-356-explanation-1-1dbf91634c.svg",
+    "width": 444,
+    "height": 336
+  },
+  {
+    "question": 359,
+    "id": "mech-engineering-mechanics-79-359",
+    "page": 66,
+    "printedPage": 80,
+    "bbox": [
+      152.0,
+      164.0,
+      213.0,
+      226.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-79-359-explanation-1-6f367270af.svg",
+    "width": 244,
+    "height": 248
+  },
+  {
+    "question": 360,
+    "id": "mech-engineering-mechanics-80-360",
+    "page": 66,
+    "printedPage": 80,
+    "bbox": [
+      92.0,
+      337.0,
+      269.0,
+      385.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-80-360-explanation-1-dd64eb7e56.svg",
+    "width": 708,
+    "height": 192
+  },
+  {
+    "question": 361,
+    "id": "mech-engineering-mechanics-80-361",
+    "page": 66,
+    "printedPage": 80,
+    "bbox": [
+      152.04,
+      660.0,
+      216.85,
+      732.22
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-80-361-explanation-1-9f3ba25c94.svg",
+    "width": 260,
+    "height": 289
+  },
+  {
+    "question": 368,
+    "id": "mech-engineering-mechanics-81-368",
+    "page": 67,
+    "printedPage": 81,
+    "bbox": [
+      120.0,
+      600.5,
+      244.5,
+      717.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-81-368-explanation-1-42f35d1267.svg",
+    "width": 498,
+    "height": 466
+  },
+  {
+    "question": 369,
+    "id": "mech-engineering-mechanics-81-369",
+    "page": 67,
+    "printedPage": 81,
+    "bbox": [
+      362.5,
+      262.0,
+      460.0,
+      357.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-81-369-question-1-ac29d60d82.svg",
+    "width": 390,
+    "height": 382
+  },
+  {
+    "question": 369,
+    "id": "mech-engineering-mechanics-81-369",
+    "page": 67,
+    "printedPage": 81,
+    "bbox": [
+      364.0,
+      403.5,
+      459.0,
+      500.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-81-369-explanation-2-40cbbb1a49.svg",
+    "width": 380,
+    "height": 386
+  },
+  {
+    "question": 379,
+    "id": "mech-engineering-mechanics-83-379",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      141.5,
+      138.0,
+      222.5,
+      224.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-83-379-question-1-713ef0171d.svg",
+    "width": 324,
+    "height": 346
+  },
+  {
+    "question": 379,
+    "id": "mech-engineering-mechanics-83-379",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      153.0,
+      270.0,
+      210.0,
+      336.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-83-379-explanation-2-58392fe90c.svg",
+    "width": 228,
+    "height": 264
+  },
+  {
+    "question": 379,
+    "id": "mech-engineering-mechanics-83-379",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      147.0,
+      367.5,
+      213.0,
+      428.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-83-379-explanation-3-d872bc4cc6.svg",
+    "width": 264,
+    "height": 244
+  },
+  {
+    "question": 380,
+    "id": "mech-engineering-mechanics-83-380",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      135.0,
+      494.0,
+      228.5,
+      573.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-83-380-question-1-20886cab62.svg",
+    "width": 374,
+    "height": 316
+  },
+  {
+    "question": 380,
+    "id": "mech-engineering-mechanics-83-380",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      332.5,
+      107.0,
+      502.5,
+      183.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-83-380-explanation-2-8b445555fc.svg",
+    "width": 680,
+    "height": 304
+  },
+  {
+    "question": 380,
+    "id": "mech-engineering-mechanics-83-380",
+    "page": 69,
+    "printedPage": 83,
+    "bbox": [
+      357.5,
+      272.5,
+      473.0,
+      340.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-83-380-explanation-3-f32124bb4b.svg",
+    "width": 462,
+    "height": 272
+  },
+  {
+    "question": 385,
+    "id": "mech-engineering-mechanics-84-385",
+    "page": 70,
+    "printedPage": 84,
+    "bbox": [
+      119.5,
+      392.5,
+      243.0,
+      475.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-84-385-question-1-53b0634710.svg",
+    "width": 494,
+    "height": 330
+  },
+  {
+    "question": 385,
+    "id": "mech-engineering-mechanics-84-385",
+    "page": 70,
+    "printedPage": 84,
+    "bbox": [
+      110.0,
+      574.5,
+      256.0,
+      702.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-84-385-explanation-2-878aa70144.svg",
+    "width": 584,
+    "height": 510
+  },
+  {
+    "question": 390,
+    "id": "mech-engineering-mechanics-84-390",
+    "page": 70,
+    "printedPage": 84,
+    "bbox": [
+      326.0,
+      641.0,
+      443.0,
+      745.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-84-390-question-1-ddad964d92.svg",
+    "width": 468,
+    "height": 418
+  },
+  {
+    "question": 390,
+    "id": "mech-engineering-mechanics-84-390",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      140.5,
+      174.0,
+      225.0,
+      245.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-84-390-explanation-2-5aef1cf2a6.svg",
+    "width": 338,
+    "height": 286
+  },
+  {
+    "question": 390,
+    "id": "mech-engineering-mechanics-84-390",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      127.5,
+      258.0,
+      238.5,
+      325.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-84-390-explanation-3-a68076dd6e.svg",
+    "width": 444,
+    "height": 270
+  },
+  {
+    "question": 391,
+    "id": "mech-engineering-mechanics-85-391",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      124.0,
+      393.0,
+      239.0,
+      471.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-85-391-question-1-c1e1af4100.svg",
+    "width": 460,
+    "height": 314
+  },
+  {
+    "question": 391,
+    "id": "mech-engineering-mechanics-85-391",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      125.0,
+      561.5,
+      238.5,
+      635.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-85-391-explanation-2-b869aa3d3a.svg",
+    "width": 454,
+    "height": 296
+  },
+  {
+    "question": 391,
+    "id": "mech-engineering-mechanics-85-391",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      120.0,
+      637.0,
+      242.5,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-85-391-explanation-3-8be77d797a.svg",
+    "width": 490,
+    "height": 420
+  },
+  {
+    "question": 393,
+    "id": "mech-engineering-mechanics-85-393",
+    "page": 71,
+    "printedPage": 85,
+    "bbox": [
+      365.5,
+      392.0,
+      458.5,
+      461.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-85-393-question-1-902a854c6e.svg",
+    "width": 372,
+    "height": 276
+  },
+  {
+    "question": 395,
+    "id": "mech-engineering-mechanics-86-395",
+    "page": 72,
+    "printedPage": 86,
+    "bbox": [
+      121.0,
+      126.0,
+      243.0,
+      212.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-86-395-question-1-88cc9ed68a.svg",
+    "width": 488,
+    "height": 344
+  },
+  {
+    "question": 395,
+    "id": "mech-engineering-mechanics-86-395",
+    "page": 72,
+    "printedPage": 86,
+    "bbox": [
+      103.5,
+      380.0,
+      238.5,
+      481.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-86-395-explanation-2-e054a42de3.svg",
+    "width": 540,
+    "height": 406
+  },
+  {
+    "question": 400,
+    "id": "mech-engineering-mechanics-86-400",
+    "page": 72,
+    "printedPage": 86,
+    "bbox": [
+      353.5,
+      618.5,
+      474.5,
+      703.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-86-400-question-1-291e631903.svg",
+    "width": 484,
+    "height": 338
+  },
+  {
+    "question": 400,
+    "id": "mech-engineering-mechanics-86-400",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      118.0,
+      103.5,
+      246.0,
+      190.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-86-400-explanation-2-7fc67e18e4.svg",
+    "width": 512,
+    "height": 348
+  },
+  {
+    "question": 401,
+    "id": "mech-engineering-mechanics-87-401",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      115.0,
+      281.5,
+      250.0,
+      376.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-87-401-question-1-16e2697b8d.svg",
+    "width": 540,
+    "height": 378
+  },
+  {
+    "question": 401,
+    "id": "mech-engineering-mechanics-87-401",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      112.0,
+      487.0,
+      253.5,
+      594.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-87-401-explanation-2-3166afa522.svg",
+    "width": 566,
+    "height": 430
+  },
+  {
+    "question": 401,
+    "id": "mech-engineering-mechanics-87-401",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      375.5,
+      96.0,
+      452.0,
+      164.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-87-401-explanation-3-e0481f0b5b.svg",
+    "width": 306,
+    "height": 274
+  },
+  {
+    "question": 402,
+    "id": "mech-engineering-mechanics-87-402",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      361.0,
+      312.0,
+      466.0,
+      451.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-87-402-question-1-65862d0fd7.svg",
+    "width": 420,
+    "height": 558
+  },
+  {
+    "question": 402,
+    "id": "mech-engineering-mechanics-87-402",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      354.0,
+      501.5,
+      472.5,
+      652.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-87-402-explanation-2-6a7bbdc9ae.svg",
+    "width": 474,
+    "height": 604
+  },
+  {
+    "question": 402,
+    "id": "mech-engineering-mechanics-87-402",
+    "page": 73,
+    "printedPage": 87,
+    "bbox": [
+      342.5,
+      667.5,
+      485.5,
+      741.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-87-402-explanation-3-175f054370.svg",
+    "width": 572,
+    "height": 294
+  },
+  {
+    "question": 402,
+    "id": "mech-engineering-mechanics-87-402",
+    "page": 74,
+    "printedPage": 88,
+    "bbox": [
+      106.5,
+      454.5,
+      259.0,
+      559.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-87-402-explanation-4-062f5c5273.svg",
+    "width": 610,
+    "height": 418
+  },
+  {
+    "question": 403,
+    "id": "mech-engineering-mechanics-88-403",
+    "page": 74,
+    "printedPage": 88,
+    "bbox": [
+      313.0,
+      94.0,
+      502.0,
+      252.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-88-403-question-1-fb06c4c989.svg",
+    "width": 756,
+    "height": 634
+  },
+  {
+    "question": 404,
+    "id": "mech-engineering-mechanics-88-404",
+    "page": 74,
+    "printedPage": 88,
+    "bbox": [
+      364.0,
+      419.0,
+      460.0,
+      549.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-88-404-question-1-b308999777.svg",
+    "width": 384,
+    "height": 520
+  },
+  {
+    "question": 404,
+    "id": "mech-engineering-mechanics-88-404",
+    "page": 74,
+    "printedPage": 88,
+    "bbox": [
+      312.5,
+      600.0,
+      518.0,
+      741.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-88-404-explanation-2-a0dae9962f.svg",
+    "width": 822,
+    "height": 564
+  },
+  {
+    "question": 404,
+    "id": "mech-engineering-mechanics-88-404",
+    "page": 75,
+    "printedPage": 89,
+    "bbox": [
+      133.5,
+      240.0,
+      231.5,
+      321.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-88-404-explanation-3-8a632fad33.svg",
+    "width": 392,
+    "height": 326
+  },
+  {
+    "question": 404,
+    "id": "mech-engineering-mechanics-88-404",
+    "page": 75,
+    "printedPage": 89,
+    "bbox": [
+      115.5,
+      349.0,
+      247.5,
+      453.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-88-404-explanation-4-077a2773be.svg",
+    "width": 528,
+    "height": 418
+  },
+  {
+    "question": 404,
+    "id": "mech-engineering-mechanics-88-404",
+    "page": 75,
+    "printedPage": 89,
+    "bbox": [
+      121.0,
+      470.0,
+      245.0,
+      566.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-88-404-explanation-5-f491a60c87.svg",
+    "width": 496,
+    "height": 384
+  },
+  {
+    "question": 405,
+    "id": "mech-engineering-mechanics-89-405",
+    "page": 75,
+    "printedPage": 89,
+    "bbox": [
+      331.5,
+      95.5,
+      494.5,
+      209.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-89-405-question-1-94bb8f2e4f.svg",
+    "width": 652,
+    "height": 454
+  },
+  {
+    "question": 405,
+    "id": "mech-engineering-mechanics-89-405",
+    "page": 75,
+    "printedPage": 89,
+    "bbox": [
+      311.0,
+      289.0,
+      515.5,
+      438.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-89-405-explanation-2-b2e14e1543.svg",
+    "width": 818,
+    "height": 598
+  },
+  {
+    "question": 406,
+    "id": "mech-engineering-mechanics-90-406",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      150.0,
+      281.5,
+      213.0,
+      382.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-90-406-question-1-fef268f20a.svg",
+    "width": 252,
+    "height": 402
+  },
+  {
+    "question": 406,
+    "id": "mech-engineering-mechanics-90-406",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      121.0,
+      446.0,
+      178.0,
+      530.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-406-explanation-2-e38829beaa.svg",
+    "width": 228,
+    "height": 336
+  },
+  {
+    "question": 406,
+    "id": "mech-engineering-mechanics-90-406",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      103.5,
+      585.0,
+      169.0,
+      646.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-406-explanation-3-d745f6bf70.svg",
+    "width": 262,
+    "height": 244
+  },
+  {
+    "question": 407,
+    "id": "mech-engineering-mechanics-90-407",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      357.0,
+      180.0,
+      469.5,
+      275.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-90-407-question-1-187fcaa21d.svg",
+    "width": 450,
+    "height": 380
+  },
+  {
+    "question": 407,
+    "id": "mech-engineering-mechanics-90-407",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      340.0,
+      337.5,
+      449.5,
+      433.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-407-explanation-2-2b96405b88.svg",
+    "width": 438,
+    "height": 384
+  },
+  {
+    "question": 407,
+    "id": "mech-engineering-mechanics-90-407",
+    "page": 76,
+    "printedPage": 90,
+    "bbox": [
+      336.0,
+      447.0,
+      469.0,
+      515.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-407-explanation-3-e6c4d421ad.svg",
+    "width": 532,
+    "height": 274
+  },
+  {
+    "question": 409,
+    "id": "mech-engineering-mechanics-90-409",
+    "page": 77,
+    "printedPage": 91,
+    "bbox": [
+      133.5,
+      93.0,
+      228.0,
+      172.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-90-409-question-1-b3c6472c52.svg",
+    "width": 378,
+    "height": 318
+  },
+  {
+    "question": 409,
+    "id": "mech-engineering-mechanics-90-409",
+    "page": 77,
+    "printedPage": 91,
+    "bbox": [
+      133.0,
+      233.5,
+      234.0,
+      320.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-409-explanation-2-594b57f1fc.svg",
+    "width": 404,
+    "height": 346
+  },
+  {
+    "question": 409,
+    "id": "mech-engineering-mechanics-90-409",
+    "page": 77,
+    "printedPage": 91,
+    "bbox": [
+      133.0,
+      327.5,
+      234.5,
+      400.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-409-explanation-3-fe83449405.svg",
+    "width": 406,
+    "height": 290
+  },
+  {
+    "question": 409,
+    "id": "mech-engineering-mechanics-90-409",
+    "page": 77,
+    "printedPage": 91,
+    "bbox": [
+      122.5,
+      478.0,
+      239.0,
+      568.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-90-409-explanation-4-ffd69b1e7d.svg",
+    "width": 466,
+    "height": 362
+  },
+  {
+    "question": 417,
+    "id": "mech-engineering-mechanics-92-417",
+    "page": 78,
+    "printedPage": 92,
+    "bbox": [
+      134.5,
+      120.0,
+      228.5,
+      188.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-92-417-question-1-7fb1364e3e.svg",
+    "width": 376,
+    "height": 272
+  },
+  {
+    "question": 421,
+    "id": "mech-engineering-mechanics-92-421",
+    "page": 78,
+    "printedPage": 92,
+    "bbox": [
+      351.5,
+      115.5,
+      474.5,
+      197.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-92-421-question-1-33f6eff47c.svg",
+    "width": 492,
+    "height": 328
+  },
+  {
+    "question": 421,
+    "id": "mech-engineering-mechanics-92-421",
+    "page": 78,
+    "printedPage": 92,
+    "bbox": [
+      368.0,
+      241.0,
+      459.5,
+      316.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-92-421-explanation-2-b8bc6bdc47.svg",
+    "width": 366,
+    "height": 300
+  },
+  {
+    "question": 423,
+    "id": "mech-engineering-mechanics-92-423",
+    "page": 78,
+    "printedPage": 92,
+    "bbox": [
+      357.0,
+      513.5,
+      467.0,
+      601.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-92-423-question-1-0358d82327.svg",
+    "width": 440,
+    "height": 350
+  },
+  {
+    "question": 423,
+    "id": "mech-engineering-mechanics-92-423",
+    "page": 79,
+    "printedPage": 93,
+    "bbox": [
+      109.5,
+      182.0,
+      253.0,
+      273.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-92-423-explanation-2-117972c69e.svg",
+    "width": 574,
+    "height": 366
+  },
+  {
+    "question": 427,
+    "id": "mech-engineering-mechanics-93-427",
+    "page": 79,
+    "printedPage": 93,
+    "bbox": [
+      369.0,
+      234.0,
+      456.5,
+      345.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-93-427-question-1-32abde3bda.svg",
+    "width": 350,
+    "height": 446
+  },
+  {
+    "question": 427,
+    "id": "mech-engineering-mechanics-93-427",
+    "page": 79,
+    "printedPage": 93,
+    "bbox": [
+      369.5,
+      588.5,
+      459.0,
+      695.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-93-427-explanation-2-6207bfb147.svg",
+    "width": 358,
+    "height": 428
+  },
+  {
+    "question": 427,
+    "id": "mech-engineering-mechanics-93-427",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      131.5,
+      155.0,
+      233.0,
+      252.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-93-427-explanation-3-7d52e8a8ab.svg",
+    "width": 406,
+    "height": 390
+  },
+  {
+    "question": 428,
+    "id": "mech-engineering-mechanics-94-428",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      120.0,
+      365.5,
+      262.5,
+      433.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-94-428-question-1-607dd811b1.svg",
+    "width": 570,
+    "height": 270
+  },
+  {
+    "question": 429,
+    "id": "mech-engineering-mechanics-94-429",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      112.5,
+      599.5,
+      253.5,
+      706.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-94-429-question-1-906777a7b6.svg",
+    "width": 564,
+    "height": 428
+  },
+  {
+    "question": 429,
+    "id": "mech-engineering-mechanics-94-429",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      344.0,
+      153.5,
+      483.5,
+      260.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-94-429-explanation-2-7ec7a4a2e9.svg",
+    "width": 558,
+    "height": 426
+  },
+  {
+    "question": 429,
+    "id": "mech-engineering-mechanics-94-429",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      336.0,
+      330.5,
+      382.5,
+      379.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-94-429-explanation-3-679156d01c.svg",
+    "width": 186,
+    "height": 194
+  },
+  {
+    "question": 429,
+    "id": "mech-engineering-mechanics-94-429",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      408.5,
+      307.0,
+      493.5,
+      374.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-94-429-explanation-4-c0ed200fdf.svg",
+    "width": 340,
+    "height": 270
+  },
+  {
+    "question": 429,
+    "id": "mech-engineering-mechanics-94-429",
+    "page": 80,
+    "printedPage": 94,
+    "bbox": [
+      385.0,
+      432.5,
+      445.5,
+      486.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-94-429-explanation-5-d777bbe8ca.svg",
+    "width": 242,
+    "height": 216
+  },
+  {
+    "question": 435,
+    "id": "mech-engineering-mechanics-95-435",
+    "page": 81,
+    "printedPage": 95,
+    "bbox": [
+      376.85,
+      295.56,
+      448.7,
+      368.52
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-95-435-explanation-1-3f7eec62b3.svg",
+    "width": 288,
+    "height": 293
+  },
+  {
+    "question": 449,
+    "id": "mech-engineering-mechanics-97-449",
+    "page": 83,
+    "printedPage": 97,
+    "bbox": [
+      370.19,
+      456.3,
+      455.0,
+      662.22
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-97-449-explanation-1-3a244aa67e.svg",
+    "width": 340,
+    "height": 824
+  },
+  {
+    "question": 452,
+    "id": "mech-engineering-mechanics-98-452",
+    "page": 84,
+    "printedPage": 98,
+    "bbox": [
+      161.0,
+      526.5,
+      205.0,
+      608.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-98-452-explanation-1-ee1822c232.svg",
+    "width": 176,
+    "height": 326
+  },
+  {
+    "question": 456,
+    "id": "mech-engineering-mechanics-98-456",
+    "page": 84,
+    "printedPage": 98,
+    "bbox": [
+      385.0,
+      680.5,
+      443.0,
+      740.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-98-456-explanation-1-08316c4337.svg",
+    "width": 232,
+    "height": 240
+  },
+  {
+    "question": 459,
+    "id": "mech-engineering-mechanics-99-459",
+    "page": 85,
+    "printedPage": 99,
+    "bbox": [
+      370.5,
+      183.0,
+      455.5,
+      263.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-99-459-explanation-1-927779b154.svg",
+    "width": 340,
+    "height": 320
+  },
+  {
+    "question": 460,
+    "id": "mech-engineering-mechanics-99-460",
+    "page": 85,
+    "printedPage": 99,
+    "bbox": [
+      343.0,
+      462.0,
+      481.0,
+      550.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-99-460-explanation-1-61dca90e5a.svg",
+    "width": 552,
+    "height": 354
+  },
+  {
+    "question": 466,
+    "id": "mech-engineering-mechanics-100-466",
+    "page": 86,
+    "printedPage": 100,
+    "bbox": [
+      351.5,
+      252.0,
+      479.0,
+      308.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-100-466-question-1-af576913df.svg",
+    "width": 510,
+    "height": 224
+  },
+  {
+    "question": 473,
+    "id": "mech-engineering-mechanics-101-473",
+    "page": 88,
+    "printedPage": 102,
+    "bbox": [
+      129.5,
+      146.0,
+      236.5,
+      217.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-101-473-explanation-1-f2bc1730e1.svg",
+    "width": 428,
+    "height": 286
+  },
+  {
+    "question": 477,
+    "id": "mech-engineering-mechanics-102-477",
+    "page": 88,
+    "printedPage": 102,
+    "bbox": [
+      356.5,
+      133.5,
+      470.5,
+      199.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-102-477-explanation-1-251ea441fb.svg",
+    "width": 456,
+    "height": 264
+  },
+  {
+    "question": 480,
+    "id": "mech-engineering-mechanics-103-480",
+    "page": 89,
+    "printedPage": 103,
+    "bbox": [
+      140.0,
+      266.5,
+      222.5,
+      313.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-103-480-explanation-1-1f048c955f.svg",
+    "width": 330,
+    "height": 188
+  },
+  {
+    "question": 480,
+    "id": "mech-engineering-mechanics-103-480",
+    "page": 89,
+    "printedPage": 103,
+    "bbox": [
+      140.0,
+      351.5,
+      223.0,
+      397.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-103-480-explanation-2-4f423e0eb4.svg",
+    "width": 332,
+    "height": 182
+  },
+  {
+    "question": 483,
+    "id": "mech-engineering-mechanics-103-483",
+    "page": 89,
+    "printedPage": 103,
+    "bbox": [
+      360.0,
+      294.5,
+      468.0,
+      334.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-103-483-explanation-1-4c12bb384e.svg",
+    "width": 432,
+    "height": 158
+  },
+  {
+    "question": 484,
+    "id": "mech-engineering-mechanics-103-484",
+    "page": 89,
+    "printedPage": 103,
+    "bbox": [
+      354.0,
+      525.5,
+      479.0,
+      602.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-103-484-explanation-1-df3c51efb9.svg",
+    "width": 500,
+    "height": 306
+  },
+  {
+    "question": 485,
+    "id": "mech-engineering-mechanics-104-485",
+    "page": 90,
+    "printedPage": 104,
+    "bbox": [
+      146.0,
+      243.0,
+      214.0,
+      302.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-104-485-explanation-1-258658a546.svg",
+    "width": 272,
+    "height": 236
+  },
+  {
+    "question": 504,
+    "id": "mech-engineering-mechanics-107-504",
+    "page": 93,
+    "printedPage": 107,
+    "bbox": [
+      85.0,
+      244.0,
+      277.0,
+      402.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-107-504-explanation-1-0091337b7b.svg",
+    "width": 768,
+    "height": 632
+  },
+  {
+    "question": 505,
+    "id": "mech-engineering-mechanics-107-505",
+    "page": 93,
+    "printedPage": 107,
+    "bbox": [
+      154.0,
+      530.0,
+      209.0,
+      621.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-107-505-question-1-ce5aced641.svg",
+    "width": 220,
+    "height": 364
+  },
+  {
+    "question": 506,
+    "id": "mech-engineering-mechanics-107-506",
+    "page": 93,
+    "printedPage": 107,
+    "bbox": [
+      360.0,
+      268.0,
+      475.0,
+      326.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-107-506-explanation-1-5fc3eac50c.svg",
+    "width": 460,
+    "height": 232
+  },
+  {
+    "question": 507,
+    "id": "mech-engineering-mechanics-107-507",
+    "page": 93,
+    "printedPage": 107,
+    "bbox": [
+      333.0,
+      555.0,
+      480.0,
+      699.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-107-507-explanation-1-065f8d3c7a.svg",
+    "width": 588,
+    "height": 576
+  },
+  {
+    "question": 509,
+    "id": "mech-engineering-mechanics-108-509",
+    "page": 94,
+    "printedPage": 108,
+    "bbox": [
+      116.0,
+      453.0,
+      239.0,
+      539.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-108-509-question-1-13acd41986.svg",
+    "width": 492,
+    "height": 344
+  },
+  {
+    "question": 509,
+    "id": "mech-engineering-mechanics-108-509",
+    "page": 94,
+    "printedPage": 108,
+    "bbox": [
+      118.0,
+      653.0,
+      247.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-108-509-explanation-2-a987b868dc.svg",
+    "width": 516,
+    "height": 356
+  },
+  {
+    "question": 514,
+    "id": "mech-engineering-mechanics-109-514",
+    "page": 95,
+    "printedPage": 109,
+    "bbox": [
+      326.0,
+      94.0,
+      511.0,
+      218.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-109-514-question-1-f858a1ecfc.svg",
+    "width": 740,
+    "height": 496
+  },
+  {
+    "question": 525,
+    "id": "mech-engineering-mechanics-111-525",
+    "page": 97,
+    "printedPage": 111,
+    "bbox": [
+      128.0,
+      586.0,
+      238.0,
+      666.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-111-525-explanation-1-2145e744cd.svg",
+    "width": 440,
+    "height": 320
+  },
+  {
+    "question": 534,
+    "id": "mech-engineering-mechanics-112-534",
+    "page": 98,
+    "printedPage": 112,
+    "bbox": [
+      365.0,
+      351.0,
+      464.0,
+      412.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-112-534-explanation-1-9ee5c3c404.svg",
+    "width": 396,
+    "height": 246
+  },
+  {
+    "question": 536,
+    "id": "mech-engineering-mechanics-112-536",
+    "page": 99,
+    "printedPage": 113,
+    "bbox": [
+      91.0,
+      143.0,
+      272.0,
+      235.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-112-536-explanation-1-50510337ee.svg",
+    "width": 724,
+    "height": 368
+  },
+  {
+    "question": 537,
+    "id": "mech-engineering-mechanics-113-537",
+    "page": 99,
+    "printedPage": 113,
+    "bbox": [
+      143.0,
+      415.0,
+      211.0,
+      462.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-113-537-explanation-1-b286dfdc0a.svg",
+    "width": 272,
+    "height": 188
+  },
+  {
+    "question": 538,
+    "id": "mech-engineering-mechanics-113-538",
+    "page": 99,
+    "printedPage": 113,
+    "bbox": [
+      126.0,
+      627.0,
+      212.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-113-538-explanation-1-076c34d66d.svg",
+    "width": 344,
+    "height": 460
+  },
+  {
+    "question": 543,
+    "id": "mech-engineering-mechanics-114-543",
+    "page": 100,
+    "printedPage": 114,
+    "bbox": [
+      365.0,
+      103.0,
+      447.0,
+      194.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-114-543-explanation-1-4c1ef68210.svg",
+    "width": 328,
+    "height": 364
+  },
+  {
+    "question": 545,
+    "id": "mech-engineering-mechanics-114-545",
+    "page": 100,
+    "printedPage": 114,
+    "bbox": [
+      340.0,
+      533.0,
+      487.0,
+      646.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-114-545-explanation-1-6dfb409a9b.svg",
+    "width": 588,
+    "height": 452
+  },
+  {
+    "question": 548,
+    "id": "mech-engineering-mechanics-115-548",
+    "page": 101,
+    "printedPage": 115,
+    "bbox": [
+      146.0,
+      648.0,
+      215.0,
+      698.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-115-548-explanation-1-eb404f8139.svg",
+    "width": 276,
+    "height": 200
+  },
+  {
+    "question": 554,
+    "id": "mech-engineering-mechanics-116-554",
+    "page": 102,
+    "printedPage": 116,
+    "bbox": [
+      127.0,
+      188.0,
+      240.0,
+      269.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-116-554-explanation-1-3524fad1fc.svg",
+    "width": 452,
+    "height": 324
+  },
+  {
+    "question": 557,
+    "id": "mech-engineering-mechanics-116-557",
+    "page": 102,
+    "printedPage": 116,
+    "bbox": [
+      377.0,
+      381.0,
+      447.0,
+      483.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-116-557-explanation-1-06e87a2c02.svg",
+    "width": 280,
+    "height": 408
+  },
+  {
+    "question": 557,
+    "id": "mech-engineering-mechanics-116-557",
+    "page": 102,
+    "printedPage": 116,
+    "bbox": [
+      374.0,
+      511.0,
+      443.0,
+      615.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-116-557-explanation-2-125fef2d07.svg",
+    "width": 276,
+    "height": 416
+  },
+  {
+    "question": 558,
+    "id": "mech-engineering-mechanics-116-558",
+    "page": 103,
+    "printedPage": 117,
+    "bbox": [
+      128.0,
+      143.0,
+      239.0,
+      205.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-116-558-explanation-1-9742368214.svg",
+    "width": 444,
+    "height": 248
+  },
+  {
+    "question": 569,
+    "id": "mech-engineering-mechanics-118-569",
+    "page": 104,
+    "printedPage": 118,
+    "bbox": [
+      355.0,
+      390.0,
+      472.0,
+      489.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-118-569-explanation-1-97ca10f1d1.svg",
+    "width": 468,
+    "height": 396
+  },
+  {
+    "question": 582,
+    "id": "mech-engineering-mechanics-120-582",
+    "page": 106,
+    "printedPage": 120,
+    "bbox": [
+      365.0,
+      228.0,
+      465.0,
+      316.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-120-582-question-1-95b73f7e24.svg",
+    "width": 400,
+    "height": 352
+  },
+  {
+    "question": 590,
+    "id": "mech-engineering-mechanics-121-590",
+    "page": 107,
+    "printedPage": 121,
+    "bbox": [
+      349.0,
+      276.5,
+      470.0,
+      348.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-121-590-explanation-1-d6ccdfb909.svg",
+    "width": 484,
+    "height": 286
+  },
+  {
+    "question": 591,
+    "id": "mech-engineering-mechanics-121-591",
+    "page": 107,
+    "printedPage": 121,
+    "bbox": [
+      372.0,
+      461.0,
+      455.0,
+      523.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-121-591-explanation-1-beb0c05475.svg",
+    "width": 332,
+    "height": 248
+  },
+  {
+    "question": 596,
+    "id": "mech-engineering-mechanics-122-596",
+    "page": 108,
+    "printedPage": 122,
+    "bbox": [
+      350.0,
+      398.0,
+      484.0,
+      513.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-122-596-explanation-1-1f1b1e6ac2.svg",
+    "width": 536,
+    "height": 460
+  },
+  {
+    "question": 606,
+    "id": "mech-engineering-mechanics-124-606",
+    "page": 110,
+    "printedPage": 124,
+    "bbox": [
+      118.0,
+      488.5,
+      242.0,
+      562.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-124-606-explanation-1-e48be043b6.svg",
+    "width": 496,
+    "height": 294
+  },
+  {
+    "question": 614,
+    "id": "mech-engineering-mechanics-125-614",
+    "page": 111,
+    "printedPage": 125,
+    "bbox": [
+      132.0,
+      420.0,
+      232.0,
+      491.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-125-614-explanation-1-f10e62dd51.svg",
+    "width": 400,
+    "height": 284
+  },
+  {
+    "question": 626,
+    "id": "mech-engineering-mechanics-126-626",
+    "page": 112,
+    "printedPage": 126,
+    "bbox": [
+      325.0,
+      265.0,
+      474.0,
+      311.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-126-626-explanation-1-2115061e7f.svg",
+    "width": 596,
+    "height": 184
+  },
+  {
+    "question": 627,
+    "id": "mech-engineering-mechanics-126-627",
+    "page": 112,
+    "printedPage": 126,
+    "bbox": [
+      360.0,
+      358.0,
+      465.0,
+      422.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-126-627-question-1-cc1b5eb6d9.svg",
+    "width": 420,
+    "height": 256
+  },
+  {
+    "question": 627,
+    "id": "mech-engineering-mechanics-126-627",
+    "page": 112,
+    "printedPage": 126,
+    "bbox": [
+      369.0,
+      532.0,
+      459.0,
+      591.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-126-627-explanation-2-808d328923.svg",
+    "width": 360,
+    "height": 236
+  },
+  {
+    "question": 628,
+    "id": "mech-engineering-mechanics-127-628",
+    "page": 113,
+    "printedPage": 127,
+    "bbox": [
+      149.0,
+      183.0,
+      218.0,
+      278.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-127-628-explanation-1-87350f45f6.svg",
+    "width": 276,
+    "height": 380
+  },
+  {
+    "question": 642,
+    "id": "mech-engineering-mechanics-128-642",
+    "page": 114,
+    "printedPage": 128,
+    "bbox": [
+      370.0,
+      381.0,
+      455.0,
+      531.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-128-642-explanation-1-22c1321ef1.svg",
+    "width": 340,
+    "height": 600
+  },
+  {
+    "question": 643,
+    "id": "mech-engineering-mechanics-128-643",
+    "page": 114,
+    "printedPage": 128,
+    "bbox": [
+      357.0,
+      669.0,
+      465.0,
+      733.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-128-643-explanation-1-ef98577407.svg",
+    "width": 432,
+    "height": 256
+  },
+  {
+    "question": 643,
+    "id": "mech-engineering-mechanics-128-643",
+    "page": 115,
+    "printedPage": 129,
+    "bbox": [
+      136.0,
+      148.0,
+      226.0,
+      223.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-128-643-explanation-2-b20439755c.svg",
+    "width": 360,
+    "height": 300
+  },
+  {
+    "question": 643,
+    "id": "mech-engineering-mechanics-128-643",
+    "page": 115,
+    "printedPage": 129,
+    "bbox": [
+      127.0,
+      289.0,
+      240.0,
+      334.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-128-643-explanation-3-b48309f5af.svg",
+    "width": 452,
+    "height": 180
+  },
+  {
+    "question": 647,
+    "id": "mech-engineering-mechanics-129-647",
+    "page": 115,
+    "printedPage": 129,
+    "bbox": [
+      361.0,
+      229.0,
+      467.0,
+      326.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-129-647-explanation-1-a3420f44dc.svg",
+    "width": 424,
+    "height": 388
+  },
+  {
+    "question": 666,
+    "id": "mech-engineering-mechanics-131-666",
+    "page": 117,
+    "printedPage": 131,
+    "bbox": [
+      370.0,
+      334.0,
+      455.0,
+      435.5
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-131-666-explanation-1-0e5d7bcb9c.svg",
+    "width": 340,
+    "height": 406
+  },
+  {
+    "question": 684,
+    "id": "mech-engineering-mechanics-134-684",
+    "page": 120,
+    "printedPage": 134,
+    "bbox": [
+      104.0,
+      666.5,
+      262.0,
+      710.5
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-134-684-question-1-806f1d34a2.svg",
+    "width": 632,
+    "height": 176
+  },
+  {
+    "question": 689,
+    "id": "mech-engineering-mechanics-135-689",
+    "page": 121,
+    "printedPage": 135,
+    "bbox": [
+      132.0,
+      419.0,
+      233.0,
+      497.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-135-689-question-1-23564d5357.svg",
+    "width": 404,
+    "height": 312
+  },
+  {
+    "question": 689,
+    "id": "mech-engineering-mechanics-135-689",
+    "page": 121,
+    "printedPage": 135,
+    "bbox": [
+      128.0,
+      566.0,
+      243.0,
+      634.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-135-689-explanation-2-dc7ac00619.svg",
+    "width": 460,
+    "height": 272
+  },
+  {
+    "question": 695,
+    "id": "mech-engineering-mechanics-136-695",
+    "page": 122,
+    "printedPage": 136,
+    "bbox": [
+      70.0,
+      651.0,
+      245.0,
+      742.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-136-695-explanation-1-9afac4fce9.svg",
+    "width": 700,
+    "height": 364
+  },
+  {
+    "question": 696,
+    "id": "mech-engineering-mechanics-136-696",
+    "page": 122,
+    "printedPage": 136,
+    "bbox": [
+      350.0,
+      231.0,
+      475.0,
+      328.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-136-696-explanation-1-678fdb9dad.svg",
+    "width": 500,
+    "height": 388
+  },
+  {
+    "question": 698,
+    "id": "mech-engineering-mechanics-136-698",
+    "page": 123,
+    "printedPage": 137,
+    "bbox": [
+      141.0,
+      149.0,
+      222.0,
+      220.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-136-698-explanation-1-78416014ac.svg",
+    "width": 324,
+    "height": 284
+  },
+  {
+    "question": 700,
+    "id": "mech-engineering-mechanics-137-700",
+    "page": 123,
+    "printedPage": 137,
+    "bbox": [
+      357.0,
+      250.0,
+      471.0,
+      360.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-137-700-explanation-1-f4dbcce181.svg",
+    "width": 456,
+    "height": 440
+  },
+  {
+    "question": 704,
+    "id": "mech-engineering-mechanics-138-704",
+    "page": 124,
+    "printedPage": 138,
+    "bbox": [
+      103.0,
+      472.0,
+      207.0,
+      524.75
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-138-704-explanation-1-ff9031de9e.svg",
+    "width": 416,
+    "height": 211
+  },
+  {
+    "question": 704,
+    "id": "mech-engineering-mechanics-138-704",
+    "page": 124,
+    "printedPage": 138,
+    "bbox": [
+      103.0,
+      534.0,
+      207.0,
+      563.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-138-704-explanation-2-7c793977cc.svg",
+    "width": 416,
+    "height": 116
+  },
+  {
+    "question": 707,
+    "id": "mech-engineering-mechanics-138-707",
+    "page": 125,
+    "printedPage": 139,
+    "bbox": [
+      131.0,
+      94.0,
+      233.0,
+      126.0
+    ],
+    "placement": "question",
+    "file": "mech-engineering-mechanics-138-707-question-1-fa7082a064.svg",
+    "width": 408,
+    "height": 128
+  },
+  {
+    "question": 711,
+    "id": "mech-engineering-mechanics-139-711",
+    "page": 125,
+    "printedPage": 139,
+    "bbox": [
+      336.0,
+      544.0,
+      385.0,
+      606.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-139-711-explanation-1-82fd4bcce9.svg",
+    "width": 196,
+    "height": 248
+  },
+  {
+    "question": 716,
+    "id": "mech-engineering-mechanics-140-716",
+    "page": 126,
+    "printedPage": 140,
+    "bbox": [
+      316.0,
+      108.0,
+      512.0,
+      161.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-140-716-explanation-1-343e2755ef.svg",
+    "width": 784,
+    "height": 212
+  },
+  {
+    "question": 717,
+    "id": "mech-engineering-mechanics-140-717",
+    "page": 126,
+    "printedPage": 140,
+    "bbox": [
+      359.0,
+      464.0,
+      469.0,
+      535.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-140-717-explanation-1-6e0058fa38.svg",
+    "width": 440,
+    "height": 284
+  },
+  {
+    "question": 718,
+    "id": "mech-engineering-mechanics-140-718",
+    "page": 127,
+    "printedPage": 141,
+    "bbox": [
+      103.0,
+      140.0,
+      262.0,
+      256.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-140-718-explanation-1-b20eac7f85.svg",
+    "width": 636,
+    "height": 464
+  },
+  {
+    "question": 721,
+    "id": "mech-engineering-mechanics-141-721",
+    "page": 127,
+    "printedPage": 141,
+    "bbox": [
+      351.0,
+      357.0,
+      502.0,
+      440.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-141-721-explanation-1-e2b9a8839a.svg",
+    "width": 604,
+    "height": 332
+  },
+  {
+    "question": 734,
+    "id": "mech-engineering-mechanics-143-734",
+    "page": 129,
+    "printedPage": 143,
+    "bbox": [
+      387.0,
+      282.0,
+      439.0,
+      342.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-143-734-explanation-1-18fd6e4d0e.svg",
+    "width": 208,
+    "height": 240
+  },
+  {
+    "question": 748,
+    "id": "mech-engineering-mechanics-145-748",
+    "page": 131,
+    "printedPage": 145,
+    "bbox": [
+      369.0,
+      190.0,
+      458.0,
+      260.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-145-748-explanation-1-254257c2d2.svg",
+    "width": 356,
+    "height": 280
+  },
+  {
+    "question": 752,
+    "id": "mech-engineering-mechanics-146-752",
+    "page": 132,
+    "printedPage": 146,
+    "bbox": [
+      96.0,
+      422.75,
+      270.0,
+      541.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-146-752-explanation-1-17584b192a.svg",
+    "width": 696,
+    "height": 473
+  },
+  {
+    "question": 753,
+    "id": "mech-engineering-mechanics-146-753",
+    "page": 132,
+    "printedPage": 146,
+    "bbox": [
+      350.0,
+      104.0,
+      478.0,
+      172.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-146-753-explanation-1-095f652ab2.svg",
+    "width": 512,
+    "height": 272
+  },
+  {
+    "question": 754,
+    "id": "mech-engineering-mechanics-146-754",
+    "page": 132,
+    "printedPage": 146,
+    "bbox": [
+      374.0,
+      423.5,
+      453.0,
+      498.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-146-754-explanation-1-9a42dda972.svg",
+    "width": 316,
+    "height": 298
+  },
+  {
+    "question": 758,
+    "id": "mech-engineering-mechanics-147-758",
+    "page": 133,
+    "printedPage": 147,
+    "bbox": [
+      116.0,
+      641.0,
+      246.0,
+      710.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-147-758-explanation-1-0dd8cd81dc.svg",
+    "width": 520,
+    "height": 276
+  },
+  {
+    "question": 763,
+    "id": "mech-engineering-mechanics-147-763",
+    "page": 133,
+    "printedPage": 147,
+    "bbox": [
+      365.0,
+      615.0,
+      463.0,
+      719.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-147-763-explanation-1-abf6ba70ab.svg",
+    "width": 392,
+    "height": 416
+  },
+  {
+    "question": 764,
+    "id": "mech-engineering-mechanics-148-764",
+    "page": 134,
+    "printedPage": 148,
+    "bbox": [
+      117.0,
+      514.0,
+      244.0,
+      618.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-148-764-explanation-1-efd5ece6fe.svg",
+    "width": 508,
+    "height": 416
+  },
+  {
+    "question": 766,
+    "id": "mech-engineering-mechanics-148-766",
+    "page": 134,
+    "printedPage": 148,
+    "bbox": [
+      371.0,
+      373.0,
+      458.0,
+      444.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-148-766-explanation-1-7971ed6005.svg",
+    "width": 348,
+    "height": 284
+  },
+  {
+    "question": 771,
+    "id": "mech-engineering-mechanics-149-771",
+    "page": 135,
+    "printedPage": 149,
+    "bbox": [
+      376.0,
+      210.0,
+      452.0,
+      267.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-149-771-explanation-1-5d29361e2a.svg",
+    "width": 304,
+    "height": 228
+  },
+  {
+    "question": 771,
+    "id": "mech-engineering-mechanics-149-771",
+    "page": 135,
+    "printedPage": 149,
+    "bbox": [
+      345.0,
+      316.5,
+      484.0,
+      407.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-149-771-explanation-2-e74c9590df.svg",
+    "width": 556,
+    "height": 362
+  },
+  {
+    "question": 772,
+    "id": "mech-engineering-mechanics-149-772",
+    "page": 135,
+    "printedPage": 149,
+    "bbox": [
+      357.0,
+      552.0,
+      475.0,
+      592.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-149-772-explanation-1-47873e266c.svg",
+    "width": 472,
+    "height": 160
+  },
+  {
+    "question": 774,
+    "id": "mech-engineering-mechanics-150-774",
+    "page": 136,
+    "printedPage": 150,
+    "bbox": [
+      110.0,
+      311.0,
+      252.0,
+      405.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-150-774-explanation-1-686ee27c68.svg",
+    "width": 568,
+    "height": 376
+  },
+  {
+    "question": 780,
+    "id": "mech-engineering-mechanics-151-780",
+    "page": 137,
+    "printedPage": 151,
+    "bbox": [
+      130.0,
+      593.0,
+      243.0,
+      699.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-151-780-explanation-1-01f4ff971e.svg",
+    "width": 452,
+    "height": 424
+  },
+  {
+    "question": 781,
+    "id": "mech-engineering-mechanics-151-781",
+    "page": 137,
+    "printedPage": 151,
+    "bbox": [
+      352.0,
+      162.0,
+      474.0,
+      253.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-151-781-explanation-1-949b3fbfc9.svg",
+    "width": 488,
+    "height": 364
+  },
+  {
+    "question": 784,
+    "id": "mech-engineering-mechanics-152-784",
+    "page": 138,
+    "printedPage": 152,
+    "bbox": [
+      143.0,
+      291.0,
+      224.0,
+      368.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-152-784-explanation-1-6b80ef57e1.svg",
+    "width": 324,
+    "height": 308
+  },
+  {
+    "question": 789,
+    "id": "mech-engineering-mechanics-153-789",
+    "page": 139,
+    "printedPage": 153,
+    "bbox": [
+      132.0,
+      264.25,
+      233.0,
+      321.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-153-789-explanation-1-5c2ecc4e69.svg",
+    "width": 404,
+    "height": 227
+  },
+  {
+    "question": 790,
+    "id": "mech-engineering-mechanics-153-790",
+    "page": 139,
+    "printedPage": 153,
+    "bbox": [
+      118.0,
+      492.0,
+      257.0,
+      573.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-153-790-explanation-1-02e332e398.svg",
+    "width": 556,
+    "height": 324
+  },
+  {
+    "question": 791,
+    "id": "mech-engineering-mechanics-153-791",
+    "page": 139,
+    "printedPage": 153,
+    "bbox": [
+      343.0,
+      240.0,
+      490.0,
+      324.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-153-791-explanation-1-adecb15d4e.svg",
+    "width": 588,
+    "height": 336
+  },
+  {
+    "question": 793,
+    "id": "mech-engineering-mechanics-154-793",
+    "page": 140,
+    "printedPage": 154,
+    "bbox": [
+      106.0,
+      243.0,
+      173.0,
+      286.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-154-793-explanation-1-63d47f1894.svg",
+    "width": 268,
+    "height": 172
+  },
+  {
+    "question": 795,
+    "id": "mech-engineering-mechanics-154-795",
+    "page": 140,
+    "printedPage": 154,
+    "bbox": [
+      341.0,
+      266.0,
+      437.0,
+      331.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-154-795-explanation-1-50d019f71b.svg",
+    "width": 384,
+    "height": 260
+  },
+  {
+    "question": 797,
+    "id": "mech-engineering-mechanics-155-797",
+    "page": 141,
+    "printedPage": 155,
+    "bbox": [
+      117.0,
+      266.0,
+      249.0,
+      351.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-155-797-explanation-1-f12674cda3.svg",
+    "width": 528,
+    "height": 340
+  },
+  {
+    "question": 799,
+    "id": "mech-engineering-mechanics-155-799",
+    "page": 141,
+    "printedPage": 155,
+    "bbox": [
+      334.0,
+      95.0,
+      507.0,
+      174.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-155-799-explanation-1-cd9d9ab4d7.svg",
+    "width": 692,
+    "height": 316
+  },
+  {
+    "question": 802,
+    "id": "mech-engineering-mechanics-155-802",
+    "page": 141,
+    "printedPage": 155,
+    "bbox": [
+      309.0,
+      653.0,
+      403.0,
+      741.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-155-802-explanation-1-3c37839f51.svg",
+    "width": 376,
+    "height": 352
+  },
+  {
+    "question": 802,
+    "id": "mech-engineering-mechanics-155-802",
+    "page": 141,
+    "printedPage": 155,
+    "bbox": [
+      416.0,
+      645.0,
+      516.0,
+      736.0
+    ],
+    "placement": "explanation",
+    "file": "mech-engineering-mechanics-155-802-explanation-2-368eac5237.svg",
+    "width": 400,
+    "height": 364
+  }
+]

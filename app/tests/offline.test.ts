@@ -6,7 +6,7 @@ import { renderServiceWorker } from "../scripts/service-worker.mjs";
 
 const scope = "https://example.test/upsc/", current = "upsc-static-test", runtime = "upsc-assets-v2";
 const core = ["./index.html", "./assets/app-hash.js", "./wallpapers/forest.webp"];
-const assets = [...core.slice(1), "./assets/questions-bank-hash.js", "./paper-figures/figure.svg"];
+const assets = [...core.slice(1), "./assets/questions-bank-hash.js", "./paper-figures/figure.svg", "./mechanical/catalog.json", "./mechanical/engineering-mechanics-abcdef123456.json", "./mechanical/figures/q1-abc123.svg"];
 function worker() {
   const storage = new Map<string, Map<string, Response>>(), listeners: Record<string, (event: any) => void> = {};
   const fetched: string[] = [], installed: string[] = [];
@@ -50,10 +50,11 @@ test("offline build follows static dependencies and keeps question libraries out
     "index.html": { file: "assets/app.js", isEntry: true, css: ["assets/app.css"], imports: ["shared"], dynamicImports: ["src/pages/PYQs.tsx"] },
     shared: { file: "assets/shared.js", imports: ["index.html"] },
     "src/pages/Books.tsx": { file: "assets/books.js", isDynamicEntry: true, imports: ["shared"] },
-    "src/pages/PYQs.tsx": { file: "assets/pyqs.js", isDynamicEntry: true, imports: ["questions"] },
+    "src/pages/PYQs.tsx": { file: "assets/pyqs.js", isDynamicEntry: true, imports: ["shared"], dynamicImports: ["src/pages/PYQBank.tsx"] },
+    "src/pages/PYQBank.tsx": { file: "assets/pyq-bank.js", isDynamicEntry: true, imports: ["questions"] },
     questions: { file: "assets/questions-bank-hash.js" },
   };
-  assert.deepEqual(coreChunks(manifest), ["./assets/app.css", "./assets/app.js", "./assets/books.js", "./assets/shared.js"]);
+  assert.deepEqual(coreChunks(manifest), ["./assets/app.css", "./assets/app.js", "./assets/books.js", "./assets/pyqs.js", "./assets/shared.js"]);
   assert.throws(() => coreChunks({ ...manifest, "src/pages/Books.tsx": { ...manifest["src/pages/Books.tsx"], imports: ["questions"] } }), /eagerly imports/);
   const withMockChunks = coreChunks({ ...manifest,
     "_MockLab-shared.js": { file: "assets/MockLab.js", name: "MockLab", isDynamicEntry: true, imports: ["shared"], dynamicImports: ["src/components/mock/MockCharts.tsx"] },
@@ -81,6 +82,18 @@ test("opened question banks reuse the cache and remain available offline", async
   assert.equal(w.fetched.length, 1, "A cached immutable asset must not start another network request");
   const unviewed = await w.request("paper-figures/figure.svg");
   assert.equal(unviewed!.status, 503);
+});
+
+test("Mechanical content caches on demand while its catalog refreshes and falls back offline", async () => {
+  const w = worker(); await w.lifecycle("install");
+  assert.equal(w.installed.some(url => url.includes("/mechanical/")), false);
+  const catalog = "mechanical/catalog.json", data = "mechanical/engineering-mechanics-abcdef123456.json", diagram = "mechanical/figures/q1-abc123.svg";
+  for (const path of [catalog, data, diagram]) assert.equal((await w.request(path))!.status, 200);
+  assert.equal(w.fetched.length, 3);
+  await w.request(catalog); assert.equal(w.fetched.length, 4, "Catalog must check for a new fingerprint online");
+  await w.request(data); await w.request(diagram); assert.equal(w.fetched.length, 4);
+  await w.lifecycle("activate"); w.offline(true);
+  for (const path of [catalog, data, diagram]) assert.match(await (await w.request(path))!.text(), /^network:/);
 });
 
 test("worker upgrades preserve current question assets and unrelated caches", async () => {

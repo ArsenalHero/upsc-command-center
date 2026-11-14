@@ -1,0 +1,1541 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-123-601",
+      "status": "verified",
+      "answer": "c",
+      "question": "If a particle is in static equilibrium, then the work done by the system of forces acting on that particle is:",
+      "options": {
+        "a": "Negative",
+        "b": "Infinity",
+        "c": "Zero",
+        "d": "Positive"
+      },
+      "explanation": "Static equilibrium is a state in which the net force and net torque on the system are zero. The linear and angular momenta are consequently constant; for a particle in static equilibrium it remains at rest. Since its actual displacement is zero, the work done by the acting force system is zero.",
+      "transcriptionReviewed": true,
+      "note": "Keyc verified. The full printed equilibrium/momentum explanation is retained and connected explicitly to zero displacement.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-123-602",
+      "status": "verified",
+      "answer": "d",
+      "question": "Which conversion is incorrect?",
+      "options": {
+        "a": "1 kWh=3.6×10⁶ N·m",
+        "b": "1 N·m≈0.238×10⁻³ kcal",
+        "c": "1 hp·h≈0.746 kWh",
+        "d": "1 kcal=4.1868 N·m"
+      },
+      "explanation": "The source lists: (i)1 kWh=3.6×10⁶ N·m; (ii)1 N·m≈0.238×10⁻³ kcal; (iii)1 hp·h≈0.746 kWh; (iv)1 cal_IT=4.1868 N·m. Thus option(d), 1 kcal=4.1868 N·m, is incorrect: using the source’s International Table calorie, 1 kcal_IT=4186.8 J. The thermochemical calorie is a different convention, 4.184 J per calorie.",
+      "transcriptionReviewed": true,
+      "note": "Factor 1000 error in choice(d). Other choices are conventional rounded conversions; NIST distinguishes IT from thermochemical calories.",
+      "references": [
+        {
+          "title": "NIST Guide to the SI",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+          "section": "AppendixB.8:IT calorie,kilocalorie,kilowatthour and horsepower conversions"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-123-603",
+      "status": "verified",
+      "answer": "d",
+      "question": "A body of mass 20 kg is lifted through 4 m. How much work is done?(Takeg=9.81 m/s².)",
+      "options": {
+        "a": "648 J",
+        "b": "684 J",
+        "c": "748 J",
+        "d": "784 J",
+        "e": "848 J"
+      },
+      "explanation": "Work required to lift mass 20 kg through 4 m is W=force×distance=mg×4=20×9.81×4=784.80 N·m=784.8 J. The printed solution then writes 784 J; this is the closest listed choice(d), rather than the exact calculated value.",
+      "transcriptionReviewed": true,
+      "note": "Independently calculated 784.8 J; retained closest option d and explicitly explained printed truncation.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-604",
+      "status": "verified",
+      "answer": "d",
+      "question": "A man weighing 900 N climbs a staircase of 15 m height in 30 seconds. How much power is consumed?",
+      "options": {
+        "a": "150 W",
+        "b": "250 W",
+        "c": "350 W",
+        "d": "450 W",
+        "e": "2500 W"
+      },
+      "explanation": "Given W=900 N, h=15 m, t=30 s. Power P is work divided by time: P=(Wh)/t=(900×15)/30=450 W.",
+      "transcriptionReviewed": true,
+      "note": "Independent average-power calculation 450 W.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-605",
+      "status": "verified",
+      "answer": "d",
+      "question": "The net torque on a body of moment of inertia I and angular acceleration α is",
+      "options": {
+        "a": "2 Iα",
+        "b": "2²Iα",
+        "c": "2³Iα",
+        "d": "Iα"
+      },
+      "explanation": "T=Iα.",
+      "transcriptionReviewed": true,
+      "note": "Full formula and answer recovered visually from missed Ans boundary. Assumes the stated fixed/principal-axis rotational relation.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s second law for rotation;τ=Iα and tangential accelerationrα"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-606",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 500 N block is moved upward 1.6 m along a plane inclined 45° to horizontal. What is the work done by the applied force?(Friction coefficient μ=0.25.)",
+      "options": {
+        "a": "1000 N·m",
+        "b": "100 N·m",
+        "c": "500√2 N·m",
+        "d": "500 N·m"
+      },
+      "explanation": "For upward motion at constant speed, the required force along the plane is F=500 sin 45°+μR, with R=500 cos 45°. Thus F=500/√2+0.25×500/√2=(500/√2)×1.25. Moving 1.6 m up the plane requires W=Fd=(500/√2)×1.25×1.6=500√2 N·m.",
+      "transcriptionReviewed": true,
+      "note": "Applied-force work, including friction, verified 707.107 J. Standard intended assumption is no change of kinetic energy.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ],
+      "figures": [
+        {
+          "page": 110,
+          "bbox": [
+            118,
+            488.5,
+            242,
+            562
+          ],
+          "placement": "explanation",
+          "alt": "500 N block on 45° incline, uphill motion, normal 500 cos 45°, downhill gravity 500 sin 45° and friction μR."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-607",
+      "status": "verified",
+      "answer": "d",
+      "question": "If m is the mass of the body and g is the acceleration due to gravity then the gravitational force is given by:",
+      "options": {
+        "a": "mg³",
+        "b": "mg²",
+        "c": "m/g",
+        "d": "mg"
+      },
+      "explanation": "Gravitational force=mass×acceleration due to gravity=m×g.",
+      "transcriptionReviewed": true,
+      "note": "OCR had duplicated optionsb, d; original powers visually restored.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-608",
+      "status": "verified",
+      "answer": "d",
+      "question": "A ball is thrown up. The sum of kinetic and potential energies will be maximum at",
+      "options": {
+        "a": "the ground",
+        "b": "the highest point",
+        "c": "the centre",
+        "d": "all the points"
+      },
+      "explanation": "The sum of kinetic and gravitational potential energy is the same at all points: ½mv²+mgh=constant. Thus the source’s “maximum” value occurs at all points equally. This assumes only conservative gravity acts and air resistance is neglected.",
+      "transcriptionReviewed": true,
+      "note": "Keyd verified for the usual ideal projectile model; the conservation condition is explicit.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Projectile motion;constant horizontal velocity and apex"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-609",
+      "status": "disputed",
+      "answer": null,
+      "question": "The potential energy an elevator losses in coming down from the top of a building to stop at the ground floor is",
+      "options": {
+        "a": "lost to the driving motors",
+        "b": "converted into heat",
+        "c": "lost in friction of the moving surfaces",
+        "d": "used up in lifting the counter poise weight"
+      },
+      "explanation": "In a counterweighted elevator, the descending car can transfer gravitational potential energy into raising the counterweight. In general the balance also includes motor electrical work or regeneration, friction and braking heat. The car and counterweight masses and drive/braking conditions are not specified, so it is not generally true that the car’s entire lost potential energy is used solely to lift the counterweight. Option(d) is a possible contribution under an idealized balance, not a complete unique general answer.",
+      "transcriptionReviewed": true,
+      "note": "Source makes an unconditional claim about an unspecified elevator drive/counterweight balance; exclude from grading.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ],
+      "sourceExplanation": "The potential energy an elevator losses in coming down from the top of a building to stop at the ground floor is used up in lifting the counter poise weight."
+    },
+    {
+      "id": "mech-engineering-mechanics-124-610",
+      "status": "corrected",
+      "answer": "b",
+      "question": "A truck weighing 150 kN and travelling at 2 m/s strikes a buffer spring that compresses 1.25 cm per 10 kN. What is its maximum compression?",
+      "options": {
+        "a": "26.6 cm",
+        "b": "27.6 cm",
+        "c": "28.6 cm",
+        "d": "30.6 cm"
+      },
+      "explanation": "Spring stiffness k=10000/0.0125=800000 N/m. Truck mass m=150000/9.81 kg and speed v=2 m/s. At maximum compression in the lossless model, ½mv²=½kx², so x=√(mv²/k)=√[(150000/9.81)×4/800000]=0.2765006 m=27.65 cm. Closest listed answer(b)is 27.6 cm. Spring potential energy is positive for either extension or compression; the negative sign belongs to spring work during compression, not its stored energy.",
+      "transcriptionReviewed": true,
+      "note": "Corrected printed negative spring-energy sign; source’s later positive numerical equality and final compression are otherwise consistent.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+          "section": "8.1 Gravitational and Hookean elastic potential energies;U_s=½kx²"
+        }
+      ],
+      "sourceExplanation": "By using conservation of mechanical energy, ½mv²=−½kx²…(i).(−Ve→compression of spring).(150×1000×4)/9.81=(10×1000×x²)/(1.25×10⁻²). x=27.65 cm."
+    },
+    {
+      "id": "mech-engineering-mechanics-124-611",
+      "status": "verified",
+      "answer": "b",
+      "question": "A body is pulled through a distance of 15 m along a level track. The force applied is 400 N, acting at an angle of 60° to the direction of motion. Then the work done is",
+      "options": {
+        "a": "13.33 N-m",
+        "b": "3000 N-m",
+        "c": "5196.15 N-m",
+        "d": "26.66 N-m"
+      },
+      "explanation": "Given distance 15 m, applied force 400 N and angle 60°. Work W=Fd cos 60°=400×15×cos 60°=3000 N·m.",
+      "transcriptionReviewed": true,
+      "note": "Constant-force dot product independently verified.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-124-612",
+      "status": "verified",
+      "answer": "d",
+      "question": "A body is moving with a velocity 1 m/s and a force F is needed to stop it within a certain distance. If the speed of the body becomes three times, the force needed to stop it within the same distance would be",
+      "options": {
+        "a": "1.5 F",
+        "b": "3.0 F",
+        "c": "6.0 F",
+        "d": "9.0 F"
+      },
+      "explanation": "For stopping distance x, the initial kinetic energy equals the magnitude of stopping work. At 1 m/s, ½m(1)²=F₁x, so m/2=F₁x…(i). At 3 m/s, ½m(3)²=F₂x…(ii). Dividing(ii) by(i)gives F₂=9 F₁.",
+      "transcriptionReviewed": true,
+      "note": "Full explanation continued at printed p 125; all equations restored. Constant/average stopping force scales withv² for fixed distance.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-125-613",
+      "status": "disputed",
+      "answer": null,
+      "question": "When a body is thrown up at an angle of 45° with a velocity of 100 m/sec, it describes a parabola. Its velocity on point of return down will be",
+      "options": {
+        "a": "Zero",
+        "b": "50 m/s",
+        "c": "100/√2 m/s",
+        "d": "100√2 m/s"
+      },
+      "explanation": "For an ideal projectile launched at 100 m/s and 45°, at the apex the vertical component is zero and horizontal velocity remains 100 cos 45°=100/√2 m/s, option(c). When it returns to the launch elevation its speed is 100 m/s with a downward vertical component, and that speed is not listed. “Point of return down” does not identify which of these positions is meant. The printed explanation chooses the apex without defining it in the question, so leave the ambiguous item ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Complete source apex calculation retained; stem can instead mean return to launch level.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Projectile motion;constant horizontal velocity and apex"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ],
+      "sourceExplanation": "The velocity on point of return will be the velocity at the maximum height but at the highest point only the constant horizontal velocity(u cos θ)=100 cos 45°=100/√2 m/s."
+    },
+    {
+      "id": "mech-engineering-mechanics-125-614",
+      "status": "corrected",
+      "answer": "b",
+      "question": "A thin circular ring of mass 100 kg and radius 2 m resting on a smooth surface is subjected to a sudden application of a tangential force of 300 N at a point on its periphery. The angular acceleration of the ring will be",
+      "options": {
+        "a": "1.0 rad/s²",
+        "b": "1.5 rad/s²",
+        "c": "2.0 rad/s²",
+        "d": "2.5 rad/s²"
+      },
+      "explanation": "Given F=300 N, m=100 kg, r=2 m. A thin ring has central inertia I=mr². Torque about its mass centre isτ=Fr, so α=τ/I=F/(mr)=300/(100×2)=1.5 rad/s². The centre’s linear acceleration is F/m=3 m/s². The relation a_t=r α concerns tangential LINEAR acceleration due to rotation, not angular acceleration itself. For this ring, r α also equals 3 m/s².",
+      "transcriptionReviewed": true,
+      "note": "Answerb correct. Replaced source’s dimensionally incorrect “angular acceleration(a)=r α” with a valid torque/inertia derivation.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s second law for rotation;τ=Iα and tangential accelerationrα"
+        }
+      ],
+      "sourceExplanation": "a=F/m. Given F=300 N, m=100 kg, r=2 m. Angular Acceleration(a)=r α. By Newton’s second law F=ma; F=mr α; 300=100×2×α; α=1.5 rad/s².",
+      "figures": [
+        {
+          "page": 111,
+          "bbox": [
+            132,
+            420,
+            232,
+            491
+          ],
+          "placement": "explanation",
+          "alt": "Thin circular ring with tangential forceF at radiusr and printed centre-translation labela=F/m."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-125-615",
+      "status": "disputed",
+      "answer": null,
+      "question": "A train crosses a tunnel in 30 seconds time. The speed of the train at entry and at exit from the tunnel are 36 and 54 km/hour respectively. If acceleration remains constant, the length of the tunnel is",
+      "options": {
+        "a": "350 m",
+        "b": "360 m",
+        "c": "375 m",
+        "d": "400 m"
+      },
+      "explanation": "Convert entry speed u=36×5/18=10 m/s and exit speed v=54×5/18=15 m/s. For constant acceleration the displacement in 30 s is[(u+v)/2]t=12.5×30=375 m. If the train is a point, or the interval measures its front entering to its front leaving, the tunnel length is 375 m, choice(c). If “train crosses” means its rear clears the exit after its front enters, 375 m is tunnel length plus train length; the train length is missing. The printed derivation incorrectly adds ut and vt to get 750 m, then invents equal train and tunnel lengths to divide by 2. That is not justified by the stem.",
+      "transcriptionReviewed": true,
+      "note": "375 m is the particle/front-crossing answer; full finite-train crossing needs train length. Source also doubles the kinematic distance and invents an equality.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        }
+      ],
+      "sourceExplanation": "Given time t=30 s. Distance at entry of tunnel: s₁=36×(5/18)×30=300 m. Distance at exit of tunnel: s₂=54×(5/18)×30=15×30=450 m. Total distance covered by train=(Entry+Exit)of tunnel=450+300=750 m. So, here length of train and length of tunnel will be equal. Train+tunnel=750; 2 s=750(s=s₁=s₂); s=750/2=375 m."
+    },
+    {
+      "id": "mech-engineering-mechanics-125-616",
+      "status": "verified",
+      "answer": "d",
+      "question": "If T₁ and T₂ are the initial and final tensions in an elastic string, and x₁ and x₂ their corresponding extensions, the work done is",
+      "options": {
+        "a": "(T₂+T₁)(x₂−x₁)",
+        "b": "(T₂−T₁)(x₂+x₁)",
+        "c": "(T₂−T₁)(x₂+x₁)/2",
+        "d": "(T₂+T₁)(x₂−x₁)/2"
+      },
+      "explanation": "For a Hookean elastic string, tension varies linearly with extension. Work from x₁ to x₂ is the trapezoidal force–extension area: W=(T₁+T₂)(x₂−x₁)/2.",
+      "transcriptionReviewed": true,
+      "note": "The complete printed explanation is the formula alone; the Hookean condition and integral justification are explicit.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+          "section": "8.1 Gravitational and Hookean elastic potential energies;U_s=½kx²"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-125-617",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A motor boat whose speed in still water is 15 km/hr goes 30 km downstream and comes back in a total time of four and half hours. The stream has a speed of",
+      "options": {
+        "a": "3 km/hr",
+        "b": "4 km/hr",
+        "c": "5 km/hr",
+        "d": "6 km/hr"
+      },
+      "explanation": "Data: boat speed in still water S_B=15 km/h, total time T=4.5 h. Let x=S_s be stream speed. If S_D, S_U are downstream/upstream speeds, T=t₁+t₂=30/S_D+30/S_U=30/(S_B+S_s)+30/(S_B−S_s)=30/(15+x)+30/(15−x). Cross-multiplication gives 450−30 x+450+30 x=4.5(15+x)(15−x). Thus 900=4.5(15²−x²), 200=225−x², x²=25, and x=5 km/h.",
+      "transcriptionReviewed": true,
+      "note": "Corrected the second cross-product term’s sign from−30 x to+30 x. Keyc and final result 5 km/h retained.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        }
+      ],
+      "sourceExplanation": "Data given: speed of boat=15 km/hr, total time taken=4.5 hr. Let x be the speed(T)of stream.(T)=t₁+t₂. T=30/S_D+30/S_U, where S_D=speed of downstream, S_U=speed of upstream. T=30/(S_B+S_s)+30/(S_B−S_s).4.5=30/(15+x)+30/(15−x).450−30 x+450−30 x=4.5(15+x)(15−x).900=4.5(15²−x²).200=225−x². x²=25. x=5 km/hr."
+    },
+    {
+      "id": "mech-engineering-mechanics-125-618",
+      "status": "disputed",
+      "answer": null,
+      "question": "Identify the pair which has same dimensions :",
+      "options": {
+        "a": "Force and power",
+        "b": "Energy and work",
+        "c": "Momentum and energy",
+        "d": "Impulse and momentum"
+      },
+      "explanation": "Both energy and work have dimensions ML²T⁻², so(b)is correct. Both impulse and momentum have dimensions MLT⁻¹, so(d)is also correct. Force and power differ, and momentum and energy differ. The source prints only “Energy and work, ”but the question has two correct choices.",
+      "transcriptionReviewed": true,
+      "note": "Multiple valid optionsb, d; exclude single-answer grading.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "NIST Guide to the SI",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+          "section": "AppendixB.8:IT calorie,kilocalorie,kilowatthour and horsepower conversions"
+        }
+      ],
+      "sourceExplanation": "Energy and work."
+    },
+    {
+      "id": "mech-engineering-mechanics-125-619",
+      "status": "disputed",
+      "answer": null,
+      "question": "0.01 kilowatt is equal to",
+      "options": {
+        "a": "10.01 J/s",
+        "b": "1.0 J/s",
+        "c": "0.10 J/s",
+        "d": "0.01 J/s"
+      },
+      "explanation": "1 kW=1000 W and 1 W=1 J/s. Hence 0.01 kW=10 W=10 J/s exactly. Choice(a)and the printed explanation say 10.01 J/s, not 10.0 J/s. No option gives 10 J/s; do not silently accept the typo as exact.",
+      "transcriptionReviewed": true,
+      "note": "Original scan confirms 10.01; exact answer 10 is missing.",
+      "references": [
+        {
+          "title": "NIST Guide to the SI",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+          "section": "AppendixB.8:IT calorie,kilocalorie,kilowatthour and horsepower conversions"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ],
+      "sourceExplanation": "10.01 J/s."
+    },
+    {
+      "id": "mech-engineering-mechanics-125-620",
+      "status": "disputed",
+      "answer": null,
+      "question": "The total energy possessed by moving bodies",
+      "options": {
+        "a": "remain constant at every instant",
+        "b": "varies from time to time",
+        "c": "is maximum at the start",
+        "d": "is minimum before stopping"
+      },
+      "explanation": "The energy of an isolated system is conserved, but the mechanical energy of unspecified moving bodies need not stay constant. External work, friction or energy exchange can change it. Without specifying an isolated/conservative system, the stem cannot support an unconditional(a), nor a universal(b)variation rule. The source’s conservation claim needs conditions; leave ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Missing system boundary and conservation conditions.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ],
+      "sourceExplanation": "Remain constant at every instant."
+    },
+    {
+      "id": "mech-engineering-mechanics-126-621",
+      "status": "verified",
+      "answer": "b",
+      "question": "Inertia force of a body is expressed as",
+      "options": {
+        "a": "product of mass of the body and the acceleration of its centre of gravity in the direction of acceleration",
+        "b": "product of mass of the body and the acceleration of its centre of gravity acting in an opposite direction of acceleration",
+        "c": "product of linear acceleration of the body and its mass moment of inertia in the direction of acceleration of its centre of gravity",
+        "d": "none of the above"
+      },
+      "explanation": "The inertia force in d’Alembert’s formulation is the product of mass and centre-of-mass acceleration acting opposite to that acceleration: F_inertia=−ma_G.",
+      "transcriptionReviewed": true,
+      "note": "Full printed definition retained; this is the inertial-force device, not a new physical interaction.",
+      "references": [
+        {
+          "title": "IIT Bombay,Prof.P.Seshu,ME316",
+          "url": "https://www.cdeep.iitb.ac.in/slides/S23/ME316/ME316-M12.pdf",
+          "section": "Analysis of Forces in Mechanisms/Machines;d’Alembert inertia force"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-126-622",
+      "status": "verified",
+      "answer": "c",
+      "question": "Which of the following is a scalar quantity?",
+      "options": {
+        "a": "Force",
+        "b": "Displacement",
+        "c": "Speed",
+        "d": "Velocity"
+      },
+      "explanation": "Speed.",
+      "transcriptionReviewed": true,
+      "note": "Full answer recovered from missed Ans boundary. Speed is scalar; the other listed quantities are vectors.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-126-623",
+      "status": "verified",
+      "answer": "b",
+      "question": "A bullet of mass 0.03 kg moving with a speed of 400 m/s penetrates 12 cm into a fixed block of wood. The average force exerted by the wood on the bullet will be",
+      "options": {
+        "a": "30 kN",
+        "b": "20 kN",
+        "c": "15 kN",
+        "d": "10 kN"
+      },
+      "explanation": "Given m=0.03 kg, v=400 m/s, penetration s=0.12 m. Initial kinetic energy equals the magnitude of resisting work: ½mv²=F_avg s. Thus½×0.03×400²=F_avg×0.12, and F_avg=20000 N=20 kN, opposite the bullet motion.",
+      "transcriptionReviewed": true,
+      "note": "Source asks magnitude; independent work–energy result 20 kN.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-126-624",
+      "status": "corrected",
+      "answer": "d",
+      "question": "A cricket ball of mass 175 gm is moving with a velocity of 36 km/hr. What average force will be required to stop the ball in 0.2 second?",
+      "options": {
+        "a": "-5.75 N",
+        "b": "-6.75 N",
+        "c": "-7.75 N",
+        "d": "-8.75 N"
+      },
+      "explanation": "Given m=175×10⁻³ kg, u=36×5/18=10 m/s, t=0.2 s. Using v=u+at with v=0 gives 0=u+at, −at=u, and a=−u/t=−10/0.2=−50 m/s². Thus average F=ma=175×10⁻³×(−50)=−8.75 N. The negative direction opposes the initial velocity.",
+      "transcriptionReviewed": true,
+      "note": "Corrected missing minus sign in the source intermediate numerical fraction; key d and final force remain correct.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        },
+        {
+          "title": "IIT Bombay,Prof.P.Seshu,ME316",
+          "url": "https://www.cdeep.iitb.ac.in/slides/S23/ME316/ME316-M12.pdf",
+          "section": "Analysis of Forces in Mechanisms/Machines;d’Alembert inertia force"
+        }
+      ],
+      "sourceExplanation": "Given m=175×10⁻³ kg, u=36×5/18=10 m/s, t=0.2. We know v=u+at; 0=u+at; −at=u; a=−u/t=10/0.2; a=−50 m/s². Average forceF=ma=175×10⁻³×(−50)=−8.75 N."
+    },
+    {
+      "id": "mech-engineering-mechanics-126-625",
+      "status": "verified",
+      "answer": "c",
+      "question": "A body moving with a velocity of 1 m/s has kinetic energy of 1.5 Joules. Mass of the body is: -",
+      "options": {
+        "a": "0.75 kg",
+        "b": "1.5 kg",
+        "c": "3.0 kg",
+        "d": "30 kg"
+      },
+      "explanation": "We know K. E.=½mV². Thus 1.5=½×m×1², which gives m=3.0 kg.",
+      "transcriptionReviewed": true,
+      "note": "Entire explanation occurs at top of the next column; recovered visually and checked.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-126-626",
+      "status": "verified",
+      "answer": "a",
+      "question": "A block weighing 500 N resting on a horizontal floor. A force of 200 N applied at 30° with horizontal moves the block to a distance of 60 m. Work done is",
+      "options": {
+        "a": "10392.3 Nm",
+        "b": "12000 Nm",
+        "c": "6000 Nm",
+        "d": "5196 Nm"
+      },
+      "explanation": "Given displacement s=60 m. The horizontal component of the applied 200 N force is 200 cos 30°. Work=force component×displacement, so W=(200 cos 30°)×60=10392.30 N·m.",
+      "transcriptionReviewed": true,
+      "note": "Independent dot-product value 10392.3048 J. The 500 N weight does no work during horizontal translation.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ],
+      "figures": [
+        {
+          "page": 112,
+          "bbox": [
+            325,
+            265,
+            474,
+            311
+          ],
+          "placement": "explanation",
+          "alt": "500 N block pulled by 200 N at 30° to horizontal; horizontal force component and displacementS=60 shown."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-126-627",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A ball starts from rest at A as shown, at height 9 m. Determine its speed at B, at height 3 m. Assume the track is smooth.",
+      "options": {
+        "a": "3√3·g",
+        "b": "(3√3/2)g",
+        "c": "2√(3 g)",
+        "d": "√3·g"
+      },
+      "explanation": "The track is smooth, so no mechanical energy is lost. Energy at A equals energy at B: mgh₁=mgh₂+½mv². Therefore mgh₁−mgh₂=½mv²; g(9−3)=v²/2; v=√(2 g×6)=√(12 g)=2√(3 g) m/s when g is inserted in m/s² and the heights in metres. This is the source’s smooth-track particle/no-initial-spin model. A body released from complete rest on a frictionless track has no contact torque to spin it up; the source’s “rolling” wording must not be interpreted as rolling without slip with rotational kinetic energy. The worked boxed radical includes 3 g; choice(c)’s printed radical bar is shortened and is corrected here to the intended 2√(3 g).",
+      "transcriptionReviewed": true,
+      "note": "Intended key c and complete worked calculation verified. Corrected radical scope in choice c and made the frictionless/no-spin model explicit.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s second law for rotation;τ=Iα and tangential accelerationrα"
+        }
+      ],
+      "sourceExplanation": "Given the track is smooth. No energy loss is there. Energy at A=Energy at B. mgh₁=mgh₂+½mv². mgh₁−mgh₂=½mv². g(9−3)=v²/2. v=√(2 g×6)=√(12 g). V=2√(3 g) m/s.",
+      "sourceOptions": {
+        "a": "3√3·g",
+        "b": "(3√3/2)g",
+        "c": "2√3·g",
+        "d": "√3·g"
+      },
+      "figures": [
+        {
+          "page": 112,
+          "bbox": [
+            360,
+            358,
+            465,
+            422
+          ],
+          "placement": "question",
+          "alt": "Smooth track with startA 9 m above reference and pointB 3 m above the same reference."
+        },
+        {
+          "page": 112,
+          "bbox": [
+            369,
+            532,
+            459,
+            591
+          ],
+          "placement": "explanation",
+          "alt": "Source energy-height sketch showing A at 9 m and B at 3 m."
+        }
+      ],
+      "sourceQuestion": "A ball starts rolling from a state of rest at pointA, as shown in the figure. Determine its velocity at pointB. Assume the track is smooth."
+    },
+    {
+      "id": "mech-engineering-mechanics-127-628",
+      "status": "verified",
+      "answer": "c",
+      "question": "A block of weight 10 N falls from a height h meter on a spring of stiffness 1000 N/m, the spring is compressed by 0.2 m. What is the height?",
+      "options": {
+        "a": "2.2 m",
+        "b": "2.0 m",
+        "c": "1.8 m",
+        "d": "1.6 m"
+      },
+      "explanation": "Apply conservation of energy: mg(h+x)=½kx². Given mg=10 N, x=0.2 m, k=1000 N/m. Thus 10(h+0.2)=½×1000×0.2². Hence h+0.2=(500×0.04)/10=2, and h=1.8 m.",
+      "transcriptionReviewed": true,
+      "note": "Includes gravitational loss during spring compression; independent h=1.8 m.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+          "section": "8.1 Gravitational and Hookean elastic potential energies;U_s=½kx²"
+        }
+      ],
+      "figures": [
+        {
+          "page": 113,
+          "bbox": [
+            149,
+            183,
+            218,
+            278
+          ],
+          "placement": "explanation",
+          "alt": "10 N falling block initiallyh above an uncompressed spring and maximum spring compressionx=0.2 m."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-629",
+      "status": "verified",
+      "answer": "b",
+      "question": "Work done by nonconservative forces on a particle equals",
+      "options": {
+        "a": "Change in kinetic energy",
+        "b": "Change in mechanical energy",
+        "c": "Change in potential energy",
+        "d": "Change in internal energy"
+      },
+      "explanation": "Work done by nonconservative forces changes the system’s mechanical energy: W_nc=Δ(K+U).",
+      "transcriptionReviewed": true,
+      "note": "Keyb verified from the work–energy relation after conservative work is represented by potential energy.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-630",
+      "status": "verified",
+      "answer": "b",
+      "question": "A body of weight 1000 N is dropped 10 cm above an uncompressed close-coiled helical spring of stiffness 200 N/cm. The resulting spring deflection is nearly",
+      "options": {
+        "a": "5 cm",
+        "b": "16 cm",
+        "c": "35 cm",
+        "d": "100 cm"
+      },
+      "explanation": "Given weight W=1000 N, drop height h=10 cm and stiffness k=200 N/cm. The potential energy released as the weight drops and then compresses the spring is absorbed as elastic energy. With compression x, P. E.=mg(h+x)=½×force×displacement=½kx². Hence W(h+x)=½kx² and 1000(10+x)=½×200 x², using N·cm throughout. Thus 100+10 x=x². The positive root is x=(10+√500)/2=16.1803 cm, closest to 16 cm, choice(b).",
+      "transcriptionReviewed": true,
+      "note": "Entire source explanation retained with the exact positive-root calculation before its approximate 16 cm result.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+          "section": "8.1 Gravitational and Hookean elastic potential energies;U_s=½kx²"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-631",
+      "status": "corrected",
+      "answer": "b",
+      "question": "Virtual work refers to :",
+      "options": {
+        "a": "Virtual work done by virtual forces",
+        "b": "Virtual work done by actual forces",
+        "c": "Actual work done by actual forces",
+        "d": "Actual work done by virtual forces"
+      },
+      "explanation": "Virtual work is the work pairing of the actual force with an imagined infinitesimal displacement compatible with the constraints at a fixed instant: δW=F·δr. It is not actual work along a time-evolving motion. Thus the intended choice(b), virtual work done by actual forces, is correct. The printed sentence mistakenly says that the force acts “through a virtual work”; it must say “through a virtual displacement.”",
+      "transcriptionReviewed": true,
+      "note": "Corrected malformed definition while retaining intended key b.",
+      "references": [
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        }
+      ],
+      "sourceExplanation": "Virtual work is the work done by a real force acting through a virtual work done by actual forces."
+    },
+    {
+      "id": "mech-engineering-mechanics-127-632",
+      "status": "verified",
+      "answer": "d",
+      "question": "Principle of virtual work was developed by",
+      "options": {
+        "a": "Mohr",
+        "b": "Poiseuille",
+        "c": "Euler",
+        "d": "Johann Bernoulli"
+      },
+      "explanation": "The source attributes the principle of virtual work to Johann Bernoulli. Among the listed choices, Johann Bernoulli is the historical attribution for its early analytical formulation.",
+      "transcriptionReviewed": true,
+      "note": "University lecture history verifies Bernoulli’s formalization; this does not claim there were no earlier precursors.",
+      "references": [
+        {
+          "title": "John C.Baez and Derek K.Wise,UC Riverside",
+          "url": "https://math.ucr.edu/home/baez/classical/texfiles/2005/book/classical_20180116.pdf",
+          "section": "1.2.2–1.2.3:Bernoulli’s formulation and virtual work"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-633",
+      "status": "verified",
+      "answer": "a",
+      "question": "By the virtual-work principle, the work of force F is given by which expression?(· denotes dot product; × denotes cross product.)",
+      "options": {
+        "a": "dU=F·dr",
+        "b": "dU=F×dr",
+        "c": "dU=F(dr)tan θ",
+        "d": "dU=F(dr)cot θ"
+      },
+      "explanation": "Work is the dot product of force and displacement: dU=F·dr=F dr cos θ. For a virtual displacement the corresponding expression isδW=F·δr.",
+      "transcriptionReviewed": true,
+      "note": "Printed notationdU retained; scalar-product relation verified.",
+      "references": [
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-634",
+      "status": "verified",
+      "answer": "d",
+      "question": "Efficiency of a machine in terms of M. A. (Mechanical advantage) and velocity Ratio (V. R) is given as -",
+      "options": {
+        "a": "100(VR/MA)",
+        "b": "MA×VR",
+        "c": "VR/MA",
+        "d": "MA/VR"
+      },
+      "explanation": "Machine efficiency as a fraction isη=MA/VR, where MA is mechanical advantage and VR velocity ratio. Percentage efficiency is 100(MA/VR)%.",
+      "transcriptionReviewed": true,
+      "note": "Fractional efficiency, not percentage, is requested by choice d.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-635",
+      "status": "verified",
+      "answer": "b",
+      "question": "If ℓ₁ is a lever’s effort arm and ℓ₂ its load arm, the leverage is defined as",
+      "options": {
+        "a": "ℓ₂/ℓ₁",
+        "b": "ℓ₁/ℓ₂",
+        "c": "ℓ₁²/ℓ₂²",
+        "d": "√(ℓ₁/ℓ₂)"
+      },
+      "explanation": "For a lever, leverage=effort arm/load arm=ℓ₁/ℓ₂.",
+      "transcriptionReviewed": true,
+      "note": "Lever moment balance Pℓ₁=Wℓ₂ gives the ideal force advantage ℓ₁/ℓ₂.",
+      "references": [
+        {
+          "title": "John C.Baez and Derek K.Wise,UC Riverside",
+          "url": "https://math.ucr.edu/home/baez/classical/texfiles/2005/book/classical_20180116.pdf",
+          "section": "1.2.2–1.2.3:Bernoulli’s formulation and virtual work"
+        },
+        {
+          "title": "Engineering Statics:Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_05-2d-rigid-body-equilibrium.html",
+          "section": "5.4 Planar rigid-body equilibrium;hinge moment balance"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-127-636",
+      "status": "verified",
+      "answer": "a",
+      "question": "In the virtual-work principle, the work of friction on an ideal wheel rolling without slip on a stationary surface is",
+      "options": {
+        "a": "Zero",
+        "b": "Positive",
+        "c": "Negative",
+        "d": "All of these"
+      },
+      "explanation": "For ideal rolling without slip on a stationary rigid surface, the contact point is instantaneously at rest. The friction force therefore does zero actual work, and for compatible rolling virtual displacements its contact-point virtual work is also zero.",
+      "transcriptionReviewed": true,
+      "note": "Stationary support and ideal no-slip contact are the intended assumptions; rolling resistance and moving belts are different cases.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-637",
+      "status": "verified",
+      "answer": "b",
+      "question": "The mechanical advantage of a lifting machine is the ratio of",
+      "options": {
+        "a": "distance moved by effort to the distance moved by load",
+        "b": "load lifted to the effort applied",
+        "c": "output to input",
+        "d": "All of the above"
+      },
+      "explanation": "Mechanical advantage of a lifting machine is the ratio of load lifted to effort applied: MA=W/P.",
+      "transcriptionReviewed": true,
+      "note": "Keyb is the explicit force ratio; distance ratio isVR, while an unspecified output/input ratio is not a precise alternative definition.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        },
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-638",
+      "status": "verified",
+      "answer": "b",
+      "question": "A man is pulling a bucket of water up to the roof of a building of 6 m height. The total weight of the rope is 20 N and the weight of the bucket with water is 100 N. The work done by the man is",
+      "options": {
+        "a": "300 N-m",
+        "b": "660 N-m",
+        "c": "600 N-m",
+        "d": "360 N-m"
+      },
+      "explanation": "Given h=6 m, rope weight mg=20 N, and bucket-plus-water weight Mg=100 N. Work equals the increase in gravitational potential energy of the bucket and rope. A uniform rope initially hanging through 6 m has its centre of mass h/2=6/2=3 m below the roof. Hence W_work=Mgh+mg(h/2)=(M+m/2)gh=(Mg+mg/2)h=(100+20/2)×6=660 N·m.",
+      "transcriptionReviewed": true,
+      "note": "Uniform rope is implicit in the source centre-of-mass calculation.600 J raises bucket; 60 J raises rope.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-639",
+      "status": "verified",
+      "answer": "d",
+      "question": "According to the Principle of ‘Virtual Work', which quantity remains zero during the analysis?",
+      "options": {
+        "a": "Virtual displacement due to external force",
+        "b": "External force due to virtual work",
+        "c": "External work due to real displacement",
+        "d": "Work due to virtual displacement"
+      },
+      "explanation": "Principle of virtual work: if the forces acting on a body or system of bodies are in equilibrium, and the system is imagined to undergo a small displacement consistent with its geometrical constraints, then the algebraic sum of virtual work of all forces is zero. Thus the total work due to admissible virtual displacement is zero, not each individual force’s work.",
+      "transcriptionReviewed": true,
+      "note": "Full printed principle retained; emphasized total sum and equilibrium/constraint conditions.",
+      "references": [
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-640",
+      "status": "verified",
+      "answer": "a",
+      "question": "Virtual work means 1. work done by real forces due to virtual displacement 2. work done by virtual forces during real displacement",
+      "options": {
+        "a": "Both 1 and 2 are correct",
+        "b": "Both 1 and 2 are wrong",
+        "c": "1 is correct and 2 is wrong",
+        "d": "2 is correct and 1 is wrong"
+      },
+      "explanation": "The source gives two dual forms: virtual work=virtual force×real displacement, or virtual work=virtual displacement×real force. In vector notation these are work pairingsδF·u and F·δu. The usual virtual-displacement principle uses actual forces and kinematically admissible virtual displacements. The complementary virtual-force principle uses equilibrated virtual forces/stresses with actual compatible displacements. Thus both listed descriptions are recognized in these dual formulations.",
+      "transcriptionReviewed": true,
+      "note": "Both 1 and 2 verified with the distinction between standard and complementary virtual-work principles.",
+      "references": [
+        {
+          "title": "NPTEL,IIT Kharagpur,Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l5.pdf",
+          "section": "Lesson5,sections5.3–5.4:virtual-displacement and complementary virtual-force principles"
+        },
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-641",
+      "status": "verified",
+      "answer": "a",
+      "question": "A lifting machine will be reversible, if the efficiency",
+      "options": {
+        "a": "> 50%",
+        "b": "equal to 100%",
+        "c": ">75%",
+        "d": "<50%"
+      },
+      "explanation": "A reversible lifting machine can do work in the reverse direction after the effort is removed; the lifted load then descends. In the conventional lifting-machine friction-work model, the load’s released potential energy must exceed the frictional loss. The limiting equality gives 50% efficiency, so the reversible condition isη>50%, choice(a).",
+      "transcriptionReviewed": true,
+      "note": "General threshold choice a is intended; 100% or>75% are more restrictive sufficient cases, not the threshold criterion.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-642",
+      "status": "verified",
+      "answer": "a",
+      "question": "A pulley is mounted on a vertical pillar above the head of a man of weight 800 N. The man holds one end of a rope that passes over this pulley and to the other end of which is attached a block of weight 600 N. The force with which the man's feet press against the floor is",
+      "options": {
+        "a": "200 N",
+        "b": "400 N",
+        "c": "600 N",
+        "d": "800 N"
+      },
+      "explanation": "For a smooth ideal pulley with the 600 N block in equilibrium, the rope tension isT=600 N. The upward rope force on the man reduces the normal force at his feet. Floor balance gives N=man’s weight−T=800−600=200 N. He presses the floor with the same 200 N magnitude.",
+      "transcriptionReviewed": true,
+      "note": "Ideal smooth pulley and static equilibrium are the source model.",
+      "references": [
+        {
+          "title": "Engineering Statics:Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_05-2d-rigid-body-equilibrium.html",
+          "section": "5.4 Planar rigid-body equilibrium;hinge moment balance"
+        }
+      ],
+      "figures": [
+        {
+          "page": 114,
+          "bbox": [
+            370,
+            381,
+            455,
+            531
+          ],
+          "placement": "explanation",
+          "alt": "Fixed pulley with 600 N block at one rope end and man holding the other; upward rope support reduces his floor reaction."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-128-643",
+      "status": "corrected",
+      "answer": "a",
+      "question": "For the illustrated unstable equilibrium at a potential-energy maximum, the potential energy _____ on a small virtual displacement away from equilibrium.",
+      "options": {
+        "a": "decreases",
+        "b": "increases",
+        "c": "is always zero",
+        "d": "remains constant"
+      },
+      "explanation": "For one-dimensional conservative equilibrium, U′=0. The source illustrates three cases: (1)Stable equilibrium is a local minimum of U; for a nondegenerate minimum U″>0, and sufficiently small departures raise U.(2)Unstable equilibrium at a local maximum has U″<0 in the nondegenerate case, and departures lower U, so choice(a)applies.(3)Neutral equilibrium requires U to remain constant throughout the nearby allowed configurations, so such displacements leave U unchanged and U″=0 there. The equality U″=0 at a single point alone does not prove neutrality: U=x⁴ has U″(0)=0 but a stable minimum. In systems with several degrees of freedom, an unstable saddle need only have an energy-lowering direction, not a maximum in every direction.",
+      "transcriptionReviewed": true,
+      "note": "Retained key a and all three source cases; corrected the implication that U″=0 alone proves neutral equilibrium and stated the illustrated one-dimensional maximum condition.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-4-potential-energy-diagrams-and-stability",
+          "section": "8.4 Potential-energy diagrams and stability;local minima/maxima and quartic cases"
+        }
+      ],
+      "sourceExplanation": "There are three cases for equilibrium of a body.1. Stable condition: body has minimum potential energyU; d²U/dx²>0; for any virtual displacement U increases.2. Unstable condition: body has maximum potential energyU; d²U/dx²<0; for any virtual displacement U decreases.3. Neutral condition: body has constant potential energyU; d²U/dx²=0; for any virtual displacement U is unchanged.",
+      "figures": [
+        {
+          "page": 114,
+          "bbox": [
+            357,
+            669,
+            465,
+            733
+          ],
+          "placement": "explanation",
+          "alt": "Stable-equilibrium source illustration: ball at bottom of a concave bowl."
+        },
+        {
+          "page": 115,
+          "bbox": [
+            136,
+            148,
+            226,
+            223
+          ],
+          "placement": "explanation",
+          "alt": "Unstable-equilibrium source illustration: ball at top of a convex support."
+        },
+        {
+          "page": 115,
+          "bbox": [
+            127,
+            289,
+            240,
+            334
+          ],
+          "placement": "explanation",
+          "alt": "Neutral-equilibrium source illustration: ball on a horizontal surface."
+        }
+      ],
+      "sourceQuestion": "In the case of an unstable position of equilibrium of the body, its potential energy ______ on any virtual displacement."
+    },
+    {
+      "id": "mech-engineering-mechanics-129-644",
+      "status": "verified",
+      "answer": "a",
+      "question": "In track type machines, the purpose of front idler and yoke is -",
+      "options": {
+        "a": "To align the track chain",
+        "b": "To replace the track chain",
+        "c": "To loosen the track chain",
+        "d": "To tighten the track chain"
+      },
+      "explanation": "In a track-type machine, the front idler and yoke guide the track chain and preserve its alignment, so(a)is the intended direct function. The yoke supports the idler wheel and also assists in maintaining correct track tension; alignment and tension roles are not mutually exclusive. Active tension adjustment depends on the associated adjuster/recoil arrangement.",
+      "transcriptionReviewed": true,
+      "note": "Manufacturer description directly verifies guidance/alignment and also documents assistance maintaining tension; the answer must not imply that the assembly has no tension role.",
+      "references": [
+        {
+          "title": "Caterpillar,Front Idler Wheel Yoke137-7538",
+          "url": "https://parts.cat.com/en/catcorp/product/137-7538",
+          "section": "Manufacturer description:guides track chain,alignment,and assistance maintaining tension"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-129-645",
+      "status": "corrected",
+      "answer": "c",
+      "question": "On a dozer, the track chains provide mounting pads for",
+      "options": {
+        "a": "Track frame",
+        "b": "Sprocket",
+        "c": "Track shoes",
+        "d": "Front idler"
+      },
+      "explanation": "Track link/chain assemblies provide the attachment surfaces for the track shoes, so(c)is correct. They also transmit sprocket drive and support the machine through the undercarriage. Lubrication depends on the particular design: sealed oil-lubricated, grease-lubricated and other constructions exist. Caterpillar’s cited link assembly explicitly describes grease-lubricated pins and bushings, so the source’s blanket claim that dozer chains are oil-filled is too broad. Its additional NTP excavator-chain claim identifies no model or primary technical document and remains unverified; it is retained in the original explanation only.",
+      "transcriptionReviewed": true,
+      "note": "Correct key c. Qualified universal oil-filled claim and kept the complete unverified brand-specific passage separately.",
+      "references": [
+        {
+          "title": "Caterpillar,Track Link Assembly289-3059",
+          "url": "https://parts.cat.com/en/catcorp/product/289-3059",
+          "section": "Manufacturer description:shoe attachment and grease-lubricated pins/bushings"
+        }
+      ],
+      "sourceExplanation": "In dozer, track chains serve mounting pad for track shoes. Dozer track chains are oil filled and designed with more wear material to withstand the constant movement. The NTP excavator track chain is designed with long bushings, reaching into the link to obtain a stable and wear resistant solution."
+    },
+    {
+      "id": "mech-engineering-mechanics-129-646",
+      "status": "verified",
+      "answer": "a",
+      "question": "In a lock gate, the reaction between its two leaves is what? P is the resultant hydrostatic force on one leaf, and α is its inclination to the normal to the side of the lock.",
+      "options": {
+        "a": "P/(2 sin α)",
+        "b": "P/sin α",
+        "c": "2 P/sin α",
+        "d": "2 P/sin(α/2)"
+      },
+      "explanation": "For symmetric miter gates, the hydrostatic resultantP on one leaf acts at its midpoint along the leaf’s width. Taking moments about that leaf’s wall hinge gives P(L/2)=R L sin α, whereR is the contact reaction between leaves and α is the stated gate inclination from the normal to the lock side. Therefore R=P/(2 sin α). The complete printed explanation consists of this formula.",
+      "transcriptionReviewed": true,
+      "note": "Keya independently verified by hinge-moment equilibrium for the standard symmetric miter-gate geometry.",
+      "references": [
+        {
+          "title": "Engineering Statics:Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_05-2d-rigid-body-equilibrium.html",
+          "section": "5.4 Planar rigid-body equilibrium;hinge moment balance"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-129-647",
+      "status": "verified",
+      "answer": "a",
+      "question": "The law of machine can be expressed mathematically in the form of",
+      "options": {
+        "a": "linear",
+        "b": "exponential",
+        "c": "parabolic",
+        "d": "hyperbolic"
+      },
+      "explanation": "Law of machines: for a lifting machine, the applied effortP is related to lifted loadW by P=mW+C, the equation of a straight line. The source takes m and C as positive constants characteristic of the machine. On the effort-versus-load graph, m is the slope and C the effort required to start the unloaded machine or overcome the load-independent resistance.",
+      "transcriptionReviewed": true,
+      "note": "All printed law/graph definitions restored; linear model verified.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        },
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        }
+      ],
+      "figures": [
+        {
+          "page": 115,
+          "bbox": [
+            361,
+            229,
+            467,
+            326
+          ],
+          "placement": "explanation",
+          "alt": "EffortP versus loadW straight line P=mW+C with effort-axis interceptC."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-129-648",
+      "status": "verified",
+      "answer": "a",
+      "question": "In lifting machines, as load increases the mechanical advantage",
+      "options": {
+        "a": "increases",
+        "b": "decreases",
+        "c": "remains same",
+        "d": "initially increases and then decreases"
+      },
+      "explanation": "Lifting machines apply effort at one point and lift the load at another. In the stated ordinary law-of-machine model P=mW+C, with C>0, the mechanical advantage is MA=W/P=W/(mW+C)=1/(m+C/W). As W increases, C/W decreases and MA increases, approaching 1/m. This verifies the source’s statement that increasing load increases mechanical advantage for this model; an ideal C=0 machine instead has constant MA.",
+      "transcriptionReviewed": true,
+      "note": "Full source lifting-machine description retained with the necessary C>0 condition and derivation.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        },
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-129-649",
+      "status": "verified",
+      "answer": "a",
+      "question": "What is the velocity ratio of a lifting machine that is working at an efficiency of 60% in raising a load of 7700 N by an effort of 150 N?",
+      "options": {
+        "a": "85.55",
+        "b": "51.33",
+        "c": "61.72",
+        "d": "55"
+      },
+      "explanation": "Efficiency=force ratio/velocity ratio. Hence VR=force ratio/efficiency=(7700/150)/0.60=(7700×100)/(150×60)=85.5556, closest to 85.55, choice(a).",
+      "transcriptionReviewed": true,
+      "note": "Independent MA=51.3333 and VR=85.5556; source choice a uses truncation.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-129-650",
+      "status": "disputed",
+      "answer": null,
+      "question": "The velocity ratio as per law of machine equals which expression?(The source defines m as the line slope and says it equals the coefficient of friction; W is load and C the effort needed to overcome friction.)",
+      "options": {
+        "a": "m+C/W",
+        "b": "mW+C",
+        "c": "m/W+C",
+        "d": "mC+W"
+      },
+      "explanation": "The law of machine is P=mW+C. Dividing by W gives P/W=m+C/W=1/MA. This is an effort-to-load ratio, not velocity ratio. VR is the ratio of effort displacement to load displacement and is normally fixed by machine geometry. Neither the law alone nor the listed expressions determine it. Also m is the empirical slope of the effort–load line; it is not generally the material coefficient of friction. Thus the printed(a)formula has been assigned the wrong quantity and the item must remain ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Full source explanation is at top printed p 130. Formula is P/W=1/MA, not VR; the slope is not generally a friction coefficient.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        },
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        }
+      ],
+      "sourceExplanation": "Velocity Ratio as per law of machine: VR=m+C/W."
+    }
+  ],
+  "audit": {
+    "totalReviewed": 50,
+    "counts": {
+      "verified": 35,
+      "disputed": 7,
+      "corrected": 8
+    },
+    "range": [
+      601,
+      650
+    ],
+    "reviewedNumbers": [
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650
+    ],
+    "remainingNumbers": [],
+    "issues": [
+      {
+        "id": "mech-engineering-mechanics-124-609",
+        "status": "disputed",
+        "note": "Source makes an unconditional claim about an unspecified elevator drive/counterweight balance; exclude from grading."
+      },
+      {
+        "id": "mech-engineering-mechanics-124-610",
+        "status": "corrected",
+        "note": "Corrected printed negative spring-energy sign; source’s later positive numerical equality and final compression are otherwise consistent."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-613",
+        "status": "disputed",
+        "note": "Complete source apex calculation retained; stem can instead mean return to launch level."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-614",
+        "status": "corrected",
+        "note": "Answerb correct. Replaced source’s dimensionally incorrect “angular acceleration(a)=r α” with a valid torque/inertia derivation."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-615",
+        "status": "disputed",
+        "note": "375 m is the particle/front-crossing answer; full finite-train crossing needs train length. Source also doubles the kinematic distance and invents an equality."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-617",
+        "status": "corrected",
+        "note": "Corrected the second cross-product term’s sign from−30 x to+30 x. Keyc and final result 5 km/h retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-618",
+        "status": "disputed",
+        "note": "Multiple valid optionsb, d; exclude single-answer grading."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-619",
+        "status": "disputed",
+        "note": "Original scan confirms 10.01; exact answer 10 is missing."
+      },
+      {
+        "id": "mech-engineering-mechanics-125-620",
+        "status": "disputed",
+        "note": "Missing system boundary and conservation conditions."
+      },
+      {
+        "id": "mech-engineering-mechanics-126-624",
+        "status": "corrected",
+        "note": "Corrected missing minus sign in the source intermediate numerical fraction; key d and final force remain correct."
+      },
+      {
+        "id": "mech-engineering-mechanics-126-627",
+        "status": "corrected",
+        "note": "Intended key c and complete worked calculation verified. Corrected radical scope in choice c and made the frictionless/no-spin model explicit."
+      },
+      {
+        "id": "mech-engineering-mechanics-127-631",
+        "status": "corrected",
+        "note": "Corrected malformed definition while retaining intended key b."
+      },
+      {
+        "id": "mech-engineering-mechanics-128-643",
+        "status": "corrected",
+        "note": "Retained key a and all three source cases; corrected the implication that U″=0 alone proves neutral equilibrium and stated the illustrated one-dimensional maximum condition."
+      },
+      {
+        "id": "mech-engineering-mechanics-129-645",
+        "status": "corrected",
+        "note": "Correct key c. Qualified universal oil-filled claim and kept the complete unverified brand-specific passage separately."
+      },
+      {
+        "id": "mech-engineering-mechanics-129-650",
+        "status": "disputed",
+        "note": "Full source explanation is at top printed p 130. Formula is P/W=1/MA, not VR; the slope is not generally a friction coefficient."
+      }
+    ],
+    "method": "Full original printed pages123–130 visually reconciled,including all question/options/formulas and entire supplied explanations. Independent dimensional,force,energy and kinematics calculations checked against primary university,NPTEL,NIST and manufacturer references. Figure boxes use1-based PDF pages and full-page point coordinates.",
+    "sourceSha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0"
+  }
+}

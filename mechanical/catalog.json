@@ -1,0 +1,530 @@
+{
+  "version": "3cd61b3e0e59",
+  "total": 807,
+  "reviewed": 579,
+  "corrected": 142,
+  "disputed": 86,
+  "subjects": [
+    {
+      "id": "engineering-mechanics",
+      "title": "Engineering Mechanics",
+      "url": "mechanical/engineering-mechanics-3cd61b3e0e59.json",
+      "count": 807,
+      "reviewed": 579,
+      "corrected": 142,
+      "disputed": 86,
+      "topics": [
+        {
+          "name": "Forces and Force Systems",
+          "count": 171,
+          "subtopics": [
+            {
+              "name": "Composition and Equilibrium of Forces",
+              "count": 60
+            },
+            {
+              "name": "Composition and Resultants",
+              "count": 31
+            },
+            {
+              "name": "Equilibrium of Forces",
+              "count": 18
+            },
+            {
+              "name": "Force and Moment Dimensions",
+              "count": 11
+            },
+            {
+              "name": "Free-body Diagrams",
+              "count": 5
+            },
+            {
+              "name": "Lami’s Theorem",
+              "count": 15
+            },
+            {
+              "name": "Principle of Transmissibility",
+              "count": 2
+            },
+            {
+              "name": "Resolution of Forces",
+              "count": 9
+            },
+            {
+              "name": "Types of Force Systems",
+              "count": 18
+            },
+            {
+              "name": "Varignon’s Theorem",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Moments and Couples",
+          "count": 27,
+          "subtopics": [
+            {
+              "name": "Couples and Couple Moments",
+              "count": 8
+            },
+            {
+              "name": "Moment Equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Moments and Couples",
+              "count": 6
+            },
+            {
+              "name": "Moments of Forces",
+              "count": 10
+            },
+            {
+              "name": "Varignon’s Theorem",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Friction",
+          "count": 88,
+          "subtopics": [
+            {
+              "name": "Actual versus Limiting Static Friction",
+              "count": 1
+            },
+            {
+              "name": "Angle of Repose",
+              "count": 2
+            },
+            {
+              "name": "Angle of Repose and Limiting Equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Belt and Rope Friction",
+              "count": 3
+            },
+            {
+              "name": "Belt and Rope Friction: Capstan Equation",
+              "count": 1
+            },
+            {
+              "name": "Block Friction",
+              "count": 11
+            },
+            {
+              "name": "Capstan Friction and Beam Equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Coefficient of Limiting Friction",
+              "count": 1
+            },
+            {
+              "name": "Contact Force Between Accelerating Blocks",
+              "count": 1
+            },
+            {
+              "name": "Coulomb Damping and Energy Dissipation",
+              "count": 1
+            },
+            {
+              "name": "Dry Friction",
+              "count": 21
+            },
+            {
+              "name": "Factors Affecting Limiting Friction",
+              "count": 1
+            },
+            {
+              "name": "Friction with Partial Vertical Support",
+              "count": 1
+            },
+            {
+              "name": "Inclined Pull: Static or Kinetic Friction",
+              "count": 1
+            },
+            {
+              "name": "Inclined-plane Friction",
+              "count": 13
+            },
+            {
+              "name": "Ladder Contact and Friction Direction",
+              "count": 1
+            },
+            {
+              "name": "Ladder Friction",
+              "count": 1
+            },
+            {
+              "name": "Ladder Limiting Equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Least Pull and Direction of Applied Force",
+              "count": 1
+            },
+            {
+              "name": "Limiting Static Friction",
+              "count": 1
+            },
+            {
+              "name": "Pure Rolling of a Solid Sphere",
+              "count": 1
+            },
+            {
+              "name": "Rolling Resistance",
+              "count": 4
+            },
+            {
+              "name": "Rolling Resistance and Units",
+              "count": 1
+            },
+            {
+              "name": "Sliding Down a Rough Incline: Work–Energy",
+              "count": 1
+            },
+            {
+              "name": "Static and Kinetic Friction",
+              "count": 14
+            },
+            {
+              "name": "Time-Varying Force and Friction",
+              "count": 1
+            },
+            {
+              "name": "Vector Moment of a Force",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Centroid, Centre of Gravity & Moment of Inertia",
+          "count": 83,
+          "subtopics": [
+            {
+              "name": "Area and Mass Moments of Inertia",
+              "count": 44
+            },
+            {
+              "name": "Centre of Gravity",
+              "count": 17
+            },
+            {
+              "name": "Centroids and Moments of Inertia",
+              "count": 5
+            },
+            {
+              "name": "Centroids of Plane Figures",
+              "count": 7
+            },
+            {
+              "name": "Parallel-axis Theorem",
+              "count": 3
+            },
+            {
+              "name": "Perpendicular-axis Theorem",
+              "count": 2
+            },
+            {
+              "name": "Radius of Gyration",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "name": "Trusses and Beams",
+          "count": 61,
+          "subtopics": [
+            {
+              "name": "Determinacy and Stability",
+              "count": 13
+            },
+            {
+              "name": "Forces in Truss Members",
+              "count": 14
+            },
+            {
+              "name": "Frames and Beams",
+              "count": 2
+            },
+            {
+              "name": "Method of Joints",
+              "count": 20
+            },
+            {
+              "name": "Method of Sections",
+              "count": 4
+            },
+            {
+              "name": "Support Reactions",
+              "count": 6
+            },
+            {
+              "name": "Truss and Beam Analysis",
+              "count": 1
+            },
+            {
+              "name": "Zero-force Members",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Kinematics and Kinetics of Particles & Rigid Body",
+          "count": 128,
+          "subtopics": [
+            {
+              "name": "Braking and Stopping",
+              "count": 1
+            },
+            {
+              "name": "Circular and Angular Motion",
+              "count": 10
+            },
+            {
+              "name": "Circular and Rotational Motion",
+              "count": 12
+            },
+            {
+              "name": "Dynamically Equivalent Systems",
+              "count": 1
+            },
+            {
+              "name": "D’Alembert’s Principle",
+              "count": 2
+            },
+            {
+              "name": "Free Fall and Motion on Inclines",
+              "count": 7
+            },
+            {
+              "name": "Graphs of Motion",
+              "count": 4
+            },
+            {
+              "name": "Motion Graphs",
+              "count": 3
+            },
+            {
+              "name": "Newton’s Laws and Force–Acceleration Relations",
+              "count": 23
+            },
+            {
+              "name": "Newton’s Laws of Motion",
+              "count": 5
+            },
+            {
+              "name": "Particle and Rigid-body Dynamics",
+              "count": 4
+            },
+            {
+              "name": "Rectilinear Motion",
+              "count": 23
+            },
+            {
+              "name": "Rectilinear Motion and Calculus",
+              "count": 22
+            },
+            {
+              "name": "Relative Motion and Displacement Vectors",
+              "count": 7
+            },
+            {
+              "name": "Rolling Kinematics and Dynamics",
+              "count": 3
+            },
+            {
+              "name": "Work and Energy on Inclines",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Work, Power and Energy",
+          "count": 72,
+          "subtopics": [
+            {
+              "name": "Conservation of Mechanical Energy",
+              "count": 3
+            },
+            {
+              "name": "Conservative Forces and Energy Conservation",
+              "count": 5
+            },
+            {
+              "name": "Elastic Potential Energy",
+              "count": 3
+            },
+            {
+              "name": "Gravitation and Escape Energy",
+              "count": 3
+            },
+            {
+              "name": "Kinetic Energy and Momentum",
+              "count": 3
+            },
+            {
+              "name": "Power and Efficiency",
+              "count": 2
+            },
+            {
+              "name": "Relative Motion and Displacement Vectors",
+              "count": 1
+            },
+            {
+              "name": "Rolling and Rotational Energy",
+              "count": 1
+            },
+            {
+              "name": "Rotational and Rolling Kinetic Energy",
+              "count": 8
+            },
+            {
+              "name": "Scalars and Vectors",
+              "count": 1
+            },
+            {
+              "name": "Spring Potential Energy",
+              "count": 4
+            },
+            {
+              "name": "Virtual Work and Potential-Energy Equilibrium",
+              "count": 3
+            },
+            {
+              "name": "Work against Gravity",
+              "count": 2
+            },
+            {
+              "name": "Work and Energy",
+              "count": 13
+            },
+            {
+              "name": "Work and the Work–Energy Theorem",
+              "count": 5
+            },
+            {
+              "name": "Work,Power and Efficiency",
+              "count": 14
+            },
+            {
+              "name": "Work–Energy Principle with Variable Force",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Principle of Virtual Work & Simple Machines",
+          "count": 36,
+          "subtopics": [
+            {
+              "name": "Efficiency of Simple Machines",
+              "count": 7
+            },
+            {
+              "name": "Law of a Machine",
+              "count": 7
+            },
+            {
+              "name": "Mechanical Advantage and Velocity Ratio",
+              "count": 6
+            },
+            {
+              "name": "Principle of Virtual Work",
+              "count": 10
+            },
+            {
+              "name": "Reversibility and Self-locking",
+              "count": 1
+            },
+            {
+              "name": "Simple Machines",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "name": "Impulse, Momentum and Collision",
+          "count": 80,
+          "subtopics": [
+            {
+              "name": "Coefficient of Restitution",
+              "count": 20
+            },
+            {
+              "name": "Conservation of Linear Momentum",
+              "count": 18
+            },
+            {
+              "name": "Direct Impact and Collisions",
+              "count": 21
+            },
+            {
+              "name": "Impulse and Momentum",
+              "count": 10
+            },
+            {
+              "name": "Impulse–Momentum Principle",
+              "count": 5
+            },
+            {
+              "name": "Recoil and Momentum Conservation",
+              "count": 4
+            },
+            {
+              "name": "Variable-mass Motion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Simple Harmonic Motion and Projectile Motion",
+          "count": 61,
+          "subtopics": [
+            {
+              "name": "Circular Motion and SHM",
+              "count": 4
+            },
+            {
+              "name": "Pendulums",
+              "count": 11
+            },
+            {
+              "name": "Projectile Motion",
+              "count": 19
+            },
+            {
+              "name": "Projectile Range, Height and Velocity",
+              "count": 1
+            },
+            {
+              "name": "Simple Harmonic Motion",
+              "count": 19
+            },
+            {
+              "name": "Simple Harmonic and Projectile Motion",
+              "count": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "file": "MECH AE 01 FULL 35000-15-156.pdf",
+      "aliases": [
+        "MECH AE 01 FULL 35000-15-156(2).pdf"
+      ],
+      "sha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0",
+      "pages": 142,
+      "firstPrintedPage": 15,
+      "lastPrintedPage": 156
+    }
+  ],
+  "auditUrl": "mechanical/source-review-audit-d4439ea4ccef.html",
+  "auditDataUrl": "mechanical/source-review-audit-d1ef344d1c59.json"
+}
