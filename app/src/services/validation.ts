@@ -1,3 +1,4 @@
+import { validateMechanical } from "../utils/mechanical";
 import type { AppData, Collection, PYQDraft, PrelimsWorkspace, LectureWorkspace, BookWorkspace } from "../types";
 import {
   studyTypes,
@@ -475,6 +476,7 @@ export function validateData(input: unknown): AppData {
   assert(obj(input), "Backup must be a JSON object.");
   const d = input as AppData;
   if (d.prelims !== undefined) validatePrelims(d.prelims);
+  if (d.mechanical !== undefined) validateMechanical(d.mechanical);
   if (d.pyqDraft !== undefined) validatePYQDraft(d.pyqDraft);
   assert(
     d.schemaVersion === 1,

@@ -22,6 +22,7 @@ from PIL import Image
 from scipy import ndimage as ndi
 
 SCALE = 4
+OCR_VERSION = 3
 _documents = {}
 
 
@@ -47,8 +48,11 @@ def recognize_column(page, column):
             runs[-1].append(int(y))
     rules = [round(top + sum(run) / len(run) / SCALE, 2) for run in runs]
     gray[ndi.binary_dilation(horizontal, iterations=1)] = 255
-    gray[:, :8] = 255
-    gray[:, -8:] = 255
+    vertical = ndi.maximum_filter1d(ndi.minimum_filter1d(ink, size=220, axis=0), size=220, axis=0)
+    edges = np.zeros_like(vertical)
+    edges[:, :8] = vertical[:, :8]
+    edges[:, -8:] = vertical[:, -8:]
+    gray[ndi.binary_dilation(edges, iterations=1)] = 255
     image = Image.fromarray(gray)
     encoded = io.BytesIO()
     image.save(encoded, format="PNG")
@@ -56,12 +60,13 @@ def recognize_column(page, column):
     result = subprocess.run(["tesseract", "stdin", "stdout", "--psm", "3", "--dpi", "288", "-l", "eng", "tsv"],
                             input=encoded.getvalue(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env, check=True)
     grouped = {}
-    for row in csv.DictReader(io.StringIO(result.stdout.decode("utf-8")), delimiter="\t"):
+    for row in csv.DictReader(io.StringIO(result.stdout.decode("utf-8")), delimiter="\t", quoting=csv.QUOTE_NONE):
         if row["level"] != "5" or not row.get("text", "").strip():
             continue
         confidence = float(row["conf"])
         if confidence < 0:
             continue
+        assert "\n" not in row["text"] and "\t" not in row["text"]
         x, y, w, h = (int(row[k]) for k in ("left", "top", "width", "height"))
         word = {"text": row["text"], "confidence": round(confidence, 2),
                 "bbox": [round(left + x / SCALE, 2), round(top + y / SCALE, 2),
@@ -101,7 +106,7 @@ def process(job):
         _documents[pdf_path] = fitz.open(pdf_path)
     page = _documents[pdf_path][page_number - 1]
     started = time.time()
-    data = {"page": page_number, "printedPage": page_number + 14,
+    data = {"page": page_number, "printedPage": page_number + 14, "ocrVersion": OCR_VERSION,
             "width": page.rect.width, "height": page.rect.height, "sha256": source_hash,
             "columns": [recognize_column(page, col) for col in ("left", "right")]}
     temporary = destination.with_suffix(".tmp")
@@ -128,7 +133,7 @@ def main():
     assert source_hash == "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0"
     source = {"id": "engineering-mechanics", "title": "Engineering Mechanics", "file": pdf.name,
               "sha256": source_hash, "pages": len(document), "firstPrintedPage": 15, "lastPrintedPage": 156,
-              "ocr": {"scale": SCALE, "psm": 3, "language": "eng", "ruleRemoval": "OCR input only", "coordinateUnits": "pdf-points"}}
+              "ocr": {"version": OCR_VERSION, "scale": SCALE, "psm": 3, "language": "eng", "ruleRemoval": "OCR input only", "coordinateUnits": "pdf-points"}}
     (output / "source.json").write_text(json.dumps(source, indent=2) + "\n")
     jobs = []
     for page in range(args.start_page, (args.end_page or len(document)) + 1):
@@ -136,7 +141,7 @@ def main():
         if destination.exists():
             try:
                 cached = json.loads(destination.read_text())
-                if cached.get("sha256") == source_hash and len(cached.get("columns", [])) == 2:
+                if cached.get("sha256") == source_hash and cached.get("ocrVersion") == OCR_VERSION and len(cached.get("columns", [])) == 2:
                     continue
             except (ValueError, OSError):
                 pass

@@ -95,7 +95,7 @@ export const navigation = [
     icon: Target,
     group: "PRACTICE",
   },
-  { label: "PYQs", path: "/pyqs", icon: Library, group: "PRACTICE" },
+  { label: "MCQ Practice", path: "/pyqs", icon: Library, group: "PRACTICE" },
   { label: "Tests", path: "/tests", icon: ListChecks, group: "PRACTICE" },
   {
     label: "Weak Areas",

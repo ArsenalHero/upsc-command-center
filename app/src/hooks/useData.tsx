@@ -1,3 +1,4 @@
+import { validateMechanical, type MechanicalWorkspace } from "../utils/mechanical";
 import {
   createContext,
   useContext,
@@ -64,6 +65,7 @@ interface DataContextValue {
   savePrelims: (workspace: PrelimsWorkspace, attempts?: PYQRecord[]) => boolean;
   saveLectures: (workspace: LectureWorkspace) => boolean;
   saveBooks: (workspace: BookWorkspace) => boolean;
+  saveMechanical: (workspace: MechanicalWorkspace) => boolean;
 }
 const Context = createContext<DataContextValue | null>(null);
 export function DataProvider({
@@ -287,6 +289,11 @@ export function DataProvider({
     if (ok) notify("Book progress saved.");
     return ok;
   }, [commit, notify]);
+  const saveMechanical = useCallback((workspace: MechanicalWorkspace) => {
+    try { validateMechanical(workspace); }
+    catch (e) { notify((e as Error).message); return false; }
+    return commit(d => { d.mechanical = structuredClone(workspace); }, true);
+  }, [commit, notify]);
   const deleteRecord = useCallback(
     (c: Collection, id: string) => {
       const ok = commit((d) => {
@@ -433,6 +440,7 @@ export function DataProvider({
         savePrelims,
         saveLectures,
         saveBooks,
+        saveMechanical,
       }}
     >
       {children}

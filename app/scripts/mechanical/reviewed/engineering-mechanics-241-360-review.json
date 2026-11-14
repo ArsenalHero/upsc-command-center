@@ -5,21 +5,34 @@
       "id": "mech-engineering-mechanics-59-241",
       "status": "verified",
       "answer": "a",
-      "question": "A body with mass1200 kg is located on a10° inclined plane. What is the pulling force without friction?",
+      "question": "A body with mass 1200 kg is located on a 10° inclined plane. What is the pulling force without friction?",
       "options": {
         "a": "2044 N",
         "b": "1200 N",
         "c": "120 N",
         "d": "None of these"
       },
-      "explanation": "Given: m = 1200 kg. Without friction, μ = 0. The pulling force parallel to the plane is F = mg sin10° = 1200 ×9.81 ×sin10° = 2044.186 N.",
+      "explanation": "Given: m = 1200 kg. Without friction, μ = 0. The pulling force parallel to the plane is F = mg sin 10° = 1200 ×9.81 ×sin 10° = 2044.186 N.",
       "transcriptionReviewed": true,
-      "note": "Independently calculated2044.19 N. The diagram specifies a pull parallel to the slope.",
+      "note": "Independently calculated 2044.19 N. The diagram specifies a pull parallel to the slope.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
           "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 45,
+          "bbox": [
+            126,
+            422,
+            239,
+            477
+          ],
+          "placement": "explanation",
+          "alt": "1200 kg block on a frictionless 10° incline with pull parallel to slope and resolved gravity."
         }
       ]
     },
@@ -71,7 +84,7 @@
       "id": "mech-engineering-mechanics-59-244",
       "status": "verified",
       "answer": "c",
-      "question": "What is the rolling resistance to a truck whose weight is72000 N and whose coefficient of rolling resistance is0.019?",
+      "question": "What is the rolling resistance to a truck whose weight is 72000 N and whose coefficient of rolling resistance is 0.019?",
       "options": {
         "a": "7200 N",
         "b": "1900 N",
@@ -80,7 +93,7 @@
       },
       "explanation": "Given truck weight = 72000 N; coefficient of rolling resistance = 0.019. Rolling resistance = coefficient of rolling resistance ×weight = 0.019 ×72000 = 1368 N.",
       "transcriptionReviewed": true,
-      "note": "Dimensionless resistance coefficient:0.019 ×72000 = 1368 N.",
+      "note": "Dimensionless resistance coefficient: 0.019 ×72000 = 1368 N.",
       "references": [
         {
           "title": "University of Almería, Machine and Mechanism Theory",
@@ -122,9 +135,9 @@
         "c": "Dynamic friction is always the same as static friction",
         "d": "Dynamic friction is double the static friction"
       },
-      "explanation": "Kinetic(dynamic) friction resists relative sliding of the surfaces. Static friction is self-adjusting:0 ≤ fₛ ≤ μₛN, whereas the approximate Coulomb model gives fₖ = μₖN during sliding. For many material pairs μₖ < μₛ, so kinetic friction is smaller than the maximum or limiting static friction at the same normal load. It need not be smaller than the actual static friction, which may be zero. Moreover the inequality between the coefficients is empirical, not an absolute rule. Thus none of the four statements containing “always” or a fixed factor is generally true. The printed answer(a) reflects an intended comparison with limiting static friction, but the printed wording does not state that qualification.",
+      "explanation": "Kinetic(dynamic) friction resists relative sliding of the surfaces. Static friction is self-adjusting: 0 ≤ fₛ ≤ μₛN, whereas the approximate Coulomb model gives fₖ = μₖN during sliding. For many material pairs μₖ < μₛ, so kinetic friction is smaller than the maximum or limiting static friction at the same normal load. It need not be smaller than the actual static friction, which may be zero. Moreover the inequality between the coefficients is empirical, not an absolute rule. Thus none of the four statements containing “always” or a fixed factor is generally true. The printed answer(a) reflects an intended comparison with limiting static friction, but the printed wording does not state that qualification.",
       "transcriptionReviewed": true,
-      "note": "Printed answera confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading.",
+      "note": "Printed answer a confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
@@ -160,14 +173,14 @@
       "id": "mech-engineering-mechanics-59-248",
       "status": "verified",
       "answer": "b",
-      "question": "A car travelling at60 km/hour is braked and comes to rest6 seconds after the brakes are applied. What is the minimum coefficient of friction between the wheels and road?",
+      "question": "A car travelling at 60 km/hour is braked and comes to rest 6 seconds after the brakes are applied. What is the minimum coefficient of friction between the wheels and road?",
       "options": {
         "a": "0.107",
         "b": "0.283",
         "c": "0.3",
         "d": "0.417"
       },
-      "explanation": "Given: initial velocity u = 60 km/hr = 60 ×5/18 = 16.667 m/s. With braking deceleration magnitude a, v = u − at. Thus0 = 16.667 − a ×6, so a = 16.667/6 = 2.777 m/s². We know that a = μg. Therefore μ = a/g = 2.777/9.81 = 0.283.",
+      "explanation": "Given: initial velocity u = 60 km/hr = 60 ×5/18 = 16.667 m/s. With braking deceleration magnitude a, v = u − at. Thus 0 = 16.667 − a ×6, so a = 16.667/6 = 2.777 m/s². We know that a = μg. Therefore μ = a/g = 2.777/9.81 = 0.283.",
       "transcriptionReviewed": true,
       "note": "Calculatedμ=0.2832 using uniform deceleration and level-road friction braking.",
       "references": [
@@ -187,7 +200,7 @@
       "id": "mech-engineering-mechanics-60-249",
       "status": "verified",
       "answer": "d",
-      "question": "A body of weight120 N rests on a rough horizontal plane. The coefficient of friction between the body and plane is0.3. The frictional force to be overcome for impending motion is",
+      "question": "A body of weight 120 N rests on a rough horizontal plane. The coefficient of friction between the body and plane is 0.3. The frictional force to be overcome for impending motion is",
       "options": {
         "a": "30 N",
         "b": "400 N",
@@ -196,12 +209,25 @@
       },
       "explanation": "F_f = friction force; F = applied effort; R = normal force; w = weight. For the rough horizontal surface, w = 120 N, R = w, and at impending motion F = μR, with μ = 0.3. Therefore friction force F_f = μR = μw = 0.3 ×120 = 36 N.",
       "transcriptionReviewed": true,
-      "note": "Impending motion requires limiting static friction,μN=36 N.",
+      "note": "Impending motion requires limiting static friction, μN=36 N.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
           "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 46,
+          "bbox": [
+            110,
+            383,
+            251,
+            463
+          ],
+          "placement": "explanation",
+          "alt": "Horizontal block: normal R, 120 N weight, applied effort and limiting friction."
         }
       ]
     },
@@ -229,6 +255,19 @@
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
           "section": "6.3 Centripetal Force; friction supplying mv²/r"
+        }
+      ],
+      "figures": [
+        {
+          "page": 46,
+          "bbox": [
+            132,
+            648,
+            229,
+            719
+          ],
+          "placement": "explanation",
+          "alt": "Record and coin at radiusγ with inward friction and outward rotating-frame centrifugal force."
         }
       ]
     },
@@ -258,16 +297,16 @@
       "id": "mech-engineering-mechanics-60-252",
       "status": "verified",
       "answer": "d",
-      "question": "A50-kg box rests on a horizontal floor whose coefficient of friction is0.3. If the box is subjected to a horizontal towing force of400 N, what is its velocity after5 sec from rest?(Take g=10 m/s².)",
+      "question": "A 50-kg box rests on a horizontal floor whose coefficient of friction is 0.3. If the box is subjected to a horizontal towing force of 400 N, what is its velocity after 5 sec from rest?(Take g=10 m/s².)",
       "options": {
         "a": "40 m/s",
         "b": "30 m/s",
         "c": "27.5 m/s",
         "d": "25 m/s"
       },
-      "explanation": "Given: F = 400 N, μ = 0.3, time t = 5 sec. We know that F_s = μN = 0.3 ×50 ×10 = 150 N. From the block free-body diagram, ΣF_net = ma, or F − μN = ma. Thus250 = ma and a = 250/50 = 5 m/s². Hence v = u + at = 0 +5 ×5 = 25 m/s.",
+      "explanation": "Given: F = 400 N, μ = 0.3, time t = 5 sec. We know that F_s = μN = 0.3 ×50 ×10 = 150 N. From the block free-body diagram, ΣF_net = ma, or F − μN = ma. Thus 250 = ma and a = 250/50 = 5 m/s². Hence v = u + at = 0 +5 ×5 = 25 m/s.",
       "transcriptionReviewed": true,
-      "note": "400−150=250 N; acceleration5 m/s² and final speed25 m/s.",
+      "note": "400−150=250 N; acceleration 5 m/s² and final speed 25 m/s.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
@@ -278,6 +317,30 @@
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
           "section": "3.4 Motion with Constant Acceleration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 46,
+          "bbox": [
+            384,
+            405,
+            442,
+            425
+          ],
+          "placement": "explanation",
+          "alt": "50 kg box on a horizontal floor."
+        },
+        {
+          "page": 46,
+          "bbox": [
+            374,
+            469,
+            453,
+            485
+          ],
+          "placement": "explanation",
+          "alt": "Horizontal force sketch: opposing frictionμN and direction of ma."
         }
       ]
     },
@@ -307,14 +370,14 @@
       "id": "mech-engineering-mechanics-61-254",
       "status": "verified",
       "answer": "d",
-      "question": "Which statements about dry-surface friction laws are correct?1.The friction force depends on sliding velocity.2.It is directly proportional to the normal force.3.It depends on the contact materials.4.It depends on the apparent contact area.",
+      "question": "Which statements about dry-surface friction laws are correct?1. The friction force depends on sliding velocity.2. It is directly proportional to the normal force.3. It depends on the contact materials.4. It depends on the apparent contact area.",
       "options": {
-        "a": "2,3 and4",
-        "b": "2 and4",
-        "c": "1,2,3 and4",
-        "d": "2 and3"
+        "a": "2, 3 and 4",
+        "b": "2 and 4",
+        "c": "1, 2, 3 and 4",
+        "d": "2 and 3"
       },
-      "explanation": "F = μR, where μ = coefficient of friction and R = normal reaction.(i) The limiting or kinetic friction force is directly proportional to normal force.(ii) It depends on the contact materials. Thus statements2 and3 are the intended dry Coulomb-friction laws.",
+      "explanation": "F = μR, where μ = coefficient of friction and R = normal reaction.(i) The limiting or kinetic friction force is directly proportional to normal force.(ii) It depends on the contact materials. Thus statements 2 and 3 are the intended dry Coulomb-friction laws.",
       "transcriptionReviewed": true,
       "note": "Valid for conventional limiting/kinetic dry-friction laws; nonlimiting static friction adjusts to the applied load.",
       "references": [
@@ -322,6 +385,19 @@
           "title": "Engineering Statics: Open and Interactive",
           "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
           "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 47,
+          "bbox": [
+            121,
+            284,
+            240,
+            396
+          ],
+          "placement": "explanation",
+          "alt": "Rough-plane block with applied P, frictionμR, normal R and weightmg."
         }
       ]
     },
@@ -346,27 +422,40 @@
           "section": "9.1 Dry Friction; limiting friction and friction angle"
         }
       ],
-      "sourceExplanation": "Limiting friction—The maximum value of static friction upto which body does not move and the angle which it makes with horizontal is called angle of limiting friction. Angle of repose—It is the angle of the inclined plane with horizontal such that a body placed on it just begins to slide. In limiting condition F = mg sinα; R = mg cosα, whereα is angle of repose. So F/R = tanα. Therefore F/R = μₛ = tanθ = tanα(since tanθ = μₛ), orθ=α."
+      "sourceExplanation": "Limiting friction—The maximum value of static friction upto which body does not move and the angle which it makes with horizontal is called angle of limiting friction. Angle of repose—It is the angle of the inclined plane with horizontal such that a body placed on it is just begins to slide. In limiting condition: F=mg sinα; R=mg cosα, whereα=angle of repose. So F/R=tanα. Therefore F/R=μₛ=tanθ=tanα(since tanθ=μₛ), orθ=α."
     },
     {
       "id": "mech-engineering-mechanics-61-256",
       "status": "verified",
       "answer": "c",
-      "question": "A body rests on a plane inclined30° to horizontal. What additional force is needed to slide it down if its coefficient of friction is0.3?",
+      "question": "A body rests on a plane inclined 30° to horizontal. What additional force is needed to slide it down if its coefficient of friction is 0.3?",
       "options": {
         "a": "5 kg",
         "b": "1 kg",
         "c": "Zero",
         "d": "0.5 kg"
       },
-      "explanation": "For the inclined body R = mg cos30°. Gravity’s downhill component is mg sin30° = 0.5mg…(1). Maximum opposing friction is f = μmg cos30° = 0.3(√3/2)mg = 0.259mg…(2). Hence f < mg sin30°. No additional force is needed to slide the body down.",
+      "explanation": "For the inclined body R = mg cos 30°. Gravity’s downhill component is mg sin 30° = 0.5 mg…(1). Maximum opposing friction is f = μmg cos 30° = 0.3(√3/2)mg = 0.259 mg…(2). Hence f < mg sin 30°. No additional force is needed to slide the body down.",
       "transcriptionReviewed": true,
-      "note": "μ=0.3<tan30°; an unrestrained body cannot remain at rest.",
+      "note": "μ=0.3<tan 30°; an unrestrained body cannot remain at rest.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
           "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 47,
+          "bbox": [
+            357,
+            189,
+            468,
+            277
+          ],
+          "placement": "explanation",
+          "alt": "30° incline free-body diagram with downhill gravity, uphill friction, normal and weight."
         }
       ]
     },
@@ -391,27 +480,64 @@
           "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
         }
       ],
-      "sourceExplanation": "Using Newton’s second law: F = mg sinθ − μmg cosθ. Thus mf = mg[sinθ − μcosθ] and f = g[sinθ − μcosθ]. But coefficient of frictionμ is not given and the surface is assumed smooth, soμ=0 and f=g sinθ."
+      "sourceExplanation": "Using the second law of motion: F=mg sinθ−μmg cosθ. Thus mf=mg[sinθ−μcosθ], and f=g[sinθ−μcosθ]. But the coefficient of frictionμ is not given and the surface is assumed smooth, soμ=0 and f=g sinθ.",
+      "figures": [
+        {
+          "page": 47,
+          "bbox": [
+            340,
+            446,
+            484,
+            560
+          ],
+          "placement": "explanation",
+          "alt": "Rough-incline force diagram showing the friction term required by the general acceleration equation."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-61-258",
       "status": "verified",
       "answer": "c",
-      "question": "A block of cross-section4×3 m and mass20 kg rests on a horizontal surface as shown. If the friction coefficient is1/4, the force F that will cause it to move is approximately",
+      "question": "A block of cross-section 4×3 m and mass 20 kg rests on a horizontal surface as shown. If the friction coefficient is 1/4, the force F that will cause it to move is approximately",
       "options": {
         "a": "20 kgf",
         "b": "10 kgf",
         "c": "5 kgf",
         "d": "8.7 kgf"
       },
-      "explanation": "Given m=20 kg and μ=1/4. Vertical balance gives N = mg − F sin30° = 20×10 − F/2 = 200 − F/2. Friction f = μN = (1/4)(200 − F/2). For sliding F cos30° > f, so F√3/2 > 50 − F/8. Hence F(√3/2 +1/8)>50, giving F>50.45 N. The printed conversion F>5.04 kgf uses1 kgf≈10 N; closest choice(c),5 kgf.",
+      "explanation": "Given m=20 kg and μ=1/4. Vertical balance gives N = mg − F sin 30° = 20×10 − F/2 = 200 − F/2. Friction f = μN = (1/4)(200 − F/2). For sliding F cos 30° > f, so F√3/2 > 50 − F/8. Hence F(√3/2 +1/8)>50, giving F>50.45 N. The printed conversion F>5.04 kgf uses 1 kgf≈10 N; closest choice(c), 5 kgf.",
       "transcriptionReviewed": true,
-      "note": "Sliding threshold50.45 N checked against tipping threshold≈86.6 N; sliding occurs first.",
+      "note": "Sliding threshold 50.45 N checked against tipping threshold≈86.6 N; sliding occurs first.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
           "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 48,
+          "bbox": [
+            137,
+            91,
+            227,
+            188
+          ],
+          "placement": "question",
+          "alt": "20 kg block 4 m high and 3 m wide; F at upper left acts 30° above the leftward horizontal."
+        },
+        {
+          "page": 48,
+          "bbox": [
+            110,
+            230,
+            249,
+            334
+          ],
+          "placement": "explanation",
+          "alt": "Block FBD with Fcos 30°, Fsin 30°, weight, normal and friction forμ=1/4."
         }
       ]
     },
@@ -419,14 +545,14 @@
       "id": "mech-engineering-mechanics-62-259",
       "status": "verified",
       "answer": "b",
-      "question": "The pulley system shown has mass1.5 kg and radius of gyration0.2 m. Its angular acceleration when the suspended masses are released is",
+      "question": "The pulley system shown has mass 1.5 kg and radius of gyration 0.2 m. Its angular acceleration when the suspended masses are released is",
       "options": {
         "a": "5 rad/s²",
         "b": "(10/1.3) rad/s²",
         "c": "(15/1.3) rad/s²",
         "d": "10 rad/s²"
       },
-      "explanation": "Given pulley m₁=1.5 kg,k=0.2 m; m₂=1 kg at r₂=0.2 m; m₃=3 kg at r₃=0.1 m. I₁=m₁k²=1.5×0.2²=0.06 kg·m². Reflected I₂=m₂r₂²=1×0.2²=0.04; I₃=m₃r₃²=3×0.1²=0.03 kg·m². Then(I₁+I₂+I₃)α=m₃gr₃−m₂gr₂. With printed g=10,(0.06+0.04+0.03)α=3×10×0.1−1×10×0.2=1. Thusα=1/0.13=10/1.3 rad/s².",
+      "explanation": "Given pulley m₁=1.5 kg, k=0.2 m; m₂=1 kg at r₂=0.2 m; m₃=3 kg at r₃=0.1 m. I₁=m₁k²=1.5×0.2²=0.06 kg·m². Reflected I₂=m₂r₂²=1×0.2²=0.04; I₃=m₃r₃²=3×0.1²=0.03 kg·m². Then(I₁+I₂+I₃)α=m₃gr₃−m₂gr₂. With printed g=10, (0.06+0.04+0.03)α=3×10×0.1−1×10×0.2=1. Thusα=1/0.13=10/1.3 rad/s².",
       "transcriptionReviewed": true,
       "note": "Independent hanging-mass and pulley equations agree; source usesg=10.",
       "references": [
@@ -435,22 +561,46 @@
           "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
           "section": "10.7 Newton’s Second Law for Rotation"
         }
+      ],
+      "figures": [
+        {
+          "page": 48,
+          "bbox": [
+            133,
+            597,
+            227,
+            743
+          ],
+          "placement": "question",
+          "alt": "Stepped pulley 1.5 kg with 1 kg at outer 0.2 m radius and 3 kg at inner 0.1 m radius."
+        },
+        {
+          "page": 48,
+          "bbox": [
+            366,
+            168,
+            456,
+            306
+          ],
+          "placement": "explanation",
+          "alt": "Stepped-pulley diagram identifying reflected inertias of the two hanging masses."
+        }
       ]
     },
     {
       "id": "mech-engineering-mechanics-62-260",
       "status": "verified",
       "answer": "c",
-      "question": "A10 kg body initially rests on a45° incline. Dynamic friction is0.3. It slides down until its speed is20 m/s. The distance along the plane is closest to",
+      "question": "A 10 kg body initially rests on a 45° incline. Dynamic friction is 0.3. It slides down until its speed is 20 m/s. The distance along the plane is closest to",
       "options": {
         "a": "4.8 m",
         "b": "98 m",
         "c": "41 m",
         "d": "9.8 m"
       },
-      "explanation": "From the free-body diagram ma=mg sin45°−μmg cos45°. Therefore a=9.81(1/√2)(1−0.3)=9.81(1/√2)×0.7=4.85 m/s². Using v²=u²+2as gives20²=0²+2×4.85×s, so s=41.2 m.",
+      "explanation": "From the free-body diagram ma=mg sin 45°−μmg cos 45°. Therefore a=9.81(1/√2)(1−0.3)=9.81(1/√2)×0.7=4.85 m/s². Using v²=u²+2 as gives 20²=0²+2×4.85×s, so s=41.2 m.",
       "transcriptionReviewed": true,
-      "note": "Independent result41.19 m; full explanation continues on printedp63.",
+      "note": "Independent result 41.19 m; full explanation continues on printed p 63.",
       "references": [
         {
           "title": "OpenStax, University Physics Volume1",
@@ -461,6 +611,30 @@
           "title": "OpenStax, University Physics Volume1",
           "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
           "section": "3.4 Motion with Constant Acceleration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 48,
+          "bbox": [
+            368,
+            497,
+            458,
+            551
+          ],
+          "placement": "question",
+          "alt": "10 kg block on a 45° incline."
+        },
+        {
+          "page": 48,
+          "bbox": [
+            351,
+            598,
+            479,
+            677
+          ],
+          "placement": "explanation",
+          "alt": "Sliding block FBD with gravity components, normal and uphill friction."
         }
       ]
     },
@@ -477,7 +651,7 @@
       },
       "explanation": "From the FBD P=R_A sinθ, so R_A=P/sinθ. Floor normal R=R_A sinθ+Q=P+Q. At impending sliding horizontal contact force equals limiting floor friction: F=μR=μ(P+Q)=P/tanθ. Thus P=μP tanθ+μQ tanθ and P=μQ tanθ/(1−μtanθ). A finite positive threshold requiresμtanθ<1; otherwise the ideal model is self-locking.",
       "transcriptionReviewed": true,
-      "note": "Equilibrium and geometry independently checked. Source kg weights use gravitational-unit convention;g cancels.",
+      "note": "Equilibrium and geometry independently checked. Source kg weights use gravitational-unit convention; g cancels.",
       "references": [
         {
           "title": "Engineering Statics: Open and Interactive",
@@ -488,6 +662,30 @@
           "title": "Engineering Statics: Open and Interactive",
           "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
           "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            109,
+            267,
+            253,
+            374
+          ],
+          "placement": "question",
+          "alt": "Cylinder B between wall and sloping block A; θ is measured between vertical wall and contact slope."
+        },
+        {
+          "page": 49,
+          "bbox": [
+            80,
+            451,
+            278,
+            600
+          ],
+          "placement": "explanation",
+          "alt": "Contact-force diagram with cylinder reaction R_A, floor normal R, weightsP, Q and frictionμR."
         }
       ]
     },
@@ -511,6 +709,19 @@
           "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
           "section": "9.1 Dry Friction; limiting friction and friction angle"
         }
+      ],
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            350,
+            230,
+            475,
+            318
+          ],
+          "placement": "explanation",
+          "alt": "Resultant R and normal R_N enclose friction angleφ; limiting friction, applied P and weight shown."
+        }
       ]
     },
     {
@@ -524,9 +735,267 @@
         "c": "4",
         "d": "3"
       },
-      "explanation": "FBD: upper block A has mass5 kg, normal N=mg=5×9.81 N and maximum interface friction F_fA=μ₁×5×9.81 N…(1). Lower block B has mass10 kg. Interface normal forces satisfy N_BA=N_AB by Newton’s third law. Ground normal N_BG=10×9.81+N_BA=10×9.81+5×9.81=15×9.81 N. Limiting ground friction F_fB=μ₂×15×9.81 N…(2). At the minimum ratio for initiating joint motion both thresholds coincide: F_fA=F_fB=F. Dividing(1) by(2), F/F=(μ₁×5g)/(μ₂×15g), so1=μ₁/(3μ₂). Henceμ₁/μ₂=3.",
+      "explanation": "FBD: upper block A has mass 5 kg, normal N=mg=5×9.81 N and maximum interface friction F_fA=μ₁×5×9.81 N…(1). Lower block B has mass 10 kg. Interface normal forces satisfy N_BA=N_AB by Newton’s third law. Ground normal N_BG=10×9.81+N_BA=10×9.81+5×9.81=15×9.81 N. Limiting ground friction F_fB=μ₂×15×9.81 N…(2). At the minimum ratio for initiating joint motion both thresholds coincide: F_fA=F_fB=F. Dividing(1) by(2), F/F=(μ₁×5g)/(μ₂×15g), so 1=μ₁/(3μ₂). Henceμ₁/μ₂=3.",
       "transcriptionReviewed": true,
-      "note": "Force acts on the upper5 kg block. Ratio3 initiates joint motion; arbitrary larger acceleration imposes additional interface-friction requirements.",
+      "note": "Force acts on the upper 5 kg block. Ratio 3 initiates joint motion; arbitrary larger acceleration imposes additional interface-friction requirements.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            343,
+            409,
+            481,
+            451
+          ],
+          "placement": "question",
+          "alt": "5 kg block on 10 kg block, F on upper block; μ₁ at interface andμ₂ at ground."
+        },
+        {
+          "page": 49,
+          "bbox": [
+            341,
+            501,
+            490,
+            558
+          ],
+          "placement": "explanation",
+          "alt": "Stacked blocks with upper applied force and both friction coefficients."
+        },
+        {
+          "page": 49,
+          "bbox": [
+            371,
+            591,
+            459,
+            663
+          ],
+          "placement": "explanation",
+          "alt": "Upper-block FBD: appliedF, interface frictionf, normalN and weightmg."
+        },
+        {
+          "page": 49,
+          "bbox": [
+            384,
+            682,
+            435,
+            740
+          ],
+          "placement": "explanation",
+          "alt": "Upper-block vertical forces N_AB and 5g."
+        },
+        {
+          "page": 50,
+          "bbox": [
+            79,
+            149,
+            281,
+            224
+          ],
+          "placement": "explanation",
+          "alt": "Lower-block FBDs with ground reaction, inter-block normal action–reaction and 10g weight."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-64-264",
+      "status": "corrected",
+      "answer": "e",
+      "question": "The maximum value of ______, which acts when a body just begins to slide over another body, is known as ______.",
+      "options": {
+        "a": "Kinetic friction, limiting friction",
+        "b": "Dynamic friction, limiting friction",
+        "c": "Solid friction, limiting friction",
+        "d": "Boundary friction, limiting friction",
+        "e": "Static friction, limiting friction"
+      },
+      "explanation": "The maximum static friction at impending sliding is limiting friction. Static friction develops between mating surfaces under external force without relative sliding. Dynamic friction develops when there is relative sliding; it is also called kinetic friction. Approximate Coulomb laws: (1) Friction acts tangentially and opposes relative sliding or its tendency.(2) Static friction varies from zero to its limiting value according to forces tending to cause sliding.(3) Limiting friction bears a constant ratioμₛ to the normal reaction for given surfaces and conditions.(4) It is approximately independent of apparent contact area and shape.(5) It depends on the nature and condition of the surfaces, including roughness or smoothness.(6) At low sliding speeds kinetic friction is approximately speed-independent. At higher speeds it can vary; a slight reduction is sometimes observed but is not a universal law.",
+      "transcriptionReviewed": true,
+      "note": "Retained key e; corrected “kinematic” to “kinetic” and qualified the high-speed claim while preserving all six laws.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "sourceExplanation": "The maximum value of static friction, which comes into play, when a body just begins to slide over the surface of the other body, is known as limiting friction. Static Friction—The static friction is the frictional force that develops between mating surface when subjected to external force but there is no relative motion between them. Dynamic Friction—The dynamic friction is the frictional force that develops between mating surface when subjected to external forces and there is relative motion between them. The dynamic friction is also known as kinematic friction. Laws of Solid Friction[Static or Dynamic]: 1. Friction acts tangential to the surface in contact and is in a direction opposite to that in which motion is to impend i. e. take place.2. Friction force is maximum at the instant of impending motion. Its variation from zero to maximum value[Limiting friction] depends upon the resultant force tending to cause motion.3. The magnitude of limiting friction bears a constant ratio to the normal reaction between the mating surface.4. Limiting friction is independent of the area and shape of contact surface.5. Limiting friction depends upon the nature(roughness or smoothness) of the surface in contact.6. At low velocities between sliding surface, the friction force is practically independent of the velocity. However, slight reduction in friction occurs when the speed are high."
+    },
+    {
+      "id": "mech-engineering-mechanics-64-265",
+      "status": "verified",
+      "answer": "b",
+      "question": "If F is limiting friction and R_N the normal contact reaction, the coefficientμ is",
+      "options": {
+        "a": "R_N/F",
+        "b": "F/R_N",
+        "c": "2F/R_N",
+        "d": "0.5F/R_N",
+        "e": "0.5R_N/F"
+      },
+      "explanation": "S is the total contact reaction, resultant of normal R_N and friction F. The ratio of limiting friction to normal reaction is the coefficientμ: μ=F/R_N. Also tanφ=μ=F/R_N, whereφ is the friction angle.",
+      "transcriptionReviewed": true,
+      "note": "Definition checked independently.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 50,
+          "bbox": [
+            352,
+            306,
+            482,
+            393
+          ],
+          "placement": "explanation",
+          "alt": "Block A with tractive P, frictionF, normalR_N, resultantS and angleφ."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-64-266",
+      "status": "verified",
+      "answer": "c",
+      "question": "The coefficient of rolling resistance is the ratio of",
+      "options": {
+        "a": "Rolling resistance to lateral load",
+        "b": "Lateral load to rolling resistance",
+        "c": "Rolling resistance to normal load",
+        "d": "Normal load to rolling resistance"
+      },
+      "explanation": "The dimensionless coefficient of rolling resistance is the ratio of rolling-resistance force F_R to normal load N: C_rr=F_R/N.",
+      "transcriptionReviewed": true,
+      "note": "Force-ratio convention here differs from Q 278’s length-valued coefficient.",
+      "references": [
+        {
+          "title": "University of Almería, Machine and Mechanism Theory",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Rolling resistance; resisting moment Nρ and force Nρ/r"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-64-267",
+      "status": "verified",
+      "answer": "c",
+      "question": "The coefficient of friction is the ratio of",
+      "options": {
+        "a": "Normal reaction to limiting friction",
+        "b": "Body weight to limiting friction",
+        "c": "Limiting friction to normal reaction",
+        "d": "Body weight to normal reaction"
+      },
+      "explanation": "Coefficient of friction is limiting friction divided by normal reaction. F=μR, soμ=F/R, whereμ is coefficient, F limiting friction, and R normal reaction.",
+      "transcriptionReviewed": true,
+      "note": "Limiting-force ratio and units verified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 51,
+          "bbox": [
+            129,
+            94,
+            232,
+            174
+          ],
+          "placement": "explanation",
+          "alt": "Horizontal block FBD with frictionF=μR, appliedP, normalR, weightmg and motion direction."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-268",
+      "status": "verified",
+      "answer": "b",
+      "question": "Which statement is wrong about wedge friction?",
+      "options": {
+        "a": "To lift a heavy block through small distances",
+        "b": "To lift a heavy block through a large force",
+        "c": "To slightly slide one end of a beam relative to its other end",
+        "d": "Wedge weight is neglected compared with the lifted weight"
+      },
+      "explanation": "Wedge: • A simple machine used to raise heavy loads.• Applied force needed to lift the block can be significantly less than its weight.• Friction can prevent the wedge sliding out(self-locking).• A minimum force D is required to raise the block.",
+      "transcriptionReviewed": true,
+      "note": "Printed key b and all four explanation points recovered; self-locking needs sufficient friction.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-block-and-wedge-friction.html",
+          "section": "9.3 Wedges; separate free-body equilibrium equations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-269",
+      "status": "verified",
+      "answer": "b",
+      "question": "A block starts sliding on an inclined plane when its inclination is gradually raised to 30°. Its friction coefficient is closest to",
+      "options": {
+        "a": "0.50",
+        "b": "0.578",
+        "c": "0.72",
+        "d": "0.866"
+      },
+      "explanation": "From the figure R=W cos 30° and μR=W sin 30°. HenceμW cos 30°=W sin 30°, orμ√3/2=1/2. Thereforeμ=tan 30°=0.5773, closest to(b), 0.578.",
+      "transcriptionReviewed": true,
+      "note": "Source diagram’s “W cos 3°” is a label typo for W cos 30°.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "figures": [
+        {
+          "page": 51,
+          "bbox": [
+            112,
+            514,
+            250,
+            581
+          ],
+          "placement": "explanation",
+          "alt": "Block at repose on 30° incline; printed cos 3° label should be cos 30°."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-270",
+      "status": "verified",
+      "answer": "b",
+      "question": "When the applied force is less than limiting friction, an initially resting body will",
+      "options": {
+        "a": "Start moving",
+        "b": "Remain at rest",
+        "c": "Slide backward",
+        "d": "Skid"
+      },
+      "explanation": "When applied force is less than limiting friction, the body remains at rest.",
+      "transcriptionReviewed": true,
+      "note": "Static friction balances the required force below its limit.",
       "references": [
         {
           "title": "Engineering Statics: Open and Interactive",
@@ -534,14 +1003,2802 @@
           "section": "9.1 Dry Friction; limiting friction and friction angle"
         }
       ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-271",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 44 N block is thrust up a 30° incline at 5 m/s and travels 1.5 m before stopping. The frictional force is closest to",
+      "options": {
+        "a": "18.3 N",
+        "b": "15.3 N",
+        "c": "12.3 N",
+        "d": "9.3 N"
+      },
+      "explanation": "Given W=44 N, s=1.5 m, u=5 m/s, v=0. With deceleration magnitude a, v²=u²−2 as gives 0=5²−2a(1.5), so a=8.33 m/s². Net opposing force ma=(W/g)a. Thus mg sin 30°+f=(44/9.81)×8.33. Therefore 22+f=37.37 and friction f=37.37−22=15.37 N, closest to(b).",
+      "transcriptionReviewed": true,
+      "note": "Gravity and friction both act down the incline during upward motion; recalculation≈15.38 N.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-272",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 30 N force moves a 35 kg mass horizontally at constant velocity on a flat surface. The friction coefficient is",
+      "options": {
+        "a": "0.067",
+        "b": "0.087",
+        "c": "0.098",
+        "d": "0.092"
+      },
+      "explanation": "Vertical balance R−35g=0 gives R=35g. Constant velocity gives F=μR. Henceμ=F/R=30/(35×9.8)=0.087.",
+      "transcriptionReviewed": true,
+      "note": "Calculated 0.08746; option b.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 51,
+          "bbox": [
+            364,
+            376,
+            463,
+            468
+          ],
+          "placement": "explanation",
+          "alt": "35 kg block with 30 N pull, opposing friction, normal and 35g weight."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-65-273",
+      "status": "disputed",
+      "answer": null,
+      "question": "Masses m and M hang at the ends of a rope over a frictional pulley. The acceleration with which the heavier M descends is",
+      "options": {
+        "a": "g(M−m)/(M+m)",
+        "b": "g(M+m)/(M−m)",
+        "c": "gM/(M+m)",
+        "d": "gM/(M−m)"
+      },
+      "explanation": "With an ideal massless rope and massless frictionless pulley, T−mg=ma and Mg−T=Ma imply a=g(M−m)/(M+m), option(a). The printed stem instead says “frictional pulley.” Unspecified pulley inertia or bearing torque changes acceleration. For radius R, inertia I, and opposing torqueτ_f, a=[(M−m)g−τ_f/R]/[M+m+I/R²] for the assumed direction. Those quantities are not supplied, so the printed answer is only an ideal frictionless result.",
+      "transcriptionReviewed": true,
+      "note": "Original scan genuinely prints “frictional, ” not “frictionless.” Underdetermined; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s Second Law for Rotation"
+        }
+      ],
+      "sourceExplanation": "g(M−m)/(M+m)."
+    },
+    {
+      "id": "mech-engineering-mechanics-65-274",
+      "status": "verified",
+      "answer": "d",
+      "question": "The tangent of the angle of friction equals",
+      "options": {
+        "a": "Kinetic friction",
+        "b": "Limiting friction",
+        "c": "Friction force",
+        "d": "Coefficient of friction"
+      },
+      "explanation": "Coefficient of friction: tanφ=μ.",
+      "transcriptionReviewed": true,
+      "note": "Friction-angle definition.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-275",
+      "status": "verified",
+      "answer": "a",
+      "question": "A 200 N body on a rough horizontal plane can just be moved by an 80 N horizontal force. Its friction coefficient is",
+      "options": {
+        "a": "0.4",
+        "b": "0.5",
+        "c": "0.3",
+        "d": "None of the above"
+      },
+      "explanation": "F=μR. Thusμ=80/200=0.4.",
+      "transcriptionReviewed": true,
+      "note": "Normal equals 200 N; limiting friction ratio 0.4.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-276",
+      "status": "verified",
+      "answer": "d",
+      "question": "In the dry Coulomb model, friction force is independent of",
+      "options": {
+        "a": "Sliding speed",
+        "b": "Apparent contact area",
+        "c": "Normal load",
+        "d": "Both(a) and(b)"
+      },
+      "explanation": "F_f=μN, whereμ is friction coefficient and N normal load; F_f is proportional to N. In the approximate dry Coulomb model it is independent of sliding speed and apparent contacting area.",
+      "transcriptionReviewed": true,
+      "note": "Standard approximation, not universal for lubricated or speed-sensitive contacts.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-277",
+      "status": "verified",
+      "answer": "b",
+      "question": "______ provides complete restraint against transverse or longitudinal motion and rotation.",
+      "options": {
+        "a": "A frictionless bearing",
+        "b": "An ideal clamped support",
+        "c": "A weightless flexible string",
+        "d": "A frictionless pin joint"
+      },
+      "explanation": "An ideal clamped support provides complete restraint against transverse or longitudinal motion and against rotation.",
+      "transcriptionReviewed": true,
+      "note": "A fixed support restrains both planar translations and rotation.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_05-2d-rigid-body-equilibrium.html",
+          "section": "5.4 Two-Dimensional Rigid-Body Equilibrium; fixed support reactions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-278",
+      "status": "disputed",
+      "answer": null,
+      "question": "A steel wheel of diameter 200 mm rolls on a horizontal steel rail. Its length-valued rolling-resistance coefficient is 0.3 mm and load 600 N. The force needed to roll it is",
+      "options": {
+        "a": "90 N",
+        "b": "180 N",
+        "c": "90 kN",
+        "d": "270 N"
+      },
+      "explanation": "The length-valued coefficient isρ=0.3 mm. Its resisting moment is Wρ; balance with a horizontal centre force gives FR=Wρ. Radius R=100 mm, so F=Wρ/R=600×0.3/100=1.8 N. No choice matches. The source calculates 1.8 N but also cites an official-key value 180 N, inconsistent by a factor 100. Leave ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Source calculation and reported key disagree; no correct listed choice.",
+      "references": [
+        {
+          "title": "University of Almería, Machine and Mechanism Theory",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Rolling resistance; resisting moment Nρ and force Nρ/r"
+        }
+      ],
+      "sourceExplanation": "Given: μ_r=0.3 mm, diameter d=200 mm, radius r=100 mm. Force necessary to roll the wheel along the rail: F=μ_rW/R=(0.3×600)/100. F=1.8 N. Note: As per UPRVUNL, correct option is(b), 180 N."
+    },
+    {
+      "id": "mech-engineering-mechanics-66-279",
+      "status": "corrected",
+      "answer": "d",
+      "question": "A heavy block of mass m is slowly placed on a conveyor belt moving at v. Its friction coefficient isμ. The block slides on the belt through distance",
+      "options": {
+        "a": "v/(μg)",
+        "b": "v²/√(μg)",
+        "c": "[v/(μg)]²",
+        "d": "v²/(2μg)"
+      },
+      "explanation": "In the belt frame the block initially has relative speed u=v. Friction reduces relative speed with a=−μg. Using v_rel²−u²=2 as with v_rel=0 gives−u²=2(−μg)s. Thus u²=2μgs and relative sliding distance s=u²/(2μg)=v²/(2μg).",
+      "transcriptionReviewed": true,
+      "note": "Corrected the source intermediate line omitting factor 2; retained key d.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ],
+      "sourceExplanation": "Retardation due to friction force=−μg. v²−u²=2 as.0−u²=as.−u²=2×(−μg)s.+u²=2μgs. s=u²/(2μg)."
+    },
+    {
+      "id": "mech-engineering-mechanics-66-280",
+      "status": "disputed",
+      "answer": null,
+      "question": "A 50 kN body is in limiting equilibrium on a rough 30° plane. The plane is raised to 45°. Find the friction coefficient for equilibrium.",
+      "options": {
+        "a": "0.577",
+        "b": "0.749",
+        "c": "0.623",
+        "d": "0.425"
+      },
+      "explanation": "Initial limiting equilibrium givesμₛ=tan 30°=1/√3≈0.577. At 45°, equilibrium requires W sin 45°≤μₛW cos 45°, soμₛ≥tan 45°=1. With the existing 0.577 the body slips; changing the slope does not increase the coefficient. If the question asks the minimum coefficient required at 45°, it is 1 and no option matches. The printed solution only addresses 30°.",
+      "transcriptionReviewed": true,
+      "note": "Conflicting 30° initial and 45° final equilibrium conditions; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "sourceExplanation": "θ₁=30°, W=50 kN, θ₂=45°. Consider when the slope of the plane is 30°. Sum of forces parallel to plane: ΣF_x=0, μN−W sin 30°=0…(i). Sum of forces perpendicular to plane: ΣF_y=0, N−W cos 30°=0, so N=W cos 30°…(ii). Putting N into(i): μW cos 30°−W sin 30°=0. Thusμcos 30°−sin 30°=0. Dividing by cosθ givesμ−tan 30°=0, soμ=tan 30°=1/√3=0.577.",
+      "figures": [
+        {
+          "page": 52,
+          "bbox": [
+            342,
+            286,
+            485,
+            361
+          ],
+          "placement": "explanation",
+          "alt": "Incline force diagram used by the source’s 30° equilibrium calculation."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-281",
+      "status": "verified",
+      "answer": "a",
+      "question": "The friction experienced by a body at rest is known as",
+      "options": {
+        "a": "Static friction",
+        "b": "Dynamic friction",
+        "c": "Limiting friction",
+        "d": "Coefficient of friction"
+      },
+      "explanation": "Static friction is the friction experienced by a body when at rest.",
+      "transcriptionReviewed": true,
+      "note": "Non-sliding contact friction may also be zero if no tangential force is required.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-66-282",
+      "status": "verified",
+      "answer": "b",
+      "question": "A man climbs a ladder against a vertical wall. At exactly halfway up, it begins slipping. The path traced by the man is",
+      "options": {
+        "a": "Parabola",
+        "b": "Circle",
+        "c": "Ellipse",
+        "d": "Hyperbola"
+      },
+      "explanation": "Circle.",
+      "transcriptionReviewed": true,
+      "note": "For the intended motion the man stays at the midpoint while both ladder ends remain in contact. Endpoint coordinates obeyx²+y²=L², so midpoint X²+Y²=L²/4. Continued climbing would need more information.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-67-283",
+      "status": "corrected",
+      "answer": "a",
+      "question": "A block of mass M is released from P on a rough inclineθ. Friction coefficientμ<tanθ. Time to reach Q, where PQ=S, is",
+      "options": {
+        "a": "√[2S/{gcosθ(tanθ−μ)}]",
+        "b": "√[2S/{gcosθ(tanθ+μ)}]",
+        "c": "√[2S/{gsinθ(tanθ−μ)}]",
+        "d": "√[2S/{gsinθ(tanθ+μ)}]"
+      },
+      "explanation": "Normal N=mg cosθ and uphill frictionμN. Newton’s second law gives ma=mg sinθ−μN=mg sinθ−μmg cosθ. Thus a=g sinθ−μg cosθ=g cosθ(tanθ−μ)>0. Starting from rest, S=ut+(1/2)at²=(1/2)(g sinθ−μg cosθ)t². Hence t=√[2S/{g cosθ(tanθ−μ)}].",
+      "transcriptionReviewed": true,
+      "note": "Removed the source’s false equalityμN=mg sinθ, which contradicts acceleration andμ<tanθ.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ],
+      "sourceExplanation": "N=mg cosθ.μN=mg sinθ. From Newton’s second law: F=ma=mg sinθ−μN. Thus ma=mg sinθ−μmg cosθ, and a=g sinθ−μg cosθ. S=ut+(1/2)at². Therefore S=0+(1/2)(g sinθ−μg cosθ)t², and t=√[2S/{g cosθ(tanθ−μ)}].",
+      "figures": [
+        {
+          "page": 53,
+          "bbox": [
+            127,
+            159,
+            240,
+            207
+          ],
+          "placement": "question",
+          "alt": "Block M released at P slides down rough inclineθ to Q through distanceS."
+        },
+        {
+          "page": 53,
+          "bbox": [
+            123,
+            302,
+            243,
+            377
+          ],
+          "placement": "explanation",
+          "alt": "Inclined block with normalN, frictionμN and resolved gravity."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-67-284",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 500 N roller of radius 0.5 m is dragged over a rectangular block by horizontal centre force P as shown. To initiate rotation over the corner, P must exceed",
+      "options": {
+        "a": "500 N",
+        "b": "400 N",
+        "c": "500√3 N",
+        "d": "500√2 N"
+      },
+      "explanation": "W is roller weight and P the horizontal force at its centre. Diagram geometry gives OA=R cos 60° and OB=R cos 30°. At impending rotation about corner C, ΣM_C=0, so P(OA)=W(OB). Thus P=500 cos 30°/cos 60°=500√3 N. A force just greater than this threshold initiates climbing.",
+      "transcriptionReviewed": true,
+      "note": "The explanation’s sole diagram supplies critical 30° geometry; attach it also to the question.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s Second Law for Rotation"
+        }
+      ],
+      "figures": [
+        {
+          "page": 53,
+          "bbox": [
+            145,
+            639,
+            238,
+            732
+          ],
+          "placement": "question",
+          "alt": "Roller contacts curb atC; OC lies 30° below horizontal. Source’s sole diagram supplying curb geometry."
+        },
+        {
+          "page": 53,
+          "bbox": [
+            145,
+            639,
+            238,
+            732
+          ],
+          "placement": "explanation",
+          "alt": "Roller moment arms OA=Rcos 60°, OB=Rcos 30° about curb cornerC."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-67-285",
+      "status": "corrected",
+      "answer": "d",
+      "question": "Friction between two contacting surfaces depends on",
+      "options": {
+        "a": "Bending moment",
+        "b": "Apparent contact area",
+        "c": "Energy possessed by the surfaces",
+        "d": "Equal-and-opposite normal contact reactions"
+      },
+      "explanation": "For real sliding contacts, surface deformation, roughness or smoothness, speed, dimensions through contact stress, and pressure may influence friction. In this question’s ideal dry Coulomb model, limiting or kinetic friction is F=μN. It depends directly on the normal contact reaction N and coefficientμ for the surfaces. Apparent area or overall object size and speed are not independent factors in this model. Thus(d) is intended. The source’s five-item list describes possible real-contact influences and cannot be treated as Coulomb-model dependencies.",
+      "transcriptionReviewed": true,
+      "note": "Retained key d; corrected the explanation’s inconsistent blanket speed/size list.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "sourceExplanation": "Factors affecting sliding friction: 1. The surface deformation of objects.2. The roughness or smoothness of the surface of objects.3. The original speed of either objects.4. The size of object.5. Amount of pressure on either object. Friction force between two surface in contact depend on normal reaction and coefficient of friction between two surface and independent of surface area."
+    },
+    {
+      "id": "mech-engineering-mechanics-67-286",
+      "status": "verified",
+      "answer": "d",
+      "question": "Tractive resistance during propulsion of a wheeled vehicle depends on",
+      "options": {
+        "a": "Road resistance",
+        "b": "Aerodynamic resistance",
+        "c": "Gradient resistance",
+        "d": "All of these"
+      },
+      "explanation": "Tractive resistance during wheeled-vehicle propulsion depends on(i)road resistance, (ii)aerodynamic resistance, and(iii)gradient resistance.",
+      "transcriptionReviewed": true,
+      "note": "Vehicle propulsion overcomes rolling/road resistance, air drag and gravity along gradients.",
+      "references": [
+        {
+          "title": "NPTEL, Introduction to Hybrid and Electric Vehicles",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/108103009/module2/lec3/1.html",
+          "section": "Lecture3: vehicle propulsion against gravitational, aerodynamic and rolling resistances"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-67-287",
+      "status": "verified",
+      "answer": "d",
+      "question": "What is the unit of second moment of area?",
+      "options": {
+        "a": "kg·m²",
+        "b": "kg·m",
+        "c": "m³",
+        "d": "m⁴",
+        "e": "kg·m³"
+      },
+      "explanation": "Mass moment of inertia units are kg·m² or g·cm². Area moment units are m⁴ or mm⁴.",
+      "transcriptionReviewed": true,
+      "note": "Dimensions length² times area areL⁴.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-67-288",
+      "status": "verified",
+      "answer": "d",
+      "question": "The centre of gravity of a solid hemisphere lies on its central radius",
+      "options": {
+        "a": "3r/2 from the plane base",
+        "b": "3r/4 from the plane base",
+        "c": "3r/5 from the plane base",
+        "d": "3r/8 from the plane base"
+      },
+      "explanation": "A uniform solid hemisphere’s centre of gravity is 3r/8 above the plane base, measured along the vertical radius.",
+      "transcriptionReviewed": true,
+      "note": "Independent volume integral∫₀ʳzπ(r²−z²)dz divided by 2πr³/3 gives 3r/8.",
+      "references": [
+        {
+          "title": "Penn State, Mechanics Map",
+          "url": "https://mechanicsmap.psu.edu/websites/centroidtables/centroids3D/centroids3D.html",
+          "section": "3D Centroid and Mass Moment of Inertia Table; solid hemisphere and cone"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 54,
+          "bbox": [
+            128,
+            133,
+            235,
+            199
+          ],
+          "placement": "explanation",
+          "alt": "Solid hemisphere centre 3r/8 above plane base on central radius."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-289",
+      "status": "verified",
+      "answer": "c",
+      "question": "The polar second moment of area of a hollow shaft with external diameter D and internal diameter d is",
+      "options": {
+        "a": "32D⁴/(πd⁴)",
+        "b": "π(D⁴−d⁴)/64",
+        "c": "π(D⁴−d⁴)/32",
+        "d": "32(D⁴−d⁴)/π"
+      },
+      "explanation": "The hollow circular section’s polar moment is J=π(D⁴−d⁴)/32.",
+      "transcriptionReviewed": true,
+      "note": "Integratingr²dA over the annulus givesπ(R⁴−r⁴)/2.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-290",
+      "status": "disputed",
+      "answer": null,
+      "question": "The perpendicular-axis theorem is used to obtain the moment of inertia of a",
+      "options": {
+        "a": "Triangular lamina",
+        "b": "Square lamina",
+        "c": "Circular lamina",
+        "d": "Semicircular lamina"
+      },
+      "explanation": "For a planar lamina, I_z=I_x+I_y when perpendicular in-plane x, y axes meet the normal z axis. Triangular, square, circular and semicircular laminae all satisfy the theorem. All four choices are applicable; printed(a) is an example, not a unique answer.",
+      "transcriptionReviewed": true,
+      "note": "All four choices are valid; exclude single-answer grading.",
+      "references": [
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        }
+      ],
+      "sourceExplanation": "The perpendicular-axis theorem is used to obtain the moment of inertia of a triangular lamina."
+    },
+    {
+      "id": "mech-engineering-mechanics-68-291",
+      "status": "verified",
+      "answer": "c",
+      "question": "The centre of gravity of an equilateral triangle with side a is at distance",
+      "options": {
+        "a": "a√3/2",
+        "b": "a√2/3",
+        "c": "a/(2√3)",
+        "d": "a/(3√2)"
+      },
+      "explanation": "For an equilateral triangle of side a, the centroid is at perpendicular distance a/(2√3) from its base.",
+      "transcriptionReviewed": true,
+      "note": "Heighta√3/2; centroid distanceh/3=a/(2√3). Source omits “from the base” in its stem.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 54,
+          "bbox": [
+            159,
+            553,
+            208,
+            598
+          ],
+          "placement": "explanation",
+          "alt": "Equilateral triangle with each sidea."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-292",
+      "status": "verified",
+      "answer": "b",
+      "question": "The centroid of a semicircular lamina of radius R is what distance from its straight edge?",
+      "options": {
+        "a": "8R/(3π)",
+        "b": "4R/(3π)",
+        "c": "2R/(3π)",
+        "d": "R/(3π)"
+      },
+      "explanation": "Let G be the semicircle’s centroid. Its distance from the straight edge is 4R/(3π).",
+      "transcriptionReviewed": true,
+      "note": "Uniform semicircle first-area moment divided byπR²/2 gives 4R/(3π).",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 54,
+          "bbox": [
+            355,
+            106,
+            470,
+            162
+          ],
+          "placement": "explanation",
+          "alt": "Semicircular lamina radiusR with centroidG above straight edge on symmetry axis."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-293",
+      "status": "verified",
+      "answer": "c",
+      "question": "The triangular lamina’s second moments about its base and its centroidal axis parallel to the base, respectively, are what? B=base length, H=height.",
+      "options": {
+        "a": "BH³/3 and BH³/36",
+        "b": "BH³/36 and BH³/12",
+        "c": "BH³/12 and BH³/36",
+        "d": "BH³/3 and BH³/12"
+      },
+      "explanation": "For the triangular lamina, the base-axis second moment is BH³/12. The centroidal second moment about a parallel axis is BH³/36.",
+      "transcriptionReviewed": true,
+      "note": "Full question, formula options, answer and explanation recovered visually from parser failure; integration and parallel-axis calculation agree.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 54,
+          "bbox": [
+            349,
+            338,
+            476,
+            408
+          ],
+          "placement": "explanation",
+          "alt": "Triangular lamina baseB, heightH, centroidG and parallel centroidal axis."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-294",
+      "status": "verified",
+      "answer": "d",
+      "question": "The centre of gravity of a right circular solid cone of height h is what distance above its base?",
+      "options": {
+        "a": "h/2",
+        "b": "h/3",
+        "c": "h/6",
+        "d": "h/4"
+      },
+      "explanation": "A right circular solid cone of height h has its centre of gravity h/4 above the base.",
+      "transcriptionReviewed": true,
+      "note": "Uniform solid cone disk integration givesh/4.",
+      "references": [
+        {
+          "title": "Penn State, Mechanics Map",
+          "url": "https://mechanicsmap.psu.edu/websites/centroidtables/centroids3D/centroids3D.html",
+          "section": "3D Centroid and Mass Moment of Inertia Table; solid hemisphere and cone"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 54,
+          "bbox": [
+            376,
+            537,
+            444,
+            591
+          ],
+          "placement": "explanation",
+          "alt": "Solid cone heighth, centre of gravityh/4 above base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-68-295",
+      "status": "verified",
+      "answer": "d",
+      "question": "The mathematical integral definition of second moment of area about the x axis is",
+      "options": {
+        "a": "I_x=r_s²A",
+        "b": "I_o=∫_Aρ²dA",
+        "c": "I_y=∫_Ax²dA",
+        "d": "I_x=∫_Ay²dA"
+      },
+      "explanation": "The second moment about x is I_x=∫_Ay²dA.",
+      "transcriptionReviewed": true,
+      "note": "The perpendicular distance isy; option a is a radius-of-gyration relation rather than the integral definition.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-296",
+      "status": "verified",
+      "answer": "c",
+      "question": "A solid hemisphere of radius r has its centre of gravity at what distance from its diametral axis?",
+      "options": {
+        "a": "3r/4",
+        "b": "3r/7",
+        "c": "3r/8",
+        "d": "7r/8"
+      },
+      "explanation": "For a uniform solid hemisphere, the centre is 3r/8 above its diametral base plane, on the symmetry axis.",
+      "transcriptionReviewed": true,
+      "note": "The source means a diameter in the base plane; normal distance is 3r/8.",
+      "references": [
+        {
+          "title": "Penn State, Mechanics Map",
+          "url": "https://mechanicsmap.psu.edu/websites/centroidtables/centroids3D/centroids3D.html",
+          "section": "3D Centroid and Mass Moment of Inertia Table; solid hemisphere and cone"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 55,
+          "bbox": [
+            133,
+            183,
+            230,
+            234
+          ],
+          "placement": "explanation",
+          "alt": "Solid hemisphere with centre 3r/8 above its diametral base plane."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-297",
+      "status": "verified",
+      "answer": "d",
+      "question": "The unit of area moment of inertia of a plane section is ______, where L is a length unit.",
+      "options": {
+        "a": "L³",
+        "b": "L⁶",
+        "c": "L²",
+        "d": "L⁴"
+      },
+      "explanation": "L⁴. The printed solution contains only answer(d). Dimensionally, ∫y²dA has unitsL²×L²=L⁴.",
+      "transcriptionReviewed": true,
+      "note": "Source has no worked prose; dimensional reasoning supplied explicitly.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-298",
+      "status": "disputed",
+      "answer": null,
+      "question": "Determine the shaded composite area’s centroid(x_c, y_c) relative to the shown axes.",
+      "options": {
+        "a": "(b, [(28+3π)/(3(8+π))]b)",
+        "b": "(b/2, [(12+2π)/(4(2+π))]b)",
+        "c": "(b, [5/(8+π)]b)",
+        "d": "(b, [(1+2π)/(2(8+π))]b)"
+      },
+      "explanation": "Use a 2b×b rectangle plus semicircle of radius b, minus a hole of radius b/2 centred at(b, b). Symmetry givesx_c=b. Areas: A₁=2b², A₂=πb²/2, A₃=πb²/4. Heights: y₁=b/2, y₂=b+4b/(3π), y₃=b. Thus y_c=(A₁y₁+A₂y₂−A₃y₃)/(A₁+A₂−A₃)=[b³+πb³/2+2b³/3−πb³/4]/[2b²+πb²/2−πb²/4]=[(20+3π)b³/12]/[(8+π)b²/4]=(20+3π)b/[3(8+π)]. This matches the source worked calculation but no option: choice(a) prints 28 instead of 20. Ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Complete two-column derivation retained; independent composite-area calculation confirms numerator 20+3π, not 28+3π.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "sourceExplanation": "(1)Rectangle 2b×b.(2)Semicircle of radius b.(3)Removed circle of radius b/2. By symmetry x_c=2b/2=b. y_c=(A₁y₁+A₂y₂−A₃y₃)/(A₁+A₂−A₃), where y₁=b/2, y₂=b+4b/(3π), y₃=b. Substitution gives y_c=[(2b×b)(b/2)+(πb²/2)(b+4b/(3π))−π(b/2)²b]/[2b×b+πb²/2−π(b/2)²]. Cancelling b² gives[b+(π/2)(b+4b/(3π))−πb/4]/[2+π/2−π/4]=[b+πb/2+(π/2)(4b/(3π))−πb/4]/[2+π/4]=[b+πb/4+2b/3]/[2+π/4]=[(20b+3πb)/12]/[(8+π)/4]=(20+3π)b/[3(8+π)]. Therefore the centroid is(b, (20+3π)b/[3(8+π)]).",
+      "figures": [
+        {
+          "page": 55,
+          "bbox": [
+            129,
+            350,
+            239,
+            432
+          ],
+          "placement": "question",
+          "alt": "Shaded 2b-wide, b-high rectangle plus radiusb semicircle minus radiusb/2 hole centred at heightb."
+        },
+        {
+          "page": 55,
+          "bbox": [
+            129,
+            518,
+            239,
+            602
+          ],
+          "placement": "explanation",
+          "alt": "Composite area numbered rectangle 1, semicircle 2 and removed circle 3."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-299",
+      "status": "verified",
+      "answer": "b",
+      "question": "The polar second moment of a square of side 6 cm is",
+      "options": {
+        "a": "108 cm⁴",
+        "b": "216 cm⁴",
+        "c": "432 cm⁴",
+        "d": "324 cm⁴"
+      },
+      "explanation": "Givena=6 cm. About the centroidal polar axis, J=I_x+I_y=a⁴/12+a⁴/12=6⁴/12+6⁴/12=216 cm⁴.",
+      "transcriptionReviewed": true,
+      "note": "Centroidal normal axis is the standard intended reference.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-300",
+      "status": "verified",
+      "answer": "d",
+      "question": "A thin spherical shell of mass M and radius R has diametral mass moment of inertia",
+      "options": {
+        "a": "MR²",
+        "b": "MR²/2",
+        "c": "(2/5)MR²",
+        "d": "(2/3)MR²"
+      },
+      "explanation": "• A uniform thin spherical shell has diametral inertia(2/3)MR².• A uniform solid sphere of the same mass and radius has diametral inertia(2/5)MR².",
+      "transcriptionReviewed": true,
+      "note": "Spherical symmetry givesI_x+I_y+I_z=2 MR² for the shell, with equal terms.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-69-301",
+      "status": "disputed",
+      "answer": null,
+      "question": "A rectangle has base 12 cm and height 14 cm. Its second moment about its base is",
+      "options": {
+        "a": "672 cm⁴",
+        "b": "2016 cm⁴",
+        "c": "914.67 cm⁴",
+        "d": "2744 cm⁴"
+      },
+      "explanation": "Centroidal I_c=bh³/12=2744 cm⁴. AreaA=168 cm²; parallel offseth/2=7 cm. Thus I_base=I_c+A(h/2)²=2744+168×49=10976 cm⁴, also bh³/3. The source calculates this correctly but no option equals 10976. Its note citing official(b), 2016, is inconsistent. Leave ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Base value 10976 cm⁴ is absent; option d 2744 is centroidal, not base.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "sourceExplanation": "Base=12 cm; height=14 cm. Moment of inertia of rectangle about the centroidal axis: I=bh³/12=12(14)³/12=2744 cm⁴. Moment of inertia about its base: I_base=bh³/3=12(14)³/3=10976 cm⁴. Note: As per GPSC, the given answer is option(b).",
+      "figures": [
+        {
+          "page": 56,
+          "bbox": [
+            143,
+            106,
+            221,
+            153
+          ],
+          "placement": "explanation",
+          "alt": "Rectangle base 12 cm, height 14 cm."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-70-302",
+      "status": "verified",
+      "answer": "a",
+      "question": "A rectangle of width 2 cm and depth 6 cm has centroidal polar second moment, in cm⁴, of",
+      "options": {
+        "a": "40",
+        "b": "20",
+        "c": "8",
+        "d": "80"
+      },
+      "explanation": "J=I_x+I_y=bd³/12+db³/12=(2×6³)/12+(2³×6)/12=40 cm⁴.",
+      "transcriptionReviewed": true,
+      "note": "36+4=40 cm⁴.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-70-303",
+      "status": "verified",
+      "answer": "b",
+      "question": "The radius of gyration of a circular section of diameter D is",
+      "options": {
+        "a": "D/2",
+        "b": "D/4",
+        "c": "D/3",
+        "d": "D/√3"
+      },
+      "explanation": "For a diametral axis, I=πD⁴/64 and A=πD²/4. Thus k=√(I/A)=√[(πD⁴/64)/(πD²/4)]=D/4.",
+      "transcriptionReviewed": true,
+      "note": "Verified about the in-plane diametral axis used in the source. Polar radius would beD/√8; the stem should name the axis.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-70-304",
+      "status": "verified",
+      "answer": "b",
+      "question": "A rectangle of base b and height h has second moment about its base of",
+      "options": {
+        "a": "hb³/12",
+        "b": "bh³/3",
+        "c": "bh³/12",
+        "d": "hb³/3",
+        "e": "bh³/36"
+      },
+      "explanation": "By parallel axes, I_x–x=I_CG+Ax², with I_CG=bh³/12, A=bh, x=h/2. Hence I_x–x=bh³/12+bh(h/2)²=bh³/12+bh³/4=bh³/3.",
+      "transcriptionReviewed": true,
+      "note": "Complete derivation restored; independent∫₀ʰby²dy agrees.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 56,
+          "bbox": [
+            361,
+            121,
+            465,
+            201
+          ],
+          "placement": "explanation",
+          "alt": "b-by-h rectangle with centroid at mid-height and x–x along the base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-70-305",
+      "status": "verified",
+      "answer": "c",
+      "question": "A quarter circle of diameter d has second moment about a straight edge of",
+      "options": {
+        "a": "πd⁴/64",
+        "b": "πd⁴/128",
+        "c": "πd⁴/256",
+        "d": "πd⁴/512",
+        "e": "πd⁴/32"
+      },
+      "explanation": "The edge passes through the full circle’s centre. By symmetry, I_OX=(1/4)(πd⁴/64)=πd⁴/256.",
+      "transcriptionReviewed": true,
+      "note": "Quarter symmetry and diameter conversion checked.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 56,
+          "bbox": [
+            361,
+            457,
+            465,
+            543
+          ],
+          "placement": "explanation",
+          "alt": "Quarter circle with x, y along straight bounding edges and centroidC."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-70-306",
+      "status": "verified",
+      "answer": "d",
+      "question": "A triangle of base b and height h has second moment about its base of",
+      "options": {
+        "a": "hb³/12",
+        "b": "h²b²/12",
+        "c": "bh²/12",
+        "d": "bh³/12",
+        "e": "None of the above"
+      },
+      "explanation": "For a triangle, the parallel centroidal second moment is bh³/36 and the base moment is bh³/12.",
+      "transcriptionReviewed": true,
+      "note": "Independent integration and parallel shift byh/3 agree.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 57,
+          "bbox": [
+            120,
+            107,
+            243,
+            185
+          ],
+          "placement": "explanation",
+          "alt": "Triangle baseb, heighth with centroidal axis h/3 above its base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-71-307",
+      "status": "verified",
+      "answer": "c",
+      "question": "A solid circle of radius r and annulus of inner radius r and outer radius R have equal diametral second moments. Then",
+      "options": {
+        "a": "R=2r",
+        "b": "R=1.414r",
+        "c": "R=1.189r",
+        "d": "R is nearly r"
+      },
+      "explanation": "Solid circle: I₁=πd⁴/64=π(2r)⁴/64=πr⁴/4. Annulus: I₂=(π/4)(R⁴−r⁴). GivenI₁=I₂, (π/4)r⁴=(π/4)(R⁴−r⁴). Thusr⁴=R⁴−r⁴, 2r⁴=R⁴, and R=2^(1/4)r=1.189r.",
+      "transcriptionReviewed": true,
+      "note": "Fourth-root factor 1.189207 independently verified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-71-308",
+      "status": "verified",
+      "answer": "a",
+      "question": "For a triangle of base b and height h, the moment about an axis through the vertex parallel to its base is how many times the corresponding centroidal moment?",
+      "options": {
+        "a": "Nine times",
+        "b": "Six times",
+        "c": "Four times",
+        "d": "Two times"
+      },
+      "explanation": "Vertex-axis moment I_vertex=bh³/4. Parallel centroidal moment I_centroid=bh³/36. Base moment I_base=bh³/12. ThereforeI_vertex=9I_centroid.",
+      "transcriptionReviewed": true,
+      "note": "Parallel shift 2h/3 givesbh³/36+(bh/2)(2h/3)²=bh³/4.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-71-309",
+      "status": "verified",
+      "answer": "c",
+      "question": "A rectangle and triangle share the same base and height. Their base-axis second moments are in ratio",
+      "options": {
+        "a": "2: 1",
+        "b": "3: 1",
+        "c": "4: 1",
+        "d": "1: 2"
+      },
+      "explanation": "SectionI is the rectangle andII the triangle. Parallel axes give(I_I)_base=I_CG+A(h/2)²=bh³/12+(bh)(h/2)²=bh³/12+bh³/4=(bh³+3 bh³)/12=4 bh³/12=bh³/3. For the triangle, (I_II)_base=bh³/12. ThusI_I/I_II=(bh³/3)/(bh³/12)=4/1.",
+      "transcriptionReviewed": true,
+      "note": "Full source derivation restored; ratio 4: 1.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 57,
+          "bbox": [
+            316,
+            234,
+            510,
+            315
+          ],
+          "placement": "explanation",
+          "alt": "RectangleI and triangleII sharing baseb and heighth; rectangle centroid at h/2."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-71-310",
+      "status": "disputed",
+      "answer": null,
+      "question": "The centre of percussion is",
+      "options": {
+        "a": "The same as centre of gravity",
+        "b": "The point in a body about which it can rotate horizontally and oscillate under gravity",
+        "c": "The point of application of the resultant of all forces tending to rotate a body about a central axis",
+        "d": "The metacentre of the body"
+      },
+      "explanation": "For a pivoted rigid body, the centre of percussion is where a transverse impulse produces no impulsive support reaction. Its distance from the pivot is I_O/(md), with centre-of-mass distance d. It generally differs from the centre of gravity and pivot, and is unrelated to a metacentre. Printed(c) omits the defining no-support-reaction condition and instead refers to an unspecified force resultant. It does not uniquely define the centre of percussion.",
+      "transcriptionReviewed": true,
+      "note": "Printed key c is too vague; ungraded pending a precise definition.",
+      "references": [
+        {
+          "title": "Harvard Natural Sciences Lecture Demonstrations",
+          "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/center-percussion",
+          "section": "Center of Percussion; no impulsive support reaction"
+        }
+      ],
+      "sourceExplanation": "The centre of percussion is the point of application of the resultant of all the forces tending to cause a body to rotate about a central axis."
+    },
+    {
+      "id": "mech-engineering-mechanics-72-311",
+      "status": "verified",
+      "answer": "c",
+      "question": "A circular area of radius r has diametral second moment of",
+      "options": {
+        "a": "πr²",
+        "b": "πr²/4",
+        "c": "πr⁴/4",
+        "d": "πr⁴/16"
+      },
+      "explanation": "I_diametral=πd⁴/64=π(2r)⁴/64=πr⁴/4.",
+      "transcriptionReviewed": true,
+      "note": "Integral and diameter conversion agree.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-72-312",
+      "status": "verified",
+      "answer": "a",
+      "question": "The centroid of a body represents its",
+      "options": {
+        "a": "Geometrical concentration",
+        "b": "Mass concentration",
+        "c": "Weight concentration",
+        "d": "Density concentration"
+      },
+      "explanation": "Centroid: geometrical concentration—the point about which geometry is distributed. Centre of mass: mass concentration—the point representing the whole mass distribution.",
+      "transcriptionReviewed": true,
+      "note": "Centroid is a geometric first-moment average; mass centre additionally weights by density.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-72-313",
+      "status": "corrected",
+      "answer": "a",
+      "question": "A uniform thin circular disc has diametral inertia MR²/4. A semicircular disc of mass m and radius R has what inertia about its bounding diameter?",
+      "options": {
+        "a": "mR²/4",
+        "b": "mR²/8",
+        "c": "mR²/16",
+        "d": "mR²/32"
+      },
+      "explanation": "At the same radius and areal density, the full disc mass is M=2m. Reflection across the diameter gives equal half-disc contributions. Thus I_semi=(1/2)(MR²/4)=(1/2)(2 mR²/4)=mR²/4. Printed(b) incorrectly halves a formula already written using the semicircle’s mass m. Correct choice(a).",
+      "transcriptionReviewed": true,
+      "note": "Corrected genuine factor-two mass-normalization error.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        }
+      ],
+      "sourceExplanation": "MOI of circular disc about diametrical axis=mR²/4. MOI of semicircular plate=mR²/(4×2)=mR²/8."
+    },
+    {
+      "id": "mech-engineering-mechanics-72-314",
+      "status": "disputed",
+      "answer": null,
+      "question": "A triangular sector of angle 60° is cut from a circle of radius r, with apex at its centre. The centre of gravity of the sector lies",
+      "options": {
+        "a": "At the disc centre",
+        "b": "At the centre of the triangular sector",
+        "c": "Somewhere in the disc",
+        "d": "Somewhere in the sector"
+      },
+      "explanation": "A uniform 60° circular sector’s centroid lies on its bisector at 4r sin 30°/[3(π/3)]=2r/π from the circle centre. This is inside both the sector and the disc. If “triangular sector” means a straight-sided triangle, its centroid is likewise in both. Thus(c) and(d) overlap and are both true; printed(c) is not unique.",
+      "transcriptionReviewed": true,
+      "note": "Overlapping choices and imprecise sector terminology; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "sourceExplanation": "Somewhere in the disc."
+    },
+    {
+      "id": "mech-engineering-mechanics-72-315",
+      "status": "corrected",
+      "answer": "b",
+      "question": "An iron-and-aluminium circular disc obtains maximum axial moment of inertia by putting",
+      "options": {
+        "a": "Iron inside with aluminium around it",
+        "b": "Aluminium inside with iron around it",
+        "c": "Alternating iron and aluminium layers",
+        "d": "Iron sheets at both external faces with aluminium internal layers"
+      },
+      "explanation": "Treat the disc as concentric rings: I=∫r²dm. Mass at greater radius contributes more. For fixed quantities of materials and outer geometry, the denser iron belongs in the outer region and lighter aluminium inside. Thus(b) maximizes inertia. The source’s final “interior” contradicts its correct answer and integral; it should be “exterior” or “outer parts.”",
+      "transcriptionReviewed": true,
+      "note": "Retained key b; corrected density-placement reversal in explanation.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ],
+      "sourceExplanation": "A disc is composed of rings and moment of inertia of disc can be using integral of moment of inertia of concentric elemental rings. Moment of inertia of continuous body is found by using I=∫R²dm. For increasing the moment of inertia of a non-uniform disc, It is hence desired that the mass density is more in the interior parts of the disc."
+    },
+    {
+      "id": "mech-engineering-mechanics-72-316",
+      "status": "verified",
+      "answer": "b",
+      "question": "The bifilar suspension method is used to find a body’s",
+      "options": {
+        "a": "Angular acceleration",
+        "b": "Moment of inertia",
+        "c": "Periodic time",
+        "d": "Vibration frequency"
+      },
+      "explanation": "Bifilar suspension is used to determine a body’s moment of inertia.",
+      "transcriptionReviewed": true,
+      "note": "Inertia is inferred from measured period and suspension geometry.",
+      "references": [
+        {
+          "title": "LUMS PhysLab, A Doubly Suspended Pendulum",
+          "url": "https://physlab.org/experiment/bifilar/",
+          "section": "Bifilar oscillation method for experimental mass moment of inertia"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-72-317",
+      "status": "disputed",
+      "answer": null,
+      "question": "The centre of gravity is completely determined when the body has",
+      "options": {
+        "a": "(3+2) symmetry planes",
+        "b": "(3+1) symmetry planes",
+        "c": "(3+0) symmetry planes",
+        "d": "(3−2) symmetry planes"
+      },
+      "explanation": "For a symmetric mass distribution, the centre of gravity lies on every symmetry plane. Three independent planes meeting at one point can locate it. The stem does not ask for a minimum, require independent planes, or exclude alternatives with four or five planes; those bodies can also have a determined centre. Three planes intersecting in a line are insufficient. Intended minimum is three independent planes, (c), but the missing condition prevents a unique answer.",
+      "transcriptionReviewed": true,
+      "note": "Missing minimum/independence conditions; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "sourceExplanation": "Condition for stating that the centre of gravity of a body is completely determined is when the body has(3+0) planes of symmetry."
+    },
+    {
+      "id": "mech-engineering-mechanics-72-318",
+      "status": "verified",
+      "answer": "a",
+      "question": "______ systems are used to determine moments of inertia of irregular bodies.",
+      "options": {
+        "a": "Multifilar",
+        "b": "Unifilar",
+        "c": "Multistar",
+        "d": "Tristar"
+      },
+      "explanation": "Multifilar systems determine moments of inertia of irregular bodies.",
+      "transcriptionReviewed": true,
+      "note": "Multifilar suspension infers inertia through oscillations; the bifilar arrangement is a two-filament instance.",
+      "references": [
+        {
+          "title": "LUMS PhysLab, A Doubly Suspended Pendulum",
+          "url": "https://physlab.org/experiment/bifilar/",
+          "section": "Bifilar oscillation method for experimental mass moment of inertia"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-72-319",
+      "status": "corrected",
+      "answer": "c",
+      "question": "The centre of gravity of a circular quadrant of radius R lies along its central radius at approximately",
+      "options": {
+        "a": "0.3R",
+        "b": "0.44R",
+        "c": "0.6R",
+        "d": "0.5R"
+      },
+      "explanation": "For a uniform quarter-circle, x_c=y_c=4R/(3π)≈0.4244R from the straight edges. Along the 45° central radius, the distance is r_c=√(x_c²+y_c²)=4√2R/(3π)≈0.6002R. Correct(c), 0.6R. The printed solution uses one Cartesian coordinate instead of radial distance.",
+      "transcriptionReviewed": true,
+      "note": "Corrected printed key b to c.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "sourceExplanation": "Centre of gravity(CG) of a quadrant of circle of radius R is 4R/(3π). y_c=x_c=4R/(3π)=0.424R.",
+      "figures": [
+        {
+          "page": 58,
+          "bbox": [
+            367,
+            570,
+            461,
+            669
+          ],
+          "placement": "explanation",
+          "alt": "Quarter-circle centroid coordinates each 0.424R; radial resultant is 0.600R."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-73-320",
+      "status": "verified",
+      "answer": "b",
+      "question": "A uniform disc’s inertia about any diameter is MR²/4. Its inertia about the central normal axis is",
+      "options": {
+        "a": "MR²",
+        "b": "MR²/2",
+        "c": "3 MR²/2",
+        "d": "2 MR²"
+      },
+      "explanation": "I_x–x=I_y–y=MR²/4. Perpendicular axes give I_z–z=I_x–x+I_y–y=MR²/4+MR²/4=2 MR²/4=MR²/2.",
+      "transcriptionReviewed": true,
+      "note": "The two equal diametral contributions add.",
+      "references": [
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ],
+      "figures": [
+        {
+          "page": 59,
+          "bbox": [
+            135,
+            232,
+            230,
+            322
+          ],
+          "placement": "explanation",
+          "alt": "Disc radiusR with perpendicular central diametral x, y axes."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-73-321",
+      "status": "verified",
+      "answer": "b",
+      "question": "The second moment of the semicircle about the centroidal x axis shown is",
+      "options": {
+        "a": "0.22r³",
+        "b": "0.11r⁴",
+        "c": "0.14r⁴",
+        "d": "0.2r⁴"
+      },
+      "explanation": "About diameter BB, I_BB=πr⁴/8. AreaA=πr²/2, centroid offsety_c=4r/(3π). Parallel axes: I_BB=I_x–x+Ay_c². Thus I_x–x=I_BB−Ay_c²=πr⁴/8−(πr²/2)[4r/(3π)]²=πr⁴/8−8r⁴/(9π)=(9π²−64)r⁴/(72π)≈0.11r⁴.",
+      "transcriptionReviewed": true,
+      "note": "Axis is supplied only in the explanation diagram; attach that diagram also to the question.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 59,
+          "bbox": [
+            99,
+            550,
+            261,
+            640
+          ],
+          "placement": "question",
+          "alt": "Semicircle radiusr with bounding diameterBB and centroidal x axis at offsety_c."
+        },
+        {
+          "page": 59,
+          "bbox": [
+            99,
+            550,
+            261,
+            640
+          ],
+          "placement": "explanation",
+          "alt": "Parallel-axis semicircle sketch identifying BB, x axis and y_c=4r/(3π)."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-73-322",
+      "status": "disputed",
+      "answer": null,
+      "question": "Which statement about polar moment of inertia is correct?",
+      "options": {
+        "a": "It is the moment of an area about a line or axis perpendicular to its plane",
+        "b": "It is the moment of an area about a line or axis perpendicular to its plane",
+        "c": "It applies to masses whereas moment of inertia applies only to areas",
+        "d": "It is the moment of an area about an axis parallel to a centroidal axis"
+      },
+      "explanation": "J=∫_Aρ²dA describes the moment about an axis normal to the area through the pole. Both(a) and(b) print this exact definition. They are duplicates in the original scan, not an OCR duplication; both are correct and printed(b) is not unique.",
+      "transcriptionReviewed": true,
+      "note": "Duplicate original choicesa, b; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "sourceExplanation": "Polar moment of inertia it is the moment of inertia for an area with respect to a line or axis perpendicular to the plane of the area."
+    },
+    {
+      "id": "mech-engineering-mechanics-73-323",
+      "status": "verified",
+      "answer": "a",
+      "question": "A lamina’s in-plane second moment equals its parallel centroidal moment plus area times the square of axis separation. This is the",
+      "options": {
+        "a": "Parallel-axis theorem",
+        "b": "Perpendicular-axis theorem",
+        "c": "Three-moments theorem",
+        "d": "None of these"
+      },
+      "explanation": "Parallel-axis theorem: I=I_C+Ad². The source supplies only answer(a), with no worked explanation.",
+      "transcriptionReviewed": true,
+      "note": "Source grammatical corruption cleaned without changing the theorem.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-73-324",
+      "status": "verified",
+      "answer": "c",
+      "question": "The moment of inertia about a principal axis is called",
+      "options": {
+        "a": "Mass moment of inertia",
+        "b": "Second moment of inertia",
+        "c": "Principal moment of inertia",
+        "d": "Any of these"
+      },
+      "explanation": "The moment about a principal axis is called a principal moment of inertia.",
+      "transcriptionReviewed": true,
+      "note": "Definition verified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/products-of-inertia.html",
+          "section": "10.7 Products of Inertia; principal axes have I_xy = 0"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-73-325",
+      "status": "verified",
+      "answer": "a",
+      "question": "The rectangle’s second moment about centroidal x–x shown is",
+      "options": {
+        "a": "bd³/12",
+        "b": "db³/12",
+        "c": "bd²/6",
+        "d": "bd³/6³"
+      },
+      "explanation": "b is horizontal breadth, d vertical depth. I_x–x=bd³/12…(1). For the perpendicular centroidal axis, I_y–y=db³/12…(2).",
+      "transcriptionReviewed": true,
+      "note": "Source diagram appears only in the explanation; attach also to question. Choice(d) genuinely prints denominator 6³.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 60,
+          "bbox": [
+            113,
+            106,
+            254,
+            245
+          ],
+          "placement": "question",
+          "alt": "Rectangle breadthb, depthd with horizontal centroidalx and verticaly axes."
+        },
+        {
+          "page": 60,
+          "bbox": [
+            113,
+            106,
+            254,
+            245
+          ],
+          "placement": "explanation",
+          "alt": "Rectangle axes defining which dimension is cubed in its second moments."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-74-326",
+      "status": "corrected",
+      "answer": "d",
+      "question": "______ is the distance from a reference axis at which an area could be concentrated in a thin strip without changing its second moment.",
+      "options": {
+        "a": "Neutral axis",
+        "b": "Gyroscopic distance",
+        "c": "Second moment of area",
+        "d": "Radius of gyration"
+      },
+      "explanation": "Area radius of gyration k is the distance where the full area could be concentrated with the same second moment: I_area=Ak², k=√(I_area/A). The analogous mass definition is I_mass=mk², k=√(I_mass/m). The printed explanation defines an area quantity but gives only the mass formula; these must be distinguished.",
+      "transcriptionReviewed": true,
+      "note": "Correct key d; supplied missing area formula and distinguished mass version.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ],
+      "sourceExplanation": "Radius of Gyration—Radius of gyration of a body is defined as the distance from the reference axis at which the given area is assumed to be compressed that kept as thin strip such that there is no change in its moment of inertia. I=mk². Where, I=Moment of inertia, m=mass of the body. According to the radius of gyration is k=√(I/m)."
+    },
+    {
+      "id": "mech-engineering-mechanics-74-327",
+      "status": "verified",
+      "answer": "a",
+      "question": "Find the centre of gravity of the uniform L-section shown.",
+      "options": {
+        "a": "4.33 cm above bottom and 2.33 cm from left",
+        "b": "4.33 cm below top and 2.33 cm from right",
+        "c": "3.33 cm above bottom and 2.33 cm from left",
+        "d": "4.33 cm above bottom and 3.33 cm from left",
+        "e": "None of these"
+      },
+      "explanation": "Divide into nonoverlapping rectangles 1 and 2. For 1, a₁=10×2=20 cm², y₁=5+2=7 cm, x₁=1 cm. For 2, a₂=8×2=16 cm², x₂=4 cm, y₂=1 cm. Thus x̄=(a₁x₁+a₂x₂)/(a₁+a₂)=(20×1+4×16)/(20+16)=2.33 cm. Likewise ȳ=(a₁y₁+a₂y₂)/(a₁+a₂)=(20×7+1×16)/(20+16)=4.33 cm. The centre is 2.33 cm from the left and 4.33 cm above the bottom.",
+      "transcriptionReviewed": true,
+      "note": "Composite first moments independently give 7/3 and 13/3 cm.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 60,
+          "bbox": [
+            117,
+            566,
+            238,
+            677
+          ],
+          "placement": "question",
+          "alt": "L-section total height 12 cm, width 8 cm and both leg thicknesses 2 cm."
+        },
+        {
+          "page": 60,
+          "bbox": [
+            359,
+            149,
+            469,
+            235
+          ],
+          "placement": "explanation",
+          "alt": "L-section split into 10×2 cm vertical rectangle above 8×2 cm base rectangle."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-74-328",
+      "status": "verified",
+      "answer": "b",
+      "question": "One requirement for dynamic equivalence is",
+      "options": {
+        "a": "Model mass is twice original mass",
+        "b": "Mass moment of inertia equals the original body’s",
+        "c": "Centre of gravity is displaced",
+        "d": "Mass moment of inertia is half the original body’s"
+      },
+      "explanation": "Dynamic equivalence requires the model’s mass moment of inertia to equal the original body’s.",
+      "transcriptionReviewed": true,
+      "note": "Matching inertia is necessary along with equal mass and centre-of-mass location.",
+      "references": [
+        {
+          "title": "IIT Bombay, Prof.P.Seshu, ME316",
+          "url": "https://www.cdeep.iitb.ac.in/slides/S23/ME316/ME316-M12.pdf",
+          "section": "Analysis of Forces in Mechanisms/Machines: dynamic equivalence conditions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-74-329",
+      "status": "verified",
+      "answer": "b",
+      "question": "The product of a given area and its centroidal distance from a reference is its",
+      "options": {
+        "a": "Mass moment of inertia",
+        "b": "First moment of area",
+        "c": "Area moment of inertia",
+        "d": "Centroid"
+      },
+      "explanation": "First moment of area is commonly used to determine centroids. It is the sum of each area times its centroidal distance from the reference axis: Q=ΣA_i d_i.",
+      "transcriptionReviewed": true,
+      "note": "Intended reference is an axis; dimensionsL³ and first power of distance.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-74-330",
+      "status": "verified",
+      "answer": "a",
+      "question": "Volume generated by revolving a plane area about a nonintersecting coplanar axis equals the area times its centroid’s path length. This is",
+      "options": {
+        "a": "Second Pappus–Guldinus theorem",
+        "b": "Varignon’s theorem",
+        "c": "Three-force theorem",
+        "d": "First Pappus–Guldinus theorem"
+      },
+      "explanation": "Pappus’s theorem can also be used in reverse to find a curve or area centroid. For a plane area A revolved once about a nonintersecting coplanar axis, V=A(2π)ȳ, whereȳ is its centroid’s perpendicular distance from the axis.",
+      "transcriptionReviewed": true,
+      "note": "The volume theorem uses centroid path 2πȳ.",
+      "references": [
+        {
+          "title": "University of Florida, Engineering Mechanics: Statics",
+          "url": "https://web.mae.ufl.edu/uhk/StaticsPage/Statics.html",
+          "section": "Theorems of Pappus and Guldinus; surface and volume of revolution"
+        }
+      ],
+      "figures": [
+        {
+          "page": 61,
+          "bbox": [
+            133,
+            117,
+            232,
+            199
+          ],
+          "placement": "explanation",
+          "alt": "Generating plane areaA with centroid distanceȳ from rotation axisx."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-75-331",
+      "status": "verified",
+      "answer": "a",
+      "question": "A semicircular lamina of radius R has second moment about its centroidal axis parallel to its horizontal base of",
+      "options": {
+        "a": "0.10976R⁴",
+        "b": "0.2084R⁴",
+        "c": "0.23R⁴",
+        "d": "0.3142R⁴"
+      },
+      "explanation": "Base AC moment is half the full circle’s diametral moment: I_AC=(1/2)(πd⁴/64)=πR⁴/8≈0.393R⁴. Area A=πR²/2 and centroid height h=4R/(3π). Hence I_G=I_AC−Ah²=πR⁴/8−(πR²/2)[4R/(3π)]²=πR⁴/8−8R⁴/(9π)≈0.1097R⁴. Note: the vertical symmetry-axis moment equals the base moment, πR⁴/8≈0.393R⁴.",
+      "transcriptionReviewed": true,
+      "note": "Complete source including y-axis note retained. Exact coefficient 0.10975696.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 61,
+          "bbox": [
+            113,
+            311,
+            253,
+            391
+          ],
+          "placement": "explanation",
+          "alt": "Semicircle baseAC, radiusR and centroid height 4R/(3π)."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-75-332",
+      "status": "verified",
+      "answer": "a",
+      "question": "The centre of gravity of a semicircular arc of radius r lies above its base diameter by",
+      "options": {
+        "a": "2r/π",
+        "b": "3r/π",
+        "c": "4r/π",
+        "d": "r/π"
+      },
+      "explanation": "For the uniform arc, dL=r dθ and y=r sinθ, 0≤θ≤π. Then ȳ=∫y dL/∫dL=[∫₀^π(r sinθ)(r dθ)]/[∫₀^πr dθ]=[r²∫₀^πsinθ dθ]/[r∫₀^πdθ]=r[−cosθ]₀^π/[θ]₀^π=−r[cosπ−cos 0]/π=−r(−1−1)/π=2r/π. Alternatively, Pappus–Guldinus gives ȳ=sphere surface area/[2π×arc length]=4πr²/[2π×πr]=2r/π. Note: the semicircular AREA centroid is 4r/(3π).",
+      "transcriptionReviewed": true,
+      "note": "Both full integration and alternate Pappus derivations retained; arc differs from area.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        },
+        {
+          "title": "University of Florida, Engineering Mechanics: Statics",
+          "url": "https://web.mae.ufl.edu/uhk/StaticsPage/Statics.html",
+          "section": "Theorems of Pappus and Guldinus; surface and volume of revolution"
+        }
+      ],
+      "figures": [
+        {
+          "page": 61,
+          "bbox": [
+            326,
+            106,
+            503,
+            191
+          ],
+          "placement": "explanation",
+          "alt": "Semicircular arc radiusr, angular elementdθ, length elementr dθ and heightr sinθ."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-75-333",
+      "status": "verified",
+      "answer": "a",
+      "question": "A section has moments 1×10⁶ and 2×10⁶ about orthogonal in-plane axes, and area 100 units. Its polar moment about their intersection is",
+      "options": {
+        "a": "3×10⁶",
+        "b": "3.1×10⁶",
+        "c": "5×10⁶",
+        "d": "4×10⁶"
+      },
+      "explanation": "Given I_xx=1×10⁶, I_yy=2×10⁶, A=100 units. Polar J=I_xx+I_yy=1×10⁶+2×10⁶=3×10⁶.",
+      "transcriptionReviewed": true,
+      "note": "Area is not needed for this sum.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-75-334",
+      "status": "verified",
+      "answer": "d",
+      "question": "A concentric hollow rectangular section has outer width B, depth D and hole width b, depth d. Its horizontal neutral-axis moment is",
+      "options": {
+        "a": "(BD³−bd³)/16",
+        "b": "(BD³−bd³)/32",
+        "c": "BD³−bd³",
+        "d": "(BD³−bd³)/12"
+      },
+      "explanation": "I_NA=I₁−I₂. Outer rectangle I₁=BD³/12, removed inner rectangle I₂=bd³/12. Thus I_NA=(BD³−bd³)/12.",
+      "transcriptionReviewed": true,
+      "note": "Source figure shows common centroidal axis.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 62,
+          "bbox": [
+            90,
+            96,
+            275,
+            181
+          ],
+          "placement": "explanation",
+          "alt": "Concentric hollow rectangle outerB, D and innerb, d with common horizontal neutral axis."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-76-335",
+      "status": "verified",
+      "answer": "b",
+      "question": "By perpendicular axes, if I_xx and I_yy are moments about perpendicular in-plane axes meeting normal z, then I_zz is",
+      "options": {
+        "a": "I_xx×I_yy",
+        "b": "I_xx+I_yy",
+        "c": "I_xx/I_yy",
+        "d": "I_yy/I_xx"
+      },
+      "explanation": "Perpendicular-axis theorem: I_zz=I_xx+I_yy.",
+      "transcriptionReviewed": true,
+      "note": "All choices restored; r²=x²+y² gives the sum.",
+      "references": [
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-76-336",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A square of side d has second moment about its diagonal of",
+      "options": {
+        "a": "d⁴/18",
+        "b": "d⁴/24",
+        "c": "d⁴/12",
+        "d": "d⁴/8"
+      },
+      "explanation": "Diagonal AC splits the square into two right triangles, each base AC=√2d and height h=d/√2=√2d/2=AC/2. Sum their base moments: I_AC=2[(AC)h³/12]=2[(√2d)(d/√2)³/12]=d⁴/12. Thus(c). The source’s intermediate h=AC/√2 is a typo; its next value and final calculation use AC/2.",
+      "transcriptionReviewed": true,
+      "note": "Retained correct key c; corrected visually confirmed height-denominator typo.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "sourceExplanation": "Diagonal=√2d. Height of triangle h=AC/√2=√2d/2. AC is treated as the base of triangles ABC and ADC. The second moment of the square about diagonal AC is 2[(AC)h³/12]=2[(√2d)(√2d/2)³/12]=d⁴/12.",
+      "figures": [
+        {
+          "page": 62,
+          "bbox": [
+            126,
+            430,
+            238,
+            529
+          ],
+          "placement": "explanation",
+          "alt": "SquareABCD side d split on diagonalAC; triangle height perpendicular fromB toAC."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-76-337",
+      "status": "verified",
+      "answer": "d",
+      "question": "A triangular section of base a and height h has centroidal second moment parallel to its base of",
+      "options": {
+        "a": "ah³/8",
+        "b": "ah³/12",
+        "c": "ah³/24",
+        "d": "ah³/36"
+      },
+      "explanation": "Triangle base moment I_base=ah³/12. For the parallel axis through its centre of gravity, I_CG=ah³/36.",
+      "transcriptionReviewed": true,
+      "note": "Both source formulas retained; parallel shift byh/3 verifies.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 62,
+          "bbox": [
+            330,
+            219,
+            496,
+            323
+          ],
+          "placement": "explanation",
+          "alt": "Triangle basea, heighth with centroidh/3 above base and 2h/3 below apex."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-76-338",
+      "status": "verified",
+      "answer": "c",
+      "question": "Body A of weight 10 kg has its centre 25 cm from a rotation axis. To balance it, body B of weight 5 kg must have its centre at radius",
+      "options": {
+        "a": "2 cm",
+        "b": "12.5 cm",
+        "c": "50 cm",
+        "d": "None of these"
+      },
+      "explanation": "Moment balance: m₁r₁=m₂r₂. Therefore r₂=m₁r₁/m₂=(10×25)/5=50 cm.",
+      "transcriptionReviewed": true,
+      "note": "Source kg weights use gravitational units; g cancels.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 62,
+          "bbox": [
+            316,
+            497,
+            509,
+            554
+          ],
+          "placement": "explanation",
+          "alt": "10 kg bodyA at 25 cm from balancing axis and 5 kg bodyB at unknown radius."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-76-339",
+      "status": "verified",
+      "answer": "d",
+      "question": "The second moment of the shown quarter circle of radius r about either straight bounding edge is",
+      "options": {
+        "a": "πr⁴/2",
+        "b": "πr⁴/4",
+        "c": "πr⁴/8",
+        "d": "πr⁴/16"
+      },
+      "explanation": "I_y=I_x=(1/4)I_circle=(1/4)(πd⁴/64)=(1/4)[π(2r)⁴/64]=(1/4)(16πr⁴/64)=πr⁴/16.",
+      "transcriptionReviewed": true,
+      "note": "Original stem omits axis; made the straight-edge axis used by its explanation explicit.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 62,
+          "bbox": [
+            385,
+            645,
+            441,
+            703
+          ],
+          "placement": "question",
+          "alt": "Quarter-circle radiusr and its perpendicular straight bounding edges."
+        },
+        {
+          "page": 63,
+          "bbox": [
+            106,
+            106,
+            199,
+            190
+          ],
+          "placement": "explanation",
+          "alt": "Quarter circle with x, y along straight bounding edges."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-340",
+      "status": "verified",
+      "answer": "d",
+      "question": "A uniform cube of mass m and edge b has mass moment about an axis along an edge of",
+      "options": {
+        "a": "mb²/2",
+        "b": "mb²/6",
+        "c": "3 mb²/2",
+        "d": "2 mb²/3"
+      },
+      "explanation": "The source supplies only(d). Independently, the central parallel-axis moment is m(b²+b²)/12=mb²/6. Distance to the edge is√[(b/2)²+(b/2)²]. Thus I_edge=mb²/6+m(b²/2)=2 mb²/3.",
+      "transcriptionReviewed": true,
+      "note": "No source worked explanation omitted; independent parallel-axis verification.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-341",
+      "status": "verified",
+      "answer": "d",
+      "question": "Wire of length L and uniform linear densityρ forms a circular loop centred at O. Its inertia about in-plane tangent XX′ is",
+      "options": {
+        "a": "ρL³/(16π²)",
+        "b": "ρL³/(8π²)",
+        "c": "5ρL³/(16π²)",
+        "d": "3ρL³/(8π²)"
+      },
+      "explanation": "L=2πR, so R=L/(2π), and mass M=ρL. Parallel axes: I_XX′=I_C+MR²=MR²/2+MR²=(3/2)MR². Substitute: I_XX′=(3/2)ρL[L/(2π)]²=(3/2)ρL[L²/(4π²)]=3ρL³/(8π²).",
+      "transcriptionReviewed": true,
+      "note": "In-plane ring diametral momentMR²/2 plus tangent shiftMR².",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "figures": [
+        {
+          "page": 63,
+          "bbox": [
+            150,
+            474,
+            213,
+            525
+          ],
+          "placement": "question",
+          "alt": "Circular wire loop with in-plane tangentXX′ and radius from centreO to tangent."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-342",
+      "status": "verified",
+      "answer": "b",
+      "question": "If x is an area element’s perpendicular distance from the reference axis, the second moment of the area is",
+      "options": {
+        "a": "∫x dA",
+        "b": "∫x² dA",
+        "c": "∫x³ dA",
+        "d": "∫x⁴ dA"
+      },
+      "explanation": "For distance x, the second moment is∫x²dA. In plane coordinates, I_xx=∫y²dA and I_yy=∫x²dA. These integrals define the geometrical axial moments.",
+      "transcriptionReviewed": true,
+      "note": "Individual element contributesx²dA; whole area uses the integral.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 63,
+          "bbox": [
+            355,
+            173,
+            478,
+            245
+          ],
+          "placement": "explanation",
+          "alt": "ElementdA inside areaA at coordinate distancesx, y from axes."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-343",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A rigid body’s moment of inertia does NOT depend on",
+      "options": {
+        "a": "Its rotation axis",
+        "b": "Its mass",
+        "c": "Its angular velocity",
+        "d": "Its mass distribution"
+      },
+      "explanation": "Mass moment I=∫r_perp²dm depends on mass distribution and axis, but not angular velocity. Thus(c). The source then gives the geometric-area analogy: I_xx=∫y²dA, I_yy=∫x²dA, where x, y locate dA. Squared distance makes these second moments of area. Area and mass moments have different units and must not be substituted for one another.",
+      "transcriptionReviewed": true,
+      "note": "Correct key c; retained all source area discussion while supplying the required mass definition.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "sourceExplanation": "Moment of inertia of a body does not depend on angular velocity of the body. I_xx=∫y²dA and I_yy=∫x²dA, where x and y are the coordinates of the differential elements of area dA. Since this area dA is multiplied by the square of the distance, the moment of inertia is also called the second moment of area.",
+      "figures": [
+        {
+          "page": 63,
+          "bbox": [
+            362,
+            384,
+            466,
+            452
+          ],
+          "placement": "explanation",
+          "alt": "Source’s area-moment aside: area element at coordinatesx, y."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-344",
+      "status": "verified",
+      "answer": "a",
+      "question": "For principal axes, the product of inertia satisfies",
+      "options": {
+        "a": "I_xy=0",
+        "b": "I_xy=1",
+        "c": "I_xy=∞",
+        "d": "None of these"
+      },
+      "explanation": "For principal axes, the product of inertia I_xy=0.",
+      "transcriptionReviewed": true,
+      "note": "Clarified I_xy is a product, not an axial second moment; principal axial moments are generally positive.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/products-of-inertia.html",
+          "section": "10.7 Products of Inertia; principal axes have I_xy = 0"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-345",
+      "status": "verified",
+      "answer": "b",
+      "question": "The radius of gyration of a solid cylinder of radius R about its longitudinal axis is",
+      "options": {
+        "a": "√2R",
+        "b": "R/√2",
+        "c": "0.6324R",
+        "d": "0.5R"
+      },
+      "explanation": "For a uniform solid cylinder, I=mR²/2 about its longitudinal axis. Hence k=√(I/m)=R/√2.",
+      "transcriptionReviewed": true,
+      "note": "The source formula assumes the longitudinal axis; other axes need cylinder length.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-77-346",
+      "status": "disputed",
+      "answer": null,
+      "question": "A disc-type flywheel of diameter D has radius of gyration",
+      "options": {
+        "a": "D",
+        "b": "D/2",
+        "c": "D/4",
+        "d": "(3/√2)D"
+      },
+      "explanation": "A uniform disc flywheel rotates about its central normal axis: I=mR²/2, R=D/2. Therefore k=√(I/m)=R/√2=D/(2√2)=D/√8. No option matches. The source divides circular-area diametral inertiaπD⁴/64 by areaπD²/4, yielding D/4 for a different axis, not the axial flywheel value.",
+      "transcriptionReviewed": true,
+      "note": "Source confuses diametral area and axial flywheel radii; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "sourceExplanation": "I=AK². K=√(I/A)=√[(πD⁴/64)/(πD²/4)]. K=D/4."
+    },
+    {
+      "id": "mech-engineering-mechanics-78-347",
+      "status": "verified",
+      "answer": "a",
+      "question": "The second moment of the elliptical area about its major axis is",
+      "options": {
+        "a": "πxy³/4",
+        "b": "πxy³/3",
+        "c": "πx²y³/4",
+        "d": "πx²y³",
+        "e": "πx²y³/3"
+      },
+      "explanation": "With horizontal semiaxis x and vertical semiaxis y, the major-axis moment I_xx=(π/4)xy³. The minor-axis moment I_yy=(π/4)yx³.",
+      "transcriptionReviewed": true,
+      "note": "Semiaxes defined by source diagram; affine unit-disk integral verifies.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 64,
+          "bbox": [
+            129,
+            263,
+            249,
+            334
+          ],
+          "placement": "question",
+          "alt": "Ellipse horizontal semiaxisx and vertical semiaxisy with majorX/minorY axes."
+        },
+        {
+          "page": 64,
+          "bbox": [
+            129,
+            263,
+            249,
+            334
+          ],
+          "placement": "explanation",
+          "alt": "Ellipse defining both semiaxes used in the inertia formulas."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-78-348",
+      "status": "disputed",
+      "answer": null,
+      "question": "StatementI: Equal-mass, equal-thickness circular discs of different materials have equal central axial inertias. StatementII: Moment of inertia depends on mass distribution.",
+      "options": {},
+      "explanation": "For a uniform disc, M=ρπR²t and I=MR²/2=ρπtR⁴/2. Equal M, t with differentρ require differentR. Since R²=M/(ρπt), I=M²/(2ρπt): denser material gives smaller radius and smaller inertia. StatementI is false; II is true. The source reaches the right truth value forI but printsπ/8 instead ofπ/2 when R is radius, and reverses the final inertia inequality. It prints key(d) without any answer choices mapping letters to statement combinations. Do not invent that missing mapping; ungraded.",
+      "transcriptionReviewed": true,
+      "note": "Actual source omits all answer choices; truth values recoverable but letterd cannot be mapped.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ],
+      "sourceExplanation": "Mass moment of inertia for a uniform disc about its axis of rotation: I=MR²/2=ρAtR²/2. Mass and thickness are the same, soρ₁A₁t=ρ₂A₂t. I₁=ρ₁A₁tR₁²/2=(π/8)ρ₁R₁⁴t. I₂=ρ₂A₂tR₂²/2=(π/8)ρ₂R₂⁴t. Ifρ₁>ρ₂, R₁<R₂, I₁>I₂. Hence statementI is wrong.",
+      "optionsUnavailable": true,
+      "sourceAnswer": "d"
+    },
+    {
+      "id": "mech-engineering-mechanics-78-349",
+      "status": "corrected",
+      "answer": "d",
+      "question": "Among parallel axes, an area’s second moment is least about the",
+      "options": {
+        "a": "Bottom-most axis",
+        "b": "Radius of gyration",
+        "c": "Central axis",
+        "d": "Centroidal axis"
+      },
+      "explanation": "Parallel axes give I=I_C+Ad². Since A>0, d²≥0, the minimum I_C occurs at d=0. The centroidal second moment is generally positive, not zero. The FIRST moment about a centroidal axis is zero. Thus(d), with the comparison limited to parallel axes.",
+      "transcriptionReviewed": true,
+      "note": "Corrected false zero-inertia claim and added same-direction axis condition.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "sourceExplanation": "The moment of inertia about any axis passing through centroid is zero so moment of inertia of an area always least with respect to centroidal axis."
+    },
+    {
+      "id": "mech-engineering-mechanics-78-350",
+      "status": "disputed",
+      "answer": null,
+      "question": "The moment of inertia about the centroidal axis of an elliptical quadrant of base a and height b is",
+      "options": {
+        "a": "(πab/24)(a²+b²)",
+        "b": "(πab/24)(a³+b³)",
+        "c": "(πab/16)(a²+b²)",
+        "d": "(πab/24)(a³+b³)"
+      },
+      "explanation": "For the ellipse quadrant, the polar moment about the corner at the full ellipse centre is J_O=I_x+I_y=πab(a²+b²)/16, printed(c). Its centroid is x̄=4a/(3π), ȳ=4b/(3π), areaA=πab/4. Thus centroidal polar J_C=J_O−A(x̄²+ȳ²)=ab(a²+b²)[π/16−4/(9π)], not listed. An in-plane centroidal axis would additionally need orientation. Source(c) concerns the corner normal axis, not a centroidal axis.",
+      "transcriptionReviewed": true,
+      "note": "Wrong-axis formula; choicesb, d also duplicate with dimensionsL⁵. Ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ],
+      "sourceExplanation": "I=(πab/16)(a²+b²)."
+    },
+    {
+      "id": "mech-engineering-mechanics-78-351",
+      "status": "verified",
+      "answer": "b",
+      "question": "For a uniform solid cylinder, what ratio L/R makes central longitudinal and central transverse moments equal?",
+      "options": {
+        "a": "1",
+        "b": "√3",
+        "c": "√5",
+        "d": "2"
+      },
+      "explanation": "Longitudinal I_L–L=mR²/2. Central transverse I_T–A=mR²/4+mL²/12. Equate: mR²/2=mR²/4+mL²/12. Therefore(L/R)²=3 and L/R=√3.",
+      "transcriptionReviewed": true,
+      "note": "Both complete formulas and equality derivation verified.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ],
+      "figures": [
+        {
+          "page": 64,
+          "bbox": [
+            345,
+            398,
+            439,
+            451
+          ],
+          "placement": "explanation",
+          "alt": "Cylinder radiusR, lengthL with central longitudinalL–L and transverseT–A axes."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-78-352",
+      "status": "verified",
+      "answer": "b",
+      "question": "For the shown circle, its diametral x-axis moment divided by its perpendicular diametral y-axis moment is",
+      "options": {
+        "a": "0.5",
+        "b": "1.0",
+        "c": "1.5",
+        "d": "2.0"
+      },
+      "explanation": "I_x–x=πd⁴/64 and I_y–y=πd⁴/64. Polar I_z–z=I_x–x+I_y–y=πd⁴/32. Therefore I_x–x/I_y–y=(πd⁴/64)/(πd⁴/64)=1.",
+      "transcriptionReviewed": true,
+      "note": "Full source continues at top of printed p 79; circle symmetry verifies.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 64,
+          "bbox": [
+            359,
+            631,
+            461,
+            742
+          ],
+          "placement": "question",
+          "alt": "Circle diameterd with perpendicular diametralx, y axes and normalz at centre."
+        },
+        {
+          "page": 64,
+          "bbox": [
+            359,
+            631,
+            461,
+            742
+          ],
+          "placement": "explanation",
+          "alt": "Circular area’s equal diametral moments and central polar axis."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-79-353",
+      "status": "verified",
+      "answer": "c",
+      "question": "For uniform L-shaped polygon ABCDEFA, DE=20 mm, EF=80 mm, FA=100 mm, AB=20 mm. With A as origin, x horizontal right, y vertical up, its centroid is",
+      "options": {
+        "a": "(60, 20) mm",
+        "b": "(25, 60) mm",
+        "c": "(25, 65) mm",
+        "d": "(65, 25) mm",
+        "e": "(25, 40) mm"
+      },
+      "explanation": "Use vertical rectangle 1 of 80×20 mm and upper rectangle 2 of 80×20 mm. Their centres are(x₁, y₁)=(10, 40) mm and(x₂, y₂)=(40, 90) mm. x̄=(a₁x₁+a₂x₂)/(a₁+a₂)=[80×20×10+80×20×40]/[80×20+80×20]=25 mm. ȳ=(a₁y₁+a₂y₂)/(a₁+a₂)=[80×20×40+80×20×90]/[80×20+80×20]=65 mm. Thus centroid(25, 65) mm.",
+      "transcriptionReviewed": true,
+      "note": "Question figure mislabels vertical axisx; explanation labels it correctlyy. Text now defines axes.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 65,
+          "bbox": [
+            143,
+            214,
+            218,
+            285
+          ],
+          "placement": "question",
+          "alt": "L-polygonABCDEFA; printed vertical axisx is a typo fory. A is origin."
+        },
+        {
+          "page": 65,
+          "bbox": [
+            108,
+            345,
+            221,
+            453
+          ],
+          "placement": "explanation",
+          "alt": "Equal-area 80×20 mm rectangles with centres(10, 40) and(40, 90) mm."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-79-354",
+      "status": "verified",
+      "answer": "b",
+      "question": "A thin hollow cone’s centre of gravity lies on its axis at height",
+      "options": {
+        "a": "One-fourth of total height above base",
+        "b": "One-third of total height above base",
+        "c": "One-half of total height above base",
+        "d": "Three-eighths of total height above base"
+      },
+      "explanation": "The centre of gravity of a thin hollow cone is on its axis one-third of the total height above the base.",
+      "transcriptionReviewed": true,
+      "note": "Uniform conical lateral shell without a base disk; ring-area integration givesh/3, versus solid coneh/4.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 65,
+          "bbox": [
+            136,
+            647,
+            219,
+            719
+          ],
+          "placement": "explanation",
+          "alt": "Thin conical shell heighth with centre on axis h/3 above open base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-79-355",
+      "status": "verified",
+      "answer": "a",
+      "question": "A uniform solid hemisphere of diameter 80 mm has its centre of gravity what distance from the base plane?",
+      "options": {
+        "a": "15 mm",
+        "b": "40 mm",
+        "c": "20 mm",
+        "d": "10 mm"
+      },
+      "explanation": "A solid hemisphere’s centre is 3r/8 above its base. Here 2r=d=80 mm, r=40 mm, so 3r/8=3×40/8=15 mm.",
+      "transcriptionReviewed": true,
+      "note": "Full explanation recovered from source option-boundary OCR failure.",
+      "references": [
+        {
+          "title": "Penn State, Mechanics Map",
+          "url": "https://mechanicsmap.psu.edu/websites/centroidtables/centroids3D/centroids3D.html",
+          "section": "3D Centroid and Mass Moment of Inertia Table; solid hemisphere and cone"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 65,
+          "bbox": [
+            362,
+            167,
+            462,
+            221
+          ],
+          "placement": "explanation",
+          "alt": "Hemisphere centreG at 3r/8 above its plane base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-79-356",
+      "status": "verified",
+      "answer": "b",
+      "question": "A triangle has base 60 mm and height 50 mm. Its second moment about base BC is",
+      "options": {
+        "a": "208333.33 mm⁴",
+        "b": "625000 mm⁴",
+        "c": "900000 mm⁴",
+        "d": "300000 mm⁴"
+      },
+      "explanation": "Centroidal I_GG=bh³/36. Base I_BC=bh³/12. Substitute I_BC=60×50³/12=625000 mm⁴.",
+      "transcriptionReviewed": true,
+      "note": "All source formulas retained; independent integration verifies.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 65,
+          "bbox": [
+            359,
+            334,
+            470,
+            418
+          ],
+          "placement": "explanation",
+          "alt": "TriangleABC baseBC=b, altitudeh, centroidG at h/3 above base."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-79-357",
+      "status": "disputed",
+      "answer": null,
+      "question": "The centre of gravity of a plane lamina is not at its geometrical centre if it is a",
+      "options": {
+        "a": "Circle",
+        "b": "Square",
+        "c": "Rectangle",
+        "d": "Right-angled triangle"
+      },
+      "explanation": "For a uniform lamina under uniform gravity, the centre of gravity coincides with its geometric area centroid, including for a right triangle. A circle, square and rectangle additionally have a centre of symmetry there. A right triangle generally lacks central symmetry, but its centroid remains a geometric centre. The source statement is false if “geometrical centre” means centroid, and undefined if another centre is meant. Choice(d) answers a different question about lacking central symmetry.",
+      "transcriptionReviewed": true,
+      "note": "Source conflates geometric centroid and centre of symmetry; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "sourceExplanation": "Right-angled triangle."
+    },
+    {
+      "id": "mech-engineering-mechanics-79-358",
+      "status": "disputed",
+      "answer": null,
+      "question": "Which represents neutral equilibrium?",
+      "options": {
+        "a": "Cube resting on one edge",
+        "b": "Smooth cylinder on a curved surface",
+        "c": "Smooth cylinder on a convex surface",
+        "d": "None of these"
+      },
+      "explanation": "Neutral equilibrium means a small allowed displacement leaves potential energy unchanged and the centre of gravity at constant height. A cube balanced on an edge is unstable; an ordinary cylinder on top of a convex support is unstable. A cylinder in an ordinary concave trough is stable transversely. But(b) says only “curved surface, ”without shape, orientation or permitted displacement, so it cannot be classified. If(b) meant an ordinary concave trough, the intended answer is(d); a standard neutral example is a cylinder on a horizontal plane. The printed unspecified geometry prevents a definite unique classification.",
+      "transcriptionReviewed": true,
+      "note": "Source genuinely says “curved, ”not “concave, ”and supplies onlyd with no geometry; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, College Physics2e",
+          "url": "https://openstax.org/books/college-physics-2e/pages/9-3-stability",
+          "section": "9.3 Stability; stable, unstable and neutral equilibrium"
+        }
+      ],
+      "sourceExplanation": "None of the above."
+    },
+    {
+      "id": "mech-engineering-mechanics-79-359",
+      "status": "verified",
+      "answer": "d",
+      "question": "The centroid(x̄, ȳ) of a quarter-circular lamina of radius R, with straight edges on the first-quadrant coordinate axes, is",
+      "options": {
+        "a": "(0, 4R/(3π))",
+        "b": "(4R/(3π), 0)",
+        "c": "(4R/(3π), 8R/(3π))",
+        "d": "(4R/(3π), 4R/(3π))",
+        "e": "(8R/(3π), 8R/(3π))"
+      },
+      "explanation": "The source explanation is a quarter-circle diagram marking both centroid offsets. By symmetry and first-area moments, x̄=ȳ=4R/(3π), so centroid(4R/(3π), 4R/(3π)).",
+      "transcriptionReviewed": true,
+      "note": "Both labels restored as text; genuine source figure retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 66,
+          "bbox": [
+            152,
+            164,
+            213,
+            226
+          ],
+          "placement": "explanation",
+          "alt": "Quarter-circle centroid with both offsets 4R/(3π) from straight edges."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-80-360",
+      "status": "verified",
+      "answer": "c",
+      "question": "A square of side 1 unit has area moment about its diagonal of",
+      "options": {
+        "a": "1/3 unit⁴",
+        "b": "1/4 unit⁴",
+        "c": "1/12 unit⁴",
+        "d": "1/6 unit⁴"
+      },
+      "explanation": "Given square sidea=1. The diagonal is each triangle’s base b=a√2; perpendicular height h=a/√2. Thus I_diagonal=2(I_triangle)_base=2 bh³/12=2[(a√2)(a/√2)³]/12=a⁴/12=1/12, sincea=1.",
+      "transcriptionReviewed": true,
+      "note": "Full source question, choices, answer and derivation recovered from failed OCR boundaries; independently verified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ],
+      "figures": [
+        {
+          "page": 66,
+          "bbox": [
+            92,
+            337,
+            269,
+            385
+          ],
+          "placement": "explanation",
+          "alt": "Square sidea split along diagonal into triangles of basea√2 and heighta/√2."
+        }
+      ]
     }
   ],
   "audit": {
-    "totalReviewed": 23,
+    "totalReviewed": 120,
     "counts": {
-      "verified": 20,
-      "disputed": 2,
-      "corrected": 1
+      "verified": 91,
+      "disputed": 17,
+      "corrected": 12
     },
     "range": [
       241,
@@ -570,9 +3827,7 @@
       260,
       261,
       262,
-      263
-    ],
-    "remainingNumbers": [
+      263,
       264,
       265,
       266,
@@ -671,11 +3926,12 @@
       359,
       360
     ],
+    "remainingNumbers": [],
     "issues": [
       {
         "id": "mech-engineering-mechanics-59-246",
         "status": "disputed",
-        "note": "Printed answera confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading."
+        "note": "Printed answer a confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading."
       },
       {
         "id": "mech-engineering-mechanics-61-255",
@@ -686,6 +3942,136 @@
         "id": "mech-engineering-mechanics-61-257",
         "status": "disputed",
         "note": "Missing frictionless condition; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-64-264",
+        "status": "corrected",
+        "note": "Retained key e; corrected “kinematic” to “kinetic” and qualified the high-speed claim while preserving all six laws."
+      },
+      {
+        "id": "mech-engineering-mechanics-65-273",
+        "status": "disputed",
+        "note": "Original scan genuinely prints “frictional, ” not “frictionless.” Underdetermined; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-66-278",
+        "status": "disputed",
+        "note": "Source calculation and reported key disagree; no correct listed choice."
+      },
+      {
+        "id": "mech-engineering-mechanics-66-279",
+        "status": "corrected",
+        "note": "Corrected the source intermediate line omitting factor 2; retained key d."
+      },
+      {
+        "id": "mech-engineering-mechanics-66-280",
+        "status": "disputed",
+        "note": "Conflicting 30° initial and 45° final equilibrium conditions; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-67-283",
+        "status": "corrected",
+        "note": "Removed the source’s false equalityμN=mg sinθ, which contradicts acceleration andμ<tanθ."
+      },
+      {
+        "id": "mech-engineering-mechanics-67-285",
+        "status": "corrected",
+        "note": "Retained key d; corrected the explanation’s inconsistent blanket speed/size list."
+      },
+      {
+        "id": "mech-engineering-mechanics-68-290",
+        "status": "disputed",
+        "note": "All four choices are valid; exclude single-answer grading."
+      },
+      {
+        "id": "mech-engineering-mechanics-69-298",
+        "status": "disputed",
+        "note": "Complete two-column derivation retained; independent composite-area calculation confirms numerator 20+3π, not 28+3π."
+      },
+      {
+        "id": "mech-engineering-mechanics-69-301",
+        "status": "disputed",
+        "note": "Base value 10976 cm⁴ is absent; option d 2744 is centroidal, not base."
+      },
+      {
+        "id": "mech-engineering-mechanics-71-310",
+        "status": "disputed",
+        "note": "Printed key c is too vague; ungraded pending a precise definition."
+      },
+      {
+        "id": "mech-engineering-mechanics-72-313",
+        "status": "corrected",
+        "note": "Corrected genuine factor-two mass-normalization error."
+      },
+      {
+        "id": "mech-engineering-mechanics-72-314",
+        "status": "disputed",
+        "note": "Overlapping choices and imprecise sector terminology; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-72-315",
+        "status": "corrected",
+        "note": "Retained key b; corrected density-placement reversal in explanation."
+      },
+      {
+        "id": "mech-engineering-mechanics-72-317",
+        "status": "disputed",
+        "note": "Missing minimum/independence conditions; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-72-319",
+        "status": "corrected",
+        "note": "Corrected printed key b to c."
+      },
+      {
+        "id": "mech-engineering-mechanics-73-322",
+        "status": "disputed",
+        "note": "Duplicate original choicesa, b; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-74-326",
+        "status": "corrected",
+        "note": "Correct key d; supplied missing area formula and distinguished mass version."
+      },
+      {
+        "id": "mech-engineering-mechanics-76-336",
+        "status": "corrected",
+        "note": "Retained correct key c; corrected visually confirmed height-denominator typo."
+      },
+      {
+        "id": "mech-engineering-mechanics-77-343",
+        "status": "corrected",
+        "note": "Correct key c; retained all source area discussion while supplying the required mass definition."
+      },
+      {
+        "id": "mech-engineering-mechanics-77-346",
+        "status": "disputed",
+        "note": "Source confuses diametral area and axial flywheel radii; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-78-348",
+        "status": "disputed",
+        "note": "Actual source omits all answer choices; truth values recoverable but letterd cannot be mapped."
+      },
+      {
+        "id": "mech-engineering-mechanics-78-349",
+        "status": "corrected",
+        "note": "Corrected false zero-inertia claim and added same-direction axis condition."
+      },
+      {
+        "id": "mech-engineering-mechanics-78-350",
+        "status": "disputed",
+        "note": "Wrong-axis formula; choicesb, d also duplicate with dimensionsL⁵. Ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-79-357",
+        "status": "disputed",
+        "note": "Source conflates geometric centroid and centre of symmetry; ungraded."
+      },
+      {
+        "id": "mech-engineering-mechanics-79-358",
+        "status": "disputed",
+        "note": "Source genuinely says “curved, ”not “concave, ”and supplies onlyd with no geometry; ungraded."
       }
     ],
     "method": "Recovered from the original full visual-review write history. Complete printed questions, all choices, explanations and formulas were reconciled against original printedpp59–80, with independent physics/calculation and primary references. The reattached PDF is byte-identical by SHA-256. Figure boxes are1-based PDF pages in PDF points.",

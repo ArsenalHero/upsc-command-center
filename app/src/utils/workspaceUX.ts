@@ -28,7 +28,7 @@ export function studyDuration(seconds: number) {
 const navigationAliases: Record<string, string> = {
   "/": "home today overview dashboard",
   "/tests": "golden gate mock exam test series",
-  "/pyqs": "papers previous year questions practice",
+  "/pyqs": "pyq papers previous year questions practice mechanical engineering mechanics",
   "/reports": "analytics performance statistics",
   "/settings": "themes wallpapers targets appearance",
   "/revision": "review recall spaced repetition",
