@@ -1,0 +1,822 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-103-481",
+      "number": 481,
+      "status": "verified",
+      "answer": "d",
+      "question": "A body of mass 10 kg moving with a velocity of 1 m/s is acted upon by a force of 50 N for two seconds. The final velocity of the body will be —",
+      "options": {
+        "a": "22 m/s",
+        "b": "10 m/s",
+        "c": "√21 m/s",
+        "d": "11 m/s"
+      },
+      "explanation": "Given, Force (F) = 50 N\nMass (m) = 10 kg\nInitial velocity (u) = 1 m/s\nFinal velocity (v) = ?\nTime (t) = 2 s.\nWe know F = ma.\n50 = 10 × a\n a = 50/10 = 5 m/s².\nFrom the first equation of motion:\nv = u + at\nv = 1 + 5 × 2\nv = 11 m/s.",
+      "sourceExplanation": "Given, Force (F) = 50 N\nMass (m) = 10 kg\nInitial velocity (u) = 1 m/s\nFinal velocity (v) = ?\nTime (t) = 2 s.\nWe know F = ma.\n50 = 10 × a\n a = 50/10 = 5 m/s².\nFrom the first equation of motion:\nv = u + at\nv = 1 + 5 × 2\nv = 11 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Independently calculated a=F/m=5m/s² and v=1+5×2=11m/s. Full source visually reconciled in prior review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-103-482",
+      "number": 482,
+      "status": "verified",
+      "answer": "d",
+      "question": "Mathematical formulation of Newton's law in Engineering Mechanics:",
+      "options": {
+        "a": "F = d(mv)/dt",
+        "b": "F = dP/dt",
+        "c": "F = Ṗ",
+        "d": "All of the above"
+      },
+      "explanation": "Force F = d(mv)/dt.\nLinear momentum P = mv.\nNow, force = rate of change of momentum.\nF = dP/dt (rate of change of momentum).\nF = Ṗ (rate of change of momentum).",
+      "sourceExplanation": "Force F = d(mv)/dt.\nLinear momentum P = mv.\nNow, force = rate of change of momentum.\nF = dP/dt (rate of change of momentum).\nF = Ṗ (rate of change of momentum).",
+      "transcriptionReviewed": true,
+      "note": "All three are the same momentum form of Newton’s second law. Derivative and dot choices restored from the scanned source.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-103-483",
+      "number": 483,
+      "status": "verified",
+      "answer": "a",
+      "question": "A body of 20 kg mass moving with a velocity of 2 m/s is acted upon by a force of 100 N for four seconds. The final velocity will be:",
+      "options": {
+        "a": "22 m/s",
+        "b": "10 m/s",
+        "c": "√21 m/s",
+        "d": "11 m/s"
+      },
+      "explanation": "m = 20 kg (moving body mass)\nu = 2 m/s\nF = 100 N\nt = 4 s.\nWe know that F = ma.\na = F/m = 100/20 = 5 m/s².\n∴ v = u + at\n= 2 + 5 × 4 = 2 + 20\nv = 22 m/s.",
+      "sourceExplanation": "m = 20 kg (moving body mass)\nu = 2 m/s\nF = 100 N\nt = 4 s.\nWe know that F = ma.\na = F/m = 100/20 = 5 m/s².\n∴ v = u + at\n= 2 + 5 × 4 = 2 + 20\nv = 22 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Independent Newton/kinematics calculation gives22m/s.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 89,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            360,
+            291,
+            468,
+            334
+          ],
+          "units": "pdf-points",
+          "alt": "A 20 kg body initially moving to the right at 2 m/s"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-103-484",
+      "number": 484,
+      "status": "verified",
+      "answer": "c",
+      "question": "The velocity–time graph of a body is a straight line passing through the origin. If its slope is m, the distance travelled in time t would be:",
+      "options": {
+        "a": "2mu³",
+        "b": "mu²/(2t²)",
+        "c": "u²/(2m)",
+        "d": "2mu²"
+      },
+      "explanation": "Draw the velocity (u)–time (t) graph.\nDistance s = area under the velocity–time curve\n= (1/2) × base × height = (1/2) × t × u.\ns = ut/2.\nGiven, slope m = u/t ⇒ u = mt,\nor t = u/m.\nTherefore s = u²/(2m).",
+      "sourceExplanation": "Draw the velocity (u)–time (t) graph.\nDistance s = area under the velocity–time curve\n= (1/2) × base × height = (1/2) × t × u.\ns = ut/2.\nGiven, slope m = u/t ⇒ u = mt,\nor t = u/m.\nTherefore s = u²/(2m).",
+      "transcriptionReviewed": true,
+      "note": "The triangular area is ut/2=u²/(2m)=mt²/2. Printed choices use final velocity u.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": [
+        {
+          "page": 89,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            369,
+            521,
+            479,
+            602
+          ],
+          "units": "pdf-points",
+          "alt": "Velocity–time triangle from the origin, reaching velocity u at time t"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-104-485",
+      "number": 485,
+      "status": "corrected",
+      "answer": "a",
+      "question": "A monkey of mass 40 kg climbs on a rope which withstands maximum tension 600 N. In which case will it break? Take g=10m/s² and ignore the rope’s mass.",
+      "options": {
+        "a": "Climbs up with acceleration 6 m/s²",
+        "b": "Climbs down with acceleration 4 m/s²",
+        "c": "Climbs up with uniform speed 5 m/s",
+        "d": "None of the mentioned"
+      },
+      "explanation": "Given:\nMonkey’s mass m = 40 kg\ng = 10 m/s²\nMaximum rope tension Tmax = 600 N\nMonkey’s acceleration a = 6 m/s².\nAccording to the second law:\nT = mg + ma\nT = m(g + a)\nT = 40(10 + 6)\nT = 640 N.\nSince T > Tmax, or 640 > 600, the rope will break.",
+      "sourceExplanation": "Given:\nMonkey’s mass (m) = 40 kg\ng = 10 m/s\nMaximum tension in rope, Tmax = 600 N\nAcceleration due to monkey a = 6 m/s².\nAccording to second law of motion:\nT = mg + ma\nT = m[g + a]\nT = 40[10 + 6]\nT = 640 N.\nSince T > Tmax or (640 > 600) the rope will break in this case.",
+      "transcriptionReviewed": true,
+      "note": "Independent tensions are640N,240N and400N respectively. Corrected the source’s speed unit m/s² to m/s and g’s unit to m/s².",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ],
+      "figures": [
+        {
+          "page": 90,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            146,
+            243,
+            214,
+            302
+          ],
+          "units": "pdf-points",
+          "alt": "Monkey’s free-body diagram showing rope tension upward and weight downward"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-104-486",
+      "number": 486,
+      "status": "verified",
+      "answer": "d",
+      "question": "A cylinder of mass m rolls down an incline from height h. If its axis speed at the lower level is v, then:",
+      "options": {
+        "a": "v = gh",
+        "b": "v = mgh",
+        "c": "v = √(2gh)",
+        "d": "v < √(2gh)"
+      },
+      "explanation": "The printed source supplies only answer(d), with no explanatory working.\nIndependent verification: mgh=(1/2)mv²+(1/2)Iω² for rolling from rest. Positive rotational kinetic energy implies (1/2)mv²<mgh, hence v<√(2gh).",
+      "sourceExplanation": "",
+      "transcriptionReviewed": true,
+      "note": "Independently checked rolling energy. Added derivation clearly distinguished from absent printed explanation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1:energy and acceleration in rolling motion"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-487",
+      "number": 487,
+      "status": "corrected",
+      "answer": "c",
+      "question": "When a Bofors 40 mm gun is fired, which law explains its recoil?",
+      "options": {
+        "a": "Newton’s first law",
+        "b": "Newton’s second law",
+        "c": "Newton’s third law",
+        "d": "Newton’s fourth law"
+      },
+      "explanation": "The Bofors 40 mm gun is an anti-aircraft autocannon. When fired, its recoil is explained by Newton’s third law.\n∴ Action = reaction: the forces on projectile and gun form an equal and opposite pair.",
+      "sourceExplanation": "Bofors 40 mm gun after referred to simply as the before gun, is an anti-aircraft automation. When a bofors 40 mm gun is fired the, recoil by Newton’s third law of motion.\n∴ Action = Reaction.",
+      "transcriptionReviewed": true,
+      "note": "Corrected the printed ancillary wording “before gun” and “anti-aircraft automation”; recoil independently follows the gun/projectile interaction.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law",
+          "section": "5.5:equal and opposite interaction forces"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-488",
+      "number": 488,
+      "status": "verified",
+      "answer": "c",
+      "question": "The motion of an artificial satellite orbiting Earth at constant height is an example of:",
+      "options": {
+        "a": "Linear motion",
+        "b": "Space motion",
+        "c": "Circular motion",
+        "d": "Superficial motion"
+      },
+      "explanation": "For a satellite of mass m orbiting at radius r from Earth’s center, gravity supplies centripetal acceleration.\nv_orbit = √(GMearth/r).\nEarth’s gravity is the only force. From Newton’s gravitation law:\nF = GmMearth/r².",
+      "sourceExplanation": "For a satellite of mass m orbiting at radius r from Earth’s center, gravity supplies centripetal acceleration.\nv_orbit = √(GMearth/r).\nEarth’s gravity is the only force. From Newton’s gravitation law:\nF = GmMearth/r².",
+      "transcriptionReviewed": true,
+      "note": "Constant geocentric radius in the intended ideal model gives a circular orbit; checked mv²/r=GMm/r².",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-4-satellite-orbits-and-energy",
+          "section": "13.4:circular satellite orbits"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-489",
+      "number": 489,
+      "status": "verified",
+      "answer": "b",
+      "question": "What is the weight of a woman inside a lift accelerating downward at9.8m/s²?",
+      "options": {
+        "a": "Half of her original weight",
+        "b": "Zero",
+        "c": "One-tenth of her original weight",
+        "d": "None of these"
+      },
+      "explanation": "Given mass m and downward acceleration a=9.8m/s².\nApparent weight=m(g−a)\n=m(9.8−9.8)\n=0, since g=9.8m/s².",
+      "sourceExplanation": "Given mass m and downward acceleration a=9.8m/s².\nApparent weight=m(g−a)\n=m(9.8−9.8)\n=0, since g=9.8m/s².",
+      "transcriptionReviewed": true,
+      "note": "Intended weight is apparent weight/normal reaction, zero in free fall. Gravitational force mg remains nonzero.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-490",
+      "number": 490,
+      "status": "verified",
+      "answer": "c",
+      "question": "The force acting along a circle’s radius towards its center is:",
+      "options": {
+        "a": "Centrifugal force",
+        "b": "Radial force",
+        "c": "Centripetal force",
+        "d": "None of these"
+      },
+      "explanation": "The inward radial force on a body in circular motion is known as centripetal force.\nFc = mv²/r,\nwhere r=radius, m=mass and v=speed.",
+      "sourceExplanation": "The inward radial force on a body in circular motion is known as centripetal force.\nFc = mv²/r,\nwhere r=radius, m=mass and v=speed.",
+      "transcriptionReviewed": true,
+      "note": "The specific standard term is centripetal; radial is only a generic description.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-491",
+      "number": 491,
+      "status": "corrected",
+      "answer": "b",
+      "question": "In relative equilibrium with respect to a moving body, the projections of all real forces together with the______due to base acceleration sum to zero.",
+      "options": {
+        "a": "Frictional force",
+        "b": "Inertia force",
+        "c": "Tangential force",
+        "d": "Shear force"
+      },
+      "explanation": "D’Alembert’s principle of inertial forces:\nFor a particle in relative equilibrium with a moving body, the projections of all real forces together with inertia force due to base acceleration sum to zero on every axis.\nΣ(i=1 to n) Fi + FI = 0,\nwhere FI is the inertia force(−ma_base for a translating frame) and Fi is a real force.",
+      "sourceExplanation": "D’Alembert’s principle of Inertial forces:\nIn case of relative equilibrium of a particle with respect to a moving body, the algebraic sum of the projections, on any axis, of all real forces acting on the particle together with the “Inertia” due to base acceleration must be zero.\nFI − Σ(i=1 to n) Fi = 0.\nFI = Inertial force.\nFi = A real force.",
+      "transcriptionReviewed": true,
+      "note": "Source prints FI−ΣFi=0 while calling FI inertia force, inconsistent with its verbal statement. Corrected to ΣFi+FI=0, FI=−ma_base.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,Dynamics",
+          "url": "https://ocw.mit.edu/courses/2-032-dynamics-fall-2004/resources/session_17/",
+          "section": "Lecture17:D’Alembert’s principle"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-104-492",
+      "number": 492,
+      "status": "verified",
+      "answer": "d",
+      "question": "Absolute acceleration in relative motion is the geometric sum of:",
+      "options": {
+        "a": "Base and relative acceleration",
+        "b": "Relative and supplementary acceleration",
+        "c": "Supplementary and base acceleration",
+        "d": "Base, supplementary and relative acceleration"
+      },
+      "explanation": "Absolute acceleration in relative motion is the geometric sum of base acceleration, supplementary acceleration and relative acceleration.",
+      "sourceExplanation": "Absolute acceleration in relative motion is the geometric sum of base acceleration, supplementary acceleration and relative acceleration.",
+      "transcriptionReviewed": true,
+      "note": "Transport theorem gives base/transport+relative+Coriolis(supplementary) acceleration as vectors.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,Dynamics",
+          "url": "https://ocw.mit.edu/courses/2-032-dynamics-fall-2004/resources/session_17/",
+          "section": "Lecture17:D’Alembert’s principle"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-105-493",
+      "number": 493,
+      "status": "corrected",
+      "answer": "c",
+      "question": "A motorist travels at90km/h when a light250m ahead turns red for12seconds. To pass without stopping just as it turns green, his speed then will be:",
+      "options": {
+        "a": "30 km/h",
+        "b": "45 km/h",
+        "c": "60 km/h",
+        "d": "Zero"
+      },
+      "explanation": "u=90km/h=90×5/18=25m/s; t=12s; s=250m.\nUsing constant-acceleration kinematics:\ns=ut+(1/2)at².\n250=25×12+(1/2)a×12².\na=−0.6944m/s².\nThen v=u+at=25+(−0.6944)(12)\n=16.667m/s.\nv=16.667×18/5=60km/h.",
+      "sourceExplanation": "Given u=90kmph=90×5/18=25m/sec; t=12sec, s=250.\nApplying Newton’s law of motion:\ns=ut+1/2 at².\n250=25×12+(1/2)(a)×12².\na=−0.694m/sec².\nNow applying Newton’s law of motion equation:\nv=u+at.\nv=25+(−0.694)(12).\nv=16.67m/sec.\nv=16.67×18/5=60kmph.",
+      "transcriptionReviewed": true,
+      "note": "Source assumes constant deceleration; otherwise final speed is not unique. Under that assumption v=2s/t−u=60km/h. Corrected loose Newton-law attribution.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-105-494",
+      "number": 494,
+      "status": "corrected",
+      "answer": "c",
+      "question": "A car starts from rest on a circular track of radius9m with constant tangential acceleration3m/s². What is its resultant acceleration after2s?",
+      "options": {
+        "a": "3 m/s²",
+        "b": "4 m/s²",
+        "c": "5 m/s²",
+        "d": "7 m/s²"
+      },
+      "explanation": "Given at=3m/s²,R=9m,t=2s.\nUsing v=u+at, v=0+3×2=6m/s.\nResultant a=√(ar²+at²).\nRadial acceleration ar=v²/R=6²/9=4m/s².\nResultant a=√(4²+3²)=5m/s².",
+      "sourceExplanation": "Given at=3m/s²,R=9m,t=2sec,a=?\nAccording to Newton’s first law,v=u+at.\nv=0+3×2=6m/s.\na=√(ar²+at²).\nRadial ar=v²/R=6²/9=4m/s².\nResultant a=√(4²+3²)=5m/s².",
+      "transcriptionReviewed": true,
+      "note": "Independent perpendicular components are4 and3m/s². Source falsely attributes v=u+at to Newton’s first law.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-105-495",
+      "number": 495,
+      "status": "disputed",
+      "answer": null,
+      "question": "A tap releases four drops per second. Find separation of consecutive drops when the lower drop reaches4m/s. Take g=10m/s².",
+      "options": {
+        "a": "0.49 m",
+        "b": "0.31 m",
+        "c": "0.50 m",
+        "d": "0.30 m"
+      },
+      "explanation": "Lower-drop fall time=4/10=0.4s.\nIts distance=(10/2)(0.4)²=0.8m.…(i)\nSecond drop is released1/4s=0.25s later.\nIts fall time=0.4−0.25=0.15s.\nIts distance=(1/2)gt²=5(0.15)²=0.1125m.…(ii)\nSeparation=0.8−0.1125=0.6875m.\nNone of the choices is correct.",
+      "sourceExplanation": "Time taken by lower drop to4m/sec:4/10=0.4sec.\nDistance of lower drop=(1/2)gt²=(10/2)(0.4)²=0.8m.…(i)\nTime after lower drop2nd drop released=1/4sec=0.25sec.\n2nd drop falling time=0.4−0.25=0.15sec.\nDistance travelled by second drop=(1/2)gt²=5(0.15)²=0.1125m.…(ii)\nSeparation=0.8−0.1125=0.6575m.",
+      "transcriptionReviewed": true,
+      "note": "Source’s final subtraction0.6575m is wrong; independent result0.6875m is also absent. Source uses an asterisk instead of answer letter.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-105-496",
+      "number": 496,
+      "status": "verified",
+      "answer": "b",
+      "question": "A car initially at20m/s has acceleration a=10−t/2. Determine its maximum speed.",
+      "options": {
+        "a": "200 m/s",
+        "b": "120 m/s",
+        "c": "100 m/s",
+        "d": "80 m/s"
+      },
+      "explanation": "Given u=20m/s,a=10−t/2.\nMaximum forward velocity occurs at a=0,t=20s.\na=dv/dt.\n∫a dt=∫dv.\n∫(10−t/2)dt=∫dv.\n10t−t²/4=v−20.\nAt20s:200−100=v−20.\nv=120m/s.",
+      "sourceExplanation": "Given u=20m/s,a=10−t/2.\nMaximum forward velocity occurs at a=0,t=20s.\na=dv/dt.\n∫a dt=∫dv.\n∫(10−t/2)dt=∫dv.\n10t−t²/4=v−20.\nAt20s:200−100=v−20.\nv=120m/s.",
+      "transcriptionReviewed": true,
+      "note": "Acceleration changes sign at20s; independent integration gives maximum forward velocity120m/s. If extended forever, reverse speed would be unbounded.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-6-finding-velocity-and-displacement-from-acceleration",
+          "section": "3.6:velocity and displacement by integration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-105-497",
+      "number": 497,
+      "status": "verified",
+      "answer": "c",
+      "question": "A cylinder of massM and radiusR rolls down an incline of angleθ. Its axis acceleration is(g denotes gravity):",
+      "options": {
+        "a": "g sinθ",
+        "b": "(1/3)g sinθ",
+        "c": "(2/3)g sinθ",
+        "d": "3g sinθ"
+      },
+      "explanation": "If the rolling object is a solid cylinder:\na=g sinθ/(1+K²/R²).\nI=MK²=(1/2)MR²,\nso K²/R²=1/2.\na=g sinθ/(1+K²/R²)\n=g sinθ/(1+1/2)\n=(2/3)g sinθ.",
+      "sourceExplanation": "If the rolling object is a solid cylinder:\na=g sinθ/(1+K²/R²).\nI=MK²=(1/2)MR²,\nso K²/R²=1/2.\na=g sinθ/(1+K²/R²)\n=g sinθ/(1+1/2)\n=(2/3)g sinθ.",
+      "transcriptionReviewed": true,
+      "note": "Source assumes uniform solid cylinder rolling without slip. Independent torque/force calculation gives2g sinθ/3; hollow cylinder differs.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1:energy and acceleration in rolling motion"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-498",
+      "number": 498,
+      "status": "disputed",
+      "answer": null,
+      "question": "A particle is acted on byF(x)=−k/(2x²) along the positive x-axis. Initially x=1m,v=0. What is its velocity at x=0.5m? k=10⁻²N·m² and mass=10⁻²kg.",
+      "options": {
+        "a": "1 m/s",
+        "b": "0",
+        "c": "2 m/s",
+        "d": "0.5 m/s"
+      },
+      "explanation": "F=−k/(2x²),k=m=10⁻² in the stated SI units.\na=F/m=−1/(2x²).\nBecause a depends on position,use a=v dv/dx:\nv dv=−dx/(2x²).\nIntegrating from x=1,v=0:\nv²/2=(1/2)(1/x−1),so v²=1/x−1.\nAt x=0.5,v²=1.\nSpeed=1m/s; signed velocity is−1m/s because motion is toward decreasingx.\nNo listed choice gives signed velocity. If velocity means speed,a is correct.\nThe printed direct integration of d²x/dt² with respect tox to get dx/dt is invalid.",
+      "sourceExplanation": "From Newton’s Second law the inertia force is F=m×1.\nF(x)=−k/(2x²)=m ax.\nax=−k/(m×2x²)=−1/(2x²).\nax=d²x/dt²=−1/(2x²).\nv(x)=dx/dt=1/(2x)+c.\nInitially x=1m,v=0:0=1/2+c,so c=−1/2.\ndx/dt=1/(2x)−1/2.\nAt x=0.5m:v=1/(2×0.5)−1/2=0.5m/s.\nNote:The Commission has given answer option(a).",
+      "transcriptionReviewed": true,
+      "note": "Source keyd is mathematically wrong. Commissiona matches speed1m/s, but signed velocity−1m/s is absent; preserved ambiguity and disabled grading.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy-and-the-work-energy-theorem",
+          "section": "7.2:work–energy theorem"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-6-finding-velocity-and-displacement-from-acceleration",
+          "section": "3.6:velocity and displacement by integration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-499",
+      "number": 499,
+      "status": "verified",
+      "answer": "c",
+      "question": "A tourist travels half his journey by train at60km/h,half the remainder by bus at30km/h,and the rest by cycle at10km/h. His average speed is:",
+      "options": {
+        "a": "36",
+        "b": "30",
+        "c": "24",
+        "d": "18"
+      },
+      "explanation": "Let total distance=D.\nAverage speed=total distance/total time\n=D/[D/(2×60)+D/(4×30)+D/(4×10)]\n=D/[D/120+D/120+D/40]\n=1/[1/120+1/120+1/40]\n=1/[(1+1+3)/120]\n=1/(5/120)\n=120/5=24km/h.",
+      "sourceExplanation": "Let total distance=D.\nAverage speed=total distance/total time\n=D/[D/(2×60)+D/(4×30)+D/(4×10)]\n=D/[D/120+D/120+D/40]\n=1/[1/120+1/120+1/40]\n=1/[(1+1+3)/120]\n=1/(5/120)\n=120/5=24km/h.",
+      "transcriptionReviewed": true,
+      "note": "Independent segment-time sum=D/24hours, giving24km/h.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-1-displacement-and-velocity-vectors",
+          "section": "4.1:displacement and velocity vectors"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-500",
+      "number": 500,
+      "status": "verified",
+      "answer": "c",
+      "question": "A body starts from rest with constant acceleration5m/s². Its distance in10s is:",
+      "options": {
+        "a": "200 m",
+        "b": "300 m",
+        "c": "250 m",
+        "d": "500 m"
+      },
+      "explanation": "s=ut+(1/2)at².\nu=0,a=5m/s²,t=10s.\ns=(1/2)×5×10×10=250m.",
+      "sourceExplanation": "s=ut+(1/2)at².\nu=0,a=5m/s²,t=10s.\ns=(1/2)×5×10×10=250m.",
+      "transcriptionReviewed": true,
+      "note": "Independent substitution gives250m.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-501",
+      "number": 501,
+      "status": "verified",
+      "answer": "d",
+      "question": "Two cars are10km apart and both move at40km/h in the same direction. An opposite car meets them10minutes apart. Its speed is:",
+      "options": {
+        "a": "40 km/h",
+        "b": "25 km/h",
+        "c": "30 km/h",
+        "d": "20 km/h"
+      },
+      "explanation": "Take the two cars as stationary. The opposite car’s relative speed isV+40km/h,whereV is its original speed. The40 is added because the two cars10km apart are considered stationary.\nV+40=10/(10/60).\nV=20km/h.",
+      "sourceExplanation": "Take the two cars as stationary. The opposite car’s relative speed isV+40km/h,whereV is its original speed. The40 is added because the two cars10km apart are considered stationary.\nV+40=10/(10/60).\nV=20km/h.",
+      "transcriptionReviewed": true,
+      "note": "Independent closing speed10/(1/6)=60km/h;V=20km/h.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-1-displacement-and-velocity-vectors",
+          "section": "4.1:displacement and velocity vectors"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-502",
+      "number": 502,
+      "status": "verified",
+      "answer": "b",
+      "question": "A particle has velocity v(t)=t²−2t m/s. Its displacement over0≤t≤3 is:",
+      "options": {
+        "a": "4 m",
+        "b": "0 m",
+        "c": "8/3 m",
+        "d": "3/8 m"
+      },
+      "explanation": "v=dx/dt.\ndx=v dt.\n∫(0toL)dx=∫(0to3)(t²−2t)dt.\nL=[t³/3−2t²/2](0to3).\nL=9−9=0.\nL=zero.",
+      "sourceExplanation": "v=dx/dt.\ndx=v dt.\n∫(0toL)dx=∫(0to3)(t²−2t)dt.\nL=[t³/3−2t²/2](0to3).\nL=9−9=0.\nL=zero.",
+      "transcriptionReviewed": true,
+      "note": "Signed integral is0; distance is8/3m.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-6-finding-velocity-and-displacement-from-acceleration",
+          "section": "3.6:velocity and displacement by integration"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-106-503",
+      "number": 503,
+      "status": "verified",
+      "answer": "a",
+      "question": "A point moves along y=x²−4 from x=1 to x=3. Its displacement is:",
+      "options": {
+        "a": "8.24 at tan⁻¹(4)°",
+        "b": "2 at tan⁻¹(1)°",
+        "c": "11.3 at tan⁻¹(4)°",
+        "d": "11.3 at tan⁻¹(1)°"
+      },
+      "explanation": "Given y=x²−4.\nx1=1,y1=−3;x2=3,y2=5.\nDisplacement=√[(x2−x1)²+(y2−y1)²]\n=√[(3−1)²+(5+3)²]\n=√(4+64)=8.24.\nθ=tan⁻¹[(y2−y1)/(x2−x1)]\n=tan⁻¹[(5+3)/(3−1)]\n=tan⁻¹(4).",
+      "sourceExplanation": "Given y=x²−4.\nx1=1,y1=−3;x2=3,y2=5.\nDisplacement=√[(x2−x1)²+(y2−y1)²]\n=√[(3−1)²+(5+3)²]\n=√(4+64)=8.24.\nθ=tan⁻¹[(y2−y1)/(x2−x1)]\n=tan⁻¹[(5+3)/(3−1)]\n=tan⁻¹(4).",
+      "transcriptionReviewed": true,
+      "note": "Independent displacement(2,8),magnitude√68≈8.246 and directionatan4≈75.96°. Source inverse-tangent degree notation preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-1-displacement-and-velocity-vectors",
+          "section": "4.1:displacement and velocity vectors"
+        }
+      ],
+      "figures": []
+    }
+  ],
+  "audit": {
+    "totalReviewed": 23,
+    "counts": {
+      "verified": 16,
+      "corrected": 5,
+      "disputed": 2
+    },
+    "range": [
+      481,
+      600
+    ],
+    "issues": [
+      {
+        "number": 485,
+        "id": "mech-engineering-mechanics-104-485",
+        "status": "corrected",
+        "note": "Independent tensions are640N,240N and400N respectively. Corrected the source’s speed unit m/s² to m/s and g’s unit to m/s²."
+      },
+      {
+        "number": 487,
+        "id": "mech-engineering-mechanics-104-487",
+        "status": "corrected",
+        "note": "Corrected the printed ancillary wording “before gun” and “anti-aircraft automation”; recoil independently follows the gun/projectile interaction."
+      },
+      {
+        "number": 491,
+        "id": "mech-engineering-mechanics-104-491",
+        "status": "corrected",
+        "note": "Source prints FI−ΣFi=0 while calling FI inertia force, inconsistent with its verbal statement. Corrected to ΣFi+FI=0, FI=−ma_base."
+      },
+      {
+        "number": 493,
+        "id": "mech-engineering-mechanics-105-493",
+        "status": "corrected",
+        "note": "Source assumes constant deceleration; otherwise final speed is not unique. Under that assumption v=2s/t−u=60km/h. Corrected loose Newton-law attribution."
+      },
+      {
+        "number": 494,
+        "id": "mech-engineering-mechanics-105-494",
+        "status": "corrected",
+        "note": "Independent perpendicular components are4 and3m/s². Source falsely attributes v=u+at to Newton’s first law."
+      },
+      {
+        "number": 495,
+        "id": "mech-engineering-mechanics-105-495",
+        "status": "disputed",
+        "note": "Source’s final subtraction0.6575m is wrong; independent result0.6875m is also absent. Source uses an asterisk instead of answer letter."
+      },
+      {
+        "number": 498,
+        "id": "mech-engineering-mechanics-106-498",
+        "status": "disputed",
+        "note": "Source keyd is mathematically wrong. Commissiona matches speed1m/s, but signed velocity−1m/s is absent; preserved ambiguity and disabled grading."
+      }
+    ],
+    "sourcePagesVisuallyReconciled": [
+      103,
+      104,
+      105,
+      106
+    ],
+    "remaining": [
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      566,
+      567,
+      568,
+      569,
+      570,
+      571,
+      572,
+      573,
+      574,
+      575,
+      576,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600
+    ],
+    "sourceExplanationPreserved": true,
+    "figures": 3,
+    "fiveOptionItems": [],
+    "recovery": "Restored from the prior completed review commands after workspace pruning;reattached PDF SHA256 is identical:7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0."
+  }
+}

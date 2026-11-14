@@ -1,0 +1,280 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-17-12",
+      "number": 12,
+      "printedPage": 17,
+      "status": "verified",
+      "answer": "a",
+      "sourceExplanation": "F₁ = F₂ = P. The angle between F₁ and F₂ is θ and the angle between resultant and force is α.\nFrom triangle ACD: AC² = AD² + CD².\nR² = (P + P cos θ)² + (P sin θ)².\nR² = [P² + P² cos² θ + 2P² cos θ] + P² sin² θ.\n= P² + 2P² cos θ + P²(sin² θ + cos² θ).\n= P² + 2P² cos θ + P², since sin² θ + cos² θ = 1.\n= 2P² + 2P² cos θ = 2P²(1 + cos θ).\nUsing cos θ = 2cos²(θ/2) − 1:\n= 2P²[1 + 2cos²(θ/2) − 1] = 4P²cos²(θ/2).\nR = √[4P²cos²(θ/2)] = 2P cos(θ/2).\ntan α = CD/(AE + ED) = P sin θ/(P + P cos θ) = sin θ/(1 + cos θ).\n= [2sin(θ/2)cos(θ/2)]/[1 + 2cos²(θ/2) − 1], since sin θ = 2sin(θ/2)cos(θ/2).\n= sin(θ/2)/cos(θ/2).\ntan α = tan(θ/2); α = θ/2.",
+      "explanation": "F₁ = F₂ = P. The angle between F₁ and F₂ is θ and the angle between resultant and force is α.\nFrom triangle ACD: AC² = AD² + CD².\nR² = (P + P cos θ)² + (P sin θ)².\nR² = [P² + P² cos² θ + 2P² cos θ] + P² sin² θ.\n= P² + 2P² cos θ + P²(sin² θ + cos² θ).\n= P² + 2P² cos θ + P², since sin² θ + cos² θ = 1.\n= 2P² + 2P² cos θ = 2P²(1 + cos θ).\nUsing cos θ = 2cos²(θ/2) − 1:\n= 2P²[1 + 2cos²(θ/2) − 1] = 4P²cos²(θ/2).\nR = √[4P²cos²(θ/2)] = 2P cos(θ/2).\ntan α = CD/(AE + ED) = P sin θ/(P + P cos θ) = sin θ/(1 + cos θ).\n= [2sin(θ/2)cos(θ/2)]/[1 + 2cos²(θ/2) − 1], since sin θ = 2sin(θ/2)cos(θ/2).\n= sin(θ/2)/cos(θ/2).\ntan α = tan(θ/2); α = θ/2.",
+      "question": "Two equal forces,each P,are inclined at θ. Their resultant and its angle with either force are:",
+      "options": {
+        "a": "2P cos(θ/2) and θ/2",
+        "b": "2P cos(θ/2) and2θ",
+        "c": "P cosθ andθ",
+        "d": "P cos(θ/2) andθ/2"
+      },
+      "note": "Complete two-column derivation, figure and choices reconciled. Independent vector addition gives2Pcos(θ/2) along the angle bisector.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-20-33",
+      "number": 33,
+      "printedPage": 20,
+      "status": "verified",
+      "answer": "d",
+      "sourceExplanation": "Let the forces be P and2P. P²+(2P)²+2P×2P cosθ=260² … (i).\nWhen the larger force is reversed: P²+(−2P)²+2P(−2P)cosθ=180².\nP²+4P²−4P²cosθ=180² … (ii).\nAdding(i) and(ii):2P²+8P²=260²+180².\n10P²=100000; P²=10000; P=100.\nLarger force=2P=200. Hence the forces are100 N and200 N.",
+      "explanation": "Let the forces be P and2P. P²+(2P)²+2P×2P cosθ=260² … (i).\nWhen the larger force is reversed: P²+(−2P)²+2P(−2P)cosθ=180².\nP²+4P²−4P²cosθ=180² … (ii).\nAdding(i) and(ii):2P²+8P²=260²+180².\n10P²=100000; P²=10000; P=100.\nLarger force=2P=200. Hence the forces are100 N and200 N.",
+      "note": "Complete original cosine-rule calculation restored; independent parallelogram identity gives100 N and200 N.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-28-77",
+      "number": 77,
+      "printedPage": 28,
+      "status": "verified",
+      "answer": "c",
+      "sourceExplanation": "Given W=mg=1000 N. m=W/g=1000/9.81=101.93 kg.\nAccording to Newton’s first law: v=u+at;4=0+a×2; a=2 m/s².\nTension T=W+ma=1000+101.93×2=1203.8 N.",
+      "explanation": "The elevator starts from rest and reaches4 m/s in2 s,so the uniform-acceleration relation v=u+at gives a=2 m/s². With m=1000/9.81=101.93 kg,cable tension is T=W+ma=1000+101.93×2=1203.8 N≈1200 N. The printed label “Newton’s first law” is wrong;v=u+at is a kinematic equation.",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-33-106",
+      "number": 106,
+      "printedPage": 33,
+      "status": "verified",
+      "answer": "c",
+      "sourceExplanation": "For equilibrium of point B: T sinθ=343.35 N … (i); T cosθ=C … (ii).\nFrom(i),(ii):tanθ=343.35/C; C=343.35/tanθ.\ntanθ=125/275.\nC=343.35×275/125=755.4 N.\nRₓ=R_C=755.4 N. Reactions C and A are the same. Rᵧ=0.",
+      "explanation": "The load is35×9.81=343.35 N. At joint B,the cable supplies vertical component Tsinθ=343.35 N and horizontal component Tcosθ=C. Since tanθ=125/275,C=343.35×275/125=755.4 N. The weightless horizontal bar transfers only horizontal force,so the pin reactions are Rₓ=755.4 N,Rᵧ=0.",
+      "options": {
+        "a": "Rₓ=343.4 N,Rᵧ=755.4 N",
+        "b": "Rₓ=755.4 N,Rᵧ=343.4 N",
+        "c": "Rₓ=755.4 N,Rᵧ=0",
+        "d": "Rₓ=343.4 N,Rᵧ=0"
+      },
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-35-109",
+      "number": 109,
+      "printedPage": 35,
+      "status": "disputed",
+      "answer": null,
+      "sourceExplanation": "ΣFᵧ=0. F₁ sin30°=F₃−F₂ sin60°.\nF₁/2+F₂√3/2=F₃ … (i).\nΣFₓ=0. F₂ cos60°=F₁ cos30°.\n[F₂ cos60°/(2cos30°)]+F₂√3/2=250.\nF₂=215.6 N. F₁=125 N.",
+      "explanation": "The printed stem names F₁=250 N,but its diagram labels the known downward force F₃=250 N and asks for F₁,F₂. These conflict. For the diagram’s intended problem,vertical balance gives F₁/2+√3F₂/2=250 and horizontal balance gives F₂/2=√3F₁/2. Therefore F₁=125 N and F₂=125√3≈216.506 N. The printed215.6 N in option(c) and the solution is wrong. The original contradictory stem and all original choices are retained;there is no unambiguous printed answer to grade.",
+      "question": "Three forces F₁,F₂ and F₃ act on a body as shown,and the body is in equilibrium. If the magnitude of force F₁ is250 N,find the magnitudes of F₁ and F₂.",
+      "options": {
+        "a": "F₁=85 N and F₂=125 N",
+        "b": "F₁=125 N and F₂=256.6 N",
+        "c": "F₁=125 N and F₂=215.6 N",
+        "d": "F₁=95 N and F₂=215.6 N"
+      },
+      "note": "Restored original known-force contradiction and215.6 N choice. Disputed,answer:null. The216.506 N result appears only in the reviewed explanation.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-35-114",
+      "number": 114,
+      "printedPage": 35,
+      "status": "verified",
+      "answer": "b",
+      "sourceExplanation": "T_BC/sin155°=W/sin75°.\nT_BC=(200/sin75°)sin155°=87.5 N.",
+      "explanation": "The support angles65° to ceiling and50° to wall give force angles75°,130°,155° at B. Lami’s theorem gives T_BC/sin155°=200/sin75°,so T_BC=87.506 N≈87.5 N.",
+      "question": "The200 N light fixture is supported as shown. Determine the tensile force in wire BC:",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-36-118",
+      "number": 118,
+      "printedPage": 36,
+      "status": "verified",
+      "answer": "c",
+      "sourceExplanation": "By the parallelogram method:R=√(P²+Q²+2PQcosθ).\n7=√(P²+Q²+2PQcos60°)=√(P²+Q²+2PQ×1/2).\n7=√(P²+Q²+PQ);49=P²+Q²+PQ … (i).\nWhen the forces act at right angles,the resultant is√34 N.\nR=√(P²+Q²+2PQcosθ)=√(P²+Q²+2PQcos90°).\n√34=√(P²+Q²);34=P²+Q² … (ii),squaring both sides.\nFrom(i):49=P²+Q²+PQ;49=34+PQ.\nPQ=49−34=15;PQ=15.\nP=3 N,Q=5 N. Their product is15,hence option(c).",
+      "explanation": "By the parallelogram method:R=√(P²+Q²+2PQcosθ).\n7=√(P²+Q²+2PQcos60°)=√(P²+Q²+2PQ×1/2).\n7=√(P²+Q²+PQ);49=P²+Q²+PQ … (i).\nWhen the forces act at right angles,the resultant is√34 N.\nR=√(P²+Q²+2PQcosθ)=√(P²+Q²+2PQcos90°).\n√34=√(P²+Q²);34=P²+Q² … (ii),squaring both sides.\nFrom(i):49=P²+Q²+PQ;49=34+PQ.\nPQ=49−34=15;PQ=15.\nP=3 N,Q=5 N. Their product is15,hence option(c).",
+      "question": "Two forces have resultant7 N when acting at60° and√34 N at90°. The force magnitudes are:",
+      "options": {
+        "a": "25 N and9 N",
+        "b": "3 N and√5 N",
+        "c": "3 N and5 N",
+        "d": "√3 N and√5 N"
+      },
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-140-716",
+      "number": 716,
+      "printedPage": 140,
+      "status": "corrected",
+      "answer": "b",
+      "sourceExplanation": "Let u₁,u₂ be the first ball’s velocities before/after collision,and v₁,v₂ the second ball’s velocities before/after.\nMomentum:m₁u₁+m₂v₁=m₁u₂+m₂v₂.\nu₁+v₁=u₂+v₂;10−20=u₂+v₂;u₂+v₂=−10 m/s … (i).\ne=(u₂−v₂)/(u₁−v₁).\nu₁−v₁=u₂−v₂;10+20=u₂−v₂;u₂−v₂=30 … (ii).\nFrom(i),(ii):2u₂=20;u₂=10 m/s,and v₂=−20 m/s.",
+      "explanation": "Take initial velocities+10 and−20 m/s. Equal-mass momentum conservation gives final v₁+v₂=−10. Perfect elasticity gives v₂−v₁=30. Thus v₂=10 and v₁=−20 m/s:the first ball rebounds at20 m/s,choice(b). The source reverses the final restitution sign and incorrectly leaves both initial velocities unchanged.",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-140-717",
+      "number": 717,
+      "printedPage": 140,
+      "status": "verified",
+      "answer": "d",
+      "sourceExplanation": "Given m=20 kg,g=10 m/s². After3 s:v=u+gt=0+10×3=30 m/s.\nMomentum after3 s:M=final momentum−initial momentum=mv−mu=20×30−20×0=600 N·s.",
+      "explanation": "Starting from rest,v=gt=30 m/s downward. Final momentum is mv=20×30=600 kg·m/s=600 N·s downward;initial momentum is zero,so its change has the same value.",
+      "question": "A20 kg body falls freely from rest. Taking g=10 m/s²,its momentum magnitude after3 s is:",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-150-774",
+      "number": 774,
+      "printedPage": 150,
+      "status": "verified",
+      "answer": "a",
+      "sourceExplanation": "Time to reach ground:−80=Vᵧt+(1/2)aᵧt².\n−80=0×t+(1/2)(−10)t²;t=4 s.\nDistance AB=Uₓt+(1/2)aₓt²=100×4+(1/2)(0)4²=400 m.",
+      "explanation": "Time to reach ground:−80=Vᵧt+(1/2)aᵧt².\n−80=0×t+(1/2)(−10)t²;t=4 s.\nDistance AB=Uₓt+(1/2)aₓt²=100×4+(1/2)(0)4²=400 m.",
+      "question": "A cannonball is launched horizontally at100 m/s from an80 m tower. Taking g=10 m/s²,how far from the tower base does it land?",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-154-793",
+      "number": 793,
+      "printedPage": 154,
+      "status": "corrected",
+      "answer": "b",
+      "sourceExplanation": "aₓ=0,aᵧ=−g. At the highest point vᵧ=0.\nvᵧ²−uᵧ²=−2gH;0−u²sin²θ=−2gH;u²sin²θ=2gH.\nu sinθ=√(2gH). vᵧ=uᵧ+aᵧt;0=√(2gH)−gt.\nTime taken by:u=√(2gH)/sinθ.\n0=√(2gH)/sinθ−gt;gt=√(2gH)/sinθ.\nt=[√(2gH)/(sinθ·g)](√g/√g)\n=[√(2H)×g]/[sinθ×g√g]\n=√(2H)/(√g sinθ).\nθ=90°;t=√(2H/g).",
+      "explanation": "At the apex vᵧ=0. From0−uᵧ²=−2gH,uᵧ=√(2gH). Then0=uᵧ−gt gives t=√(2gH)/g=√(2H/g),independent of launch angle for the specified H. The source’s later division by sinθ and imposition θ=90° are wrong;the initial vertical equations give the answer directly.",
+      "options": {
+        "a": "√H/g",
+        "b": "√(2H/g)",
+        "c": "√(2H sinθ)/g",
+        "d": "√(2H)/sinθ"
+      },
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-engineering-mechanics-156-806",
+      "number": 806,
+      "printedPage": 156,
+      "status": "corrected",
+      "answer": "b",
+      "sourceExplanation": "In SHM,the table gives two forms.\nCosine form:displacement x=r cosωt … (i).\nVelocity v=rω(−sinωt)=rω cos(90°+ωt) … (ii).\nAcceleration a=−rω²cosωt=rω²(180°+ωt) … (iii).\nSine form:displacement x=r sinωt … (i).\nVelocity v=rω cosωt=rω sin(90°+ωt) … (ii).\nAcceleration a=−rω²sinωt=rω²sin(180°+ωt) … (iii).\nFrom both tables,velocity and acceleration vectors lead displacement by90° and180°,respectively.",
+      "explanation": "For x=r cosωt,v=−rωsinωt=rωcos(ωt+90°),a=−rω²cosωt=rω²cos(ωt+180°). Equally,for x=r sinωt,v=rωsin(ωt+90°),a=rω²sin(ωt+180°). Thus the phase leads are90° and180°,choice(b). These are phase differences,not spatial angles between instantaneous collinear vectors. The source cosine-column acceleration expression omits cos;the full original table is retained separately.",
+      "question": "In SHM,relative to displacement phase,the velocity and acceleration phases lead by,respectively:",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Simple Harmonic Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+        }
+      ],
+      "transcriptionReviewed": true
+    }
+  ],
+  "audit": {
+    "sourceExpected": 807,
+    "assignedRanges": [
+      [
+        1,
+        120
+      ],
+      [
+        701,
+        807
+      ]
+    ],
+    "totalReviewed": 12,
+    "counts": {
+      "verified": 8,
+      "disputed": 1,
+      "corrected": 3
+    },
+    "transcriptionReviewed": 12,
+    "assignedCoverage": 12,
+    "assignedComplete": false,
+    "complete": false,
+    "issues": [
+      "Recovery of the completed227-item visual/source review; other ranges are owned by other reviewers.",
+      "Source errors remain in the complete clean original transcription and are corrected or disputed in the reviewed solution."
+    ]
+  }
+}

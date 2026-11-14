@@ -1,0 +1,740 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-37-121",
+      "status": "verified",
+      "answer": "a",
+      "question": "A circular disc of radius R rolls without slipping at a velocity V. The magnitude of the velocity at point P shown in the figure is",
+      "options": {
+        "a": "√3 V",
+        "b": "(√3/2) V",
+        "c": "V/2",
+        "d": "√2 V"
+      },
+      "explanation": "Given: circular disc radius R and translational velocity V, rolling without slipping.\nV_cm = Rω = V. In the velocity construction θ = 60°.\nMagnitude of velocity at point P:\nv_P = √[(V sin θ)² + (V + V cos θ)²]\n= √[(V sin 60°)² + V²(1 + cos 60°)²]\n= √[(V√3/2)² + V²(1 + 1/2)²]\n= √[V²(3/4) + V²(3/2)²]\n= √[V²(3/4 + 9/4)]\n= V√(12/4)\n= V√3.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1 Rolling without slipping"
+        }
+      ],
+      "figures": [
+        {
+          "page": 23,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            356.67,
+            129.0,
+            472.0,
+            207.33
+          ],
+          "units": "pdf-points",
+          "alt": "Disc rolling to the right; radius to P is 30° above horizontal."
+        },
+        {
+          "page": 23,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            334.33,
+            298.67,
+            475.67,
+            404.67
+          ],
+          "units": "pdf-points",
+          "alt": "Velocity construction at P showing translation V and clockwise rotational velocity ωR = V."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-37-122",
+      "status": "verified",
+      "answer": "b",
+      "question": "The tension in the cable supporting a lift moving upwards is twice the tension when the lift moves downwards. What is the acceleration of the lift?",
+      "options": {
+        "a": "g/4",
+        "b": "g/3",
+        "c": "g/2",
+        "d": "g"
+      },
+      "explanation": "Case I: upward acceleration a.\nT₁ − mg = ma. …(1)\nCase II: downward acceleration of the same magnitude a.\nmg − T₂ = ma. …(2)\nGiven T₁ = 2T₂. From equations (1) and (2):\nmg − T₂ = 2T₂ − mg\n3T₂ = 2mg\nT₂ = (2/3)mg.\nSubstituting T₂ in equation (2):\nmg − (2/3)mg = ma\nTherefore a = g/3.",
+      "transcriptionReviewed": true,
+      "note": "Complete source calculation transcribed and independently checked. As assumed in the printed solution, the upward and downward accelerations have equal magnitude; direction of velocity alone would not determine acceleration.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            103.0,
+            107.0,
+            166.0,
+            177.67
+          ],
+          "units": "pdf-points",
+          "alt": "Upward-accelerating lift: T₁ upward, mg downward and acceleration a upward."
+        },
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            103.33,
+            196.67,
+            168.33,
+            267.0
+          ],
+          "units": "pdf-points",
+          "alt": "Downward-accelerating lift: T₂ upward, mg downward and acceleration a downward."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-123",
+      "status": "verified",
+      "answer": "b",
+      "question": "When a jet plane flying at 300 m/s is at the very top of its trajectory, the apparent weight of a passenger is one half of the actual weight. Find the radius of curvature R of the flight path at this point. Use g = 10 m/s².",
+      "options": {
+        "a": "22 km",
+        "b": "18 km",
+        "c": "30 km",
+        "d": "16 km"
+      },
+      "explanation": "V = 300 m/s. Let the actual weight of the passenger be W and the apparent weight be W′.\nAt the top of the curved path:\nW′ = W − mω²R = W − mV²/R.\nGiven W′ = W/2 and m = W/g:\nW/2 = W − WV²/(Rg).\nTherefore R = 2V²/g\n= 2(300)²/10\n= 18,000 m\n= 18 km.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "4.4 Centripetal acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            140.67,
+            458.25,
+            217.67,
+            505.92
+          ],
+          "units": "pdf-points",
+          "alt": "Top of convex flight path with vertical radius of curvature R."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-124",
+      "status": "verified",
+      "answer": "b",
+      "question": "A roller of weight W is rolled over the wooden block shown in the figure. The horizontal pull required just to cause the motion is",
+      "options": {
+        "a": "W/2",
+        "b": "√3 W",
+        "c": "W",
+        "d": "2W"
+      },
+      "explanation": "Resolving the geometry shown:\na = R cos 60°\nb = R cos 30°.\nTaking moments about the corner of the wooden block at the point of impending rotation:\nΣM = 0\nWb = Fa\nF = Wb/a\n= W cos 30°/cos 60°\n= W√3.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            363.0,
+            208.0,
+            465.33,
+            262.0
+          ],
+          "units": "pdf-points",
+          "alt": "Roller touching a block corner; radius to the corner is 30° below the horizontal pull F."
+        },
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            351.67,
+            324.0,
+            482.33,
+            405.0
+          ],
+          "units": "pdf-points",
+          "alt": "Roller free-body geometry with moment arms a = R cos 60° and b = R cos 30°."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-38-125",
+      "status": "verified",
+      "answer": "b",
+      "question": "An electric lift is moving downward with an acceleration of g/3. The vertical force between a passenger in the lift and its floor is equal to",
+      "options": {
+        "a": "3/4 of the passenger’s weight",
+        "b": "2/3 of the passenger’s weight",
+        "c": "The passenger’s weight",
+        "d": "4/3 of the passenger’s weight"
+      },
+      "explanation": "Given a = g/3 downward.\nThe vertical contact force on the floor is\nF = mg − ma\n= m(g − a)\n= m(g − g/3)\n= 2mg/3.\nThus it is two thirds of the passenger’s weight.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ],
+      "figures": [
+        {
+          "page": 24,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            329.33,
+            670.67,
+            493.33,
+            740.33
+          ],
+          "units": "pdf-points",
+          "alt": "Passenger force diagram: contact F upward, weight mg downward, downward acceleration and upward inertia force −ma."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-126",
+      "status": "verified",
+      "answer": "d",
+      "question": "A body of mass 10 kg moving with a velocity of 1 m/s is acted upon by a force of 50 N for two seconds. The final velocity of the body is",
+      "options": {
+        "a": "22 m/s",
+        "b": "1 m/s",
+        "c": "√21 m/s",
+        "d": "11 m/s"
+      },
+      "explanation": "m = 10 kg, u = 1 m/s, F = 50 N, t = 2 s.\nF = ma, so a = 50/10 = 5 m/s².\nv = u + at\n= 1 + 5 × 2\n= 11 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Source and complete calculation reconciled. The printed answer assumes the force acts along the initial velocity, as is conventional in this one-dimensional question; without its direction the final velocity is not unique.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-127",
+      "status": "corrected",
+      "answer": "b",
+      "question": "The ratio of the radii of planets P₁ and P₂ is k and the ratio of their accelerations due to gravity is s. The ratio of their escape velocities is",
+      "options": {
+        "a": "ks",
+        "b": "√(ks)",
+        "c": "√(k/s)",
+        "d": "√(s/k)"
+      },
+      "explanation": "Escape speed is the minimum speed required to leave a planet’s gravitational field without further propulsion. It must overcome the gravitational attraction. The formula contains G, the universal gravitational constant, and the unit of escape speed is m/s.\nv_esc = √(2GM/R), where g = GM/R².\nHence v_esc = √[2gR²M/(MR)] = √(2gR).\nGiven R₁/R₂ = k and g₁/g₂ = s, the ratio is\nv₁/v₂ = √[(g₁R₁)/(g₂R₂)] = √(sk).",
+      "transcriptionReviewed": true,
+      "note": "Answer (b) is correct. The source definition incorrectly calls escape velocity the maximum velocity; it is the minimum escape speed. All supplied derivation steps are preserved with this definition corrected.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy",
+          "section": "13.3 Escape speed"
+        }
+      ],
+      "sourceExplanation": "The escape velocity is maximum velocity required to leave planet. It must overcome the pull of gravity. The formula of escape velocity contains a constant G which is called the “Universal gravitational constant”. The unit of escape velocity is m/sec (m/s).\nv_esc = √(2GM/R), where g = GM/R².\nSo v_esc = √[2gR²M/(MR)] = √(2gR).\nRatio of escape velocity is given as: R₁/R₂ = k, g₁/g₂ = s.\nv₁/v₂ = √[(g₁R₁)/(g₂R₂)] = √(sk)."
+    },
+    {
+      "id": "mech-engineering-mechanics-39-128",
+      "status": "verified",
+      "answer": "d",
+      "question": "Which of the following is not a scalar quantity?",
+      "options": {
+        "a": "Time",
+        "b": "Mass",
+        "c": "Volume",
+        "d": "Acceleration"
+      },
+      "explanation": "Acceleration has magnitude as well as direction, so it is a vector quantity.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-129",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 10 kg mass is hung from two light, inextensible strings as shown. The tension in the horizontal string is nearly",
+      "options": {
+        "a": "49 N",
+        "b": "57 N",
+        "c": "100 N",
+        "d": "0 N"
+      },
+      "explanation": "From the free-body diagram:\nT₁ sin 60° = mg\nT₁(√3/2) = 10 × 9.81\nT₁ = (20 × 9.81)/√3.\nAlso T₁ cos 60° = T₂, so\nT₂ = [(20 × 9.81)/√3] × (1/2)\n= (10 × 9.81)/√3\n≈ 56.64 N (the source prints 56.63 N after its intermediate rounding).\nTension in the horizontal string T₂ ≈ 57 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ],
+      "figures": [
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "question",
+          "bbox": [
+            377.33,
+            182.67,
+            454.0,
+            226.33
+          ],
+          "units": "pdf-points",
+          "alt": "10 kg mass held by a horizontal string and an inclined string at 60° to horizontal, shown in the supplied solution."
+        },
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            349.0,
+            237.0,
+            475.67,
+            326.67
+          ],
+          "units": "pdf-points",
+          "alt": "Free-body diagram of the 10 kg mass with T₁, its components, T₂ and weight mg."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-39-130",
+      "status": "verified",
+      "answer": "a",
+      "question": "The free-body diagram of a body is a diagram showing",
+      "options": {
+        "a": "All the forces, including the reactions at the supports or surfaces",
+        "b": "The forces, but not showing the reactions at the supports or surfaces",
+        "c": "All the forces and the supports or surfaces",
+        "d": "Only the reactions at the supports or surfaces of the body"
+      },
+      "explanation": "To identify clearly the various forces acting on a body in equilibrium, draw its free-body diagram. Only then can the equilibrium equations of the body be written.\nTo draw the free-body diagram of a body, remove all supports (such as a wall, floor, hinge or any other body) and replace them by the reactions which those supports exert on the body.\nThe illustration replaces the floor beneath a weighted circular body with the upward reaction R_A at A.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Free-Body Diagrams",
+          "url": "https://engineeringstatics.org/Chapter_05-free-body-diagrams.html",
+          "section": "Replace supports with their reaction forces"
+        }
+      ],
+      "figures": [
+        {
+          "page": 25,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            335.67,
+            677.67,
+            481.67,
+            739.0
+          ],
+          "units": "pdf-points",
+          "alt": "Supported circular body with weight W compared with its free-body diagram showing W and reaction R_A."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-131",
+      "status": "disputed",
+      "answer": null,
+      "question": "If three forces P, Q and R keep a body in equilibrium, the angle between P and Q is 90° and R acts vertically downward, then the magnitudes of R and Q respectively in terms of P are",
+      "options": {
+        "a": "P/√2, √2 P",
+        "b": "√2 P, P/√2",
+        "c": "P, √2 P",
+        "d": "√2 P, P"
+      },
+      "explanation": "The printed answer (d) follows only after imposing the extra assumption that P and Q are symmetric about the vertical. This is not stated in the question.\nThe complete printed solution uses Lami’s theorem with angles 135°, 135° and 90°:\nP/sin 135° = Q/sin 135° = R/sin 90°.\nFrom P/sin 135° = R/sin 90°:\nP/(1/√2) = R, so R = √2 P.\nFrom Q/sin 135° = P/sin 135°, Q = P.\nHowever, the given information P ⟂ Q and a vertically downward R does not establish the two 135° angles. In general, R² = P² + Q², and Q/P can vary with the inclination of P and Q. The stem therefore has no unique answer.",
+      "transcriptionReviewed": true,
+      "note": "The source adds equal 135° angles only in its solution figure. The stem provides no symmetry or inclination condition; Q/P is free, so no unique listed answer can be graded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "According to Lami’s theorem, using the solution figure with angles 135°, 135° and 90°:\nP/sin 135° = Q/sin 135° = R/sin 90°.\nFrom P/sin 135° = R/sin 90°:\nP/(1/√2) = R ⇒ R = √2 P.\nFrom Q/sin 135° = P/sin 135°:\nQ = P.\nAnswer (d).",
+      "figures": [
+        {
+          "page": 26,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            124.67,
+            213.08,
+            235.33,
+            324.42
+          ],
+          "units": "pdf-points",
+          "alt": "Printed solution assumes forces P and Q make equal 135° angles with downward R; that symmetry is not specified by the stem."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-132",
+      "status": "verified",
+      "answer": "c",
+      "question": "A rigid body will be in equilibrium under the action of two forces only when:",
+      "options": {
+        "a": "Forces have the same magnitude, same line of action and same sense",
+        "b": "Forces have the same magnitude and same line of action",
+        "c": "Forces have the same magnitude, same line of action and opposite senses",
+        "d": "Forces have the same magnitude"
+      },
+      "explanation": "A rigid body will be in equilibrium under the action of two forces only when the forces have the same magnitude, the same line of action and opposite senses.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-133",
+      "status": "verified",
+      "answer": "d",
+      "question": "The resultant of two forces A and B is perpendicular to A. The angle between A and B is",
+      "options": {
+        "a": "cos⁻¹(A/B)",
+        "b": "cos⁻¹(B/A)",
+        "c": "cos⁻¹(−B/A)",
+        "d": "cos⁻¹(−A/B)",
+        "e": "tan⁻¹(B/A)"
+      },
+      "explanation": "For forces A and B with included angle α, the resultant makes angle θ with A, where\ntan θ = B sin α/(A + B cos α).\nGiven θ = 90°, the horizontal component must vanish:\nA + B cos α = 0\nA = −B cos α\nα = cos⁻¹(−A/B).\nThus the angle between A and B is cos⁻¹(−A/B). A real nonzero perpendicular resultant requires B > A; the limiting B = A case has zero resultant.",
+      "transcriptionReviewed": true,
+      "note": "Five choices restored from the scan. The source algebra is correct; its solution figure places α next to the wrong angle. In this transcription α consistently means the included angle between A and B, and the undefined “1/0” notation is expressed as a vanishing horizontal component.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 26,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            342.33,
+            129.67,
+            474.67,
+            211.0
+          ],
+          "units": "pdf-points",
+          "alt": "Source force construction: A horizontal, resultant R vertical, B oblique. The printed α arc is misplaced; α in the algebra is the included angle between A and B."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-40-134",
+      "status": "corrected",
+      "answer": "c",
+      "question": "Concurrent forces of 2, √3, 5, √3 and 2 kN act at one angular point of a regular hexagon towards the remaining five angular points, in order. Determine the magnitude and direction of the resultant force.",
+      "options": {
+        "a": "R = 10 kN; α = 0°",
+        "b": "R = 12 kN; α = 180°",
+        "c": "R = 10 kN; α = 60°",
+        "d": "R = 20 kN; α = 0°",
+        "e": "R = 10 kN; α = 90°"
+      },
+      "explanation": "Resolving all forces horizontally:\nΣH = 2 cos 0° + √3 cos 30° + 5 cos 60° + √3 cos 90° + 2 cos 120°\n= 2 + √3(√3/2) + 5(1/2) + √3(0) + 2(−1/2)\n= 5 kN.\nResolving all forces vertically:\nΣV = 2 sin 0° + √3 sin 30° + 5 sin 60° + √3 sin 90° + 2 sin 120°\n= 0 + √3/2 + 5√3/2 + √3 + 2(√3/2)\n= 5√3 kN ≈ 8.66 kN.\nMagnitude of the resultant:\nR = √[(ΣH)² + (ΣV)²]\n= √[5² + (5√3)²]\n= 10 kN.\nDirection of the resultant from the first force:\ntan α = ΣV/ΣH = 8.66/5 ≈ 1.732\nα ≈ 60°.",
+      "transcriptionReviewed": true,
+      "note": "Five choices restored. Answer (c) is correct; the source final direction line prints 9.99/8.66 = 1.732, which is false. It must be ΣV/ΣH = 8.66/5. Complete component derivation retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "sourceExplanation": "Resolving all forces horizontally:\nΣH = 2 cos 0° + √3 cos 30° + 5 cos 60° + √3 cos 90° + 2 cos 120°\n= 2 + √3(√3/2) + 5(1/2) + √3(0) + 2(−1/2)\n= 5 kN.\nResolving all forces vertically:\nΣV = 2 sin 0° + √3 sin 30° + 5 sin 60° + √3 sin 90° + 2 sin 120°\n= 0 + √3/2 + 5√3/2 + √3 + 2(√3/2)\n= 8.66 kN.\nR = √[(ΣH)² + (ΣV)²] = √[5² + 8.66²] = 9.99 ≃ 10 kN.\nDirection: tan θ = ΣV/ΣH = 9.99/8.66 = 1.732.\nθ = 59.99 ≃ 60°. Answer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-40-135",
+      "status": "verified",
+      "answer": "e",
+      "question": "A particle in equilibrium cannot have",
+      "options": {
+        "a": "Linear motion with constant speed",
+        "b": "Constant velocity",
+        "c": "Zero acceleration",
+        "d": "Zero velocity",
+        "e": "Curvilinear motion with constant speed"
+      },
+      "explanation": "A particle is said to be in equilibrium if the net force acting on it is zero. By Newton’s second law, its acceleration is then zero.\nConsequently, the particle is either at rest (zero velocity) or moving with a constant velocity, that is, with constant speed in a straight line. Curvilinear motion at nonzero constant speed requires an acceleration due to the changing direction of velocity.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "4.4 Centripetal acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-136",
+      "status": "verified",
+      "answer": "c",
+      "question": "The force applied to a body of mass 100 kg to produce an acceleration of 5 m/s² is",
+      "options": {
+        "a": "20 N",
+        "b": "100 N",
+        "c": "500 N",
+        "d": "None of these"
+      },
+      "explanation": "F = ma\n= 100 × 5\n= 500 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-137",
+      "status": "verified",
+      "answer": "b",
+      "question": "Two parallel forces of 100 kN and 75 kN act on a body and have a resultant of 25 kN. The two forces are",
+      "options": {
+        "a": "Like parallel forces",
+        "b": "Unlike parallel forces",
+        "c": "Concurrent forces",
+        "d": "None of the above"
+      },
+      "explanation": "We know that R² = P² + Q² + 2PQ cos θ.\nTaking a signed parallel force convention, P = 100 kN and Q = −75 kN, with θ = 0°:\nR² = 100² + (−75)² + 2(100)(−75) cos 0°\n= 625.\nR = √625 = 25 kN.\nHence the two forces are unlike parallel forces, acting in opposite directions.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-138",
+      "status": "verified",
+      "answer": "b",
+      "question": "The angle between two forces P and Q is α. The resultant of these forces is",
+      "options": {
+        "a": "√(P² + Q² + 2PQ sin α)",
+        "b": "√(P² + Q² + 2PQ cos α)",
+        "c": "√(P² + Q²)",
+        "d": "√(P² + Q² − 2PQ cos α)"
+      },
+      "explanation": "Parallelogram law of forces: if two forces acting simultaneously on a particle are represented in magnitude and direction by the adjacent sides of a parallelogram, their resultant is represented in magnitude and direction by the diagonal through their common point of application.\nR = √(P² + Q² + 2PQ cos α).\nThe direction is given by\ntan θ = Q sin α/(P + Q cos α),\nwhere θ is the angle made by the resultant R with P.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            134.0,
+            657.5,
+            234.33,
+            724.5
+          ],
+          "units": "pdf-points",
+          "alt": "Parallelogram of forces P and Q, resultant diagonal R and angular labels."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-139",
+      "status": "verified",
+      "answer": "c",
+      "question": "If a suspended body is struck at the centre of percussion, the pressure on the axis passing through the point of suspension will be",
+      "options": {
+        "a": "Maximum",
+        "b": "Minimum",
+        "c": "Zero",
+        "d": "Infinity"
+      },
+      "explanation": "If a suspended body is struck at its centre of percussion, the impulsive reaction on the axis through the point of suspension is zero.\nThe centre of oscillation is also the centre of percussion. It is the point at which a blow can be applied to a suspended rigid body so that the impulsive reaction at the support is zero.",
+      "transcriptionReviewed": true,
+      "note": "Complete source definition reconciled and answer checked. “Pressure” and “reaction” here refer to the impulsive effect of the blow, as required by the centre-of-percussion definition; the static weight reaction does not vanish.",
+      "references": [
+        {
+          "title": "Harvard Natural Sciences Lecture Demonstrations: Center of Percussion",
+          "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/center-percussion",
+          "section": "Zero impulsive reaction at the support"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            375.67,
+            242.83,
+            442.33,
+            327.17
+          ],
+          "units": "pdf-points",
+          "alt": "Suspended body showing suspension O, centre of mass a and centre of percussion c."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-41-140",
+      "status": "verified",
+      "answer": "a",
+      "question": "The horizontal and vertical components of a force of 200 N acting on a body at an angle of 30° with the horizontal are",
+      "options": {
+        "a": "100√3 N and 100 N",
+        "b": "200√3 N and 200 N",
+        "c": "400/√3 N and 400 N",
+        "d": "300√3 N and 300 N"
+      },
+      "explanation": "Horizontal component = 200 cos 30°\nF_H = 100√3 N.\nVertical component = 200 sin 30°\nF_V = 100 N.",
+      "transcriptionReviewed": true,
+      "note": "Question, choices and complete supplied explanation reconciled against the scan; answer independently checked from the cited mechanics principles.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ],
+      "figures": [
+        {
+          "page": 27,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            370.0,
+            508.58,
+            454.33,
+            587.58
+          ],
+          "units": "pdf-points",
+          "alt": "Resolution of a 200 N force at 30° into horizontal 200 cos 30° and vertical 200 sin 30° components."
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "totalReviewed": 20,
+    "counts": {
+      "verified": 17,
+      "corrected": 2,
+      "disputed": 1
+    },
+    "range": [
+      [
+        121,
+        200
+      ],
+      [
+        221,
+        240
+      ]
+    ],
+    "excludedRange": {
+      "range": [
+        201,
+        220
+      ],
+      "owner": "root"
+    },
+    "issues": [
+      {
+        "id": "mech-engineering-mechanics-39-127",
+        "status": "corrected",
+        "note": "Answer (b) is correct. The source definition incorrectly calls escape velocity the maximum velocity; it is the minimum escape speed. All supplied derivation steps are preserved with this definition corrected."
+      },
+      {
+        "id": "mech-engineering-mechanics-40-131",
+        "status": "disputed",
+        "note": "The source adds equal 135° angles only in its solution figure. The stem provides no symmetry or inclination condition; Q/P is free, so no unique listed answer can be graded."
+      },
+      {
+        "id": "mech-engineering-mechanics-40-134",
+        "status": "corrected",
+        "note": "Five choices restored. Answer (c) is correct; the source final direction line prints 9.99/8.66 = 1.732, which is false. It must be ΣV/ΣH = 8.66/5. Complete component derivation retained."
+      }
+    ]
+  }
+}

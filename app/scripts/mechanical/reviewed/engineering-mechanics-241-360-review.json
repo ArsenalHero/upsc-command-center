@@ -1,0 +1,695 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-59-241",
+      "status": "verified",
+      "answer": "a",
+      "question": "A body with mass1200 kg is located on a10° inclined plane. What is the pulling force without friction?",
+      "options": {
+        "a": "2044 N",
+        "b": "1200 N",
+        "c": "120 N",
+        "d": "None of these"
+      },
+      "explanation": "Given: m = 1200 kg. Without friction, μ = 0. The pulling force parallel to the plane is F = mg sin10° = 1200 ×9.81 ×sin10° = 2044.186 N.",
+      "transcriptionReviewed": true,
+      "note": "Independently calculated2044.19 N. The diagram specifies a pull parallel to the slope.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-242",
+      "status": "verified",
+      "answer": "a",
+      "question": "Which friction occurs when two objects are moving relative to each other and rub together?",
+      "options": {
+        "a": "Kinetic friction",
+        "b": "Static friction",
+        "c": "Internal friction",
+        "d": "None of these"
+      },
+      "explanation": "Kinetic friction is the friction that occurs when two objects are moving relative to each other and rub together.",
+      "transcriptionReviewed": true,
+      "note": "Relative sliding at the contact gives kinetic friction.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-243",
+      "status": "verified",
+      "answer": "c",
+      "question": "Which of the following occurs when surfaces in contact move relative to each other?",
+      "options": {
+        "a": "The friction between the two surfaces converts kinetic energy into electrical energy",
+        "b": "The friction between the two surfaces converts kinetic energy into magnetic energy",
+        "c": "The friction between the two surfaces converts kinetic energy into thermal energy",
+        "d": "The friction between the two surfaces converts magnetic energy into electrical energy"
+      },
+      "explanation": "When surfaces in contact move relative to each other, friction between the two surfaces converts kinetic energy into thermal energy.",
+      "transcriptionReviewed": true,
+      "note": "Dissipative sliding friction converts mechanical energy into thermal energy.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-244",
+      "status": "verified",
+      "answer": "c",
+      "question": "What is the rolling resistance to a truck whose weight is72000 N and whose coefficient of rolling resistance is0.019?",
+      "options": {
+        "a": "7200 N",
+        "b": "1900 N",
+        "c": "1368 N",
+        "d": "None of these"
+      },
+      "explanation": "Given truck weight = 72000 N; coefficient of rolling resistance = 0.019. Rolling resistance = coefficient of rolling resistance ×weight = 0.019 ×72000 = 1368 N.",
+      "transcriptionReviewed": true,
+      "note": "Dimensionless resistance coefficient:0.019 ×72000 = 1368 N.",
+      "references": [
+        {
+          "title": "University of Almería, Machine and Mechanism Theory",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Rolling resistance; resisting moment Nρ and force Nρ/r"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-245",
+      "status": "verified",
+      "answer": "b",
+      "question": "The friction experienced by a body when it is in motion is called",
+      "options": {
+        "a": "Body friction",
+        "b": "Dynamic friction",
+        "c": "Angular friction",
+        "d": "None of these"
+      },
+      "explanation": "Dynamic friction is the frictional force experienced by a body when it is in motion; it is the frictional force after slipping has occurred.",
+      "transcriptionReviewed": true,
+      "note": "Dynamic friction is the conventional synonym of kinetic friction for slipping contacts.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-246",
+      "status": "disputed",
+      "answer": null,
+      "question": "Which of the following statements is true?",
+      "options": {
+        "a": "Dynamic friction is always less than static friction",
+        "b": "Dynamic friction is always greater than static friction",
+        "c": "Dynamic friction is always the same as static friction",
+        "d": "Dynamic friction is double the static friction"
+      },
+      "explanation": "Kinetic(dynamic) friction resists relative sliding of the surfaces. Static friction is self-adjusting:0 ≤ fₛ ≤ μₛN, whereas the approximate Coulomb model gives fₖ = μₖN during sliding. For many material pairs μₖ < μₛ, so kinetic friction is smaller than the maximum or limiting static friction at the same normal load. It need not be smaller than the actual static friction, which may be zero. Moreover the inequality between the coefficients is empirical, not an absolute rule. Thus none of the four statements containing “always” or a fixed factor is generally true. The printed answer(a) reflects an intended comparison with limiting static friction, but the printed wording does not state that qualification.",
+      "transcriptionReviewed": true,
+      "note": "Printed answera confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "sourceExplanation": "Since the value of(F) in dynamic friction is little lesser than in static friction, the ratio F/N and hence, the coefficient of dynamic friction will also be a little lesser than static friction kinetic friction(also referred to a dynamic friction) is the force that resist the relative movement of the surfaces once they are in motion. The static friction between two surfaces is always higher than the kinetic friction. Fₖ < Fₛ. μₖ < μₛ."
+    },
+    {
+      "id": "mech-engineering-mechanics-59-247",
+      "status": "verified",
+      "answer": "b",
+      "question": "When the two surfaces in contact have a minute thin layer of lubricant between them, it is known as ______ friction.",
+      "options": {
+        "a": "Film",
+        "b": "Skin or greasy",
+        "c": "Dry",
+        "d": "Solid"
+      },
+      "explanation": "When the two surfaces in contact have a minute thin layer of lubricant between them, it is known as skin or greasy friction.",
+      "transcriptionReviewed": true,
+      "note": "Traditional “skin or greasy friction” terminology denotes a thin boundary-lubricated contact.",
+      "references": [
+        {
+          "title": "NPTEL, Tribology",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103024/module3/lec2/1.html",
+          "section": "Boundary lubrication; thin surface films and asperity contact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-59-248",
+      "status": "verified",
+      "answer": "b",
+      "question": "A car travelling at60 km/hour is braked and comes to rest6 seconds after the brakes are applied. What is the minimum coefficient of friction between the wheels and road?",
+      "options": {
+        "a": "0.107",
+        "b": "0.283",
+        "c": "0.3",
+        "d": "0.417"
+      },
+      "explanation": "Given: initial velocity u = 60 km/hr = 60 ×5/18 = 16.667 m/s. With braking deceleration magnitude a, v = u − at. Thus0 = 16.667 − a ×6, so a = 16.667/6 = 2.777 m/s². We know that a = μg. Therefore μ = a/g = 2.777/9.81 = 0.283.",
+      "transcriptionReviewed": true,
+      "note": "Calculatedμ=0.2832 using uniform deceleration and level-road friction braking.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-60-249",
+      "status": "verified",
+      "answer": "d",
+      "question": "A body of weight120 N rests on a rough horizontal plane. The coefficient of friction between the body and plane is0.3. The frictional force to be overcome for impending motion is",
+      "options": {
+        "a": "30 N",
+        "b": "400 N",
+        "c": "300 N",
+        "d": "36 N"
+      },
+      "explanation": "F_f = friction force; F = applied effort; R = normal force; w = weight. For the rough horizontal surface, w = 120 N, R = w, and at impending motion F = μR, with μ = 0.3. Therefore friction force F_f = μR = μw = 0.3 ×120 = 36 N.",
+      "transcriptionReviewed": true,
+      "note": "Impending motion requires limiting static friction,μN=36 N.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-60-250",
+      "status": "verified",
+      "answer": "c",
+      "question": "A small coin is placed at distanceγ from the centre of a gramophone record. The rotational speed is gradually increased. If the coefficient of friction between the coin and record isμ, the minimum angular velocity for which the coin will fly off is",
+      "options": {
+        "a": "√(2μg/γ)",
+        "b": "√(μg/(2γ))",
+        "c": "√(μg/γ)",
+        "d": "2√(μg/γ)"
+      },
+      "explanation": "The coin is at distanceγ from the centre of the gramophone. F_f = μmg and F_cf denotes centrifugal force in the rotating frame. At impending slip, friction force = centrifugal force: F_f = F_cf, so μmg = mγω². Therefore ω = √(μg/γ). Equivalently, in an inertial frame friction supplies the required centripetal force mγω².",
+      "transcriptionReviewed": true,
+      "note": "All four radical choices and final formula restored visually; limiting static friction equals required centripetal force.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3 Centripetal Force; friction supplying mv²/r"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-60-251",
+      "status": "verified",
+      "answer": "c",
+      "question": "What is Coulomb friction?",
+      "options": {
+        "a": "Friction between solids and liquids",
+        "b": "Friction between bodies having relative motion",
+        "c": "Friction between two dry surfaces",
+        "d": "None of the above"
+      },
+      "explanation": "Coulomb law of friction: for two dry solid surfaces sliding against one another, the magnitude of kinetic friction exerted through the surface is independent of the magnitude of their relative sliding velocity.",
+      "transcriptionReviewed": true,
+      "note": "Verified as the approximate dry Coulomb model, including its usual speed-independent kinetic approximation.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-60-252",
+      "status": "verified",
+      "answer": "d",
+      "question": "A50-kg box rests on a horizontal floor whose coefficient of friction is0.3. If the box is subjected to a horizontal towing force of400 N, what is its velocity after5 sec from rest?(Take g=10 m/s².)",
+      "options": {
+        "a": "40 m/s",
+        "b": "30 m/s",
+        "c": "27.5 m/s",
+        "d": "25 m/s"
+      },
+      "explanation": "Given: F = 400 N, μ = 0.3, time t = 5 sec. We know that F_s = μN = 0.3 ×50 ×10 = 150 N. From the block free-body diagram, ΣF_net = ma, or F − μN = ma. Thus250 = ma and a = 250/50 = 5 m/s². Hence v = u + at = 0 +5 ×5 = 25 m/s.",
+      "transcriptionReviewed": true,
+      "note": "400−150=250 N; acceleration5 m/s² and final speed25 m/s.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-60-253",
+      "status": "verified",
+      "answer": "b",
+      "question": "Which of the following is NOT a law of limiting friction?",
+      "options": {
+        "a": "Friction is tangential or parallel to the surfaces in contact",
+        "b": "Friction depends on the size or area of surfaces in contact",
+        "c": "The magnitude of limiting friction depends on the nature of the materials and their roughness or smoothness",
+        "d": "The friction direction is opposite to the direction in which the body would start moving under the applied force"
+      },
+      "explanation": "The maximum frictional force when a body just begins to slide over another body is known as limiting friction. Its magnitude is F = μR_N. In the dry Coulomb approximation, friction does not depend on the apparent size or area of contact; it depends on the roughness or smoothness and nature of the contacting surfaces.",
+      "transcriptionReviewed": true,
+      "note": "Area-dependence is the exception to the standard dry-friction laws.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-61-254",
+      "status": "verified",
+      "answer": "d",
+      "question": "Which statements about dry-surface friction laws are correct?1.The friction force depends on sliding velocity.2.It is directly proportional to the normal force.3.It depends on the contact materials.4.It depends on the apparent contact area.",
+      "options": {
+        "a": "2,3 and4",
+        "b": "2 and4",
+        "c": "1,2,3 and4",
+        "d": "2 and3"
+      },
+      "explanation": "F = μR, where μ = coefficient of friction and R = normal reaction.(i) The limiting or kinetic friction force is directly proportional to normal force.(ii) It depends on the contact materials. Thus statements2 and3 are the intended dry Coulomb-friction laws.",
+      "transcriptionReviewed": true,
+      "note": "Valid for conventional limiting/kinetic dry-friction laws; nonlimiting static friction adjusts to the applied load.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-61-255",
+      "status": "corrected",
+      "answer": "a",
+      "question": "The angle of repose has the same value as the",
+      "options": {
+        "a": "Limiting angle of friction",
+        "b": "Coefficient of friction",
+        "c": "Static friction",
+        "d": "Normal reaction between the contact surfaces"
+      },
+      "explanation": "Limiting friction is the maximum static friction before slipping. The limiting angle of frictionθ is the angle the resultant contact reaction makes with the normal reaction, not with the horizontal. The angle of reposeα is the plane’s inclination to the horizontal at which a body is just about to slide. In the limiting condition F = mg sinα and R = mg cosα. Thus F/R = tanα. Also F/R = μₛ = tanθ. Hence tanθ = tanα, soθ=α for these acute contact angles. Therefore angle of repose equals limiting angle of friction.",
+      "transcriptionReviewed": true,
+      "note": "Corrected the source definition measuring friction angle from the horizontal instead of the normal.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ],
+      "sourceExplanation": "Limiting friction—The maximum value of static friction upto which body does not move and the angle which it makes with horizontal is called angle of limiting friction. Angle of repose—It is the angle of the inclined plane with horizontal such that a body placed on it just begins to slide. In limiting condition F = mg sinα; R = mg cosα, whereα is angle of repose. So F/R = tanα. Therefore F/R = μₛ = tanθ = tanα(since tanθ = μₛ), orθ=α."
+    },
+    {
+      "id": "mech-engineering-mechanics-61-256",
+      "status": "verified",
+      "answer": "c",
+      "question": "A body rests on a plane inclined30° to horizontal. What additional force is needed to slide it down if its coefficient of friction is0.3?",
+      "options": {
+        "a": "5 kg",
+        "b": "1 kg",
+        "c": "Zero",
+        "d": "0.5 kg"
+      },
+      "explanation": "For the inclined body R = mg cos30°. Gravity’s downhill component is mg sin30° = 0.5mg…(1). Maximum opposing friction is f = μmg cos30° = 0.3(√3/2)mg = 0.259mg…(2). Hence f < mg sin30°. No additional force is needed to slide the body down.",
+      "transcriptionReviewed": true,
+      "note": "μ=0.3<tan30°; an unrestrained body cannot remain at rest.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-61-257",
+      "status": "disputed",
+      "answer": null,
+      "question": "When a body slides down a surface inclinedθ to horizontal, its acceleration f is",
+      "options": {
+        "a": "f = g",
+        "b": "f = g cosθ",
+        "c": "f = g tanθ",
+        "d": "f = g sinθ"
+      },
+      "explanation": "Along the incline, mf = mg sinθ − μₖmg cosθ, so f = g(sinθ − μₖcosθ). If the surface is explicitly smooth, μₖ=0 and option(d), f=g sinθ, follows. The stem does not state smoothness, so zero friction cannot be assumed merely becauseμ is not given. The printed answer is conditional and no unique general choice follows.",
+      "transcriptionReviewed": true,
+      "note": "Missing frictionless condition; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ],
+      "sourceExplanation": "Using Newton’s second law: F = mg sinθ − μmg cosθ. Thus mf = mg[sinθ − μcosθ] and f = g[sinθ − μcosθ]. But coefficient of frictionμ is not given and the surface is assumed smooth, soμ=0 and f=g sinθ."
+    },
+    {
+      "id": "mech-engineering-mechanics-61-258",
+      "status": "verified",
+      "answer": "c",
+      "question": "A block of cross-section4×3 m and mass20 kg rests on a horizontal surface as shown. If the friction coefficient is1/4, the force F that will cause it to move is approximately",
+      "options": {
+        "a": "20 kgf",
+        "b": "10 kgf",
+        "c": "5 kgf",
+        "d": "8.7 kgf"
+      },
+      "explanation": "Given m=20 kg and μ=1/4. Vertical balance gives N = mg − F sin30° = 20×10 − F/2 = 200 − F/2. Friction f = μN = (1/4)(200 − F/2). For sliding F cos30° > f, so F√3/2 > 50 − F/8. Hence F(√3/2 +1/8)>50, giving F>50.45 N. The printed conversion F>5.04 kgf uses1 kgf≈10 N; closest choice(c),5 kgf.",
+      "transcriptionReviewed": true,
+      "note": "Sliding threshold50.45 N checked against tipping threshold≈86.6 N; sliding occurs first.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-62-259",
+      "status": "verified",
+      "answer": "b",
+      "question": "The pulley system shown has mass1.5 kg and radius of gyration0.2 m. Its angular acceleration when the suspended masses are released is",
+      "options": {
+        "a": "5 rad/s²",
+        "b": "(10/1.3) rad/s²",
+        "c": "(15/1.3) rad/s²",
+        "d": "10 rad/s²"
+      },
+      "explanation": "Given pulley m₁=1.5 kg,k=0.2 m; m₂=1 kg at r₂=0.2 m; m₃=3 kg at r₃=0.1 m. I₁=m₁k²=1.5×0.2²=0.06 kg·m². Reflected I₂=m₂r₂²=1×0.2²=0.04; I₃=m₃r₃²=3×0.1²=0.03 kg·m². Then(I₁+I₂+I₃)α=m₃gr₃−m₂gr₂. With printed g=10,(0.06+0.04+0.03)α=3×10×0.1−1×10×0.2=1. Thusα=1/0.13=10/1.3 rad/s².",
+      "transcriptionReviewed": true,
+      "note": "Independent hanging-mass and pulley equations agree; source usesg=10.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s Second Law for Rotation"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-62-260",
+      "status": "verified",
+      "answer": "c",
+      "question": "A10 kg body initially rests on a45° incline. Dynamic friction is0.3. It slides down until its speed is20 m/s. The distance along the plane is closest to",
+      "options": {
+        "a": "4.8 m",
+        "b": "98 m",
+        "c": "41 m",
+        "d": "9.8 m"
+      },
+      "explanation": "From the free-body diagram ma=mg sin45°−μmg cos45°. Therefore a=9.81(1/√2)(1−0.3)=9.81(1/√2)×0.7=4.85 m/s². Using v²=u²+2as gives20²=0²+2×4.85×s, so s=41.2 m.",
+      "transcriptionReviewed": true,
+      "note": "Independent result41.19 m; full explanation continues on printedp63.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-63-261",
+      "status": "verified",
+      "answer": "b",
+      "question": "Block A weighing Q kg rests on a floor. Smooth cylinder B weighing P kg is between A and a vertical wall as shown. Cylinder–wall and cylinder–A friction are negligible; floor friction coefficient isμ. The minimum P to disturb A is",
+      "options": {
+        "a": "Q(1−tanθ)/(μtanθ)",
+        "b": "μQtanθ/(1−μtanθ)",
+        "c": "μQcosθ",
+        "d": "μQ/cosθ"
+      },
+      "explanation": "From the FBD P=R_A sinθ, so R_A=P/sinθ. Floor normal R=R_A sinθ+Q=P+Q. At impending sliding horizontal contact force equals limiting floor friction: F=μR=μ(P+Q)=P/tanθ. Thus P=μP tanθ+μQ tanθ and P=μQ tanθ/(1−μtanθ). A finite positive threshold requiresμtanθ<1; otherwise the ideal model is self-locking.",
+      "transcriptionReviewed": true,
+      "note": "Equilibrium and geometry independently checked. Source kg weights use gravitational-unit convention;g cancels.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-block-and-wedge-friction.html",
+          "section": "9.3 Wedges; separate free-body equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-63-262",
+      "status": "verified",
+      "answer": "b",
+      "question": "The angle of friction is the angle made by",
+      "options": {
+        "a": "The resultant reaction with horizontal",
+        "b": "The resultant reaction with the normal",
+        "c": "The normal reaction with friction force",
+        "d": "None of these"
+      },
+      "explanation": "The angle of friction is the angle made by the resultant of normal reaction and limiting friction with the normal reaction. Thus tanφ=F_f/R_N=μR_N/R_N=μ; friction angleφ=tan⁻¹μ.",
+      "transcriptionReviewed": true,
+      "note": "Contact normal is the angle reference.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-63-263",
+      "status": "verified",
+      "answer": "d",
+      "question": "For the stacked masses shown, the minimum ratioμ₁/μ₂ for them to start moving together when force F is applied is",
+      "options": {
+        "a": "5",
+        "b": "2",
+        "c": "4",
+        "d": "3"
+      },
+      "explanation": "FBD: upper block A has mass5 kg, normal N=mg=5×9.81 N and maximum interface friction F_fA=μ₁×5×9.81 N…(1). Lower block B has mass10 kg. Interface normal forces satisfy N_BA=N_AB by Newton’s third law. Ground normal N_BG=10×9.81+N_BA=10×9.81+5×9.81=15×9.81 N. Limiting ground friction F_fB=μ₂×15×9.81 N…(2). At the minimum ratio for initiating joint motion both thresholds coincide: F_fA=F_fB=F. Dividing(1) by(2), F/F=(μ₁×5g)/(μ₂×15g), so1=μ₁/(3μ₂). Henceμ₁/μ₂=3.",
+      "transcriptionReviewed": true,
+      "note": "Force acts on the upper5 kg block. Ratio3 initiates joint motion; arbitrary larger acceleration imposes additional interface-friction requirements.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "totalReviewed": 23,
+    "counts": {
+      "verified": 20,
+      "disputed": 2,
+      "corrected": 1
+    },
+    "range": [
+      241,
+      360
+    ],
+    "reviewedNumbers": [
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263
+    ],
+    "remainingNumbers": [
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360
+    ],
+    "issues": [
+      {
+        "id": "mech-engineering-mechanics-59-246",
+        "status": "disputed",
+        "note": "Printed answera confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading."
+      },
+      {
+        "id": "mech-engineering-mechanics-61-255",
+        "status": "corrected",
+        "note": "Corrected the source definition measuring friction angle from the horizontal instead of the normal."
+      },
+      {
+        "id": "mech-engineering-mechanics-61-257",
+        "status": "disputed",
+        "note": "Missing frictionless condition; ungraded."
+      }
+    ],
+    "method": "Recovered from the original full visual-review write history. Complete printed questions, all choices, explanations and formulas were reconciled against original printedpp59–80, with independent physics/calculation and primary references. The reattached PDF is byte-identical by SHA-256. Figure boxes are1-based PDF pages in PDF points.",
+    "sourceSha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0",
+    "reattachedSourceFile": "MECH AE 01 FULL 35000-15-156(2).pdf"
+  }
+}
