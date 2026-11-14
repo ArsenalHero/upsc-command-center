@@ -12,11 +12,12 @@ import re
 from pathlib import Path
 from statistics import median
 
-ANSWER = re.compile(r"^\s*(?:Ans(?:wer)?|ANS|Answer)\s*[.,:;]*\s*\(\s*([^\s()]{1,2})\s*\)\s*[:;.,-]*\s*")
+ANSWER = re.compile(r"^[\s|\[\]{}]*(?:Ans(?:wer)?|ANS|Answer)[\s.,:;]*\(\s*([^\s()]{1,6})\s*\)[\s:;.,-]*")
+PARTIAL_ANSWER = re.compile(r"^[\s|\[\]{}]*(?:ns|ms|s)[\s.,:;]*[.,:;][\s.,:;]*\(\s*([^\s()]{1,6})\s*\)[\s:;.,-]*", re.I)
 OPTION = re.compile(r"(?<![A-Za-z])\(([a-e])\)\s*")  # Lowercase only: Assertion (A) is not an option.
 PREFIX = re.compile(r"^\s*([0-9OIlLS|]{1,4})(?:[.,):;]\s*|\s+)(.*)$")
 DIGITS = str.maketrans({"O": "0", "I": "1", "l": "1", "L": "1", "|": "1", "S": "5"})
-EXAM = re.compile(r"\b(?:UPSC|UPPSC|UKPSC|BPSC|MPSC|APPSC|CGPSC|MPPSC|OPSC|RPSC|TNPSC|GPSC|HPSC|JKPSC|JPSC|KPSC|WBPSC|HPPSC|PPSC|JWM|RRB|SSC|ISRO|DRDO|BHEL|SAIL|ONGC|UPPCL|UPRVUNL|DDA|DMRC|NLC|EIL|NTPC|NHPC|GATE|ESE|IES|Assam\s+PSC|Haryana\s+PSC|Oil\s+India|Vizag\s+Steel|Kerala\s+PSC|TSPSC|UPSSSC|APSC|DSSSB|CIL)\b", re.I)
+EXAM = re.compile(r"\b(?:UPSC|UPPSC|UKPSC|BPSC|MPSC|APPSC|CGPSC|MPPSC|OPSC|RPSC|TNPSC|GPSC|HPSC|JKPSC|JPSC|KPSC|WBPSC|HPPSC|PPSC|JWM|RRB|SSC|ISRO|DRDO|BHEL|SAIL|ONGC|UPPCL|UPRVUNL|DDA|DMRC|NLC|NPCIL|PTCUL|CSE|EIL|NTPC|NHPC|GATE|ESE|IES|[A-Za-z]+\s+PSC|Oil\s+India|Vizag\s+Steel|TSPSC|UPSSSC|APSC|DSSSB|CIL)\b", re.I)
 
 TOPICS = [
     (15, "left", "Forces and Force Systems", r"forces?\s+(?:and|&)\s+force"),
@@ -30,6 +31,19 @@ TOPICS = [
     (131, "right", "Impulse, Momentum and Collision", r"impulse|momentum.*(?:impact|collision)"),
     (145, "left", "Simple Harmonic Motion and Projectile Motion", r"simple\s+harmonic|projectile\s+motion"),
 ]
+
+# Native source-key crops were visually checked on the SHA-identified PDF. The
+# asterisk is an explicit non-choice source marker, not an OCR-invented answer.
+SOURCE_KEYS = {
+    32: ("b", 6, "right", 98.5), 106: ("c", 19, "right", 642),
+    108: ("*", 20, "right", 98.5), 158: ("c", 30, "right", 278.75),
+    249: ("d", 46, "left", 339), 278: ("*", 52, "left", 531.25),
+    293: ("c", 54, "right", 331), 298: ("*", 55, "left", 509),
+    301: ("*", 56, "left", 98), 352: ("b", 64, "right", 614),
+    393: ("c&d", 71, "right", 518.75), 405: ("c", 75, "right", 280),
+    437: ("*", 82, "left", 165), 495: ("*", 91, "left", 672.75),
+    580: ("*", 106, "left", 488), 785: ("c", 138, "left", 479),
+}
 
 
 def heading_windows(column, spec=None):
@@ -228,7 +242,39 @@ def extract_question(anchor, block, source):
     content[0]["text"] = anchor["text"]
     answer_index = next((i for i, line in enumerate(content) if ANSWER.match(line["text"])), None)
     answer_match = ANSWER.match(content[answer_index]["text"]) if answer_index is not None else None
+    recovered_boundary = None
+    if answer_index is None:
+        answer_index = next((i for i, line in enumerate(content) if PARTIAL_ANSWER.match(line["text"])), None)
+        if answer_index is not None:
+            answer_match = PARTIAL_ANSWER.match(content[answer_index]["text"])
+            recovered_boundary = "partial-answer-label"
+    if answer_index is None:
+        option_lines = [i for i, line in enumerate(content) if OPTION.search(line["text"])]
+        after = min(option_lines) if option_lines else 1
+        exams = [i for i, line in enumerate(content) if i > after and EXAM.search(line["text"])]
+        if exams:
+            first_exam = exams[0]
+            last_exam = first_exam
+            while last_exam + 1 < len(content) and EXAM.search(content[last_exam + 1]["text"]):
+                last_exam += 1
+            if last_exam + 1 < len(content):
+                answer_index = last_exam + 1
+                recovered_boundary = "explanation-after-source-exam-labels"
+        if answer_index is None:
+            last_option = max(option_lines) if option_lines else 2
+            for i, line in enumerate(content):
+                left = 70 if line["column"] == "left" else 301.5
+                if i > last_option and line["bbox"][0] <= left + 8 and re.search(r"[A-Za-z]{4}", line["text"]):
+                    answer_index = i
+                    recovered_boundary = "left-aligned-explanation-paragraph"
+                    break
     answer_raw = answer_match[1].lower() if answer_match else None
+    source_key_reconciliation = None
+    if anchor["number"] in SOURCE_KEYS:
+        answer_raw, key_page, key_column, key_y = SOURCE_KEYS[anchor["number"]]
+        source_key_reconciliation = {"method": "native-pdf-visual-check", "page": key_page,
+                                     "printedPage": key_page + 14, "column": key_column, "y": key_y,
+                                     "printedMarker": answer_raw}
     answer = answer_raw if answer_raw in tuple("abcde") else None
     pre = content[:answer_index] if answer_index is not None else content
     explanation_lines = content[answer_index:] if answer_index is not None else []
@@ -258,19 +304,23 @@ def extract_question(anchor, block, source):
             options[key] = value
     if explanation_lines:
         explanation_lines = [{**line} for line in explanation_lines]
-        explanation_lines[0]["text"] = explanation_lines[0]["text"][answer_match.end():]
-    explanation = "\n".join(line["text"] for line in explanation_lines if line["text"].strip()).strip()
+        if answer_match:
+            explanation_lines[0]["text"] = explanation_lines[0]["text"][answer_match.end():]
+    explanation = "\n".join(line["text"].strip(" |") for line in explanation_lines if line["text"].strip(" |")).strip()
     issues = []
     if len(options) < 4:
         issues.append("fewer-than-four-recognized-options")
     if any(not value.strip() for value in options.values()):
         issues.append("empty-option-text-or-diagram-only-option")
     if answer is None:
-        issues.append("answer-marker-unreadable")
+        issues.append("source-answer-asterisk" if answer_raw == "*" else
+                      "source-multiple-answer-marker" if answer_raw and "&" in answer_raw else "answer-marker-unreadable")
     elif answer not in options:
         issues.append("answer-option-not-recognized")
     if not explanation:
         issues.append("explanation-unreadable-or-diagram-only")
+    if recovered_boundary:
+        issues.append("answer-boundary-recovered-needs-source-review")
     confidence = sum(line["confidence"] for line in content) / max(1, len(content))
     if confidence < 80:
         issues.append("low-ocr-confidence")
@@ -285,13 +335,16 @@ def extract_question(anchor, block, source):
         source_lines[-1]["placement"] = "explanation" if answer_index is not None and i >= answer_index else "question"
     return {
         "id": identifier, "number": number, "question": question, "options": options,
-        "sourceAnswer": answer, "answer": answer, "explanation": explanation,
+        "sourceAnswer": answer_raw if answer_raw and re.fullmatch(r"[a-e](?:&[a-e])*", answer_raw) else None,
+        "answer": answer, "explanation": explanation,
         "topic": first["topic"], "subtopic": subtopic(first["topic"], question + " " + explanation[:150]),
         "source": {"file": source["file"], "page": first["page"], "pageEnd": last["page"], "printedPage": first["printedPage"],
                    "printedPageEnd": last["printedPage"], "sha256": source["sha256"], "examLabels": exam_labels},
         "review": {"status": "needs-review", "note": "OCR extraction retains the full adjacent source explanation. Scan mathematics, diagrams and answer keys require independent source review.", "references": []},
         "figures": [],
         "transcription": {"issues": issues, "meanConfidence": round(confidence, 2), "sourceAnswerMarker": answer_raw,
+                          "explanationBoundaryRecovery": recovered_boundary,
+                          "sourceKeyReconciliation": source_key_reconciliation,
                           "numberReconciliation": anchor.get("reconciled"), "sourceLines": source_lines},
     }
 
@@ -317,10 +370,16 @@ def main():
             "expectedPages": 142, "completeSourceCoverage": len(pages) == 142 and not missing, "missingNumbers": missing,
             "headings": headings, "issues": [{"id": q["id"], "number": q["number"], "issues": q["transcription"]["issues"]}
                                             for q in questions if q["transcription"]["issues"]]}}
+    data["audit"]["sourceKeys"] = {"singleChoice": sum(q["sourceAnswer"] in tuple("abcde") for q in questions),
+                                  "multipleChoiceMarkers": [q["number"] for q in questions if "&" in (q["sourceAnswer"] or "")],
+                                  "asteriskMarkers": [q["number"] for q in questions if q["transcription"]["sourceAnswerMarker"] == "*"],
+                                  "unreadableMarkers": [q["number"] for q in questions if q["transcription"]["sourceAnswerMarker"] is None]}
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     destination = output / "engineering-mechanics.json"
-    destination.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    temporary = destination.with_suffix(".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    temporary.replace(destination)
     debug = output / "engineering-mechanics-anchor-audit.json"
     debug.write_text(json.dumps({"anchors": [{k: v for k, v in a.items() if k != "line"} for a in anchors],
                                  "candidates": [{k: v for k, v in a.items() if k != "line"} for a in candidates]}, ensure_ascii=False, indent=2))

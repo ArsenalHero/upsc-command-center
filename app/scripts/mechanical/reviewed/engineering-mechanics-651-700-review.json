@@ -1,0 +1,1426 @@
+{
+  "subjectId": "engineering-mechanics",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-130-651",
+      "status": "corrected",
+      "answer": "a",
+      "question": "In general, the velocity ratio of a first-order pulley system is given by which expression, where n is the number of movable pulleys?",
+      "options": {
+        "a": "2ⁿ",
+        "b": "2n",
+        "c": "n²",
+        "d": "2n − 1"
+      },
+      "explanation": "Velocity ratio of a first-order pulley system is 2ⁿ, where n is the number of movable pulleys.\nThe source also lists the second-order system as VR = n and the third-order system as VR = n − 1. The third expression is a typographical error: it must be VR = 2ⁿ − 1.\nFor the second system, the velocity ratio is the number of supporting rope parts; if n denotes movable pulleys rather than all supporting parts, this is 2n. The symbol n therefore requires the appropriate counting convention for each system.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) is correct. The full extra comparison in the source is retained, but its third-system n − 1 is corrected to 2ⁿ − 1 and the second-system counting convention is made explicit.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        }
+      ],
+      "sourceExplanation": "Velocity ratio of first-order pulley system = 2ⁿ.\nWhere n = number of movable pulleys.\nVelocity ratio of second-order pulley system = n.\nVelocity ratio of third-order pulley system = n − 1."
+    },
+    {
+      "id": "mech-engineering-mechanics-130-652",
+      "status": "corrected",
+      "answer": "a",
+      "question": "The velocity ratio of a wheel and differential axle is given by which expression? D is the diameter of effort wheel A, d₂ the diameter of axle B and d₁ the diameter of axle C.",
+      "options": {
+        "a": "2D/(d₂ − d₁)",
+        "b": "2D/(d₂ + d₁)",
+        "c": "(d₂ − d₁)/(2D)",
+        "d": "(d₂ + d₁)/(2D)"
+      },
+      "explanation": "For the differential wheel and axle, the effort wheel has diameter D, the larger winding axle B has diameter d₂, and axle C has diameter d₁.\nFor one revolution, effort travels πD. Net rope taken up is π(d₂ − d₁), so the supporting movable pulley rises by π(d₂ − d₁)/2.\nVelocity ratio = 2D/(d₂ − d₁).\nMechanical advantage = W/P.\nEfficiency = MA/VR.",
+      "transcriptionReviewed": true,
+      "note": "The source key (a) is correct under its stated diameter labels. Its explanation reverses d₁ and d₂ in the denominator. The original formula and all subsequent definitions are preserved separately.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        }
+      ],
+      "sourceExplanation": "Differential wheel and axle.\nVelocity ratio = 2D/(d₁ − d₂).\nMechanical advantage = W/P.\nEfficiency = MA/VR."
+    },
+    {
+      "id": "mech-engineering-mechanics-130-653",
+      "status": "verified",
+      "answer": "a",
+      "question": "A first-order pulley system has 3 movable pulleys. What is its mechanical advantage if its efficiency is 80%?",
+      "options": {
+        "a": "6.4",
+        "b": "4.6",
+        "c": "6.0",
+        "d": "8.0"
+      },
+      "explanation": "Velocity ratio VR = 2ⁿ = 2³ = 8.\nEfficiency η = MA/VR.\n0.80 = MA/2³.\nTherefore MA = 0.80 × 8 = 6.4.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-130-654",
+      "status": "corrected",
+      "answer": "a",
+      "question": "If the screw in a screw jack is double threaded, its lead is",
+      "options": {
+        "a": "2 × pitch",
+        "b": "Equal to pitch",
+        "c": "Pitch/2",
+        "d": "Pitch²"
+      },
+      "explanation": "For a double-start screw in a screw jack, the lead is two times the pitch: lead = 2 × pitch.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) is correct. The source explanation prints “load” where it means “lead”; the complete original sentence is preserved.",
+      "references": [
+        {
+          "title": "Thomson Industries: Lead vs. Pitch",
+          "url": "https://www.thomsonlinear.com/en/training/lead-screws/lead_vs_pitch",
+          "section": "Lead equals pitch multiplied by number of starts"
+        }
+      ],
+      "sourceExplanation": "If the screw in a screw jack is double threaded then load of the screw is equal to 2 times of pitch."
+    },
+    {
+      "id": "mech-engineering-mechanics-130-655",
+      "status": "verified",
+      "answer": "c",
+      "question": "In actual machines, mechanical advantage is",
+      "options": {
+        "a": "Unity",
+        "b": "Less than unity",
+        "c": "Less than velocity ratio",
+        "d": "Greater than velocity ratio"
+      },
+      "explanation": "An actual machine loses energy in some manner. Its useful work output is less than its work input, so its efficiency is less than 100%.\nSince η = MA/VR, an actual dissipative machine has MA < VR.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-130-656",
+      "status": "verified",
+      "answer": "d",
+      "question": "Which is not an example of plane motion?",
+      "options": {
+        "a": "Motion of a duster on a blackboard",
+        "b": "Motion of the ball point of a pen on paper",
+        "c": "Motion of a cursor on a computer screen",
+        "d": "Motion of a nut on a threaded bolt"
+      },
+      "explanation": "The source answer is the motion of a nut on a threaded bolt. The nut rotates about the bolt axis while translating along that axis, so off-axis points trace helices rather than remaining in parallel planes. The other listed motions are confined to a plane.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "Thomson Industries: Lead vs. Pitch",
+          "url": "https://www.thomsonlinear.com/en/training/lead-screws/lead_vs_pitch",
+          "section": "Lead equals pitch multiplied by number of starts"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-130-657",
+      "status": "corrected",
+      "answer": "a",
+      "question": "A lifting machine has velocity ratio 8 and lifts a 900 N load with an effort of 150 N. Its efficiency is",
+      "options": {
+        "a": "75%",
+        "b": "70%",
+        "c": "65%",
+        "d": "60%"
+      },
+      "explanation": "Velocity ratio VR = 8; lifted load W = 900 N; effort P = 150 N.\nEfficiency η = mechanical advantage/velocity ratio.\nMA = W/P = 900/150 = 6.\nη = 6/8 = 0.75 = 75%.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) is correct. The printed intermediate division is 900/15 = 6; the denominator must be 150. All supplied numerical steps are preserved.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ],
+      "sourceExplanation": "Velocity ratio VR = 8.\nLifted load W = 900 N.\nEffort P = 150 N.\nEfficiency η = mechanical advantage/velocity ratio.\nMA = W/P = 900/15 = 6.\nη = 6/8.\nη = 0.75 or 75%."
+    },
+    {
+      "id": "mech-engineering-mechanics-130-658",
+      "status": "verified",
+      "answer": "b",
+      "question": "A lifting machine has velocity ratio 20 and needs an effort of 200 N to lift a 3000 N load. The frictional load is",
+      "options": {
+        "a": "7000 N",
+        "b": "1000 N",
+        "c": "50 N",
+        "d": "350 N"
+      },
+      "explanation": "Velocity ratio VR = 20, effort P = 200 N and lifted load W = 3000 N.\nFrictional load = P × VR − lifted load\n= 20 × 200 − 3000\n= 1000 N.\nThis is the lost load capacity at the load side. The corresponding frictional effort at the input is 200 − 3000/20 = 50 N, a different quantity.",
+      "transcriptionReviewed": true,
+      "note": "Full source calculation checked. The 1000 N frictional load must be distinguished from the 50 N frictional effort appearing as a distractor.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-130-659",
+      "status": "verified",
+      "answer": "c",
+      "question": "In an ideal machine, the output compared with the input is",
+      "options": {
+        "a": "Less",
+        "b": "More",
+        "c": "Equal",
+        "d": "May be less or more depending on efficiency"
+      },
+      "explanation": "In an ideal machine, useful output work equals input work.\nIts efficiency is 100%.",
+      "transcriptionReviewed": true,
+      "note": "The source’s output/input wording refers to work or energy, not equality of effort force and load force.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-130-660",
+      "status": "corrected",
+      "answer": "a",
+      "question": "If the algebraic sum of virtual work for every admissible virtual displacement is ______, the system is in equilibrium.",
+      "options": {
+        "a": "Zero",
+        "b": "One",
+        "c": "Infinity",
+        "d": "None of these"
+      },
+      "explanation": "Principle of virtual work: for an initially stationary mechanical system with ideal constraints, equilibrium requires the algebraic sum of virtual work of the applied forces to be zero for every admissible virtual displacement consistent with the constraints.\nFor a particle, this follows directly from ΣF = 0.\nFor rigid bodies and compatible ideal joints, the internal equal-and-opposite constraint-force pairs do cancelling virtual work. Equality and opposition of forces alone do not guarantee cancellation in a deforming system, because their points of application may have different displacements.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) is correct for compatible virtual displacements and ideal constraints. The source’s blanket statement that equal, opposite, collinear internal forces always cancel work is qualified: rigid-compatible displacement is essential. Entire source explanation retained.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 10: Method of Virtual Work",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture10/10_1.htm",
+          "section": "Compatible virtual displacements and zero work of ideal constraint forces"
+        },
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ],
+      "sourceExplanation": "Principle of virtual work: If a particle is in equilibrium, the total virtual work of forces acting on the particle is zero for any virtual displacement since work done by internal forces [equal, opposite and collinear] cancels each other."
+    },
+    {
+      "id": "mech-engineering-mechanics-131-661",
+      "status": "verified",
+      "answer": "b",
+      "question": "In a third-order pulley system, the velocity ratio is given by",
+      "options": {
+        "a": "n² − 1",
+        "b": "2ⁿ − 1",
+        "c": "nⁿ",
+        "d": "2ⁿ",
+        "e": "2n"
+      },
+      "explanation": "Velocity ratio of the first-order pulley system = 2ⁿ.\nVelocity ratio of the second-order pulley system = n, when n is its supporting-part count.\nVelocity ratio of the third-order pulley system = 2ⁿ − 1.\nThus the required third-system expression is (b).",
+      "transcriptionReviewed": true,
+      "note": "All five choices and all three supplied comparison formulas restored. The pulley count n follows the conventional definition for each system; in the second-system formula it counts supporting rope parts.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-662",
+      "status": "verified",
+      "answer": "c",
+      "question": "An effort of 500 N moves 20 m to raise a 10,000 N load by 0.8 m. Determine the lifting machine’s efficiency.",
+      "options": {
+        "a": "70%",
+        "b": "75%",
+        "c": "80%",
+        "d": "85%",
+        "e": "90%"
+      },
+      "explanation": "Given load W = 10,000 N, effort P = 500 N, effort travel D = 20 m and load travel d = 0.8 m.\nMechanical advantage MA = W/P = 10,000/500 = 20.\nVelocity ratio VR = D/d = 20/0.8 = 25.\nEfficiency η = MA/VR = 20/25 = 0.8 = 80%.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-663",
+      "status": "verified",
+      "answer": "a",
+      "question": "An effort of 200 N raises a load of 800 N in a lifting machine. What is the velocity ratio if its efficiency is 50%?",
+      "options": {
+        "a": "8",
+        "b": "6",
+        "c": "7",
+        "d": "9"
+      },
+      "explanation": "Given effort P = 200 N and load W = 800 N.\nMechanical advantage = η × VR.\nW/P = 800/200 = 0.5 × VR.\nTherefore VR = 8.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-664",
+      "status": "verified",
+      "answer": "d",
+      "question": "In a virtual-work equation, some forces can be neglected. Select the most appropriate answer.",
+      "options": {
+        "a": "Reaction of a rough surface on a body rolling on it without slipping",
+        "b": "Reaction of a smooth surface with which the body is in contact",
+        "c": "Reaction at a point or axis fixed in space about which a body is constrained to turn",
+        "d": "All of the above"
+      },
+      "explanation": "The source supplies “All of the above”.\nEach listed reaction does zero virtual work for a displacement compatible with its ideal constraint: a stationary no-slip rolling contact point has zero displacement, a smooth contact reaction is perpendicular to the allowed displacement, and a fixed pivot or ideal axis has no displacement in its reaction direction.",
+      "transcriptionReviewed": true,
+      "note": "Source contains only the keyed phrase. The explanation here explicitly states the ideal, compatible, stationary-support assumptions under which these reactions do no work.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 10: Method of Virtual Work",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture10/10_1.htm",
+          "section": "Compatible virtual displacements and zero work of ideal constraint forces"
+        },
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-665",
+      "status": "verified",
+      "answer": "a",
+      "question": "In the virtual-work principle, work done by the body’s self-weight is taken into account when the",
+      "options": {
+        "a": "Centre of gravity moves vertically",
+        "b": "Centre of gravity moves horizontally",
+        "c": "Shear centre moves horizontally",
+        "d": "Shear centre moves vertically"
+      },
+      "explanation": "In the virtual-work principle, work done by the body’s self-weight is included when its centre of gravity has a vertical displacement. Weight is vertical, so horizontal displacement alone contributes zero gravitational virtual work.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 10: Method of Virtual Work",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture10/10_1.htm",
+          "section": "Compatible virtual displacements and zero work of ideal constraint forces"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-666",
+      "status": "corrected",
+      "answer": "a",
+      "question": "For the law of a lifting machine P = mW + C, the maximum mechanical advantage is",
+      "options": {
+        "a": "1/m",
+        "b": "m",
+        "c": "1 − m",
+        "d": "1 + m"
+      },
+      "explanation": "Law of a machine: the load W and effort P are related by\nP = mW + C.\nHere m is the experimentally determined slope of the effort-versus-load line AB. It is a machine-law constant, not generally the coefficient of friction of a contacting surface. C is the effort intercept, representing the no-load/frictional effort in this linear model.\nMechanical advantage:\nMA = W/P\n= W/(mW + C)\n= 1/(m + C/W).\nAs the load increases, C/W → 0, and the limiting maximum is\nMA_max = 1/m.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) and the complete limiting derivation are correct. The source calls slope m a coefficient of friction; it is generally an empirical machine-law slope. The malformed law annotation in the stem is rendered as its correct P = mW + C form.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ],
+      "sourceExplanation": "Law of machine: it is the relationship between the load lifted W and effort applied P. It is given by P = mW + C.\nWhere m is a constant (called coefficient of friction), equal to the slope of line AB shown in the figure, and C is another constant representing machine friction.\nMaximum mechanical advantage:\nMA = W/P.\nMA = W/(mW + C) = 1/(m + C/W).\nFor MA → maximum, C/W → 0.\nMA_max = 1/m.",
+      "figures": [
+        {
+          "page": 117,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            370,
+            334,
+            455,
+            435.5
+          ],
+          "units": "pdf-points",
+          "alt": "Effort P versus load W: straight line AB has effort intercept C and slope m."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-131-667",
+      "status": "corrected",
+      "answer": "b",
+      "question": "The coefficient of restitution for inelastic bodies is",
+      "options": {
+        "a": "Zero",
+        "b": "Between zero and one",
+        "c": "One",
+        "d": "More than one"
+      },
+      "explanation": "For ordinary inelastic collisions, the coefficient of restitution satisfies 0 ≤ e < 1. The limiting case e = 0 is perfectly inelastic (plastic), while 0 < e < 1 is partially inelastic.\nFor a perfectly elastic collision, e = 1.\nThus the general inelastic range corresponds to choice (b), with zero included as its limiting case.",
+      "transcriptionReviewed": true,
+      "note": "The source key (a) applies only to perfectly inelastic bodies, not inelastic collisions generally. Corrected to the general range represented by (b); the full original two-case explanation is preserved.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ],
+      "sourceExplanation": "The coefficient of restitution for inelastic bodies is e = 0.\nFor elastic bodies it is e = 1.\nAnswer (a)."
+    },
+    {
+      "id": "mech-engineering-mechanics-132-668",
+      "status": "verified",
+      "answer": "a",
+      "question": "During an inelastic collision of particles, which of the following is conserved?",
+      "options": {
+        "a": "Total linear momentum only",
+        "b": "Total kinetic energy only",
+        "c": "Both linear momentum and kinetic energy",
+        "d": "Neither linear momentum nor kinetic energy"
+      },
+      "explanation": "In both elastic and inelastic collisions, the total linear momentum of the colliding system is conserved when its net external impulse is negligible.\nIn an ordinary inelastic collision, kinetic energy is lost because the coefficient of restitution is less than one; it is converted to other forms of energy rather than destroyed. Thus total linear momentum only is the listed conserved quantity.",
+      "transcriptionReviewed": true,
+      "note": "All supplied content retained, with the standard negligible-external-impulse condition stated explicitly.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-132-669",
+      "status": "verified",
+      "answer": "a",
+      "question": "The coefficient of restitution of a perfectly plastic impact is",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "∞"
+      },
+      "explanation": "The coefficient of restitution measures the bounciness of a collision between two objects:\ne = speed of separation/speed of approach, along the line of impact.\ne = 1 for a perfectly elastic collision.\ne = 0 for a perfectly plastic collision.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-132-670",
+      "status": "disputed",
+      "answer": null,
+      "question": "Two particles with masses in the ratio 1:4 are moving with kinetic energies. The magnitudes of their linear momenta have which ratio?",
+      "options": {
+        "a": "1:8",
+        "b": "1:2",
+        "c": "2:1",
+        "d": "4:1"
+      },
+      "explanation": "The printed solution assumes equal kinetic energies, but the stem merely says the particles are moving with kinetic energies and omits the word “equal”.\nIn general K = p²/(2m), so\np₁/p₂ = √[(m₁K₁)/(m₂K₂)].\nKnowing m₁:m₂ = 1:4 alone therefore does not determine the momentum ratio. If K₁ = K₂ were stated, the source’s calculation would give p₁:p₂ = 1:2. All of its conditional calculation is retained in the source explanation.",
+      "transcriptionReviewed": true,
+      "note": "Confirmed missing condition in the printed stem: the explanation assumes K₁ = K₂, which the question never states. No unique key can be graded.",
+      "references": [
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ],
+      "sourceExplanation": "Two particles have masses m₁/m₂ = 1/4 and (KE)₁ = (KE)₂.\n(KE)₁/(KE)₂ = [(1/2)m₁v₁²]/[(1/2)m₂v₂²].\nm₁v₁²/(m₂v₂²) = [(m₁v₁)²/m₁]/[(m₂v₂)²/m₂].\nLet linear momenta P₁ = m₁v₁ and P₂ = m₂v₂.\n(KE)₁/(KE)₂ = (P₁²/m₁)(m₂/P₂²) = (P₁/P₂)²(m₂/m₁).\n(KE)₁/(KE)₂ = (P₁/P₂)²(m₂/m₁).\nSince (KE)₁ = (KE)₂, m₁/m₂ = (P₁/P₂)².\nP₁/P₂ = √(m₁/m₂) = √(1/4) = 1/2.\nAnswer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-132-671",
+      "status": "corrected",
+      "answer": "a",
+      "question": "“In a closed system, the total momentum is constant.” This statement is known as",
+      "options": {
+        "a": "Law of conservation of momentum",
+        "b": "Law of closed momentum",
+        "c": "Law of constance",
+        "d": "None of these"
+      },
+      "explanation": "The named principle is the law of conservation of momentum.\nFor a system with zero resultant external force, or negligible net external impulse over the interval, total vector momentum is constant:\nΣm_i u_i = Σm_i v_i.\nBeing closed to mass transfer alone does not guarantee this; external forces may still act. The source’s m₁v₁ = m₂v₂ is not the general two-body conservation law: it is at most a special equality of momentum magnitudes in an appropriate configuration.",
+      "transcriptionReviewed": true,
+      "note": "The intended name (a) is clear, but the source omits the external-force condition and gives a nongeneral m₁v₁ = m₂v₂ formula. Full original retained and the vector conservation statement supplied.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "Law of conservation of momentum: in a closed system, total momentum is constant.\n∴ m₁v₁ = m₂v₂.\nAnswer (a)."
+    },
+    {
+      "id": "mech-engineering-mechanics-132-672",
+      "status": "corrected",
+      "answer": "c",
+      "question": "If e = 1.0, the bodies are",
+      "options": {
+        "a": "Inelastic",
+        "b": "Slightly elastic",
+        "c": "Perfectly elastic",
+        "d": "Any of the above"
+      },
+      "explanation": "e = 1: perfectly elastic collision.\ne = 0: perfectly inelastic collision.\n0 < e < 1: partially inelastic collision; the overall ordinary inelastic range is 0 ≤ e < 1.\nThus e = 1.0 corresponds to perfectly elastic bodies.",
+      "transcriptionReviewed": true,
+      "note": "Answer (c) is correct. The source’s third line incorrectly calls e < 1 perfectly elastic. All three original lines are preserved separately.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "If e = 1 ⇒ perfectly elastic body.\nIf e = 0 ⇒ perfectly inelastic body.\nIf e < 1 ⇒ perfectly elastic body.\nAnswer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-132-673",
+      "status": "corrected",
+      "answer": "d",
+      "question": "A 100 kg mass moving at 5 m/s along a line collides with a stationary 1000 kg mass. After collision both travel together at the same velocity. The coefficient of restitution is",
+      "options": {
+        "a": "0.6",
+        "b": "0.1",
+        "c": "0.01",
+        "d": "0"
+      },
+      "explanation": "Coefficient of restitution = velocity of separation/velocity of approach:\ne = (v₂ − v₁)/(u₁ − u₂).\nHere u₁ = 5 m/s, u₂ = 0, and the bodies move together after impact, so v₁ = v₂ = v.\nTherefore e = (v − v)/(5 − 0) = 0.",
+      "transcriptionReviewed": true,
+      "note": "Answer (d) is correct. The source writes u₁ = 0 and u₁ = 5 m/s in the same given-data line; the stationary body must be u₂ = 0. Entire original formula and computation retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "Coefficient of restitution = velocity of separation/velocity of approach\n= (v₂ − v₁)/(u₁ − u₂).\nGiven u₁ = 0, v₁ = v₂ = v, u₁ = 5 m/s.\ne = (v − v)/(5 − 0) = 0.\nAnswer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-133-674",
+      "status": "disputed",
+      "answer": null,
+      "question": "Which of the following statements is correct?",
+      "options": {
+        "a": "The kinetic energy of a body during impact remains constant",
+        "b": "The kinetic energy of a body before impact equals its kinetic energy after impact",
+        "c": "The kinetic energy of a body before impact is less than its kinetic energy after impact",
+        "d": "The kinetic energy of a body before impact is greater than its kinetic energy after impact"
+      },
+      "explanation": "No listed statement is universally correct for the kinetic energy of an individual body in an unspecified impact. A body can gain kinetic energy from the other body, lose it, or retain the same kinetic energy in a particular collision.\nFor the complete isolated colliding system, total kinetic energy is conserved in a perfectly elastic collision and decreases in an ordinary inelastic collision. Those system-level conditions are not specified by this stem.",
+      "transcriptionReviewed": true,
+      "note": "The printed key (d) is not generally true: an initially stationary body struck by another can gain kinetic energy. The collision type and whether energy refers to one body or the whole system must be specified.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ],
+      "sourceExplanation": "The kinetic energy of a body before impact is more than the kinetic energy of a body after impact is the correct statement. Answer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-133-675",
+      "status": "corrected",
+      "answer": "a",
+      "question": "If v₁ and v₂ are the initial velocities of two directly colliding bodies, and u₁ and u₂ their respective velocities after collision, the coefficient of restitution is",
+      "options": {
+        "a": "(u₁ − u₂)/(v₂ − v₁)",
+        "b": "(u₁ − u₂)/(v₁ − v₂)",
+        "c": "(u₁ + u₂)/(v₁ − v₂)",
+        "d": "(u₁ − v₂)/(u₁ − u₂)"
+      },
+      "explanation": "The coefficient of restitution e is a dimensionless scalar velocity ratio, not an amount of energy dissipated.\ne = relative speed of separation/relative speed of approach, measured along the line of impact.\nWith the question’s notation v₁ and v₂ before collision and u₁ and u₂ after collision:\ne = (u₂ − u₁)/(v₁ − v₂)\n= (u₁ − u₂)/(v₂ − v₁),\nwhich is choice (a). The coefficient can be used with masses and approach speed to calculate the kinetic-energy loss.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) and the source velocity formula are correct. Its definition equating the coefficient itself with energy dissipation is corrected; full source wording/formula retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "The energy dissipation during impact is called by the term coefficient of restitution, a scalar quantity.\ne = velocity of separation/velocity of approach.\ne = (u₁ − u₂)/(v₂ − v₁).\nAnswer (a)."
+    },
+    {
+      "id": "mech-engineering-mechanics-133-676",
+      "status": "verified",
+      "answer": "b",
+      "question": "Ball A of mass m falls under gravity through height h and strikes ball B of the same mass, initially at rest on a spring of stiffness k. The impact is perfectly elastic. Immediately after impact:",
+      "options": {
+        "a": "The velocity of ball A is (1/2)√(2gh)",
+        "b": "The velocity of ball A is zero",
+        "c": "The velocity of both balls is (1/2)√(2gh)",
+        "d": "None of the above"
+      },
+      "explanation": "The velocity of ball A immediately after impact is zero.\nBefore impact, u_A = √(2gh) and u_B = 0.\nFor a perfectly elastic impact, speed of approach equals speed of separation:\nu_A − u_B = v_B − v_A,\nso v_B − v_A = √(2gh). …(i)\nConservation of momentum during the short impact gives\nmu_A + mu_B = mv_A + mv_B,\nm√(2gh) + 0 = m(v_A + v_B),\nv_A + v_B = √(2gh). …(ii)\nSolving (i) and (ii): v_A = 0 and v_B = √(2gh).",
+      "transcriptionReviewed": true,
+      "note": "Complete two-column derivation restored. Momentum conservation assumes an instantaneous impact with negligible spring and gravitational impulse during the collision; subsequent spring motion is separate.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall from rest and v² = 2gh"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-133-677",
+      "status": "verified",
+      "answer": "b",
+      "question": "In collisions, the coefficient of restitution is defined as the ratio of",
+      "options": {
+        "a": "Relative velocity of the bodies before impact to relative velocity after impact",
+        "b": "Relative velocity of the bodies after impact to relative velocity before impact",
+        "c": "The heavier body’s velocity change to the lighter body’s velocity change",
+        "d": "The lighter body’s velocity change to the heavier body’s velocity change"
+      },
+      "explanation": "Coefficient of restitution:\ne = speed of separation/speed of approach,\nusing the relative velocity components along the line of impact.",
+      "transcriptionReviewed": true,
+      "note": "The source’s relative-velocity ratio is read as the positive separation-speed to approach-speed ratio along the collision normal.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-133-678",
+      "status": "verified",
+      "answer": "d",
+      "question": "For a perfectly elastic body, the coefficient of restitution is",
+      "options": {
+        "a": "Zero",
+        "b": "0.372",
+        "c": "0.5",
+        "d": "1.0"
+      },
+      "explanation": "The coefficient of restitution of a perfectly elastic body is 1.0.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-133-679",
+      "status": "disputed",
+      "answer": null,
+      "question": "Two bodies moving in the same direction have initial velocities U₁ and U₂ and corresponding velocities V₁ and V₂ after impact. By Newton’s collision law, their coefficient of restitution e is",
+      "options": {
+        "a": "(V₁ − V₂)/(U₁ − U₂)",
+        "b": "(U₂ − U₁)/(V₁ − V₂)",
+        "c": "(V₁ − V₂)/(U₂ − U₁)",
+        "d": "(V₂ − V₁)/(U₁ − U₂)"
+      },
+      "explanation": "The positive coefficient of restitution is the relative separation speed divided by the relative approach speed:\ne = (V₂ − V₁)/(U₁ − U₂).\nHowever, reversing the sign of both numerator and denominator gives the identical expression\n(V₁ − V₂)/(U₂ − U₁).\nThus choices (c) and (d) are algebraically identical, so the printed key (d) is not unique.",
+      "transcriptionReviewed": true,
+      "note": "The scan confirms duplicate correct expressions (c) and (d), obtained by changing both signs. A unique-choice grade cannot be assigned.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "Coefficient of restitution e = relative velocity after collision/relative velocity before collision.\ne = (V₂ − V₁)/(U₁ − U₂).\nAnswer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-133-680",
+      "status": "disputed",
+      "answer": null,
+      "question": "The ratio of minimum exergy that must be consumed to perform a task to the actual amount of energy consumed performing that task is called",
+      "options": {
+        "a": "First-law efficiency",
+        "b": "Second-law efficiency",
+        "c": "Exergy efficiency",
+        "d": "None of the above"
+      },
+      "explanation": "The source gives only answer (b), with no explanatory text.\nSecond-law efficiency and exergy efficiency are standard names for the same thermodynamic performance measure, so choices (b) and (c) overlap. A minimum-required-exergy ratio also needs a consistent definition of the actual exergy expended; the question instead says actual “energy”, which is not generally interchangeable with exergy.\nWithout a specified work-equivalent energy input or corrected denominator, the stem is ambiguous and has no unique listed choice.",
+      "transcriptionReviewed": true,
+      "note": "Printed answer (b) only; there is no source explanation to recover. Choices (b)/(c) are synonymous, and the energy/exergy denominator is ambiguous. Derived clarification is labelled separately from the absent source explanation.",
+      "references": [
+        {
+          "title": "Exergy Efficiency of Closed and Unsteady-Flow Systems",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12468809/",
+          "section": "Abstract and definitions of exergy/second-law efficiency"
+        }
+      ],
+      "sourceExplanation": "Answer (b). No explanatory text is supplied in the source."
+    },
+    {
+      "id": "mech-engineering-mechanics-134-681",
+      "status": "corrected",
+      "answer": "b",
+      "question": "The propulsive coefficient ______ if the difference between jet and airplane velocity increases.",
+      "options": {
+        "a": "Becomes zero",
+        "b": "Decreases",
+        "c": "Does not change",
+        "d": "Increases"
+      },
+      "explanation": "For the usual ideal jet-propulsion model at a fixed aircraft speed V and jet speed V_j > V,\nη_p = 2V/(V_j + V)\n= 2/[1 + V_j/V].\nAn increasing difference V_j − V at fixed V increases the denominator, so the propulsive coefficient decreases.\nThe useful thrust power is a smaller fraction of the rate of energy imparted to the jet when a smaller airflow is accelerated to a larger excess speed.",
+      "transcriptionReviewed": true,
+      "note": "The source’s answer (c) and one-sentence explanation are wrong under the standard fixed-flight-speed comparison. Corrected to (b), supported by η_p = 2V/(V_j + V). If both speeds vary arbitrarily, the difference alone is insufficient; the stated model is essential.",
+      "references": [
+        {
+          "title": "Embry-Riddle Aeronautical University: Fundamentals of Propulsion Systems",
+          "url": "https://eaglepubs.erau.edu/introductiontoaerospaceflightvehicles/chapter/introduction-to-propulsion-systems/",
+          "section": "Propulsive efficiency and jet-to-flight velocity ratio"
+        }
+      ],
+      "sourceExplanation": "Propulsive coefficient does not change if the difference between jet and airplane velocity increases. Answer (c)."
+    },
+    {
+      "id": "mech-engineering-mechanics-134-682",
+      "status": "disputed",
+      "answer": null,
+      "question": "Loss of kinetic energy due to direct impact of two bodies depends on their masses and",
+      "options": {
+        "a": "The difference between initial and final velocities",
+        "b": "The initial velocities of the two bodies",
+        "c": "The final velocities of the two bodies",
+        "d": "The product of initial velocities"
+      },
+      "explanation": "The source supplies only answer (c), without an explanation.\nFor isolated direct impact of ordinary bodies,\nK_loss = (1/2)[m₁m₂/(m₁ + m₂)](1 − e²)(u₁ − u₂)².\nEquivalently, the energy loss is the total initial kinetic energy minus the total final kinetic energy. Masses and final velocities alone do not determine the initial energy without an additional restitution or initial-state condition. None of the listed statements gives a unique complete dependence as written.",
+      "transcriptionReviewed": true,
+      "note": "The book prints (c) with no explanatory text. Final velocities alone do not determine kinetic-energy loss; an initial relative speed and restitution (or complete before/after state) are needed.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ],
+      "sourceExplanation": "Answer (c). No explanatory text is supplied in the source."
+    },
+    {
+      "id": "mech-engineering-mechanics-134-683",
+      "status": "verified",
+      "answer": "c",
+      "question": "Two objects of masses 30 kg and 10 kg have equal kinetic energy. The ratio of the magnitudes of their linear momenta is",
+      "options": {
+        "a": "√(1/3)",
+        "b": "3²",
+        "c": "√3",
+        "d": "(1/√3)²"
+      },
+      "explanation": "Given m₁ = 30 kg and m₂ = 10 kg.\nK = (1/2)mv²\n= (1/2)(m²v²/m)\n= P²/(2m).\nSince K₁ = K₂:\nP₁²/m₁ = P₂²/m₂,\nP₁/P₂ = √(m₁/m₂)\n= √(30/10)\n= √3.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-134-684",
+      "status": "verified",
+      "answer": "a",
+      "question": "A gun of mass 3000 kg fires a 50 kg shell horizontally at 300 m/s. With the shell speed measured in the ground frame, the recoil velocity of the gun is",
+      "options": {
+        "a": "−5 m/s",
+        "b": "10 m/s",
+        "c": "50 m/s",
+        "d": "30 m/s"
+      },
+      "explanation": "Given gun mass m_g = 3000 kg and shell mass m_b = 50 kg; v_g is unknown and v_b = 300 m/s.\nBefore firing, both gun and shell are at rest, so their total momentum is zero.\nInitial momentum = final momentum:\n0 = m_g v_g + m_b v_b.\nv_g = −m_b v_b/m_g\n= −(50 × 300)/3000\n= −5 m/s.\nThe minus sign denotes recoil opposite to the shell’s motion.",
+      "transcriptionReviewed": true,
+      "note": "All supplied calculation restored and checked. The given shell velocity is treated as ground-frame velocity, as the printed solution does; a muzzle velocity relative to the moving gun would require a different equation.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "figures": [
+        {
+          "page": 120,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            104,
+            670,
+            262,
+            710.5
+          ],
+          "units": "pdf-points",
+          "alt": "Source sketch of the shell, gun barrel and their opposite directions of motion."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-134-685",
+      "status": "corrected",
+      "answer": "d",
+      "question": "Newton’s second law of motion connects",
+      "options": {
+        "a": "Change of momentum and velocity",
+        "b": "Momentum and acceleration",
+        "c": "Momentum and rate of change of force",
+        "d": "Rate of change of momentum and external force"
+      },
+      "explanation": "Newton’s second law relates resultant external force to the time rate of change of momentum:\nF_ext = dp/dt.\nFor constant mass,\nF = ma = m dv/dt.\nOver a finite interval, the corresponding average-force relation is\nF_avg = m(v₂ − v₁)/Δt = Δp/Δt.\nA finite velocity change must be divided by a finite Δt, not an infinitesimal dt.",
+      "transcriptionReviewed": true,
+      "note": "Answer (d) is correct. The source mixes a finite difference v₂ − v₁ with infinitesimal dt. Differential and finite-interval average forms are separated while the complete original is retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "Newton’s second law of motion:\nF = ma.\nF = m dv/dt.\nF = m(v₂ − v₁)/dt.\nF = dp/dt.\nExternal force = rate of change of momentum.\nAnswer (d)."
+    },
+    {
+      "id": "mech-engineering-mechanics-134-686",
+      "status": "verified",
+      "answer": "b",
+      "question": "A cube strikes a stationary 0.20 kg ball, exerting an average force of 50 N for 10 ms. The speed of the ball after impact is",
+      "options": {
+        "a": "3.5 m/s",
+        "b": "2.5 m/s",
+        "c": "1.5 m/s",
+        "d": "0.5 m/s"
+      },
+      "explanation": "Given average force F = 50 N, initial speed u = 0, mass m = 0.2 kg and time t = 10 ms = 10 × 10⁻³ s.\nF_avg = Δp/Δt = (mv − mu)/Δt.\n50 = mv/Δt = (0.2v)/(10 × 10⁻³).\nTherefore v = 2.5 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-134-687",
+      "status": "verified",
+      "answer": "c",
+      "question": "If F denotes force, m mass, v velocity and t time, which equation expresses the momentum principle?",
+      "options": {
+        "a": "F = d(m²v)/dt",
+        "b": "F = dv/dt",
+        "c": "F = d(mv)/dt",
+        "d": "F = d(mv)/dt²"
+      },
+      "explanation": "Momentum is the quantity of motion of a moving body, p = mv.\nFrom Newton’s second law for constant mass:\nF = ma\n= m dv/dt,\nso F = d(mv)/dt.\nThis is the momentum-principle equation for the resultant external force.",
+      "transcriptionReviewed": true,
+      "note": "All four native formula choices and the complete explanation restored. Distractor (d) is retained as printed, with d(mv) over dt², rather than silently changed to a second derivative.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-135-688",
+      "status": "verified",
+      "answer": "d",
+      "question": "In elastic collisions of bodies:",
+      "options": {
+        "a": "Only total kinetic energy is conserved",
+        "b": "Neither momentum nor total kinetic energy is recoverable",
+        "c": "Only the total momentum of the colliding objects is conserved",
+        "d": "Both momentum and total kinetic energy are conserved"
+      },
+      "explanation": "An elastic collision is an encounter between two bodies in which their total kinetic energy is unchanged. In an ideal perfectly elastic collision, there is no net conversion of that kinetic energy to heat, sound or stored deformation energy between the before/after states.\nFor an isolated colliding system, total linear momentum is also conserved, so both momentum and total kinetic energy are conserved.",
+      "transcriptionReviewed": true,
+      "note": "Complete supplied definition retained. Momentum conservation applies to the whole system with negligible external impulse; temporary elastic deformation during contact is allowed.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-135-689",
+      "status": "corrected",
+      "answer": "c",
+      "question": "A point mass M moves at speed V at angle θ to the smooth wall shown. It undergoes a perfectly elastic collision and rebounds. The total change in its momentum is",
+      "options": {
+        "a": "−2MV cos θ j",
+        "b": "2MV sin θ j",
+        "c": "−2MV sin θ j",
+        "d": "2MV cos θ j"
+      },
+      "explanation": "For a perfectly elastic collision with a fixed smooth wall, the ball’s speed and kinetic energy are unchanged, but its vector momentum is changed by the wall’s impulse.\nThe wall is horizontal and the incident velocity makes angle θ with it. The tangential x component is unobstructed:\np_x = MV cos θ before and after collision.\nWith +j upward toward the wall, the incident normal momentum is\np_y1 = +MV sin θ j.\nAfter reflection the normal component reverses:\np_y2 = −MV sin θ j.\nHence\nΔp = p_y2 − p_y1\n= −MV sin θ j − MV sin θ j\n= −2MV sin θ j.",
+      "transcriptionReviewed": true,
+      "note": "Answer (c) is correct. The source wrongly says the ball’s momentum is conserved and prints a positive post-impact normal momentum, although its next subtraction uses a negative sign. Both errors are corrected. The source horizontal axis label x,j should be x,i.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "sourceExplanation": "Due to perfectly elastic collision, momentum as well as energy is conserved.\nIn the x direction there is no obstruction, so momentum P_x is constant = MV cos θ.\nIn the y direction, momentum before collision P_y1 = MV sin θ j.\nIn the y direction, momentum after collision P_y2 = MV sin θ j.\nChange in momentum = P_y2 − P_y1\n= −MV sin θ j − MV sin θ j\n= −2MV sin θ j.\nAnswer (c).",
+      "figures": [
+        {
+          "page": 121,
+          "column": "left",
+          "placement": "question",
+          "bbox": [
+            132,
+            419,
+            233,
+            497
+          ],
+          "units": "pdf-points",
+          "alt": "Mass moving toward a horizontal smooth wall at angle θ; the upward normal direction is +j."
+        },
+        {
+          "page": 121,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            128,
+            562,
+            243,
+            634
+          ],
+          "units": "pdf-points",
+          "alt": "Source incident-velocity resolution into V cosθ along the wall and V sinθ normal to it; horizontal axis should be labelled x,i."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-135-690",
+      "status": "verified",
+      "answer": "b",
+      "question": "A 1 kg ball moving at 12 m/s undergoes a perfectly elastic direct central impact with a stationary 2 kg ball. The speed of the 2 kg ball after impact is",
+      "options": {
+        "a": "6 m/s",
+        "b": "8 m/s",
+        "c": "12 m/s",
+        "d": "16 m/s"
+      },
+      "explanation": "Given m₁ = 1 kg, m₂ = 2 kg, u₁ = 12 m/s and u₂ = 0.\nMomentum before collision = momentum after collision:\n1 × 12 + 2 × 0 = 1 × v₁ + 2 × v₂,\nv₁ + 2v₂ = 12. …(1)\nFor a perfectly elastic collision,\ne = (v₂ − v₁)/(u₁ − u₂) = 1,\n(v₂ − v₁)/(12 − 0) = 1,\nv₂ − v₁ = 12. …(2)\nAdding (1) and (2):\n(v₂ − v₁) + (2v₂ + v₁) = 12 + 12,\n3v₂ = 24,\nv₂ = 8 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-135-691",
+      "status": "verified",
+      "answer": "c",
+      "question": "When a bullet is fired from a gun, the gun recoils backward because of",
+      "options": {
+        "a": "Impulse",
+        "b": "Inertia",
+        "c": "Conservation of momentum",
+        "d": "None of these"
+      },
+      "explanation": "When a bullet is fired, the gun recoils backward because total linear momentum of the gun-bullet system is conserved, provided the external impulse during firing is negligible.",
+      "transcriptionReviewed": true,
+      "note": "The printed “coiled” is transcribed as the intended “recoils”. The complete source explanation is its statement of linear-momentum conservation.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-135-692",
+      "status": "disputed",
+      "answer": null,
+      "question": "Two objects moving at uniform speeds are 5 m apart after 1 s when they move toward each other, and 1 m apart when they move in the same direction. Their speeds are",
+      "options": {
+        "a": "2 m/s and 2 m/s",
+        "b": "3 m/s and 2 m/s",
+        "c": "3 m/s and 3 m/s",
+        "d": "4 m/s and 6 m/s"
+      },
+      "explanation": "The source interprets 5 m and 1 m as relative distances covered in one second, yielding\nv₁ + v₂ = 5 and v₁ − v₂ = 1,\nthen v₁ = 3 m/s and v₂ = 2 m/s.\nThe printed stem instead describes the objects as being 5 m apart or 1 m apart after motion, without supplying their initial separation. Final separations alone do not establish those relative-speed equations, so the intended answer (b) is not uniquely determined as written.",
+      "transcriptionReviewed": true,
+      "note": "Missing initial-separation/relative-distance wording in the source prevents a unique answer. Its full intended algebra is retained, rather than silently replacing final separation with distance travelled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Independence of horizontal and vertical projectile motion"
+        }
+      ],
+      "sourceExplanation": "Let the objects have velocities v₁ and v₂.\nv₁ + v₂ = 5. …(i)\nv₁ − v₂ = 1. …(ii)\nFrom (i) and (ii), 2v₁ = 6.\nv₁ = 3 m/s.\nSubstituting in (i): 3 + v₂ = 5.\nv₂ = 5 − 3.\nv₂ = 2 m/s.\nAnswer (b)."
+    },
+    {
+      "id": "mech-engineering-mechanics-136-693",
+      "status": "verified",
+      "answer": "c",
+      "question": "A ball is dropped from a building and another is thrown horizontally. If released simultaneously from the same height, which reaches the ground first?",
+      "options": {
+        "a": "The vertically dropped ball",
+        "b": "The horizontally thrown ball",
+        "c": "Both strike simultaneously",
+        "d": "It depends"
+      },
+      "explanation": "A ball dropped vertically and a ball thrown horizontally from the same height at the same instant have the same vertical motion: initial vertical speed zero and acceleration g.\nThey strike the ground simultaneously when air resistance is neglected. Subsequent bouncing or other motion is outside this first-impact comparison.",
+      "transcriptionReviewed": true,
+      "note": "The complete source statement and its neglect of subsequent motion/air resistance are retained, with the standard common release-time and height assumptions made explicit.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall from rest and v² = 2gh"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Independence of horizontal and vertical projectile motion"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-136-694",
+      "status": "verified",
+      "answer": "d",
+      "question": "A 0.1 kg ball dropped from rest through 1 m rebounds with its speed reduced by 20% on impact. To what height does it rise?",
+      "options": {
+        "a": "0.61 m",
+        "b": "0.62 m",
+        "c": "0.63 m",
+        "d": "0.64 m"
+      },
+      "explanation": "Given initial drop height h = 1 m.\nIncident speed v = √(2gh)\n= √(2 × 9.81 × 1)\n≈ 4.42944 m/s.\nThe rebound speed is reduced by 20%, so\nv₁ = 80% of v\n= (80/100) × 4.42944\n≈ 3.5435 m/s.\nRebound height:\nh₁ = v₁²/(2g)\n= 3.5435²/(2 × 9.81)\n≈ 0.6399 m\n≈ 0.64 m.\nEquivalently, h₁ = (0.8)²h = 0.64 m.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall from rest and v² = 2gh"
+        },
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-136-695",
+      "status": "verified",
+      "answer": "a",
+      "question": "The relation between coefficient of restitution e and the velocities of the bodies is",
+      "options": {
+        "a": "e = −[(v₂)_f − (v₁)_f]/[(v₂)_i − (v₁)_i]",
+        "b": "e = [(v₂)_f − (v₁)_f]/[(v₂)_i − (v₂)_i]",
+        "c": "e = −[(v₂)_i − (v₁)_i]/[(v₂)_f − (v₁)_i]",
+        "d": "e = [(v₂)_i − (v₁)_i]/[(v₂)_f − (v₁)_f]",
+        "e": "e = [(v₂)_f − (v₁)_f]/[(v₂)_i − (v₁)_f]"
+      },
+      "explanation": "Before collision, the bodies approach with velocities (v₁)_i and (v₂)_i; after collision they separate with (v₁)_f and (v₂)_f, using a common signed axis.\nCoefficient of restitution = speed of separation/speed of approach:\ne = [(v₂)_f − (v₁)_f]/[(v₁)_i − (v₂)_i].\nThis is equal to the negative of the ratio with reversed initial denominator shown in (a).",
+      "transcriptionReviewed": true,
+      "note": "All five formula options were visually reconciled. Malformed distractors—including the zero denominator in (b) and mixed before/after subscripts—are retained exactly as printed, not repaired into different choices.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ],
+      "figures": [
+        {
+          "page": 122,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            70,
+            651,
+            245,
+            742
+          ],
+          "units": "pdf-points",
+          "alt": "Before/after collision sketches with masses m₁,m₂, signed velocities and approach/separation arrows."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-136-696",
+      "status": "verified",
+      "answer": "a",
+      "question": "Two bodies of masses m₁ and m₂ are dropped from the same height. The ratio of their momentum magnitudes at the ground is",
+      "options": {
+        "a": "m₁/m₂",
+        "b": "m₂/m₁",
+        "c": "(m₁/m₂)²",
+        "d": "(m₂²/m₁¹)^(1/2)"
+      },
+      "explanation": "For body 1:\nP₁ = m₁v\n= m₁√(u² + 2gh), with u = 0,\nP₁ = m₁√(2gh). …(1)\nFor body 2:\nP₂ = m₂v\n= m₂√(u² + 2gh), with u = 0,\nP₂ = m₂√(2gh). …(2)\nTherefore\nP₁/P₂ = [m₁√(2gh)]/[m₂√(2gh)]\n= m₁/m₂.",
+      "transcriptionReviewed": true,
+      "note": "Entire two-body derivation and the source’s unusual option (d), including its exponent 1 on m₁, are transcribed from the scan. Equal release height and negligible air resistance give equal impact speeds.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall from rest and v² = 2gh"
+        }
+      ],
+      "figures": [
+        {
+          "page": 122,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            350,
+            231,
+            475,
+            328
+          ],
+          "units": "pdf-points",
+          "alt": "Bodies of masses m₁ and m₂ dropped through the same height h to a common ground level."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-136-697",
+      "status": "verified",
+      "answer": "c",
+      "question": "A 1 kg ball moving at 2 m/s collides directly with a stationary 2 kg ball and comes to rest. The second ball’s velocity after impact is",
+      "options": {
+        "a": "Zero",
+        "b": "0.5 m/s",
+        "c": "1.0 m/s",
+        "d": "2.0 m/s"
+      },
+      "explanation": "Linear momentum is conserved before and after collision:\nm₁u₁ + m₂u₂ = m₁v₁ + m₂v₂.\nHere m₁ = 1 kg, m₂ = 2 kg; u₁,u₂ are before-impact velocities and v₁,v₂ are after-impact velocities.\nu₁ = 2 m/s, u₂ = 0, v₁ = 0 and v₂ is unknown.\n1 × 2 + 0 = 0 + 2v₂.\nTherefore v₂ = 1 m/s.",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-136-698",
+      "status": "corrected",
+      "answer": "a",
+      "question": "A ball falls vertically for 2 s and strikes a plane inclined 30° to the horizontal. With coefficient of restitution 0.75, how long after this impact does it next hit the plane?",
+      "options": {
+        "a": "3 s",
+        "b": "2 s",
+        "c": "3/2 s",
+        "d": "1 s"
+      },
+      "explanation": "After falling vertically from rest for 2 s, the incident speed is V = u + gt = 2g.\nLet α = 30° be the fixed plane’s inclination. The approaching velocity component normal to the plane has magnitude V cos α. Restitution applies to this normal component, so the rebound normal speed is\neV cos α = 0.75 × 2g cos α.\nThe acceleration back toward the plane has normal component g cos α. At a flight time t after rebound, the normal distance is\ny_n = eV cos α · t − (1/2)g cos α · t².\nFor the next intersection with the plane, y_n = 0 and t > 0:\nt = 2eV cos α/(g cos α)\n= 2eV/g\n= 2 × 0.75 × 2\n= 3 s.\nOnly the normal velocity is multiplied by e; the source’s scaling of the whole oblique rebound velocity is not valid.",
+      "transcriptionReviewed": true,
+      "note": "Answer (a) is correct, but the source scales the entire impact velocity by e and uses an inconsistent inclined-flight formula. Corrected using the normal restitution component and normal gravitational acceleration. Every printed step is retained separately.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Independence of horizontal and vertical projectile motion"
+        }
+      ],
+      "sourceExplanation": "Velocity with which the ball hits:\nV = u + gt = g × 2.\nVelocity after hitting = eV = 0.75 × 2g = 1.5g.\nα = inclination of the plane to the horizontal.\nβ = angle of projection to the horizontal.\nTime of flight t = 2u sin(α + β)/(g sin β).\nIf projection is in the downward direction:\nt = [1.5g × 2 × sin(30° + 0°)]/[g sin30°] = 3 s.\nAnswer (a).",
+      "figures": [
+        {
+          "page": 123,
+          "column": "left",
+          "placement": "explanation",
+          "bbox": [
+            141,
+            149,
+            222,
+            220
+          ],
+          "units": "pdf-points",
+          "alt": "Source sketch of a vertically incident ball bouncing from an inclined plane labelled 30° = α."
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-137-699",
+      "status": "verified",
+      "answer": "a",
+      "question": "A sphere directly strikes an identical sphere initially at rest. If the coefficient of restitution is e, the ratio of the first sphere’s velocity to the second sphere’s velocity after impact is",
+      "options": {
+        "a": "(1 − e)/(1 + e)",
+        "b": "(1 + e)/(1 − e)",
+        "c": "e/(1 + e)",
+        "d": "e/(1 − e)"
+      },
+      "explanation": "Let u₁,u₂ be the initial velocities and v₁,v₂ the final velocities.\nMomentum conservation:\nm₁u₁ + m₂u₂ = m₁v₁ + m₂v₂.\nSince m₁ = m₂ and u₂ = 0,\nu₁ = v₁ + v₂. …(1)\nCoefficient of restitution:\ne = (v₂ − v₁)/(u₁ − u₂)\n= relative separation speed/relative approach speed.\ne = (v₂ − v₁)/u₁, so eu₁ = v₂ − v₁.\neu₁ = v₂(1 − v₁/v₂),\neu₁/v₂ = 1 − v₁/v₂. …(2)\nFrom (1), u₁/v₂ = v₁/v₂ + 1. Substitute into (2):\ne(v₁/v₂ + 1) = 1 − v₁/v₂,\ne(v₁/v₂) + e = 1 − v₁/v₂.\nTherefore v₁/v₂ = (1 − e)/(1 + e).",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-137-700",
+      "status": "verified",
+      "answer": "a",
+      "question": "A stone is dropped from the top of a tower of height h. When it has fallen c metres, a second stone is released from rest b metres below the top, with b > c. They hit the ground simultaneously. The tower height is",
+      "options": {
+        "a": "(b + c)²/(4c)",
+        "b": "(b − c)²/(4c)",
+        "c": "b²/(4c)",
+        "d": "4c/(b + c)²"
+      },
+      "explanation": "The first stone A has fallen distance c to point C when the second stone is released at B, b below the top. At that instant:\nVelocity of the first stone at C = √(2gc).\nVelocity of the second stone at B = 0.\nLet t be their common remaining time to reach ground D.\nFor the first stone:\nh − c = √(2gc)t + (1/2)gt². …(1)\nFor the second stone:\nh − b = 0 × t + (1/2)gt². …(2)\nThus t = √[2(h − b)/g]. Substituting into (1):\nh − c = √(2gc)√[2(h − b)/g] + (h − b).\nTherefore b − c = √[4c(h − b)],\n(b − c)²/(4c) + b = h.\nh = (b² + c² − 2bc + 4bc)/(4c)\n= (b + c)²/(4c).",
+      "transcriptionReviewed": true,
+      "note": "Question, all choices and the complete supplied explanation reconciled visually against the scan; answer independently checked from the cited principles.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5 Free fall from rest and v² = 2gh"
+        }
+      ],
+      "figures": [
+        {
+          "page": 123,
+          "column": "right",
+          "placement": "explanation",
+          "bbox": [
+            357,
+            250,
+            471,
+            360
+          ],
+          "units": "pdf-points",
+          "alt": "Tower geometry: first stone starts at A, reaches C after falling c, second stone starts at B a distance b below A, and D is ground at tower height h."
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "totalReviewed": 50,
+    "counts": {
+      "corrected": 15,
+      "verified": 29,
+      "disputed": 6
+    },
+    "range": [
+      651,
+      700
+    ],
+    "issues": [
+      {
+        "id": "mech-engineering-mechanics-130-651",
+        "status": "corrected",
+        "note": "Answer (a) is correct. The full extra comparison in the source is retained, but its third-system n − 1 is corrected to 2ⁿ − 1 and the second-system counting convention is made explicit."
+      },
+      {
+        "id": "mech-engineering-mechanics-130-652",
+        "status": "corrected",
+        "note": "The source key (a) is correct under its stated diameter labels. Its explanation reverses d₁ and d₂ in the denominator. The original formula and all subsequent definitions are preserved separately."
+      },
+      {
+        "id": "mech-engineering-mechanics-130-654",
+        "status": "corrected",
+        "note": "Answer (a) is correct. The source explanation prints “load” where it means “lead”; the complete original sentence is preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-130-657",
+        "status": "corrected",
+        "note": "Answer (a) is correct. The printed intermediate division is 900/15 = 6; the denominator must be 150. All supplied numerical steps are preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-130-660",
+        "status": "corrected",
+        "note": "Answer (a) is correct for compatible virtual displacements and ideal constraints. The source’s blanket statement that equal, opposite, collinear internal forces always cancel work is qualified: rigid-compatible displacement is essential. Entire source explanation retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-131-666",
+        "status": "corrected",
+        "note": "Answer (a) and the complete limiting derivation are correct. The source calls slope m a coefficient of friction; it is generally an empirical machine-law slope. The malformed law annotation in the stem is rendered as its correct P = mW + C form."
+      },
+      {
+        "id": "mech-engineering-mechanics-131-667",
+        "status": "corrected",
+        "note": "The source key (a) applies only to perfectly inelastic bodies, not inelastic collisions generally. Corrected to the general range represented by (b); the full original two-case explanation is preserved."
+      },
+      {
+        "id": "mech-engineering-mechanics-132-670",
+        "status": "disputed",
+        "note": "Confirmed missing condition in the printed stem: the explanation assumes K₁ = K₂, which the question never states. No unique key can be graded."
+      },
+      {
+        "id": "mech-engineering-mechanics-132-671",
+        "status": "corrected",
+        "note": "The intended name (a) is clear, but the source omits the external-force condition and gives a nongeneral m₁v₁ = m₂v₂ formula. Full original retained and the vector conservation statement supplied."
+      },
+      {
+        "id": "mech-engineering-mechanics-132-672",
+        "status": "corrected",
+        "note": "Answer (c) is correct. The source’s third line incorrectly calls e < 1 perfectly elastic. All three original lines are preserved separately."
+      },
+      {
+        "id": "mech-engineering-mechanics-132-673",
+        "status": "corrected",
+        "note": "Answer (d) is correct. The source writes u₁ = 0 and u₁ = 5 m/s in the same given-data line; the stationary body must be u₂ = 0. Entire original formula and computation retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-133-674",
+        "status": "disputed",
+        "note": "The printed key (d) is not generally true: an initially stationary body struck by another can gain kinetic energy. The collision type and whether energy refers to one body or the whole system must be specified."
+      },
+      {
+        "id": "mech-engineering-mechanics-133-675",
+        "status": "corrected",
+        "note": "Answer (a) and the source velocity formula are correct. Its definition equating the coefficient itself with energy dissipation is corrected; full source wording/formula retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-133-679",
+        "status": "disputed",
+        "note": "The scan confirms duplicate correct expressions (c) and (d), obtained by changing both signs. A unique-choice grade cannot be assigned."
+      },
+      {
+        "id": "mech-engineering-mechanics-133-680",
+        "status": "disputed",
+        "note": "Printed answer (b) only; there is no source explanation to recover. Choices (b)/(c) are synonymous, and the energy/exergy denominator is ambiguous. Derived clarification is labelled separately from the absent source explanation."
+      },
+      {
+        "id": "mech-engineering-mechanics-134-681",
+        "status": "corrected",
+        "note": "The source’s answer (c) and one-sentence explanation are wrong under the standard fixed-flight-speed comparison. Corrected to (b), supported by η_p = 2V/(V_j + V). If both speeds vary arbitrarily, the difference alone is insufficient; the stated model is essential."
+      },
+      {
+        "id": "mech-engineering-mechanics-134-682",
+        "status": "disputed",
+        "note": "The book prints (c) with no explanatory text. Final velocities alone do not determine kinetic-energy loss; an initial relative speed and restitution (or complete before/after state) are needed."
+      },
+      {
+        "id": "mech-engineering-mechanics-134-685",
+        "status": "corrected",
+        "note": "Answer (d) is correct. The source mixes a finite difference v₂ − v₁ with infinitesimal dt. Differential and finite-interval average forms are separated while the complete original is retained."
+      },
+      {
+        "id": "mech-engineering-mechanics-135-689",
+        "status": "corrected",
+        "note": "Answer (c) is correct. The source wrongly says the ball’s momentum is conserved and prints a positive post-impact normal momentum, although its next subtraction uses a negative sign. Both errors are corrected. The source horizontal axis label x,j should be x,i."
+      },
+      {
+        "id": "mech-engineering-mechanics-135-692",
+        "status": "disputed",
+        "note": "Missing initial-separation/relative-distance wording in the source prevents a unique answer. Its full intended algebra is retained, rather than silently replacing final separation with distance travelled."
+      },
+      {
+        "id": "mech-engineering-mechanics-136-698",
+        "status": "corrected",
+        "note": "Answer (a) is correct, but the source scales the entire impact velocity by e and uses an inconsistent inclined-flight formula. Corrected using the normal restitution component and normal gravitational acceleration. Every printed step is retained separately."
+      }
+    ]
+  }
+}

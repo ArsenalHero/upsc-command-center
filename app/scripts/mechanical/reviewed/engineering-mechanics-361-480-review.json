@@ -28,7 +28,20 @@
           "section": "I=I_centroid+Ad²"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 66,
+          "printedPage": 80,
+          "bbox": [
+            152.04,
+            660,
+            216.85,
+            732.22
+          ],
+          "placement": "explanation",
+          "alt": "Rectangle of width b and height h,centroidal axis X–X and base AB separated by r=h/2."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-80-362",
@@ -206,7 +219,20 @@
           "section": "k=√(I/A)"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 67,
+          "printedPage": 81,
+          "bbox": [
+            120.0,
+            600.5,
+            244.5,
+            717.0
+          ],
+          "placement": "explanation",
+          "alt": "Rectangle with width b,depth d and horizontal/vertical centroidal axes."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-81-369",
@@ -230,7 +256,32 @@
           "section": "Area-weighted centroid coordinates"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 67,
+          "printedPage": 81,
+          "bbox": [
+            362.5,
+            262.0,
+            460.0,
+            357.5
+          ],
+          "placement": "question",
+          "alt": "T-section:flange12 cm wide and3 cm thick;central web3 cm wide and10 cm high;origin at lower left."
+        },
+        {
+          "page": 67,
+          "printedPage": 81,
+          "bbox": [
+            364.0,
+            403.5,
+            459.0,
+            500.0
+          ],
+          "placement": "explanation",
+          "alt": "T-section divided into flange1 and web2,with4.5 cm on each side of the web."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-81-370",
@@ -481,7 +532,44 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            141.5,
+            138.0,
+            222.5,
+            224.5
+          ],
+          "placement": "question",
+          "alt": "Truss AFG with300 N horizontal at A,intermediate B,C,D,E and base angles75°."
+        },
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            153.0,
+            270.0,
+            210.0,
+            336.0
+          ],
+          "placement": "explanation",
+          "alt": "Unloaded B:AB and BD are collinear;BC is zero-force."
+        },
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            147.0,
+            367.5,
+            213.0,
+            428.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint C after BC=0:AC and CE are collinear,so CD is zero-force."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-83-380",
@@ -505,7 +593,44 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            135.0,
+            494.0,
+            228.5,
+            573.0
+          ],
+          "placement": "question",
+          "alt": "Truss PQR,pin Q,roller R,downward F at P,base angles45° and30°;all joint labels included."
+        },
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            332.5,
+            107.0,
+            502.5,
+            183.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint-P force diagrams with F_PQ,F_PR,F and angles120°,135°,105°."
+        },
+        {
+          "page": 69,
+          "printedPage": 83,
+          "bbox": [
+            357.5,
+            272.5,
+            473.0,
+            340.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint-Q horizontal balance at45°;printed F_PS refers to member PQ."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-83-381",
@@ -635,7 +760,32 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 70,
+          "printedPage": 84,
+          "bbox": [
+            119.5,
+            392.5,
+            243.0,
+            475.0
+          ],
+          "placement": "question",
+          "alt": "Two bars AC and BC,each30° to horizontal at C,with100 N downward and upper pin supports A,B."
+        },
+        {
+          "page": 70,
+          "printedPage": 84,
+          "bbox": [
+            110.0,
+            574.5,
+            256.0,
+            702.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint-C forces T_AC,T_BC,100 N;included angles120° and bar inclinations30°."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-84-386",
@@ -771,7 +921,44 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 70,
+          "printedPage": 84,
+          "bbox": [
+            326.0,
+            641.0,
+            443.0,
+            745.5
+          ],
+          "placement": "question",
+          "alt": "Truss ABCDE with A,B foundation pins,45° members and1 kN downward at D;two1 m spans."
+        },
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            140.5,
+            174.0,
+            225.0,
+            245.5
+          ],
+          "placement": "explanation",
+          "alt": "Unloaded E with zero-force EC and ED."
+        },
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            127.5,
+            258.0,
+            238.5,
+            325.5
+          ],
+          "placement": "explanation",
+          "alt": "Printed joint-D sketch;its downward DB vertical component is an error and must act upward as corrected in the text."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-85-391",
@@ -795,7 +982,44 @@
           "section": "Rigid-body equilibrium of an isolated truss section"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            124.0,
+            393.0,
+            239.0,
+            471.5
+          ],
+          "placement": "question",
+          "alt": "Truss with spans AB3 m,BC6 m,CD6 m;F6 m above B,G3 m above C;loads4,8,2,2 kN."
+        },
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            125.0,
+            561.5,
+            238.5,
+            635.5
+          ],
+          "placement": "explanation",
+          "alt": "Section1–1 through BG and adjacent chords,with angleθ and complete section markers."
+        },
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            120.0,
+            637.0,
+            242.5,
+            742.0
+          ],
+          "placement": "explanation",
+          "alt": "Right section free body:BG components,8 kN at G,2 kN at C and support D."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-85-392",
@@ -848,7 +1072,20 @@
           "section": "Independent restraints, reaction components and geometric stability"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 71,
+          "printedPage": 85,
+          "bbox": [
+            365.5,
+            392.0,
+            458.5,
+            461.0
+          ],
+          "placement": "question",
+          "alt": "Six-joint/eight-member triangular-outline truss,with inner diagonals and pin/roller supports."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-85-394",
@@ -901,7 +1138,32 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 72,
+          "printedPage": 86,
+          "bbox": [
+            121.0,
+            126.0,
+            243.0,
+            212.0
+          ],
+          "placement": "question",
+          "alt": "Two-member wall-supported truss:A,C0.5 m apart vertically,B1 m right of A,10 kN downward at B."
+        },
+        {
+          "page": 72,
+          "printedPage": 86,
+          "bbox": [
+            103.5,
+            380.0,
+            238.5,
+            481.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint B with F_AB,F_BC components at26.56° and10 kN load."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-86-396",
@@ -1031,7 +1293,32 @@
           "section": "Rigid-body equilibrium of an isolated truss section"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 72,
+          "printedPage": 86,
+          "bbox": [
+            353.5,
+            618.5,
+            474.5,
+            703.0
+          ],
+          "placement": "question",
+          "alt": "Cantilever truss:upper A,B,C,D;lower E,F,G,H,J;P₁ at B,2P₁ at D,P₂ at G,J;panel dimensionsℓ."
+        },
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            118.0,
+            103.5,
+            246.0,
+            190.5
+          ],
+          "placement": "explanation",
+          "alt": "Right section through BC,with moment centre G and complete force/load labels;printed extra P₁ at C has zero moment about G."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-87-401",
@@ -1060,7 +1347,44 @@
           "section": "Weight w=mg"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            115.0,
+            281.5,
+            250.0,
+            376.0
+          ],
+          "placement": "question",
+          "alt": "Horizontal2 m bar AB,pin B at wall,cable AC inclined30°;all endpoints and wall support included."
+        },
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            112.0,
+            487.0,
+            253.5,
+            594.5
+          ],
+          "placement": "explanation",
+          "alt": "Bar free body:T at A,200 N at centre,B reaction components and2 m dimension."
+        },
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            375.5,
+            96.0,
+            452.0,
+            164.5
+          ],
+          "placement": "explanation",
+          "alt": "Resultant reaction R_B with vertical R_BV,horizontal R_BH and angleθ."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-87-402",
@@ -1089,7 +1413,56 @@
           "section": "Planar force and moment equilibrium"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            361.0,
+            312.0,
+            466.0,
+            451.5
+          ],
+          "placement": "question",
+          "alt": "Bar AC pinned at A,cable BC horizontal,6000 N at C and30° angle to vertical."
+        },
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            354.0,
+            501.5,
+            472.5,
+            652.5
+          ],
+          "placement": "explanation",
+          "alt": "Dimensions:5 m cable BC and10 m inclined AC;angles30° and60°."
+        },
+        {
+          "page": 73,
+          "printedPage": 87,
+          "bbox": [
+            342.5,
+            667.5,
+            485.5,
+            741.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint C with F_AC,F_BC,6000 N and both resolved bar-force components."
+        },
+        {
+          "page": 74,
+          "printedPage": 88,
+          "bbox": [
+            106.5,
+            454.5,
+            259.0,
+            559.0
+          ],
+          "placement": "explanation",
+          "alt": "Lami force diagram for cable,compressed bar and6000 N,with complete angle labels."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-88-403",
@@ -1118,7 +1491,20 @@
           "section": "Weight w=mg"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 74,
+          "printedPage": 88,
+          "bbox": [
+            313.0,
+            94.0,
+            502.0,
+            252.5
+          ],
+          "placement": "question",
+          "alt": "Fixed frame A,bracing,cable and pulley;500 kg load,200 N load,two1 m dimensions and pulley labels."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-88-404",
@@ -1147,7 +1533,68 @@
           "section": "Planar force and moment equilibrium"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 74,
+          "printedPage": 88,
+          "bbox": [
+            364.0,
+            419.0,
+            460.0,
+            549.0
+          ],
+          "placement": "question",
+          "alt": "Truss ABCDE with1 m members,roof DEC,diagonal AC,1000 kN at E,hinge A and roller B."
+        },
+        {
+          "page": 74,
+          "printedPage": 88,
+          "bbox": [
+            312.5,
+            600.0,
+            518.0,
+            741.0
+          ],
+          "placement": "explanation",
+          "alt": "Whole-truss free body with support reactions,1.87 m load height and roller zero-horizontal-reaction note."
+        },
+        {
+          "page": 75,
+          "printedPage": 89,
+          "bbox": [
+            133.5,
+            240.0,
+            231.5,
+            321.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint B:F_BC,F_AB,zero H_B and vertical1870 kN reaction."
+        },
+        {
+          "page": 75,
+          "printedPage": 89,
+          "bbox": [
+            115.5,
+            349.0,
+            247.5,
+            453.5
+          ],
+          "placement": "explanation",
+          "alt": "Whole-truss force diagram with AC tension,1000 kN loading and1870 kN support reactions."
+        },
+        {
+          "page": 75,
+          "printedPage": 89,
+          "bbox": [
+            121.0,
+            470.0,
+            245.0,
+            566.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint A with45° AC components,F_AD,F_AB and hinge reaction components."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-89-405",
@@ -1176,7 +1623,32 @@
           "section": "Yielding, redistribution and ultimate versus elastic-limit capacity"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 75,
+          "printedPage": 89,
+          "bbox": [
+            331.5,
+            95.5,
+            494.5,
+            209.0
+          ],
+          "placement": "question",
+          "alt": "Three bars from upper pins1.2 m apart to common joint1.6 m below centre pin;load P downward."
+        },
+        {
+          "page": 75,
+          "printedPage": 89,
+          "bbox": [
+            311.0,
+            289.0,
+            515.5,
+            438.5
+          ],
+          "placement": "explanation",
+          "alt": "Source three-bar deformation sketch and force diagram P₁,P₂,P₃;compatibility is corrected in the text."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-90-406",
@@ -1200,7 +1672,44 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            150.0,
+            281.5,
+            213.0,
+            382.0
+          ],
+          "placement": "question",
+          "alt": "Rectangular truss ABCD,wall pins A,B,diagonal AC and load P at C."
+        },
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            121.0,
+            446.0,
+            178.0,
+            530.0
+          ],
+          "placement": "explanation",
+          "alt": "Truss after removing zero-force members AD and DC."
+        },
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            103.5,
+            585.0,
+            169.0,
+            646.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint C with F_AC,F_BC,angleθ and complete downward P load."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-90-407",
@@ -1224,7 +1733,44 @@
           "section": "Planar force and moment equilibrium"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            357.0,
+            180.0,
+            469.5,
+            275.0
+          ],
+          "placement": "question",
+          "alt": "Hinged vertical plate,chain AB at45°,attachment height L and horizontal pull T at height3L."
+        },
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            340.0,
+            337.5,
+            449.5,
+            433.5
+          ],
+          "placement": "explanation",
+          "alt": "Plate free body with O hinge,A chain anchor,chain tension T′ and L/2L height labels."
+        },
+        {
+          "page": 76,
+          "printedPage": 90,
+          "bbox": [
+            336.0,
+            447.0,
+            469.0,
+            515.5
+          ],
+          "placement": "explanation",
+          "alt": "Moment-arm diagram:horizontal chain component T′cos45° at L against T at3L."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-90-408",
@@ -1272,7 +1818,56 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 77,
+          "printedPage": 91,
+          "bbox": [
+            133.5,
+            93.0,
+            228.0,
+            172.5
+          ],
+          "placement": "question",
+          "alt": "Triangular truss ABC with50 N downward at C,base angles60° and30°,and support reaction labels."
+        },
+        {
+          "page": 77,
+          "printedPage": 91,
+          "bbox": [
+            133.0,
+            233.5,
+            234.0,
+            320.0
+          ],
+          "placement": "explanation",
+          "alt": "Whole triangle with90° angle at C,50 N load and complete A/B reactions."
+        },
+        {
+          "page": 77,
+          "printedPage": 91,
+          "bbox": [
+            133.0,
+            327.5,
+            234.5,
+            400.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint C:F_AC,F_BC and50 N,with60°/30° component directions."
+        },
+        {
+          "page": 77,
+          "printedPage": 91,
+          "bbox": [
+            122.5,
+            478.0,
+            239.0,
+            568.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint A:compressed AC components and upward R_A;all force labels preserved."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-91-410",
@@ -1479,7 +2074,20 @@
           "section": "Independent restraints, reaction components and geometric stability"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 78,
+          "printedPage": 92,
+          "bbox": [
+            134.5,
+            120.0,
+            228.5,
+            188.0
+          ],
+          "placement": "question",
+          "alt": "Two3 m triangular panels,60° angles,80 kN at B,60 kN at D,and all A–E labels/supports."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-92-418",
@@ -1581,7 +2189,32 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 78,
+          "printedPage": 92,
+          "bbox": [
+            351.5,
+            115.5,
+            474.5,
+            197.5
+          ],
+          "placement": "question",
+          "alt": "Wall truss with AB2 m,BD2 m,CD/DE2 m and1000 N downward at E."
+        },
+        {
+          "page": 78,
+          "printedPage": 92,
+          "bbox": [
+            368.0,
+            241.0,
+            459.5,
+            316.0
+          ],
+          "placement": "explanation",
+          "alt": "Joint D with collinear DC/DE and vertical BD."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-92-422",
@@ -1639,7 +2272,32 @@
           "section": "Rigid-body equilibrium of an isolated truss section"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 78,
+          "printedPage": 92,
+          "bbox": [
+            357.0,
+            513.5,
+            467.0,
+            601.0
+          ],
+          "placement": "question",
+          "alt": "Two-panel rectangular truss,diagonals BF/DF,10 kN horizontal at B,15 kN vertical at D and support components."
+        },
+        {
+          "page": 79,
+          "printedPage": 93,
+          "bbox": [
+            109.5,
+            182.0,
+            253.0,
+            273.5
+          ],
+          "placement": "explanation",
+          "alt": "Left section exposing BC,CF,DF,EF with complete cut-force labels and A reactions."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-93-424",
@@ -1740,7 +2398,44 @@
           "section": "Planar force and moment equilibrium"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 79,
+          "printedPage": 93,
+          "bbox": [
+            369.0,
+            234.0,
+            456.5,
+            345.5
+          ],
+          "placement": "question",
+          "alt": "Symmetric triangular truss ABC,vertical BD to unloaded D,250 kN at B and reactions R_A,R_C."
+        },
+        {
+          "page": 79,
+          "printedPage": 93,
+          "bbox": [
+            369.5,
+            588.5,
+            459.0,
+            695.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint C:F_CB,F_CD,angleθ and complete upward R_C reaction."
+        },
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            131.5,
+            155.0,
+            233.0,
+            252.5
+          ],
+          "placement": "explanation",
+          "alt": "Joint B:250 load,side forces F_BA/F_BC,vertical F_BD and angle90°−θ."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-94-428",
@@ -1764,7 +2459,20 @@
           "section": "Concurrent joint forces; two independent planar equilibrium equations"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            120.0,
+            365.5,
+            262.5,
+            433.0
+          ],
+          "placement": "question",
+          "alt": "Truss ADB with20 kN at D,mid-base E,point C on DB,braces DE/EC,two2.5 m spans and marked angles."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-94-429",
@@ -1793,7 +2501,68 @@
           "section": "Rigid-body equilibrium of an isolated truss section"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            112.5,
+            599.5,
+            253.5,
+            706.5
+          ],
+          "placement": "question",
+          "alt": "Cantilever truss A–E with2 m panels,4 kN at A,2 kN at B and3 m support separation;all intermediate labels."
+        },
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            344.0,
+            153.5,
+            483.5,
+            260.0
+          ],
+          "placement": "explanation",
+          "alt": "Annotated cantilever truss with1 m/2 m/3 m depths,angleθ,CG and perpendicular AX."
+        },
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            336.0,
+            330.5,
+            382.5,
+            379.0
+          ],
+          "placement": "explanation",
+          "alt": "Right triangle showing side ratios1:2:√5 and angleθ."
+        },
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            408.5,
+            307.0,
+            493.5,
+            374.5
+          ],
+          "placement": "explanation",
+          "alt": "Section free body with2 kN/4 kN loads and force directions;source force labels are corrected in text."
+        },
+        {
+          "page": 80,
+          "printedPage": 94,
+          "bbox": [
+            385.0,
+            432.5,
+            445.5,
+            486.5
+          ],
+          "placement": "explanation",
+          "alt": "Source force-component triangle;vertical label F_GF should be F_CF as corrected in text."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-94-430",
@@ -1937,13 +2706,26 @@
           "section": "Orbital period versus radius; inverse-square-force energy"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 81,
+          "printedPage": 95,
+          "bbox": [
+            376.85,
+            295.56,
+            448.7,
+            368.52
+          ],
+          "placement": "explanation",
+          "alt": "Earth of radius R with orbital heights6R and2.5R measured from its surface."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-95-436",
       "status": "verified",
       "answer": "b",
-      "question": "A body has initial velocity u and constant acceleration a. Its final velocity after time t is:",
+      "question": "A body has initial velocity u and constant acceleration a. Its final velocity after time t is:(Here s denotes distance travelled in that time.)",
       "options": {
         "a": "ut+½at²",
         "b": "u+at",
@@ -2293,7 +3075,20 @@
           "section": "a=dv/dt; average acceleration=Δv/Δt"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 83,
+          "printedPage": 97,
+          "bbox": [
+            370.19,
+            456.3,
+            455.0,
+            662.22
+          ],
+          "placement": "explanation",
+          "alt": "Three uniform-velocity graphs:linear displacement,constant velocity and zero acceleration versus time."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-97-450",
@@ -2375,7 +3170,20 @@
           "section": "D’Alembert principle and inertia forces"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 84,
+          "printedPage": 98,
+          "bbox": [
+            161.0,
+            526.5,
+            205.0,
+            608.0
+          ],
+          "placement": "explanation",
+          "alt": "D’Alembert diagram:normal N upward,weight mg downward and inertia force ma upward;all labels included."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-98-453",
@@ -2481,7 +3289,20 @@
           "section": "Free-body diagrams and normal force in accelerated systems"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 84,
+          "printedPage": 98,
+          "bbox": [
+            385.0,
+            680.5,
+            443.0,
+            740.5
+          ],
+          "placement": "explanation",
+          "alt": "Freely falling body A with downward mg and downward acceleration a."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-99-457",
@@ -2491,13 +3312,13 @@
       "options": {
         "a": "−C/(2r)",
         "b": "C/(2r)",
-        "c": "2Cr",
+        "c": "2C/r",
         "d": "C/2"
       },
       "explanation": "With outward radial positive,F_r=−C/r²,but inward magnitude |F_r|=C/r²=mv²/r. Thus kinetic energy K=½mv²=|F_r|r/2=C/(2r)>0…(i). For conservative radial force,F_r=−dU/dr,so−dU/dr=−C/r² and dU/dr=C/r². Integrating with U(∞)=0 gives U=−C/r…(ii). Total E=U+K=−C/r+C/(2r)=−C/(2r).",
       "sourceExplanation": "Centripetal force F_c=−C/r²=mv²/r. KE=½mv²=F_cr/2. K=|F_c|r/2=C/(2r),since K>0…(i). For potential U,the source first writes F_c=dU/dr,then−dU/dr=−C/r². ∫dU=∫(C/r²)dr;U=−C/r…(ii). Total energy=PE+KE=−C/r+C/(2r)=−C/(2r).",
       "transcriptionReviewed": true,
-      "note": "Final key correct. Corrected source’s negative-force/positive-magnitude equality and missing minus sign in F=−dU/dr.",
+      "note": "Final key correct. Corrected source’s negative-force/positive-magnitude equality and missing minus sign in F=−dU/dr. Reattached source confirms distractor(c) is2C/r;the former OCR dropped its slash.",
       "references": [
         {
           "title": "OpenStax University Physics Vol.1: Satellite Orbits and Energy",
@@ -2558,7 +3379,20 @@
           "section": "Velocity of rolling points and translational/rotational kinetic energy"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 85,
+          "printedPage": 99,
+          "bbox": [
+            370.5,
+            183.0,
+            455.5,
+            263.0
+          ],
+          "placement": "explanation",
+          "alt": "Rod A/B with velocities3u/u,distances AB=r,BO=x and instantaneous centre O."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-99-460",
@@ -2587,7 +3421,20 @@
           "section": "v=u+at; x−x₀=ut+½at²"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 85,
+          "printedPage": 99,
+          "bbox": [
+            343.0,
+            462.0,
+            481.0,
+            550.5
+          ],
+          "placement": "explanation",
+          "alt": "Descending lift with g,v=10 m/s and passenger weight80×9.8 N;corrected normal equation is in text."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-99-461",
@@ -2737,7 +3584,20 @@
           "section": "a=dv/dt; average acceleration=Δv/Δt"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 86,
+          "printedPage": 100,
+          "bbox": [
+            351.5,
+            252.0,
+            479.0,
+            308.0
+          ],
+          "placement": "question",
+          "alt": "Cart attached to a wall by a spring,with positive horizontal x direction."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-100-467",
@@ -2911,7 +3771,20 @@
           "section": "a=dv/dt; average acceleration=Δv/Δt"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 88,
+          "printedPage": 102,
+          "bbox": [
+            129.5,
+            146.0,
+            236.5,
+            217.5
+          ],
+          "placement": "explanation",
+          "alt": "Acceleration-time graph with constant positive acceleration and full axis labels."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-102-474",
@@ -3017,7 +3890,20 @@
           "section": "Constant common acceleration when air resistance is neglected"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 88,
+          "printedPage": 102,
+          "bbox": [
+            356.5,
+            133.5,
+            470.5,
+            199.5
+          ],
+          "placement": "explanation",
+          "alt": "Block on30° incline with lengthℓ,height h and gravity g."
+        }
+      ]
     },
     {
       "id": "mech-engineering-mechanics-102-478",
@@ -3094,7 +3980,32 @@
           "section": "Free-body diagrams and normal force in accelerated systems"
         }
       ],
-      "figures": []
+      "figures": [
+        {
+          "page": 89,
+          "printedPage": 103,
+          "bbox": [
+            140.0,
+            266.5,
+            222.5,
+            313.5
+          ],
+          "placement": "explanation",
+          "alt": "Lift with downward gravity g and downward acceleration a."
+        },
+        {
+          "page": 89,
+          "printedPage": 103,
+          "bbox": [
+            140.0,
+            351.5,
+            223.0,
+            397.0
+          ],
+          "placement": "explanation",
+          "alt": "Lift with downward gravity g and upward acceleration a."
+        }
+      ]
     }
   ],
   "audit": {

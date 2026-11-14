@@ -1,0 +1,461 @@
+{
+  "subjectId": "engineering-mechanics",
+  "sourceSha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0",
+  "reviews": [
+    {
+      "id": "mech-engineering-mechanics-49-201",
+      "figures": [
+        {
+          "page": 36,
+          "bbox": [
+            116,
+            126,
+            247,
+            204
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Block on an inclined plane at the angle of repose α"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-50-202",
+      "figures": [
+        {
+          "page": 36,
+          "bbox": [
+            80,
+            414.75,
+            279,
+            503
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Wheel and rolling-resistance force diagrams"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-50-203",
+      "figures": [
+        {
+          "page": 36,
+          "bbox": [
+            333,
+            168.75,
+            486.5,
+            242
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Friction force versus applied force, showing limiting static and dynamic friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-50-204",
+      "figures": [
+        {
+          "page": 36,
+          "bbox": [
+            341,
+            330,
+            491,
+            400.5
+          ],
+          "column": "right",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Block under cable tension and a 100 N horizontal pull"
+        },
+        {
+          "page": 36,
+          "bbox": [
+            339.5,
+            500.5,
+            480,
+            568
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Applied tension and horizontal pull on the block"
+        },
+        {
+          "page": 36,
+          "bbox": [
+            333,
+            643,
+            459,
+            705
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Tension, normal reaction and weight on the block"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-51-205",
+      "figures": [
+        {
+          "page": 37,
+          "bbox": [
+            142,
+            155.5,
+            226,
+            194.5
+          ],
+          "column": "left",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Force F pushes block M against block m"
+        },
+        {
+          "page": 37,
+          "bbox": [
+            125,
+            357,
+            245,
+            423
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Both blocks accelerate to the right"
+        },
+        {
+          "page": 37,
+          "bbox": [
+            113,
+            433.5,
+            255,
+            484
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Separate block free-body diagrams and contact forces"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-51-206",
+      "figures": [
+        {
+          "page": 37,
+          "bbox": [
+            113,
+            657.5,
+            253,
+            740
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Ladder free-body diagram at a rough wall and smooth ground"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-51-207",
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-51-208",
+      "figures": [
+        {
+          "page": 37,
+          "bbox": [
+            326,
+            368,
+            499,
+            458
+          ],
+          "column": "right",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "10 kg block and linearly increasing force–time graph"
+        },
+        {
+          "page": 37,
+          "bbox": [
+            345,
+            506,
+            476,
+            614.25
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Block and force–time graph used in the friction calculation"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-52-209",
+      "figures": [
+        {
+          "page": 38,
+          "bbox": [
+            135,
+            445.75,
+            228,
+            506
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Position vector to A and force F inclined 60° to the x axis"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-52-210",
+      "figures": [
+        {
+          "page": 38,
+          "bbox": [
+            363,
+            184.5,
+            467,
+            239.5
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "100 N block under applied force and limiting friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-52-211",
+      "figures": [
+        {
+          "page": 38,
+          "bbox": [
+            350,
+            347,
+            482,
+            433
+          ],
+          "column": "right",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Beam suspended over a rough cylinder with support dimensions"
+        },
+        {
+          "page": 38,
+          "bbox": [
+            344,
+            517,
+            486,
+            595.5
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Beam loading, support tensions and applied end force"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-53-212",
+      "figures": [
+        {
+          "page": 39,
+          "bbox": [
+            126,
+            205.25,
+            243,
+            278.5
+          ],
+          "column": "left",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Block pulled by an inclined force on a 30° slope"
+        },
+        {
+          "page": 39,
+          "bbox": [
+            111,
+            345.5,
+            250,
+            430.25
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Normal and tangential components on the inclined block"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-53-213",
+      "figures": [
+        {
+          "page": 39,
+          "bbox": [
+            354,
+            137.75,
+            473,
+            215
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Sphere rolling down an inclined plane"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-53-214",
+      "figures": [
+        {
+          "page": 39,
+          "bbox": [
+            365,
+            548.5,
+            458,
+            620
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Box with normal reaction, horizontal pull, weight and friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-53-215",
+      "figures": [
+        {
+          "page": 40,
+          "bbox": [
+            141.5,
+            137.5,
+            228,
+            229
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "13 m ladder and contact reactions in a 5–12–13 triangle"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-54-216",
+      "figures": [
+        {
+          "page": 40,
+          "bbox": [
+            127,
+            430,
+            236,
+            483
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Body on a 30° incline with normal reaction and limiting friction"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-54-217",
+      "figures": [
+        {
+          "page": 40,
+          "bbox": [
+            125,
+            598,
+            235.5,
+            652.5
+          ],
+          "column": "left",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Block sliding from height h down a slope θ"
+        },
+        {
+          "page": 40,
+          "bbox": [
+            357,
+            140.5,
+            471,
+            203
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Block weight, normal reaction and uphill friction on the incline"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-54-218",
+      "figures": [
+        {
+          "page": 40,
+          "bbox": [
+            379,
+            312,
+            442,
+            382
+          ],
+          "column": "right",
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Masses 3m and m on a rope wrapped around a fixed shaft"
+        },
+        {
+          "page": 40,
+          "bbox": [
+            375,
+            424.5,
+            454,
+            508.25
+          ],
+          "column": "right",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Rope-contact angle and end tensions"
+        }
+      ]
+    },
+    {
+      "id": "mech-engineering-mechanics-54-219",
+      "figures": []
+    },
+    {
+      "id": "mech-engineering-mechanics-55-220",
+      "figures": [
+        {
+          "page": 41,
+          "bbox": [
+            83,
+            268,
+            282.5,
+            322
+          ],
+          "column": "left",
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Contact friction opposing relative sliding velocity"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "questions": 20,
+    "figures": 27,
+    "restoration": "Exact final source-checked crop bounds restored from the prior successful native-PDF QC pass.",
+    "note": "Q217 solution keeps the complete µR label with the accepted tiny adjacent sinθ edge."
+  }
+}

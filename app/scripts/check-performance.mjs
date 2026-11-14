@@ -22,6 +22,10 @@ assert.ok(!mockExam.some(file => /MockCharts|ScatterChart|questions-|question-su
 const aurumEntry = Object.keys(manifest).find(key => manifest[key].name === "Aurum" && manifest[key].isDynamicEntry);
 assert.ok(aurumEntry, "Missing Aurum entry");
 const aurum = dependencies([entry, mockEntry, aurumEntry]);
+const chooser = dependencies([entry, "src/pages/PYQs.tsx"]);
+const mechanical = dependencies([entry, "src/pages/MechanicalPractice.tsx"]);
+assert.ok(!chooser.some(file => /PYQBank|MechanicalPractice|questions-|question-support-/.test(file)), "MCQ chooser eagerly imports a collection");
+assert.ok(!mechanical.some(file => /PYQBank|questions-|question-support-|questionBank/.test(file)), "Mechanical setup eagerly imports the CSE bank");
 assert.ok(!aurum.some(file => /questions-|question-support-|aurumBank|questionBank/.test(file)), "Aurum setup eagerly loads the question library");
 assert.ok(!aurum.some(file => /AurumInsights/.test(file)), "Aurum setup eagerly loads analysis and review screens");
 assert.ok(!(manifest[aurumEntry].dynamicImports || []).some(key => /aurumBank|questionBank|questions-/.test(key)), "Aurum setup downloads the full bank after mounting");
@@ -34,6 +38,7 @@ assert.ok(offlineBytes < 6_000_000, `Offline startup exceeded 6 MB: ${offlineByt
 assert.ok(!initial.some(file => /DashboardAnalytics|ScatterChart|questions-|question-support-/.test(file)), "The dashboard eagerly loads charts or question banks");
 assert.ok(!practice.some(file => /questions-|question-support-/.test(file)), "General practice eagerly loads question banks");
 assert.ok(!offline.some(file => /questions-|question-support-/.test(file)), "Offline install eagerly downloads question banks");
+assert.ok(!offline.some(file => /\/mechanical\//.test(file)), "Offline install eagerly downloads Mechanical questions or diagrams");
 for (const file of offline) if (file !== "./") assert.ok(statSync(`${root}/${file}`).isFile(), `Missing offline file ${file}`);
 const gzipBytes = initial.reduce((total, file) => total + gzipSync(readFileSync(`${root}/${file}`)).length, 0);
 console.log(`Performance budgets passed: dashboard ${(dashboardBytes / 1000).toFixed(1)} KB (${(gzipBytes / 1000).toFixed(1)} KB gzip estimate), ${offline.length} offline files / ${(offlineBytes / 1000000).toFixed(2)} MB, general practice independent of question banks.`);

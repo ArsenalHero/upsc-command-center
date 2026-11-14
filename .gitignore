@@ -5,3 +5,5 @@ app/.env
 app/.env.*
 !app/.env.example
 *.tsbuildinfo
+app/scripts/mechanical/extracted/
+__pycache__/

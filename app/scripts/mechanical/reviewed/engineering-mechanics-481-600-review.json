@@ -37,7 +37,7 @@
       "number": 482,
       "status": "verified",
       "answer": "d",
-      "question": "Mathematical formulation of Newton's law in Engineering Mechanics:",
+      "question": "Mathematical formulation of Newton’s law in Engineering Mechanics:",
       "options": {
         "a": "F = d(mv)/dt",
         "b": "F = dP/dt",
@@ -108,7 +108,7 @@
       "number": 484,
       "status": "verified",
       "answer": "c",
-      "question": "The velocity–time graph of a body is a straight line passing through the origin. If its slope is m, the distance travelled in time t would be:",
+      "question": "The velocity–time graph of a body is a straight line passing through the origin. If the slope of the graph is m, the distance travelled by the body in time t would be:",
       "options": {
         "a": "2mu³",
         "b": "mu²/(2t²)",
@@ -148,11 +148,11 @@
       "number": 485,
       "status": "corrected",
       "answer": "a",
-      "question": "A monkey of mass 40 kg climbs on a rope which withstands maximum tension 600 N. In which case will it break? Take g=10m/s² and ignore the rope’s mass.",
+      "question": "A monkey of mass 40 kg climbs on a rope which can withstand a maximum tension of 600 N. In which of the following cases will the rope break? Take g = 10 m/s² and ignore the mass of the rope.",
       "options": {
-        "a": "Climbs up with acceleration 6 m/s²",
-        "b": "Climbs down with acceleration 4 m/s²",
-        "c": "Climbs up with uniform speed 5 m/s",
+        "a": "Climbs up with an acceleration of 6 m/s²",
+        "b": "Climbs down with an acceleration of 4 m/s²",
+        "c": "Climbs up with uniform speed of 5 m/s",
         "d": "None of the mentioned"
       },
       "explanation": "Given:\nMonkey’s mass m = 40 kg\ng = 10 m/s²\nMaximum rope tension Tmax = 600 N\nMonkey’s acceleration a = 6 m/s².\nAccording to the second law:\nT = mg + ma\nT = m(g + a)\nT = 40(10 + 6)\nT = 640 N.\nSince T > Tmax, or 640 > 600, the rope will break.",
@@ -188,7 +188,7 @@
       "number": 486,
       "status": "verified",
       "answer": "d",
-      "question": "A cylinder of mass m rolls down an incline from height h. If its axis speed at the lower level is v, then:",
+      "question": "A cylinder of mass m rolls down an inclined plane from a height h above a horizontal level. If the velocity of the axis of the cylinder is v when it reaches the lower level, then:",
       "options": {
         "a": "v = gh",
         "b": "v = mgh",
@@ -214,7 +214,7 @@
       "number": 487,
       "status": "corrected",
       "answer": "c",
-      "question": "When a Bofors 40 mm gun is fired, which law explains its recoil?",
+      "question": "When a Bofors 40 mm gun is fired, the recoil can be explained by which of the following laws?",
       "options": {
         "a": "Newton’s first law",
         "b": "Newton’s second law",
@@ -245,7 +245,7 @@
       "number": 488,
       "status": "verified",
       "answer": "c",
-      "question": "The motion of an artificial satellite orbiting Earth at constant height is an example of:",
+      "question": "The motion of an artificial satellite orbiting the Earth at constant height is an example of:",
       "options": {
         "a": "Linear motion",
         "b": "Space motion",
@@ -276,7 +276,7 @@
       "number": 489,
       "status": "verified",
       "answer": "b",
-      "question": "What is the weight of a woman inside a lift accelerating downward at9.8m/s²?",
+      "question": "What is the weight of a woman standing inside a lift which is moving down with an acceleration of 9.8 m/s²?",
       "options": {
         "a": "Half of her original weight",
         "b": "Zero",
@@ -302,7 +302,7 @@
       "number": 490,
       "status": "verified",
       "answer": "c",
-      "question": "The force acting along a circle’s radius towards its center is:",
+      "question": "The force which acts along the radius of a circle and is directed towards its centre is known as:",
       "options": {
         "a": "Centrifugal force",
         "b": "Radial force",
@@ -328,7 +328,7 @@
       "number": 491,
       "status": "corrected",
       "answer": "b",
-      "question": "In relative equilibrium with respect to a moving body, the projections of all real forces together with the______due to base acceleration sum to zero.",
+      "question": "In case of relative equilibrium of a particle with respect to a moving body, the algebraic sum of the projections, on any axis, of all real forces acting on the particle together with the ______ due to base acceleration must be zero.",
       "options": {
         "a": "Frictional force",
         "b": "Inertia force",
@@ -359,12 +359,12 @@
       "number": 492,
       "status": "verified",
       "answer": "d",
-      "question": "Absolute acceleration in relative motion is the geometric sum of:",
+      "question": "The absolute acceleration while dealing with relative motion may be considered as the geometric sum of:",
       "options": {
-        "a": "Base and relative acceleration",
-        "b": "Relative and supplementary acceleration",
-        "c": "Supplementary and base acceleration",
-        "d": "Base, supplementary and relative acceleration"
+        "a": "Base acceleration and relative acceleration",
+        "b": "Relative acceleration and supplementary acceleration",
+        "c": "Supplementary acceleration and base acceleration",
+        "d": "Base acceleration, supplementary acceleration and relative acceleration"
       },
       "explanation": "The absolute acceleration while dealing with relative motion may be considered as the geometric sum of base acceleration, supplementary acceleration and relative acceleration.",
       "sourceExplanation": "The absolute acceleration while dealing with relative motion may be considered as the geometric sum of base acceleration, supplementary acceleration and relative acceleration.",
@@ -385,7 +385,7 @@
       "number": 493,
       "status": "corrected",
       "answer": "c",
-      "question": "A motorist travels at90km/h when a light250m ahead turns red for12seconds. To pass without stopping just as it turns green, his speed then will be:",
+      "question": "A motorist is travelling at 90 km/h when he observes a traffic light 250 m ahead turn red. The traffic light stays red for 12 seconds. If the motorist wishes to pass the light without stopping, just as it turns green, then the speed as he passes the light will be:",
       "options": {
         "a": "30 km/h",
         "b": "45 km/h",
@@ -411,7 +411,7 @@
       "number": 494,
       "status": "corrected",
       "answer": "c",
-      "question": "A car starts from rest on a circular track of radius9m with constant tangential acceleration3m/s². What is its resultant acceleration after2s?",
+      "question": "A car travels on a horizontal circular track of radius 9 m, starting from rest at a constant tangential acceleration of 3 m/s². What is the resultant acceleration of the car 2 s after starting?",
       "options": {
         "a": "3 m/s²",
         "b": "4 m/s²",
@@ -442,7 +442,7 @@
       "number": 495,
       "status": "disputed",
       "answer": null,
-      "question": "A tap releases four drops per second. Find separation of consecutive drops when the lower drop reaches4m/s. Take g=10m/s².",
+      "question": "Water drops from a tap at the rate of four droplets per second. Determine the vertical separation between two consecutive drops after the lower drop attains a velocity of 4 m/s. Take g = 10 m/s².",
       "options": {
         "a": "0.49 m",
         "b": "0.31 m",
@@ -468,7 +468,7 @@
       "number": 496,
       "status": "verified",
       "answer": "b",
-      "question": "A car initially at20m/s has acceleration a=10−t/2. Determine its maximum speed.",
+      "question": "A car travelling at a speed of 20 m/s is subjected to acceleration a = 10 − t/2. Determine the maximum speed of the car.",
       "options": {
         "a": "200 m/s",
         "b": "120 m/s",
@@ -494,7 +494,7 @@
       "number": 497,
       "status": "verified",
       "answer": "c",
-      "question": "A cylinder of massM and radiusR rolls down an incline of angleθ. Its axis acceleration is(g denotes gravity):",
+      "question": "A cylinder of mass M and radius R rolls down an inclined plane of inclination θ. What is the linear acceleration of the axis of the cylinder? Here g is acceleration due to gravity.",
       "options": {
         "a": "g sinθ",
         "b": "(1/3)g sinθ",
@@ -520,7 +520,7 @@
       "number": 498,
       "status": "disputed",
       "answer": null,
-      "question": "A particle is acted on byF(x)=−k/(2x²) along the positive x-axis. Initially x=1m,v=0. What is its velocity at x=0.5m? k=10⁻²N·m² and mass=10⁻²kg.",
+      "question": "A particle is moving under the influence of a force F(x) = −k/(2x²) along the positive x-axis. At t = 0 it is at x = 1 m and its velocity is v = 0. What would be its velocity when it reaches x = 0.5 m? Here k = 10⁻² N·m² and the mass of the particle is 10⁻² kg.",
       "options": {
         "a": "1 m/s",
         "b": "0",
@@ -556,7 +556,7 @@
       "number": 499,
       "status": "verified",
       "answer": "c",
-      "question": "A tourist travels half his journey by train at60km/h,half the remainder by bus at30km/h,and the rest by cycle at10km/h. His average speed is:",
+      "question": "A tourist covers half of his journey by train at 60 km/h, half of the remainder by bus at 30 km/h and the rest by cycle at 10 km/h. The average speed in km/h during his entire journey is:",
       "options": {
         "a": "36",
         "b": "30",
@@ -582,7 +582,7 @@
       "number": 500,
       "status": "verified",
       "answer": "c",
-      "question": "A body starts from rest with constant acceleration5m/s². Its distance in10s is:",
+      "question": "A body moves from rest with a constant acceleration of 5 m/s². The distance covered in 10 s is most nearly:",
       "options": {
         "a": "200 m",
         "b": "300 m",
@@ -608,7 +608,7 @@
       "number": 501,
       "status": "verified",
       "answer": "d",
-      "question": "Two cars are10km apart and both move at40km/h in the same direction. An opposite car meets them10minutes apart. Its speed is:",
+      "question": "Two cars are 10 km apart and moving in the same direction at 40 km/h. A car moving in the opposite direction meets these cars at an interval of 10 minutes. At what speed is the other car moving?",
       "options": {
         "a": "40 km/h",
         "b": "25 km/h",
@@ -634,7 +634,7 @@
       "number": 502,
       "status": "verified",
       "answer": "b",
-      "question": "A particle has velocity v(t)=t²−2t m/s. Its displacement over0≤t≤3 is:",
+      "question": "Suppose a particle moves on a coordinate line so that its velocity at time t is v(t) = t² − 2t m/s. The displacement during 0 ≤ t ≤ 3 is:",
       "options": {
         "a": "4 m",
         "b": "0 m",
@@ -660,7 +660,7 @@
       "number": 503,
       "status": "verified",
       "answer": "a",
-      "question": "A point moves along y=x²−4 from x=1 to x=3. Its displacement is:",
+      "question": "A point P moves along the path y = x² − 4. What is the displacement when the point moves from x = 1 to x = 3?",
       "options": {
         "a": "8.24 at tan⁻¹(4)°",
         "b": "2 at tan⁻¹(1)°",
@@ -686,7 +686,7 @@
       "number": 504,
       "status": "verified",
       "answer": "d",
-      "question": "An elevator has a mass of5000kg. When tension in its supporting cable is60kN,the acceleration is nearly:",
+      "question": "An elevator has a mass of 5000 kg. When the tension in the supporting cable is 60 kN, the acceleration of the elevator is nearly:",
       "options": {
         "a": "8 m/s²",
         "b": "12 m/s²",
@@ -726,7 +726,7 @@
       "number": 505,
       "status": "corrected",
       "answer": "c",
-      "question": "In1second,a particle moves fromA toB in a semicircle of radius1m as shown. The magnitude of its average velocity is:",
+      "question": "In 1 second, a particle goes from point A to point B, moving in a semicircle as shown in the figure. The magnitude of the average velocity is:",
       "options": {
         "a": "3.14 m/s",
         "b": "1 m/s",
@@ -766,7 +766,7 @@
       "number": 506,
       "status": "verified",
       "answer": "b",
-      "question": "A block slides from rest down a smooth30°incline,taking time t to reach the bottom. An identical body freely dropped from the same point takes:",
+      "question": "A block is made to slide down a smooth inclined plane at 30° to the horizontal. Starting from rest, it takes time t to reach the bottom. An identical body is freely dropped from the same point. The time it takes to reach the bottom is:",
       "options": {
         "a": "t",
         "b": "t/2",
@@ -816,7 +816,7 @@
       "number": 507,
       "status": "verified",
       "answer": "d",
-      "question": "An elevator of mass1000kg attains an upward velocity4m/s in2s with uniform acceleration from rest. The cable tension is(g=9.8m/s²):",
+      "question": "An elevator of mass 1000 kg attains an upward velocity of 4 m/s in 2 s with uniform acceleration from rest. The tension in the supporting cable will be, in newtons, taking g = 9.8 m/s²:",
       "options": {
         "a": "1204 N",
         "b": "9800 N",
@@ -861,7 +861,7 @@
       "number": 508,
       "status": "corrected",
       "answer": "b",
-      "question": "Two cars move in the same direction at45km/h,separated by10km. A car coming oppositely meets them6minutes apart. Its speed is:",
+      "question": "Two cars move in the same direction at 45 km/h, separated by 10 km. A car coming from the opposite direction meets them at an interval of 6 minutes. Its speed would be:",
       "options": {
         "a": "45 km/h",
         "b": "55 km/h",
@@ -887,7 +887,7 @@
       "number": 509,
       "status": "verified",
       "answer": "c",
-      "question": "A particle accelerates from rest atαm/s² then decelerates atβm/s² to rest. If total time between its rest positions is t,its maximum velocity is:",
+      "question": "A particle starts from rest with constant acceleration α m/s² and after some time decelerates uniformly at β m/s² until it comes to rest. If the total time between its rest positions is t, the maximum velocity acquired would be:",
       "options": {
         "a": "[(α+β)/2]t",
         "b": "[(α−β)/2]t",
@@ -940,7 +940,7 @@
       "number": 510,
       "status": "corrected",
       "answer": "d",
-      "question": "A block of mass m is slowly placed on a conveyor moving at speedv. With friction coefficientμ,the block slides on the belt through distance:",
+      "question": "A heavy block of mass m is slowly placed on a conveyor belt moving with speed v. If the coefficient of friction between block and belt is μ, the block will slide on the belt through distance:",
       "options": {
         "a": "v/(μg)",
         "b": "v²/√(μg)",
@@ -971,7 +971,7 @@
       "number": 511,
       "status": "verified",
       "answer": "d",
-      "question": "A car at speedu stops in minimum distancex. If speed becomes n times as large,the minimum stopping distance is:",
+      "question": "A car moving with speed u can be stopped in minimum distance x when brakes are applied. If its speed becomes n times as large, the minimum stopping distance would be:",
       "options": {
         "a": "x/n",
         "b": "nx",
@@ -997,7 +997,7 @@
       "number": 512,
       "status": "verified",
       "answer": "a",
-      "question": "A particle starts at2m/s with constant retardation0.1m/s². The time when it is15m from its starting point is:",
+      "question": "A particle starts with a velocity of 2 m/s and moves on a straight-line track with retardation 0.1 m/s². The time at which it is 15 m from the starting point would be:",
       "options": {
         "a": "10 s",
         "b": "20 s",
@@ -1023,7 +1023,7 @@
       "number": 513,
       "status": "verified",
       "answer": "c",
-      "question": "A stone dropped from a height takes5s to reach ground. If stopped after3s and released again,the total time in air is:",
+      "question": "A stone is released from a certain height and takes 5 seconds to reach the ground. If it is stopped after 3 seconds and then released, the total time it will be in the air is:",
       "options": {
         "a": "14 s",
         "b": "4 s",
@@ -1049,7 +1049,7 @@
       "number": 514,
       "status": "verified",
       "answer": "a",
-      "question": "A ball drops from heightd,bounces to heightd/2,and subsequent motion and air resistance are neglected. Which graph shows velocityv versus heighth?",
+      "question": "A ball is dropped vertically from height d above the ground. It hits the ground and bounces to height d/2. Neglecting subsequent motion and air resistance, its velocity v varies with height h above the ground as shown in which graph?",
       "options": {
         "a": "Graph(a)",
         "b": "Graph(b)",
@@ -1089,7 +1089,7 @@
       "number": 515,
       "status": "verified",
       "answer": "c",
-      "question": "A body follows x=4sin(3t),y=4cos(3t). Its resultant velocity magnitude is:",
+      "question": "The motion of a body on a curved path is given by x = 4 sin(3t) and y = 4 cos(3t). The resultant velocity of the car is:",
       "options": {
         "a": "30 m/s",
         "b": "24 m/s",
@@ -1120,7 +1120,7 @@
       "number": 516,
       "status": "verified",
       "answer": "a",
-      "question": "Linear velocity at angular speedωrad/s and radiusr is:",
+      "question": "The linear velocity of a body rotating at angular speed ω rad/s along a circular path of radius r is:",
       "options": {
         "a": "ωr",
         "b": "ω/r",
@@ -1146,7 +1146,7 @@
       "number": 517,
       "status": "verified",
       "answer": "b",
-      "question": "Time and distance are related by t=2x²+5x. The acceleration at t=12s is:",
+      "question": "The functional relation between time t and distance x, in meters, is t = 2x² + 5x. The acceleration in m/s² at t = 12 s is:",
       "options": {
         "a": "−1/121",
         "b": "−4/1331",
@@ -1172,7 +1172,7 @@
       "number": 518,
       "status": "verified",
       "answer": "c",
-      "question": "Position in rectilinear motion is x=3t³+2t²+4t. In consistent units,the initial velocityv and accelerationa are:",
+      "question": "The time variation of the position of a particle in rectilinear motion is x = 3t³ + 2t² + 4t. If v is velocity and a is acceleration in consistent units, the motion started with:",
       "options": {
         "a": "v=0,a=0",
         "b": "v=0,a=4",
@@ -1199,7 +1199,7 @@
       "number": 519,
       "status": "disputed",
       "answer": null,
-      "question": "A motorist at18km/h brakes to rest after skidding75m. Time to stop is:",
+      "question": "A motorist travelling at 18 km/h suddenly applies the brakes and comes to rest after skidding 75 m. The time required for the car to stop is:",
       "options": {
         "a": "30.25 s",
         "b": "29.94 s",
@@ -1225,7 +1225,7 @@
       "number": 520,
       "status": "verified",
       "answer": "a",
-      "question": "Angular motion of a disc is θ=3t+t³ radians. Its angular position after2seconds is:",
+      "question": "The angular motion of a disc is defined by θ = 3t + t³, where θ is in radians and t is in seconds. What will be the angular position after 2 seconds?",
       "options": {
         "a": "14 rad",
         "b": "12 rad",
@@ -1251,7 +1251,7 @@
       "number": 521,
       "status": "verified",
       "answer": "b",
-      "question": "A particle has x=t³−2t²+10t−4 meters,witht inseconds. Velocity at3s is:",
+      "question": "The position of a particle in rectilinear motion is x = t³ − 2t² + 10t − 4, where x is in meters and t is in seconds. What is its velocity at 3 s?",
       "options": {
         "a": "20 m/s",
         "b": "25 m/s",
@@ -1277,7 +1277,7 @@
       "number": 522,
       "status": "verified",
       "answer": "a",
-      "question": "An object falls from a tower,covering half its height in2s. Its total time to ground is:",
+      "question": "An object falls from the top of a tower. If it comes down half the height in 2 seconds, the time taken to reach the ground is:",
       "options": {
         "a": "2.8 s",
         "b": "3.2 s",
@@ -1303,7 +1303,7 @@
       "number": 523,
       "status": "verified",
       "answer": "b",
-      "question": "CarsA andB both move at15m/s,withB300m ahead. IfA accelerates at6m/s² whileB keeps its speed,A overtakes after:",
+      "question": "Two cars A and B move at 15 m/s in the same direction. Car B is 300 m ahead of car A. If A accelerates at 6 m/s² while B continues at the same velocity, A will overtake B after:",
       "options": {
         "a": "7.5 s",
         "b": "10 s",
@@ -1334,7 +1334,7 @@
       "number": 524,
       "status": "verified",
       "answer": "c",
-      "question": "Two balls drop from a common point1second apart. Withg=10m/s²,their separation3seconds after the first release is:",
+      "question": "Two balls are dropped from a common point at an interval of 1 second. If g = 10 m/s², the separation 3 seconds after release of the first ball will be:",
       "options": {
         "a": "5 m",
         "b": "15 m",
@@ -1360,7 +1360,7 @@
       "number": 525,
       "status": "verified",
       "answer": "d",
-      "question": "The area under an acceleration–time graph represents:",
+      "question": "______ is represented by the area under an acceleration–time graph.",
       "options": {
         "a": "Acceleration",
         "b": "Displacement",
@@ -1400,15 +1400,15 @@
       "number": 526,
       "status": "verified",
       "answer": "a",
-      "question": "The speed of a particle moving in a circular path is600rpm. Its angular velocity is:",
+      "question": "The speed of a particle moving in a circular path is 600 rpm. Its angular velocity is:",
       "options": {
         "a": "20π rad/s",
         "b": "10π rad/s",
         "c": "20/π rad/s",
         "d": "10/π rad/s"
       },
-      "explanation": "Speed of particle=600rpm.\nAngular velocity=2πN/60rad/s\n=2π×600/60rad/s\n=20πrad/s.",
-      "sourceExplanation": "Speed of particle=600rpm.\nAngular velocity=2πN/60rad/s\n=2π×600/60rad/s\n=20πrad/s.",
+      "explanation": "Speed of particle = 600 rpm.\nAngular velocity = 2πN/60 rad/s\n= 2π×600/60 rad/s\n= 20π rad/s.",
+      "sourceExplanation": "Speed of particle = 600 rpm.\nAngular velocity = 2πN/60 rad/s\n= 2π×600/60 rad/s\n= 20π rad/s.",
       "transcriptionReviewed": true,
       "note": "Independently600rpm=10rev/s,soω=20πrad/s.",
       "references": [
@@ -1452,15 +1452,15 @@
       "number": 528,
       "status": "verified",
       "answer": "c",
-      "question": "An object has mass10kg and weighs9.81N on a spring balance. The value ofg at that place is:",
+      "question": "An object has mass 10 kg and weighs 9.81 N on a spring balance. The value of g at that place is:",
       "options": {
         "a": "9.81 m/s²",
         "b": "10 m/s²",
         "c": "0.981 m/s²",
         "d": "98.1 m/s²"
       },
-      "explanation": "Given object mass=10kg.\nSpring-balance weight=9.81N.\nW=mg.\n9.81=10g.\ng=0.981m/s².",
-      "sourceExplanation": "Given object mass=10kg.\nSpring-balance weight=9.81N.\nW=mg.\n9.81=10g.\ng=0.981m/s².",
+      "explanation": "Given object mass = 10 kg.\nSpring-balance weight = 9.81 N.\nW = mg.\n9.81 = 10g.\ng = 0.981 m/s².",
+      "sourceExplanation": "Given object mass = 10 kg.\nSpring-balance weight = 9.81 N.\nW = mg.\n9.81 = 10g.\ng = 0.981 m/s².",
       "transcriptionReviewed": true,
       "note": "Independent weight/mass9.81/10=.981m/s².",
       "references": [
@@ -1478,15 +1478,15 @@
       "number": 529,
       "status": "verified",
       "answer": "d",
-      "question": "A rigid body is replaced by two masses a fixed distance apart. They form an equivalent dynamic system if(select the most appropriate answer):",
+      "question": "A rigid body can be replaced by two masses placed a fixed distance apart. The two masses form an equivalent dynamic system if(select the most appropriate answer):",
       "options": {
-        "a": "Their sum equals the body’s total mass",
-        "b": "Their center of gravity coincides with the body’s",
-        "c": "Their total mass moment of inertia about their center of gravity equals the body’s",
+        "a": "The sum of the two masses equals the total mass of the body",
+        "b": "The center of gravity of the two masses coincides with that of the body",
+        "c": "The sum of the mass moments of inertia of the masses about their center of gravity equals the mass moment of inertia of the body",
         "d": "All of the above"
       },
-      "explanation": "(i) The center of gravity of the two masses coincides with that of the body.\n(ii) The sum of the two masses equals the total mass of the body.\n(iii) The sum of their mass moments of inertia about their center of gravity equals the mass moment of inertia of the body.",
-      "sourceExplanation": "(i) The center of gravity of the two masses coincides with that of the body.\n(ii) The sum of the two masses equals the total mass of the body.\n(iii) The sum of their mass moments of inertia about their center of gravity equals the mass moment of inertia of the body.",
+      "explanation": "(i) The center of gravity of the two masses coincides with that of the body.\n(ii) The sum of the two masses equals the total mass of the body.\n(iii) The sum of the mass moments of inertia of the masses about their center of gravity equals the mass moment of inertia of the body.",
+      "sourceExplanation": "(i) The center of gravity of the two masses coincides with that of the body.\n(ii) The sum of the two masses equals the total mass of the body.\n(iii) The sum of the mass moments of inertia of the masses about their center of gravity equals the mass moment of inertia of the body.",
       "transcriptionReviewed": true,
       "note": "Mass,centroid and centroidal moment of inertia must match in the intended planar dynamic equivalent. Independently checked NPTEL.",
       "references": [
@@ -1504,7 +1504,7 @@
       "number": 530,
       "status": "disputed",
       "answer": null,
-      "question": "If a body falls freely under gravity,the gravitational acceleration is taken as:",
+      "question": "If a body falls freely under gravity, the gravitational acceleration is taken as:",
       "options": {
         "a": "+8.91 m/s²",
         "b": "−8.91 m/s²",
@@ -1512,7 +1512,7 @@
         "d": "−9.81 m/s²"
       },
       "explanation": "Taking downward positive,its acceleration is+9.81m/s².\nWith upward positive,the same acceleration is−9.81m/s². Sign depends on the coordinate convention,not whether the body is falling.",
-      "sourceExplanation": "If the body falls freely under gravity,then the gravitational acceleration is taken as+9.81m/sec².",
+      "sourceExplanation": "If the body falls freely under gravity, then the gravitational acceleration is taken as +9.81 m/sec².",
       "transcriptionReviewed": true,
       "note": "Source keyc assumes downward positive,but stem gives no positive direction. Interpretation-dependent;ungraded.",
       "references": [
@@ -1530,7 +1530,7 @@
       "number": 531,
       "status": "corrected",
       "answer": "c",
-      "question": "What force does a lift floor exert on an80kg passenger when accelerating downward at0.81m/s²?",
+      "question": "How much force will the floor of a lift exert on a passenger of mass 80 kg when the lift accelerates downward at 0.81 m/s²?",
       "options": {
         "a": "740 N",
         "b": "700 N",
@@ -1538,7 +1538,7 @@
         "d": "680 N"
       },
       "explanation": "Floor reactionN=mg−ma=m(g−a)\n=80(9.81−0.81)\n=80×9=720N.",
-      "sourceExplanation": "Fnet=mg−ma=m(g−a)\n=80(9.81−0.81)=80×9=720N.",
+      "sourceExplanation": "Fnet = mg − ma = m(g − a)\n= 80(9.81 − 0.81) = 80 × 9 = 720 N.",
       "transcriptionReviewed": true,
       "note": "Independently720N. Source calls floor reactionFnet,incorrectly conflating reaction and total resultant;label corrected.",
       "references": [
@@ -1556,7 +1556,7 @@
       "number": 532,
       "status": "verified",
       "answer": "e",
-      "question": "If velocity changes from50m/s to200m/s in20seconds,the acceleration is:",
+      "question": "If a body’s velocity changes from 50 m/s to 200 m/s in 20 seconds, its acceleration is:",
       "options": {
         "a": "5.0 m/s²",
         "b": "6.5 m/s²",
@@ -1564,8 +1564,8 @@
         "d": "7.0 m/s²",
         "e": "7.5 m/s²"
       },
-      "explanation": "v1=50m/s,v2=200m/s,t=20s.\nAcceleration is the rate of change in velocity.\na=Δv/Δt=(200−50)/20=150/20.\na=7.5m/s².",
-      "sourceExplanation": "v1=50m/s,v2=200m/s,t=20s.\nAcceleration is the rate of change in velocity.\na=Δv/Δt=(200−50)/20=150/20.\na=7.5m/s².",
+      "explanation": "v1 = 50 m/s, v2 = 200 m/s, t = 20 s.\nAcceleration a is the rate of change in velocity.\na = Δv/Δt = (200 − 50)/20 = 150/20.\na = 7.5 m/s².",
+      "sourceExplanation": "v1 = 50 m/s, v2 = 200 m/s, t = 20 s.\nAcceleration a is the rate of change in velocity.\na = Δv/Δt = (200 − 50)/20 = 150/20.\na = 7.5 m/s².",
       "transcriptionReviewed": true,
       "note": "Independent average acceleration150/20=7.5m/s². All five choices retained. Source finite changedv/dt renderedΔv/Δt.",
       "references": [
@@ -1583,15 +1583,15 @@
       "number": 533,
       "status": "verified",
       "answer": "c",
-      "question": "A1kg particle starts from rest at the origin. Its straight-line force increases linearly at60N/s from40N initially. Its position after5s is:",
+      "question": "A particle of mass 1 kg moves in a straight line under a force which increases linearly with time at 60 N/s, being 40 N initially. If it starts from rest at the origin, its position after 5 s will be:",
       "options": {
         "a": "1250 m",
         "b": "1500 m",
         "c": "1750 m",
         "d": "2000 m"
       },
-      "explanation": "Givenm=1kg,dF/dt=60N/s.\ndF=60dt.\n∫dF=∫60dt.\nF=60t+c.…(1)\nAtt=0,F=40,soc=40.\nFrom(1),F=60t+40.…(2)\nUsing Newton’s second law:\nF=ma=1×a=a.\nFrom(2),a=60t+40.\ndv/dt=60t+40.\ndv=60t dt+40dt.\nIntegrating:\n∫dv=∫60t dt+∫40dt.\nv=60t²/2+40t+c1.…(3)\nAtt=0,v=0,soc1=0.\nThenv=60t²/2+40t,\nords/dt=60t²/2+40t.\nAgain integrating:\n∫ds=∫(60t²/2)dt+∫40t dt.\ns=60t³/6+40t²/2+c2.…(4)\nAtt=0,s=0,soc2=0.\nThens=60t³/6+40t²/2.\nAtt=5s:\ns=60×5³/6+40×5²/2=1750m.",
-      "sourceExplanation": "Givenm=1kg,dF/dt=60N/s.\ndF=60dt.\n∫dF=∫60dt.\nF=60t+c.…(1)\nAtt=0,F=40,soc=40.\nFrom(1),F=60t+40.…(2)\nUsing Newton’s second law:\nF=ma=1×a=a.\nFrom(2),a=60t+40.\ndv/dt=60t+40.\ndv=60t dt+40dt.\nIntegrating:\n∫dv=∫60t dt+∫40dt.\nv=60t²/2+40t+c1.…(3)\nAtt=0,v=0,soc1=0.\nThenv=60t²/2+40t,\nords/dt=60t²/2+40t.\nAgain integrating:\n∫ds=∫(60t²/2)dt+∫40t dt.\ns=60t³/6+40t²/2+c2.…(4)\nAtt=0,s=0,soc2=0.\nThens=60t³/6+40t²/2.\nAtt=5s:\ns=60×5³/6+40×5²/2=1750m.",
+      "explanation": "Given m = 1 kg and dF/dt = 60 N/s.\ndF = 60 dt.\n∫dF = ∫60 dt.\nF = 60t + c. …(1)\nAt t=0, F=40, so c=40.\nFrom(1), F=60t+40. …(2)\nUsing Newton’s second law:\nF = ma = 1×a = a.\nFrom(2), a=60t+40.\ndv/dt = 60t + 40.\ndv = 60t dt + 40 dt.\nIntegrating:\n∫dv = ∫60t dt + ∫40 dt.\nv = 60t²/2 + 40t + c1. …(3)\nAt t=0, v=0, so c1=0.\nThen v = 60t²/2 + 40t,\nor ds/dt = 60t²/2 + 40t.\nAgain integrating:\n∫ds = ∫(60t²/2)dt + ∫40t dt.\ns = 60t³/6 + 40t²/2 + c2. …(4)\nAt t=0, s=0, so c2=0.\nThen s = 60t³/6 + 40t²/2.\nAt t=5s:\ns = 60×5³/6 + 40×5²/2 = 1750m.",
+      "sourceExplanation": "Given m = 1 kg and dF/dt = 60 N/s.\ndF = 60 dt.\n∫dF = ∫60 dt.\nF = 60t + c. …(1)\nAt t=0, F=40, so c=40.\nFrom(1), F=60t+40. …(2)\nUsing Newton’s second law:\nF = ma = 1×a = a.\nFrom(2), a=60t+40.\ndv/dt = 60t + 40.\ndv = 60t dt + 40 dt.\nIntegrating:\n∫dv = ∫60t dt + ∫40 dt.\nv = 60t²/2 + 40t + c1. …(3)\nAt t=0, v=0, so c1=0.\nThen v = 60t²/2 + 40t,\nor ds/dt = 60t²/2 + 40t.\nAgain integrating:\n∫ds = ∫(60t²/2)dt + ∫40t dt.\ns = 60t³/6 + 40t²/2 + c2. …(4)\nAt t=0, s=0, so c2=0.\nThen s = 60t³/6 + 40t²/2.\nAt t=5s:\ns = 60×5³/6 + 40×5²/2 = 1750m.",
       "transcriptionReviewed": true,
       "note": "Independent double integrationv=30t²+40t,x=10t³+20t² gives1750m. All constants and both source-page portions retained.",
       "references": [
@@ -1614,15 +1614,15 @@
       "number": 534,
       "status": "verified",
       "answer": "d",
-      "question": "An elevator accelerates downward at0.1g. A man of weightW transmits what force to its floor?",
+      "question": "An elevator has a downward acceleration of 0.1g. What force is transmitted to its floor by a man of weight W travelling in the elevator?",
       "options": {
         "a": "W",
         "b": "W/10",
         "c": "11W/10",
         "d": "9W/10"
       },
-      "explanation": "Newton’s second law:\nW−T=ma.\nW−T=(W/g)(0.1g)=0.1W.\nT=W−0.1W=0.9W.\nT=9W/10.",
-      "sourceExplanation": "Newton’s second law:\nW−T=ma.\nW−T=(W/g)(0.1g)=0.1W.\nT=W−0.1W=0.9W.\nT=9W/10.",
+      "explanation": "Newton’s second law of motion:\nW − T = ma.\nW − T = (W/g)(0.1g) = 0.1W.\nT = W − 0.1W = 0.9W.\nT = 9W/10.",
+      "sourceExplanation": "Newton’s second law of motion:\nW − T = ma.\nW − T = (W/g)(0.1g) = 0.1W.\nT = W − 0.1W = 0.9W.\nT = 9W/10.",
       "transcriptionReviewed": true,
       "note": "Independent normal force(W/g)(g−.1g)=.9W. Source0.1gm/s² treated dimensionally as0.1g.",
       "references": [
@@ -1654,11 +1654,11 @@
       "number": 535,
       "status": "corrected",
       "answer": "b",
-      "question": "Which statements of D’Alembert’s principle are correct?\n1. Real net external forceF and inertia forceFt together keep the body in fictitious equilibrium.\n2. The motion equation isF+(−ma)=0 and−ma is an inertia force.\n3. It gives a static problem an appearance akin to a dynamic problem.",
+      "question": "Which statements of D’Alembert’s principle are correct?\n1. The net external force F actually acting on a body and inertia force Ft together keep the body in a state of fictitious equilibrium.\n2. The equation of motion may be written F + (−ma) = 0, and the fictitious force −ma is called an inertia force.\n3. It tends to give the solution of a static problem an appearance akin to that of a dynamic problem.",
       "options": {
-        "a": "1 and3 only",
-        "b": "1 and2 only",
-        "c": "2 and3 only",
+        "a": "1 and 3 only",
+        "b": "1 and 2 only",
+        "c": "2 and 3 only",
         "d": "1,2 and3"
       },
       "explanation": "Statements1and2 are correct:adding inertia force−ma to real forceF rewritesF=ma asF−ma=0,fictitious equilibrium.\nStatement3 is reversed. D’Alembert’s principle gives a dynamic problem a static-equilibrium form by adding inertia force. It does not turn a static problem into a dynamic problem.\nCorrect choice(b),1and2only.",
@@ -1685,7 +1685,7 @@
       "number": 536,
       "status": "verified",
       "answer": "a",
-      "question": "A2000kg car descends a5°incline at100km/h. Braking applies constant7kN total road force on its tires. Its stopping distance is:",
+      "question": "A 2000 kg automobile is driven down a 5° inclined plane at 100 km/h. The brakes are applied, causing a constant total braking force, exerted by the road on the tires, of 7 kN. Determine its stopping distance.",
       "options": {
         "a": "146 m",
         "b": "152 m",
@@ -1693,8 +1693,8 @@
         "d": "122.44 m",
         "e": "149.5 m"
       },
-      "explanation": "Givenm=2000kg,θ=5°,\nv1=100km/h=100×5/18=27.78m/s,\nbraking forcefb=7kN=7000N.\nApply work–energy:\nW1–2=(KE)2−(KE)1.\n(2000g sin5°)x−7000x=0−(1/2)mv1².\n−5290x=−771728.4.\nx=145.88≈146m.",
-      "sourceExplanation": "Givenm=2000kg,θ=5°,\nv1=100km/h=100×5/18=27.78m/s,\nbraking forcefb=7kN=7000N.\nApply work–energy:\nW1–2=(KE)2−(KE)1.\n(2000g sin5°)x−7000x=0−(1/2)mv1².\n−5290x=−771728.4.\nx=145.88≈146m.",
+      "explanation": "Given mass m = 2000 kg,\ninclination θ = 5°,\ninitial velocity v1 = 100 km/h = 100×5/18 = 27.78 m/s,\nbraking force fb = 7 kN = 7000 N.\nApply the work–energy principle:\nW1–2 = (KE)2 − (KE)1.\n(2000g sin5°)x − 7000x = 0 − (1/2)mv1².\n−5290x = −771728.4.\nx = 145.88 ≈ 146 m.",
+      "sourceExplanation": "Given mass m = 2000 kg,\ninclination θ = 5°,\ninitial velocity v1 = 100 km/h = 100×5/18 = 27.78 m/s,\nbraking force fb = 7 kN = 7000 N.\nApply the work–energy principle:\nW1–2 = (KE)2 − (KE)1.\n(2000g sin5°)x − 7000x = 0 − (1/2)mv1².\n−5290x = −771728.4.\nx = 145.88 ≈ 146 m.",
       "transcriptionReviewed": true,
       "note": "Independent deceleration≈2.645m/s² gives145.9m. All five choices and work–energy solution retained.",
       "references": [
@@ -1731,7 +1731,7 @@
       "number": 537,
       "status": "verified",
       "answer": "c",
-      "question": "Find the apparent weight of a70kg man in an elevator accelerating upward at2m/s².",
+      "question": "Determine the apparent weight of a 70 kg man in an elevator accelerating upward at 2 m/s².",
       "options": {
         "a": "700 N",
         "b": "686.7 N",
@@ -1739,8 +1739,8 @@
         "d": "560 N",
         "e": "4.67 N"
       },
-      "explanation": "As the elevator has upward acceleration,its resultant force isR−mg upward.\nFrom Newton’s second law:\nFnet=R−mg.\nR−mg=ma.\nR=mg+ma=m(g+a).\nR=70(9.81+2)=826.7N.",
-      "sourceExplanation": "As the elevator has upward acceleration,its resultant force isR−mg upward.\nFrom Newton’s second law:\nFnet=R−mg.\nR−mg=ma.\nR=mg+ma=m(g+a).\nR=70(9.81+2)=826.7N.",
+      "explanation": "As the elevator moves upward with upward acceleration, its resultant force is R−mg upward.\nFrom Newton’s second law:\nFnet = R − mg.\nR − mg = ma.\nR = mg + ma = m(g+a).\nR = 70(9.81+2) = 826.7 N.",
+      "sourceExplanation": "As the elevator moves upward with upward acceleration, its resultant force is R−mg upward.\nFrom Newton’s second law:\nFnet = R − mg.\nR − mg = ma.\nR = mg + ma = m(g+a).\nR = 70(9.81+2) = 826.7 N.",
       "transcriptionReviewed": true,
       "note": "Independent normal70×11.81=826.7N. All five choices and force diagram reconciled.",
       "references": [
@@ -1772,7 +1772,7 @@
       "number": 538,
       "status": "corrected",
       "answer": "b",
-      "question": "Weights50N and100N connect by a light cord over a smooth frictionless pulley. Acceleration and rope tension are respectively:",
+      "question": "Two blocks of weights 50 N and 100 N are connected by a light cord passing over a smooth frictionless pulley. Their acceleration and the rope tension respectively are, with g denoting gravitational acceleration:",
       "options": {
         "a": "g/2,40 N",
         "b": "g/3,66.67 N",
@@ -1781,7 +1781,7 @@
         "e": "g/4,50 N"
       },
       "explanation": "Newton’s second law,50N block up and100N block down:\nT−50=m1a.…(i)\n100−T=m2a.…(ii)\nFrom(i):T−50=(50/g)a.\nT=(50/g)a+50.…(iii)\nFrom(ii):100−T=(100/g)a.\nT=100−(100/g)a.…(iv)\nEquating(iii),(iv):\n(50/g)a+50=100−(100/g)a.\n(150/g)a=50.\na=g/3.\nAdding(iii),(iv):\n2T=150−50a/g=150−50/3.\nT=66.67N.",
-      "sourceExplanation": "Using Newton’s second law of motion.\nIn equilibrium:\nFnet=T−50=m1a.…(i)\n100−T=m2a.…(ii)\nFrom(i):T−50=(50/g)×a.\nT=(50/g)×a+50.…(iii)\nFrom(ii):100−T=(100/g)a.\nT=100−(100/g)a.…(iv)\nEquating(iii),(iv):\n(100/g)a+50=100−(100/g)a.\n(150/g)a=50.\na=g/3.\nSummation(iii),(iv):\n2T−150=50a/g=150−50/3.\nT=66.67.",
+      "sourceExplanation": "Using Newton’s second law of motion.\nIn equilibrium:\nFnet = T−50 = m1a. …(i)\n100−T = m2a. …(ii)\nFrom equation(i):\nT−50 = (50/g)×a.\nT = (50/g)×a + 50. …(iii)\nFrom equation(ii):\n100−T = (100/g)a.\nT = 100−(100/g)a. …(iv)\nEquating equations(iii) and(iv):\n(100/g)a + 50 = 100−(100/g)a.\n(150/g)a = 50.\na = g/3.\nSummation of equations(iii) and(iv):\n2T−150 = 50a/g = 150−50/3.\nT = 66.67.",
       "transcriptionReviewed": true,
       "note": "Independent Atwooda=g(100−50)/150=g/3 andT=2×50×100/150=66.67N. Corrected source coefficient100→50 and missing minus in summed line.",
       "references": [
@@ -1813,7 +1813,7 @@
       "number": 539,
       "status": "corrected",
       "answer": "a",
-      "question": "A150kg car on a horizontal track travels36km/h. Its stopping time withμ=0.45 is:",
+      "question": "A car of mass 150 kg travels on a horizontal track at 36 km/h. The time needed to stop it is ______, taking μ = 0.45.",
       "options": {
         "a": "2.26 s",
         "b": "3.20 s",
@@ -1821,7 +1821,7 @@
         "d": "4.2 s"
       },
       "explanation": "Givenm=150kg,v=36km/h=10m/s,μ=.45.\nFrictionF=μmg=.45×150×9.81=662.175N.\nSuppose stopping distance=d. Kinetic energy is exhausted against friction:\nFd=(1/2)mv².\n662.175d=(1/2)×150×10².\nd=11.326m.\nThen vfinal²=u²−2ad,vfinal=0.\nu²=2ad.\n10²=2a×11.326.\na≈4.4145m/s².\nThenvfinal=u−at:\n10=4.4145t.\nt≈2.265s.",
-      "sourceExplanation": "Givenm=150kg,V=36km/hr=10m/s,μ=.45.\nFriction force=μ×mg.\nF=.45×150×9.81=662.175N.\nSuppose stopping distanced;entire kinetic energy is exhausted into work by friction.\nF×d=(1/2)mv².\n662.175d=(1/2)×150×10².\nd=11.326m.\nv²=u²−2ad,v=0,u²=2ad.\n10²=2a×11.362.\na=4.414m/s².\nv=u−at.\n10=4.414t.\nt=2.2652sec.",
+      "sourceExplanation": "Given m=150kg,V=36km/hr=10m/s,μ=0.45.\nWe know that friction force=μ×mg.\nF=0.45×150×9.81.\nF=662.175N.\nLet’s suppose the car stops after travelling distanced. During this time the entire kinetic energy is exhausted into work done by friction.\nForceF×d=(1/2)mv².\n662.175×d=(1/2)×150×10².\nd=11.326m.\nThen v²=u²−2ad,\nv=0,\nu²=2ad,\n10²=2a×11.362.\na=4.414m/s².\nThen v=u−at,\n10=4.414×t,\nt=2.2652sec.",
       "transcriptionReviewed": true,
       "note": "Independenta=μg=4.4145,t=2.265s. Corrected source’s transposition11.362 to11.326;full energy and kinematic steps retained.",
       "references": [
@@ -1849,7 +1849,7 @@
       "number": 540,
       "status": "corrected",
       "answer": "b",
-      "question": "A car starts from rest and attains100km/h in20s. Its uniform acceleration is:",
+      "question": "A car starts from rest and attains a maximum speed of 100 km/h in 20 seconds. What is its acceleration, assuming it is uniform?",
       "options": {
         "a": "1.0 m/s²",
         "b": "1.4 m/s²",
@@ -1857,7 +1857,7 @@
         "d": "2.0 m/s²"
       },
       "explanation": "Initialu=0.\nFinalv=100km/h=100×5/18=500/18m/s.\nt=20s.\nv=u+at.\na=(v−u)/t=(500/18)/20\n=500/(18×20)≈1.38m/s².",
-      "sourceExplanation": "Initialu=0.\nFinalv=100kmph=100×5/18=500/18m/s.\nt=20sec.\nv=u+at.\na=(v−u)/t=(500/18)/20=500/(18×20)=1.38m/s.",
+      "sourceExplanation": "Initial velocityu=0.\nFinal velocityv=100kmph=100×5/18=500/18m/s.\nTime t=20sec.\nv=u+at.\na=(v−u)/t=(500/18)/20=500/(18×20)=1.38m/s.",
       "transcriptionReviewed": true,
       "note": "Independent1.3889m/s² is nearest1.4. Corrected printed final unitm/s to m/s².",
       "references": [
@@ -1875,15 +1875,15 @@
       "number": 541,
       "status": "verified",
       "answer": "c",
-      "question": "______deals with forces and the resulting motion of bodies on which they act.",
+      "question": "______ deals with the relationship between forces and the resulting motion of bodies on which they act.",
       "options": {
         "a": "Dynamics of elastic bodies",
         "b": "Statics",
         "c": "Kinetics",
         "d": "Theory of plasticity"
       },
-      "explanation": "Kinetics deals with a body’s motion under the forces considered.\nNewton’s second law:F=ma.\nKinematics deals with motion without considering forces causing it.\nIt considers displacement,velocity and acceleration.",
-      "sourceExplanation": "Kinetics deals with a body’s motion under the forces considered.\nNewton’s second law:F=ma.\nKinematics deals with motion without considering forces causing it.\nIt considers displacement,velocity and acceleration.",
+      "explanation": "Kinetics deals with the motion of a body under the action of the forces being considered.\nAccording to Newton’s second law, F=ma.\nKinematics deals with the motion of a body without considering the forces causing it.\nIn kinematics we deal with displacement, velocity and acceleration of a body.",
+      "sourceExplanation": "Kinetics deals with the motion of a body under the action of the forces being considered.\nAccording to Newton’s second law, F=ma.\nKinematics deals with the motion of a body without considering the forces causing it.\nIn kinematics we deal with displacement, velocity and acceleration of a body.",
       "transcriptionReviewed": true,
       "note": "Independently distinguished kinetics(force causes)from kinematics(motion description).",
       "references": [
@@ -1901,15 +1901,15 @@
       "number": 542,
       "status": "verified",
       "answer": "c",
-      "question": "Which is an equation of motion?",
+      "question": "Which of the following is an equation of motion?",
       "options": {
         "a": "v=u+at²",
         "b": "v²−u²=2at",
         "c": "s=ut+(1/2)at²",
         "d": "u=s+at"
       },
-      "explanation": "Constant-acceleration equations:\n(i)v=u+at.\n(ii)s=ut+(1/2)at².\n(iii)v²=u²+2as.\nHereu=initial velocity,v=final velocity,a=acceleration,t=time duration,s=displacement.",
-      "sourceExplanation": "Constant-acceleration equations:\n(i)v=u+at.\n(ii)s=ut+(1/2)at².\n(iii)v²=u²+2as.\nHereu=initial velocity,v=final velocity,a=acceleration,t=time duration,s=displacement.",
+      "explanation": "The constant-acceleration equations of motion are:\n(i) v=u+at.\n(ii) s=ut+(1/2)at².\n(iii) v²=u²+2as.\nHere u=initial velocity,\nv=final velocity,\na=acceleration,\nt=time duration,\ns=displacement.",
+      "sourceExplanation": "The constant-acceleration equations of motion are:\n(i) v=u+at.\n(ii) s=ut+(1/2)at².\n(iii) v²=u²+2as.\nHere u=initial velocity,\nv=final velocity,\na=acceleration,\nt=time duration,\ns=displacement.",
       "transcriptionReviewed": true,
       "note": "Onlyc is valid;others have wrong powers/dimensions. Full list and variable definitions retained.",
       "references": [
@@ -1927,7 +1927,7 @@
       "number": 543,
       "status": "corrected",
       "answer": "d",
-      "question": "A solid disc of radiusr rolls without slip on a horizontal floor,with angular velocityω and accelerationα. The acceleration magnitude of its contact point is:",
+      "question": "A solid disc of radius r rolls without slipping on a horizontal floor with angular velocity ω and angular acceleration α. The magnitude of acceleration of the point of contact on the disc is:",
       "options": {
         "a": "Zero",
         "b": "rα",
@@ -1935,7 +1935,7 @@
         "d": "rω²"
       },
       "explanation": "The center has horizontal accelerationrα. At contact,the relative tangential acceleration is equal and opposite,−rα,so horizontal components cancel.\nThe relative normal accelerationω²r points from contact toward the center,UPWARD.\naA=√[(rα−rα)²+(ω²r)²]=ω²r,upward.\nThe original diagram’s downward arrow is incorrect;see this corrected explanation.",
-      "sourceExplanation": "Acceleration at pointA:\naA=√(aT+ar).\nac=0+ω²r=ω²r.\nThe printed diagram labelsat=0 and shows a downward arrowω²r=ar.",
+      "sourceExplanation": "Acceleration at pointA:\naA=√(aT+ar).\nac=0+ω²r=ω²r.\nThe printed diagram labels at=0 and shows a downward arrowω²r=ar.",
       "transcriptionReviewed": true,
       "note": "Source diagram/formula error:contact material point has accelerationω²r UPWARD despite zero instantaneous velocity. Printed downward arrow and radical lacking squares are incorrect;keyd remains right.",
       "references": [
@@ -1972,15 +1972,15 @@
       "number": 544,
       "status": "corrected",
       "answer": "b",
-      "question": "An attractive central force is inversely proportional to distance from its center. For a circular orbit under it,the period is:",
+      "question": "Consider an attractive force which is central but inversely proportional to the distance from the center. If a particle is in a circular orbit under such a force, its period is:",
       "options": {
-        "a": "Independent of orbital radius",
-        "b": "Proportional to orbital radius",
-        "c": "Proportional to square of orbital radius",
-        "d": "Independent of square of orbital radius"
+        "a": "Independent of the radius of the orbit",
+        "b": "Proportional to the radius of the orbit",
+        "c": "Proportional to the square of the radius of the orbit",
+        "d": "Independent of the square of the radius of the orbit"
       },
       "explanation": "LetF=k/r.\nCircular motion requiresmv²/r=k/r.\nv²=k/m andv=√(k/m),independent ofr.\nPeriodT=2πr/v=2πr√(m/k).\nThusT is proportional to orbital radius,optionb.",
-      "sourceExplanation": "Consider an attractive force which is central but inversely proportional to the distance from the centre. If a particle is in a circular orbit under such a force,its period is proportional to the square of the radius of the orbit.",
+      "sourceExplanation": "Consider an attractive force which is central but inversely proportional to the distance from the centre. If a particle is in a circular orbit under such a force, its period is proportional to the square of the radius of the orbit.",
       "transcriptionReviewed": true,
       "note": "Genuine source error:sourcec claimsT∝r². IndependentlyT²=4π²mr²/k,thereforeT∝r.",
       "references": [
@@ -1998,7 +1998,7 @@
       "number": 545,
       "status": "corrected",
       "answer": "c",
-      "question": "A motorbike accelerates from rest at4m/s² for10s,then decelerates at8m/s² to rest. Total distance is:",
+      "question": "A motorbike starts from rest and accelerates at 4 m/s² for 10 seconds, then decelerates at 8 m/s² until it stops. The total distance travelled is:",
       "options": {
         "a": "100 m",
         "b": "200 m",
@@ -2006,7 +2006,7 @@
         "d": "500 m"
       },
       "explanation": "ForA–B:u=0,a=4m/s²,t=10s.\nv=u+at.\nvB=0+4(10)=40m/s.\nForB–C,initial40m/s,final0,acceleration−8m/s²:\n0=40+(−8)t.\n8t=40.\nt=40/8=5s.\nVelocity–time area gives displacement.\nDistance=(1/2)×10×40+(1/2)×5×40\n=200+100=300m.",
-      "sourceExplanation": "ForA–B:u=0,a=4m/sec²,t=10sec.\nv=u+at.\nvB=0+4(10)=40m/sec.\nForB–C:v=u+at,\nvB=0+4(10)=40m/Sec.\n=v=u+at,\nuC=40m/sec.,vD=0,\nvB=uC+at,a=−8m/sec².\n0=40+(−8)t.\n8t=40.\nt=40/8=5sec.\nArea under velocitytime graph gives displacement.\nArea=Distance=(1/2)×10×(20/40)+(1/2)×5×20×2\n=200+100=300m.",
+      "sourceExplanation": "ForA–B:\nu=0,a=4m/sec²,t=10sec.\nv=u+at.\nvB=0+4(10)=40m/sec.\nForB–C:\nv=u+at,\nvB=0+4(10)=40m/Sec.\n=v=u+at,\nuC=40m/sec.,vD=0,\nvB=uC+at,a=−8m/sec².\n0=40+(−8)t.\n8t=40.\nt=40/8=5sec.\nArea under velocitytime graph gives displacement.\nArea=Distance=(1/2)×10×(20/40)+(1/2)×5×20×2\n=200+100\n=300m.",
       "transcriptionReviewed": true,
       "note": "Independent two phases give200+100=300m. Source area’s20/40 fraction is wrong;corrected triangle height40m/s and confusing velocity labels while retaining original.",
       "references": [
@@ -2038,15 +2038,15 @@
       "number": 546,
       "status": "verified",
       "answer": "b",
-      "question": "Linear accelerationa at radiusr with angular accelerationαrad/s² is:",
+      "question": "The linear acceleration a of a body at radius r with angular acceleration α rad/s² is:",
       "options": {
         "a": "a=α/r",
         "b": "a=αr",
         "c": "a=r/α",
         "d": "a=α²r"
       },
-      "explanation": "Tangential linear accelerationa=rα.\nRadial accelerationar=ω²r,\nwhereω=angular velocity andr=radius.",
-      "sourceExplanation": "Tangential linear accelerationa=rα.\nRadial accelerationar=ω²r,\nwhereω=angular velocity andr=radius.",
+      "explanation": "Tangential linear acceleration a=rα.\nRadial acceleration ar=ω²r,\nwhereω=angular velocity andr=radius.",
+      "sourceExplanation": "Tangential linear acceleration a=rα.\nRadial acceleration ar=ω²r,\nwhereω=angular velocity andr=radius.",
       "transcriptionReviewed": true,
       "note": "Independent derivativev=rω gives tangentiala=rα;nonzeroω also gives radial acceleration as source notes.",
       "references": [
@@ -2064,7 +2064,7 @@
       "number": 547,
       "status": "corrected",
       "answer": "c",
-      "question": "A particle weighs8kgf. Falling from rest under gravity,its momentum at2s is______kgf·s.",
+      "question": "A particle weighs 8 kgf. When it is allowed to fall under gravity from rest, its momentum at t = 2 s would be ______ kgf·s.",
       "options": {
         "a": "2",
         "b": "8",
@@ -2072,7 +2072,7 @@
         "d": "32"
       },
       "explanation": "Using sourceg≈9.81m/s²,8kgf corresponds approximately tom=8kg.\nt=2s.\nv=u+at.\nv=gt=9.81×2=19.62m/s.\nP=mv=8×19.62kg·m/s.\nConvert newton-seconds tokgf·s:\nP≈8×19.62/9.81=16kgf·s.\nEquivalently gravitational impulseWt=8kgf×2s=16kgf·s.",
-      "sourceExplanation": "m=8kg.\nt=2sec.\nv=u+at.\nv=at=9.81×2=19.62m/s.\nP=mv=8×19.62(kgm/s).\nMomentum inkg-sec:\nP=8×19.62(kgm/s)×(1/9.81)(s²/m).\nP=16kg-sec.",
+      "sourceExplanation": "m=8kg.\nt=2sec.\nv=u+at.\nv=at=9.81×2=19.62m/s.\nMomentumP=mv=8×19.62(kgm/s).\nMomentum inkg-sec:\nP=8×19.62(kgm/s)×(1/9.81)(s²/m).\nP=16kg-sec.",
       "transcriptionReviewed": true,
       "note": "Source uses legacy“kgsec”meaningkgf·s,not SIkg·s. Clarified units and intended16;SI momentum≈157kg·m/s. NPL defineskgf=9.80665N.",
       "references": [
@@ -2100,7 +2100,7 @@
       "number": 548,
       "status": "corrected",
       "answer": "b",
-      "question": "A1kg stone tied to a1m string is whirled in a horizontal circle at5rad/s. The string tension is:",
+      "question": "A stone of mass 1 kg is tied to a string of length 1 m and whirled in a horizontal circle at constant angular speed 5 rad/s. The string tension is:",
       "options": {
         "a": "30 N",
         "b": "25 N",
@@ -2140,7 +2140,7 @@
       "number": 549,
       "status": "verified",
       "answer": "c",
-      "question": "Motion of a particle around a fixed axis is called:",
+      "question": "What is the motion of a particle around a fixed axis called?",
       "options": {
         "a": "Translatory",
         "b": "Rotary",
@@ -2166,15 +2166,15 @@
       "number": 550,
       "status": "verified",
       "answer": "d",
-      "question": "A1kg body has displacementy=5t²+2t meters. The force acting on it is:",
+      "question": "A body of mass 1 kg is subjected to a force producing displacement y = 5t² + 2t meters, where t is in seconds. The force acting on the body equals:",
       "options": {
         "a": "2 N",
         "b": "5 N",
         "c": "7 N",
         "d": "10 N"
       },
-      "explanation": "Displacement,velocity,acceleration and force:\ny=5t²+2t.\nẏ=10t+2.\nÿ=10.\nF=mÿ=10N.",
-      "sourceExplanation": "Displacement,velocity,acceleration and force:\ny=5t²+2t.\nẏ=10t+2.\nÿ=10.\nF=mÿ=10N.",
+      "explanation": "Displacement, velocity, acceleration and force:\ny=5t²+2t.\nẏ=10t+2.\nÿ=10.\nF=mÿ=10N.",
+      "sourceExplanation": "Displacement, velocity, acceleration and force:\ny=5t²+2t.\nẏ=10t+2.\nÿ=10.\nF=mÿ=10N.",
       "transcriptionReviewed": true,
       "note": "Independent second derivativea=10m/s²,F=10N.",
       "references": [
@@ -2197,15 +2197,15 @@
       "number": 551,
       "status": "verified",
       "answer": "b",
-      "question": "A straight-line particle has velocityV=2t³−t²+10. Its acceleration at6s is:",
+      "question": "The velocity of a particle moving in a straight line is V = 2t³ − t² + 10. Its acceleration at t = 6 s will be:",
       "options": {
         "a": "406 m/s²",
         "b": "204 m/s²",
         "c": "308 m/s²",
         "d": "23 m/s²"
       },
-      "explanation": "V=2t³−t²+10.\na=dv/dt=6t²−2t.\nAtt=6s:\na=6×6²−2×6=204m/s².",
-      "sourceExplanation": "V=2t³−t²+10.\na=dv/dt=6t²−2t.\nAtt=6s:\na=6×6²−2×6=204m/s².",
+      "explanation": "V=2t³−t²+10.\na=dv/dt=6t²−2t.\nAt t=6s:\na=6×6²−2×6=204m/s².",
+      "sourceExplanation": "V=2t³−t²+10.\na=dv/dt=6t²−2t.\nAt t=6s:\na=6×6²−2×6=204m/s².",
       "transcriptionReviewed": true,
       "note": "Independent216−12=204m/s².",
       "references": [
@@ -2223,7 +2223,7 @@
       "number": 552,
       "status": "verified",
       "answer": "b",
-      "question": "The acceleration component toward the center of curvature is:",
+      "question": "The component of acceleration directed toward the center of curvature when a body moves around a curve is:",
       "options": {
         "a": "Linear acceleration",
         "b": "Normal acceleration",
@@ -2249,15 +2249,15 @@
       "number": 553,
       "status": "verified",
       "answer": "d",
-      "question": "A straight-line particle has displacement s=2t³+4t²−6t+8m. Its acceleration after4s is:",
+      "question": "A particle moves in a straight line with displacement s = 2t³ + 4t² − 6t + 8 meters from a fixed point. Its acceleration after 4 seconds is:",
       "options": {
         "a": "8 m/s²",
         "b": "176 m/s²",
         "c": "122 m/s²",
         "d": "56 m/s²"
       },
-      "explanation": "s=2t³+4t²−6t+8.\nds/dt=6t²+8t−6.\nd²s/dt²=12t+8.\na=d²s/dt².\nAtt=4s,a=12(4)+8=56m/s².",
-      "sourceExplanation": "s=2t³+4t²−6t+8.\nds/dt=6t²+8t−6.\nd²s/dt²=12t+8.\na=d²s/dt².\nAtt=4s,a=12(4)+8=56m/s².",
+      "explanation": "s=2t³+4t²−6t+8.\nds/dt=6t²+8t−6.\nd²s/dt²=12t+8.\nAccelerationa=d²s/dt².\nAt t=4s:\na=12(4)+8=56m/s².",
+      "sourceExplanation": "s=2t³+4t²−6t+8.\nds/dt=6t²+8t−6.\nd²s/dt²=12t+8.\nAccelerationa=d²s/dt².\nAt t=4s:\na=12(4)+8=56m/s².",
       "transcriptionReviewed": true,
       "note": "Independent second derivative12t+8 gives56m/s².",
       "references": [
@@ -2275,15 +2275,15 @@
       "number": 554,
       "status": "verified",
       "answer": "b",
-      "question": "A ship sails north at5m/s,the current carries it east at3m/s,and a sailor climbs a vertical mast at1.5m/s. His absolute velocity magnitude is:",
+      "question": "A ship sails north at 5 m/s. The current carries it east at 3 m/s, and a sailor climbs a vertical mast at 1.5 m/s. What is the sailor’s absolute velocity magnitude?",
       "options": {
         "a": "5.02 m/s",
         "b": "6.02 m/s",
         "c": "9.5 m/s",
         "d": "6.5 m/s"
       },
-      "explanation": "LetR1 be horizontal resultant speed andR absolute speed.\nR=√(R1²+1.5²).…(i)\nR1=√(5²+3²)=√34.\nFrom(i):R=√(34+2.25)\n=√36.25.\nR=6.02m/s.",
-      "sourceExplanation": "LetR1 be horizontal resultant speed andR absolute speed.\nR=√(R1²+1.5²).…(i)\nR1=√(5²+3²)=√34.\nFrom(i):R=√(34+2.25)\n=√36.25.\nR=6.02m/s.",
+      "explanation": "LetR1 be the resultant horizontal speed andR the absolute speed.\nR=√(R1²+1.5²). …(i)\nR1=√(5²+3²)=√34.\nFrom equation(i):\nR=√(34+2.25)\n=√36.25\nR=6.02m/s.",
+      "sourceExplanation": "LetR1 be the resultant horizontal speed andR the absolute speed.\nR=√(R1²+1.5²). …(i)\nR1=√(5²+3²)=√34.\nFrom equation(i):\nR=√(34+2.25)\n=√36.25\nR=6.02m/s.",
       "transcriptionReviewed": true,
       "note": "Three mutually perpendicular components independently give√36.25=6.0208m/s.",
       "references": [
@@ -2315,15 +2315,15 @@
       "number": 555,
       "status": "verified",
       "answer": "b",
-      "question": "Forx=(5/2)t²−20t+10,in meters and seconds,the position at zero velocity is:",
+      "question": "A particle’s motion is x = (5/2)t² − 20t + 10, with x in meters and t in seconds. Its position when velocity is zero is:",
       "options": {
         "a": "30 m",
         "b": "−30 m",
         "c": "−20 m",
         "d": "50 m"
       },
-      "explanation": "Displacement and velocity:\nx=5t²/2−20t+10.\nẋ=5t−20.\nAtzero velocity,0=5t−20.\nt=4s.\nFindx at4:\nx=(5/2)×16−20(4)+10=−30m.",
-      "sourceExplanation": "Displacement and velocity:\nx=5t²/2−20t+10.\nẋ=5t−20.\nAtzero velocity,0=5t−20.\nt=4s.\nFindx at4:\nx=(5/2)×16−20(4)+10=−30m.",
+      "explanation": "Displacement and velocity:\nx=5t²/2−20t+10.\nẋ=5t−20.\nAt zero velocity,0=5t−20,\nso t=4s.\nFindx at t=4:\nx=(5/2)×16−20(4)+10=−30m.",
+      "sourceExplanation": "Displacement and velocity:\nx=5t²/2−20t+10.\nẋ=5t−20.\nAt zero velocity,0=5t−20,\nso t=4s.\nFindx at t=4:\nx=(5/2)×16−20(4)+10=−30m.",
       "transcriptionReviewed": true,
       "note": "Independent zero derivative att4 and position−30m.",
       "references": [
@@ -2341,7 +2341,7 @@
       "number": 556,
       "status": "corrected",
       "answer": "b",
-      "question": "With uniform acceleration,a body covers20m in its4thsecond and30m in its8th. Its distance in the10thsecond is:",
+      "question": "A body moves with uniform acceleration. It covers 20 m in its 4th second and 30 m in its 8th second. The distance travelled in its 10th second is:",
       "options": {
         "a": "24 m",
         "b": "35 m",
@@ -2367,7 +2367,7 @@
       "number": 557,
       "status": "corrected",
       "answer": "c",
-      "question": "A75kg man(weight736N)stands on a scale in an elevator. First3s from rest have cable tension8110N. Total mass is750kg(weight7360N). The scale reading is:",
+      "question": "A 75 kg man(weight 736 N)stands on a spring scale in an elevator. During the first 3 seconds from rest, the hoisting-cable tension is 8110 N. The total mass of elevator, man and scale is 750 kg(weight 7360 N). The scale reading R is:",
       "options": {
         "a": "750 N",
         "b": "1250 N",
@@ -2375,7 +2375,7 @@
         "d": "830 N"
       },
       "explanation": "Givent=3s,u=0,T=8110N.\nFor the entire elevator:\nΣF=ma.\nT−W=750a.\n8110−7360=750a.\na=1m/s²upward.\nv=u+at=0+(1×3)=3m/s.\nFor the man:\nN1−mg=ma.\nN1=ma+mg=m(a+g).\nN1=75(1+9.81)\n=75×10.81\n=810.75N.\nN1≈811N.",
-      "sourceExplanation": "Givent=3sec,u=0,T=8110N.\nΣF=ma.\nT−W=750×a.\n8110−7360=750×a.\na=1m/s².\nNowv=u+at.\nv=0+(1×3).\nv=3m/s².\nFor upward(elevator)motion:\nN1−mg=ma.\nN1=ma+mg=m(a+g).\nN1=75(1+9.81)\n=75×10.81.\nN1=810.75N.\nN1≈811N.",
+      "sourceExplanation": "Given t=3sec,u=0,T=8110N.\nΣF=ma.\nT−W=750×a.\n8110−7360=750×a.\na=1m/s².\nNowv=u+at.\nv=0+(1×3).\nv=3m/s².\nFor upward(elevator)motion:\nN1−mg=ma.\nN1=ma+mg=m(a+g).\nN1=75(1+9.81)\n=75×10.81\nN1=810.75N.\nN1≈811N.",
       "transcriptionReviewed": true,
       "note": "Independenta1 gives apparent weight≈811N. Sourcev=3m/s² corrected to3m/s;its first diagram weight736N should be7360N and is explicitly warned.",
       "references": [
@@ -2425,7 +2425,7 @@
       "number": 558,
       "status": "disputed",
       "answer": null,
-      "question": "A particle slides down a smooth plane18.36√2m long and acquires19.86m/s. Its inclination is:",
+      "question": "A particle sliding down a smooth plane of length 18.36√2 m acquires a velocity of 19.86 m/s. The inclination of the plane is:",
       "options": {
         "a": "30°",
         "b": "60°",
@@ -2433,7 +2433,7 @@
         "d": "75°"
       },
       "explanation": "Assume release from rest as in the sketch.\nv²=u²+2as.\nUsing stemv=19.86m/s ands=18.36√2m:\na=(19.86)²/(2×18.36√2)≈7.595m/s².\nF=ma:mg sinθ=ma.\nsinθ=a/g≈7.595/9.81.\nθ≈50.74°.\nNo listed angle is correct;45°is only nearest.\nThe diagram and first substitution use19.36m/s,conflicting with the stem and later numerator. That alternate value gives47.37°,also not exactly45°.",
-      "sourceExplanation": "Sketch labels length18.63√2m andV=19.36.\nv²=u²+2as.\n(19.36)²=0+2a×18.36√2.\na=(19.86)²/(2×18.36√2).\na=7.59m/s².\nF=ma.\nmg sinθ=ma.\nsinθ=7.59/9.81.\nθ=50.73°.\nNearest option is(c),i.e.45°.",
+      "sourceExplanation": "The sketch labels length18.63√2m and final velocityV=19.36.\nv²=u²+2as.\n(19.36)²=0+2a×18.36√2.\na=(19.86)²/(2×18.36√2).\na=7.59m/s².\nF=ma.\nmg sinθ=ma.\nsinθ=7.59/9.81.\nθ=50.73°.\nNearest option is option(c),i.e.45°.",
       "transcriptionReviewed": true,
       "note": "Disputed contradictory data:stem19.86,diagram19.36 and18.63√2,source calculated50.73°yet chooses45°. Initial rest is also only in its sketch.",
       "references": [
@@ -2470,15 +2470,15 @@
       "number": 559,
       "status": "verified",
       "answer": "c",
-      "question": "For a rigid body in equilibrium,total virtual work of external forces during a virtual displacement is:",
+      "question": "If a rigid body is in equilibrium, the total virtual work of external forces acting on it due to a virtual displacement of the body is:",
       "options": {
         "a": "−∞",
         "b": "1",
         "c": "0",
         "d": "+∞"
       },
-      "explanation": "If forces on a body or system are in equilibrium,and it is imagined to undergo a small displacement compatible with geometric conditions,the algebraic sum of virtual work by all forces iszero.\nThus external forces’ total virtual work on an equilibrium rigid body for a compatible virtual displacement is0.",
-      "sourceExplanation": "If forces on a body or system are in equilibrium,and it is imagined to undergo a small displacement compatible with geometric conditions,the algebraic sum of virtual work by all forces iszero.\nThus external forces’ total virtual work on an equilibrium rigid body for a compatible virtual displacement is0.",
+      "explanation": "If a system of forces acting on a body or system of bodies is in equilibrium,and the system is imagined to undergo a small displacement compatible with the geometric conditions,then the algebraic sum of the virtual work done by all the forces is zero.\nFor a rigid body in equilibrium,the total virtual work of external forces due to a compatible virtual displacement is0.",
+      "sourceExplanation": "If a system of forces acting on a body or system of bodies is in equilibrium,and the system is imagined to undergo a small displacement compatible with the geometric conditions,then the algebraic sum of the virtual work done by all the forces is zero.\nFor a rigid body in equilibrium,the total virtual work of external forces due to a compatible virtual displacement is0.",
       "transcriptionReviewed": true,
       "note": "Independent virtual-work principle;compatibility of the infinitesimal displacement is essential and retained.",
       "references": [
@@ -2496,15 +2496,15 @@
       "number": 560,
       "status": "verified",
       "answer": "c",
-      "question": "A tightly wound watch spring possesses which energy?",
+      "question": "Which type of energy is possessed by a tightly wound watch spring?",
       "options": {
         "a": "Radial energy",
         "b": "Kinetic energy",
         "c": "Strain energy",
         "d": "Circular energy"
       },
-      "explanation": "A wound spring has potential energy. It has no kinetic energy until released and moving. Stored potential energy transfers to the moving parts as kinetic energy when unwound.\nStrain energy is a form of potential energy stored in the material.",
-      "sourceExplanation": "A wound spring has potential energy. It has no kinetic energy until released and moving. Stored potential energy transfers to the moving parts as kinetic energy when unwound.\nStrain energy is a form of potential energy stored in the material.",
+      "explanation": "A wound spring has potential energy. It does not possess kinetic energy until it is released and starts to move. Energy is stored in the spring as potential energy,and when unwound it transfers energy to the moving parts as kinetic energy.\nStrain energy is a form of potential energy stored in the material.",
+      "sourceExplanation": "A wound spring has potential energy. It does not possess kinetic energy until it is released and starts to move. Energy is stored in the spring as potential energy,and when unwound it transfers energy to the moving parts as kinetic energy.\nStrain energy is a form of potential energy stored in the material.",
       "transcriptionReviewed": true,
       "note": "Independent elastic deformation stores strain potential energy;source assumes spring initially stationary.",
       "references": [
@@ -2522,15 +2522,15 @@
       "number": 561,
       "status": "verified",
       "answer": "d",
-      "question": "For mass moment of inertiaI and angular velocityω,the rotational kinetic energy is:",
+      "question": "When a body with mass moment of inertia I about its axis rotates about that axis with angular velocity ω, the kinetic energy of rotation is:",
       "options": {
         "a": "0.5I²ω",
         "b": "2Iω²",
         "c": "Iω²",
         "d": "0.5Iω²"
       },
-      "explanation": "Kinetic energyK=(1/2)mv².\nRotational kinetic energy is due to an object’s rotation and is part of its total kinetic energy. Considering rotation separately about its axis,the energy depends on mass moment of inertia.\nKErotational=(1/2)Iω².\nKErotational=0.5Iω².",
-      "sourceExplanation": "Kinetic energyK=(1/2)mv².\nRotational kinetic energy is due to an object’s rotation and is part of its total kinetic energy. Considering rotation separately about its axis,the energy depends on mass moment of inertia.\nKErotational=(1/2)Iω².\nKErotational=0.5Iω².",
+      "explanation": "Kinetic energyK=(1/2)mv².\nRotational kinetic energy is due to rotation of an object and forms part of its total kinetic energy. Considering rotation separately about an object’s axis,the energy depends on its mass moment of inertia.\nKErotational=(1/2)Iω².\nKErotational=0.5Iω².",
+      "sourceExplanation": "Kinetic energyK=(1/2)mv².\nRotational kinetic energy is due to rotation of an object and forms part of its total kinetic energy. Considering rotation separately about an object’s axis,the energy depends on its mass moment of inertia.\nKErotational=(1/2)Iω².\nKErotational=0.5Iω².",
       "transcriptionReviewed": true,
       "note": "Independent sum.5mi(riω)²=.5Iω². Full comparison/definition paragraph retained.",
       "references": [
@@ -2548,15 +2548,15 @@
       "number": 562,
       "status": "verified",
       "answer": "b",
-      "question": "Particles with masses1:4 have equal kinetic energies. Their momentum magnitude ratio is:",
+      "question": "Two particles with masses in the ratio 1:4 have equal kinetic energies. The ratio of their linear-momentum magnitudes is:",
       "options": {
         "a": "1:8",
         "b": "1:2",
         "c": "√2:1",
         "d": "√2"
       },
-      "explanation": "(1/2)m1v1²=(1/2)m2v2².\nm1/m2=(v2/v1)².\nv2/v1=√(1/4)=1/2.\nP1/P2=(m1v1)/(m2v2)\n=(1/4)×(2/1).\nP1/P2=1/2.",
-      "sourceExplanation": "(1/2)m1v1²=(1/2)m2v2².\nm1/m2=(v2/v1)².\nv2/v1=√(1/4)=1/2.\nP1/P2=(m1v1)/(m2v2)\n=(1/4)×(2/1).\nP1/P2=1/2.",
+      "explanation": "(1/2)m1v1²=(1/2)m2v2².\nm1/m2=(v2/v1)².\nv2/v1=√(1/4)=1/2.\nRatio of momenta:\nP1/P2=(m1v1)/(m2v2)\n=(1/4)×(2/1).\nP1/P2=1/2.",
+      "sourceExplanation": "(1/2)m1v1²=(1/2)m2v2².\nm1/m2=(v2/v1)².\nv2/v1=√(1/4)=1/2.\nRatio of momenta:\nP1/P2=(m1v1)/(m2v2)\n=(1/4)×(2/1).\nP1/P2=1/2.",
       "transcriptionReviewed": true,
       "note": "Independentp=√(2mK)gives1:2. Malformed printed ratiod√2 retained.",
       "references": [
@@ -2579,15 +2579,15 @@
       "number": 563,
       "status": "verified",
       "answer": "a",
-      "question": "A light body and a heavy body have equal kinetic energies. Which has greater momentum?",
+      "question": "If one light body and one heavy body have equal kinetic energies, which has greater momentum?",
       "options": {
         "a": "Heavy body",
         "b": "Light body",
         "c": "Both have equal momentum",
-        "d": "It depends on actual velocities"
+        "d": "It depends on the actual velocities"
       },
-      "explanation": "Kinetic energies are equal:\n(1/2)mlvl²=(1/2)mhvh².\nml/mh=(vh/vl)².\nMomentum ratio:\n(mhvh)/(mlvl)=(mh/ml)(vh/vl)\n=(vl/vh)²(vh/vl)\n=vl/vh\n=√(mh/ml)>1.\nThe heavy body has greater momentum.",
-      "sourceExplanation": "Kinetic energies are equal:\n(1/2)mlvl²=(1/2)mhvh².\nml/mh=(vh/vl)².\nMomentum ratio:\n(mhvh)/(mlvl)=(mh/ml)(vh/vl)\n=(vl/vh)²(vh/vl)\n=vl/vh\n=√(mh/ml)>1.\nThe heavy body has greater momentum.",
+      "explanation": "The kinetic energies are the same:\n(1/2)mlvl²=(1/2)mhvh².\nml/mh=(vh/vl)².\nThe ratio of momenta is\n(mhvh)/(mlvl)=(mh/ml)(vh/vl)\n=(vl/vh)²(vh/vl)\n=vl/vh\n=√(mh/ml)>1.\nSo the heavy body has greater momentum.",
+      "sourceExplanation": "The kinetic energies are the same:\n(1/2)mlvl²=(1/2)mhvh².\nml/mh=(vh/vl)².\nThe ratio of momenta is\n(mhvh)/(mlvl)=(mh/ml)(vh/vl)\n=(vl/vh)²(vh/vl)\n=vl/vh\n=√(mh/ml)>1.\nSo the heavy body has greater momentum.",
       "transcriptionReviewed": true,
       "note": "Independentlyp²=2mK;full ratio derivation andp118 continuation retained.",
       "references": [
@@ -2610,15 +2610,15 @@
       "number": 564,
       "status": "verified",
       "answer": "d",
-      "question": "Wheels of a moving car possess:",
+      "question": "The wheels of a moving car possess:",
       "options": {
         "a": "Potential energy only",
-        "b": "Translational kinetic energy only",
-        "c": "Rotational kinetic energy only",
-        "d": "Both translational and rotational kinetic energy"
+        "b": "Kinetic energy of translation only",
+        "c": "Kinetic energy of rotation only",
+        "d": "Kinetic energy of both translation and rotation"
       },
-      "explanation": "Wheels of a moving car possess kinetic energy of both translation and rotation.",
-      "sourceExplanation": "Wheels of a moving car possess kinetic energy of both translation and rotation.",
+      "explanation": "The wheels of a moving car possess kinetic energy of both translation and rotation.",
+      "sourceExplanation": "The wheels of a moving car possess kinetic energy of both translation and rotation.",
       "transcriptionReviewed": true,
       "note": "IndependentK=.5mvCM²+.5ICMω².",
       "references": [
@@ -2636,15 +2636,15 @@
       "number": 565,
       "status": "verified",
       "answer": "b",
-      "question": "A boy walks up a stopped escalator in90s. The escalator alone carries him up in60s. Walking up while it moves takes:",
+      "question": "A boy walks up a stalled escalator in 90 seconds. When the same escalator moves, he is carried up in 60 seconds. How long would he take to walk up the moving escalator?",
       "options": {
         "a": "48 s",
         "b": "36 s",
         "c": "30 s",
         "d": "24 s"
       },
-      "explanation": "Let escalator length=ℓ.\nBoy’s walking speedvb=ℓ/90.\nEscalator speedve=ℓ/60.\nWhen both occur:\ntime=ℓ/[(ℓ/90)+(ℓ/60)]=36s.",
-      "sourceExplanation": "Let escalator length=ℓ.\nBoy’s walking speedvb=ℓ/90.\nEscalator speedve=ℓ/60.\nWhen both occur:\ntime=ℓ/[(ℓ/90)+(ℓ/60)]=36s.",
+      "explanation": "Letℓ be the escalator length.\nBoy’s walking speedvb=ℓ/90.\nEscalator speedve=ℓ/60.\nWhen both motions occur,\ntime=ℓ/[(ℓ/90)+(ℓ/60)]\n=36s.",
+      "sourceExplanation": "Letℓ be the escalator length.\nBoy’s walking speedvb=ℓ/90.\nEscalator speedve=ℓ/60.\nWhen both motions occur,\ntime=ℓ/[(ℓ/90)+(ℓ/60)]\n=36s.",
       "transcriptionReviewed": true,
       "note": "Independent1/t=1/90+1/60=1/36,assuming unchanged relative walking speed.",
       "references": [
@@ -2662,7 +2662,7 @@
       "number": 566,
       "status": "verified",
       "answer": "a",
-      "question": "Escape velocity at Earth’s surface is:",
+      "question": "The escape velocity at Earth’s surface is:",
       "options": {
         "a": "11.2 km/s",
         "b": "8.2 km/s",
@@ -2688,7 +2688,7 @@
       "number": 567,
       "status": "verified",
       "answer": "b",
-      "question": "Stable equilibrium in a conservative force system with potential energyU requires:",
+      "question": "For a conservative force system with potential energy U, the condition for stable equilibrium is:",
       "options": {
         "a": "δU=0 andδ²U=0",
         "b": "δU=0 andδ²U>0",
@@ -2696,7 +2696,7 @@
         "d": "δU>0 andδ²U=0"
       },
       "explanation": "For potential energyU and displacementx:\nF=−∂U/∂x.\nAt equilibrium,F=−∂U/∂x=0.\nFor a strict stable minimum:\nδU=0 and∂²U/∂x²>0,equivalentlyδ²U>0 for the considered one-dimensional variation.",
-      "sourceExplanation": "Considering potential energyU and displacementx,forceF=−∂U/∂x.\nFor stable equilibrium:\nF=−∂U/∂x=0,\ni.e.δU=0 and∂²U/∂²x>0.",
+      "sourceExplanation": "Considering a potential energyU and a displacementx,the force is given byF=−∂U/∂x.\nFor stable equilibrium:\nF=−∂U/∂x=0,\ni.e.δU=0 and∂²U/∂²x>0.",
       "transcriptionReviewed": true,
       "note": "Independent Taylor expansion yields zero first variation and positive curvature for the intended sufficient criterion. In multiple coordinates second variation must be positive in every admissible direction.",
       "references": [
@@ -2714,7 +2714,7 @@
       "number": 568,
       "status": "disputed",
       "answer": null,
-      "question": "A truck hauls a trailer at40km/h with steady600N pull. If this lasts40minutes,the required power is:",
+      "question": "A truck hauls a trailer at 40 km/h while exerting a steady pull of 600 N. If it does this for 40 minutes, the power required is:",
       "options": {
         "a": "6 kW",
         "b": "4 kW",
@@ -2722,7 +2722,7 @@
         "d": "10 kW"
       },
       "explanation": "Stated speed40km/h=40×5/18=100/9m/s.\nP=Fv=600×100/9\n=6666.67W≈6.667kW.\nThe duration affects total work,not steady power.\nNo listed choice matches6.667kW.\nPrinted solution substitutes60km/h instead of40km/h,incorrectly giving10kW.",
-      "sourceExplanation": "Velocity is given asV=60×5/18=50/3m/sec.\nWe know powerP=F×V=600×50/3.\nP=10000W.\nP=10kW.\nNote:Power is work done per unit time,so it does not matter for how long your haul is it.",
+      "sourceExplanation": "Velocity is given as\nV=60×5/18=50/3m/sec.\nWe know that powerP=F×V=600×50/3.\nP=10000W.\nP=10kW.\nNote:Power is work done per unit time,so it does not matter for how long your haul is it.",
       "transcriptionReviewed": true,
       "note": "Disputed source-data/key mismatch:6.667kW is correct for40km/h;keyd10kW requires60km/h. Do not change source speed silently or treat6kW as exact.",
       "references": [
@@ -2740,7 +2740,7 @@
       "number": 569,
       "status": "corrected",
       "answer": "d",
-      "question": "A uniform thin rod of massM,lengthL,is hinged at its upper end and released horizontally from rest. Tension atL/3 from the hinge when vertical is:",
+      "question": "A thin uniform rod of mass M and length L is hinged at its upper end and released from rest horizontally. The tension at a point L/3 from the hinge when the rod becomes vertical will be:",
       "options": {
         "a": "22Mg/27",
         "b": "11Mg/13",
@@ -2748,7 +2748,7 @@
         "d": "2Mg"
       },
       "explanation": "Whole-rod energy:\n(1/2)Iω²=Mg(L/2).\n(1/2)(ML²/3)ω²=Mg(L/2).\nω=√(3g/L).\nLetT0 be hinge reaction andT internal tension atL/3.\nBelow the cut,massmb=2M/3 and its centerr=2L/3 from the hinge.\nWhen vertical:\nT=mbg+mbv²/r\n=mb(g+rω²)\n=(2M/3)[g+(2L/3)(3g/L)]\n=(2M/3)(g+2g)\n=(2M/3)×3g.\nT=2Mg.",
-      "sourceExplanation": "Taking energy equation:\n(1/2)Iω²=Mg×L/2.\nω²×(1/2)×(ML²/3)=Mg×L/2.\nω=√(3g/L).\nLetT be tension at hinge andT tension atL/3.\nFromFBD:\nT=Mg+Mv²/r\n=M[g+rω²]\n=M[g+(2L/3)×(3g/L)]\n=(2M/3)[g+2g]\n=(2M/3)×3g.\nT=2Mg.",
+      "sourceExplanation": "Taking energy equation,we get\n(1/2)Iω²=Mg×L/2.\nω²×(1/2)×(ML²/3)=Mg×L/2.\nω=√(3g/L).\nLetT be the tension at hinge point andT be the tension atL/3position.\nFromFBD:\nT=Mg+Mv²/r\n=M[g+rω²]\n=M[g+(2L/3)×(3g/L)]\n=(2M/3)[g+2g]\n=(2M/3)×3g.\nT=2Mg.",
       "transcriptionReviewed": true,
       "note": "Independentω²3g/L and lower-segment centripetal acceleration2g giveT2Mg. Corrected ambiguous whole-massM intermediate substitutions and duplicateT labels.",
       "references": [
@@ -2785,7 +2785,7 @@
       "number": 570,
       "status": "verified",
       "answer": "b",
-      "question": "If effort moves distanceD and load moves distanced,the velocity ratio is:",
+      "question": "If D is the distance moved by the effort and d is the distance moved by the load, the velocity ratio is:",
       "options": {
         "a": "d/D",
         "b": "D/d",
@@ -2842,15 +2842,15 @@
       "number": 572,
       "status": "verified",
       "answer": "c",
-      "question": "An electric motor drives a press with flywheel radius of gyration0.5m at250rpm. It punches800holes/hour,each taking1.5s and12000N·m work. Motor energy during one punching operation is:",
+      "question": "An electric motor drives a punching press. A flywheel has radius of gyration 0.5 m and runs at 250 rpm. The press punches 800 holes per hour, each operation taking 1.5 seconds and requiring 12000 N·m of work. The energy delivered by the motor during one punching operation is:",
       "options": {
         "a": "2000 N·m",
         "b": "3000 N·m",
         "c": "4000 N·m",
         "d": "5000 N·m"
       },
-      "explanation": "Actual punching timeta=1.5s.\nCycleTc=4.5s,since800holes/hour means one every4.5s.\nEreq=12000N·m=12000J.\nAverage motor powerPmotor=Ereq/Tc=12000/4.5J/s.\nDuring punching:\nE=Pmotor ta\n=(12000/4.5)×1.5\n=4000J.\nE=4000N·m.",
-      "sourceExplanation": "Actual punching timeta=1.5s.\nCycleTc=4.5s,since800holes/hour means one every4.5s.\nEreq=12000N·m=12000J.\nAverage motor powerPmotor=Ereq/Tc=12000/4.5J/s.\nDuring punching:\nE=Pmotor ta\n=(12000/4.5)×1.5\n=4000J.\nE=4000N·m.",
+      "explanation": "Given actual punching timeta=1.5s.\nCycle timeTc=4.5s,because800holes/hour means one hole every4.5s.\nEnergy requiredEreq=12000N·m=12000J.\nThe motor’s average power is\nPmotor=Ereq/Tc=12000/4.5J/s.\nTherefore the motor energy supplied during punching is\nE=Pmotor ta\n=(12000/4.5)×1.5\n=4000J.\nE=4000N·m.",
+      "sourceExplanation": "Given actual punching timeta=1.5s.\nCycle timeTc=4.5s,because800holes/hour means one hole every4.5s.\nEnergy requiredEreq=12000N·m=12000J.\nThe motor’s average power is\nPmotor=Ereq/Tc=12000/4.5J/s.\nTherefore the motor energy supplied during punching is\nE=Pmotor ta\n=(12000/4.5)×1.5\n=4000J.\nE=4000N·m.",
       "transcriptionReviewed": true,
       "note": "Independent steady-cycle power2666.67W delivers4000J over1.5s;flywheel supplies remainder. Assumes constant motor power;radius andrpm are irrelevant.",
       "references": [
@@ -2868,7 +2868,7 @@
       "number": 573,
       "status": "corrected",
       "answer": "d",
-      "question": "For a conservative force,work done is independent of:",
+      "question": "For a conservative force, the work done is independent of:",
       "options": {
         "a": "Path",
         "b": "Time",
@@ -2894,7 +2894,7 @@
       "number": 574,
       "status": "verified",
       "answer": "a",
-      "question": "Energy possessed by a body for doing work by virtue of position is:",
+      "question": "The energy possessed by a body for doing work by virtue of its position is called:",
       "options": {
         "a": "Potential energy",
         "b": "Kinetic energy",
@@ -2902,7 +2902,7 @@
         "d": "Chemical energy"
       },
       "explanation": "Energy possessed by virtue of position is potential energy.\nPE=mgh.\nKE=(1/2)mv².\nElectrical energy transferred to a resistor at constant currenti for timet:EE=i²Rt.",
-      "sourceExplanation": "Energy possessed by a body for doing work by virtue of position is called Potential energy.\nPE=mgh.\nKE=(1/2)mv².\nEE=i²Rt.",
+      "sourceExplanation": "The energy possessed by a body,for doing work by virtue of its position,is called Potential energy.\nPE=mgh.\nKE=(1/2)mv².\nEE=i²Rt.",
       "transcriptionReviewed": true,
       "note": "Position-dependent energy is potential. All printed comparison formulas preserved,withi²Rt correctly interpreted as resistive transfer.",
       "references": [
@@ -2925,12 +2925,12 @@
       "number": 575,
       "status": "corrected",
       "answer": "d",
-      "question": "BlockA slides down a smooth incline whileB falls freely from the same height. Which is correct?",
+      "question": "Block A slides down a smooth inclined plane while block B is released in free fall from the same height. Which statement is correct?",
       "options": {
-        "a": "Both hit ground simultaneously",
-        "b": "A has greater velocity magnitude on hitting ground",
-        "c": "A hits ground earlier",
-        "d": "B hits ground earlier"
+        "a": "Both hit the ground simultaneously",
+        "b": "Block A has greater velocity magnitude than block B on hitting the ground",
+        "c": "Block A hits the ground earlier",
+        "d": "Block B hits the ground earlier"
       },
       "explanation": "If masses are equal,both initially have equal potential energy. Each losesmgh and reaches speed√(2gh)without friction.\nEqual final speeds do not mean equal travel times.\nFor nonvertical incline angleθ,length=h/sinθ and acceleration=g sinθ.\ntA=√(2h/g)/sinθ.\ntB=√(2h/g).\nFor0<θ<90°,tA>tB.\nThusB hits earlier,choiced.",
       "sourceExplanation": "Initially both blocks have the same potential energy and at the lowest point both blocks have the same kinetic energy in the absence of friction.\nSo both blocks have the same velocity and both hit the ground simultaneously.",
@@ -2961,7 +2961,7 @@
       "number": 576,
       "status": "verified",
       "answer": "c",
-      "question": "A100kg wheel has radius of gyration0.2m. Additional energy when speed rises30rad/s to35rad/s is:",
+      "question": "A wheel has mass 100 kg and radius of gyration 0.2 m. The additional energy stored in it when its speed increases from 30 rad/s to 35 rad/s is:",
       "options": {
         "a": "65 J",
         "b": "650 kJ",
@@ -2969,8 +2969,8 @@
         "d": "65 kJ",
         "e": "65 MJ"
       },
-      "explanation": "Datam=100kg,k=.2m,ω1=30rad/s,ω2=35rad/s.\nAdditional flywheel energy:\nΔE=E2−E1\n=(1/2)Iω2²−(1/2)Iω1²\n=(1/2)mk²(ω2²−ω1²)\n=(1/2)×100×(.2)²×(35−30)(35+30).\nΔE=650J.",
-      "sourceExplanation": "Datam=100kg,k=.2m,ω1=30rad/s,ω2=35rad/s.\nAdditional flywheel energy:\nΔE=E2−E1\n=(1/2)Iω2²−(1/2)Iω1²\n=(1/2)mk²(ω2²−ω1²)\n=(1/2)×100×(.2)²×(35−30)(35+30).\nΔE=650J.",
+      "explanation": "Data:m=100kg,k=0.2m,ω1=30rad/s,ω2=35rad/s.\nAdditional energy stored in the flywheel:\nΔE=E2−E1\n=(1/2)Iω2²−(1/2)Iω1²\n=(1/2)mk²(ω2²−ω1²)\n=(1/2)×100×(0.2)²×(35−30)(35+30).\nΔE=650J.",
+      "sourceExplanation": "Data:m=100kg,k=0.2m,ω1=30rad/s,ω2=35rad/s.\nAdditional energy stored in the flywheel:\nΔE=E2−E1\n=(1/2)Iω2²−(1/2)Iω1²\n=(1/2)mk²(ω2²−ω1²)\n=(1/2)×100×(0.2)²×(35−30)(35+30).\nΔE=650J.",
       "transcriptionReviewed": true,
       "note": "IndependentI4kg·m² andΔE=.5×4×325=650J. All five choices retained.",
       "references": [
@@ -2988,15 +2988,15 @@
       "number": 577,
       "status": "verified",
       "answer": "b",
-      "question": "If a force component and displacement point oppositely,the work done is:",
+      "question": "If a force component and displacement have opposite directions, the work done is:",
       "options": {
         "a": "Positive",
         "b": "Negative",
         "c": "Zero",
         "d": "Both(b)and(c)"
       },
-      "explanation": "If force component and displacement have opposite directions,work is negative.",
-      "sourceExplanation": "If force component and displacement have opposite directions,work is negative.",
+      "explanation": "If the force component and displacement have opposite directions,the work done is negative.",
+      "sourceExplanation": "If the force component and displacement have opposite directions,the work done is negative.",
       "transcriptionReviewed": true,
       "note": "IndependentW=Fs cos180°=−Fs for nonzero quantities.",
       "references": [
@@ -3014,15 +3014,15 @@
       "number": 578,
       "status": "verified",
       "answer": "d",
-      "question": "If a satellite orbits Earth and its kinetic energy is doubled,it:",
+      "question": "If a satellite is orbiting Earth and its kinetic energy is doubled, then it:",
       "options": {
-        "a": "Orbits higher",
+        "a": "Orbits at a higher altitude",
         "b": "Orbits in an ellipse",
         "c": "Falls back to Earth",
-        "d": "Escapes Earth’s pull"
+        "d": "Escapes from Earth’s pull"
       },
-      "explanation": "Let initial kinetic energy=k.\nk=(1/2)mv0²,wherem is satellite mass.\nv0=√(2k/m).\nFor the circular orbit assumed by this solution:\nGMm/r²=mv0²/r,\nv0=√(GM/r).\nEscape speed=√(2GM/r)=√2v0.\nDoubling energyk′=2k gives\nv′=√(2k′/m)\n=√[2(2k)/m]\n=√2√(2k/m)\n=√2v0.\nThe speed equals escape velocity.",
-      "sourceExplanation": "Let initial kinetic energy=k.\nk=(1/2)mv0²,wherem is satellite mass.\nv0=√(2k/m).\nFor the circular orbit assumed by this solution:\nGMm/r²=mv0²/r,\nv0=√(GM/r).\nEscape speed=√(2GM/r)=√2v0.\nDoubling energyk′=2k gives\nv′=√(2k′/m)\n=√[2(2k)/m]\n=√2√(2k/m)\n=√2v0.\nThe speed equals escape velocity.",
+      "explanation": "Let the initial kinetic energy of the satellite bek:\nk=(1/2)mv0²,where m is the satellite mass.\nv0=√(2k/m).\nFor the circular orbit assumed in this solution:\nGMm/r²=mv0²/r,\nso v0=√(GM/r).\nEscape velocity=√(2GM/r)=√2v0.\nWhen kinetic energy is doubled,k′=2k:\nv′=√(2k′/m)\n=√[2(2k)/m]\n=√2√(2k/m)\n=√2v0.\nTherefore doubling the kinetic energy makes the satellite’s speed equal to escape velocity.",
+      "sourceExplanation": "Let the initial kinetic energy of the satellite bek:\nk=(1/2)mv0²,where m is the satellite mass.\nv0=√(2k/m).\nFor the circular orbit assumed in this solution:\nGMm/r²=mv0²/r,\nso v0=√(GM/r).\nEscape velocity=√(2GM/r)=√2v0.\nWhen kinetic energy is doubled,k′=2k:\nv′=√(2k′/m)\n=√[2(2k)/m]\n=√2√(2k/m)\n=√2v0.\nTherefore doubling the kinetic energy makes the satellite’s speed equal to escape velocity.",
       "transcriptionReviewed": true,
       "note": "Independently circular-orbitK=GMm/(2r);doubling gives total energy0. Assumes the printed solution’s initial circular orbit,not an arbitrary ellipse. Full two-page derivation retained.",
       "references": [
@@ -3045,15 +3045,15 @@
       "number": 579,
       "status": "verified",
       "answer": "b",
-      "question": "Dimensions[ML²T⁻³]represent:",
+      "question": "The dimensional formula[ML²T⁻³]represents:",
       "options": {
         "a": "Work",
         "b": "Power",
         "c": "Force",
         "d": "Momentum"
       },
-      "explanation": "Power=Fv\n=M×(L/T²)×(L/T)\n=ML²T⁻³.\nWork:ML²T⁻².\nForce:MLT⁻².\nMomentum:MLT⁻¹.",
-      "sourceExplanation": "Power=Fv\n=M×(L/T²)×(L/T)\n=ML²T⁻³.\nWork:ML²T⁻².\nForce:MLT⁻².\nMomentum:MLT⁻¹.",
+      "explanation": "Dimension of power:\nPower=Fv\n=M×(L/T²)×(L/T)\n=ML²T⁻³.\nWork is dimensionallyML²T⁻².\nForce is dimensionallyMLT⁻².\nMomentum is dimensionallyMLT⁻¹.",
+      "sourceExplanation": "Dimension of power:\nPower=Fv\n=M×(L/T²)×(L/T)\n=ML²T⁻³.\nWork is dimensionallyML²T⁻².\nForce is dimensionallyMLT⁻².\nMomentum is dimensionallyMLT⁻¹.",
       "transcriptionReviewed": true,
       "note": "Independent work/time dimension givespower;all printed comparisons retained.",
       "references": [
@@ -3071,7 +3071,7 @@
       "number": 580,
       "status": "disputed",
       "answer": null,
-      "question": "What input power moves a car on a level road at100km/h against2kN horizontal resistance with overall efficiency85%?",
+      "question": "What power is required to move a car along a level road at 100 km/h against a horizontal resisting force of 2 kN along the line of motion, if overall efficiency is 85%?",
       "options": {
         "a": "100 W",
         "b": "90 W",
@@ -3079,7 +3079,7 @@
         "d": "65.3 W"
       },
       "explanation": "F=2kN.\nV=100km/h=100×5/18=27.7778m/s.\nη=.85.\nη=Fv/Prequired.\nPrequired=(2×27.7778)/.85kW≈65.36kW.\nNo listed choice has the correct magnitude and unit;source notes no option inkW.",
-      "sourceExplanation": "Given resisting force=2kN.\nV=100km/hr=100×5/18=27.77m/sec.\nOverall efficiencyηo=.85.\nηo=F×v/Power required.\nP=(2×27.77)/.85=65.35kW.\nNote:There is no option given inkW.",
+      "sourceExplanation": "Given,resisting force=2kN.\nVelocityV=100km/hr=100×5/18=27.77m/sec.\nOverall efficiencyηo=0.85.\nηo=F×v/Power required.\nPower requiredP=(2×27.77)/0.85=65.35kW.\nNote:There is no option given inkW.",
       "transcriptionReviewed": true,
       "note": "Disputed:source calculation65.35kW is sound butd65.3W is1000times too small;c has energy unitsJ.",
       "references": [
@@ -3097,15 +3097,15 @@
       "number": 581,
       "status": "verified",
       "answer": "b",
-      "question": "A train weighs1200kN and runs at72km/h on a level track. Friction resistance is2%of weight. Engine power is:",
+      "question": "A train of weight 1200 kN is driven by an engine on a level track at constant speed 72 km/h. Resistance due to friction is 2% of the train’s weight. The engine power is:",
       "options": {
         "a": "24 kW",
         "b": "480 kW",
         "c": "72 kW",
         "d": "96 kW"
       },
-      "explanation": "W=1200kN.\nv=72km/h=20m/s.\nResistance=2%ofW.\nPowerP=Ft v\n=μNv\n=.02×1200×20.\nP=480kW.",
-      "sourceExplanation": "W=1200kN.\nv=72km/h=20m/s.\nResistance=2%ofW.\nPowerP=Ft v\n=μNv\n=.02×1200×20.\nP=480kW.",
+      "explanation": "GivenW=1200kN.\nv=72km/h=20m/s.\nResistance due to friction=2%ofW.\nPower of engine:\nP=Ft v\n=μNv\n=0.02×1200×20.\nP=480kW.",
+      "sourceExplanation": "GivenW=1200kN.\nv=72km/h=20m/s.\nResistance due to friction=2%ofW.\nPower of engine:\nP=Ft v\n=μNv\n=0.02×1200×20.\nP=480kW.",
       "transcriptionReviewed": true,
       "note": "Independent24kN×20m/s=480kW;source1200 is inkN,so units consistent.",
       "references": [
@@ -3123,15 +3123,15 @@
       "number": 582,
       "status": "verified",
       "answer": "b",
-      "question": "A0.1kg stone is catapulted as shown. Rubber-band forceFx=300x²N with displacementx in meters. Atx=.1m from unstretchedx=0,stored energy is:",
+      "question": "A 0.1 kg stone is catapulted as shown. The total force Fx(in N)exerted by the rubber band as a function of displacement x(in m)is Fx = 300x². If the stone is displaced 0.1 m from the unstretched position x = 0, the energy stored in the rubber band is:",
       "options": {
         "a": "0.01 J",
         "b": "0.1 J",
         "c": "1 J",
         "d": "10 J"
       },
-      "explanation": "Stored energy=work to place the stone.\nU=∫Fx dx\n=∫(0to.1)300x²dx\n=300[x³/3](0to.1)\n=300[(.1)³/3−0].\nU=.1J.",
-      "sourceExplanation": "Stored energy=work to place the stone.\nU=∫Fx dx\n=∫(0to.1)300x²dx\n=300[x³/3](0to.1)\n=300[(.1)³/3−0].\nU=.1J.",
+      "explanation": "Energy stored in the rubber band equals the work done to place the stone.\nU=∫Fx dx\n=∫(0to0.1)300x²dx\n=300[x³/3](0to0.1)\n=300[(0.1)³/3−0].\nU=0.1J.",
+      "sourceExplanation": "Energy stored in the rubber band equals the work done to place the stone.\nU=∫Fx dx\n=∫(0to0.1)300x²dx\n=300[x³/3](0to0.1)\n=300[(0.1)³/3−0].\nU=0.1J.",
       "transcriptionReviewed": true,
       "note": "Independent force integration gives.1J;stone mass irrelevant to stored energy.",
       "references": [
@@ -3168,15 +3168,15 @@
       "number": 583,
       "status": "verified",
       "answer": "b",
-      "question": "Solid and hollow cylinders of the same mass roll down an incline simultaneously. Which is correct?",
+      "question": "A solid cylinder and a hollow cylinder of the same mass roll down an inclined plane simultaneously. Which statement is correct?",
       "options": {
-        "a": "Hollow reaches first",
-        "b": "Solid reaches first",
-        "c": "Both reach together",
+        "a": "The hollow cylinder reaches the ground first",
+        "b": "The solid cylinder reaches the ground first",
+        "c": "Both reach the ground at the same time",
         "d": "Unpredictable"
       },
-      "explanation": "Time to bottom:\nt=√{2ℓ[1+k²/R²]/(g sinθ)}.\nℓ=incline length.\nFor solid cylinder,k²=R²/2.\nFor thin hollow cylinder,k²=R².\nHence solid reaches bottom first.",
-      "sourceExplanation": "Time to bottom:\nt=√{2ℓ[1+k²/R²]/(g sinθ)}.\nℓ=incline length.\nFor solid cylinder,k²=R²/2.\nFor thin hollow cylinder,k²=R².\nHence solid reaches bottom first.",
+      "explanation": "Time taken to reach the bottom of the inclined plane is\n t=√{2ℓ[1+k²/R²]/(g sinθ)}.\nHereℓ is the length of the inclined plane.\nFor a solid cylinder,k²=R²/2.\nFor a thin hollow cylinder,k²=R².\nHence the solid cylinder reaches the bottom first.",
+      "sourceExplanation": "Time taken to reach the bottom of the inclined plane is\n t=√{2ℓ[1+k²/R²]/(g sinθ)}.\nHereℓ is the length of the inclined plane.\nFor a solid cylinder,k²=R²/2.\nFor a thin hollow cylinder,k²=R².\nHence the solid cylinder reaches the bottom first.",
       "transcriptionReviewed": true,
       "note": "Independent accelerations2g sinθ/3 andg sinθ/2 give solid first,assuming same release and rolling without slip.",
       "references": [
@@ -3194,12 +3194,12 @@
       "number": 584,
       "status": "disputed",
       "answer": null,
-      "question": "Conservation of mechanical energy is valid:",
+      "question": "The law of conservation of mechanical energy is valid:",
       "options": {
-        "a": "Irrespective of force field",
-        "b": "Only in gravity",
-        "c": "Only if the total work done by the particle moving around a closed trajectory[printed option incomplete]",
-        "d": "Only if force is tangential to trajectory"
+        "a": "Irrespective of the nature of the force field",
+        "b": "Only in a gravitational field",
+        "c": "Only if the total work done by the particle in moving around a closed trajectory[the printed option is incomplete]",
+        "d": "Only if the force is tangential to the trajectory"
       },
       "explanation": "Mechanical energyE=K+U obeysΔE=Wnonconservative.\nIt is conserved when net nonconservative work iszero,e.g.only conservative forces do work.\nForce-field nature matters;gravity is not the only conservative force. Tangential force alone does not ensure conservation.\nOptionc is unfinished and omits closed-path work“is zero”;none of the complete printed choices is correct.",
       "sourceExplanation": "The law of conservation of mechanical energy is valid irrespective of the nature of the force field.",
@@ -3220,15 +3220,15 @@
       "number": 585,
       "status": "verified",
       "answer": "d",
-      "question": "Ten watts equals:",
+      "question": "Ten watts is equal to:",
       "options": {
         "a": "10 N·m/h",
         "b": "1 N/mt",
         "c": "15 kN·m/h",
         "d": "10 N·m/s"
       },
-      "explanation": "1watt=1J/s=1N·m/s,since1J=1N·m.\nThus10watts=10N·m/s.",
-      "sourceExplanation": "1watt=1J/s=1N·m/s,since1J=1N·m.\nThus10watts=10N·m/s.",
+      "explanation": "We know1watt=1J/s=1N·m/s,since1J=1N·m.\nTherefore10watt=10N·m/s.",
+      "sourceExplanation": "We know1watt=1J/s=1N·m/s,since1J=1N·m.\nTherefore10watt=10N·m/s.",
       "transcriptionReviewed": true,
       "note": "Independent SI conversion;legacy printedmt notation inb retained.",
       "references": [
@@ -3246,7 +3246,7 @@
       "number": 586,
       "status": "corrected",
       "answer": "b",
-      "question": "A system in equilibrium has position depending on many independent variables. By virtual work,partial derivatives of total potential energy with respect to each are:",
+      "question": "If a system is in equilibrium and its position depends on many independent variables, the principle of virtual work states that the partial derivative of its total potential energy with respect to each independent variable must be:",
       "options": {
         "a": "−1.0",
         "b": "0",
@@ -3254,7 +3254,7 @@
         "d": "∞"
       },
       "explanation": "Let total potentialΠ(q1,q2,…,qn),with independent generalized coordinatesq.\nFor a conservative equilibrium system:\nδΠ=Σi(∂Π/∂qi)δqi=0.\nIndependent admissible variations imply\n∂Π/∂qi=0 for everyi.\nThis is stationarity at equilibrium,not globally constant potential energy.",
-      "sourceExplanation": "Total potential energy=(Independent variable).\nHence for a system in equilibrium:\nTotalPE=Constant.\nThus the partial derivative of totalPE with respect to each independent variable must be zero.",
+      "sourceExplanation": "Total potential energy=(Independent variable).\nHence for a system in equilibrium:\nTotalPE=Constant.\nThus the partial derivative of its totalPE with respect to each independent variable must be zero.",
       "transcriptionReviewed": true,
       "note": "Independent virtual-work expansion yields zero first partials. Source“TotalPE=Constant”confuses stationarity and global constancy;corrected while retaining original.",
       "references": [
@@ -3308,7 +3308,7 @@
       "number": 588,
       "status": "corrected",
       "answer": "b",
-      "question": "Rate of doing work is:",
+      "question": "The rate of doing work is known as:",
       "options": {
         "a": "Potential energy",
         "b": "Power",
@@ -3339,7 +3339,7 @@
       "number": 589,
       "status": "corrected",
       "answer": "b",
-      "question": "The expressionmv²/2,wherem is mass andv velocity,denotes:",
+      "question": "The expression mv²/2, where m is mass and v is velocity, denotes:",
       "options": {
         "a": "Centrifugal force",
         "b": "Kinetic energy",
@@ -3370,7 +3370,7 @@
       "number": 590,
       "status": "corrected",
       "answer": "a",
-      "question": "During free fall,the work done by gravity is:",
+      "question": "When a body is freely falling, the work done by gravity is:",
       "options": {
         "a": "Positive",
         "b": "Negative",
@@ -3378,7 +3378,7 @@
         "d": "Infinite"
       },
       "explanation": "Gravity and downward free-fall displacement both point down.\nW=F·s=mgy>0 for downward distancey>0.\nSo work ispositive.\nThe source’s horizontal gravity arrow is incorrect;gravity actually points vertically downward.",
-      "sourceExplanation": "As gravity acts downward,the work done by gravity ispositive.\nWork=m×g×y.\nSo work ispositive.",
+      "sourceExplanation": "As the gravity force acts in a downward direction,the work done by force of gravity is positive.\nWork=m×g×y.\nSo,the work is positive.",
       "transcriptionReviewed": true,
       "note": "Independent aligned force/displacement makes workpositive. Source horizontal force arrow explicitly warned,not shown unannotated.",
       "references": [
@@ -3415,15 +3415,15 @@
       "number": 591,
       "status": "verified",
       "answer": "b",
-      "question": "A sphere,solid cylinder and hollow cylinder of identical masses roll down one incline without sliding. Which arrives first?",
+      "question": "A sphere, a solid cylinder and a hollow cylinder, all of identical masses, roll down the same inclined plane without sliding. Which reaches the bottom first?",
       "options": {
         "a": "Solid cylinder",
         "b": "Sphere",
         "c": "Hollow cylinder",
         "d": "All simultaneously"
       },
-      "explanation": "Let bottom velocityV and angular velocityω.\nEnergy conservation:\nmgh=(1/2)Iω²+(1/2)mV².\nUsingω=V/r:\nmgh=(1/2)I(V²/r²)+(1/2)mV².\nV=√{mgh/[I/(2r²)+m/2]}.\nFor equal radius and mass,the largest inertiaI gives least velocity and last arrival.\nSolid cylinder/discI=(1/2)mr².\nThin hollow cylinder/ringI=mr².\nSolid sphereI=(2/5)mr².\nThin hollow sphereI=(2/3)mr².\nSolid sphere has leastI/(mr²),so arrives first.",
-      "sourceExplanation": "Let bottom velocityV and angular velocityω.\nEnergy conservation:\nmgh=(1/2)Iω²+(1/2)mV².\nUsingω=V/r:\nmgh=(1/2)I(V²/r²)+(1/2)mV².\nV=√{mgh/[I/(2r²)+m/2]}.\nFor equal radius and mass,the largest inertiaI gives least velocity and last arrival.\nSolid cylinder/discI=(1/2)mr².\nThin hollow cylinder/ringI=mr².\nSolid sphereI=(2/5)mr².\nThin hollow sphereI=(2/3)mr².\nSolid sphere has leastI/(mr²),so arrives first.",
+      "explanation": "Let the bottom speed beV and angular velocityω.\nFrom energy conservation:\nmgh=(1/2)Iω²+(1/2)mV².\nUsingω=V/r:\nmgh=(1/2)I(V²/r²)+(1/2)mV².\nV=√{mgh/[I/(2r²)+m/2]}.\nFor the same radius and mass,the body with the greatest mass moment of inertiaI has the least final velocity and reaches the bottom last.\nMass moment of inertia of a solid cylinder or disc=(1/2)mr².\nMass moment of inertia of a thin hollow cylinder or ring=mr².\nMass moment of inertia of a solid sphere=(2/5)mr².\nMass moment of inertia of a thin hollow sphere=(2/3)mr².\nThe solid sphere has the smallestI/(mr²),so it reaches the bottom first.",
+      "sourceExplanation": "Let the bottom speed beV and angular velocityω.\nFrom energy conservation:\nmgh=(1/2)Iω²+(1/2)mV².\nUsingω=V/r:\nmgh=(1/2)I(V²/r²)+(1/2)mV².\nV=√{mgh/[I/(2r²)+m/2]}.\nFor the same radius and mass,the body with the greatest mass moment of inertiaI has the least final velocity and reaches the bottom last.\nMass moment of inertia of a solid cylinder or disc=(1/2)mr².\nMass moment of inertia of a thin hollow cylinder or ring=mr².\nMass moment of inertia of a solid sphere=(2/5)mr².\nMass moment of inertia of a thin hollow sphere=(2/3)mr².\nThe solid sphere has the smallestI/(mr²),so it reaches the bottom first.",
       "transcriptionReviewed": true,
       "note": "Source sphere means uniform solid. Independent accelerations5g sinθ/7,2g sinθ/3,g sinθ/2 give sphere first. Full energy derivation and all four moments retained.",
       "references": [
@@ -3460,7 +3460,7 @@
       "number": 592,
       "status": "disputed",
       "answer": null,
-      "question": "A particle starts with velocityV0. Its straight-line retarding force isK times distance travelled. Its stopping distance is:",
+      "question": "A particle moves along a straight line with initial velocity V0. If its retarding force is K times the distance travelled, the distance before it comes to rest is:",
       "options": {
         "a": "2V0/K",
         "b": "2V0/√K",
@@ -3468,7 +3468,7 @@
         "d": "V0/√K"
       },
       "explanation": "Let massm and forceF=−Kx.\nWork–energy:\n0−(1/2)mV0²=∫(0tox)(−Ks)ds=−Kx²/2.\n(1/2)mV0²=Kx²/2.\nx=V0√(m/K).\nOptiond,V0/√K,requires unstatedm=1kg.\nIt would also hold ifK described retardation per distance instead of force per distance,but that is not the printed wording.",
-      "sourceExplanation": "F=−kx(Restoring force).\nKinetic energy=work done by force.\n−(1/2)mV0²=−∫(0tox)kx dx.\n(1/2)mV0²=kx²/2.\nx=V0√(m/k).\nx=V0/√k,form=1kg.",
+      "sourceExplanation": "F=−kx(Restoring force).\nKinetic energy=work done by force.\n−(1/2)mV0²=−∫(0to x)kx dx.\n(1/2)mV0²=kx²/2.\nx=V0√(m/k).\nx=V0/√k,for m=1kg.",
       "transcriptionReviewed": true,
       "note": "Disputed:mass is required. Source derivesV0√(m/K),then arbitrarily setsm1kg;no general choice valid.",
       "references": [
@@ -3493,13 +3493,13 @@
       "answer": "a",
       "question": "When is work said to be done?",
       "options": {
-        "a": "Force acts and body undergoes displacement",
-        "b": "Force acts but no displacement occurs",
-        "c": "No force but body undergoes displacement",
+        "a": "When a force acts on a body and the body undergoes displacement",
+        "b": "When a force acts on a body and the body undergoes no displacement",
+        "c": "When there is no force but the body undergoes displacement",
         "d": "None of these"
       },
       "explanation": "Work is associated with force acting while displacement occurs.\nFor constant force,W=F·d=Fd cosθ.\nWhen parallel in the same direction,this reduces to\nWork=Force×displacement,\nW=F×d.\nNonzero work also needs nonzero force component along displacement;perpendicular force does zero work.",
-      "sourceExplanation": "Work is said to be done when a force acts on a body and the body undergoes displacement.\nWork=Force×displacement.\nW=F×d.",
+      "sourceExplanation": "Work is said to be done when a force acts on a body and the body undergoes a displacement.\nWork=Force×displacement.\nW=F×d.",
       "transcriptionReviewed": true,
       "note": "Optiona gives intended condition. Corrected unrestricted sourceW=F×d by giving aligned-force condition and general dot product.",
       "references": [
@@ -3517,15 +3517,15 @@
       "number": 594,
       "status": "disputed",
       "answer": null,
-      "question": "Total energy possessed by a system of moving bodies is:",
+      "question": "The total energy possessed by a system of moving bodies is:",
       "options": {
-        "a": "Variable with direction of movement",
+        "a": "Variable according to the direction of movement",
         "b": "Constant at any point in time",
-        "c": "Hyperbolically decreasing with time",
+        "c": "Hyperbolically decreasing over time",
         "d": "None of these"
       },
       "explanation": "For an isolated system,total energy is conserved,so b then applies.\nMechanical energy is kinetic plus potential energy:motion plus stored configuration energy. It is constant only when net nonconservative work iszero.\nThe stem specifies neither isolation nor whether total or mechanical energy is meant. External work/heat changes nonisolated energy;friction converts mechanical to internal energy.\nThusb does not follow unconditionally. The source’s commissionb-or-d note reflects ambiguity.",
-      "sourceExplanation": "Total energy possessed by a system of moving bodies is constant at any point in time. Total mechanical energy is energy possessed due to motion or stored energy of position. Total mechanical energy is the sum of these two forms.\nNote:The commission gives right answer(b or d),but actual correct answer is(b).",
+      "sourceExplanation": "The total energy possessed by a system of moving bodies is constant at any point in time. Total mechanical energy is the energy possessed by an object due to either its motion or its stored energy of position. The total amount of mechanical energy is merely the sum of these two forms of energy.\nNote:The commission gives right answer option(b or d),but the actual correct answer is option(b).",
       "transcriptionReviewed": true,
       "note": "Disputed:source treats mechanical energy as unconditionally constant and omits isolation/no-transfer conditions. Commissionb-or-d note retained;no unique grade.",
       "references": [
@@ -3543,15 +3543,15 @@
       "number": 595,
       "status": "verified",
       "answer": "b",
-      "question": "A planet orbits the Sun in a circle of circumferencec. Work by the Sun’s gravitational forceF is:",
+      "question": "A planet moves around the Sun in a circular orbit of circumference c. The work done on it by the Sun’s gravitational force F is:",
       "options": {
         "a": "F/c",
         "b": "Zero",
         "c": "Fc/2",
         "d": "Fc"
       },
-      "explanation": "Instantaneous displacement in a circular orbit is tangential;force is radial.\nForceF and displacementds are perpendicular.\ndW=F ds cosθ,withθ=90°.\nW=0.",
-      "sourceExplanation": "Instantaneous displacement in a circular orbit is tangential;force is radial.\nForceF and displacementds are perpendicular.\ndW=F ds cosθ,withθ=90°.\nW=0.",
+      "explanation": "The planet moves in a circular orbit,so its instantaneous displacement is tangential. The force acts radially.\nForceF and displacementds are perpendicular.\nWorkdW=F ds cosθ,whereθ=90°.\nThereforeW=0.",
+      "sourceExplanation": "The planet moves in a circular orbit,so its instantaneous displacement is tangential. The force acts radially.\nForceF and displacementds are perpendicular.\nWorkdW=F ds cosθ,whereθ=90°.\nThereforeW=0.",
       "transcriptionReviewed": true,
       "note": "IndependentF·v=0 throughout,so integrated gravitational workzero.",
       "references": [
@@ -3574,15 +3574,15 @@
       "number": 596,
       "status": "verified",
       "answer": "c",
-      "question": "An annular disc of massm has inner radiusR and outer2R. Rolling without slip at center speedv,its kinetic energy is:",
+      "question": "An annular disc has mass m, inner radius R and outer radius 2R. It rolls on a flat surface without slipping. If its center-of-mass speed is v, the disc’s kinetic energy is:",
       "options": {
         "a": "(9/6)mv²",
         "b": "(11/16)mv²",
         "c": "(13/16)mv²",
         "d": "(15/16)mv²"
       },
-      "explanation": "Centroidal inertiaIc=(1/2)m(2R)²+(1/2)mR²\n=(5/2)mR².\nAbout contactP,parallel-axis:\nIp=Ic+m(2R)²\n=(5/2)mR²+4mR²\n=(13/2)mR².\nP is instantaneous rotation center,withω=v/(2R).\nKinetic energy=(1/2)Ipω²\n=(1/2)×(13/2)mR²×[v/(2R)]²\n=(13/16)mv².",
-      "sourceExplanation": "Centroidal inertiaIc=(1/2)m(2R)²+(1/2)mR²\n=(5/2)mR².\nAbout contactP,parallel-axis:\nIp=Ic+m(2R)²\n=(5/2)mR²+4mR²\n=(13/2)mR².\nP is instantaneous rotation center,withω=v/(2R).\nKinetic energy=(1/2)Ipω²\n=(1/2)×(13/2)mR²×[v/(2R)]²\n=(13/16)mv².",
+      "explanation": "Centroidal moment of inertia:\nIc=(1/2)m(2R)²+(1/2)mR²\n=(5/2)mR².\nBy the parallel-axis theorem,to the contact pointP:\nIp=Ic+m(2R)²\n=(5/2)mR²+4mR²\n=(13/2)mR².\nPointP can be considered the instantaneous center of rotation,with angular velocityω=v/(2R).\nKinetic energy=(1/2)Ipω²\n=(1/2)×(13/2)mR²×[v/(2R)]²\n=(13/16)mv².",
+      "sourceExplanation": "Centroidal moment of inertia:\nIc=(1/2)m(2R)²+(1/2)mR²\n=(5/2)mR².\nBy the parallel-axis theorem,to the contact pointP:\nIp=Ic+m(2R)²\n=(5/2)mR²+4mR²\n=(13/2)mR².\nPointP can be considered the instantaneous center of rotation,with angular velocityω=v/(2R).\nKinetic energy=(1/2)Ipω²\n=(1/2)×(13/2)mR²×[v/(2R)]²\n=(13/16)mv².",
       "transcriptionReviewed": true,
       "note": "Independent translational plus rotational energy gives13mv²/16. All source inertia,parallel-axis and speed steps checked.",
       "references": [
@@ -3619,15 +3619,15 @@
       "number": 597,
       "status": "verified",
       "answer": "a",
-      "question": "Two metallic blocks of mass ratio2:3 slide from rest down a frictionless incline. At bottom,their kinetic-energy ratio is:",
+      "question": "Two metallic blocks with masses in the ratio 2:3 slide down a frictionless inclined plane from rest. When they reach the bottom, their kinetic energies are in the ratio:",
       "options": {
         "a": "2:3",
         "b": "3:5",
         "c": "3:2",
         "d": "7:4"
       },
-      "explanation": "Letm1:m2=2:3.\nm1/m2=2/3.\nFor m1,E1=(1/2)m1v².\nFor m2,E2=(1/2)m2v².\nE1/E2=[(1/2)m1v²]/[(1/2)m2v²]\n=m1/m2=2/3.",
-      "sourceExplanation": "Letm1:m2=2:3.\nm1/m2=2/3.\nFor m1,E1=(1/2)m1v².\nFor m2,E2=(1/2)m2v².\nE1/E2=[(1/2)m1v²]/[(1/2)m2v²]\n=m1/m2=2/3.",
+      "explanation": "Let the two block masses bem1:m2=2:3.\nm1/m2=2/3.\nFor massm1:\nE1=(1/2)m1v².\nFor massm2:\nE2=(1/2)m2v².\nE1/E2=[(1/2)m1v²]/[(1/2)m2v²]\n=m1/m2=2/3.",
+      "sourceExplanation": "Let the two block masses bem1:m2=2:3.\nm1/m2=2/3.\nFor massm1:\nE1=(1/2)m1v².\nFor massm2:\nE2=(1/2)m2v².\nE1/E2=[(1/2)m1v²]/[(1/2)m2v²]\n=m1/m2=2/3.",
       "transcriptionReviewed": true,
       "note": "Same height gives commonv=√(2gh),soK=mgh and ratio2:3.",
       "references": [
@@ -3645,15 +3645,15 @@
       "number": 598,
       "status": "verified",
       "answer": "d",
-      "question": "A650g block attaches to a65N/m spring fixed at the other end. It is pulled11cm from equilibrium on a smooth surface and released at t=0. Maximum speed is:",
+      "question": "A 650 g block is attached to a spring of stiffness 65 N/m with the other end fixed. On a smooth surface, the block is pulled 11 cm from equilibrium x = 0 and released from rest at t = 0. Its maximum speed is:",
       "options": {
         "a": "11 cm/s",
         "b": "11 m/s",
         "c": "11 mm/s",
         "d": "1.1 m/s"
       },
-      "explanation": "Maximum speed occurs atx=0,when total initial spring energy becomes kinetic energy of the mass.\n(1/2)kx²=(1/2)mv².\n(1/2)×65×(.11)²=(1/2)×.650×v².\nv=1.1m/s.",
-      "sourceExplanation": "Maximum speed occurs atx=0,when total initial spring energy becomes kinetic energy of the mass.\n(1/2)kx²=(1/2)mv².\n(1/2)×65×(.11)²=(1/2)×.650×v².\nv=1.1m/s.",
+      "explanation": "Maximum speed occurs atx=0,when all initial spring potential energy has become kinetic energy of the mass.\n(1/2)kx²=(1/2)mv².\n(1/2)×65×(0.11)²=(1/2)×0.650×v².\nv=1.1m/s.",
+      "sourceExplanation": "Maximum speed occurs atx=0,when all initial spring potential energy has become kinetic energy of the mass.\n(1/2)kx²=(1/2)mv².\n(1/2)×65×(0.11)²=(1/2)×0.650×v².\nv=1.1m/s.",
       "transcriptionReviewed": true,
       "note": "IndependentA√(k/m)=.11√100=1.1m/s. Source“speed of spring”clarified as block speed.",
       "references": [
@@ -3683,8 +3683,8 @@
         "c": "Joule/second",
         "d": "Watt/second"
       },
-      "explanation": "SI energy unit isjoule.\nEnergy may be defined as capacity to do work. It exists in forms such as mechanical,electrical,chemical,heat and light. Here the main concern is mechanical energy.",
-      "sourceExplanation": "SI energy unit isjoule.\nEnergy may be defined as capacity to do work. It exists in forms such as mechanical,electrical,chemical,heat and light. Here the main concern is mechanical energy.",
+      "explanation": "The SI unit of energy is the joule.\nEnergy may be defined as the capacity to do work. It exists in many forms,e.g.mechanical,electrical,chemical,heat and light. Here the main concern is mechanical energy.",
+      "sourceExplanation": "The SI unit of energy is the joule.\nEnergy may be defined as the capacity to do work. It exists in many forms,e.g.mechanical,electrical,chemical,heat and light. Here the main concern is mechanical energy.",
       "transcriptionReviewed": true,
       "note": "Independentenergy/work unitJ=N·m;W andJ/s are power,W/s is power change per time. Full forms-of-energy paragraph retained.",
       "references": [
@@ -3707,15 +3707,15 @@
       "number": 600,
       "status": "verified",
       "answer": "c",
-      "question": "A circular disc rolls down an incline without slip. Its rotational-to-total kinetic-energy ratio is:",
+      "question": "A circular disc rolls down an inclined plane without slipping. The ratio of its rotational kinetic energy to total kinetic energy is:",
       "options": {
         "a": "1/4",
         "b": "1/2",
         "c": "1/3",
         "d": "2/3"
       },
-      "explanation": "Total kinetic energy=(1/2)Iω²+(1/2)mv².\nRotational kinetic energy=(1/2)Iω².\nUniform circular discI=(1/2)mR².\nUsingv=Rω:\nTotal kinetic energy\n=(1/2)×(1/2)mR²×ω²+(1/2)m(Rω)²\n=(1/4)mR²ω²+(1/2)mR²ω²\n=(3/4)mR²ω².\nRotational kinetic energy\n=(1/2)[mR²/2]ω²\n=(1/4)mR²ω².\nRatio=[(1/4)mR²ω²]/[(1/4)mR²ω²+(1/2)mR²ω²]\n=1/3.",
-      "sourceExplanation": "Total kinetic energy=(1/2)Iω²+(1/2)mv².\nRotational kinetic energy=(1/2)Iω².\nUniform circular discI=(1/2)mR².\nUsingv=Rω:\nTotal kinetic energy\n=(1/2)×(1/2)mR²×ω²+(1/2)m(Rω)²\n=(1/4)mR²ω²+(1/2)mR²ω²\n=(3/4)mR²ω².\nRotational kinetic energy\n=(1/2)[mR²/2]ω²\n=(1/4)mR²ω².\nRatio=[(1/4)mR²ω²]/[(1/4)mR²ω²+(1/2)mR²ω²]\n=1/3.",
+      "explanation": "Total kinetic energy=(1/2)Iω²+(1/2)mv².\nRotational kinetic energy=(1/2)Iω².\nFor a uniform circular disc,I=(1/2)mR².\nUsingv=Rω:\nTotal kinetic energy\n=(1/2)×(1/2)mR²×ω²+(1/2)m(Rω)²\n=(1/4)mR²ω²+(1/2)mR²ω²\n=(3/4)mR²ω².\nRotational kinetic energy\n=(1/2)[mR²/2]ω²\n=(1/4)mR²ω².\nTherefore the rotational-to-total energy ratio is\n[(1/4)mR²ω²]/[(1/4)mR²ω²+(1/2)mR²ω²]\n=1/3.",
+      "sourceExplanation": "Total kinetic energy=(1/2)Iω²+(1/2)mv².\nRotational kinetic energy=(1/2)Iω².\nFor a uniform circular disc,I=(1/2)mR².\nUsingv=Rω:\nTotal kinetic energy\n=(1/2)×(1/2)mR²×ω²+(1/2)m(Rω)²\n=(1/4)mR²ω²+(1/2)mR²ω²\n=(3/4)mR²ω².\nRotational kinetic energy\n=(1/2)[mR²/2]ω²\n=(1/4)mR²ω².\nTherefore the rotational-to-total energy ratio is\n[(1/4)mR²ω²]/[(1/4)mR²ω²+(1/2)mR²ω²]\n=1/3.",
       "transcriptionReviewed": true,
       "note": "IndependentI/(I+mR²)=.5/1.5=1/3. All source lines and four fractional choices retained as text.",
       "references": [
@@ -4015,6 +4015,9 @@
       538,
       576
     ],
-    "recovery": "Restored from the prior completed review commands after workspace pruning;reattached PDF SHA256 is identical:7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0."
+    "recovery": "Restored from the prior completed review commands after workspace pruning;reattached PDF SHA256 is identical:7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0.",
+    "independentVerification": "Recovered the completed independent mechanics review and full visually reconciled question,all choices and complete source explanation from prior write commands. Each assigned item was originally checked by mechanics definition,force balance,vector geometry,calculus or energy calculation. Reattached PDF SHA256 exactly matches the original reviewed PDF.",
+    "sourceExplanationCharacters": 23184,
+    "recoveryComplete": true
   }
 }
