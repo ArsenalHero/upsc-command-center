@@ -1,0 +1,38 @@
+[
+  {
+    "file": "GEO1.txt",
+    "sha256": "f30ab86b4b29e6796bad3536faa606ee575bc5611d578c851336d3f3312da0a7",
+    "bytes": 135395,
+    "questions": 101
+  },
+  {
+    "file": "GEO2.txt",
+    "sha256": "82a03df218b4205bb34a960e58d5fd616d93a6f6f7b3282474fbfc87db34601c",
+    "bytes": 175610,
+    "questions": 120
+  },
+  {
+    "file": "GEO3.txt",
+    "sha256": "71bcb4aa6ab9c9c4bb6dd720685ffd0f171da6fb08e5dbabaa56b0c6b330bfe2",
+    "bytes": 63258,
+    "questions": 44
+  },
+  {
+    "file": "GEO4.txt",
+    "sha256": "f38d3af0eedd6efc1401186785ab64bfe49433b6c570a31fa7220ebbf3ba80de",
+    "bytes": 329372,
+    "questions": 189
+  },
+  {
+    "file": "GEO6(1).txt",
+    "sha256": "5f8a160fed402a663097c506fc36f0e603d23915cdc3f43260c18359daa0f8f9",
+    "bytes": 759568,
+    "questions": 202
+  },
+  {
+    "file": "GEO7(3).txt",
+    "sha256": "2486f660aba1fb6adfe713d100b913b06b250d00859060105a6e7cdc4b2d1711",
+    "bytes": 653365,
+    "questions": 197
+  }
+]

@@ -1,0 +1,4073 @@
+{
+  "scope": "Only the selected Engineering Mechanics PDF, printed pages 15–156. Other PDFs are excluded.",
+  "source": {
+    "file": "MECH AE 01 FULL 35000-15-156.pdf",
+    "aliases": [
+      "MECH AE 01 FULL 35000-15-156(2).pdf"
+    ],
+    "sha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0",
+    "pages": 142,
+    "firstPrintedPage": 15,
+    "lastPrintedPage": 156
+  },
+  "questions": 807,
+  "expectedQuestions": 807,
+  "missingNumbers": [],
+  "independentlyExamined": 807,
+  "fullyTranscribed": 807,
+  "missingIndependentReview": [],
+  "reviewCounts": {
+    "verified": 579,
+    "corrected": 142,
+    "disputed": 86,
+    "needs-review": 0
+  },
+  "transcriptionNeedsReview": [],
+  "conflictingReviewNotes": [],
+  "shortenedExplanationChecks": [],
+  "diagrams": 387,
+  "method": "Every question and complete adjacent explanation is visually reconciled across columns/pages. Independent mechanics reasoning, numerical calculations and primary references support reviews. Confirmed source defects remain ungraded.",
+  "issues": [
+    {
+      "question": 13,
+      "id": "mech-engineering-mechanics-17-13",
+      "printedPage": 17,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 14,
+      "id": "mech-engineering-mechanics-17-14",
+      "printedPage": 17,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Statically Equivalent Systems",
+          "url": "https://engineeringstatics.org/statically-equivalent-systems.html"
+        }
+      ]
+    },
+    {
+      "question": 18,
+      "id": "mech-engineering-mechanics-18-18",
+      "printedPage": 18,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 20,
+      "id": "mech-engineering-mechanics-18-20",
+      "printedPage": 18,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "BIPM: Resolution8 of the20th CGPM(1995)",
+          "url": "https://www.bipm.org/en/committees/cg/cgpm/20-1995/resolution-8"
+        }
+      ]
+    },
+    {
+      "question": 21,
+      "id": "mech-engineering-mechanics-18-21",
+      "printedPage": 18,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "BIPM: Resolution8 of the20th CGPM(1995)",
+          "url": "https://www.bipm.org/en/committees/cg/cgpm/20-1995/resolution-8"
+        }
+      ]
+    },
+    {
+      "question": 23,
+      "id": "mech-engineering-mechanics-19-23",
+      "printedPage": 19,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 28,
+      "id": "mech-engineering-mechanics-19-28",
+      "printedPage": 19,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 31,
+      "id": "mech-engineering-mechanics-20-31",
+      "printedPage": 20,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 34,
+      "id": "mech-engineering-mechanics-20-34",
+      "printedPage": 20,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 35,
+      "id": "mech-engineering-mechanics-21-35",
+      "printedPage": 21,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 39,
+      "id": "mech-engineering-mechanics-21-39",
+      "printedPage": 21,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 40,
+      "id": "mech-engineering-mechanics-21-40",
+      "printedPage": 21,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 44,
+      "id": "mech-engineering-mechanics-22-44",
+      "printedPage": 22,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "NIST Guide to SI: Conversion factors by kind of quantity",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9",
+          "section": "Mass: slug to kilogram"
+        }
+      ]
+    },
+    {
+      "question": 50,
+      "id": "mech-engineering-mechanics-23-50",
+      "printedPage": 23,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 54,
+      "id": "mech-engineering-mechanics-24-54",
+      "printedPage": 24,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 59,
+      "id": "mech-engineering-mechanics-25-59",
+      "printedPage": 25,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Statically Equivalent Systems",
+          "url": "https://engineeringstatics.org/statically-equivalent-systems.html"
+        }
+      ]
+    },
+    {
+      "question": 61,
+      "id": "mech-engineering-mechanics-25-61",
+      "printedPage": 25,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 64,
+      "id": "mech-engineering-mechanics-26-64",
+      "printedPage": 26,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 73,
+      "id": "mech-engineering-mechanics-27-73",
+      "printedPage": 27,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 76,
+      "id": "mech-engineering-mechanics-28-76",
+      "printedPage": 28,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 81,
+      "id": "mech-engineering-mechanics-29-81",
+      "printedPage": 29,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 87,
+      "id": "mech-engineering-mechanics-30-87",
+      "printedPage": 30,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 92,
+      "id": "mech-engineering-mechanics-31-92",
+      "printedPage": 31,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 101,
+      "id": "mech-engineering-mechanics-32-101",
+      "printedPage": 32,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 108,
+      "id": "mech-engineering-mechanics-34-108",
+      "printedPage": 34,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 109,
+      "id": "mech-engineering-mechanics-35-109",
+      "printedPage": 35,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Restored original known-force contradiction and 215.6 N choice. Disputed, answer: null. The 216.506 N result appears only in the reviewed explanation.",
+      "references": [
+        {
+          "title": "Engineering Statics: Forces and Other Vectors",
+          "url": "https://engineeringstatics.org/Chapter_02-vectors.html",
+          "section": "Force resultants and vector components"
+        }
+      ]
+    },
+    {
+      "question": 110,
+      "id": "mech-engineering-mechanics-35-110",
+      "printedPage": 35,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 111,
+      "id": "mech-engineering-mechanics-35-111",
+      "printedPage": 35,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Statically Equivalent Systems",
+          "url": "https://engineeringstatics.org/statically-equivalent-systems.html"
+        }
+      ]
+    },
+    {
+      "question": 116,
+      "id": "mech-engineering-mechanics-36-116",
+      "printedPage": 36,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "Engineering Statics: Statically Equivalent Systems",
+          "url": "https://engineeringstatics.org/statically-equivalent-systems.html"
+        }
+      ]
+    },
+    {
+      "question": 117,
+      "id": "mech-engineering-mechanics-36-117",
+      "printedPage": 36,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Classical Mechanics online textbook",
+          "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/",
+          "section": "Newton’s laws and equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 127,
+      "id": "mech-engineering-mechanics-39-127",
+      "printedPage": 39,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Answer (b) is correct. The source definition incorrectly calls escape velocity the maximum velocity; it is the minimum escape speed. All supplied derivation steps are preserved with this definition corrected.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy",
+          "section": "13.3 Escape speed"
+        }
+      ]
+    },
+    {
+      "question": 131,
+      "id": "mech-engineering-mechanics-40-131",
+      "printedPage": 40,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "The source adds equal 135° angles only in its solution figure. The stem provides no symmetry or inclination condition; Q/P is free, so no unique listed answer can be graded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "question": 134,
+      "id": "mech-engineering-mechanics-40-134",
+      "printedPage": 40,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Five choices restored. Answer (c) is correct; the source final direction line prints 9.99/8.66 = 1.732, which is false. It must be ΣV/ΣH = 8.66/5. Complete component derivation retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "question": 143,
+      "id": "mech-engineering-mechanics-42-143",
+      "printedPage": 42,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Answer (b) is correct. The printed derivation treats resultant F as an equilibrating force, obtains negative components, then discards the sign. The complete relation is corrected by using −F in equilibrium (or the force triangle); all original steps are preserved separately.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        },
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "question": 145,
+      "id": "mech-engineering-mechanics-42-145",
+      "printedPage": 42,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "The scan confirms that choices (b) and (c) are identical and both correct. Source key (b) cannot support a unique-choice grade.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "question": 147,
+      "id": "mech-engineering-mechanics-42-147",
+      "printedPage": 42,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Source answer (c) is correct. The source intermediate tensions labelled kg are actually kgf, and one intermediate sine value is misprinted as 0.860 before the next line uses 0.866. Units and that typo are corrected; every supplied calculation step is retained.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "question": 152,
+      "id": "mech-engineering-mechanics-43-152",
+      "printedPage": 43,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Source (b) is the minimal independent set, but (a) is also a valid equilibrium condition. Because the stem does not request the independent/minimal set, a unique grade would penalize a mathematically correct choice.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "question": 153,
+      "id": "mech-engineering-mechanics-43-153",
+      "printedPage": 43,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Confirmed genuine source-key error: the book prints (d), although both (b) and (c) explicitly violate equilibrium. None of the choices states the required simultaneous zero force and moment.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        }
+      ]
+    },
+    {
+      "question": 154,
+      "id": "mech-engineering-mechanics-43-154",
+      "printedPage": 43,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Answer (c) is correct. The printed solution incorrectly writes ΣH = 0 and ΣV = 0 immediately before finding nonzero components. Those false zero equalities are removed; the complete component and magnitude calculation is preserved.",
+      "references": [
+        {
+          "title": "Engineering Statics: Vector Addition",
+          "url": "https://engineeringstatics.org/vector_algebra_2D.html",
+          "section": "Parallelogram rule and force components"
+        }
+      ]
+    },
+    {
+      "question": 156,
+      "id": "mech-engineering-mechanics-44-156",
+      "printedPage": 44,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Source answer (d) is correct for the rest-to-4 m/s motion assumed by its solution. The printed kinematic lines v = u − at and u = 2a are inconsistent; corrected to v = u + at and 4 = 2a. The printed “upward force, v” is velocity. All force calculation steps are retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "question": 174,
+      "id": "mech-engineering-mechanics-46-174",
+      "printedPage": 46,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "c",
+      "note": "Definite source-key error: printed (a) is rod extension, while the requested displacement of B is extension/sin30° = 2.46 mm, option (c). The complete printed computation is retained separately; the correction adds rigid-beam displacement compatibility.",
+      "references": [
+        {
+          "title": "Engineering Statics: Equations of Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05-equations-of-equilibrium.html",
+          "section": "Force and moment equilibrium in two and three dimensions"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/12-3-stress-strain-and-elastic-modulus",
+          "section": "12.3 Axial elongation ΔL = FL/(AY)"
+        }
+      ]
+    },
+    {
+      "question": 178,
+      "id": "mech-engineering-mechanics-47-178",
+      "printedPage": 47,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Answer (c) is correct. Source language describes the cross product as force and distance, which reverses the correct ordered vector formula. The correction explicitly uses r × F and distinguishes axis torque from force direction; the complete printed explanation is preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "question": 187,
+      "id": "mech-engineering-mechanics-48-187",
+      "printedPage": 48,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "The scan confirms an incomplete printed sentence, not an OCR loss. Its explanation supplies “remains unchanged”, which would make (a) correct; the unfinished question is not uniquely gradable.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ]
+    },
+    {
+      "question": 189,
+      "id": "mech-engineering-mechanics-48-189",
+      "printedPage": 48,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "The source assumes equal opposite forces without saying they are equal. Unlike parallel forces need not form a couple, so the claimed reference-independent constant moment is not generally true.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        },
+        {
+          "title": "Engineering Statics: Equivalent Transformations",
+          "url": "https://engineeringstatics.org/equivalent-tranformations.html",
+          "section": "Equivalent force-couple systems"
+        }
+      ]
+    },
+    {
+      "question": 192,
+      "id": "mech-engineering-mechanics-49-192",
+      "printedPage": 49,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "The source choice (b) reads “the algebraic sum of the force, constituting the couple, about any point is same”. The missing word “moments” is corrected explicitly; with that correction, its key (d) is sound.",
+      "references": [
+        {
+          "title": "Engineering Statics: Couples",
+          "url": "https://engineeringstatics.org/Chapter_04-couples.html",
+          "section": "Equal and opposite noncollinear forces and couple moments"
+        }
+      ]
+    },
+    {
+      "question": 195,
+      "id": "mech-engineering-mechanics-49-195",
+      "printedPage": 49,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Moment of a force and torque are synonymous here, so both (a) and (c) describe the turning effect. The printed answer (a) is not unique.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "question": 200,
+      "id": "mech-engineering-mechanics-49-200",
+      "printedPage": 49,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "The source confuses actual self-adjusting static friction with its limiting value. The literal “always greater” claim and its key (c) are invalid; a revised question about limiting static friction would have the intended answer.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "question": 202,
+      "id": "mech-engineering-mechanics-50-202",
+      "printedPage": 50,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "The rolling-resistance coefficient is given as0.3 without units or definition. The printed0.5N requires a resistance length0.3mm; a dimensionless coefficient0.3 gives150N instead.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 206,
+      "id": "mech-engineering-mechanics-51-206",
+      "printedPage": 51,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Wall friction opposes downward sliding of the upper end and acts upward. The printed final sentence instead says towards the wall. An unrestrained ladder under weight alone cannot be static on a perfectly smooth floor.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 207,
+      "id": "mech-engineering-mechanics-51-207",
+      "printedPage": 51,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "The printed245.25N assumes a horizontal force. With direction unrestricted, the least upward pull is about237.93N at tanθ=μ; no listed value matches that minimum.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 208,
+      "id": "mech-engineering-mechanics-51-208",
+      "printedPage": 51,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Using the source’sg=10m/s² approximation, motion begins at2.4s. Integratinga=2.5t−4 gives6.4m/s. The printed integral has+4, while the subsequent evaluation correctly uses−4.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 211,
+      "id": "mech-engineering-mechanics-52-211",
+      "printedPage": 52,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "The source’s own capstan and beam-equilibrium calculation gives109.03N(g=9.81), or111.14N(g=10). None matches the offered100.7N or another choice.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 212,
+      "id": "mech-engineering-mechanics-53-212",
+      "printedPage": 53,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Withg=9.81,N≈224.79N and kinetic friction44.96N down the plane, matching45N. The source usesg=10 and obtains46.6N; its direction is correct but the approximation does not give the listed number.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 213,
+      "id": "mech-engineering-mechanics-53-213",
+      "printedPage": 53,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "For a uniform solid sphere, the limiting coefficient is(2/7)tanθ, including equality. The printed strict condition is the intended threshold. A hollow or nonuniform sphere has a different inertia.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 214,
+      "id": "mech-engineering-mechanics-53-214",
+      "printedPage": 53,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "The stem gives a100N pull but also says impending motion. Actual static friction is100N at rest; limiting friction at impending slip is500N. These conditions are inconsistent.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 218,
+      "id": "mech-engineering-mechanics-54-218",
+      "printedPage": 54,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "The capstan equation givesμmin=ln3/π≈0.3497. The source uses masses3m andm as tensions instead of3mg andmg;g cancels in the ratio,so the answer is unchanged.",
+      "references": [
+        {
+          "title": "IIT Kanpur / NPTEL: Engineering Mechanics — Friction",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture7/7_1.htm",
+          "section": "Static, kinetic and limiting friction; inclined-plane equilibrium"
+        },
+        {
+          "title": "University of Almería: Machine and Mechanism Theory — Friction Forces",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Coulomb friction, rolling resistance and normal reactions"
+        }
+      ]
+    },
+    {
+      "question": 220,
+      "id": "mech-engineering-mechanics-55-220",
+      "printedPage": 55,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "For a steady full cycle travelling4A against constant frictionμN,the energy loss is4μNA. The additional printed claim of periodic free motion needs qualification because amplitudes decrease.",
+      "references": [
+        {
+          "title": "IIT Bombay / NPTEL: Systems with Coulomb Damping",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112101096/Mod%2010/Lect4/10.4_1.html",
+          "section": "Dry-friction model and amplitude decay"
+        },
+        {
+          "title": "Victoria University: Mechanical Vibrations",
+          "url": "https://www.staff.vu.edu.au/vrouillard/Mechanical%20Vibrations%20WEB/Mechanical%20Vibrations.pdf",
+          "section": "Coulomb-damping energy loss per cycle"
+        }
+      ]
+    },
+    {
+      "question": 223,
+      "id": "mech-engineering-mechanics-55-223",
+      "printedPage": 55,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Source key (d) identifies the intended choice, but its 57.76 m is inconsistent with the correct printed calculation 57.67 m (57.664 m using unrounded g = 9.81). Source also drops s from the intermediate v² equation. Correct full derivation provided while the literal choices remain preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Static friction f_s ≤ μ_sN and kinetic friction"
+        }
+      ]
+    },
+    {
+      "question": 224,
+      "id": "mech-engineering-mechanics-55-224",
+      "printedPage": 55,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Answer (b) and all numerical steps are correct. The source labels ΣF = ma an “equilibrium condition”, although a = 5 m/s²; corrected to Newton’s second law, with the entire original explanation preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "6.1 Newton’s laws, tension and apparent weight"
+        }
+      ]
+    },
+    {
+      "question": 237,
+      "id": "mech-engineering-mechanics-58-237",
+      "printedPage": 58,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Entire printed derivation and choices are clear, but its I = 2mR²/5 and friction-only torque assumptions are absent from the stem. Printed (b) is conditional, so automatic grading is withheld.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1 Rolling without slipping"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "section": "10.6 Torque as r × F"
+        }
+      ]
+    },
+    {
+      "question": 239,
+      "id": "mech-engineering-mechanics-58-239",
+      "printedPage": 58,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Answer (c) is correct. Full formula options and dropped final two lines recovered. The source calls positive downward energy magnitudes “P.E.” and writes change in KE equals change in PE; corrected to ΔK = −ΔU using negative potential energies below the tabletop. Original full derivation retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Increase in kinetic energy equals decrease in potential energy"
+        }
+      ]
+    },
+    {
+      "question": 246,
+      "id": "mech-engineering-mechanics-59-246",
+      "printedPage": 59,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Printed answer a confuses actual static friction with its limiting value and makes an absolute claim. Exclude from grading.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "question": 255,
+      "id": "mech-engineering-mechanics-61-255",
+      "printedPage": 61,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Corrected the source definition measuring friction angle from the horizontal instead of the normal.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "question": 257,
+      "id": "mech-engineering-mechanics-61-257",
+      "printedPage": 61,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Missing frictionless condition; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "question": 264,
+      "id": "mech-engineering-mechanics-64-264",
+      "printedPage": 64,
+      "status": "corrected",
+      "printedAnswer": "e",
+      "reviewedAnswer": "e",
+      "note": "Retained key e; corrected “kinematic” to “kinetic” and qualified the high-speed claim while preserving all six laws.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "question": 273,
+      "id": "mech-engineering-mechanics-65-273",
+      "printedPage": 65,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Original scan genuinely prints “frictional, ” not “frictionless.” Underdetermined; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s Second Law for Rotation"
+        }
+      ]
+    },
+    {
+      "question": 278,
+      "id": "mech-engineering-mechanics-66-278",
+      "printedPage": 66,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Source calculation and reported key disagree; no correct listed choice.",
+      "references": [
+        {
+          "title": "University of Almería, Machine and Mechanism Theory",
+          "url": "https://ingmec.ual.es/tmm/L03_08_friction.html",
+          "section": "Rolling resistance; resisting moment Nρ and force Nρ/r"
+        }
+      ]
+    },
+    {
+      "question": 279,
+      "id": "mech-engineering-mechanics-66-279",
+      "printedPage": 66,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Corrected the source intermediate line omitting factor 2; retained key d.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "question": 280,
+      "id": "mech-engineering-mechanics-66-280",
+      "printedPage": 66,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Conflicting 30° initial and 45° final equilibrium conditions; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        }
+      ]
+    },
+    {
+      "question": 283,
+      "id": "mech-engineering-mechanics-67-283",
+      "printedPage": 67,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Removed the source’s false equalityμN=mg sinθ, which contradicts acceleration andμ<tanθ.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Motion with Constant Acceleration"
+        }
+      ]
+    },
+    {
+      "question": 285,
+      "id": "mech-engineering-mechanics-67-285",
+      "printedPage": 67,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Retained key d; corrected the explanation’s inconsistent blanket speed/size list.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+          "section": "9.1 Dry Friction; limiting friction and friction angle"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+          "section": "6.2 Friction; static bound, kinetic friction and inclined-plane dynamics"
+        }
+      ]
+    },
+    {
+      "question": 290,
+      "id": "mech-engineering-mechanics-68-290",
+      "printedPage": 68,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "All four choices are valid; exclude single-answer grading.",
+      "references": [
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        }
+      ]
+    },
+    {
+      "question": 298,
+      "id": "mech-engineering-mechanics-69-298",
+      "printedPage": 69,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Complete two-column derivation retained; independent composite-area calculation confirms numerator 20+3π, not 28+3π.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "question": 301,
+      "id": "mech-engineering-mechanics-69-301",
+      "printedPage": 69,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Base value 10976 cm⁴ is absent; option d 2744 is centroidal, not base.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "question": 310,
+      "id": "mech-engineering-mechanics-71-310",
+      "printedPage": 71,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Printed key c is too vague; ungraded pending a precise definition.",
+      "references": [
+        {
+          "title": "Harvard Natural Sciences Lecture Demonstrations",
+          "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/center-percussion",
+          "section": "Center of Percussion; no impulsive support reaction"
+        }
+      ]
+    },
+    {
+      "question": 313,
+      "id": "mech-engineering-mechanics-72-313",
+      "printedPage": 72,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "a",
+      "note": "Corrected genuine factor-two mass-normalization error.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "TU Delft, Introduction to Particle and Continuum Physics",
+          "url": "https://interactivetextbooks.tudelft.nl/nb1140/content/rotationalmotion.html",
+          "section": "5. Rotational motion, torque and angular momentum; perpendicular axes theorem"
+        }
+      ]
+    },
+    {
+      "question": 314,
+      "id": "mech-engineering-mechanics-72-314",
+      "printedPage": 72,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Overlapping choices and imprecise sector terminology; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "question": 315,
+      "id": "mech-engineering-mechanics-72-315",
+      "printedPage": 72,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Retained key b; corrected density-placement reversal in explanation.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ]
+    },
+    {
+      "question": 317,
+      "id": "mech-engineering-mechanics-72-317",
+      "printedPage": 72,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Missing minimum/independence conditions; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "question": 319,
+      "id": "mech-engineering-mechanics-72-319",
+      "printedPage": 72,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "c",
+      "note": "Corrected printed key b to c.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "question": 322,
+      "id": "mech-engineering-mechanics-73-322",
+      "printedPage": 73,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Duplicate original choicesa, b; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "question": 326,
+      "id": "mech-engineering-mechanics-74-326",
+      "printedPage": 74,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Correct key d; supplied missing area formula and distinguished mass version.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ]
+    },
+    {
+      "question": 336,
+      "id": "mech-engineering-mechanics-76-336",
+      "printedPage": 76,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Retained correct key c; corrected visually confirmed height-denominator typo.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "question": 343,
+      "id": "mech-engineering-mechanics-77-343",
+      "printedPage": 77,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Correct key c; retained all source area discussion while supplying the required mass definition.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "question": 346,
+      "id": "mech-engineering-mechanics-77-346",
+      "printedPage": 77,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Source confuses diametral area and axial flywheel radii; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        }
+      ]
+    },
+    {
+      "question": 348,
+      "id": "mech-engineering-mechanics-78-348",
+      "printedPage": 78,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Actual source omits all answer choices; truth values recoverable but letterd cannot be mapped.",
+      "references": [
+        {
+          "title": "OpenStax, University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+          "section": "10.5 Calculating Moments of Inertia; mass integrals and common bodies"
+        }
+      ]
+    },
+    {
+      "question": 349,
+      "id": "mech-engineering-mechanics-78-349",
+      "printedPage": 78,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Corrected false zero-inertia claim and added same-direction axis condition.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "question": 350,
+      "id": "mech-engineering-mechanics-78-350",
+      "printedPage": 78,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Wrong-axis formula; choicesb, d also duplicate with dimensionsL⁵. Ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/MOI-common-shapes.html",
+          "section": "10.2 Moments of Inertia of Common Shapes; area-integral derivations"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        },
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/parallel-axis-theorem-section.html",
+          "section": "10.3 Parallel Axis Theorem"
+        }
+      ]
+    },
+    {
+      "question": 357,
+      "id": "mech-engineering-mechanics-79-357",
+      "printedPage": 79,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Source conflates geometric centroid and centre of symmetry; ungraded.",
+      "references": [
+        {
+          "title": "Engineering Statics: Open and Interactive",
+          "url": "https://engineeringstatics.org/centroids-by-integration.html",
+          "section": "7.7 Centroids using Integration"
+        }
+      ]
+    },
+    {
+      "question": 358,
+      "id": "mech-engineering-mechanics-79-358",
+      "printedPage": 79,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Source genuinely says “curved, ”not “concave, ”and supplies onlyd with no geometry; ungraded.",
+      "references": [
+        {
+          "title": "OpenStax, College Physics2e",
+          "url": "https://openstax.org/books/college-physics-2e/pages/9-3-stability",
+          "section": "9.3 Stability; stable, unstable and neutral equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 369,
+      "id": "mech-engineering-mechanics-81-369",
+      "printedPage": 81,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Printed ȳ denominator y₁+y₂ is wrong; substitution already uses areas. Corrected denominator to A₁+A₂. The listed8.54 is a truncation rather than correct two-decimal rounding.",
+      "references": [
+        {
+          "title": "Engineering Statics: Centroids using Composite Parts",
+          "url": "https://engineeringstatics.org/composite-parts.html",
+          "section": "Area-weighted centroid coordinates"
+        }
+      ]
+    },
+    {
+      "question": 371,
+      "id": "mech-engineering-mechanics-82-371",
+      "printedPage": 82,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer redundant is correct. Corrected the source’s assertion that a deficient unstable truss is statically determinate.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 373,
+      "id": "mech-engineering-mechanics-82-373",
+      "printedPage": 82,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Induction from a triangle adds two members per new joint. Corrected printed m definition as member of joints.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        }
+      ]
+    },
+    {
+      "question": 376,
+      "id": "mech-engineering-mechanics-82-376",
+      "printedPage": 82,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "a",
+      "note": "Printed key(c) and explanation are wrong; corrected to equality of independent equations and unknowns.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 381,
+      "id": "mech-engineering-mechanics-83-381",
+      "printedPage": 83,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected printed variable n to j and qualified the universal claim of collapse under any applied load.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 383,
+      "id": "mech-engineering-mechanics-83-383",
+      "printedPage": 83,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Printed(b) assumes a restricted transverse beam model. Without that qualification the two-roller support is horizontally unstable; exclude from scoring.",
+      "references": [
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 384,
+      "id": "mech-engineering-mechanics-84-384",
+      "printedPage": 84,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Source choice(a) is≤−1,but explanation says≤1. Actual mobility is0; formal negative constraint index is not physical mobility; options overlap.",
+      "references": [
+        {
+          "title": "Carnegie Mellon University: Degrees of Freedom of a Rigid Body",
+          "url": "https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt4.html",
+          "section": "Rigid-body motion and constraints"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 386,
+      "id": "mech-engineering-mechanics-84-386",
+      "printedPage": 84,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "d",
+      "note": "Source(a) needs an unstated stable-truss assumption. Geometry and independence of restraints are necessary,as also recognized in source Q398.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 387,
+      "id": "mech-engineering-mechanics-84-387",
+      "printedPage": 84,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "b",
+      "note": "Printed key(c) confuses concurrent with collinear in its first bullet; corrected to(b).",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 390,
+      "id": "mech-engineering-mechanics-84-390",
+      "printedPage": 84,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independent zero-force/joint checks agree with(c). The printed joint-D sketch wrongly draws DB’s balancing vertical component downward; corrected in text.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        }
+      ]
+    },
+    {
+      "question": 391,
+      "id": "mech-engineering-mechanics-85-391",
+      "printedPage": 85,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Verified by an independent section moment. The source intermediate line multiplies force terms instead of adding them; corrected that typographical error.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 393,
+      "id": "mech-engineering-mechanics-85-393",
+      "printedPage": 85,
+      "status": "corrected",
+      "printedAnswer": "c&d",
+      "reviewedAnswer": "c",
+      "note": "Independent count confirms instability. Removed source’s contradictory claim that the unstable assembly is determinate.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 394,
+      "id": "mech-engineering-mechanics-85-394",
+      "printedPage": 85,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Neither the printed(d) nor conflicting note citing(a) is supported;no valid option.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 395,
+      "id": "mech-engineering-mechanics-86-395",
+      "printedPage": 86,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Printed force units kW and multiplication result19.90 are wrong;corrected to kN and20.00 while retaining all derivation steps.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        }
+      ]
+    },
+    {
+      "question": 396,
+      "id": "mech-engineering-mechanics-86-396",
+      "printedPage": 86,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Counterexample is source Q395. The universal statement lacks a support-class assumption;exclude from scoring.",
+      "references": [
+        {
+          "title": "NPTEL IIT Kharagpur: Introduction to Structural Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105105109/pdf/m1l1.pdf",
+          "section": "Planar-truss determinacy; m+r−2j"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 400,
+      "id": "mech-engineering-mechanics-86-400",
+      "printedPage": 86,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independent section moment verifies(c). Corrected stem’s every-member-length ℓ claim:diagonals are√2ℓ. The source section sketch adds a P₁ at C,which has zero moment about G.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 405,
+      "id": "mech-engineering-mechanics-89-405",
+      "printedPage": 89,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Printed(c) is attainable only under an unstated plastic-collapse model. The printed elastic solution is wrong and does not derive(c);exclude until design criterion is clarified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Rigid Body Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05.html",
+          "section": "Planar force and moment equilibrium"
+        },
+        {
+          "title": "Progressive Collapse Safety Evaluation of Truss Structures Considering Material Plasticity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8469360/",
+          "section": "Yielding, redistribution and ultimate versus elastic-limit capacity"
+        }
+      ]
+    },
+    {
+      "question": 411,
+      "id": "mech-engineering-mechanics-91-411",
+      "printedPage": 91,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Printed(b) incorrectly excludes analytical methods while listing two analytical techniques as valid.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 413,
+      "id": "mech-engineering-mechanics-91-413",
+      "printedPage": 91,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Corrected source’s absolute limit on total cut members to the actual limit on independent unknown forces.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 417,
+      "id": "mech-engineering-mechanics-92-417",
+      "printedPage": 92,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Independent equilibrium verifies source(c) only under the usual pin-and-roller assumption. High-resolution source reconciliation found indistinct/identical end-support symbols;answer withheld.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Rigid Body Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05.html",
+          "section": "Planar force and moment equilibrium"
+        },
+        {
+          "title": "Engineering Statics: Stability and Determinacy",
+          "url": "https://engineeringstatics.org/Chapter_05-stability-and-determinacy.html",
+          "section": "Independent restraints, reaction components and geometric stability"
+        }
+      ]
+    },
+    {
+      "question": 423,
+      "id": "mech-engineering-mechanics-92-423",
+      "printedPage": 92,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Source duplicated its final equation;the second must contain F_EF,not F_CF. Both zero-force conclusions independently verified.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 427,
+      "id": "mech-engineering-mechanics-93-427",
+      "printedPage": 93,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected unprovided4:2 dimensions and a mislabeled F_BC where F_BD belongs;zero-force conclusion independently verified without dimensions.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Rigid Body Equilibrium",
+          "url": "https://engineeringstatics.org/Chapter_05.html",
+          "section": "Planar force and moment equilibrium"
+        }
+      ]
+    },
+    {
+      "question": 429,
+      "id": "mech-engineering-mechanics-94-429",
+      "printedPage": 94,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Source AX numerator and CF/GF labels are wrong;independent section/joint calculation corrects them. Actual GF is5√5 kN compression,not1 kN.",
+      "references": [
+        {
+          "title": "Engineering Statics: Method of Joints",
+          "url": "https://engineeringstatics.org/method-of-joints.html",
+          "section": "Concurrent joint forces; two independent planar equilibrium equations"
+        },
+        {
+          "title": "Engineering Statics: Method of Sections",
+          "url": "https://engineeringstatics.org/method-of-sections.html",
+          "section": "Rigid-body equilibrium of an isolated truss section"
+        }
+      ]
+    },
+    {
+      "question": 435,
+      "id": "mech-engineering-mechanics-95-435",
+      "printedPage": 95,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Independent orbital-period scaling verifies(d). Removed hours from the dimensionless period ratio;duplicate source distractors(b),(c) retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Satellite Orbits and Energy",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-4-satellite-orbits-and-energy",
+          "section": "Orbital period versus radius; inverse-square-force energy"
+        }
+      ]
+    },
+    {
+      "question": 437,
+      "id": "mech-engineering-mechanics-96-437",
+      "printedPage": 96,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Source uses an asterisk rather than a keyed choice;independent exact differentiation finds two accelerations and no valid option.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Average and Instantaneous Acceleration",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-3-average-and-instantaneous-acceleration",
+          "section": "a=dv/dt; average acceleration=Δv/Δt"
+        }
+      ]
+    },
+    {
+      "question": 438,
+      "id": "mech-engineering-mechanics-96-438",
+      "printedPage": 96,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Corrected the printed uniform velocity wording to uniform speed;the intended key remains(b).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Uniform and Nonuniform Circular Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "a_t=dv/dt; a_n=v²/r=ω²r"
+        }
+      ]
+    },
+    {
+      "question": 445,
+      "id": "mech-engineering-mechanics-97-445",
+      "printedPage": 97,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Source’s two roots are correct for displacement,but its wording can mean path distance;different choices then result.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Motion with Constant Acceleration",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "v=u+at; x−x₀=ut+½at²"
+        }
+      ]
+    },
+    {
+      "question": 452,
+      "id": "mech-engineering-mechanics-98-452",
+      "printedPage": 98,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Correct numeric key. Source ΣF_net=0 is misleading for real forces;the upward ma arrow is an inertia force,not an applied external force.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Solving Problems with Newton’s Laws",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "Free-body diagrams and normal force in accelerated systems"
+        },
+        {
+          "title": "NPTEL: Aerospace Structural Dynamics, Module1 Lecture1",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101105022/m1l1.pdf",
+          "section": "D’Alembert principle and inertia forces"
+        }
+      ]
+    },
+    {
+      "question": 457,
+      "id": "mech-engineering-mechanics-99-457",
+      "printedPage": 99,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Final key correct. Corrected source’s negative-force/positive-magnitude equality and missing minus sign in F=−dU/dr. Reattached source confirms distractor(c) is2C/r;the former OCR dropped its slash.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Satellite Orbits and Energy",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-4-satellite-orbits-and-energy",
+          "section": "Orbital period versus radius; inverse-square-force energy"
+        },
+        {
+          "title": "OpenStax University Physics Vol.1: Uniform and Nonuniform Circular Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion",
+          "section": "a_t=dv/dt; a_n=v²/r=ω²r"
+        }
+      ]
+    },
+    {
+      "question": 458,
+      "id": "mech-engineering-mechanics-99-458",
+      "printedPage": 99,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Independent chain-rule calculation contradicts printed(d);no valid option.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Average and Instantaneous Acceleration",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-3-average-and-instantaneous-acceleration",
+          "section": "a=dv/dt; average acceleration=Δv/Δt"
+        }
+      ]
+    },
+    {
+      "question": 460,
+      "id": "mech-engineering-mechanics-99-460",
+      "printedPage": 99,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected source F_net label:944 N is contact force,while net force is160 N upward. Source’s downward-positive kinematics retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Solving Problems with Newton’s Laws",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "Free-body diagrams and normal force in accelerated systems"
+        },
+        {
+          "title": "OpenStax University Physics Vol.1: Motion with Constant Acceleration",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "v=u+at; x−x₀=ut+½at²"
+        }
+      ]
+    },
+    {
+      "question": 467,
+      "id": "mech-engineering-mechanics-100-467",
+      "printedPage": 100,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Corrected source equality/minus typo,inconsistent integral powers and rpm label. Independent integration confirms first reversal15 s and nearest choice225.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Rotational Variables",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-1-rotational-variables",
+          "section": "ω=dθ/dt; α=dω/dt; 2π radians per revolution"
+        }
+      ]
+    },
+    {
+      "question": 468,
+      "id": "mech-engineering-mechanics-101-468",
+      "printedPage": 101,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Source opening says1 hour=2π incorrectly;its numeric denominator correctly uses12 h.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Rotational Variables",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-1-rotational-variables",
+          "section": "ω=dθ/dt; α=dω/dt; 2π radians per revolution"
+        }
+      ]
+    },
+    {
+      "question": 474,
+      "id": "mech-engineering-mechanics-102-474",
+      "printedPage": 102,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Printed(c) contradicts explicit in-air wording and silently assumes both are dropped from rest;mass alone cannot fix drag or arrival order.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Free Fall",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "Constant common acceleration when air resistance is neglected"
+        },
+        {
+          "title": "NASA Glenn Research Center: Falling Object with Air Resistance",
+          "url": "https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/falling.html",
+          "section": "Acceleration=(weight−drag)/mass; drag depends on area and coefficient"
+        }
+      ]
+    },
+    {
+      "question": 475,
+      "id": "mech-engineering-mechanics-102-475",
+      "printedPage": 102,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected universal claim that g always decreases with depth;outside-Earth altitude result independently follows inverse-square dependence.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Gravitation Near Earth’s Surface",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface",
+          "section": "g=GM/r² outside Earth; variation with location and rotation"
+        }
+      ]
+    },
+    {
+      "question": 476,
+      "id": "mech-engineering-mechanics-102-476",
+      "printedPage": 102,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Corrected source’s claim that vertical motion itself changes apparent weight;the controlling quantity is vertical acceleration.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Solving Problems with Newton’s Laws",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "Free-body diagrams and normal force in accelerated systems"
+        }
+      ]
+    },
+    {
+      "question": 480,
+      "id": "mech-engineering-mechanics-103-480",
+      "printedPage": 103,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Printed(b),(c) overlap. Also corrected source’s association of weight formulas with motion direction instead of acceleration direction;withheld from scoring.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Vol.1: Solving Problems with Newton’s Laws",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+          "section": "Free-body diagrams and normal force in accelerated systems"
+        }
+      ]
+    },
+    {
+      "question": 485,
+      "id": "mech-engineering-mechanics-104-485",
+      "printedPage": 104,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Independent tensions are640N,240N and400N respectively. Corrected the source’s speed unit m/s² to m/s and g’s unit to m/s².",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 487,
+      "id": "mech-engineering-mechanics-104-487",
+      "printedPage": 104,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected the printed ancillary wording “before gun” and “anti-aircraft automation”; recoil independently follows the gun/projectile interaction.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law",
+          "section": "5.5:equal and opposite interaction forces"
+        },
+        {
+          "title": "BAE Systems:TRIDON",
+          "url": "https://www.baesystems.com/en/product/tridon",
+          "section": "Bofors40mm gun used as anti-aircraft artillery"
+        }
+      ]
+    },
+    {
+      "question": 491,
+      "id": "mech-engineering-mechanics-104-491",
+      "printedPage": 104,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Source prints FI−ΣFi=0 while calling FI inertia force, inconsistent with its verbal statement. Corrected to ΣFi+FI=0, FI=−ma_base.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,Dynamics",
+          "url": "https://ocw.mit.edu/courses/2-032-dynamics-fall-2004/resources/session_17/",
+          "section": "Lecture17:D’Alembert’s principle"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 493,
+      "id": "mech-engineering-mechanics-105-493",
+      "printedPage": 105,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Source assumes constant deceleration; otherwise final speed is not unique. Under that assumption v=2s/t−u=60km/h. Corrected loose Newton-law attribution.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 494,
+      "id": "mech-engineering-mechanics-105-494",
+      "printedPage": 105,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independent perpendicular components are4 and3m/s². Source falsely attributes v=u+at to Newton’s first law.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 495,
+      "id": "mech-engineering-mechanics-105-495",
+      "printedPage": 105,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Source’s final subtraction0.6575m is wrong; independent result0.6875m is also absent. Source uses an asterisk instead of answer letter.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        }
+      ]
+    },
+    {
+      "question": 498,
+      "id": "mech-engineering-mechanics-106-498",
+      "printedPage": 106,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Source keyd is mathematically wrong. Commissiona matches speed1m/s, but signed velocity−1m/s is absent; preserved ambiguity and disabled grading.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy-and-the-work-energy-theorem",
+          "section": "7.2:work–energy theorem"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-6-finding-velocity-and-displacement-from-acceleration",
+          "section": "3.6:velocity and displacement by integration"
+        }
+      ]
+    },
+    {
+      "question": 505,
+      "id": "mech-engineering-mechanics-107-505",
+      "printedPage": 107,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected source’s total-distance and “minimum total distance” definitions to displacement/time. Numerical answerc unchanged.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-1-displacement-and-velocity-vectors",
+          "section": "4.1:displacement and velocity vectors"
+        }
+      ]
+    },
+    {
+      "question": 508,
+      "id": "mech-engineering-mechanics-108-508",
+      "printedPage": 108,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent closing speed100km/h gives55km/h. Corrected source’s same-direction phrase and V’s m/s unit.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-1-displacement-and-velocity-vectors",
+          "section": "4.1:displacement and velocity vectors"
+        }
+      ]
+    },
+    {
+      "question": 510,
+      "id": "mech-engineering-mechanics-108-510",
+      "printedPage": 108,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Independently checked in belt frame. Corrected printed“Speed=m”and specified reference frame.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 519,
+      "id": "mech-engineering-mechanics-110-519",
+      "printedPage": 110,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Source’s own full solution gives30s but keyb lists29.94s. No rounding instruction;quarantined despiteb being nearest(0.2%low).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 530,
+      "id": "mech-engineering-mechanics-111-530",
+      "printedPage": 111,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Source keyc assumes downward positive,but stem gives no positive direction. Interpretation-dependent;ungraded.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        }
+      ]
+    },
+    {
+      "question": 531,
+      "id": "mech-engineering-mechanics-112-531",
+      "printedPage": 112,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independently720N. Source calls floor reactionFnet,incorrectly conflating reaction and total resultant;label corrected.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 535,
+      "id": "mech-engineering-mechanics-112-535",
+      "printedPage": 112,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "b",
+      "note": "Genuine printed-key error:source d says all three. IndependentF−ma=0 and MIT dynamics-to-statics interpretation make3false.",
+      "references": [
+        {
+          "title": "MIT Underactuated Robotics,Multi-Body Dynamics",
+          "url": "https://underactuated.mit.edu/multibody.html",
+          "section": "D’Alembert:reduction of dynamics to statics by adding inertia forces"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 538,
+      "id": "mech-engineering-mechanics-113-538",
+      "printedPage": 113,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent Atwooda=g(100−50)/150=g/3 andT=2×50×100/150=66.67N. Corrected source coefficient100→50 and missing minus in summed line.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 539,
+      "id": "mech-engineering-mechanics-113-539",
+      "printedPage": 113,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Independenta=μg=4.4145,t=2.265s. Corrected source’s transposition11.362 to11.326;full energy and kinematic steps retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy-and-the-work-energy-theorem",
+          "section": "7.2:work–energy theorem"
+        }
+      ]
+    },
+    {
+      "question": 540,
+      "id": "mech-engineering-mechanics-113-540",
+      "printedPage": 113,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent1.3889m/s² is nearest1.4. Corrected printed final unitm/s to m/s².",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 543,
+      "id": "mech-engineering-mechanics-114-543",
+      "printedPage": 114,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Source diagram/formula error:contact material point has accelerationω²r UPWARD despite zero instantaneous velocity. Printed downward arrow and radical lacking squares are incorrect;keyd remains right.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+          "section": "11.1:energy and acceleration in rolling motion"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-3-relating-angular-and-translational-quantities",
+          "section": "10.3:angular and translational motion"
+        }
+      ]
+    },
+    {
+      "question": 544,
+      "id": "mech-engineering-mechanics-114-544",
+      "printedPage": 114,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "b",
+      "note": "Genuine source error:sourcec claimsT∝r². IndependentlyT²=4π²mr²/k,thereforeT∝r.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 545,
+      "id": "mech-engineering-mechanics-114-545",
+      "printedPage": 114,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independent two phases give200+100=300m. Source area’s20/40 fraction is wrong;corrected triangle height40m/s and confusing velocity labels while retaining original.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 547,
+      "id": "mech-engineering-mechanics-115-547",
+      "printedPage": 115,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Source uses legacy“kgsec”meaningkgf·s,not SIkg·s. Clarified units and intended16;SI momentum≈157kg·m/s. NPL defineskgf=9.80665N.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-1-linear-momentum",
+          "section": "9.1:linear momentum p=mv"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        },
+        {
+          "title": "National Physical Laboratory:SI unit of force",
+          "url": "https://www.npl.co.uk/resources/q-a/what-is-the-si-unit-of-force",
+          "section": "Kilogram-force conversion:1kgf=9.80665N"
+        }
+      ]
+    },
+    {
+      "question": 548,
+      "id": "mech-engineering-mechanics-115-548",
+      "printedPage": 115,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independently verified planar and conical models,bothT=mLω²=25N. Corrected unqualified full-tension-as-horizontal-force statement;in a conical pendulum onlyTsinθ is centripetal. Source equations and diagram preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 556,
+      "id": "mech-engineering-mechanics-116-556",
+      "printedPage": 116,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independenta2.5,u11.25 gives35m. Corrected source’s extra1/2factor in its last substitution.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 557,
+      "id": "mech-engineering-mechanics-116-557",
+      "printedPage": 116,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Independenta1 gives apparent weight≈811N. Sourcev=3m/s² corrected to3m/s;its first diagram weight736N should be7360N and is explicitly warned.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 558,
+      "id": "mech-engineering-mechanics-116-558",
+      "printedPage": 116,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Disputed contradictory data:stem19.86,diagram19.36 and18.63√2,source calculated50.73°yet chooses45°. Initial rest is also only in its sketch.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 568,
+      "id": "mech-engineering-mechanics-118-568",
+      "printedPage": 118,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Disputed source-data/key mismatch:6.667kW is correct for40km/h;keyd10kW requires60km/h. Do not change source speed silently or treat6kW as exact.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+          "section": "7.4:power dW/dt=F·v and watt=joule/second"
+        }
+      ]
+    },
+    {
+      "question": 569,
+      "id": "mech-engineering-mechanics-118-569",
+      "printedPage": 118,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Independentω²3g/L and lower-segment centripetal acceleration2g giveT2Mg. Corrected ambiguous whole-massM intermediate substitutions and duplicateT labels.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-4-moment-of-inertia-and-rotational-kinetic-energy",
+          "section": "10.4:rotational kinetic energy Iω²/2"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+          "section": "5.3:net force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 571,
+      "id": "mech-engineering-mechanics-119-571",
+      "printedPage": 119,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "b",
+      "note": "Genuine source-definition/key error:source d calls capacity work;NASA identifies energy as capacity to perform work.",
+      "references": [
+        {
+          "title": "NASA:Work",
+          "url": "https://pwg.gsfc.nasa.gov/stargaze/Swork.htm",
+          "section": "Energy is the capacity to perform work;work as force through displacement"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+          "section": "7.1:work integral F·dr and force/displacement angle"
+        }
+      ]
+    },
+    {
+      "question": 573,
+      "id": "mech-engineering-mechanics-119-573",
+      "printedPage": 119,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Answerd under intended fixed-endpoint/path-length interpretation. Clarified distance and restricted source“electrical”to electrostatic because induced electric fields may be nonconservative.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3:mechanical-energy change equals nonconservative work"
+        }
+      ]
+    },
+    {
+      "question": 575,
+      "id": "mech-engineering-mechanics-119-575",
+      "printedPage": 119,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "d",
+      "note": "Genuine source reasoning/key error:a infers simultaneous arrival from equal final speed. Independent kinematics gives free fall earlier. Equal-energy observation retained with equal-mass qualification.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4:constant-acceleration kinematics"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3:mechanical-energy change equals nonconservative work"
+        }
+      ]
+    },
+    {
+      "question": 580,
+      "id": "mech-engineering-mechanics-120-580",
+      "printedPage": 120,
+      "status": "disputed",
+      "printedAnswer": null,
+      "reviewedAnswer": null,
+      "note": "Disputed:source calculation65.35kW is sound butd65.3W is1000times too small;c has energy unitsJ.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+          "section": "7.4:power dW/dt=F·v and watt=joule/second"
+        }
+      ]
+    },
+    {
+      "question": 584,
+      "id": "mech-engineering-mechanics-120-584",
+      "printedPage": 120,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Disputed:sourcea is false for friction/nonconservative work. Optionc appears intended as conservative closed-path criterion but essential zero-work clause is absent.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3:mechanical-energy change equals nonconservative work"
+        }
+      ]
+    },
+    {
+      "question": 586,
+      "id": "mech-engineering-mechanics-121-586",
+      "printedPage": 121,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent virtual-work expansion yields zero first partials. Source“TotalPE=Constant”confuses stationarity and global constancy;corrected while retaining original.",
+      "references": [
+        {
+          "title": "University of Ljubljana,ESDEP Lecture6.2",
+          "url": "https://fgg-web.fgg.uni-lj.si/~/pmoze/esdep/master/wg06/l0200.htm",
+          "section": "Potential energy stationary at equilibrium;Taylor expansion in independent coordinates"
+        },
+        {
+          "title": "IIT Guwahati/NPTEL:Virtual Work",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103111/modules/module-v/lec3/slides/s8.htm",
+          "section": "Principle of virtual work and its extension using D’Alembert’s principle"
+        }
+      ]
+    },
+    {
+      "question": 588,
+      "id": "mech-engineering-mechanics-121-588",
+      "printedPage": 121,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent definition and work increment giveF·v. Corrected malformed derivative d(F·dx)/dt to division of incremental work bydt;all definitions,relations and units retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+          "section": "7.4:power dW/dt=F·v and watt=joule/second"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+          "section": "7.1:work integral F·dr and force/displacement angle"
+        }
+      ]
+    },
+    {
+      "question": 589,
+      "id": "mech-engineering-mechanics-121-589",
+      "printedPage": 121,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Independent translationalK=mv²/2. All source comparison formulas retained with explicit frame distinction for unqualified opposite-force statement.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy-and-the-work-energy-theorem",
+          "section": "7.2:work–energy theorem"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+          "section": "6.3:centripetal force and acceleration"
+        }
+      ]
+    },
+    {
+      "question": 590,
+      "id": "mech-engineering-mechanics-121-590",
+      "printedPage": 121,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Independent aligned force/displacement makes workpositive. Source horizontal force arrow explicitly warned,not shown unannotated.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+          "section": "7.1:work integral F·dr and force/displacement angle"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall",
+          "section": "3.5:motion under gravity"
+        }
+      ]
+    },
+    {
+      "question": 592,
+      "id": "mech-engineering-mechanics-122-592",
+      "printedPage": 122,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Disputed:mass is required. Source derivesV0√(m/K),then arbitrarily setsm1kg;no general choice valid.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+          "section": "7.1:work integral F·dr and force/displacement angle"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy-and-the-work-energy-theorem",
+          "section": "7.2:work–energy theorem"
+        }
+      ]
+    },
+    {
+      "question": 593,
+      "id": "mech-engineering-mechanics-122-593",
+      "printedPage": 122,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Optiona gives intended condition. Corrected unrestricted sourceW=F×d by giving aligned-force condition and general dot product.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+          "section": "7.1:work integral F·dr and force/displacement angle"
+        }
+      ]
+    },
+    {
+      "question": 594,
+      "id": "mech-engineering-mechanics-122-594",
+      "printedPage": 122,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Disputed:source treats mechanical energy as unconditionally constant and omits isolation/no-transfer conditions. Commissionb-or-d note retained;no unique grade.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3:mechanical-energy change equals nonconservative work"
+        }
+      ]
+    },
+    {
+      "question": 609,
+      "id": "mech-engineering-mechanics-124-609",
+      "printedPage": 124,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "Source makes an unconditional claim about an unspecified elevator drive/counterweight balance; exclude from grading.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "question": 610,
+      "id": "mech-engineering-mechanics-124-610",
+      "printedPage": 124,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Corrected printed negative spring-energy sign; source’s later positive numerical equality and final compression are otherwise consistent.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+          "section": "8.1 Gravitational and Hookean elastic potential energies;U_s=½kx²"
+        }
+      ]
+    },
+    {
+      "question": 613,
+      "id": "mech-engineering-mechanics-125-613",
+      "printedPage": 125,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete source apex calculation retained; stem can instead mean return to launch level.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Projectile motion;constant horizontal velocity and apex"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ]
+    },
+    {
+      "question": 614,
+      "id": "mech-engineering-mechanics-125-614",
+      "printedPage": 125,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Answerb correct. Replaced source’s dimensionally incorrect “angular acceleration(a)=r α” with a valid torque/inertia derivation.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s second law for rotation;τ=Iα and tangential accelerationrα"
+        }
+      ]
+    },
+    {
+      "question": 615,
+      "id": "mech-engineering-mechanics-125-615",
+      "printedPage": 125,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "375 m is the particle/front-crossing answer; full finite-train crossing needs train length. Source also doubles the kinematic distance and invents an equality.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 617,
+      "id": "mech-engineering-mechanics-125-617",
+      "printedPage": 125,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Corrected the second cross-product term’s sign from−30 x to+30 x. Keyc and final result 5 km/h retained.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        }
+      ]
+    },
+    {
+      "question": 618,
+      "id": "mech-engineering-mechanics-125-618",
+      "printedPage": 125,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Multiple valid optionsb, d; exclude single-answer grading.",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "NIST Guide to the SI",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+          "section": "AppendixB.8:IT calorie,kilocalorie,kilowatthour and horsepower conversions"
+        }
+      ]
+    },
+    {
+      "question": 619,
+      "id": "mech-engineering-mechanics-125-619",
+      "printedPage": 125,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Original scan confirms 10.01; exact answer 10 is missing.",
+      "references": [
+        {
+          "title": "NIST Guide to the SI",
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+          "section": "AppendixB.8:IT calorie,kilocalorie,kilowatthour and horsepower conversions"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        }
+      ]
+    },
+    {
+      "question": 620,
+      "id": "mech-engineering-mechanics-125-620",
+      "printedPage": 125,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Missing system boundary and conservation conditions.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        }
+      ]
+    },
+    {
+      "question": 624,
+      "id": "mech-engineering-mechanics-126-624",
+      "printedPage": 126,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Corrected missing minus sign in the source intermediate numerical fraction; key d and final force remain correct.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+          "section": "3.4 Constant-acceleration kinematics"
+        },
+        {
+          "title": "IIT Bombay,Prof.P.Seshu,ME316",
+          "url": "https://www.cdeep.iitb.ac.in/slides/S23/ME316/ME316-M12.pdf",
+          "section": "Analysis of Forces in Mechanisms/Machines;d’Alembert inertia force"
+        }
+      ]
+    },
+    {
+      "question": 627,
+      "id": "mech-engineering-mechanics-126-627",
+      "printedPage": 126,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Intended key c and complete worked calculation verified. Corrected radical scope in choice c and made the frictionless/no-spin model explicit.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+          "section": "8.3 Conservation of energy;conditions for constant mechanical energy and elastic potential"
+        },
+        {
+          "title": "MIT OpenCourseWare,16.07 Dynamics",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Lecture L12:work,work–energy theorem,gravity,power and stationary rolling contact"
+        },
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+          "section": "10.7 Newton’s second law for rotation;τ=Iα and tangential accelerationrα"
+        }
+      ]
+    },
+    {
+      "question": 631,
+      "id": "mech-engineering-mechanics-127-631",
+      "printedPage": 127,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Corrected malformed definition while retaining intended key b.",
+      "references": [
+        {
+          "title": "Georgia Institute of Technology,Aerospace Resources",
+          "url": "https://aeresources.gatech.edu/dynamics/Webpage/Virtual_Work/Theory/Virtual_Work.php",
+          "section": "Virtual displacements,δW=ΣF·δr,and equilibrium principle"
+        }
+      ]
+    },
+    {
+      "question": 643,
+      "id": "mech-engineering-mechanics-128-643",
+      "printedPage": 128,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Retained key a and all three source cases; corrected the implication that U″=0 alone proves neutral equilibrium and stated the illustrated one-dimensional maximum condition.",
+      "references": [
+        {
+          "title": "OpenStax,University Physics Volume1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/8-4-potential-energy-diagrams-and-stability",
+          "section": "8.4 Potential-energy diagrams and stability;local minima/maxima and quartic cases"
+        }
+      ]
+    },
+    {
+      "question": 645,
+      "id": "mech-engineering-mechanics-129-645",
+      "printedPage": 129,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Correct key c. Qualified universal oil-filled claim and kept the complete unverified brand-specific passage separately.",
+      "references": [
+        {
+          "title": "Caterpillar,Track Link Assembly289-3059",
+          "url": "https://parts.cat.com/en/catcorp/product/289-3059",
+          "section": "Manufacturer description:shoe attachment and grease-lubricated pins/bushings"
+        }
+      ]
+    },
+    {
+      "question": 650,
+      "id": "mech-engineering-mechanics-129-650",
+      "printedPage": 129,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Full source explanation is at top printed p 130. Formula is P/W=1/MA, not VR; the slope is not generally a friction coefficient.",
+      "references": [
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/problems_lec5/prob1b.htm",
+          "section": "LawP=mW+C and mechanical advantage/efficiency"
+        },
+        {
+          "title": "NPTEL,Engineering Mechanics",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Reversibility,efficiency50% threshold and linear law of lifting machines"
+        }
+      ]
+    },
+    {
+      "question": 651,
+      "id": "mech-engineering-mechanics-130-651",
+      "printedPage": 130,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) is correct. The full extra comparison in the source is retained, but its third-system n − 1 is corrected to 2ⁿ − 1 and the second-system counting convention is made explicit.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        }
+      ]
+    },
+    {
+      "question": 652,
+      "id": "mech-engineering-mechanics-130-652",
+      "printedPage": 130,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "The source key (a) is correct under its stated diameter labels. Its explanation reverses d₁ and d₂ in the denominator. The original formula and all subsequent definitions are preserved separately.",
+      "references": [
+        {
+          "title": "IGNOU Introduction to Structural Mechanics, Unit 12: Lifting Machines",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/31820/1/Unit-12.pdf",
+          "section": "12.3.1 Pulley systems; 12.3.2 differential wheel and axle"
+        }
+      ]
+    },
+    {
+      "question": 654,
+      "id": "mech-engineering-mechanics-130-654",
+      "printedPage": 130,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) is correct. The source explanation prints “load” where it means “lead”; the complete original sentence is preserved.",
+      "references": [
+        {
+          "title": "Thomson Industries: Lead vs. Pitch",
+          "url": "https://www.thomsonlinear.com/en/training/lead-screws/lead_vs_pitch",
+          "section": "Lead equals pitch multiplied by number of starts"
+        }
+      ]
+    },
+    {
+      "question": 657,
+      "id": "mech-engineering-mechanics-130-657",
+      "printedPage": 130,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) is correct. The printed intermediate division is 900/15 = 6; the denominator must be 150. All supplied numerical steps are preserved.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "question": 660,
+      "id": "mech-engineering-mechanics-130-660",
+      "printedPage": 130,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) is correct for compatible virtual displacements and ideal constraints. The source’s blanket statement that equal, opposite, collinear internal forces always cancel work is qualified: rigid-compatible displacement is essential. Entire source explanation retained.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 10: Method of Virtual Work",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture10/10_1.htm",
+          "section": "Compatible virtual displacements and zero work of ideal constraint forces"
+        },
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ]
+    },
+    {
+      "question": 666,
+      "id": "mech-engineering-mechanics-131-666",
+      "printedPage": 131,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) and the complete limiting derivation are correct. The source calls slope m a coefficient of friction; it is generally an empirical machine-law slope. The malformed law annotation in the stem is rendered as its correct P = mW + C form.",
+      "references": [
+        {
+          "title": "NPTEL Engineering Mechanics: Machines",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103109/chap2/slides/lec3_slides/slide16.htm",
+          "section": "Law of machines, effort-load relation and efficiency"
+        }
+      ]
+    },
+    {
+      "question": 667,
+      "id": "mech-engineering-mechanics-131-667",
+      "printedPage": 131,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "b",
+      "note": "The source key (a) applies only to perfectly inelastic bodies, not inelastic collisions generally. Corrected to the general range represented by (b); the full original two-case explanation is preserved.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ]
+    },
+    {
+      "question": 670,
+      "id": "mech-engineering-mechanics-132-670",
+      "printedPage": 132,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Confirmed missing condition in the printed stem: the explanation assumes K₁ = K₂, which the question never states. No unique key can be graded.",
+      "references": [
+        {
+          "title": "MIT 16.07 Dynamics, Lecture L12: Work and Energy",
+          "url": "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/6c3adbdf48feaf3580731511ee9cb776_MIT16_07F09_Lec12.pdf",
+          "section": "Work-energy theorem; internal forces in rigid bodies; nonworking constraints"
+        }
+      ]
+    },
+    {
+      "question": 671,
+      "id": "mech-engineering-mechanics-132-671",
+      "printedPage": 132,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "The intended name (a) is clear, but the source omits the external-force condition and gives a nongeneral m₁v₁ = m₂v₂ formula. Full original retained and the vector conservation statement supplied.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 672,
+      "id": "mech-engineering-mechanics-132-672",
+      "printedPage": 132,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Answer (c) is correct. The source’s third line incorrectly calls e < 1 perfectly elastic. All three original lines are preserved separately.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 673,
+      "id": "mech-engineering-mechanics-132-673",
+      "printedPage": 132,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Answer (d) is correct. The source writes u₁ = 0 and u₁ = 5 m/s in the same given-data line; the stationary body must be u₂ = 0. Entire original formula and computation retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 674,
+      "id": "mech-engineering-mechanics-133-674",
+      "printedPage": 133,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "The printed key (d) is not generally true: an initially stationary body struck by another can gain kinetic energy. The collision type and whether energy refers to one body or the whole system must be specified.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ]
+    },
+    {
+      "question": 675,
+      "id": "mech-engineering-mechanics-133-675",
+      "printedPage": 133,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) and the source velocity formula are correct. Its definition equating the coefficient itself with energy dissipation is corrected; full source wording/formula retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 679,
+      "id": "mech-engineering-mechanics-133-679",
+      "printedPage": 133,
+      "status": "disputed",
+      "printedAnswer": "d",
+      "reviewedAnswer": null,
+      "note": "The scan confirms duplicate correct expressions (c) and (d), obtained by changing both signs. A unique-choice grade cannot be assigned.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 680,
+      "id": "mech-engineering-mechanics-133-680",
+      "printedPage": 133,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Printed answer (b) only; there is no source explanation to recover. Choices (b)/(c) are synonymous, and the energy/exergy denominator is ambiguous. Derived clarification is labelled separately from the absent source explanation.",
+      "references": [
+        {
+          "title": "Exergy Efficiency of Closed and Unsteady-Flow Systems",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12468809/",
+          "section": "Abstract and definitions of exergy/second-law efficiency"
+        }
+      ]
+    },
+    {
+      "question": 681,
+      "id": "mech-engineering-mechanics-134-681",
+      "printedPage": 134,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "b",
+      "note": "The source’s answer (c) and one-sentence explanation are wrong under the standard fixed-flight-speed comparison. Corrected to (b), supported by η_p = 2V/(V_j + V). If both speeds vary arbitrarily, the difference alone is insufficient; the stated model is essential.",
+      "references": [
+        {
+          "title": "Embry-Riddle Aeronautical University: Fundamentals of Propulsion Systems",
+          "url": "https://eaglepubs.erau.edu/introductiontoaerospaceflightvehicles/chapter/introduction-to-propulsion-systems/",
+          "section": "Propulsive efficiency and jet-to-flight velocity ratio"
+        }
+      ]
+    },
+    {
+      "question": 682,
+      "id": "mech-engineering-mechanics-134-682",
+      "printedPage": 134,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "The book prints (c) with no explanatory text. Final velocities alone do not determine kinetic-energy loss; an initial relative speed and restitution (or complete before/after state) are needed.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "NPTEL Engineering Mechanics, Lecture 17: Collisions",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/122104014/lecture17/17_2.htm",
+          "section": "Elastic and inelastic collisions; isolated-system momentum and relative velocity"
+        }
+      ]
+    },
+    {
+      "question": 685,
+      "id": "mech-engineering-mechanics-134-685",
+      "printedPage": 134,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Answer (d) is correct. The source mixes a finite difference v₂ − v₁ with infinitesimal dt. Differential and finite-interval average forms are separated while the complete original is retained.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 689,
+      "id": "mech-engineering-mechanics-135-689",
+      "printedPage": 135,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Answer (c) is correct. The source wrongly says the ball’s momentum is conserved and prints a positive post-impact normal momentum, although its next subtraction uses a negative sign. Both errors are corrected. The source horizontal axis label x,j should be x,i.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        }
+      ]
+    },
+    {
+      "question": 692,
+      "id": "mech-engineering-mechanics-135-692",
+      "printedPage": 135,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Missing initial-separation/relative-distance wording in the source prevents a unique answer. Its full intended algebra is retained, rather than silently replacing final separation with distance travelled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-5-relative-motion-in-one-and-two-dimensions",
+          "section": "4.5 Relative position, velocity and reference frames"
+        }
+      ]
+    },
+    {
+      "question": 698,
+      "id": "mech-engineering-mechanics-136-698",
+      "printedPage": 136,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Answer (a) is correct, but the source scales the entire impact velocity by e and uses an inconsistent inclined-flight formula. Corrected using the normal restitution component and normal gravitational acceleration. Every printed step is retained separately.",
+      "references": [
+        {
+          "title": "IIT Guwahati ME101, Kaustubh Dasgupta, Lecture 28",
+          "url": "https://www.iitg.ac.in/kd/Lecture%20Notes/ME101-Lecture28-KD.pdf",
+          "section": "Impulse-momentum, conservation of momentum and direct central impact"
+        },
+        {
+          "title": "OpenStax University Physics Volume 1",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+          "section": "4.3 Independence of horizontal and vertical projectile motion"
+        }
+      ]
+    },
+    {
+      "question": 701,
+      "id": "mech-engineering-mechanics-137-701",
+      "printedPage": 137,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 704,
+      "id": "mech-engineering-mechanics-138-704",
+      "printedPage": 138,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 707,
+      "id": "mech-engineering-mechanics-138-707",
+      "printedPage": 138,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 715,
+      "id": "mech-engineering-mechanics-140-715",
+      "printedPage": 140,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 716,
+      "id": "mech-engineering-mechanics-140-716",
+      "printedPage": 140,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 722,
+      "id": "mech-engineering-mechanics-141-722",
+      "printedPage": 141,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 723,
+      "id": "mech-engineering-mechanics-142-723",
+      "printedPage": 142,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 726,
+      "id": "mech-engineering-mechanics-142-726",
+      "printedPage": 142,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 730,
+      "id": "mech-engineering-mechanics-143-730",
+      "printedPage": 143,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 737,
+      "id": "mech-engineering-mechanics-143-737",
+      "printedPage": 143,
+      "status": "disputed",
+      "printedAnswer": "a",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 739,
+      "id": "mech-engineering-mechanics-144-739",
+      "printedPage": 144,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 746,
+      "id": "mech-engineering-mechanics-145-746",
+      "printedPage": 145,
+      "status": "corrected",
+      "printedAnswer": "c",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Conservation of Linear Momentum",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+        }
+      ]
+    },
+    {
+      "question": 754,
+      "id": "mech-engineering-mechanics-146-754",
+      "printedPage": 146,
+      "status": "disputed",
+      "printedAnswer": "b",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Simple Harmonic Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+        }
+      ]
+    },
+    {
+      "question": 755,
+      "id": "mech-engineering-mechanics-146-755",
+      "printedPage": 146,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ]
+    },
+    {
+      "question": 769,
+      "id": "mech-engineering-mechanics-149-769",
+      "printedPage": 149,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Pendulums",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"
+        }
+      ]
+    },
+    {
+      "question": 770,
+      "id": "mech-engineering-mechanics-149-770",
+      "printedPage": 149,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Pendulums",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"
+        }
+      ]
+    },
+    {
+      "question": 771,
+      "id": "mech-engineering-mechanics-149-771",
+      "printedPage": 149,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ]
+    },
+    {
+      "question": 773,
+      "id": "mech-engineering-mechanics-149-773",
+      "printedPage": 149,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ]
+    },
+    {
+      "question": 780,
+      "id": "mech-engineering-mechanics-151-780",
+      "printedPage": 151,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "c",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Pendulums",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"
+        }
+      ]
+    },
+    {
+      "question": 787,
+      "id": "mech-engineering-mechanics-152-787",
+      "printedPage": 152,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "d",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ]
+    },
+    {
+      "question": 788,
+      "id": "mech-engineering-mechanics-152-788",
+      "printedPage": 152,
+      "status": "corrected",
+      "printedAnswer": "d",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax: Centripetal Force",
+          "url": "https://openstax.org/books/college-physics-ap-courses/pages/6-3-centripetal-force"
+        }
+      ]
+    },
+    {
+      "question": 793,
+      "id": "mech-engineering-mechanics-154-793",
+      "printedPage": 154,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Projectile Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion"
+        }
+      ]
+    },
+    {
+      "question": 794,
+      "id": "mech-engineering-mechanics-154-794",
+      "printedPage": 154,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax: Centripetal Force",
+          "url": "https://openstax.org/books/college-physics-ap-courses/pages/6-3-centripetal-force"
+        }
+      ]
+    },
+    {
+      "question": 797,
+      "id": "mech-engineering-mechanics-155-797",
+      "printedPage": 155,
+      "status": "corrected",
+      "printedAnswer": "a",
+      "reviewedAnswer": "a",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax: Centripetal Force",
+          "url": "https://openstax.org/books/college-physics-ap-courses/pages/6-3-centripetal-force"
+        }
+      ]
+    },
+    {
+      "question": 802,
+      "id": "mech-engineering-mechanics-155-802",
+      "printedPage": 155,
+      "status": "disputed",
+      "printedAnswer": "c",
+      "reviewedAnswer": null,
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Simple Harmonic Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+        }
+      ]
+    },
+    {
+      "question": 806,
+      "id": "mech-engineering-mechanics-156-806",
+      "printedPage": 156,
+      "status": "corrected",
+      "printedAnswer": "b",
+      "reviewedAnswer": "b",
+      "note": "Complete question, all choices and full explanation visually reconciled against the supplied PDF in the prior review. Independently checked by force components, equilibrium or the cited mechanics relation; clean source transcription restored from that review.",
+      "references": [
+        {
+          "title": "OpenStax University Physics: Simple Harmonic Motion",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+        }
+      ]
+    }
+  ]
+}

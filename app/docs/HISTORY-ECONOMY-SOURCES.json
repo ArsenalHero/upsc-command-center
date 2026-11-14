@@ -1,0 +1,212 @@
+[
+  {
+    "file": "gemini-code-1784688823622.txt",
+    "slug": "history-ancient-part-1",
+    "title": "Ancient History 1",
+    "subject": "History",
+    "topic": "Ancient India",
+    "part": 1,
+    "first": 1,
+    "last": 20,
+    "count": 20,
+    "questions": 20,
+    "bytes": 35597,
+    "sha256": "ffaa0dbd5ac67aaeaabcfcab467ce4392c35c2d59e2a2739bbd397bdbde22306"
+  },
+  {
+    "file": "gemini-code-1784688982938.txt",
+    "slug": "history-ancient-part-2",
+    "title": "Ancient History 2",
+    "subject": "History",
+    "topic": "Ancient India",
+    "part": 2,
+    "first": 21,
+    "last": 60,
+    "count": 40,
+    "questions": 40,
+    "bytes": 57159,
+    "sha256": "530e95f01a6e6c05cc285d127d0b74f3856e051ddc8e731745284fdbe8e0dfd4"
+  },
+  {
+    "file": "gemini-code-1784689091694.txt",
+    "slug": "history-ancient-part-3",
+    "title": "Ancient History 3",
+    "subject": "History",
+    "topic": "Ancient India",
+    "part": 3,
+    "first": 61,
+    "last": 100,
+    "count": 40,
+    "questions": 40,
+    "bytes": 49511,
+    "sha256": "8e80e8a41ed5fb3411bd5dddbac6bedb92ade4b62f105710196c98cf47f00966"
+  },
+  {
+    "file": "AM1.txt",
+    "slug": "history-ancient-part-4",
+    "title": "Ancient History 4",
+    "subject": "History",
+    "topic": "Ancient India",
+    "part": 4,
+    "first": 101,
+    "last": 251,
+    "count": 151,
+    "fiveOptions": [
+      203,
+      204,
+      205,
+      206,
+      207
+    ],
+    "questions": 151,
+    "bytes": 230850,
+    "sha256": "a4b9657eeb1bcb835be4515ce8d386244afde28b0223f27e68cbd8ee678b65d4"
+  },
+  {
+    "file": "Modern1.txt",
+    "slug": "history-modern-part-1",
+    "title": "Modern History 1",
+    "subject": "History",
+    "topic": "Modern India · European expansion & colonial rule",
+    "part": 1,
+    "first": 1,
+    "last": 88,
+    "count": 88,
+    "unlabelled": [
+      55
+    ],
+    "questions": 88,
+    "bytes": 111793,
+    "sha256": "5e6fb94c818a4fcf03468f79615d756a70d8f13cf0f122a844d8e19c50fe2536"
+  },
+  {
+    "file": "Modern2.txt",
+    "slug": "history-modern-part-2",
+    "title": "Modern History 2",
+    "subject": "History",
+    "topic": "Modern India · social & religious reform",
+    "part": 2,
+    "first": 1,
+    "last": 199,
+    "count": 199,
+    "questions": 199,
+    "bytes": 305681,
+    "sha256": "870dd086ffb5e0c44acb08c72ccf7e65c8682202c8407a3864fb48e0dbb67fd5"
+  },
+  {
+    "file": "MH3.txt",
+    "slug": "history-modern-part-3",
+    "title": "Modern History 3",
+    "subject": "History",
+    "topic": "Modern India · nationalism & revolutionary movements",
+    "part": 3,
+    "first": 1,
+    "last": 188,
+    "count": 188,
+    "questions": 188,
+    "bytes": 311507,
+    "sha256": "bf798dbef3bdaece43ea11d33bdcf45041ea52484ad5cc6f6a2faf75d1c4dad5"
+  },
+  {
+    "file": "MH4.txt",
+    "slug": "history-modern-part-4",
+    "title": "Modern History 4",
+    "subject": "History",
+    "topic": "Modern India · Gandhian & mass movements",
+    "part": 4,
+    "first": 1,
+    "last": 285,
+    "count": 285,
+    "fiveOptions": [
+      261,
+      262
+    ],
+    "questions": 285,
+    "bytes": 462561,
+    "sha256": "105462963c8417137fc9bdde4b59c8d86a37962f563feb7bc2e0858409b833cd"
+  },
+  {
+    "file": "MH5.txt",
+    "slug": "history-modern-part-5",
+    "title": "Modern History 5",
+    "subject": "History",
+    "topic": "Modern India · constitutional development & independence",
+    "part": 5,
+    "first": 1,
+    "last": 165,
+    "count": 165,
+    "questions": 165,
+    "bytes": 262855,
+    "sha256": "25d33b50ac29d419a29fefc3f1457740fd54384035173f5e94624fd035070d29"
+  },
+  {
+    "file": "MH6.txt",
+    "slug": "history-modern-part-6",
+    "title": "Modern History 6",
+    "subject": "History",
+    "topic": "Modern India · people, publications & events",
+    "part": 6,
+    "first": 1,
+    "last": 321,
+    "count": 321,
+    "pending": [
+      29,
+      30
+    ],
+    "fiveOptions": [
+      247,
+      248
+    ],
+    "questions": 321,
+    "bytes": 494212,
+    "sha256": "bd92994ed6ad530f27c0bf1888848c8360d8e810f4ab82f2f6e6d1181fc3c90c"
+  },
+  {
+    "file": "EC1.txt",
+    "slug": "economy-part-1",
+    "title": "Economy 1",
+    "subject": "Economy",
+    "topic": "Economic foundations, growth & national income",
+    "part": 1,
+    "first": 1,
+    "last": 162,
+    "count": 162,
+    "pending": [
+      120
+    ],
+    "questions": 162,
+    "bytes": 302442,
+    "sha256": "a331852959872855e80d420ab1efc82121e81e8ff27afc99cf63e2b5d45f9715"
+  },
+  {
+    "file": "ECO2.txt",
+    "slug": "economy-part-2",
+    "title": "Economy 2",
+    "subject": "Economy",
+    "topic": "Public finance & fiscal policy",
+    "part": 2,
+    "first": 1,
+    "last": 94,
+    "count": 94,
+    "fiveOptions": [
+      67
+    ],
+    "questions": 94,
+    "bytes": 172526,
+    "sha256": "4a13fb8388eeb98b9bfe8dc8b0a04a8b561e30f2a039335ad2bea6cf72044cef"
+  },
+  {
+    "file": "ECO3.txt",
+    "slug": "economy-part-3",
+    "title": "Economy 3",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "part": 3,
+    "first": 1,
+    "last": 199,
+    "count": 199,
+    "questions": 199,
+    "bytes": 422321,
+    "sha256": "58b1e4193932422216ae7f5465dacb08b9b7045a7029d17dd1c3791bd0b4fe19"
+  }
+]

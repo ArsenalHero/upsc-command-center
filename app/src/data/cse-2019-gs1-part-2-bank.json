@@ -1,0 +1,2569 @@
+[
+  {
+    "id": "upsc-2019-prelims-gs1-b-051",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 51,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "In the context of digital technologies for entertainment, consider the following statements:\n\n1. In Augmented Reality (AR) , a simulated environment is created and the physical world is completely shut out.\n\n2. In Virtual Reality (VR), images generated from a computer are projected onto real-life objects or surroundings.\n\n3. AR allows individuals to be present in the world and improves the experience using the camera of smart-phone or PC.\n\n4. VR closes the world, and transposes an individual, providing complete immersion experience.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 and 4",
+      "c": "1, 2 and 3",
+      "d": "4 only"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of digital technologies for entertainment, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. In Augmented Reality (AR) , a simulated environment is created and the physical world is completely shut out."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. In Virtual Reality (VR), images generated from a computer are projected onto real-life objects or surroundings."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. AR allows individuals to be present in the world and improves the experience using the camera of smart-phone or PC."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. VR closes the world, and transposes an individual, providing complete immersion experience."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "AR adds virtual elements to the real world without shutting it out (Statement 3 is true, 1 is false). VR completely immerses the user in a simulated digital environment and shuts out the physical world (Statement 4 is true, 2 is false).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7174"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-052",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 52,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "General science · collection 1",
+    "question": "The word 'Denisovan' is sometimes mentioned in media in reference to",
+    "options": {
+      "a": "fossils of a kind of dinosaurs",
+      "b": "an early human species",
+      "c": "a cave system found in North-East India.",
+      "d": "a geological period in the history of Indian subcontinent"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The word 'Denisovan' is sometimes mentioned in media in reference to"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Denisovans are an extinct species or subspecies of archaic human that ranged across Asia during the Lower and Middle Paleolithic.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-6209",
+      "q-7186"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-053",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 53,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "General science · collection 1",
+    "question": "With reference to the recent developments in science, which one of the following statements is not correct?",
+    "options": {
+      "a": "Functional chromosomes can be created by joining segments of DNA taken from cells of different species.",
+      "b": "Pieces of artificial functional DNA can be created in Iaboratories.",
+      "c": "A piece of DNA taken out from an animal cell can be made to replicate outside a living cell in a laboratory.",
+      "d": "Cells taken out from plants and animals can be made to undergo cell division in laboratory petri dishes."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the recent developments in science, which one of the following statements is not correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The joining of DNA segments from two cells of different species is possible, but making a functional chromosome out of it has not been discovered yet.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-6211"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-054",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 54,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Consider the following statements:\n\nA digital signature is\n\n1. an electronic record that identifies the certifying authority issuing it\n\n2. used to serve as a proof of identity of an individual to access information or server on Internet.\n\n3. an electronic method of signing an electronic document and ensuring that the original content is unchanged\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "A digital signature is"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. an electronic record that identifies the certifying authority issuing it"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. used to serve as a proof of identity of an individual to access information or server on Internet."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. an electronic method of signing an electronic document and ensuring that the original content is unchanged"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "A digital signature mathematically verifies the authenticity and integrity of a document, ensuring it hasn't been altered (Statement 3 is correct). A digital certificate (not a signature) identifies the certifying authority (Statement 1), and authentication handles server access (Statement 2).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7175"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-055",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 55,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "In the context of wearable technology, which of the following tasks is/are accomplished by wearable devices?\n\n1. Location identification of a person\n\n2. Sleep monitoring of a person\n\n3. Assisting the hearing impaired person\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of wearable technology, which of the following tasks is/are accomplished by wearable devices?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Location identification of a person"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Sleep monitoring of a person"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Assisting the hearing impaired person"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Wearable devices, like smartwatches and advanced hearing aids, can use GPS for location tracking, use sensors for detailed sleep monitoring, and amplify or process sounds to assist the hearing-impaired.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7176"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-056",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 56,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "'RNA interference (RNAi)' technology has gained popularity in the last few years. Why?\n\n1. It is used in developing gene silencing therapies.\n\n2. It can be used in developing therapies for-the treatment of cancer.\n\n3. It can be used to develop hormone replacement therapies.\n\n4. It can be used to produce crop plants that are resistant to viral pathogens.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1, 2 and 4",
+      "b": "2 and 3",
+      "c": "1 and 3",
+      "d": "1 and 4 only"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "'RNA interference (RNAi)' technology has gained popularity in the last few years. Why?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It is used in developing gene silencing therapies."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. It can be used in developing therapies for-the treatment of cancer."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. It can be used to develop hormone replacement therapies."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. It can be used to produce crop plants that are resistant to viral pathogens."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "RNAi is highly effective for silencing specific genes, which is useful in targeted cancer therapies and creating virus-resistant crops (Statements 1, 2, and 4 are correct). It is not suited for hormone replacement therapy due to off-target effects and short duration (Statement 3 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7184"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-057",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 57,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Recently, scientists observed the merger of giant 'blackholes' billions of light-years away from the Earth. What is the significance of this observation?",
+    "options": {
+      "a": "'Higgs boson particles' were detected.",
+      "b": "'Gravitational waves' were detected.",
+      "c": "Possibility of inter-galactic space travel through 'wormhole' was confirmed.",
+      "d": "It enabled the scientists to understand 'singularity'."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, scientists observed the merger of giant 'blackholes' billions of light-years away from the Earth. What is the significance of this observation?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The observation of the merger of giant black holes was a monumental achievement because it resulted in the direct detection of gravitational waves (ripples in spacetime), confirming a major prediction of Einstein's General Relativity.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7177"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-058",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 58,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Which of the following are the reasons for the occurrence of multi-drug resistance in microbial pathogens in India?\n\n1. Genetic predisposition of some people\n\n2. Taking incorrect doses of antibiotics to cure diseases\n\n3. Using antibiotics in livestock farming\n\n4. Multiple chronic diseases in some people\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2",
+      "b": "2 and 3 only",
+      "c": "1, 3 and 4",
+      "d": "2, 3 and 4"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following are the reasons for the occurrence of multi-drug resistance in microbial pathogens in India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Genetic predisposition of some people"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Taking incorrect doses of antibiotics to cure diseases"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Using antibiotics in livestock farming"
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Multiple chronic diseases in some people"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Multi-drug resistance occurs primarily due to the misuse and overuse of antimicrobials, such as failing to complete prescribed courses (taking incorrect doses) and the rampant, non-therapeutic use of antibiotics in livestock farming.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-059",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 59,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "What is Cas9 protein that is often mentioned in news?",
+    "options": {
+      "a": "A molecular scissors used in targeted gene editing",
+      "b": "A biosensor used in the accurate detection of pathogens in patients",
+      "c": "A gene that makes plants pest-resistant",
+      "d": "A herbicidal substance synthesized in genetically modified crops"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is Cas9 protein that is often mentioned in news?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Cas9 is a nuclease enzyme derived from the CRISPR bacterial immune system. It acts as a pair of \"molecular scissors\" that can be programmed to cut DNA at specific targeted sequences, enabling precise gene editing.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7183"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-060",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 60,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "General science · collection 1",
+    "question": "Which one of the following statements is not correct?",
+    "options": {
+      "a": "Hepatitis B virus is transmitted much like HIV.",
+      "b": "Hepatitis B, unlike Hepatitis C, does not have a vaccine.",
+      "c": "Globally, the number of people infected with Hepatitis B and C viruses are several times more than those infected with HIV.",
+      "d": "Some of those infected with Hepatitis Band C viruses do not show the symptoms for many years."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following statements is not correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "There is no vaccine against Hepatitis C as the virus is highly variable, but there are vaccines against Hepatitis A and B.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-061",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 61,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Judiciary",
+    "question": "With reference to the Constitution of India, consider the following statements:\n\n1. No High Court shall have the jurisdiction to declare any central law to be constitutionally invalid.\n\n2. An amendment to the Constitution of India cannot be called into question by the Supreme Court of India.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the Constitution of India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. No High Court shall have the jurisdiction to declare any central law to be constitutionally invalid."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. An amendment to the Constitution of India cannot be called into question by the Supreme Court of India."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "High Courts can strike down Central laws with their power of judicial review (Articles 13 and 226). The Supreme Court can also call a constitutional amendment into question if it violates the 'basic structure' of the Constitution (Kesavananda Bharati case, 1973).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-062",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 62,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Economic foundations, growth & national income",
+    "question": "Consider the following statements\n\n1. Purchasing Power Parity (PPP) exchange rates are calculated by comparing the prices of the same basket of goods and services in different countries.\n\n2. In terms of PPP dollars, India is the sixth largest economy in the world.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Purchasing Power Parity (PPP) exchange rates are calculated by comparing the prices of the same basket of goods and services in different countries."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. In terms of PPP dollars, India is the sixth largest economy in the world."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "PPP exchange rate is the rate at which the currency of one country must be converted into another to buy the same amount of goods and services, making statement 1 correct. Statement 2 is incorrect because India is the third largest economy in the world in PPP terms (after China and the United States), not the sixth.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-063",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 63,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Agriculture & allied sectors",
+    "question": "With reference to the cultivation of Kharif crops in India in the last five years, consider the following statements:\n\n1. Area under rice cultivation is the highest.\n\n2. Area under the cultivation of jowar is more than that of oilseeds.\n\n3. Area of cotton cultivation is more than that of sugarcane.\n\n4. Area under sugarcane cultivation has steadily decreased.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2, 3 and 4 only",
+      "c": "2 and 4 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the cultivation of Kharif crops in India in the last five years, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Area under rice cultivation is the highest."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Area under the cultivation of jowar is more than that of oilseeds."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Area of cotton cultivation is more than that of sugarcane."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Area under sugarcane cultivation has steadily decreased."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Rice accounts for the highest cropped area in India (~43 million hectares) (Statement 1 correct). Cotton cultivation area (~12 million hectares) significantly exceeds sugarcane (~5 million hectares) (Statement 3 correct). Statement 2 is false as the area under oilseeds (26 million hectares) dwarfs jowar (5 million hectares). Statement 4 is false because sugarcane acreage fluctuates and has not shown a \"steady decrease\".",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-064",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 64,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Agriculture & allied sectors",
+    "question": "Among the agricultural commodities imported by India, which one of the following accounts for the highest imports in terms of value in the last five years?",
+    "options": {
+      "a": "Spices",
+      "b": "Fresh fruits",
+      "c": "Pulses",
+      "d": "Vegetable oils"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Among the agricultural commodities imported by India, which one of the following accounts for the highest imports in terms of value in the last five years?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "India is one of the world's largest importers of edible vegetable oils (like palm, soy, and sunflower oil), which consistently account for the absolute highest value of agricultural commodity imports into the country over recent years.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5956"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-065",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 65,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Rights, duties & directive principles",
+    "question": "In the context of polity, which one of the following would you accept as the most appropriate definition of liberty?",
+    "options": {
+      "a": "Protection against the tyranny of political rulers",
+      "b": "Absence of restraint",
+      "c": "Opportunity to do whatever one likes",
+      "d": "Opportunity to develop oneself fully."
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of polity, which one of the following would you accept as the most appropriate definition of liberty?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "In the context of polity, liberty provides for the absence of restraints as well as an opportunity to develop oneself fully.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4103"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-066",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 66,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "Which one of the following is not the most likely measure the Government/RBI takes to stop the slide of Indian rupee?",
+    "options": {
+      "a": "Curbing imports of non-essential goods-and promoting exports",
+      "b": "Encouraging Indian borrowers to issue rupee denominated Masala Bonds",
+      "c": "Easing conditions relating to external commercial borrowing",
+      "d": "Following an expansionary monetary policy"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is not the most likely measure the Government/RBI takes to stop the slide of Indian rupee?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "An expansionary monetary policy lowers domestic interest rates and increases the money supply, which encourages foreign capital outflows and reduces the attractiveness of saving in domestic currency, thereby weakening the rupee further. Curbing non-essential imports, issuing Masala bonds, and easing ECB conditions increase foreign currency inflows or reduce demand for dollars, supporting the rupee.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5412"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-067",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 67,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Payment data localisation",
+    "question": "Consider the following statements:\n\nThe Reserve Bank of India's recent directives relating to 'Storage of Payment System Data', popularly known as data diktat, command the payment system providers that\n\n1. they shall ensure that entire data relating to payment systems operated by them are stored in a system only in India\n\n2. they shall ensure that the systems are owned and operated by public sector enterprises\n\n3. they shall submit the consolidated system audit report to the Comptroller and Auditor General of India by the end of the calendar year\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Reserve Bank of India's recent directives relating to 'Storage of Payment System Data', popularly known as data diktat, command the payment system providers that"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. they shall ensure that entire data relating to payment systems operated by them are stored in a system only in India"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. they shall ensure that the systems are owned and operated by public sector enterprises"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. they shall submit the consolidated system audit report to the Comptroller and Auditor General of India by the end of the calendar year"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The RBI directive required the complete payment-system data to be stored in India. It did not require Indian public-sector ownership of the systems. The prescribed compliance audit was not a compulsory year-end report to the Comptroller and Auditor General.",
+      "concept": "Payment data localisation",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-068",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 68,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Data protection",
+    "question": "Which of the following adopted a law on data protection and privacy for its citizens known as 'General Data Protection Regulation' in April 2016 and started implementation of it from 25th May, 2018?",
+    "options": {
+      "a": "Australia",
+      "b": "Canada",
+      "c": "The European Union",
+      "d": "The United States of America"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following adopted a law on data protection and privacy for its citizens known as 'General Data Protection Regulation' in April 2016 and started implementation of it from 25th May, 2018?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The European Union adopted the GDPR in 2016 and it became applicable on 25 May 2018. The other listed jurisdictions did not enact this EU regulation.",
+      "concept": "Data protection",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-069",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 69,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "India–Russia cooperation",
+    "question": "Recently, India signed a deal known as 'Action Plan for Prioritization and Implementation of Cooperation Areas in the Nuclear Field' with which of the following countries?",
+    "options": {
+      "a": "Japan",
+      "b": "Russia",
+      "c": "The United Kingdom",
+      "d": "The United States of America"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, India signed a deal known as 'Action Plan for Prioritization and Implementation of Cooperation Areas in the Nuclear Field' with which of the following countries?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "India and Russia signed this nuclear cooperation action plan. The title identifies the bilateral civil nuclear partnership, including cooperation on nuclear power projects.",
+      "concept": "India–Russia cooperation",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-070",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 70,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Money multiplier",
+    "question": "The money multiplier in an economy increases with which one of the following?",
+    "options": {
+      "a": "Increase in the cash reserve ratio",
+      "b": "Increase in the banking habit of the population",
+      "c": "Increase in the statutory liquidity ratio",
+      "d": "Increase in the population of the country"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The money multiplier in an economy increases with which one of the following?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Greater use of banks reduces the public’s currency-to-deposit ratio and allows more deposits and lending from a given monetary base. Higher reserve requirements instead constrain deposit creation.",
+      "concept": "Money multiplier",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-071",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 71,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "The Service Area Approach was implemented under the purview of",
+    "options": {
+      "a": "Integrated Rural Programme",
+      "b": "Lead Bank Scheme",
+      "c": "Mahatma Gandhi National Rural Employment Guarantee Scheme",
+      "d": "National Skill Development Mission"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Service Area Approach was implemented under the purview of"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Lead Bank Scheme, introduced in 1969, aimed at providing adequate banking and credit outreach in rural areas through a 'Service Area Approach', where a designated bank branch is assigned a specific area or cluster of villages for intensive financial development.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5410"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-072",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 72,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "Indian geography & resources",
+    "question": "With reference to the management of minor minerals in India, consider the following statements:\n\n1. Sand is a 'minor mineral' according to the prevailing law in the country.\n\n2. State Governments have the power to grant mining leases of minor minerals, but the powers regarding the formation of rules related to the grant of minor minerals lie with the Central Government.\n\n3. State Governments have the power to frame rules to prevent illegal mining of minor minerals.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the management of minor minerals in India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Sand is a 'minor mineral' according to the prevailing law in the country."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. State Governments have the power to grant mining leases of minor minerals, but the powers regarding the formation of rules related to the grant of minor minerals lie with the Central Government."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. State Governments have the power to frame rules to prevent illegal mining of minor minerals."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Exp) Option a is the correct answer. Statement 1 is correct. As defined under the Mines and Minerals (Development and Regulation) Act, 1957 (MMDR Act) Sand is a minor mineral. Statement 2 is incorrect. The administration of the mining of minor minerals is a subject that is, completely within the domain of the respective State Governments. This act empowers State Government to grant mining leases of minor minerals. Also, it empowers State governments to frame rules for regulating the grant of mineral concessions in respect of minor minerals. Statement 3 is correct. Control of illegal mining is under the legislative and administrative jurisdiction of State Governments. Section 23C of the MMDR Act, 1957 empowers State Governments to frame rules to prevent illegal mining and the state governments may, by notification in the Official Gazette, make such rules for preventing illegal mining, transportation and storage of minerals (both major minerals and minor minerals).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-073",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 73,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International trade & institutions",
+    "question": "Consider the following statements:\n\n1. Most of India's external debt is owed by governmental entities.\n\n2. All of India's external debt is denominated in US dollars.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Most of India's external debt is owed by governmental entities."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. All of India's external debt is denominated in US dollars."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Most of India's external debt is actually owed by private businesses, not governmental entities (Statement 1 is incorrect). While the US dollar holds the largest share, India's external debt is also denominated in Indian rupees, SDRs, Japanese yen, and euros; therefore, it is not \"all\" denominated in US dollars (Statement 2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5818"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-074",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 74,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "Which of the following is not included in the assets of a commercial bank in India?",
+    "options": {
+      "a": "Advances",
+      "b": "Deposits",
+      "c": "Investments",
+      "d": ". Money at call and short notice"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is not included in the assets of a commercial bank in India?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Bank deposits (both demand and time deposits) represent funds owed by the bank to its customers that must be repaid on demand or at maturity, making them a liability rather than an asset for a commercial bank. Loans, advances, investments, and call money represent funds owed to the bank, constituting its assets.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5411"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-075",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 75,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International trade & institutions",
+    "question": "In the context of India, which of the following factors is/are contributor/ contributors to reducing the risk of a currency crisis?\n\n1. The foreign currency earnings of India's IT sector\n\n2. Increasing the government expenditure\n\n3. Remittances from Indians abroad\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 3 only",
+      "c": "2 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of India, which of the following factors is/are contributor/ contributors to reducing the risk of a currency crisis?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The foreign currency earnings of India's IT sector"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Increasing the government expenditure"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Remittances from Indians abroad"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Foreign currency earnings from exports (like the IT sector) and inward remittances from overseas Indians augment the country's foreign exchange reserves, reducing the risk of a currency crisis (1 and 3 are correct). Increasing government expenditure does not inherently bring in foreign currency and can widen fiscal deficits, potentially increasing risks (2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5819"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-076",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 76,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Constitutional structure & amendments",
+    "question": "Which one of the following suggested that the Governor should be an eminent person from outside the State and should be a detached figure without intense political links or should not have taken part in politics in the recent past?",
+    "options": {
+      "a": "First Administrative Reforms Commission (1966)",
+      "b": "Rajamannar Committee (1969)",
+      "c": "Sarkaria Commission (1983)",
+      "d": "National Commission to Review the Working of the Constitution (2000)"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following suggested that the Governor should be an eminent person from outside the State and should be a detached figure without intense political links or should not have taken part in politics in the recent past?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Sarkaria Commission, constituted in 1983 to look after centre-state relations, recommended that the Governor should be an eminent person from outside the State and a detached figure without active political links.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4303"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-077",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 77,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "Which of the following is issued by registered foreign portfolio investors to overseas investors who want to be part of the Indian stock market without registering themselves directly?",
+    "options": {
+      "a": "Certificate of Deposit",
+      "b": "Commercial Paper",
+      "c": "Promissory Note",
+      "d": "Participatory Note"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following is issued by registered foreign portfolio investors to overseas investors who want to be part of the Indian stock market without registering themselves directly?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "A Participatory Note (P-note) is an offshore derivative instrument issued by SEBI-registered foreign portfolio investors to overseas investors who wish to invest in the Indian stock market without registering directly with the market regulator.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5408"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-078",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 78,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following statements\n\n1. As per law, the Compensatory Afforestation Fund Management and Planning Authority exists at both National and State levels.\n\n2. People's participation is mandatory in the compensatory afforestation programmes carried out under the Compensatory Afforestation Fund Act, 2016.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. As per law, the Compensatory Afforestation Fund Management and Planning Authority exists at both National and State levels."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. People's participation is mandatory in the compensatory afforestation programmes carried out under the Compensatory Afforestation Fund Act, 2016."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "CAMPA exists at both the National and State levels to manage afforestation funds (Statement 1 is correct).  However, the Compensatory Afforestation Fund Act, 2016 encourages but does not explicitly mandate people's participation in afforestation programs (Statement 2 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7701",
+      "q-7965"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-079",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 79,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Parliament & state legislatures",
+    "question": "In India, which of the following review the independent regulators in sectors like telecommunications, insurance, electricity, etc.?\n\n1. Ad Hoc Committees set up by the Parliament\n\n2. Parliamentary Department Related Standing Committees\n\n3. Finance Commission\n\n4. Financial Sector Legislative Reforms Commission\n\n5. NITI Aayog\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2",
+      "b": "1, 3 and 4",
+      "c": "3, 4 and 5",
+      "d": "2 and 5"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In India, which of the following review the independent regulators in sectors like telecommunications, insurance, electricity, etc.?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Ad Hoc Committees set up by the Parliament"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Parliamentary Department Related Standing Committees"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Finance Commission"
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Financial Sector Legislative Reforms Commission"
+      },
+      {
+        "type": "paragraph",
+        "text": "5. NITI Aayog"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Independent regulatory authorities are accountable to the legislature and are reviewed by Ad Hoc Committees and Parliamentary Department Related Standing Committees (1 and 2 are correct). The Finance Commission, FSLRC, and NITI Aayog do not review them.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4637"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-080",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 80,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Economic foundations, growth & national income",
+    "question": "With reference to India's Five-Year Plans, which of the following statements is/are correct?\n\n1. From the Second Five-Year Plan, there was a determined thrust towards substitution of basic and capital good industries.\n\n2. The Fourth Five-Year Plan adopted the objective of correcting the earlier trend of increased concentration of wealth and economic power.\n\n3. In the Fifth Five-Year Plan, for the first time, the financial sector was included as an integral part of the Plan.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to India's Five-Year Plans, which of the following statements is/are correct?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. From the Second Five-Year Plan, there was a determined thrust towards substitution of basic and capital good industries."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The Fourth Five-Year Plan adopted the objective of correcting the earlier trend of increased concentration of wealth and economic power."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. In the Fifth Five-Year Plan, for the first time, the financial sector was included as an integral part of the Plan."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Second Plan focused heavily on basic and capital goods substitution, and the Fourth Plan aimed at correcting the concentration of wealth and economic power. However, statement 3 is incorrect because the financial sector was included as an integral part of India's planning for the first time in the Ninth Five Year Plan, not the Fifth.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-081",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 81,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Tribal communities",
+    "question": "Consider the following statements about Particularly Vulnerable Tribal Groups (PVTGs) in India:\n\n1. PVTGs reside in 18 States and one Union Territory.\n\n2. A stagnant or declining population is one of the criteria for determining PVTG status.\n\n3. There are 95 PVTGs officially notified in the country so far.\n\n4. Irular and Konda Reddi tribes are included in the list of PVTGs.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1, 2 and 3",
+      "b": "2, 3 and 4",
+      "c": "1, 2 and 4",
+      "d": "1, 3 and 4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements about Particularly Vulnerable Tribal Groups (PVTGs) in India:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. PVTGs reside in 18 States and one Union Territory."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. A stagnant or declining population is one of the criteria for determining PVTG status."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. There are 95 PVTGs officially notified in the country so far."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Irular and Konda Reddi tribes are included in the list of PVTGs."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "For the examination’s reference period, PVTGs were identified in 18 states and one Union Territory. A stagnant or declining population is a criterion and Irular and Konda Reddi are included. The notified total was 75, not 95.",
+      "concept": "Tribal communities",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-082",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 82,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Public institutions & governance",
+    "question": "With reference to the Constitution of India, prohibitions or limitations or provisions contained in ordinary laws cannot act as prohibitions or limitations on the constitutional powers under Article 142. It could mean which one of the following?",
+    "options": {
+      "a": "The decisions taken by the Election Commission of India while discharging its duties cannot be challenged in any court of law.",
+      "b": "The Supreme Court of India is not constrained in the exercise of its powers by laws made by the Parliament.",
+      "c": "In the event of grave financial crisis in the country, the President of India can declare Financial Emergency without the counsel from the Cabinet.",
+      "d": "State Legislatures cannot make laws on certain matters without the concurrence of Union Legislature."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the Constitution of India, prohibitions or limitations or provisions contained in ordinary laws cannot act as prohibitions or limitations on the constitutional powers under Article 142. It could mean which one of the following?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Article 142 enables the Supreme Court to pass any decree necessary for doing \"complete justice\", meaning the Supreme Court is not constrained in the exercise of its powers by ordinary laws made by Parliament.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4929"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-083",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 83,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Union & state executive",
+    "question": "With reference to the Legislative Assembly of a State in India, consider the following statements:\n\n1. The Governor makes a customary address to Members of the House at the commencement of the first session of the year.\n\n2. When a State Legislature does' not have a rule on a particular matter, it follows the Lok Sabha rule on that matter.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the Legislative Assembly of a State in India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The Governor makes a customary address to Members of the House at the commencement of the first session of the year."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. When a State Legislature does' not have a rule on a particular matter, it follows the Lok Sabha rule on that matter."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Governor addresses the state legislature at the first session of each year (Article 176). Under Article 208, until rules are made by the State Legislature, the rules of procedure of the corresponding Province (which align with Lok Sabha rules modified by the Speaker) are followed.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4479"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-084",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 84,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "UN conventions",
+    "question": "Consider the following statements:\n\n1. The United Nations Convention against Corruption (UNCAC) has a 'Protocol against the Smuggling of Migrants by Land, Sea and Air'.\n\n2. The UNCAC is the ever-first legally binding global anti-corruption instrument.\n\n3. A highlight of the United Nations Convention against Transnational Organized Crime (UNTOC) is the inclusion of a specific chapter aimed at returning assets to their rightful owners from whom they had been taken illicitly.\n\n4. The United Nations Office on Drugs and Crime (UNODC) is mandated by its member States to assist in the implementation of both UNCAC and UNTOC.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2, 3 and 4 only",
+      "c": "2 and 4 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The United Nations Convention against Corruption (UNCAC) has a 'Protocol against the Smuggling of Migrants by Land, Sea and Air'."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The UNCAC is the ever-first legally binding global anti-corruption instrument."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. A highlight of the United Nations Convention against Transnational Organized Crime (UNTOC) is the inclusion of a specific chapter aimed at returning assets to their rightful owners from whom they had been taken illicitly."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. The United Nations Office on Drugs and Crime (UNODC) is mandated by its member States to assist in the implementation of both UNCAC and UNTOC."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "UNCAC is the legally binding anti-corruption convention. The migrant-smuggling protocol and human-trafficking protocol supplement UNTOC. Both conventions also support international cooperation, including asset recovery in the case of corruption. Statements 2 and 4 are accepted.",
+      "concept": "UN conventions",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-085",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 85,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following statements:\n\n1. As per recent amendment to the Indian Forest Act, 1927, forest dwellers have the right to fell the bamboos grown on forest areas.\n\n2. As per the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006, bamboo is a minor forest produce.\n\n3. The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006 allows ownership of minor forest produce to forest dwellers.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. As per recent amendment to the Indian Forest Act, 1927, forest dwellers have the right to fell the bamboos grown on forest areas."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. As per the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006, bamboo is a minor forest produce."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006 allows ownership of minor forest produce to forest dwellers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The recent amendment to the Indian Forest Act allowed felling of bamboo grown on *non-forest* areas (not forest areas), making Statement 1 incorrect.  Under the Forest Rights Act (FRA) 2006, bamboo is classified as a minor forest produce, and the Act grants ownership and collection rights of this produce to forest dwellers (Statements 2 and 3 are correct).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7700"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-086",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 86,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Rights, duties & directive principles",
+    "question": "Which Article of the Constitution of India safeguards one's right to marry the person of one's choice?",
+    "options": {
+      "a": "Article 19",
+      "b": "Article 21",
+      "c": "Article 25",
+      "d": "Article 29"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which Article of the Constitution of India safeguards one's right to marry the person of one's choice?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Article 21 of the Constitution of India safeguards one's right to marry the person of one's choice, as intimacies of marriage lie within a core zone of privacy.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4102"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-087",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 87,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "Consider the following statements:\n\n1. According to the Indian Patents Act, a biological process to create a seed can be patented in India.\n\n2. In India, there is no Intellectual Property Appellate Board.\n\n3. Plant varieties are not eligible to be patented in India.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. According to the Indian Patents Act, a biological process to create a seed can be patented in India."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. In India, there is no Intellectual Property Appellate Board."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Plant varieties are not eligible to be patented in India."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Under the Indian Patents Act, seeds, plant varieties, and biological processes for their production are strictly not patentable (Statement 1 is false, 3 is true). India did establish an Intellectual Property Appellate Board in 2003 (Statement 2 is false).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7185"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-088",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 88,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following statements:\n\nThe Environment Protection Act, 1986 empowers the Government of India to\n\n1. state the requirement of public participation in the process of environmental protection, and the procedure and manner in which it is sought\n\n2. lay down The standards for emission or discharge of environmental pollutants from various sources\n\nWhich of the statements given above is/ are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Environment Protection Act, 1986 empowers the Government of India to"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. state the requirement of public participation in the process of environmental protection, and the procedure and manner in which it is sought"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. lay down The standards for emission or discharge of environmental pollutants from various sources"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/ are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Environment Protection Act, 1986, empowers the Central Government to lay down standards for the emission or discharge of environmental pollutants (Statement 2 is correct).  However, the Act itself does not contain specific provisions mandating public participation in the environmental protection process (Statement 1 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-089",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 89,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "As per the Solid Waste Management Rules, 2016 in India, which one of the following statements is correct?",
+    "options": {
+      "a": "Waste generator has to segregate waste into five categories.",
+      "b": "The Rules are applicable to riotified urban local bodies, notified towns and all industrial townships only.",
+      "c": "The Rules provide for exact and elaborate criteria for the identification of sites for landfills and waste processing facilities.",
+      "d": "It is mandatory on the part of waste generator that the waste generated in one district cannot be moved to another district."
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "As per the Solid Waste Management Rules, 2016 in India, which one of the following statements is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Solid Waste Management Rules, 2016 specifically provide exact and elaborate environmental criteria for the identification and setup of sites for solid waste processing facilities and sanitary landfills.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7698"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-090",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 90,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Employment arrangements",
+    "question": "Consider the following statements:\n\nAs per the Industrial Employment (Standing Orders) Central (Amendment) Rules, 2018\n\n1. if rules for fixed-term employment are implemented, it becomes easier for the firms/companies to layoff workers.\n\n2. no notice of termination of employment shall be necessary in the case of temporary workman.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "As per the Industrial Employment (Standing Orders) Central (Amendment) Rules, 2018"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. if rules for fixed-term employment are implemented, it becomes easier for the firms/companies to layoff workers."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. no notice of termination of employment shall be necessary in the case of temporary workman."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Fixed-term employment allows employment to end when the agreed term expires. The cited rules also dispense with termination notice for the specified temporary workman. Both statements are accepted in this paper.",
+      "concept": "Employment arrangements",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-091",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 91,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "International Relations",
+    "topic": "Multilateral development banks",
+    "question": "With reference to Asian Infrastructure Investment Bank (AIIB), consider the following statements\n\n1. AIIB has more than 80 member nations.\n\n2. India is the largest shareholder in AIIB.\n\n3. AIIB does not have any members from outside Asia.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": ". 1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to Asian Infrastructure Investment Bank (AIIB), consider the following statements"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. AIIB has more than 80 member nations."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. India is the largest shareholder in AIIB."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. AIIB does not have any members from outside Asia."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "At the time of the paper AIIB had more than 80 approved members. China, rather than India, was the largest shareholder, and membership included countries outside Asia. Only statement 1 is correct.",
+      "concept": "Multilateral development banks",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-092",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 92,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Stressed asset resolution",
+    "question": "What was the purpose of Inter-Creditor Agreement signed by Indian banks and financial institutions recently?",
+    "options": {
+      "a": "To lessen the Government of India's perennial burden of fiscal deficit nd current account deficit",
+      "b": "To support the infrastructure projects of Central and State Governments",
+      "c": "To act as independent regulator in case of applications for loans of Rs. 50 crore or more",
+      "d": "To aim at faster resolution of stressed assets of Rs. 50 crore or more which are-under consortium lending"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What was the purpose of Inter-Creditor Agreement signed by Indian banks and financial institutions recently?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The inter-creditor agreement coordinated lenders in resolving stressed assets under consortium lending. It was a mechanism for faster resolution, rather than a new regulator or a fiscal-deficit programme.",
+      "concept": "Stressed asset resolution",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-093",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 93,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Banking, money & financial markets",
+    "question": "The Chairmen of public sector banks are selected by the",
+    "options": {
+      "a": "Banks Board Bureau",
+      "b": "Reserve Bank of India",
+      "c": "Union Ministry of Finance",
+      "d": "Management of concerned bank"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Chairmen of public sector banks are selected by the"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Banks Board Bureau (BBB), constituted by the government in 2016 as a body of eminent professionals and officials, was responsible for recommending the appointment of whole-time directors and non-executive chairpersons of Public Sector Banks and state-owned financial institutions. (Note: The BBB has since been replaced by the Financial Services Institutions Bureau - FSIB).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5409"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-094",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 94,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Energy regulation",
+    "question": "Consider the following statements:\n\n1. Petroleum and Natural Gas Regulatory Board (PNGRB) is the first regulatory body set up by the Government of India.\n\n2. One of the tasks of PNGRB is to, ensure competitive markets for gas.\n\n3. Appeals against the decisions of PNGRB go before the Appellate Tribunals for Electricity.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Petroleum and Natural Gas Regulatory Board (PNGRB) is the first regulatory body set up by the Government of India."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. One of the tasks of PNGRB is to, ensure competitive markets for gas."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Appeals against the decisions of PNGRB go before the Appellate Tribunals for Electricity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "PNGRB regulates parts of the petroleum and natural-gas sector and promotes competitive gas markets. Appeals go to the Appellate Tribunal for Electricity. Other Indian regulators existed before PNGRB, so statement 1 is incorrect.",
+      "concept": "Energy regulation",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-095",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 95,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "With reference to communication technologies, what is/are the difference / differences between LTE (Long-Term Evolution) and VoLTE (Voice over Long-Term Evolution)?\n\n1. LTE 'is commonly marketed as 3G and VoLTE is commonly marketed as advanced 3G.\n\n2. LTE is data-only technology and VoLTE is voice-only technology.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to communication technologies, what is/are the difference / differences between LTE (Long-Term Evolution) and VoLTE (Voice over Long-Term Evolution)?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. LTE 'is commonly marketed as 3G and VoLTE is commonly marketed as advanced 3G."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. LTE is data-only technology and VoLTE is voice-only technology."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "LTE is marketed as 4G, not 3G. LTE was originally data-only (with voice falling back to older networks), while VoLTE is an enhancement that transmits voice as data packets over the LTE network, allowing simultaneous voice and data usage. Neither statement is correct.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-096",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 96,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Maternity benefits",
+    "question": "Which of the following statements is / are correct regarding the Maternity Benefit ' (Amendment) Act, 2017?\n\n1. Pregnant women are entitled for three months pre-delivery and three months post-delivery paid leave.\n\n2. Enterprises with creches must allow the mother minimum six creche visits daily.\n\n3. Women with two children get reduced entitlements.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following statements is / are correct regarding the Maternity Benefit ' (Amendment) Act, 2017?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Pregnant women are entitled for three months pre-delivery and three months post-delivery paid leave."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Enterprises with creches must allow the mother minimum six creche visits daily."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Women with two children get reduced entitlements."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The 2017 amendment provides up to 26 weeks for eligible women with fewer than two surviving children, with at most eight weeks before expected delivery. It permits four crèche visits daily, not six. Women with two or more surviving children have the reduced 12-week entitlement.",
+      "concept": "Maternity benefits",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-097",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 97,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Business environment indicators",
+    "question": "Which one of the following is not a sub-index of the World Bank's 'Ease of Doing Business Index'?",
+    "options": {
+      "a": "Maintenance of law and order",
+      "b": "Paying taxes",
+      "c": "Registering property",
+      "d": "Dealing with construction permits"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is not a sub-index of the World Bank's 'Ease of Doing Business Index'?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Maintenance of law and order was not a separate Ease of Doing Business sub-index. Paying taxes, registering property and dealing with construction permits were included.",
+      "concept": "Business environment indicators",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-098",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 98,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "In India,'extended producer responsibility' was introduced as an important feature in which of the following?",
+    "options": {
+      "a": "The Bio-medical Waste (Management and Handling) Rules, 1998",
+      "b": "The Recycled plastic (Manufacturing and Usage) Rules, 1999",
+      "c": "The e-Waste (Management and Handling) Rules, 2011",
+      "d": "The Food Safety and Standard Regulations, 2011"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In India,'extended producer responsibility' was introduced as an important feature in which of the following?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Extended Producer Responsibility (EPR) is an environmental policy approach where producers take responsibility for managing their products after they are discarded by consumers.  This was a key feature introduced in the e-Waste (Management and Handling) Rules, 2011 in India.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-099",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 99,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Agriculture & allied sectors",
+    "question": "The economic cost of food grains to the Food Corporation of India is Minimum Support Price and bonus (if any) paid to the farmers plus",
+    "options": {
+      "a": "transportation cost only",
+      "b": "interest cost only",
+      "c": "procurement incidentals and distribution cost",
+      "d": "procurement incidentals and charges for godowns"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The economic cost of food grains to the Food Corporation of India is Minimum Support Price and bonus (if any) paid to the farmers plus"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The total Economic Cost of food grains for the Food Corporation of India (FCI) consists of exactly three components: the procurement price (MSP + bonus) paid to farmers, procurement incidentals (taxes, labor, mandi fees), and the cost of distribution (freight, storage, handling, administration).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5955"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-100",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 100,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Social capital",
+    "question": "In the context of any country, which one of the following would be considered as part of its social capital?",
+    "options": {
+      "a": "The proportion of literates in the population",
+      "b": "The stock of its buildings, other infrastructure and machines",
+      "c": "The size of population in the working age group",
+      "d": "The level of mutual trust and harmony in the society"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of any country, which one of the following would be considered as part of its social capital?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Social capital refers to trust, networks and norms that help people cooperate. Buildings and machines are physical capital; literacy and working-age population concern human resources.",
+      "concept": "Social capital",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  }
+]

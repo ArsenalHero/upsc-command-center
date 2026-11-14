@@ -1,0 +1,2615 @@
+[
+  {
+    "id": "upsc-2019-prelims-gs1-b-001",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 1,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "Consider the following statements:\n\n1. Agricultural soils release nitrogen oxides into environment.\n\n2. Cattle release ammonia into environment.\n\n3. Poultry industry releases reactive nitrogen compounds into environment.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2 and 3 only",
+      "c": "2 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Agricultural soils release nitrogen oxides into environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Cattle release ammonia into environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Poultry industry releases reactive nitrogen compounds into environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Agricultural soils release nitrogen oxides (like $N_2O$) via nitrification and denitrification of fertilizers.  Cattle release ammonia ($NH_3$) through urine and feces.  The poultry industry releases reactive nitrogen compounds (ammonia, nitrous oxide) via feed and manure management.  All statements are correct.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7559"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-002",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 2,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "What is common to the places known as Aliyar, Isapur and Kangsabati?",
+    "options": {
+      "a": "Recently discovered uranium deposits",
+      "b": "Tropical rain forests",
+      "c": "Underground cave systems",
+      "d": "Water reservoirs"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "What is common to the places known as Aliyar, Isapur and Kangsabati?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Exp) Option d is the correct answer answer. All the three are water reservoirs. Aliyar reservoir (Aliyar river, Tamil Nadu) Isapur dam (Penganga river, Maharashtra) Kangsabati reservoir (Kangsabati river, West Bengal)\nPage 183",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-3222"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-003",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 3,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "In the context of proposals to the use of hydrogen-enriched CNG (H-CNG) as fuel for buses in public transport, consider the following statements:\n\n1. The main advantage of the use of H-CNG is the elimination of carbon monoxide emissions.\n\n2. H-CNG as fuel reduces carbon dioxide and hydrocarbon emissions.\n\n3. Hydrogen up to one-fifth by volume can be blended with CNG as fuel for buses.\n\n4. H-CNG makes the fuel less expensive than CNG.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "4 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of proposals to the use of hydrogen-enriched CNG (H-CNG) as fuel for buses in public transport, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The main advantage of the use of H-CNG is the elimination of carbon monoxide emissions."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. H-CNG as fuel reduces carbon dioxide and hydrocarbon emissions."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Hydrogen up to one-fifth by volume can be blended with CNG as fuel for buses."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. H-CNG makes the fuel less expensive than CNG."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "H-CNG significantly reduces (but cannot totally eliminate) carbon monoxide emissions (Statement 1 is incorrect).  It burns cleaner, reducing $CO_2$ and hydrocarbon emissions (Statement 2 is correct).  Up to 20% (one-fifth) hydrogen can be blended safely for buses (Statement 3 is correct).  Hydrogen production is expensive, making H-CNG more expensive than regular CNG (Statement 4 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-004",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 4,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "Climatology",
+    "question": "Why are dewdrops not formed on a cloudy night?",
+    "options": {
+      "a": "Clouds absorb the radiation released from the Earth's surface.",
+      "b": "Clouds reflect back the Earth's radiation.",
+      "c": "The Earth's surface would have low temperature on cloudy nights.",
+      "d": "Clouds deflect the blowing wind to ground level."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Why are dewdrops not formed on a cloudy night?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Dew forms when the earth's surface cools at night through longwave emission. Cloudy skies reflect back the Earth's radiation and prevent the Earth's surface from cooling down enough to reach the dew point.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-005",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 5,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Judiciary",
+    "question": "Consider the following statements:\n\n1. The 44th Amendment to the Constitution of India introduced an Article placing the election of the Prime Minister beyond judicial review.\n\n2. The Supreme Court of India struck down the 99th Amendment to the Constitution of India as being violative of the independence of judiciary.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The 44th Amendment to the Constitution of India introduced an Article placing the election of the Prime Minister beyond judicial review."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The Supreme Court of India struck down the 99th Amendment to the Constitution of India as being violative of the independence of judiciary."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The 44th Amendment had no provision placing the Prime Minister's election beyond judicial review (this was done by the 39th Amendment, which the 44th sought to nullify). The 99th Amendment Act, 2014 (NJAC) was struck down by the Supreme Court for violating judicial independence.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4380"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-006",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 6,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Judiciary",
+    "question": "Consider the following statements:\n\n1. The- motion to impeach a Judge of the Supreme Court of India cannot be rejected by the Speaker of the Lok Sabha as per the Judges (Inquiry) Act, 1968.\n\n2. The Constitution of India defines and gives details of what Constitutes 'incapacity and proved misbehaviour' of the Judges of the Supreme Court of India.\n\n3. The details of the process of impeachment of the Judges of the Supreme Court of India are given in the Judges (Inquiry) Act, 1968.\n\n4. If the motion for the impeachment of a Judge is taken up for voting, the law requires the motion to be backed by each House of the Parliament and supported by a majority of total membership of that House and by not less than two-thirds of total members of that House present and voting.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 and 2",
+      "b": "3 only",
+      "c": "3 and 4 only",
+      "d": "1, 3 and 4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The- motion to impeach a Judge of the Supreme Court of India cannot be rejected by the Speaker of the Lok Sabha as per the Judges (Inquiry) Act, 1968."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The Constitution of India defines and gives details of what Constitutes 'incapacity and proved misbehaviour' of the Judges of the Supreme Court of India."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The details of the process of impeachment of the Judges of the Supreme Court of India are given in the Judges (Inquiry) Act, 1968."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. If the motion for the impeachment of a Judge is taken up for voting, the law requires the motion to be backed by each House of the Parliament and supported by a majority of total membership of that House and by not less than two-thirds of total members of that House present and voting."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The motion to impeach a judge can be rejected by the Speaker/Chairman (Statement 1 is incorrect). The Constitution does not define 'incapacity and proved misbehaviour' (Statement 2 is incorrect). The Judges (Inquiry) Act, 1968 regulates the impeachment process, and it requires a special majority (Statements 3 and 4 are correct).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4375"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-007",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 7,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Constitutional history & foundations",
+    "question": "The Ninth Schedule was introduced in the Constitution of India during the prime ministership of",
+    "options": {
+      "a": "Jawaharlal Nehru",
+      "b": "Lal Bahadur Shastri",
+      "c": "Indira Gandhi",
+      "d": "Morarji Desai"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Ninth Schedule was introduced in the Constitution of India during the prime ministership of"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Ninth Schedule was introduced by the First Constitutional (Amendment) Act of 1951 during the prime ministership of Jawaharlal Nehru to protect agrarian reform laws from judicial review.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-3959"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-008",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 8,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Infrastructure & industries",
+    "question": "Consider the following statements:\n\n1. Coal sector was nationalized by the Government of India under Indira Gandhi.\n\n2. Now, coal blocks are allocated on lottery basis.\n\n3. Till recently, India imported coal to meet the shortages of domestic supply, but now India is self-sufficient in coal production.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Coal sector was nationalized by the Government of India under Indira Gandhi."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Now, coal blocks are allocated on lottery basis."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Till recently, India imported coal to meet the shortages of domestic supply, but now India is self-sufficient in coal production."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The coal sector was nationalized during 1971-73 under the Indira Gandhi government (Statement 1 correct). Today, coal blocks are allocated through a competitive bidding process (the firm offering the highest per tonne price is allotted the mine), not by lottery (Statement 2 incorrect). Despite having the fifth-largest reserves, India is not self-sufficient and still imports high-quality coal to meet domestic demand (Statement 3 incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5709"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-009",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 9,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Organisations & miscellaneous polity",
+    "question": "Consider the following statements:\n\n1. The Parliament (Prevention of Disqualification) Act, 1959 exempts several posts from disqualification on the grounds of 'Office of Profit'.\n\n2. The above-mentioned Act was amended five times.\n\n3. The term 'Office of Profit' is well-defined in the Constitution of India.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. The Parliament (Prevention of Disqualification) Act, 1959 exempts several posts from disqualification on the grounds of 'Office of Profit'."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The above-mentioned Act was amended five times."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The term 'Office of Profit' is well-defined in the Constitution of India."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The 1959 Act exempts several posts from 'Office of Profit' disqualification and has been amended 5 times (Statements 1 and 2 are correct). The term 'Office of Profit' is not defined in the Constitution of India (Statement 3 is incorrect).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5037"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-010",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 10,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Local government",
+    "question": "Under which Schedule of the Constitution of India can the transfer of tribal land to private parties for mining be declared null and void?",
+    "options": {
+      "a": "Third Schedule",
+      "b": "Fifth Schedule",
+      "c": "Ninth Schedule",
+      "d": "Twelfth Schedule"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Under which Schedule of the Constitution of India can the transfer of tribal land to private parties for mining be declared null and void?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Under the Fifth Schedule, the Governor can restrict the transfer of tribal land. In the Samatha vs. State of Andhra Pradesh (1997) case, the Supreme Court declared the transfer of tribal land to private parties for mining as null and void under the Fifth Schedule.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4867"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-011",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 11,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Plant resources",
+    "question": "Recently, there was a growing awareness in our country about the importance of Himalayan nettle (Girardinia diversifolia) because it is found to be a sustainable source of",
+    "options": {
+      "a": "anti-malarial drug",
+      "b": "biodiesel",
+      "c": "pulp for paper industry",
+      "d": "textile fibre"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Recently, there was a growing awareness in our country about the importance of Himalayan nettle (Girardinia diversifolia) because it is found to be a sustainable source of"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Himalayan nettle supplies a strong bast fibre used for textiles. The question concerns a sustainable fibre source, rather than a fuel, medicine or paper pulp.",
+      "concept": "Plant resources",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-012",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 12,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Science & Technology",
+    "topic": "Applied science & technology",
+    "question": "For the measurement/estimation of which of the following are satellite images/remote sensing data used?\n\n1. Chlorophyll content in the vegetation of a specific location\n\n2. Greenhouse gas emissions from rice paddies of a specific location\n\n3. Land surface temperatures of a specific location\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "For the measurement/estimation of which of the following are satellite images/remote sensing data used?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Chlorophyll content in the vegetation of a specific location"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Greenhouse gas emissions from rice paddies of a specific location"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Land surface temperatures of a specific location"
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Remote sensing and satellite imagery analyze distinct light reflectances and thermal emissions to accurately estimate vegetation health (chlorophyll), track specific greenhouse gases (like methane from rice paddies), and measure land surface temperatures.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7178"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-013",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 13,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following States:\n\n1. Chhattisgarh\n\n2. M dhya Pradesh\n\n3. Maharashtra\n\n4. Odisha\n\nWith reference to the States mentioned above, in terms of percentage of forest cover to the total area of State, which one of the following is the correct ascending order?",
+    "options": {
+      "a": "2-3-1-4",
+      "b": "2-3-4-1",
+      "c": "3-2-4-1",
+      "d": "3-2-1-4"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following States:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Chhattisgarh"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. M dhya Pradesh"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Maharashtra"
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Odisha"
+      },
+      {
+        "type": "paragraph",
+        "text": "With reference to the States mentioned above, in terms of percentage of forest cover to the total area of State, which one of the following is the correct ascending order?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "In terms of percentage of forest cover relative to their total area, the ascending order is: Maharashtra (16.51%) < Madhya Pradesh (25.41%) < Odisha (33.5%) < Chhattisgarh (41.21%).  Thus, the correct sequence is 3-2-4-1.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7695"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-014",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 14,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "Which of the following statements are correct about the deposits of \"methane hydrate\"?\n\n1. Global warming might trigger the release of methane gas from these deposits.\n\n2. Large deposits of 'methane hydrate' are found in Arctic Tundra and under the seafloor.\n\n3. Methane in atmosphere oxidizes to carbon dioxide after a decade or two.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following statements are correct about the deposits of \"methane hydrate\"?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Global warming might trigger the release of methane gas from these deposits."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Large deposits of 'methane hydrate' are found in Arctic Tundra and under the seafloor."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Methane in atmosphere oxidizes to carbon dioxide after a decade or two."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Methane hydrate is an \"ice\" that occurs naturally under specific temperature and pressure conditions.  Global warming threatens to destabilize these conditions, potentially releasing trapped methane from its large deposits in the Arctic tundra and seafloors (Statements 1 and 2).  In the atmosphere, methane oxidizes into carbon dioxide over a period of decades (Statement 3).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7564"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-015",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 15,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "Consider the following:\n\n1. Carbon monoxide\n\n2. Methane\n\n3. Ozone\n\n4. Sulphur dioxide\n\nWhich of the above are released into atmosphere due to the burning of crop/biomass residue?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2, 3 and 4 only",
+      "c": "1 and 4 'only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Carbon monoxide"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Methane"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Ozone"
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Sulphur dioxide"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the above are released into atmosphere due to the burning of crop/biomass residue?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Burning crop and biomass residues emits a wide array of harmful gases, including sulfur dioxide ($SO_2$), carbon monoxide (CO), methane ($CH_4$), and contributes to the formation of secondary pollutants like ozone ($O_3$) via precursors like NOx and VOCs.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7561"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-016",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 16,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "World geography & mapping",
+    "question": "Consider the following pairs:\n\nSea | Bordering country\n1. Adriatic Sea | Albania\n2. Black Sea | Croatia\n3. Caspian Sea | Kazakhstan\n4. Mediterranean Sea | Morocco\n5. Red Sea | Syria\n\nWhich of the pair given above are correctly matched?",
+    "options": {
+      "a": "1, 2 and 4 only",
+      "b": "1, 3 and 4 only",
+      "c": "2 and 5 only",
+      "d": "1, 2, 3, 4 and 5"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Sea",
+          "Bordering country"
+        ],
+        "rows": [
+          [
+            "1. Adriatic Sea",
+            "Albania"
+          ],
+          [
+            "2. Black Sea",
+            "Croatia"
+          ],
+          [
+            "3. Caspian Sea",
+            "Kazakhstan"
+          ],
+          [
+            "4. Mediterranean Sea",
+            "Morocco"
+          ],
+          [
+            "5. Red Sea",
+            "Syria"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pair given above are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Option b is the correct answer. Option 1 is correct. Adriatic Sea borders Albania. Option 2 is incorrect. Black Sea borders Russia, Turkey, Georgia, Romania, Ukraine and Bulgaria. Adriatic Sea borders Croatia. Option 3 is correct. Russia, Iran, Azerbaijan, Kazakhstan and Turkmenistan are countries bordering Caspian Sea. Option 4 is correct. Morocco which lies in North western Africa borders the Mediterranean Sea near Strait of Gibraltar. Option 5 is incorrect. Red Sea borders Egypt, Sudan, Yemen, Saudi Arabia, Eritrea and Djibouti. The Mediterranean Sea borders Syria.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-017",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 17,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Agriculture & allied sectors",
+    "question": "Among the following, which one is the largest exporter of rice in the world in the last five years?",
+    "options": {
+      "a": "China",
+      "b": "India",
+      "c": "Myanmar",
+      "d": "Vietnam"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Among the following, which one is the largest exporter of rice in the world in the last five years?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "India overtook Thailand in 2011 to become the largest exporter of rice globally and has consistently held onto the absolute top position as the world's leading rice exporter over the subsequent years.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-5957"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-018",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 18,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "Consider the following pairs:\n\nGlacier | River\n1. Bandarpunch | Yamuna\n2. Bara Shigri | Chenab\n3. Milam | Mandakini\n4. Siachen | Nubra\n5. Zemu | Manas\n\nWhich of the pairs given above are correctly matched?",
+    "options": {
+      "a": "1, 2 and 4",
+      "b": "1, 3 and 4",
+      "c": "2 and 5",
+      "d": "3 and 5"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Glacier",
+          "River"
+        ],
+        "rows": [
+          [
+            "1. Bandarpunch",
+            "Yamuna"
+          ],
+          [
+            "2. Bara Shigri",
+            "Chenab"
+          ],
+          [
+            "3. Milam",
+            "Mandakini"
+          ],
+          [
+            "4. Siachen",
+            "Nubra"
+          ],
+          [
+            "5. Zemu",
+            "Manas"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Exp) Option a is the correct answer. Pair 1 is correctly matched. Banderpoonch Glacier perched in the Garhwal division of the Himalayas. The Banderpoonch Glacier is highly significant as it is the prime source of fresh water for the Yamuna basin. Pair 2 is correctly matched. The Bhara Shigiri glacier in the Chandra Valley of Lahaul in Himachal Pradesh feeds the Chenab river. Pair 3 is incorrectly matched. Milam is a major glacier in the state of Uttarakhand. Milam is situated in the Kumaon Himalayas, originating from the eastern slopes of the Trishuli. The river Gori Ganga has its source here. Pair 4 is correctly matched. The Siachen in Jammu and Kashmir (18,000ft.) near the Karakoram Pass is the longest glacier in the Indian Himalayas. It is 78km long and the source for the Nubra River that waters the Nubra Valley near Leh in the Trans Himalayas. The waters of the Nubra drain into the Shyok River and then into the Indus. Pair 5 is incorrectly matched. The Zemu glacier is the largest in the Eastern Himalayas in Sikkim. It is at the base of the Kanchendzonga and is one of the sources for the Teesta.\nPage 183, 184",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-3223"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-019",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 19,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Agricultural chemicals",
+    "question": "In India, the use of carbofuran, methyl parathion, phorate and triazophos is viewed with apprehension. These chemicals are used as",
+    "options": {
+      "a": "pesticides in agriculture",
+      "b": "preservatives in processed foods",
+      "c": "fruit-ripening agents",
+      "d": "moisturising agents in cosmetics"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In India, the use of carbofuran, methyl parathion, phorate and triazophos is viewed with apprehension. These chemicals are used as"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Carbofuran, methyl parathion, phorate and triazophos are agricultural pesticides. The concern is their toxicity and exposure during agricultural use.",
+      "concept": "Agricultural chemicals",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-020",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 20,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Consider the following statements:\n\n1. Under Ramsar Convention, it is mandatory on the part of the Government of India to protect and conserve all the wetlands in the territory of India.\n\n2. The Wetlands (Conservation and Management) Rules, 2010 were framed by the Government of India based on the recommendations of Ramsar Convention.\n\n3. The Wetlands (Conservation and Management) Rules, 2010 also encompass the drainage area or catchment regions of the wetlands as determined by the authority.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Under Ramsar Convention, it is mandatory on the part of the Government of India to protect and conserve all the wetlands in the territory of India."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The Wetlands (Conservation and Management) Rules, 2010 were framed by the Government of India based on the recommendations of Ramsar Convention."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The Wetlands (Conservation and Management) Rules, 2010 also encompass the drainage area or catchment regions of the wetlands as determined by the authority."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Ramsar Convention does not mandate conserving *all* wetlands, only promoting \"wise use\" and designating specific sites of international importance (Statement 1 is incorrect).  The 2010 rules were not explicitly framed \"based on the recommendation\" of the convention (Statement 2 is incorrect).  However, the rules do legally define a wetland to include its direct zone of influence, meaning its drainage area or catchment region (Statement 3 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7968"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-021",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 21,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Art, architecture & monuments",
+    "question": "Building 'Kalyaana Mandapas' was a notable feature in the temple construction in the kingdom of",
+    "options": {
+      "a": "Chalukya",
+      "b": "Chandela",
+      "c": "Rashtrakuta",
+      "d": "Vijayanagara"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Building 'Kalyaana Mandapas' was a notable feature in the temple construction in the kingdom of"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "In the Vijayanagara Empire, building ornate 'Kalyana Mandapas' (pillared ceremonial halls used for the divine marriage celebrations of deities) and tall Raya Gopurams were prominent architectural features.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-827"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-022",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 22,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · regional kingdoms & Delhi Sultanate",
+    "question": "Consider the following statements:\n\n1. In the revenue administration of Delhi Sultanate, the in-charge of revenue collection was known as 'Amil'.\n\n2. The Iqta system of Sultans of Delhi was an ancient indigenous institution.\n\n3. The office of 'Mir Bakshi' came into existence during the reign of Khalji Sultans of Delhi.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. In the revenue administration of Delhi Sultanate, the in-charge of revenue collection was known as 'Amil'."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The Iqta system of Sultans of Delhi was an ancient indigenous institution."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The office of 'Mir Bakshi' came into existence during the reign of Khalji Sultans of Delhi."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Only statement 1 is correct. In the Delhi Sultanate, the revenue collector was known as Amil. Statement 2 is incorrect because the Iqta system was not an ancient indigenous institution; it was introduced in India by the Delhi Sultans (specifically Iltutmish). Statement 3 is incorrect because the office of 'Mir Bakshi' (head of the military department) came into existence during the Mughal period, not under the Khaljis.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-386"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-023",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 23,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Religion & philosophical traditions",
+    "question": "Consider the following statements:\n\n1. Saint Nimbarka was a contem-porary of Akbar.\n\n2. Saint Kabir was greatly influenced by Shaikh Ahmad Sirhindi.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Saint Nimbarka was a contem-porary of Akbar."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Saint Kabir was greatly influenced by Shaikh Ahmad Sirhindi."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Both statements are incorrect. Saint Nimbarka was a 12th-13th century philosopher, whereas Akbar reigned in the 16th-17th century. Saint Kabir was a 15th-century poet, whereas Shaikh Ahmad Sirhindi was born in 1564 after the death of Kabir.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-1248"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-024",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 24,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · Gandhian & mass movements",
+    "question": "With reference to the British colonial rule in India, consider the following statements:\n\n1. Mahatma Gandhi was instrumental in the abolition of the system of 'indentured labour'.\n\n2. In Lord Chelmsford's 'War Conference', Mahatma Gandhi did not support the resolution on recruiting Indians for World War.\n\n3. Consequent upon the breaking of Salt Law by Indian people, the Indian National Congress was declared illegal by the colonial rulers.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "1 and 3 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to the British colonial rule in India, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Mahatma Gandhi was instrumental in the abolition of the system of 'indentured labour'."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. In Lord Chelmsford's 'War Conference', Mahatma Gandhi did not support the resolution on recruiting Indians for World War."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Consequent upon the breaking of Salt Law by Indian people, the Indian National Congress was declared illegal by the colonial rulers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Statement 1 is correct as Gandhi used Satyagraha in South Africa to oppose indentured labor. Statement 2 is incorrect because Gandhi actually supported the resolution on recruiting Indians for WWI at the War Conference. Statement 3 is correct as the INC was declared illegal following the mass breaking of the Salt Law in 1930.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-1994"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-025",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 25,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · people, publications & events",
+    "question": "With reference to Indian National Movement, consider the following pairs:\n\nPerson | Position held\n1. Sir Tej Bahadur Sapru | President, All India Liberal Federation\n2. K. C. Neogy | Member, The Constituent Assembly\n3. P. C. Joshi | General Secretary, Communist Party of India\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 2 only",
+      "c": "3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to Indian National Movement, consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person",
+          "Position held"
+        ],
+        "rows": [
+          [
+            "1. Sir Tej Bahadur Sapru",
+            "President, All India Liberal Federation"
+          ],
+          [
+            "2. K. C. Neogy",
+            "Member, The Constituent Assembly"
+          ],
+          [
+            "3. P. C. Joshi",
+            "General Secretary, Communist Party of India"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above is/are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "All pairs are correctly matched. Tej Bahadur Sapru was the President of the All India Liberal Federation; K.C. Neogy was a member of the Constituent Assembly; and P.C. Joshi was the first General Secretary of the Communist Party of India.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-026",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 26,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "With reference to Mian Tansen, which one of the following statements is not correct?",
+    "options": {
+      "a": "Tansen was the title given to him by Emperor Akbar.",
+      "b": "Tansen composed Dhrupads on Hindu gods and goddesses.",
+      "c": "Tansen composed songs on his patrons.",
+      "d": "Tansen invented many Ragas."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to Mian Tansen, which one of the following statements is not correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Option a is incorrect because the title 'Tansen' was conferred on him by Raja Ramchandra Singh of Rewa (or Raja Vikramjit of Gwalior). Emperor Akbar conferred upon him the title 'Mian'.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-593"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-027",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 27,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "Who among the following Mughal Emperors shifted emphasis from illustrated manuscripts to album and individual portrait?",
+    "options": {
+      "a": "Humayun",
+      "b": "Akbar",
+      "c": "Jahangir",
+      "d": "Shah Jahan"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Who among the following Mughal Emperors shifted emphasis from illustrated manuscripts to album and individual portrait?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Emperor Jahangir shifted the primary focus of Mughal painting from handwritten illustrated manuscripts to individual portraiture, natural studies of flora and fauna, and miniature albums (muraqqa).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-595"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-028",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 28,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Which one of the following National Parks lies completely in the temperate alpine zone?",
+    "options": {
+      "a": "Manas National Park",
+      "b": "Namdapha National Park",
+      "c": "Neora Valley National Park",
+      "d": "Valley of Flowers National Park"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following National Parks lies completely in the temperate alpine zone?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Valley of Flowers National Park is located high in the Zanskar and Western Himalayas of Uttarakhand, situated entirely within the temperate alpine zone, renowned for its meadows of endemic alpine flowers.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-029",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 29,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Polity & Governance",
+    "topic": "Institutions and initiatives",
+    "question": "Atal Innovation Mission is set up under the",
+    "options": {
+      "a": "Department of Science and Technology",
+      "b": "Ministry of Employment",
+      "c": "NITI Aayog",
+      "d": "Ministry of Skill Development and Entrepreneurship"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Atal Innovation Mission is set up under the"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Atal Innovation Mission is an initiative of NITI Aayog, promoting innovation and entrepreneurship through programmes such as Atal Tinkering Labs.",
+      "concept": "Institutions and initiatives",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-030",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 30,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "Earth and Sun",
+    "question": "On 21st June, the Sun",
+    "options": {
+      "a": "does not set below the horizon at the Arctic Circle",
+      "b": "does not set below the horizon at Antarctic Circle",
+      "c": "shines vertically overhead at noon on the Equator",
+      "d": "shines vertically overhead at the Tropic of Capricorn"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "On 21st June, the Sun"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Around the June solstice, the Northern Hemisphere tilts towards the Sun. The Arctic Circle has continuous daylight, while the overhead noon Sun is near the Tropic of Cancer.",
+      "concept": "Earth and Sun",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-031",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 31,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Medieval India · Vijayanagara, Mughals & regional powers",
+    "question": "With reference to Mughal India, what is/are the difference/differences between Jagirdar and Zamindar?\n\n1. J agirdars were holders of land assignments in lieu of judicial and police duties, whereas Zamindars were holders of revenue rights without obligation to perform any duty other than revenue collection.\n\n2. Land assignments to Jagirdars were hereditary and revenue rights of Zamindars were not hereditary.\n\nSelect the correct answer using the code given below.",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to Mughal India, what is/are the difference/differences between Jagirdar and Zamindar?"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. J agirdars were holders of land assignments in lieu of judicial and police duties, whereas Zamindars were holders of revenue rights without obligation to perform any duty other than revenue collection."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Land assignments to Jagirdars were hereditary and revenue rights of Zamindars were not hereditary."
+      },
+      {
+        "type": "paragraph",
+        "text": "Select the correct answer using the code given below."
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Both statements are incorrect. Statement 1 is false because Jagirdars were assigned revenue rights in lieu of salaries for administrative/military service, whereas Zamindars also held local law and order obligations. Statement 2 is false because Jagir assignments were non-hereditary and transferable, whereas Zamindari rights were inherited.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-594"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-032",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 32,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Economic foundations, growth & national income",
+    "question": "With reference to land reforms in independent India, which one of the following statements is correct?",
+    "options": {
+      "a": "The ceiling \"laws were aimed at family holdings and not individual holdings.",
+      "b": "The major aim of land reforms was providing agricultural land to all the landless.",
+      "c": "It resulted in cultivation of cash crops as a predominant form of cultivation.",
+      "d": "Land reforms permitted no exemptions to the ceiling limits."
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to land reforms in independent India, which one of the following statements is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The primary goal of land reforms in independent India was to distribute surplus agricultural land to the landless rural poor to ensure social justice and agricultural productivity. Ceiling laws initially applied to individuals in some states before changing to family units in 1971, and numerous exemptions were permitted which often limited their success.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-033",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 33,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "International reports",
+    "question": "The Global Competitiveness Report is published by the",
+    "options": {
+      "a": "International Monetary Fund",
+      "b": "United Nations Conference on Trade and Development",
+      "c": "World Economic Forum",
+      "d": "World Bank"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The Global Competitiveness Report is published by the"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The World Economic Forum publishes the Global Competitiveness Report. Distinguish it from reports published by the IMF, UNCTAD and World Bank.",
+      "concept": "International reports",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-034",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 34,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Charter Acts",
+    "question": "Consider the following statements about 'the Charter Act of 1813':\n\n1. It ended the trade monopoly of the East India Company in India except for trade in tea and trade with China.\n\n2. It asserted the sovereignty of the British Crown over the Indian territories held by the Company.\n\n3. The revenues of India were now controlled by the British Parliament.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements about 'the Charter Act of 1813':"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It ended the trade monopoly of the East India Company in India except for trade in tea and trade with China."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. It asserted the sovereignty of the British Crown over the Indian territories held by the Company."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. The revenues of India were now controlled by the British Parliament."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Charter Act of 1813 ended the Company’s Indian trade monopoly except for tea and trade with China, and asserted Crown sovereignty. It did not transfer control of Indian revenues to Parliament as statement 3 claims.",
+      "concept": "Charter Acts",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-035",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 35,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · nationalism & revolutionary movements",
+    "question": "With reference to Swadeshi Movement, consider the following statements:\n\n1. It contributed to the revival of the indigenous artisan crafts and industries.\n\n2. The National Council of Education was established as a part of Swadeshi Movement.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "Both 1 and 2",
+      "d": "Neither 1 nor 2"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to Swadeshi Movement, consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. It contributed to the revival of the indigenous artisan crafts and industries."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. The National Council of Education was established as a part of Swadeshi Movement."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is/are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Both statements are correct. The Swadeshi Movement promoted indigenous textile mills, soap factories, and artisan crafts. The National Council of Education was set up in 1906 in Bengal to organize national education.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-036",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 36,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Modern India · Gandhian & mass movements",
+    "question": "Consider the following pairs:\n\nMovement/Organization | Leader\n1. All India Anti-Untouchability League | Mahatma Gandhi\n2. All India Kisan Sabha | Swami Sahajanand Saraswati\n3. Self-Respect Movement | E. V. Ramaswami Naicker\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 2 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Movement/Organization",
+          "Leader"
+        ],
+        "rows": [
+          [
+            "1. All India Anti-Untouchability League",
+            "Mahatma Gandhi"
+          ],
+          [
+            "2. All India Kisan Sabha",
+            "Swami Sahajanand Saraswati"
+          ],
+          [
+            "3. Self-Respect Movement",
+            "E. V. Ramaswami Naicker"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above is/are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "All pairs are correctly matched. Mahatma Gandhi founded the All-India Anti-Untouchability League in 1932. Swami Sahajanand Saraswati was the president of the All India Kisan Sabha (1936). E.V. Ramasami Naicker (Periyar) started the Self-Respect Movement in 1925.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-037",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 37,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Ancient India",
+    "question": "Which one of the following is not a Harappan site?",
+    "options": {
+      "a": "Chanhudaro",
+      "b": "Kot Diji",
+      "c": "Sohgaura",
+      "d": "Desalpur"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following is not a Harappan site?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Sohgaura is not a Harappan site; it is a village in Gorakhpur district, Uttar Pradesh, known for the Mauryan-era Sohgaura copper-plate inscription mentioning famine relief efforts. Chanhudaro, Kot Diji, and Desalpur are well-known Indus Valley Civilization sites.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-4"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-038",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 38,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Art, architecture & monuments",
+    "question": "In which of the following relief sculpture inscriptions is 'Ranyo Ashoka' (King Ashoka) mentioned along with the stone portrait of Ashoka?",
+    "options": {
+      "a": "Kanganahalli",
+      "b": "Sanchi I",
+      "c": "Shahbazgarhi",
+      "d": "Sohgaura"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In which of the following relief sculpture inscriptions is 'Ranyo Ashoka' (King Ashoka) mentioned along with the stone portrait of Ashoka?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Kanaganahalli (near Sannati in Gulbarga district, Karnataka) is the only known archaeological site where an inscribed stone portrait of Emperor Ashoka has been discovered, with the Brahmi label \"Ranyo Ashoka\".",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-828"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-039",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 39,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Art & Culture",
+    "topic": "Religion & philosophical traditions",
+    "question": "Consider the following:\n\n1. Deification of the Buddha\n\n2. Treading the path of Bodhisattvas\n\n3. Image worship and rituals\n\nWhich of the above is/are the feature/ features of Mahayana Buddhism?",
+    "options": {
+      "a": "1 only",
+      "b": "1 and 2 only",
+      "c": "2 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Deification of the Buddha"
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Treading the path of Bodhisattvas"
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Image worship and rituals"
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the above is/are the feature/ features of Mahayana Buddhism?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "All three are features of Mahayana Buddhism. Mahayana followers believe in idol/image worship of Buddha, deify him as a deity, and promote treading the ideal path of Bodhisattvas.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-1249"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-040",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 40,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Ancient India · kingdoms & rulers",
+    "question": "With reference to forced labour (Vishti) in India during the Gupta period, which one of the following statements is correct?",
+    "options": {
+      "a": "It was considered a source of income for the State, a sort of tax paid by the people.",
+      "b": "It was totally absent in the Madhya Pradesh and Kathiawar regions of the Gupta Empire.",
+      "c": "The forced labourer was entitled to weekly wages.",
+      "d": "The eldest son of the labourer was sent as the forced labourer."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "With reference to forced labour (Vishti) in India during the Gupta period, which one of the following statements is correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "In the Gupta empire, Vishti (unpaid forced labour) became an accepted source of state income and was looked upon as a form of tax paid by the subjects in labor rather than currency. It is extensively recorded in inscriptions from the Madhya Pradesh and Kathiawar (Saurashtra) regions.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-041",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 41,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "History",
+    "topic": "Columbian exchange",
+    "question": "Which one of the following groups of plants was domesticated in the 'New World' and introduced into the 'Old World'?",
+    "options": {
+      "a": "Tobacco, cocoa and rubber",
+      "b": "Tobacco, cotton and rubber.",
+      "c": "Cotton, coffee and sugarcane",
+      "d": "Rubber, coffee and wheat"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which one of the following groups of plants was domesticated in the 'New World' and introduced into the 'Old World'?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Tobacco, cocoa and rubber originated in the Americas, the New World. Coffee, wheat and sugarcane have Old World origins, so they cannot complete the required group.",
+      "concept": "Columbian exchange",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-042",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 42,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following statements:\n\n1. Asiatic lion is naturally found III India only.\n\n2. Double-humped camel is naturally found in India only.\n\n3. One-horned rhinoceros is naturally found in India only.\n\nWhich of the statements given above is / are correct?",
+    "options": {
+      "a": "1 only",
+      "b": "2 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Asiatic lion is naturally found III India only."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Double-humped camel is naturally found in India only."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. One-horned rhinoceros is naturally found in India only."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above is / are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Asiatic lion is naturally found only in India (specifically Gir National Park), making Statement 1 correct.  The Double-humped camel is native to Central Asia, and the One-horned rhinoceros is found in both India and Nepal, making Statements 2 and 3 incorrect.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7696"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-043",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 43,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Geography",
+    "topic": "India Physical Environment",
+    "question": "Consider the following pairs\n\nFamous place | River\nPandharpur | Chandrabhaga\nTiruchirappalli | Cauvery\nHampi | Malaprabha\n\nWhich of the pairs given above are correctly matched?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Famous place",
+          "River"
+        ],
+        "rows": [
+          [
+            "Pandharpur",
+            "Chandrabhaga"
+          ],
+          [
+            "Tiruchirappalli",
+            "Cauvery"
+          ],
+          [
+            "Hampi",
+            "Malaprabha"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Exp) Option a is the correct answer. All the sites given above are famous for temple structures and being pilgrimage towns. Pair 1 is correctly matched. Pandharpur is a pilgrimage town in Solapur district of Maharashtra. The famous Vitobha temple is located here. Pair 2 is correctly matched. Tiruchirappalli is situated at the head of Cauvery delta, where the river seperates into two streams. Tiruchirappalli or Trichy is home to many famous temples such as Ranganathaswamy temple, Erumbeeswarar Temple and the Jambukeswarar temple. Pair 3 is incorrectly matched. Classified as a World Heritage Site by UNESCO, Hampi (Karnataka) situated along the banks of the Tungabhadra River, was the capital city of the Vijayanagara Empire. It is a famous pilgrimage place. Vijaya Vittala Temple and Virupaksha Temple are situated in Hampi, The Famous stone chariot dedicated to Gadura is also located here. Both Malaprabha and Tungabhadra are tributaries of Krisha river.\nPage 183",
+      "concept": "India Physical Environment",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-3221"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-044",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 44,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Economy",
+    "topic": "Development, welfare & government schemes",
+    "question": "In a given year in India, official poverty lines are higher in some States than in others because",
+    "options": {
+      "a": "poverty rates vary from State to State",
+      "b": "price levels vary from State to State",
+      "c": "Gross State Product varies from State to State",
+      "d": "quality of public distribution varies from State to State"
+    },
+    "answer": "b",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In a given year in India, official poverty lines are higher in some States than in others because"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Poverty lines represent the monetary value of a minimum consumption basket needed for survival. Since the cost of these essential goods and services (inter-state price differentials) varies significantly from one state to another, the official poverty lines are higher in states with higher price levels.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-045",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 45,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate change",
+    "question": "In the context of which of the following do some scientists suggest the use of cirrus cloud thinning technique and the injection of sulphate aerosol into stratosphere?",
+    "options": {
+      "a": "Creating the artificial rains in some regions",
+      "b": "Reducing the frequency and intensity of tropical cyclones",
+      "c": "Reducing the adverse effects of solar wind on the Earth",
+      "d": "Reducing the global warming"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of which of the following do some scientists suggest the use of cirrus cloud thinning technique and the injection of sulphate aerosol into stratosphere?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "These are geoengineering techniques proposed to combat climate change (reduce global warming).  Thinning high-altitude cirrus clouds reduces their heat-trapping capacity, and injecting sulfate aerosols into the stratosphere (Stratospheric Aerosol Injection) reflects sunlight back into space, creating a cooling \"dimming\" effect.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-046",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 46,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "In the context of which one of the following are the terms 'pyrolysis and plasma gasification' mentioned?",
+    "options": {
+      "a": "Extraction of rare earth elements",
+      "b": "Natural gas extraction technologies",
+      "c": "Hydrogen fuel-based automobiles",
+      "d": "Waste-to-energy technologies"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In the context of which one of the following are the terms 'pyrolysis and plasma gasification' mentioned?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Pyrolysis (thermal decomposition without oxygen) and plasma gasification (using plasma to convert organic matter into syngas) are advanced thermal processes used commercially as waste-to-energy technologies for treating municipal and hazardous solid waste.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7179",
+      "q-7562"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-047",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 47,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Climate action & agreements",
+    "question": "Which of the following are in Agasthyamala Biosphere Reserve?",
+    "options": {
+      "a": "Neyyar, Peppara and Shendurney Wildlife Sanctuaries; and Kalakad Mundanthurai Tiger Reserve",
+      "b": "Mudumalai, Sathyamangalam and Wayanad Wildlife Sanctuaries; and Silent Valley National Park",
+      "c": "Kaundinya, Gundla Brahme-swaram and Papikonda Wildlife Sanctuaries; and Mukurthi National Park",
+      "d": "Kawal and Sri Venkateswara Wildlife Sanctuaries; and Nagarjunasagar-Srisailam Tiger Reserve"
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Which of the following are in Agasthyamala Biosphere Reserve?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Agasthyamalai Biosphere Reserve (located in the Western Ghats spanning Kerala and Tamil Nadu) comprises the Neyyar, Peppara, and Shendurney Wildlife Sanctuaries, as well as the Kalakad Mundanthurai Tiger Reserve.",
+      "concept": "",
+      "references": []
+    },
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-048",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 48,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Animal adaptations",
+    "question": "Consider the following statements:\n\n1. Some species of turtles are herbivores.\n\n2. Some species of fish are herbivores.\n\n3. Some species of marine mammals are herbivores.\n\n4. Some species of snakes are viviparous.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "a": "1 and 3 only",
+      "b": "2, 3 and 4 only",
+      "c": "2 and 4 only",
+      "d": "1, 2, 3 and 4"
+    },
+    "answer": "d",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following statements:"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Some species of turtles are herbivores."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Some species of fish are herbivores."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Some species of marine mammals are herbivores."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Some species of snakes are viviparous."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the statements given above are correct?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Green sea turtles, some fish and marine mammals such as manatees can be herbivorous. Several snake species give birth to live young. All four statements describe adaptations found in some species.",
+      "concept": "Animal adaptations",
+      "references": [
+        {
+          "title": "UPSC CSE 2019 final answer key · Series B",
+          "url": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-049",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 49,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Biodiversity & conservation",
+    "question": "Consider the following pairs:\n\nWildlife | Naturally found in\n1. Blue-finned Mahseer | Cauvery River\n2. Irrawaddy Dolphin | Chambal River\n3. Rusty-spotted Cat | Eastern Ghats\n\nWhich of the pairs given above are correctly matched?",
+    "options": {
+      "a": "1 and 2 only",
+      "b": "2 and 3 only",
+      "c": "1 and 3 only",
+      "d": "1, 2 and 3"
+    },
+    "answer": "c",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Consider the following pairs:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Wildlife",
+          "Naturally found in"
+        ],
+        "rows": [
+          [
+            "1. Blue-finned Mahseer",
+            "Cauvery River"
+          ],
+          [
+            "2. Irrawaddy Dolphin",
+            "Chambal River"
+          ],
+          [
+            "3. Rusty-spotted Cat",
+            "Eastern Ghats"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Which of the pairs given above are correctly matched?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "The Blue-finned Mahseer is native to the Cauvery River basin (Pair 1 is correct).  The Irrawaddy Dolphin is found in coastal areas and estuaries like Chilika Lake in Odisha, not the Chambal River (Pair 2 is incorrect).  The Rusty-spotted Cat is a small wild cat found in the Eastern Ghats (Pair 3 is correct).",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7697"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  },
+  {
+    "id": "upsc-2019-prelims-gs1-b-050",
+    "year": 2019,
+    "stage": "Prelims",
+    "paper": "Prelims GS-I",
+    "number": 50,
+    "booklet": "B",
+    "questionType": "MCQ",
+    "subject": "Environment",
+    "topic": "Pollution & waste",
+    "question": "Why is there a great concern about the 'microbeads' that are released into environment?",
+    "options": {
+      "a": "They are considered harmful to marine ecosystems.",
+      "b": "They are considered to cause skin cancer in children.",
+      "c": "They are small enough to be absorbed by crop plants in irrigated fields.",
+      "d": "They are often found to be used as food adulterants."
+    },
+    "answer": "a",
+    "keyStatus": "official",
+    "marks": 2.0,
+    "negativeMarks": 0.6666666666666666,
+    "wordLimit": 0,
+    "sourceUrl": "https://iasexamportal.com/upsc-pre/papers/2019-gs-set-b",
+    "keyUrl": "https://lotusarise.com/wp-content/uploads/2021/12/UPSC-Prelims-Official-Answer-Key-2019-GS-1.pdf#page=2",
+    "page": 0,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Why is there a great concern about the 'microbeads' that are released into environment?"
+      }
+    ],
+    "difficultyLabel": "Moderate",
+    "sourceTitle": "UPSC CSE 2019 General Studies Paper I · Series B",
+    "explanation": {
+      "justification": "Microbeads are tiny plastic particles (less than 1 mm) used in personal care products like scrubs and toothpaste.  Because of their small size, they pass through water filtration systems, ending up in oceans and lakes, where they are ingested by and are highly harmful to marine life.",
+      "concept": "",
+      "references": []
+    },
+    "suppliedExplanationIds": [
+      "q-7560"
+    ],
+    "sourceNotes": "Existing study explanation matched by question wording and the final key’s correct-option wording."
+  }
+]
