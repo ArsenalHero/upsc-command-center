@@ -829,7 +829,7 @@
           "placement": "question",
           "bbox": [
             104,
-            670,
+            666.5,
             262,
             710.5
           ],
@@ -974,7 +974,7 @@
           "placement": "explanation",
           "bbox": [
             128,
-            562,
+            566,
             243,
             634
           ],
@@ -1044,8 +1044,8 @@
       "references": [
         {
           "title": "OpenStax University Physics Volume 1",
-          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
-          "section": "4.3 Independence of horizontal and vertical projectile motion"
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/4-5-relative-motion-in-one-and-two-dimensions",
+          "section": "4.5 Relative position, velocity and reference frames"
         }
       ],
       "sourceExplanation": "Let the objects have velocities v₁ and v₂.\nv₁ + v₂ = 5. …(i)\nv₁ − v₂ = 1. …(ii)\nFrom (i) and (ii), 2v₁ = 6.\nv₁ = 3 m/s.\nSubstituting in (i): 3 + v₂ = 5.\nv₂ = 5 − 3.\nv₂ = 2 m/s.\nAnswer (b)."

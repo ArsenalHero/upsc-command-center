@@ -568,7 +568,7 @@
           "bbox": [
             133,
             597,
-            227,
+            230,
             743
           ],
           "placement": "question",
@@ -579,7 +579,7 @@
           "bbox": [
             366,
             168,
-            456,
+            463,
             306
           ],
           "placement": "explanation",
@@ -2429,14 +2429,14 @@
       "id": "mech-engineering-mechanics-73-320",
       "status": "verified",
       "answer": "b",
-      "question": "A uniform disc’s inertia about any diameter is MR²/4. Its inertia about the central normal axis is",
+      "question": "The moment of inertia of a uniform circular disc of mass M and radius R about any of its diameters is MR²/4. What is the moment of inertia of the disc about an axis passing through its centre and normal to the disc?",
       "options": {
         "a": "MR²",
         "b": "MR²/2",
         "c": "3 MR²/2",
         "d": "2 MR²"
       },
-      "explanation": "I_x–x=I_y–y=MR²/4. Perpendicular axes give I_z–z=I_x–x+I_y–y=MR²/4+MR²/4=2 MR²/4=MR²/2.",
+      "explanation": "MOI about its diameter:\nI_x–x = I_y–y = MR²/4.\n\nMOI about its Z-axis, or normal to the disc passing through its centre:\nI_z–z = I_x–x + I_y–y\n      = MR²/4 + MR²/4\n      = 2MR²/4\n      = MR²/2.",
       "transcriptionReviewed": true,
       "note": "The two equal diametral contributions add.",
       "references": [
@@ -2787,14 +2787,14 @@
       "id": "mech-engineering-mechanics-75-331",
       "status": "verified",
       "answer": "a",
-      "question": "A semicircular lamina of radius R has second moment about its centroidal axis parallel to its horizontal base of",
+      "question": "What is the moment of inertia of a semicircular lamina with the base horizontal about the centroidal axis parallel to the x-axis, if the radius is R?",
       "options": {
         "a": "0.10976R⁴",
         "b": "0.2084R⁴",
         "c": "0.23R⁴",
         "d": "0.3142R⁴"
       },
-      "explanation": "Base AC moment is half the full circle’s diametral moment: I_AC=(1/2)(πd⁴/64)=πR⁴/8≈0.393R⁴. Area A=πR²/2 and centroid height h=4R/(3π). Hence I_G=I_AC−Ah²=πR⁴/8−(πR²/2)[4R/(3π)]²=πR⁴/8−8R⁴/(9π)≈0.1097R⁴. Note: the vertical symmetry-axis moment equals the base moment, πR⁴/8≈0.393R⁴.",
+      "explanation": "Moment of inertia of a semicircular section:\nWe know that the MOI of a semicircular section about base AC is equal to half of the MOI of a circular section about AC.\nI_AC = (1/2)(πd⁴/64) = πR⁴/8 ≈ 0.393R⁴.\n\nWe also know that the area of the semicircular section is\nA = (1/2)πR² = πR²/2,\nand the distance between the centre of gravity of the section and the base AC is\nh = 4R/(3π).\n\nThe MOI of the section through its C.G. and parallel to the x–x axis is\nI_G = I_AC − Ah²\n    = [πR⁴/8] − [(πR²/2)(4R/(3π))²]\n    = πR⁴/8 − 8R⁴/(9π)\n    ≈ 0.1097R⁴.\n\nNote: The MOI about the y–y axis will be the same as that about base AC, i.e. πR⁴/8 ≈ 0.393R⁴.",
       "transcriptionReviewed": true,
       "note": "Complete source including y-axis note retained. Exact coefficient 0.10975696.",
       "references": [
@@ -3343,7 +3343,7 @@
             129,
             263,
             249,
-            334
+            340
           ],
           "placement": "question",
           "alt": "Ellipse horizontal semiaxisx and vertical semiaxisy with majorX/minorY axes."
@@ -3354,7 +3354,7 @@
             129,
             263,
             249,
-            334
+            340
           ],
           "placement": "explanation",
           "alt": "Ellipse defining both semiaxes used in the inertia formulas."

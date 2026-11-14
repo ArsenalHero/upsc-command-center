@@ -93,7 +93,7 @@
           "placement": "explanation",
           "bbox": [
             360,
-            291,
+            294.5,
             468,
             334
           ],
@@ -132,8 +132,8 @@
           "column": "right",
           "placement": "explanation",
           "bbox": [
-            369,
-            521,
+            354,
+            525.5,
             479,
             602
           ],
@@ -1385,7 +1385,7 @@
           "placement": "explanation",
           "bbox": [
             128,
-            582,
+            586,
             238,
             666
           ],
@@ -1639,9 +1639,9 @@
           "placement": "explanation",
           "bbox": [
             365,
-            346,
+            351,
             464,
-            409
+            412.5
           ],
           "units": "pdf-points",
           "alt": "Elevator diagram with reactionT up,weightW down,and downward acceleration0.1g"
@@ -1798,7 +1798,7 @@
           "placement": "explanation",
           "bbox": [
             126,
-            621,
+            627,
             212,
             742
           ],
@@ -2301,8 +2301,8 @@
           "bbox": [
             127,
             188,
-            235,
-            267
+            240,
+            269
           ],
           "units": "pdf-points",
           "alt": "Addition of5m/s north,3m/s east,and1.5m/s vertical motion"
@@ -2769,8 +2769,8 @@
           "column": "right",
           "placement": "explanation",
           "bbox": [
-            365,
-            391,
+            355,
+            390,
             472,
             489
           ],
@@ -3400,8 +3400,8 @@
           "placement": "explanation",
           "bbox": [
             349,
-            274,
-            455,
+            276.5,
+            470,
             348
           ],
           "units": "pdf-points",

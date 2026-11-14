@@ -30,6 +30,13 @@ python app/scripts/mechanical/figures.py \
   --reviews app/scripts/mechanical/reviewed \
   --supplement app/scripts/mechanical/engineering-mechanics-201-220-figures.json \
   --output app/scripts/mechanical/extracted/engineering-mechanics-diagrams.json
+
+python app/scripts/mechanical/package.py \
+  --pdf '/workspace/scratch/bc36f365e1f9/upload/MECH AE 01 FULL 35000-15-156(2).pdf' \
+  --require-reviewed-coverage
+
+npm --workspace app run test:mechanical
+npm run build
 ```
 
 OCR version 3 uses grayscale at scale 4, Tesseract PSM3, and rule removal only on
@@ -54,3 +61,30 @@ prior successful QC pass. Re-run the figure step when more review files are adde
 Running the parser again resets its figure arrays, so the figure step follows it.
 Optional `--pdf` and `--contacts` arguments on `figures.py` render crop contact
 sheets for visual QC. It never converts a whole question or page into a photo.
+
+## Published collection
+
+All 807 records have individually reconciled question/choice text and complete
+adjacent explanations, including continuation columns and pages. The eight range
+overlays contain 579 reference-reviewed, 142 corrected and 86 disputed entries.
+Independent calculations and primary technical references support the review
+notes; no answer is guessed from an unreadable or missing printed key. Corrected
+entries preserve their complete printed explanations separately. Q348 omits
+choices in the source, so its explanation can be studied without invented choices.
+
+The strict packager rejects missing reviews, conflicting keys, incomplete text,
+missing originals for corrections and invalid figure bounds. It emits a small
+catalog, fingerprinted subject text, a public review audit, and original diagram
+crops. Raster diagram pixels are embedded in SVG files for transport; all question
+and explanation prose remains native text. The source PDF, OCR caches and word
+geometry are not published. Source-error diagrams remain explicitly labelled.
+
+The MCQ chooser loads neither collection. Mechanical fetches the catalog first
+and the subject on selection; diagram images load as needed. The service worker
+keeps these assets out of install-time precaching and stores them after use.
+Practice, flags, filters, results and history use the existing private workspace
+JSON: browser storage for guests, account workspace sync for signed-in users, and
+the normal backup format. No database schema or access-policy changes are needed.
+Accuracy excludes disputed, skipped and structurally unresolved answers. Historical
+results retain their original answer snapshot. Fresh-only sets exclude previously
+checked/skipped items; users can deliberately revisit questions in saved review.

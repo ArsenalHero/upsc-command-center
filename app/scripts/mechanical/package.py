@@ -79,6 +79,7 @@ def main():
   assert len(transcribed)==807,f'Incomplete visual transcription: {sorted(set(range(1,808))-set(transcribed))}'
   assert not unresolved,f'Unresolved structure: {unresolved}'
   assert not conflicts,f'Conflicting independent keys: {conflicts}'
+  assert not shortened,f'Potentially shortened supplied explanations need reconciliation: {shortened}'
  counts={s:sum(q['review']['status']==s for q in production) for s in STATUSES}
  topics=[]
  for topic in dict.fromkeys(q['topic'] for q in production):
