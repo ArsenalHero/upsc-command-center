@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Bookmark, BookOpen, ChevronLeft, ChevronRight, Clock3, Download, Flag, Pause, Play, RotateCcw, Target, CheckCircle2, BarChart3 } from "lucide-react";
 import { useData } from "../hooks/useData";
@@ -46,7 +46,7 @@ function Report({ s, close, retry }: { s: PrelimsSession; close: () => void; ret
   return <><PageHeader eyebrow="SAVED SESSION REPORT" title="Your paper report" description={`${s.mode === "test" ? "Test" : "Practice"} · ${new Date(s.startedAt).toLocaleString()} · ${r.total} questions`} /><div className="prelims-actions"><button className="btn secondary" onClick={close}>Back to question bank</button><button className="btn primary" disabled={!wrong.length} onClick={() => retry(wrong)}>Retry wrong questions</button></div><section className="card prelims-report-summary"><div className="prelims-outcome-ring" role="img" aria-label={`${r.correct} right, ${r.incorrect} wrong and ${r.unattempted} unattempted${r.dropped ? `, ${r.dropped} dropped` : ""}`} style={{ background: `conic-gradient(var(--green) 0deg ${correctAngle}deg, var(--red) ${correctAngle}deg ${wrongAngle}deg, var(--track) ${wrongAngle}deg 360deg)` } as CSSProperties}><div><strong>{r.attempted}<small>/{r.total}</small></strong><span>attempted</span></div></div><div className="prelims-report-headline"><span className="eyebrow">YOUR SESSION, AT A GLANCE</span><h2>{number(r.score)}<span> / {number(maximum)} marks</span></h2><p>Keep the lessons from this session. Review the mistakes, then practise again.</p><div className="prelims-result-legend"><span><i className="right" />{r.correct} right</span><span><i className="wrong" />{r.incorrect} wrong</span><span><i />{r.unattempted} unattempted</span>{r.dropped > 0 && <span>{r.dropped} dropped · excluded</span>}</div></div></section><div className="stats-grid four"><DashboardCard title="Final score" value={number(r.score)} detail={`Raw ${number(r.raw)} − penalty ${number(r.penalty)}`} /><DashboardCard title="Right / wrong" value={`${r.correct} / ${r.incorrect}`} detail={`${r.attempted} attempted · ${r.unattempted} unattempted${r.dropped ? ` · ${r.dropped} dropped` : ""}`} /><DashboardCard title="Accuracy" value={r.accuracy === null ? "—" : `${number(r.accuracy)}%`} detail="Right ÷ graded attempts" /><DashboardCard title="Active time" value={formatSeconds(r.seconds)} detail={`${formatSeconds(r.total ? r.seconds / r.total : 0)} average per question`} /></div><p className="small muted">Uploaded source questions use +1 for right and 0 for wrong or skipped. Complete CSE papers use a one-third penalty. Dropped questions are excluded, and the remaining scored questions are scaled to 200 practice marks. State PSC practice scores do not claim an official exam marking scheme.</p>{s.questionIds.length === 80 && s.questionIds.every(id => byId.get(id)?.stage === "CSAT") && <p className="card">CSAT benchmark: {r.score >= 66 ? "At or above" : "Below"} 66/200 (33%). This is a practice score.</p>}<Breakdown title="Subject performance" rows={r.groups.subject} /><Breakdown title="Topic performance" rows={r.groups.topic} /><Breakdown title="Difficulty performance" rows={r.groups.difficultyLabel} /><section className="card"><h2>Review every question</h2>{s.questionIds.map(id => { const q = byId.get(id), a = s.responses[id]; if (!q) return null; return <details className="prelims-review-row" key={id}><summary>{label(q, s.filters)} · {result(q, a)} · {formatSeconds(a?.seconds || 0)}{a?.review ? " · Review" : ""}</summary><QuestionText q={q} /><ul className="prelims-review-options">{Object.entries(q.options).map(([k, v]) => <li key={k}>{k.toUpperCase()}. {v}{k === a?.option ? " · Your answer" : ""}</li>)}</ul><Explanation q={q} answer={a?.key?.answer || q.answer} />{a?.notes && <p><strong>Your notes: </strong>{a.notes}</p>}</details>; })}</section></>;
 }
 
-export default function PYQs() {
+export default function PYQBank({ collectionSwitch }: { collectionSwitch?: ReactNode }) {
   const { data, savePrelims, setEditor } = useData(); const { guest, user } = useAuth();
   const [params, setParams] = useSearchParams();
   const sections: Record<string, string> = { browse: "Browse", explanations: "Explanations", papers: "Full papers", revision: "Revision", performance: "Performance", history: "History" };
@@ -134,7 +134,17 @@ export default function PYQs() {
     })}</div>
   </section>;
   return <div className="pyq-workspace">
-    <PageHeader eyebrow="UPSC · STATE PSC · SUBJECTWISE PYQs" title="PYQ question bank" description="Choose your subject, exam and year. Practise in English, read explanations, and track every attempt." action={<button className="btn secondary" onClick={() => setEditor({ collection: "pyqs" })}>Log outside practice</button>} />
+    <PageHeader
+      eyebrow="CIVIL SERVICES · UPSC & STATE PSC"
+      title="PYQ question bank"
+      description="Choose your subject, exam and year. Practise in English, read explanations, and track every attempt."
+      action={
+        <div className="button-group">
+          {collectionSwitch}
+          <button className="btn secondary small-btn" onClick={() => setEditor({ collection: "pyqs" })}>Log outside practice</button>
+        </div>
+      }
+    />
     <div className="pyq-coverage card"><BookOpen size={26} /><strong>More than 8,000 PYQs</strong></div>
     <p className="pyq-save-note">{guest ? "Guest progress is saved in this browser. Export a backup to keep a separate copy." : "Progress is saved in your personal workspace. Account shows your cloud sync status."}</p>
     {w.session && !w.session.endedAt && <section className="card pyq-resume"><div><strong>Continue your {w.session.mode}</strong><p>Question {w.session.index + 1} of {w.session.questionIds.length}{w.session.deadline ? " · 2-hour deadline continues while away" : " · active timer excludes time away"}</p></div><button className="btn primary" onClick={() => setActive(true)}>Resume {w.session.mode}</button></section>}

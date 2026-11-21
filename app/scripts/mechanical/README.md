@@ -79,7 +79,8 @@ crops. Raster diagram pixels are embedded in SVG files for transport; all questi
 and explanation prose remains native text. The source PDF, OCR caches and word
 geometry are not published. Source-error diagrams remain explicitly labelled.
 
-The MCQ chooser loads neither collection. Mechanical fetches the catalog first
+MCQ Practice opens Civil Services by default. The header links to Mechanical,
+which fetches the catalog first
 and the subject on selection; diagram images load as needed. The service worker
 keeps these assets out of install-time precaching and stores them after use.
 Practice, flags, filters, results and history use the existing private workspace
@@ -88,3 +89,20 @@ the normal backup format. No database schema or access-policy changes are needed
 Accuracy excludes disputed, skipped and structurally unresolved answers. Historical
 results retain their original answer snapshot. Fresh-only sets exclude previously
 checked/skipped items; users can deliberately revisit questions in saved review.
+
+## Thermodynamics questions 1–150
+
+The Thermodynamics overlays use the attached second extract, identified by SHA-256
+`b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21`.
+Questions 1–150 start on printed pages 15–38, with the last explanation continuing
+onto page 39. The packager checks that boundary and requires a review of every item.
+Q122 has no printed answer choices and is presented as an ungraded study question.
+
+```sh
+python app/scripts/mechanical/package_thermodynamics.py --pdf '/path/to/MECH AE 02 FULL 35000-15-165(1).pdf'
+npm --workspace app run test:mechanical
+npm run build
+```
+
+Each packager refreshes its subject's data, diagrams, and audit within the shared
+catalog. The PDF and OCR working files stay out of the site.

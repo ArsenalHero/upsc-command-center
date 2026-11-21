@@ -1,16 +1,13 @@
 """Package only the selected Engineering Mechanics extract and its reviewed text."""
-import argparse,base64,collections,hashlib,html,io,json
+import argparse,collections,hashlib,html,json
 from pathlib import Path
 import fitz
-from PIL import Image
+from publish import encoded, hashed, prune_subject_assets, render_figures, topic_index, update_catalog
 
 HERE=Path(__file__).resolve().parent
 APP=HERE.parents[1]
 SHA='7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0'
 STATUSES=('verified','corrected','disputed','needs-review')
-def encoded(d):return json.dumps(d,ensure_ascii=False,separators=(',',':')).encode()
-def hashed(out,stem,suffix,content):
- name=f'{stem}-{hashlib.sha256(content).hexdigest()[:12]}.{suffix}';(out/name).write_bytes(content);return 'mechanical/'+name
 def main():
  p=argparse.ArgumentParser();p.add_argument('--pdf',required=True);p.add_argument('--require-reviewed-coverage',action='store_true');a=p.parse_args()
  pdf=Path(a.pdf);assert hashlib.sha256(pdf.read_bytes()).hexdigest()==SHA,'The PDF differs from the reviewed source.'
@@ -54,21 +51,9 @@ def main():
   if not q['review']['note'] or not q['review']['references']:issues.append('Independent review notes or primary references are unavailable.')
   if status=='corrected' and not q.get('sourceExplanation'):issues.append('The full printed original must accompany this correction.')
   if len(q.get('explanation',''))<.55*len(original.get('explanation','')) and not q.get('sourceExplanation'):shortened.append(n)
-  figs=[]
-  for index,f in enumerate(q.get('figures',[]),1):
-   page_num=f['page'];rect=fitz.Rect(f['bbox']);assert 1<=page_num<=142
-   page=doc[page_num-1]
-   assert f['placement'] in ('question','explanation')
-   assert rect.width>2 and rect.height>2 and rect.x0>=0 and rect.y0>=0 and rect.x1<=page.rect.x1 and rect.y1<=page.rect.y1,f'Invalid crop Q{n}: {rect}'
-   assert rect.get_area()<page.rect.get_area()*.4,f'Whole-question photos are not allowed: Q{n}'
-   pix=page.get_pixmap(matrix=fitz.Matrix(4,4),clip=rect,colorspace=fitz.csRGB)
-   image=Image.frombytes('RGB',(pix.width,pix.height),pix.samples);buf=io.BytesIO();image.save(buf,'WEBP',quality=93,method=6)
-   alt=f.get('alt') or f'Original diagram for Engineering Mechanics question {n}'
-   svg=(f'<svg xmlns="http://www.w3.org/2000/svg" width="{pix.width}" height="{pix.height}" viewBox="0 0 {pix.width} {pix.height}"><title>{html.escape(alt)}</title><image width="{pix.width}" height="{pix.height}" href="data:image/webp;base64,{base64.b64encode(buf.getvalue()).decode()}"/></svg>').encode()
-   name=f'{q["id"]}-{f["placement"]}-{index}-{hashlib.sha256(svg).hexdigest()[:10]}.svg';(figdir/name).write_bytes(svg)
-   figs.append({'page':page_num,'bbox':list(rect),'placement':f['placement'],'alt':alt,'url':'mechanical/figures/'+name})
-   manifest.append({'question':n,'id':q['id'],'page':page_num,'printedPage':page_num+14,'bbox':list(rect),'placement':f['placement'],'file':name,'width':pix.width,'height':pix.height})
-  q['figures']=figs;q['subjectId']='engineering-mechanics';q['subject']='Engineering Mechanics'
+  q['figures'],entries=render_figures(doc,figdir,q,len(doc))
+  manifest.extend(entries)
+  q['subjectId']='engineering-mechanics';q['subject']='Engineering Mechanics'
   q['source']={**q['source'],'file':'MECH AE 01 FULL 35000-15-156.pdf','sha256':SHA}
   q.pop('transcription',None);q.pop('transcriptionReviewed',None)
   if issues:q['transcriptionIssues']=list(dict.fromkeys(issues))
@@ -81,10 +66,7 @@ def main():
   assert not conflicts,f'Conflicting independent keys: {conflicts}'
   assert not shortened,f'Potentially shortened supplied explanations need reconciliation: {shortened}'
  counts={s:sum(q['review']['status']==s for q in production) for s in STATUSES}
- topics=[]
- for topic in dict.fromkeys(q['topic'] for q in production):
-  members=[q for q in production if q['topic']==topic];subs=collections.Counter(q['subtopic'] for q in members)
-  topics.append({'name':topic,'count':len(members),'subtopics':[{'name':name,'count':count} for name,count in sorted(subs.items())]})
+ topics=topic_index(production)
  assert len(topics)==10,f'The selected extract must retain its ten printed chapters: {[t["name"] for t in topics]}'
  source={'file':'MECH AE 01 FULL 35000-15-156.pdf','aliases':[pdf.name],'sha256':SHA,'pages':142,'firstPrintedPage':15,'lastPrintedPage':156}
  payload={'subjectId':'engineering-mechanics','subject':'Engineering Mechanics','title':'Engineering Mechanics','source':source,'questions':production}
@@ -98,14 +80,12 @@ def main():
  report=(f'<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Engineering Mechanics — source and review audit</title><style>body{{font:15px/1.7 system-ui;max-width:1200px;margin:36px auto;padding:0 20px;color:#223647}}table{{border-collapse:collapse;width:100%}}td,th{{padding:11px;border-bottom:1px solid #d9e0e6;text-align:left;vertical-align:top}}th{{background:#edf2f5}}small{{color:#657887}}.scroll{{overflow:auto}}h1{{line-height:1.3}}</style>'
   f'<h1>Engineering Mechanics — source and review audit</h1><p>Only printed pages 15–156 from the selected 142-page PDF. 807 questions; {audit["independentlyExamined"]} individually examined.</p><p>{counts["verified"]} reference-reviewed · {counts["corrected"]} corrected · {counts["disputed"]} disputed · {counts["needs-review"]} pending.</p><p>Complete printed explanations are preserved. Corrections are identified, and ambiguous or incomplete answers are excluded from automatic grading.</p><p><a href="{Path(audit_url).name}">Detailed provenance and review data</a></p><div class="scroll"><table><thead><tr><th>Question</th><th>Topic</th><th>Review</th><th>Cross-check note</th><th>Printed page</th></tr></thead><tbody>{rows}</tbody></table></div><p><small>Source SHA-256: {SHA}</small></p>').encode()
  report_url=hashed(out,'source-review-audit','html',report)
- catalog={'version':hashlib.sha256(encoded(payload)).hexdigest()[:12],'total':807,'reviewed':counts['verified'],'corrected':counts['corrected'],'disputed':counts['disputed'],'subjects':[{'id':'engineering-mechanics','title':'Engineering Mechanics','url':data_url,'count':807,'reviewed':counts['verified'],'corrected':counts['corrected'],'disputed':counts['disputed'],'topics':topics}],'sources':[source],'auditUrl':report_url,'auditDataUrl':audit_url}
- (out/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2))
+ subject={'id':'engineering-mechanics','title':'Engineering Mechanics','url':data_url,
+  'count':807,'reviewed':counts['verified'],'corrected':counts['corrected'],'disputed':counts['disputed'],
+  'topics':topics,'auditUrl':report_url,'auditDataUrl':audit_url}
+ update_catalog(out,subject,source)
  (HERE/'diagram-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
- keep={'catalog.json',Path(data_url).name,Path(audit_url).name,Path(report_url).name}
- for old in out.iterdir():
-  if old.is_file() and old.name not in keep:old.unlink()
- used={f['file'] for f in manifest}
- for old in figdir.glob('*.svg'):
-  if old.name not in used:old.unlink()
+ prune_subject_assets(out,('engineering-mechanics-*.json','source-review-audit-*.json','source-review-audit-*.html'),
+  'mech-engineering-mechanics-',{data_url,audit_url,report_url}|{'mechanical/figures/'+f['file'] for f in manifest})
  print(json.dumps({'questions':807,'reviewedCoverage':audit['independentlyExamined'],'fullyTranscribed':len(transcribed),'counts':counts,'diagrams':len(manifest),'unresolved':unresolved,'shortened':shortened,'dataUrl':data_url,'auditUrl':report_url}))
 if __name__=='__main__':main()

@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ArrowLeft, ArrowRight, BarChart3, BookOpen, CheckCircle2, Flag, History, RefreshCw, Search, ShieldCheck, Wrench } from "lucide-react";
 import { useData } from "../hooks/useData";
 import { useAuth } from "../hooks/useAuth";
 import { PageHeader, Modal, ConfirmDialog } from "../components/ui";
 import { answerMechanical, canGradeMechanical, emptyMechanical, filterMechanical, finishMechanical, flagMechanical, isMechanicalReviewed, loadMechanicalSubject, mechanicalSummary, reviewLabel, startMechanical,
   type MechanicalCatalog, type MechanicalFilters, type MechanicalQuestion, type MechanicalSession, type MechanicalWorkspace } from "../utils/mechanical";
+import "../mechanical.css";
 
 const unique=(v:string[])=>[...new Set(v)].filter(Boolean).sort();
 const percent=(v:number|null)=>v===null?"—":`${Math.round(v)}%`;
@@ -35,7 +36,7 @@ function OutcomeGraphic({responses,total,title="Right vs wrong"}:{responses:Mech
   let end=0;const gradient=parts.map(p=>{const start=end;end+=s.total?p.count/s.total*100:0;return `${p.color} ${start}% ${end}%`;}).join(",");
   return <section className="card mech-outcomes"><div className="mech-card-heading"><h3>{title}</h3><span>{s.answered} of {s.total} reviewed</span></div><div className="mech-outcome-body"><div className="mech-outcome-ring" role="img" aria-label={parts.map(p=>`${p.count} ${p.label.toLowerCase()}`).join(", ")} style={{background:s.total?`conic-gradient(${gradient})`:"var(--border)"}}><div><strong>{percent(s.accuracy)}</strong><span>accuracy</span></div></div><div className="mech-outcome-legend">{parts.filter(p=>p.count||p.label!=="Not reviewed").map(p=><div key={p.label}><i style={{background:p.color}}/><span>{p.label}</span><strong>{p.count}</strong></div>)}</div></div><p className="mech-note">Accuracy includes reviewed, graded answers. Skipped and ungraded responses are excluded.</p></section>;
 }
-export default function MechanicalPractice(){
+export default function MechanicalPractice({ collectionSwitch }: { collectionSwitch?: ReactNode }){
   const {data,saveMechanical}=useData(),{guest}=useAuth();
   const w=useMemo(()=>data.mechanical||emptyMechanical(),[data.mechanical]),f=w.filters;
   const [catalog,setCatalog]=useState<MechanicalCatalog>(),[catalogRetry,setCatalogRetry]=useState(0),[questions,setQuestions]=useState<MechanicalQuestion[]>([]),[loaded,setLoaded]=useState("");
@@ -43,15 +44,34 @@ export default function MechanicalPractice(){
   const [page,setPage]=useState(0),[count,setCount]=useState("10"),[fresh,setFresh]=useState(true),[query,setQuery]=useState(f.query),[preview,setPreview]=useState<MechanicalQuestion>();
   const [active,setActive]=useState(false),[saved,setSaved]=useState<MechanicalSession>();
   const displayed=saved||(active?w.session:undefined),subjectId=displayed?.subjectId||f.subjectId,subject=catalog?.subjects.find(s=>s.id===subjectId);
+  const subjectKey = subject ? `${subject.id}:${subject.url}` : "";
   const current=useRef(w);current.current=w;
   useEffect(()=>{let live=true;const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);setError("");
     fetch(new URL("mechanical/catalog.json",document.baseURI),{signal:controller.signal}).then(async r=>{if(!r.ok)throw new Error("The Mechanical index could not be loaded.");return r.json();}).then(next=>{if(live){if(!Array.isArray(next.subjects))throw new Error("The Mechanical index is incomplete.");setCatalog(next);}}).catch(e=>{if(live)setError(e.name==="AbortError"?"Loading took too long. Please try again.":e.message);}).finally(()=>clearTimeout(timer));
     return()=>{live=false;controller.abort();clearTimeout(timer);};},[catalogRetry]);
-  useEffect(()=>{if(!subject||loaded===`${subject.id}:${subject.url}`)return;let live=true;setLoading(true);setError("");
-    loadMechanicalSubject(subject).then(qs=>{if(live){setQuestions(qs);setLoaded(`${subject.id}:${subject.url}`);}}).catch(e=>{if(live)setError(e.message);}).finally(()=>{if(live)setLoading(false);});return()=>{live=false;};},[subject?.id,subject?.url,retry]);
+  useEffect(() => {
+    if (!subject || loaded === subjectKey) {
+      setLoading(false);
+      if (subject) setError("");
+      return;
+    }
+    let live = true;
+    setLoading(true);
+    setError("");
+    loadMechanicalSubject(subject)
+      .then(records => {
+        if (live) {
+          setQuestions(records);
+          setLoaded(subjectKey);
+        }
+      })
+      .catch(error => { if (live) setError(error.message); })
+      .finally(() => { if (live) setLoading(false); });
+    return () => { live = false; };
+  }, [subjectKey, retry]);
   useEffect(()=>{setQuery(f.query);},[f.query]);
   useEffect(()=>{if(query===f.query)return;const timer=setTimeout(()=>{const v=current.current;if(saveMechanical({...v,filters:{...v.filters,query}}))setPage(0);},250);return()=>clearTimeout(timer);},[query,f.query,saveMechanical]);
-  const ready=!!subject&&loaded===`${subject.id}:${subject.url}`&&!loading,available=ready?questions:[];
+  const ready=!!subject&&loaded===subjectKey&&!loading,available=ready?questions:[];
   const selected=useMemo(()=>filterMechanical(available,f,w),[available,f,w]),byId=useMemo(()=>new Map(available.map(q=>[q.id,q])),[available]);
   const freshCount=selected.filter(q=>!w.latest[q.id]).length,pool=fresh?freshCount:selected.length,n=Number(count),pages=Math.max(1,Math.ceil(selected.length/10)),at=Math.min(page,pages-1);
   const topics=unique(available.map(q=>q.topic)),subtopics=unique(available.filter(q=>!f.topic||q.topic===f.topic).map(q=>q.subtopic));
@@ -61,7 +81,7 @@ export default function MechanicalPractice(){
   function flag(id:string){saveMechanical(flagMechanical(w,id));}
   if(displayed)return <MechanicalSet session={displayed} questions={byId} loading={!ready} error={error} readonly={!!saved} workspace={w} save={saveMechanical} onFlag={flag} onRetry={()=>setRetry(v=>v+1)} onBack={()=>{setSaved(undefined);setActive(false);}}
     onIndex={index=>{if(saved)setSaved({...saved,index});else if(w.session)saveMechanical({...w,session:{...w.session,index}});}} onAnalysis={()=>{setSaved(undefined);setActive(false);setTab("analysis");}}/>;
-  return <div className="mechanical-practice"><PageHeader eyebrow="MCQ PRACTICE · SUBJECT & SUBTOPIC" title="Mechanical Engineering" description="Your engineering collection, with complete supplied explanations and traceable answer reviews."/>
+  return <div className="mechanical-practice"><PageHeader eyebrow="MCQ PRACTICE · SUBJECT & SUBTOPIC" title="Mechanical Engineering" description="Your engineering collection, with complete supplied explanations and traceable answer reviews." action={collectionSwitch}/>
     <section className="mech-hero"><div className="mech-hero-icon"><Wrench size={26}/></div><div><span className="eyebrow">BUILD UNDERSTANDING, ONE QUESTION AT A TIME</span><h2>Choose a subject. Find your focus.</h2><p>Text questions and complete explanations. Original images are used for diagrams.</p></div><div className="mech-hero-count"><strong>{catalog?catalog.total.toLocaleString():"…"}</strong><span>source questions</span></div></section>
     <p className="mech-note">{guest?"Responses and flags save in this browser. Export a workspace backup from Settings to keep a separate copy.":"Responses, flags and history save in your personal workspace. Account shows cloud sync status."}</p>
     <nav className="mech-tabs" aria-label="Mechanical practice sections">{[["browse","Subjects & questions",BookOpen],["review","Saved review",Flag],["analysis","Analysis & history",BarChart3]].map(([key,title,Icon])=>{const I=Icon as typeof BookOpen;return <button key={String(key)} aria-current={tab===key?"page":undefined} onClick={()=>{setTab(key as typeof tab);setPage(0);}}><I size={15}/>{String(title)}</button>;})}</nav>
@@ -69,7 +89,7 @@ export default function MechanicalPractice(){
     {!catalog?!error&&<p className="card mech-loading" role="status">Loading the subject index…</p>:<>
       {w.session&&!w.session.completedAt&&<section className="card mech-resume"><div><strong>Continue your Mechanical set</strong><p>{w.session.subject} · {Object.keys(w.session.responses).length} of {w.session.questionIds.length} reviewed</p></div><button className="btn primary" onClick={resume}>Resume practice<ArrowRight size={15}/></button></section>}
       {tab==="analysis"?<Analysis catalog={catalog} workspace={w} open={s=>{setSaved({...s,index:0});setActive(false);}} choose={(id,status)=>{if(saveMechanical({...w,filters:{...emptyMechanical().filters,subjectId:id,status}}))setTab("review");}}/>:<>
-        <div className="mech-subject-grid" aria-label="Mechanical subjects">{catalog.subjects.map(s=><button key={s.id} className={f.subjectId===s.id?"selected":""} aria-pressed={f.subjectId===s.id} onClick={()=>change("subjectId",s.id)}><span><Wrench size={17}/><strong>{s.title}</strong><ArrowRight size={15}/></span><small>{s.count.toLocaleString()} questions · {s.topics.length} topics</small></button>)}</div>
+        <div className="mech-subject-grid" aria-label="Mechanical subjects">{catalog.subjects.map(s=><button key={s.id} className={f.subjectId===s.id?"selected":""} aria-pressed={f.subjectId===s.id} onClick={()=>change("subjectId",s.id)}><span><Wrench size={17}/><strong>{s.title}</strong><ArrowRight size={15}/></span><small>{s.count.toLocaleString()} questions · {s.topics.length} {s.topics.length === 1 ? "topic" : "topics"}</small></button>)}</div>
         {!f.subjectId?<section className="card mech-empty"><BookOpen size={29}/><h3>Pick your Mechanical subject</h3><p>Open a subject above to choose topics and subtopics, practise, or revisit saved answers.</p></section>:<>
           <section className="card mech-filters"><div className="mech-filter-grid">
             <label>Topic<select aria-label="Mechanical topic" value={f.topic} disabled={!ready} onChange={e=>change("topic",e.target.value)}><option value="">All topics</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
@@ -83,10 +103,12 @@ export default function MechanicalPractice(){
           {loading?<p className="card mech-loading" role="status">Loading question text…</p>:ready&&!selected.length?<section className="card mech-empty"><h3>No matching questions</h3><p>Try another topic, review state or saved-answer filter.</p></section>:<div className="mech-question-list">{selected.slice(at*10,at*10+10).map(q=><article className="card" key={q.id}><div className="mech-row-heading"><div><span className="eyebrow">{q.topic}</span><h3>Q{q.number} · {q.subtopic}</h3></div><Quality q={q}/></div><p className="mech-question-preview">{q.question}</p><div className="mech-row-foot"><span>{outcome(w.latest[q.id]?.outcome||"")} · printed p. {q.source.printedPage}</span><div><button className="mech-flag" aria-pressed={w.flags.includes(q.id)} onClick={()=>flag(q.id)}><Flag size={13}/>{w.flags.includes(q.id)?"Flagged":"Flag"}</button><button className="text-btn" onClick={()=>setPreview(q)}>Question &amp; full explanation</button><button className="btn secondary" disabled={!!w.session&&!w.session.completedAt} onClick={()=>start([q],1,false)}>Practise<ArrowRight size={13}/></button></div></div></article>)}</div>}
           {ready&&selected.length>10&&<div className="mech-pagination"><button className="btn secondary" disabled={!at} onClick={()=>setPage(at-1)}>Previous</button><span>{at*10+1}–{Math.min((at+1)*10,selected.length)} of {selected.length}</span><button className="btn secondary" disabled={at+1>=pages} onClick={()=>setPage(at+1)}>Next</button></div>}
         </>}
-        <section className="card mech-review-coverage"><ShieldCheck size={18}/><div><strong>Answer review is transparent</strong><p>{catalog.reviewed.toLocaleString()} reference-reviewed · {catalog.corrected.toLocaleString()} corrected · {catalog.disputed.toLocaleString()} disputed. Ambiguous answers and unresolved transcriptions do not affect accuracy.</p>{catalog.auditUrl&&<a href={new URL(catalog.auditUrl,document.baseURI).href} target="_blank" rel="noreferrer">Source and review audit</a>}</div></section>
+        <section className="card mech-review-coverage"><ShieldCheck size={18}/><div><strong>Answer review</strong><p>{(subject ?? catalog).reviewed.toLocaleString()} reference-reviewed · {(subject ?? catalog).corrected.toLocaleString()} corrected · {(subject ?? catalog).disputed.toLocaleString()} disputed. Accuracy uses graded answers.</p>
+          {(subject ? [subject] : catalog.subjects).filter(s=>s.auditUrl).map(s=><a className="mech-audit-link" key={s.id} href={new URL(s.auditUrl!,document.baseURI).href} target="_blank" rel="noreferrer">{s.title} source and review audit</a>)}
+        </div></section>
       </>}
     </>}
-    {preview&&<Modal title={`Engineering Mechanics · Q${preview.number}`} onClose={()=>setPreview(undefined)} wide><div className="modal-body mech-preview"><QuestionBody q={preview}/><ul className="mech-readonly-options">{Object.entries(preview.options).map(([k,v])=><li key={k}><strong>{k.toUpperCase()}</strong><span>{v}</span></li>)}</ul><Explanation q={preview}/></div></Modal>}
+    {preview&&<Modal title={`${preview.subject} · Q${preview.number}`} onClose={()=>setPreview(undefined)} wide><div className="modal-body mech-preview"><QuestionBody q={preview}/><ul className="mech-readonly-options">{Object.entries(preview.options).map(([k,v])=><li key={k}><strong>{k.toUpperCase()}</strong><span>{v}</span></li>)}</ul><Explanation q={preview}/></div></Modal>}
   </div>;
 }
 

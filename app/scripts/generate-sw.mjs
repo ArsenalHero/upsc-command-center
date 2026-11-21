@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
 import { renderServiceWorker } from "./service-worker.mjs";
 
-// Follow static imports only. The collection chooser never imports either bank.
+// Follow static imports only. Question banks load when their routes open.
 export function coreChunks(manifest) {
   const files = new Set(), visited = new Set();
   function visit(key) {

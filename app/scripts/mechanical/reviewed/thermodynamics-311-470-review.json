@@ -1,0 +1,1756 @@
+{
+  "subjectId": "thermodynamics",
+  "reviews": [
+    {
+      "number": 311,
+      "source": {
+        "page": 48,
+        "pageEnd": 48,
+        "printedPage": 62,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 12.01.2020",
+          "GPSC ARTO 01.05.2016",
+          "ISRO Scientist/Engineer 11.10.2015"
+        ]
+      },
+      "question": "A 10 kg solid at 100°C with a specific heat of 0.8 kJ/(kg·°C) is immersed in 40 kg of 20°C liquid with a specific heat of 4.0 kJ/(kg·°C). The temperature after a long time if the container is insulated will be",
+      "options": {
+        "a": "30°C",
+        "b": "28°C",
+        "c": "26°C",
+        "d": "24°C"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "For an insulated container, energy lost by the solid equals energy gained by the liquid.\nThe equivalent temperature is\nTₑ = (m₁c₁T₁ + m₂c₂T₂)/(m₁c₁ + m₂c₂)\n   = [10 × 0.8 × (100 + 273) + 40 × 4 × (20 + 273)]/(10 × 0.8 + 40 × 4)\n   = (8 × 373 + 160 × 293)/(8 + 160)\n   = 296.81 K, using the source approximation 0°C = 273 K.\nHence Tₑ = 23.81°C ≈ 24°C.",
+      "sourceExplanation": "Equivalent temperature Tₑ = (m₁cₚ₁T₁ + m₂cₚ₂T₂)/(m₁cₚ₁ + m₂cₚ₂).\nTₑ = [10 × 0.8 × (100 + 273) + 40 × 4 × (20 + 273)]/(10 × 0.8 + 400 × 4) [the printed denominator has 400 × 4].\n= (8 × 373 + 160 × 293)/(8 + 160).\nTₑ ≈ 296.81 K.\nTₑ = 23.81°C.\nTₑ ≈ 24°C.",
+      "note": "The correct answer remains (d). Corrected the printed 400 × 4 denominator to 40 × 4; the next printed line and final result use the correct heat capacity.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Insulated mixing and thermal equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 312,
+      "source": {
+        "page": 48,
+        "pageEnd": 48,
+        "printedPage": 62,
+        "examLabels": [
+          "Nagaland PSC CTSE 2017, 2016 Paper-II",
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "If δQ is the heat transferred to the system and δW is the work done by the system, then which of the following is an exact differential?",
+      "options": {
+        "a": "δQ",
+        "b": "δW",
+        "c": "δQ + δW",
+        "d": "δQ − δW"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "According to the first law of thermodynamics,\nδQ = dU + δW,\nso dU = δQ − δW.\nInternal energy U is a state property, so dU is an exact differential. Heat δQ and work δW separately are inexact differentials.",
+      "sourceExplanation": "According to the first law of thermodynamics,\nδQ = dU + δW,\nso dU = δQ − δW.\nInternal energy U is a state property, so dU is an exact differential. Heat δQ and work δW separately are inexact differentials.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Exact and inexact differentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 313,
+      "source": {
+        "page": 48,
+        "pageEnd": 48,
+        "printedPage": 62,
+        "examLabels": [
+          "Vododara muncipal Corp. DEE 2018",
+          "ISRO Scientist/Engineer 2009"
+        ]
+      },
+      "question": "A 1000 kg vehicle travelling at 80 m/s impacts a plunger attached to a piston-cylinder arrangement. If all of the energy of the vehicle is absorbed by the 20 kg of liquid contained in the cylinder, what is the maximum temperature rise of the liquid? (The specific heat of the liquid is 4.0 kJ/(kg·°C).)",
+      "options": {
+        "a": "55°C",
+        "b": "40°C",
+        "c": "45°C",
+        "d": "50°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "Given vehicle mass M = 1000 kg and speed v = 80 m/s; liquid mass m = 20 kg and specific heat c = 4.0 kJ/(kg·°C).\nIf all the vehicle kinetic energy becomes liquid internal energy,\n½Mv² = mcΔT.\nThe vehicle kinetic energy is ½ × 1000 × 80² = 3,200,000 J = 3200 kJ.\nTherefore 3200 = 20 × 4 × ΔT, giving ΔT = 40°C.",
+      "sourceExplanation": "Mass of vehicle (m) = 1000 kg; speed v = 80 m/s.\nMass of liquid contained m = 20 kg; c = 4.0 kJ/(kg·°C).\nΔT = ?\n½mv² = mcΔT.\n½ × 1000 × 80² = 20 × 4 × (ΔT).\nΔT = 40°C.",
+      "note": "The printed answer is correct. The printed numerical energy equality mixes joules and kilojoules without showing the factor 1000; the checked derivation makes that conversion explicit.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Conversion of kinetic energy to internal energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 314,
+      "source": {
+        "page": 48,
+        "pageEnd": 49,
+        "printedPage": 62,
+        "examLabels": [
+          "UPRVUNL AE 2014",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "A system is taken from state “P” to state “Q” along two different paths “a” and “b”. The heat absorbed and work done by the system along these paths are “Qₐ”, “Qᵦ” and “Wₐ”, “Wᵦ”, respectively. Which among the following will be true?",
+      "options": {
+        "a": "Wₐ + Qₐ = Wᵦ + Qᵦ",
+        "b": "Qₐ = Qᵦ",
+        "c": "Wₐ = Wᵦ",
+        "d": "Qₐ − Wₐ = Qᵦ − Wᵦ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Qₐ − Wₐ = Qᵦ − Wᵦ, because both equal U_Q − U_P.\nThe two paths have identical initial and final states; heat and work can each depend on the path, while their difference is the same internal-energy change.",
+      "sourceExplanation": "Qₐ − Wₐ = Qᵦ − Wᵦ.\nThe accompanying P–V diagram shows two different paths a and b between P and Q.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Path independence of internal energy",
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            151,
+            111,
+            214,
+            180
+          ],
+          "placement": "explanation",
+          "alt": "Two P–V paths a and b join the same initial state P and final state Q."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 315,
+      "source": {
+        "page": 49,
+        "pageEnd": 49,
+        "printedPage": 63,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 12.01.2020",
+          "TRB Poly. Lect., 2012"
+        ]
+      },
+      "question": "A system undergoes a change of rate during which 100 kJ of heat is transferred to it and does 50 kJ of work. The system is brought back to its original state through a process during which 120 kJ of heat is transferred to it. The work done by the system is",
+      "options": {
+        "a": "50 kJ",
+        "b": "79 kJ",
+        "c": "170 kJ",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given Q₁₋₂ = 100 kJ, W₁₋₂ = 50 kJ, and Q₂₋₁ = 120 kJ. The return work is required.\nFor a complete cycle, the first law gives ∮δQ = ∮δW.\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.\n100 + 120 = 50 + W₂₋₁.\n220 = 50 + W₂₋₁.\nW₂₋₁ = 220 − 50 = 170 kJ.",
+      "sourceExplanation": "Given Q₁₋₂ = 100 kJ, W₁₋₂ = 50 kJ, and Q₂₋₁ = 120 kJ. The return work is required.\nFor a complete cycle, the first law gives ∮δQ = ∮δW.\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.\n100 + 120 = 50 + W₂₋₁.\n220 = 50 + W₂₋₁.\nW₂₋₁ = 220 − 50 = 170 kJ.",
+      "note": "The scan prints “change of rate”; this is evidently a wording error for change of state. The two-process energy balance is otherwise unambiguous.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First law for a cycle",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 316,
+      "source": {
+        "page": 49,
+        "pageEnd": 49,
+        "printedPage": 63,
+        "examLabels": [
+          "TSPSC AEE 2017, GATE 2008"
+        ]
+      },
+      "question": "A gas expands in a frictionless piston-cylinder arrangement. The expansion process is very slow, and is resisted by an ambient pressure of 100 kPa. During the expansion process, the pressure of the system (gas) remains constant at 300 kPa. The change in volume of the gas is 0.01 m³. The maximum amount of work that could be utilized from the above process is",
+      "options": {
+        "a": "0 kJ",
+        "b": "1 kJ",
+        "c": "2 kJ",
+        "d": "3 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The work required to displace the atmosphere is\nWₐₜₘ = PₐₜₘΔV = 100 × 0.01 = 1 kJ.\nThe total quasi-static expansion work is\nW = PΔV = 300 × 0.01 = 3 kJ.\nOf the 3 kJ total, 1 kJ displaces the atmosphere, leaving maximum useful work\nWᵤ = (P − Pₐₜₘ)ΔV = 2 kJ.",
+      "sourceExplanation": "The work required to displace the atmosphere is\nWₐₜₘ = PₐₜₘΔV = 100 × 0.01 = 1 kJ.\nThe total quasi-static expansion work is\nW = PΔV = 300 × 0.01 = 3 kJ.\nOf the 3 kJ total, 1 kJ displaces the atmosphere, leaving maximum useful work\nWᵤ = (P − Pₐₜₘ)ΔV = 2 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Useful work and atmospheric displacement",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 317,
+      "source": {
+        "page": 49,
+        "pageEnd": 49,
+        "printedPage": 63,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "Starting from the same initial conditions, an ideal gas expands from volume V₁ to V₂ in three different ways. The work done by the gas is W₁ if the process is purely isothermal, W₂ if purely isobaric, and W₃ if purely adiabatic, then",
+      "options": {
+        "a": "W₂ > W₁ > W₃",
+        "b": "W₂ > W₃ > W₁",
+        "c": "W₁ > W₂ > W₃",
+        "d": "W₁ > W₃ > W₂"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Work done by a gas in a quasi-static process equals the area under its P–V curve.\nFrom the same initial state and over the same expansion V₁ to V₂:\n• Constant-pressure path 1–2 gives the greatest area, the region 1–2–b–a, and work W₂.\n• Isothermal path 1–3 gives the intermediate area, the region 1–3–b–a–1, and work W₁.\n• Reversible adiabatic path 1–4, PVᵞ = constant, gives the smallest area, the region 1–4–b–a–1, and work W₃.\nThus W₂ > W₁ > W₃.",
+      "sourceExplanation": "Work done by a gas in a quasi-static process equals the area under its P–V curve.\nFrom the same initial state and over the same expansion V₁ to V₂:\n• Constant-pressure path 1–2 gives the greatest area, the region 1–2–b–a, and work W₂.\n• Isothermal path 1–3 gives the intermediate area, the region 1–3–b–a–1, and work W₁.\n• Reversible adiabatic path 1–4, PVᵞ = constant, gives the smallest area, the region 1–4–b–a–1, and work W₃.\nThus W₂ > W₁ > W₃.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Work for isobaric, isothermal, and adiabatic expansion",
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            330,
+            153,
+            496,
+            283
+          ],
+          "placement": "explanation",
+          "alt": "P–V curves for expansion from V₁ to V₂: isobaric 1–2, isothermal 1–3, and reversible adiabatic 1–4."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 318,
+      "source": {
+        "page": 49,
+        "pageEnd": 49,
+        "printedPage": 63,
+        "examLabels": [
+          "APPSC AEE 2012",
+          "ISRO Scientist/Engineer 2011"
+        ]
+      },
+      "question": "According to first law of thermodynamics",
+      "options": {
+        "a": "Mass and energy are mutually convertible",
+        "b": "Heat and work are mutually convertible",
+        "c": "Heat flows from hot substance to cold substance",
+        "d": "Carnot engine is most efficient"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The first law expresses conservation of energy: energy can be transferred from one form to another, with heat and work being modes of energy transfer. Thus heat and work are mutually convertible in the energy-balance sense, giving (b).\nFor an isolated system the total energy is constant; for a general system it changes by the net heat, work, and mass-energy transfers. The first law alone does not determine the direction of heat transfer or the maximum heat-engine efficiency.",
+      "sourceExplanation": "According to first law of thermodynamics—\n• Total amount of energy the system is constant.\n• Energy can be transfer from one form to another.\n• Heat and work are mutually convertible.",
+      "note": "Retained answer (b), but qualified the source statement that system energy is always constant: that applies to an isolated system. Heat-to-work conversion limits follow from the second law.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Meaning of the first law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 319,
+      "source": {
+        "page": 49,
+        "pageEnd": 50,
+        "printedPage": 63,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II",
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "Air enters an adiabatic nozzle at 400 kPa and 900 K, with negligible velocity. If the flow is ideal and exit pressure is 100 kPa, the exit temperature in K and exit velocity in m/s are respectively",
+      "options": {
+        "a": "605.7, 768.7",
+        "b": "225, 1164.8",
+        "c": "516.9, 877.5",
+        "d": "129.2, 880.1"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "Given P₁ = 400 kPa, T₁ = 900 K, inlet velocity c₁ ≈ 0, and P₂ = 100 kPa.\nFor ideal (isentropic) expansion of air, using γ = 1.4,\nT₂/T₁ = (P₂/P₁)^((γ − 1)/γ).\nT₂/900 = (100/400)^((1.4 − 1)/1.4).\nT₂ = 900(100/400)^(0.4/1.4) = 605.66 K ≈ 605.7 K.\nThe steady-flow energy equation is\nh₁ + c₁²/2000 + gz₁/1000 + q = h₂ + c₂²/2000 + gz₂/1000 + w,\nwith enthalpy in kJ/kg and velocities in m/s. For this adiabatic nozzle q = 0, w = 0, z₁ = z₂, and c₁ ≈ 0.\nh₁ = h₂ + c₂²/2000.\nc₂ = √[2000(h₁ − h₂)] = √[2000cₚ(T₁ − T₂)].\nUsing cₚ = 1.005 kJ/(kg·K),\nc₂ = √[2000 × 1.005 × (900 − 605.66)] = 769.18 m/s.\nOption (a), 605.7 K and 768.7 m/s, is the intended pair; using cₚ ≈ 1.004 gives 768.79 m/s.",
+      "sourceExplanation": "P₁ = 400 kPa; T₁ = 900 K; V₁ = 0; P₂ = 100 kPa; T₂ = ?; V₂ = ?.\nT₂/T₁ = (P₂/P₁)^((γ − 1)/γ).\nT₂/900 = (100/400)^((1.4 − 1)/1.4).\nT₂ = 900(100/400)^(0.4/1.4).\nT₂ = 605.7 K.\nFrom SFEE, h₁ + c₁²/2000 + gz₁/1000 + q꜀ᵥ = h₂ + c₂²/2000 + gz₂/1000 + w꜀ᵥ.\nq꜀ᵥ = 0 and w꜀ᵥ = 0 for an adiabatic nozzle; z₁ = z₂; c₁ = 0.\nh₁ = h₂ + c₂²/2000.\nc₂ = √[2000(h₁ − h₂)] = √[2000cₚ(T₁ − T₂)]\n= √[2000 × 1.005 × (900 − 605.66)]\n= 769.177 m/s.",
+      "note": "The key (a) is retained. The source uses cₚ = 1.005 and obtains 769.177 m/s, whereas its option uses about cₚ = 1.004. This small property/rounding discrepancy does not change the unique intended pair.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Adiabatic nozzle",
+      "figures": [
+        {
+          "page": 49,
+          "bbox": [
+            343,
+            681,
+            476,
+            743
+          ],
+          "placement": "explanation",
+          "alt": "Adiabatic nozzle receiving air at 400 kPa and 900 K and discharging at 100 kPa."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 320,
+      "source": {
+        "page": 50,
+        "pageEnd": 50,
+        "printedPage": 64,
+        "examLabels": [
+          "ISRO Scientist/Engineer 11.10.2015",
+          "GATE 2009"
+        ]
+      },
+      "question": "The inlet and outlet conditions of steam for an adiabatic steam turbine are as indicated in the figure. The notations are as usually followed. If the mass rate of steam through the turbine is 20 kg/s, the power output of the turbine is",
+      "options": {
+        "a": "12.157 MW",
+        "b": "12.941 MW",
+        "c": "168.001 MW",
+        "d": "168.785 MW"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given ṁ = 20 kg/s. Inlet: h₁ = 3200 kJ/kg, v₁ = 160 m/s, z₁ = 10 m, P₁ = 3 MPa. Outlet: h₂ = 2600 kJ/kg, v₂ = 100 m/s, z₂ = 6 m, P₂ = 70 kPa.\nThe steady-flow energy equation is\nṁ(h₁ + v₁²/2 + gz₁) + Q̇ = ṁ(h₂ + v₂²/2 + gz₂) + Ẇ,\nwhen all specific energies are expressed in the same units. Here Q̇ = 0 because the turbine is adiabatic.\nWith h in kJ/kg, divide kinetic energies by 2000 and potential energies by 1000:\n20[3200 + 160²/2000 + (9.81 × 10)/1000]\n= 20[2600 + 100²/2000 + (9.81 × 6)/1000] + Ẇ.\n64257.96 = 52101.1772 + Ẇ.\nẆ = 12156.7828 kW = 12.1568 × 10⁶ W ≈ 12.157 MW.",
+      "sourceExplanation": "Given ṁ = 20 kg/s. Inlet: h₁ = 3200 kJ/kg, v₁ = 160 m/s, z₁ = 10 m, P₁ = 3 MPa. Outlet: h₂ = 2600 kJ/kg, v₂ = 100 m/s, z₂ = 6 m, P₂ = 70 kPa.\nThe steady-flow energy equation is\nṁ(h₁ + v₁²/2 + gz₁) + Q̇ = ṁ(h₂ + v₂²/2 + gz₂) + Ẇ,\nwhen all specific energies are expressed in the same units. Here Q̇ = 0 because the turbine is adiabatic.\nWith h in kJ/kg, divide kinetic energies by 2000 and potential energies by 1000:\n20[3200 + 160²/2000 + (9.81 × 10)/1000]\n= 20[2600 + 100²/2000 + (9.81 × 6)/1000] + Ẇ.\n64257.96 = 52101.1772 + Ẇ.\nẆ = 12156.7828 kW = 12.1568 × 10⁶ W ≈ 12.157 MW.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Adiabatic steam turbine",
+      "figures": [
+        {
+          "page": 50,
+          "bbox": [
+            100,
+            475,
+            261,
+            561
+          ],
+          "placement": "question",
+          "alt": "Steam-turbine inlet h₁ = 3200 kJ/kg, v₁ = 160 m/s, z₁ = 10 m, P₁ = 3 MPa; outlet h₂ = 2600 kJ/kg, v₂ = 100 m/s, z₂ = 6 m, P₂ = 70 kPa."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 321,
+      "source": {
+        "page": 50,
+        "pageEnd": 50,
+        "printedPage": 64,
+        "examLabels": [
+          "Gujarat PSC AE 2019, GATE 2008"
+        ]
+      },
+      "question": "A rigid, insulated tank is initially evacuated. The tank is connected with a supply line through which air (assumed to be an ideal gas with constant specific heats) passes at 1 MPa, 350°C. A valve connected with the supply line is opened and the tank is charged with air until the final pressure inside the tank reaches 1 MPa. The final temperature inside the tank",
+      "options": {
+        "a": "is greater than 350°C",
+        "b": "is less than 350°C",
+        "c": "is equal to 350°C",
+        "d": "may be greater than, less than or equal to 350°C, depending on the volume of the tank"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For an initially evacuated, rigid, insulated tank filled from a supply line, the unsteady energy balance is m₂u₂ = mᵢₙhᵢₙ. Since the tank starts empty, m₂ = mᵢₙ, hence u₂ = hᵢₙ.\nFor ideal air with constant specific heats, cᵥT₂ = cₚT₁, giving\nT₂ = γT₁ = 1.4(350 + 273) = 872.2 K.\nT₂ = 872.2 − 273 = 599.2°C ≈ 600°C, which is greater than 350°C.",
+      "sourceExplanation": "The final temperature in the tank when initially evacuated tank is connected to pipe line:\nT₂ = γ × temperature in pipe line\n= γT₁\n= 1.4(350 + 273)\n= 872.2 K = 599.2°C.\nT₂ ≈ 600°C.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Unsteady filling of an evacuated tank",
+      "figures": [
+        {
+          "page": 50,
+          "bbox": [
+            379,
+            226,
+            451,
+            422
+          ],
+          "placement": "question",
+          "alt": "Air supply line connects through a valve to an initially evacuated tank."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 322,
+      "source": {
+        "page": 50,
+        "pageEnd": 51,
+        "printedPage": 64,
+        "examLabels": [
+          "GPSC Asstt. Prof. 28.08.2016, GATE 2008"
+        ]
+      },
+      "question": "In a steady state flow process taking place in a device with a single inlet and single outlet, the work done per unit mass flow rate is given by w = −∫ᵢₙˡᵉᵗᵒᵘᵗˡᵉᵗ v dp, where v is the specific volume and p is the pressure. The expression of w given above",
+      "options": {
+        "a": "Is valid only if the process is both reversible and adiabatic",
+        "b": "Is valid only if the process is both reversible and isothermal",
+        "c": "Is valid for any reversible process",
+        "d": "Is incorrect; it must be w = ∫ᵢₙˡᵉᵗᵒᵘᵗˡᵉᵗ p dv"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A reversible process permits the system and surroundings to return from the final state to their original conditions without leaving any change in the universe.\nFor reversible steady flow with negligible changes in kinetic and potential energy, the energy equation is δq − δw = dh. The reversible relation δq = T ds and the Gibbs equation dh = T ds + v dp then give\nδw = −v dp,\nso w = −∫ᵢₙˡᵉᵗᵒᵘᵗˡᵉᵗ v dp.\nIt therefore applies to reversible processes generally, not only reversible adiabatic or isothermal processes: (c). If kinetic or potential energies change, their changes must also be included in shaft work.",
+      "sourceExplanation": "A reversible process is defined as a process in which the system and surroundings can be returned to the original conditions from the final state without producing any changes in the thermodynamic properties of the universe, if the process is reversed.\nSo w = −∫ᵢₙˡᵉᵗᵒᵘᵗˡᵉᵗ v dp represents a reversible process.\nThe P–V diagram shows a reversible flow from inlet to outlet.",
+      "note": "Key (c) is the standard intended result. The shaft-work formula also assumes negligible kinetic- and potential-energy changes; this usual condition is made explicit.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Reversible steady-flow work",
+      "figures": [
+        {
+          "page": 51,
+          "bbox": [
+            127,
+            170,
+            242,
+            226
+          ],
+          "placement": "explanation",
+          "alt": "Reversible P–V path from the higher-volume inlet to lower-volume outlet."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 323,
+      "source": {
+        "page": 51,
+        "pageEnd": 51,
+        "printedPage": 65,
+        "examLabels": [
+          "GPSC Asstt. Prof. 28.08.2016, GATE 1993"
+        ]
+      },
+      "question": "The first law of thermodynamics takes the form W = −ΔH when applied to:",
+      "options": {
+        "a": "A closed system undergoing a reversible adiabatic process",
+        "b": "An open system undergoing an adiabatic process with negligible change in kinetic and potential energies",
+        "c": "A closed system undergoing a reversible constant volume process",
+        "d": "A closed system undergoing a reversible constant pressure process"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The first law relates changes in system energy to heat and work. For a steady-flow open system, with negligible changes in kinetic and potential energy,\nH₁ + Q = H₂ + W.\nFor an adiabatic process Q = 0, so\nW = H₁ − H₂ = −ΔH.\nThus the correct choice is (b). A turbine that delivers positive work has H₁ > H₂.",
+      "sourceExplanation": "First law of thermodynamics defines, the internal energy (E) is equal to the difference of the heat transfer (Q) in a system and work (W) done by system.\nW = −ΔH is an open system, undergoing an adiabatic process, ΔK.E and ΔP.E is zero.\nSteady flow equation, H₁ + Q = H₂ + W.\nIn adiabatic process, Q = 0.\nSo H₁ − H₂ = W ⇒ W = −ΔH ∴ (H₂ > H₁).",
+      "note": "The key is correct. Corrected the final printed inequality H₂ > H₁: for positive work output the inlet enthalpy must exceed the outlet enthalpy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Steady-flow first law in enthalpy form",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 324,
+      "source": {
+        "page": 51,
+        "pageEnd": 51,
+        "printedPage": 65,
+        "examLabels": [
+          "MPPSC AE 2016, ESE 1995"
+        ]
+      },
+      "question": "The internal energy of a certain system is a function of temperature alone and is given by the formula E = 25 + 0.25t kJ. If this system executes a process for which the work done done by it per degree temperature increases is 0.75 kN·m, dE/dt = Q − W, the heat interaction per degree temperature increase, in kJ, is",
+      "options": {
+        "a": "−1.00",
+        "b": "1.00",
+        "c": "−0.50",
+        "d": "0.50"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "E = 25 + 0.25t kJ, so dE/dt = 0.25 kJ/°C, where t is temperature.\nThe work done per degree is δW/dt = 0.75 kJ/°C.\nFrom the first law, δQ = δW + dE.\nTherefore δQ/dt = δW/dt + dE/dt\n= 0.75 + 0.25 = 1.00 kJ per degree temperature increase.",
+      "sourceExplanation": "E = 25 + 0.25t kJ, so dE/dt = 0.25 kJ/°C, where t is temperature.\nThe work done per degree is δW/dt = 0.75 kJ/°C.\nFrom the first law, δQ = δW + dE.\nTherefore δQ/dt = δW/dt + dE/dt\n= 0.75 + 0.25 = 1.00 kJ per degree temperature increase.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Heat and work per degree temperature change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 325,
+      "source": {
+        "page": 51,
+        "pageEnd": 51,
+        "printedPage": 65,
+        "examLabels": [
+          "RPSC VPITI 14.02.2016, ESE 2010"
+        ]
+      },
+      "question": "A closed system receives 60 kJ heat but its internal energy decreases by 30 kJ. Then the work done by the system is",
+      "options": {
+        "a": "30 kJ",
+        "b": "90 kJ",
+        "c": "−30 kJ",
+        "d": "−90 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given ΔU = −30 kJ and heat received Q = +60 kJ.\nFor a closed system, Q = ΔU + W.\n+60 = −30 + W.\nHence W = +90 kJ, meaning 90 kJ of work is done by the system.",
+      "sourceExplanation": "Given ΔU = −30 kJ and heat received Q = +60 kJ.\nFor a closed system, Q = ΔU + W.\n+60 = −30 + W.\nHence W = +90 kJ, meaning 90 kJ of work is done by the system.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law energy balances",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 326,
+      "source": {
+        "page": 51,
+        "pageEnd": 51,
+        "printedPage": 65,
+        "examLabels": [
+          "(HPPSC LECT. 2016), GATE 2008"
+        ]
+      },
+      "question": "An ideal gas is filled in a balloon kept in an evacuated and insulated room. When the balloon ruptures, the gas fills up the entire room. Now internal energy of gas .......... and the enthalpy of gas .......... at the end of this process.",
+      "options": {
+        "a": "increases, increases",
+        "b": "constant, decreases",
+        "c": "constant, constant",
+        "d": "decreases, increases"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The ideal gas expands into the evacuated, insulated room when the balloon ruptures. Taking the room as the boundary gives no heat transfer and no external boundary work, so the internal energy of the gas remains constant.\nFor an ideal gas, dU = mcᵥ dT and dH = mcₚ dT: internal energy and enthalpy depend on temperature alone, U = U(T) and H = H(T).\nSince ΔU = 0, the final temperature is unchanged, so ΔH = 0 as well. Both internal energy and enthalpy remain constant, giving (c).",
+      "sourceExplanation": "An ideal gas is filled in a balloon kept in an evacuated and insulated room. When the balloon ruptures, the gas fills up the entire room. Now internal energy of gas constant and the enthalpy of gas constant at the end of this process.\nInternal energy of gas (dU) = mcᵥ dt.\nEnthalpy of gas (dH) = mcₚ dt.\nInternal energy and enthalpy of an ideal gas is a function of temperature.\ndU = f(T).\ndH = f(T).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Free expansion of an ideal gas",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 327,
+      "source": {
+        "page": 51,
+        "pageEnd": 52,
+        "printedPage": 65,
+        "examLabels": [
+          "RPSC ADE 2016, GATE 2000"
+        ]
+      },
+      "question": "A steam turbine receives steam steadily at 10 bar with an enthalpy of 3000 kJ/kg and discharges at 1 bar with an enthalpy of 2700 kJ/kg. The work output is 250 kJ/kg. The change in KE and PE are negligible. The heat transfer from the turbine casing to the surroundings is equal to :",
+      "options": {
+        "a": "0 kJ",
+        "b": "50 kJ",
+        "c": "150 kJ",
+        "d": "250 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given P₁ = 10 bar, h₁ = 3000 kJ/kg; P₂ = 1 bar, h₂ = 2700 kJ/kg; work output w = 250 kJ/kg.\nThe steady-flow energy equation is\nh₁ + c₁²/2 + gz₁ + q = h₂ + c₂²/2 + gz₂ + w,\nwith all energies in consistent units. Here h is specific enthalpy, c is velocity, z is elevation, q is heat transferred to the fluid, and w is work done by it.\nThe changes in kinetic and potential energy are negligible, so\n3000 + q = 2700 + 250.\nq = 2700 − 3000 + 250 = −300 + 250 = −50 kJ/kg.\nThe negative sign denotes heat leaving the turbine. Thus heat transferred to the surroundings is 50 kJ per kg of steam, corresponding to (b).",
+      "sourceExplanation": "Given P₁ = 10 bar, h₁ = 3000 kJ/kg; P₂ = 1 bar, h₂ = 2700 kJ/kg; work output w = 250 kJ/kg.\nThe steady-flow energy equation is\nh₁ + c₁²/2 + gz₁ + q = h₂ + c₂²/2 + gz₂ + w,\nwith all energies in consistent units. Here h is specific enthalpy, c is velocity, z is elevation, q is heat transferred to the fluid, and w is work done by it.\nThe changes in kinetic and potential energy are negligible, so\n3000 + q = 2700 + 250.\nq = 2700 − 3000 + 250 = −300 + 250 = −50 kJ/kg.\nThe negative sign denotes heat leaving the turbine. Thus heat transferred to the surroundings is 50 kJ per kg of steam, corresponding to (b).",
+      "note": "Checked heat loss as 50 kJ/kg. The question gives specific energies and no mass or mass flow, although the choices print kJ; the options must be understood on a 1 kg basis.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Heat loss from a steam turbine",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 328,
+      "source": {
+        "page": 52,
+        "pageEnd": 52,
+        "printedPage": 66,
+        "examLabels": [
+          "TSPSC AEE 2017, GATE 2004"
+        ]
+      },
+      "question": "A gas contained in a cylinder is compressed, the work required for compression being 5000 kJ. During the process, heat interaction of 2000 kJ causes the surroundings to be heated. The change in internal energy of the gas during the process is",
+      "options": {
+        "a": "−7000 kJ",
+        "b": "−3000 kJ",
+        "c": "3000 kJ",
+        "d": "7000 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "From the first law Q = ΔU + W.\nCompression work is done on the gas, so W = −5000 kJ. The surroundings are heated, so heat leaves the gas: Q = −2000 kJ.\n−2000 = ΔU − 5000.\nTherefore ΔU = 3000 kJ.",
+      "sourceExplanation": "From the first law Q = ΔU + W.\nCompression work is done on the gas, so W = −5000 kJ. The surroundings are heated, so heat leaves the gas: Q = −2000 kJ.\n−2000 = ΔU − 5000.\nTherefore ΔU = 3000 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law energy balances",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 329,
+      "source": {
+        "page": 52,
+        "pageEnd": 52,
+        "printedPage": 66,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "GATE 2011"
+        ]
+      },
+      "question": "The contents of a well-insulated tank are heated by a resistor of 23 W in which 10 A current is flowing. Consider the tank along with its contents as a thermodynamic system. The work done by the system and the heat transfer to the system are positive. The rates of heat (Q), work (W) and change in internal energy (ΔU) during the process in kW are",
+      "options": {
+        "a": "Q = 0, W = −2.3, ΔU = +2.3",
+        "b": "Q = +2.3, W = 0, ΔU = +2.3",
+        "c": "Q = −2.3, W = 0, ΔU = −2.3",
+        "d": "Q = 0, W = +2.3, ΔU = −2.3"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "Given current I = 10 A and resistance R = 23 Ω (as shown in the diagram), electrical power input is I²R = 10² × 23 = 2300 W = 2.3 kW.\nThe tank and contents are the system. The boundary is insulated, so Q̇ = 0. Electrical energy crosses the system boundary as work input, making Ẇ = −2.3 kW under the stated convention.\nThe first law gives dU/dt = Q̇ − Ẇ = 0 − (−2.3) = +2.3 kW.\nHence (Q̇, Ẇ, dU/dt) = (0, −2.3, +2.3) kW, choice (a).",
+      "sourceExplanation": "Given, Wₑₗₑ꜀ₜᵣᵢ꜀ = i²R.\nThe diagram labels resistance 23 Ω, current i = 10 A, and Q = 0 (adiabatic).\nWₑₗₑ꜀ₜᵣᵢ꜀ = 10² × 23 = −2.3 kW (on system).\nFirst law: Q − W = ΔU.\nQ − (−Wₑₗₑ꜀ₜᵣᵢ꜀) = ΔU.\nΔU = +2.3 kW, Wₑₗₑ꜀ₜᵣᵢ꜀ = −2.3 kW, Q = 0.",
+      "note": "The stem prints “23W”; the supplied diagram explicitly shows 23 Ω. The verified key uses the diagram’s resistance. Also made the rate notation and electrical-work sign consistent.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Electrical work in an insulated tank",
+      "figures": [
+        {
+          "page": 52,
+          "bbox": [
+            110,
+            555,
+            260,
+            624
+          ],
+          "placement": "explanation",
+          "alt": "Insulated tank with resistor R = 23 Ω, current I = 10 A, and no heat transfer."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 330,
+      "source": {
+        "page": 52,
+        "pageEnd": 52,
+        "printedPage": 66,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 07.05.2017",
+          "GATE 1993"
+        ]
+      },
+      "question": "An insulated rigid vessel contains a mixture of fuel and air. The mixture is ignited by a minute spark. The contents of vessel experience",
+      "options": {
+        "a": "increase in temperature, pressure and energy",
+        "b": "decrease in temperature, pressure and energy",
+        "c": "increase in temperature and pressure but increase in energy",
+        "d": "increase in temperature and pressure but no change in energy"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Energy cannot be created; it is converted between forms. For the insulated rigid vessel, external heat transfer and boundary work are zero. Neglecting the minute ignition-spark input, the total internal energy of the contents remains constant while chemical energy becomes thermal internal energy. The reaction raises temperature and pressure. Thus the intended result is increased temperature and pressure with no change in total energy: (d).",
+      "sourceExplanation": "It is obvious that energy cannot be created; it is just transferred from one form to another.\nSo the mixture is ignited by a minute spark in an insulated rigid vessel contains a mixture of fuel and air, increase in temperature and pressure but no change in energy.",
+      "note": "Answer (d) uses the standard negligible-spark approximation; chemical and thermal contributions are included in the total internal energy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Combustion in a rigid insulated vessel",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 331,
+      "source": {
+        "page": 52,
+        "pageEnd": 52,
+        "printedPage": 66,
+        "examLabels": [
+          "Vadodara Muncipal Corp. DEE, 2018",
+          "GATE 2001"
+        ]
+      },
+      "question": "A small steam whistle (perfectly insulated and doing no shaft work) causes a drop of 0.8 kJ/kg in enthalpy of steam from entry to exit. The kinetic energy of the steam at entry is negligible. The velocity of steam at exit is:",
+      "options": {
+        "a": "4 m/s",
+        "b": "40 m/s",
+        "c": "80 m/s",
+        "d": "120 m/s"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For the insulated whistle with no shaft work and negligible elevation change, the steady-flow energy equation is\nh₁ + V₁²/2000 + gz₁/1000 + q = h₂ + V₂²/2000 + gz₂/1000 + w,\nwith h in kJ/kg and V in m/s. With q = 0, w = 0, V₁ ≈ 0, and z₁ ≈ z₂,\nh₁ = h₂ + V₂²/2000.\nV₂²/2000 = h₁ − h₂ = Δh = 0.8 kJ/kg.\nV₂ = √(2000Δh) = √(2000 × 0.8) = 40 m/s.",
+      "sourceExplanation": "For the insulated whistle with no shaft work and negligible elevation change, the steady-flow energy equation is\nh₁ + V₁²/2000 + gz₁/1000 + q = h₂ + V₂²/2000 + gz₂/1000 + w,\nwith h in kJ/kg and V in m/s. With q = 0, w = 0, V₁ ≈ 0, and z₁ ≈ z₂,\nh₁ = h₂ + V₂²/2000.\nV₂²/2000 = h₁ − h₂ = Δh = 0.8 kJ/kg.\nV₂ = √(2000Δh) = √(2000 × 0.8) = 40 m/s.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Conversion of enthalpy to kinetic energy",
+      "figures": [
+        {
+          "page": 52,
+          "bbox": [
+            351,
+            344,
+            477,
+            384
+          ],
+          "placement": "explanation",
+          "alt": "Steady-flow whistle/nozzle schematic with inlet velocity V₁ and exit velocity V₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 332,
+      "source": {
+        "page": 52,
+        "pageEnd": 52,
+        "printedPage": 66,
+        "examLabels": [
+          "RPSC AE 2018, UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "The first law of thermodynamics was developed by—",
+      "options": {
+        "a": "Joule",
+        "b": "Kelvin",
+        "c": "Charles",
+        "d": "Carnot"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Among the listed names, Joule is associated with the experimental basis of the first law of thermodynamics.\nFor a closed system executing a complete cycle, the algebraic sum of heat interactions equals the algebraic sum of work interactions:\nΣQ = ΣW, with summation over the entire cycle.\nFor the two illustrated paths,\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.",
+      "sourceExplanation": "The first law of thermodynamics was developed by Joule.\nFirst law of thermodynamics—When a closed system executes a complete cycle the sum of heat interactions is equal to the sum of work interaction.\nΣQ = ΣW.\nThe summations being over the entire cycle.\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.",
+      "note": "The listed-choice answer is Joule. Historically, development of energy conservation involved several contributors; the cyclic energy statement is independently checked.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First law and cyclic energy conservation",
+      "figures": [
+        {
+          "page": 52,
+          "bbox": [
+            374,
+            650,
+            452,
+            722
+          ],
+          "placement": "explanation",
+          "alt": "Closed cycle with two paths A and B between states 1 and 2."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 333,
+      "source": {
+        "page": 53,
+        "pageEnd": 53,
+        "printedPage": 67,
+        "examLabels": [
+          "CGPSC AE 15.01.2021",
+          "TSGENCO AE 14.11.2015"
+        ]
+      },
+      "question": "First law of thermodynamics for steady flow",
+      "options": {
+        "a": "accounts for all energy entering and leaving a control volume",
+        "b": "is an energy balance for a specified mass of fluid",
+        "c": "is primarily concerned with heat transfer",
+        "d": "is an expression of the conservation of linear momentum"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For steady flow, no energy accumulates in the control volume, so the total energy entering equals the total energy leaving. The balance accounts for energy transported by mass as well as heat and work.\nFor a unit mass through a single inlet and outlet,\nu₁ + P₁v₁ + V₁²/2 + gz₁ + q₁₋₂\n= u₂ + P₂v₂ + V₂²/2 + gz₂ + w₁₋₂,\nwith consistent units. Equivalently, h₁ + V₁²/2 + gz₁ + q = h₂ + V₂²/2 + gz₂ + w. Hence (a).",
+      "sourceExplanation": "For steady flow, no energy accumulates in the control volume, so the total energy entering equals the total energy leaving. The balance accounts for energy transported by mass as well as heat and work.\nFor a unit mass through a single inlet and outlet,\nu₁ + P₁v₁ + V₁²/2 + gz₁ + q₁₋₂\n= u₂ + P₂v₂ + V₂²/2 + gz₂ + w₁₋₂,\nwith consistent units. Equivalently, h₁ + V₁²/2 + gz₁ + q = h₂ + V₂²/2 + gz₂ + w. Hence (a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Steady-flow energy balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 334,
+      "source": {
+        "page": 53,
+        "pageEnd": 53,
+        "printedPage": 67,
+        "examLabels": [
+          "PPSC Asstt. Municipal Engineer 15.06.2021"
+        ]
+      },
+      "question": "For an ideal gas with constant of specific heats, for calculation of the specific enthalpy,",
+      "options": {
+        "a": "it is sufficient to know only the temperature.",
+        "b": "both temperature and pressure are required to be known.",
+        "c": "both temperature and volume are required to be known.",
+        "d": "both temperature and mass are required to be known."
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For an ideal gas, specific enthalpy is a function of temperature only, h = h(T). With constant specific heats, h₂ − h₁ = cₚ(T₂ − T₁), once the reference state is chosen.\nFor a real gas, specific enthalpy generally depends on both temperature and pressure. Therefore only temperature is needed for the ideal gas: (a).",
+      "sourceExplanation": "For an ideal gas, specific enthalpy is a function of temperature only, h = h(T). With constant specific heats, h₂ − h₁ = cₚ(T₂ − T₁), once the reference state is chosen.\nFor a real gas, specific enthalpy generally depends on both temperature and pressure. Therefore only temperature is needed for the ideal gas: (a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas enthalpy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 335,
+      "source": {
+        "page": 53,
+        "pageEnd": 53,
+        "printedPage": 67,
+        "examLabels": [
+          "PPSC Asstt. Municipal Engineer 15.06.2021"
+        ]
+      },
+      "question": "In an internal combustion engine, if during compression, the heat rejected is 60 kJ/kg and work input is 120 kJ/kg, then what will be the change in internal energy of the working fluid?",
+      "options": {
+        "a": "Loss of internal energy is 60kJ/kg",
+        "b": "Gain of internal energy is 60kJ/kg",
+        "c": "Loss of internal energy is 120kJ/kg",
+        "d": "Gain of internal energy is 120kJ/kg"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Heat rejected gives q = −60 kJ/kg and work input gives w = −120 kJ/kg.\nThe change in internal energy is\nΔu = q − w = −60 − (−120) = +60 kJ/kg.\nThus there is a gain of 60 kJ/kg in internal energy, choice (b).",
+      "sourceExplanation": "Heat rejected gives q = −60 kJ/kg and work input gives w = −120 kJ/kg.\nThe change in internal energy is\nΔu = q − w = −60 − (−120) = +60 kJ/kg.\nThus there is a gain of 60 kJ/kg in internal energy, choice (b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law sign convention",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 336,
+      "source": {
+        "page": 53,
+        "pageEnd": 53,
+        "printedPage": 67,
+        "examLabels": [
+          "VIZAG Steel MT 24.01.2021, Shift-I"
+        ]
+      },
+      "question": "A constant volume chamber of 0.3 m³ capacity contains 2 kg of gas at 278 K. Heat is transferred to the gas until the temperature is 373 K. The work done and the heat transferred during the process are ______, if the coefficient of specific heat at constant volume is 1.51 kJ/(kg·K).",
+      "options": {
+        "a": "287 kJ, 287 kJ",
+        "b": "143.5 kJ, 287 kJ",
+        "c": "143.5 kJ, 430 kJ",
+        "d": "0, 287 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "At constant volume, dV = 0 and boundary work W = ∫P dV = 0.\nGiven chamber volume V = 0.3 m³, m = 2 kg, T₁ = 278 K, T₂ = 373 K, and cᵥ = 1.51 kJ/(kg·K).\nHeat transfer equals internal-energy change:\nQ = mcᵥ(T₂ − T₁)\n= 2 × 1.51 × (373 − 278)\n= 2 × 1.51 × 95\n= 286.9 kJ ≈ 287 kJ.\nThus the pair is 0, 287 kJ: (d).",
+      "sourceExplanation": "As we know that at constant volume, the work done of the system is zero.\nV = constant ⇒ dV = 0.\nWork done (W) = P dV.\nW = P × 0 = 0.\nGiven—constant volume V = 0.3 m³, m = 2 kg, T₁ = 278 K, T₂ = 372 K [printed in the given-data list], cᵥ = 1.51 kJ/(kg·K).\nHeat transferred, Q = CᵥΔT = mcᵥ(T₂ − T₁).\n= 2 × 1.51 × (373 − 278).\n= 2 × 1.51 × 95.\n= 287 kJ.",
+      "note": "The source given-data line prints T₂ = 372 K, whereas both the question and worked substitution use 373 K. Retained 373 K and the correct key (d).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-volume heating",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 337,
+      "source": {
+        "page": 53,
+        "pageEnd": 53,
+        "printedPage": 67,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-II"
+        ]
+      },
+      "question": "For an ideal gas turbine enthalpy of gas at entry and exit are 3000 kJ/kg and 2500 kJ/kg respectively. The velocities of gas are 200 m/s and 100 m/s respectively at the entry and exit. Heat loss of gas to the surrounding is 15 kJ/kg. The approximate power developed by turbine if mass flow rate of gas is 30 kg/s is",
+      "options": {
+        "a": "16 MW",
+        "b": "0.55 MW",
+        "c": "15 MW",
+        "d": "15.5 MW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given h₁ = 3000 kJ/kg, h₂ = 2500 kJ/kg, inlet velocity C₁ = 200 m/s, outlet velocity C₂ = 100 m/s, heat loss qₗₒₛₛ = 15 kJ/kg, and ṁ = 30 kg/s.\nNeglecting potential-energy change, the steady-flow energy equation is\nṁ[h₁ + C₁²/2000] − Q̇ₗₒₛₛ = ṁ[h₂ + C₂²/2000] + Ẇₜ.\nEquivalently,\nṁ[h₁ + C₁²/2000] = ṁ[h₂ + C₂²/2000 + qₗₒₛₛ] + Ẇₜ.\n30[3000 + 200²/2000] = 30[2500 + 100²/2000 + 15] + Ẇₜ.\n90600 = 75600 + Ẇₜ.\nẆₜ = 15000 kW = 15 MW, choice (c).",
+      "sourceExplanation": "Given h₁ = 3000 kJ/kg, h₂ = 2500 kJ/kg, inlet velocity C₁ = 200 m/s, outlet velocity C₂ = 100 m/s, heat loss qₗₒₛₛ = 15 kJ/kg, and ṁ = 30 kg/s.\nNeglecting potential-energy change, the steady-flow energy equation is\nṁ[h₁ + C₁²/2000] − Q̇ₗₒₛₛ = ṁ[h₂ + C₂²/2000] + Ẇₜ.\nEquivalently,\nṁ[h₁ + C₁²/2000] = ṁ[h₂ + C₂²/2000 + qₗₒₛₛ] + Ẇₜ.\n30[3000 + 200²/2000] = 30[2500 + 100²/2000 + 15] + Ẇₜ.\n90600 = 75600 + Ẇₜ.\nẆₜ = 15000 kW = 15 MW, choice (c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Turbine power with heat loss",
+      "figures": [
+        {
+          "page": 53,
+          "bbox": [
+            358,
+            404,
+            478,
+            514
+          ],
+          "placement": "explanation",
+          "alt": "Turbine with mass flow 30 kg/s, inlet h₁ = 3000 kJ/kg and C₁ = 200 m/s, outlet h₂ = 2500 kJ/kg and C₂ = 100 m/s, and heat loss 15 kJ/kg."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 338,
+      "source": {
+        "page": 53,
+        "pageEnd": 54,
+        "printedPage": 67,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021"
+        ]
+      },
+      "question": "“The internal energy of a gas is a function of temperature.” Which of the following names is associated with the above law?",
+      "options": {
+        "a": "Joule",
+        "b": "Charles",
+        "c": "Boyle",
+        "d": "Dalton"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Joule’s law states that the internal energy of an ideal gas does not change merely because its pressure or volume changes; it changes only with temperature. Thus U = U(T), giving (a). The ideal-gas qualification is essential.\nCharles’s law: the volume of a fixed mass of perfect gas is proportional to absolute temperature at constant pressure, V ∝ T or V/T = constant.\nBoyle’s law: the absolute pressure of a fixed mass of perfect gas is inversely proportional to volume at constant temperature, P ∝ 1/V.\nDalton’s law: the total pressure of an ideal-gas mixture equals the sum of component partial pressures, P = ΣᵢPᵢ = P₁ + P₂ + P₃ + ⋯.",
+      "sourceExplanation": "Joule’s law states that the internal energy of an ideal gas does not change merely because its pressure or volume changes; it changes only with temperature. Thus U = U(T), giving (a). The ideal-gas qualification is essential.\nCharles’s law: the volume of a fixed mass of perfect gas is proportional to absolute temperature at constant pressure, V ∝ T or V/T = constant.\nBoyle’s law: the absolute pressure of a fixed mass of perfect gas is inversely proportional to volume at constant temperature, P ∝ 1/V.\nDalton’s law: the total pressure of an ideal-gas mixture equals the sum of component partial pressures, P = ΣᵢPᵢ = P₁ + P₂ + P₃ + ⋯.",
+      "note": "Answer (a) assumes an ideal gas, as explicitly stated in the source explanation. Preserved all four supplied law descriptions.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Joule’s law and ideal-gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 339,
+      "source": {
+        "page": 54,
+        "pageEnd": 54,
+        "printedPage": 68,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "A tank containing a fluid is stirred by a paddle wheel. The work input to the paddle wheel is 5090 kJ. The heat transfer from the tank is 1500 kJ. What is the change in internal energy of this control mass? (Consider the tank and the fluid inside a control surface)",
+      "options": {
+        "a": "—3590 kJ",
+        "b": "+3590 kJ",
+        "c": "+ 4590 kJ",
+        "d": "-4590 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given paddle-wheel work input 5090 kJ and heat transferred from the tank Q = −1500 kJ. Work by the system is W = −5090 kJ.\nUsing Q = ΔU + W,\nΔU = Q − W = −1500 − (−5090) = +3590 kJ.",
+      "sourceExplanation": "Given paddle-wheel work input 5090 kJ and heat transferred from the tank Q = −1500 kJ. Work by the system is W = −5090 kJ.\nUsing Q = ΔU + W,\nΔU = Q − W = −1500 − (−5090) = +3590 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Paddle-wheel work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 340,
+      "source": {
+        "page": 54,
+        "pageEnd": 54,
+        "printedPage": 68,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "During the charging of a storage battery, the current is 20 A and the voltage is 12.8V. The rate of heat transfer from the battery is 10W. At what rate is the internal energy increasing?",
+      "options": {
+        "a": "−256 J/s",
+        "b": "+246 J/s",
+        "c": "+256 J/s",
+        "d": "−246 J/s"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given I = 20 A, V = 12.8 V, and heat loss 10 W, so Q̇ = −10 W. Electrical work input is IV = 20 × 12.8 = 256 W, hence work by the battery is Ẇ = −256 W.\nThe first law gives\nQ̇ = dU/dt + Ẇ.\n−10 = dU/dt − IV.\n−10 = dU/dt − 20(12.8).\ndU/dt = +246 W = 246 J/s.",
+      "sourceExplanation": "Given I = 20 A, V = 12.8 V, and heat loss 10 W, so Q̇ = −10 W. Electrical work input is IV = 20 × 12.8 = 256 W, hence work by the battery is Ẇ = −256 W.\nThe first law gives\nQ̇ = dU/dt + Ẇ.\n−10 = dU/dt − IV.\n−10 = dU/dt − 20(12.8).\ndU/dt = +246 W = 246 J/s.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Electrical charging of a battery",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 341,
+      "source": {
+        "page": 54,
+        "pageEnd": 54,
+        "printedPage": 68,
+        "examLabels": [
+          "AAI Jr. Executive 26.03.2021"
+        ]
+      },
+      "question": "Assume air as a perfect gas. It flows into a diffuser at 300 m/s, 300 K and 100 kPa. At exit, the velocity is negligibly small, but the pressure is high. Assuming zero heat transfer, the exit temperature is:",
+      "options": {
+        "a": "452.6 K",
+        "b": "344.8 K",
+        "c": "325 K",
+        "d": "425 K"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given v₁ = 300 m/s, T₁ = 300 K, and exit velocity v₂ ≈ 0. With zero heat transfer, no shaft work, and negligible elevation change,\ncₚT₁ + v₁²/2000 = cₚT₂ + v₂²/2000.\nThus cₚT₂ = cₚT₁ + v₁²/2000.\nUsing cₚ = 1.005 kJ/(kg·K),\n1.005T₂ = 1.005 × 300 + 300²/2000\n= 301.5 + 45 = 346.5.\nT₂ = 346.5/1.005 = 344.77 K ≈ 344.8 K.",
+      "sourceExplanation": "Given v₁ = 300 m/s, T₁ = 300 K, and exit velocity v₂ ≈ 0. With zero heat transfer, no shaft work, and negligible elevation change,\ncₚT₁ + v₁²/2000 = cₚT₂ + v₂²/2000.\nThus cₚT₂ = cₚT₁ + v₁²/2000.\nUsing cₚ = 1.005 kJ/(kg·K),\n1.005T₂ = 1.005 × 300 + 300²/2000\n= 301.5 + 45 = 346.5.\nT₂ = 346.5/1.005 = 344.77 K ≈ 344.8 K.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Adiabatic diffuser",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 342,
+      "source": {
+        "page": 54,
+        "pageEnd": 54,
+        "printedPage": 68,
+        "examLabels": [
+          "AAI Jr. Executive 26.03.2021"
+        ]
+      },
+      "question": "A closed system contains a simple compressible pure substance. The difference between work done by the system and heat transferred to the system is a function.",
+      "options": {
+        "a": "both point and path",
+        "b": "point",
+        "c": "path",
+        "d": "neither point nor path"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "From the first law, δQ = dU + δW, so δQ − δW = dU. The change in internal energy is a point (state) function.\nThe question asks for work minus heat, δW − δQ = −dU. Its negative is also an exact differential of a state property. Therefore the difference is a point function, choice (b).",
+      "sourceExplanation": "From first law of thermodynamics, dQ = dU + dW.\ndQ − dW = dU.\nWhere dU is the internal energy and it is the point function of the system.",
+      "note": "The source writes heat minus work, whereas the stem asks work minus heat. Either sign is a state-function difference, so key (b) is unchanged.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Point and path functions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 343,
+      "source": {
+        "page": 54,
+        "pageEnd": 54,
+        "printedPage": 68,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "1 kg of water falls from an altitude of 1000 m above ground level. What is the change in the temperature of water at the foot of the fall, if there are no losses during the fall? (Take specific heat of water as 1 kcal·kg⁻¹·K⁻¹ and g = 9.81 m/s².)",
+      "options": {
+        "a": "3.35°C",
+        "b": "2.35°C",
+        "c": "3.32°C",
+        "d": "4.12°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given m = 1 kg, fall height h = 1000 m, and cₚ = 1 kcal/(kg·K). Assuming all lost potential energy is ultimately converted into water internal energy at the foot of the fall,\nloss of potential energy = gain in thermal energy:\nmgh = mcₚΔT.\nUsing the source conversion 1 kcal ≈ 4180 J,\n1 × 9.81 × 1000 = 1 × 1000 × 4.18 × ΔT.\nΔT = 2.346°C ≈ 2.35°C.",
+      "sourceExplanation": "Given m = 1 kg, fall height h = 1000 m, and cₚ = 1 kcal/(kg·K). Assuming all lost potential energy is ultimately converted into water internal energy at the foot of the fall,\nloss of potential energy = gain in thermal energy:\nmgh = mcₚΔT.\nUsing the source conversion 1 kcal ≈ 4180 J,\n1 × 9.81 × 1000 = 1 × 1000 × 4.18 × ΔT.\nΔT = 2.346°C ≈ 2.35°C.",
+      "note": "Checked option (b), assuming the falling water comes to rest and its potential energy becomes internal energy. Without that final dissipation the fall initially produces kinetic energy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Potential energy converted to internal energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 344,
+      "source": {
+        "page": 54,
+        "pageEnd": 55,
+        "printedPage": 68,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "A stationary mass of gas is compressed without friction from an initial state of 0.3 m³ to 0.15 m³ and 0.105 MPa, the pressure remaining constant during the process. There is a transfer of 40 kJ of heat from the gas during the process. How much does the internal energy of the gas change?",
+      "options": {
+        "a": "−24.25 kJ",
+        "b": "−19.62 kJ",
+        "c": "−15.91 kJ",
+        "d": "−12.72 kJ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given V₁ = 0.3 m³, V₂ = 0.15 m³, and constant P₁ = P₂ = 0.105 MPa = 105 kPa. Heat leaves the gas, so Q = −40 kJ.\nBoundary work is\nW = ∫P dV = P(V₂ − V₁)\n= 0.105(0.15 − 0.3) × 10³\n= −15.75 kJ.\nFrom the first law Q = ΔU + W,\n−40 = ΔU − 15.75.\nΔU = −24.25 kJ.",
+      "sourceExplanation": "Given V₁ = 0.3 m³, V₂ = 0.15 m³, and constant P₁ = P₂ = 0.105 MPa = 105 kPa. Heat leaves the gas, so Q = −40 kJ.\nBoundary work is\nW = ∫P dV = P(V₂ − V₁)\n= 0.105(0.15 − 0.3) × 10³\n= −15.75 kJ.\nFrom the first law Q = ΔU + W,\n−40 = ΔU − 15.75.\nΔU = −24.25 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure compression",
+      "figures": [
+        {
+          "page": 55,
+          "bbox": [
+            127,
+            167,
+            235,
+            239
+          ],
+          "placement": "explanation",
+          "alt": "P–V diagram of constant-pressure compression at 0.105 MPa from 0.3 m³ to 0.15 m³."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 345,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "APPSC Poly Lect. Automobile Engg., 2020"
+        ]
+      },
+      "question": "In a closed system, the heat and work for a process 1-2 is 10 kJ and 30 kJ respectively. What is the work during the return process 2- 1, if the heat is 20 kJ?",
+      "options": {
+        "a": "40 kJ",
+        "b": "30 kJ",
+        "c": "20kJ",
+        "d": "Zero"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given Q₁ = 10 kJ, Q₂ = 20 kJ, and W₁ = 30 kJ.\nFor the complete cycle, ∮δQ = ∮δW.\nQ₁ + Q₂ = W₁ + W₂.\n10 + 20 = 30 + W₂.\nHence W₂ = 0 kJ.",
+      "sourceExplanation": "Given Q₁ = 10 kJ, Q₂ = 20 kJ, and W₁ = 30 kJ.\nFor the complete cycle, ∮δQ = ∮δW.\nQ₁ + Q₂ = W₁ + W₂.\n10 + 20 = 30 + W₂.\nHence W₂ = 0 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Cyclic heat and work balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 346,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "NLC GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "Ifa closed system receives 30 kJ of heat while undergoing 91 kJ of reduction in internal energy, then :",
+      "options": {
+        "a": "121 kJ of work is done by the system",
+        "b": "61 kJ of work is done by the system",
+        "c": "61 kJ of work is done on the system",
+        "d": "121 kJ of work is done on the system"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For a closed system, heat transfer equals the sum of internal-energy increase and work transfer:\nQ = ΔU + W.\nGiven Q = 30 kJ and ΔU = −91 kJ, where the negative sign indicates a decrease.\n30 = −91 + W.\nW = 121 kJ.\nPositive W means work done by the system; negative W would mean work done on it. Therefore 121 kJ is done by the system: (a).",
+      "sourceExplanation": "For a closed system, heat transfer equals the sum of internal-energy increase and work transfer:\nQ = ΔU + W.\nGiven Q = 30 kJ and ΔU = −91 kJ, where the negative sign indicates a decrease.\n30 = −91 + W.\nW = 121 kJ.\nPositive W means work done by the system; negative W would mean work done on it. Therefore 121 kJ is done by the system: (a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law sign convention",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 347,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "VIZAG MT, 14.12.2020"
+        ]
+      },
+      "question": "If the work done on a closed system is 40 kJ/kg, and heat rejected from the system is 80 kJ/kg, then its internal energy is",
+      "options": {
+        "a": "decreased by 120 kJ/kg",
+        "b": "increased by 120 kJ/kg",
+        "c": "increased by 40 kJ/kg",
+        "d": "decreased by 40 kJ/kg"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given work done on the system, w = −40 kJ/kg, and heat rejected, q = −80 kJ/kg.\nFrom the first law q = Δu + w,\n−80 = Δu − 40.\nΔu = 40 − 80 = −40 kJ/kg.\nThe internal energy decreases by 40 kJ/kg, choice (d).",
+      "sourceExplanation": "Given work done on the system, w = −40 kJ/kg, and heat rejected, q = −80 kJ/kg.\nFrom the first law q = Δu + w,\n−80 = Δu − 40.\nΔu = 40 − 80 = −40 kJ/kg.\nThe internal energy decreases by 40 kJ/kg, choice (d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law sign convention",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 348,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "The statement of first law of thermodynamics for an isolated system is",
+      "options": {
+        "a": "ΔE = 0",
+        "b": "ΔE = δQ − δW",
+        "c": "ΔE = δQ",
+        "d": "ΔE = −δW"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The first law states that the total energy of an isolated system remains constant. An isolated system exchanges neither matter nor energy with its surroundings. Thus ΔE = 0 and the correct choice is (a).",
+      "sourceExplanation": "The first law states that the total energy of an isolated system remains constant. An isolated system exchanges neither matter nor energy with its surroundings. Thus ΔE = 0 and the correct choice is (a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isolated systems",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 349,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "NLCIL GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "If in a constant volume expansion occurs at 10 m³ and pressure varies from 1 bar to 2 bar, then the work transfer is:",
+      "options": {
+        "a": "0 kJ",
+        "b": "20 kJ",
+        "c": "40 kJ",
+        "d": "10 kJ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given V = 10 m³, P₁ = 1 bar, and P₂ = 2 bar.\nBoundary work for a closed system is W = ∫P dV. Since volume is constant, dV = 0 throughout and W = 0. The pressure change does not produce boundary work.",
+      "sourceExplanation": "Given V = 10 m³, P₁ = 1 bar, and P₂ = 2 bar.\nBoundary work for a closed system is W = ∫P dV. Since volume is constant, dV = 0 throughout and W = 0. The pressure change does not produce boundary work.",
+      "note": "The stem prints “constant volume expansion”; interpreted as a constant-volume process, as the data and supplied solution require. Boundary work is zero.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-volume boundary work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 350,
+      "source": {
+        "page": 55,
+        "pageEnd": 55,
+        "printedPage": 69,
+        "examLabels": [
+          "NLCIL GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "The change in internal energy of the system, if the heat supplied to the system is 63 kJ and the work done by the system is 100 kJ, is:",
+      "options": {
+        "a": "−163 k",
+        "b": "+163 kJ",
+        "c": "−37 kJ",
+        "d": "+37 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given heat supplied Q = 63 kJ and work by the system W = +100 kJ.\nThe first law gives Q = ΔU + W.\nΔU = Q − W = 63 − 100 = −37 kJ.",
+      "sourceExplanation": "Given heat supplied Q = 63 kJ and work by the system W = +100 kJ.\nThe first law gives Q = ΔU + W.\nΔU = Q − W = 63 − 100 = −37 kJ.",
+      "note": "Option (a) prints “−163 k”; retained as printed. The unique checked answer is −37 kJ, choice (c).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law energy balances",
+      "figures": [],
+      "transcriptionReviewed": true
+    }
+  ]
+}
