@@ -13,6 +13,7 @@ const thermoQuestions:MechanicalQuestion[]=thermoBank.questions;
 const sourceHash="7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0";
 test("exact selected PDF scope contains all 807 questions and ten complete chapters",()=>{
   assert.equal(subject.count,807);assert.equal(questions.length,807);assert.equal(new Set(questions.map(q=>q.id)).size,807);
+  assert.equal(subject.url,"mechanical/engineering-mechanics-3cd61b3e0e59.json","The existing reviewed bank must remain byte-identical");
   assert.deepEqual(questions.map(q=>q.number),Array.from({length:807},(_,i)=>i+1));assert.equal(subject.topics.length,10);assert.equal(subject.topics.reduce((s:any,t:any)=>s+t.count,0),807);
   assert.equal(bank.source.sha256,sourceHash);assert.equal(bank.source.firstPrintedPage,15);assert.equal(bank.source.lastPrintedPage,156);
   for(const q of questions){assert.equal(q.source.sha256,sourceHash);assert.ok(q.source.page>=1&&q.source.page<=142);assert.equal(q.source.printedPage,q.source.page+14);assert.ok(q.topic&&q.subtopic&&q.question.trim()&&q.explanation.trim());}
@@ -79,11 +80,21 @@ test("Thermodynamics reconciles all 940 uploaded questions without changing Engi
   assert.equal(absentChoices.sourceAnswer, "d");
   assert.equal(absentChoices.answer, null);
   assert.equal(thermoQuestions.find(q => q.number === 62)!.answer, "a");
+  for(const number of [122,198,373,480,813]) {
+    const q=thermoQuestions.find(q=>q.number===number)!;
+    assert.equal(q.optionsUnavailable,true,`Q${number} must not invent absent choices`);
+    assert.equal(q.answer,null);
+  }
+  for(const number of [499,653,917,919]) {
+    assert.equal(canGradeMechanical(thermoQuestions.find(q=>q.number===number)!),false,`Q${number} has no unique consistent source answer`);
+  }
+  assert.ok(thermoQuestions.find(q=>q.number===578)!.explanation.length>50,"Reconstruct the missing HTML explanation from the scan");
   const audit = JSON.parse(readFileSync(new URL(thermodynamics.auditDataUrl, root), "utf8"));
   assert.equal(audit.fullyTranscribed, 940);
   assert.equal(audit.independentlyExamined, 940);
   assert.deepEqual(audit.uploadReconciliation.questionNumbers, thermoQuestions.map(q=>q.number));
   assert.equal(audit.uploadReconciliation.fullQuestionPhotosPublished, 0);
   assert.equal(audit.uploadReconciliation.fullExplanationPhotosPublished, 0);
+  assert.deepEqual(audit.uploadReconciliation.explanationsReconstructedFromScan, [578]);
   assert.equal(audit.diagrams, thermoQuestions.reduce((count, q) => count + (q.figures?.length ?? 0), 0));
 });

@@ -3094,6 +3094,1610 @@
       "figures": [],
       "transcriptionReviewed": true,
       "sourceExplanation": "In heating elastomer under tensile load entropy get decrease because of only one possible microstate but by shrinkage entropy get increased because of many possible microstate. The internal energy of an ideal gas is a function of temperature only. By Helmholtz free energy equation Available energy is given by A = U − Ts. Where U = Internal energy, T = Temperature, s = Entropy. So, by increase in entropy free energy get reduced. On heating an elastomer under tensile load, its shrinkage maximize the entropy and minimize the free energy."
+    },
+    {
+      "number": 711,
+      "source": {
+        "page": 118,
+        "pageEnd": 118,
+        "examLabels": [
+          "BPSC AE Mains 2017 Paper - V"
+        ]
+      },
+      "question": "The maximum work output from two finite bodies—one at temperature T₁ and the other at temperature T₂ is",
+      "options": {
+        "a": "W_max = C_p(√T₁ − √T₂)²",
+        "b": "W_max = C_p(√T₁ + √T₂)²",
+        "c": "W_max = C_p(√(T₁T₂))^(1/2)",
+        "d": "W_max = ½C_p(√T₁ − √T₂)²"
+      },
+      "sourceAnswer": "a",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source assumes both bodies have the same constant total heat capacity C, although the stem does not state that condition or define C_p. Under that assumption, reversible work extraction continues until both bodies reach T_f. Reversibility requires ΔS₁ + ΔS₂ = C ln(T_f/T₁) + C ln(T_f/T₂) = 0, giving T_f = √(T₁T₂). For T₁ > T₂, the hot body supplies C(T₁ − T_f), the cold body receives C(T_f − T₂), and W_max = C(T₁ − T_f) − C(T_f − T₂) = C(T₁ + T₂ − 2T_f) = C(T₁ + T₂ − 2√(T₁T₂)) = C(√T₁ − √T₂)². Interchanging which body is initially hotter gives the same result. This matches a if C_p means their common heat capacity (or common unit-mass specific heat on a unit-mass work basis). For unequal heat capacities C₁ and C₂, instead T_f = T₁^[C₁/(C₁+C₂)] T₂^[C₂/(C₁+C₂)] and W_max = C₁T₁ + C₂T₂ − (C₁ + C₂)T_f. Thus the printed temperature-only premise does not uniquely justify a for arbitrary finite bodies.",
+      "note": "Printed key a assumes equal constant heat capacities and a mass convention absent from the stem. Full printed derivation across both columns retained.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Calculation of Entropy Change in Some Basic Processes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+          "section": "5.5: reservoir, finite-body and free-expansion entropy changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Limitations on the Work that Can be Supplied by a Heat Engine",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node44.html",
+          "section": "6.1: cyclic entropy balance and Carnot efficiency"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Maximum Work from Two Finite Bodies",
+      "figures": [
+        {
+          "page": 118,
+          "bbox": [
+            118,
+            639,
+            247,
+            673
+          ],
+          "placement": "explanation",
+          "alt": "Two finite bodies labelled body 1 at T₁ and body 2 at T₂."
+        }
+      ],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Maximum work output will be obtained when there will be no irreversibility. Diagram: body 1 at T₁ and body 2 at T₂. We can extract work till both bodies reaches at same temperature let it be T_f. Entropy change of body 1 = c_p ln(T_f/T₁). Entropy change of body 2 = c_p ln(T_f/T₂). For reversible process entropy change is zero, so c_p ln(T_f/T₁) + c_p ln(T_f/T₂) = 0 ⇒ T_f = √(T₁T₂). Work done = (Energy given by body 1) − (Energy absorbed body 2) = c_p(T₁ − T_f) − c_p(T_f − T₂) = c_p(T₁ + T₂ − 2T_f) = c_p(T₁ + T₂ − 2√(T₁T₂)) = c_p(√T₁ − √T₂)². Note we have assumed T₁ > T₂. We will get same answer for T₂ > T₁."
+    },
+    {
+      "number": 712,
+      "source": {
+        "page": 118,
+        "pageEnd": 119,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "An ideal gas is flowing through an insulated pipe at the rate of 3.3 kg/s. There is a pressure drop of 15% from the inlet to the outlet of the pipe. What is the rate of energy loss because of this pressure drop due to friction, given that R_gas = 0.287 kJ/kg K and the reference temperature T₀ is 300 K?",
+      "options": {
+        "a": "42.62 kW",
+        "b": "40.26 kW",
+        "c": "38.14 kW",
+        "d": "35.13 kW"
+      },
+      "sourceAnswer": "a",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For the intended steady adiabatic, no-shaft-work pipe model with negligible kinetic-energy change, h₂ = h₁ and an ideal gas has T₂ = T₁. With p₂ = 0.85p₁, the exact entropy increase is Δs = R ln(p₁/p₂) = −R ln(0.85). The entropy-generation rate is Ṡ_gen = ṁΔs = 3.3 × 0.287 × ln(1/0.85) = 0.15392168 kW/K. Exergy destruction is İ = T₀Ṡ_gen = 300 × 0.15392168 = 46.1765 kW. None of the printed choices matches. The source replaces −ln(1 − Δp/p₁) with the small-pressure-drop approximation Δp/p₁ = 0.15, giving Ṡ_gen ≈ 3.3 × 0.287 × 0.15 = 0.142065 kW/K and İ ≈ 42.6195 kW, its choice a. That is a first-order approximation with about 7.7% error here, not the exact result and not requested explicitly in the stem.",
+      "note": "Printed key a comes from an unstated logarithm linearisation. Also the phrase “energy loss” means loss of availability; total energy is conserved. Full PDF119 answer continuation retained.",
+      "references": [
+        {
+          "title": "NPTEL: Examples of Quality Degradation",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec9/1.html",
+          "section": "Lecture 9: logarithmic pressure-drop relation for lost work"
+        },
+        {
+          "title": "MIT Unified Engineering: Examples of Lost Work in Engineering Processes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node50.html",
+          "section": "6.7: adiabatic flow, total pressure and logarithmic versus small-loss approximations"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Exact versus Approximate Pressure-Loss Exergy",
+      "figures": [
+        {
+          "page": 118,
+          "bbox": [
+            368,
+            446,
+            458,
+            511
+          ],
+          "placement": "explanation",
+          "alt": "Insulated gas pipe carries 3.3 kg/s from pressure P to 0.85P."
+        }
+      ],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given R_gas = 0.287 kJ/kg K, ṁ = 3.3 kg/s, T₀ = 300 K. Diagram shows flow ṁ = 3.3 kg/s through insulated pipe from P to 0.85P.\nChange in entropy (S₂ − S₁) = R ln(P₁/P₂) = −R ln(P₂/P₁) = −R ln[(P₁ − ΔP)/P₁] = −R ln(1 − ΔP/P₁) = RΔP/P₁.\nChange in entropy of surrounding (ΔS)_surr = 0. Entropy generation ΔS_gen = (ΔS)_system + (ΔS)_surr = ṁ(S₂ − S₁) = ṁRΔP/P₁ = 3.3 × 0.287 × 0.15P₁/P₁ = 0.142065.\nRate of energy loss i.e. loss of availability = T₀(ΔS)_gen = 300 × 0.142065 = 42.619 kW."
+    },
+    {
+      "number": 713,
+      "source": {
+        "page": 119,
+        "pageEnd": 119,
+        "examLabels": [
+          "RPSC ADE 2016"
+        ]
+      },
+      "question": "Determine the available energy of furnace gas, C_p = 1.046 kJ/kg.K, when is cooled from 1260 K to 480 K at constant pressure. The surroundings are at 295 K.",
+      "options": {
+        "a": "−518.1 KJ/kg",
+        "b": "428.3 KJ/kg",
+        "c": "−1113.7 KJ/kg",
+        "d": "None of these"
+      },
+      "sourceAnswer": "a (official answer reported as d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Given c_p = 1.046 kJ/(kg·K), T₁ = 1260 K, T₂ = 480 K and T₀ = 295 K. The gas enthalpy change is Δh = c_p(T₂ − T₁) = 1.046(480 − 1260) = −815.88 kJ/kg, and its entropy change is Δs = c_p ln(T₂/T₁) = 1.046 ln(480/1260) = −1.00947 kJ/(kg·K). Therefore the change in gas flow availability is Δψ = Δh − T₀Δs = −815.88 − (−297.795) = −518.085 kJ/kg, matching a as a signed change. The maximum positive work recoverable from this cooling interval is instead ψ₁ − ψ₂ = 518.085 kJ/kg, so d is correct if “available energy” means the extractable work rather than signed change. The source labels T₀Δs = −297.77 kJ/kg “irreversibility,” but true irreversibility is T₀S_gen ≥ 0, not T₀ times the gas entropy decrease. Because the stem does not say signed change and the source itself reports an official conflicting key, both interpretations must remain visible.",
+      "note": "Printed worked answer a and reported official answer d disagree about the sign convention. Preserved full source and no unique answer selected; the computed magnitudes agree.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance for a Steady Flow System",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/2.html",
+          "section": "Lecture 10: stream exergy and steady-flow exergy balance"
+        },
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Availability Change of Cooling Furnace Gas",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given T₁ = 1260 K, T₂ = 480 K, T₀ = 295 K, C_p = 1.046 kJ/kg-K.\nQ = C_pΔT = 1.046(T₂ − T₁) = 1.046(480 − 1260) = −815.88 kJ/kg.\nIrreversibility, I = T₀Δs = 295[C_p ln(T₂/T₁)] = 295[1.046 ln(480/1260)]. I = −297.77 kJ/kg.\nAvailable energy, AE = Q − T₀Δs = −815.88 − (−297.77). AE = −518.1 kJ/kg.\nNote—The official answer given by commission is (d)."
+    },
+    {
+      "number": 714,
+      "source": {
+        "page": 119,
+        "pageEnd": 119,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3"
+        ]
+      },
+      "question": "The minimum energy that has to be rejected to the sink (as per 2nd law of thermodynamics) is called?",
+      "options": {
+        "a": "Minimum work",
+        "b": "Unavailable energy (UAE)",
+        "c": "Available energy (AE)",
+        "d": "Constant energy"
+      },
+      "sourceAnswer": "b",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Unavailable energy (UAE) is the minimum heat that must be rejected to the sink under the second law, so b is correct. Available energy (AE), or exergy of the specified heat input, is the maximum cyclic work obtainable: W_max = AE. In the source’s engine diagram Q₁ enters at T₁, W_max leaves as AE, and (Q₂)_min leaves for the sink at T₂ as UAE. Relative to an environment at T₀, UAE = T₀ΔS, where ΔS is the entropy transferred with the source heat. Thus heat input divides into available work and unavoidable heat rejection; a reversible engine minimises that rejection.",
+      "note": "Printed key b independently checked. Unavailable energy (UAE) is the minimum heat that must be rejected to the sink under the second law, so b is correct.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec8/2.html",
+          "section": "Lecture 8: available and unavailable energy in a cycle"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Available and Unavailable Energy",
+      "figures": [
+        {
+          "page": 119,
+          "bbox": [
+            144,
+            559,
+            221,
+            644
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine receives Q₁ at T₁, produces W_max = available energy and rejects minimum Q₂ = unavailable energy to T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 715,
+      "source": {
+        "page": 119,
+        "pageEnd": 119,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II",
+          "ESE 1998"
+        ]
+      },
+      "question": "Neglecting changes in kinetic energy and potential energy, for unit mass the availability in a non-flow process becomes a = φ − φ₀, where φ is the availability function of the",
+      "options": {
+        "a": "Steady flow process system",
+        "b": "Closed system",
+        "c": "Isolated system",
+        "d": "Open system"
+      },
+      "sourceAnswer": "b",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The nonflow availability function belongs to a closed system: φ = u + p₀v − T₀s. Thus its unit-mass availability relative to the dead state is a = φ − φ₀, giving b.\nFor comparison, the complete printed explanation first gives the steady-flow expression including kinetic and potential energies: A = (H₁ + mu₁²/2 + mgz₁ − T₀S₁) − (H₂ + mu₂²/2 + mgz₂ − T₀S₂) = Ψ₁ − Ψ₂, where Ψ is the energy-availability function of a steady-flow system. It then gives the closed-system result, neglecting kinetic/potential changes: A = (U₁ + p₀V₁ − T₀S₁) − (U₂ + p₀V₂ − T₀S₂) = φ₁ − φ₂. For a change to the dead state, state 2 is state 0. The latter is the closed-system availability function asked for.",
+      "note": "Printed key b independently checked. The nonflow availability function belongs to a closed system: φ = u + p₀v − T₀s.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance Equations and Tools",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/1.html",
+          "section": "Lecture 10: closed-system availability function A = E + p₀V − T₀S"
+        },
+        {
+          "title": "NPTEL: Exergy Balance for a Steady Flow System",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/2.html",
+          "section": "Lecture 10: stream exergy and steady-flow exergy balance"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Nonflow Availability Function",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 716,
+      "source": {
+        "page": 119,
+        "pageEnd": 119,
+        "examLabels": [
+          "UPPSC AE 12.04.2016 Paper-II"
+        ]
+      },
+      "question": "Law of degradation of energy says that unavailable energy is gradually decreasing due to",
+      "options": {
+        "a": "Increase in reversible processes",
+        "b": "Increase in irreversible processes",
+        "c": "Increase in unavailable energy",
+        "d": "None of these"
+      },
+      "sourceAnswer": "a",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "The law of energy degradation states that irreversible processes reduce available work potential while increasing the unavailable portion relative to the environment; they do not gradually decrease unavailable energy. Reversible processes generate no entropy and do not cause such degradation. For a specified heat input, UAE = T₀ΔS_transfer and available work is W_max = Q − T₀ΔS_transfer; destruction of availability in a real process is I = T₀S_gen ≥ 0. Therefore the source’s premise has the direction reversed, and none of a–c supplies the stated law. Choice d is the physically consistent answer to the wording as printed.",
+      "note": "Printed key a corrected to d. The native scan reads Paper-II in the exam label; OCR/draft Paper-I was corrected.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        },
+        {
+          "title": "NPTEL: Exergy Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec8/2.html",
+          "section": "Lecture 8: available and unavailable energy in a cycle"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Law of Energy Degradation",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Law of degradation of energy says that unavailable energy is gradually decreasing due to Increase in reversible processes.\nUnavailable energy = T₀ds.\nAvailability (W_max) = Q − T₀ds."
+    },
+    {
+      "number": 717,
+      "source": {
+        "page": 119,
+        "pageEnd": 119,
+        "examLabels": [
+          "APPSC AEE Mains 2016 Paper-III"
+        ]
+      },
+      "question": "The irreversibility associated with the process is defined as",
+      "options": {
+        "a": "Loss of qualitative energy",
+        "b": "Loss of energy",
+        "c": "Loss of enthalpy",
+        "d": "Loss of entropy"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Irreversibility is loss of the quality of energy, meaning the capacity to produce useful work, rather than destruction of conserved energy. Quantitatively I = W_rev − W_actual = T₀S_gen. Thus “loss of qualitative energy” is the source’s wording for loss of availability/exergy, giving a. Entropy is generated, not lost, by the irreversible mechanism.",
+      "note": "Printed key a independently checked. Irreversibility is loss of the quality of energy, meaning the capacity to produce useful work, rather than destruction of conserved energy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Irreversibility as Loss of Work Potential",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 718,
+      "source": {
+        "page": 119,
+        "pageEnd": 120,
+        "examLabels": [
+          "APPSC AEE Mains 2016 Paper-III"
+        ]
+      },
+      "question": "The exergy of the system will depend on",
+      "options": {
+        "a": "Entropy generation",
+        "b": "Surrounding temperature",
+        "c": "Surrounding pressure",
+        "d": "All the given answers"
+      },
+      "sourceAnswer": "d",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The exergy of a specified system state is defined relative to a specified environment. For a closed system, ignoring kinetic, potential and chemical terms, b = (u − u₀) + p₀(v − v₀) − T₀(s − s₀), so the surrounding temperature and pressure matter: b and c are both true. Entropy generation describes an actual process and destroys exergy by I = T₀S_gen; it is not an independent argument of the exergy of a fixed state. Different paths to the same state can generate different entropies while leaving that state’s exergy unchanged. Thus a is not generally a state-dependence statement, d is false as a universal combination, and no option offers the correct pair b and c.",
+      "note": "Printed key d confuses dependence of a state quantity on the environment with its destruction along an irreversible process. Both b and c apply.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance Equations and Tools",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/1.html",
+          "section": "Lecture 10: closed-system availability function A = E + p₀V − T₀S"
+        },
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "State and Environment Dependence of Exergy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Exergy—Exergy is defined as the amount of work a system can perform when it is brought into thermodynamic equilibrium with its environment. It depends on entropy generation, pressure and temperature of surrounding."
+    },
+    {
+      "number": 719,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "KPSC ADF 2015",
+          "ESE 1992"
+        ]
+      },
+      "question": "Which of the following statement is incorrect?",
+      "options": {
+        "a": "The greater pressure difference in throttling the lesser the irreversibility",
+        "b": "The primary source of internal irreversibility in power is fluid friction in rotary machine",
+        "c": "The greater the irreversibility the greater the increase in adiabatic process",
+        "d": "The entropy of the universe in continuously on the increase"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The intended incorrect statement is a. For ideal-gas throttling with fixed upstream pressure and specified surroundings, i = T₀R ln(p₁/p₂). Increasing the pressure drop decreases p₂ and raises ln(p₁/p₂), so irreversibility increases, not decreases. Fluid friction in rotary machinery is a major internal loss source. In c, the source evidently intends the entropy increase in an adiabatic process: S_gen = ΔS_adiabatic and larger irreversibility means larger entropy generation. Irreversible natural processes increase the entropy of the isolated universe. The printed c omits the name of the quantity that increases; that textual omission is retained.",
+      "note": "Key a checked from the exact logarithmic throttling relation. Option c’s incomplete “increase” wording is present in the scan and was not silently filled in.",
+      "references": [
+        {
+          "title": "NPTEL: Examples of Quality Degradation",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec9/1.html",
+          "section": "Lecture 9: logarithmic pressure-drop relation for lost work"
+        },
+        {
+          "title": "MIT Unified Engineering: Axiomatic Statements of the Laws of Thermodynamics",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node38.html",
+          "section": "5.2.4: entropy and the second law"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Pressure Drop and Irreversibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 720,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "Kerala LBS Centre For Sci. & Tech. Asstt. Prof. 2014"
+        ]
+      },
+      "question": "A system is working between 800 K and 400 K. If the heat supplied to the system is 200 kJ, then the unavailable energy is",
+      "options": {
+        "a": "150 kJ",
+        "b": "125 kJ",
+        "c": "75 kJ",
+        "d": "100 kJ"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The minimum unavailable energy for a reversible engine between T₁ = 800 K and T₂ = 400 K is the heat that must be rejected to the sink. Maximum available work is W_max = Q₁(1 − T₂/T₁) = 200(1 − 400/800) = 100 kJ. Therefore UAE = Q₁ − AE = 200 − 100 = 100 kJ, or directly UAE = Q₁T₂/T₁ = 200 × 400/800. Thus d is correct.",
+      "note": "Printed key d independently checked. The minimum unavailable energy for a reversible engine between T₁ = 800 K and T₂ = 400 K is the heat that must be rejected to the sink.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec8/2.html",
+          "section": "Lecture 8: available and unavailable energy in a cycle"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Unavailable Energy between Two Reservoirs",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 721,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "ISRO Scientist/Engineer 24.05.2014"
+        ]
+      },
+      "question": "A hot liquid is kept in a big room. Its temperature (θ) is plotted as a function of time (t), which of the following curve may represent the plot?",
+      "options": {
+        "a": "Curve d",
+        "b": "Curve b",
+        "c": "Curve c",
+        "d": "Curve a"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "The correct cooling curve is a, which is initially steep and then flattens as the liquid approaches room temperature, giving option d. Under Newton’s cooling model, T(t) = T_A + (T_H − T_A)e^(−kt), where T(t) is temperature at time t, T_A is ambient temperature, T_H is the initial hot-liquid temperature, and k is a positive cooling constant. The tangent slope dT/dt = −k[T(t) − T_A] is the rate of temperature fall: it is negative and its magnitude decreases with time. The temperature approaches the ambient asymptotically. Both the question’s four candidate curves and the source’s separate exponential cooling sketch are retained.",
+      "note": "Key d verified from the curve shapes. Corrected printed “position constant” to “positive cooling constant”; the full column continuation and both genuine plots are preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Mechanisms of Heat Transfer",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "section": "Newton’s law of cooling and heat-transfer rate"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Cooling Curves",
+      "figures": [
+        {
+          "page": 120,
+          "bbox": [
+            115,
+            588,
+            246,
+            658
+          ],
+          "placement": "question",
+          "alt": "Four temperature-versus-time curves a, b, c and d for a cooling hot liquid."
+        },
+        {
+          "page": 120,
+          "bbox": [
+            367,
+            111,
+            456,
+            185
+          ],
+          "placement": "explanation",
+          "alt": "Exponential cooling curve with negative slope that flattens with time."
+        }
+      ],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The graph drawn between the temperature of the body and time is known as cooling curve. The slope of the tangent to the curve at any point gives the rate of fall of temperature. In general T(t) = T_A + (T_H − T_A)e^(−kt). [Cooling-curve sketch.] Where, T(t) = temperature at time t; T_A = Ambient temperature; T_H = Temperature of hot object at time 0; k = position constant; t = time."
+    },
+    {
+      "number": 722,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "APPSC Poly. Lect. 2013",
+          "ESE 1996"
+        ]
+      },
+      "question": "Consider the following statements:\nI. Availability is generally conserved.\nII. Availability can either be negative or positive.\nIII. Availability is the maximum theoretical work obtainable.\nIV. Availability can be destroyed in irreversibilities.",
+      "options": {
+        "a": "III and IV are correct",
+        "b": "I and III are correct",
+        "c": "I and IV are correct",
+        "d": "II and IV are correct"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Availability is the maximum useful work obtainable as the system comes to equilibrium with the specified environment, so III is correct. Irreversibilities destroy availability by T₀S_gen, so IV is correct. Exergy is not generally conserved, making I false. For the ordinary nonflow exergy convention, the dead state is zero and the maximum recoverable useful work is nonnegative, so II is not the intended general property. An unreferenced availability function can have an arbitrary signed numerical value; that is different from the actual work availability used here. Therefore III and IV are the intended correct pair, a.",
+      "note": "Printed key a independently checked. Availability is the maximum useful work obtainable as the system comes to equilibrium with the specified environment, so III is correct.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance Equations and Tools",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/1.html",
+          "section": "Lecture 10: closed-system availability function A = E + p₀V − T₀S"
+        },
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Properties of Availability",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 723,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "Steam flows through an adiabatic steady flow turbine from state 1 to state 2. With respect to a base temperature T₀, the unavailable energy is",
+      "options": {
+        "a": "T₀(I₁ − I₂)",
+        "b": "T₀(S₁ − S₂)",
+        "c": "(I₁ − I₂) − T₀(S₁ − S₂)",
+        "d": "I₂ + T₀(S₁ − S₂)"
+      },
+      "sourceAnswer": "b",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For an adiabatic steady-flow turbine, the entropy balance gives s_gen = s₂ − s₁ ≥ 0. Its lost available work (irreversibility) per unit mass is i = T₀(s₂ − s₁), positive for a real irreversible turbine. The printed b has the reverse sign, T₀(S₁ − S₂), which is negative when entropy is generated. If “unavailable energy” instead means the energy content relative to a base-state entropy reference, that reference would need to be specified; it is not determined solely as the negative of turbine entropy generation. Thus none of the offered expressions is a generally correct positive unavailable-energy/lost-work expression for the stated turbine. The source supplies only its b formula and no derivation.",
+      "note": "Printed key b has the wrong sign for irreversible adiabatic turbine work loss. Native choices use I₁ and I₂ in a, c and d, transcribed as printed.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance for a Steady Flow System",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/2.html",
+          "section": "Lecture 10: stream exergy and steady-flow exergy balance"
+        },
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Unavailable Work in an Adiabatic Turbine",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "T₀(S₁ − S₂)."
+    },
+    {
+      "number": 724,
+      "source": {
+        "page": 120,
+        "pageEnd": 120,
+        "examLabels": [
+          "APGENCO AE 2012"
+        ]
+      },
+      "question": "The loss in available energy associated with a given process is:",
+      "options": {
+        "a": "T₀ΔS_uni",
+        "b": "Q − T₀ΔS_uni",
+        "c": "Q + T₀ΔS_uni",
+        "d": "T₀ΔS_system"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "Loss of available energy is the Gouy–Stodola irreversibility I = T₀ΔS_universe = T₀S_gen. Here T₀ is the environmental temperature and ΔS_universe = ΔS_system + ΔS_surroundings. Thus a is correct. A system entropy change alone may be negative or zero and is not generally the generated entropy, so d is insufficient.",
+      "note": "Key a verified. Added the missing Δ signs in the source’s last line: it is the sum of entropy changes, not absolute entropy values, that enters the loss relation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Gouy–Stodola Relation",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The loss of available energy = T₀(ΔS)_universe = T₀(S_system + S_surrounding)."
+    },
+    {
+      "number": 725,
+      "source": {
+        "page": 120,
+        "pageEnd": 121,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2010"
+        ]
+      },
+      "question": "The exergy of an isolated system in a process:",
+      "options": {
+        "a": "can never increase",
+        "b": "can never decrease",
+        "c": "always remain constant",
+        "d": "always positive"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "An isolated system transfers neither energy nor entropy to its surroundings. Its entropy cannot decrease. Relative to fixed surroundings T₀ and p₀, the exergy change of the isolated total is ΔB = −T₀S_gen ≤ 0 (with its energy and fixed overall volume unchanged). Therefore its exergy can never increase: it stays constant for a reversible process and decreases for an irreversible one. This is the availability counterpart of the entropy-increase principle, giving a.",
+      "note": "Printed key a independently checked. An isolated system transfers neither energy nor entropy to its surroundings.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Balance Equations and Tools",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec10/1.html",
+          "section": "Lecture 10: closed-system availability function A = E + p₀V − T₀S"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Exergy of an Isolated System",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 726,
+      "source": {
+        "page": 121,
+        "pageEnd": 121,
+        "examLabels": [
+          "AAI Jr. Executive 26.03.2021"
+        ]
+      },
+      "question": "Read the given information followed by a question and select the most appropriate option.\nA heat source at 1000 K loses 2500 kJ heat to a sink at:\n(I) 500 K\n(II) 800 K\nIn which case is the heat transfer more irreversible?",
+      "options": {
+        "a": "Same in both (I) and (II)",
+        "b": "Only (I)",
+        "c": "Cannot be predicted",
+        "d": "Only (II)"
+      },
+      "sourceAnswer": "b",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For direct heat transfer Q from a source at T_H to a sink at T_L, S_gen = −Q/T_H + Q/T_L.\nCase I: S_gen,I = −2500/1000 + 2500/500 = −2.5 + 5 = 2.5 kJ/K.\nCase II: S_gen,II = −2500/1000 + 2500/800 = −2.5 + 3.125 = 0.625 kJ/K.\nSince S_gen,I > S_gen,II, the transfer to 500 K is more irreversible; at the same reference environment it also destroys four times as much exergy. Thus b is correct. The larger temperature difference generates more entropy for the same heat amount.",
+      "note": "Printed key b independently checked. For direct heat transfer Q from a source at T_H to a sink at T_L, S_gen = −Q/T_H + Q/T_L.\nCase I: S_gen,I = −2500/1000 + 2500/500 = −2.5 + 5 = 2.5 kJ/K.\nCase II: S_gen,II = −2500/1000 + 2500/800 = −2.5 + 3.125 = 0.625 kJ/K.\nSince S_gen,I > S_gen,II, the transfer to 500 K is more irreversible; at the same reference environment it also destroys four times as much exergy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        },
+        {
+          "title": "MIT Unified Engineering: Calculation of Entropy Change in Some Basic Processes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+          "section": "5.5: reservoir, finite-body and free-expansion entropy changes"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Comparing Heat-Transfer Irreversibility",
+      "figures": [
+        {
+          "page": 121,
+          "bbox": [
+            124,
+            320,
+            246,
+            391
+          ],
+          "placement": "explanation",
+          "alt": "Case I transfers 2500 kJ from 1000 K to 500 K; case II transfers 2500 kJ from 1000 K to 800 K."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 727,
+      "source": {
+        "page": 121,
+        "pageEnd": 121,
+        "examLabels": [
+          "AAI Jr. Executive 29.11.2018"
+        ]
+      },
+      "question": "A reversible engine is operating with temperature limits of 800 K and 300 K. If it takes 560 kJ of heat, then unavailable work would be:",
+      "options": {
+        "a": "175 kJ",
+        "b": "200 kJ",
+        "c": "210 kJ",
+        "d": "150 kJ"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a reversible engine, Q₁/T₁ = Q₂/T₂. With Q₁ = 560 kJ, T₁ = 800 K and T₂ = 300 K, 560/800 = Q₂/300, hence Q₂ = 560 × 300/800 = 210 kJ. This is the minimum heat rejected to the sink, termed “unavailable work” in the question. The maximum available work is 560 − 210 = 350 kJ. Thus c is correct.",
+      "note": "Printed key c independently checked. For a reversible engine, Q₁/T₁ = Q₂/T₂.",
+      "references": [
+        {
+          "title": "NPTEL: Exergy Analysis",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec8/2.html",
+          "section": "Lecture 8: available and unavailable energy in a cycle"
+        },
+        {
+          "title": "MIT Unified Engineering: Limitations on the Work that Can be Supplied by a Heat Engine",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node44.html",
+          "section": "6.1: cyclic entropy balance and Carnot efficiency"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Unavailable Heat of a Reversible Engine",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 728,
+      "source": {
+        "page": 121,
+        "pageEnd": 121,
+        "examLabels": [
+          "TSPSC AEE 2017"
+        ]
+      },
+      "question": "In a reversible cycle, the source temperature is 227°C and the sink temperature is 27°C. The maximum available work for a heat input of 100 kJ will be",
+      "options": {
+        "a": "100 kJ",
+        "b": "60 kJ",
+        "c": "40 kJ",
+        "d": "88 kJ"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Convert the source and sink temperatures to absolute values: T_H = 227 + 273 = 500 K and T_L = 27 + 273 = 300 K. The reversible maximum efficiency is η_max = (T_H − T_L)/T_H = (500 − 300)/500 = 200/500 = 2/5 = 0.4 = 40%. Since η = W/Q_H, maximum available work is W_max = η_maxQ_H = 0.4 × 100 = 40 kJ, choice c.",
+      "note": "Printed key c independently checked. Convert the source and sink temperatures to absolute values: T_H = 227 + 273 = 500 K and T_L = 27 + 273 = 300 K.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Limitations on the Work that Can be Supplied by a Heat Engine",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node44.html",
+          "section": "6.1: cyclic entropy balance and Carnot efficiency"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Maximum Available Work from Heat",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 729,
+      "source": {
+        "page": 121,
+        "pageEnd": 121,
+        "examLabels": [
+          "ESE 2020"
+        ]
+      },
+      "question": "An ideal gas is throttled through an insulated pipe at the rate of 3 kg/s. There is a 10% pressure drop from an inlet to exit of the pipe. The values of R = 0.287 kJ/kgK and T₀ = 300 K. The rate of energy loss for the pressure drop due to friction, will be nearly",
+      "options": {
+        "a": "34 kW",
+        "b": "30 kW",
+        "c": "26 kW",
+        "d": "22 kW"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "In the usual adiabatic-throttling model with negligible kinetic/potential changes, ideal-gas enthalpy and temperature remain constant. With p₂ = 0.9p₁, the exact entropy-generation rate is Ṡ_gen = ṁR ln(p₁/p₂) = −3 × 0.287 ln(0.9) = 0.0907154 kW/K. Therefore lost availability rate is İ = T₀Ṡ_gen = 300 × 0.0907154 = 27.2146 kW. The question asks “nearly,” and c = 26 kW is the nearest offered choice. Its value also follows from the small-drop first-order estimate −ln(0.9) ≈ 0.1, giving İ ≈ 3 × 0.287 × 300 × 0.1 = 25.83 kW ≈ 26 kW. The source itself computes the logarithmic 27.21 kW before indicating the nearest listed 26 kW. Total energy is conserved; the loss is of work potential.",
+      "note": "Exact result 27.21 kW and first-order approximation 25.83 kW are distinguished. Choice c is the closest listed approximation under the explicit “nearly” wording.",
+      "references": [
+        {
+          "title": "NPTEL: Examples of Quality Degradation",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec9/1.html",
+          "section": "Lecture 9: logarithmic pressure-drop relation for lost work"
+        },
+        {
+          "title": "MIT Unified Engineering: Examples of Lost Work in Engineering Processes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node50.html",
+          "section": "6.7: adiabatic flow, total pressure and logarithmic versus small-loss approximations"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Approximate Pressure-Drop Exergy Loss",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 730,
+      "source": {
+        "page": 121,
+        "pageEnd": 121,
+        "examLabels": [
+          "UPSC JWM 2017"
+        ]
+      },
+      "question": "150 kJ of heat is transferred from a heat source of 527°C to a heat sink at 127°C. If the ambient temperature is 47°C, the loss of available energy during the process will be",
+      "options": {
+        "a": "40 kJ",
+        "b": "50 kJ",
+        "c": "60 kJ",
+        "d": "70 kJ"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Convert T_H = 527 + 273 = 800 K, T_L = 127 + 273 = 400 K and T₀ = 47 + 273 = 320 K. The equal heat amounts lost by the source and received by the sink are Q₁ = Q₂ = 150 kJ. Entropy generation is S_gen = Q/T_L − Q/T_H = 150(1/400 − 1/800) = 0.1875 kJ/K. The loss of available energy is I = T₀S_gen = 320 × 0.1875 = 60 kJ, giving c. In the source’s notation T₁ = 400 K and T₂ = 800 K, so its expression is T₀(Q₁/T₁ − Q₂/T₂).",
+      "note": "Printed key c independently checked. Convert T_H = 527 + 273 = 800 K, T_L = 127 + 273 = 400 K and T₀ = 47 + 273 = 320 K.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Exergy Destruction in Heat Transfer",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 731,
+      "source": {
+        "page": 122,
+        "pageEnd": 122,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "The main cause of the irreversibility is",
+      "options": {
+        "a": "Mechanical and Fluid Friction",
+        "b": "Unrestricted expansion",
+        "c": "Heat transfer with a finite temperature difference",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "All three listed mechanisms generate entropy: mechanical/fluid friction dissipates organised energy, unrestricted expansion proceeds without a balancing quasistatic pressure, and finite-temperature-difference heat transfer generates Q(1/T_c − 1/T_h). Therefore all of the above, d, is correct. Each mechanism destroys availability relative to the surroundings by I = T₀S_gen.",
+      "note": "Printed key d independently checked. All three listed mechanisms generate entropy: mechanical/fluid friction dissipates organised energy, unrestricted expansion proceeds without a balancing quasistatic pressure, and finite-temperature-difference heat transfer generates Q(1/T_c − 1/T_h).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "6.5: heat transfer versus entropy generation and dissipation"
+        },
+        {
+          "title": "MIT Unified Engineering: Entropy and Unavailable Energy",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "section": "6.6: lost work = T₀ S_gen"
+        }
+      ],
+      "topic": "Availability and Irreversibility",
+      "subtopic": "Causes of Irreversibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 732,
+      "source": {
+        "page": 122,
+        "pageEnd": 122,
+        "examLabels": [
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021",
+          "TNPSC AE 2019",
+          "TNPSC AE 2017",
+          "RPSC Vice Principal ITI 2018",
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "Rajasthan Nagar Nigam AE 2016, Shift-I",
+          "ESE 2008"
+        ]
+      },
+      "question": "The enthalpy of vaporization, at critical point is",
+      "options": {
+        "a": "maximum",
+        "b": "minimum",
+        "c": "zero",
+        "d": "none of the above"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The enthalpy of vaporisation is h_fg = h_g − h_f. At the liquid–vapour critical point, the saturated-liquid and saturated-vapour states become identical, so h_g = h_f and h_fg = 0. Thus c gives the exact value. The source’s dome sketch shows an interval AB between the liquid and vapour boundaries shrinking to zero at CP; it labels the latent-enthalpy difference h_fg. Along the coexistence curve approaching the critical point this is also the limiting minimum, but “zero” is the explicit physical value requested by the item.",
+      "note": "Key c is the exact limiting value h_g − h_f = 0. Source’s diagram is schematic: horizontal P–v width is a volume difference, while h_fg tends to zero because the two phases coincide.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "NISTIR 5078: Thermodynamic Properties of Water",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "section": "Saturation tables and IAPWS-95 water properties"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Critical Point and Latent Heat",
+      "figures": [
+        {
+          "page": 122,
+          "bbox": [
+            119,
+            360,
+            248,
+            485
+          ],
+          "placement": "explanation",
+          "alt": "Schematic P–V liquid–vapour dome with A and B at a common pressure and CP at the top."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 733,
+      "source": {
+        "page": 122,
+        "pageEnd": 122,
+        "examLabels": [
+          "RPSC Vice Principal ITI 2018",
+          "GPSC Executive Engineer 23.12.2018",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "HPPSC Asstt. Prof. 2014"
+        ]
+      },
+      "question": "Constant pressure lines in the super-heated region of the Mollier diagram will have",
+      "options": {
+        "a": "A positive slope",
+        "b": "A negative slope",
+        "c": "Zero slope",
+        "d": "Both positive and negative slope"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "A Mollier diagram uses enthalpy h vertically and entropy s horizontally. The Gibbs relation is T ds = dh − v dp. Dividing by ds gives T = dh/ds − v(dp/ds). Along a constant-pressure line dp = 0, so (∂h/∂s)_p = T. Since absolute temperature T is positive, the constant-pressure line has a positive slope, choice a. The source’s h–s sketch labels the critical point, saturated-liquid and saturated-vapour lines, constant-pressure lines, constant-temperature lines, and h_f, h_g, s_f, s_g.",
+      "note": "Complete derivation begins at bottom left and continues at top right of PDF122. Source diagram prints p_cr = 221.2 bar; modern water value is about 220.64 bar, which does not affect the slope argument.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Combined First and Second Law Expressions",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node39.html",
+          "section": "5.3: T dS = dU + P dV; T dS = dH − V dP"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Mollier Diagram Slopes",
+      "figures": [
+        {
+          "page": 122,
+          "bbox": [
+            331,
+            230,
+            489,
+            353
+          ],
+          "placement": "explanation",
+          "alt": "Mollier h–s sketch labels saturation boundaries, critical point, constant-pressure lines and constant-temperature lines."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 734,
+      "source": {
+        "page": 122,
+        "pageEnd": 122,
+        "examLabels": [
+          "GPSC Executive Engineer 23.12.2018",
+          "Kerala PSC AE (Irrigation) 05.04.2017",
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "RPSC VPITI 14.02.2016"
+        ]
+      },
+      "question": "Critical temperature is the temperature above which",
+      "options": {
+        "a": "A gas will never liquify",
+        "b": "A gas will immediately liquify",
+        "c": "Water will evaporate",
+        "d": "Water will never evaporate"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The critical temperature of a substance is the upper temperature limit at which distinct liquid and vapour phases can coexist. Above it, a gas cannot be liquefied by applying pressure alone while holding that temperature; compression produces a dense supercritical fluid without a liquid–vapour phase transition. Each substance has its own critical temperature. Thus a is the intended statement, with the “at that temperature/by pressure alone” qualification understood.",
+      "note": "Printed key a independently checked. The critical temperature of a substance is the upper temperature limit at which distinct liquid and vapour phases can coexist.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "1.5: phase diagrams, triple and critical points and phase changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Critical Temperature",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 735,
+      "source": {
+        "page": 122,
+        "pageEnd": 122,
+        "examLabels": [
+          "OPSC AEE 2019 PAPER - II",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "Kerala PSC Poly. Lect. 09.01.2014",
+          "ESE 2002"
+        ]
+      },
+      "question": "The value of compressibility factor (z) for an ideal gas may be:\n1. less or more than one\n2. equal to one\n3. zero\n4. less than zero\nThe correct value(s) is/are given by",
+      "options": {
+        "a": "1 and 2",
+        "b": "1 and 4",
+        "c": "2 only",
+        "d": "1 only"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The compressibility factor is Z = pV/(nR_uT) = pv/(RT), the ratio of the actual p–v–T product to its ideal-gas value. For an ideal gas pV = nR_uT, so Z = 1 identically. Real gases may have Z < 1 or Z > 1 depending on state; those deviations are not ideal-gas behaviour. Therefore only statement 2 is correct, choice c.",
+      "note": "Printed key c independently checked. The compressibility factor is Z = pV/(nR_uT) = pv/(RT), the ratio of the actual p–v–T product to its ideal-gas value.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        },
+        {
+          "title": "NPTEL: Equations of State",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module2/lec7/4.html",
+          "section": "Lecture 7: dimensionless reduced properties and law of corresponding states"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Compressibility Factor",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 736,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "TNPSC AE 2019",
+          "Kerala PSC AE (Irrigation) 05.04.2017",
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "According to Dalton's law, the total pressure of the mixture of gases is equal to",
+      "options": {
+        "a": "greater of the partial pressure of gases",
+        "b": "average of the partial pressure of gases",
+        "c": "Sum of the partial pressure of all",
+        "d": "Sum of the partial pressure of all divided by average molecular weight"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Dalton’s law of additive partial pressures states that an ideal-gas mixture’s total pressure equals the sum of the pressures that its components would exert individually at the same mixture temperature and total volume: p = Σp_i. For ideal gases p_i = n_iR_uT/V, so Σp_i = (Σn_i)R_uT/V = p. Thus c is correct; no averaging or molecular-weight division is involved.",
+      "note": "Printed key c independently checked. Dalton’s law of additive partial pressures states that an ideal-gas mixture’s total pressure equals the sum of the pressures that its components would exert individually at the same mixture temperature and total volume: p = Σp_i.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Dalton’s Law of Partial Pressures",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 737,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "TSPSC AEE 2017",
+          "APPSC Poly. Lect. 2013",
+          "ESE 1997"
+        ]
+      },
+      "question": "A standard vapour is compressed to half its volume without changing its temperature. The result is that",
+      "options": {
+        "a": "All the vapour condenses to liquid",
+        "b": "Some of the liquid evaporates and the pressure does not change",
+        "c": "The pressure is double its initial value",
+        "d": "Some of the vapour condenses and the pressure does not change"
+      },
+      "sourceAnswer": "d",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Choice d describes isothermal compression of an initially dry saturated vapour below its critical temperature: while liquid and vapour coexist at fixed T, pressure stays at p_sat(T), and decreasing total specific volume condenses part of the vapour. Its final quality is x = (v₂ − v_f)/(v_g − v_f), with v₂ = v_g/2, provided this state remains inside the two-phase region. A superheated vapour instead initially rises in pressure on isothermal compression and may or may not reach saturation within the stated volume reduction; in the ideal-gas limit its pressure doubles, choice c. The printed term is “standard vapour,” which does not specify saturated initial conditions. Thus the given state description does not uniquely choose d or c. If “saturated vapour” was intended, d is the standard answer.",
+      "note": "Printed key d assumes a saturated starting state that the scan calls “standard.” Preserved the wording and gave the conditional saturated-vapour explanation in full.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Isothermal Compression of Vapour",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "By compressing a standard vapour some of the vapour condenses and the pressure does not change."
+    },
+    {
+      "number": 738,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "GWSSB DEE 07.07.2016",
+          "UKPSC AE 2007 Paper-II",
+          "ESE 2002"
+        ]
+      },
+      "question": "The latent heat of steam with increase of pressure ............ .",
+      "options": {
+        "a": "remains same",
+        "b": "increases",
+        "c": "decreases",
+        "d": "behaves unpredictably"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Along the liquid–vapour saturation curve for water, increasing saturation pressure increases the boiling temperature while decreasing the latent enthalpy h_fg = h_g − h_f. At the critical point the two phases coincide and h_fg tends to zero. Therefore the latent heat of steam decreases with increasing pressure, choice c. The printed dome sketch illustrates the liquid and vapour boundaries meeting at CP, with an AB interval and labels h_f, h_g and h_fg; it is a qualitative saturation schematic, not a quantitative enthalpy axis.",
+      "note": "Printed key c independently checked. Along the liquid–vapour saturation curve for water, increasing saturation pressure increases the boiling temperature while decreasing the latent enthalpy h_fg = h_g − h_f.",
+      "references": [
+        {
+          "title": "NISTIR 5078: Thermodynamic Properties of Water",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "section": "Saturation tables and IAPWS-95 water properties"
+        },
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pressure Dependence of Vaporisation Enthalpy",
+      "figures": [
+        {
+          "page": 123,
+          "bbox": [
+            120,
+            519,
+            248,
+            646
+          ],
+          "placement": "explanation",
+          "alt": "Schematic P–V saturation dome with A, B, CP and liquid/vapour labels illustrating coalescence at criticality."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 739,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "WBPSC AE, 2017",
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3",
+          "Rajasthan Nagar Nigam AE 2016, Shift-I"
+        ]
+      },
+      "question": "Mixture of Ice and Water form a",
+      "options": {
+        "a": "Closed System",
+        "b": "Heterogeneous system",
+        "c": "Isolated System",
+        "d": "Open system"
+      },
+      "sourceAnswer": "b",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "A mixture of ice and liquid water contains two distinct phases, solid and liquid, so it is a heterogeneous system, choice b. A homogeneous system has a single uniform phase, for example dry air as a well-mixed gas. A phase is a portion of matter homogeneous in chemical composition and physical structure. The source names solid, liquid and gas as the three ordinary phases. An ice–water mixture and a steam–water mixture are heterogeneous even though each can still be one pure chemical substance H₂O. Humid air consisting only of air plus water vapour is a single gas phase and is homogeneous; it becomes heterogeneous if it includes liquid droplets or ice. Whether the ice–water system is open, closed or isolated depends on its boundary, which the phase description does not specify.",
+      "note": "Key b verified. Corrected the ambiguous example that would classify humid air without condensed water as heterogeneous; full source definitions retained.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "1.5: phase diagrams, triple and critical points and phase changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Homogeneous and Heterogeneous Systems",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Homogeneous System—When a system consisting of a single phase is called a homogeneous system. Example—Dry air. Heterogeneous System—While a system consisting of more than one phase is known as a heterogeneous system. Example—Mixture of ice and water, humid air steam-water mixture. Phase—A quantity of matter homogeneous throughout in chemical composition and physical structure is called a phase. Every substance can exist in any one of the three phase, i.e. solid, liquid and gas."
+    },
+    {
+      "number": 740,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "UJVNL AE 2016",
+          "KPSC AE 2015",
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "The equation PV = mRT is essentially valid for",
+      "options": {
+        "a": "Perfect gas",
+        "b": "Real gas",
+        "c": "Monoatomic gas",
+        "d": "Mixture of gases"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The ideal/perfect-gas equation of state is pV = mRT, where R is the gas’s specific gas constant. Dividing by volume gives p = (m/V)RT = ρRT; the source writes density as r. Thus a is the general model for which the equation is exact. A real gas may approximate it in the dilute regime, but atomicity or being a mixture alone does not guarantee ideal behaviour. An ideal-gas mixture also follows the equation with its mixture gas constant, which is a special case of the perfect-gas model.",
+      "note": "Printed key a independently checked. The ideal/perfect-gas equation of state is pV = mRT, where R is the gas’s specific gas constant.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Ideal-Gas Equation of State",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 741,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "CGPSC Polytechnic Lecturer 2017",
+          "WBPSC AE, 2007"
+        ]
+      },
+      "question": "In throttling of fluid the following property remains unchanged before and after throttling:",
+      "options": {
+        "a": "temperature",
+        "b": "entropy",
+        "c": "enthalpy",
+        "d": "both (b) and (c) above"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For steady adiabatic throttling with no shaft work and negligible changes in kinetic and potential energy, the flow first law reduces to h₁ = h₂. Thus throttling is an isenthalpic process, choice c. It is irreversible and normally increases entropy. Temperature is constant for an ideal gas under these assumptions because h = h(T), but a real fluid may cool or warm, so temperature is not the universal invariant.",
+      "note": "Printed key c independently checked. For steady adiabatic throttling with no shaft work and negligible changes in kinetic and potential energy, the flow first law reduces to h₁ = h₂.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        },
+        {
+          "title": "MIT Unified Engineering: Examples of Lost Work in Engineering Processes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node50.html",
+          "section": "6.7: adiabatic flow, total pressure and logarithmic versus small-loss approximations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Isenthalpic Throttling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 742,
+      "source": {
+        "page": 123,
+        "pageEnd": 123,
+        "examLabels": [
+          "WBPSC AE, 2017",
+          "GPSC AE 26.07.2015"
+        ]
+      },
+      "question": "The ideal gas laws can be applied, with least error, to",
+      "options": {
+        "a": "Boiling water",
+        "b": "Wet steam",
+        "c": "Dry saturated steam",
+        "d": "Superheated steam"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Among the listed forms of water, sufficiently superheated steam is the best candidate for an ideal-gas approximation: it is a single vapour phase away from the liquid–vapour saturation boundary, and intermolecular effects become less significant at low density/high temperature. Wet steam contains liquid and vapour and cannot be described as a single ideal gas; boiling water is likewise a phase-change state. Dry saturated vapour is closer to condensation than superheated vapour. Thus d is the intended least-error choice. Superheat alone does not guarantee exact ideal-gas behaviour, especially at high pressures near criticality.",
+      "note": "Key d verified as the usual approximation; corrected the source’s unqualified claim of exact ideal-gas behaviour.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "NISTIR 5078: Thermodynamic Properties of Water",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "section": "Saturation tables and IAPWS-95 water properties"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Ideal-Gas Approximation for Steam",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The dry superheated steam behaves as ideal gas and follows ideal gas laws."
+    },
+    {
+      "number": 743,
+      "source": {
+        "page": 123,
+        "pageEnd": 124,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II",
+          "ISRO Scientist/Engineer 11.10.2015"
+        ]
+      },
+      "question": "Wet clothes are hung on a clothesline outdoors in sub-zero weather. After a day, the clothes are brought into the house and observed to be dry. The process of drying is best explained as",
+      "options": {
+        "a": "vaporization",
+        "b": "sublimation",
+        "c": "melting",
+        "d": "condensation"
+      },
+      "sourceAnswer": "b",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "In sub-zero weather, water in the wet clothes can freeze and then pass directly from ice to water vapour without becoming liquid. This solid-to-gas phase change is sublimation, giving b. The vapour is carried away by the surrounding air, leaving the clothes dry even though the temperature remained below freezing.",
+      "note": "Printed key b independently checked. In sub-zero weather, water in the wet clothes can freeze and then pass directly from ice to water vapour without becoming liquid.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "1.5: phase diagrams, triple and critical points and phase changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Sublimation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 744,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "TRB Poly. Lect., 2012",
+          "ESE 2011"
+        ]
+      },
+      "question": "Reduced pressure is",
+      "options": {
+        "a": "always less than atmospheric pressure",
+        "b": "always unity",
+        "c": "an index of molecular position of a gas",
+        "d": "dimensionless"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Reduced pressure is defined as p_r = p/p_c, the ratio of a substance’s actual absolute pressure to its critical pressure. Both pressures have the same dimensions, so the ratio is dimensionless, giving d. It is unity only at p = p_c and is not inherently below atmospheric pressure.",
+      "note": "Printed key d independently checked. Reduced pressure is defined as p_r = p/p_c, the ratio of a substance’s actual absolute pressure to its critical pressure.",
+      "references": [
+        {
+          "title": "NPTEL: Equations of State",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module2/lec7/4.html",
+          "section": "Lecture 7: dimensionless reduced properties and law of corresponding states"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Reduced Properties",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 745,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "GPSC Executive Engineer 23.12.2018",
+          "Vizag Steel MT (Re-Exam) 24.11.2013"
+        ]
+      },
+      "question": "For a pure substance at its triple point, the number of degrees of freedom is",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "None of these"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Gibbs’s phase rule without reaction is F = C − P + 2, or P + F = C + 2. For a pure substance C = 1 and at the triple point P = 3 coexisting phases. Thus 3 + F = 1 + 2, giving F = 0, choice a. The triple-point temperature and pressure are fixed; no independent intensive equilibrium variable remains. Phase amounts may still vary subject to the overall system constraints.",
+      "note": "Printed key a independently checked. Gibbs’s phase rule without reaction is F = C − P + 2, or P + F = C + 2.",
+      "references": [
+        {
+          "title": "MIT 10.213: Gibbs Phase Rule",
+          "url": "https://web.mit.edu/10.213/oldpages/f99/diagrams/phase/gibbs/",
+          "section": "F = 2 + N − number of phases; single-component triple point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gibbs Phase Rule at the Triple Point",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 746,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "SJVN ET 2013",
+          "TRB Asstt. Prof., 2012"
+        ]
+      },
+      "question": "Super heated vapours behave:",
+      "options": {
+        "a": "Exactly as a gas",
+        "b": "As steam",
+        "c": "As ordinary vapour",
+        "d": "Approximately as a gas"
+      },
+      "sourceAnswer": "d",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "A superheated vapour is a gas-phase state above the saturation temperature at its pressure. When sufficiently dilute and away from saturation and criticality, it behaves approximately as an ideal gas rather than exactly, which is the intended d. The degree of approximation depends on temperature, pressure and molecular interactions; property tables or a real-fluid equation are needed when departures are significant.",
+      "note": "Printed key d independently checked. A superheated vapour is a gas-phase state above the saturation temperature at its pressure.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Superheated Vapour Behaviour",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 747,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "CSE Pre-1998"
+        ]
+      },
+      "question": "If a pure substance contained in a rigid vessel passes through the critical state on heating, its initial state should be",
+      "options": {
+        "a": "sub-cooled water",
+        "b": "saturated water",
+        "c": "wet steam",
+        "d": "saturated steam"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A rigid vessel fixes the specific volume v. To pass through the critical state, this fixed value must equal v_c. On the usual liquid–vapour dome below T_c, a vertical constant-volume line v = v_c lies within the two-phase region. Its initial state is therefore a liquid–vapour mixture, or wet steam, choice c, as the source’s line from state 1 to critical state 2 illustrates. The statement assumes the initial water state is in the liquid–vapour range shown, not an unrelated lower-temperature solid region.",
+      "note": "Printed key c independently checked. A rigid vessel fixes the specific volume v.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Constant-Volume Heating through Criticality",
+      "figures": [
+        {
+          "page": 124,
+          "bbox": [
+            139,
+            566,
+            226,
+            642
+          ],
+          "placement": "explanation",
+          "alt": "Vertical constant-volume path from wet state 1 to the critical point 2 on a P–V dome."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 748,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "GPSC Lect. (Auto) 16.10.2016",
+          "TNPSC AE 2019",
+          "TNPSC AE 2014"
+        ]
+      },
+      "question": "Dryness fraction of steam expressed in terms of mass of dry steam (m_s) in steam and mass of water particle (m_w) in steam is define as:",
+      "options": {
+        "a": "m_s/(m_s + m_w)",
+        "b": "m_s/(m_s − m_w)",
+        "c": "m_w/(m_s + m_w)",
+        "d": "none of the above"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Dryness fraction, or vapour quality, is the mass of vapour divided by the total mass of the saturated liquid–vapour mixture: x = m_vapour/(m_vapour + m_liquid). Using the source’s notation, m_s is mass of dry steam and m_w is mass of water particles, so x = m_s/(m_s + m_w), choice a. The complementary liquid mass fraction is 1 − x = m_w/(m_s + m_w).",
+      "note": "Printed key a independently checked. Dryness fraction, or vapour quality, is the mass of vapour divided by the total mass of the saturated liquid–vapour mixture: x = m_vapour/(m_vapour + m_liquid).",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Dryness Fraction",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 749,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "RPSC ADE 2016",
+          "ESE 2003"
+        ]
+      },
+      "question": "Saturated liquid at high-pressure P₁ having enthalpy of saturated liquid 1000 kJ/kg is throttled to a lower pressure P₂. At pressure P₂, enthalpy of saturated liquid and that of the saturated vapour are 800 and 2800 kJ/kg respectively. The dryness fraction of vapour, after throttling process is:",
+      "options": {
+        "a": "0.1",
+        "b": "0.5",
+        "c": "18/28",
+        "d": "0.8"
+      },
+      "sourceAnswer": "a",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Throttling is isenthalpic under the usual steady adiabatic, no-work and negligible kinetic/potential-change conditions, so h₁ = h₂ = 1000 kJ/kg. At the lower pressure P₂, a mixture has h₂ = h_f2 + x(h_g2 − h_f2). Substituting h_f2 = 800 kJ/kg and h_g2 = 2800 kJ/kg gives 1000 = 800 + x(2800 − 800). Thus x = (1000 − 800)/(2800 − 800) = 200/2000 = 0.1, choice a. Since 0 < x < 1, the computed outlet is indeed wet steam.",
+      "note": "Printed key a independently checked. Throttling is isenthalpic under the usual steady adiabatic, no-work and negligible kinetic/potential-change conditions, so h₁ = h₂ = 1000 kJ/kg.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law, ideal-gas and steady-flow relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Dryness Fraction after Throttling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 750,
+      "source": {
+        "page": 124,
+        "pageEnd": 124,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 29.10.2016",
+          "HPPSC AE (PWD) 10.09.2016"
+        ]
+      },
+      "question": "The total volume of a mixture of gases is equal to the sum of the volumes that would be occupied by each component at the mixture temperature T and pressure P applicable to ideal gases is:",
+      "options": {
+        "a": "Dalton's law",
+        "b": "Avogadro's law",
+        "c": "Amagat's law",
+        "d": "Kelvin's law"
+      },
+      "sourceAnswer": "c",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Amagat’s law is the law of additive component volumes evaluated at the same mixture temperature and pressure. For ideal gases, V_i = n_iR_uT/p, so V_mix = Σᵢ₌₁ᵏV_i = V₁ + V₂ + V₃ + ⋯ + V_k = (Σn_i)R_uT/p. Thus c is correct. The source describes the component volumes as additive and treats interactions as compatible with the average component behaviour; exact additivity here follows from the ideal-gas assumption. Dalton’s law instead adds partial pressures evaluated at the common total volume and temperature.",
+      "note": "Printed key c independently checked. Amagat’s law is the law of additive component volumes evaluated at the same mixture temperature and pressure.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Properties of pure substances, vapour quality and ideal-gas-mixture laws"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Amagat’s Law of Additive Volumes",
+      "figures": [],
+      "transcriptionReviewed": true
     }
   ]
 }

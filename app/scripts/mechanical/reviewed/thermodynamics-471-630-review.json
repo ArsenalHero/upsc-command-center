@@ -3405,6 +3405,3390 @@
       "subtopic": "Entropy Balance & Irreversibility",
       "figures": [],
       "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-551",
+      "number": 551,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "GPSC Asstt. Prof. 28.08.2016"
+        ]
+      },
+      "question": "An inventor claims to have developed a heat engine that receives 700 kJ of heat from a source at 500 K and produces 300 kJ of net work while rejecting the waste heat to a sink at 290 K. Which of the following is true?",
+      "options": {
+        "a": "The claim made by inventor is false because such a heat engine violates first law of thermodynamics.",
+        "b": "The claim made by inventor is false because such a heat engine violates second law of thermodynamics.",
+        "c": "The heat engine can be possible only if all the processes are reversible.",
+        "d": "The invented engine does not violate any law so there is nothing new in the claim of the inventor."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The Carnot limit is ηᵢ = 1 − Tₗ/Tₕ = 1 − 290/500 = 1 − 0.58 = 0.42 = 42%.\nThe stated net work is 300 kJ from a 700 kJ heat input, so ηₐ = W/Qᵢₙ = 300/700 ≈ 42.857%, which exceeds 42%.\nThe energy balance can be satisfied with heat rejection Qₒᵤₜ = 700 − 300 = 400 kJ, so the contradiction is with the second law, not the first law. Equivalently, reservoir entropy change is 400/290 − 700/500 ≈ −0.02069 kJ/K, which is impossible for a cycle. Thus (b) is correct.",
+      "sourceExplanation": "For a heat engine, ηᵢdₑₐₗ = 1 − Tₗ/Tₕ = 1 − 290/500 = 1 − 0.58 = 0.42 ≈ 42%.\nηₐcₜᵤₐₗ = 1 − Qᵣ/Qₐ = 1 − 300/700 = 1 − 0.42 = 0.57 ≈ 57%.\nηᵣₑᵥₑᵣₛᵢᵦₗₑ < ηcycₗₑ, which is not possible because it violates the second law of thermodynamics.",
+      "note": "The source wrongly uses the 300 kJ work output as rejected heat. Correct actual efficiency is 42.857%, still above the 42% limit; answer (b) survives the corrected calculation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-552",
+      "number": 552,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "CGPSC Asstt. Workshop Supt., 17.07.2016"
+        ]
+      },
+      "question": "Two cycles coupled in series have efficiencies 35% and 25% respectively. What is the overall efficiency?",
+      "options": {
+        "a": "42.5%",
+        "b": "51.25%",
+        "c": "55%",
+        "d": "57.25%",
+        "e": "60%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For engines coupled in series, overall efficiency is η₀ = 1 − (1 − η₁)(1 − η₂) = η₁ + η₂ − η₁η₂.\nη₀ = 0.35 + 0.25 − (0.35 × 0.25) = 0.5125 = 51.25%.",
+      "sourceExplanation": "For engines coupled in series, overall efficiency is η₀ = 1 − (1 − η₁)(1 − η₂) = η₁ + η₂ − η₁η₂.\nη₀ = 0.35 + 0.25 − (0.35 × 0.25) = 0.5125 = 51.25%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Engines in Series",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-553",
+      "number": 553,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 29.10.2016"
+        ]
+      },
+      "question": "\" All reversible heat engines operating between the same temperature have the same efficiency\". This is :",
+      "options": {
+        "a": "Rankine's theorem 2",
+        "b": "Carnot's theorem 2",
+        "c": "Brayton's theorem",
+        "d": "Sterling's theorem"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Carnot’s first theorem: an irreversible engine cannot be more efficient than a reversible engine operating between the same temperature limits.\nCarnot’s second theorem (corollary): all reversible heat engines operating between the same two temperature limits have the same efficiency. The quoted statement is this second theorem, option (b).",
+      "sourceExplanation": "Carnot’s first theorem: an irreversible engine cannot be more efficient than a reversible engine operating between the same temperature limits.\nCarnot’s second theorem (corollary): all reversible heat engines operating between the same two temperature limits have the same efficiency. The quoted statement is this second theorem, option (b).",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-554",
+      "number": 554,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3"
+        ]
+      },
+      "question": "Carnot cycle operates between the temperature of 1000 K and 500 K. The efficiency of the cycle is-",
+      "options": {
+        "a": "0.5",
+        "b": "0.66",
+        "c": "0.75",
+        "d": "0.33"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given Tₗ = 500 K and Tₕ = 1000 K.\nηc = 1 − Tₗ/Tₕ = 1 − 500/1000 = 0.5.",
+      "sourceExplanation": "Given Tₗ = 500 K and Tₕ = 1000 K.\nηc = 1 − Tₗ/Tₕ = 1 − 500/1000 = 0.5.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-555",
+      "number": 555,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "VIZAG STEEL MT 2015"
+        ]
+      },
+      "question": "Efficiency of an engine is defined as",
+      "options": {
+        "a": "output/ input",
+        "b": "output/ (output + losses)",
+        "c": "both A and B",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Engine efficiency is η = useful output/input.\nSince input = output + losses, η = output/(output + losses).\nIt can also be written as η = (input − losses)/input. Thus both (a) and (b) give the same efficiency, and the combination option (c) is correct.",
+      "sourceExplanation": "Engine efficiency is η = useful output/input.\nSince input = output + losses, η = output/(output + losses).\nIt can also be written as η = (input − losses)/input. Thus both (a) and (b) give the same efficiency, and the combination option (c) is correct.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-106-556",
+      "number": 556,
+      "source": {
+        "page": 92,
+        "pageEnd": 92,
+        "printedPage": 106,
+        "examLabels": [
+          "NPCIL ET, 2015"
+        ]
+      },
+      "question": "A manufacturer claims to have a heat engine capable of developing 15 kW by receiving heat input of 1700 kJ/min. and working between the temperature limits of 227°C and 27°C. His claim is:",
+      "options": {
+        "a": "Justified",
+        "b": "Not possible",
+        "c": "May be possible with lot of sophistications",
+        "d": "Theoretically possible"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given output 15 kW and input 1700 kJ/min = 1700/60 kJ/s = 28.333 kW.\nTₕ = 227 + 273 = 500 K and Tₗ = 27 + 273 = 300 K.\nThe ideal efficiency is ηᵢ = 1 − Tₗ/Tₕ = 1 − 300/500 = 0.4.\nThe claimed efficiency is ηₐ = output/input = 15/28.333 ≈ 0.5294.\nBecause ηₐ > ηᵢ, the manufacturer’s claim is not possible.",
+      "sourceExplanation": "Given output = 15 kW.\nInput = 1700 kJ/min = (1700/60) kJ/s = 28.333 kW.\nHigher temperature Tₕ = 227°C = 273 + 227 = 500 K.\nLower temperature Tₗ = 27°C = 273 + 27 = 300 K.\nIdeal efficiency ηᵢdₑₐₗ = 1 − Tₗ/Tₕ = 1 − 300/400 = 0.4.\nηₐcₜᵤₐₗ = output/input = 15/28.333 = 0.529.\nHere, actual efficiency is greater than ideal efficiency, which is not possible.",
+      "note": "Printed denominator 400 in the ideal-efficiency substitution is a typo; 500 K gives its stated 0.4 result. Corrected the substitution, preserving the full original explanation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-107-557",
+      "number": 557,
+      "source": {
+        "page": 93,
+        "pageEnd": 93,
+        "printedPage": 107,
+        "examLabels": [
+          "TANGEDCO AE 2015"
+        ]
+      },
+      "question": "The work done in a Carnot heat engine cycle is given by",
+      "options": {
+        "a": "R log r (T₁ − T₂)",
+        "b": "R logₑ r (T₁ − T₂)",
+        "c": "R log(T₁ − T₂)",
+        "d": "R logₑ(T₁ − T₂)"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "A Carnot cycle has two reversible isothermal and two reversible isentropic processes. On a unit-mass basis, isothermal work is W = P₁V₁ ln(V₂/V₁) = RT₁ ln(V₂/V₁).\nFor an isentropic ideal-gas process, W = (P₁V₁ − P₂V₂)/(γ − 1) = R(T₁ − T₂)/(γ − 1).\nThe two isentropic works cancel over the cycle, leaving\nW = RT₁ ln(V₂/V₁) + RT₂ ln(V₄/V₃). (I)\nUsing TVᵞ⁻¹ = constant on 2–3 and 4–1 gives\nT₂/T₁ = (V₂/V₃)ᵞ⁻¹ (II), and T₂/T₁ = (V₁/V₄)ᵞ⁻¹ (III).\nThus V₂/V₃ = V₁/V₄ and V₂/V₁ = V₃/V₄ = r. (IV)\nSubstituting into (I): W = RT₁ ln r + RT₂ ln(1/r) = R ln r (T₁ − T₂). Therefore (b), using the natural logarithm, is the intended expression. For total mass m the result is mR(T₁ − T₂) ln r.",
+      "sourceExplanation": "Carnot heat-engine cycle consists of four processes: two isothermal and two isentropic.\nWork during isothermal process: W = P₁V₁ ln(V₂/V₁) = RT₁ ln(V₂/V₁).\nWork during isentropic process: W = (P₂V₂ − P₁V₁)/(γ − 1) = R(T₂ − T₁)/(γ − 1).\nTotal work by the gas, including both isentropic and both isothermal processes:\nW = RT₁ ln(V₂/V₁) + R(T₂ − T₁)/(γ − 1) + RT₂ ln(V₄/V₃) + R(T₁ − T₂)/(γ − 1).\nW = RT₁ ln(V₂/V₁) + RT₂ ln(V₄/V₃). (I)\nNow TVᵞ⁻¹ = C.\nT₂/T₁ = (V₂/V₃)ᵞ⁻¹. (II)\nT₂/T₁ = (V₁/V₄)ᵞ⁻¹. (III)\nFrom (II) and (III), V₂/V₃ = V₁/V₄.\nV₂/V₁ = V₃/V₄ = constant = r. (IV)\nFrom (I) and (IV), W = RT₁ ln r + RT₂ ln(1/r) = R ln r (T₁ − T₂).",
+      "note": "All formula options restored from scan. Source signs in the separate isentropic-work expression are reversed for work by the gas; they cancel in its final derivation. Natural log is required; unqualified “log” in option (a) is conventionally base 10 in this source.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-107-558",
+      "number": 558,
+      "source": {
+        "page": 93,
+        "pageEnd": 93,
+        "printedPage": 107,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "A reversible heat engine operating between hot and cold reservoirs delivers a work output of 74 kJ, while it rejects a heat of 86 kJ. The efficiency of this engine is",
+      "options": {
+        "a": "0.46",
+        "b": "0.51",
+        "c": "0.75",
+        "d": "0.82"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given Wₙₑₜ = 74 kJ and Q₂ = 86 kJ.\nWₙₑₜ = Q₁ − Q₂ gives 74 = Q₁ − 86, so Q₁ = 160 kJ.\nη = Wₙₑₜ/Q₁ = 74/160 = 0.4625 ≈ 0.46.",
+      "sourceExplanation": "Given Wₙₑₜ = 74 kJ and Q₂ = 86 kJ.\nWₙₑₜ = Q₁ − Q₂ gives 74 = Q₁ − 86, so Q₁ = 160 kJ.\nη = Wₙₑₜ/Q₁ = 74/160 = 0.4625 ≈ 0.46.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-107-559",
+      "number": 559,
+      "source": {
+        "page": 93,
+        "pageEnd": 93,
+        "printedPage": 107,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "Which one of the hypothetical heat-engine cycles in the T–S diagrams represents maximum efficiency?",
+      "options": {
+        "a": "Diagram (a)",
+        "b": "Diagram (b)",
+        "c": "Diagram (c)",
+        "d": "Diagram (d)"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The net work equals the enclosed T–S area. All four triangular cycles have W = ½(5 − 1)(700 − 300) = 800 in the diagram’s energy units.\nEfficiency is W/Qᵢₙ, so the smallest heat input gives the highest efficiency.\nFor (a) and (c), the heat-addition segment is the top line at 700 K, so Qᵢₙ = 700(5 − 1) = 2800 and η = 800/2800 = 2/7.\nFor (b), the heat-addition path rises from 300 K to 700 K and returns to 300 K. Its full area is Qᵢₙ = 300(5 − 1) + ½(5 − 1)(700 − 300) = 2000, giving η = 800/2000 = 0.4.\nFor (d), the top sloping addition path runs from 700 K at S = 1 to the central 500 K point at S = 5. Thus Qᵢₙ = [(700 + 500)/2](5 − 1) = 2400 and η = 800/2400 = 1/3.\nCycle (b) has the greatest efficiency. The source’s numerical heat-input areas for (b) and (d) are inaccurate, although its chosen diagram is correct.",
+      "sourceExplanation": "Work done by all cases is the same:\n½(5 − 1)(700 − 300) = 800 units.\nHeat input = area B–C–5–1 = 700(5 − 1) = 2800.\nHeat input = {300[(5 − 1)/2] + ½[(5 − 1)/2](700 − 300)} = 1000 units.\nHeat input for (d) is {300(5 − 1) + ½(5 − 1)(700 − 300)} = 2000.\nThe hypothetical heat-engine cycle represents maximum efficiency when heat input is minimum, in case (b).",
+      "note": "Source diagram alternatives retained as four labeled diagrams. Independently integrated each full heat-addition path; corrected two source areas while preserving all printed calculations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "T–s Cycle Areas",
+      "figures": [
+        {
+          "page": 93,
+          "bbox": [
+            325,
+            115,
+            501,
+            216
+          ],
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Four labeled T–S diagram alternatives (a)–(d), each triangular with entropy limits 1 and 5 and temperature bounds 300 K and 700 K. (a) is an inverted triangle with top base; (b) is an upright triangle with bottom base; (c) is a right triangle with top base; (d) points right with a vertical left base."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-107-560",
+      "number": 560,
+      "source": {
+        "page": 93,
+        "pageEnd": 93,
+        "printedPage": 107,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "The heat to be supplied to a Carnot engine operating between 800 and 400 K and producing 100 kJ of work, is-",
+      "options": {
+        "a": "100kJ",
+        "b": "200 kJ",
+        "c": "300kJ",
+        "d": "400 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "ηc = 1 − Tₗ/Tₕ = W/Qₛ.\n1 − 400/800 = 100/Qₛ = 1/2.\nHence Qₛ = 100/(1/2) = 200 kJ.",
+      "sourceExplanation": "ηc = 1 − Tₗ/Tₕ = W/Qₛ.\n1 − 400/800 = 100/Qₛ = 1/2.\nHence Qₛ = 100/(1/2) = 200 kJ.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-107-561",
+      "number": 561,
+      "source": {
+        "page": 93,
+        "pageEnd": 94,
+        "printedPage": 107,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "A house requires 60 M cal/hr in winter for heating. Heat pump absorbs heat from cold air outside and requires 8M cal/hr of work. the COP will be-",
+      "options": {
+        "a": "0.75",
+        "b": "7.5",
+        "c": "6.5",
+        "d": "10"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The useful heating rate is Q̇ₕ = 60 Mcal/hr and work input is Ẇ = 8 Mcal/hr.\nCOPₕₚ = Q̇ₕ/Ẇ = 60/8 = 7.5.",
+      "sourceExplanation": "The useful heating rate is Q̇ₕ = 60 Mcal/hr and work input is Ẇ = 8 Mcal/hr.\nCOPₕₚ = Q̇ₕ/Ẇ = 60/8 = 7.5.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 93,
+          "bbox": [
+            372,
+            635,
+            453,
+            744
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat pump receives work W and extracts Qₗ from the outside cold reservoir, delivering Qₕ to the warm house."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-562",
+      "number": 562,
+      "source": {
+        "page": 94,
+        "pageEnd": 94,
+        "printedPage": 108,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "300 kJ/s of heat is supplied at constant temperature 500 K to a heat engine. Heat rejection takes place at 300 K. The following results are obtained: (a) 210 kJ, (b) 180 kJ, (c) 150 kJ. Identify whether each result is a reversible cycle, irreversible cycle or impossible cycle, respectively:",
+      "options": {
+        "a": "Reversible/irreversible/impossible, respectively",
+        "b": "Irreversible/reversible/impossible, respectively",
+        "c": "Irreversible/impossible/reversible, respectively",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The Clausius inequality requires ∮δQ/T ≤ 0 for a cycle. With heat input 300 kJ/s at 500 K, evaluate 300/500 − Q̇ᵣ/300 for each candidate rejection rate.\nFor 210: 300/500 − 210/300 = −0.1 < 0, so the cycle is irreversible.\nFor 180: 300/500 − 180/300 = 0, so the cycle is reversible.\nFor 150: 300/500 − 150/300 = +0.1 > 0, so the cycle is impossible.\nThe sequence is irreversible/reversible/impossible, option (b).",
+      "sourceExplanation": "According to the Clausius inequality, ∮δQ/T ≤ 0.\n(a) 300/500 − 210/300 < 0 (irreversible).\n(b) 300/500 − 180/300 = 0 (reversible).\n(c) 300/500 − 150/300 > 0 (impossible).",
+      "note": "The source labels the candidate rejection values kJ although the input is a rate in kJ/s; its calculation compares them over the same one-second basis. No formula photograph is needed.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Clausius Inequality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-563",
+      "number": 563,
+      "source": {
+        "page": 94,
+        "pageEnd": 94,
+        "printedPage": 108,
+        "examLabels": [
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "A Carnot engine Working between 600K and 300K produces 200 KJ of work. The heat supplied is",
+      "options": {
+        "a": "200 kJ",
+        "b": "400 kJ",
+        "c": "2000 J",
+        "d": "400 J"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Tₕ = 600 K, Tₗ = 300 K and W = 200 kJ.\nηc = (Tₕ − Tₗ)/Tₕ = (600 − 300)/600 = 0.5.\nηc = work output/heat supplied, so 0.5 = 200/Qₐ.\nQₐ = 400 kJ.",
+      "sourceExplanation": "Given Tₕ = 600 K, Tₗ = 300 K and W = 200 kJ.\nηc = (Tₕ − Tₗ)/Tₕ = (600 − 300)/600 = 0.5.\nηc = work output/heat supplied, so 0.5 = 200/Qₐ.\nQₐ = 400 kJ.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 94,
+          "bbox": [
+            155,
+            512,
+            210,
+            597
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine E receives Qₐ at Tₕ, produces W and rejects Qᵣ at Tₗ."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-564",
+      "number": 564,
+      "source": {
+        "page": 94,
+        "pageEnd": 94,
+        "printedPage": 108,
+        "examLabels": [
+          "KPSC ADF 2015"
+        ]
+      },
+      "question": "Two heat engines with efficiencies yn, = 0.8 and y2 = 0.5 are coupled together, then overall efficiency (1) of the system is :",
+      "options": {
+        "a": "0.65",
+        "b": "0.95",
+        "c": "0.70",
+        "d": "0.90"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given η₁ = 0.8 and η₂ = 0.5. For the intended series coupling, the second engine receives the heat rejected by the first.\nη₀ = η₁ + η₂ − η₁η₂ = 0.8 + 0.5 − (0.8 × 0.5) = 0.90.",
+      "sourceExplanation": "Given efficiencies η₁ = 0.8 and η₂ = 0.5.\nOverall efficiency of coupled engines η₀ = η₁ + η₂ − η₁η₂.\nη₀ = 0.8 + 0.5 − (0.8 × 0.5).\nη₀ = 0.90.",
+      "note": "The source solution uses series thermal coupling. The question’s “coupled together” is interpreted in that standard context; a parallel arrangement would require relative heat-input rates.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Engines in Series",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-565",
+      "number": 565,
+      "source": {
+        "page": 94,
+        "pageEnd": 94,
+        "printedPage": 108,
+        "examLabels": [
+          "Assam PSC CCE Pre 2015"
+        ]
+      },
+      "question": "A Carnot cycle is having an efficiency of 0.75. If the temperature of high-temperature reservoir is 727°C, what is the temperature of low-temperature reservoir?",
+      "options": {
+        "a": "23°C",
+        "b": "-23°C",
+        "c": "0°C",
+        "d": "250°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The hot-reservoir temperature is 727°C ≈ 1000 K.\nη = (T₁ − T₂)/T₁, so (1000 − T₂)/1000 = 0.75.\n750 = 1000 − T₂, giving T₂ = 250 K ≈ −23°C.",
+      "sourceExplanation": "The hot-reservoir temperature is 727°C ≈ 1000 K.\nη = (T₁ − T₂)/T₁, so (1000 − T₂)/1000 = 0.75.\n750 = 1000 − T₂, giving T₂ = 250 K ≈ −23°C.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 94,
+          "bbox": [
+            366,
+            354,
+            462,
+            446
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine at hot temperature T₁ = 727°C = 1000 K receives Q₁, produces W and rejects Q₂ at T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-566",
+      "number": 566,
+      "source": {
+        "page": 94,
+        "pageEnd": 94,
+        "printedPage": 108,
+        "examLabels": [
+          "MPSC HOD (Govt. Poly. Colleges) 04.10.2014"
+        ]
+      },
+      "question": "The most efficient cycle is :",
+      "options": {
+        "a": "Carnot Cycle",
+        "b": "Rankine Cycle",
+        "c": "Brayton Cycle",
+        "d": "Vapour Compression Cycle"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Between the same specified maximum and minimum reservoir temperatures, the reversible Carnot cycle gives the maximum attainable heat-engine thermal efficiency, η = 1 − Tₗ/Tₕ. Therefore Carnot is the intended choice.\nThe necessary common-temperature comparison is implicit in this standard statement; the efficiency of arbitrarily chosen cycles with different temperature limits cannot be ranked from their names alone.",
+      "sourceExplanation": "The most efficient cycle is the Carnot cycle.",
+      "note": "Made explicit the common temperature-limit condition required by Carnot’s theorem.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-108-567",
+      "number": 567,
+      "source": {
+        "page": 94,
+        "pageEnd": 95,
+        "printedPage": 108,
+        "examLabels": [
+          "CGPSC AE 26.04.2015 SHIFT-II"
+        ]
+      },
+      "question": "A Carnot cycle engine receives and rejects heat with a 20°C temperature differential between itself and the thermal energy reservoirs. The expansion and compression processes have a pressure ratio of 50. For 1 kg of air as the working substance, cycle temperature limits of 1000 K and 300 K and T₀ = 280 K, determine the second law efficiency.",
+      "options": {
+        "a": "0.935",
+        "b": "0.945",
+        "c": "0.955",
+        "d": "0.965",
+        "e": "0.975"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The engine cycle receives heat at 1000 K and rejects it at 300 K, so W/Q₁ = (1000 − 300)/1000 = 0.7 and W = 0.7Q₁.\nWith a 20 K heat-transfer temperature difference at each side, the external hot reservoir is at 1020 K and the cold reservoir/environment is at 280 K.\nThe maximum work from the same heat input between these external reservoirs is Wₘₐₓ/Q₁ = (1020 − 280)/1020 ≈ 0.72549.\nHence ηⅡ = W/Wₘₐₓ = 0.70Q₁/(0.72549Q₁) ≈ 0.96486 ≈ 0.965.\nThe pressure ratio and 1 kg mass do not affect this ratio of actual work to the reversible maximum for the same heat input.",
+      "sourceExplanation": "W/Q₁ = (T₁ − T₂)/T₁ = (1000 − 300)/1000 = 0.7.\nW = Q₁ × 0.7.\nWₘₐₓ/Q₁ = (1020 − 280)/1020.\nWₘₐₓ = 0.725Q₁.\nηⅡ = W/Wₘₐₓ = 0.70Q₁/(0.725Q₁).\nηⅡ = 0.965.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Exergy & Second-Law Efficiency",
+      "figures": [
+        {
+          "page": 95,
+          "bbox": [
+            122,
+            104,
+            241,
+            198
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Cycle heat-addition temperature 1000 K is 20 K below the 1020 K source, while its 300 K rejection temperature is 20 K above the 280 K sink."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-109-568",
+      "number": 568,
+      "source": {
+        "page": 95,
+        "pageEnd": 95,
+        "printedPage": 109,
+        "examLabels": [
+          "ISRO Scientist/Engineer 24.05.2014"
+        ]
+      },
+      "question": "A heat engine operates between a cold reservoir at T₂ = 300 K and a hot reservoir at T₁. It takes 200 J of heat from the hot reservoir and delivers 120 J of heat to the cold reservoir in a cycle. What is the efficiency of the engine?",
+      "options": {
+        "a": "30%",
+        "b": "40%",
+        "c": "60%",
+        "d": "20%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Qₛ = 200 J, Qᵣ = 120 J and T₂ = 300 K.\nη = W/Qₛ = (Qₛ − Qᵣ)/Qₛ = 1 − Qᵣ/Qₛ.\nη = 1 − 120/200 = 2/5 = 0.4 = 40%.",
+      "sourceExplanation": "Given Qₛ = 200 J, Qᵣ = 120 J and T₂ = 300 K.\nη = W/Qₛ = (Qₛ − Qᵣ)/Qₛ = 1 − Qᵣ/Qₛ.\nη = 1 − 120/200 = 2/5 = 0.4 = 40%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [
+        {
+          "page": 95,
+          "bbox": [
+            147,
+            443,
+            219,
+            567
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat engine HE receives Qₛ from T₁, produces W and rejects Qᵣ to T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-109-569",
+      "number": 569,
+      "source": {
+        "page": 95,
+        "pageEnd": 95,
+        "printedPage": 109,
+        "examLabels": [
+          "MPSC HOD (Govt. Poly. Colleges) 04.10.2014"
+        ]
+      },
+      "question": "The efficiency of carnot engine working between 800K and 400K is :",
+      "options": {
+        "a": "100%",
+        "b": "50%",
+        "c": "0.5%",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "ηc = 1 − T₂/T₁ = 1 − 400/800 = 1 − 1/2 = 1/2 = 50%.",
+      "sourceExplanation": "ηc = 1 − T₂/T₁ = 1 − 400/800 = 1 − 1/2 = 1/2 = 50%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-109-570",
+      "number": 570,
+      "source": {
+        "page": 95,
+        "pageEnd": 95,
+        "printedPage": 109,
+        "examLabels": [
+          "TNPSC AE (Industries) 09.06.2013"
+        ]
+      },
+      "question": "Ina Carnot engine, when heat is supplied by a source :",
+      "options": {
+        "a": "The temperature of the source decreases",
+        "b": "The temperature of the source remains constant",
+        "c": "The temperature of sink increases",
+        "d": "The temperature of both source and sink decreases"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "In a Carnot engine, the source is a constant-temperature reservoir. It supplies heat reversibly during the isothermal heat-addition process without changing its temperature. Thus the source temperature remains constant.",
+      "sourceExplanation": "In a Carnot engine, the source is a constant-temperature reservoir. It supplies heat reversibly during the isothermal heat-addition process without changing its temperature. Thus the source temperature remains constant.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Thermal Reservoirs",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-109-571",
+      "number": 571,
+      "source": {
+        "page": 95,
+        "pageEnd": 95,
+        "printedPage": 109,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "T₁ is the high temperature and T₂ is the low temperature of a Carnot heat engine. Which is the most efficient way to increase efficiency?",
+      "options": {
+        "a": "To increase T₁",
+        "b": "To decrease T₂",
+        "c": "To increase T₁ and T₂ both",
+        "d": "To decrease T₁ and T₂ both"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For η = 1 − T₂/T₁ with T₁ > T₂, the efficiency gain from lowering T₂ by a small amount ΔT is ΔT/T₁. The gain from raising T₁ by the same amount is approximately T₂ΔT/T₁², which is smaller because T₂/T₁ < 1.\nThus, for equal absolute temperature changes, lowering the sink temperature is more effective, giving the intended option (b).\nIf no magnitude or constraint on the changes is specified, “most efficient way” is not a general ranking: changes in both temperatures can raise or lower the ratio T₂/T₁.",
+      "sourceExplanation": "T₁ is the high and T₂ the low temperature of a Carnot heat engine. The most efficient way to increase efficiency is to decrease T₂.",
+      "note": "Source’s standard comparison presumes equal absolute temperature increments. This implicit criterion is stated and derived rather than presenting an unrestricted ranking.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-109-572",
+      "number": 572,
+      "source": {
+        "page": 95,
+        "pageEnd": 95,
+        "printedPage": 109,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "A heat engine receives 1120 kJ of heat and rejects 840 kJ of heat while operating between two temperature limits of 560 K and 280 K. It indicates that the engine operates on the following cycle:-",
+      "options": {
+        "a": "Reversible cycle",
+        "b": "Irreversible cycle",
+        "c": "Impossible cycle",
+        "d": "Unpredictable cycle"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Qₛ = 1120 kJ, Qᵣ = 840 kJ, T₁ = 560 K and T₂ = 280 K.\nηᵢ = 1 − T₂/T₁ = 1 − 280/560 = 0.50.\nηₐ = Wₙₑₜ/Qₛ = (1120 − 840)/1120 = 0.25.\nSince ηₐ < ηᵢ, the engine operates on an irreversible cycle. Its total reservoir entropy change is 840/280 − 1120/560 = 1 kJ/K > 0.",
+      "sourceExplanation": "Given Qₛ = 1120 kJ, Qᵣ = 840 kJ, T₁ = 560 K and T₂ = 280 K.\nηᵢ = 1 − T₂/T₁ = 1 − 280/560 = 0.50.\nηₐ = Wₙₑₜ/Qₛ = (1120 − 840)/1120 = 0.25.\nSince ηₐ < ηᵢ, the engine operates on an irreversible cycle. Its total reservoir entropy change is 840/280 − 1120/560 = 1 kJ/K > 0.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-573",
+      "number": 573,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "A heat engine developes 60 kW work having an efficiency of 60%, Amount of heat rejected will be:-",
+      "options": {
+        "a": "400 kW",
+        "b": "10 kW",
+        "c": "40 kW",
+        "d": "20 kW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given Ẇ = 60 kW and η = 60%.\nη = Ẇ/Q̇ᵢₙ, so Q̇ᵢₙ = 60 × 100/60 = 100 kW.\nQ̇ᵣ = Q̇ᵢₙ − Ẇ = 100 − 60 = 40 kW.",
+      "sourceExplanation": "Given Ẇ = 60 kW and η = 60%.\nη = Ẇ/Q̇ᵢₙ, so Q̇ᵢₙ = 60 × 100/60 = 100 kW.\nQ̇ᵣ = Q̇ᵢₙ − Ẇ = 100 − 60 = 40 kW.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-574",
+      "number": 574,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "APGENCO AE 2012"
+        ]
+      },
+      "question": "A heat engine operates at 75% of the maximum possible efficiency. The ratio of the heat source temperature to the heat sink temperature (in Kelvin) is 5/3. The fraction of the heat supplied, that is converted to work is :",
+      "options": {
+        "a": "0.6",
+        "b": "0.4",
+        "c": "0.3",
+        "d": "0.7"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given T₁/T₂ = 5/3. The maximum efficiency is ηₘₐₓ = 1 − T₂/T₁ = 1 − 3/5 = 0.4.\nThe engine operates at 75% of this maximum, so ηₐ = 0.75 × 0.4 = 0.3.\nSince ηₐ = work done/heat supplied = W/Qₛ, W = 0.3Qₛ. Thus the fraction converted to work is 0.3.",
+      "sourceExplanation": "Given η = 0.75 and T₁/T₂ = 5/3.\nη = 1 − T₂/T₁ = 1 − 3/5 = 0.4.\nη = work done/heat supplied.\nSince the engine uses only 75% of maximum possible efficiency, η = W/Qₛ.\n0.75 × 0.4 = W/Qₛ.\nW = 0.3Qₛ.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Exergy & Second-Law Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-575",
+      "number": 575,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "TRB Asstt. Prof., 2012"
+        ]
+      },
+      "question": "Efficiency of Carnot engine with T, = 200°C, Tz = 30°C is—",
+      "options": {
+        "a": "85%",
+        "b": "36%",
+        "c": "80%",
+        "d": "12%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "η = (1 − T₂/T₁) × 100%.\nT₁ = 200°C = 200 + 273 = 473 K and T₂ = 30°C = 30 + 273 = 303 K.\nη = (1 − 303/473) × 100% ≈ 35.94% ≈ 36%.",
+      "sourceExplanation": "η = (1 − T₂/T₁) × 100%.\nT₁ = 200°C = 200 + 273 = 473 K and T₂ = 30°C = 30 + 273 = 303 K.\nη = (1 − 303/473) × 100% ≈ 35.94% ≈ 36%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-576",
+      "number": 576,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "TRB Asstt. Prof., 2012"
+        ]
+      },
+      "question": "Ina Carnot cycle, heat is transferred at",
+      "options": {
+        "a": "constant pressure",
+        "b": "constant volume",
+        "c": "constant enthalpy",
+        "d": "constant temperature"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "A Carnot cycle is an ideal reversible cycle with two isothermal heat-transfer processes and two adiabatic processes. Heat is transferred at constant temperature, option (d).\nWith the source’s state numbering:\n1–2: reversible adiabatic compression.\n2–3: reversible isothermal heat addition at T₂ = T₃.\n3–4: reversible adiabatic expansion.\n4–1: reversible isothermal heat rejection at T₁ = T₄.\nIt is an ideal limit rather than a practical finite-power cycle because fully reversible heat transfer requires an infinitesimal temperature difference and removal of all dissipative effects. Adiabatic does not mean fast: reversibility also requires a quasi-static process, and thermal insulation can make a slow process adiabatic.",
+      "sourceExplanation": "Carnot cycle is an ideal cycle of a work-producing device.\nIt is not a practical working cycle because the reversible adiabatic process is very fast and the reversible isothermal process is very slow, so they cannot take place in one cycle.\nCarnot consists of four processes:\n1–2: reversible adiabatic compression.\n2–3: reversible isothermal heat addition.\n3–4: reversible adiabatic expansion.\n4–1: reversible isothermal heat rejection.",
+      "note": "Corrected the source’s assertion that a reversible adiabat must be very fast. The complete printed explanation and both genuine cycle diagrams are retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Processes",
+      "figures": [
+        {
+          "page": 96,
+          "bbox": [
+            323,
+            244,
+            403,
+            327
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "P–V Carnot loop with reversible adiabatic compression 1–2, isothermal expansion 2–3, adiabatic expansion 3–4 and isothermal compression 4–1."
+        },
+        {
+          "page": 96,
+          "bbox": [
+            407,
+            246,
+            504,
+            325
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "T–s Carnot rectangle: upper isotherm at T₂ = T₃, lower isotherm at T₁ = T₄, and vertical isentropes."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-577",
+      "number": 577,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2012"
+        ]
+      },
+      "question": "An ideal engine absorbs heat at 127°C and rejects at 77°C. The efficiency is",
+      "options": {
+        "a": "13%",
+        "b": "39%",
+        "c": "50%",
+        "d": "40%"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "T₁ = 127°C = 127 + 273 = 400 K and T₂ = 77°C = 77 + 273 = 350 K.\nFor the ideal reversible engine, η = 1 − T₂/T₁ = 1 − 350/400 = 0.125 = 12.5%.\nRounded to a whole percent, this is 13%.",
+      "sourceExplanation": "T₁ = 127°C = 127 + 273 = 400 K and T₂ = 77°C = 77 + 273 = 350 K.\nFor the ideal reversible engine, η = 1 − T₂/T₁ = 1 − 350/400 = 0.125 = 12.5%.\nRounded to a whole percent, this is 13%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-578",
+      "number": 578,
+      "source": {
+        "page": 96,
+        "pageEnd": 96,
+        "printedPage": 110,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "If maximum surface temperature of sea is 30 °C and temperature in depth is 4 °C, how much can be the maximum thermal efficiency of Ocean Thermal Conversion (OTEC) system?",
+      "options": {
+        "a": "8.58%",
+        "b": "13.3%",
+        "c": "86.7%",
+        "d": "none of the above"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The maximum OTEC thermal efficiency is the Carnot limit. With T₁ = 30°C ≈ 303 K and T₂ = 4°C ≈ 277 K,\nηₘₐₓ = (T₁ − T₂)/T₁ = (30 − 4)/303 = 26/303 ≈ 0.0858 = 8.58%.\nThe 26°C temperature difference equals 26 K, while the denominator must be the absolute hot-reservoir temperature.",
+      "sourceExplanation": "η = (T₁ − T₂)/T₁ = (30 − 4)/303 = 26/303 = 8.58%.",
+      "note": "Restored the complete adjacent printed explanation directly from PDF96; it was absent from the OCR draft. Formula fully transcribed as text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-110-579",
+      "number": 579,
+      "source": {
+        "page": 96,
+        "pageEnd": 97,
+        "printedPage": 110,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "Carnot cycle is not considered as a practical cycle because",
+      "options": {
+        "a": "its p— V diagram is narrow",
+        "b": "its thermal efficiency is low",
+        "c": "heat addition takes place at high pressure",
+        "d": "heat rejection takes place at high temperature"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The source identifies the narrow P–V loop as the practical limitation, choice (a). A narrow loop gives a small net work area relative to the cylinder displacement and the expansion/compression work.\nA Carnot cycle is also an ideal reversible limit: finite-rate reversible isothermal heat transfer would require an infinitesimal temperature difference, which is not attainable at useful finite power. Low thermal efficiency is not the reason—the Carnot cycle has the maximum efficiency between the same reservoirs.",
+      "sourceExplanation": "Carnot cycle is not considered a practical cycle because its P–V diagram is narrow.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-580",
+      "number": 580,
+      "source": {
+        "page": 97,
+        "pageEnd": 97,
+        "printedPage": 111,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "An engine receives 15152 J/s of heat and produces 5 kW of power. The efficiency of the engine is",
+      "options": {
+        "a": "25%",
+        "b": "27.5%",
+        "c": "30%",
+        "d": "33%"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "η = power/heat-supply rate = 5 kW/(15152 J/s) = 5/15.152 ≈ 0.3300 = 33%.",
+      "sourceExplanation": "Efficiency η = power/heat supply = 5/15.152 = 0.329 ≈ 33%.",
+      "note": "Independent division gives 0.3300; the printed 0.329 is a minor arithmetic error with the same 33% choice.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-581",
+      "number": 581,
+      "source": {
+        "page": 97,
+        "pageEnd": 97,
+        "printedPage": 111,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "An inventor claims to have developed an engine that takes in 105 MJ at a temperature of 400 K, rejects 42 MJ at a temperature of 200 K and delivers 15 kWh of mechanical work. Is this engine feasible ?",
+      "options": {
+        "a": "Yes",
+        "b": "No",
+        "c": "The information given is not sufficient to find answer.",
+        "d": "May be or may not be depends upon several factors."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The Carnot efficiency limit is ηᵢ = 1 − Tₗ/Tₕ = 1 − 200/400 = 0.5.\nThe heat transfers imply η = 1 − Qₗ/Qₕ = 1 − 42/105 = 0.6, which exceeds this limit. Therefore the specified heat-flow cycle is impossible.\nThere is also an independent first-law inconsistency: Qₕ − Qₗ = 105 − 42 = 63 MJ, whereas 15 kWh = 54 MJ. A cyclic engine cannot have these heat inputs, heat rejection and work output simultaneously.\nUsing the stated work alone gives W/Qₕ = 54/105 ≈ 51.43%, also above the 50% Carnot limit. Thus the engine is not feasible.",
+      "sourceExplanation": "ηᵢdₑₐₗ = 1 − Tₗ/Tₕ = 1 − 200/400 = 0.5.\nηₐcₜᵤₐₗ = 1 − Qₗ/Qₕ = 1 − 42/105 = 0.6.\nηᵢdₑₐₗ < ηₐcₜᵤₐₗ, not possible.",
+      "note": "Kept complete printed second-law calculation and added the omitted kWh conversion and first-law check. All three stated energy quantities are mutually inconsistent.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-582",
+      "number": 582,
+      "source": {
+        "page": 97,
+        "pageEnd": 97,
+        "printedPage": 111,
+        "examLabels": [
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "If Q₁ is the heat transfer between the hot-temperature source and the machine, and Q₂ is the heat transfer between the cold-temperature source and the machine, then for a heat pump, COP equals:",
+      "options": {
+        "a": "Q₁/(Q₁ − Q₂)",
+        "b": "Q₂/(Q₁ − Q₂)",
+        "c": "Q₁/(Q₂ − Q₁)",
+        "d": "Q₂/(Q₂ − Q₁)"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For the heat pump, Q₁ is delivered to the hot reservoir and Q₂ is extracted from the cold reservoir. Energy balance gives W = Q₁ − Q₂.\nCOPₕₚ = desired heating effect/work input = Q₁/(Q₁ − Q₂), option (a).\nFor comparison, the refrigerator COP is COPᵣ = Q₂/(Q₁ − Q₂).",
+      "sourceExplanation": "(COP)ₕₚ = Q₁/(Q₁ − Q₂).\n(COP)ᵣ = Q₂/(Q₁ − Q₂).",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 97,
+          "bbox": [
+            158,
+            543,
+            205,
+            609
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat pump transfers Q₂ from the lower reservoir at T₂ to the higher reservoir at T₁ as Q₁; source and sink labels are printed on the reservoirs."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-583",
+      "number": 583,
+      "source": {
+        "page": 97,
+        "pageEnd": 97,
+        "printedPage": 111,
+        "examLabels": [
+          "APPSC AEE Screening Test 2016",
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "The Thermal efficiency of an engine which is supplied heat at the rate of 15,000 N.m/sec and gives an output of 4500 W, is",
+      "options": {
+        "a": "45%",
+        "b": "50%",
+        "c": "30%",
+        "d": "33%"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "1 N·m = 1 J, so the heat supply is Q̇ₛ = 15000 N·m/s = 15000 J/s = 15000 W.\nWith work output Ẇ = 4500 W, η = Ẇ/Q̇ₛ = 4500/15000 = 0.30 = 30%.",
+      "sourceExplanation": "Qₛ = 15000 N·m/sec = 1500 J/sec = 1500 W.\nW = 4500 W.\nη = W/Qₛ = 4500/15000 = 30%.",
+      "note": "Corrected dropped zero in the source unit conversion. The source’s final division uses the correct 15000 W, so the answer remains (c).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-584",
+      "number": 584,
+      "source": {
+        "page": 97,
+        "pageEnd": 97,
+        "printedPage": 111,
+        "examLabels": [
+          "VIZAG STEEL MT 10.06.2012"
+        ]
+      },
+      "question": "A Carnot cycle having efficiency of 0.75. if the temperature of the high temperature reservoir is 727°C, what is the temperature of low temperature reservoir?",
+      "options": {
+        "a": "23°C",
+        "b": "-23°C",
+        "c": "0°C",
+        "d": "250°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Carnot efficiency η = 0.75 and Tₕ = 727°C = 727 + 273 = 1000 K.\nη = (Tₕ − Tₗ)/Tₕ, so 0.75 = (1000 − Tₗ)/1000.\n750 = 1000 − Tₗ, giving Tₗ = 1000 − 750 = 250 K.\nIn Celsius, Tₗ ≈ 250 − 273 = −23°C.",
+      "sourceExplanation": "Given Carnot efficiency η = 0.75 and Tₕ = 727°C = 727 + 273 = 1000 K.\nη = (Tₕ − Tₗ)/Tₕ, so 0.75 = (1000 − Tₗ)/1000.\n750 = 1000 − Tₗ, giving Tₗ = 1000 − 750 = 250 K.\nIn Celsius, Tₗ ≈ 250 − 273 = −23°C.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-111-585",
+      "number": 585,
+      "source": {
+        "page": 97,
+        "pageEnd": 98,
+        "printedPage": 111,
+        "examLabels": [
+          "UPSC JWM Advt. No.-52/2010"
+        ]
+      },
+      "question": "A Carnot engine produces 70 kW _ while operating between temperature limits of 927°C and 27°C. The heat rejected by the engine per second is :",
+      "options": {
+        "a": "10 kW",
+        "b": "20 kW",
+        "c": "30 kW",
+        "d": "40 kW"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Tₕ = 927 + 273 = 1200 K and Tₗ = 27 + 273 = 300 K.\nηₕₑ = 1 − Tₗ/Tₕ = 1 − 300/1200 = 1 − 1/4 = 3/4.\nAlso ηₕₑ = (Q̇ₕ − Q̇ₗ)/Q̇ₕ = Ẇ/Q̇ₕ = 3/4.\nTherefore Q̇ₕ = Ẇ(4/3) = 70 × 4/3 = 280/3 kW.\nQ̇ₕ − Q̇ₗ = 70, so Q̇ₗ = 280/3 − 70 = 70/3 ≈ 23.33 kW.\nExact kelvin conversion gives approximately 23.35 kW. None of the printed alternatives matches this result. The source rounds 23.33 to 20 kW to select (b), but the question supplies no such coarse-rounding instruction.",
+      "sourceExplanation": "Tₕ = 927°C + 273 = 1200 K.\nTₗ = 27°C + 273 = 300 K.\nηₕₑ = 1 − Tₗ/Tₕ = 1 − 300/1200 = 1 − 1/4.\nηₕₑ = 3/4.\nAlso ηₕₑ = (Qₕ − Qₗ)/Qₕ = 3/4.\nW/Qₕ = 3/4.\nQₕ = W × 4/3 = 70 × 4/3 = 280/3.\nQₕ − Qₗ = 70.\nQₗ = Qₕ − 70 = 280/3 − 70.\nQₗ = 70/3.\nQₗ = 23.33 kW ≈ 20 kW.",
+      "note": "No matching choice: printed (b) relies on an unexplained rounding from 23.33 to 20 kW. Preserved full derivation and disabled grading.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 97,
+          "bbox": [
+            374,
+            565,
+            451,
+            684
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine between Tₕ and Tₗ produces W = 70 kW and rejects Qₗ."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-112-586",
+      "number": 586,
+      "source": {
+        "page": 98,
+        "pageEnd": 98,
+        "printedPage": 112,
+        "examLabels": [
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "An engineer claims to have developed an heat engine, which absorbs 100 kW of heat from a thermal reservoir at 1000 K, 80 kW of heat from another thermal reservoir at 1600 K, produces 130 kW of work output, and rejects heat to the thermal reservoir at 500 Kk. Which of the following statement(s) is (are) correct?",
+      "options": {
+        "a": "This heat engine violates second law of thermodynamics",
+        "b": "The amount of heat rejected to the sink is 50 kW",
+        "c": "Cyclic integral of dQ/T is 0.05",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Energy balance requires heat rejection Q̇ᵣ = 100 + 80 − 130 = 50 kW, so (b) is correct.\nFor these heat interactions, the Clausius sum per unit time is 100/1000 + 80/1600 − 50/500 = 0.10 + 0.05 − 0.10 = +0.05 kW/K, which is the intended quantity in (c).\nThe Clausius inequality requires ∮δQ/T ≤ 0 for a possible cycle. Here the positive sum violates the second law, so (a) is correct. Therefore all three statements are correct and the combined choice is (d).",
+      "sourceExplanation": "Heat rejected to sink = 100 + 80 − 130 = 50 kW.\n∮δQ/T = 100/1000 + 80/1600 − 50/500 = 0.05.\nFrom Clausius inequality, ∮δQ/T ≤ 0.\nHere ∮δQ/T > 0, so it violates the second law. All options are correct.",
+      "note": "The printed quantities are rates, so 0.05 is an entropy-transfer rate in kW/K rather than an integrated per-cycle entropy. Source numerical statement is interpreted on its common time basis.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Clausius Inequality",
+      "figures": [
+        {
+          "page": 98,
+          "bbox": [
+            116,
+            373,
+            248,
+            456
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Claimed engine absorbs 100 kW at 1000 K and 80 kW at 1600 K, produces 130 kW and rejects 50 kW at 500 K."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-112-587",
+      "number": 587,
+      "source": {
+        "page": 98,
+        "pageEnd": 98,
+        "printedPage": 112,
+        "examLabels": [
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "A heat engine is supplied with heat from a source at 1000 K and rejects heat to a sink at 300 K and this engine is operating with a thermal efficiency of 30%. The second law efficiency of this heat engine is :",
+      "options": {
+        "a": "60%",
+        "b": "43%",
+        "c": "30%",
+        "d": "70%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given T₁ = 1000 K, T₂ = 300 K and ηₐ = 30% = 0.30.\nηc = 1 − T₂/T₁ = 1 − 300/1000 = 1 − 0.30 = 0.70.\nηⅡ = ηₐ/ηc = 0.3/0.7 ≈ 0.4286 = 43% approximately.",
+      "sourceExplanation": "Given T₁ = 1000 K, T₂ = 300 K and ηₐ = 30% = 0.30.\nηc = 1 − T₂/T₁ = 1 − 300/1000 = 1 − 0.30 = 0.70.\nηⅡ = ηₐ/ηc = 0.3/0.7 ≈ 0.4286 = 43% approximately.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Exergy & Second-Law Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-112-588",
+      "number": 588,
+      "source": {
+        "page": 98,
+        "pageEnd": 98,
+        "printedPage": 112,
+        "examLabels": [
+          "UPSC JWM Adv. No-16/2009"
+        ]
+      },
+      "question": "The efficiency of a thermodynamic cycle cannot be unity due to which of the following reasons?",
+      "options": {
+        "a": "Violates the first law of thermodynamics",
+        "b": "Violates the second law of thermodynamics",
+        "c": "Violates the third law of thermodynamics",
+        "d": "Violates the zeroth law of thermodynamics"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A heat-engine cycle of unit thermal efficiency would convert all heat input into net work and reject no heat. That violates the Kelvin–Planck statement of the second law of thermodynamics. The first law alone only requires energy balance and does not prohibit this conversion.",
+      "sourceExplanation": "The efficiency of a thermodynamic cycle cannot be unity because it violates the second law of thermodynamics.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Second-Law Statements",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-112-589",
+      "number": 589,
+      "source": {
+        "page": 98,
+        "pageEnd": 98,
+        "printedPage": 112,
+        "examLabels": [
+          "DRDO Scientists 2009"
+        ]
+      },
+      "question": "A heat engine is used to drive a heat pump. The heat transfers from the heat engine and from the heat pump are used to heat the circulating water in a plant. The efficiency of the heat engine is 30% whereas the COP of the heat pump is 5. The heat transfer to the circulating water and the heat transfer to the engine bears a ratio of",
+      "options": {
+        "a": "0.7",
+        "b": "0.8",
+        "c": "1.5",
+        "d": "2.2"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Let Q₁ be heat supplied to the engine. With ηₕₑ = 0.3, its work output is W = 0.3Q₁ and its rejected heat is Q₂ = Q₁ − W = 0.7Q₁.\nThe work drives the heat pump, whose delivered heat is Q₃ = COPₕₚ × W = 5 × 0.3Q₁ = 1.5Q₁.\nBoth heat transfers heat the circulating water, so Qwₐₜₑᵣ = Q₂ + Q₃ = 0.7Q₁ + 1.5Q₁ = 2.2Q₁.\nThus Qwₐₜₑᵣ/Q₁ = 2.2, choice (d).\nThe source calculates Q₃/Q₁ = 1.5, which is only the heat-pump contribution and omits the engine’s rejected heat.",
+      "sourceExplanation": "Q₃/Q₁ = ?\nηₕₑ = 0.3 = W/Q₁.\n(COP)ₕₚ = 5 = Q₃/W.\nQ₃/Q₁ = 5 × 0.3 = 1.5.",
+      "note": "Corrected source (c) to (d): question explicitly uses heat from both engine and heat pump, so 0.7 + 1.5 = 2.2. Complete printed calculation retained.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Coupled Engines & Heat Pumps",
+      "figures": [
+        {
+          "page": 98,
+          "bbox": [
+            367,
+            462,
+            456,
+            562
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Engine H.E. receives Q₁ and rejects Q₂ while work W drives H.P., which absorbs Q₄ and delivers Q₃. The water receives both Q₂ and Q₃."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-112-590",
+      "number": 590,
+      "source": {
+        "page": 98,
+        "pageEnd": 98,
+        "printedPage": 112,
+        "examLabels": [
+          "DRDO Scientists 2008"
+        ]
+      },
+      "question": "The COP of a Carnot heat pump operating between —3°C and 27°C is",
+      "options": {
+        "a": "10.0",
+        "b": "9.0",
+        "c": "0.111",
+        "d": "0.10"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "T₁ = −3°C ≈ 270 K and T₂ = 27°C ≈ 300 K.\nFor the Carnot heat pump, COPₕₚ = Q₂/(Q₂ − Q₁) = T₂/(T₂ − T₁) = 300/(300 − 270) = 300/30 = 10.",
+      "sourceExplanation": "T₁ = −3°C ≈ 270 K and T₂ = 27°C ≈ 300 K.\nFor the Carnot heat pump, COPₕₚ = Q₂/(Q₂ − Q₁) = T₂/(T₂ − T₁) = 300/(300 − 270) = 300/30 = 10.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-113-591",
+      "number": 591,
+      "source": {
+        "page": 99,
+        "pageEnd": 99,
+        "printedPage": 113,
+        "examLabels": [
+          "DRDO Scientists 2008"
+        ]
+      },
+      "question": "An inventor claims to have devised an engine that produces 2000 kJ of work while receiving 1900 kJ of heat from a single reservoir during a complete cycle of the engine. Such an engine would violate",
+      "options": {
+        "a": "only the first law of thermodynamics and no other laws",
+        "b": "only the second law of thermodynamics and no other laws",
+        "c": "both the first and the second law of thermodynamics",
+        "d": "neither the first nor the second law of thermodynamics"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "For a complete cycle, ΔU = Q − W = 1900 − 2000 = −100 kJ would contradict the requirement ΔU = 0. Thus the engine violates the first law.\nIt also produces net work while drawing heat only from a single reservoir, with no other effect, which violates the Kelvin–Planck statement of the second law. The reservoir loses entropy 1900/T while the cyclic working substance returns to its original entropy.\nTherefore both laws are violated, option (c). The source selects only the first law and omits the independent second-law violation.",
+      "sourceExplanation": "An inventor claims to have developed an engine that produces 2000 kJ of work while receiving 1900 kJ of heat. The proposed engine claims to produce more work in a cyclic process than the amount of heat supplied. So it violates the first law of thermodynamics.\nΔU = Q − W.",
+      "note": "Corrected source (a) to (c); the single-reservoir cyclic work claim also directly violates Kelvin–Planck.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "First- and Second-Law Feasibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-113-592",
+      "number": 592,
+      "source": {
+        "page": 99,
+        "pageEnd": 99,
+        "printedPage": 113,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2007"
+        ]
+      },
+      "question": "The efficiency η of any heat engine and efficiency ηᵣ of a reversible heat engine operating between a common heat source and heat sink are related as:",
+      "options": {
+        "a": "η > ηᵣ",
+        "b": "η < ηᵣ",
+        "c": "η ≥ ηᵣ",
+        "d": "η ≤ ηᵣ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Let η be the efficiency of any heat engine and ηᵣ the reversible-engine efficiency between the same source and sink. Carnot’s principle gives η ≤ ηᵣ.\nThe word “any” includes a reversible or Carnot engine, for which equality holds; an irreversible engine has η < ηᵣ. Thus the inclusive inequality in (d) is required.",
+      "sourceExplanation": "η = efficiency of any heat engine.\nηᵣ = reversible heat engine.\nSo η ≤ ηᵣ.\nAny heat engine must also include a reversible heat engine or Carnot engine.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 99,
+          "bbox": [
+            148,
+            535,
+            211,
+            592
+          ],
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "Printed T–S sketch with rising path 1–2 and shaded area between S₁ and S₂; this sketch is not needed to evaluate the Carnot inequality."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-113-593",
+      "number": 593,
+      "source": {
+        "page": 99,
+        "pageEnd": 99,
+        "printedPage": 113,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2007"
+        ]
+      },
+      "question": "300 kJ/sec of heat is applied at a constant fixed temperature of 290°C to a heat engine. Heat rejection takes place at 8.5°C. Match the following:\nResult A: 215 kJ/sec rejected.\nResult B: 150 kJ/sec rejected.\nResult C: 75 kJ/sec rejected.\nCycle 1: Reversible. Cycle 2: Irreversible. Cycle 3: Impossible.\nSelect the sequence for A, B, C:",
+      "options": {
+        "a": "1, 2, 3",
+        "b": "2, 1, 3",
+        "c": "3, 2, 1",
+        "d": "1, 3, 2"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Q̇₁ = 300 kJ/s, T₁ = 290 + 273 = 563 K and T₂ = 8.5 + 273 = 281.5 K.\nFor a cycle, ∮δQ/T = 0 for reversible operation, < 0 for irreversible operation and > 0 for an impossible cycle.\nA: With Q̇₂ = 215, 300/563 − 215/281.5 ≈ −0.2309 < 0, so it is irreversible (2).\nB: With Q̇₂ = 150, 300/563 − 150/281.5 = 0, so it is reversible (1).\nC: With Q̇₂ = 75, 300/563 − 75/281.5 ≈ +0.2664 > 0, so it is impossible (3).\nThus A–B–C maps to 2–1–3, option (b). Using exact kelvin conversions changes the nominal zero for B by a negligible rounding amount; the intended temperature values are the rounded 563 K and 281.5 K.",
+      "sourceExplanation": "Q₁ = 300 kJ/sec.\nT₁ = 290 + 273 = 563 K.\nT₂ = 8.5 + 273 = 281.5 K.\n∫dQ/T = 0 for reversible, ∫dQ/T < 0 for irreversible, and ∫dQ/T > 0 for impossible.\nIf Q₂ = 215 and Q₁ = 300, Q₁/T₁ − Q₂/T₂ = 300/563 − 215/281.5 = −0.23: irreversible.\nWhen Q₂ = 150 and Q₁ = 300, Q₁/T₁ − Q₂/T₂ = 300/563 − 150/281.5 = 0: reversible.\nWhen Q₂ = 75 and Q₁ = 300, Q₁/T₁ − Q₂/T₂ = 300/563 − 75/281.5 = 0.27 > 0: impossible.",
+      "note": "Restored both matching columns and every code. Printed Celsius temperatures use the source’s rounded273K offset; this yields the intended exact 2:1 reservoir ratio.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Clausius Inequality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-113-594",
+      "number": 594,
+      "source": {
+        "page": 99,
+        "pageEnd": 99,
+        "printedPage": 113,
+        "examLabels": [
+          "J & K PSC Screening, 2006"
+        ]
+      },
+      "question": "Which of the following is an irreversible cycle",
+      "options": {
+        "a": "Carnot",
+        "b": "Stirling",
+        "c": "All of the above",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The ideal Carnot cycle is reversible. The ideal Stirling cycle with perfect regeneration also consists of reversible processes. Hence neither named ideal cycle is intrinsically irreversible and the intended answer is “None of the above,” (d). Real Stirling engines, like all real engines, have irreversibilities.",
+      "sourceExplanation": "Carnot and Stirling are reversible cycles.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Reversible Cycles",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-113-595",
+      "number": 595,
+      "source": {
+        "page": 99,
+        "pageEnd": 99,
+        "printedPage": 113,
+        "examLabels": [
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "If other factors are constant, with increase in the temperature of sink, the efficiency of Carnot engine",
+      "options": {
+        "a": "increases",
+        "b": "remains same",
+        "c": "decreases",
+        "d": "may increase or decrease"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "ηc = (Tₕ − Tₗ)/Tₕ = 1 − Tₗ/Tₕ.\nIf all other factors, including Tₕ, remain constant and the sink temperature Tₗ increases, ηc decreases.",
+      "sourceExplanation": "ηc = (Tₕ − Tₗ)/Tₕ = 1 − Tₗ/Tₕ.\nIf all other factors, including Tₕ, remain constant and the sink temperature Tₗ increases, ηc decreases.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 99,
+          "bbox": [
+            380,
+            651,
+            448,
+            743
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Engine E operates between source Tₕ and sink Tₗ and produces work W."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-596",
+      "number": 596,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "TNPSC AE 2017",
+          "Nagaland PSC (CTSE) 2016, Paper-II",
+          "MPPSC AE 08.11.2015",
+          "UKPSC AE 2012 Paper-II",
+          "ISRO Scientist/Engineer 2006",
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "The condition for reversibility of a cycle is:",
+      "options": {
+        "a": "Cyclic ∮δQ/T < 0",
+        "b": "Cyclic ∮δQ/T > 0",
+        "c": "Cyclic ∮δQ/T = 0",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The Clausius inequality classifies a complete cycle as follows:\n∮δQ/T = 0: reversible cycle.\n∮δQ/T < 0: irreversible cycle.\n∮δQ/T > 0: impossible cycle.\nThus equality to zero is the reversible-cycle condition, option (c).",
+      "sourceExplanation": "The Clausius inequality classifies a complete cycle as follows:\n∮δQ/T = 0: reversible cycle.\n∮δQ/T < 0: irreversible cycle.\n∮δQ/T > 0: impossible cycle.\nThus equality to zero is the reversible-cycle condition, option (c).",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Clausius Inequality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-597",
+      "number": 597,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "RPSC IOF, 2020",
+          "Gujarat PSC AE 2019",
+          "JPSC AE PRE 2019",
+          "APPSC Poly. Lect. 2013",
+          "WBPSC AE, 2007",
+          "ESE 2011, 1994",
+          "GATE 1993"
+        ]
+      },
+      "question": "The value of ∮δQ/T for an irreversible process is:",
+      "options": {
+        "a": "0",
+        "b": ">0",
+        "c": "<0",
+        "d": "1"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a cycle, the Clausius integral is:\n∮δQ/T = 0 for reversible operation.\n∮δQ/T < 0 for irreversible but possible operation.\n∮δQ/T > 0 for an impossible cycle.\nThe closed integral in the question therefore has a negative value, choice (c).",
+      "sourceExplanation": "For a cycle, the Clausius integral is:\n∮δQ/T = 0 for reversible operation.\n∮δQ/T < 0 for irreversible but possible operation.\n∮δQ/T > 0 for an impossible cycle.\nThe closed integral in the question therefore has a negative value, choice (c).",
+      "note": "The scan uses a closed-cycle integral despite calling it a “process”; the verified sign applies to a complete irreversible cycle.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Clausius Inequality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-598",
+      "number": 598,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-II",
+          "UPPSC AE 13.12.2020, Paper-2",
+          "OPSC AEE 2019 PAPER-II",
+          "BPSC AE Mains 2017 Paper-V",
+          "GATE 2012"
+        ]
+      },
+      "question": "An ideal gas of mass m and temperature T₁ undergoes a reversible isothermal process from an initial pressure P₁ to final pressure P₂. The heat loss during the process is Q. The entropy change ΔS of the gas is:",
+      "options": {
+        "a": "mR ln(P₂/P₁)",
+        "b": "mR ln(P₁/P₂)",
+        "c": "mR ln(P₂/P₁) − Q/T₁",
+        "d": "Zero"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For an ideal gas with constant specific heat, ΔS = mcₚ ln(T₂/T₁) − mR ln(P₂/P₁).\nThe process is isothermal, so T₂ = T₁ = constant and the temperature term vanishes.\nS₂ − S₁ = −mR ln(P₂/P₁) = mR ln(P₁/P₂), giving (b).\nBecause heat Q is lost reversibly at temperature T₁, the same entropy change is also −Q/T₁; it is not an additional term to be subtracted from the state-function expression.",
+      "sourceExplanation": "Change in entropy: S₂ − S₁ = Cₚ ln(T₂/T₁) − mR ln(P₂/P₁).\nFor an isothermal process, T₁ = T₂ = constant.\nS₂ − S₁ = −mR ln(P₂/P₁).\nS₂ − S₁ = mR ln(P₁/P₂).",
+      "note": "Restored logarithms and option expressions. Source first term’s Cₚ is ambiguous between total and specific heat capacity; checked formula explicitly uses mcₚ.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Ideal-Gas Entropy Changes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-599",
+      "number": 599,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "APGENCO AE, 2017",
+          "APPSC AEE MAINS 2016 PAPER-III",
+          "Assam PSC CCE Pre 2015",
+          "VIZAG STEEL MT 2011",
+          "CSE Pre-1994"
+        ]
+      },
+      "question": "The increase in entropy of a system represents",
+      "options": {
+        "a": "increase in availability of energy",
+        "b": "increase in temperature",
+        "c": "decrease in pressure",
+        "d": "degradation of energy"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Entropy generation is associated with degradation of energy’s ability to produce work: exergy destruction is T₀Sgₑₙ. This is the idea intended by source choice (d).\nHowever, the question asks about an increase in a system’s entropy, which may simply be entropy transferred reversibly into it with heat. A reversible isothermal heat input increases system entropy without generating entropy or destroying exergy. It also need not change the temperature or pressure.\nThe entropy inequality is dS ≥ δQ/Tᵦ, with equality for a reversible process. Thus none of the printed statements follows universally from a system entropy increase alone; “entropy generation” or “entropy of an isolated system” would be needed to justify the intended degradation statement.",
+      "sourceExplanation": "Entropy is a measure of the degree of disorder. An increase in entropy of a system represents degradation of energy.\nEntropy principle: dS ≥ dQ/T.",
+      "note": "Distinguished entropy transfer from entropy generation. Source (d) is preserved but is not universally valid for the printed “system,” so grading is disabled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "Entropy generation and lost work"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy & Energy Quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-600",
+      "number": 600,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "Oil India Senior Officer 23.12.2020",
+          "HPPSC Asstt. Prof. 29.10.2016",
+          "UKPSC AE-2013, 2007 Paper-II",
+          "TNPSC AE 2013"
+        ]
+      },
+      "question": "Area under T -S diagram represents",
+      "options": {
+        "a": "heat transfer for reversible process",
+        "b": "heat transfer for irreversible process",
+        "c": "heat transfer for all process",
+        "d": "heat transfer for adiabatic process"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For a reversible process only, δQᵣₑᵥ = T dS.\nIntegrating gives Qᵣₑᵥ = ∫T dS, so the area under the T–S path represents heat transfer for a reversible process. In an irreversible process the entropy balance also contains generation, so this area is not generally the actual heat transfer.",
+      "sourceExplanation": "For a reversible process only, Q = ∫T dS.\nHence heat transfer for a reversible process is represented by the area under the T–S curve.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "T–s Diagrams",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-601",
+      "number": 601,
+      "source": {
+        "page": 100,
+        "pageEnd": 100,
+        "printedPage": 114,
+        "examLabels": [
+          "CIL MT 27.02.2020",
+          "RPSC AE 2018",
+          "WBPSC AE, 2017",
+          "APPSC AEE Screening Test 2016"
+        ]
+      },
+      "question": "The Heat transfer takes place due to",
+      "options": {
+        "a": "Change of temperature",
+        "b": "Change in Entropy",
+        "c": "Change of pressure",
+        "d": "Mass transfer"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Heat transfer is driven by a temperature difference, not by a change in entropy. For reversible heat transfer, δQᵣₑᵥ = T dS, where T is absolute temperature and dS is the entropy transferred to the system. This relation describes entropy transfer; it does not identify its driving force.\nThe source selects (b) from the equation. Choice (a) says “Change of temperature,” which is not the same as a temperature difference: heat can pass between two constant-temperature reservoirs without either temperature changing. Thus (a) is the closest intended physical idea if its wording is corrected to “temperature difference,” but no printed choice states the correct cause precisely.",
+      "sourceExplanation": "Heat transfer: δQ = T dS.\nT: absolute temperature.\ndS: change in entropy.",
+      "note": "Source (b) mistakes a reversible entropy relation for a cause. Retained all printed wording and source marker; no correct precise alternative is available, so grading is disabled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Heat Transfer & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-114-602",
+      "number": 602,
+      "source": {
+        "page": 100,
+        "pageEnd": 101,
+        "printedPage": 114,
+        "examLabels": [
+          "HPPSC AE 2018",
+          "TNPSC AE (Industries) 09.06.2013",
+          "UPSC JWM Adv. No-16/2009",
+          "ESE 1997"
+        ]
+      },
+      "question": "If the value of ∮δQ/T is greater than zero, the nature of the thermodynamic cycle is:",
+      "options": {
+        "a": "Reversible",
+        "b": "Irreversible",
+        "c": "Both reversible and irreversible",
+        "d": "Impossible"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The Clausius inequality is ∮δQ/T ≤ 0 for a physically possible cycle.\nEquality denotes a reversible cycle; a negative result denotes an irreversible cycle; a positive result denotes an impossible cycle.\nTherefore a value greater than zero makes the cycle impossible, choice (d).",
+      "sourceExplanation": "Clausius inequality:\n∮δQ/T = 0: reversible cycle.\n∮δQ/T < 0: irreversible cycle.\n∮δQ/T > 0: impossible cycle.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Clausius Inequality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-603",
+      "number": 603,
+      "source": {
+        "page": 101,
+        "pageEnd": 101,
+        "printedPage": 115,
+        "examLabels": [
+          "GPSC Engineer, Class-II Pre-19.01.2020",
+          "Kerala PSC AE (Irrigation) 05.04.2017",
+          "Kerala PSC Asstt. Prof. 27.09.2016",
+          "J&K PSC Civil Services Pre, 2013"
+        ]
+      },
+      "question": "When two gases suddenly mix up with each other then resultant entropy of the system will:",
+      "options": {
+        "a": "decrease",
+        "b": "remain same",
+        "c": "increase",
+        "d": "may increases of decrease depending upon the initial value"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Sudden mixing of two distinct gases in an isolated enclosure is irreversible and increases the total entropy. For ideal gases initially at the same temperature and pressure, ΔSₘᵢₓ = −Rᵤ∑nᵢ ln yᵢ > 0 because 0 < yᵢ < 1. Equal initial temperatures do not remove the entropy of mixing.\nOnce mixed, the gases cannot be separated into their original pure components without external intervention and compensating changes to the surroundings. The mixed state is the spontaneous direction because total entropy increases. Thus the intended answer is (c).\nIf the two portions are the same gas at the same temperature and pressure, removing a partition causes no distinguishable mixing entropy. That is a different case from mixing distinct gases.",
+      "sourceExplanation": "Entropy increases when two gases mix with each other, but entropy does not increase when the two gases mixing are at the same temperature. It is an irreversible process; they cannot be separated again after mixing without external aid and changing the surroundings.\nThe system prefers the mixed state to the initial state. From the second law, processes that increase entropy are favored over the opposite.",
+      "note": "Corrected the source’s false equal-temperature exception; distinct gases generate mixing entropy even at equal temperature and pressure.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Entropy Change in Mixing of Two Ideal Gases",
+          "url": "https://web.mit.edu/course/16/16.unified/www/FALL/thermodynamics/notes/node54.html",
+          "section": "Section7.1: mixing distinct ideal gases at the same temperature and pressure"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Mixing & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-604",
+      "number": 604,
+      "source": {
+        "page": 101,
+        "pageEnd": 101,
+        "printedPage": 115,
+        "examLabels": [
+          "CGPSC AE 15.01.2021",
+          "WBPSC AE, 2017",
+          "Vizag Steel (MT) 2017"
+        ]
+      },
+      "question": "Which of the following processes is irreversible process",
+      "options": {
+        "a": "Isothermal",
+        "b": "Adiabatic",
+        "c": "Throttling",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Throttling through a finite pressure drop is inherently irreversible. Under the standard steady-flow assumptions of no shaft work, no heat transfer and negligible changes in kinetic and potential energy, h₁ = h₂.\nThus no work is done (W = 0), the process is adiabatic (Q = 0), and it is called isenthalpic. Entropy nevertheless increases because the pressure-drop process generates entropy.\nAn isothermal or an adiabatic process can be either reversible or irreversible, so those labels alone do not imply irreversibility.",
+      "sourceExplanation": "Throttling process:\n• No change in enthalpy from state 1 to state 2: h₁ = h₂.\n• No work is done: W = 0.\n• Called isenthalpic.\n• Adiabatic: Q = 0.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Throttling & Irreversibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-605",
+      "number": 605,
+      "source": {
+        "page": 101,
+        "pageEnd": 101,
+        "printedPage": 115,
+        "examLabels": [
+          "HPPSC LECT. 2016",
+          "TNPSC AE 2014",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "The change in entropy is zero during ............ process.",
+      "options": {
+        "a": "Polytropic",
+        "b": "Adiabatic",
+        "c": "constant pressure",
+        "d": "Hyperbolic"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "In a reversible adiabatic process, no heat enters or leaves the gas, δQ = 0, and entropy generation is zero. Hence ΔS = 0. On a T–S graph this is the vertical line 1–2 shown in the source.\nThe printed alternative (b) only says “Adiabatic.” For a closed system an irreversible adiabatic process has ΔS = Sgₑₙ > 0, so adiabatic alone does not guarantee zero entropy change. None of the other process names guarantees it either.\nThe source explanation supplies the missing reversibility condition, but it is absent from the question and option. There is no unconditionally correct printed choice.",
+      "sourceExplanation": "In a reversible adiabatic process, no heat enters or leaves the gas.\nδQ = 0; δS = 0.\nThe change of entropy during a reversible adiabatic process is zero. The reversible adiabat on the T–S graph is a vertical straight line 1–2.",
+      "note": "Source (b) requires the adjective “reversible,” which is missing from the printed choice. Kept ungraded.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Adiabatic & Isentropic Processes",
+      "figures": [
+        {
+          "page": 101,
+          "bbox": [
+            377,
+            104,
+            454,
+            183
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "T–S diagram shows vertical reversible adiabatic path1–2 at constant entropy, with temperature increasing."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-606",
+      "number": 606,
+      "source": {
+        "page": 101,
+        "pageEnd": 101,
+        "printedPage": 115,
+        "examLabels": [
+          "CGPSC Asstt. Workshop Supt., 17.07.2016",
+          "ISRO Scientist/Engineer 12.05.2013",
+          "GATE 1997"
+        ]
+      },
+      "question": "A system undergoes a state change from 1 to 2. According the second law of thermodynamics for the process to be feasible, the entropy change, S,-S; of the system",
+      "options": {
+        "a": "is positive or zero",
+        "b": "is negative or zero",
+        "c": "is zero",
+        "d": "can be positive, negative or zero"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The second law requires ΔSᵤₙᵢᵥₑᵣₛₑ = ΔSₛᵧₛₜₑₘ + ΔSₛᵤᵣᵣₒᵤₙdᵢₙgₛ ≥ 0. It does not require the system’s entropy change alone to be nonnegative.\nA system can gain entropy, lose entropy or have no entropy change, provided the combined system and surroundings satisfy the inequality. Therefore S₂ − S₁ can be positive, negative or zero, choice (d).",
+      "sourceExplanation": "Entropy change ΔS ≥ 0 for the universe, but for the system it can be positive, negative or zero.\n(ΔS)ᵤₙᵢᵥₑᵣₛₑ ≥ 0 by the second law of thermodynamics.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "System & Universe Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-607",
+      "number": 607,
+      "source": {
+        "page": 101,
+        "pageEnd": 101,
+        "printedPage": 115,
+        "examLabels": [
+          "BPSC AE Mains 2017 Paper-V",
+          "TNPSC AE, 2008"
+        ]
+      },
+      "question": "During adiabatic expansion",
+      "options": {
+        "a": "internal energy remains constant",
+        "b": "temperature remains constant",
+        "c": "entropy remains constant",
+        "d": "enthalpy remains constant"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source diagrams show a reversible adiabatic expansion: pressure and temperature fall while entropy remains constant, S₁ = S₂. Under that extra condition (c) is the intended answer.\nThe printed question says only “adiabatic expansion.” Adiabatic means no heat transfer; it does not mean reversible. An irreversible adiabatic expansion can increase entropy. For example, ideal-gas free expansion is adiabatic but leaves internal energy and temperature unchanged while entropy increases.\nThus no listed property is guaranteed to remain constant for every adiabatic expansion, and a unique printed choice cannot be assigned without the missing reversibility condition.",
+      "sourceExplanation": "During adiabatic expansion, entropy is constant.",
+      "note": "The explanation diagrams imply a reversible ideal-gas adiabat, but the question omits that qualification. Preserved source (c); grading disabled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Adiabatic & Isentropic Processes",
+      "figures": [
+        {
+          "page": 101,
+          "bbox": [
+            311,
+            551,
+            426,
+            655
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "P–V diagram shows expansion1–2 to lower pressure and greater volume."
+        },
+        {
+          "page": 101,
+          "bbox": [
+            429,
+            566,
+            519,
+            641
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "T–S diagram shows vertical downward path1–2 with S₁ = S₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-115-608",
+      "number": 608,
+      "source": {
+        "page": 101,
+        "pageEnd": 102,
+        "printedPage": 115,
+        "examLabels": [
+          "TNPSC AE 2014",
+          "APPSC Poly. Lect. 2013"
+        ]
+      },
+      "question": "The entropy may be expressed as a function of",
+      "options": {
+        "a": "pressure and temperature",
+        "b": "temperature and volume",
+        "c": "heat and work",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a simple compressible substance in a single phase, two independent state properties specify the equilibrium state. Entropy may be expressed as s(T,p) or s(T,v).\nFor a constant-specific-heat ideal gas:\nΔs = cₚ ln(T₂/T₁) − R ln(p₂/p₁),\nΔs = cᵥ ln(T₂/T₁) + R ln(v₂/v₁).\nThus both (a) and (b) are valid. Heat and work are path-dependent transfers, not state variables, so (c) is not valid and “All of the above” is not a correct combination.\nThere is no unique single correct alternative, even though the source and its note select (a).",
+      "sourceExplanation": "Entropy may be expressed as a function of pressure and temperature and also of volume.\nΔs = Cₚ ln(T₂/T₁) − R ln(P₂/P₁).\nΔs = Cᵥ ln(T₂/T₁) + R ln(V₂/V₁).\nNote: The official answer key given by the commission TNPSC AE is option (a).",
+      "note": "Both(a) and(b) independently correct; no valid printed combination. Preserved source(a) including official-key note and disabled grading.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy as a Property",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-116-609",
+      "number": 609,
+      "source": {
+        "page": 102,
+        "pageEnd": 102,
+        "printedPage": 116,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II",
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "A process 'A' is irreversible and adiabatic process 'B' is reversible and adiabatic. The entropy change in process 'A' and process 'B', respectively are",
+      "options": {
+        "a": "Zero and positive",
+        "b": "Zero and negative",
+        "c": "Negative and zero",
+        "d": "Positive and zero"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a closed system, ΔS = ∫δQ/Tᵦ + Sgₑₙ. Both processes are adiabatic, so the heat-transfer term is zero.\nProcess A is irreversible and adiabatic: Sgₑₙ > 0, hence ΔSₐ > 0.\nProcess B is reversible and adiabatic: Sgₑₙ = 0, hence ΔSᵦ = 0.\nThe entropy changes are positive and zero, respectively, option (d).",
+      "sourceExplanation": "If process A is irreversible and adiabatic and process B is reversible and adiabatic, their entropy changes are positive and zero respectively.\nProcess A → irreversible adiabatic → ΔS > 0 (positive).\nProcess B → reversible adiabatic → ΔS = 0 (zero).",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Adiabatic & Isentropic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-116-610",
+      "number": 610,
+      "source": {
+        "page": 102,
+        "pageEnd": 102,
+        "printedPage": 116,
+        "examLabels": [
+          "MPPSC AE 08.11.2015",
+          "TSPSC Managers, 2015"
+        ]
+      },
+      "question": "The entropy of universe tends to",
+      "options": {
+        "a": "become zero",
+        "b": "remain constant",
+        "c": "be maximum",
+        "d": "attain a certain finite minimum value"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "In the thermodynamic “universe,” meaning a system plus its surroundings treated as isolated, spontaneous irreversible processes increase total entropy. Equilibrium is the maximum-entropy state consistent with the imposed energy, volume and composition constraints.\nΔSᵤₙᵢ = ΔSₜₒₜₐₗ = ΔSₛᵧₛ + ΔSₛᵤᵣᵣ > 0 for a spontaneous irreversible change. Thus the conventional answer is that entropy tends to a maximum, (c).\nThe printed note attributes (a), “become zero,” to a commission; that contradicts the second-law result and is not supported by the stated conditions.",
+      "sourceExplanation": "The entropy of the universe increases and tends toward the maximum value.\nAccording to the second law, the total entropy of system and surroundings (universe) increases in a spontaneous process.\nΔSᵤₙᵢ = ΔSₜₒₜₐₗ = ΔSₛᵧₛ + ΔSₛᵤᵣᵣ.\nΔSᵤₙᵢ > 0.\nNote: Option (a) is given by the commission.",
+      "note": "Preserved contradictory commission note. Checked(c) in the standard isolated-system equilibrium sense; this is not a claim of a known finite maximum for the cosmological universe.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "System & Universe Entropy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceAnswerMarker": "(c); note: commission (a)"
+    },
+    {
+      "id": "mech-thermodynamics-116-611",
+      "number": 611,
+      "source": {
+        "page": 102,
+        "pageEnd": 102,
+        "printedPage": 116,
+        "examLabels": [
+          "UJVNL AE 12.09.2021",
+          "ISRO Scientist/Engineer (RAC) 07.05.2017",
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "For reversible adiabatic process, change in entropy is",
+      "options": {
+        "a": "positive",
+        "b": "negative",
+        "c": "zero",
+        "d": "depends on pressure"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a closed system, ΔS = ∫δQ/Tᵦ + Sgₑₙ.\nAn adiabatic process has δQ = 0, and a reversible process has Sgₑₙ = 0.\nTherefore a reversible adiabatic process has ΔS = 0.",
+      "sourceExplanation": "For a reversible adiabatic process, change in entropy is zero.\nΔS = δQ/T + δSgₑₙ.\nFor an adiabatic process, δQ = 0; for a reversible process, δSgₑₙ = 0.\nSo for a reversible adiabatic process, ΔS = 0.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Adiabatic & Isentropic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-116-612",
+      "number": 612,
+      "source": {
+        "page": 102,
+        "pageEnd": 102,
+        "printedPage": 116,
+        "examLabels": [
+          "MPPSC AE 2016",
+          "CSE Pre-1999"
+        ]
+      },
+      "question": "When a system undergoes a process such that ∫δQ/T = 0 and ΔS > 0, the process is:",
+      "options": {
+        "a": "isothermal",
+        "b": "reversible adiabatic",
+        "c": "irreversible adiabatic",
+        "d": "isobaric"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a closed system, ΔS = ∫δQ/Tᵦ + Sgₑₙ. The stated integral is zero and ΔS > 0, so Sgₑₙ = ΔS > 0: the process is irreversible.\nIf it is additionally adiabatic, it fits the intended choice (c). However, a zero integral of δQ/T does not prove that no heat crosses the boundary; positive and negative entropy transfers at different parts of a process can cancel. Hence irreversible adiabatic is not uniquely established by the printed conditions.\nFor an adiabatic closed-system process specifically, ΔS > 0 means irreversible, ΔS = 0 means reversible, and ΔS < 0 is impossible. These sign rules do not apply to every nonadiabatic system entropy change.\nThe integral is the entropy transferred with heat; Sgₑₙ accounts for irreversibility such as friction and viscosity. Entropy generation depends on the process path, whereas entropy itself is a state property.",
+      "sourceExplanation": "∫dQ/T > 0 and ΔS > 0: the process is irreversible adiabatic.\n(i) ΔS > 0: irreversible process.\n(ii) ΔS = 0: reversible process.\n(iii) ΔS < 0: not possible.\nΔS = ∫δQ/T + δSgₑₙ.\n∫δQ/T is change in entropy due to external heat exchange by the system.\nδSgₑₙ is change in entropy due to irreversibility like friction, viscosity, etc.\nδSgₑₙ, entropy generation, is a path function and inexact differential.",
+      "note": "Printed solution changes the question’s zero integral to “>0.” Independently, an integral of zero is weaker than adiabaticity, so source(c) is not uniquely justified. Full source explanation preserved and grading disabled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy Balance & Irreversibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-116-613",
+      "number": 613,
+      "source": {
+        "page": 102,
+        "pageEnd": 102,
+        "printedPage": 116,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "GATE 2011"
+        ]
+      },
+      "question": "In an experimental set-up, air flows between two stations P and Q adiabatically. The direction of flow depends on the pressure and temperature conditions maintained at P and Q. At P: 150 kPa and 350 K. At Q: 300 K. Air properties are cₚ = 1.005 kJ/(kg·K), cᵥ = 0.718 kJ/(kg·K), R = 0.287 kJ/(kg·K). If the pressure at Q is 50 kPa, the specific entropy change sQ − sₚ, in kJ/(kg·K), is:",
+      "options": {
+        "a": "— 0.155",
+        "b": "0",
+        "c": "0.160",
+        "d": "0.355"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given pₚ = 150 kPa, Tₚ = 350 K, pQ = 50 kPa and TQ = 300 K.\nFor ideal air, sQ − sₚ = cᵥ ln(TQ/Tₚ) + R ln(vQ/vₚ).\nvQ/vₚ = pₚTQ/(pQTₚ) = (150 × 300)/(50 × 350) = 2.5714.\nThus sQ − sₚ = 0.718 ln(300/350) + 0.287 ln(2.5714)\n             ≈ −0.1107 + 0.2711 = 0.1604 kJ/(kg·K).\nThe equivalent pressure form, 1.005 ln(300/350) − 0.287 ln(50/150), gives the same result.",
+      "sourceExplanation": "Given P₁ = 150 kPa, T₁ = 350 K; P₂ = 50 kPa, T₂ = 300 K.\nSQ − Sₚ = Cᵥ ln(T₂/T₁) + R ln(V₂/V₁).\nV₂/V₁ = P₁T₂/(P₂T₁) = 2.57.\nSQ − Sₚ = −0.1107 + 0.287 ln(2.57).\n= 0.16 kJ/kgK.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Ideal-Gas Entropy Changes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-116-614",
+      "number": 614,
+      "source": {
+        "page": 102,
+        "pageEnd": 103,
+        "printedPage": 116,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "GATE 2011"
+        ]
+      },
+      "question": "In an experimental set-up, air flows between stations P and Q adiabatically. The flow direction depends on their pressures and temperatures. At P: 150 kPa and 350 K. At Q: 300 K. Air properties are cₚ = 1.005 kJ/(kg·K), cᵥ = 0.718 kJ/(kg·K), R = 0.287 kJ/(kg·K). If air must flow from P to Q, the maximum possible pressure at Q, in kPa, is close to:",
+      "options": {
+        "a": "50",
+        "b": "87",
+        "c": "128",
+        "d": "150"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For steady adiabatic flow from P to Q, the specific entropy cannot decrease: sQ − sₚ ≥ 0. The maximum outlet pressure occurs at the reversible limit sQ = sₚ.\nGiven γ = cₚ/cᵥ ≈ 1.4, the isentropic relation is TQ/Tₚ = (pQ/pₚ)⁽ᵞ⁻¹⁾/ᵞ.\n300/350 = (pQ/150)⁽¹·⁴⁻¹⁾/¹·⁴.\nThus pQ = 150(300/350)³·⁵ ≈ 87.45 kPa, closest to 87 kPa.",
+      "sourceExplanation": "Given γ = Cₚ/Cᵥ = 1.4.\nTQ/Tₚ = (pQ/pₚ)⁽ᵞ⁻¹⁾/ᵞ.\n300/350 = (pQ/150)⁽¹·⁴⁻¹⁾/¹·⁴.\npQ = 87.45 kPa.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Adiabatic Flow & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-117-615",
+      "number": 615,
+      "source": {
+        "page": 103,
+        "pageEnd": 103,
+        "printedPage": 117,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "CSE Pre-1996"
+        ]
+      },
+      "question": "In which one of the following processes is there an increase in entropy with no degradation of energy?",
+      "options": {
+        "a": "Polytropic expansion",
+        "b": "Isothermal expansion",
+        "c": "Isochoric heat addition",
+        "d": "Isobaric heat addition"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source selects isothermal expansion. For an ideal gas undergoing reversible isothermal expansion, ΔS = mR ln(V₂/V₁) > 0, while Sgₑₙ = 0 and no exergy is destroyed; the entropy increase is supplied reversibly with heat.\nHowever, “isothermal” alone does not imply reversibility. A free expansion of an ideal gas can be isothermal and irreversible. Conversely, polytropic expansion and constant-volume or constant-pressure heat addition can also be performed reversibly using appropriate boundaries and reservoirs.\nThus the absence of energy degradation depends on reversibility, which the printed alternatives do not specify. Choice (b) is the intended example, but the printed conditions do not establish one unique process.",
+      "sourceExplanation": "Isothermal expansion.",
+      "note": "The complete printed explanation is just “Isothermal expansion.” Expanded the physical distinction: entropy increase need not be generation, and process names alone do not establish zero irreversibility.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "Entropy generation and lost work"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy & Energy Quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-117-616",
+      "number": 616,
+      "source": {
+        "page": 103,
+        "pageEnd": 103,
+        "printedPage": 117,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "ESE 2017, 1997"
+        ]
+      },
+      "question": "A system of 100 kg mass undergoes a process in which its specific entropy increases from 0.3 kJ/kg K to 0.4k J/kg K. At the same time, the entropy of the surrounding decreases from 80 kJ/K to 75 kJ/K. The process is :",
+      "options": {
+        "a": "Reversible and isothermal",
+        "b": "Irreversible",
+        "c": "Reversible only",
+        "d": "Isothermal only"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The total entropy change is ΔSᵤₙᵢᵥ = ΔSₛᵧₛₜₑₘ + ΔSₛᵤᵣᵣₒᵤₙdᵢₙgₛ.\nΔSₛᵧₛₜₑₘ = m(s₂ − s₁) = 100(0.4 − 0.3) = 10 kJ/K.\nΔSₛᵤᵣᵣₒᵤₙdᵢₙgₛ = 75 − 80 = −5 kJ/K.\nThus ΔSᵤₙᵢᵥ = 10 − 5 = 5 kJ/K > 0. The process is irreversible. The entropy data do not establish whether it is isothermal.",
+      "sourceExplanation": "(dS)ᵤₙᵢᵥ = (dS)ₛᵧₛₜₑₘ + (dS)ₛᵤᵣᵣₒᵤₙdᵢₙg.\n= 100(0.4 − 0.3) + (75 − 80).\n= 10 − 5.\n(dS)ᵤₙᵢᵥ = 5.\n(dS)ᵤₙᵢᵥ > 0, so the process is irreversible.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "System & Universe Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-117-617",
+      "number": 617,
+      "source": {
+        "page": 103,
+        "pageEnd": 103,
+        "printedPage": 117,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "ESE 2000"
+        ]
+      },
+      "question": "In which of the following situations, the entropy change is negative?",
+      "options": {
+        "a": "Air expands isothermally from 6 bar to 3 bar",
+        "b": "Air is compressed to half of its volume at constant pressure",
+        "c": "Air is supplied with heat at constant volume till its pressure is doubled",
+        "d": "Air expands adiabatically from 6 bar to 3 bar"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For ideal air, Δs = cₚ ln(T₂/T₁) − R ln(p₂/p₁).\n(a) Isothermal expansion from 6 to 3 bar gives Δs = −R ln(3/6) = R ln 2 > 0.\n(b) At constant pressure, T is proportional to volume. Compression to half the volume gives T₂/T₁ = 1/2 and Δs = cₚ ln(1/2) < 0.\n(c) At constant volume, doubling pressure doubles absolute temperature, so Δs = cᵥ ln 2 > 0.\n(d) For adiabatic expansion of a closed mass, Δs is zero if reversible or positive if irreversible.\nOnly (b) has negative entropy change.",
+      "sourceExplanation": "During compression, as air is compressed to half its volume at constant pressure, entropy change is negative.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Ideal-Gas Entropy Changes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-117-618",
+      "number": 618,
+      "source": {
+        "page": 103,
+        "pageEnd": 103,
+        "printedPage": 117,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-II",
+          "GATE 2010"
+        ]
+      },
+      "question": "Consider two processes:\n(I) A heat source at 1200 K loses 2500 kJ of heat to a sink at 800 K.\n(II) A heat source at 800 K loses 2000 kJ of heat to a sink at 500 K.\nWhich statement is true?",
+      "options": {
+        "a": "Process (I) is more irreversible than Process (II)",
+        "b": "Process (II) is more irreversible than Process (I)",
+        "c": "Irreversibility associated with both processes is equal",
+        "d": "Both processes are reversible"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For heat transfer between reservoirs, entropy generation is ΔS = −Q/Tₕ + Q/Tₗ. At a common environment temperature T₀, destroyed work is I = T₀ΔS, so comparing ΔS compares irreversibility.\nProcess I: ΔSⅠ = −2500/1200 + 2500/800 = 1.04167 kJ/K ≈ 1.04 kJ/K.\nProcess II: ΔSⅡ = −2000/800 + 2000/500 = 1.5 kJ/K.\nSince ΔSⅡ > ΔSⅠ, Process II is more irreversible than Process I, choice (b).",
+      "sourceExplanation": "Process I:\nI = T₀ΔS; I ∝ ΔS.\n(ΔS)Ⅰ = −2500/1200 + 2500/800 = 1.04.\n(ΔS)Ⅰ = 1.04.\nProcess II:\n(ΔS)Ⅱ = −2000/800 + 2000/500.\n(ΔS)Ⅱ = 1.5.\n(ΔS)Ⅱ > (ΔS)Ⅰ.\nHence Process II is more irreversible than Process I.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "Entropy generation and lost work"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy Generation & Lost Work",
+      "figures": [
+        {
+          "page": 103,
+          "bbox": [
+            356,
+            336,
+            471,
+            357
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Process I transfers2500kJ from a1200K reservoir to an800K reservoir."
+        },
+        {
+          "page": 103,
+          "bbox": [
+            370,
+            431,
+            485,
+            456
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Process II transfers2000kJ from an800K reservoir to a500K reservoir."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-117-619",
+      "number": 619,
+      "source": {
+        "page": 103,
+        "pageEnd": 103,
+        "printedPage": 117,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 12.01.2020",
+          "ISRO Scientist/Engineer 2011"
+        ]
+      },
+      "question": "Ninety kilograms of ice at 0°C are completely melted. Find the entropy change, in kJ/K, if T, = 0°C. (Latent heat of fusion is 318.5 kJ/kg.K)",
+      "options": {
+        "a": "0",
+        "b": "45",
+        "c": "105",
+        "d": "85"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given ice mass m = 90 kg and melting temperature T = 0°C ≈ 273 K. The supplied latent heat is L = 318.5 kJ/kg; the extra K⁻¹ in the printed unit is a typo.\nAt constant-temperature melting, ΔS = Qᵣₑᵥ/T = mL/T.\nΔS = (90 × 318.5)/273 = 105 kJ/K.\nUsing 273.15 K gives about104.94kJ/K, which rounds to the same105kJ/K choice. The calculation uses the latent heat specified in the problem.",
+      "sourceExplanation": "Mass m = 90 kg.\nT = 0°C = (0 + 273) K = 273 K.\nLatent heat of fusion L = 318.5 kJ/kgK.\nEntropy change dS = mL/T = dQ/T.\n= (90 × 318.5)/273.\n= 105 kJ/K.",
+      "note": "Preserved the stated numerical latent heat, although it differs from the usual water value, and corrected only its dimensional unit in the checked reasoning.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature Conversion (Exact)"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Phase-Change Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-118-620",
+      "number": 620,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "TNPSC AE 2017",
+          "WBPSC AE 2008"
+        ]
+      },
+      "question": "The change of entropy, when heat is absorbed by the gas, is",
+      "options": {
+        "a": "positive",
+        "b": "negative",
+        "c": "positive or negative",
+        "d": "zero"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For heat absorbed by a closed gas system at positive boundary temperature, the entropy balance is ΔS = ∫δQ/Tᵦ + Sgₑₙ.\nPositive heat input contributes positive entropy transfer, while Sgₑₙ ≥ 0. Thus for the heat-absorption process described, ΔS > 0, choice (a). The relation δQ = T dS is restricted to reversible heat transfer.",
+      "sourceExplanation": "The change of entropy when heat is absorbed by the gas is positive.\nΔS = δQ/T + δSgₑₙ.\nThen δQ increases → ΔS increases.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Heat Transfer & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-118-621",
+      "number": 621,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "Entropy generated (S,.,) can be taken as a criterion to indicate feasibility of process. Which of the following conditions are correct? 1. If Sgen = 0, then the process is a reversible process. 2. 1f Sgen > 0, then the process is an irreversible process. 3. If Sgen < 0, then the process is impossible. Select the correct answer using the code given below:",
+      "options": {
+        "a": "1 and 2 only",
+        "b": "2 and 3 only",
+        "c": "1 and 3 only",
+        "d": "1,2 and 3"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Entropy generation is nonnegative in a possible process.\n1. Sgₑₙ = 0: no entropy is generated; the process is reversible.\n2. Sgₑₙ > 0: entropy is generated; the process is irreversible.\n3. Sgₑₙ < 0: violates the second law; the process is impossible.\nAll three statements are correct, option(d). The criterion must include all irreversibility of the process being assessed.",
+      "sourceExplanation": "All statements are correct:\n• If Sgₑₙ = 0, the process is reversible.\n• If Sgₑₙ > 0, the process is irreversible.\n• If Sgₑₙ < 0, the process is impossible.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy Generation & Feasibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-118-622",
+      "number": 622,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021"
+        ]
+      },
+      "question": "Total energy of the universe",
+      "options": {
+        "a": "is always increasing",
+        "b": "is always decreasing",
+        "c": "either increases or decreases",
+        "d": "is always constant"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "In the classical thermodynamic meaning of the universe as an isolated system plus surroundings, total energy remains constant. The first law states that energy is conserved: it cannot be created or destroyed, but can be converted between forms. Thus(d) is the intended answer.",
+      "sourceExplanation": "The total amount of energy and matter in the universe remains constant, merely changing from one form to another. The first law states that energy is always conserved; it cannot be created or destroyed. Energy can be converted from one form into another.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Energy Conservation & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-118-623",
+      "number": 623,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021"
+        ]
+      },
+      "question": "When the potential gradient in a process is infinitesimal or zero, what will be the change in entropy of the universe?",
+      "options": {
+        "a": "Entropy increases",
+        "b": "Entropy decreases",
+        "c": "No change in entropy",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "In the reversible limit, all driving potential differences are infinitesimal and dissipative effects are absent. Then entropy generation is zero, and the entropy of the combined system and surroundings does not change: ΔSᵤₙᵢᵥ = 0. This is the intended choice(c).\nIf a finite driving difference produces spontaneous transfer, entropy is generated and total entropy increases. The printed note selecting(a) would apply to that irreversible case, rather than the reversible limiting condition described. Other dissipation would also have to be absent for zero total entropy generation.",
+      "sourceExplanation": "When the potential gradient in a process is infinitesimal or zero, there is no change in the entropy of the universe.\nNote: Official answer is given as option(a).",
+      "note": "Preserved contradictory official-key note. Checked(c) for the standard fully reversible limit implied by infinitesimal driving potential, explicitly including the absence of other dissipation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "Entropy generation and lost work"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Reversibility & Entropy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceAnswerMarker": "(c); note: official(a)"
+    },
+    {
+      "id": "mech-thermodynamics-118-624",
+      "number": 624,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "GATE, 1995"
+        ]
+      },
+      "question": "One kilomole of an ideal gas is throttled from an initial pressure of 0.5 MPa to 0.1 MPa. The initial temperature is 300K. The entropy change of the universe is",
+      "options": {
+        "a": "13.38 kJ/K",
+        "b": "4014.3 kJ/K",
+        "c": "0.0446 kJ/K",
+        "d": "0.0446 kJ/K"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given n = 1 kmol, p₁ = 0.5 MPa, p₂ = 0.1 MPa and T₁ = 300 K.\nA standard adiabatic throttling device is isenthalpic. Ideal-gas enthalpy depends only on temperature, so T₂ = T₁.\nΔSgₐₛ = nC̄ₚ ln(T₂/T₁) − nRᵤ ln(p₂/p₁) = −nRᵤ ln(0.1/0.5)\n       = nRᵤ ln5 = 1 × 8.314 × ln5 ≈ 13.38 kJ/K.\nNo heat is transferred to the surroundings, so the universe entropy increase equals the gas entropy increase,13.38kJ/K.",
+      "sourceExplanation": "M = 1 kilomole.\nT₂ = T₁ since for an ideal gas in a throttling(isenthalpic) process temperature remains constant.\nΔs = Cₚ ln(T₂/T₁) − R ln(P₂/P₁).\nΔs = −(R/M) ln(0.1/0.5).\n= −R̄ ln(1/5).\nΔs = 13.38 kJ/K.",
+      "note": "Restored all printed option units; (c) and(d) are duplicates in the scan. Used molar gas constant and total entropy consistently; the unique matching magnitude is(a).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Throttling & Entropy Generation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-118-625",
+      "number": 625,
+      "source": {
+        "page": 104,
+        "pageEnd": 104,
+        "printedPage": 118,
+        "examLabels": [
+          "NLC GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "If heat Q is transferred from a high-temperature reservoir at T₁ to a low-temperature reservoir at T₂, the entropy change of the universe is:",
+      "options": {
+        "a": "Q(T₁ − T₂)/(T₁T₂)",
+        "b": "Q(T₁ − T₂)/(T₁/T₂)",
+        "c": "Q(T₁T₂)/(T₁ − T₂)",
+        "d": "(T₁ − T₂)/(T₂/T₁)"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For reservoir A at T₁, heat Q leaves, so ΔSₐ = −Q/T₁.\nFor reservoir B at T₂, heat Q enters, so ΔSᵦ = +Q/T₂.\nTreating both reservoirs together as an isolated composite, the total entropy change is the sum:\nΔSᵤₙᵢᵥ = ΔSₐ + ΔSᵦ = −Q/T₁ + Q/T₂\n        = Q(T₁ − T₂)/(T₁T₂).\nBecause T₁ > T₂ and Q > 0, the result is positive. The heat-transfer process is possible and irreversible.",
+      "sourceExplanation": "Heat Q is transferred from reservoir at T₁ to the lower-temperature reservoir at T₂.\nFor reservoir A, ΔSₐ = −Q/T₁. It is negative because heat flows out of the reservoir.\nFor reservoir B, ΔSᵦ = +Q/T₂. It is positive because heat flows into the reservoir.\nFor an isolated system at steady state, S = Sₐ + Sᵦ.\n(ΔS)ᵤₙᵢᵥ = (ΔS)ₐ + (ΔS)ᵦ.\n(ΔS)ᵤₙᵢᵥ = −Q/T₁ + Q/T₂.\n(ΔS)ᵤₙᵢᵥ = Q[(T₁ − T₂)/(T₁T₂)].\nT₁ > T₂, so (ΔS)ᵤₙᵢᵥ is positive. The process is irreversible and possible.",
+      "note": "All formula choices restored as printed, including missing Q in(d). Source alternates between heat and heat rate; checked derivation consistently uses heat Q and entropy change.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Irreversibility, Entropy Changes, and Lost Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node48.html",
+          "section": "Entropy generation and lost work"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Reservoir Heat-Transfer Entropy",
+      "figures": [
+        {
+          "page": 104,
+          "bbox": [
+            304,
+            465,
+            504,
+            514
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Reservoir A at T₁ transfers heat Q to reservoir B at T₂. Dashed system boundaries enclose each reservoir."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-119-626",
+      "number": 626,
+      "source": {
+        "page": 105,
+        "pageEnd": 105,
+        "printedPage": 119,
+        "examLabels": [
+          "VIZAG MT, 14.12.2020"
+        ]
+      },
+      "question": "Which of the following states, \"It is impossible, by any means, to reduce any system to the absolute zero of temperature in a_ finite number of operations\"?",
+      "options": {
+        "a": "Kelvin–Planck statement of II law",
+        "b": "Carnot theorem",
+        "c": "Clausius statement of II law",
+        "d": "Fowler–Guggenheim statement of III law"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The statement is the unattainability formulation of the third law of thermodynamics: absolute zero cannot be reached by a finite number of physical cooling operations. Among the printed choices, this is identified as the Fowler–Guggenheim statement of the third law, option(d).",
+      "sourceExplanation": "Fowler–Guggenheim statement of the third law: it is impossible, by any means, to reduce any system to absolute zero temperature in a finite number of operations.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Entropy on a Microscopic Scale",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale",
+          "section": "Third law and finite-step unattainability of absolute zero"
+        },
+        {
+          "title": "NIST: How Low Can Temperature Go? Lord Kelvin and the Science of Absolute Zero",
+          "url": "https://www.nist.gov/blogs/taking-measure/how-low-can-temperature-go-lord-kelvin-and-science-absolute-zero",
+          "section": "Third law and unattainability of absolute zero"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Third Law of Thermodynamics",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-119-627",
+      "number": 627,
+      "source": {
+        "page": 105,
+        "pageEnd": 105,
+        "printedPage": 119,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2"
+        ]
+      },
+      "question": "A mass of 5 kg of water at 293 K is turned completely to ice at 273 K. The entropy change in the process is",
+      "options": {
+        "a": "6.13479 kJ/K",
+        "b": "−1.4847 kJ/K",
+        "c": "−7.6195 kJ/K",
+        "d": "8.3195 kJ/K"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The process has two parts: cooling liquid water from293K to273K, then freezing it at273K.\nUsing the source’s cₚ = 4.2 kJ/(kg·K), the cooling entropy change is ΔScₒₒₗ = mcₚ ln(T₂/T₁) = 5 × 4.2 ln(273/293) ≈ −1.4847 kJ/K.\nFreezing also removes latent heat and gives ΔSfᵣₑₑzₑ = −mLᶠ/Tf. With Lᶠ ≈ 335 kJ/kg, this is approximately −5 × 335/273 = −6.1355 kJ/K.\nThe full water-to-ice entropy change is therefore approximately −1.4847 − 6.1355 = −7.6202 kJ/K, matching the intended full-process alternative(c), −7.6195 kJ/K, within the stated approximate material constants.\nThe printed values also reveal the intended combination: −1.4847 − 6.13479 = −7.61949 kJ/K. The source’s key(b) counts only sensible cooling and omits freezing.",
+      "sourceExplanation": "Given mass of water m = 5 kg, T₁ = 293 K, T₂ = 273 K, Cₚ = 4.2 kJ/kg.\nEntropy change ΔS = mCₚ ln(T₂/T₁).\n= 5 × 4.2 ln(273/293).\n= −1.484 kJ/K.",
+      "note": "Corrected(b) to(c): complete freezing requires the latent-heat entropy term. The problem omits material constants; the printed alternatives imply a latent contribution6.13479kJ/K and total−7.6195kJ/K. Standard approximate Lᶠ335kJ/kg independently gives−7.62kJ/K.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Cooling & Freezing Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-119-628",
+      "number": 628,
+      "source": {
+        "page": 105,
+        "pageEnd": 105,
+        "printedPage": 119,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2"
+        ]
+      },
+      "question": "A perfect gas having P₁ = 0.1 N/mm², V₁ = 0.18 m³ and T₁ = 20°C is compressed to 1/10 of its volume in an isothermal process. The change in entropy is:",
+      "options": {
+        "a": "−141.45 J/K",
+        "b": "141.45 J/K",
+        "c": "−4144.23 J/K",
+        "d": "Zero"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given p₁ = 0.1 N/mm² = 100000 Pa, V₁ = 0.18 m³, T = 20°C ≈ 293 K and V₂ = V₁/10.\nFor an isothermal ideal-gas process, ΔS = mR ln(V₂/V₁). Using mR = p₁V₁/T,\nΔS = (p₁V₁/T) ln(1/10) = (100000 × 0.18/293) ln(0.1)\n   ≈ −141.46 J/K, corresponding to(a), −141.45 J/K.\nThe negative sign is consistent with isothermal compression and entropy rejected with heat.",
+      "sourceExplanation": "Given P₁ = 0.1 N/mm², V₁ = 0.18 m³, T₁ = 20°C = 293 K, and V₂ = V₁/10.\nΔS = mR ln(V₂/V₁).\n= (P₁V₁/T₁) ln[V₁/(10V₁)].\n= (0.1 × 0.18/213) ln(1/10).\nΔS = −141.45 J/K.",
+      "note": "Source final substitution prints213 and omits the pressure unit conversion; its result corresponds to293K and100000Pa. Corrected these steps explicitly while keeping the printed derivation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Ideal-Gas Entropy Changes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-119-629",
+      "number": 629,
+      "source": {
+        "page": 105,
+        "pageEnd": 105,
+        "printedPage": 119,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "If the entropy decreases in a process, the following statement is true",
+      "options": {
+        "a": "the process is impossible",
+        "b": "the process is likely to be exothermic",
+        "c": "the process is likely to be endothermic",
+        "d": "the process cannot be irreversible"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a closed system, ΔS = ∫δQ/Tᵦ + Sgₑₙ, with Sgₑₙ ≥ 0. If the system entropy decreases, it must transfer sufficient entropy out with heat; heat rejection is the intended exothermic behavior in(b).\nFor reversible heat rejection, dS = δQᵣₑᵥ/T < 0. Thus S₂ − S₁ < 0 and S₂ < S₁.\nA system entropy decrease is possible and can occur irreversibly if the surroundings gain enough entropy. It does not imply that total universe entropy decreases.",
+      "sourceExplanation": "In an exothermic process heat is removed from the system.\nδQ is negative.\ndS = δQ/T is negative.\ndS < 0 ⇒ S₂ − S₁ < 0 ⇒ S₂ < S₁.",
+      "note": "The printed word “likely” is retained in(b). Checked explanation uses the closed-system entropy balance and identifies the source’s equality as reversible only.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Entropy Decrease & Heat Rejection",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-119-630",
+      "number": 630,
+      "source": {
+        "page": 105,
+        "pageEnd": 105,
+        "printedPage": 119,
+        "examLabels": [
+          "NLCIL GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "When 7200 kJ of heat is transferred from 1000 K source to 500 K sink, the net change in entropy is about:",
+      "options": {
+        "a": "+3 kJ",
+        "b": "+7 kJ",
+        "c": "−7 kJ",
+        "d": "−3 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The net entropy change equals the source change plus the sink change:\nΔSₙₑₜ = ΔSₛₒᵤᵣcₑ + ΔSₛᵢₙₖ = −7200/1000 + 7200/500\n       = −7.2 + 14.4 = +7.2 kJ/K.\nRounded in magnitude, this corresponds to the printed(b), +7. The printed alternatives use kJ, which is an energy unit; the correct entropy unit is kJ/K.",
+      "sourceExplanation": "Net change in entropy = (ΔS)ₛₒᵤᵣcₑ + (ΔS)ₛᵢₙₖ.\n= −7200/1000 + 7200/500.\n= −7.2 + 14.4.\n(ΔS)ₙₑₜ = +7.2.",
+      "note": "Verified positive7.2kJ/K and intended rounded magnitude(b). Preserved incorrect printed option units instead of silently rewriting the alternatives.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        }
+      ],
+      "topic": "Entropy",
+      "subtopic": "Reservoir Heat-Transfer Entropy",
+      "figures": [],
+      "transcriptionReviewed": true
     }
   ]
 }

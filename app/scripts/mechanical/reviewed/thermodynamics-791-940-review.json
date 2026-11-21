@@ -375,7 +375,7 @@
         "pageEnd": 132,
         "printedPage": 145,
         "examLabels": [
-          "RPSC AE 2018"
+          "RPSC Vice Principal ITI 2018"
         ]
       },
       "question": "The point that connects the saturated-liquid line to the saturated-vapour line is called the",
@@ -403,10 +403,10 @@
         {
           "page": 132,
           "bbox": [
-            98,
-            105,
-            255,
-            210
+            99,
+            107,
+            267,
+            209
           ],
           "placement": "explanation",
           "alt": "Temperature–entropy saturation dome with critical point and saturated-liquid and saturated-vapour lines"
@@ -794,8 +794,8 @@
           "page": 133,
           "bbox": [
             106,
-            588,
-            280,
+            592,
+            259,
             686
           ],
           "placement": "explanation",
@@ -804,10 +804,10 @@
         {
           "page": 133,
           "bbox": [
-            332,
-            103,
-            508,
-            202
+            337,
+            106.5,
+            490,
+            204
           ],
           "placement": "explanation",
           "alt": "Water pressure–temperature phase diagram with negative-slope fusion curve"
@@ -883,7 +883,8 @@
       "topic": "Properties of Pure Substances, Gases and Gas Mixture",
       "subtopic": "Gas mixtures",
       "figures": [],
-      "transcriptionReviewed": true
+      "transcriptionReviewed": true,
+      "optionsUnavailable": true
     },
     {
       "id": "mech-thermodynamics-147-814",
@@ -1149,9 +1150,14 @@
       "note": "Source explicitly acknowledges two valid options. Its sentence about gases except hydrogen, helium and neon giving heating reverses the ordinary cooling/heating distinction; corrected in the reviewed explanation.",
       "references": [
         {
-          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
-          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
-          "section": "Fundamental property equations and Maxwell relations"
+          "title": "NPTEL Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Hydrogen, helium and neon; inversion temperatures"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
         }
       ],
       "topic": "Properties of Pure Substances, Gases and Gas Mixture",
@@ -1552,9 +1558,9 @@
         {
           "page": 136,
           "bbox": [
-            115,
+            116,
             96,
-            241,
+            249,
             198
           ],
           "placement": "explanation",
@@ -1647,10 +1653,10 @@
         {
           "page": 136,
           "bbox": [
-            113,
-            611,
-            258,
-            698
+            91,
+            612,
+            274,
+            699
           ],
           "placement": "explanation",
           "alt": "Source pure-substance saturation dome, incorrectly used to explain humid-air degree of saturation"
@@ -1887,10 +1893,10 @@
         {
           "page": 137,
           "bbox": [
-            106,
-            537,
-            279,
-            663
+            82,
+            539,
+            283,
+            665
           ],
           "placement": "explanation",
           "alt": "Pressure–specific-volume phase-region sketch with critical point, saturated-vapour line and triple-point line"
@@ -2181,7 +2187,7 @@
       "answer": "d",
       "status": "verified",
       "explanation": "The conventional steam-turbine design limit in this question is a minimum quality of about 0.90, corresponding to about 10% moisture by mass. Excess liquid droplets cause blade erosion and losses, so turbine exhaust quality is usually kept around or above this range. Thus the intended choice is (d); the exact allowable limit depends on the turbine design. The source prints only the answer marker and supplies no explanatory derivation.",
-      "sourceExplanation": "",
+      "sourceExplanation": "Ans. (d)",
       "note": "Scan contains no explanation beyond Ans. (d). Added the engineering rationale and qualified the conventional threshold.",
       "references": [
         {
@@ -2411,7 +2417,7 @@
       "answer": null,
       "status": "disputed",
       "explanation": "The four printed choices are T–s sketches. For constant-pressure heating below the critical pressure, initially subcooled water heats toward the saturated-liquid line, vaporizes across the dome at constant saturation temperature, and then superheats to 200°C. Diagram (a) shows all three portions and is the intended source choice. However, the scan literally prints “at a pressure of bar” with the numerical pressure missing. Without a pressure one cannot establish the saturation temperature and hence the precise path from the stated endpoints; the original question is incomplete.",
-      "sourceExplanation": "",
+      "sourceExplanation": "Ans. (a)",
       "note": "The pressure numeral is absent in the native scan, not an OCR omission. Source provides only Ans. (a). All four genuine diagram options are preserved as native crops and readable descriptions.",
       "references": [
         {
@@ -2533,7 +2539,7 @@
       "answer": "b",
       "status": "verified",
       "explanation": "Within the equilibrium wet-vapour region of a pure substance, saturation temperature fixes saturation pressure. An isothermal line is therefore also isobaric, making (b) correct. Pressure and temperature are dependent during the phase change; entropy increases during evaporation because s_fg = h_fg/T > 0; and dryness fraction denotes vapour, not liquid, mass fraction. The source prints only the key.",
-      "sourceExplanation": "",
+      "sourceExplanation": "Ans. (b)",
       "note": "Answer-only source; added the full property reasoning for all alternatives.",
       "references": [
         {
@@ -2784,7 +2790,7 @@
       "answer": "d",
       "status": "verified",
       "explanation": "At commonly encountered moderate pressures and temperatures, oxygen, nitrogen, hydrogen and air are often adequately represented by the ideal-gas equation, choice (d). The alternatives include steam, water vapour, ammonia, sulphur dioxide or moisture, whose states may be close enough to phase change that real-gas or saturation effects require care. Any ideal-gas approximation still depends on pressure, temperature and the required accuracy. The source provides only its key.",
-      "sourceExplanation": "",
+      "sourceExplanation": "Ans. (d)",
       "note": "Restored chemical subscripts from the scan; source is answer-only.",
       "references": [
         {
@@ -3178,6 +3184,2838 @@
       "topic": "Properties of Pure Substances, Gases and Gas Mixture",
       "subtopic": "Equilibrium and flow processes",
       "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-871",
+      "number": 871,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "BPSC AE 2012 Paper-V"
+        ]
+      },
+      "question": "Critical pressure of a liquid is the pressure",
+      "options": {
+        "a": "above which liquid will remain liquid",
+        "b": "above which liquid will become gas",
+        "c": "above which liquid becomes vapour",
+        "d": "above which liquid becomes solid"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Critical pressure is the pressure at the critical point, corresponding to the critical temperature and density where liquid and vapour become indistinguishable. It is not a pressure above which a liquid necessarily becomes vapour; the phase also depends on temperature. None of the printed alternatives gives the definition. The source’s marker (c) and repeated claim are incorrect.",
+      "sourceExplanation": "Critical pressure of a liquid is the pressure above which liquid becomes vapour.",
+      "note": "No printed alternative states pressure at the critical point. Preserved the faulty source key without inventing a replacement choice.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-872",
+      "number": 872,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "A perfect gas obeys",
+      "options": {
+        "a": "Boyle’s law only",
+        "b": "Charles law only",
+        "c": "Boyle’s Charles’ laws both",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A perfect gas obeys both Boyle’s and Charles’s laws, choice (c). Boyle’s law gives inverse pressure–volume variation for fixed mass at constant temperature: PV = K. Charles’s law gives V ∝ T for fixed mass at constant pressure, with T absolute. These follow from PV = mRT.",
+      "sourceExplanation": "A perfect gas obeys Boyle’s and Charles’s law. Boyle’s law: at constant temperature, gas pressure varies inversely with volume, PV = K. Charles’s law: at constant pressure, gas volume is directly proportional to its absolute temperature T.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-873",
+      "number": 873,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "Gases have",
+      "options": {
+        "a": "only one value of specific heat",
+        "b": "two values of specific heat",
+        "c": "three values of specific heat",
+        "d": "no values of specific heat"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The two standard heat capacities used for gases are cₚ at constant pressure and cᵥ at constant volume. For an ideal gas cₚ − cᵥ = R > 0, so cₚ > cᵥ. Thus (b) is the intended answer. More generally a heat input per temperature change can be defined for other specified paths; “two values” refers to these two conventional property heat capacities rather than every possible process heat capacity.",
+      "sourceExplanation": "Gases have two values of specific heat Cₚ and Cᵥ. Cₚ is always greater than Cᵥ. Cₚ > Cᵥ.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-874",
+      "number": 874,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "TRB Poly. Lect., 2012"
+        ]
+      },
+      "question": "Steam has a specific saturation temperature at",
+      "options": {
+        "a": "each volume",
+        "b": "each pressure",
+        "c": "each enthalpy",
+        "d": "each entropy"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "For liquid–vapour equilibrium of pure water, each saturation pressure has one corresponding saturation temperature. Thus steam has a specific saturation temperature at each pressure, (b). This is not limited to one atmospheric pressure. The source then discusses humid air: saturation corresponds to equilibrium water-vapour partial pressure at the air temperature, and equality of dew-point temperature and air temperature indicates saturated air. That humid-air criterion is distinct from the pure-steam pressure–temperature relation.",
+      "sourceExplanation": "Steam has a specific saturation temperature at each atmospheric pressure. Saturation state exists when air is holding the maximum amount of water vapour possible at the existing temperature and pressure. When DPT and air temperature are equal, the air is said to be saturated.",
+      "note": "Kept the whole source discussion while distinguishing water saturation pressure from humid-air partial pressure.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "NPTEL Properties of Atmospheric Air",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture35/35_4.htm",
+          "section": "Humidity ratio and dew point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-875",
+      "number": 875,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "APGENCO AE 2012"
+        ]
+      },
+      "question": "When wet steam is throttled to a low pressure, its temperature",
+      "options": {
+        "a": "Increases",
+        "b": "Does not change",
+        "c": "Gets halved",
+        "d": "Decreases"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the conventional throttling of wet steam to a lower pressure, enthalpy stays constant while the corresponding saturation temperature decreases. If the exit remains in the wet region, T₂ = T_sat(P₂) < T_sat(P₁); if the pressure drop produces superheated steam, the final temperature is obtained from the same h at the exit pressure. The intended ordinary wet-steam result is a temperature decrease, choice (d). The source’s T–P sketch shows constant-enthalpy curves and distinguishes positive-slope cooling from negative-slope heating regions; general real gases need not always cool.",
+      "sourceExplanation": "When wet steam is throttled through a valve to a low pressure, its temperature decreases.\n[T–P sketch with constant-enthalpy curves: cooling region, positive slope; heating region, negative slope.]",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Throttling process",
+      "figures": [
+        {
+          "page": 141,
+          "bbox": [
+            105,
+            648,
+            267,
+            742
+          ],
+          "placement": "explanation",
+          "alt": "T–P isenthalpes with positive-slope cooling and negative-slope heating regions"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-876",
+      "number": 876,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "Which is a single phase system ?",
+      "options": {
+        "a": "Mixture of water and alcohol",
+        "b": "Mixture of oil and water",
+        "c": "Liquid water, ice and water vapour",
+        "d": "Water and ice"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Water and ordinary alcohol such as ethanol form a homogeneous miscible liquid solution and therefore one phase, choice (a). Oil and water generally form separate liquid phases; water with ice has two phases; and liquid water, ice and water vapour has three.",
+      "sourceExplanation": "Single phase system is mixture of water and\nalcohol.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Systems and phases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-877",
+      "number": 877,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "A fluid behave as an ideal gas provided it is at:",
+      "options": {
+        "a": "High Temperature and Pressure",
+        "b": "High Temperature and Moderate Pressure",
+        "c": "Low Temperature and Pressure",
+        "d": "High Temperature and Low Pressure"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "At high temperature and low pressure a real gas is dilute, intermolecular attractions become relatively unimportant and the molecular volume is negligible compared with total gas volume. It then approaches the perfect or ideal-gas equation, giving (d).",
+      "sourceExplanation": "A real gas obeys perfect-gas law at high temperature and low pressure.\n• Intermolecular attraction between molecules is negligible.\n• Volume occupied by molecules compared to total volume is negligible.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Ideal-gas approximation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-878",
+      "number": 878,
+      "source": {
+        "page": 141,
+        "pageEnd": 141,
+        "printedPage": 155,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "Match the following:\n1. Empirical temperature\n2. Polarization\n3. Heat transfer\n4. Joule’s experiment\n5. Diathermic\n\na. Path function\nb. Permeable to heat transfer\nc. Mechanical equivalent of heat\nd. Isotherm\ne. Dipole moment",
+      "options": {
+        "a": "1–d, 2–a, 3–e, 4–c, 5–b",
+        "b": "1–d, 2–e, 3–a, 4–c, 5–b",
+        "c": "1–d, 2–b, 3–a, 4–c, 5–e",
+        "d": "1–d, 2–c, 3–b, 4–a, 5–e"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The matches are: 1. Empirical temperature → d. Isotherm, because an isotherm groups states of equal empirical temperature. 2. Polarization → e. Dipole moment. 3. Heat transfer → a. Path function. 4. Joule’s experiment → c. Mechanical equivalent of heat. 5. Diathermic → b. Permeable to heat transfer. The sequence 1–d, 2–e, 3–a, 4–c, 5–b is choice (b).",
+      "sourceExplanation": "1. Empirical temperature | Isotherm\n2. Polarization | Dipole moment\n3. Heat transfer | Path function\n4. Joule’s experiment | Mechanical equivalent of heat\n5. Diathermic | Permeable to heat transfer",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Matching thermodynamic concepts",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-155-879",
+      "number": 879,
+      "source": {
+        "page": 141,
+        "pageEnd": 142,
+        "printedPage": 155,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2010"
+        ]
+      },
+      "question": "For real gases Cp = Cy at :",
+      "options": {
+        "a": "Critical temperature",
+        "b": "Triple point",
+        "c": "Absolute zero temperature",
+        "d": "All temperature"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Heat capacity depends on the material, its amount and its state. For approximately constant molar heat capacity C, the source writes Q = nCΔT, where Q is heat input, n is amount in moles and ΔT is temperature rise. At constant pressure heat input changes enthalpy and defines Cₚ; at constant volume it changes internal energy and defines Cᵥ. In a stable single phase, Cₚ − Cᵥ = T V α²/κ_T ≥ 0. In the regular third-law low-temperature limit both heat capacities tend to zero and their difference vanishes, which is the formal reason behind source choice (c), absolute zero. A real substance will not remain an ordinary equilibrium gas down to absolute zero, and cₚ > cᵥ is not an unrestricted statement at every limiting state.",
+      "sourceExplanation": "Heat capacity depends on nature, size and composition of the substance in the system.\nThe heat-capacity equation is Q = nCΔT. Q is heat supplied; n is number of moles; C is molar heat capacity; ΔT is temperature change.\nCₚ is heat capacity at constant pressure: heat absorbed or released by unit mass with change in temperature at constant pressure. The temperature change changes the enthalpy of the system.\nCᵥ is heat capacity at constant volume: heat absorbed or released by unit mass at constant volume.\nThe value of Cₚ is always greater than Cᵥ. But at absolute zero temperature Cₚ = Cᵥ.",
+      "note": "Preserved the full two-page discussion. The source answer is only a formal low-temperature limit; corrected its absolute gas-phase and strict-inequality claims.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific heats and low-temperature limit",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-880",
+      "number": 880,
+      "source": {
+        "page": 142,
+        "pageEnd": 142,
+        "printedPage": 156,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2009"
+        ]
+      },
+      "question": "The critical point and triple point data for water are T_c = 374°C, P_c = 22.1 MPa, T_T = 0.01°C, P_T = 0.6 kPa. Indicate the phase change that will occur in the following cases:\n(i) Ice at 0.5 kPa is heated isobarically.\n(ii) Water vapour at 400°C is compressed isothermally.\nUse the labeled P–T diagram.",
+      "options": {
+        "a": "(i) along AB, (ii) along CD",
+        "b": "(i) along CD, (ii) along AB",
+        "c": "(i) along OD, (ii) along PR",
+        "d": "(i) along RD, (ii) along OR"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "(i) The stated pressure 0.5 kPa is below the triple-point pressure, about 0.6 kPa. Isobaric heating is a horizontal path on the P–T diagram, AB, and crosses the solid–vapour boundary: ice sublimates without a stable liquid stage.\n(ii) At 400°C the temperature exceeds water’s critical temperature near 374°C. Isothermal compression is a vertical path, CD, and does not cross a liquid–vapour phase boundary; a distinct liquid cannot be formed by pressure alone above T_c.\nTherefore the diagram paths are (i) AB and (ii) CD, option (a). The source explanation repeats the critical pressure as 22.1 kPa; the question correctly gives 22.1 MPa. Its explanation also says 370°C although the specified temperature is 400°C.",
+      "sourceExplanation": "T_c = 374°C, P_c = 22.1 kPa, T_T = 0.01°C, P_T = 0.6 kPa.\n[Repeated P–T diagram with paths AB and CD, triple and critical points.]\n(I) Ice at 0.5 kPa is heated isobarically, i.e. at constant pressure 0.5 kPa. Isobaric heating is represented on the P–T diagram along AB.\n(II) Water vapour at 400°C, i.e. water-vapour region got after critical-point temperature along 370°C. It is represented on the P–T diagram along CD.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 142,
+          "bbox": [
+            147,
+            251,
+            220,
+            345
+          ],
+          "placement": "question",
+          "alt": "P–T phase diagram with labeled paths AB and CD, triple point and critical point"
+        },
+        {
+          "page": 142,
+          "bbox": [
+            147,
+            428,
+            221,
+            519
+          ],
+          "placement": "explanation",
+          "alt": "Repeated P–T diagram used in the source explanation"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-881",
+      "number": 881,
+      "source": {
+        "page": 142,
+        "pageEnd": 142,
+        "printedPage": 156,
+        "examLabels": [
+          "UPSC JWM Adv. No-16/2009"
+        ]
+      },
+      "question": "The magnitude of which one of the following quantity does not indicate the departure of a real gas from the ideal gas behavior:",
+      "options": {
+        "a": "Compressibility factor",
+        "b": "Joule-Kelvin coefficient",
+        "c": "Fugacity",
+        "d": "Entropy"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Compressibility factor Z differs from 1 for a nonideal gas, and a nonzero Joule–Kelvin coefficient indicates real-gas throttling behaviour. Fugacity f is an effective pressure: ideal gases have f = P, so the fugacity coefficient f/P or departure of f from P measures nonideality. Entropy itself has no universal ideal-gas benchmark and its absolute magnitude does not by itself measure departure from ideal-gas behaviour. The standard checked answer is therefore (d), rather than the source’s (c).",
+      "sourceExplanation": "The magnitude of fugacity does not indicate the departure of a real gas from ideal-gas behaviour.",
+      "note": "Corrected source key (c) to (d). A raw fugacity must be compared with pressure, but fugacity is expressly the real-gas correction to the ideal-pressure description; entropy alone is not a departure factor.",
+      "references": [
+        {
+          "title": "NPTEL Reaction Thermodynamics: Fugacity and Activity",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module3/lec5/1.html",
+          "section": "Fugacity equals pressure for an ideal gas"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Real-gas departures",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-882",
+      "number": 882,
+      "source": {
+        "page": 142,
+        "pageEnd": 142,
+        "printedPage": 156,
+        "examLabels": [
+          "UPSC JWM Adv. No-16/2009",
+          "ESE 2015"
+        ]
+      },
+      "question": "In order to determine the quality of wet steam by a separating and throttling calorimeter, the steam should be throttled such that the final state is :",
+      "options": {
+        "a": "Saturated vapour only",
+        "b": "Superheated vapour only",
+        "c": "At a pressure higher than the original pressure",
+        "d": "A mixture of saturated liquid and saturated vapour"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Throttling conserves enthalpy. To infer the inlet wet-steam quality from the measured exit pressure and temperature, the exit must be in the superheated single-phase region, where those two properties determine h₂ uniquely. Then h₁ = h₂ and x₁ = (h₂ − h_f₁)/h_fg₁. In the two-phase region pressure and temperature alone cannot determine quality. Therefore (b), superheated vapour only.",
+      "sourceExplanation": "In order to determine the quality of wet steam\nby a separating and throttling calorimeter, the steam\nshould be throttled such that the final state is\nSuperheated vapour only.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam calorimeters",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-883",
+      "number": 883,
+      "source": {
+        "page": 142,
+        "pageEnd": 142,
+        "printedPage": 156,
+        "examLabels": [
+          "DRDO Scientists 2009"
+        ]
+      },
+      "question": "A pressure-cooker contains water at 100°C with liquid volume being one-tenth of vapour volume. At 100°C, the specific volume for saturated liquid and saturated vapour are 0.001 m³/kg and 1.6 m³/kg, respectively. The dryness fraction for the mixture is",
+      "options": {
+        "a": "1/160",
+        "b": "1/161",
+        "c": "160/161",
+        "d": "1"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Let total volume be V. The liquid volume is one tenth of vapour volume: V_f = V_g/10, so V_g = 10V/11 and V_f = V/11. With v_g = 1.6 m³/kg and v_f = 0.001 m³/kg,\nm_g = (10V/11)/1.6,\nm_f = (V/11)/0.001.\nQuality x = m_g/(m_f + m_g) = (10/1.6)/[(10/1.6) + 1000] = 6.25/1006.25 = 1/161 ≈ 0.006211.\nThus (b); a large vapour volume can still contain little vapour mass because of its much lower density.",
+      "sourceExplanation": "V_f + V_g = V; V_f = V_g/10. Thus V_g = 10V/11 and V_f = V/11.\nx = m_g/(m_f + m_g), m_g = (10/11) × V/1.6 kg, m_f = (1/11) × V/0.001 kg.\nx = (10/1.6)/[(10/1.6) + 1000] = 100/16100 = 1/161.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-884",
+      "number": 884,
+      "source": {
+        "page": 142,
+        "pageEnd": 142,
+        "printedPage": 156,
+        "examLabels": [
+          "UPSC JWM Adv. No-16/2009"
+        ]
+      },
+      "question": "Which one of the following remains constant for a system undergoing phase change like melting or vaporization?",
+      "options": {
+        "a": "Enthalpy",
+        "b": "Entropy",
+        "c": "Volume",
+        "d": "Gibbs function"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "At equilibrium phase change under constant pressure and temperature, the coexisting phases have equal chemical potential, i.e. equal molar or specific Gibbs free energy. Changing the fraction of phases therefore leaves that Gibbs function unchanged for fixed total amount, choice (d). Enthalpy, entropy and volume generally change. This follows from G’s natural variables T and P and equality of phase chemical potentials.",
+      "sourceExplanation": "Since Gibbs function depends naturally on thermodynamic variables p and T, and common phase transitions occur at constant p and T, the molar/specific Gibbs function tends to be constant during phase change.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gibbs energy and phase equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-156-885",
+      "number": 885,
+      "source": {
+        "page": 142,
+        "pageEnd": 143,
+        "printedPage": 156,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2009"
+        ]
+      },
+      "question": "In the van der Waals gas equation (p + a/v²)(v − b) = RT, the constant a is introduced to compensate for",
+      "options": {
+        "a": "Reduction in specific volume",
+        "b": "Inter-molecular forces",
+        "c": "Reduction in specific heat",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "In the van der Waals equation (P + a/v²)(v − b) = RT, a/v² corrects pressure for attractive intermolecular forces; thus a is introduced to account for those forces, choice (b). The parameter b is the excluded-volume correction associated with finite molecular size, rather than the entire macroscopic gas volume.",
+      "sourceExplanation": "Van der Waals gas equation (P + a/V²)(V − b) = RT, where a accounts for intermolecular force and b is volume occupied by the gas.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Van der Waals equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-886",
+      "number": 886,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "DRDO Scientists 2008"
+        ]
+      },
+      "question": "For water boiling at constant pressure of 1 bar, the specific heat is",
+      "options": {
+        "a": "zero",
+        "b": "very small but positive",
+        "c": "negative",
+        "d": "infinitely large"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "During constant-pressure boiling, a finite amount of heat supplies latent enthalpy while temperature remains at T_sat. The apparent process heat capacity is cₚ = δqₚ/dT; because dT = 0 during the transition, it is described as infinitely large, choice (d). This is a phase-change process ratio, not a finite single-phase material heat capacity evaluated within either phase.",
+      "sourceExplanation": "For water boiling at constant pressure of 1 bar, specific heat is infinitely large. During boiling pressure and temperature do not change. Cₚ = dQ/dT. dT = 0 ⇒ Cₚ = ∞.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Latent heat and apparent heat capacity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-887",
+      "number": 887,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "WBPSC AE, 2007"
+        ]
+      },
+      "question": "For pure water the triple point temperature is",
+      "options": {
+        "a": "273K",
+        "b": "273.16 K",
+        "c": "273.1K",
+        "d": "273.2K"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The triple-point temperature of ordinary pure water is approximately 273.16 K, corresponding to 0.01°C. Hence (b). The source prints only the answer marker.",
+      "sourceExplanation": "Ans. (b)",
+      "note": "Answer-only source; checked against water phase-change reference data.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-888",
+      "number": 888,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "BHEL ET 2019"
+        ]
+      },
+      "question": "Which of the given statements is true?",
+      "options": {
+        "a": "At the critical point, all the three phases of water coexist in equilibrium.",
+        "b": "At the critical point, saturated liquid and saturated vapour phases are identical",
+        "c": "At the triple point, all the phases of water coexist in non-equilibrium",
+        "d": "At the triple point, saturated liquid and saturated vapour phases are identical."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "At the critical point, saturated liquid and saturated vapour become identical and their coexistence curves meet, so (b). The latent heat of vaporization tends to zero there. This is not the three-phase triple point, and describing it as a sudden liquid “flash” is misleading: the distinction between liquid and vapour disappears continuously at the critical endpoint. The source diagram shows the meeting of the saturated boundaries and lower-pressure horizontal phase-change lines.",
+      "sourceExplanation": "[T–s dome with critical point, T_cr, P_cr, saturated-liquid and saturated-vapour lines and lower pressure levels P₂ and P₁.]\n• Critical point is a point where saturated-liquid and saturated-vapour curves meet.\n• At critical point a liquid directly flashes into vapour.\n• At critical point latent heat of vaporization is zero.",
+      "note": "Kept the full source diagram and three explanatory points; corrected its flash-vaporization description.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 143,
+          "bbox": [
+            75,
+            599,
+            290,
+            697
+          ],
+          "placement": "explanation",
+          "alt": "T–s dome showing saturated boundaries meeting at the critical point and lower-pressure phase-change lines"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-889",
+      "number": 889,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "BPSC Poly. Lect. 2016",
+          "VIZAG STEEL MT 2015",
+          "J & K PSC Civil Services Pre, 2013",
+          "UKPSC AE 2012 Paper-II",
+          "TNPSC ACF 2012",
+          "ISRO Scientist/Engineer 2007"
+        ]
+      },
+      "question": "The equation (P + a/V²)(V − b) = RT is known as",
+      "options": {
+        "a": "perfect gas equation",
+        "b": "Maxwell's equation",
+        "c": "kinetic theory of gases equation",
+        "d": "Vander walls equation"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The equation (P + a/v²)(v − b) = RT is the van der Waals equation of state, choice (d). The ideal-gas model treats molecules as point particles with elastic collisions and negligible interactions, a good approximation for dilute gases. Van der Waals’s modification, proposed in 1873, accounts for finite molecular size through excluded volume b and intermolecular attractions through a/v². These effects can produce measurable departures from ideal-gas behaviour.",
+      "sourceExplanation": "Van der Waals equation: (P + a/V²)(V − b) = RT.\nThe ideal gas law treats gas molecules as point particles with perfectly elastic collisions. This works well for dilute gases in many experimental circumstances. But gas molecules are not point masses, and their properties can have an experimentally measurable effect. Johannes D. van der Waals proposed a modification in 1873 to take into account molecular size and molecular interaction forces. It is usually referred to as the van der Waals equation of state.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Van der Waals equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-890",
+      "number": 890,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "VIZAG Steel MT 24.01.2021, Shift-I",
+          "TNPSC AE (Industries) 09.06.2013"
+        ]
+      },
+      "question": "The volume of a perfect gas varies directly as its absolute temperature when the absolute pressure remains constant. This law is called",
+      "options": {
+        "a": "Charles Law",
+        "b": "Joule's Law",
+        "c": "Gay Lussac Law",
+        "d": "Boyle's Law"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Charles’s law states that, for a fixed amount of perfect gas at constant absolute pressure, volume is directly proportional to absolute temperature. Thus V₁/T₁ = V₂/T₂, giving (a).",
+      "sourceExplanation": "Charles’s law states that volume of a gas is directly proportional to its absolute temperature, assuming the quantity of gas and pressure remain constant. V₁/T₁ = V₂/T₂.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-891",
+      "number": 891,
+      "source": {
+        "page": 143,
+        "pageEnd": 143,
+        "printedPage": 157,
+        "examLabels": [
+          "ISRO Scientist/Engineer 17.12.2017"
+        ]
+      },
+      "question": "Isothermal compressibility of an ideal gas is",
+      "options": {
+        "a": "nR/(VP)",
+        "b": "nRT/(VP²)",
+        "c": "nR/(VP²)",
+        "d": "nRT/(VP)"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Isothermal compressibility is κ_T = −(1/V)(∂V/∂P)ₜ. From PV = nRᵤT, V = nRᵤT/P and (∂V/∂P)ₜ = −nRᵤT/P². Therefore\nκ_T = nRᵤT/(VP²) = 1/P,\nwhich is printed choice (b).",
+      "sourceExplanation": "Isothermal compressibility = −(1/V)(∂V/∂P) at T = constant = −(1/V)∂(nRT/P)/∂P = −(1/V)(−nRT/P²) = nRT/(VP²).",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Compressibility coefficients",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-157-892",
+      "number": 892,
+      "source": {
+        "page": 143,
+        "pageEnd": 144,
+        "printedPage": 157,
+        "examLabels": [
+          "GMB AAE 25.06.2017"
+        ]
+      },
+      "question": "For a perfect gas, according to Boyle's law",
+      "options": {
+        "a": "PV =constant, if T is kept constant",
+        "b": "V/T= constant, if P is kept constant",
+        "c": "P/T = constant, if V is kept constant",
+        "d": "T/P = constant, if V is kept constant"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Boyle’s law applies to a fixed amount of perfect gas at constant temperature. Pressure is inversely proportional to volume: P ∝ 1/V, or P = k/V. Hence PV = k = constant, which is (a). The other choices state constant-pressure or constant-volume temperature relations.",
+      "sourceExplanation": "Boyle’s law: At constant temperature pressure is inversely proportional to volume. Mathematically, P ∝ 1/V, P = k/V, PV = k where k is a constant. PV = constant.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-893",
+      "number": 893,
+      "source": {
+        "page": 144,
+        "pageEnd": 144,
+        "printedPage": 158,
+        "examLabels": [
+          "Oil India Limited Sr. Engineer (Drilling) 30.11.2019",
+          "SJVN ET 2019",
+          "CGPSC Poly. Lect. 22.05.2016",
+          "BPSC AE Mains 2017 Paper-V",
+          "MPPSC AE 2016",
+          "Vizag Steel MT (Re-Exam) 24.11.2013",
+          "ESE 2012, 1995"
+        ]
+      },
+      "question": "Joule–Thomson coefficient is defined as:",
+      "options": {
+        "a": "(∂T/∂P)ₕ",
+        "b": "(∂H/∂P)ₜ",
+        "c": "(∂H/∂T)ₚ",
+        "d": "(∂P/∂T)ₕ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The Joule–Thomson coefficient is μ_JT = (∂T/∂P)ₕ: the local temperature change per pressure change along an isenthalpic path. It generally varies with both temperature and pressure. For an ideal gas, h depends only on temperature, so constant h implies constant T and μ_JT = 0. Thus (a).",
+      "sourceExplanation": "The change in temperature with drop in pressure at constant enthalpy is termed the Joule–Thomson coefficient μ. μ = (∂T/∂P)ₕ. It varies with both temperature and pressure of the gas. Joule–Thomson coefficient for an ideal gas is zero.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-894",
+      "number": 894,
+      "source": {
+        "page": 144,
+        "pageEnd": 144,
+        "printedPage": 158,
+        "examLabels": [
+          "Kerala PSC AM 09.08.2021",
+          "Kerala PSC AE (Irrigation) 05.04.2017",
+          "APPSC AEE Mains 2016 Paper-III",
+          "SJVN ET 2013",
+          "OPSC Civil Services Pre 2006",
+          "ESE 1999"
+        ]
+      },
+      "question": "Which relationship defines Gibbs free energy G:",
+      "options": {
+        "a": "G=H+TS",
+        "b": "G=H-TS",
+        "c": "G=U+TS",
+        "d": "F=U+TS"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Gibbs free energy is G = H − TS, choice (b). At constant temperature and pressure, its decrease bounds the maximum reversible non-expansion work obtainable from a closed system under the usual equilibrium assumptions. The source’s description as maximum reversible work needs this non-expansion-work qualification.",
+      "sourceExplanation": "Gibbs free energy is a thermodynamic potential that can be used to calculate the maximum reversible work that may be performed by a thermodynamic system at constant temperature and pressure. G = H − TS.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Thermodynamic potentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-895",
+      "number": 895,
+      "source": {
+        "page": 144,
+        "pageEnd": 144,
+        "printedPage": 158,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "ISRO Scientist/Engineer 03.07.2016",
+          "CGPSC AE 16.10.2016",
+          "APSC AEE 2012",
+          "DRDO Scientists 2009",
+          "WBPSC AE, 2007"
+        ]
+      },
+      "question": "Joule-Thomson coefficient for an ideal gas is",
+      "options": {
+        "a": "higher than zero",
+        "b": "less than zero",
+        "c": "zero",
+        "d": "1"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "μ_JT = (∂T/∂P)ₕ. For an ideal gas h = h(T), so an isenthalpic process has constant temperature and μ_JT = 0, choice (c). For a pressure drop, μ_JT > 0 denotes cooling, whereas μ_JT < 0 denotes heating.",
+      "sourceExplanation": "Joule–Thomson coefficient μ = (∂T/∂P)ₕ; h = constant. For ideal gas μ = 0. Note: cooling region μ is positive; heating region μ is negative.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-896",
+      "number": 896,
+      "source": {
+        "page": 144,
+        "pageEnd": 144,
+        "printedPage": 158,
+        "examLabels": [
+          "Gujarat PSC AE 2019",
+          "GPSC ARTO Pre 30.12.2018",
+          "TANGEDCO AE 2015",
+          "ISRO Scientist/Engineer 11.10.2015",
+          "VIZAG STEEL MT 18.08.2013",
+          "VIZAG STEEL MT 10.06.2012"
+        ]
+      },
+      "question": "A gas having a negative Joule–Thomson effect (μ < 0), when throttled will:",
+      "options": {
+        "a": "Become cooler",
+        "b": "Become warmer",
+        "c": "Remain in the same temperature",
+        "d": "Become Cooler or warmer depending upon the type of gas"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "During throttling the pressure decreases, dP < 0, and dT = μ_JT dP at constant enthalpy. If μ_JT < 0, then dT > 0: the gas becomes warmer, choice (b). The source inversion-curve sketch labels the positive-coefficient cooling side and the negative-coefficient heating side.",
+      "sourceExplanation": "A gas having negative Joule–Thomson effect μ < 0 becomes warmer when throttled.\n[T–P isenthalpes and inversion curve; cooling region μ > 0, heating region μ < 0.]",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [
+        {
+          "page": 144,
+          "bbox": [
+            347,
+            359,
+            479,
+            459
+          ],
+          "placement": "explanation",
+          "alt": "Isenthalpes and inversion curve with Joule–Thomson cooling and heating regions"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-897",
+      "number": 897,
+      "source": {
+        "page": 144,
+        "pageEnd": 144,
+        "printedPage": 158,
+        "examLabels": [
+          "HPCL Engineer 12.08.2021 Shift-II",
+          "OPSC AEE 2019 Paper-II",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "Kerala PSC Poly. Lect. 09.01.2014",
+          "BPSC AE 2012 Paper-V",
+          "ESE 2007"
+        ]
+      },
+      "question": "The Helmholtz function F is defined as",
+      "options": {
+        "a": "F=H+TS",
+        "b": "F=H-TS",
+        "c": "F=U+TS",
+        "d": "F=U-TS"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Helmholtz free energy is F = U − TS, choice (d). For a closed system exchanging heat reversibly with a reservoir at fixed temperature, its decrease gives the maximum total work under the relevant isothermal conditions. Gibbs free energy is G = H − TS; at fixed temperature and pressure its decrease bounds reversible non-expansion work. The source’s simple closed-system/open-system distinction is incomplete: the constraints and type of work, rather than openness alone, determine the appropriate potential.",
+      "sourceExplanation": "Helmholtz function F = U − TS. The difference in Helmholtz function gives maximum work in a closed system.\nGibbs function G = H − TS. The difference in Gibbs function gives maximum work in an open system.",
+      "note": "Correct definition and key retained; corrected the source’s overgeneralized maximum-work conditions.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Thermodynamic potentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-158-898",
+      "number": 898,
+      "source": {
+        "page": 144,
+        "pageEnd": 145,
+        "printedPage": 158,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "GPSC ARTO Pre-30.12.2018",
+          "VIZAG Steel MT 18.08.2013",
+          "VIZAG Steel MT 10.06.2012",
+          "GATE 2001"
+        ]
+      },
+      "question": "A substance whose Joule- Thomson coefficient is negative, is throttled to a lower pressure. During this process",
+      "options": {
+        "a": "the entropy of the substance will decrease",
+        "b": "the entropy of the substance will remain constant",
+        "c": "the temperature of the substance will decrease",
+        "d": "the temperature of the substance will increase"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The coefficient μ_JT = (∂T/∂P)ₕ gives dT = μ_JT dP during an isenthalpic pressure change. Because throttling lowers pressure, dP < 0; with μ_JT < 0 the temperature increases, choice (d). The diagram labels negative-slope isenthalpes as the heating region and positive-slope isenthalpes as the cooling region. In ordinary adiabatic throttling entropy increases because of irreversibility, rather than remaining constant or decreasing.",
+      "sourceExplanation": "Joule–Thomson coefficient μ = (∂T/∂P)ₕ.\n[T–P diagram: inversion curve, heating region μ = negative slope, cooling region μ = positive slope.]\nIn the heating region the Joule–Thomson coefficient is negative and temperature increases.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [
+        {
+          "page": 145,
+          "bbox": [
+            84,
+            173,
+            281,
+            287
+          ],
+          "placement": "explanation",
+          "alt": "Isenthalpes and inversion curve showing positive-slope cooling and negative-slope heating"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-159-899",
+      "number": 899,
+      "source": {
+        "page": 145,
+        "pageEnd": 145,
+        "printedPage": 159,
+        "examLabels": [
+          "OPSC AEE 2019 Paper-II",
+          "HPPSC Asstt. Prof. 18.11.2016",
+          "ISRO Scientist/Engineer 12.05.2013",
+          "GATE 2002"
+        ]
+      },
+      "question": "A positive value of Joule-Thomson coefficient of a fluid means",
+      "options": {
+        "a": "temperature drops during throttling",
+        "b": "temperature remains constant during throtting",
+        "c": "temperature rises during throttling",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "μ_JT = (∂T/∂P)ₕ. During throttling dP < 0, so if μ_JT > 0 the temperature change dT = μ_JT dP is negative: temperature drops, choice (a). A negative coefficient instead identifies the heating region.",
+      "sourceExplanation": "μ_JT = (∂T/∂P)ₕ. μ_JT is positive or μ > 0: temperature drops during throttling. μ_JT < 0 for heating region.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-159-900",
+      "number": 900,
+      "source": {
+        "page": 145,
+        "pageEnd": 145,
+        "printedPage": 159,
+        "examLabels": [
+          "BHEL ET 2019",
+          "OPSC AEE 2019 Paper-I",
+          "GPSC Lect. (Auto) 16.10.2016",
+          "ESE 2001, 1999"
+        ]
+      },
+      "question": "The equation which perfectly represents Gibbs Phase Rule for a process where the pressure is also a variable is expressed as :",
+      "options": {
+        "a": "F= P-C+2",
+        "b": "F=C+P-1",
+        "c": "F=P-C-1",
+        "d": "F=C-P +2"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a nonreacting equilibrium system with temperature and pressure both variable, Gibbs’s phase rule is F = C − P + 2, choice (d), or P + F = C + 2. Here P is number of phases, C is number of independent chemical components and F is degrees of freedom. The +2 accounts for the two non-compositional intensive variables, temperature and pressure.",
+      "sourceExplanation": "Gibbs phase rule: P + F = C + 2, or F = C − P + 2. P = number of phases; C = number of chemical components; n = number of non-compositional variables, n = 2, i.e. pressure and temperature; F = degree of freedom.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Phase rule",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-159-901",
+      "number": 901,
+      "source": {
+        "page": 145,
+        "pageEnd": 145,
+        "printedPage": 159,
+        "examLabels": [
+          "JPSC AE 2013 Paper-V",
+          "ESE 2003",
+          "CSE PRE 1998"
+        ]
+      },
+      "question": "The specific heat relation is",
+      "options": {
+        "a": "Cₚ − Cᵥ = vTβ²/k",
+        "b": "Cₚ − Cᵥ = vTk/β²",
+        "c": "Cₚ − Cᵥ = pTk/β²",
+        "d": "Cₚ − Cᵥ = v²Tβ/k"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "The expansion coefficient is β = (1/v)(∂v/∂T)ₚ and the isothermal compressibility is κ_T = −(1/v)(∂v/∂P)ₜ. The exact heat-capacity relation is\ncₚ − cᵥ = −T[(∂v/∂T)ₚ]²/(∂v/∂P)ₜ\n= −T(vβ)²/(−vκ_T) = T v β²/κ_T.\nThis is choice (a), where the option uses k for κ_T. The source’s first displayed intermediate relation has incorrect derivative symbols and is not dimensionally valid, although its final result is correct.",
+      "sourceExplanation": "Cₚ − Cᵥ = −T[(∂V/∂T)ₚ]²(∂V/∂T)ₜ.\nβ = (1/V)(∂V/∂T)ₚ.\nK_T = −(1/V)(∂V/∂T)ₜ.\nWe get Cₚ − Cᵥ = Tvβ²/k_T.",
+      "note": "Restored all four formula choices. Corrected the printed intermediate derivative typos; retained them separately in the complete source explanation.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Heat-capacity identities",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-159-902",
+      "number": 902,
+      "source": {
+        "page": 145,
+        "pageEnd": 145,
+        "printedPage": 159,
+        "examLabels": [
+          "AAI Jr. Executive 29.11.2018",
+          "BPSC AE Mains 2017 Paper-V",
+          "RPSC Lect. (Tech. Edu. Dept.) 2011",
+          "ESE 1999"
+        ]
+      },
+      "question": "The slope of curve is given by the Clausius- Clapeyron on:",
+      "options": {
+        "a": "P–T plot",
+        "b": "ρ–T plot",
+        "c": "V–T plot",
+        "d": "s–T plot"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The Clapeyron relation gives the slope of a phase-equilibrium curve on a pressure–temperature plot:\ndP_sat/dT = (s_g − s_f)/(v_g − v_f) = h_fg/[T(v_g − v_f)].\nFor vaporization with v_g ≫ v_f and approximately ideal vapour v_g ≈ RT/P_sat, this becomes the Clausius–Clapeyron approximation dP_sat/dT ≈ h_fg P_sat/(RT²). Thus (a), the P–T plot. The source phase diagram labels solid, liquid, vapour, the triple and critical points, and the supercritical region.",
+      "sourceExplanation": "[Pressure–temperature phase diagram with solid, liquid, vapour and supercritical regions, triple and critical points, critical pressure and critical temperature.]\nClausius–Clapeyron equation: dP/dT = (s_g − s_f)/(v_g − v_f), v_g ≫ v_f.\n(s_g − s_f)/v_g = L.H./(T_s v_g) = h_fg/(T_s v_g).\nTherefore dP/dT = (L.H.)P_s/(R T_s²).",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron equation",
+      "figures": [
+        {
+          "page": 145,
+          "bbox": [
+            314,
+            470,
+            517,
+            626
+          ],
+          "placement": "explanation",
+          "alt": "Pressure–temperature phase diagram with triple point, critical point and supercritical region"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-160-903",
+      "number": 903,
+      "source": {
+        "page": 146,
+        "pageEnd": 146,
+        "printedPage": 160,
+        "examLabels": [
+          "ISRO Scientist/Engineer 22.04.2018",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "ISRO Scientist/Engineer 11.10.2015"
+        ]
+      },
+      "question": "The pressure p of an ideal gas and its mean kinetic energy E per unit volume are related by the relation",
+      "options": {
+        "a": "p = 4E/3",
+        "b": "p = 3E/2",
+        "c": "p = E/3",
+        "d": "p = 2E/3"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For an ideal gas, c_rms = √(3RᵤT/M), where M is molar mass. The mass of one molecule is m₀ = M/N_A, so its mean translational kinetic energy is\nε̄ = ½m₀c_rms² = ½(M/N_A)(3RᵤT/M) = 3RᵤT/(2N_A).\nFrom PV = nRᵤT, RᵤT = PV/n. Hence ε̄ = 3PV/(2nN_A). Since nN_A is the number of molecules, the kinetic energy per volume is E = ε̄(nN_A)/V = 3P/2. Therefore P = 2E/3, choice (d).",
+      "sourceExplanation": "V_rms = √(3RT/M); rms = root mean square; M = molar mass. E_avg is the average kinetic energy of each molecule.\nE_avg = ½mV_rms². Molecular mass m = M/N_A, where N_A is Avogadro’s number.\nE_avg = ½(M/N_A)(3RT/M) = 3RT/(2N_A).\nPV = nRT, so RT = PV/n.\nE_avg = (3/2N_A)(PV/n).\nE_avg/V = 3P/(2nN_A).\nnN_A = total number of molecules.\nE_avg × nN_A/V = 3P/2.\nE = 3P/2, or P = 2E/3.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Kinetic theory",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-160-904",
+      "number": 904,
+      "source": {
+        "page": 146,
+        "pageEnd": 146,
+        "printedPage": 160,
+        "examLabels": [
+          "BPSC AE Mains 2017 Paper-V",
+          "Kerala PSC AE 06.08.2015",
+          "Kerala PSC Poly. Lect. 09.01.2014"
+        ]
+      },
+      "question": "Which one of the following parameter is significant to ascertain chemical equilibrium of a system?",
+      "options": {
+        "a": "Clapeyron of equation",
+        "b": "Maxwell relation",
+        "c": "Gibb's function",
+        "d": "Helmholts function"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "At fixed temperature and pressure, chemical equilibrium is characterized by a minimum of Gibbs free energy subject to the conserved amounts of elements. Thus Gibbs’s function is the intended potential, (c). It is G = H − TS; at constant T, ΔG = ΔH − TΔS. Its decrease bounds reversible non-expansion work under these conditions. The source’s labeled formula identifies ΔG as change in Gibbs free energy, ΔH as change in enthalpy, T as temperature in kelvin and ΔS as change in entropy. At different constraints, such as fixed T and V, Helmholtz free energy provides the corresponding criterion.",
+      "sourceExplanation": "Gibbs function, Gibbs energy or free enthalpy, measures the maximum amount of work done in a thermodynamic system when temperature and pressure are kept constant. It is denoted G.\nG = H − Ts.\nΔG = ΔH − TΔS.\nΔG: change in Gibbs free energy; ΔH: change in enthalpy; T: temperature in kelvin; ΔS: change in entropy.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "NPTEL Reaction Thermodynamics: Fugacity and Activity",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module3/lec5/1.html",
+          "section": "Fugacity equals pressure for an ideal gas"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Chemical equilibrium and free energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-160-905",
+      "number": 905,
+      "source": {
+        "page": 146,
+        "pageEnd": 146,
+        "printedPage": 160,
+        "examLabels": [
+          "APPSC Poly. Lect. 2013",
+          "ESE 1997"
+        ]
+      },
+      "question": "The thermodynamic parameters are:\nI. Temperature\nII. Specific volume\nIII. Pressure\nIV. Enthalpy\nV. Entropy\nThe Clapeyron equation of state relationship between.",
+      "options": {
+        "a": "I and II",
+        "b": "II, III and V",
+        "c": "III, IV and V",
+        "d": "I, II, III and IV"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Clapeyron’s phase-equilibrium relation is dP_sat/dT = (h_g − h_f)/[T_sat(v_g − v_f)]. It therefore explicitly relates pressure, temperature, enthalpy and specific volume: I, II, III and IV, choice (d). The approximation v_g ≫ v_f sometimes simplifies vaporization calculations, but is not required for the exact equation. It is a phase-boundary relation rather than a general equation of state.",
+      "sourceExplanation": "Clapeyron’s equation: dP/dT = (h_g − h_f)/[T_sat(v_g − v_f)], v_g ≫ v_f.\ni. Pressure\nii. Temperature\niii. Enthalpy\niv. Specific volume",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-160-906",
+      "number": 906,
+      "source": {
+        "page": 146,
+        "pageEnd": 146,
+        "printedPage": 160,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "The slope of constant pressure curve on enthalpy-entropy diagram gives:",
+      "options": {
+        "a": "Density",
+        "b": "Specific volume",
+        "c": "Absolute temperature",
+        "d": "Entropy"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The property equation is T ds = dh − v dP. On a constant-pressure curve dP = 0, hence T ds = dh and (∂h/∂s)ₚ = T. The slope of an enthalpy–entropy (h–s or Mollier) diagram is therefore absolute temperature, choice (c).",
+      "sourceExplanation": "Tds = dh − VdP. If P = constant, Tds = dh. (dh/ds)ₚ = T. An enthalpy–entropy chart is also known as h–s or Mollier diagram.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Mollier diagram",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-160-907",
+      "number": 907,
+      "source": {
+        "page": 146,
+        "pageEnd": 147,
+        "printedPage": 160,
+        "examLabels": [
+          "MPPSC AE 2016",
+          "ESE 2001"
+        ]
+      },
+      "question": "Consider the following statements:\n1. Availability is the maximum theoretical work obtainable.\n2. Clapeyron’s equation for dry saturated steam is given by (v_s − v_f) = (dT_s/dP)[(h_s − h_f)/T_s].\n3. A gas can have any temperature at a given pressure unlike a vapour, which has a fixed temperature at a given pressure.\n4. Joule–Thomson coefficient is expressed as μ = (∂s/∂P)ₕ.\nOf these statements:",
+      "options": {
+        "a": "1, 2, 3 are correct",
+        "b": "1, 3 and 4 are correct",
+        "c": "2 and 3 are correct",
+        "d": "1, 2 and 4 are correct"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Statement 1 gives the usual meaning of availability: maximum useful work as a system comes into equilibrium with its specified surroundings. Statement 2 is the rearranged Clapeyron relation, v_s − v_f = (dT_s/dP)(h_s − h_f)/T_s, and is correct. Statement 4 is false: the Joule–Thomson coefficient is (∂T/∂P)ₕ, not the printed (∂s/∂P)ₕ. Statement 3 is true only if “vapour” means saturated vapour in liquid–vapour equilibrium. A superheated vapour can have different temperatures at one pressure, so the unrestricted printed statement is false. With that literal reading only 1 and 2 are correct, and no printed option matches. Source (a) assumes the saturated-vapour interpretation.",
+      "sourceExplanation": "i. Clapeyron’s equation for dry saturated steam is v_s − v_f = (dT_s/dP)[(h_s − h_f)/T_s].\nii. Joule–Thomson coefficient μ = (∂T/∂P)ₕ.\niii. Availability of a given system is the maximum useful work obtainable in a process in which the system comes into equilibrium with its surroundings.",
+      "note": "Restored the entropy derivative printed in statement 4. Source accepts statement 3 only by an unstated saturated-vapour assumption; no option represents the unrestricted checked statements.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Availability and property relations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-908",
+      "number": 908,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "APPSC Poly Lect. 13.03.2020",
+          "SJVN ET 2019"
+        ]
+      },
+      "question": "Which of the following Maxwell relation is INCORRECT?",
+      "options": {
+        "a": "(∂T/∂V)ₛ = −(∂P/∂s)ᵥ",
+        "b": "(∂T/∂P)ₛ = (∂V/∂s)ₚ",
+        "c": "(∂P/∂T)ᵥ = (∂s/∂V)ₜ",
+        "d": "(∂V/∂T)ₚ = (∂P/∂s)ₜ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a simple compressible substance, equality of mixed derivatives of u(s,v), h(s,p), f(T,v) and g(T,p) yields the four Maxwell relations:\n(∂T/∂v)ₛ = −(∂p/∂s)ᵥ,\n(∂T/∂p)ₛ = (∂v/∂s)ₚ,\n(∂p/∂T)ᵥ = (∂s/∂v)ₜ,\n(∂v/∂T)ₚ = −(∂s/∂p)ₜ.\nChoices (a), (b), (c) state the first three. Choice (d) replaces the last relation with (∂v/∂T)ₚ = (∂p/∂s)ₜ, which is incorrect; answer (d).",
+      "sourceExplanation": "There are four Maxwell equations applicable for any substance:\n1. (∂T/∂V)ₛ = −(∂P/∂s)ᵥ.\n2. (∂T/∂P)ₛ = (∂V/∂s)ₚ.\n3. (∂P/∂T)ᵥ = (∂s/∂V)ₜ.\n4. (∂V/∂T)ₚ = −(∂s/∂P)ₜ.\n(∂V/∂T)ₚ = (∂P/∂s)ₜ is incorrect.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Maxwell relations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-909",
+      "number": 909,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "The value of compressibility factor, Z at the critical state of a Vander Waal's gas is",
+      "options": {
+        "a": "3.735",
+        "b": "0.735",
+        "c": "3.375",
+        "d": "0.375"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the van der Waals equation, critical constants are v_c = 3b, P_c = a/(27b²), and T_c = 8a/(27Rb). Hence\nZ_c = P_cv_c/(RT_c) = [a/(27b²) × 3b]/[R × 8a/(27Rb)] = 3/8 = 0.375.\nThus (d). This is the van der Waals model value, not a universal measured critical compressibility for all real gases.",
+      "sourceExplanation": "At the critical state of the van der Waals equation, Z = P_cv_c/(RT_c) = 3/8 = 0.375.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Van der Waals critical constants",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-910",
+      "number": 910,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "OPSC Civil Services Pre, 2011",
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "The ‘specific heat at constant pressure' is defined as :",
+      "options": {
+        "a": "T(∂s/∂T)ₚ",
+        "b": "(∂h/∂T)ₚ",
+        "c": "Both (a) and (b)",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The specific heat at constant pressure is cₚ = (∂h/∂T)ₚ. From dh = T ds + v dP, a constant-pressure change gives dh = T ds, so cₚ = T(∂s/∂T)ₚ as well. Both (a) and (b) are therefore equivalent, giving (c). For comparison, cᵥ = T(∂s/∂T)ᵥ.",
+      "sourceExplanation": "cₚ = (∂h/∂T)ₚ; cₚ = T(∂s/∂T)ₚ; cᵥ = T(∂s/∂T)ᵥ.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Heat-capacity identities",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-911",
+      "number": 911,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021"
+        ]
+      },
+      "question": "Gibb's function is expressed as",
+      "options": {
+        "a": "u + pv + Ts",
+        "b": "u + pv − T ds",
+        "c": "u + p dv − T ds",
+        "d": "u + pv − s dT"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The specific Gibbs function is g = h − Ts = u + pv − Ts. The printed alternatives contain +Ts in (a), −T ds in (b) and (c), and −s dT in (d); none gives −Ts. A finite state function cannot be identified with an expression mixing u and pv with a differential T ds. The source prints only key (b), but that option is malformed and cannot be accepted literally.",
+      "sourceExplanation": "Ans. (b)",
+      "note": "Visually confirmed that the native option (b) prints Tds, not Ts. No corrected option was invented; source key preserved.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Thermodynamic potentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-912",
+      "number": 912,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "Assam PSC AE (PHED), 18.10.2020"
+        ]
+      },
+      "question": "The value of the compressibility of an ideal fluid is",
+      "options": {
+        "a": "zero",
+        "b": "unity",
+        "c": "infinity",
+        "d": "more than that ofa real fluid"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "In the conventional fluid-mechanics definition, an ideal fluid is incompressible and inviscid. Its volume does not change with pressure, so κ = −(1/V)(∂V/∂P) = 0, choice (a). Compressibility measures relative volume change in response to a pressure change. An ideal fluid in this sense is different from an ideal gas, whose isothermal compressibility is 1/P.",
+      "sourceExplanation": "In thermodynamics and fluid mechanics compressibility, also known as coefficient of compressibility or isothermal compressibility, measures relative volume change of a fluid or solid in response to a pressure change. The compressibility of an ideal fluid is zero.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Compressibility coefficients",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-913",
+      "number": 913,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "Latent heat of vaporization of water can be calculated from the p-T data of water using the following equation.",
+      "options": {
+        "a": "Third law of thermodynamics",
+        "b": "Clausius - Clapeyron equation",
+        "c": "Kelvin-Planck statement of second law of thermodynamics",
+        "d": "Clausis statement of second law of thermodynamics"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The Clapeyron equation is dP_sat/dT = h_fg/[T(v_g − v_f)], so latent heat follows as h_fg = T(v_g − v_f)(dP_sat/dT). Thus the relevant equation is (b), Clausius–Clapeyron. With only P–T data one additionally invokes approximately ideal saturated vapour and v_g ≫ v_f, giving h_fg ≈ RT²(d ln P_sat/dT). The exact Clapeyron form also requires the phase specific volumes.",
+      "sourceExplanation": "The Clausius–Clapeyron equation gives latent heat of vaporization from pressure and temperature data. dP/dT = h_fg/[T(V_g − V_f)].",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-161-914",
+      "number": 914,
+      "source": {
+        "page": 147,
+        "pageEnd": 147,
+        "printedPage": 161,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020"
+        ]
+      },
+      "question": "Which of the following can be used to determine the variation of saturation pressure with temperature along phase boundaries?",
+      "options": {
+        "a": "Joule-Thomson relation",
+        "b": "Carnot equation",
+        "c": "Rankine- Hougoniot's relation",
+        "d": "Clausius- Clapeyron relation"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The Clapeyron relation gives the variation of saturation pressure along a phase boundary:\ndP_sat/dT = (h_g − h_f)/[T_sat(v_g − v_f)].\nFor vaporization with negligible liquid volume and approximately ideal vapour, it becomes the Clausius–Clapeyron form\ndP_sat/dT ≈ (h_g − h_f)P_sat/(RT_sat²).\nIt can be used to determine latent enthalpy from saturation pressure, temperature and volume data, or to predict changes in boiling temperature. Thus (d).",
+      "sourceExplanation": "Clausius–Clapeyron equation: dP/dT = (h_g − h_f)/[T_sat(v_g − v_f)] = (latent heat)P_sat/(RT_sat²) = (h_g − h_f)P_sat/(RT_sat²).\nIt is used to determine enthalpy change associated with phase change (latent heat) using pressure, temperature and volume. It may also be used to predict boiling temperature.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-915",
+      "number": 915,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "TNPSC AE 2019"
+        ]
+      },
+      "question": "Which one of the following properties remains unchanged for a real gas during Joule- Thomson process",
+      "options": {
+        "a": "Temperature",
+        "b": "Enthalpy",
+        "c": "Entropy",
+        "d": "Pressure"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a steady adiabatic throttling device with no shaft work and negligible kinetic and potential energy changes, the steady-flow energy equation gives h₁ = h₂. Thus enthalpy remains unchanged for a real gas, choice (b). The corresponding Joule–Thomson coefficient is μ = (∂T/∂P)ₕ; temperature can change while enthalpy stays constant.",
+      "sourceExplanation": "Enthalpy remains unchanged for a real gas during the Joule–Thomson process. μ = (∂T/∂P) at h = constant.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Throttling process",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-916",
+      "number": 916,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "OPSC AEE 2019 Paper-I"
+        ]
+      },
+      "question": "In a single-component condensed system, if degree of freedom is zero, maximum number of phases that can co-exist",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "For a condensed system in the reduced phase-rule treatment, pressure is held fixed or its influence is neglected, so F = C − P + 1. With one component C = 1 and zero freedom F = 0,\n0 = 1 − P + 1 ⇒ P = 2.\nHence (c). The source instead uses the unrestricted Gibbs rule F = C − P + 2 and obtains three phases. That would apply when pressure remains an independent variable, rather than the condensed-system convention explicitly stated in the question.",
+      "sourceExplanation": "By using Gibbs’s phase rule P + F = C + 2. P + 0 = 1 + 2. P = 3.",
+      "note": "Corrected source (d) to (c) using the reduced phase rule appropriate to the printed word condensed. The unrestricted three-phase calculation is retained in full.",
+      "references": [
+        {
+          "title": "IGNOU: Crystallisation of Magma",
+          "url": "https://egyankosh.ac.in/bitstream/123456789/66690/1/Unit-5.pdf",
+          "section": "5.2.2 Condensed Phase Rule"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Phase rule",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-917",
+      "number": 917,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018"
+        ]
+      },
+      "question": "The difference between two specific heats Cₚ − Cᵥ = R/J. This relation is valid for:",
+      "options": {
+        "a": "Any gas",
+        "b": "Perfect gas",
+        "c": "Ideal gas",
+        "d": "Pure gas"
+      },
+      "sourceAnswer": "(*)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For constant-pressure heating of an ideal gas, energy supplied increases internal energy and also provides piston work. If heat is measured in heat units and mechanical work in work units, with J the mechanical equivalent of heat,\ndQ′ = dQ + dW/J,\ncₚdT = cᵥdT + P dV/J.\nFor the same fixed amount of ideal gas at constant pressure, P dV = R dT. Hence cₚdT = cᵥdT + R dT/J and cₚ − cᵥ = R/J. In coherent SI units J is unnecessary and the relation is cₚ − cᵥ = R.\nThe relation holds for ideal gases and therefore also for the perfect-gas model. Choices (b) and (c) are both valid. The source uses an asterisk rather than a single answer letter and explicitly accepts both; a one-answer practice key must remain unset.",
+      "sourceExplanation": "When gas is heated at constant pressure there is an increase in internal energy, the piston moves outward and work is performed by the gas.\ndQ′ = dQ + dW/J.\ndW/J is the heat equivalent of the work.\nCₚdT = CᵥdT + P dV/J.\nCₚdT = CᵥdT + R dT/J.\nCₚ = Cᵥ + R/J.\nCₚ − Cᵥ = R/J.\nThis relation is valid for ideal gas and perfect gas both.",
+      "note": "Preserved literal source asterisk and the complete derivation. Both b and c are accepted by the source; no unique single letter.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Mayer relation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-918",
+      "number": 918,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "TNPSC AE 2018",
+          "CSE Pre-2005"
+        ]
+      },
+      "question": "The equation of state pv = RT(B₀ + B₁/v + B₂/v² + B₃/v³) is known as",
+      "options": {
+        "a": "Vander wall's equation",
+        "b": "Benedict-Webb-Rubin equation",
+        "c": "Gibbs equation",
+        "d": "Virial equation"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The equation pv = RT(B₀ + B₁/v + B₂/v² + B₃/v³) is a virial expansion in inverse specific volume, i.e. density, giving (d). Its coefficients depend on temperature; B₀ = 1 in the conventional ideal-gas limit. A low-order truncated virial series is most useful at low density. The source’s “low density only” statement is a practical limitation of a truncated expansion rather than of every convergent virial representation.",
+      "sourceExplanation": "Virial equation: pv = RT(B₀ + B₁/v + B₂/v² + B₃/v³). The virial equation of state is valid for gases at low density only.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Virial equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-919",
+      "number": 919,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "GPSC Executive Engineer 23.12.2018",
+          "GATE 1993"
+        ]
+      },
+      "question": "The relationship (dT/dP)ₕ = 0 holds good for",
+      "options": {
+        "a": "An ideal gas at any state",
+        "b": "A real gas at any state",
+        "c": "Any gas at its critical state",
+        "d": "Any gas at its inversion point"
+      },
+      "sourceAnswer": "(a & d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The derivative (∂T/∂P)ₕ is the Joule–Thomson coefficient. For an ideal gas h depends only on T, so this coefficient is zero at every state in that model. For a real gas, it is zero at an inversion point by definition. Therefore both (a) and (d) are correct, exactly as the source states. There is no unique single-letter answer.",
+      "sourceExplanation": "Ans. (a & d)",
+      "note": "Preserved both source keys and left the one-answer practice key unset.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson inversion",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-920",
+      "number": 920,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Specific heat at constant pressure is given by",
+      "options": {
+        "a": "(∂s/∂T)ₚ",
+        "b": "(∂v/∂T)ₚ",
+        "c": "(∂h/∂T)ₚ",
+        "d": "(∂v/∂T)ₚ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "At constant pressure, heat added to a simple compressible substance with only pressure–volume work equals its enthalpy increase. Specific heat is therefore cₚ = (∂h/∂T)ₚ, choice (c). It is the heat supplied per unit mass per kelvin temperature rise under the constant-pressure constraint. The entropy derivative alone requires an additional factor T, and the volume derivative describes expansion rather than heat capacity.",
+      "sourceExplanation": "Specific heat at constant pressure is (∂h/∂T)ₚ. It represents the heat supplied to unit mass of a system to raise its temperature through 1 K, keeping pressure constant.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Heat-capacity identities",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-921",
+      "number": 921,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Which one is not a Maxwell equation",
+      "options": {
+        "a": "(∂V/∂S)ₚ = (∂T/∂p)ₛ",
+        "b": "(∂V/∂T)ₚ = −(∂S/∂p)ₜ",
+        "c": "(∂T/∂V)ₛ = −(∂p/∂S)ᵥ",
+        "d": "(∂P/∂T)ₚ = (∂S/∂V)ₜ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The first three printed choices are valid Maxwell relations:\n(∂V/∂S)ₚ = (∂T/∂p)ₛ,\n(∂V/∂T)ₚ = −(∂S/∂p)ₜ,\n(∂T/∂V)ₛ = −(∂p/∂S)ᵥ.\nThe fourth is printed with constant-pressure subscript on (∂P/∂T)ₚ, which would be zero and is not the Maxwell relation. The correct fourth relation is (∂P/∂T)ᵥ = (∂S/∂V)ₜ. Thus (d) is not a Maxwell equation.",
+      "sourceExplanation": "(∂P/∂T)ₚ = (∂S/∂V)ₜ is not a Maxwell equation among the given options.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Maxwell relations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-162-922",
+      "number": 922,
+      "source": {
+        "page": 148,
+        "pageEnd": 148,
+        "printedPage": 162,
+        "examLabels": [
+          "HPPSC AE (PWD) 10.09.2016"
+        ]
+      },
+      "question": "Which equation of state for a gas is an improvement of the ideal gas law?",
+      "options": {
+        "a": "Beattie-Bridgeman",
+        "b": "Dalton",
+        "c": "Clausius",
+        "d": "Vander Waals"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source intends van der Waals’s equation, (P + n²a/V²)(V − nb) = nRᵤT, which improves on the ideal-gas model by allowing molecular excluded volume and intermolecular attraction. Here P is pressure, n amount in moles, V total volume, T absolute temperature, a and b substance constants, and Rᵤ = 8.3145 J/(mol·K) when pressure and volume use consistent SI units. The source labels pressure in atm while giving R in joules; those units require conversion.\nHowever, the Beattie–Bridgeman equation in (a) and the Clausius real-gas equation in (c) are also equations of state developed to improve ideal-gas behaviour. The unrestricted stem therefore does not uniquely identify (d).",
+      "sourceExplanation": "Van der Waals equation is an equation of state correcting for two properties of real gases: excluded volume of gas particles and attractive forces between gas molecules.\n(P + n²a/V²)(V − nb) = nRT.\nWhere P = pressure (atm); n = number of moles (mol); R̄ = 8.3145 J/(mol·K), universal gas constant; V = volume; T = temperature (K); a and b = constants.",
+      "note": "Several printed alternatives are real-gas improvements of the ideal law. Preserved source (d) and its full equation/variable list; no unique one-answer key.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Real-gas equations of state",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-163-923",
+      "number": 923,
+      "source": {
+        "page": 149,
+        "pageEnd": 149,
+        "printedPage": 163,
+        "examLabels": [
+          "CGPSC AE 16.10.2016"
+        ]
+      },
+      "question": "A car tube contains air at 200 kPa pressure in the cold night of temperature (—10°C). During the day time, the volume of the tube is found to be increased by 9.5%. Find out day temperature and change in pressure.",
+      "options": {
+        "a": "15°C, 219 kPa",
+        "b": "15°C, 210 kPa",
+        "c": "19°C, 219 kPa",
+        "d": "19°C, 210 kPa",
+        "e": "None of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a fixed amount of ideal gas, P₁V₁/T₁ = P₂V₂/T₂. The data give P₁ = 200 kPa, T₁ ≈ 263 K and V₂ = 1.095V₁, so\nP₂ = (200/1.095)(T₂/263).\nThis is one equation for the two unknowns P₂ and T₂; an additional condition is required. The source’s proposed pair 15°C and 219 kPa does not satisfy it: 15°C is 288 K, and then P₂ ≈ 200 kPa. If P₂ = 219 kPa, the required T₂ ≈ 315.3 K ≈ 42.2°C. The source also incorrectly writes 298 K = 15°C. No displayed numerical pair is supported, and “change in pressure” is not the final pressure itself.",
+      "sourceExplanation": "P₁ = 200 kPa, T₁ = 263 K, T₂ = ?. V₂ = 1.095V₁.\nPV = nRT, so PV/T = constant.\nP₁V₁/T₁ = P₂V₂/T₂.\nP₁/P₂ = (T₁/T₂)(V₂/V₁).\nBy hit-and-trial check option a. For T₂, P₂V₂ = nRT₂.\nT₂ = 298 K = 15°C.\nP₂ = 200 + 19 = 219 kPa.",
+      "note": "The printed problem is underdetermined, and the source’s pair violates the ideal-gas relation. Preserved all alternatives including e and the full faulty calculation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Ideal-gas calculations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-163-924",
+      "number": 924,
+      "source": {
+        "page": 149,
+        "pageEnd": 149,
+        "printedPage": 163,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "Clapeyron equation represents the dependence of",
+      "options": {
+        "a": "pressure on temperature",
+        "b": "saturation pressure on saturation temperature",
+        "c": "vapor pressure on temperature",
+        "d": "entropy generation on temperature"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The Maxwell relation (∂P/∂T)ᵥ = (∂s/∂v)ₜ applied across equilibrium liquid–vapour coexistence gives\ndP_sat/dT = (s_g − s_f)/(v_g − v_f) = s_fg/v_fg.\nBecause s_fg = h_fg/T,\ndP_sat/dT = h_fg/[T(v_g − v_f)].\nThis is the Clapeyron relation: it describes the dependence of saturation pressure on saturation temperature, so (b) is the most precise choice. It also links specific volume and enthalpy changes across the boundary. During a phase change at one specified saturation state, pressure and temperature stay fixed as quality and total volume change; along the saturation curve P and T vary together.",
+      "sourceExplanation": "According to Maxwell’s third relationship, (∂P/∂T)ᵥ = (∂S/∂V)ₜ. When saturated liquid converts to saturated vapour at constant temperature and pressure, during evaporation pressure and temperature are independent of volume.\n(dP/dT)_sat = (S_g − S_f)/(V_g − V_f) = S_fg/V_fg.\nBut S_g − S_f = h_fg/T.\n(dP/dT)_sat = h_fg/[T(V_g − V_f)].\nThis is Clausius–Clapeyron equation, representing dependence of saturation pressure on saturation temperature. Clapeyron equation relates temperature, specific volume, pressure and enthalpy.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-163-925",
+      "number": 925,
+      "source": {
+        "page": 149,
+        "pageEnd": 149,
+        "printedPage": 163,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "Match List-I with List-II and select the correct answer:\nList-I\nA. Bottle filling of gas\nB. Nernst–Simon statement\nC. Joule–Thomson effect\nD. ∫p dv\n\nList-II\n1. Absolute zero temperature\n2. Variable flow\n3. Quasi-static path\n4. Isenthalpic process\n5. Dissipative effect\n6. Low grade energy\n7. Process and temperature during phase change\n\nChoose the sequence A, B, C, D.",
+      "options": {
+        "a": "6, 5, 4, 3",
+        "b": "2, 1, 4, 3",
+        "c": "2, 5, 7, 4",
+        "d": "6, 1, 7, 4"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A. Bottle filling of gas → 2. Variable flow, since mass in the bottle changes with time. B. Nernst–Simon statement → 1. Absolute zero temperature. C. Joule–Thomson effect → 4. Isenthalpic process. D. ∫p dv → 3. Quasi-static path, the pressure–volume boundary-work expression for a mechanically quasistatic simple compressible process. Thus A–2, B–1, C–4, D–3, choice (b).",
+      "sourceExplanation": "A. Bottle filling of gas | 2. Variable flow\nB. Nernst–Simon statement | 1. Absolute zero temperature\nC. Joule–Thomson effect | 4. Isenthalpic process\nD. ∫p dv | 3. Quasi-static path",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Matching thermodynamic processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-163-926",
+      "number": 926,
+      "source": {
+        "page": 149,
+        "pageEnd": 149,
+        "printedPage": 163,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.05.2013"
+        ]
+      },
+      "question": "For a perfect gas match List I with List II:\nList I\nA. Isobaric thermal expansion coefficient\nB. Isothermal compressibility\nC. Isentropic compressibility\nD. Joule–Thomson coefficient\n\nList II\n1. 0\n2. ∞\n3. 1/v\n4. 1/T\n5. 1/p\n6. 1/(γp)",
+      "options": {
+        "a": "A–4, B–3, C–2, D–1",
+        "b": "A–1, B–2, C–4, D–6",
+        "c": "A–4, B–5, C–6, D–1",
+        "d": "A–3, B–4, C–6, D–5"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a perfect gas, pv = RT.\nA. Isobaric expansion coefficient α = (1/v)(∂v/∂T)ₚ = 1/T → 4.\nB. Isothermal compressibility κ_T = −(1/v)(∂v/∂p)ₜ = 1/p → 5.\nC. Isentropic compressibility κ_s = −(1/v)(∂v/∂p)ₛ = 1/(γp), from pv^γ = constant → 6.\nD. Joule–Thomson coefficient μ = (∂T/∂p)ₕ = 0 → 1.\nTherefore A–4, B–5, C–6, D–1, choice (c).",
+      "sourceExplanation": "A. Isobaric thermal expansion coefficient — 1/T.\nB. Isothermal compressibility — 1/p.\nC. Isentropic compressibility — 1/(γp).\nD. Joule–Thomson coefficient — 0.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Expansion and compressibility coefficients",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-163-927",
+      "number": 927,
+      "source": {
+        "page": 149,
+        "pageEnd": 150,
+        "printedPage": 163,
+        "examLabels": [
+          "APGENCO AE 2012"
+        ]
+      },
+      "question": "The maximum work, that can be obtained from a system during a given process in which the initial and final temperatures of the system are equal to the surrounding temperature, is equal to the decrease in :",
+      "options": {
+        "a": "Internal energy",
+        "b": "Helmholtz Free energy",
+        "c": "Gibbs Free energy",
+        "d": "Enthalpy"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a closed system exchanging heat with a reservoir at fixed surrounding temperature T₀, the first law gives W = Q − ΔU. The entropy inequality gives Q ≤ T₀ΔS, so W ≤ T₀ΔS − ΔU. If both endpoint temperatures equal T₀, F = U − T₀S at the endpoints and the reversible maximum total work is W_max = −ΔF. Hence (b). This is total work under the thermal-reservoir assumptions; any required displacement of an external constant-pressure atmosphere must be accounted for when defining useful work. Gibbs free energy G = H − TS supplies the familiar non-expansion-work potential when temperature and pressure are fixed.",
+      "sourceExplanation": "Helmholtz free energy is a thermodynamic potential that measures useful work obtainable from a closed thermodynamic system at constant temperature (isothermal). Gibbs free energy or free enthalpy is most commonly used as a measure of thermodynamic potential, especially in chemistry, when convenient for applications at constant pressure.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Free energy and maximum work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-928",
+      "number": 928,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "The expression indicating Y as a thermodynamic property is:",
+      "options": {
+        "a": "Y = XZ dZ + ½Z² dX",
+        "b": "Y = XZ² dZ + Z² dX",
+        "c": "Y = p dv − v dp",
+        "d": "Y = p² dv + v dp"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "A thermodynamic property has an exact differential. Interpreting the printed expression for Y as its differential form, option (a) is\ndY = XZ dZ + ½Z² dX = d(½XZ²).\nThe mixed derivatives agree: ∂(XZ)/∂X = Z and ∂(½Z²)/∂Z = Z. The other displayed forms do not satisfy this exactness criterion for independent variables. Thus (a). The source writes Y = rather than dY =, a notational omission retained in the printed choices.",
+      "sourceExplanation": "Y = XZ dZ + ½Z² dX.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Exact differentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-929",
+      "number": 929,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2008"
+        ]
+      },
+      "question": "(∂P/∂V)ₜ(∂V/∂T)ₚ(∂T/∂P)ᵥ is equal to",
+      "options": {
+        "a": "zero",
+        "b": "1",
+        "c": "−1",
+        "d": "Infinity"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The cyclic derivative identity gives (∂P/∂V)ₜ(∂V/∂T)ₚ(∂T/∂P)ᵥ = −1 wherever the derivatives exist. The source illustrates it with PV = RT on a unit amount basis:\nP = RT/V ⇒ (∂P/∂V)ₜ = −RT/V²;\nV = RT/P ⇒ (∂V/∂T)ₚ = R/P;\nT = PV/R ⇒ (∂T/∂P)ᵥ = V/R.\nTheir product is (−RT/V²)(R/P)(V/R) = −RT/(PV) = −1. Therefore (c). The identity itself is more general than an ideal gas.",
+      "sourceExplanation": "PV = mRT; for unit mass PV = RT.\nP = RT/V, (∂P/∂V)ₜ = −RT/V².\nV = RT/P, (∂V/∂T)ₚ = R/P.\nThe print writes P = PV/R before (∂T/∂P)ᵥ = V/R.\n(∂P/∂V)ₜ × (∂V/∂T)ₚ × (∂T/∂P)ᵥ = −(RT/V²)(R/P)(V/R) = −RT/(PV).\nSince PV = RT, the result is −1.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Cyclic derivative relation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-930",
+      "number": 930,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2006"
+        ]
+      },
+      "question": "The state of a real gas is changed from pressure P₁, temperature T₁ to pressure P₂, temperature T₂. The change in enthalpy h₂ − h₁ is given by",
+      "options": {
+        "a": "∫[T₂→T₁] Cₚ dT",
+        "b": "∫[T₁→T₂] Cₚ dT + ∫[T₁→T₂] (∂V/∂p)ₜ dp",
+        "c": "∫[T₁→T₂] Cᵥ dT + ∫[P₁→P₂] [V − T(∂V/∂p)ₚ] dp",
+        "d": "∫[T₁→T₂] Cₚ dT + ∫[P₁→P₂] [V − T(dV/dT)ₚ] dp"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "For a real simple compressible substance, dh = T ds + v dP. Express entropy in T and P:\nds = (cₚ/T)dT − (∂v/∂T)ₚdP.\nSubstitution gives dh = cₚdT + [v − T(∂v/∂T)ₚ]dP. Integrating along a suitable two-step path between the states gives the form in (d): a temperature integral of cₚ and a pressure integral of the bracket. For example, evaluate the first integral at P₁, then the second at T₂.\nThe printed choice (c) and source explanation incorrectly use cᵥ and a derivative with respect to pressure while holding pressure constant. The correct choice is (d), which has cₚ and the constant-pressure temperature derivative.",
+      "sourceExplanation": "The change in enthalpy h₂ − h₁ = ∫[T₁→T₂] Cᵥ dT + ∫[P₁→P₂] [V − T(∂V/∂p)ₚ] dp.",
+      "note": "Restored all four native formula choices including their original typos and limits. Corrected source key (c) to (d) using the enthalpy differential.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Real-gas enthalpy relation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-931",
+      "number": 931,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020"
+        ]
+      },
+      "question": "The Joule-Thomson effect is not exhibited by",
+      "options": {
+        "a": "ideal gases",
+        "b": "real gases",
+        "c": "carbon dioxide",
+        "d": "refrigerant vapours"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The Joule–Thomson coefficient describes the temperature response to an isenthalpic pressure change:\nμ = (∂T/∂P)ₕ = [T(∂v/∂T)ₚ − v]/cₚ.\nFor an ideal gas v = RT/P, so T(∂v/∂T)ₚ − v = T(R/P) − RT/P = 0. Thus ideal gases show no Joule–Thomson temperature change, choice (a). Positive μ denotes cooling on a pressure drop, negative μ denotes heating, and μ = 0 on an inversion curve.",
+      "sourceExplanation": "The fluid temperature behaviour during throttling, h = constant, is described by μ = (∂T/∂P)ₕ = [T(∂V/∂T)ₚ − V]/Cₚ. For ideal gas μ = 0. This coefficient is positive in the cooling region and negative in the heating region. It is zero on the inversion curve.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson coefficient",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-932",
+      "number": 932,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 18.09.2017"
+        ]
+      },
+      "question": "The Gibbs free-energy function is a property comprising:",
+      "options": {
+        "a": "Pressure, volume and temperature",
+        "b": "Enthalpy, temperature and entropy",
+        "c": "Temperature, pressure and enthalpy",
+        "d": "Volume, enthalpy and entropy"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Gibbs free energy is G = H − TS. Its defining combination therefore comprises enthalpy, absolute temperature and entropy, choice (b). The source contains only the answer marker.",
+      "sourceExplanation": "Ans. (b)",
+      "note": "Answer-only source; supplied the defining equation.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Thermodynamic potentials",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-933",
+      "number": 933,
+      "source": {
+        "page": 150,
+        "pageEnd": 150,
+        "printedPage": 164,
+        "examLabels": [
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "For a refrigerant being used in a vapour compression refrigeration system, the Joule- Thomson coefficient should be",
+      "options": {
+        "a": "positive",
+        "b": "negative",
+        "c": "zero",
+        "d": "infinity"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "A conventional vapour-compression refrigerator uses a throttling valve to reduce refrigerant pressure and temperature before the evaporator. Since dT = μ_JT dP and dP < 0, cooling through that pressure reduction requires μ_JT > 0, choice (a). The source selects negative μ by confusing the refrigerant’s subsequent absorption of heat in the evaporator with its temperature change through the adiabatic valve. Its own sign table states μ > 0 → cooling and μ < 0 → heating; the correct coefficient for the intended throttling cooling is positive.",
+      "sourceExplanation": "In refrigeration the desired effect is cooling but refrigerant gets heat from the refrigerated room. So, for heating of refrigerant μ_J < 0.\nμ_J = (∂T/∂P)ₕ.\nμ_J: Joule–Thomson coefficient.\nμ_J > 0 → cooling.\nμ_J < 0 → heating.\nμ_J = 0 → ideal gas.",
+      "note": "Corrected source key (b) to (a). Evaporator heat absorption is not the Joule–Thomson valve process.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Refrigeration throttling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-164-934",
+      "number": 934,
+      "source": {
+        "page": 150,
+        "pageEnd": 151,
+        "printedPage": 164,
+        "examLabels": [
+          "CGPSC AE 26.04.2015 SHIFT-II"
+        ]
+      },
+      "question": "When a real gas follows Joule Thomson expansion process, the temperature",
+      "options": {
+        "a": "always increases",
+        "b": "always decreases",
+        "c": "remains same",
+        "d": "may increase or decrease",
+        "e": "becomes zero"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a real gas, μ_JT = (∂T/∂P)ₕ depends on state, so an isenthalpic pressure drop can cool or heat the gas, choice (d). In terms of expansion coefficient α, μ_JT = v(Tα − 1)/cₚ. It is zero at an inversion point; the locus of those points is the inversion curve. Positive μ produces cooling and negative μ heating because dP < 0. Many gases cool in their ordinary operating range, while hydrogen at room temperature warms because its inversion temperature is low. For an ideal gas μ = 0 and throttling produces no temperature change; a nonzero coefficient therefore indicates nonideal behaviour.",
+      "sourceExplanation": "When a real gas follows Joule–Thomson expansion, temperature may increase or decrease.\nThe Joule–Thomson coefficient μ is the ratio of temperature change to pressure drop and is expressed in terms of thermal expansion coefficient. It is zero at a point called inversion point for real gases. Expansion of most real gases causes cooling when the coefficient is positive and gas temperature is below inversion temperature. At atmospheric pressure hydrogen has low inversion temperature and warms during Joule–Thomson expansion at room temperature. Since ideal-gas throttling has no temperature change, a nonzero coefficient refers to a real gas.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson inversion",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-935",
+      "number": 935,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "TNPSC AE 2013"
+        ]
+      },
+      "question": "For achieving the cooling effect by Joule- Kelvin, expansion the initial temperature of gas must be below the",
+      "options": {
+        "a": "Boiling point temperature",
+        "b": "Freezing point temperature",
+        "c": "Maximum inversion temperature",
+        "d": "Saturation temperature"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Joule–Kelvin expansion is throttling. Cooling requires positive μ_JT in the initial state. A necessary temperature condition is that the gas begin below its maximum inversion temperature, choice (c); above that maximum it cannot lie in the cooling region at any pressure. Being below the maximum alone is not sufficient at every pressure—the state must lie on the cooling side of the inversion curve.",
+      "sourceExplanation": "For achieving the cooling effect by Joule-\nKelvin, expansion the initial temperature of gas must be\nbelow the maximum inversion temperature.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson inversion",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-936",
+      "number": 936,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "Gujarat PSC AE 2019"
+        ]
+      },
+      "question": "Joule-Thomson process is",
+      "options": {
+        "a": "Throttling process",
+        "b": "Heating process",
+        "c": "Compression process",
+        "d": "Expansion process"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The Joule–Thomson process is throttling through a porous plug, valve or other restriction, choice (a). In its usual steady adiabatic model there is no shaft work and negligible kinetic/potential energy change, so h stays constant and μ = (∂T/∂P)ₕ. It is a pressure-reducing flow expansion, but “throttling” is the defining specific process rather than the general expansion category.",
+      "sourceExplanation": "μ = (∂T/∂P)ₕ; constant-enthalpy h process.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Throttling process",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-937",
+      "number": 937,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "The change in specific volume during vaporization of a refrigerant is 0.035 m³/kg. The slope of the saturation curve on a pressure–temperature diagram at 20°C is 17.69 kPa/K. The enthalpy of vaporization of the refrigerant is:",
+      "options": {
+        "a": "9.99 kJ/kg",
+        "b": "181.5 kJ/kg",
+        "c": "45.37 kJ/kg",
+        "d": "99.44 kJ/kg"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "By the Clapeyron equation, dP_sat/dT = h_fg/[T(v_g − v_f)]. Thus\nh_fg = (dP_sat/dT)TΔv\n= 17.69 kPa/K × (273 + 20) K × 0.035 m³/kg\n= 181.408 kJ/kg ≈ 181.5 kJ/kg.\nUsing 293.15 K gives 181.501 kJ/kg. Since 1 kPa·m³ = 1 kJ, the dimensions are correct and choice (b) follows.",
+      "sourceExplanation": "(dP/dT) = h_fg/(T × V_fg).\n17.69 × (273 + 20) × 0.035 = h_fg.\nh_fg = 181.5 kJ/kg.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Clapeyron calculations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-938",
+      "number": 938,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "UPSC JWM Adv. No-16/2009"
+        ]
+      },
+      "question": "When an ideal gas undergoes Joule-Kelvin expansion its :",
+      "options": {
+        "a": "Temperature decreases",
+        "b": "Temperature increases",
+        "c": "Temperature does not change",
+        "d": "Pressure increases"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "An ideal gas has h = h(T). Joule–Kelvin or Joule–Thomson throttling keeps enthalpy constant, so temperature cannot change. Equivalently μ = (∂T/∂P)ₕ = 0. Thus (c); the pressure drops while temperature remains unchanged.",
+      "sourceExplanation": "When an ideal gas undergoes Joule–Kelvin expansion, i.e. throttling, there is no change in temperature. For an ideal gas the Joule–Kelvin coefficient μ is zero. Hence μ = (dT/dP)ₕ = 0.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Ideal-gas throttling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-939",
+      "number": 939,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "DRDO Scientists 2009"
+        ]
+      },
+      "question": "For an ideal gas, the slope of the constant- volume line in the T-s diagram is",
+      "options": {
+        "a": "higher than the slope of the constant pressure line",
+        "b": "lower than the slope of the constant pressure line",
+        "c": "equal to the slope of the constant pressure line",
+        "d": "equal to the slope of the constant temperature line"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For an ideal gas, ds = cᵥdT/T at constant volume, so (∂T/∂s)ᵥ = T/cᵥ. At constant pressure, ds = cₚdT/T, so (∂T/∂s)ₚ = T/cₚ. Since cₚ > cᵥ, at a common state T/cᵥ > T/cₚ. The constant-volume line on the T–s diagram therefore has the higher slope, choice (a).",
+      "sourceExplanation": "(dT/dS)ᵥ = T/Cᵥ.\n(dT/dS)ₚ = T/Cₚ.\nSince Cₚ > Cᵥ, (dT/dS)ᵥ > (dT/dS)ₚ. Hence for an ideal gas the constant-volume line on the T–s diagram has a higher slope than the constant-pressure line.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Entropy-diagram slopes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-165-940",
+      "number": 940,
+      "source": {
+        "page": 151,
+        "pageEnd": 151,
+        "printedPage": 165,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "Region inside the inversion curve is represented by: (where μ is Joule–Kelvin coefficient)",
+      "options": {
+        "a": "Cooling region, μ < 0",
+        "b": "Heating region, μ > 0",
+        "c": "Cooling region, μ > 0",
+        "d": "Heating region, μ < 0"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The Joule–Kelvin coefficient is μ = (∂T/∂P)ₕ. Inside the conventional inversion curve the coefficient is positive, so a pressure drop gives dT = μdP < 0 and the gas cools. The correct combination is cooling region, μ > 0, choice (c). The source’s constant-enthalpy curves label positive slopes as cooling and negative slopes as heating. For an ideal gas μ = 0.",
+      "sourceExplanation": "Joule–Kelvin coefficient μ = (∂T/∂P)ₕ.\n[T–P isenthalpes: h = constant; cooling region, slope positive; heating region, slope negative.]\nFor ideal gas μ = 0.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Joule–Thomson Effect",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec7/2.html",
+          "section": "Isenthalpes, inversion curve and Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Thermodynamic Relations",
+      "subtopic": "Joule–Thomson inversion",
+      "figures": [
+        {
+          "page": 151,
+          "bbox": [
+            336,
+            618,
+            493,
+            714
+          ],
+          "placement": "explanation",
+          "alt": "T–P isenthalpes and inversion curve with positive-slope cooling and negative-slope heating regions"
+        }
+      ],
       "transcriptionReviewed": true
     }
   ]

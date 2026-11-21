@@ -21,7 +21,7 @@
       },
       "sourceAnswer": "(c)",
       "answer": "c",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "Given P = 100 kPa, T = 25 + 273 = 298 K approximately, and R = 0.287 kJ/(kg·K) = 0.287 kPa·m³/(kg·K).\nVolume V = 4 × 5 × 6 = 120 m³.\nP = ρRT, so PV = mRT.\nm = PV/(RT)\n  = (100 × 120)/(0.287 × 298)\n  ≈ 140.3 kg ≈ 140 kg.\nUsing the exact Celsius conversion T = 298.15 K gives about 140.2 kg, with the same choice (c).",
       "sourceExplanation": "Given P = 100 kPa.\nT = 25 + 273 = 298 K.\nR = 0.287 kJ/kg.\nVolume V = 4 × 5 × 6 = 120 m³.\nP = ρRT.\nPV = mRT.\nm = PV/(RT)\n  = (100 × 120)/(0.287 × 298).\nm = 140 kg.",
       "note": "Independently recomputed the ideal-gas mass. The source answer is correct after rounding; its explanation omits K from the units of R. The complete original derivation and unit typo are retained separately.",

@@ -2698,7 +2698,8 @@
       "topic": "First Law of Thermodynamics",
       "subtopic": "Isolated-system energy and entropy",
       "figures": [],
-      "transcriptionReviewed": true
+      "transcriptionReviewed": true,
+      "optionsUnavailable": true
     },
     {
       "number": 374,
@@ -3409,6 +3410,3383 @@
       ],
       "topic": "First Law of Thermodynamics",
       "subtopic": "Insulated-room electrical heating",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 391,
+      "source": {
+        "page": 61,
+        "pageEnd": 62,
+        "printedPage": 75,
+        "examLabels": [
+          "CGPSC Asstt. Workshop Supt., 17.07.2016"
+        ]
+      },
+      "question": "A vertical cylinder with a freely floating piston contains0.2kg air at1.1bar and a small electric resistor. The resistor is wired to an external12volt battery. When a current of2amp is passed through the resistor for100sec, the piston sweeps a volume of0.02m³. Assume:\n(i) Piston and cylinder are insulated.\n(ii) Air behaves as an ideal gas with Cᵥ=718J/(kg·K).\nFind the rise in temperature of air, in°C.",
+      "options": {
+        "a": "1.4",
+        "b": "1.6",
+        "c": "1.7",
+        "d": "1.9",
+        "e": "2.1"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source’s intended first-law calculation is as follows. Electrical input is VIt=12 ×2 ×100=2400J; boundary work is PΔV=1.1 ×10⁵ ×0.02=2200J. Since Q=0,\nmcᵥΔT=2400−2200=200J,\nΔT=200/(0.2 ×718)=1.393K≈1.4°C.\nThe source prints the subtraction in the opposite order, which would give−1.4°C.\nThere is also a physical inconsistency in the supplied ideal-gas data. A freely floating piston gives constant pressure, so PΔV=mRΔT. With R≈287J/(kg·K), the given PΔV=2200J requires ΔT=2200/(0.2 ×287)=38.33K, incompatible with the1.393K energy-balance result. Thus no state change satisfies all the printed data; the intended(a) is not a fully consistent solution.",
+      "sourceExplanation": "Given m=0.2kg, P=1.1bar, E=12V, I=2A, t=100sec, Vₛ=0.02m³, Cᵥ=718J/(kg·K).\nInsulation condition: δQ=0.\nδQ=δU+ΔW.\n0=mcᵥΔT+δWair−δW.\nΔT=(δWair−δW)/(mcᵥ)\n=[(1.1 ×10⁵ ×0.02)−(12 ×2 ×100)]/(0.2 ×718).\nΔT=1.4°C.",
+      "note": "The printed answer(a) follows only from the energy balance after reversing the source subtraction. Constant-pressure ideal-gas compatibility independently contradicts the given swept volume, so marked disputed.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Electrical heating of a floating-piston ideal gas",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 392,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "During charging of tank from a pipeline, the temperature of fluid is T in the pipeline. The final temperature in the tank will be T multiplied by",
+      "options": {
+        "a": "Cₚ",
+        "b": "Cᵥ",
+        "c": "Cₚ/Cᵥ",
+        "d": "Cₚ × Cᵥ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a rigid, insulated tank initially evacuated and filled from a large ideal-gas pipeline at constant temperature T, the unsteady-flow balance gives ufinal=hin. With constant specific heats,\ncᵥTfinal=cₚT,\nTfinal=(cₚ/cᵥ)T.\nThat special model gives the intended multiplier(c). The printed question states only a tank and a “fluid”, without ideal-gas, constant-specific-heat, insulation, rigid-tank, or initial-evacuation conditions. The result therefore cannot be asserted generally from the printed stem.",
+      "sourceExplanation": "The final temperature in the tank will be(Cₚ/Cᵥ)T.",
+      "note": "The source key(c) assumes evacuated adiabatic ideal-gas tank filling; those necessary conditions are omitted from the printed question.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Under-specified tank-filling temperature",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 393,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "From the following, in which case uniform state uniform flow process model may be applied?",
+      "options": {
+        "a": "Flow through a partially opened valve",
+        "b": "Flow through a pipe line in an open tank",
+        "c": "Flow through a pipe line in an closed tank",
+        "d": "Flow through fully opened valve"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "A uniform-state, uniform-flow model treats the contents of a control volume as spatially uniform at a given instant and treats each inlet/outlet flow as uniform over its cross-section. It is commonly applied to transient filling or discharge of tanks, which may be physically open or enclosed while exchanging mass through a pipe.\nThe source selects flow through a pipeline into an open tank, option(b). But a closed vessel being filled through a pipeline, option(c), can also be modeled this way if its contents are well mixed. The printed descriptions do not state enough conditions to exclude(c), so no unique checked letter is assigned.",
+      "sourceExplanation": "In case uniform state uniform flow process model may be applied when flow through a pipe line in an open tank.",
+      "note": "The source selects(b), but tank filling through a pipeline does not require an open-top tank. Both(b) and(c) can satisfy the uniform-state/uniform-flow approximation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Uniform-state uniform-flow model",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 394,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "HPPSC AE (PWD) 10.09.2016"
+        ]
+      },
+      "question": "The.....corollary of the......law of thermodynamics, that energy is conserved, is the application of the conservation of energy to closed systems.",
+      "options": {
+        "a": "First, second",
+        "b": "Second, first",
+        "c": "First, first",
+        "d": "Second, second"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The intended completion is “First, first”, choice(c): conservation of energy for a closed system is an application/corollary of the first law of thermodynamics.\nThe closed-system energy balance is ΔE=Q−W, so energy is conserved when all transfers are included. “First corollary” is the source’s ordering convention rather than a universally numbered thermodynamic law.",
+      "sourceExplanation": "First, first.",
+      "note": "The first-law identification is checked; numbering a corollary as “first” depends on the source convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law corollary",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 395,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "HPPSC AE (PWD) 10.09.2016"
+        ]
+      },
+      "question": "A piston-cylinder containing air expands at a pressure of150kPa from a temperature of285K to a temperature of550K. The mass of air is0.05kg and Cᵥ=0.7176. Then the change in internal energy will be:",
+      "options": {
+        "a": "13.31 kJ",
+        "b": "3.8 kJ",
+        "c": "9.51 kJ",
+        "d": "1.23 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Given P=150kPa=150 ×10³Pa, T₁=285K, T₂=550K, m=0.05kg, and cᵥ=0.7176kJ/(kg·K).\nFor ideal air, ΔU=mcᵥ(T₂−T₁), independently of the constant-pressure work.\nΔU=0.05 ×0.7176 ×(550−285)\n=9.5082kJ≈9.51kJ, choice(c).",
+      "sourceExplanation": "Given P=150kPa=150 ×10³Pa, T₁=285K, T₂=550K, m=0.05kg, Cᵥ=0.7176.\nBy the first law of thermodynamics, dQ=du+dw.\n∴ du=mcᵥdT.\ndu=0.05 ×0.7176 ×(550−285).\ndu=9.5008kJ.",
+      "note": "The printed final arithmetic9.5008kJ is incorrect; recomputation gives9.5082kJ, which rounds to the printed option(c),9.51kJ. The specific heat unit is understood as kJ/(kg·K).",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas internal-energy change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 396,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "CGPSC AE 16.10.2016"
+        ]
+      },
+      "question": "Specific heat at constant volume Cᵥ=\nWhere R=gas constant and γ=adiabatic exponent.",
+      "options": {
+        "a": "R/(γ − 1)",
+        "b": "(γ − 1)/(γ − R)",
+        "c": "(γ − 1)R/γ",
+        "d": "γR/(γ − 1)",
+        "e": "None of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For an ideal gas, cₚ−cᵥ=R and γ=cₚ/cᵥ.\nSubstitute cₚ=γcᵥ to obtain(γ−1)cᵥ=R.\nThus cᵥ=R/(γ−1), choice(a).\nCorrespondingly cₚ=γR/(γ−1).",
+      "sourceExplanation": "Cₚ−Cᵥ=R.\n∴ Cᵥ=R/(γ−1).\nCₚ=γR/(γ−1).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas specific-heat relations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 397,
+      "source": {
+        "page": 62,
+        "pageEnd": 62,
+        "printedPage": 76,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "A closed system undergoes a process during which 200 kJ of heat is added to it. The system is then restored to its initial state. If the heat transfer and work transfer for the second process are -75 kJ and +100 kJ respectively what is the work transfer for the first process?",
+      "options": {
+        "a": "50 kJ",
+        "b": "25 kJ",
+        "c": "75 kJ",
+        "d": "100 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given Q₁=200kJ and unknown W₁; the return process has Q₂=−75kJ and W₂=+100kJ.\nFor the complete cycle, ΣQ=ΣW.\nQ₁+Q₂=W₁+W₂.\n200−75=W₁+100.\n125−100=W₁.\nW₁=25kJ, choice(b).",
+      "sourceExplanation": "Given Q₁=200kJ and unknown W₁; the return process has Q₂=−75kJ and W₂=+100kJ.\nFor the complete cycle, ΣQ=ΣW.\nQ₁+Q₂=W₁+W₂.\n200−75=W₁+100.\n125−100=W₁.\nW₁=25kJ, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Cycle work from return-process data",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 398,
+      "source": {
+        "page": 62,
+        "pageEnd": 63,
+        "printedPage": 76,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "Air at100kPa,2°C occupies a10liter piston-cylinder device that is arranged to maintain constant air pressure. This device is now heated until its volume is20liters. The work produced by the air is",
+      "options": {
+        "a": "20 kJ",
+        "b": "10 kJ",
+        "c": "2 kJ",
+        "d": "1 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given P=100kPa, T₁=2°C, V₁=10litres=10 ×10⁻³m³, and V₂=20litres=20 ×10⁻³m³.\nFor constant pressure,\nW=P(V₂−V₁)\n=100 ×10³(20 ×10⁻³−10 ×10⁻³)J\n=100 ×10³ ×10 ×10⁻³J\n=1000J=1kJ, choice(d).",
+      "sourceExplanation": "Given P=100kPa, T₁=2°C, V₁=10litres=10 ×10⁻³m³, and V₂=20litres=20 ×10⁻³m³.\nFor constant pressure,\nW=P(V₂−V₁)\n=100 ×10³(20 ×10⁻³−10 ×10⁻³)J\n=100 ×10³ ×10 ×10⁻³J\n=1000J=1kJ, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure boundary work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 399,
+      "source": {
+        "page": 63,
+        "pageEnd": 63,
+        "printedPage": 77,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "A system is undergoing a cycle that consists of three processes. During the first process, the work is 5 kJ and the heat is 23 kJ. In the second process no work takes place and the heat interaction is —50 kJ. The third process is adiabatic. The work in the third process is",
+      "options": {
+        "a": "−32 kJ",
+        "b": "−23 kJ",
+        "c": "−22 kJ",
+        "d": "zero"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The three process interactions are:\nProcess1: heat23kJ, work5kJ.\nProcess2: heat−50kJ, work0.\nProcess3: heat0(adiabatic), workW₃.\nFor the complete cycle, the first law gives ΣQ=ΣW:\n23−50+0=5+0+W₃.\nW₃=−32kJ, choice(a).",
+      "sourceExplanation": "The three process interactions are:\nProcess1: heat23kJ, work5kJ.\nProcess2: heat−50kJ, work0.\nProcess3: heat0(adiabatic), workW₃.\nFor the complete cycle, the first law gives ΣQ=ΣW:\n23−50+0=5+0+W₃.\nW₃=−32kJ, choice(a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Three-process cycle balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 400,
+      "source": {
+        "page": 63,
+        "pageEnd": 63,
+        "printedPage": 77,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Air at100kPa and280K is compressed steadily to600kPa and400K. The mass flow rate of the air is0.02kg/s, and a heat loss of16kJ/kg occurs during the process. Determine power input to the compressor.",
+      "options": {
+        "a": "3.2 kW",
+        "b": "2.7 kW",
+        "c": "2.9 kW",
+        "d": "3.0 kW"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Let qloss=16kJ/kg. Neglecting changes in kinetic and potential energy, the steady-flow energy balance gives the compressor specific work input\nwin=(h₂−h₁)+qloss.\nFor ideal air, h₂−h₁=cₚ(T₂−T₁), with cₚ=1.005kJ/(kg·K).\nẆin=ṁ[cₚT₂−cₚT₁+qloss]\n=0.02[(1.005 ×400−1.005 ×280)+16]\n=2.732kW≈2.7kW, choice(b).",
+      "sourceExplanation": "Let qloss=16kJ/kg. Neglecting changes in kinetic and potential energy, the steady-flow energy balance gives the compressor specific work input\nwin=(h₂−h₁)+qloss.\nFor ideal air, h₂−h₁=cₚ(T₂−T₁), with cₚ=1.005kJ/(kg·K).\nẆin=ṁ[cₚT₂−cₚT₁+qloss]\n=0.02[(1.005 ×400−1.005 ×280)+16]\n=2.732kW≈2.7kW, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Compressor power with heat rejection",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 401,
+      "source": {
+        "page": 63,
+        "pageEnd": 63,
+        "printedPage": 77,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II"
+        ]
+      },
+      "question": "Which one of the following equations represents the first law of thermodynamics?",
+      "options": {
+        "a": "δQ = dU + P dV",
+        "b": "δW = dU + dV",
+        "c": "δQ = T dS",
+        "d": "T dS = dU + P dV"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "The first law for a process is δQ=dE+δW, where E is total energy and E=U+KE+PE.\nWhen changes in kinetic and potential energy are zero, δQ=dU+δW. For a quasi-static closed simple-compressible system with only pressure-volume work, δW=P dV, giving\nδQ=dU+P dV, option(a).\nFor a cycle, ∮δQ=∮δW.\nThe source notes that the official answer was(d). The identity T dS=dU+P dV is the fundamental thermodynamic property relation for a simple compressible system; it combines the first and second laws and is not the heat/work first-law statement. Therefore(a) is the checked intended first-law equation under the usual stated work restriction.",
+      "sourceExplanation": "First law for a process: δQ=dE+δW.\nWhere E=total energy.\nE=U+KE+PE.\nIf we consider change in KE and PE is zero(i.e.stationary system), then δQ=dU+δW.\nFor closed system, δQ=dU+P dV.\nFirst law for a cycle: ∮δQ=∮δW.\nNote—Official answer is given(d).",
+      "note": "Printed solution marker(a), with an explicit source note claiming official key(d). Retained the publisher’s(a) after checking the distinction between an energy balance and the Gibbs property identity.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law equation versus Gibbs identity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 402,
+      "source": {
+        "page": 63,
+        "pageEnd": 63,
+        "printedPage": 77,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "A closed system undergoes a process 1-2 for which the values of Q,.. and W,. are +40 kJ and +60 kJ, respectively. If the system is returned to state 1, and Q,, is -30 kJ, what is the value of the work W,.,?",
+      "options": {
+        "a": "+20 kJ",
+        "b": "−50 kJ",
+        "c": "−80 kJ",
+        "d": "+40 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The initial and final conditions of the round trip are identical, so the net internal-energy change is zero. For the cycle, ∮δQ=∮δW, or(ΣQ)cycle=(ΣW)cycle.\nGiven Q₁₂=40kJ, W₁₂=60kJ, and Q₂₁=−30kJ,\nQ₁₂+Q₂₁=W₁₂+W₂₁.\n40−30=60+W₂₁.\n10=60+W₂₁.\nW₂₁=−50kJ. The negative sign means work is done on the system.",
+      "sourceExplanation": "The initial and final conditions of the round trip are identical, so the net internal-energy change is zero. For the cycle, ∮δQ=∮δW, or(ΣQ)cycle=(ΣW)cycle.\nGiven Q₁₂=40kJ, W₁₂=60kJ, and Q₂₁=−30kJ,\nQ₁₂+Q₂₁=W₁₂+W₂₁.\n40−30=60+W₂₁.\n10=60+W₂₁.\nW₂₁=−50kJ. The negative sign means work is done on the system.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Return-process work in a cycle",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 403,
+      "source": {
+        "page": 63,
+        "pageEnd": 64,
+        "printedPage": 77,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "Ina steady flow, adiabatic turbine, the changes in the internal energy, enthalpy, kinetic energy and potential energy of the working fluid, from inlet to exit, are -150 kJ/kg, —130 kJ/kg, -40 kJ/kg and 0 kJ/kg respectively. Which one of the following gives the amount of work developed by the turbine?",
+      "options": {
+        "a": "190 kJ/kg",
+        "b": "170 kJ/kg",
+        "c": "150 kJ/kg",
+        "d": "90 kJ/kg"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a steady-flow turbine,\nh₁+C₁²/2+gz₁+q=h₂+C₂²/2+gz₂+w,\nwith all energies in consistent units. Hence\nq−w=(h₂−h₁)+(C₂²−C₁²)/2+g(z₂−z₁).\nFor an adiabatic turbine q=0, so\n−w=Δh+Δke+Δpe\n=−130−40+0\n=−170kJ/kg.\nThus w=170kJ/kg, choice(b). The separately supplied internal-energy change,−150kJ/kg, is superfluous because the flow-work contribution is already included in enthalpy.",
+      "sourceExplanation": "For a steady-flow turbine,\nh₁+C₁²/2+gz₁+q=h₂+C₂²/2+gz₂+w,\nwith all energies in consistent units. Hence\nq−w=(h₂−h₁)+(C₂²−C₁²)/2+g(z₂−z₁).\nFor an adiabatic turbine q=0, so\n−w=Δh+Δke+Δpe\n=−130−40+0\n=−170kJ/kg.\nThus w=170kJ/kg, choice(b). The separately supplied internal-energy change,−150kJ/kg, is superfluous because the flow-work contribution is already included in enthalpy.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Adiabatic turbine with kinetic-energy change",
+      "figures": [
+        {
+          "page": 63,
+          "bbox": [
+            337,
+            604,
+            492,
+            714
+          ],
+          "placement": "explanation",
+          "alt": "Steady-flow turbine with inlet1, outlet2, and shaft-work outputW."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 404,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "A mixture of gases expands from0.03m³ to0.08m³ at a constant pressure of1MPa and absorbs76kJ of heat during the process. The change in internal energy of the mixture is",
+      "options": {
+        "a": "116kJ",
+        "b": "46 kJ",
+        "c": "26 kJ",
+        "d": "126 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given P=1MPa=1000kPa and heat input Q=76kJ.\nWork done in the constant-pressure expansion is\nW=P(V₂−V₁)=1000(0.08−0.03)=1000(0.05)=50kJ.\nThe first law gives Q=ΔU+W.\nΔU=Q−W=76−50=26kJ, choice(c).",
+      "sourceExplanation": "Given P=1MPa=1000kPa and heat input Q=76kJ.\nWork done in the constant-pressure expansion is\nW=P(V₂−V₁)=1000(0.08−0.03)=1000(0.05)=50kJ.\nThe first law gives Q=ΔU+W.\nΔU=Q−W=76−50=26kJ, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure expansion energy balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 405,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "Total enthalpy of steam at the inlet of a nozzle is 2800 kJ while static enthalpy at the exit is 2555 kJ. What is the steam velocity at the exit if expansion is isentropic?",
+      "options": {
+        "a": "70 m/s",
+        "b": "245 m/s",
+        "c": "450 m/s",
+        "d": "700 m/s"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Interpreting the supplied total and static enthalpies as specific enthalpies in kJ/kg, the adiabatic nozzle conserves stagnation enthalpy:\nh₀=h₂+V₂²/2.\nWith h₀=2800kJ/kg and h₂=2555kJ/kg,\nV₂=√[2(h₀−h₂) ×1000]\n=√[2(2800−2555) ×1000]\n=√(2 ×245 ×1000)\n=700m/s, choice(d).",
+      "sourceExplanation": "Given h₁=2800kJ, h₂=2555kJ.\nV₂=√[2(h₁−h₂)].\nV₂=√[2(2800−2555) ×1000]\n=√(2 ×245 ×1000).\nV₂=700m/s.",
+      "note": "The stem and source printkJ for enthalpy, but nozzle velocity requires specific enthalpy inkJ/kg. The unique intended answer(d) follows after correcting that unit omission.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Stagnation and static enthalpy in a nozzle",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 406,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "OPSC AEE 2015 PAPER - II"
+        ]
+      },
+      "question": "During a certain compression process,1kJ of mechanical work input is supplied to2kg of a gas enclosed in a cylinder-piston assembly and400J of heat is rejected to the cooling water being circulated in the jacket encasing the cylinder. This brings about a change in the specific internal energy by:",
+      "options": {
+        "a": "−700 J·kg⁻¹",
+        "b": "600 J·kg⁻¹",
+        "c": "300 J·kg⁻¹",
+        "d": "−300 J·kg⁻¹"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Work input is1000J, heat rejected is400J, and mass is2kg. With heat to the gas and work by the gas positive, Q=−400J and W=−1000J.\nThe first law is δQ=dU+δW, so\nΔU=Q−W=−400+1000=600J.\nThe change in specific internal energy is\nΔu=ΔU/m=600/2=300J/kg, choice(c).\nThe symbolδ emphasizes that heat and work are inexact differentials.",
+      "sourceExplanation": "Work input is1000J, heat rejected is400J, and mass is2kg. With heat to the gas and work by the gas positive, Q=−400J and W=−1000J.\nThe first law is δQ=dU+δW, so\nΔU=Q−W=−400+1000=600J.\nThe change in specific internal energy is\nΔu=ΔU/m=600/2=300J/kg, choice(c).\nThe symbolδ emphasizes that heat and work are inexact differentials.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Specific internal-energy change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 407,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "A system undergoes a process in which the heat transfer to the system is 30 KJ and the work done by the system is 35000 Nm. The change in internal energy of the system is",
+      "options": {
+        "a": "+5 kJ",
+        "b": "−5 kJ",
+        "c": "−10 kJ",
+        "d": "+10 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The first law gives δQ=dU+δW.\nHeat input is30kJ. Work by the system is35000N·m=35000J=35kJ.\nΔU=Q−W=30−35=−5kJ, choice(b).",
+      "sourceExplanation": "The first law gives δQ=dU+δW.\nHeat input is30kJ. Work by the system is35000N·m=35000J=35kJ.\nΔU=Q−W=30−35=−5kJ, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law energy balances",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 408,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "NPCIL ET, 2015"
+        ]
+      },
+      "question": "First law of thermodynamics states that:(where Q₁₋₂=heat supplied, dU=change in internal energy, and W₁₋₂=work done in heat units)",
+      "options": {
+        "a": "Q₁₋₂ = dU + W₁₋₂",
+        "b": "Q₁₋₂ = dU − W₁₋₂",
+        "c": "Q₁₋₂ = dU/W₁₋₂",
+        "d": "Q₁₋₂ = dU × W₁₋₂"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The first law is Q₁₋₂=ΔU+W₁₋₂: heat supplied equals the internal-energy increase plus work done by the system, when all terms use consistent energy units. Thus(a) is correct.",
+      "sourceExplanation": "Q₁₋₂=dU+W₁₋₂—First law of thermodynamics.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law statement",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 409,
+      "source": {
+        "page": 64,
+        "pageEnd": 64,
+        "printedPage": 78,
+        "examLabels": [
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "In a given process of an ideal gas,δW=0 andδQ<0. Then for the gas",
+      "options": {
+        "a": "the temperature will decrease",
+        "b": "the volume will increase",
+        "c": "the pressure will remain constant",
+        "d": "the temperature will increase"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given δW=0 and δQ<0.\nThe first law is δQ=dU+δW, so δQ=dU+0=dU.\nSince δQ<0, dU<0.\nFor an ideal gas, ΔU=mcᵥ(T₂−T₁)<0, hence T₂<T₁. The gas temperature decreases, choice(a).",
+      "sourceExplanation": "Given δW=0 and δQ<0.\nThe first law is δQ=dU+δW, so δQ=dU+0=dU.\nSince δQ<0, dU<0.\nFor an ideal gas, ΔU=mcᵥ(T₂−T₁)<0, hence T₂<T₁. The gas temperature decreases, choice(a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas cooling with zero work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 410,
+      "source": {
+        "page": 65,
+        "pageEnd": 65,
+        "printedPage": 79,
+        "examLabels": [
+          "MPSC Poly. Lect. 2014"
+        ]
+      },
+      "question": "An insulated 2 kg box falls from a balloon 3.5 km above the earth. The change in the internal energy of the box after it has hit the earth's surface will be :",
+      "options": {
+        "a": "Zero",
+        "b": "70,000 kJ",
+        "c": "68.6 kJ",
+        "d": "7kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Under the idealization that the falling box comes to rest and all its lost gravitational potential energy becomes internal energy of the box,\nΔU=mgh\n=2 ×9.81 ×3.5 ×10³J\n=68.67kJ≈68.6kJ, choice(c).",
+      "sourceExplanation": "Under the idealization that the falling box comes to rest and all its lost gravitational potential energy becomes internal energy of the box,\nΔU=mgh\n=2 ×9.81 ×3.5 ×10³J\n=68.67kJ≈68.6kJ, choice(c).",
+      "note": "The source assumes all impact energy remains in the box; real impact can also heat/deform the ground. Checked the stated idealized result.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Impact conversion of potential energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 411,
+      "source": {
+        "page": 65,
+        "pageEnd": 65,
+        "printedPage": 79,
+        "examLabels": [
+          "UPRVUNL AE 2014"
+        ]
+      },
+      "question": "Which one of the following statements is not related to the first law of thermodynamics?",
+      "options": {
+        "a": "Whenever energy is transformed form one to another, energy is always conserved",
+        "b": "Energy can neither be created nor destroyed",
+        "c": "The sum total of all energy remains constant",
+        "d": "Every process occurring in nature proceeds in the sense in which the sum of the entropies o: all bodies taking part in the process is increased"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The statement about the entropy of all participating bodies increasing concerns the second law of thermodynamics, rather than the first law. Thus(d) is the required choice.\nThe first law concerns energy conservation. The source also gives δQ=T dS; this heat/entropy equality is valid for reversible heat transfer, not every irreversible process.",
+      "sourceExplanation": "Entropy’s law is not related to the first law of thermodynamic process. It is related to the second law of thermodynamic.\ndQ=T dS.\n•First law is related to energy conservation.",
+      "note": "Checked(d) and qualified the source’s heat–entropy equality as a reversible relation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First law versus second law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 412,
+      "source": {
+        "page": 65,
+        "pageEnd": 65,
+        "printedPage": 79,
+        "examLabels": [
+          "ISRO Scientist/Engineer 24.05.2014"
+        ]
+      },
+      "question": "A sample of gas(γ=1.5) is taken through an adiabatic process in which the volume is compressed from1600cm³ to400cm³. If initial pressure is150kPa, then how much will be the final pressure in the process?",
+      "options": {
+        "a": "1200 kPa",
+        "b": "1000 kPa",
+        "c": "1100 kPa",
+        "d": "1400 kPa"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given γ=1.5, V₁=1600cm³, V₂=400cm³, and P₁=150kPa. For the reversible adiabatic ideal-gas model, PVᵞ=constant.\nP₁V₁ᵞ=P₂V₂ᵞ.\nP₂=P₁(V₁/V₂)ᵞ\n=150(1600/400)^1.5\n=150 ×4^1.5\n=150 ×8=1200kPa, choice(a).",
+      "sourceExplanation": "Given γ=1.5, V₁=1600cm³, V₂=400cm³, and P₁=150kPa. For the reversible adiabatic ideal-gas model, PVᵞ=constant.\nP₁V₁ᵞ=P₂V₂ᵞ.\nP₂=P₁(V₁/V₂)ᵞ\n=150(1600/400)^1.5\n=150 ×4^1.5\n=150 ×8=1200kPa, choice(a).",
+      "note": "The usual reversible/quasi-static ideal-gas assumption is implicit in the source’s adiabatic relationPVᵞ=constant.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Adiabatic ideal-gas compression",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 413,
+      "source": {
+        "page": 65,
+        "pageEnd": 65,
+        "printedPage": 79,
+        "examLabels": [
+          "ISRO Scientist/Engineer 24.05.2014"
+        ]
+      },
+      "question": "One mole of a monatomic gas is taken through a cycleABCDA as shown in the P–V diagram. ColumnII gives the characteristics involved in the cycle. MatchA→B process with the processes given in ColumnII.\nColumnI: (A)ProcessA→B; (B)ProcessB→C; (C)ProcessC→D; (D)ProcessD→A.\nColumnII: (p)Internal energy decreases; (q)Internal energy increases; (r)Heat is lost; (s)Heat is gained; (t)Work is done on the gas.\nProcessA→B signifies",
+      "options": {
+        "a": "p, q",
+        "b": "r, s",
+        "c": "p, r, t",
+        "d": "q, t"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For processA→B, the ideal-gas equation gives PₐVₐ/Tₐ=PᵦVᵦ/Tᵦ.\nThe diagram has Pₐ=Pᵦ, so Vₐ/Tₐ=Vᵦ/Tᵦ.\nTᵦ/Tₐ=Vᵦ/Vₐ=V/(3V)=1/3.\nThus Tᵦ=Tₐ/3<Tₐ.\nThe temperature decrease gives ΔU=CᵥΔT=Cᵥ(Tᵦ−Tₐ)<0, so internal energy decreases(p).\nThe volume decreases at constant pressure, so work is done on the gas(t). At constant pressure, heat also leaves as temperature falls(r).\nThe matching characteristics are p,r,t, option(c).",
+      "sourceExplanation": "For processA→B, the ideal-gas equation gives PₐVₐ/Tₐ=PᵦVᵦ/Tᵦ.\nThe diagram has Pₐ=Pᵦ, so Vₐ/Tₐ=Vᵦ/Tᵦ.\nTᵦ/Tₐ=Vᵦ/Vₐ=V/(3V)=1/3.\nThus Tᵦ=Tₐ/3<Tₐ.\nThe temperature decrease gives ΔU=CᵥΔT=Cᵥ(Tᵦ−Tₐ)<0, so internal energy decreases(p).\nThe volume decreases at constant pressure, so work is done on the gas(t). At constant pressure, heat also leaves as temperature falls(r).\nThe matching characteristics are p,r,t, option(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "P–V diagram: isobaric compression",
+      "figures": [
+        {
+          "page": 65,
+          "bbox": [
+            342,
+            95,
+            483,
+            172
+          ],
+          "placement": "question",
+          "alt": "P–V cycle: A(3V,3P), B(V,3P), C(V,P), D(9V,P); A→B is constant-pressure compression."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 414,
+      "source": {
+        "page": 65,
+        "pageEnd": 65,
+        "printedPage": 79,
+        "examLabels": [
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "First law of thermodynamics is valid for",
+      "options": {
+        "a": "all process",
+        "b": "reversible process only",
+        "c": "cyclic process only",
+        "d": "only cyclic process that are carried out reversibly"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The first law is based on conservation of energy: energy can neither be created nor destroyed. It therefore applies to all processes, reversible or irreversible, cyclic or noncyclic. The correct choice is(a).",
+      "sourceExplanation": "The first law is based on conservation of energy: energy can neither be created nor destroyed. It therefore applies to all processes, reversible or irreversible, cyclic or noncyclic. The correct choice is(a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Universality of the first law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 415,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "RPSC AEN Pre-2013"
+        ]
+      },
+      "question": "A company claims to have developed a revolutionary fan that consumes 25 W and delivers 0.8 kg/s of air at a velocity of 10 m/s. The claim has to be verified using appropriate law of thermodynamics. Which of the following combinations of conclusion and the law employed for the same is correct?",
+      "options": {
+        "a": "Invalid — First law",
+        "b": "Invalid — Second law",
+        "c": "Valid—Firstlaw",
+        "d": "Valid — Second law"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The claimed kinetic-energy output rate is\n½ṁv²=½ ×0.8 ×10²=40W.\nThis exceeds the claimed electrical input25W, even before allowing for losses. With no other energy source and negligible inlet velocity, the claim violates energy conservation. It is invalid by the first law: (a).",
+      "sourceExplanation": "Invalid—First law.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Fan claim and first-law feasibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 416,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "TNPSC AE 2013"
+        ]
+      },
+      "question": "The steady flow energy equation of a perfect gas flowing through a nozzle with the initial and final velocities ofV₁ andV₂ is given by",
+      "options": {
+        "a": "h₁ = h₂",
+        "b": "h₁ − h₂ = (V₂² − V₁²)/2",
+        "c": "h₁ − h₂ = (V₁² − V₂²)/2",
+        "d": "h₁ − h₂ = Wₓ/m"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The steady-flow energy equation is\nṁ₁[h₁+V₁²/2+gz₁]+Q̇=ṁ₂[h₂+V₂²/2+gz₂]+Ẇ,\nwith all energies in consistent units.\nFor the nozzle, assume ṁ₁=ṁ₂, z₁=z₂, Q̇=0, and Ẇ=0. Then\nh₁−h₂=(V₂²−V₁²)/2, choice(b).\nIf h is expressed inkJ/kg while velocities are inm/s, the right side must be divided by1000.",
+      "sourceExplanation": "We know that SFEE:\nṁ₁[h₁+V₁²/2+Z₁]+Q=ṁ₂[h₂+V₂²/2+Z₂]+W.\nFor nozzle we assume that Z₁=Z₂,Q=0,W=0.\nThen we get(h₁−h₂)=(V₂²−V₁²)/2.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Nozzle steady-flow energy equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 417,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "SJVN ET 2013"
+        ]
+      },
+      "question": "IfH be the heat supplied to the system to do workW and change in internal energy asΔU, then",
+      "options": {
+        "a": "H = ΔU + W",
+        "b": "ΔU = H + W",
+        "c": "W = H + ΔU",
+        "d": "H = W/ΔU"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The first law is H=ΔU+W, where H here denotes heat supplied, ΔU is the change in internal energy, and W is work done by the system. Therefore(a) is correct. This use ofH for heat is the notation of the question; it is often otherwise used for enthalpy.",
+      "sourceExplanation": "First law of thermodynamics: H=ΔU+W.\nWhere H=heat supplied; ΔU=internal energy; W=work.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law notation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 418,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "A machine produces100kJ work by consuming100kJ heat. This machine will be called:",
+      "options": {
+        "a": "PMM-I",
+        "b": "PMM-II",
+        "c": "PMM-III",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "A perpetual-motion machine of the second kind(PMM-II) would convert all heat absorbed from a single reservoir into work while completing a cycle, with thermal efficiencyη=1. Such a cyclic single-reservoir machine is forbidden by the second law and is the source’s intended answer(b).\nThe printed stem, however, does not state cyclic operation or a single heat reservoir. A one-time isothermal ideal-gas expansion can absorb100kJ and produce100kJ of work without violating the laws. Thus the printed energy amounts alone do not establish that the machine is a PMM-II.",
+      "sourceExplanation": "PMM-II(perpetual motion machine of second kind) is one which converts all the heat input into work while working in a cycle. A PMM-II has anηₜₕ of1.",
+      "note": "The source adds cyclic operation; a single reservoir is also required for the Kelvin–Planck prohibition. These conditions are not in the printed stem, so the intended(b) is conditional.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "4.1"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "PMM-II and omitted cyclic condition",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 419,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-Il"
+        ]
+      },
+      "question": "Air is compressed isothermally by performing work equal to 16 kJ upon it. The change in internal energy is",
+      "options": {
+        "a": "-16 kJ",
+        "b": "Zero",
+        "c": "16 kJ",
+        "d": "32 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For isothermal ideal air, T=constant and ΔT=0.\nΔU=mcᵥΔT=0.\nThe16kJ work input is balanced by heat rejection; it does not change internal energy. Thus(b) is correct.",
+      "sourceExplanation": "For isothermal ideal air, T=constant and ΔT=0.\nΔU=mcᵥΔT=0.\nThe16kJ work input is balanced by heat rejection; it does not change internal energy. Thus(b) is correct.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isothermal ideal-gas internal energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 420,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "General energy equation for flow process is",
+      "options": {
+        "a": "dQ = du + p dv",
+        "b": "dQ = dh − v dp",
+        "c": "du + d(pv) + d(V²/2) + d(gz) + dQ + dW = 0",
+        "d": "dQ = T dS"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Using h=u+pv, the steady-flow energy balance is\ndh+d(V²/2)+d(gz)=δqᵢₙ−δwₒᵤₜ.\nIf the question’sdQ is defined positive for heat rejected anddW positive for work done by the fluid, this becomes\ndu+d(pv)+d(V²/2)+d(gz)+dQ+dW=0, matching(c).\nThe sign convention must be stated: with heat positive into the fluid, the heat term would instead have a minus sign on the left.",
+      "sourceExplanation": "Energy equation for flow process:\ndu+d(pv)+d(V²/2)+d(gz)+dQ+dW=0.",
+      "note": "Retained(c) under a positive-heat-rejection convention, which the printed question does not specify. Added the convention to make the equation interpretable.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "General steady-flow energy equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 421,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "APPSC AEE 2012"
+        ]
+      },
+      "question": "The heat transfer, the work done and the change in internal energy are all zero in case of",
+      "options": {
+        "a": "a rigid vessel containing steam at150°C left in the atmosphere which is at25°C",
+        "b": "1kg gas contained in an insulated cylinder expanding as the piston moves slowly outwards",
+        "c": "1kg of air flowing adiabatically from atmosphere into a previously evacuated bottle",
+        "d": "a rigid vessel containing ammonia gas connected through a valve to an evacuated rigid vessel, the vessel, the valve and the connecting pipes being well insulated and the valve being opened slowly"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Take the two vessels, valve, and connecting pipe as one closed system.\n(i)The combined outer boundary is rigid, so ΔV=0 and boundary workW=PΔV=0.\n(ii)The assembly is well insulated, so Q=0.\n(iii)The first law then gives Q=ΔU+W, hence0=ΔU+0 and ΔU=0.\nThus all three quantities vanish for(d), even though energy redistributes internally between the vessels.",
+      "sourceExplanation": "Take the two vessels, valve, and connecting pipe as one closed system.\n(i)The combined outer boundary is rigid, so ΔV=0 and boundary workW=PΔV=0.\n(ii)The assembly is well insulated, so Q=0.\n(iii)The first law then gives Q=ΔU+W, hence0=ΔU+0 and ΔU=0.\nThus all three quantities vanish for(d), even though energy redistributes internally between the vessels.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Insulated two-vessel free expansion",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 422,
+      "source": {
+        "page": 66,
+        "pageEnd": 66,
+        "printedPage": 80,
+        "examLabels": [
+          "APPSC AEE 2012"
+        ]
+      },
+      "question": "The work done in the expansion of a gas from volumeV₁ toV₂ under constant pressureP is equal to",
+      "options": {
+        "a": "Zero",
+        "b": "P(V₂ − V₁)",
+        "c": "P(V₂ + V₁)",
+        "d": "P/(V₂ − V₁)"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a non-flow quasi-static expansion at constant pressure,\nW=∫ᵥ₁ᵛ₂P dV=P(V₂−V₁).\nIt is the rectangular area under the constant-pressure line in the P–V diagram. Thus(b) is correct.",
+      "sourceExplanation": "For a non-flow quasi-static expansion at constant pressure,\nW=∫ᵥ₁ᵛ₂P dV=P(V₂−V₁).\nIt is the rectangular area under the constant-pressure line in the P–V diagram. Thus(b) is correct.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure work",
+      "figures": [
+        {
+          "page": 66,
+          "bbox": [
+            358,
+            655,
+            468,
+            742
+          ],
+          "placement": "explanation",
+          "alt": "Constant-pressure expansion; the shaded rectangle betweenV₁ andV₂ has areaP(V₂−V₁)."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 423,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "Choose the correct alternative:\n1.First law for a closed system undergoing a cycleQ−W=ΔE.\n2.Two reversible adiabatic paths can not intersect each other.\n3.If two fluids are mixed, the entropy of universe remains unchanged.\n4.Clausius statement—Heat can flow from low to high temperature body without the aid of external work.\n5.The efficiency of a reversible heat engine is independent of nature of working substance undergoing a cycle.",
+      "options": {
+        "a": "All statements are true.",
+        "b": "Statements2 and5 are true.",
+        "c": "Statements1,3,4 and5 are true.",
+        "d": "Statements1,3 and5 are true."
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Statement1 is true as written: the first law isQ−W=ΔE, and for a complete closed-system cycleΔE=0.\nStatement2 is true for distinct reversible adiabatic paths of a simple compressible equilibrium system: they are isentropes and cannot intersect in a state diagram.\nStatement3 is generally false: spontaneous mixing can increase the entropy of the universe.\nStatement4 reverses the Clausius statement and is false; transfer from a colder body to a hotter body cannot be the sole result without another effect such as work input.\nStatement5 is true for reversible engines operating between the same reservoirs: efficiency is independent of working substance.\nThus1,2,and5 are true under the standard intended engine conditions. No option lists that combination. The source prints(b),2and5, by apparently treating statement1 as false merely because it does not simplifyΔEto0.",
+      "sourceExplanation": "Statements2 and5 are true.",
+      "note": "Statement1 is a valid first-law equality even though a cycle hasΔE=0. The correct true-set includes1,2,5, which has no printed choice.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "4.1"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Combined first- and second-law statements",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 424,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2011"
+        ]
+      },
+      "question": "A gas is to expanded in a cylinder that its temperature remains constant. The resulting variation of pressure vs.volume is",
+      "options": {
+        "a": "A parabola",
+        "b": "A hyperbola",
+        "c": "A straight line through origin",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a fixed quantity of ideal gas at constant temperature,PV=constant. ThusP is proportional to1/V, so theP–V curve is a rectangular hyperbola: (b). The source’s plot shows the pressure decreasing fromP₁toP₂as volume increases fromV₁toV₂alongT=constant.",
+      "sourceExplanation": "For a fixed quantity of ideal gas at constant temperature,PV=constant. ThusP is proportional to1/V, so theP–V curve is a rectangular hyperbola: (b). The source’s plot shows the pressure decreasing fromP₁toP₂as volume increases fromV₁toV₂alongT=constant.",
+      "note": "Answer(b) uses the ideal-gas assumption implicit inPV=constant; a general real gas need not follow an exact hyperbola.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isothermal ideal-gas P–V curve",
+      "figures": [
+        {
+          "page": 67,
+          "bbox": [
+            105,
+            409,
+            233,
+            493
+          ],
+          "placement": "explanation",
+          "alt": "Isothermal P–V hyperbola with pressuresP₁,P₂and volumesV₁,V₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 425,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "Internal energy of an isolated system :",
+      "options": {
+        "a": "Increases with addition on heat",
+        "b": "Increases with increase in mass of the system",
+        "c": "Remains same",
+        "d": "Increases with addition of work"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For the usual stationary isolated system, no heat or work crosses the boundary:δQ=0 andδW=0.\nThe first lawδQ=dU+δWtherefore givesdU=0; internal energy remains unchanged, choice(c).\nThe source additionally notes that internal energy of a perfect gas depends only on temperature. That ideal-gas fact is separate from the no-transfer argument.",
+      "sourceExplanation": "For the usual stationary isolated system, no heat or work crosses the boundary:δQ=0 andδW=0.\nThe first lawδQ=dU+δWtherefore givesdU=0; internal energy remains unchanged, choice(c).\nThe source additionally notes that internal energy of a perfect gas depends only on temperature. That ideal-gas fact is separate from the no-transfer argument.",
+      "note": "The standard source answer assumes no conversion between bulk kinetic/potential energy and internal energy; isolation strictly conserves total energy.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isolated-system internal energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 426,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "OPSC Civil Services Pre. 2011"
+        ]
+      },
+      "question": "The identityδQ=dU+P dVis valid for:",
+      "options": {
+        "a": "Any process occurring in an open system",
+        "b": "Any process occurring in a closed system",
+        "c": "A quasi-static process without dissipation in a closed cycle",
+        "d": "Any process in any system"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The equationδQ=dU+P dVis the closed-system first law when changes in kinetic/potential energy are negligible and the only work is quasi-static pressure-volume work without dissipation.\nAmong the printed choices, a quasi-static process without dissipation in a closed cycle, option(c), satisfies the intended conditions. The equation is not valid for every open or closed process without these restrictions.",
+      "sourceExplanation": "δQ=dU+P dV.\nThis equation is valid for closed system, quasi-static process without dissipation in a closed cycle and reversible process.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Conditions for δQ=dU+P dV",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 427,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "VIZAG STEEL MT 2011"
+        ]
+      },
+      "question": "What is the following statement known as:“Energy can neither be created nor destroyed but it can be transferred from one form to another”?",
+      "options": {
+        "a": "Zeroth law of thermodynamics",
+        "b": "First law of thermodynamics",
+        "c": "Second law of thermodynamics",
+        "d": "Kinetic theory of gases"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The first law of thermodynamics states that energy can neither be created nor destroyed, but it can be converted from one form to another.\nFor a closed system executing a cycle, the algebraic sum of work transfer equals the algebraic sum of heat transfer when both use the same energy units:\n(ΣW)cycle=(ΣQ)cycle.\nThus(b) is correct.",
+      "sourceExplanation": "The first law of thermodynamics states that energy can neither be created nor destroyed, but it can be converted from one form to another.\nFor a closed system executing a cycle, the algebraic sum of work transfer equals the algebraic sum of heat transfer when both use the same energy units:\n(ΣW)cycle=(ΣQ)cycle.\nThus(b) is correct.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Energy-conservation statement",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 428,
+      "source": {
+        "page": 67,
+        "pageEnd": 67,
+        "printedPage": 81,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2010"
+        ]
+      },
+      "question": "10kg of air at800kPa are heated at a constant pressure from450K to680K. The work required is nearest to:",
+      "options": {
+        "a": "524 kJ",
+        "b": "960 kJ",
+        "c": "715 kJ",
+        "d": "660 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given m=10kg, air gas constantR=0.287kPa·m³/(kg·K), P=800kPa, Tᵢ=450K, andT𝒻=680K.\nFor constant pressure,W=PΔV=P(V𝒻−Vᵢ).\nFromPV=mRT,\nΔT=[P/(mR)](V𝒻−Vᵢ).\n680−450=[800/(10 ×0.287)](V𝒻−Vᵢ).\nV𝒻−Vᵢ=0.825125m³.\nThereforeW=800 ×0.825125=660.10kJ, nearest to660kJ, choice(d).\nThis is expansion work produced by the air, although the question calls it work “required”.",
+      "sourceExplanation": "Given m=10kg, air gas constantR=0.287kPa·m³/(kg·K), P=800kPa, Tᵢ=450K, andT𝒻=680K.\nFor constant pressure,W=PΔV=P(V𝒻−Vᵢ).\nFromPV=mRT,\nΔT=[P/(mR)](V𝒻−Vᵢ).\n680−450=[800/(10 ×0.287)](V𝒻−Vᵢ).\nV𝒻−Vᵢ=0.825125m³.\nThereforeW=800 ×0.825125=660.10kJ, nearest to660kJ, choice(d).\nThis is expansion work produced by the air, although the question calls it work “required”.",
+      "note": "Checked the complete source volume and work calculation. Constant-pressure heating causes expansion, so660kJ is work output rather than work input.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure ideal-gas work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 429,
+      "source": {
+        "page": 67,
+        "pageEnd": 68,
+        "printedPage": 81,
+        "examLabels": [
+          "UPSC JWM Advt. No.-52/2010"
+        ]
+      },
+      "question": "An air compressor compresses air with an enthalpy of 100 kJ/kg to a pressure and temperature that have an enthalpy of 200 kJ/kg. If 50 kJ/kg of heat is lost from the compressor as the air passes through it, the power required for an air mass flow of 0.5 kg/s is :",
+      "options": {
+        "a": "25 kW",
+        "b": "50 kW",
+        "c": "75 kW",
+        "d": "100 kW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For negligible kinetic- and potential-energy changes, the steady-flow energy equation is\nh₁+q=h₂+w.\nGivenh₁=100kJ/kg,h₂=200kJ/kg,and heat lossq=−50kJ/kg,\nw=(h₁−h₂)+q=(100−200)+(−50)=−150kJ/kg.\nThus compressor work input is150kJ/kg.\nPower input=ṁwin=0.5kg/s ×150kJ/kg=75kW, choice(c).",
+      "sourceExplanation": "For negligible kinetic- and potential-energy changes, the steady-flow energy equation is\nh₁+q=h₂+w.\nGivenh₁=100kJ/kg,h₂=200kJ/kg,and heat lossq=−50kJ/kg,\nw=(h₁−h₂)+q=(100−200)+(−50)=−150kJ/kg.\nThus compressor work input is150kJ/kg.\nPower input=ṁwin=0.5kg/s ×150kJ/kg=75kW, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Air-compressor power",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 430,
+      "source": {
+        "page": 68,
+        "pageEnd": 68,
+        "printedPage": 82,
+        "examLabels": [
+          "UPSC JWM Advt. No.-50/2010"
+        ]
+      },
+      "question": "Steam at a pressure of 6 bars (enthalpy 2988 kJ/kg) passes through a frictionless nozzle to a pressure of 4 bars (enthalpy 2888 kJ/kg). Neglecting velocity of approach, the final velocity of steam at exit of nozzle will be",
+      "options": {
+        "a": "447.2 m/s",
+        "b": "44.72 m/s",
+        "c": "4.472 m/s",
+        "d": "4472 m/s"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "GivenP₁=6bar,h₁=2988kJ/kg,andh₂=2888kJ/kg. With negligible inlet velocity, heat transfer, shaft work, and elevation change, the nozzle energy equation is\nh₁=h₂+V₂²/2, usingJ/kg throughout.\nV₂=√[2(2988−2888) ×10³]\n=√(2 ×100 ×10³)\n=447.2m/s, choice(a).",
+      "sourceExplanation": "GivenP₁=6bar,h₁=2988kJ/kg,h₂=2888kJ/kg.\nUsingS.F.E.E.for nozzle—\nh₁=h₂+V₂²/2.\nV₂=√[2(2988−2888) ×10³]=√(2 ×100 ×10⁵).\nV₂=447.2m/s.",
+      "note": "The source’s second radicand prints10⁵instead of10³. The first substitution and final447.2m/s result use the correct10³conversion.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Frictionless steam-nozzle velocity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 431,
+      "source": {
+        "page": 68,
+        "pageEnd": 68,
+        "printedPage": 82,
+        "examLabels": [
+          "DRDO Scientists 2008"
+        ]
+      },
+      "question": "An inventor claims to have constructed a device that rejects 300 kJ of heat to a single reservoir while absorbing 300 kJ of work during a single cycle of the device. This device violates",
+      "options": {
+        "a": "only the first law of thermodynamics and no other laws",
+        "b": "only the second law of thermodynamics and no other laws",
+        "c": "both the first and the second law of thermodynamics",
+        "d": "neither the first nor the second law of thermodynamics"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "This is a work-dissipating device such as an electric heater, and it is possible without violating either law. For a complete cycle, ΔE=0. With heat to the device and work by the device positive, Q=−300kJ and W=−300kJ, so Q−W=0, satisfying the first law.\nThe second law permits complete conversion of work into heat delivered to a single reservoir. Its prohibition concerns complete cyclic conversion of heat from a single reservoir into net work, the opposite direction.\nTherefore the correct choice is(d), neither law. The source prints key(a), but its own explanation says no law is violated.",
+      "sourceExplanation": "It is case of electric heater and it is possible without violating any law of thermodynamics.\nThe diagram shows work inputW=300kJ, heatQ₂=300kJ delivered to the upper reservoir, and assumesQ₁=0 from the lower reservoir.",
+      "note": "Corrected printed key(a) to(d). The printed explanation already agrees with(d).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Work-to-heat conversion and law compliance",
+      "figures": [
+        {
+          "page": 68,
+          "bbox": [
+            134,
+            545,
+            232,
+            641
+          ],
+          "placement": "explanation",
+          "alt": "Device receives300kJ of work and delivers300kJ of heat to a single reservoir; no heat is taken from the lower reservoir."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 432,
+      "source": {
+        "page": 68,
+        "pageEnd": 68,
+        "printedPage": 82,
+        "examLabels": [
+          "ISRO Scientist/Engineer 2006"
+        ]
+      },
+      "question": "One hundredth of a kilogram of air is compressed In a piston-cylinder device. At an instant of time when T= 400K, the rate at which work is being done on the air is 8.165 kW, and heat is being removed at a rate of 1.0 kW, the rate of temperature rise will be -",
+      "options": {
+        "a": "10 K/s",
+        "b": "100 K/s",
+        "c": "1000 K/s",
+        "d": "10000 K/s"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given air massm=1/100kg=0.01kg, work done on the air8.165kW, and heat removed1.0kW. With work by and heat to the air positive, Ẇ=−8.165kW and Q̇=−1kW.\nThe first law gives Q̇=dU/dt+Ẇ.\n−1=mcᵥ(dT/dt)−8.165.\nmcᵥ(dT/dt)=7.165kW.\nUsingcᵥ=0.718kJ/(kg·K),\ndT/dt=7.165/(0.01 ×0.718)=997.91K/s≈1000K/s, choice(c).",
+      "sourceExplanation": "Given air massm=1/100kg=0.01kg, work done on the air8.165kW, and heat removed1.0kW. With work by and heat to the air positive, Ẇ=−8.165kW and Q̇=−1kW.\nThe first law gives Q̇=dU/dt+Ẇ.\n−1=mcᵥ(dT/dt)−8.165.\nmcᵥ(dT/dt)=7.165kW.\nUsingcᵥ=0.718kJ/(kg·K),\ndT/dt=7.165/(0.01 ×0.718)=997.91K/s≈1000K/s, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Instantaneous temperature-rise rate",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 433,
+      "source": {
+        "page": 68,
+        "pageEnd": 68,
+        "printedPage": 82,
+        "examLabels": [
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "For an ideal gas, the change in enthalpy,dh is given by",
+      "options": {
+        "a": "Cᵥ dT",
+        "b": "Cₚ dT",
+        "c": "(Cₚ/Cᵥ) dT",
+        "d": "(Cᵥ/Cₚ) dT"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "For an ideal gas, specific enthalpy depends only on temperature and dh=cₚdT, choice(b). This relation is valid for any ideal-gas process, not only constant-pressure processes.\nThe source obtains the result along a constant-pressure path: δQ=dU+P dV=dU+d(PV)=d(U+PV)=dH. For a fixed massm, δQ=mcₚdT, so dH=mcₚdT; dividing bym yields dh=cₚdT.\nHerecₚis mass-specific heat at constant pressure; total heat capacity would bemcₚ.",
+      "sourceExplanation": "[P=C]for constant pressure.\n∴δQ=dU+P dV.\nδQ=dU+d(PV)\n=d(U+PV); U+PV=h.\nδQ=d(h) …(i).\nδQ=mcₚdT.\ndh=mcₚdT.\nOr[dh=CₚdT].\nWhereCₚ=heat capacity.",
+      "note": "Retained(b), distinguishing specifich from totalH and clarifying thatdh=cₚdTdoes not require an isobaric actual process.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas enthalpy differential",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 434,
+      "source": {
+        "page": 68,
+        "pageEnd": 69,
+        "printedPage": 82,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021",
+          "ISRO Scientist/Engineer (RAC) 22.04.2018",
+          "TNPSC AE 2018",
+          "Vizag Steel (MT) 2017",
+          "Karnataka PSC Lect.27.05.2017",
+          "Kerala PSC AE05.04.2017",
+          "ISRO Scientist/Engineer (RAC)29.11.2015",
+          "ISRO Scientist/Engineer11.10.2015",
+          "TSGENCO AE14.11.2015",
+          "KPSC AE2015, TSPSC AEE2015",
+          "Kerala PSC AE06.08.2015",
+          "Kerala BLSC Centre For Sci.&Tech.Asstt.Prof.2014",
+          "WBPSC AE2008",
+          "J&K PSC Screening,2006",
+          "OPSC Civil Services Pre2006"
+        ]
+      },
+      "question": "Carnot cycle consists of",
+      "options": {
+        "a": "Two constant volume & two isentropic processes",
+        "b": "Two isothermal and two isentropic processes",
+        "c": "Two constant pressure and two isentropic processes",
+        "d": "One constant volume, one constant pressure and two isentropic processes"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The Carnot cycle consists of two reversible isothermal processes and two reversible adiabatic(isentropic) processes:\n1–2:isothermal expansion.\n2–3:isentropic expansion.\n3–4:isothermal compression.\n4–1:isentropic compression.\nThus(b) is correct. TheP–VandT–Splots illustrate the same four processes.",
+      "sourceExplanation": "The Carnot cycle consists of two reversible isothermal processes and two reversible adiabatic(isentropic) processes:\n1–2:isothermal expansion.\n2–3:isentropic expansion.\n3–4:isothermal compression.\n4–1:isentropic compression.\nThus(b) is correct. TheP–VandT–Splots illustrate the same four processes.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Processes of the Carnot cycle",
+      "figures": [
+        {
+          "page": 69,
+          "bbox": [
+            103,
+            139,
+            263,
+            219
+          ],
+          "placement": "explanation",
+          "alt": "Carnot-cycleP–VandT–Sdiagrams with isothermal expansion1–2, isentropic expansion2–3, isothermal compression3–4, and isentropic compression4–1."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 435,
+      "source": {
+        "page": 69,
+        "pageEnd": 69,
+        "printedPage": 83,
+        "examLabels": [
+          "RPSC ACF & FRO, 26.02.2021",
+          "UPRVUNL AE 05.07.2021",
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021",
+          "RPSC IOF, 2020",
+          "GPSC Engineer, Class-II Pre-19.01.2020",
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020",
+          "HPPSC AE 2018, HPPSC LECT. 2016",
+          "GPSC Lect. 23.10.2016",
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3",
+          "Assam PSC CCE Pre 2015",
+          "GWSSB AAE, 27.12.2015, APPSC Poly. Lect. 2013",
+          "UKPSC AE 2012 Paper-IL, WBPSC AE 2008",
+          "J & K PSC Screening, 2006",
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "The second law of thermodynamics defines",
+      "options": {
+        "a": "enthalpy",
+        "b": "internal energy",
+        "c": "entropy",
+        "d": "specific heat"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The second law introduces entropy, a thermodynamic state property, so the answer is(c). For reversible heat transfer at absolute temperatureT,\nδQrev=T dS, or dS=δQrev/T.\nThe source describes entropy as increasing with heat addition and decreasing with heat removal, and explains that a small entropy change multiplied by absolute temperature gives the heat absorbed or rejected. That description applies to the reversible heat-transfer contribution. In a general irreversible process, entropy can also be generated, so heat transfer alone does not determine the full entropy change.\nIn this relationTis absolute temperature anddSis the increase or decrease in entropy.",
+      "sourceExplanation": "Entropy—It is an important thermodynamic property of a working substance, which increases with the addition of heat and decreases with its removal. As a matter of fact, it is tedious to define the term entropy. But it is comparatively easy to define change of entropy of a working substance. Over small range of temperature, the increase or decrease of entropy, when multiplied by the absolute temperature gives the heat absorbed or rejected by the working substance. Mathematically, heat absorbed or rejected by the working substance:\nδQ=T dS.\nT=absolute temperature.\ndS=increase or decrease in entropy.",
+      "note": "Retained(c). The source heat/entropy equality requires reversible heat transfer; the corrected explanation includes entropy generation for irreversible processes.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Entropy and the second law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 436,
+      "source": {
+        "page": 69,
+        "pageEnd": 69,
+        "printedPage": 83,
+        "examLabels": [
+          "Assam PSC AE (IWT)14.03.2021",
+          "GPSC DEE Class-2 (GWSSB)04.07.2021",
+          "Oil India Limited Sr.Engineer (Drilling)30.11.2019",
+          "GPSC Executive Engineer23.12.2018",
+          "WBPSC AE,2017",
+          "Rajasthan Nagar Nigam AE2016,Shift-I",
+          "UPPSC AE,12.04.2016 Paper-II",
+          "TSGENCO AE14.11.2015",
+          "APPSC Poly.Lect.2013",
+          "UKPSC AE2012,2007 Paper-II"
+        ]
+      },
+      "question": "Kelvin-Planck law deals with",
+      "options": {
+        "a": "conservation of energy",
+        "b": "conservation of heat",
+        "c": "conservation of mass",
+        "d": "conversion of heat into work"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The Kelvin–Planck statement forbids a cyclic heat engine whose sole effect is to extract heat from one fixed-temperature reservoir and produce an equivalent amount of net work. It therefore concerns the conversion of heat into work, choice(d).",
+      "sourceExplanation": "The Kelvin–Planck statement of the second law states: It is impossible for a heat engine to produce net work in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.\nSo Kelvin–Planck law deals with conversion of heat into work.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Kelvin–Planck statement",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 437,
+      "source": {
+        "page": 69,
+        "pageEnd": 69,
+        "printedPage": 83,
+        "examLabels": [
+          "UPCL AE 29.08.2021, CGPSC AE 15.01.2021",
+          "JPSC AE, 10.04.2021, Paper - I",
+          "TPSC Manager (Engg.) HMWSSB 12.11.2020",
+          "Sikkim PSC (Under Secretary), 2017",
+          "CGPSC AE 16.10.2016",
+          "Rajasthan Nagar Nigam AE 2016, Shift-II",
+          "Rajasthan Nagar Nigam AE 2016, Shift-I",
+          "RRB SSE 02.09.2015 Shift-I",
+          "MPPSC AE 2016, TRB Asstt. Prof., 2012",
+          "APPSC AEE 2012"
+        ]
+      },
+      "question": "The transfer of heat takes place from the body of high temperature to the body of low temperature as per",
+      "options": {
+        "a": "Zeroth law of thermodynamics",
+        "b": "First law of thermodynamics",
+        "c": "Second law of thermodynamics",
+        "d": "Stefan's law"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Spontaneous heat transfer occurs from a higher-temperature body to a lower-temperature body. The direction is a consequence of the second law of thermodynamics, choice(c). Transfer in the reverse direction requires another effect, such as work input to a refrigerator.",
+      "sourceExplanation": "According to second law of thermodynamics, the transfer of heat takes place from the body of high temperature to the body of low temperature.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "4.1"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Direction of spontaneous heat transfer",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 438,
+      "source": {
+        "page": 69,
+        "pageEnd": 70,
+        "printedPage": 83,
+        "examLabels": [
+          "JPSC AE, 10.04.2021, Paper-I",
+          "UPPSC AE 13.12.2020, Paper-2",
+          "ISRO Scientist/Engineer (RAC) 12.01.2020",
+          "GPSC ARTO Pre 30.12.2018",
+          "RPSC VPITI 14.02.2016",
+          "Rajasthan Nagar Nigam AE 2016, Shift-IL",
+          "ESE 2003"
+        ]
+      },
+      "question": "For a heat engine operating on a Carnot cycle, the work output is1/4th of the heat rejected to sink. The thermal efficiency of the engine would be",
+      "options": {
+        "a": "10%",
+        "b": "20%",
+        "c": "30%",
+        "d": "50%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "LetQ₁be heat supplied andQ₂be heat rejected. GivenW=Q₂/4.\nThe cycle energy balance gives W=Q₁−Q₂.\nThereforeQ₁=W+Q₂=Q₂/4+Q₂=5Q₂/4.\nThermal efficiency is\nη=1−Q₂/Q₁\n=1−Q₂/(5Q₂/4)\n=1−4/5=1/5=20%, choice(b).",
+      "sourceExplanation": "LetQ₁be heat supplied andQ₂be heat rejected. GivenW=Q₂/4.\nThe cycle energy balance gives W=Q₁−Q₂.\nThereforeQ₁=W+Q₂=Q₂/4+Q₂=5Q₂/4.\nThermal efficiency is\nη=1−Q₂/Q₁\n=1−Q₂/(5Q₂/4)\n=1−4/5=1/5=20%, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Efficiency from work-to-rejected-heat ratio",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 439,
+      "source": {
+        "page": 70,
+        "pageEnd": 70,
+        "printedPage": 84,
+        "examLabels": [
+          "Assam PSC AE (IWT)14.03.2021",
+          "MECON MT2019",
+          "Karnataka PSC AE,10.09.2017",
+          "Rajasthan Nagar Nigam AE2016,Shift-I",
+          "Rajasthan Nagar Nigam AE2016,Shift-II",
+          "TNPSC AE,2008"
+        ]
+      },
+      "question": "Which of the following is correct according to Clausius statement of second law of thermodynamics?",
+      "options": {
+        "a": "Heat can be transferred from low temperature source to high temperature source without any work from external source",
+        "b": "It is impossible to transfer heat in a cyclic process from low temperature to high temperature without any work from external source",
+        "c": "Heat can be transferred from low temperature source to high temperature source if COP of process is more than unity",
+        "d": "Heat can be transferred from low temperature source to high temperature source with work being done from external source"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source’s intended Clausius statement is(b): a cyclic refrigerator cannot have as its sole effect transferring heat from a colder body to a hotter body without external aid.\nHowever(d) is also correct: heat can be transferred from a low-temperature body to a high-temperature body when external work is supplied, as in a refrigerator. Because the question asks which statement is “correct according to” Clausius and does not restrict the answer to its verbatim formal statement, both(b) and(d) are scientifically correct. No unique letter is assigned.",
+      "sourceExplanation": "Clausius statement—It is impossible to transfer heat in a cyclic process from low temperature to high temperature without any work from external source.\nThe accompanying refrigerator diagram shows work inputWand heat transfer from cold bodyT₂to hot bodyT₁, withT₁>T₂.",
+      "note": "Printed key(b) states the prohibition, while option(d) correctly describes the allowed work-driven reverse heat transfer. Both are consistent with the law under the printed wording.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Clausius statement and work-driven refrigeration",
+      "figures": [
+        {
+          "page": 70,
+          "bbox": [
+            120,
+            513,
+            245,
+            653
+          ],
+          "placement": "explanation",
+          "alt": "Refrigerator takes workWto move heat from cold reservoirT₂to hot reservoirT₁."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 440,
+      "source": {
+        "page": 70,
+        "pageEnd": 70,
+        "printedPage": 84,
+        "examLabels": [
+          "BPSC AE Mains 2017 Paper - V",
+          "GPSC Lect. (Poly.) 07.12.2014",
+          "ISRO Scientist/Engineer 12.05.2013",
+          "UKPSC AE-2013, Paper-IL, ESE 2010"
+        ]
+      },
+      "question": "An engine operates between temperature limits of900KandT₂,and the other engine operates betweenT₂and400K. For both engines to be equally efficient,T₂should be equal to",
+      "options": {
+        "a": "600 K",
+        "b": "625K",
+        "c": "650K",
+        "d": "700 K"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For two reversible(Carnot) engines, equal efficiencies would require\n1−T₂/900=1−400/T₂.\nHenceT₂²=900 ×400 andT₂=√(900 ×400)=600K, the source’s intended option(a).\nThe supplied stem does not say the engines are reversible or Carnot. Equal actual efficiencies of arbitrary engines do not determine the intermediate temperature uniquely. Thus600Kis conditional on the missing reversible-engine assumption.",
+      "sourceExplanation": "GivenT₁=900K,T₃=400K.\nIf the efficiencies are equal, then we know that\nT₂=√(T₁ ×T₃).\nT₂=√(900 ×400).\nT₂=600K.",
+      "note": "The source uses the Carnot efficiency formula without stating reversibility. Actual engines with the same efficiency can have many intermediate temperatures.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Equal-efficiency engines with missing reversibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 441,
+      "source": {
+        "page": 70,
+        "pageEnd": 70,
+        "printedPage": 84,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 22.04.2018",
+          "ISRO Scientist/Engineer 07.05.2017",
+          "Vizag Steel (MT) 2017, Punjab PSC (Lect.) 06.08.2017",
+          "OPSC AEE 2015 PAPER - II"
+        ]
+      },
+      "question": "Two Carnot heat engines are operating in series such that the heat sink of the first engine serves as the heat source of the second one. If the source temperature of the first engine is 1327°C, the sink temperature of the second engine is 127°C, and the thermal efficiency of both the engines are the same, the temperature of the intermediate reservoir is:",
+      "options": {
+        "a": "627°C",
+        "b": "410°C",
+        "c": "577°C",
+        "d": "527°C"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "GivenT₁=1327+273=1600KandT₃=127+273=400K.\nFor Carnot engines in series with equal efficiencies,\n1−T₂/T₁=1−T₃/T₂.\nThusT₂=√(T₁T₃)=√(1600 ×400)=40 ×20=800K.\nConverting back using the source approximation,\nT₂=800−273=527°C, choice(d).",
+      "sourceExplanation": "GivenT₁=1327+273=1600KandT₃=127+273=400K.\nFor Carnot engines in series with equal efficiencies,\n1−T₂/T₁=1−T₃/T₂.\nThusT₂=√(T₁T₃)=√(1600 ×400)=40 ×20=800K.\nConverting back using the source approximation,\nT₂=800−273=527°C, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Equal-efficiency Carnot engines in series",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 442,
+      "source": {
+        "page": 70,
+        "pageEnd": 71,
+        "printedPage": 84,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 22.04.2018",
+          "HPPSC Asstt. Prof. 18.11.2016",
+          "ISRO Scientist/Engineer 11.10.2015, GATE 1996"
+        ]
+      },
+      "question": "A solar energy based heat engine which receives 80 kJ of heat at 100°C and rejects 70 kJ of heat to the ambient at 30°C is to be designed. The thermal efficiency of the heat engine is:",
+      "options": {
+        "a": "70%",
+        "b": "1.88%",
+        "c": "12.5%",
+        "d": "Indeterminate"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The work per cycle is W=Qin−Qout=80−70=10kJ.\nThe actual thermal efficiency is\nηactual=(W/Qin) ×100\n=[(80−70)/80] ×100\n=(10/80) ×100\n=12.5%, choice(c).\nThis is below the Carnot maximum1−303/373≈18.8%for the stated temperatures, so the energy/temperature data are not in conflict.",
+      "sourceExplanation": "The work per cycle is W=Qin−Qout=80−70=10kJ.\nThe actual thermal efficiency is\nηactual=(W/Qin) ×100\n=[(80−70)/80] ×100\n=(10/80) ×100\n=12.5%, choice(c).\nThis is below the Carnot maximum1−303/373≈18.8%for the stated temperatures, so the energy/temperature data are not in conflict.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Actual heat-engine thermal efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 443,
+      "source": {
+        "page": 71,
+        "pageEnd": 71,
+        "printedPage": 85,
+        "examLabels": [
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020",
+          "Punjab PSC SDE 12.02.2017",
+          "GPSC Asstt. Prof. (Prod.) 21.08.2016",
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "“It is impossible for a heat engine to produce net work in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.” This statement is known as:",
+      "options": {
+        "a": "Clausius statement",
+        "b": "Kelvin-Plank statement",
+        "c": "Carnot statement",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The quoted prohibition on net work from a cyclic engine exchanging heat only at a single fixed temperature is the Kelvin–Planck statement of the second law. Thus(b) is correct.",
+      "sourceExplanation": "The quoted prohibition on net work from a cyclic engine exchanging heat only at a single fixed temperature is the Kelvin–Planck statement of the second law. Thus(b) is correct.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Kelvin–Planck statement",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 444,
+      "source": {
+        "page": 71,
+        "pageEnd": 71,
+        "printedPage": 85,
+        "examLabels": [
+          "UPCL AE29.08.2021",
+          "GPSC DEE,Class-2 (GWSSB)04.07.2021",
+          "Rajasthan Nagar Nigam AE2016,Shift-I",
+          "UKPSC AE2012 Paper-II,TRB Asstt.Prof.,2012"
+        ]
+      },
+      "question": "The efficiency of a Carnot engine depends on the",
+      "options": {
+        "a": "Design substance",
+        "b": "Working substance",
+        "c": "Type of fuel fired",
+        "d": "Temperatures of source & sink"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "A Carnot engine is reversible, and its efficiency depends only on the absolute source and sink temperatures:\nη=(T₁−T₂)/T₁=1−T₂/T₁.\nThusη=f(T₁,T₂), independent of design, working substance, or fuel, giving(d).",
+      "sourceExplanation": "A Carnot engine is reversible, and its efficiency depends only on the absolute source and sink temperatures:\nη=(T₁−T₂)/T₁=1−T₂/T₁.\nThusη=f(T₁,T₂), independent of design, working substance, or fuel, giving(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Temperature dependence of Carnot efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 445,
+      "source": {
+        "page": 71,
+        "pageEnd": 71,
+        "printedPage": 85,
+        "examLabels": [
+          "JPSC AE PRE 2019, TNPSC AE 2018",
+          "WBPSC AE, 2017, TNPSC ACF 2012"
+        ]
+      },
+      "question": "Carnot cycle efficiency is maximum when",
+      "options": {
+        "a": "initial temperature is0K",
+        "b": "final temperature is0K",
+        "c": "difference between initial and final temperature is0K",
+        "d": "final temperature is0°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Carnot efficiency isηc=1−Tᴸ/Tᴴ, whereTᴴandTᴸare absolute source and sink temperatures. For fixed positiveTᴴ,asTᴸ→0Kthe mathematical limiting efficiency approaches100%. Thus the intended option is(b), interpreting “final temperature” as the low-temperature sink.\nAbsolute zero is an unattainable limiting reservoir temperature; this is a limit of the ideal formula rather than an achievable engine condition.",
+      "sourceExplanation": "We know that Carnot cycle efficiency depends on source and sink temperature limits,\nηc=1−Tᴸ/Tᴴ.\nIfTᴸ→0Kthen(ηc)max=100%.",
+      "note": "The source correctly shows an approach to0K. “Initial/final” is interpreted as source/sink for this ideal limit.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Limiting Carnot efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 446,
+      "source": {
+        "page": 71,
+        "pageEnd": 71,
+        "printedPage": 85,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-I",
+          "APPSC AEE Mains 2016 Paper-III",
+          "MPPSC State Forest Service Exam, 2014"
+        ]
+      },
+      "question": "What will be the change on efficiency of a Carnot engine, if the temperature of the sink is decreased?",
+      "options": {
+        "a": "It will decreases",
+        "b": "It will remain constant",
+        "c": "It will first increase and then decrease",
+        "d": "It will increases"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a Carnot engine,η=1−T₂/T₁. Holding source temperatureT₁constant, decreasing the sink temperatureT₂decreasesT₂/T₁and increasesη. Therefore(d) is correct.",
+      "sourceExplanation": "Carnot engine efficiency:η=1−T₂/T₁.\nT₂↓,η↑(assumedT₁=constant).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Effect of lowering sink temperature",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 447,
+      "source": {
+        "page": 71,
+        "pageEnd": 71,
+        "printedPage": 85,
+        "examLabels": [
+          "JPSC AE 2013 Paper-V",
+          "ISRO Scientist/Engineer 2012",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "A friction less heat engine can be 100 percent efficient only if its exhaust temperature is",
+      "options": {
+        "a": "equal to its input temperature",
+        "b": "less than input temperature",
+        "c": "0K",
+        "d": "0°C"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For the ideal reversible limit,η=1−T₂/T₁. Requiringη=100%formally givesT₂=0K. Thus(c) is the necessary limiting exhaust temperature.\nFrictionless operation alone does not establish complete reversibility, and0Kcannot be reached as a practical exhaust-reservoir temperature.",
+      "sourceExplanation": "η=1−T₂/T₁(for frictionless engine).\nη=100%ifT₂=0K.",
+      "note": "Retained the intended ideal-limit answer(c); the Carnot equality requires reversibility, not merely absence of friction.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Formal zero-temperature limit",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 448,
+      "source": {
+        "page": 71,
+        "pageEnd": 72,
+        "printedPage": 85,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "Kerala PSC AE 06.08.2015, (KPSC AE. 2015)"
+        ]
+      },
+      "question": "If the thermal efficiency of Carnot heat engine is50percent,then coefficient of performance of a refrigerator working within the same temperature limit would be:",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For the Carnot heat engine,\nηc=(Q₁−Q₂)/Q₁=(Tᴴ−Tᴸ)/Tᴴ=1−Tᴸ/Tᴴ …(i).\nFor a reversible refrigerator at the same limits,\nCOPR=Tᴸ/(Tᴴ−Tᴸ) …(ii).\nDivide numerator and denominator byTᴴ:\nCOPR=(Tᴸ/Tᴴ)/(1−Tᴸ/Tᴴ)=(Tᴸ/Tᴴ)/ηc.\nFrom(i),Tᴸ/Tᴴ=1−ηc,so\nCOPR=(1−ηc)/ηc=1/ηc−1.\nHenceCOPR+1=1/ηc.\nWithηc=50%=0.5,\n0.5=1/(COPR+1),\nCOPR+1=2,\nCOPR=1, intended option(a).\nFor a general irreversible refrigerator the COP can be lower;1is the reversible maximum at these limits.",
+      "sourceExplanation": "For the Carnot heat engine,\nηc=(Q₁−Q₂)/Q₁=(Tᴴ−Tᴸ)/Tᴴ=1−Tᴸ/Tᴴ …(i).\nFor a reversible refrigerator at the same limits,\nCOPR=Tᴸ/(Tᴴ−Tᴸ) …(ii).\nDivide numerator and denominator byTᴴ:\nCOPR=(Tᴸ/Tᴴ)/(1−Tᴸ/Tᴴ)=(Tᴸ/Tᴴ)/ηc.\nFrom(i),Tᴸ/Tᴴ=1−ηc,so\nCOPR=(1−ηc)/ηc=1/ηc−1.\nHenceCOPR+1=1/ηc.\nWithηc=50%=0.5,\n0.5=1/(COPR+1),\nCOPR+1=2,\nCOPR=1, intended option(a).\nFor a general irreversible refrigerator the COP can be lower;1is the reversible maximum at these limits.",
+      "note": "The source assumes a reversible/Carnot refrigerator. Retained(a) as the only listed value consistent with the reversible maximum; actual irreversible COP is not fixed by the temperature limits alone.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot engine efficiency and refrigerator COP",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 449,
+      "source": {
+        "page": 72,
+        "pageEnd": 72,
+        "printedPage": 86,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "SJVN ET 2013, ESE 2005"
+        ]
+      },
+      "question": "A_ reversible engine operates between temperatures 900 K & T, (T2 < 900 K), & another reversible engine between T, & 400 K (T, > 400 K) in series. What is the value of T, if work output of both the engines are equal?",
+      "options": {
+        "a": "600K",
+        "b": "625K",
+        "c": "650K",
+        "d": "675K"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given outer temperaturesT₁=900KandT₃=400K,and intermediateT₂. The engines are reversible and in series. LetQ₁be heat entering the first engine. ThenQ₂=Q₁T₂/T₁andQ₃=Q₁T₃/T₁.\nTheir works areW₁=Q₁−Q₂=Q₁(T₁−T₂)/T₁andW₂=Q₂−Q₃=Q₁(T₂−T₃)/T₁.\nEqual workW₁=W₂therefore requires equal temperature differences:\n900−T₂=T₂−400.\n2T₂=1300.\nT₂=650K, choice(c).",
+      "sourceExplanation": "GivenT₁=900K,T₂=400K.\nWork output of both the engine are equal:W₁=W₂.\nTemperature difference should be equal.\n900−T₂=T₂−400.\n2T₂=1300.\nT₂=650K.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Equal-work Carnot engines in series",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 450,
+      "source": {
+        "page": 72,
+        "pageEnd": 72,
+        "printedPage": 86,
+        "examLabels": [
+          "RPSC AE 2016, RPSC AEN Pre-2013",
+          "RPSC ACF-2011, ESE 2009"
+        ]
+      },
+      "question": "Three engines A, B and C operating on Carnot cycle respectively use air, steam and helium as the working fluid. If all the engines operate within the same high and low temperature limits. then which engine will have the highest efficiency?",
+      "options": {
+        "a": "Engine A",
+        "b": "Engine B",
+        "c": "Engine C",
+        "d": "All engines will have the same efficiency"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "The efficiency of a Carnot cycle isη=(Tᴴ−Tᴸ)/Tᴴ. It depends only on the high and low absolute reservoir temperatures, not on the working substance.\nTherefore enginesA,B,andCusing air,steam,andheliumhave the same efficiency when operating between the same limits: (d).\nThe source describes this as independence from “type of fuel”; the relevant independence here is from working substance.",
+      "sourceExplanation": "Efficiency of Carnot cycle(η)=(Tᴴ−Tᴸ)/Tᴴ.\nEfficiency of Carnot engines does not depend on the type of fuel use so engineA,BandCoperating same high and low temperature limit then engine will have the same thermal efficiency.",
+      "note": "Retained(d) and corrected the source’s fuel/working-substance terminology.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot efficiency independent of working fluid",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 451,
+      "source": {
+        "page": 72,
+        "pageEnd": 72,
+        "printedPage": 86,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "VIZAG STEEL MT 18.08.2013",
+          "VIZAG STEEL MT 10.06.2012"
+        ]
+      },
+      "question": "An irreversible heat engine extracts heat from a high temperature source at a rate of 100 kW and rejects heat to a sink at a rate of 50 kW. the entire work output of the heat engine is used to drive a reversible heat pump operating between a set of independent isothermal heat reservoirs at 17°C and 75°C. The rate (in kW) at which the heat pump delivers heat to its high temperature sink is",
+      "options": {
+        "a": "50",
+        "b": "250",
+        "c": "300",
+        "d": "360"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The irreversible engine supplies work at the rate\nẆ=Q̇in−Q̇out=100−50=50kW.\nThis drives the reversible heat pump. WithTᴴ=75+273=348KandTᴸ=17+273=290K,\nCOPHP=Tᴴ/(Tᴴ−Tᴸ)=348/(348−290)=6.\nSinceCOPHP=Q̇ᴴ/Ẇ,\nQ̇ᴴ=(348 ×50)/58=300kW, choice(c).\nUsing the exact Celsius conversion gives300.13kW, with the same rounded choice.",
+      "sourceExplanation": "The irreversible engine supplies work at the rate\nẆ=Q̇in−Q̇out=100−50=50kW.\nThis drives the reversible heat pump. WithTᴴ=75+273=348KandTᴸ=17+273=290K,\nCOPHP=Tᴴ/(Tᴴ−Tᴸ)=348/(348−290)=6.\nSinceCOPHP=Q̇ᴴ/Ẇ,\nQ̇ᴴ=(348 ×50)/58=300kW, choice(c).\nUsing the exact Celsius conversion gives300.13kW, with the same rounded choice.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat engine driving a reversible heat pump",
+      "figures": [
+        {
+          "page": 72,
+          "bbox": [
+            328,
+            424,
+            497,
+            549
+          ],
+          "placement": "explanation",
+          "alt": "Engine receives100kW,rejects50kW,and powers a heat pump operating between17°Cand75°C."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 452,
+      "source": {
+        "page": 72,
+        "pageEnd": 73,
+        "printedPage": 86,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 07.05.2017",
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "ESE 2013"
+        ]
+      },
+      "question": "A reversible engine has ideal thermal efficiency of 30%. When it is used as refrigerating machine with all other conditions unchanged, the coefficient of performance will be",
+      "options": {
+        "a": "1.33",
+        "b": "2.33",
+        "c": "3.33",
+        "d": "4.33"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a reversible engine and reversed refrigerator at the same limits,\nCOPHP=1/ηc=1/0.3=3.33.\nCOPref=COPHP−1\n=3.33−1=2.33, choice(b).",
+      "sourceExplanation": "For a reversible engine and reversed refrigerator at the same limits,\nCOPHP=1/ηc=1/0.3=3.33.\nCOPref=COPHP−1\n=3.33−1=2.33, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Reversing a30%-efficient engine",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 453,
+      "source": {
+        "page": 73,
+        "pageEnd": 73,
+        "printedPage": 87,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II, CSE Pre-1994"
+        ]
+      },
+      "question": "The efficiency of a reversible cyclic process undergone by a substance as shown in the given diagram is",
+      "options": {
+        "a": "0.40",
+        "b": "0.55",
+        "c": "0.60",
+        "d": "0.80"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For this reversibleT–Scycle,net work equals the enclosed area, while heat input equals the area under the upper path traversed with increasing entropy.\nThe net area is the trapezoid between500Kand1500K:\nWnet=½[(5−1)+(4−2)](1500−500)\n=½(4+2) ×1000\n=3000kJ.\nThe heat input adds the lower rectangle:\nQin=½[(5−1)+(4−2)](1500−500)+(5−1) ×500\n=3000+2000=5000kJ.\nη=Wnet/Qin=3000/5000=0.60, choice(c).",
+      "sourceExplanation": "Efficiency=area under500and1500/area under0and5.\n= {½[(5−1)+(4−2)](1500−500)}/{½[(5−1)+(4−2)](1500−500)+(5−1) ×500}\n=3000/5000=0.60.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Efficiency from a trapezoidal T–S cycle",
+      "figures": [
+        {
+          "page": 73,
+          "bbox": [
+            134,
+            122,
+            226,
+            172
+          ],
+          "placement": "question",
+          "alt": "ClockwiseT–Scycle: lower path500KfromS=5to1kJ/K;upper path rises from(1,500)to(2,1500),runs to(4,1500),and falls to(5,500)."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 454,
+      "source": {
+        "page": 73,
+        "pageEnd": 73,
+        "printedPage": 87,
+        "examLabels": [
+          "ISRO Scientist/Engineer 11.10.2015",
+          "VIZAG STEEL MT 10.06.2012"
+        ]
+      },
+      "question": "A carnot cycle refrigerator operates between 250 K and 300 K. Its coefficient of performance Is",
+      "options": {
+        "a": "6.0",
+        "b": "5.0",
+        "c": "1.2",
+        "d": "0.8"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For the Carnot refrigerator,Tᴸ=250KandTᴴ=300K.\nCOPR=Tᴸ/(Tᴴ−Tᴸ)\n=250/(300−250)\n=250/50=5, choice(b).",
+      "sourceExplanation": "For the Carnot refrigerator,Tᴸ=250KandTᴴ=300K.\nCOPR=Tᴸ/(Tᴴ−Tᴸ)\n=250/(300−250)\n=250/50=5, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot refrigerator COP",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 455,
+      "source": {
+        "page": 73,
+        "pageEnd": 73,
+        "printedPage": 87,
+        "examLabels": [
+          "Assam PSC CCE Pre 2015, ESE 2009"
+        ]
+      },
+      "question": "A Carnot engine operates between a source and sink. If 40% of heat is rejected at 27°C, what will be the source temperature?",
+      "options": {
+        "a": "67°C",
+        "b": "227°C",
+        "c": "477°C",
+        "d": "757°C"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The heat rejected isQ₂=0.4Q₁. For a reversible Carnot engine,Q₁/T₁=Q₂/T₂.\nWithT₂=27+273=300K,\nQ₁/T₁=0.4Q₁/300.\nThus0.4T₁=300andT₁=300/0.4=750K.\nT₁=750−273=477°C, choice(c).",
+      "sourceExplanation": "The heat rejected isQ₂=0.4Q₁. For a reversible Carnot engine,Q₁/T₁=Q₂/T₂.\nWithT₂=27+273=300K,\nQ₁/T₁=0.4Q₁/300.\nThus0.4T₁=300andT₁=300/0.4=750K.\nT₁=750−273=477°C, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Source temperature from rejected-heat fraction",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 456,
+      "source": {
+        "page": 73,
+        "pageEnd": 73,
+        "printedPage": 87,
+        "examLabels": [
+          "RPSC AE 2016, RPSC ACF-2011"
+        ]
+      },
+      "question": "For a heat engine operating on Carnot cycle, the work output is 25% of heat rejected to the sink. The thermal efficiency of the engine would be :",
+      "options": {
+        "a": "10%",
+        "b": "20%",
+        "c": "30%",
+        "d": "50%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "GivenWout=25%ofQR,so\nWout=(25/100)QR=QR/4 …(i).\nThe cycle energy balance isW=QS−QR.\nUsing(i),QR/4=QS−QR,\nQR/4+QR=QS,\nQS=5QR/4,soQR/QS=4/5.\nThereforeηCarnot=1−QR/QS=1−4/5=1−0.8=0.20=20%, choice(b).",
+      "sourceExplanation": "GivenWout=25%ofQR,so\nWout=(25/100)QR=QR/4 …(i).\nThe cycle energy balance isW=QS−QR.\nUsing(i),QR/4=QS−QR,\nQR/4+QR=QS,\nQS=5QR/4,soQR/QS=4/5.\nThereforeηCarnot=1−QR/QS=1−4/5=1−0.8=0.20=20%, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Efficiency from rejected-heat ratio",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 457,
+      "source": {
+        "page": 73,
+        "pageEnd": 74,
+        "printedPage": 87,
+        "examLabels": [
+          "NLC GET 17.11.2020, Shift-II",
+          "RPSC IOF & Boiler 20.09.2017"
+        ]
+      },
+      "question": "The efficiency of a reversible heat engine depends on:",
+      "options": {
+        "a": "the nature of the working fluid",
+        "b": "the quantity of the working fluid",
+        "c": "the temperature of the working fluid",
+        "d": "the phase of the working fluid"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a reversible heat engine exchanging heat between reservoirsT₁andT₂,\nηrev=ηmax=1−(Q₂/Q₁)rev=1−T₂/T₁\n=(T₁−T₂)/T₁=f(T₁,T₂).\nAsT₂decreases orT₁increases,the reversible-cycle efficiency increases. For positive sink temperature and finite positive source temperature,η<1.\nAll reversible heat engines operating between the same reservoirs have the same efficiency,independent of the nature or amount of working substance. Thus the operating temperature limits are what matter,corresponding to(c).",
+      "sourceExplanation": "For a reversible heat engine exchanging heat between reservoirsT₁andT₂,\nηrev=ηmax=1−(Q₂/Q₁)rev=1−T₂/T₁\n=(T₁−T₂)/T₁=f(T₁,T₂).\nAsT₂decreases orT₁increases,the reversible-cycle efficiency increases. For positive sink temperature and finite positive source temperature,η<1.\nAll reversible heat engines operating between the same reservoirs have the same efficiency,independent of the nature or amount of working substance. Thus the operating temperature limits are what matter,corresponding to(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Temperature limits and reversible-engine efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 458,
+      "source": {
+        "page": 74,
+        "pageEnd": 74,
+        "printedPage": 88,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "ESE 2016"
+        ]
+      },
+      "question": "One reversible heat engine operates between 1000 K and T K and another reversible heat engine operates between T K and 400 K. If both heat engines have same heat input and output, the value of T is",
+      "options": {
+        "a": "582.7K",
+        "b": "632.5K",
+        "c": "682.8K",
+        "d": "732.5K"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "Interpreting “same heat input and output” as both engines having equal input amounts and equal output amounts gives equal efficiencies. For reversible engines,\n1−T/1000=1−400/T.\nThusT²=1000 ×400,\nT=√(1000 ×400)=632.46K≈632.5K, choice(b).\nThe source’s serial-engine diagram is schematic: if the first engine’s rejected heat is the second engine’s input,the two engine inputs cannot also be equal for positive work. The geometric-mean result follows from equal efficiencies,not from equal works in series.",
+      "sourceExplanation": "For both heat engines,have same heat input and output.\nSoT=√(T₁T₂)\n=√[(1000)(400)].\nT=632.5K.",
+      "note": "Retained(b)under the literal equal-input/equal-output interpretation,which implies equal efficiency. Flagged the source’s series diagram as inconsistent with equal engine inputs.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Equal-efficiency reversible engines",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 459,
+      "source": {
+        "page": 74,
+        "pageEnd": 74,
+        "printedPage": 88,
+        "examLabels": [
+          "Vadodara Muncipal Corp. DEE, 2018",
+          "TSPSC AEE 2017"
+        ]
+      },
+      "question": "A Carnot engine receiving heat at 400 K has an efficiency of 25%. The COP of a Carnot refrigerator working between the same temperature limits is :",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "GivenCarnot-engine efficiencyηengine=25%=1/4. At the same temperature limits,\nCOPHP=1/ηengine=1/(1/4)=4.\nSinceCOPHP=COPR+1,\n4=COPR+1,\nCOPR=4−1=3, choice(c).",
+      "sourceExplanation": "GivenCarnot-engine efficiencyηengine=25%=1/4. At the same temperature limits,\nCOPHP=1/ηengine=1/(1/4)=4.\nSinceCOPHP=COPR+1,\n4=COPR+1,\nCOPR=4−1=3, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Refrigerator COP from25%engine efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 460,
+      "source": {
+        "page": 74,
+        "pageEnd": 74,
+        "printedPage": 88,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2010",
+          "UPSC JWM Advt. NO. - 52/2010"
+        ]
+      },
+      "question": "If the thermal efficiency of a Carnot engine is 1/5, the COP of a Carnot refrigerator is :",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "3"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Givenη=1/5. For the same temperature limits,\nCOPHP=1/η=5.\nCOPR=COPHP−1=5−1=4, choice(a).",
+      "sourceExplanation": "Givenη=1/5. For the same temperature limits,\nCOPHP=1/η=5.\nCOPR=COPHP−1=5−1=4, choice(a).",
+      "note": "The source uses the same temperature limits for the engine and refrigerator; that connection is implicit in the printed question.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot engine and refrigerator relation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 461,
+      "source": {
+        "page": 74,
+        "pageEnd": 74,
+        "printedPage": 88,
+        "examLabels": [
+          "RPSC IOF, 2020",
+          "TRB Asstt. Prof., 2012",
+          "CSE Pre-2002"
+        ]
+      },
+      "question": "An inventor claims that his heat engine has the following specifications:\nPower developed:50kW\nFuel burned per hour:3kg\nHeating value of fuel:75000kJ/kg\nTemperature limits:627°Cand27°C\nThis heat engine is",
+      "options": {
+        "a": "reality",
+        "b": "impossible",
+        "c": "costly",
+        "d": "imaginary"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "GivenpowerP=50kW,fuel rate3kg/h=3/3600kg/s,and heating value75000kJ/kg.\nHeat-input rateQ̇in=(3/3600) ×75000=62.5kW.\nClaimed efficiencyηclaimed=P/Q̇in=50/62.5=0.8=80%.\nThe temperature limits are627+273=900Kand27+273=300K. The reversible maximum is\nηmax=[1−300/900] ×100=66.67%.\nSince80%>66.67%,the claimed heat engine is impossible, choice(b).",
+      "sourceExplanation": "GivenpowerP=50kW,fuel rate3kg/h=3/3600kg/s,and heating value75000kJ/kg.\nHeat-input rateQ̇in=(3/3600) ×75000=62.5kW.\nClaimed efficiencyηclaimed=P/Q̇in=50/62.5=0.8=80%.\nThe temperature limits are627+273=900Kand27+273=300K. The reversible maximum is\nηmax=[1−300/900] ×100=66.67%.\nSince80%>66.67%,the claimed heat engine is impossible, choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-engine claim exceeding the Carnot limit",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 462,
+      "source": {
+        "page": 75,
+        "pageEnd": 75,
+        "printedPage": 89,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "ESE 2017"
+        ]
+      },
+      "question": "The thermal efficiency of the hypothetical cycle shown is",
+      "options": {
+        "a": "0.6",
+        "b": "0.5",
+        "c": "0.4",
+        "d": "0.3"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For the reversibleT–Scycle shown,the heat rejected along the300Klower path is\nQrejected=300(5−1)=300 ×4=1200kJ.\nHeat supplied along the two upper sloping paths is the area under the upper triangle-plus-rectangle:\nQsupplied=½(700−300)(5−1)+300(5−1)\n=½ ×400 ×4+1200\n=2000kJ.\nThusηcycle=1−Qrejected/Qsupplied\n=1−1200/2000=0.4=40%, choice(c).",
+      "sourceExplanation": "For the reversibleT–Scycle shown,the heat rejected along the300Klower path is\nQrejected=300(5−1)=300 ×4=1200kJ.\nHeat supplied along the two upper sloping paths is the area under the upper triangle-plus-rectangle:\nQsupplied=½(700−300)(5−1)+300(5−1)\n=½ ×400 ×4+1200\n=2000kJ.\nThusηcycle=1−Qrejected/Qsupplied\n=1−1200/2000=0.4=40%, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Efficiency from a triangular T–S cycle",
+      "figures": [
+        {
+          "page": 75,
+          "bbox": [
+            103,
+            115,
+            258,
+            258
+          ],
+          "placement": "question",
+          "alt": "TriangularT–Scycle with vertices(S,T)=(1,300),(3,700),(5,300),withS inkJ/KandT inK."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 463,
+      "source": {
+        "page": 75,
+        "pageEnd": 75,
+        "printedPage": 89,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II",
+          "Haryana PSC Civil Services Pre, 2014"
+        ]
+      },
+      "question": "According to the Clausius statement of second law of thermodynamics,the COPof a refrigerator is never",
+      "options": {
+        "a": "∞",
+        "b": "1",
+        "c": "<1",
+        "d": ">1"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "An infinite refrigeratorCOPwould mean a finite cooling effect with zero work input,COPR=QL/Win→∞. For a refrigerator operating between distinct-temperature reservoirs,that would move heat from cold to hot without external aid and violate the Clausius statement. Thus(a),∞,is excluded.\nA refrigeratorCOPcan be1,less than1,or greater than1depending on its temperature lift and losses.",
+      "sourceExplanation": "According to the Clausius statement of second law of thermodynamics,the COPof a refrigerator is never infinite(∞).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "4.4"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "4.3"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Clausius prohibition of infinite refrigerator COP",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 464,
+      "source": {
+        "page": 75,
+        "pageEnd": 75,
+        "printedPage": 89,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016",
+          "CSE Pre-2008"
+        ]
+      },
+      "question": "While deriving an expression for efficiency of a carnot cycle. Which one of the following is not a correct assumption?",
+      "options": {
+        "a": "The cold body has infinite capacity",
+        "b": "The cylinder head is a perfect insulator",
+        "c": "The hot body has infinite capacity",
+        "d": "Both piston and cylinder are perfect insulators"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The cylinder head must allow reversible heat exchange with the hot and cold reservoirs during the two isothermal legs. It is therefore modeled as diathermic,rather than a perfect insulator. The piston and cylinder walls can be insulated,with thermal contact controlled through the head. The hot and cold bodies are ideal reservoirs with effectively infinite thermal capacity. Thus the incorrect assumption is(b).\nA Carnot cycle has two isothermal and two adiabatic processes. The source’s additional claim that all compression and expansion processes are adiabatic is incorrect. Ideal gas is one convenient working-substance model for a derivation,but the Carnot efficiency is independent of working substance.",
+      "sourceExplanation": "Assumption Carnot cycle:\n(i)The gas in the cylinder is perfect gas.\n(ii)The physical constants of gas in the engine cylinder are same as those of air at moderate temperature.\n(iii)All the compression and expansion processes are adiabatic and they take place without any friction.\n(iv)Cylinder head is a perfect diathermic.",
+      "note": "Retained(b)and corrected the source’s false all-adiabatic description;the Carnot cycle has two isotherms and two adiabats.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot-engine model assumptions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 465,
+      "source": {
+        "page": 75,
+        "pageEnd": 75,
+        "printedPage": 89,
+        "examLabels": [
+          "UJVNL AE 2016",
+          "ISRO Scientist/Engineer 12.05.2013, ESE 2010"
+        ]
+      },
+      "question": "A Carnot engine rejects 30% of absorbed heat to a sink at 30°C. The temperature of the heat source is",
+      "options": {
+        "a": "100°C",
+        "b": "433°C",
+        "c": "737°C",
+        "d": "1010°C"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "GivenQrej=30%ofQsupp=0.3Qsupp.\nη=1−Qrej/Qsupp=1−0.3=0.7.\nFor the Carnot engine,η=1−T₂/T₁. With sinkT₂=30+273=303K,\n0.7=1−303/T₁.\n303/T₁=0.3.\nT₁=303/0.3=1010K.\nT₁=1010−273=737°C, choice(c).",
+      "sourceExplanation": "GivenQrej=30%ofQsupp=0.3Qsupp.\nη=1−Qrej/Qsupp=1−0.3=0.7.\nFor the Carnot engine,η=1−T₂/T₁. With sinkT₂=30+273=303K,\n0.7=1−303/T₁.\n303/T₁=0.3.\nT₁=303/0.3=1010K.\nT₁=1010−273=737°C, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot source temperature",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 466,
+      "source": {
+        "page": 75,
+        "pageEnd": 75,
+        "printedPage": 89,
+        "examLabels": [
+          "UPPSC AE12.04.2016 Paper-II,TPSC AE2015"
+        ]
+      },
+      "question": "The area of a p-v diagram for a Carnot cycle represents",
+      "options": {
+        "a": "Heat supplied",
+        "b": "Heat rejected",
+        "c": "Work done",
+        "d": "Temperature drop"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The area enclosed by a closedP–Vcycle is the net boundary work,∮P dV. Thus the Carnot-cycle area represents work done, choice(c).\nFor an ideal-gas Carnot cycle:\n(i)Isothermal expansion1–2 at the hot temperature:Q₁₂=P₁V₁ln(V₂/V₁),the heat supplied.\n(ii)Isentropic expansion2–3:the internal-energy decrease ismcᵥ(T₂−T₃)=mR(T₂−T₃)/(γ−1).\n(iii)Isothermal compression3–4:the positive heat-rejection magnitude isP₃V₃ln(V₃/V₄);the signed heat to the gas is its negative.\n(iv)Isentropic compression4–1:the internal-energy increase ismcᵥ(T₁−T₄)=mR(T₁−T₄)/(γ−1). In a Carnot cycleT₄=T₃,so this equals the source’smR(T₁−T₃)/(γ−1).",
+      "sourceExplanation": "The area on aP–Vdiagram for a Carnot cycle represents work done.\n(i)Isothermal expansion:Q₁₋₂=P₁V₁ln(V₂/V₁)[heat supplied].\n(ii)Isentropic expansion:decrease in internal energy=mR(T₂−T₃)/(γ−1).\n(iii)Isothermal compression:Q₃₋₄=P₃V₃ln(V₃/V₄).\n(iv)Isentropic compression:increase in internal energy=mR(T₁−T₃)/(γ−1).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Net work and the area enclosed by a Carnot cycle",
+      "figures": [
+        {
+          "page": 75,
+          "bbox": [
+            330,
+            451,
+            496,
+            518
+          ],
+          "placement": "explanation",
+          "alt": "Carnot cycle shown onT–SandP–Vplots;the enclosedP–Varea equals net work."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 467,
+      "source": {
+        "page": 75,
+        "pageEnd": 76,
+        "printedPage": 89,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 22.04.2018",
+          "UPPSC AE 12.04.2016 Paper-Il",
+          "ESE 2009, CSE Pre-1995"
+        ]
+      },
+      "question": "A heat engine is supplied with 250 kJ/s of heat at constant fixed temperature of 227°C. The heat is rejected at 27°C. The cycle is reversible, if the amount of heat rejected is",
+      "options": {
+        "a": "273 kJ/s",
+        "b": "200 kJ/s",
+        "c": "180 kJ/s",
+        "d": "150 kJ/s"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the reversible Carnot cycle,\nT₁=227+273=500KandT₂=27+273=300K.\nHeat suppliedQ̇A=250kW.\nEfficiencyη=(T₁−T₂)/T₁=(Q̇A−Q̇R)/Q̇A.\n(500−300)/500=0.4=(250−Q̇R)/250.\nThereforeQ̇R=250(1−0.4)=150kJ/s, choice(d).",
+      "sourceExplanation": "For the reversible Carnot cycle,\nT₁=227+273=500KandT₂=27+273=300K.\nHeat suppliedQ̇A=250kW.\nEfficiencyη=(T₁−T₂)/T₁=(Q̇A−Q̇R)/Q̇A.\n(500−300)/500=0.4=(250−Q̇R)/250.\nThereforeQ̇R=250(1−0.4)=150kJ/s, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature conversion"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat rejection of a reversible engine",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 468,
+      "source": {
+        "page": 76,
+        "pageEnd": 76,
+        "printedPage": 90,
+        "examLabels": [
+          "GPSC Engineer, Class-II Pre-19.01.2020",
+          "APPSC IOF, 2009"
+        ]
+      },
+      "question": "The efficiency of Carnot cycle may be highest :",
+      "options": {
+        "a": "By increasing the source temperature",
+        "b": "By increasing sink temperature",
+        "c": "By increasing source temperature and decreasing sink temperature simultaneously",
+        "d": "By decreasing source temperature and increasing sink temperature simultaneously"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Carnot efficiency isη=(Tᴴ−Tᴸ)/Tᴴ=1−Tᴸ/Tᴴ.\nAs source temperatureTᴴincreases and sink temperatureTᴸdecreases,the ratioTᴸ/Tᴴdecreases and efficiency increases. Thus the most effective listed change is to increase the source temperature and decrease the sink temperature simultaneously: (c).",
+      "sourceExplanation": "Carnot efficiency isη=(Tᴴ−Tᴸ)/Tᴴ=1−Tᴸ/Tᴴ.\nAs source temperatureTᴴincreases and sink temperatureTᴸdecreases,the ratioTᴸ/Tᴴdecreases and efficiency increases. Thus the most effective listed change is to increase the source temperature and decrease the sink temperature simultaneously: (c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Increasing Carnot efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 469,
+      "source": {
+        "page": 76,
+        "pageEnd": 76,
+        "printedPage": 90,
+        "examLabels": [
+          "Vizag Steel MT (Re-Exam)24.11.2013",
+          "GATE2004,ESE2016"
+        ]
+      },
+      "question": "A solar collector receiving solar radiation at the rate of0.6kW/m²transforms it to the internal energy of a fluid at an overall efficiency of50%. The fluid heated to350Kis used to run a heat engine which rejects heat at313K. If the heat engine is to deliver2.5kWpower,the minimum area of the solar collector required would be",
+      "options": {
+        "a": "8.33 m²",
+        "b": "16.66 m²",
+        "c": "39.68 m²",
+        "d": "79.36 m²"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The solar collector supplies useful heat to the fluid at a rate per unit area\n0.6 ×0.50=0.3kW/m².\nThe maximum heat-engine efficiency between350Kand313Kis\nηmax=1−313/350=37/350=0.105714.\nFor2.5kWof output,the minimum heat input is\nQ̇in=2.5/ηmax=2.5 ×350/37=23.64865kW.\nThus the minimum collector area is\nAmin=23.64865/0.3=78.82883m²≈78.83m².\nThe source’s key(d),79.36m²,is close but does not equal the result from the stated data. Its calculation inconsistently changes23.648to23.809before reporting78.82. No printed option matches the checked minimum area.",
+      "sourceExplanation": "Internal energy of fluid after absorbing solar radiation\n=0.6 ×η=0.6 ×0.5=0.3kW/m².\nη=1−T₂/T₁=2.5/Q₁=1−313/350.\nQ₁=23.648kJ.\n23.809=0.3 ×A.\nA=78.82≈79m².",
+      "note": "The checked minimum is78.83m²;printed(d)is79.36m². Preserved both inconsistent source intermediate values and the unit typo(kJfor a rate).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: Heat Engines",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+          "section": "4.2"
+        },
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Solar-collector area and Carnot limit",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 470,
+      "source": {
+        "page": 76,
+        "pageEnd": 76,
+        "printedPage": 90,
+        "examLabels": [
+          "APPSC Poly Lect. Automobile Engg., 2020",
+          "CIL MT 27.02.2020"
+        ]
+      },
+      "question": "The efficiency of carnot cycle when it operates between the temperature of 373 and 273 K is:",
+      "options": {
+        "a": "0.268",
+        "b": "0.366",
+        "c": "0.134",
+        "d": "0.183"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Carnot-cycle efficiency isη=(Tᴴ−Tᴸ)/Tᴴ.\nGivenTᴴ=373KandTᴸ=273K,\nη=(373−273)/373=100/373=0.2680965≈0.268, choice(a).",
+      "sourceExplanation": "Carnot-cycle efficiency isη=(Tᴴ−Tᴸ)/Tᴴ.\nGivenTᴴ=373KandTᴸ=273K,\nη=(373−273)/373=100/373=0.2680965≈0.268, choice(a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "4.5"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Numerical Carnot efficiency",
       "figures": [],
       "transcriptionReviewed": true
     }
