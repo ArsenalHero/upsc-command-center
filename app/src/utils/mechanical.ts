@@ -11,6 +11,7 @@ export interface MechanicalQuestion {
 }
 export interface MechanicalSubject {
   id: string; title: string; url: string; count: number; reviewed: number; corrected: number; disputed: number;
+  auditUrl?: string;
   topics: { name: string; count: number; subtopics: { name: string; count: number }[] }[];
 }
 export interface MechanicalCatalog {

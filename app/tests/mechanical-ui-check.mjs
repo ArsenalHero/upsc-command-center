@@ -7,13 +7,29 @@ import { createEmptyData } from "../src/data/defaults.ts";
 
 const q=(n,patch={})=>({id:`mech-ui-${n}`,number:n,subjectId:"engineering-mechanics",subject:"Engineering Mechanics",topic:"Forces",subtopic:"Vectors",question:`Native text question ${n}`,options:{a:"First choice",b:"Second choice",c:"Third choice",d:"Fourth choice",e:"Fifth choice"},answer:"e",sourceAnswer:"e",explanation:`Full explanation ${n}. Derivation, units and all source reasoning. END EXPLANATION ${n}`,source:{file:"selected.pdf",page:n,printedPage:n+14,sha256:"test"},review:{status:"verified",note:"Checked against primary reference.",references:[{title:"Mechanics reference",url:"https://ocw.mit.edu/"}]},figures:[],...patch});
 const questions=[q(1),q(2,{answer:"b",sourceAnswer:"a",sourceExplanation:"Full printed calculation, including the source error. END ORIGINAL",review:{status:"corrected",note:"The printed key is wrong; b follows from equilibrium.",references:[{title:"Mechanics reference",url:"https://ocw.mit.edu/"}]}}),q(3,{topic:"Impact",subtopic:"Collision",answer:null,review:{status:"disputed",note:"Insufficient input, so no unique answer is possible.",references:[{title:"Mechanics reference",url:"https://ocw.mit.edu/"}]}}),q(4,{topic:"Diagrams",subtopic:"Free body",figures:[{url:"mechanical/figures/test.svg",placement:"question",alt:"Original force diagram"}]}),q(5,{topic:"Missing",subtopic:"Printed omission",answer:null,options:{},optionsUnavailable:true,review:{status:"disputed",note:"Printed choices omitted.",references:[{title:"Mechanics reference",url:"https://ocw.mit.edu/"}]}})];
-const catalog={version:"ui-test",total:5,reviewed:2,corrected:1,disputed:2,subjects:[{id:"engineering-mechanics",title:"Engineering Mechanics",url:"mechanical/ui-fixtures.json",count:5,reviewed:2,corrected:1,disputed:2,topics:[{name:"Forces",count:2,subtopics:[{name:"Vectors",count:2}]}]}],sources:[]};
-const built=await build({stdin:{contents:'import React from "react";import{createRoot}from"react-dom/client";import{DataProvider}from"./src/hooks/useData";import MechanicalPractice from"./src/pages/MechanicalPractice";createRoot(document.getElementById("root")).render(<DataProvider><MechanicalPractice/></DataProvider>);',loader:"tsx",resolveDir:process.cwd()},bundle:true,write:false,format:"iife",platform:"browser",jsx:"automatic",define:{"import.meta.env":JSON.stringify({BASE_URL:"./",PROD:false})},plugins:[{name:"guest-auth",setup(b){b.onLoad({filter:/\/hooks\/useAuth\.tsx$/},()=>({contents:"export const useAuth=()=>({guest:true});",loader:"tsx"}));}}]});
-let dom,w,indexCalls=0,bankCalls=0,failBank=true,saved;const errors=[],key="upsc-command-center:v1";
+const thermoQuestions = [q(1, {
+  id: "mech-ui-thermo-1", subjectId: "thermodynamics", subject: "Thermodynamics",
+  topic: "Basic Concepts & Zeroth Law of Thermodynamics", subtopic: "Ideal & Real Gases",
+  question: "Which variable determines the internal energy of an ideal gas?",
+})];
+const catalog = {
+  version: "ui-test", total: 6, reviewed: 3, corrected: 1, disputed: 2, sources: [],
+  subjects: [
+    {id:"engineering-mechanics",title:"Engineering Mechanics",url:"mechanical/ui-fixtures.json",count:5,reviewed:2,corrected:1,disputed:2,topics:[{name:"Forces",count:2,subtopics:[{name:"Vectors",count:2}]}]},
+    {id:"thermodynamics",title:"Thermodynamics",url:"mechanical/ui-thermo-fixtures.json",count:1,reviewed:1,corrected:0,disputed:0,topics:[{name:thermoQuestions[0].topic,count:1,subtopics:[{name:thermoQuestions[0].subtopic,count:1}]}]},
+  ],
+};
+const built=await build({stdin:{contents:'import React from "react";import{createRoot}from"react-dom/client";import{DataProvider}from"./src/hooks/useData";import MechanicalPractice from"./src/pages/MechanicalPractice";createRoot(document.getElementById("root")).render(<DataProvider><MechanicalPractice/></DataProvider>);',loader:"tsx",resolveDir:process.cwd()},bundle:true,write:false,format:"iife",platform:"browser",jsx:"automatic",loader:{".css":"empty"},define:{"import.meta.env":JSON.stringify({BASE_URL:"./",PROD:false})},plugins:[{name:"guest-auth",setup(b){b.onLoad({filter:/\/hooks\/useAuth\.tsx$/},()=>({contents:"export const useAuth=()=>({guest:true});",loader:"tsx"}));}}]});
+let dom,w,indexCalls=0,bankCalls=0,thermoCalls=0,finishThermoLoad,failBank=true,saved;const errors=[],key="upsc-command-center:v1";
 const wait=(ms=25)=>new Promise(r=>setTimeout(r,ms));
 const text=()=>w.document.body.textContent;
 async function until(fn,label){for(let i=0;i<160;i++){if(fn())return;await wait();}assert.ok(fn(),`${label}: ${text().slice(-1500)}`);}
 const buttons=()=>[...w.document.querySelectorAll("button")];
+const chooseSubject = name => {
+  const button = buttons().find(button => button.querySelector("strong")?.textContent === name);
+  assert.ok(button, "Missing subject " + name);
+  button.click();
+};
 async function click(label){const b=buttons().find(b=>b.textContent.trim()===label||b.getAttribute("aria-label")===label);assert.ok(b&&!b.disabled,`Missing enabled ${label}: ${text().slice(-1000)}`);b.click();await wait();}
 async function field(label,value){const el=w.document.querySelector(`[aria-label="${label}"]`);assert.ok(el,label);const proto=el.tagName==="SELECT"?w.HTMLSelectElement.prototype:w.HTMLInputElement.prototype;Object.getOwnPropertyDescriptor(proto,"value").set.call(el,value);el.dispatchEvent(new w.Event(el.tagName==="SELECT"?"change":"input",{bubbles:true}));await wait();}
 const data=()=>JSON.parse(w.localStorage.getItem(key));
@@ -22,13 +38,43 @@ async function mount(){
   dom=new JSDOM('<div id="root"></div>',{url:"https://example.test/upsc/#/pyqs?collection=mechanical",runScripts:"outside-only",pretendToBeVisual:true,virtualConsole:vc});w=dom.window;
   const initial=createEmptyData();initial.settings.setupCompleted=true;w.localStorage.setItem(key,saved||JSON.stringify(initial));w.structuredClone=structuredClone;Object.defineProperty(w.crypto,"randomUUID",{value:randomUUID});
   w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute("open","");};w.HTMLDialogElement.prototype.close=function(){this.removeAttribute("open");};
-  w.fetch=async url=>{if(String(url).endsWith("catalog.json")){indexCalls++;if(indexCalls===1)return new Response("unavailable",{status:503});return new Response(JSON.stringify(catalog));}bankCalls++;if(failBank){failBank=false;throw Error("Temporary subject load error");}return new Response(JSON.stringify({subjectId:"engineering-mechanics",questions}));};
+  w.fetch = async url => {
+    if (String(url).endsWith("catalog.json")) {
+      indexCalls++;
+      if (indexCalls === 1) return new Response("unavailable", {status:503});
+      return new Response(JSON.stringify(catalog));
+    }
+    if (String(url).endsWith("ui-thermo-fixtures.json")) {
+      thermoCalls++;
+      await new Promise(resolve => { finishThermoLoad = resolve; });
+      return new Response(JSON.stringify({subjectId:"thermodynamics",questions:thermoQuestions}));
+    }
+    bankCalls++;
+    if (failBank) { failBank = false; throw Error("Temporary subject load error"); }
+    return new Response(JSON.stringify({subjectId:"engineering-mechanics",questions}));
+  };
   const style=w.document.createElement("style");style.textContent='label{display:flex;flex-direction:column}'+readFileSync(new URL("../src/mechanical.css",import.meta.url),"utf8");w.document.head.appendChild(style);w.eval(built.outputFiles[0].text);
   await until(()=>w.document.querySelector("h1"),"Mechanical page absent");
 }
 try{
   await mount();await until(()=>w.document.querySelector('[role="alert"]'),"Catalog failure absent");assert.equal(bankCalls,0);await click("Try again");await until(()=>w.document.querySelector(".mech-subject-grid button"),"Catalog retry absent");assert.equal(bankCalls,0,"Opening the section must not fetch the bank");
   w.document.querySelector(".mech-subject-grid button").click();await until(()=>text().includes("Temporary subject load error"),"Subject failure absent");await click("Try again");await until(()=>w.document.querySelectorAll(".mech-question-list article").length===5,"Subject retry absent");assert.equal(bankCalls,2);
+  assert.equal(thermoCalls, 0, "Opening Engineering Mechanics must not download Thermodynamics");
+  chooseSubject("Thermodynamics");
+  await until(() => finishThermoLoad, "Thermodynamics did not start loading");
+  chooseSubject("Engineering Mechanics");
+  await until(() => w.document.querySelectorAll(".mech-question-list article").length === 5, "Returning to cached subject left it loading");
+  finishThermoLoad();
+  chooseSubject("Thermodynamics");
+  await until(() => w.document.querySelector(".mech-question-list")?.textContent.includes(thermoQuestions[0].question), "Thermodynamics question did not load");
+  await field("Mechanical topic", thermoQuestions[0].topic);
+  await field("Mechanical subtopic", thermoQuestions[0].subtopic);
+  await click("Question & full explanation");
+  await until(() => w.document.querySelector("dialog[open]"), "Thermodynamics explanation absent");
+  assert.match(w.document.querySelector("dialog").textContent, /Thermodynamics · Q1/);
+  await click("Close dialog");
+  chooseSubject("Engineering Mechanics");
+  await until(() => w.document.querySelectorAll(".mech-question-list article").length === 5, "Engineering Mechanics did not reopen");
   await field("Mechanical topic","Forces");assert.equal(w.document.querySelectorAll(".mech-question-list article").length,2);await field("Mechanical subtopic","Vectors");await field("Mechanical set size","2");await click("Start practice");
   await until(()=>w.document.querySelector(".mech-question"),"Practice absent");assert.equal(w.document.querySelectorAll(".mech-options input").length,5);assert.equal(w.getComputedStyle(w.document.querySelector(".mech-options label")).display,"grid");
   let state=data().mechanical;let current=questions.find(q=>q.id===state.session.questionIds[0]);w.document.querySelector(`.mech-options input[value="${current.answer}"]`).click();await wait();await click("Check answer");await until(()=>w.document.querySelector(".mech-answer-status.correct"),"Correct result absent");assert.match(text(),new RegExp(`END EXPLANATION ${current.number}`));

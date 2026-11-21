@@ -22,11 +22,11 @@ assert.ok(!mockExam.some(file => /MockCharts|ScatterChart|questions-|question-su
 const aurumEntry = Object.keys(manifest).find(key => manifest[key].name === "Aurum" && manifest[key].isDynamicEntry);
 assert.ok(aurumEntry, "Missing Aurum entry");
 const aurum = dependencies([entry, mockEntry, aurumEntry]);
-const chooserEntry = Object.keys(manifest).find(key => manifest[key].name === "PYQs" && manifest[key].isDynamicEntry);
-assert.ok(chooserEntry, "Missing MCQ collection chooser entry");
-const chooser = dependencies([entry, chooserEntry]);
+const mcqEntry = Object.keys(manifest).find(key => manifest[key].name === "PYQs" && manifest[key].isDynamicEntry);
+assert.ok(mcqEntry, "Missing MCQ Practice entry");
+const mcqShell = dependencies([entry, mcqEntry]);
 const mechanical = dependencies([entry, "src/pages/MechanicalPractice.tsx"]);
-assert.ok(!chooser.some(file => /PYQBank|MechanicalPractice|questions-|question-support-/.test(file)), "MCQ chooser eagerly imports a collection");
+assert.ok(!mcqShell.some(file => /PYQBank|MechanicalPractice|questions-|question-support-/.test(file)), "MCQ shell statically imports a collection");
 assert.ok(!mechanical.some(file => /PYQBank|questions-|question-support-|questionBank/.test(file)), "Mechanical setup eagerly imports the CSE bank");
 assert.ok(!aurum.some(file => /questions-|question-support-|aurumBank|questionBank/.test(file)), "Aurum setup eagerly loads the question library");
 assert.ok(!aurum.some(file => /AurumInsights/.test(file)), "Aurum setup eagerly loads analysis and review screens");

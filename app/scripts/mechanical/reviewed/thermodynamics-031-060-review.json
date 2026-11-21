@@ -1,0 +1,1271 @@
+{
+  "subjectId": "thermodynamics",
+  "reviews": [
+    {
+      "id": "mech-thermodynamics-21-31",
+      "number": 31,
+      "source": {
+        "page": 7,
+        "pageEnd": 7,
+        "examLabels": [
+          "Nagaland PSC CTSE 2017 Paper-2",
+          "Nagaland PSC (CTSE) 2016, Paper-II",
+          "Haryana PSC Civil Services Pre, 2014",
+          "CSE Pre-2006"
+        ]
+      },
+      "question": "Which thermometer is independent of the substance or material used in its construction?",
+      "options": {
+        "a": "Mercury thermometer",
+        "b": "Alcohol thermometer",
+        "c": "Ideal gas thermometer",
+        "d": "Resistance thermometer"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Ideal gas thermometer is independent of substance or material used in its construction. Ideal gas thermometers are based on the ideal gas equation (PV = nRT).",
+      "note": "The ideal-gas thermometer gives the gas-independent temperature scale in the ideal-gas, zero-density limit. Actual gas thermometers require extrapolation to zero pressure; the statement does not mean that every practical gas thermometer is independent of material effects at finite pressure. Full printed text and formula visually reconciled.",
+      "references": [
+        {
+          "title": "NPTEL, IIT Kanpur: State Postulate and Zeroth Law",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture5/5_6.htm",
+          "section": "Lecture 5: perfect-gas temperature scale and common zero-pressure intercept"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-21-32",
+      "number": 32,
+      "source": {
+        "page": 7,
+        "pageEnd": 8,
+        "examLabels": [
+          "Oil India Ltd. Sr. Engg. (Production) 30.11.2019",
+          "CGPSC AE 25.02.2018",
+          "ISRO Scientist/Engineer 2010",
+          "WBPSC AE 2003"
+        ]
+      },
+      "question": "For a polytropic process (Pvⁿ = constant), the value of n between two states (1 and 2) is given as:",
+      "options": {
+        "a": "n = ln(P₁ − P₂) / ln(V₁ − V₂)",
+        "b": "n = ln(P₁P₂) / ln(V₁V₂)",
+        "c": "n = ln(P₁/P₂) / ln(V₁/V₂)",
+        "d": "n = ln(P₁/P₂) / ln(V₂/V₁)"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Polytropic process 1–2 follows Pvⁿ = C. Then the value of n, where n is the polytropic-process index, is obtained as follows.\nPvⁿ = C ⇒ P₁v₁ⁿ = P₂v₂ⁿ.\nTake logarithms on both sides:\nln P₁ + n ln v₁ = ln P₂ + n ln v₂.\nln P₁ − ln P₂ = n ln v₂ − n ln v₁.\nln(P₁/P₂) = n ln(v₂/v₁).\nTherefore n = ln(P₁/P₂) / ln(v₂/v₁).",
+      "note": "Recomputed directly from P₁v₁ⁿ = P₂v₂ⁿ. Choice d has the required reversed volume ratio; choice c has the wrong sign. For the same fixed mass, V₂/V₁ = v₂/v₁. A finite n can be recovered this way when V₂ ≠ V₁. Question/options are on printed p21; the complete explanation and exam labels continue on p22.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "I: equation-of-state notation; logarithmic rearrangement of the stated polytropic law"
+        },
+        {
+          "title": "NPTEL, IIT Bombay: Turbomachinery Aerodynamics, Lecture 2",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101058/downloads/Lec-02ppts.pdf",
+          "section": "Thermodynamics of compression: polytropic pressure–volume laws"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-22-33",
+      "number": 33,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "GPSC Executive Engineer 23.12.2018",
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "GATE 2011"
+        ]
+      },
+      "question": "A pump handling a liquid raises its pressure from 1 bar to 30 bar. Take the density of the liquid as 990 kg/m³. The isentropic specific work done by the pump, in kJ/kg, is:",
+      "options": {
+        "a": "0.10",
+        "b": "0.30",
+        "c": "2.50",
+        "d": "2.93"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Given, P₂ = 30 bar, P₁ = 1 bar, ρ = 990 kg/m³. Treat the liquid as incompressible and neglect kinetic- and potential-energy changes. The ideal isentropic pump requires specific work input\nw_in = ∫₁²v dp = (P₂ − P₁)/ρ.\nBecause 1 bar = 10⁵ Pa = 100 kPa,\nw_in = [(30 − 1) × 10⁵ Pa] / [990 kg/m³]\n= 2929.29 J/kg = 2.92929 kJ/kg ≈ 2.93 kJ/kg.\nThus choice d is correct. The printed factor “100 N/m²” must instead be “100 kN/m²” (or “10⁵ N/m²”); its final numerical answer uses the latter conversion.",
+      "note": "Key d and numerical result verified. Genuine printed unit error in the intermediate line, visually checked; full original derivation retained. Pressure labels are P₂ = 30 bar and P₁ = 1 bar.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "IV.C: steady-flow shaft-work and enthalpy balance"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Specific heats and thermodynamic property identities; reversible incompressible pump work vΔp"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given, P₂ = 30 bar, P₁ = 1 bar, ρ = 990 kg/m³.\nSpecific work done by pump = (P₂ − P₁)/ρ\n= [(30 − 1) × 100 N/m²] / [990 kg/m³]\n= 2.93 kJ/kg."
+    },
+    {
+      "id": "mech-thermodynamics-22-34",
+      "number": 34,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "CGPSC AE 15.01.2021",
+          "Rajasthan Nagar Nigam AE 2016, Shift-II",
+          "MPPSC State Forest Service Exam, 2014"
+        ]
+      },
+      "question": "The unit of temperature in S.I. units is:",
+      "options": {
+        "a": "Centigrade",
+        "b": "Celsius",
+        "c": "Fahrenheit",
+        "d": "Kelvin"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Kelvin is the unit of temperature in the SI system.",
+      "note": "The intended answer is the SI base unit of thermodynamic temperature: kelvin, symbol K. Degree Celsius is also an SI unit for Celsius temperature, related by t/°C = T/K − 273.15, so the stem is using the customary “SI base unit” convention. The unit name is lowercase kelvin and is written without a degree sign.",
+      "references": [
+        {
+          "title": "NIST: SI Units – Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "SI thermodynamic temperature unit and exact Celsius–kelvin conversion"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-22-35",
+      "number": 35,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "GPSC Asstt. Prof. 28.08.2016",
+          "Rajasthan Nagar Nigam AE 2016, Shift-I",
+          "GPSC Lect. 23.10.2016"
+        ]
+      },
+      "question": "Heat flows from one body to another when they have:",
+      "options": {
+        "a": "Different specific heats",
+        "b": "Different heat contents",
+        "c": "Different atomic structures",
+        "d": "Different temperatures"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "Heat flows between bodies in thermal interaction because of a temperature difference; differences in specific heat, stored energy, or atomic structure alone do not determine the direction of spontaneous heat transfer. Heat flows spontaneously from the hotter body toward the colder body.\nA conduction heat-flux vector has a direction and a magnitude. For an isotropic material, Fourier’s law is q⃗ = −k∇T, so its component in any direction is proportional to the temperature gradient in that direction, with the minus sign indicating flow toward lower temperature. Heat Q itself is a scalar energy transfer.\nFor sensible heating or cooling with constant specific heat c and the appropriate process conditions, Q = mcΔT = mc(T₂ − T₁). For fixed m and c under those conditions, Q ∝ ΔT. This calorimetric relation is not a general law for every heat-transfer process and is distinct from the rate law for conduction.",
+      "note": "Key d verified. Corrected the source’s conflation of scalar heat with vector heat flux, and qualified the sensible-heat equation. Every printed bullet/equation is retained in sourceExplanation; the explanation starts at the bottom of the left column and continues at the top of the right column.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Changing the state of a system: heat by virtue of temperature difference"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Work, Heat, and Internal Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+          "section": "Heat, work, and internal energy; heat is energy in transfer"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Heat flows from one body to another when they have different temperatures.\n• Heat transfer has direction as well as magnitude. The rate of heat conduction in a direction is proportional to the temperature gradient.\n• Heat Q = mcΔT.\nQ = mc(T₂ − T₁).\nQ ∝ ΔT, or Q ∝ (T₂ − T₁)."
+    },
+    {
+      "id": "mech-thermodynamics-22-36",
+      "number": 36,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "JPSC AE, 10.04.2021, Paper-I",
+          "Assam PSC AE (PHED), 18.10.2020",
+          "WBPSC AE, 2017"
+        ]
+      },
+      "question": "The work done per unit mass of air in a compressor will be minimum when n is equal to:",
+      "options": {
+        "a": "1",
+        "b": "1.2",
+        "c": "1.3",
+        "d": "1.4"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Work done per unit mass of air in a compressor will be minimum if the value of n is equal to 1. The law followed by the compressor is PV = C (isothermal process). If the value of n increases, the work done on the compressor increases.",
+      "note": "Verified for the conventional comparison of internally reversible ideal-gas polytropic compressions at the same inlet state and pressure ratio, for the listed n ≥ 1. Isothermal compression has n = 1 and requires w_in = RT₁ ln(P₂/P₁). For n > 1, w_in = [n/(n − 1)]RT₁[(P₂/P₁)^((n − 1)/n) − 1], which is larger. “Minimum” is not an unrestricted claim permitting arbitrary external refrigeration or changed inlet conditions.",
+      "references": [
+        {
+          "title": "NPTEL, IIT Bombay: Turbomachinery Aerodynamics, Lecture 2",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101058/downloads/Lec-02ppts.pdf",
+          "section": "Thermodynamics of compression: isothermal, polytropic, and adiabatic comparison"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-22-37",
+      "number": 37,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "WBPSC AE, 2007"
+        ]
+      },
+      "question": "If the internal energy and enthalpy of a gaseous substance are functions only of temperature and are independent of pressure, then the substance must be:",
+      "options": {
+        "a": "A liquid–vapour mixture",
+        "b": "An ideal gas",
+        "c": "A real gas",
+        "d": "Saturated vapour"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Enthalpy and internal energy of an ideal gas are functions of temperature only and are independent of pressure.\nTherefore, for an ideal gas, internal energy U = f(T).",
+      "note": "For a fixed mass and composition of an ideal gas, u = u(T) and h = h(T); cp and cv can still vary with temperature. The full source explanation is retained, with extensive U understood at fixed mass. This is the ideal-gas characterization used by the question.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Specific heats: ideal-gas assumption, u = u(T), h = h(T), du = cv(T)dT, dh = cp(T)dT"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-22-38",
+      "number": 38,
+      "source": {
+        "page": 8,
+        "pageEnd": 8,
+        "examLabels": [
+          "JPSC AE, 10.04.2021, Paper-I",
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020",
+          "UPRVUNL AE 2014"
+        ]
+      },
+      "question": "A thermodynamic system refers to:",
+      "options": {
+        "a": "Any defined region in space",
+        "b": "A specified mass in fluid flow",
+        "c": "A specified region of constant volume",
+        "d": "A prescribed and identifiable quantity of matter"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "A thermodynamic system refers to a prescribed and identifiable quantity of matter and, in simple words, we say that it is a specified region where we focus our study.",
+      "note": "Choice d is the standard control-mass/closed-system definition used here: a fixed identifiable quantity of matter. A broader modern usage also calls a selected control volume an open thermodynamic system; the source’s final phrase about a “specified region” uses that broader language. Flagged as a curricular terminology caveat rather than silently treating every thermodynamic system as necessarily closed.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Concept of a thermodynamic system: fixed-identity quantity of matter and the control-volume description"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-22-39",
+      "number": 39,
+      "source": {
+        "page": 8,
+        "pageEnd": 9,
+        "examLabels": [
+          "VIZAG Steel MT 24.01.2021",
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "ESE 2008"
+        ]
+      },
+      "question": "The thermodynamic process in which the heat energy supplied is used to increase the internal energy is:",
+      "options": {
+        "a": "Isochoric process",
+        "b": "Isentropic process",
+        "c": "Isobaric process",
+        "d": "Isothermal process"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "A constant-volume (isochoric) thermodynamic process has rigid mechanical boundaries, so its expansion/compression boundary work is zero: δW_b = P_ext dV = 0 because dV = 0. For a closed, simple compressible system with no other work interactions and negligible kinetic- and potential-energy changes, the First Law is δQ = dU + δW_b. Consequently δQ = dU, and after integration Q₁₂ = U₂ − U₁. Thus supplied heat increases the internal energy in an isochoric process, choice a.\nThe qualification about other work matters: a rigid vessel can still receive shaft work or electrical work. Rigid boundaries eliminate boundary work, not every possible form of work. The differential dU and finite change U₂ − U₁ also must not be equated without the corresponding integration.",
+      "note": "Key a verified under the standard boundary-work-only model. Corrected the overbroad rigid-boundary claim and the mixed differential/finite notation while preserving the full printed explanation. Explanation continues at the top of printed p23.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II.A–B: boundary work; III.A–B: First Law and internal-energy balance"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Work sign convention and ΔU = Q − W"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "A constant-volume (isochoric) thermodynamic process is one in which the system is confined by mechanically rigid boundaries. No direct mechanical work can be done on the surroundings by a system with rigid boundaries; therefore the heat transferred into or out of the system equals the change in internal energy.\nQ = dU + P dV.\nV = constant.\ndV = 0.\nQ = dU = U₂ − U₁."
+    },
+    {
+      "id": "mech-thermodynamics-23-40",
+      "number": 40,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "UPCL AE 29.08.2021",
+          "HPCL Engineer 12.08.2021 Shift-I",
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021",
+          "Assam PSC AE (IWT) 14.03.2021",
+          "VIZAG MT, 14.12.2020",
+          "HPPSC Asstt. Prof. 18.09.2017",
+          "Assam PSC CCE Pre 2015",
+          "UKPSC AE 2012 Paper-II",
+          "ESE 2012",
+          "ISRO Scientist/Engineer 2010"
+        ]
+      },
+      "question": "The gas constant R is equal to the ______.",
+      "options": {
+        "a": "Addition of specific heats at constant pressure and constant volume",
+        "b": "Ratio of specific heat at constant pressure to specific heat at constant volume",
+        "c": "Difference between the specific heat at constant pressure and the specific heat at constant volume",
+        "d": "Product of specific heats at constant pressure and constant volume"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "According to Mayer’s formula, the gas constant R is equal to the difference of the two specific heats.\nR = Cₚ − Cᵥ, in J/(kg·K).\nγ = Cₚ/Cᵥ.",
+      "note": "Verified for an ideal gas with all quantities expressed on the same basis: cp − cv = R for mass-specific heats, or C̄p − C̄v = Rᵤ for molar heats. The source uses uppercase C for specific heat; its stated J/(kg·K) units indicate the mass-specific basis. The ratio is γ, not R. Full pair of printed formulas included.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Specific heats: derivation of cp − cv = R and γ = cp/cv"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-23-41",
+      "number": 41,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "AAI Jr. Executive 29.11.2018",
+          "WBPSC AE, 2017",
+          "Kerala PSC AE (Irrigation) 05.04.2017"
+        ]
+      },
+      "question": "Air coming out of a punctured football:",
+      "options": {
+        "a": "Becomes hotter",
+        "b": "Becomes cooler",
+        "c": "Remains at the same temperature",
+        "d": "Attains atmospheric temperature"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "For the nozzle-like expanding jet intended in this question, air from the pressurized football accelerates through the puncture. An approximately adiabatic flow with no shaft work and negligible height change satisfies h + V²/2 = constant. As the jet speed V increases, its static enthalpy falls; for ideal-gas air h = h(T), so the static temperature falls. This gives the intended choice b, “becomes cooler.”\nThe punctured-tyre example in the printed explanation illustrates the same intended accelerating-jet model. The hand-and-blowing observation is not a controlled temperature measurement because evaporation and convection also affect the sensation. A restriction analysed instead as a steady throttle between low-speed stations has h₁ = h₂, and ideal-gas temperature would remain unchanged in that model. The cooling statement therefore concerns the expanding jet, not an assertion that every pressure drop must cool every gas.",
+      "note": "Expected key b verified for the nozzle-like jet used by the source. Corrected the explanation to distinguish static jet cooling from ideal-gas throttling, and qualified the breath demonstration. Entire printed explanation is retained.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "IV.C–E: steady adiabatic shaft-work-free flow; conserved stagnation enthalpy"
+        },
+        {
+          "title": "NPTEL, IIT Kanpur: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Contrast with constant-enthalpy throttling and ideal-gas temperature"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "When air is coming out of a punctured tyre, the puncture acts like a nozzle. When fluid is passed through a nozzle, velocity increases and pressure decreases, resulting in a decrease of temperature. You can observe this phenomenon by keeping your hand near the mouth and blowing."
+    },
+    {
+      "id": "mech-thermodynamics-23-42",
+      "number": 42,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "Rajasthan Nagar Nigam AE 2016 Shift-I",
+          "ESE 1999"
+        ]
+      },
+      "question": "A tank containing air is stirred by a paddle wheel. The work input to the paddle wheel is 6000 kJ. The heat transferred to the surroundings from the tank is 3000 kJ. The external work done by the system is:",
+      "options": {
+        "a": "Zero",
+        "b": "3000 kJ",
+        "c": "6000 kJ",
+        "d": "9000 kJ"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The printed diagram shows 6000 kJ of shaft work entering the air and 3000 kJ of heat leaving it. For a rigid tank, the expansion boundary work is W_b = ∫P_ext dV = 0. Thus choice a is the intended answer if “external work done by the system” means only outward expansion work.\nHowever, paddle-wheel shaft work also crosses the system boundary. Using the usual convention Q > 0 into the system and W > 0 done by it, Q = −3000 kJ and the net external work is W_net = −6000 kJ. The First Law then gives ΔU = Q − W_net = −3000 − (−6000) = +3000 kJ. None of the choices lists this signed net external work.\nConstant volume eliminates boundary work; it does not eliminate shaft work. Because the stem does not distinguish boundary work from total external work, the literal question is ambiguous and is left ungraded. The source’s zero answer remains visible as its boundary-work interpretation.",
+      "note": "Printed key a is conditional on “external work” meaning expansion/boundary work. Total work is −6000 kJ in the by-system sign convention, not zero. Full explanation and the genuine paddle-wheel/heat diagram visually reconciled. Diagram is in the explanation, not in the question.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Work: non-boundary forms of work and work sign convention"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "ΔU = Q − W, positive work by and negative work on the system"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [
+        {
+          "page": 9,
+          "bbox": [
+            354,
+            164,
+            474,
+            204
+          ],
+          "units": "pdf-points",
+          "column": "right",
+          "placement": "explanation",
+          "alt": "Rigid tank with a paddle wheel, an inward arrow labelled W = 6000 kJ, and an outward heat arrow labelled Q = 3000 kJ."
+        }
+      ],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The diagram shows work W = 6000 kJ entering the tank through a paddle wheel and heat Q = 3000 kJ leaving it.\nThis is a case of a constant-volume process (isochoric process). In an irreversible constant-volume process, the system does not perform work on the surroundings at the expense of internal energy."
+    },
+    {
+      "id": "mech-thermodynamics-23-43",
+      "number": 43,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "CIL MT 27.02.2020",
+          "APGENCO AE, 2017",
+          "TNPSC ACF 2012"
+        ]
+      },
+      "question": "In an adiabatic process, the work done for a given pair of end states depends on:",
+      "options": {
+        "a": "End states only",
+        "b": "Mass of the system",
+        "c": "Value of index n",
+        "d": "Heat transferred"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "For the same closed system, with negligible kinetic- and potential-energy changes, the end-state internal energies are U₁ and U₂. The First Law, with work positive when done by the system, is δQ = dU + δW. An adiabatic process has δQ = 0, so δW = −dU, not +dU. Integrating gives W₁₂ = U₁ − U₂. The work is consequently fixed by the specified end states for this restricted adiabatic comparison, so choice a is correct.\nWork nevertheless remains a path function: allowing heat transfer permits different work values between the same states. It is the imposed adiabatic condition that relates work to a state-energy difference; this does not make work a thermodynamic state property. If macroscopic kinetic or potential energy changes are relevant, the corresponding total-energy difference replaces the internal-energy difference.",
+      "note": "Key a verified for the stated closed-system adiabatic comparison. Corrected a genuine minus-sign error and the source’s claim that work becomes a point function. Full source derivation retained.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II.E and III.A–B: adiabatic work and the First Law"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Work, Heat, and Internal Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+          "section": "Path dependence of work versus internal-energy change"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "End states are determined by the internal-energy U level at these states. If heat energy δQ is given to a system, by the First Law of Thermodynamics,\nδQ = δW + dU.\nFor an adiabatic process, δQ = 0.\nHence δW = dU.\nThe above equation shows that work done in an adiabatic process depends only upon end states (i.e. point function)."
+    },
+    {
+      "id": "mech-thermodynamics-23-44",
+      "number": 44,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 07.05.2017",
+          "TRB Poly. Lect., 2012",
+          "GATE 1996"
+        ]
+      },
+      "question": "The specific heat of an ideal gas depends on:",
+      "options": {
+        "a": "Temperature",
+        "b": "Volume",
+        "c": "Molecular weight and structure",
+        "d": "Pressure"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The printed choice c identifies a real dependence: the mass-specific heat of a gas depends on its molecular mass and the molecular modes that can store energy. Different molecular structures have different rotational, vibrational, and electronic contributions.\nBut an ideal gas need not have constant specific heats. For a fixed ideal-gas composition, cᵥ(T) = du/dT and cₚ(T) = dh/dT generally vary with temperature as molecular modes are excited. Thus choice a is also valid in the ordinary thermally perfect ideal-gas model. A calorically perfect approximation holds the specific heats constant over a chosen range, but that extra assumption is absent from the stem.\nBecause both temperature and molecular characteristics can determine ideal-gas specific heat, the supplied choices do not yield a unique answer. The printed key c is retained for reference, and the original question is left ungraded.",
+      "note": "Genuine multiple-answer/omitted-model issue. Neither “ideal gas” nor absence of pressure dependence implies calorically constant cp and cv. Full printed explanation visually checked and retained.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Specific heats: ∆u = ∫cv(T)dT, ∆h = ∫cp(T)dT; constant heats only an approximation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy",
+          "section": "Molecular degrees of freedom and temperature-dependent activation of rotational/vibrational contributions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The specific heat of an ideal gas depends on molecular weight and structure."
+    },
+    {
+      "id": "mech-thermodynamics-23-45",
+      "number": 45,
+      "source": {
+        "page": 9,
+        "pageEnd": 9,
+        "examLabels": [
+          "HPPSC Poly. Lect. 05.07.2021",
+          "TSPSC AEE 2015",
+          "UPRVUNL AE 2014"
+        ]
+      },
+      "question": "Which one of the properties given is an intensive property of the system?",
+      "options": {
+        "a": "Composition",
+        "b": "Volume",
+        "c": "Kinetic energy",
+        "d": "Entropy"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Intensive property — Composition.\nExtensive properties — Volume, Kinetic Energy, Entropy.",
+      "note": "Composition means a concentration or mass/mole fraction here: dividing a homogeneous sample does not change it. Total V, kinetic energy ½mV², and total entropy S scale with the amount of material and are extensive. Specific entropy and specific kinetic energy would instead be intensive, but the choices give the total quantities.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Thermodynamic state: intensive quantities versus extensive quantities"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-23-46",
+      "number": 46,
+      "source": {
+        "page": 9,
+        "pageEnd": 10,
+        "examLabels": [
+          "GPSC EE Pre, 28.01.2017",
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "ESE 2012"
+        ]
+      },
+      "question": "In highly rarefied gases, the concept of which of the following loses validity?",
+      "options": {
+        "a": "Thermodynamic equilibrium",
+        "b": "Continuum",
+        "c": "Stability",
+        "d": "Macroscopic viewpoint"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "Continuum — In this approach the discrete molecular structure is replaced by continuous fields such as density, pressure, and temperature. Molecular-scale gaps are averaged over: the model does not assert that molecules physically fill all space, and the fields need not be spatially uniform.\nIn a highly rarefied gas, the molecular mean free path λ may no longer be small compared with the characteristic macroscopic length L. The relevant measure is the Knudsen number Kn = λ/L. When molecular scales are appreciable compared with the flow or device dimensions, the ordinary continuum description loses validity and kinetic/molecular treatment or rarefaction corrections are needed.\nThus choice b is correct in the intended rarefied-gas regime. Rarefaction does not create gaps that were absent in a dense gas; intermolecular spaces exist in both. It changes the relative molecular and macroscopic length/time scales.",
+      "note": "Key b verified. Corrected the source’s claims that continuum requires uniform matter and that molecular gaps are newly created in rarefied gas. Density alone is not the full criterion; the characteristic length also matters. Whole explanation continues on printed p24 and is retained.",
+      "references": [
+        {
+          "title": "NPTEL: Introduction and Fundamental Concepts, Concept of Continuum",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104118/lecture-1/1-6-concept-continum1.htm",
+          "section": "Mean free path, characteristic scale, and Knudsen-number criterion for continuum validity"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Continuum — In this approach we consider the system to be a continuous form of matter. It means that we do not consider the gaps/spaces between the atoms or molecules that are actually present. Instead, we consider a uniform distribution of matter with no spaces or gaps. But in rarefied gas, gaps will be created among atoms and molecules, making it invalid."
+    },
+    {
+      "id": "mech-thermodynamics-24-47",
+      "number": 47,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "GPSC ARTO 01.05.2016",
+          "APPSC AEE Mains 2016 (Civil Mechanical)",
+          "ESE 2010"
+        ]
+      },
+      "question": "A control volume implies:",
+      "options": {
+        "a": "An isolated system",
+        "b": "A closed system",
+        "c": "A specified mass in fluid flow",
+        "d": "A fixed region in space"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "A control volume is a selected volume in space for analysis. Its bounding surface is the control surface, which forms a geometrically closed surface. Fluid may cross that surface, so “closed surface” does not mean a closed thermodynamic system. In the conventional fixed Eulerian control-volume description used in this question, it is a fixed region in space, making d the intended choice.\nThe general control-volume method also allows moving and deforming control volumes; being fixed is a common choice, not a universal requirement of the concept. A specified fixed quantity of matter would instead describe a control mass, and neither isolation nor zero mass flow is implied by selecting a control volume.",
+      "note": "Retained the intended fixed-Eulerian answer d, with a curricular caveat: the source’s universal claim of fixedness is too narrow. The entire printed control-surface explanation is retained and qualified using the general transport-theorem formulation.",
+      "references": [
+        {
+          "title": "MIT, C. C. Mei: Kinematic Transport Theorem",
+          "url": "https://web.mit.edu/fluids-modules/www/basic_laws/1-3trans-thm.pdf",
+          "section": "§1.3: fixed, prescribed moving, and material-volume choices"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Concept of a thermodynamic system and control volume"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Control volume is a volume in space of special interest for a particular analysis. The surface of the control volume is referred to as a control surface and is a closed surface. It implies a fixed region in space."
+    },
+    {
+      "id": "mech-thermodynamics-24-48",
+      "number": 48,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "TNPSC AE 2017",
+          "Rajasthan Nagar Nigam AE 2016, Shift-II",
+          "UKPSC AE 2012, 2007 Paper-II"
+        ]
+      },
+      "question": "Which of the following is not a property of the system?",
+      "options": {
+        "a": "Temperature",
+        "b": "Pressure",
+        "c": "Volume",
+        "d": "Heat"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Heat is not a property of the system; it is a form of energy, whereas temperature, pressure, and volume are properties of the system.",
+      "note": "Heat is energy transferred across a boundary because of a temperature difference; it is not stored as a system property. A state may be specified by T, P, V as appropriate, but the heat exchanged depends on the process. Source wording “form of energy” is understood specifically as energy in transfer.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Work, Heat, and Internal Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+          "section": "Heat transfer and internal energy; process dependence"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Thermodynamic state properties and heat/work"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-24-49",
+      "number": 49,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021",
+          "Kerala PSC Poly. Lect. 09.01.2014",
+          "TNPSC AE (Industries) 09.06.2013"
+        ]
+      },
+      "question": "The value of the universal gas constant is:",
+      "options": {
+        "a": "8.314 J/(kg·K)",
+        "b": "83.14 kJ/(kg·K)",
+        "c": "848 kJ/(kg·K)",
+        "d": "8.314 kJ/(kg·K)"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The universal, molar gas constant is Rᵤ = 8.314462618… J/(mol·K), equivalently 8.314462618… kJ/(kmol·K). This is independent of gas species. A mass-specific gas constant instead satisfies R = Rᵤ/M and has units J/(kg·K); its value depends on molar mass M.\nAll four supplied options are printed per kg·K, not per mol·K or kmol·K. Therefore none has the correct units for the universal gas constant. Choice d has the intended numerical value only if its denominator is changed from kg to kmol. The original choices are retained exactly in meaning and the question is left ungraded; no unit has been silently repaired in a choice.",
+      "note": "All four printed unit strings visually checked: each says kg K; there is no omitted OCR “mol”. Genuine source dimensional error. The book supplies only the key marker (d), with no explanation. No replacement option or key invented.",
+      "references": [
+        {
+          "title": "NIST: CODATA recommended values of the fundamental physical constants, 2022",
+          "url": "https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf",
+          "section": "Tables XXXII–XXXIII: molar gas constant R = Nₐk, exact value and J·mol⁻¹·K⁻¹ units"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Equation of state: universal molar R and species-specific Rᵤ/M"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Ans. (d). No explanatory text or derivation is printed below the answer marker."
+    },
+    {
+      "id": "mech-thermodynamics-24-50",
+      "number": 50,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "ISRO Scientist/Engineer 11.10.2015",
+          "MPPSC State Forest Service Exam, 2014",
+          "Mizoram PSC 2014, Paper-I"
+        ]
+      },
+      "question": "A process in which no heat is supplied to or rejected from the system and entropy is not constant is known as:",
+      "options": {
+        "a": "Isothermal",
+        "b": "Isentropic",
+        "c": "Polytropic",
+        "d": "Hyperbolic"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "A polytropic process is defined by the pressure–volume relation PVⁿ = constant with a specified constant index n. It is a family of gas-process models, not the definition of an adiabatic process with changing entropy.\nNo heat transfer means that the process is adiabatic. For a closed system, ΔS = ∫δQ/T_boundary + S_gen; if Q = 0 and entropy is not constant, entropy is generated and the process is irreversible adiabatic. A closed-system reversible adiabatic process has S_gen = 0 and hence ΔS = 0, consistent with the first printed bullet’s isentropic case.\nThe second printed bullet incorrectly labels the entropy-generating adiabatic case “polytropic.” Such a process might happen to fit a polytropic model in a particular problem, but it need not obey PVⁿ = constant. “Irreversible adiabatic” is missing from the supplied choices, so none is a generally correct unique answer and the original question is left ungraded.",
+      "note": "Genuine source conceptual error, not a transcription issue. Kept the complete printed definition, relation, and both bullets. The printed c is not certified merely because adiabatic and polytropic paths can overlap in special models.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Irreversible insulated free expansion as a counterexample and reversible-process definition"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Entropy, reversibility, and adiabatic processes"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Reversibility & Cycles",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Polytropic Process — The polytropic process is also known as the general law for the expansion and compression of gases, and is given by the relation PVⁿ = constant.\n• If no heat is supplied to or rejected from the system and entropy is constant, then this process is called an isentropic process.\n• If no heat is supplied to or rejected from the system and entropy is not constant, it is known as a polytropic process."
+    },
+    {
+      "id": "mech-thermodynamics-24-51",
+      "number": 51,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "CGPSC Poly. Lect. 22.05.2016",
+          "Assam PSC CCE Pre 2015",
+          "ESE 2005"
+        ]
+      },
+      "question": "The change in internal energy in a reversible process occurring in a closed system is equal to the heat transferred if the process occurs at constant:",
+      "options": {
+        "a": "Temperature",
+        "b": "Pressure",
+        "c": "Volume",
+        "d": "Enthalpy"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "According to the First Law of Thermodynamics for a process,\nδQ = dU + δW\n= dU + p dV.\nFor a constant-volume process,\nδQ = dU + 0, because dV = 0.\nδQ = dU.\ndU = mcᵥ dT (for an ideal gas).\nThe change in internal energy in a closed system is equal to the heat transferred if the process occurs at constant volume.",
+      "note": "Verified under the customary simple-compressible, boundary-work-only model with negligible changes in kinetic and potential energy. Constant V gives boundary work zero and Q₁₂ = U₂ − U₁. Reversibility alone would not rule out shaft/electrical work in a more general rigid system; the source’s δW = p dV states the model being used. The ideal-gas identity dU = mcᵥ(T)dT does not require constant cv.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II.B, III.D–E: quasi-static boundary work and ideal-gas energy differential"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "First Law for a closed system"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-24-52",
+      "number": 52,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2018, Paper-II",
+          "TRB Asstt. Prof., 2012",
+          "TNPSC AE, 2008"
+        ]
+      },
+      "question": "If a gas is allowed to expand through a very minute aperture, then such a process is known as:",
+      "options": {
+        "a": "Free expansion",
+        "b": "Adiabatic expansion",
+        "c": "Throttling",
+        "d": "Parabolic expansion"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "In the usual continuum, steady-flow model, expansion through a small restriction such as an aperture, porous plug, or valve is called throttling. A throttle has no shaft-work extraction, heat transfer is neglected, and the changes of kinetic and potential energy between the selected upstream and downstream stations are negligible. The steady-flow energy balance then reduces to h₁ = h₂, so the process is isenthalpic.\n• A finite pressure-drop throttling process is highly irreversible.\n• In this ideal throttle model, neither shaft-work transfer nor heat transfer takes place; the printed bullet must not be read as saying that heat transfer does occur.\n• The downstream pressure is lower than the upstream pressure.\n• For a real gas, the downstream temperature may decrease, increase, or remain unchanged, depending on its state and Joule–Thomson coefficient.\n• For an ideal gas, h depends only on T, so h₁ = h₂ gives T₁ = T₂.\nThus choice c is the intended specific process name. If the aperture is molecular-scale and the gas is rarefied, effusion requires a different model; the question is using the conventional thermodynamic throttle description.",
+      "note": "Key c verified in the standard throttle model. Corrected the ambiguous printed heat/work bullet and made the steady-flow/energy assumptions explicit. All five source bullets and the full introductory explanation are retained.",
+      "references": [
+        {
+          "title": "NPTEL, IIT Kanpur: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Lecture 14: pressure-drop device, negligible heat/shaft work/KE/PE, isenthalpic flow, and ideal-gas temperature"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "When air or gas flows through a small or minute opening, enthalpy remains constant. It is known as an isenthalpic or throttling process.\n• It is a highly irreversible process.\n• There is no work and heat transfer takes place.\n• During a throttling process, pressure always decreases.\n• During a throttling process, temperature may or may not increase or decrease, or may remain constant.\n• For an ideal gas, temperature remains constant."
+    },
+    {
+      "id": "mech-thermodynamics-24-53",
+      "number": 53,
+      "source": {
+        "page": 10,
+        "pageEnd": 10,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 07.05.2017",
+          "MPSC State Forest Service Exam 2014"
+        ]
+      },
+      "question": "In an isothermal process, the internal energy of molecules:",
+      "options": {
+        "a": "Increases",
+        "b": "Decreases",
+        "c": "Depends on temperature",
+        "d": "Remains constant"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a fixed mass and composition of an ideal gas, internal energy is a function of temperature alone: du = cᵥ(T)dT. An isothermal process has dT = 0 and therefore Δu = 0 and u₂ = u₁. In that model, the intended answer is d, “remains constant.” No assumption of constant cv is needed for this conclusion.\nFor a calorically perfect ideal gas with constant cv over the temperature range, the finite-change formula is ΔU = mcᵥ(T₂ − T₁), not U = mcᵥΔT. Constant temperature makes the energy change zero; it does not imply the absolute energy is zero.\nFor a general real fluid, intermolecular interactions contribute to internal energy, and u may depend on volume or pressure as well as T. Isothermal compression or expansion therefore need not leave its internal energy unchanged. The source’s assertion that cv is constant “for a fluid” is also not generally valid.\nThe stem does not specify an ideal gas or a fixed molecular model, so d is only conditional. The original is left ungraded, with the intended ideal-gas conclusion and the full faulty printed derivation preserved.",
+      "note": "Genuine missing ideal-gas assumption plus printed energy-change notation errors and overbroad constant-cv statement. Full text/options/formulas visually checked; no ideal-gas condition was inserted into the question itself.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Specific heats: general u(T,v), ideal-gas u(T), and temperature-dependent cv"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy",
+          "section": "Internal molecular energy and temperature-dependent molecular modes"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "We know that internal energy U is\nU = mcᵥΔT.\nFor unit mass, Δu = cᵥΔT.\nFor a fluid, the value of cᵥ will remain constant.\nΔu ∝ ΔT.\nFor an isothermal process, ΔT = 0.\nSo, Δu = constant."
+    },
+    {
+      "id": "mech-thermodynamics-25-54",
+      "number": 54,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015, Paper-II",
+          "J & K PSC Screening, 2006"
+        ]
+      },
+      "question": "The expression ∫₁²p dv gives the measure of work done during:",
+      "options": {
+        "a": "Steady-flow reversible process",
+        "b": "Non-flow reversible process",
+        "c": "An open system and any process",
+        "d": "Any system and any process"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "∫₁²p dv is applicable in:\n• Closed-system or non-flow process.\n• Reversible process.\n• Quasi-static process.",
+      "note": "For a simple compressible closed system undergoing a mechanically quasi-static process, boundary work per unit mass is w_b = ∫₁²p dv, making b the correct listed choice. Reversibility is sufficient; mechanical quasi-equilibrium is the essential condition for replacing external pressure by system pressure. The general boundary-work relation is ∫p_ext dv. A reversible steady-flow shaft-work expression is instead −∫v dp with work positive by the fluid. The printed lowercase v is specific volume, so the integral is specific work.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II.A–B: general and quasi-static boundary work"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Work, Heat, and Internal Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+          "section": "Work from pressure and volume change"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-25-55",
+      "number": 55,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2010",
+          "UPSC JWM Advt. No.-52/2010"
+        ]
+      },
+      "question": "The cyclic integral of which of the following is zero?",
+      "options": {
+        "a": "Work transfer",
+        "b": "Heat transfer",
+        "c": "Temperature",
+        "d": "Latent heat"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Temperature is a thermodynamic state property, or point function. When a system completes a cycle it returns to the same temperature, so the cyclic integral of its exact differential is ∮dT = T_final − T_initial = 0. This is the intended meaning of choice c.\nThe printed equation omits d: ∮T = 0 is not a complete mathematical statement. In particular, an integral such as ∮T dt or ∮T dS is not generally zero. Heat and work are process transfers, and their cyclic integrals are generally nonzero (with ∮δQ = ∮δW for a cycle). “Latent heat” is not a replacement for an exact state differential.",
+      "note": "Key c verified as the cyclic integral of dT. Corrected the genuine omitted differential in the printed formula while retaining the full two-line source explanation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "State properties and path-dependent heat/work; cyclic energy changes"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "State-function energy change and cyclic processes"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Reversibility & Cycles",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "∮T = 0.\nTemperature is a property, i.e. a point function."
+    },
+    {
+      "id": "mech-thermodynamics-25-56",
+      "number": 56,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "ESE 2012"
+        ]
+      },
+      "question": "For steady flow through an insulated horizontal constant-diameter pipe, which property remains constant?",
+      "options": {
+        "a": "Enthalpy",
+        "b": "Internal energy",
+        "c": "Entropy",
+        "d": "Volume"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For steady flow through a stationary, insulated horizontal pipe with no shaft work, the energy balance gives h₁ + V₁²/2 = h₂ + V₂²/2. Thus stagnation enthalpy h₀ = h + V²/2 is conserved. The static enthalpy h is constant only if the kinetic-energy change is also zero or negligible.\nA constant diameter fixes cross-sectional area, not fluid velocity: continuity gives ρAV = constant, so V changes if density changes. Adiabatic compressible frictional flow in a constant-area pipe (Fanno flow) is a counterexample. Static enthalpy and velocity change while stagnation enthalpy remains constant; entropy generally increases. Internal energy and fluid specific volume are not generally constant either.\nThe source keys a but also reports GPSC’s d. A fixed geometric pipe volume is not the same as the thermodynamic volume/specific volume of the moving fluid, and the source does not resolve that conflict. With an added constant-velocity or negligible-kinetic-energy assumption, a would follow. Under an explicitly incompressible model, specific volume would also be constant. The supplied conditions alone do not establish one unique listed fluid property, so the original is left ungraded.",
+      "note": "Genuine missing kinetic-energy/compressibility assumptions and conflicting printed official-key note. Entire short printed explanation, including the GPSC note, retained. Fanno-flow counterexample independently checked against NPTEL.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "IV.C–E: steady-flow balance and conserved stagnation enthalpy"
+        },
+        {
+          "title": "NPTEL: Fanno Flow, Lecture 17",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103021/module2/lec17/2.html",
+          "section": "Subsonic constant-area frictional pipe flow: decreasing static enthalpy and increasing entropy"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "For steady flow through an insulated horizontal constant-diameter pipe, enthalpy remains constant.\nNote — GPSC gives the correct answer as option (d)."
+    },
+    {
+      "id": "mech-thermodynamics-25-57",
+      "number": 57,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018",
+          "GATE 2009"
+        ]
+      },
+      "question": "A frictionless piston–cylinder device contains a gas initially at 0.8 MPa and 0.015 m³. It expands quasi-statically at constant temperature to a final volume of 0.030 m³. The work output, in kJ, during this process will be:",
+      "options": {
+        "a": "8.32",
+        "b": "12.00",
+        "c": "554.67",
+        "d": "8320.00"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Given P₁ = 0.8 MPa, V₁ = 0.015 m³, and V₂ = 0.030 m³. If the gas is ideal, constant temperature implies pV = P₁V₁, and quasi-static boundary work is\nW = ∫V₁^V₂ p dV = P₁V₁ ln(V₂/V₁).\nP₁V₁ = (0.8 × 10⁶ Pa)(0.015 m³) = 12,000 J = 12 kJ.\nW = 12 ln(0.030/0.015) kJ = 12 ln 2 kJ = 8.31777 kJ ≈ 8.32 kJ, the intended choice a.\nThe printed intermediate product uses MPa·m³, which must be converted to kJ (1 MPa·m³ = 1000 kJ).\nA general gas is not defined solely by pV = constant at constant temperature: an equation of state is needed to determine its isothermal p(V) curve and the integral. The stem says only “a gas,” without an ideal-gas assumption or a real-gas equation of state. Therefore the numerical answer is conditional on that missing model, and the unmodified question is left ungraded rather than silently adding it.",
+      "note": "The entire given-data block, logarithmic derivation, final boxed answer, and all four numeric choices were visually reconciled. Recalculation confirms intended a = 8.32 kJ under the ideal-gas assumption. The original wording omits that assumption, so answer is null; no condition was inserted into the question.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "I and II.B–C: ideal-gas equation and isothermal quasi-static work"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Equation of state and work of an isothermal thermally perfect gas"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given, P₁ = 0.8 MPa, V₁ = 0.015 m³, V₂ = 0.030 m³.\nFor an isothermal process, W = P₁V₁ ln(V₂/V₁)\n= 0.8 × 0.015 ln(0.030/0.015).\nW = 8.32 kJ."
+    },
+    {
+      "id": "mech-thermodynamics-25-58",
+      "number": 58,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "UPCL AE 29.08.2021",
+          "ISRO Scientist/Engineer (RAC) 29.11.2015",
+          "ISRO Scientist/Engineer 2011"
+        ]
+      },
+      "question": "A perfect gas at 27 °C is heated at constant pressure until its volume is doubled. The final temperature is:",
+      "options": {
+        "a": "54 °C",
+        "b": "108 °C",
+        "c": "327 °C",
+        "d": "600 °C"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Gas equation:\nP₁V₁/T₁ = P₂V₂/T₂.\nConstant pressure: P₁ = P₂ = P.\nV₁/T₁ = V₂/T₂.\nV₂/V₁ = T₂/T₁.\n2V₁/V₁ = T₂/300.\nT₂ = 600 K = (600 − 273) °C.\nT₂ = 327 °C.",
+      "note": "For a fixed amount of perfect gas at constant pressure, V/T is constant with T in kelvin. With the source’s rounded conversion, 27 °C ≈ 300 K gives T₂ ≈ 600 K = 327 °C. Using the exact offset gives T₁ = 300.15 K, T₂ = 600.30 K = 327.15 °C, which rounds to the same listed choice c. Celsius temperature must not simply be doubled.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "I: pV = mRT for a fixed mass"
+        },
+        {
+          "title": "NIST: SI Units – Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Exact conversion T/K = t/°C + 273.15"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-25-59",
+      "number": 59,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "APPSC AEE Screening Test 2016",
+          "BPSC AE 2012 Paper-V"
+        ]
+      },
+      "question": "Which of the following is not a path function?",
+      "options": {
+        "a": "Thermal conductivity",
+        "b": "Kinetic energy",
+        "c": "Heat",
+        "d": "Work"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Thermal conductivity is a material transport property evaluated for specified material and state; it is not a quantity of heat or work accumulated along a process path. Thus choice a is not a path function in the sense intended by the source.\nKinetic energy is also not a path function. In a specified reference frame, KE = ½mV² is determined by the mass and instantaneous velocity. Its change between two specified states is independent of how those states were reached. This makes choice b another valid response, even though total kinetic energy is not one of the equilibrium thermodynamic state variables of a stationary simple substance.\nHeat and work are energy transfers that depend on the process. Because both a and b satisfy “not a path function,” the question has no unique correct supplied letter. The printed a and the complete original two-line explanation are retained, and the original is left ungraded.",
+      "note": "Genuine multiple-answer issue: the source explanation omits the non-path nature of kinetic energy. All text/choices/key were visually checked, so the issue is not an OCR misclassification.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "First Law: total energy includes kinetic energy; state energy versus process heat/work"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Work, Heat, and Internal Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+          "section": "Internal energy and path-dependent transfers"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Thermal conductivity — point function.\nHeat, work — path functions."
+    },
+    {
+      "id": "mech-thermodynamics-25-60",
+      "number": 60,
+      "source": {
+        "page": 11,
+        "pageEnd": 11,
+        "examLabels": [
+          "Vizag Steel (MT) 2017",
+          "UPSC AE 12.04.2016 Paper-II"
+        ]
+      },
+      "question": "A series of operations which takes place in a certain order and restores the initial conditions at the end is known as:",
+      "options": {
+        "a": "Reversible cycle",
+        "b": "Irreversible cycle",
+        "c": "Thermodynamic cycle",
+        "d": "None of these"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Thermodynamic cycle — A series of operations which takes place in a certain order and restores the initial conditions at the end is known as a thermodynamic cycle.",
+      "note": "Choice c is the general definition: after the sequence the working system returns to its initial state. Whether the cycle is reversible or irreversible requires further information about the constituent processes and surroundings. Returning the system to its initial state by itself does not establish reversibility.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Reversibility requires restoring both system and environment"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics lecture notes",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/thermo.pdf",
+          "section": "Thermodynamic cycles and state changes"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Reversibility & Cycles",
+      "figures": [],
+      "transcriptionReviewed": true
+    }
+  ],
+  "audit": {
+    "range": [
+      31,
+      60
+    ],
+    "totalReviewed": 30,
+    "counts": {
+      "verified": 13,
+      "corrected": 9,
+      "disputed": 8
+    },
+    "sourceFile": "MECH AE 02 FULL 35000-15-165(1).pdf",
+    "sourceSha256": "b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21",
+    "sourcePageNumbering": "1-based PDF pages; printed page = PDF page + 14",
+    "visualReconciliation": "All included question text, options, printed key markers, full explanations, and cross-column/page continuations visually reconciled with the scans.",
+    "figureCount": 1
+  }
+}
