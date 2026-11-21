@@ -201,6 +201,10 @@ def main():
     uploaded = uploaded_questions(arguments.html)
 
     questions = [question_record(review) for review in reviewed_questions()]
+    assert all(
+        question["number"] == original["n"] and question["source"]["page"] == original["pdfPage"]
+        for question, original in zip(questions, uploaded)
+    ), "Reconcile uploaded question numbering and source pages before publication."
     assert questions[0]["source"]["page"] == 1
     assert questions[-1]["source"]["page"] == LAST_SOURCE_PAGE
     assert questions[-1]["source"]["pageEnd"] == LAST_SOURCE_PAGE

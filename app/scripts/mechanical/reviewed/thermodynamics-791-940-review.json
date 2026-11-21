@@ -1558,9 +1558,9 @@
         {
           "page": 136,
           "bbox": [
-            116,
+            115,
             96,
-            249,
+            251,
             198
           ],
           "placement": "explanation",
@@ -1653,9 +1653,9 @@
         {
           "page": 136,
           "bbox": [
-            91,
-            612,
-            274,
+            89,
+            611,
+            276,
             699
           ],
           "placement": "explanation",
@@ -1893,9 +1893,9 @@
         {
           "page": 137,
           "bbox": [
-            82,
-            539,
-            283,
+            80,
+            538,
+            285,
             665
           ],
           "placement": "explanation",
@@ -2635,7 +2635,7 @@
           "bbox": [
             351,
             278,
-            465,
+            478,
             376
           ],
           "placement": "explanation",
@@ -3592,9 +3592,9 @@
         {
           "page": 142,
           "bbox": [
-            147,
+            140,
             428,
-            221,
+            223,
             519
           ],
           "placement": "explanation",
@@ -3918,10 +3918,10 @@
         {
           "page": 143,
           "bbox": [
-            75,
-            599,
-            290,
-            697
+            74,
+            602,
+            292,
+            695
           ],
           "placement": "explanation",
           "alt": "T–s dome showing saturated boundaries meeting at the critical point and lower-pressure phase-change lines"

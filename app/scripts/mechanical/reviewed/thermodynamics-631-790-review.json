@@ -2037,7 +2037,7 @@
           "page": 113,
           "bbox": [
             343,
-            632,
+            636,
             494,
             744
           ],
@@ -3981,7 +3981,7 @@
           "page": 122,
           "bbox": [
             119,
-            360,
+            362,
             248,
             485
           ],
@@ -4697,6 +4697,1596 @@
       "topic": "Properties of Pure Substances, Gases and Gas Mixture",
       "subtopic": "Amagat’s Law of Additive Volumes",
       "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 751,
+      "source": {
+        "page": 124,
+        "pageEnd": 125,
+        "examLabels": [
+          "Kerala PSC Asstt. Prof. 27.09.2016",
+          "APPSC AEE MAINS 2016 PAPER-III"
+        ]
+      },
+      "question": "In thermodynamics, pure substance is the one which:",
+      "options": {
+        "a": "Behaves like a perfect gas",
+        "b": "Consists of only a single chemical species",
+        "c": "Has no dissolved impurities",
+        "d": "Has a number of chemical species but has constant composition"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "The thermodynamic criterion is a fixed, uniform chemical composition throughout the material. Water, nitrogen, helium and CO₂ are examples. A homogeneous mixture of several chemical species may also be modelled as a pure substance if its composition remains fixed; this is the intended meaning of d. A single chemical species is sufficient but is not required by this engineering definition. Several phases are allowed when their chemical composition is the same: an ice–water mixture remains H₂O throughout. The source's blanket exclusion of air–steam mixtures needs qualification: a uniform, single gas phase of moist air with fixed composition can be treated as a pure substance, whereas liquid water coexisting with moist air has different phase compositions and does not meet that criterion.",
+      "sourceExplanation": "Ans. (d): Thermodynamic, pure substance is the one which has a number of chemical species but has constant composition.\nPure Substance—\n• A substance that has a fixed chemical composition throughout is called a pure substance i.e. water, nitrogen, helium and CO₂.\n• Substance which are mixture of various elements or compounds also qualifies as pure substances as long as mixture is homogeneous.\nProperties of Pure Substance—\n• A pure substance is a material with homogenous and invariable composition.\n• Pure substances can have multiple phases, an ice water mixture is still a pure substance but an air-steam is not a pure substance.",
+      "note": "Printed choice d retained. Corrected the categorical claim that every air–steam mixture is excluded; uniform fixed composition, including across any phases present, is the relevant condition. Full explanation continues onto PDF page 125.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Slides 3, 11–14: pure substances, phase diagrams and vapour quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Definition of a Pure Substance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 752,
+      "source": {
+        "page": 125,
+        "pageEnd": 125,
+        "examLabels": [
+          "RPSC Lecturer 16.01.2016",
+          "TNPSC AE (Industries) 09.06.2013"
+        ]
+      },
+      "question": "For dry saturated vapour, the value of dryness fraction will be",
+      "options": {
+        "a": "1.0",
+        "b": "0.75",
+        "c": "0.5",
+        "d": "0"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Dryness fraction is the vapour mass fraction of a saturated liquid–vapour mixture:\nx = m_v/(m_L + m_v).\nHere m_v is vapour mass and m_L is liquid mass. The saturation dome runs from x = 0 at the saturated-liquid boundary to x = 1 at the dry saturated-vapour boundary, meeting at the critical point. For dry saturated vapour no liquid remains, so m_L = 0 and x = m_v/(m_v + 0) = 1. Thus choice a is correct. The source diagram's intermediate quality lines x = 0.2 and x = 0.8 lie inside the two-phase region.",
+      "sourceExplanation": "Ans. (a): Dryness fraction (x) = Mass of vapour/(Mass of vapour + Mass of liquid).\nThe accompanying saturation-dome diagram marks the critical point (C.P.), saturated liquid line, saturated dry vapour line and qualities x = 0, x = 0.2, x = 0.8 and x = 1.\nx = m_v/(m_L + m_v).\nAt saturated vapour line m_L = 0.\nx = m_v/(m_v + 0) = 1.",
+      "note": "Printed key a checked against the vapour-quality definition; the complete source formulas and explanation diagram are retained.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Pressure–volume diagram and quality/lever rule"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Dryness Fraction of Saturated Vapour",
+      "figures": [
+        {
+          "page": 125,
+          "bbox": [
+            99,
+            311,
+            278,
+            441
+          ],
+          "placement": "explanation",
+          "alt": "Saturation dome with critical point, saturated-liquid and dry saturated-vapour boundaries, and quality lines x = 0, 0.2, 0.8 and 1."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 753,
+      "source": {
+        "page": 125,
+        "pageEnd": 125,
+        "examLabels": [
+          "GPSC EE Pre, 28.01.2017",
+          "ESE 2012"
+        ]
+      },
+      "question": "No substance can exist in the liquid phase in stable equilibrium",
+      "options": {
+        "a": "at temperature below the triple point temperature",
+        "b": "at pressure below the triple point pressure",
+        "c": "at pressure above the triple point pressure",
+        "d": "at temperature above the triple point temperature"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "On the ordinary solid–liquid–vapour equilibrium diagram, the liquid region does not extend below the triple-point pressure; the stable phases there are solid or vapour. Thus b is the intended answer. Below that pressure, heating a solid at constant pressure crosses the sublimation boundary rather than a liquid region. A temperature restriction is different: for substances that contract on freezing, the usual positive-slope fusion curve makes temperatures below the triple-point temperature incompatible with a stable liquid in this diagram. For substances such as water that expand on freezing, the negative-slope fusion curve permits a stable liquid below the triple-point temperature at suitable elevated pressure. This is the situation illustrated by the source's last statement and diagram; pressure and temperature restrictions should not be interchanged.",
+      "sourceExplanation": "Ans. (b): About to three phase equilibrium.\nThe pressure–temperature diagram labels solid phase, compressible liquid, liquid phase, supercritical fluid, gaseous phase, vapour, critical pressure, critical point and triple point.\n• No substance can exist in the liquid phase in stable equilibrium at pressure below the triple point pressure.\n• The same can be said for temperature for substance that contract on freezing.\n• Substances at high pressure can exist in the liquid phase at temperature below the triple point temperature.",
+      "note": "Printed key b checked on the conventional three-phase diagram. The high-pressure, below-triple-temperature example applies to the negative-slope fusion behaviour illustrated, such as ordinary ice–water.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Liquid Stability and the Triple Point",
+      "figures": [
+        {
+          "page": 125,
+          "bbox": [
+            79,
+            640,
+            281,
+            741
+          ],
+          "placement": "explanation",
+          "alt": "Pressure–temperature phase diagram identifying the solid, liquid, vapour and supercritical regions, triple point and critical point."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 754,
+      "source": {
+        "page": 125,
+        "pageEnd": 125,
+        "examLabels": [
+          "NPCIL ET, 2015",
+          "UKPSC AE 2012 Paper-II"
+        ]
+      },
+      "question": "Critical point of water refers to the state in which—",
+      "options": {
+        "a": "Liquid and solid coexist",
+        "b": "Solid and liquid coexist",
+        "c": "Liquid and vapour coexist",
+        "d": "All the three coexist"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The critical point is the terminal point of the liquid–vapour coexistence curve. At that point saturated liquid and saturated vapour have identical properties, so the distinction between the two phases disappears and the latent heat of vaporization tends to zero. Choice c is the intended liquid–vapour association, although \"coexist\" must be understood as this limiting state, not as two distinguishable phases. It is not merely any point where liquid turns into vapour; vaporization occurs along the whole subcritical saturation curve. The triple point is different: solid, liquid and vapour coexist in equilibrium there.",
+      "sourceExplanation": "Ans. (c): Critical point of water refers to state in which-liquid and vapour co exist.\nCritical point is point where liquid directly converts into vapour and triple point of water is the point where three phase exist. i.e. solid, liquid and gas.",
+      "note": "Printed key c retained, with the explanation corrected to distinguish the critical endpoint from ordinary liquid–vapour coexistence and from the triple point.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        },
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Vapour pressure curve, boiling, triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Critical Point versus Triple Point",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 755,
+      "source": {
+        "page": 125,
+        "pageEnd": 125,
+        "examLabels": [
+          "Nagaland PSC CTSE 2017 Paper-2",
+          "APPSC AEE Mains 2016 Paper-III"
+        ]
+      },
+      "question": "No liquid can exist as a liquid at",
+      "options": {
+        "a": "0°C temperature",
+        "b": "200°C temperature",
+        "c": "Zero pressure",
+        "d": "Zero viscosity"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Choice c is the intended answer for a stable bulk liquid in the ordinary equilibrium setting. At a finite temperature a liquid has a nonzero equilibrium vapour pressure; reducing the external pressure below the phase-stability limit causes evaporation/boiling or, below the triple-point pressure, leaves no stable liquid region. Temperatures of 0°C or 200°C do not by themselves preclude a liquid, since the substance and pressure matter. The source's reasoning is incorrect: zero pressure does not imply zero temperature or zero molecular momentum. Even the ideal-gas equation p = nR_uT/V allows pressure to approach zero through vanishing density at a nonzero temperature. Viscosity is a transport property and is not the equilibrium criterion used here.",
+      "sourceExplanation": "Ans. (c): No liquid can exist as a liquid at zero pressure:—\nGenerally absolute zero pressure is the point where there exist a minimum temperature i.e. zero. That can be possible only when molecular momentum of system become zero. There should not be any motion of particles so there is no collision of particles, kinetic energy nullifies and the temperature becomes zero.",
+      "note": "Printed key c retained in its ordinary stable-liquid context. Replaced the false claim equating zero pressure with absolute-zero temperature.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Ideal-gas equation of state; first law and steady flow"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Liquid Stability at Low Pressure",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 756,
+      "source": {
+        "page": 125,
+        "pageEnd": 125,
+        "examLabels": [
+          "GPSC DEE, Class-2 (GWSSB) 04.07.2021",
+          "TNPSC AE 2019"
+        ]
+      },
+      "question": "If 'h' refers total heat, T refers to temperature, then in the throttling process,",
+      "options": {
+        "a": "h₁² = h₂",
+        "b": "h₁ = h₂",
+        "c": "h₁ = h₂ + h_fg/T_s",
+        "d": "h₂ = h₁ + h_fg/T_s"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For steady flow through a throttling valve, neglecting kinetic and potential energy changes and taking heat transfer and shaft work as zero, the flow energy balance reduces to h₁ = h₂. Thus a throttling process is isenthalpic and b is correct. In modern terminology h denotes specific enthalpy, although the question calls it \"total heat\". The printed alternatives are h₁² = h₂, h₁ = h₂, h₁ = h₂ + h_fg/T_s and h₂ = h₁ + h_fg/T_s; only the second is the throttling relation. Neither a constant temperature nor a constant entropy is implied.",
+      "sourceExplanation": "Ans. (b): The throttling process is a constant enthalpy process.\nh₁ = h₂.",
+      "note": "Printed key b and all four formula choices reconciled directly with the native scan; the superscript 2 in a and fractions in c/d are present in the source.",
+      "references": [
+        {
+          "title": "NPTEL: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Steady adiabatic throttling and the Joule–Thomson coefficient"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Isenthalpic Throttling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 757,
+      "source": {
+        "page": 125,
+        "pageEnd": 126,
+        "examLabels": [
+          "RPSC ACF & FRO, 26.02.2021",
+          "TNPSC AE 2014"
+        ]
+      },
+      "question": "With the increase in pressure—",
+      "options": {
+        "a": "The boiling point of water decreases and enthalpy of evaporation increases.",
+        "b": "The boiling point of water increases and enthalpy of evaporation decreases.",
+        "c": "Both the boiling point of water and enthalpy of evaporation decreases.",
+        "d": "Both the boiling point of water and enthalpy of evaporation increases."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Along water's liquid–vapour saturation curve, increasing pressure raises the saturation temperature: P₂ > P₁ implies T₂ > T₁. Over the ordinary boiling range the enthalpy of evaporation h_fg = h_g − h_f decreases as the critical point is approached and vanishes at that endpoint. Thus the higher-pressure boiling process has a higher temperature and a smaller latent heat, as choice b states. The source's T–s sketch labels these latent-heat amounts h₂ < h₁; for an isothermal phase change they correspond to h_fg = T(s_g − s_f), not simply to an unscaled entropy-axis distance.",
+      "sourceExplanation": "Ans. (b): With the increase in pressure the boiling point of water increases and enthalpy of evaporation decreases.\nThe T–s diagram shows two saturation isobars P₂ and P₁, with corresponding temperatures T₂ and T₁ and latent-heat spans h₂ and h₁.\nP₂ > P₁\nT₂ > T₁\nh₂ < h₁.",
+      "note": "Printed key b checked against the water saturation curve. The adjacent explanation and annotated T–s sketch continue on PDF page 126.",
+      "references": [
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Vapour pressure curve, boiling, triple and critical points"
+        },
+        {
+          "title": "MIT 16.050 Thermal Energy: Final Exam, Fall 2002",
+          "url": "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/c3f89617c4c41827441ef8dd5ce4dc9d_finalexam.pdf",
+          "section": "Page 6: properties of saturated steam, 0.05–12 MPa"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pressure Dependence of Boiling and Latent Heat",
+      "figures": [
+        {
+          "page": 126,
+          "bbox": [
+            102,
+            131,
+            250,
+            260
+          ],
+          "placement": "explanation",
+          "alt": "T–s saturation dome comparing two boiling pressures with P₂ > P₁, T₂ > T₁ and latent heat h₂ < h₁."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 758,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-II",
+          "ESE 2000"
+        ]
+      },
+      "question": "Consider the following statements:\nWhen dry saturated steam is throttled from a higher pressure to a lower pressure, the:\n(1) Pressure decreases and the volume increases.\n(2) Temperature decrease and the steam becomes super heated.\n(3) Temperature and the dryness fraction increases.\n(4) Entropy increases without any change in Enthalpy.\nWhich of these statements are correct?",
+      "options": {
+        "a": "(1) & (4)",
+        "b": "(1), (2) & (4)",
+        "c": "(1) & (3)",
+        "d": "(2) & (4)"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "The steady adiabatic throttling balance gives h₂ = h₁. From dh = T ds + v dp, dh = 0 and dp < 0 give ds = −(v/T)dp > 0. Pressure decreases and the steam specific volume increases, so (1) and (4) are the generally valid statements, giving a. Statement (3) is incorrect: dry saturated steam initially has x = 1, and superheated steam has no defined saturation quality. Statement (2) describes the common lower-pressure case but is not guaranteed for an unspecified inlet pressure. For a counterexample using the cited steam table, dry saturated vapour at 12 MPa has h₁ = 2684.9 kJ/kg. Throttling to 1 MPa leaves h₂ = 2684.9 kJ/kg, below h_g = 2778.1 kJ/kg there; h_f = 762.81 kJ/kg, so x₂ = (2684.9 − 762.81)/(2778.1 − 762.81) ≈ 0.954. The outlet is wet, not superheated. The source key b therefore assumes an unstated pressure range, and its explanation's claim of increasing dryness fraction is wrong.",
+      "sourceExplanation": "Ans. (b): When dry saturated steam is throttled from a higher pressure to lower pressure, the\n(1) Pressure decreased and volume increases\n(2) Without any change in enthalpy.\n(3) Dryness fraction increases.",
+      "note": "Changed b to a: only statements (1) and (4) are assured without an inlet-pressure restriction. A 12 MPa to 1 MPa steam-table counterexample disproves universal superheating, and the printed dryness-fraction claim is also corrected.",
+      "references": [
+        {
+          "title": "NPTEL: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Steady adiabatic throttling and the Joule–Thomson coefficient"
+        },
+        {
+          "title": "MIT 16.050 Thermal Energy: Final Exam, Fall 2002",
+          "url": "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/c3f89617c4c41827441ef8dd5ce4dc9d_finalexam.pdf",
+          "section": "Page 6: properties of saturated steam, 0.05–12 MPa"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Throttling of Dry Saturated Steam",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 759,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "APGCL AM, 2021",
+          "Nagaland PSC (CTSE) 2018, Paper-II"
+        ]
+      },
+      "question": "Which of the following laws is applicable for the behavior of a perfect gas?",
+      "options": {
+        "a": "Boyle's law",
+        "b": "Charles' law",
+        "c": "Gay-Lussac law",
+        "d": "all of the above"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a fixed mass of perfect gas, pV = mRT combines all three listed gas laws. At constant absolute temperature, pV is constant, giving Boyle's law P₁V₁ = P₂V₂. At constant pressure, V/T is constant, giving Charles' law V₁/T₁ = V₂/T₂. At constant volume, p/T is constant, giving Gay-Lussac's law P₁/T₁ = P₂/T₂. Temperatures in these proportionalities must be absolute temperatures. Since every listed law follows from the perfect-gas equation, d is correct.",
+      "sourceExplanation": "Ans. (d):\nBoyle's Law: It states that the pressure exerted by a gas (of a given mass, kept at a constant temperature) is inversely proportional to the volume occupied by it.\nP₁V₁ = P₂V₂.\nCharles Law: It states that the volume of an ideal gas is directly proportional to the absolute temperature at constant pressure.\nV₁/T₁ = V₂/T₂.\nGay-Lussac's Law: The pressure of given mass of gas varies directly with the absolute temperature of the gas, when the volume is kept constant.",
+      "note": "Printed key d independently checked; the complete statements of all three laws and the two printed formulas are transcribed.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Ideal-gas equation of state; first law and steady flow"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Perfect-Gas Laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 760,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2",
+          "ESE 2013"
+        ]
+      },
+      "question": "If a pure substance is below the triple point temperature, the solid on being heated will only",
+      "options": {
+        "a": "temperature remain constant",
+        "b": "liquify",
+        "c": "vapourize or sublimate",
+        "d": "have its temperature increase"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The stated temperature alone does not fix the path on a phase diagram. A solid initially below its triple-point temperature can first increase in temperature as heat is added; at a suitable pressure it may subsequently melt. Sublimation without an intervening liquid phase is guaranteed for heating at pressure below the triple-point pressure in the conventional three-phase diagram. For water the fusion line even permits melting below the triple-point temperature at elevated pressure. The source appears to have substituted \"temperature\" for the necessary low-pressure condition. Since no pressure or heating path is specified, c is not a generally valid unique answer, and the item remains ungraded.",
+      "sourceExplanation": "Ans. (c): If a pure substance is below the triple point temperature, the solid on being heated will only vapourize or sublimate.",
+      "note": "Unresolved source ambiguity: the stem specifies temperature where pressure is needed to force sublimation. Preserved the printed c key and complete one-sentence explanation; no unique option is graded.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Sublimation and Missing Pressure Condition",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 761,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020",
+          "J&K PSC Civil Services Pre, 2010"
+        ]
+      },
+      "question": "Highest ratio of specific heat is possible for?",
+      "options": {
+        "a": "Argon",
+        "b": "Helium",
+        "c": "Hydrogen",
+        "d": "Air"
+      },
+      "sourceAnswer": "(a,b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a monatomic ideal gas with three translational degrees of freedom, C_v = 3R_u/2 and C_p = C_v + R_u = 5R_u/2. Thus γ = C_p/C_v = 5/3 ≈ 1.667. Both argon (a) and helium (b) are monatomic and share this value in the ideal-gas model. The source table contrasts them with diatomic gases O₂, N₂, H₂ and air, whose usual room-temperature ideal-gas value is 7/5 = 1.4, and quotes approximately 1.33 for triatomic O₃; the latter is a simplified heat-capacity model, with actual molecular values depending on temperature and vibrational excitation. Since a and b tie for the largest listed value, the source itself prints (a,b), and no single option is uniquely correct.",
+      "sourceExplanation": "Ans. (a,b):\nGas | Ratio of specific heat | Examples\nMono atomic | γ = 1.667 | He, Ar, Neon\nDiatomic | γ = 1.4 | O₂, N₂, H₂, Air\nTri-atomic | γ = 1.33 | O₃",
+      "note": "Native printed marker is exactly (a,b), not just a as in the draft HTML. Argon and helium tie in the intended monatomic ideal-gas model, so the single-choice item is ungraded. The complete original table is preserved as text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Mayer relation and monatomic, diatomic and polyatomic heat capacities"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific-Heat Ratio and Molecular Structure",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 762,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "CIL MT 27.02.2020",
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "The specific heat of a gas remains constant at all temperatures and pressures is discussed in:",
+      "options": {
+        "a": "Joule's Law",
+        "b": "Boyle's Law",
+        "c": "Charles' Law",
+        "d": "Regnault's Law"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "In the terminology used by this question, the constant-specific-heat assumption is called Regnault's law, choice d. It treats both C_p and C_v of the gas as constants, independent of pressure and temperature. This is a calorically perfect-gas approximation, rather than an exact statement about real gases at every possible temperature. For an ideal gas the heat capacities are independent of pressure but can still vary with temperature as molecular modes become active; over a restricted temperature range they can often be approximated as constant. Boyle's and Charles' laws concern p–V–T relations, while Joule's law concerns the temperature dependence of ideal-gas internal energy.",
+      "sourceExplanation": "Ans. (d): Regnault's law states that the specific heat capacity of a gas at constant pressure (C_p) and specific heat capacity of a gas at constant volume (C_v) do not change with change in pressure and temperature.\nAccording to this law, C_p and C_v values of gas remain constant.",
+      "note": "Printed key d retained as the name of the stated constant-heat-capacity model. The all-temperature wording is explicitly scoped as an approximation, not a universal material fact.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Mayer relation and monatomic, diatomic and polyatomic heat capacities"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Regnault’s Constant-Specific-Heat Model",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 763,
+      "source": {
+        "page": 126,
+        "pageEnd": 126,
+        "examLabels": [
+          "RPSC ACF & FRO, 26.02.2021",
+          "AAI Jr. Executive 29.11.2018"
+        ]
+      },
+      "question": "The slope drawn on sublimation curve on P-T diagram for all substances gives _____ value.",
+      "options": {
+        "a": "infinite",
+        "b": "zero",
+        "c": "negative",
+        "d": "positive"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The Clapeyron relation for solid–vapour equilibrium is dp/dT = h_sub/[T(v_v − v_s)]. Sublimation requires positive latent heat h_sub, and the vapour specific volume is greater than that of the solid, so the slope is positive: d is correct. In contrast, the fusion slope is dp/dT = h_fus/[T(v_l − v_s)]; it is usually positive, but for ordinary ice–water v_l < v_s and the slope is negative. The source's third observation concerns heating at atmospheric pressure: if the triple-point pressure exceeds atmospheric pressure, that constant-pressure path cannot enter a stable liquid region and a solid passes directly to vapour by sublimation.",
+      "sourceExplanation": "Ans. (d):\n1. Slope of sublimation curve for all substances is positive.\n2. Slope of fusion curve for most of substances is positive but for water it is negative.\n3. Those substances whose triple point pressure lies above atmospheric pressure will directly sublimate.",
+      "note": "Printed key d checked from the Clapeyron sign. All three printed explanation points are retained, with the atmospheric-pressure heating condition made explicit for the last point.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Slope of the Sublimation Curve",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 764,
+      "source": {
+        "page": 126,
+        "pageEnd": 127,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-I",
+          "OPSC AEE 2019 PAPER-II"
+        ]
+      },
+      "question": "In Vander Waals equation of state the two constant are determined from the behaviour of substance at:",
+      "options": {
+        "a": "Saturated point",
+        "b": "Triple point",
+        "c": "Critical point",
+        "d": "Never determined."
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The two van der Waals constants can be determined from the critical state, so c is correct. For (P + a/V²)(V − b) = RT, write P = RT/(V − b) − a/V² and impose the critical-isotherm conditions (∂P/∂V)_T = 0 and (∂²P/∂V²)_T = 0. These yield V_c = 3b, P_c = a/(27b²), and T_c = 8a/(27bR). Equivalently, b = V_c/3 and a = 3P_cV_c², reproducing every printed critical-property formula. The a/V² term is a cohesive pressure correction, rather than a force. The parameter b is the excluded-volume or covolume correction in the equation, rather than literally the geometrical volume occupied by the molecules; the source's labels require that distinction. V and R must use a consistent molar or specific basis.",
+      "sourceExplanation": "Ans. (c): Vander Waals equation—\n(P + a/V²)(V − b) = RT.\nForce of Cohesion = a/V².\nVolume of molecules = b (Co-volume).\nwhere a = 3P_cV_c² and b = V_c/3.\nCritical pressure (P_c) = a/(27b²).\nCritical Volume (V_c) = 3b.\nCritical temperature (T_c) = 8a/(27bR).",
+      "note": "Printed key c and all five critical-state formulas retained. Corrected the source labels identifying a pressure correction as a force and excluded volume as literal molecular volume; the full adjacent derivation is on PDF page 127.",
+      "references": [
+        {
+          "title": "NPTEL: Equations of State for Real Fluids",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/103101004/modules/chapter-2/sec-3/1.7.html",
+          "section": "Equations 2.18–2.20: van der Waals equation and critical inflection conditions"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Van der Waals Constants from Critical Properties",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 765,
+      "source": {
+        "page": 127,
+        "pageEnd": 127,
+        "examLabels": [
+          "PPSC Asstt. Municipal Engineer 15.06.2021"
+        ]
+      },
+      "question": "The triple point temperature for water is",
+      "options": {
+        "a": "0 K",
+        "b": "0°C",
+        "c": "0.01°C",
+        "d": "0.1°C"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The ordinary ice–water–vapour triple-point temperature is approximately 273.16 K. Converting to Celsius gives 273.16 − 273.15 = 0.01°C, hence c. On the Fahrenheit scale, (9/5)(0.01) + 32 = 32.018°F, or 32.02°F when rounded to two decimal places. The source's parenthetical 32.01°F is a small conversion/rounding error; it does not affect the correct option. This triple-point temperature differs from the approximately 0°C ice melting temperature at standard atmospheric pressure.",
+      "sourceExplanation": "Ans. (c): 0.01°C (273.16 K, 32.01°F).",
+      "note": "Printed key c retained; corrected the Fahrenheit conversion in the complete one-line printed explanation from 32.01°F to 32.018°F (32.02°F rounded).",
+      "references": [
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Triple point, critical point and expansion of water on freezing"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Triple-Point Temperature of Water",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 766,
+      "source": {
+        "page": 127,
+        "pageEnd": 127,
+        "examLabels": [
+          "RPSC ACF & FRO, 26.02.2021"
+        ]
+      },
+      "question": "The specific heat at constant pressure is _____ that of specific heat at constant volume.",
+      "options": {
+        "a": "equal to",
+        "b": "less than",
+        "c": "more than",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For the ideal-gas model used in the source explanation, Mayer's relation gives C_p − C_v = R, with R > 0. Hence C_p = R + C_v > C_v and c is correct. The heat-capacity ratio is γ = C_p/C_v, or C_p = γC_v. At constant volume the gas performs no boundary expansion work, so the supplied heat increases internal energy. At constant pressure the gas also expands and does boundary work; additional heat is needed for the same temperature increase. Thus every printed algebraic step and the physical explanation agree within the stated gas model. The equation C_p − C_v = R is an ideal-gas relation and should not be applied unchanged to arbitrary liquids or solids.",
+      "sourceExplanation": "Ans. (c): The specific heat at constant pressure is more than that of specific heat at constant volume.\nC_p > C_v\nC_p − C_v = R\nC_p = R + C_v\nC_p/C_v = γ\nC_p = γC_v\nC_p is greater than C_v because when a gas is heated at constant volume, no external work is done. So, heat supplied is consumed only in increasing the internal energy of gas.\nBut if gas is heated at constant pressure, external work is done as well as increasing the internal energy of gas.",
+      "note": "Printed key c checked in the ideal-gas context explicitly used by the adjacent explanation; all five printed heat-capacity relations are transcribed.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Mayer relation and monatomic, diatomic and polyatomic heat capacities"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Constant-Pressure versus Constant-Volume Heat Capacity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 767,
+      "source": {
+        "page": 127,
+        "pageEnd": 127,
+        "examLabels": [
+          "RPSC ACF & FRO, 26.02.2021"
+        ]
+      },
+      "question": "The enthalpy of dry saturated steam _____ with the increase in pressure.",
+      "options": {
+        "a": "decreases",
+        "b": "increases",
+        "c": "remains constant",
+        "d": "All of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The saturated-vapour enthalpy h_g of water is not monotonic over the entire saturation curve. For example, the cited steam table gives h_g = 2675.5 kJ/kg at 0.1 MPa, 2778.1 kJ/kg at 1 MPa, 2804.2 kJ/kg at 3 MPa, and 2684.9 kJ/kg at 12 MPa. It increases at lower pressures, reaches a maximum in the neighbourhood of 3 MPa, then decreases towards the critical point. Thus the printed unconditional answer \"decreases\" is false. An unspecified pressure increase also does not imply \"increases\" or \"remains constant\". \"All of these\" is not a clean universal statement either: a stationary maximum does not make h_g constant over a pressure range. Because the pressure interval is missing, the item cannot be assigned a unique physically valid choice.",
+      "sourceExplanation": "Ans. (a): The enthalpy of dry saturated steam decrease with the increase in pressure.",
+      "note": "Unresolved missing pressure range. Native source key a is preserved, but saturated-vapour enthalpy first rises and later falls; the steam-table counterexamples are included and automatic grading is disabled.",
+      "references": [
+        {
+          "title": "MIT 16.050 Thermal Energy: Final Exam, Fall 2002",
+          "url": "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/c3f89617c4c41827441ef8dd5ce4dc9d_finalexam.pdf",
+          "section": "Page 6: saturated-steam enthalpies from 0.05 to 12 MPa"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Nonmonotonic Saturated-Vapour Enthalpy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 768,
+      "source": {
+        "page": 127,
+        "pageEnd": 127,
+        "examLabels": [
+          "RPSC Lect. (Tech. Edu. Dept.) 13.03.2021 Paper-II"
+        ]
+      },
+      "question": "Which combination of the following statements is correct?\nP. A gas cools upon expansion only when its Joule-Thomson coefficient is positive in the temperature range of expansion.\nQ. For a system undergoing a process, its entropy remains constant only when the process is reversible.\nR. the work done by a closed system in an adiabatic process is a point function.\nS. A liquid expands upon freezing when the slope of its fusion curve on Pressure Temperature diagram is negative.",
+      "options": {
+        "a": "R and S",
+        "b": "P and Q",
+        "c": "Q, R and S",
+        "d": "P, Q and R"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Q is false: a closed system obeys ΔS = ∫δQ/T_boundary + S_gen. An irreversible nonadiabatic process can have ΔS = 0 if entropy carried out by heat transfer equals the positive entropy generated inside; entropy generation itself is never negative. P applies specifically to isenthalpic Joule–Thomson expansion: dT = μ_JT dp, so a pressure decrease cools the fluid where μ_JT > 0. Other expansion processes, including ideal-gas adiabatic expansion, can cool even though an ideal gas has μ_JT = 0. R also requires care: for a closed adiabatic system with negligible kinetic/potential changes, W = U₁ − U₂, so the work between specified endpoints within that constrained class is fixed. This does not turn work into a point/state property; work remains a transfer associated with a process. S is correct from dp/dT = h_fus/[T(v_liquid − v_solid)]: a negative fusion slope implies v_solid > v_liquid, so freezing expands the material. The printed a relies on calling constrained adiabatic work a point function and leaves P's throttling qualification unstated. Under a strict property definition no offered combination gives the defensible set, so the item is ungraded.",
+      "sourceExplanation": "Ans. (a): For a system undergoing a process, its entropy remains constant in two possible conditions.\n(i) Reversible and adiabatic.\n(ii) Irreversible and non-adiabatic.\nBut in irreversible and non-adiabatic process, the entropy generation and entropy generates by surrounding is equal in magnitude and opposite in direction.\nQ statement is incorrect.\nThe T–P diagram shows h = Constant curves, an inversion curve, a cooling region with slope = +ve and a heating region with slope = −ve.",
+      "note": "Unresolved terminology and scope: R calls work a point function, although the adiabatic first law fixes its endpoint value only under the process constraint; P omits isenthalpic throttling. Corrected the explanation of entropy export versus generation and retained all original prose and the Joule–Thomson sketch.",
+      "references": [
+        {
+          "title": "NPTEL: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Joule–Thomson coefficient; heating and cooling regions"
+        },
+        {
+          "title": "IIT Kanpur/NPTEL: State Postulate",
+          "url": "https://home.iitk.ac.in/~gtm/thermodynamics/lecture5/5_3.htm",
+          "section": "Two-property rule; work and heat are not state properties"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First-law and entropy balances"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Joule–Thomson Cooling, Entropy and Work Properties",
+      "figures": [
+        {
+          "page": 127,
+          "bbox": [
+            338,
+            297,
+            503,
+            391
+          ],
+          "placement": "explanation",
+          "alt": "T–P isenthalpic curves and inversion curve, with positive-slope cooling and negative-slope heating regions."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 769,
+      "source": {
+        "page": 127,
+        "pageEnd": 127,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021"
+        ]
+      },
+      "question": "The dryness (x) fraction of superheated steam is taken as",
+      "options": {
+        "a": "x = 0",
+        "b": "x = 0.9",
+        "c": "x = 0.999",
+        "d": "x = 1"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Dryness fraction x is the vapour mass fraction used to specify a saturated liquid–vapour mixture. It runs from x = 0 at saturated liquid (the source's point m) to x = 1 at dry saturated vapour (point n); line m–n in the T–s diagram is the phase-change path, with intermediate x = 0.25 and x = 0.75 inside the dome. Superheated steam lies outside that two-phase region and its thermodynamic quality is undefined. In particular, x = 1 identifies dry saturated steam, not a superheated state. The complete printed explanation correctly describes saturation qualities but does not answer the stem's superheated-steam question. None of the offered numerical qualities is a valid state specification for superheated steam, so no choice is graded.",
+      "sourceExplanation": "Ans. (d):\nThe diagram marks the critical point, the saturated liquid and saturated vapour boundaries, a horizontal m–n transition, and quality lines x = 0, x = 0.25, x = 0.75 and x = 1.\nThe value of x varies between zero and one. For saturated water, when water just starts boiling, x = 0, and for saturated vapour when vaporisation is complete, x = 1. For which the vapour is said to be dry saturated.\nPoint m indicate the saturated liquid state with x = 0 and point n indicate the saturated vapour state with x = 1 the line mn indicating the transition from liquid to vapour.",
+      "note": "No valid supplied choice: the source conflates dry saturated steam (x = 1) with superheated steam, for which vapour quality is undefined. Preserved the full saturation explanation and diagram; printed key d is not graded.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Saturation boundaries and definition of vapour quality"
+        },
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Slides 12–15: quality and superheated vapour"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Quality Is Undefined for Superheated Steam",
+      "figures": [
+        {
+          "page": 127,
+          "bbox": [
+            359,
+            464,
+            471,
+            555
+          ],
+          "placement": "explanation",
+          "alt": "T–s saturation dome showing the critical point, liquid-to-vapour transition m–n and quality lines x = 0, 0.25, 0.75 and 1."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 770,
+      "source": {
+        "page": 127,
+        "pageEnd": 128,
+        "examLabels": [
+          "Assam PSC AE (IWT) 14.03.2021"
+        ]
+      },
+      "question": "What is the state at which saturated liquid line with respect to vaporization and saturated vapor line on p-v diagram of pure substance made called?",
+      "options": {
+        "a": "Saturation state",
+        "b": "Critical state",
+        "c": "Vaporization state",
+        "d": "Superheated vapor state"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The saturated-liquid and saturated-vapour boundaries on a p–v diagram meet at the critical point, so b, critical state, is correct. At this endpoint the liquid and vapour have the same thermodynamic properties and the two-phase dome closes. The temperature, pressure and specific volume there are the critical properties T_c, p_c and v_c. In the source's wider phase diagram, the (S+L), (L+V) and (S+V) labels identify the solid–liquid, liquid–vapour and solid–vapour coexistence regions; only the upper termination of the liquid–vapour region is the critical point asked for.",
+      "sourceExplanation": "Ans. (b):\nThe P–V diagram shows solid–liquid (S+L), liquid–vapour (L+V) and solid–vapour (S+V) regions, saturated liquid and saturated vapour lines, and the critical point.\nThe point at which the saturated liquid line with respect to vapourisation and saturated vapour on a P-V diagram of a pure substance is called critical point.\nThe temperature, pressure and specific volume corresponding to the critical point are termed as critical properties.",
+      "note": "Printed key b checked; the stem and choices are on PDF page 127 and the full adjacent explanation and phase diagram are on PDF page 128.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Saturation boundaries and definition of vapour quality"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram; triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Intersection of Saturation Boundaries",
+      "figures": [
+        {
+          "page": 128,
+          "bbox": [
+            108,
+            103,
+            260,
+            215
+          ],
+          "placement": "explanation",
+          "alt": "P–V phase diagram with solid–liquid, liquid–vapour and solid–vapour regions and the saturated boundaries meeting at the critical point."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 771,
+      "source": {
+        "page": 128,
+        "pageEnd": 128,
+        "examLabels": [
+          "VIZAG Steel MT 24.01.2021"
+        ]
+      },
+      "question": "In throttling calorimeter, the thermodynamic process used to throttle the wet steam is _____.",
+      "options": {
+        "a": "constant volume process",
+        "b": "process with constant specific heat",
+        "c": "constant entropy process",
+        "d": "constant enthalpy process"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "In a throttling calorimeter the steam passes through a restriction from higher to lower pressure. For steady adiabatic operation, no shaft work and negligible changes in kinetic and potential energy, the steady-flow energy equation gives h₁ = h₂. Thus the process is at constant enthalpy, d. It is irreversible, so it is not a constant-entropy process. In practical dryness-fraction measurements the pressure drop must be sufficient to produce a measurable superheated outlet; the inlet mixture enthalpy can then be found from the outlet state.",
+      "sourceExplanation": "Ans. (d): In throttling process,\nEnthalpy (h) = Constant.",
+      "note": "Printed key d and the complete constant-enthalpy explanation checked against the steady-flow throttling balance.",
+      "references": [
+        {
+          "title": "NPTEL: Throttling Process",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture14/14_2.htm",
+          "section": "Steady adiabatic no-work throttling: unchanged enthalpy"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Throttling Calorimeter",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 772,
+      "source": {
+        "page": 128,
+        "pageEnd": 128,
+        "examLabels": [
+          "ESE 18.07.2021"
+        ]
+      },
+      "question": "The state of a simple compressible pure substance can be fixed by specifying",
+      "options": {
+        "a": "one independent property.",
+        "b": "two independent properties.",
+        "c": "three independent properties.",
+        "d": "four independent properties."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The state postulate for a simple compressible pure substance in equilibrium requires two independent intensive properties, so b is correct. Once such a pair is fixed, the remaining thermodynamic properties follow. Temperature and specific volume are a useful independent pair in the usual single- and liquid–vapour two-phase regions considered here. Independence matters: during liquid–vapour equilibrium the saturation pressure fixes the saturation temperature, so p and T are not two independent specifications. This is why the source calls the postulate the two-property rule and explicitly requires independent intensive properties for a given mass.",
+      "sourceExplanation": "Ans. (b): The state of pure substance of a given mass can be fixed by specifying two independent intensive properties provided the system is in equilibrium. This is known as 2-properties rule.\nTemperature and specific volume, for example, are always independent properties, and together they can fix the state of a simple compressible system.",
+      "note": "Printed key b checked against the state postulate; retained the full two-paragraph explanation and its independence condition.",
+      "references": [
+        {
+          "title": "IIT Kanpur/NPTEL: State Postulate",
+          "url": "https://home.iitk.ac.in/~gtm/thermodynamics/lecture5/5_3.htm",
+          "section": "Two independent intensive properties; saturation pressure and temperature are dependent"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "State Postulate for a Simple Compressible Substance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 773,
+      "source": {
+        "page": 128,
+        "pageEnd": 128,
+        "examLabels": [
+          "APPSC Poly Lect. 13.03.2020"
+        ]
+      },
+      "question": "A vessel has two compartments. First compartment contains 2 kg of dry saturated steam at 7 bar [v_g at 7 bar = 0.27 m³/kg] and second compartment contains 1 kg of steam of dryness fraction of 0.8 at 3.5 bar [v_g at 3.5 bar = 0.55 m³/kg]. After the partition is removed, the pressure of the mixture is found to be 5 bar [v_g at 5 bar = 0.37 m³/kg]. Neglecting the volume of water, what will be specific volume of mixture?",
+      "options": {
+        "a": "0.281 m³/kg",
+        "b": "0.326 m³/kg",
+        "c": "0.462 m³/kg",
+        "d": "0.521 m³/kg"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The total mass is m = m₁ + m₂ = 2 + 1 = 3 kg. Neglecting the liquid volume, the compartment specific volumes are x₁v_g1 = 1 × 0.27 and x₂v_g2 = 0.8 × 0.55 m³/kg. Thus the total vessel volume is V = 2(1 × 0.27) + 1(0.8 × 0.55) = 0.54 + 0.44 = 0.98 m³. Removing the partition changes neither the vessel volume nor the total mass, so the final mixture specific volume is v_m = V/m = 0.98/3 = 0.3267 m³/kg. Choice b, 0.326 m³/kg, is the intended and nearest offered value, with its final digits truncated. The stated final 5 bar value v_g = 0.37 m³/kg is not needed to find V/m; it would give x_m ≈ 0.3267/0.37 ≈ 0.883 under the same negligible-liquid-volume approximation.",
+      "sourceExplanation": "Ans. (b): Given,\nm₁ = 2 kg\nx₁ = 1\nP₁ = 7 bar = 7 × 10⁵ N/m²\nv_g1 at 7 bar = 0.27 m³/kg\nm₂ = 1 kg\nx₂ = 0.8\nP₂ = 3.5 bar = 3.5 × 10⁵ N/m²\nv_g2 at 3.5 bar = 0.55 m³/kg\nAfter mixing\nP_m = 5 bar\nv_g at 5 bar = 0.37 m³/kg\nv_m = ?\nWe know total mass (m) = m₁ + m₂ = 1 + 2 = 3 kg.\nNeglecting volume of water\nv_m = [m₁(x₁v_g1) + m₂(x₂v_g2)]/m\n= [2 × (1 × 0.27) + 1 × (0.8 × 0.55)]/3\n= 0.3267 m³/kg.",
+      "note": "Printed key b checked numerically. Native scan gives 0.27 and 0.55, resolving the draft OCR errors; all data, formula steps and the printed 0.3267 result are preserved. Choice b is a truncated approximation.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Pressure–volume diagrams, quality and the mixture-volume lever rule"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific Volume after Removing a Steam Partition",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 774,
+      "source": {
+        "page": 128,
+        "pageEnd": 128,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2"
+        ]
+      },
+      "question": "The pressure and temperature of mixture of 4 kg O₂ and 6 kg N₂ are 4 bar and 27°C. What will be the value of molecular weight of mixture?",
+      "options": {
+        "a": "40.67",
+        "b": "39.87",
+        "c": "29.47",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "The mixture molar mass is total mass divided by total amount of substance. With M_O₂ = 32 kg/kmol and M_N₂ = 28 kg/kmol, n_O₂ = 4/32 = 0.125 kmol and n_N₂ = 6/28 = 0.2142857 kmol. Hence M_mix = (4 + 6)/(4/32 + 6/28) = 10/0.3392857 = 29.4737 kg/kmol, which gives c, 29.47. Equivalently, 1/M_mix = w_O₂/M_O₂ + w_N₂/M_N₂. The pressure and temperature do not affect this composition calculation. The printed explanation wrongly averages molar masses using mass fractions: [(4 × 32) + (6 × 28)]/10 = 29.6. Arithmetic averaging of component molar masses requires mole fractions, not mass fractions.",
+      "sourceExplanation": "Ans. (c): Given,\nmass of O₂ = 4 kg\nmass of N₂ = 6 kg\nMolecular weight of mixture,\n⇒ [m_O₂ × (M_wt)_O₂ + m_N₂ × (M_wt)_N₂]/(m_O₂ + m_N₂)\n⇒ [(4 × 32) + (6 × 28)]/(4 + 6)\n⇒ 29.6.",
+      "note": "Printed key c is correct, but the complete printed derivation is wrong: it uses mass-weighted arithmetic averaging and obtains 29.6. Replaced it with total mass/total kmoles, 29.4737 kg/kmol.",
+      "references": [
+        {
+          "title": "NPTEL IIT Bombay: Introduction to Aerospace Propulsion, Lecture 21",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/101101001/downloads/Intro-Propulsion-Lect-21.pdf",
+          "section": "Slides 17–18: mass, mole number and average molar mass of a mixture"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Molar Mass of an Oxygen–Nitrogen Mixture",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 775,
+      "source": {
+        "page": 128,
+        "pageEnd": 128,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "According to the state postulate, the number of independent properties required to determine the state of a system containing a pure substance, with two of its phases in equilibrium, is",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "zero"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The state postulate requires two independent intensive properties to fix the complete state of a simple compressible system, giving b. For a liquid–vapour mixture one suitable pair is pressure and vapour quality x, or temperature and x. Saturation makes pressure and temperature dependent, so those two alone do not specify the amount of each phase and hence do not fix mixture-specific volume, enthalpy or entropy. Gibbs' phase rule gives one degree of freedom for the intensive equilibrium conditions of the two phases, but the bulk mixture also requires its phase fraction. This distinguishes the phase-rule count from the two-property state postulate asked here. The source's word \"slope\" is a typographical substitution for \"state\".",
+      "sourceExplanation": "Ans. (b): The number of properties required to fixed the state of a system is given by the state postulate. The slope of a simple compressible system is completely specified by two independent, intensive properties.",
+      "note": "Printed key b checked. Clarified the distinction between one phase-equilibrium degree of freedom and the additional phase fraction needed to specify a bulk two-phase state; the native \"slope\" typo is preserved in sourceExplanation.",
+      "references": [
+        {
+          "title": "IIT Kanpur/NPTEL: State Postulate",
+          "url": "https://home.iitk.ac.in/~gtm/thermodynamics/lecture5/5_3.htm",
+          "section": "Two independent intensive properties; saturation pressure and temperature are dependent"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Pressure–volume diagrams, quality and the mixture-volume lever rule"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Two-Phase State Postulate and Quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 776,
+      "source": {
+        "page": 128,
+        "pageEnd": 129,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "Ice, when heated, directly sublimates into water vapour without going through liquid phase when",
+      "options": {
+        "a": "temperature is lower than critical temperature",
+        "b": "pressure is lower than critical pressure",
+        "c": "temperature is lower than triple point temperature",
+        "d": "pressure is lower than triple point pressure"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "For heating ice at a constant pressure below water's triple-point pressure, no stable liquid region is available in the ordinary phase diagram. The solid therefore crosses the solid–vapour equilibrium line and sublimates directly into vapour, so d is correct. A temperature below the triple-point temperature alone is insufficient: the path also depends on pressure, and the negative fusion slope of ordinary ice–water can permit liquid at slightly lower temperatures under elevated pressure. Similarly, being below the much larger critical pressure does not force sublimation. The source's final sentence is too broad: lowering pressure does not invariably create vapour at every temperature, and lowering temperature below the triple-point value does not invariably create solid at every pressure. The low-pressure heating condition in the question is the relevant criterion.",
+      "sourceExplanation": "Ans. (d):\nThe pressure–temperature diagram labels the solid, liquid, vapour, compressible liquid and supercritical fluid regions; the critical point, triple-point pressure and temperature, and critical pressure and temperature.\nOn decreasing temperature below triple point it solidifies while decreasing pressure below triple point it changes directly into vapour state i.e. sublimation.",
+      "note": "Printed key d retained. Corrected the adjacent explanation’s unconditional temperature/pressure claims; its full text and phase diagram continue onto PDF page 129.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram, sublimation, triple and critical points"
+        },
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Boiling, the vapour-pressure curve and the critical endpoint"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Sublimation of Ice below Triple-Point Pressure",
+      "figures": [
+        {
+          "page": 129,
+          "bbox": [
+            94,
+            108,
+            275,
+            225
+          ],
+          "placement": "explanation",
+          "alt": "Water pressure–temperature phase diagram showing solid, liquid, vapour, triple-point pressure and temperature, and the critical point."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 777,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "Haryana PSC AE (PHED) 04.09.2020, Paper-I"
+        ]
+      },
+      "question": "In the P-V diagram for water, the horizontal portion of an isothermal line indication",
+      "options": {
+        "a": "solid phase",
+        "b": "vapour phase",
+        "c": "phase change from solid to liquid or liquid to vapour",
+        "d": "liquid phase"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "During equilibrium phase change of a pure substance at a specified subcritical temperature, the coexistence pressure is fixed while the phase proportions and total specific volume change. Consequently an isotherm contains a horizontal segment in a two-phase region on a p–v diagram. The source's diagram includes solid–liquid and liquid–vapour coexistence portions, labelled S+L and L+V, so c is the matching option. A single solid, single liquid or single vapour region does not account for that finite horizontal phase-change segment. The diagram also shows the S+V region and the critical point closing the liquid–vapour dome.",
+      "sourceExplanation": "Ans. (c):\nThe accompanying P–V phase diagram labels the critical point, S (solid), L (liquid), V (vapour), S+L, L+V and S+V, with a horizontal isothermal phase-change line through the coexistence regions.",
+      "note": "Printed key c and every labelled phase region checked against the native explanation diagram; the uploaded diagram belongs to the explanation, not the question stem.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Pressure–volume diagrams, quality and the mixture-volume lever rule"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "Pressure–temperature diagram, sublimation, triple and critical points"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Horizontal Phase-Change Segments on a p–v Isotherm",
+      "figures": [
+        {
+          "page": 129,
+          "bbox": [
+            132,
+            365,
+            235,
+            458
+          ],
+          "placement": "explanation",
+          "alt": "P–V phase diagram showing S, L, V, S+L, L+V and S+V regions and a horizontal phase-change segment below the critical point."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 778,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "CIL MT 27.02.2020"
+        ]
+      },
+      "question": "When a material solidify due to latent heat of fusion is known as:",
+      "options": {
+        "a": "Thermometry",
+        "b": "Super cooling",
+        "c": "Under cooling",
+        "d": "Thermal arrest"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "The intended phenomenon is thermal arrest, d: during solidification of a pure material at fixed pressure, latent heat is released as liquid becomes solid, producing a constant-temperature plateau or arrest in its cooling curve while the phase change proceeds. The term refers to that arrest, rather than to the entire cooling curve. Thermometry is the measurement of temperature. The source's last bullet is incorrect: subcooling describes a liquid temperature below its saturation/boiling temperature at the specified pressure; in solidification, supercooling or undercooling means a liquid remains liquid below its equilibrium freezing temperature until nucleation occurs. These processes lower the actual liquid temperature relative to the relevant phase-change temperature, rather than lowering the boiling point itself.",
+      "sourceExplanation": "Ans. (d):\n• The cooling curve formed when a material is solidified due to latent heat of fusion is called as thermal arrest.\n• Thermometry is the process of measuring temperature.\n• Subcooling or undercooling is the process of lowering the boiling point.",
+      "note": "Printed key d retained. Corrected the definition of thermal arrest and the incorrect claim that subcooling/undercooling lowers the boiling point; all original explanatory bullets are preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "Phase change, latent heat and constant-temperature plateaus"
+        },
+        {
+          "title": "Harvard Natural Sciences Lecture Demonstrations: Supercooling of Water",
+          "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/supercooling-water",
+          "section": "Liquid below its freezing point; crystallization upon nucleation"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Thermal Arrest and Undercooling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 779,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "NLCIL GET 17.11.2020, Shift-II"
+        ]
+      },
+      "question": "If the value of a gas constant is 0.1 kJ/kg.K and specific heat at constant volume is 0.2 kJ/kg.K, the specific heat ratio will be:",
+      "options": {
+        "a": "1.5",
+        "b": "1.1",
+        "c": "3.3",
+        "d": "2.5"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For an ideal gas C_p − C_v = R. Substituting C_v = 0.2 kJ/(kg·K) and R = 0.1 kJ/(kg·K) gives C_p = C_v + R = 0.2 + 0.1 = 0.3 kJ/(kg·K). The specific-heat ratio is dimensionless:\nγ = C_p/C_v = 0.3/0.2 = 1.5.\nTherefore a is correct. The source's continuation at the top of the next column supplies the same ratio and final value.",
+      "sourceExplanation": "Ans. (a): Given, C_v = 0.2 kJ/kg K\nR = 0.1 kJ/kg K\nWe know that,\nC_p − C_v = R\nC_p = 0.1 + 0.2\nC_p = 0.3\nRatio of specific heat\nC_p/C_v = γ = 0.3/0.2\nC_p/C_v = 1.5.",
+      "note": "Printed key a and complete cross-column algebra independently recomputed; units are consistent and cancel in the ratio.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "C_p = C_v + R and the heat-capacity ratio"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific-Heat Ratio from R and C_v",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 780,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020"
+        ]
+      },
+      "question": "At critical pressure",
+      "options": {
+        "a": "the entropy of a substance is zero",
+        "b": "the latent heat of vaporization is zero",
+        "c": "saturated vapour becomes a gas",
+        "d": "a real gas obeys ideal gas laws"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "At the critical saturation state, reached at the critical pressure and its corresponding critical temperature, the saturated-liquid and saturated-vapour states become identical. Thus h_fg = h_g − h_f tends to zero, giving b. The T–s diagram illustrates the finite phase-change entropy interval below the critical point; at criticality that interval closes, and h_fg = T(s_g − s_f) vanishes. Entropy itself is not thereby zero, and a real fluid at criticality does not obey the ideal-gas law. The pressure wording is understood along the saturation curve: merely setting p = p_c at an arbitrary temperature is not a specification of the critical state.",
+      "sourceExplanation": "Ans. (b): At critical pressure the latent heat of vaporization is zero.\nThe T–s saturation-dome sketch marks the critical point and the latent heat of vaporization across a subcritical horizontal phase-change line.",
+      "note": "Printed key b checked for the critical saturation state. Clarified the corresponding-temperature condition and retained the complete annotated explanation diagram.",
+      "references": [
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Boiling, the vapour-pressure curve and the critical endpoint"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Pressure–volume diagrams, quality and the mixture-volume lever rule"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Vanishing Latent Heat at the Critical Point",
+      "figures": [
+        {
+          "page": 129,
+          "bbox": [
+            350,
+            266,
+            475,
+            335
+          ],
+          "placement": "explanation",
+          "alt": "T–s saturation dome marking the critical point and a subcritical latent-heat span across the two-phase region."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 781,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "TSPSC Manager (Engg.) HMWSSB 12.11.2020"
+        ]
+      },
+      "question": "Gas laws are least valid in the cases of",
+      "options": {
+        "a": "mono atomic gases",
+        "b": "polyatomic gases",
+        "c": "vapours",
+        "d": "gas mixtures"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The intended comparison concerns the ideal-gas laws. Vapours near saturation are often relatively dense and close to condensation, so intermolecular attractions and finite molecular volume make pV = mRT a poor approximation; c is the conventional answer. Monatomic, polyatomic and mixed gases can all approach ideal behaviour at sufficiently low density. This is a regime-dependent comparison: a dilute, highly superheated vapour can also behave approximately ideally, while any gas can depart strongly from the ideal-gas law at sufficiently high pressure or near its critical state.",
+      "sourceExplanation": "Ans. (c): Gas laws are least valid in the case of vapours.",
+      "note": "Printed key c checked as the usual near-saturation comparison; the short original explanation is fully retained and the density/temperature scope is made explicit.",
+      "references": [
+        {
+          "title": "NPTEL: Equations of State for Real Fluids",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/103101004/modules/chapter-2/sec-3/1.8.html",
+          "section": "Limitations of ideal and cubic equations near dense/critical fluid states"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Limits of Ideal-Gas Behaviour for Vapours",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 782,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020"
+        ]
+      },
+      "question": "Critical point of water is",
+      "options": {
+        "a": "22.06 kPa",
+        "b": "22.06 MPa",
+        "c": "22.06 atm",
+        "d": "22.06 bar"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The numerical choices identify the critical pressure of water. Its accepted value is p_c = 22.064 MPa, which rounds to 22.06 MPa, giving b. Since 1 MPa = 10 bar, this is approximately 220.6 bar, as printed. The corresponding critical temperature is T_c = 647.096 K = 373.946°C, approximately 374°C. Pressure and temperature together locate the critical point, where the liquid–vapour distinction disappears.",
+      "sourceExplanation": "Ans. (b): ⇒ Critical pressure of water = 220.6 bar\n= 22.06 MPa\n⇒ Critical temperature of water = 374°C.",
+      "note": "Printed key b and both unit conversions checked against IAPWS; 22.06 MPa and 374°C are rounded values of the accepted critical constants.",
+      "references": [
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Triple point and critical point: 0.01°C, 373.946°C and 22.064 MPa"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Critical Pressure of Water",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 783,
+      "source": {
+        "page": 129,
+        "pageEnd": 129,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020"
+        ]
+      },
+      "question": "In a shower mixer, cold water at 27 deg C, flowing at 5 kg/min is mixed with hot water at 77 deg C flowing at 15 kg/min. The exit temperature of the mixture is",
+      "options": {
+        "a": "45.4 deg C",
+        "b": "64.5 deg C",
+        "c": "34.5 deg C",
+        "d": "68.4 deg C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For steady adiabatic mixing with no shaft work and negligible kinetic/potential changes, the inlet and outlet enthalpy flow rates balance. Taking liquid-water specific heat C_pw as the same constant for both streams,\nṁ_c C_pw T_c + ṁ_h C_pw T_h = (ṁ_c + ṁ_h)C_pw T_out.\nThus (5 × C_pw × 27) + (15 × C_pw × 77) = (5 + 15)C_pw T_out. Cancelling C_pw gives T_out = (5 × 27 + 15 × 77)/20 = (135 + 1155)/20 = 64.5°C, so b is correct. Using Celsius is valid here because the temperature-reference offset cancels through mass conservation.",
+      "sourceExplanation": "Ans. (b): For steady state,\nThe rate of enthalpy entering the mixture\n= The rate of enthalpy leaving mixture\n(5 × C_pw × 27) + (15 × C_pw × 77) = (5 + 15) × C_pw × (T_exit)_mixture\n(T_exit)_mixture = 64.5°C.",
+      "note": "Printed key b independently recomputed from the full steady mixing balance, with the constant-specific-heat and adiabatic assumptions made explicit.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Steady-flow mass and energy balances; reversible adiabatic expansion"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Adiabatic Mixing Temperature of Water Streams",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 784,
+      "source": {
+        "page": 129,
+        "pageEnd": 130,
+        "examLabels": [
+          "MECON MT 2019"
+        ]
+      },
+      "question": "When a liquid and its vapour are in equilibrium at a certain pressure and temperature, then which of the following is required to identify the saturation state?",
+      "options": {
+        "a": "Pressure",
+        "b": "Temperature",
+        "c": "Pressure or temperature",
+        "d": "Both (a) and (b)"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a pure substance on its liquid–vapour coexistence curve, saturation pressure and temperature are linked: p = p_sat(T), or T = T_sat(p). Therefore either pressure or temperature identifies the point on the saturation curve, so c is correct; specifying both is redundant for that purpose. This identifies the equilibrium saturation conditions, not the full bulk mixture state. A further property such as quality is needed to determine how much liquid and vapour are present. The printed explanation, which appears at the top of PDF page 130, refers specifically to identifying the saturation condition.",
+      "sourceExplanation": "Ans. (c): When a liquid and its vapour are in equilibrium at a certain pressure and temperature, only the pressure or the temperature is sufficient to identify the saturation state.",
+      "note": "Printed key c and all four native choices checked; the draft OCR incorrectly appended text to option a. The complete explanation continues on PDF page 130.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_2.htm",
+          "section": "Saturated state, saturation temperature and saturation pressure"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "One-component phase-equilibrium degrees of freedom; sublimation and triple point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Saturation Pressure–Temperature Dependence",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 785,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "VIZAG MT, 14.12.2020"
+        ]
+      },
+      "question": "In a single component system, the maximum number of phases that can coexist together in equilibrium is _____.",
+      "options": {
+        "a": "5",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For an ordinary nonreacting equilibrium system with only pressure and temperature as external variables, Gibbs' phase rule is F = C − P + 2. With one component, C = 1, so F = 3 − P. The number of independent equilibrium degrees of freedom cannot be negative; hence P ≤ 3. The maximum is therefore three phases, c, occurring at a triple point where F = 0. This reproduces the complete printed conclusion: a single component can have three coexisting phases at a triple point and its equilibrium pressure and temperature are then fixed.",
+      "sourceExplanation": "Ans. (c): At triple point single component exist in three phases. (DOF) at triple point = 0.",
+      "note": "Printed key c checked using the one-component Gibbs phase rule and its standard pressure–temperature assumptions.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "One-component phase-equilibrium degrees of freedom; sublimation and triple point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Maximum Coexisting Phases of One Component",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 786,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC), 10.03.2019"
+        ]
+      },
+      "question": "Triple point of a substance",
+      "options": {
+        "a": "Occurs in a mixture of two or more gases",
+        "b": "Is the point where three phases exists together",
+        "c": "Occurs in sublimation",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A triple point is a pressure–temperature condition at which three phases of a substance coexist in equilibrium; the ordinary water triple point has solid ice, liquid water and water vapour. Thus b is correct. For water the corresponding temperature is approximately 0.01°C = 273.16 K. Sublimation by itself is two-phase solid–vapour equilibrium; the sublimation, fusion and vaporization curves meet at the triple point.",
+      "sourceExplanation": "Ans. (b): Triple point of a substance is the point where three phases (solid, liquid & gas) exist together.\nTriple point of water = 0.01°C = 273.16 K.",
+      "note": "Printed key b and the complete water-temperature example checked against the phase diagram and IAPWS.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "One-component phase-equilibrium degrees of freedom; sublimation and triple point"
+        },
+        {
+          "title": "IAPWS: FAQs About Water and Steam",
+          "url": "https://iapws.org/faqs/faq1",
+          "section": "Triple point and critical point: 0.01°C, 373.946°C and 22.064 MPa"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Triple-Point Definition",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 787,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "HPPSC ADF 05.03.2019"
+        ]
+      },
+      "question": "For sublimation process which of the following are equilibrium?",
+      "options": {
+        "a": "Solid and liquid phase",
+        "b": "Solid and vapour phases",
+        "c": "Solid, liquid and vapour phases",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Sublimation is the direct transition from solid to vapour without an intervening liquid phase. Its equilibrium curve separates the solid and vapour regions, so solid and vapour coexist there, giving b. The reverse transition is deposition. Solid–liquid equilibrium describes fusion/freezing, while three-phase solid–liquid–vapour equilibrium is the triple point.",
+      "sourceExplanation": "Ans. (b): For sublimation process— Solid directly converted into vapour phase.",
+      "note": "Printed key b and the complete original one-sentence explanation checked against the solid–vapour equilibrium curve.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_4.htm",
+          "section": "One-component phase-equilibrium degrees of freedom; sublimation and triple point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Solid–Vapour Equilibrium in Sublimation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 788,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "HPPSC ADF 05.03.2019",
+          "GATE 2005"
+        ]
+      },
+      "question": "Nitrogen at an initial state of 10 bar, 1 m³ and 300 K is expanded isothermally to final value of 2 m³. The p-v-T relation is (p + a/v²)v = RT, where a > 0. The final pressure;",
+      "options": {
+        "a": "Will be slightly less than 5 bar",
+        "b": "Will be slightly more than 5 bar",
+        "c": "Will be exactly 5 bar",
+        "d": "Cannot be ascertained in absence of value of a."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For the given isothermal model, (p + a/v²)v = RT = constant. Using the source's consistent volume/pressure units, (10 + a/1²)(1) = (p₂ + a/2²)(2). Therefore 10 + a = 2p₂ + a/2, giving p₂ = 5 + a/4. Since a > 0, the final pressure is greater than the ideal-gas prediction of 5 bar, matching the intended comparison in b. Its exact numerical value requires a; the inequality does not. Every source algebraic step leads to the same result. The word \"slightly\" assumes the intended small real-gas correction; no numerical bound on that excess is supplied. The equation is the stated attraction-correction model (the full van der Waals form would also have an excluded-volume parameter).",
+      "sourceExplanation": "Ans. (b): Given,\nP₁ = 10 bar, V₂ = 2 m³\nV₁ = 1 m³, T = 300 K\n(P + a/V²)(V) = RT\n[According to Vanderwall's equation]\n(P + a/V²)V = Constant ⇒\n(P₁ + a/V₁²)V₁ = (P₂ + a/V₂²)V₂\n⇒ (10 + a/1²)1 = (P₂ + a/2²)2\n⇒ (10 + a)/2 = P₂ + a/4\n⇒ 5 + a/2 = P₂ + a/4\n⇒ 5 + a/4 = P₂ and a > 0 is given\n∴ The value of P₂ should be slightly greater than 5 bar.",
+      "note": "Printed key b checked by deriving p₂ = 5 + a/4 in the specified units. All printed algebra, including the top-right-column continuation, is retained; the data determine the sign of the correction but not its numerical size.",
+      "references": [
+        {
+          "title": "NPTEL: Equations of State for Real Fluids",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/103101004/modules/chapter-2/sec-3/1.7.html",
+          "section": "Equation 2.18: attraction correction in the van der Waals equation"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Isothermal Expansion with an Attraction Correction",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 789,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "HPPSC ADF 05.03.2019"
+        ]
+      },
+      "question": "On Mollier chart a flow though a turbine is represented by:",
+      "options": {
+        "a": "Horizontal line",
+        "b": "Vertical line",
+        "c": "Curved line convex up",
+        "d": "Curved line concave up"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "A Mollier chart plots specific enthalpy h vertically against specific entropy s horizontally. In the ideal reversible adiabatic turbine model, the expansion is isentropic: s₂ = s₁. Its path therefore runs vertically downward as enthalpy decreases, giving b under the model intended by the source. With negligible kinetic/potential changes the ideal specific turbine work is w_t = h₁ − h₂. A real adiabatic turbine generates entropy, so s₂ > s₁ and its expansion is not a vertical isentropic line. The source's assertion must therefore be restricted to an ideal isentropic turbine; turbine flow in general does not have the single shape stated.",
+      "sourceExplanation": "Ans. (b): On Mollier chart a flow through, a turbine is represented by vertical straight line because isentropic expansion in turbine.",
+      "note": "Printed key b retained for the source’s intended ideal turbine. Corrected the unqualified implication that every turbine expansion is isentropic; the full original sentence is preserved.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_6.htm",
+          "section": "T–s and h–s/Mollier diagrams; reversible adiabatic processes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Steady-flow mass and energy balances; reversible adiabatic expansion"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Ideal Turbine Expansion on a Mollier Chart",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 790,
+      "source": {
+        "page": 130,
+        "pageEnd": 130,
+        "examLabels": [
+          "Oil India Limited Sr. Engineer (Production) 30.11.2019"
+        ]
+      },
+      "question": "Saturated state of pure substance (water) is a:",
+      "options": {
+        "a": "State from which a change of phase may occur without a change in pressure or temperature.",
+        "b": "State from which a change of phase occur with a change in pressure of temperature.",
+        "c": "State from which a change of phase may occur without a change in pressure and temperature.",
+        "d": "State from which a change of phase may occur with a change in pressure and temperature."
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "At a saturation condition, a pure substance can undergo equilibrium liquid–vapour phase change while both pressure and temperature remain constant. In the source T–s diagram, 2 is saturated liquid, 3 is saturated vapour, and the horizontal segment 2–3 is at T_sat and the corresponding p_sat; 1–2 and 3–4 represent heating outside the two-phase interval. This is the physical statement intended by printed choice c. However, choice a says \"without a change in pressure or temperature,\" which in ordinary English also means that neither pressure nor temperature changes. It therefore overlaps the correct statement in c rather than providing a distinct wrong alternative. With these native choices preserved, a unique single-choice answer is not defensible; the item remains ungraded. Option b's printed \"of temperature\" wording is also retained as a source typo.",
+      "sourceExplanation": "Ans. (c): Saturated state of pure substance (water) is the state from which change of phase may occur without a change in pressure and temperature.\nThe T–S diagram shows a saturation dome and the heating path 1–2–3–4, with horizontal segment 2–3 at T_sat.\nOn T-S diagram horizontal line 2-3 represent saturation state of pure substance through pressure and temperature not varies.",
+      "note": "Unresolved overlapping options: native a and c both naturally describe no change in either pressure or temperature. Printed key c, the full adjacent explanation and the annotated T–s diagram are preserved, but duplicate meaning prevents unique grading.",
+      "references": [
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_2.htm",
+          "section": "Saturated state, saturation temperature and saturation pressure"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_5.htm",
+          "section": "Equilibrium phase change at constant pressure and temperature"
+        },
+        {
+          "title": "NPTEL: Phase-Change Process of Pure Substances",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture11/11_6.htm",
+          "section": "T–s and h–s/Mollier diagrams; reversible adiabatic processes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Saturated State and Overlapping Choices",
+      "figures": [
+        {
+          "page": 130,
+          "bbox": [
+            360,
+            428,
+            465,
+            518
+          ],
+          "placement": "explanation",
+          "alt": "T–s saturation dome with heating path 1–2–3–4 and the horizontal two-phase segment 2–3 at T_sat."
+        }
+      ],
       "transcriptionReviewed": true
     }
   ]

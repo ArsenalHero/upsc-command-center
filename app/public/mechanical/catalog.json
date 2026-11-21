@@ -1,9 +1,9 @@
 {
-  "version": "3cd61b3e0e59",
-  "total": 807,
-  "reviewed": 579,
-  "corrected": 142,
-  "disputed": 86,
+  "version": "5aea6fa12ef2",
+  "total": 1747,
+  "reviewed": 1259,
+  "corrected": 274,
+  "disputed": 214,
   "subjects": [
     {
       "id": "engineering-mechanics",
@@ -510,7 +510,1872 @@
             }
           ]
         }
-      ]
+      ],
+      "source": {
+        "file": "MECH AE 01 FULL 35000-15-156.pdf",
+        "aliases": [
+          "MECH AE 01 FULL 35000-15-156(2).pdf"
+        ],
+        "sha256": "7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0",
+        "pages": 142,
+        "firstPrintedPage": 15,
+        "lastPrintedPage": 156
+      },
+      "auditUrl": "mechanical/source-review-audit-d4439ea4ccef.html",
+      "auditDataUrl": "mechanical/source-review-audit-d1ef344d1c59.json"
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Thermodynamics",
+      "url": "mechanical/thermodynamics-a55cc57b4db8.json",
+      "count": 940,
+      "reviewed": 680,
+      "corrected": 132,
+      "disputed": 128,
+      "topics": [
+        {
+          "name": "Basic Concepts & Zeroth Law of Thermodynamics",
+          "count": 302,
+          "subtopics": [
+            {
+              "name": "Adiabatic Processes",
+              "count": 10
+            },
+            {
+              "name": "Boundary Work",
+              "count": 1
+            },
+            {
+              "name": "Calorimetry & Phase Change",
+              "count": 3
+            },
+            {
+              "name": "Continuum & Molecular Models",
+              "count": 2
+            },
+            {
+              "name": "Cycles, Efficiency & Work Ratio",
+              "count": 4
+            },
+            {
+              "name": "Electrical Work",
+              "count": 2
+            },
+            {
+              "name": "Enthalpy & Internal Energy",
+              "count": 4
+            },
+            {
+              "name": "Entropy & Isentropic Processes",
+              "count": 1
+            },
+            {
+              "name": "Flow Work & System Boundaries",
+              "count": 1
+            },
+            {
+              "name": "Free Expansion",
+              "count": 3
+            },
+            {
+              "name": "Heat, Work & Energy",
+              "count": 42
+            },
+            {
+              "name": "Ideal & Real Gases",
+              "count": 45
+            },
+            {
+              "name": "Ideal-Gas Mixtures",
+              "count": 1
+            },
+            {
+              "name": "Intensive & Extensive Properties",
+              "count": 4
+            },
+            {
+              "name": "Kinetic Theory",
+              "count": 4
+            },
+            {
+              "name": "Laws of Thermodynamics",
+              "count": 2
+            },
+            {
+              "name": "Molecular Mass & Gas Constants",
+              "count": 3
+            },
+            {
+              "name": "Polytropic Processes",
+              "count": 5
+            },
+            {
+              "name": "Properties & Path Functions",
+              "count": 8
+            },
+            {
+              "name": "Reversibility & Cycles",
+              "count": 20
+            },
+            {
+              "name": "Specific Heats",
+              "count": 16
+            },
+            {
+              "name": "Specific Volume & Density",
+              "count": 2
+            },
+            {
+              "name": "Steady & Unsteady Processes",
+              "count": 2
+            },
+            {
+              "name": "Steady Flow Energy Equation",
+              "count": 1
+            },
+            {
+              "name": "Systems, Properties & Equilibrium",
+              "count": 38
+            },
+            {
+              "name": "Temperature & Thermometry",
+              "count": 36
+            },
+            {
+              "name": "Thermal Expansion",
+              "count": 2
+            },
+            {
+              "name": "Thermodynamic Potentials",
+              "count": 1
+            },
+            {
+              "name": "Thermodynamic Processes",
+              "count": 32
+            },
+            {
+              "name": "Thermodynamic Property Relations",
+              "count": 2
+            },
+            {
+              "name": "Thermophysical Properties",
+              "count": 1
+            },
+            {
+              "name": "Throttling & Enthalpy",
+              "count": 1
+            },
+            {
+              "name": "Units & Dimensions",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "name": "First Law of Thermodynamics",
+          "count": 131,
+          "subtopics": [
+            {
+              "name": "Adiabatic diffuser",
+              "count": 1
+            },
+            {
+              "name": "Adiabatic ideal-gas compression",
+              "count": 1
+            },
+            {
+              "name": "Adiabatic nozzle",
+              "count": 1
+            },
+            {
+              "name": "Adiabatic steam turbine",
+              "count": 1
+            },
+            {
+              "name": "Adiabatic turbine with kinetic-energy change",
+              "count": 1
+            },
+            {
+              "name": "Air-compressor power",
+              "count": 1
+            },
+            {
+              "name": "Battery charging power",
+              "count": 1
+            },
+            {
+              "name": "Battery energy storage",
+              "count": 1
+            },
+            {
+              "name": "Calorimetry & Energy Balance",
+              "count": 2
+            },
+            {
+              "name": "Closed and steady-flow device energy equations",
+              "count": 1
+            },
+            {
+              "name": "Closed-System Energy Balance",
+              "count": 3
+            },
+            {
+              "name": "Combined first- and second-law statements",
+              "count": 1
+            },
+            {
+              "name": "Combustion in a rigid insulated vessel",
+              "count": 1
+            },
+            {
+              "name": "Compression work with no internal-energy change",
+              "count": 1
+            },
+            {
+              "name": "Compressor power",
+              "count": 1
+            },
+            {
+              "name": "Compressor power with heat rejection",
+              "count": 1
+            },
+            {
+              "name": "Conditions for δQ=dU+P dV",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure boundary work",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure compression",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure expansion energy balance",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure heat and enthalpy",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure ideal-gas work",
+              "count": 1
+            },
+            {
+              "name": "Constant-pressure work",
+              "count": 1
+            },
+            {
+              "name": "Constant-volume boundary work",
+              "count": 1
+            },
+            {
+              "name": "Constant-volume heat transfer",
+              "count": 1
+            },
+            {
+              "name": "Constant-volume heating",
+              "count": 1
+            },
+            {
+              "name": "Conversion of enthalpy to kinetic energy",
+              "count": 1
+            },
+            {
+              "name": "Conversion of kinetic energy to internal energy",
+              "count": 1
+            },
+            {
+              "name": "Cycle work from return-process data",
+              "count": 1
+            },
+            {
+              "name": "Cyclic Energy Balance",
+              "count": 2
+            },
+            {
+              "name": "Cyclic energy conservation",
+              "count": 1
+            },
+            {
+              "name": "Cyclic heat and work balance",
+              "count": 1
+            },
+            {
+              "name": "Cyclic net work",
+              "count": 1
+            },
+            {
+              "name": "Dimensional consistency of heat capacity",
+              "count": 1
+            },
+            {
+              "name": "Domain of the closed-system first law",
+              "count": 1
+            },
+            {
+              "name": "Electrical charging of a battery",
+              "count": 1
+            },
+            {
+              "name": "Electrical heating of a floating-piston ideal gas",
+              "count": 1
+            },
+            {
+              "name": "Electrical work in an insulated tank",
+              "count": 1
+            },
+            {
+              "name": "Energy quality",
+              "count": 1
+            },
+            {
+              "name": "Energy-conservation statement",
+              "count": 1
+            },
+            {
+              "name": "Exact and inexact differentials",
+              "count": 1
+            },
+            {
+              "name": "Fan claim and first-law feasibility",
+              "count": 1
+            },
+            {
+              "name": "First Law & Energy Conservation",
+              "count": 1
+            },
+            {
+              "name": "First law and cyclic energy conservation",
+              "count": 1
+            },
+            {
+              "name": "First law for a cycle",
+              "count": 1
+            },
+            {
+              "name": "First law versus second law",
+              "count": 1
+            },
+            {
+              "name": "First-law corollary",
+              "count": 1
+            },
+            {
+              "name": "First-law energy balances",
+              "count": 5
+            },
+            {
+              "name": "First-law equation versus Gibbs identity",
+              "count": 1
+            },
+            {
+              "name": "First-law notation",
+              "count": 1
+            },
+            {
+              "name": "First-law sign convention",
+              "count": 3
+            },
+            {
+              "name": "First-law statement",
+              "count": 1
+            },
+            {
+              "name": "Flow work versus displacement work",
+              "count": 1
+            },
+            {
+              "name": "Four-process cyclic balance",
+              "count": 1
+            },
+            {
+              "name": "Free expansion of an ideal gas",
+              "count": 1
+            },
+            {
+              "name": "Frictionless steam-nozzle velocity",
+              "count": 1
+            },
+            {
+              "name": "General steady-flow energy equation",
+              "count": 1
+            },
+            {
+              "name": "Heat and work per degree temperature change",
+              "count": 1
+            },
+            {
+              "name": "Heat loss from a steam turbine",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas cooling with zero work",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas density",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas enthalpy",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas enthalpy differential",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas internal-energy change",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas specific-heat relations",
+              "count": 1
+            },
+            {
+              "name": "Immersion-heater energy balance",
+              "count": 1
+            },
+            {
+              "name": "Impact conversion of potential energy",
+              "count": 1
+            },
+            {
+              "name": "Incomplete tank-filling data",
+              "count": 1
+            },
+            {
+              "name": "Instantaneous temperature-rise rate",
+              "count": 1
+            },
+            {
+              "name": "Insulated mixing and thermal equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Insulated two-vessel free expansion",
+              "count": 1
+            },
+            {
+              "name": "Insulated-room electrical heating",
+              "count": 1
+            },
+            {
+              "name": "Isolated systems",
+              "count": 1
+            },
+            {
+              "name": "Isolated-system energy and entropy",
+              "count": 1
+            },
+            {
+              "name": "Isolated-system energy conservation",
+              "count": 1
+            },
+            {
+              "name": "Isolated-system internal energy",
+              "count": 1
+            },
+            {
+              "name": "Isothermal compression work input",
+              "count": 1
+            },
+            {
+              "name": "Isothermal expansion work",
+              "count": 1
+            },
+            {
+              "name": "Isothermal heat and work with missing fluid model",
+              "count": 1
+            },
+            {
+              "name": "Isothermal ideal-gas P–V curve",
+              "count": 1
+            },
+            {
+              "name": "Isothermal ideal-gas internal energy",
+              "count": 1
+            },
+            {
+              "name": "Joule’s law and ideal-gas laws",
+              "count": 1
+            },
+            {
+              "name": "Limitations of the first law",
+              "count": 1
+            },
+            {
+              "name": "Mass continuity and ideal-gas density",
+              "count": 1
+            },
+            {
+              "name": "Maximum fan discharge velocity",
+              "count": 1
+            },
+            {
+              "name": "Meaning of the first law",
+              "count": 1
+            },
+            {
+              "name": "Motor power and energy accumulation",
+              "count": 1
+            },
+            {
+              "name": "Nozzle steady-flow energy equation",
+              "count": 1
+            },
+            {
+              "name": "Nozzle with finite inlet velocity",
+              "count": 1
+            },
+            {
+              "name": "PMM-II and omitted cyclic condition",
+              "count": 1
+            },
+            {
+              "name": "Paddle-wheel work",
+              "count": 1
+            },
+            {
+              "name": "Paddle-wheel work in an insulated rigid container",
+              "count": 1
+            },
+            {
+              "name": "Path independence of internal energy",
+              "count": 2
+            },
+            {
+              "name": "Piston displacement with atmospheric loading",
+              "count": 1
+            },
+            {
+              "name": "Point and path functions",
+              "count": 1
+            },
+            {
+              "name": "Polytropic boundary work",
+              "count": 1
+            },
+            {
+              "name": "Potential energy converted to internal energy",
+              "count": 1
+            },
+            {
+              "name": "P–V diagram: isobaric compression",
+              "count": 1
+            },
+            {
+              "name": "Return-process work in a cycle",
+              "count": 1
+            },
+            {
+              "name": "Reversible hyperbolic compression",
+              "count": 1
+            },
+            {
+              "name": "Reversible steady-flow work",
+              "count": 1
+            },
+            {
+              "name": "Sensible cooling",
+              "count": 1
+            },
+            {
+              "name": "Signed cycle work",
+              "count": 1
+            },
+            {
+              "name": "Specific internal-energy change",
+              "count": 1
+            },
+            {
+              "name": "Stagnation and static enthalpy in a nozzle",
+              "count": 1
+            },
+            {
+              "name": "Steady-flow assumptions",
+              "count": 1
+            },
+            {
+              "name": "Steady-flow energy balance",
+              "count": 1
+            },
+            {
+              "name": "Steady-flow first law in enthalpy form",
+              "count": 1
+            },
+            {
+              "name": "Steam-nozzle exit velocity",
+              "count": 1
+            },
+            {
+              "name": "Stirring work with heat loss",
+              "count": 1
+            },
+            {
+              "name": "Three-process cycle balance",
+              "count": 1
+            },
+            {
+              "name": "Turbine power with heat loss",
+              "count": 1
+            },
+            {
+              "name": "Under-specified tank-filling temperature",
+              "count": 1
+            },
+            {
+              "name": "Uniform-state uniform-flow model",
+              "count": 1
+            },
+            {
+              "name": "Universality of the first law",
+              "count": 1
+            },
+            {
+              "name": "Unsteady filling of an evacuated tank",
+              "count": 1
+            },
+            {
+              "name": "Useful work and atmospheric displacement",
+              "count": 1
+            },
+            {
+              "name": "Water heating by electric power",
+              "count": 1
+            },
+            {
+              "name": "Work for isobaric, isothermal, and adiabatic expansion",
+              "count": 1
+            },
+            {
+              "name": "Work-to-heat conversion and law compliance",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Second Law of Thermodynamics",
+          "count": 162,
+          "subtopics": [
+            {
+              "name": "Actual heat-engine thermal efficiency",
+              "count": 1
+            },
+            {
+              "name": "Carnot Engines & Efficiency",
+              "count": 53
+            },
+            {
+              "name": "Carnot Processes",
+              "count": 2
+            },
+            {
+              "name": "Carnot efficiency independent of working fluid",
+              "count": 1
+            },
+            {
+              "name": "Carnot engine and refrigerator relation",
+              "count": 1
+            },
+            {
+              "name": "Carnot engine efficiency and refrigerator COP",
+              "count": 1
+            },
+            {
+              "name": "Carnot refrigerator COP",
+              "count": 1
+            },
+            {
+              "name": "Carnot source temperature",
+              "count": 1
+            },
+            {
+              "name": "Carnot-engine model assumptions",
+              "count": 1
+            },
+            {
+              "name": "Clausius Inequality",
+              "count": 3
+            },
+            {
+              "name": "Clausius prohibition of infinite refrigerator COP",
+              "count": 1
+            },
+            {
+              "name": "Clausius statement and work-driven refrigeration",
+              "count": 1
+            },
+            {
+              "name": "Coupled Engines & Heat Pumps",
+              "count": 1
+            },
+            {
+              "name": "Coupled Engines & Refrigerators",
+              "count": 2
+            },
+            {
+              "name": "Direction of spontaneous heat transfer",
+              "count": 1
+            },
+            {
+              "name": "Effect of lowering sink temperature",
+              "count": 1
+            },
+            {
+              "name": "Efficiency from a trapezoidal T–S cycle",
+              "count": 1
+            },
+            {
+              "name": "Efficiency from a triangular T–S cycle",
+              "count": 1
+            },
+            {
+              "name": "Efficiency from rejected-heat ratio",
+              "count": 1
+            },
+            {
+              "name": "Efficiency from work-to-rejected-heat ratio",
+              "count": 1
+            },
+            {
+              "name": "Energy Quality & Second Law",
+              "count": 2
+            },
+            {
+              "name": "Engines in Series",
+              "count": 4
+            },
+            {
+              "name": "Entropy Balance & Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Entropy and the second law",
+              "count": 1
+            },
+            {
+              "name": "Equal-efficiency Carnot engines in series",
+              "count": 1
+            },
+            {
+              "name": "Equal-efficiency engines with missing reversibility",
+              "count": 1
+            },
+            {
+              "name": "Equal-efficiency reversible engines",
+              "count": 1
+            },
+            {
+              "name": "Equal-work Carnot engines in series",
+              "count": 1
+            },
+            {
+              "name": "Exergy & Maximum Work",
+              "count": 1
+            },
+            {
+              "name": "Exergy & Second-Law Efficiency",
+              "count": 4
+            },
+            {
+              "name": "First- and Second-Law Feasibility",
+              "count": 1
+            },
+            {
+              "name": "Formal zero-temperature limit",
+              "count": 1
+            },
+            {
+              "name": "Heat Pumps & Refrigerators",
+              "count": 17
+            },
+            {
+              "name": "Heat engine driving a reversible heat pump",
+              "count": 1
+            },
+            {
+              "name": "Heat rejection of a reversible engine",
+              "count": 1
+            },
+            {
+              "name": "Heat-Engine Energy Balance",
+              "count": 14
+            },
+            {
+              "name": "Heat-engine claim exceeding the Carnot limit",
+              "count": 1
+            },
+            {
+              "name": "Increasing Carnot efficiency",
+              "count": 1
+            },
+            {
+              "name": "Kelvin–Planck statement",
+              "count": 2
+            },
+            {
+              "name": "Limiting Carnot efficiency",
+              "count": 1
+            },
+            {
+              "name": "Multiple-Reservoir Reversible Cycles",
+              "count": 7
+            },
+            {
+              "name": "Net work and the area enclosed by a Carnot cycle",
+              "count": 1
+            },
+            {
+              "name": "Numerical Carnot efficiency",
+              "count": 1
+            },
+            {
+              "name": "Perpetual Motion Machines",
+              "count": 2
+            },
+            {
+              "name": "Processes of the Carnot cycle",
+              "count": 1
+            },
+            {
+              "name": "Refrigerator COP from25%engine efficiency",
+              "count": 1
+            },
+            {
+              "name": "Reversible Cycles",
+              "count": 1
+            },
+            {
+              "name": "Reversing a30%-efficient engine",
+              "count": 1
+            },
+            {
+              "name": "Second-Law Statements",
+              "count": 5
+            },
+            {
+              "name": "Solar-collector area and Carnot limit",
+              "count": 1
+            },
+            {
+              "name": "Source temperature from rejected-heat fraction",
+              "count": 1
+            },
+            {
+              "name": "Temperature dependence of Carnot efficiency",
+              "count": 1
+            },
+            {
+              "name": "Temperature limits and reversible-engine efficiency",
+              "count": 1
+            },
+            {
+              "name": "Thermal Reservoirs",
+              "count": 3
+            },
+            {
+              "name": "T–s Cycle Areas",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Entropy",
+          "count": 87,
+          "subtopics": [
+            {
+              "name": "Adiabatic & Isentropic Processes",
+              "count": 4
+            },
+            {
+              "name": "Adiabatic Flow & Entropy",
+              "count": 1
+            },
+            {
+              "name": "Carnot Cycle Work",
+              "count": 1
+            },
+            {
+              "name": "Carnot Engine Entropy Rate",
+              "count": 2
+            },
+            {
+              "name": "Carnot Reversibility and Real-Engine Losses",
+              "count": 1
+            },
+            {
+              "name": "Clausius Inequality",
+              "count": 4
+            },
+            {
+              "name": "Clausius Test for an Engine Cycle",
+              "count": 1
+            },
+            {
+              "name": "Closed-System Entropy Balance",
+              "count": 1
+            },
+            {
+              "name": "Constant-Pressure Ideal-Gas Entropy Change",
+              "count": 1
+            },
+            {
+              "name": "Cooling & Freezing Entropy",
+              "count": 1
+            },
+            {
+              "name": "Definition of Entropy",
+              "count": 1
+            },
+            {
+              "name": "Energy Conservation & Entropy",
+              "count": 1
+            },
+            {
+              "name": "Energy Degradation and Exergy",
+              "count": 1
+            },
+            {
+              "name": "Entropy & Energy Quality",
+              "count": 2
+            },
+            {
+              "name": "Entropy Balance & Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Entropy Balance of the Carnot Cycle",
+              "count": 1
+            },
+            {
+              "name": "Entropy Change during Fusion",
+              "count": 3
+            },
+            {
+              "name": "Entropy Change of Heat Reservoirs",
+              "count": 3
+            },
+            {
+              "name": "Entropy Change of Incompressible Substances",
+              "count": 1
+            },
+            {
+              "name": "Entropy Decrease & Heat Rejection",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation & Feasibility",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation & Lost Work",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation and Closed-System Balance",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation and Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation by Electrical Dissipation",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation by Friction",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation by Stirring",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation in Gas Mixing",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation in Heat Transfer",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation in Heating",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation in Mixing the Same Fluid",
+              "count": 1
+            },
+            {
+              "name": "Entropy Properties",
+              "count": 1
+            },
+            {
+              "name": "Entropy Transfer with Heat",
+              "count": 1
+            },
+            {
+              "name": "Entropy Trends and Adiabatic Processes",
+              "count": 1
+            },
+            {
+              "name": "Entropy and Equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Entropy as a Property",
+              "count": 1
+            },
+            {
+              "name": "Entropy as a State Function",
+              "count": 1
+            },
+            {
+              "name": "Entropy in Cyclic Processes",
+              "count": 1
+            },
+            {
+              "name": "Entropy in Reversible Cycles",
+              "count": 1
+            },
+            {
+              "name": "Entropy of Mixing Ideal Gases",
+              "count": 1
+            },
+            {
+              "name": "Entropy of the Universe",
+              "count": 1
+            },
+            {
+              "name": "Fundamental Thermodynamic Identity",
+              "count": 1
+            },
+            {
+              "name": "Gibbs Relations and Phase Change",
+              "count": 1
+            },
+            {
+              "name": "Heat Transfer & Entropy",
+              "count": 2
+            },
+            {
+              "name": "Ideal-Gas Entropy Changes",
+              "count": 4
+            },
+            {
+              "name": "Ideal-Gas Entropy Dependence",
+              "count": 1
+            },
+            {
+              "name": "Integrating Factor for Reversible Heat",
+              "count": 1
+            },
+            {
+              "name": "Isentropic Processes",
+              "count": 1
+            },
+            {
+              "name": "Isothermal Ideal-Gas Compression",
+              "count": 1
+            },
+            {
+              "name": "Mechanisms of Closed-System Entropy Change",
+              "count": 1
+            },
+            {
+              "name": "Mixing & Entropy",
+              "count": 1
+            },
+            {
+              "name": "Phase-Change Entropy",
+              "count": 1
+            },
+            {
+              "name": "Reservoir Heat-Transfer Entropy",
+              "count": 2
+            },
+            {
+              "name": "Reversibility & Entropy",
+              "count": 1
+            },
+            {
+              "name": "Reversible Engine with Multiple Reservoirs",
+              "count": 1
+            },
+            {
+              "name": "Reversible Heat and Entropy",
+              "count": 1
+            },
+            {
+              "name": "Specific Entropy",
+              "count": 1
+            },
+            {
+              "name": "System & Universe Entropy",
+              "count": 3
+            },
+            {
+              "name": "System versus Universe Entropy",
+              "count": 1
+            },
+            {
+              "name": "Third Law",
+              "count": 1
+            },
+            {
+              "name": "Third Law and Entropy Reference",
+              "count": 1
+            },
+            {
+              "name": "Third Law and Perfect Crystals",
+              "count": 1
+            },
+            {
+              "name": "Third Law of Thermodynamics",
+              "count": 1
+            },
+            {
+              "name": "Throttling & Entropy Generation",
+              "count": 1
+            },
+            {
+              "name": "Throttling & Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Throttling and Entropy",
+              "count": 1
+            },
+            {
+              "name": "T–s Diagram Slopes",
+              "count": 1
+            },
+            {
+              "name": "T–s Diagrams",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Availability and Irreversibility",
+          "count": 49,
+          "subtopics": [
+            {
+              "name": "Approximate Pressure-Drop Exergy Loss",
+              "count": 1
+            },
+            {
+              "name": "Availability Change of Cooling Furnace Gas",
+              "count": 1
+            },
+            {
+              "name": "Availability Fraction of Heat",
+              "count": 1
+            },
+            {
+              "name": "Availability Functions",
+              "count": 1
+            },
+            {
+              "name": "Availability Loss in Direct Heat Transfer",
+              "count": 1
+            },
+            {
+              "name": "Available and Unavailable Energy",
+              "count": 1
+            },
+            {
+              "name": "Causes of Irreversibility",
+              "count": 3
+            },
+            {
+              "name": "Change of Flow Availability",
+              "count": 1
+            },
+            {
+              "name": "Comparing Heat-Transfer Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Cooling Curves",
+              "count": 1
+            },
+            {
+              "name": "Dead State",
+              "count": 1
+            },
+            {
+              "name": "Definition of Availability",
+              "count": 1
+            },
+            {
+              "name": "Definition of Exergy",
+              "count": 1
+            },
+            {
+              "name": "Entropic Elasticity of Elastomers",
+              "count": 1
+            },
+            {
+              "name": "Entropy Generation versus System Entropy Change",
+              "count": 1
+            },
+            {
+              "name": "Exact versus Approximate Pressure-Loss Exergy",
+              "count": 1
+            },
+            {
+              "name": "Exergy Destruction in Adiabatic Gas Flow",
+              "count": 1
+            },
+            {
+              "name": "Exergy Destruction in Heat Transfer",
+              "count": 2
+            },
+            {
+              "name": "Exergy Destruction in Mixing Water",
+              "count": 1
+            },
+            {
+              "name": "Exergy Destruction in Wall Conduction",
+              "count": 1
+            },
+            {
+              "name": "Exergy of Heat",
+              "count": 1
+            },
+            {
+              "name": "Exergy of an Isolated System",
+              "count": 1
+            },
+            {
+              "name": "Fraction of Heat Availability Destroyed",
+              "count": 1
+            },
+            {
+              "name": "Gouy–Stodola Relation",
+              "count": 1
+            },
+            {
+              "name": "Heat-Engine Irreversibility Rate",
+              "count": 1
+            },
+            {
+              "name": "Internal Irreversibility in the Rankine Cycle",
+              "count": 1
+            },
+            {
+              "name": "Internal and Dissipative Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Irreversibility as Loss of Work Potential",
+              "count": 1
+            },
+            {
+              "name": "Irreversibility versus Heat Transfer",
+              "count": 1
+            },
+            {
+              "name": "Law of Energy Degradation",
+              "count": 1
+            },
+            {
+              "name": "Lost Work and Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Maximum Available Work from Heat",
+              "count": 1
+            },
+            {
+              "name": "Maximum Work from Two Finite Bodies",
+              "count": 1
+            },
+            {
+              "name": "Nonflow Availability Function",
+              "count": 1
+            },
+            {
+              "name": "Pressure Drop and Irreversibility",
+              "count": 1
+            },
+            {
+              "name": "Properties of Availability",
+              "count": 1
+            },
+            {
+              "name": "Reversible Power and Exergy Destruction",
+              "count": 1
+            },
+            {
+              "name": "Reversible and Irreversible Processes",
+              "count": 1
+            },
+            {
+              "name": "Second-Law Effectiveness",
+              "count": 1
+            },
+            {
+              "name": "Specific Flow Exergy",
+              "count": 1
+            },
+            {
+              "name": "State and Environment Dependence of Exergy",
+              "count": 1
+            },
+            {
+              "name": "Unavailable Energy",
+              "count": 1
+            },
+            {
+              "name": "Unavailable Energy between Two Reservoirs",
+              "count": 1
+            },
+            {
+              "name": "Unavailable Energy versus Lost Availability",
+              "count": 1
+            },
+            {
+              "name": "Unavailable Heat of a Reversible Engine",
+              "count": 1
+            },
+            {
+              "name": "Unavailable Work in an Adiabatic Turbine",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Properties of Pure Substances, Gases and Gas Mixture",
+          "count": 161,
+          "subtopics": [
+            {
+              "name": "Adiabatic Mixing Temperature of Water Streams",
+              "count": 1
+            },
+            {
+              "name": "Amagat’s Law of Additive Volumes",
+              "count": 1
+            },
+            {
+              "name": "Clapeyron equation",
+              "count": 1
+            },
+            {
+              "name": "Compressibility Factor",
+              "count": 1
+            },
+            {
+              "name": "Compressibility coefficients",
+              "count": 1
+            },
+            {
+              "name": "Constant-Pressure versus Constant-Volume Heat Capacity",
+              "count": 1
+            },
+            {
+              "name": "Constant-Volume Heating through Criticality",
+              "count": 1
+            },
+            {
+              "name": "Critical Point and Latent Heat",
+              "count": 1
+            },
+            {
+              "name": "Critical Point versus Triple Point",
+              "count": 1
+            },
+            {
+              "name": "Critical Pressure of Water",
+              "count": 1
+            },
+            {
+              "name": "Critical Temperature",
+              "count": 1
+            },
+            {
+              "name": "Dalton’s Law of Partial Pressures",
+              "count": 1
+            },
+            {
+              "name": "Definition of a Pure Substance",
+              "count": 1
+            },
+            {
+              "name": "Dryness Fraction",
+              "count": 1
+            },
+            {
+              "name": "Dryness Fraction after Throttling",
+              "count": 1
+            },
+            {
+              "name": "Dryness Fraction of Saturated Vapour",
+              "count": 1
+            },
+            {
+              "name": "Equilibrium and flow processes",
+              "count": 1
+            },
+            {
+              "name": "Freezing and Mpemba effect",
+              "count": 1
+            },
+            {
+              "name": "Freezing and antifreeze",
+              "count": 1
+            },
+            {
+              "name": "Gas constants",
+              "count": 4
+            },
+            {
+              "name": "Gas laws",
+              "count": 9
+            },
+            {
+              "name": "Gas mixtures",
+              "count": 3
+            },
+            {
+              "name": "Gibbs Phase Rule at the Triple Point",
+              "count": 1
+            },
+            {
+              "name": "Gibbs energy and phase equilibrium",
+              "count": 1
+            },
+            {
+              "name": "Heating values",
+              "count": 1
+            },
+            {
+              "name": "Homogeneous and Heterogeneous Systems",
+              "count": 1
+            },
+            {
+              "name": "Horizontal Phase-Change Segments on a p–v Isotherm",
+              "count": 1
+            },
+            {
+              "name": "Humid air",
+              "count": 1
+            },
+            {
+              "name": "Ideal Turbine Expansion on a Mollier Chart",
+              "count": 1
+            },
+            {
+              "name": "Ideal-Gas Approximation for Steam",
+              "count": 1
+            },
+            {
+              "name": "Ideal-Gas Equation of State",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas approximation",
+              "count": 4
+            },
+            {
+              "name": "Ideal-gas calculations",
+              "count": 2
+            },
+            {
+              "name": "Ideal-gas equation",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas internal energy",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas processes",
+              "count": 1
+            },
+            {
+              "name": "Intermolecular interactions",
+              "count": 1
+            },
+            {
+              "name": "Intersection of Saturation Boundaries",
+              "count": 1
+            },
+            {
+              "name": "Irreversibility in steam flow",
+              "count": 1
+            },
+            {
+              "name": "Isenthalpic Throttling",
+              "count": 2
+            },
+            {
+              "name": "Isothermal Compression of Vapour",
+              "count": 1
+            },
+            {
+              "name": "Isothermal Expansion with an Attraction Correction",
+              "count": 1
+            },
+            {
+              "name": "Joule–Thomson Cooling, Entropy and Work Properties",
+              "count": 1
+            },
+            {
+              "name": "Joule–Thomson effect",
+              "count": 1
+            },
+            {
+              "name": "Kinetic theory",
+              "count": 2
+            },
+            {
+              "name": "Latent heat",
+              "count": 2
+            },
+            {
+              "name": "Latent heat and apparent heat capacity",
+              "count": 1
+            },
+            {
+              "name": "Limits of Ideal-Gas Behaviour for Vapours",
+              "count": 1
+            },
+            {
+              "name": "Liquid Stability and the Triple Point",
+              "count": 1
+            },
+            {
+              "name": "Liquid Stability at Low Pressure",
+              "count": 1
+            },
+            {
+              "name": "Matching thermodynamic concepts",
+              "count": 1
+            },
+            {
+              "name": "Maximum Coexisting Phases of One Component",
+              "count": 1
+            },
+            {
+              "name": "Molar Mass of an Oxygen–Nitrogen Mixture",
+              "count": 1
+            },
+            {
+              "name": "Mollier Diagram Slopes",
+              "count": 1
+            },
+            {
+              "name": "Mollier diagram",
+              "count": 2
+            },
+            {
+              "name": "Nonmonotonic Saturated-Vapour Enthalpy",
+              "count": 1
+            },
+            {
+              "name": "Perfect-Gas Laws",
+              "count": 1
+            },
+            {
+              "name": "Phase rule",
+              "count": 1
+            },
+            {
+              "name": "Pressure Dependence of Boiling and Latent Heat",
+              "count": 1
+            },
+            {
+              "name": "Pressure Dependence of Vaporisation Enthalpy",
+              "count": 1
+            },
+            {
+              "name": "Pure substances and phase change",
+              "count": 27
+            },
+            {
+              "name": "Quality Is Undefined for Superheated Steam",
+              "count": 1
+            },
+            {
+              "name": "Real gases and compressibility",
+              "count": 3
+            },
+            {
+              "name": "Real-gas departures",
+              "count": 1
+            },
+            {
+              "name": "Reduced Properties",
+              "count": 1
+            },
+            {
+              "name": "Regnault’s Constant-Specific-Heat Model",
+              "count": 1
+            },
+            {
+              "name": "Saturated State and Overlapping Choices",
+              "count": 1
+            },
+            {
+              "name": "Saturation Pressure–Temperature Dependence",
+              "count": 1
+            },
+            {
+              "name": "Sensible and latent heat",
+              "count": 1
+            },
+            {
+              "name": "Slope of the Sublimation Curve",
+              "count": 1
+            },
+            {
+              "name": "Solid–Vapour Equilibrium in Sublimation",
+              "count": 1
+            },
+            {
+              "name": "Specific Volume after Removing a Steam Partition",
+              "count": 1
+            },
+            {
+              "name": "Specific heats",
+              "count": 5
+            },
+            {
+              "name": "Specific heats and low-temperature limit",
+              "count": 1
+            },
+            {
+              "name": "Specific-Heat Ratio and Molecular Structure",
+              "count": 1
+            },
+            {
+              "name": "Specific-Heat Ratio from R and C_v",
+              "count": 1
+            },
+            {
+              "name": "State Postulate for a Simple Compressible Substance",
+              "count": 1
+            },
+            {
+              "name": "Steam calorimeters",
+              "count": 4
+            },
+            {
+              "name": "Steam properties",
+              "count": 1
+            },
+            {
+              "name": "Steam quality",
+              "count": 7
+            },
+            {
+              "name": "Steam-table reference states",
+              "count": 1
+            },
+            {
+              "name": "Sublimation",
+              "count": 1
+            },
+            {
+              "name": "Sublimation and Missing Pressure Condition",
+              "count": 1
+            },
+            {
+              "name": "Sublimation of Ice below Triple-Point Pressure",
+              "count": 1
+            },
+            {
+              "name": "Superheated Vapour Behaviour",
+              "count": 1
+            },
+            {
+              "name": "Systems and phases",
+              "count": 2
+            },
+            {
+              "name": "Thermal Arrest and Undercooling",
+              "count": 1
+            },
+            {
+              "name": "Throttling Calorimeter",
+              "count": 1
+            },
+            {
+              "name": "Throttling of Dry Saturated Steam",
+              "count": 1
+            },
+            {
+              "name": "Throttling process",
+              "count": 2
+            },
+            {
+              "name": "Triple-Point Definition",
+              "count": 1
+            },
+            {
+              "name": "Triple-Point Temperature of Water",
+              "count": 1
+            },
+            {
+              "name": "Two-Phase State Postulate and Quality",
+              "count": 1
+            },
+            {
+              "name": "Van der Waals Constants from Critical Properties",
+              "count": 1
+            },
+            {
+              "name": "Van der Waals equation",
+              "count": 2
+            },
+            {
+              "name": "Vanishing Latent Heat at the Critical Point",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Thermodynamic Relations",
+          "count": 48,
+          "subtopics": [
+            {
+              "name": "Availability and property relations",
+              "count": 1
+            },
+            {
+              "name": "Chemical equilibrium and free energy",
+              "count": 1
+            },
+            {
+              "name": "Clapeyron calculations",
+              "count": 1
+            },
+            {
+              "name": "Clapeyron equation",
+              "count": 5
+            },
+            {
+              "name": "Compressibility coefficients",
+              "count": 1
+            },
+            {
+              "name": "Cyclic derivative relation",
+              "count": 1
+            },
+            {
+              "name": "Entropy-diagram slopes",
+              "count": 1
+            },
+            {
+              "name": "Exact differentials",
+              "count": 1
+            },
+            {
+              "name": "Expansion and compressibility coefficients",
+              "count": 1
+            },
+            {
+              "name": "Free energy and maximum work",
+              "count": 1
+            },
+            {
+              "name": "Heat-capacity identities",
+              "count": 3
+            },
+            {
+              "name": "Ideal-gas calculations",
+              "count": 1
+            },
+            {
+              "name": "Ideal-gas throttling",
+              "count": 1
+            },
+            {
+              "name": "Joule–Thomson coefficient",
+              "count": 6
+            },
+            {
+              "name": "Joule–Thomson inversion",
+              "count": 4
+            },
+            {
+              "name": "Kinetic theory",
+              "count": 1
+            },
+            {
+              "name": "Matching thermodynamic processes",
+              "count": 1
+            },
+            {
+              "name": "Maxwell relations",
+              "count": 2
+            },
+            {
+              "name": "Mayer relation",
+              "count": 1
+            },
+            {
+              "name": "Mollier diagram",
+              "count": 1
+            },
+            {
+              "name": "Phase rule",
+              "count": 2
+            },
+            {
+              "name": "Real-gas enthalpy relation",
+              "count": 1
+            },
+            {
+              "name": "Real-gas equations of state",
+              "count": 1
+            },
+            {
+              "name": "Refrigeration throttling",
+              "count": 1
+            },
+            {
+              "name": "Thermodynamic potentials",
+              "count": 4
+            },
+            {
+              "name": "Throttling process",
+              "count": 2
+            },
+            {
+              "name": "Van der Waals critical constants",
+              "count": 1
+            },
+            {
+              "name": "Virial equation",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "auditUrl": "mechanical/thermodynamics-review-audit-440da4a84351.html",
+      "auditDataUrl": "mechanical/thermodynamics-review-audit-eb7fca4fe121.json",
+      "source": {
+        "file": "MECH AE 02 FULL 35000-15-165.pdf",
+        "sha256": "b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21",
+        "pages": 151,
+        "firstPrintedPage": 15,
+        "lastPrintedPage": 165,
+        "firstQuestion": 1,
+        "lastQuestion": 940,
+        "importedFrom": {
+          "file": "Mechanical_Thermodynamics_940_Questions_FINAL_With_Explanations(1).html",
+          "sha256": "184a26c92eb62efdcf6da1f8f049eab68e350d67b4a7e18d28236feb5016a11a",
+          "questions": 940
+        }
+      }
     }
   ],
   "sources": [
@@ -523,6 +2388,20 @@
       "pages": 142,
       "firstPrintedPage": 15,
       "lastPrintedPage": 156
+    },
+    {
+      "file": "MECH AE 02 FULL 35000-15-165.pdf",
+      "sha256": "b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21",
+      "pages": 151,
+      "firstPrintedPage": 15,
+      "lastPrintedPage": 165,
+      "firstQuestion": 1,
+      "lastQuestion": 940,
+      "importedFrom": {
+        "file": "Mechanical_Thermodynamics_940_Questions_FINAL_With_Explanations(1).html",
+        "sha256": "184a26c92eb62efdcf6da1f8f049eab68e350d67b4a7e18d28236feb5016a11a",
+        "questions": 940
+      }
     }
   ],
   "auditUrl": "mechanical/source-review-audit-d4439ea4ccef.html",

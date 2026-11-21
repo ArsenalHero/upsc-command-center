@@ -1393,7 +1393,7 @@
           "bbox": [
             379,
             274,
-            447,
+            451,
             353
           ],
           "placement": "explanation",
@@ -1655,9 +1655,9 @@
           "page": 84,
           "bbox": [
             134,
-            98,
+            96,
             231,
-            192
+            193
           ],
           "placement": "explanation",
           "units": "pdf-points",
@@ -2060,8 +2060,8 @@
           "page": 85,
           "bbox": [
             356,
-            399,
-            471,
+            400,
+            474,
             513
           ],
           "placement": "explanation",
@@ -3607,7 +3607,7 @@
       },
       "sourceAnswer": "(b)",
       "answer": "b",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "Given output 15 kW and input 1700 kJ/min = 1700/60 kJ/s = 28.333 kW.\nTₕ = 227 + 273 = 500 K and Tₗ = 27 + 273 = 300 K.\nThe ideal efficiency is ηᵢ = 1 − Tₗ/Tₕ = 1 − 300/500 = 0.4.\nThe claimed efficiency is ηₐ = output/input = 15/28.333 ≈ 0.5294.\nBecause ηₐ > ηᵢ, the manufacturer’s claim is not possible.",
       "sourceExplanation": "Given output = 15 kW.\nInput = 1700 kJ/min = (1700/60) kJ/s = 28.333 kW.\nHigher temperature Tₕ = 227°C = 273 + 227 = 500 K.\nLower temperature Tₗ = 27°C = 273 + 27 = 300 K.\nIdeal efficiency ηᵢdₑₐₗ = 1 − Tₗ/Tₕ = 1 − 300/400 = 0.4.\nηₐcₜᵤₐₗ = output/input = 15/28.333 = 0.529.\nHere, actual efficiency is greater than ideal efficiency, which is not possible.",
       "note": "Printed denominator 400 in the ideal-efficiency substitution is a typo; 500 K gives its stated 0.4 result. Corrected the substitution, preserving the full original explanation.",
@@ -4590,7 +4590,7 @@
       },
       "sourceAnswer": "(d)",
       "answer": "d",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "η = power/heat-supply rate = 5 kW/(15152 J/s) = 5/15.152 ≈ 0.3300 = 33%.",
       "sourceExplanation": "Efficiency η = power/heat supply = 5/15.152 = 0.329 ≈ 33%.",
       "note": "Independent division gives 0.3300; the printed 0.329 is a minor arithmetic error with the same 33% choice.",

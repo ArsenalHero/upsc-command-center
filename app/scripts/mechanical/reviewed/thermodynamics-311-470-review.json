@@ -175,7 +175,7 @@
             151,
             111,
             214,
-            180
+            182
           ],
           "placement": "explanation",
           "alt": "Two P–V paths a and b join the same initial state P and final state Q."
@@ -203,7 +203,7 @@
       },
       "sourceAnswer": "(c)",
       "answer": "c",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "Given Q₁₋₂ = 100 kJ, W₁₋₂ = 50 kJ, and Q₂₋₁ = 120 kJ. The return work is required.\nFor a complete cycle, the first law gives ∮δQ = ∮δW.\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.\n100 + 120 = 50 + W₂₋₁.\n220 = 50 + W₂₋₁.\nW₂₋₁ = 220 − 50 = 170 kJ.",
       "sourceExplanation": "Given Q₁₋₂ = 100 kJ, W₁₋₂ = 50 kJ, and Q₂₋₁ = 120 kJ. The return work is required.\nFor a complete cycle, the first law gives ∮δQ = ∮δW.\nQ₁₋₂ + Q₂₋₁ = W₁₋₂ + W₂₋₁.\n100 + 120 = 50 + W₂₋₁.\n220 = 50 + W₂₋₁.\nW₂₋₁ = 220 − 50 = 170 kJ.",
       "note": "The scan prints “change of rate”; this is evidently a wording error for change of state. The two-process energy balance is otherwise unambiguous.",
@@ -306,10 +306,10 @@
         {
           "page": 49,
           "bbox": [
-            330,
-            153,
+            332,
+            152,
             496,
-            283
+            293
           ],
           "placement": "explanation",
           "alt": "P–V curves for expansion from V₁ to V₂: isobaric 1–2, isothermal 1–3, and reversible adiabatic 1–4."
@@ -401,12 +401,12 @@
           "page": 49,
           "bbox": [
             343,
-            681,
-            476,
-            743
+            677,
+            486,
+            741
           ],
           "placement": "explanation",
-          "alt": "Adiabatic nozzle receiving air at 400 kPa and 900 K and discharging at 100 kPa."
+          "alt": "Adiabatic nozzle with air inflow, zero heat transfer, and exit pressure P₂ = 100 kPa."
         }
       ],
       "transcriptionReviewed": true
@@ -454,9 +454,9 @@
           "page": 50,
           "bbox": [
             100,
-            475,
-            261,
-            561
+            478,
+            262,
+            562
           ],
           "placement": "question",
           "alt": "Steam-turbine inlet h₁ = 3200 kJ/kg, v₁ = 160 m/s, z₁ = 10 m, P₁ = 3 MPa; outlet h₂ = 2600 kJ/kg, v₂ = 100 m/s, z₂ = 6 m, P₂ = 70 kPa."
@@ -505,10 +505,10 @@
         {
           "page": 50,
           "bbox": [
-            379,
-            226,
-            451,
-            422
+            380,
+            325,
+            446,
+            423
           ],
           "placement": "question",
           "alt": "Air supply line connects through a valve to an initially evacuated tank."
@@ -850,10 +850,10 @@
         {
           "page": 52,
           "bbox": [
-            110,
-            555,
+            104,
+            557,
             260,
-            624
+            622
           ],
           "placement": "explanation",
           "alt": "Insulated tank with resistor R = 23 Ω, current I = 10 A, and no heat transfer."
@@ -997,9 +997,9 @@
           "page": 52,
           "bbox": [
             374,
-            650,
+            652,
             452,
-            722
+            729
           ],
           "placement": "explanation",
           "alt": "Closed cycle with two paths A and B between states 1 and 2."
@@ -1793,13 +1793,13 @@
         {
           "page": 56,
           "bbox": [
-            145,
-            104,
-            219,
-            170
+            144,
+            198,
+            220,
+            267
           ],
           "placement": "explanation",
-          "alt": "Nozzle schematic for the inlet mass-flow calculation."
+          "alt": "Insulated nozzle outline for the inlet mass-flow calculation."
         }
       ],
       "transcriptionReviewed": true
@@ -1845,10 +1845,10 @@
         {
           "page": 56,
           "bbox": [
-            122,
-            354,
+            121,
+            451,
             243,
-            515
+            514
           ],
           "placement": "explanation",
           "alt": "Piston of mass 100 kg and cross-sectional area A supports atmospheric pressure above gas in a cylinder."
@@ -1915,7 +1915,7 @@
       },
       "sourceAnswer": "(c)",
       "answer": "c",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "Given PV = 2.8 bar·m³, P₁ = 0.7 bar, and P₂ = 7 bar.\nFor this reversible hyperbolic process,\nW = C ln(P₁/P₂), where C = P₁V₁ = P₂V₂.\nThus W = 2.8 × 10⁵ ln(0.7/7) J\n= 2.8 × 10⁵ ln(0.1) J\n≈ 2.8 × 10⁵(−2.30) J\n≈ −644 kJ, using the given ln 10 ≈ 2.3.\nUsing the exact logarithm gives −644.72 kJ. The work is negative because the gas is compressed.",
       "sourceExplanation": "Given PV = 2.8, P₁ = 0.7 bar, P₂ = 7 bar.\nWork done for non-flow process in hyperbolic process or isothermal process,\nW = C ln(P₁/P₂), where C = P₁V₁ = P₂V₂.\nW = P₁V₁ ln(P₁/P₂)\n= 2.8 × 10⁵ ln(0.7/7)\n= 2.8 × 10⁵ ln(0.1)\n= 2.8 × 10⁵(−2.30) [the printed bracket reads “∵ e²·³ = ln 10”].\nW = −644.72 kJ.",
       "note": "Key (c) is correct under the given logarithm approximation. The source’s parenthetical e²·³ = ln10 is a typo; the intended fact is ln10 ≈ 2.3. Exact logarithms produce its −644.72 kJ result.",
@@ -2742,13 +2742,13 @@
         {
           "page": 59,
           "bbox": [
-            145,
-            600,
-            218,
-            662
+            373,
+            96.5,
+            452,
+            162.5
           ],
           "placement": "question",
-          "alt": "P–V diagram with paths1–2–3 and1–4–3 between the same endpoints."
+          "alt": "P–V diagram with paths 1–2–3 and 1–4–3 between the same endpoints."
         }
       ],
       "transcriptionReviewed": true
@@ -2972,7 +2972,7 @@
       },
       "sourceAnswer": "(b)",
       "answer": "b",
-      "status": "verified",
+      "status": "corrected",
       "explanation": "Given V₁=10m³, P₁=2bar, and P₂=15bar. For reversible isothermal compression of an ideal gas,\nWby=P₁V₁ln(P₁/P₂)\n=2 ×10⁵ ×10 ×ln(2/15)J\n=−4029.8kJ.\nThe required work input is the positive magnitude4029.8kJ≈4030kJ, choice(b).",
       "sourceExplanation": "Given V₁=10m³, P₁=2bar, and P₂=15bar. For reversible isothermal compression of an ideal gas,\nWby=P₁V₁ln(P₁/P₂)\n=2 ×10⁵ ×10 ×ln(2/15)J\n=−4029.8kJ.\nThe required work input is the positive magnitude4029.8kJ≈4030kJ, choice(b).",
       "note": "Checked using natural logarithms. The supplied base10 log table has truncated/incorrect entries, notably log₁₀3 printed0.475 rather than about0.4771; preserved the table literally.",
@@ -3361,13 +3361,13 @@
         {
           "page": 61,
           "bbox": [
-            369,
-            223,
+            358,
+            320,
             469,
-            405
+            407
           ],
           "placement": "explanation",
-          "alt": "Paddle wheel stirs liquid, raising its temperature10°C while3.0kJ of heat is lost."
+          "alt": "Paddle wheel stirs liquid, raising its temperature by 10°C while 3.0 kJ of heat is lost."
         }
       ],
       "transcriptionReviewed": true
@@ -3936,13 +3936,13 @@
         {
           "page": 63,
           "bbox": [
-            337,
-            604,
-            492,
-            714
+            334,
+            607,
+            493,
+            713
           ],
           "placement": "explanation",
-          "alt": "Steady-flow turbine with inlet1, outlet2, and shaft-work outputW."
+          "alt": "Steady-flow turbine with inlet 1, outlet 2, and shaft-work output W."
         }
       ],
       "transcriptionReviewed": true
@@ -4104,7 +4104,19 @@
       ],
       "topic": "First Law of Thermodynamics",
       "subtopic": "First-law energy balances",
-      "figures": [],
+      "figures": [
+        {
+          "page": 64,
+          "bbox": [
+            360,
+            330.5,
+            466,
+            400
+          ],
+          "placement": "explanation",
+          "alt": "Closed system represented by a circle, with arrows crossing its boundary and a pointer labelled System."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -4349,12 +4361,12 @@
           "page": 65,
           "bbox": [
             342,
-            95,
+            92,
             483,
-            172
+            173
           ],
           "placement": "question",
-          "alt": "P–V cycle: A(3V,3P), B(V,3P), C(V,P), D(9V,P); A→B is constant-pressure compression."
+          "alt": "P–V cycle: A(3V, 3P), B(V, 3P), C(V, P), D(9V, P); A→B is constant-pressure compression."
         }
       ],
       "transcriptionReviewed": true
@@ -4721,12 +4733,12 @@
           "page": 66,
           "bbox": [
             358,
-            655,
+            656,
             468,
-            742
+            741.5
           ],
           "placement": "explanation",
-          "alt": "Constant-pressure expansion; the shaded rectangle betweenV₁ andV₂ has areaP(V₂−V₁)."
+          "alt": "Constant-pressure expansion; the shaded rectangle between V₁ and V₂ has area P(V₂ − V₁)."
         }
       ],
       "transcriptionReviewed": true
@@ -4823,7 +4835,7 @@
             493
           ],
           "placement": "explanation",
-          "alt": "Isothermal P–V hyperbola with pressuresP₁,P₂and volumesV₁,V₂."
+          "alt": "Isothermal P–V hyperbola with pressures P₁ and P₂ and volumes V₁ and V₂."
         }
       ],
       "transcriptionReviewed": true
@@ -5110,12 +5122,12 @@
           "page": 68,
           "bbox": [
             134,
-            545,
+            544,
             232,
             641
           ],
           "placement": "explanation",
-          "alt": "Device receives300kJ of work and delivers300kJ of heat to a single reservoir; no heat is taken from the lower reservoir."
+          "alt": "Device receives 300 kJ of work and delivers 300 kJ of heat to a single reservoir; no heat is taken from the lower reservoir."
         }
       ],
       "transcriptionReviewed": true
@@ -5256,12 +5268,12 @@
           "page": 69,
           "bbox": [
             103,
-            139,
+            140,
             263,
             219
           ],
           "placement": "explanation",
-          "alt": "Carnot-cycleP–VandT–Sdiagrams with isothermal expansion1–2, isentropic expansion2–3, isothermal compression3–4, and isentropic compression4–1."
+          "alt": "Carnot-cycle P–V and T–S diagrams with isothermal expansion 1–2, isentropic expansion 2–3, isothermal compression 3–4, and isentropic compression 4–1."
         }
       ],
       "transcriptionReviewed": true
@@ -5450,7 +5462,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Efficiency from work-to-rejected-heat ratio",
-      "figures": [],
+      "figures": [
+        {
+          "page": 69,
+          "bbox": [
+            376,
+            611,
+            452,
+            704.5
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine between reservoirs T₁ and T₂, receiving Q₁, rejecting Q₂, and delivering W = Q₂/4."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5499,13 +5523,13 @@
         {
           "page": 70,
           "bbox": [
-            120,
-            513,
-            245,
-            653
+            122,
+            511,
+            242,
+            652
           ],
           "placement": "explanation",
-          "alt": "Refrigerator takes workWto move heat from cold reservoirT₂to hot reservoirT₁."
+          "alt": "Refrigerator takes work W to move heat from cold reservoir T₂ to hot reservoir T₁."
         }
       ],
       "transcriptionReviewed": true
@@ -5545,7 +5569,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Equal-efficiency engines with missing reversibility",
-      "figures": [],
+      "figures": [
+        {
+          "page": 70,
+          "bbox": [
+            389,
+            182,
+            439,
+            287
+          ],
+          "placement": "explanation",
+          "alt": "Two heat engines in series between 900 K and 400 K, with intermediate reservoir T₂ and work outputs W₁ and W₂."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5630,7 +5666,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Actual heat-engine thermal efficiency",
-      "figures": [],
+      "figures": [
+        {
+          "page": 71,
+          "bbox": [
+            136,
+            107,
+            229,
+            194
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine receives 80 kJ at 373 K, rejects 70 kJ at 303 K, and delivers work W."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5706,7 +5754,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Temperature dependence of Carnot efficiency",
-      "figures": [],
+      "figures": [
+        {
+          "page": 71,
+          "bbox": [
+            156,
+            628,
+            208,
+            743
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine between source T₁ and sink T₂, with work output W."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5779,7 +5839,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Effect of lowering sink temperature",
-      "figures": [],
+      "figures": [
+        {
+          "page": 71,
+          "bbox": [
+            389,
+            420,
+            436,
+            502
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine receives Q₁ from reservoir T₁, rejects Q₂ to reservoir T₂, and delivers work W."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5934,7 +6006,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Carnot efficiency independent of working fluid",
-      "figures": [],
+      "figures": [
+        {
+          "page": 72,
+          "bbox": [
+            389,
+            134,
+            438,
+            214.5
+          ],
+          "placement": "explanation",
+          "alt": "Carnot engine between reservoirs Tᴴ and Tᴸ, with heat input Qₐ, heat rejection Qᵣ, and work output W."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -5991,12 +6075,12 @@
           "page": 72,
           "bbox": [
             328,
-            424,
-            497,
+            425.5,
+            499,
             549
           ],
           "placement": "explanation",
-          "alt": "Engine receives100kW,rejects50kW,and powers a heat pump operating between17°Cand75°C."
+          "alt": "Engine receives 100 kW, rejects 50 kW, and powers a heat pump operating between 17°C and 75°C."
         }
       ],
       "transcriptionReviewed": true
@@ -6084,13 +6168,13 @@
         {
           "page": 73,
           "bbox": [
-            134,
-            122,
-            226,
-            172
+            136,
+            215.75,
+            227,
+            269
           ],
           "placement": "question",
-          "alt": "ClockwiseT–Scycle: lower path500KfromS=5to1kJ/K;upper path rises from(1,500)to(2,1500),runs to(4,1500),and falls to(5,500)."
+          "alt": "Clockwise T–S cycle with a 500 K lower path from S = 5 to 1 kJ/K; the upper path rises to 1500 K at S = 2 kJ/K, remains level to S = 4 kJ/K, then falls to S = 5 kJ/K."
         }
       ],
       "transcriptionReviewed": true
@@ -6173,7 +6257,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Source temperature from rejected-heat fraction",
-      "figures": [],
+      "figures": [
+        {
+          "page": 73,
+          "bbox": [
+            141,
+            658,
+            223,
+            742.1
+          ],
+          "placement": "explanation",
+          "alt": "Carnot engine between source T₁ and a 27°C (300 K) sink, with heat flows Q₁ and Q₂ and work output W."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -6285,7 +6381,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Equal-efficiency reversible engines",
-      "figures": [],
+      "figures": [
+        {
+          "page": 74,
+          "bbox": [
+            155,
+            307,
+            209,
+            458
+          ],
+          "placement": "explanation",
+          "alt": "Two reversible heat engines in series between 1000 K and 400 K, with intermediate temperature T and heat flows Q₁, Q₂, and Q₃."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -6326,7 +6434,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Refrigerator COP from25%engine efficiency",
-      "figures": [],
+      "figures": [
+        {
+          "page": 74,
+          "bbox": [
+            130,
+            648,
+            235,
+            740
+          ],
+          "placement": "explanation",
+          "alt": "Carnot engine with a 400 K source, heat flows Qₛ and Qᵣ, work output W, and indicated efficiency of 25%."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -6460,7 +6580,7 @@
             258
           ],
           "placement": "question",
-          "alt": "TriangularT–Scycle with vertices(S,T)=(1,300),(3,700),(5,300),withS inkJ/KandT inK."
+          "alt": "Triangular T–S cycle with vertices (S, T) = (1, 300), (3, 700), and (5, 300), with entropy in kJ/K and temperature in K."
         }
       ],
       "transcriptionReviewed": true
@@ -6630,7 +6750,7 @@
             518
           ],
           "placement": "explanation",
-          "alt": "Carnot cycle shown onT–SandP–Vplots;the enclosedP–Varea equals net work."
+          "alt": "Carnot cycle shown on T–S and P–V plots; the enclosed P–V area equals net work."
         }
       ],
       "transcriptionReviewed": true
@@ -6674,7 +6794,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Heat rejection of a reversible engine",
-      "figures": [],
+      "figures": [
+        {
+          "page": 76,
+          "bbox": [
+            141,
+            107,
+            223,
+            202
+          ],
+          "placement": "explanation",
+          "alt": "Carnot engine between reservoirs T₁ and T₂, receiving Qₐ = 250 kJ/s and delivering work W while rejecting Qᵣ."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
@@ -6751,7 +6883,19 @@
       ],
       "topic": "Second Law of Thermodynamics",
       "subtopic": "Solar-collector area and Carnot limit",
-      "figures": [],
+      "figures": [
+        {
+          "page": 76,
+          "bbox": [
+            142,
+            640,
+            222,
+            733
+          ],
+          "placement": "explanation",
+          "alt": "Heat engine between 350 K and 313 K reservoirs, delivering 2.5 kW of work."
+        }
+      ],
       "transcriptionReviewed": true
     },
     {
