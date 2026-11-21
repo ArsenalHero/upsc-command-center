@@ -37,20 +37,22 @@ test("only bounded diagram crops ship, and the audit reconciles every source ite
   assert.equal(audit.diagrams,questions.reduce((s,q)=>s+(q.figures?.length||0),0));assert.equal(subject.reviewed+subject.corrected+subject.disputed,807);
 });
 
-test("Thermodynamics contains just questions 1 to 150 and the continuation of question 150", () => {
+test("Thermodynamics reconciles all 940 uploaded questions without changing Engineering Mechanics", () => {
   assert.equal(catalog.subjects.length, 2);
-  assert.equal(catalog.total, 957);
-  assert.equal(catalog.reviewed + catalog.corrected + catalog.disputed, 957);
-  assert.equal(thermodynamics.count, 150);
-  assert.equal(thermodynamics.topics.reduce((total: number, topic: { count: number }) => total + topic.count, 0), 150);
-  assert.deepEqual(thermoQuestions.map(q => q.number), Array.from({ length: 150 }, (_, index) => index + 1));
-  assert.equal(new Set([...questions, ...thermoQuestions].map(q => q.id)).size, 957);
+  assert.equal(catalog.total, 1747);
+  assert.equal(catalog.reviewed + catalog.corrected + catalog.disputed, 1747);
+  assert.equal(thermodynamics.count, 940);
+  assert.equal(thermodynamics.topics.length, 7);
+  assert.equal(thermodynamics.topics.reduce((total: number, topic: { count: number }) => total + topic.count, 0), 940);
+  assert.deepEqual(thermoQuestions.map(q => q.number), Array.from({ length: 940 }, (_, index) => index + 1));
+  assert.equal(new Set([...questions, ...thermoQuestions].map(q => q.id)).size, 1747);
   const hash = "b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21";
   assert.equal(thermoBank.source.sha256, hash);
   assert.equal(thermoBank.source.firstPrintedPage, 15);
-  assert.equal(thermoBank.source.lastPrintedPage, 39);
-  assert.equal(thermoQuestions.at(-1)?.source.printedPage, 38);
-  assert.equal(thermoQuestions.at(-1)?.source.pageEnd, 25);
+  assert.equal(thermoBank.source.lastPrintedPage, 165);
+  assert.equal(thermoBank.source.importedFrom.sha256, "184a26c92eb62efdcf6da1f8f049eab68e350d67b4a7e18d28236feb5016a11a");
+  assert.equal(thermoQuestions.at(-1)?.source.printedPage, 165);
+  assert.equal(thermoQuestions.at(-1)?.source.pageEnd, 151);
   assert.match(thermodynamics.url, new RegExp(createHash("sha256").update(thermoBytes).digest("hex").slice(0, 12)));
   assert.equal(catalog.version, createHash("sha256").update(JSON.stringify(catalog.subjects)).digest("hex").slice(0, 12));
 
@@ -58,9 +60,14 @@ test("Thermodynamics contains just questions 1 to 150 and the continuation of qu
     assert.equal(q.subjectId, "thermodynamics");
     assert.equal(q.source.sha256, hash);
     assert.equal(q.source.printedPage, q.source.page + 14);
-    assert.ok(q.source.page >= 1 && q.source.page <= (q.source.pageEnd ?? 0) && (q.source.pageEnd ?? 0) <= 25);
+    assert.ok(q.source.page >= 1 && q.source.page <= (q.source.pageEnd ?? 0) && (q.source.pageEnd ?? 0) <= 151);
     assert.ok(q.question.trim() && q.explanation.trim() && q.topic && q.subtopic);
-    assert.equal(Object.keys(q.options).length, q.number === 122 ? 0 : 4);
+    if(q.optionsUnavailable) {
+      assert.equal(Object.keys(q.options).length, 0);
+      assert.equal(q.review.status, "disputed");
+    } else {
+      assert.ok(Object.keys(q.options).length >= 2 && Object.keys(q.options).length <= 6, `Q${q.number} choices`);
+    }
     assert.ok(Object.values(q.options).every(option => option.trim()));
     assert.ok(q.review.note && q.review.references.length > 0);
     assert.equal(canGradeMechanical(q), q.review.status !== "disputed");
@@ -73,7 +80,10 @@ test("Thermodynamics contains just questions 1 to 150 and the continuation of qu
   assert.equal(absentChoices.answer, null);
   assert.equal(thermoQuestions.find(q => q.number === 62)!.answer, "a");
   const audit = JSON.parse(readFileSync(new URL(thermodynamics.auditDataUrl, root), "utf8"));
-  assert.equal(audit.fullyTranscribed, 150);
-  assert.equal(audit.independentlyExamined, 150);
+  assert.equal(audit.fullyTranscribed, 940);
+  assert.equal(audit.independentlyExamined, 940);
+  assert.deepEqual(audit.uploadReconciliation.questionNumbers, thermoQuestions.map(q=>q.number));
+  assert.equal(audit.uploadReconciliation.fullQuestionPhotosPublished, 0);
+  assert.equal(audit.uploadReconciliation.fullExplanationPhotosPublished, 0);
   assert.equal(audit.diagrams, thermoQuestions.reduce((count, q) => count + (q.figures?.length ?? 0), 0));
 });

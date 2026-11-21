@@ -1751,6 +1751,1666 @@
       "subtopic": "First-law energy balances",
       "figures": [],
       "transcriptionReviewed": true
+    },
+    {
+      "number": 351,
+      "source": {
+        "page": 56,
+        "pageEnd": 56,
+        "printedPage": 70,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020"
+        ]
+      },
+      "question": "Air at 27°C and 100 kPa enters in a steady flow to a nozzle at a velocity of 100 m/s. If the inlet area of the nozzle is 0.5 m², what is the mass flow rate through the system?",
+      "options": {
+        "a": "116 kg/s",
+        "b": "232 kg/s",
+        "c": "58 kg/s",
+        "d": "143 kg/s"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given inlet P₁ = 100 kPa, T₁ = 27 + 273 = 300 K, v₁ = 100 m/s, and A₁ = 0.5 m².\nFor ideal air with R = 0.287 kJ/(kg·K),\nρ₁ = P₁/(RT₁) = 100/(0.287 × 300) = 1.1614 kg/m³.\nThe mass flow rate is\nṁ = ρ₁A₁v₁ = 1.1614 × 0.5 × 100 = 58.07 kg/s ≈ 58 kg/s.",
+      "sourceExplanation": "Given inlet P₁ = 100 kPa, T₁ = 27 + 273 = 300 K, v₁ = 100 m/s, and A₁ = 0.5 m².\nFor ideal air with R = 0.287 kJ/(kg·K),\nρ₁ = P₁/(RT₁) = 100/(0.287 × 300) = 1.1614 kg/m³.\nThe mass flow rate is\nṁ = ρ₁A₁v₁ = 1.1614 × 0.5 × 100 = 58.07 kg/s ≈ 58 kg/s.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Mass continuity and ideal-gas density",
+      "figures": [
+        {
+          "page": 56,
+          "bbox": [
+            145,
+            104,
+            219,
+            170
+          ],
+          "placement": "explanation",
+          "alt": "Nozzle schematic for the inlet mass-flow calculation."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 352,
+      "source": {
+        "page": 56,
+        "pageEnd": 56,
+        "printedPage": 70,
+        "examLabels": [
+          "ISRO Scientist/Engineer 12.01.2020"
+        ]
+      },
+      "question": "A gas is contained in a cylinder with a moveable piston of 100 kg mass. When 2500 J of heat flow into the gas, the internal energy of the gas increases by 1500 J. What is the distance through which the piston rises?",
+      "options": {
+        "a": "2 m",
+        "b": "1 m",
+        "c": "2.5 m",
+        "d": "0.5 m"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The energy balance determines the work done by the gas:\nQ = ΔU + W.\n2500 = 1500 + W, so W = 1000 J.\nFor a freely moving piston under atmospheric pressure,\nW = (PₐₜₘA + mg)Δx.\nThus Δx = 1000/(PₐₜₘA + 100 × 9.81). The piston area A and ambient pressure are not supplied, so the rise cannot be uniquely determined.\nIf atmospheric work is additionally neglected, as the source explicitly assumes, W = mgΔx and\n1000 = 100 × 9.81 × Δx.\nΔx = 1.019 m ≈ 1 m, the source’s intended choice (b). This extra assumption is not in the question.",
+      "sourceExplanation": "The diagram shows atmospheric pressure on a piston of mass M = 100 kg and area A.\nQ = 2500 J; (ΔU)gas = 1500 J.\nApplying first law of thermodynamics, Q = (ΔU)gas + Wgas.\n2500 = 1500 + Wgas.\nWgas = 1000 J.\nWgas = (Fₐₜₘ + Fpiston) × Δxpiston rise.\nAs area of piston is not given, assuming work done on atmosphere to be zero.\nWgas = Fpiston × Δx = mgΔx.\n1000 J = 100 × 9.81 × Δx.\nΔx = 1.01 m ≈ 1 m.",
+      "note": "The source diagram includes atmospheric loading, but the source solution discards it because the area is missing. A unique displacement requires the missing area/ambient-pressure data or an explicit negligible-atmosphere assumption.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Piston displacement with atmospheric loading",
+      "figures": [
+        {
+          "page": 56,
+          "bbox": [
+            122,
+            354,
+            243,
+            515
+          ],
+          "placement": "explanation",
+          "alt": "Piston of mass 100 kg and cross-sectional area A supports atmospheric pressure above gas in a cylinder."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 353,
+      "source": {
+        "page": 56,
+        "pageEnd": 56,
+        "printedPage": 70,
+        "examLabels": [
+          "ESE 2020"
+        ]
+      },
+      "question": "A piston-cylinder device with air at an initial temperature of 30°C undergoes an expansion process for which pressure and volume are related as given below:\np (kPa): 100, 37.9, 14.4\nV (m³): 0.1, 0.2, 0.4\nThe work done by the system for n = 1.4 will be",
+      "options": {
+        "a": "4.8 kJ",
+        "b": "6.8 kJ",
+        "c": "8.4 kJ",
+        "d": "10.6 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For polytropic expansion PVⁿ = constant,\nW = (P₁V₁ − P₃V₃)/(n − 1).\nWith n = 1.4, P₁ = 100 kPa, V₁ = 0.1 m³, P₃ = 14.4 kPa, and V₃ = 0.4 m³,\nW = (100 × 0.1 − 14.4 × 0.4)/(1.4 − 1)\n= (10 − 5.76)/0.4\n= 10.6 kJ.",
+      "sourceExplanation": "For polytropic expansion PVⁿ = constant,\nW = (P₁V₁ − P₃V₃)/(n − 1).\nWith n = 1.4, P₁ = 100 kPa, V₁ = 0.1 m³, P₃ = 14.4 kPa, and V₃ = 0.4 m³,\nW = (100 × 0.1 − 14.4 × 0.4)/(1.4 − 1)\n= (10 − 5.76)/0.4\n= 10.6 kJ.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Polytropic boundary work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 354,
+      "source": {
+        "page": 56,
+        "pageEnd": 56,
+        "printedPage": 70,
+        "examLabels": [
+          "APPSC Poly Lect. 13.03.2020"
+        ]
+      },
+      "question": "In a reversible non-flow process, the gas undergoes a process according to pV = 2.8, where p is in bar and volume is in m³. What will be the work done by the gas if pressure of gas increases from 0.7 bar to 7 bar? [Assuming e²·³ = 10.]",
+      "options": {
+        "a": "6.4 kJ",
+        "b": "−6.4 kJ",
+        "c": "−644 kJ",
+        "d": "−64 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given PV = 2.8 bar·m³, P₁ = 0.7 bar, and P₂ = 7 bar.\nFor this reversible hyperbolic process,\nW = C ln(P₁/P₂), where C = P₁V₁ = P₂V₂.\nThus W = 2.8 × 10⁵ ln(0.7/7) J\n= 2.8 × 10⁵ ln(0.1) J\n≈ 2.8 × 10⁵(−2.30) J\n≈ −644 kJ, using the given ln 10 ≈ 2.3.\nUsing the exact logarithm gives −644.72 kJ. The work is negative because the gas is compressed.",
+      "sourceExplanation": "Given PV = 2.8, P₁ = 0.7 bar, P₂ = 7 bar.\nWork done for non-flow process in hyperbolic process or isothermal process,\nW = C ln(P₁/P₂), where C = P₁V₁ = P₂V₂.\nW = P₁V₁ ln(P₁/P₂)\n= 2.8 × 10⁵ ln(0.7/7)\n= 2.8 × 10⁵ ln(0.1)\n= 2.8 × 10⁵(−2.30) [the printed bracket reads “∵ e²·³ = ln 10”].\nW = −644.72 kJ.",
+      "note": "Key (c) is correct under the given logarithm approximation. The source’s parenthetical e²·³ = ln10 is a typo; the intended fact is ln10 ≈ 2.3. Exact logarithms produce its −644.72 kJ result.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Reversible hyperbolic compression",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 355,
+      "source": {
+        "page": 56,
+        "pageEnd": 56,
+        "printedPage": 70,
+        "examLabels": [
+          "APPSC Poly Lect. 13.03.2020"
+        ]
+      },
+      "question": "The rate of heat transfer between an electric motor and its surroundings is given by Q = e⁻ᵗ − 1, where t is in seconds and Q is in kW. The shaft of motor rotates at a speed of 200 rad/s and applies a torque of 20 N·m on the load. The motor draws a constant electric power input of 5 kW. The time rate of change of energy (kW) of motor is given by:",
+      "options": {
+        "a": "e⁻ᵗ",
+        "b": "1 + e⁻ᵗ",
+        "c": "1 − e⁻ᵗ",
+        "d": "2 + e⁻ᵗ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "The heat-transfer rate is Q̇ = e⁻ᵗ − 1 kW.\nShaft power delivered to the load is τω = 20 × 200 = 4000 W = 4 kW. Electrical power input is 5 kW, so net work done by the motor is Ẇ = 4 − 5 = −1 kW.\nThe energy balance gives\ndE/dt = Q̇ − Ẇ\n= (e⁻ᵗ − 1) − (−1)\n= e⁻ᵗ kW.\nThus the answer is (a). There is no need to differentiate the already specified heat-transfer rate.",
+      "sourceExplanation": "Given Q = e⁻ᵗ − 1.\nLet initial time rate of change of energy = 0.\nFinal time rate of change of energy = dQ/dt.\n∴ dQ/dt = −e⁻ᵗ − 0 = −e⁻ᵗ.\nRate of change of energy = Initial − Final\n= 0 − (−e⁻ᵗ)\n= e⁻ᵗ.",
+      "note": "The source gives the correct letter but derives it by differentiating a quantity already stated as a heat-transfer rate and omits both power terms. Replaced that reasoning with the full electrical/shaft/heat energy balance while preserving the source derivation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Motor power and energy accumulation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 356,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": [
+          "APPSC Poly Lect. 13.03.2020"
+        ]
+      },
+      "question": "A cylinder of 50 litre capacity contains oxygen at temperature of 27°C and at absolute pressure 10 MPa. What will be the density of oxygen? [Gas constant for oxygen is 0.26 kJ/(kg·K).]",
+      "options": {
+        "a": "1.28 kg/m³",
+        "b": "12.8 kg/m³",
+        "c": "128.2 kg/m³",
+        "d": "1282 kg/m³"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given P = 10 MPa = 10 × 10⁶ N/m², T = 27 + 273 = 300 K, V = 50 litre = 0.05 m³, and oxygen gas constant R = 0.26 kJ/(kg·K) = 0.26 × 10³ J/(kg·K).\nUsing the ideal-gas model PV = mRT,\nm = PV/(RT) = (10 × 10⁶ × 0.05)/(0.26 × 10³ × 300) = 6.41 kg.\nMass equals volume times density, m = Vρ.\nρ = m/V = 6.41/0.05 = 128.2 kg/m³.\nThe same result follows directly from ρ = P/(RT).",
+      "sourceExplanation": "Given P = 10 MPa = 10 × 10⁶ N/m², T = 27 + 273 = 300 K, V = 50 litre = 0.05 m³, and oxygen gas constant R = 0.26 kJ/(kg·K) = 0.26 × 10³ J/(kg·K).\nUsing the ideal-gas model PV = mRT,\nm = PV/(RT) = (10 × 10⁶ × 0.05)/(0.26 × 10³ × 300) = 6.41 kg.\nMass equals volume times density, m = Vρ.\nρ = m/V = 6.41/0.05 = 128.2 kg/m³.\nThe same result follows directly from ρ = P/(RT).",
+      "note": "Answer (c) follows from the ideal-gas approximation used by the source. Real oxygen at 10 MPa can deviate from that model.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Ideal-gas density",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 357,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": [
+          "UPPSC AE 13.12.2020, Paper-2"
+        ]
+      },
+      "question": "A 2kW electric resistance heater submerged in 5 kg water is turned on and kept on for 10 minutes. During the process, 300 kJ of heat is lost from the water, the temperature rise of water is",
+      "options": {
+        "a": "0.40°C",
+        "b": "43.1°C",
+        "c": "57.4°C",
+        "d": "71.8°C"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The electrical heater supplies 2 kW for 10 × 60 s, so work input is 2 × 10 × 60 = 1200 kJ. Heat lost is Q = −300 kJ.\nThe first law gives Q = ΔU + W, with W = −1200 kJ because work enters the system.\n−300 = ΔU − 1200.\nΔU = 1200 − 300 = 900 kJ.\nFor 5 kg of water, mcΔT = 900. Using c ≈ 4.18 kJ/(kg·K),\nΔT = 900/(5 × 4.18) = 43.06°C ≈ 43.1°C.\nThe source instead substitutes c = 4.2 and obtains 42.85°C, which is close to the same option but is not 43.1°C when rounded to one decimal place.",
+      "sourceExplanation": "dW = 2 × 10 × 60 kJ.\nAccording to first law of thermodynamics, δQ = dU + δW.\n−300 = dU − 2 × 10 × 60.\nAs heat is lost and work done on system, negative signs are taken.\ndU = 1200 − 300 = 900.\nmcᵥdT = 900.\ndT = 900/(5 × 4.2) = 42.85 ≈ 43.1°C.",
+      "note": "The key (b) agrees with water specific heat about4.18 kJ/(kg·K). The printed derivation uses4.2 but then rounds42.85 to43.1; corrected that numerical inconsistency.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Immersion-heater energy balance",
+      "figures": [
+        {
+          "page": 57,
+          "bbox": [
+            130,
+            511,
+            236,
+            568
+          ],
+          "placement": "explanation",
+          "alt": "Electrical heater supplies 2 kW to the water while 300 kJ of heat escapes."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 358,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": []
+      },
+      "question": "If the fluid is an ideal gas, the temperature of gas in tank after it is charged ___ times initial temperature.",
+      "options": {
+        "a": "2",
+        "b": "1.9",
+        "c": "1.4",
+        "d": "1.67"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For an initially evacuated, rigid, adiabatic tank charged from a large ideal-gas supply line at fixed temperature, with constant specific heats, the filling balance gives u₂ = hᵢₙ and hence T₂ = (cₚ/cᵥ)Tᵢₙ = γTᵢₙ.\nFor air, γ ≈ 1.4, giving the source’s intended choice (c).\nThe supplied question, however, says only “ideal gas” and “tank” and does not specify air, γ, initial evacuation, insulation, or the reference temperature. Different ideal gases and charging conditions yield different results. No unique option follows from the printed stem.",
+      "sourceExplanation": "If the fluid is an ideal gas, the temperature of gas in tank after it is charged γ times initial temperature.\nT₂ = γT₁.\nγ = 1.4.",
+      "note": "The source silently assumes the special evacuated adiabatic tank-filling model and air withγ=1.4. The printed problem does not supply these assumptions.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Incomplete tank-filling data",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 359,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": []
+      },
+      "question": "Dry saturated steam enters a frictionless adiabatic nozzle with negligible velocity at a temperature of 300°C [h₁ = 2751 kJ/kg]. It is expanded to a pressure of 5 MPa isentropically [h₂ = 2651 kJ/kg]. What will be the exit velocity of steam?",
+      "options": {
+        "a": "447.21 m/s",
+        "b": "572.33 m/s",
+        "c": "14.14 m/s",
+        "d": "150.32 m/s"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For the adiabatic, no-work nozzle, neglecting elevation change,\nh₁ + V₁²/2000 + q = w + V₂²/2000 + h₂,\nwhere h is in kJ/kg and velocity is in m/s.\nWith w = 0, q = 0, and V₁ ≈ 0,\nV₂ = √[2000(h₁ − h₂)]\n= √[2000(2751 − 2651)]\n= 447.21 m/s, choice (a). The supplied enthalpy values are sufficient for this energy balance.",
+      "sourceExplanation": "For the adiabatic, no-work nozzle, neglecting elevation change,\nh₁ + V₁²/2000 + q = w + V₂²/2000 + h₂,\nwhere h is in kJ/kg and velocity is in m/s.\nWith w = 0, q = 0, and V₁ ≈ 0,\nV₂ = √[2000(h₁ − h₂)]\n= √[2000(2751 − 2651)]\n= 447.21 m/s, choice (a). The supplied enthalpy values are sufficient for this energy balance.",
+      "note": "Checked from the explicitly supplied enthalpy drop; no steam-table interpolation is needed for the velocity calculation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Steam-nozzle exit velocity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 360,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": [
+          "HPPSC ADF 05.03.2019"
+        ]
+      },
+      "question": "Hydrogen gas is enclosed in a piston-cylinder arrangement at a pressure of 3 bar and 300 K. The cylinder has a volume of 1.5 m³. The process undergoes isothermal expansion to 3 m³. Work done by gas is:",
+      "options": {
+        "a": "311 kJ",
+        "b": "251 kJ",
+        "c": "350 kJ",
+        "d": "425 kJ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given P₁ = 3 bar = 3 × 10⁵ Pa, T₁ = 300 K, V₁ = 1.5 m³, and V₂ = 3 m³.\nFor reversible isothermal expansion of an ideal gas,\nW = P₁V₁ ln(V₂/V₁)\n= 3 × 10⁵ × 1.5 × ln(3/1.5) J\n= 3 × 1.5 × 0.6931 × 10⁵ J\n= 311.85 kJ, corresponding to the approximate choice (a).",
+      "sourceExplanation": "Given P₁ = 3 bar = 3 × 10⁵ Pa, T₁ = 300 K, V₁ = 1.5 m³, and V₂ = 3 m³.\nFor reversible isothermal expansion of an ideal gas,\nW = P₁V₁ ln(V₂/V₁)\n= 3 × 10⁵ × 1.5 × ln(3/1.5) J\n= 3 × 1.5 × 0.6931 × 10⁵ J\n= 311.85 kJ, corresponding to the approximate choice (a).",
+      "note": "Key (a) is the intended approximate answer311 kJ; exact ideal-gas reversible work is311.9 kJ. The reversible/quasi-static assumption is implicit in the source formula.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isothermal expansion work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 361,
+      "source": {
+        "page": 57,
+        "pageEnd": 57,
+        "printedPage": 71,
+        "examLabels": [
+          "JPSC AE PRE 2019"
+        ]
+      },
+      "question": "The short coming of first law of thermodynamics is",
+      "options": {
+        "a": "Direction of process",
+        "b": "Possibility of process",
+        "c": "Quality of energy",
+        "d": "Quantity of energy"
+      },
+      "sourceAnswer": "(a, b, c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The first law conserves energy quantitatively, but by itself it does not establish the direction of a process, its thermodynamic possibility, or the quality/ability of energy to produce work. These are addressed by the second law.\nThus (a), (b), and (c) are all shortcomings of the first law. The source explicitly prints “Ans. (a, b, c)”. Because the question supplies separate single-letter choices with no “all three” option, it has no unique checked letter.",
+      "sourceExplanation": "The short coming of first law of thermodynamics is—\n• Direction of process.\n• Possibility of process.\n• Quality of energy.",
+      "note": "Literal printed answer marker is(a,b,c), not just(a) as in the draft extraction. Multiple printed choices are correct.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "4.1"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Limitations of the first law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 362,
+      "source": {
+        "page": 57,
+        "pageEnd": 58,
+        "printedPage": 71,
+        "examLabels": [
+          "JPSC AE PRE 2019"
+        ]
+      },
+      "question": "In a steady flow process, across the control volume mass and energy flow",
+      "options": {
+        "a": "Varies continuously",
+        "b": "Remain constant",
+        "c": "Depends on control surface",
+        "d": "Depends on type of process"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "In steady flow, conditions at each fixed location and the mass- and energy-transfer rates do not vary with time. For a single inlet and outlet, the mass flow rates are equal; with no energy accumulation, all energy entering balances all energy leaving. Thus the intended choice is (b), “Remain constant.”\nA control volume need not move. The source’s claim that it moves relative to the coordinate frame is not a general steady-flow requirement.",
+      "sourceExplanation": "Assumptions made in steady flow processes are:\n(i) Control volume moves relative to the coordinate frame.\n(ii) The state of the mass at each discrete area of flow on the control surface does not vary with time. The rate at which heat and work cross the control surface remain constant.",
+      "note": "Retained key(b) and corrected the source’s unnecessary moving-control-volume claim. “Constant” means constant with time; it does not require identical fluid properties at inlet and outlet.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Steady-flow assumptions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 363,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": [
+          "OPSC AEE 2019 PAPER - II"
+        ]
+      },
+      "question": "What is the rise in temperature of80 litres of water in40 min by a heater of2 kW, if the whole of the heater energy is used to raise the water temperature?",
+      "options": {
+        "a": "14.3°C",
+        "b": "1.43°C",
+        "c": "2.52°C",
+        "d": "25.2°C"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "All heater energy goes into the water:\nheat taken by water = heat given by heater.\nQ = mcₚΔT = power × time.\nFor80 litres of water, take m≈80kg and cₚ≈4.2kJ/(kg·K):\n80 × 4.2 × ΔT = 2 × 40 × 60.\nΔT = (2 × 40 × 60)/(80 × 4.2)\n= 14.28°C ≈ 14.3°C.",
+      "sourceExplanation": "All heater energy goes into the water:\nheat taken by water = heat given by heater.\nQ = mcₚΔT = power × time.\nFor80 litres of water, take m≈80kg and cₚ≈4.2kJ/(kg·K):\n80 × 4.2 × ΔT = 2 × 40 × 60.\nΔT = (2 × 40 × 60)/(80 × 4.2)\n= 14.28°C ≈ 14.3°C.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Water heating by electric power",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 364,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": [
+          "TNPSC AE 2019"
+        ]
+      },
+      "question": "A system executes a cycle during which there are four heat transfers Q₁₂ =220kJ, Q₂₃ =−25kJ, Q₃₄ =−180kJ, Q₄₁ =50kJ. The work during tube of the processes is W₁₂ =15kJ, W₂₃ =−10kJ, W₃₄ =60kJ. The work done during the process4–1 is",
+      "options": {
+        "a": "−230 kJ",
+        "b": "0 kJ",
+        "c": "230 kJ",
+        "d": "130 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a cyclic process, the first law gives ΣQ = ΣW.\nQ₁₂ + Q₂₃ + Q₃₄ + Q₄₁ = W₁₂ + W₂₃ + W₃₄ + W₄₁.\n220 + (−25) + (−180) + 50 = 15 + (−10) + 60 + W₄₁.\nBoth known sums equal65kJ, so W₄₁ = 0kJ.",
+      "sourceExplanation": "For a cyclic process, the first law gives ΣQ = ΣW.\nQ₁₂ + Q₂₃ + Q₃₄ + Q₄₁ = W₁₂ + W₂₃ + W₃₄ + W₄₁.\n220 + (−25) + (−180) + 50 = 15 + (−10) + 60 + W₄₁.\nBoth known sums equal65kJ, so W₄₁ = 0kJ.",
+      "note": "The scan prints “tube of the processes”, evidently “three of the processes”; preserved the numerical data and complete cyclic balance.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Four-process cyclic balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 365,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": []
+      },
+      "question": "For a heat engine cycle, which of the following relation is always true [Q = heat transfer, W = work transfer]?",
+      "options": {
+        "a": "Σcycle Q = 0, Σcycle W = 0",
+        "b": "Σcycle Q = Σcycle W",
+        "c": "Σcycle Q > Σcycle W",
+        "d": "Σcycle Q < Σcycle W"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For any complete heat-engine cycle, the working substance returns to its initial state, so ΔEcycle=0. By the first law, the net heat equals net work:\nΣcycle Q = Σcycle W.\nThus(b) is always true.",
+      "sourceExplanation": "Σcycle Q = Σcycle W.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Cyclic energy conservation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 366,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": [
+          "JPSC AE PRE 2019"
+        ]
+      },
+      "question": "Flow work is analogous to",
+      "options": {
+        "a": "Stirring work",
+        "b": "Electrical work",
+        "c": "Displacement work",
+        "d": "Shaft work"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "Flow work is the pressure force acting through a displacement to push fluid across a control surface. For a fluid amount with volume V, the work is PV; per unit mass it is Pv. It is therefore analogous to displacement work, choice(c).\nFor quasi-static boundary displacement the differential is P dV. The reversible steady-flow shaft-work expression −∫v dP is a different quantity from flow work itself.",
+      "sourceExplanation": "Work in steady flow process = ∫V dP.\nWork in non-flow process = ∫P dV.",
+      "note": "Retained answer(c). The source confuses reversible steady-flow shaft work with the flow-work termPv, and omits the shaft-work sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Flow work versus displacement work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 367,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": []
+      },
+      "question": "An electric generator coupled to a windmill produces an average electric power of 6 kW. The power is used to charge a storage battery. Heat transfer from the battery to the surroundings is 0.3 kW. What will be the amount of energy stored in the battery in 2 hours?",
+      "options": {
+        "a": "41040 kW",
+        "b": "114 kW",
+        "c": "11.4 kJ",
+        "d": "41040 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given heat loss Q̇=−0.3kW and electrical work input6kW, so work by the battery Ẇ=−6kW.\nThe first law gives dU/dt = Q̇ − Ẇ = −0.3 − (−6) = 5.7kW.\nOver2hours the energy stored is\nΔU = 5.7 × 2 × 3600 = 41040kJ, choice(d).",
+      "sourceExplanation": "Given heat loss Q̇=−0.3kW and electrical work input6kW, so work by the battery Ẇ=−6kW.\nThe first law gives dU/dt = Q̇ − Ẇ = −0.3 − (−6) = 5.7kW.\nOver2hours the energy stored is\nΔU = 5.7 × 2 × 3600 = 41040kJ, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Battery energy storage",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 368,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": [
+          "OPSC AEE 2019 PAPER - II"
+        ]
+      },
+      "question": "For a non-flow constant pressure process the heat exchange is equal to:",
+      "options": {
+        "a": "Zero",
+        "b": "The work done",
+        "c": "The change in internal energy",
+        "d": "The change in enthalpy"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a simple compressible substance, dH = T dS + V dP. In a reversible process T dS = δQ, so dH = δQ + V dP.\nAt constant pressure dP=0, hence δQ=dH. Therefore heat exchange equals the enthalpy change: (d).\nThe same result follows from Q=ΔU+PΔV=Δ(U+PV)=ΔH for a closed, constant-pressure process with only pressure-volume work and negligible kinetic- and potential-energy changes.",
+      "sourceExplanation": "For a simple compressible substance, dH = T dS + V dP. In a reversible process T dS = δQ, so dH = δQ + V dP.\nAt constant pressure dP=0, hence δQ=dH. Therefore heat exchange equals the enthalpy change: (d).\nThe same result follows from Q=ΔU+PΔV=Δ(U+PV)=ΔH for a closed, constant-pressure process with only pressure-volume work and negligible kinetic- and potential-energy changes.",
+      "note": "The standard answer(d) assumes only pressure-volume work. Additional shaft or electrical work would require a corresponding term.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-pressure heat and enthalpy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 369,
+      "source": {
+        "page": 58,
+        "pageEnd": 58,
+        "printedPage": 72,
+        "examLabels": [
+          "GPSC ARTO Pre 30.12.2018"
+        ]
+      },
+      "question": "During steady flow compression process of a gas with mass flow rate of 2 kg/s, increase in specific enthalpy is 15 kJ/kg and decrease in kinetic energy is 2 kJ/kg. The rate of heat rejection to the environment is 3 kW. The power needed to drive the compressor is :",
+      "options": {
+        "a": "23 kW",
+        "b": "2 kW",
+        "c": "29 kW",
+        "d": "37 kW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The steady-flow energy equation, with negligible potential-energy change, is\nṁ[h₁+V₁²/2000]+Q̇=ṁ[h₂+V₂²/2000]+Ẇ.\nThus Ẇ=ṁ(h₁−h₂)+ṁ(V₁²−V₂²)/2000+Q̇.\nGiven ṁ=2kg/s, h₁−h₂=−15kJ/kg, kinetic-energy decrease2kJ/kg, and Q̇=−3kW:\nẆ=2(−15)+2(2)−3\n=−30+4−3\n=−29kW.\nThe compressor therefore requires29kW of input power.",
+      "sourceExplanation": "The steady-flow energy equation, with negligible potential-energy change, is\nṁ[h₁+V₁²/2000]+Q̇=ṁ[h₂+V₂²/2000]+Ẇ.\nThus Ẇ=ṁ(h₁−h₂)+ṁ(V₁²−V₂²)/2000+Q̇.\nGiven ṁ=2kg/s, h₁−h₂=−15kJ/kg, kinetic-energy decrease2kJ/kg, and Q̇=−3kW:\nẆ=2(−15)+2(2)−3\n=−30+4−3\n=−29kW.\nThe compressor therefore requires29kW of input power.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Compressor power",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 370,
+      "source": {
+        "page": 58,
+        "pageEnd": 59,
+        "printedPage": 72,
+        "examLabels": [
+          "Vadodara Muncipal Corp. DEE, 2018"
+        ]
+      },
+      "question": "The specific heat of concentrated orange juice is 5.8 kJ/kg °C. How much heat must be removed to cool 2.0 kg of juice from 30.0°C to 0.0°C?",
+      "options": {
+        "a": "24 kJ",
+        "b": "338 kJ",
+        "c": "348 kJ",
+        "d": "600 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Heat removed is mcΔT\n=2 × 5.8 × (30−0)\n=348kJ.\nThus348kJ must be removed, choice(c).",
+      "sourceExplanation": "Heat removed is mcΔT\n=2 × 5.8 × (30−0)\n=348kJ.\nThus348kJ must be removed, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Sensible cooling",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 371,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "AAI Jr. Executive 29.11.2018"
+        ]
+      },
+      "question": "Ina cyclic process, heat transfers are 157 kJ, — 262 kJ, —486 kJ and 315 kJ. Net work for this cyclic process is:",
+      "options": {
+        "a": "176 kJ",
+        "b": "151 kJ",
+        "c": "276 kJ",
+        "d": "252 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a complete cycle, ∮δQ=∮δW.\nThe net heat is157−262−486+315=−276kJ.\nHence net work done by the system is−276kJ, meaning276kJ of net work is done on the system.\nAll listed choices are positive. Choice(c),276kJ, is the magnitude of the required net input, but it is not the signed net work by the system. The scan does not specify that an input magnitude is sought, so no unique correct signed choice is provided.",
+      "sourceExplanation": "For a cyclic process, ∮δQ=∮δW.\n∮δQ=157−262−486+315\n=−276kJ.\n∮δW=276kJ.",
+      "note": "The source drops the minus sign between its last two lines. The correct signed cycle work is−276kJ; the listed(c) is only its magnitude.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Signed cycle work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 372,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "ISRO Scientist/Engineer 22.04.2018"
+        ]
+      },
+      "question": "During the charging of a storage battery, the current I is20A and the voltage E is12.8V. The ratio of heat transfer from the battery is16W. At what rate is the internal energy increasing?",
+      "options": {
+        "a": "256 J·s⁻¹",
+        "b": "272 J·s⁻¹",
+        "c": "0",
+        "d": "240 J·s⁻¹"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given I=20A, voltage E=12.8V, and heat loss16W.\nEnergy stored per second during charging is electrical input minus heat loss:\ndU/dt = VI−Q̇loss\n=12.8 × 20−16\n=256−16\n=240W=240J/s.",
+      "sourceExplanation": "Given I=20A, voltage E=12.8V, and heat loss16W.\nEnergy stored per second during charging is electrical input minus heat loss:\ndU/dt = VI−Q̇loss\n=12.8 × 20−16\n=256−16\n=240W=240J/s.",
+      "note": "The scan prints “ratio of heat transfer”, evidently “rate of heat transfer”; the units and power balance establish240J/s.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Battery charging power",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 373,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "Statement I: The energy of an isolated system is constant.\nStatement II: The entropy of an isolated system can increase but cannot decrease.",
+      "options": {},
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "StatementI is true: an isolated system has no mass or energy exchange, so its total energy is constant.\nStatementII is also true: the entropy of an isolated system cannot decrease. It increases for an irreversible process and remains constant for a reversible process or equilibrium.\nThe source explanation’s phrase “always increases” excludes the equality case and is too strong. The scan prints answer(b) but no answer-choice or assertion–reason legend for this item, so a unique letter cannot be checked.",
+      "sourceExplanation": "Energy of the isolated system is constant as there is no energy interaction. Entropy of an isolated system always increases and never decreases.",
+      "note": "Both printed statements are true, but no option legend appears adjacent to this question. Preserved the literal key(b) without inventing choices; corrected the source entropy equality omission.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isolated-system energy and entropy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 374,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "A system absorbs100kJ as heat and does60kJ work along the path1–2–3. The same system does20kJ work along the path1–4–3. The heat absorbed during the path1–4–3 is",
+      "options": {
+        "a": "−140 kJ",
+        "b": "−80 kJ",
+        "c": "80 kJ",
+        "d": "60 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given Q₁₂₃=100kJ, W₁₂₃=60kJ, and W₁₄₃=20kJ.\nFor path1–2–3,\nQ₁₂₃=U₃−U₁+W₁₂₃.\nU₃−U₁=100−60=40kJ.\nFor path1–4–3,\nQ₁₄₃=U₃−U₁+W₁₄₃\n=40+20=60kJ, choice(d).",
+      "sourceExplanation": "Given Q₁₂₃=100kJ, W₁₂₃=60kJ, and W₁₄₃=20kJ.\nFor path1–2–3,\nQ₁₂₃=U₃−U₁+W₁₂₃.\nU₃−U₁=100−60=40kJ.\nFor path1–4–3,\nQ₁₄₃=U₃−U₁+W₁₄₃\n=40+20=60kJ, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Path independence of internal energy",
+      "figures": [
+        {
+          "page": 59,
+          "bbox": [
+            145,
+            600,
+            218,
+            662
+          ],
+          "placement": "question",
+          "alt": "P–V diagram with paths1–2–3 and1–4–3 between the same endpoints."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 375,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "RPSC IOF & BOILER 20.09.2017"
+        ]
+      },
+      "question": "Heat transferred to a closed stationary system at constant volume is equal to",
+      "options": {
+        "a": "work transfer",
+        "b": "increased in internal energy",
+        "c": "increase in enthalpy",
+        "d": "increase in gibbs function"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The first law is δQ=dU+δW. For a closed stationary system at constant volume, boundary work is zero. With no other work interaction, W=0 and δQ=dU. Heat added therefore equals the increase in internal energy: (b).",
+      "sourceExplanation": "The first law is δQ=dU+δW. For a closed stationary system at constant volume, boundary work is zero. With no other work interaction, W=0 and δQ=dU. Heat added therefore equals the increase in internal energy: (b).",
+      "note": "Answer(b) assumes pressure-volume work is the only possible work mode; constant volume alone would not eliminate electrical or shaft work.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Constant-volume heat transfer",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 376,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "BPSC AE Mains 2017 Paper - V, ESE 2009"
+        ]
+      },
+      "question": "In a reversible isothermal expansion process, the fluid expands from10bar and2m³ to2bar and10m³. During this expansion process,100kW of heat is supplied. Then the work done during the process is",
+      "options": {
+        "a": "33.3 kW",
+        "b": "80 kW",
+        "c": "100 kW",
+        "d": "20 kW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For the ideal-gas model assumed by the source, U=U(T). A reversible isothermal process has ΔU=0, so the first law δQ=dU+δW reduces to δQ=δW. A heat-input rate100kW then corresponds to a work-output rate100kW, the intended option(c).\nHowever the printed stem specifies only a “fluid”, not an ideal gas. Isothermal internal energy need not remain constant for a general fluid, and no mass flow or process duration is given to turn the endpoint work into a power. A unique general answer therefore cannot be established from the stem as written.",
+      "sourceExplanation": "Assuming ideal gas and reversible isothermal process,\nδQ=dU+δW.\nδQ=δW.\nFor isothermal and ideal gas U=f(T).\nAs heat transfer is100kW is given, work will also be equal to100kW.",
+      "note": "The source adds an ideal-gas assumption not stated in the question and uses power units for “work”. Intended(c) is conditional; the general fluid problem is under-specified.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Thermodynamic Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-4-thermodynamic-processes",
+          "section": "3.4"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isothermal heat and work with missing fluid model",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 377,
+      "source": {
+        "page": 59,
+        "pageEnd": 59,
+        "printedPage": 73,
+        "examLabels": [
+          "UPSC JWM 2017"
+        ]
+      },
+      "question": "Consider the following devices:\n1. Internal combustion engine working on Otto cycle\n2. Internal combustion engine working on Diesel cycle\n3. Gas turbines\n4. Steam turbines\nIn which of the above devices, the equation dQ=dU+Pdv is not applicable?",
+      "options": {
+        "a": "2 and 3",
+        "b": "1 and 4",
+        "c": "3 and 4",
+        "d": "1 and 2"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The general closed-system energy equation is δQ=dU+δW. With reversible pressure-volume work only, δW=P dV, giving δQ=dU+P dV.\nIn the air-standard Otto and Diesel cycle models, the working fluid is treated as a closed system. Gas turbines and steam turbines are steady-flow open devices and require the steady-flow equation in terms of enthalpy and shaft work. Thus the intended choice is3and4, option(c).",
+      "sourceExplanation": "δQ=dU+δW …(1).\nδQ=dU+P dV …(2).\nThe equation(2) is applicable for the closed system.",
+      "note": "Checked in the intended closed-cycle versus steady-flow device sense. The equation requires quasi-static pressure-volume work and negligible kinetic/potential energy changes.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Closed and steady-flow device energy equations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 378,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "TRB Polytechnic Lecturer 2017"
+        ]
+      },
+      "question": "A system is composed of a gas contained in a cylinder fitted with a piston. The gas expands from state1 for which E₁=75kJ to state2 for which E₂=−25kJ. During the expansion, the gas does60kJ of work on its surroundings. The heat transferred to or from the system during the process is:",
+      "options": {
+        "a": "−30 kJ",
+        "b": "−40 kJ",
+        "c": "30 kJ",
+        "d": "40 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given E₁=75kJ, E₂=−25kJ, and work by the gas W=60kJ.\nThe first law gives Q=ΔE+W.\nQ=(−25−75)+60\n=−40kJ.\nThe negative sign means40kJ is transferred from the system.",
+      "sourceExplanation": "Given E₁=75kJ, E₂=−25kJ, and work by the gas W=60kJ.\nThe first law gives Q=ΔE+W.\nQ=(−25−75)+60\n=−40kJ.\nThe negative sign means40kJ is transferred from the system.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "First-law energy balances",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 379,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "During a constant pressure expansion of a gas,33.3% heat is converted into work while the temperature rises by20K. The specific heat of the gas at constant pressure as a proportion of work,W is",
+      "options": {
+        "a": "8%",
+        "b": "10%",
+        "c": "12%",
+        "d": "15%"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source uses W≈0.333Q and ΔT=20K. For a fixed gas quantity at constant pressure, Q=CₚΔT, where Cₚ is total heat capacity, not mass-specific heat. Thus\nCₚ/W = 1/(0.333 × 20) ≈0.150K⁻¹.\nWith the source approximation0.33, the ratio is0.1515K⁻¹.\nThis is not a dimensionless15%. If cₚ means specific heat, the gas mass is also required because Q=mcₚΔT. The printed percentage options therefore do not provide a dimensionally correct answer. The intended(d) reflects0.15 per kelvin, not15% of energy.",
+      "sourceExplanation": "Work(W)=33.3%Q.\nW=0.33Q.\nTemperature rise(ΔT)=20K.\nWe know that Q=CₚΔT.\nW/0.33=Cₚ ×20.\nCₚ=0.15W.\nI.e. specific heat of the gas at constant pressure is15% of the work.",
+      "note": "Heat capacity divided by work has unitsK⁻¹, and mass-specific heat additionally needs the gas mass. Preserved the source’s intended15% derivation, but no option is dimensionally valid.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Dimensional consistency of heat capacity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 380,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "A cylinder contains10m³ of an ideal gas at a pressure of2bar. This gas is compressed in a reversible isothermal process till its pressure increases to15bar. What quantum of work will be required for this process? (You can use the table given herewith.)\nNumber: 2 | 2.5 | 3 | 5 | 7\nLog₁₀: 0.301 | 0.397 | 0.475 | 0.698 | 0.845",
+      "options": {
+        "a": "4500 kJ",
+        "b": "4030 kJ",
+        "c": "450 kJ",
+        "d": "403 kJ"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given V₁=10m³, P₁=2bar, and P₂=15bar. For reversible isothermal compression of an ideal gas,\nWby=P₁V₁ln(P₁/P₂)\n=2 ×10⁵ ×10 ×ln(2/15)J\n=−4029.8kJ.\nThe required work input is the positive magnitude4029.8kJ≈4030kJ, choice(b).",
+      "sourceExplanation": "Given V₁=10m³, P₁=2bar, and P₂=15bar. For reversible isothermal compression of an ideal gas,\nWby=P₁V₁ln(P₁/P₂)\n=2 ×10⁵ ×10 ×ln(2/15)J\n=−4029.8kJ.\nThe required work input is the positive magnitude4029.8kJ≈4030kJ, choice(b).",
+      "note": "Checked using natural logarithms. The supplied base10 log table has truncated/incorrect entries, notably log₁₀3 printed0.475 rather than about0.4771; preserved the table literally.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isothermal compression work input",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 381,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "WBPSC AE, 2017"
+        ]
+      },
+      "question": "A gas is compressed in a cylinder by a movable piston to a volume one-half its original volume. During the process300kJ heat left the gas and internal energy remained same. The work done on gas in N·m will be",
+      "options": {
+        "a": "300 N·m",
+        "b": "3000 N·m",
+        "c": "30000 N·m",
+        "d": "300000 N·m"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "From the first law δQ=dU+P dV, or Q=U₂−U₁+W.\nGiven ΔU=0 and heat leaving Q=−300kJ,\n−300=0+W.\nThus work by the gas is W=−300kJ=−300 ×1000J=−300000N·m.\nThe negative sign denotes work input. The work done on the gas is therefore+300000N·m, choice(d).\nThe source also notes U=U(T), U₂=U₁ and T₂=T₁ for an ideal-gas interpretation; only the given ΔU=0 is needed for the energy balance.",
+      "sourceExplanation": "From the first law δQ=dU+P dV, or Q=U₂−U₁+W.\nGiven ΔU=0 and heat leaving Q=−300kJ,\n−300=0+W.\nThus work by the gas is W=−300kJ=−300 ×1000J=−300000N·m.\nThe negative sign denotes work input. The work done on the gas is therefore+300000N·m, choice(d).\nThe source also notes U=U(T), U₂=U₁ and T₂=T₁ for an ideal-gas interpretation; only the given ΔU=0 is needed for the energy balance.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Compression work with no internal-energy change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 382,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 20.11.2017"
+        ]
+      },
+      "question": "Energy is added to 5 kg of air with a paddle wheel until AT = 100°C. Find the paddle wheel work if the rigid container is insulated :",
+      "options": {
+        "a": "−358 kJ",
+        "b": "−382 kJ",
+        "c": "+358 kJ",
+        "d": "+382 kJ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Given m=5kg and ΔT=100K. For the rigid, insulated container, Q=0 and there is no boundary work; paddle-wheel work enters the air.\nUsing cᵥ=0.718kJ/(kg·K),\nΔU=mcᵥΔT=5 ×0.718 ×100=359kJ.\nTherefore work by the system is W=−359kJ, or359kJ of work input.\nThe printed key(a) says−358kJ, while its own worked explanation obtains−359kJ. No printed option matches the supplied property calculation exactly, so the answer is disputed rather than silently changing the option.",
+      "sourceExplanation": "Given m=5kg, ΔT=100°C.\nBecause process is constant volume process,\nW=mcᵥΔT; (cᵥ)air=0.718kJ/(kg·K).\n=−5 ×0.718 ×100.\nW=−359kJ → negative sign is because work is on the system.",
+      "note": "Printed key(a) disagrees by1kJ with the source’s stated cᵥ and worked result. A different rounded specific heat could make358kJ plausible, but it is not the printed calculation.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Paddle-wheel work in an insulated rigid container",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 383,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "CGPSC Polytechnic Lecturer 2017"
+        ]
+      },
+      "question": "The energy of the isolated system is always a constant, which is given by:",
+      "options": {
+        "a": "Zeroth law of thermodynamics",
+        "b": "First law of thermodynamics",
+        "c": "Second law of thermodynamics",
+        "d": "Third law of thermodynamics",
+        "e": "Law of stable equilibrium"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "An isolated system cannot exchange energy or mass across its boundaries. Thus ΔE=0 and Δm=0. The first law of thermodynamics therefore states that the energy of the isolated system remains constant: choice(b).",
+      "sourceExplanation": "An isolated system cannot exchange energy or mass across its boundaries. Thus ΔE=0 and Δm=0. The first law of thermodynamics therefore states that the energy of the isolated system remains constant: choice(b).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Isolated-system energy conservation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 384,
+      "source": {
+        "page": 60,
+        "pageEnd": 60,
+        "printedPage": 74,
+        "examLabels": [
+          "UPSC JWM 2017"
+        ]
+      },
+      "question": "A fan consumes 20 W of electric power and discharges air from a ventilated room at 0.25 kg/s. The maximum air outlet velocity is nearly",
+      "options": {
+        "a": "4.7 m/s",
+        "b": "8.7 m/s",
+        "c": "10.2 m/s",
+        "d": "12.7 m/s"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The maximum outlet speed occurs when all20W of electrical power becomes the kinetic-energy rate of the discharged air, with negligible inlet speed and no other energy changes.\nPower = ½ × mass flow rate × (discharge velocity)².\nP=½ṁv².\nv=√(2P/ṁ)=√(2 ×20/0.25)=12.65m/s.\nThe maximum outlet velocity is approximately12.7m/s, choice(d).",
+      "sourceExplanation": "The maximum outlet speed occurs when all20W of electrical power becomes the kinetic-energy rate of the discharged air, with negligible inlet speed and no other energy changes.\nPower = ½ × mass flow rate × (discharge velocity)².\nP=½ṁv².\nv=√(2P/ṁ)=√(2 ×20/0.25)=12.65m/s.\nThe maximum outlet velocity is approximately12.7m/s, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Maximum fan discharge velocity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 385,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "(CGPSC Polytechnic Lecturer 2017)"
+        ]
+      },
+      "question": "Which of the following is a low grade energy?",
+      "options": {
+        "a": "Mechanical work",
+        "b": "Electrical energy",
+        "c": "Wind power",
+        "d": "Kinetic energy",
+        "e": "Heat energy"
+      },
+      "sourceAnswer": "(e)",
+      "answer": "e",
+      "status": "verified",
+      "explanation": "High-grade energy can ideally be transformed completely into useful mechanical work. The source lists mechanical work, electrical work, wind energy, tidal energy, water energy, and kinetic energy.\nLow-grade energy has a limit on the fraction that can become work when discharged relative to an environment. The source lists heat/thermal energy, heat derived from combustion of fossil fuels, and heat derived from nuclear fission or fusion.\nThus heat energy is the low-grade form among the options: (e).",
+      "sourceExplanation": "High Grade Energy—Energy that can be completely transformed into work without any loss, i.e. fully utilizable.\nExamples:\n1.Mechanical work\n2.Electrical work\n3.Wind energy\n4.Tidal energy\n5.Water energy\n6.Kinetic energy.\nLow Grade Energy—Energy of which only a certain portion can be converted into mechanical work is called low grade energy.\nExamples:\n1.Heat or thermal energy.\n2.Heat derived from combustion of fossil fuels.\n3.Heat derived from nuclear fission or fusion.",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "4.1"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "4.6"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Energy quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 386,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "RPSC ADE 2016"
+        ]
+      },
+      "question": "Oxygen expands in a reversible adiabatic manner through a nozzle from an initial pressure and initial temperature, and with an initial velocity of50m/s. There is a decrease of38K in temperature across the nozzle. (Cₚ for oxygen is0.9185kJ/(kg·K).) The exit velocity is:",
+      "options": {
+        "a": "268.9 m/s",
+        "b": "278.5 m/s",
+        "c": "300 m/s",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For the adiabatic nozzle, with no shaft work and negligible potential-energy change,\nh₁+V₁²/2=h₂+V₂²/2.\nTherefore V₂²/2=cₚ(T₁−T₂)+V₁²/2.\nGiven cₚ=0.9185kJ/(kg·K), T₁−T₂=38K, and V₁=50m/s,\nV₂²/2=0.9185 ×10³ ×38+50²/2.\nV₂=√[2 ×0.9185 ×10³ ×38+50²]\n=268.89m/s≈268.9m/s, choice(a).",
+      "sourceExplanation": "For the adiabatic nozzle, with no shaft work and negligible potential-energy change,\nh₁+V₁²/2=h₂+V₂²/2.\nTherefore V₂²/2=cₚ(T₁−T₂)+V₁²/2.\nGiven cₚ=0.9185kJ/(kg·K), T₁−T₂=38K, and V₁=50m/s,\nV₂²/2=0.9185 ×10³ ×38+50²/2.\nV₂=√[2 ×0.9185 ×10³ ×38+50²]\n=268.89m/s≈268.9m/s, choice(a).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Nozzle with finite inlet velocity",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 387,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "RPSC VPITI 14.02.2016"
+        ]
+      },
+      "question": "Which one of the following statements holds good for the equation dQ=dE+dW?",
+      "options": {
+        "a": "Any process undergone by a closed stationary system",
+        "b": "Any process reversible and irreversible and for any system",
+        "c": "A closed system when only pdV work is present",
+        "d": "Only reversible process"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The balance δQ=dE+δW is the closed-system first law, where E includes internal, kinetic, and potential energy. It applies to reversible and irreversible closed-system processes. For a stationary closed system E can be replaced by U.\nFor an open control volume, a general balance also requires energy carried by mass; the printed option(b), “for any system”, is therefore too broad. Option(a) describes a valid stationary closed-system case, and option(c) describes another closed-system case. The question does not specify whether it seeks the widest valid domain or simply a true statement, so there is no unique valid letter among the printed descriptions.\nThe source’s follow-on distinctions are retained separately.",
+      "sourceExplanation": "Equation dQ=dE+dW.\nFor any process—reversible or irreversible; system—closed or opened system.\ndQ=dU+P dV ⇒ Only for non-flow/closed system stationary and reversible process.\ndQ=dU+dW ⇒ For any process reversible or irreversible closed stationary system.",
+      "note": "The printed key(b) wrongly extends the closed-system equation to open control volumes without mass-energy terms. Choices(a) and(c) both include valid closed-system applications, so no unique replacement is asserted.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Domain of the closed-system first law",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 388,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "Heat transfer in a cyclic process are +20 kJ, -5 kJ, -10 kJ and +15 kJ. Net work done for this cycle will be given by:",
+      "options": {
+        "a": "+0 kJ",
+        "b": "−20 kJ",
+        "c": "+20 kJ",
+        "d": "−10 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "From the first law for a complete cycle, ∮δQ=∮δW and Qnet=Wnet.\nWnet=20−5−10+15=+20kJ, choice(c).",
+      "sourceExplanation": "From the first law for a complete cycle, ∮δQ=∮δW and Qnet=Wnet.\nWnet=20−5−10+15=+20kJ, choice(c).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Cyclic net work",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 389,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "1kg liquid (specific heat=3.0kJ/(kg·K)) is stirred in a closed chamber and its temperature is raised by10°C. Heat loss to the surrounding is3.0kJ. The work done on the water during the process will be:",
+      "options": {
+        "a": "36kJ",
+        "b": "30 kJ",
+        "c": "27kJ",
+        "d": "33 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the closed stirred liquid, work input must provide both the increase in internal energy and the heat loss to the surroundings:\nWon=mcΔT+Qloss.\nGiven m=1kg, c=3.0kJ/(kg·K), ΔT=10K, and Qloss=3.0kJ,\nWon=1 ×3 ×10+3=33kJ, choice(d).",
+      "sourceExplanation": "For the closed stirred liquid, work input must provide both the increase in internal energy and the heat loss to the surroundings:\nWon=mcΔT+Qloss.\nGiven m=1kg, c=3.0kJ/(kg·K), ΔT=10K, and Qloss=3.0kJ,\nWon=1 ×3 ×10+3=33kJ, choice(d).",
+      "note": "Checked against the native scan and independently checked using the first-law balance and stated sign convention.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Stirring work with heat loss",
+      "figures": [
+        {
+          "page": 61,
+          "bbox": [
+            369,
+            223,
+            469,
+            405
+          ],
+          "placement": "explanation",
+          "alt": "Paddle wheel stirs liquid, raising its temperature10°C while3.0kJ of heat is lost."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 390,
+      "source": {
+        "page": 61,
+        "pageEnd": 61,
+        "printedPage": 75,
+        "examLabels": [
+          "CGPSC Asstt. Workshop Supt., 17.07.2016"
+        ]
+      },
+      "question": "A500W electric bulb was switched on in a2×3×4m size thermally insulated room having temperature of25°C. What will be the room temperature at the end of16hours?",
+      "options": {
+        "a": "120°C",
+        "b": "420°C",
+        "c": "920°C",
+        "d": "1120°C",
+        "e": "1420°C"
+      },
+      "sourceAnswer": "(e)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The bulb supplies electrical energy\nE=Pt=500 ×16 ×60 ×60J\n=28800kJ.\nFor an insulated sealed room, a model neglecting walls, furnishings, and bulb heat capacity would use\nE=ρVcᵥ(T−25), where V=2 ×3 ×4=24m³.\nThe source assumes ρ=1.24kg/m³ and cᵥ=0.7kJ/(kg·K), neither supplied by the question. These give\n28800=1.24 ×2 ×3 ×4 ×0.7(T−25),\nT=25+28800/(1.24 ×24 ×0.7)=1407.49°C.\nThe printed result1420°C does not follow exactly from those values. The initial pressure/air mass and thermal properties of the room contents are absent, so the final temperature is not uniquely established by the printed data.",
+      "sourceExplanation": "Heat generated=P ×16 ×60 ×60J\n=(500/1000) ×16 ×60 ×60kJ.\nHeat dissipated=ρ ×V ×cᵥ ×(T−25)\n=(500/1000) ×16 ×60 ×60\n=1.24 ×2 ×3 ×4 ×0.7(T−25).\nT=1420°C.",
+      "note": "The source adds unstated air density and heat capacity, ignores other room heat capacities, and its own stated values give about1407.5°C. Retained literal choice(e) as sourceAnswer but no unique checked answer.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "II–IV: Work, first law, and steady-flow energy equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "3.3"
+        }
+      ],
+      "topic": "First Law of Thermodynamics",
+      "subtopic": "Insulated-room electrical heating",
+      "figures": [],
+      "transcriptionReviewed": true
     }
   ]
 }

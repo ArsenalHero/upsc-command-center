@@ -1398,9 +1398,9 @@
       "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
       "references": [
         {
-          "title": "NIST: SI Units — Temperature",
-          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
-          "section": "Exact temperature conversions"
+          "title": "NIST: Radiation Thermometry",
+          "url": "https://www.nist.gov/programs-projects/radiation-thermometry",
+          "section": "Radiation thermometers and blackbody calibration"
         }
       ],
       "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
@@ -1508,6 +1508,1563 @@
       ],
       "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
       "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 191,
+      "source": {
+        "page": 30,
+        "pageEnd": 30,
+        "examLabels": [
+          "GMB AAE 25.06.2017"
+        ]
+      },
+      "question": "The root mean square velocity of the gas molecules is given by (where k = Boltzmann’s constant, T = absolute temperature, and m = mass of one molecule of a gas):",
+      "options": {
+        "a": "√(kT/m)",
+        "b": "√(2kT/m)",
+        "c": "√(3kT/m)",
+        "d": "√(5kT/m)"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Equipartition of translational kinetic energy gives ½m⟨v²⟩ = 3kT/2. Therefore ⟨v²⟩ = 3kT/m, and the root-mean-square speed is vᵣₘₛ = √⟨v²⟩ = √(3kT/m), (c). Here k is Boltzmann’s constant, T is absolute temperature and m is the mass of one molecule. The mean velocity vector is zero in a gas at rest; the question uses “velocity” for speed.",
+      "sourceExplanation": "The root mean square velocity of the gas molecules is given by Q = Vᵣₘₛ = √(3kT/m).",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Pressure, Temperature, and RMS Speed",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+          "section": "Kinetic theory, molecular speed and mean free path"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Kinetic Theory",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 192,
+      "source": {
+        "page": 30,
+        "pageEnd": 31,
+        "examLabels": [
+          "WBPSC AE, 2017"
+        ]
+      },
+      "question": "The specific heat of air increases with increase in",
+      "options": {
+        "a": "temperature",
+        "b": "pressure",
+        "c": "both pressure and temperature",
+        "d": "Variation of its constituents"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Air is predominantly diatomic. Over temperature ranges where additional rotational or vibrational modes become thermally accessible, both Cₚ and Cᵥ increase with temperature, while their ratio γ decreases because Cₚ − Cᵥ = R. Thus the intended choice is temperature, (a). In the calorically perfect approximation the heat capacities are treated as constants, so this statement concerns real temperature-dependent air heat capacities.",
+      "sourceExplanation": "Air is diatomic gas (or non-monoatomic gas). As the temperature increases both Cₚ and Cᵥ increase but their ratio γ decreases.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 193,
+      "source": {
+        "page": 31,
+        "pageEnd": 31,
+        "examLabels": [
+          "WBPSC AE, 2017"
+        ]
+      },
+      "question": "Work done is zero for the following process:",
+      "options": {
+        "a": "Constant volume",
+        "b": "Free expansion",
+        "c": "Throttling",
+        "d": "All of the above"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Under the usual simple-compressible models, all three have zero relevant work, (d):\n• Constant-volume boundary work: V = constant, dV = 0, so Wb = ∫P dV = 0.\n• Free expansion: the opposing pressure is zero, hence W = ∫Pext dV = 0. If the enclosing container is insulated, Q = 0 as well; an ideal gas then has equal initial and final temperatures. During the non-equilibrium expansion a uniform equilibrium temperature need not exist, so it is not a quasi-static isothermal path. It is not correct to assert a necessary intermediate temperature drop.\n• Standard throttling: there is no shaft or moving-boundary work and it is usually adiabatic. Neglecting changes in kinetic and potential energy, the steady-flow first law gives h₁ = h₂ = constant; the process is isenthalpic.\nElectrical or other work can occur at fixed volume, so the first statement refers to displacement work, and throttling flow work is included in enthalpy.",
+      "sourceExplanation": "At constant volume: V = constant, dV = 0. Work done W = P dV = P × 0 = 0.\nFree expansion: W = 0, Q = 0. In the free expansion of an ideal gas, even though initial and final temperatures are same, the process is not isothermal because temperature reduces in between.\nThrottling process: no change in enthalpy from one state to another state (h₁ = h₂ = h = constant). No work done (W = 0). Process is adiabatic (Q = 0). Process called isenthalpic.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Quasi-static processes and free expansion"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 194,
+      "source": {
+        "page": 31,
+        "pageEnd": 31,
+        "examLabels": [
+          "Sikkim PSC (Under Secretary), 2017"
+        ]
+      },
+      "question": "The processes occurring in open system which permit the transfer of mass to and from the system, are known as",
+      "options": {
+        "a": "flow processes",
+        "b": "non-flow processes",
+        "c": "adiabatic processes",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "An open system permits mass to cross its control boundary; processes with such mass transfer are flow processes, (a). The source diagram shows a control-volume system bounded within its surroundings, with mass entering and leaving and energy entering and leaving. Examples include heat exchangers, pumps, compressors, turbines and systems containing valves.",
+      "sourceExplanation": "The processes occurring in an open system which permit the transfer of mass to and from the system are known as flow processes. Diagram labels: boundary; energy in; mass out; control-volume system; surroundings; mass in; energy out. Examples—heat exchanger, pump, compressor, turbine and system with valve.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [
+        {
+          "page": 31,
+          "bbox": [
+            104,
+            532,
+            258,
+            621
+          ],
+          "placement": "explanation",
+          "alt": "Open control volume showing its boundary, surroundings, mass inflow/outflow and energy inflow/outflow."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 195,
+      "source": {
+        "page": 31,
+        "pageEnd": 32,
+        "examLabels": [
+          "Karnataka PSC Lect., 27.05.2017"
+        ]
+      },
+      "question": "The curve A, compared to B and C represents",
+      "options": {
+        "a": "Isobaric expansion",
+        "b": "Isochoric expansion",
+        "c": "Adiabatic expansion",
+        "d": "Isothermal expansion"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "In the intended comparison of ideal-gas expansion curves from the same starting state, A is the least steep falling curve and represents isothermal expansion, (d). An isotherm obeys PV = constant and has slope −P/V; a reversible adiabat has slope −γP/V and is steeper, with polytropic curves between for 1 < n < γ. Isobaric expansion would be horizontal and an isochoric process vertical, unlike A. The sketch supplies the conventional relative-path comparison rather than a numerical equation for A.",
+      "sourceExplanation": "Isothermal expansion.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [
+        {
+          "page": 31,
+          "bbox": [
+            127,
+            652,
+            240,
+            741
+          ],
+          "placement": "question",
+          "alt": "P–V expansion graph from V₁ to V₂ with three falling curves A, B and C; A is uppermost and least steep."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 196,
+      "source": {
+        "page": 31,
+        "pageEnd": 31,
+        "examLabels": [
+          "Karnataka PSC Lect., 27.05.2017"
+        ]
+      },
+      "question": "Following are the methods of measuring temperature: A. By measuring the expansion of liquids like alcohol, pentane in capillary glass tubes B. By measuring the expansion of mercury in capillary glass tube, radiation in pyrometers and production of emf in thermocouples C. By measuring velocity of sound in gases and motion of electrons Which of the statements given above is/are correct? Select the code for the correct answer for the options given below:",
+      "options": {
+        "a": "B alone",
+        "b": "A and B only",
+        "c": "C alone",
+        "d": "A, B and C"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "All three groups describe temperature-measurement principles, so (d), A, B and C, is the intended answer.\nA: Temperature changes the volume of alcohol or pentane, giving a length change in a capillary liquid-in-glass thermometer.\nB: Mercury expansion likewise gives a thermometer indication; thermal radiation is measured by pyrometers; thermocouples provide a temperature-dependent emf through the Seebeck effect.\nC: Gas sound speed depends on absolute temperature (for an ideal gas, C = √(γRT)), and electronic thermal behavior can provide electrical thermometry. The vague phrase “motion of electrons” is the source’s wording rather than a complete sensor specification.",
+      "sourceExplanation": "The methods of measuring temperature:\n(i) By measuring the expansion of liquids like alcohol, pentane in capillary glass tubes.\n(ii) By measuring the expansion of mercury in capillary glass tube, radiation in pyrometers and production of emf in thermocouples.\n(iii) By measuring velocity of sound in gases and motion of electrons.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Thermal Expansion",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+          "section": "Volume expansion and bimetallic strips"
+        },
+        {
+          "title": "NIST: Radiation Thermometry",
+          "url": "https://www.nist.gov/programs-projects/radiation-thermometry",
+          "section": "Radiation thermometers and blackbody calibration"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 197,
+      "source": {
+        "page": 31,
+        "pageEnd": 31,
+        "examLabels": [
+          "Kerala PSC AE (Irrigation) 05.04.2017"
+        ]
+      },
+      "question": "A diathermic wall is one which:",
+      "options": {
+        "a": "permits thermal interactions",
+        "b": "prevents thermal interactions",
+        "c": "encourages thermal interactions",
+        "d": "does not exist"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "A diathermic wall allows heat to pass through and thus permits thermal interaction, (a). A thermally conducting wall is the idealized example. Its opposite is an adiabatic wall, which prevents heat transfer. “Encourages” is not the thermodynamic defining term.",
+      "sourceExplanation": "A diathermic or diabatic wall is one that heat can pass through. It is made from a thermal conductor; it is essentially a thermal wall. In other words, a diathermic wall permits thermal interaction.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 198,
+      "source": {
+        "page": 31,
+        "pageEnd": 32,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "Statement (I) : The specific heat at constant pressure for an ideal gas is always greater than the specific heat at constant volume. Statement (II) : Heat added at constant volume is not utilized for doing any external work.",
+      "options": {},
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For an ideal gas, Cₚ − Cᵥ = R > 0, so Statement (I) is true. In a closed simple-compressible system with only displacement work, constant volume gives dV = 0 and δW = P dV = 0, so the added heat changes internal energy. Statement (II) is true under that standard restriction and supplies the physical explanation for why constant-pressure heating needs additional energy for expansion work.\nThe definitions are Cₚ = (∂h/∂T)ₚ and Cᵥ = (∂u/∂T)ᵥ. Although h = u + Pv is larger than u for positive Pv, that inequality alone does not prove an inequality between their derivatives.\nThe scan supplies no answer choices or assertion–reason legend for this item. Its printed key is (a), but without a supplied mapping no unique letter can be independently assigned.",
+      "sourceExplanation": "When gas is heated at constant pressure (Cₚ), it requires more heat energy as there is change in internal energy as well as external work done. But in case of constant volume (Cᵥ), there is no external work done, so that the given heat has to increase only internal energy. Therefore Cₚ is always greater than Cᵥ.\nCₚ = (dh/dT) at P = constant.\nCᵥ = (du/dT) at V = constant.\nWe know that enthalpy of fluid is more in value as compared to internal energy of the fluid: h > u. So Cₚ > Cᵥ.",
+      "note": "Native scan has no options, confirmed across pages 31–32. Preserved key (a), both statements and complete explanation, including the invalid h > u derivative argument. No assertion–reason choices invented.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "optionsUnavailable": true
+    },
+    {
+      "number": 199,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "Kerala PSC AE (Irrigation) 05.04.2017"
+        ]
+      },
+      "question": "All gases behave ideally under:",
+      "options": {
+        "a": "high temperature conditions",
+        "b": "low pressure conditions",
+        "c": "high pressure conditions",
+        "d": "high pressure and high temperature conditions"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The low-pressure limit makes gas density low, intermolecular separations large, and finite molecular volume and intermolecular forces less significant. Therefore low pressure, (b), is the best listed general condition for ideal-gas behavior. Higher temperature also usually improves the approximation by making interaction energy less significant relative to molecular kinetic energy; both low pressure and sufficiently high temperature are favorable.",
+      "sourceExplanation": "Generally a gas behaves more like an ideal gas at higher temperature and lower pressure, as the potential energy due to intermolecular forces becomes less significant compared with the particles’ kinetic energy and size of the molecule becomes less significant compared to the empty space between them.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Pressure, Temperature, and RMS Speed",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+          "section": "Kinetic theory, molecular speed and mean free path"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 200,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "Kerala PSC AE (Irrigation) 05.04.2017"
+        ]
+      },
+      "question": "During throttling process:",
+      "options": {
+        "a": "there is no change internal energy",
+        "b": "no work is done",
+        "c": "heat exchange does not takes place",
+        "d": "all of the above"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For standard steady throttling with negligible kinetic and potential energy changes, Q = 0, shaft work W = 0 and h₁ = h₂. Thus (b) and (c) are both true. However, u = h − Pv, so constant enthalpy does not in general imply constant internal energy; (a) is not generally true. An ideal gas is a special case with constant T and u during throttling. The question does not specify an ideal gas. Consequently “all of the above,” the printed key (d), is not generally valid, and there is more than one separately true supplied option, (b) and (c). No unique answer letter is available.",
+      "sourceExplanation": "A throttling process is defined as the process in which there is no change in enthalpy from state one to state two (h₁ = h₂); no work is done, W = 0. Process is adiabatic, Q = 0.",
+      "note": "Printed (d) incorrectly extends the isenthalpic result to constant internal energy. Both native (b) and (c) apply to the standard throttle; left all choices unchanged.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Throttling & Enthalpy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 201,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "Kerala PSC AE (Irrigation) 05.04.2017"
+        ]
+      },
+      "question": "Pick up the correct relationship from the following",
+      "options": {
+        "a": "T dS = dH − V dP",
+        "b": "T dS = dH + V dP",
+        "c": "T dS = dU − V dP",
+        "d": "T dS = dH − P dV"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For a fixed-composition simple compressible substance, the Gibbs property relation is T dS = dU + P dV. Since H = U + PV, dH = dU + P dV + V dP. Substitution gives T dS = dH − V dP, (a). The specific form is T ds = du + P dv = dh − v dP. These are equilibrium property identities and may be used to relate equilibrium states of either reversible or irreversible processes and in open or closed-system analysis. T is temperature, S entropy, U internal energy, H enthalpy, V volume and P pressure; total and specific notation must not be mixed.",
+      "sourceExplanation": "T dS = du + P dV.\nT dS = dh − V dP.\nThe above equations are applicable for reversible and irreversible process and for open and closed system both.\nWhere T = temperature of system; dS = entropy of the system; du = internal energy; dh = enthalpy; V = volume; P = pressure.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Property Relations",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 202,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "APPSC AE MAINS 2016 PAPER-III"
+        ]
+      },
+      "question": "The specific heat of an ideal gas depends on its ______ alone.",
+      "options": {
+        "a": "Pressure",
+        "b": "Volume",
+        "c": "Entropy",
+        "d": "Temperature"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a fixed-composition ideal gas, u = u(T) and h = h(T), so Cᵥ = du/dT and Cₚ = dh/dT depend on temperature alone, (d). The heat needed per unit mass per unit temperature rise is the specific heat for a specified process; for a small range with constant c, ΔQ = mcΔT and c = ΔQ/(mΔT). Here m is mass in kg, c is in J/(kg·°C), ΔQ is transferred heat in J and ΔT is the temperature change. For a calorically perfect gas these heat capacities are approximated as constants.",
+      "sourceExplanation": "Specific Heat—The specific heat is the amount of heat per unit mass required to raise the temperature by one degree Celsius.\nΔQ = mcΔT.\nC = ΔQ/(mΔT).\nWhere m = mass (kg); C = specific heat J/(kg·°C); ΔQ = change in thermal energy (J); ΔT = change in temperature (°C).",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 203,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "RPSC ADE 2016"
+        ]
+      },
+      "question": "A tyre with an inside volume of 1 m³ contains air at 77°C with a pressure of 5 bar. Air is an ideal gas under these conditions. The mass (kg) of air in the tyre is:",
+      "options": {
+        "a": "0.172",
+        "b": "2.4",
+        "c": "4.98",
+        "d": "0.06"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given V = 1 m³, T = 77 + 273 ≈ 350 K and absolute pressure P = 5 bar = 500 kPa. For air, R = Rᵤ/M ≈ 8.314/29 ≈ 0.287 kJ/(kg·K).\nPV = mRT, so\nm = PV/(RT) = 500 × 1/(0.287 × 350)\n  ≈ 4.9776 kg ≈ 4.98 kg, (c).\nUsing 350.15 K gives about 4.975 kg. The source inserts pressure in Pa with R written in kJ units and subsequently labels the result grams; coherent kPa·m³ and kJ units directly give kg.",
+      "sourceExplanation": "V₁ = 1 m³; T₁ = 273 + 77 = 350 K; P₁ = 5 bar = 5 × 10⁵ Pa.\nFor air R = 8.314/29 = 0.287.\nFor ideal gas equation PV = mRT.\n5 × 10⁵ × 1 = m × 0.287 × 350.\nm = (5 × 10⁵)/(0.287 × 350) = 4977.6 gram.\nm = 4.977 = 4.98 kg.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Exact temperature conversions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 204,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II"
+        ]
+      },
+      "question": "General gas equation is",
+      "options": {
+        "a": "Cₚ − Cᵥ = R",
+        "b": "PV = nRT",
+        "c": "PV = zRT",
+        "d": "PV = mRT"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The ideal-gas equation can be written PV = nRᵤT, where n is amount of gas and Rᵤ the universal gas constant, or PV = mRₛT, where m is gas mass and Rₛ = Rᵤ/M the specific gas constant. Thus both (b) and (d) are valid forms under their conventional meanings of R. The source selects (d) but does not define R or n in the choices so as to exclude (b); it additionally misdefines m as “mass of 1 mole” rather than the mass of the sample. No unique answer can be selected from the literal supplied choices.",
+      "sourceExplanation": "General gas equation: PV = mRT.\nWhere P = pressure of gas; V = volume of gas; R = gas constant; T = temperature of gas; m = mass of 1 mole of gas.",
+      "note": "Both mass-based and molar gas equations are native choices. No new symbol definitions were added to force the printed key (d).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 205,
+      "source": {
+        "page": 32,
+        "pageEnd": 32,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "The amount of steam (at 100°C) required to raise the temperature of 200 g of water from 60°C to 100°C is",
+      "options": {
+        "a": "10g",
+        "b": "16.8 g",
+        "c": "20g",
+        "d": "14.8 g"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Assume the steam condenses at 100°C, the mixture reaches 100°C and heat losses are negligible. Steam supplies latent heat mₛhfg and the initial water receives m𝓌c𝓌ΔT.\nGiven hfg = 2257 kJ/kg, c𝓌 = 4.187 kJ/(kg·K), m𝓌 = 0.200 kg and ΔT = 100 − 60 = 40 K,\nmₛ × 2257 = 0.2 × 4.187 × 40 = 33.496 kJ.\nmₛ = 33.496/2257 = 0.01484 kg ≈ 14.8 g, (d).",
+      "sourceExplanation": "Latent heat of steam = 2257 kJ/kg. Specific heat of water = 4.187 kJ/kg.\nm × 2257 = 0.2 × 4.187 × 40.\nm = 14.8 g.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "Boiling point, latent heat and calorimetry"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Calorimetry & Phase Change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 206,
+      "source": {
+        "page": 32,
+        "pageEnd": 33,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "Air is heated from 0°C to 100°C in a sealed metal container. Its density",
+      "options": {
+        "a": "Increases slightly",
+        "b": "Decreases slightly",
+        "c": "Remains the same",
+        "d": "Change cannot be predicted"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The container is sealed, so gas mass m is constant. Density is ρ = m/V. A real metal container expands slightly as it heats, so V increases slightly and the enclosed air density decreases slightly, (b). If the container were idealized as perfectly rigid, its density would remain the same and only pressure would rise with T. The printed derivation incorrectly infers ρ ∝ 1/T from P = ρRT without holding pressure constant; pressure is not constant in the sealed container. Metal expansion, rather than constant-pressure gas expansion, supports the intended slight decrease.",
+      "sourceExplanation": "Heated 0°C → 100°C: temperature increased.\nIdeal gas PV = mRT.\nP = (m/V)RT [ρ = m/V].\nP = ρRT, ρ = density.\nSo P/ρ = RT.\nT ∝ 1/ρ.\nIf temperature increases (↑), then density decreases (↓).",
+      "note": "Retained the printed answer (b) for an expanding metal vessel, but replaced the erroneous constant-pressure reasoning. The exact rigid-container alternative is stated explicitly.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Thermal Expansion",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+          "section": "Volume expansion and bimetallic strips"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 207,
+      "source": {
+        "page": 33,
+        "pageEnd": 33,
+        "examLabels": [
+          "APPSC AEE Screening Test 2016"
+        ]
+      },
+      "question": "A perfect gas obeys",
+      "options": {
+        "a": "Boyle's law only",
+        "b": "Charles' law only",
+        "c": "both Boyle's law and Charles' law",
+        "d": "None of the above"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A perfect gas obeys PV = mRT. At fixed temperature, PV is constant (Boyle’s law); at fixed pressure, V/T is constant (Charles’s law). Thus it obeys both, (c).",
+      "sourceExplanation": "A perfect gas obeys both Boyle’s law and Charles’s law.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 208,
+      "source": {
+        "page": 33,
+        "pageEnd": 33,
+        "examLabels": [
+          "APPSC AEE MAINS 2016 PAPER-III"
+        ]
+      },
+      "question": "An ideal gas can be taken from point K to point N in three different paths: K → L → N, K → N, K → M → N. Which of the following is a true statement?",
+      "options": {
+        "a": "The same work is done during each process.",
+        "b": "The same amount of heat is added to the gas during each process",
+        "c": "The same change in internal energy during each process",
+        "d": "The same entropy generated during each process"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "All three paths share the same initial state K and final state N. Internal energy is a state property (point function), so its change ΔU = Uₙ − Uₖ is identical for each path, (c). Boundary work is the path-dependent area under the P–V path: K–L–N gives the largest area, K–M–N the smallest, and the straight K–N path an intermediate area. Heat also differs because Q = ΔU + W. Entropy generation is not fixed by endpoints alone; only the system entropy change is a state-function difference. The source repeats the same P–V path sketch in its solution.",
+      "sourceExplanation": "From this diagram we get the same change in internal energy during each process as it is the property of the system (i.e. point function), whereas work and heat for each process will be different because area under P–V and T–S diagrams will be different for each process (i.e. path function). The solution repeats the P–V diagram with K at upper left, L upper right, M lower left and N lower right, and all three paths directed from K to N.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [
+        {
+          "page": 33,
+          "bbox": [
+            125,
+            321,
+            237,
+            408
+          ],
+          "placement": "question",
+          "alt": "P–V diagram with K, L, M, N at the corners of a rectangle and paths K–L–N, K–N and K–M–N."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 209,
+      "source": {
+        "page": 33,
+        "pageEnd": 34,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "Which of the following is the correct statement for “Energy (E)”?",
+      "options": {
+        "a": "“Energy (E)” is not the property of system",
+        "b": "“Energy (E)” is path function",
+        "c": "Change in energy between two states of a system is different for different path followed",
+        "d": "∮dE = 0"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Energy E is a property of the system and hence a point function. Its change between two specified states is the same for every path. A cycle returns to the initial state, so the cyclic integral of the exact differential vanishes: ∮dE = 0, (d).",
+      "sourceExplanation": "• Energy E is the property of the system and it is the point function.\n• Change in energy between two states of a system is the same for different paths followed.\n• For a cycle, ∮dE = 0.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 210,
+      "source": {
+        "page": 33,
+        "pageEnd": 33,
+        "examLabels": [
+          "RPSC LECTURER 16.01.2016"
+        ]
+      },
+      "question": "Which of the following equations is incorrect? (V, P, T and Q are volume, pressure, temperature and heat transfer respectively.)",
+      "options": {
+        "a": "∮dV = 0",
+        "b": "∮dP = 0",
+        "c": "∮dT = 0",
+        "d": "∮dQ = 0"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "V, P and T are state properties with exact differentials, so returning to the initial state gives ∮dV = ∮dP = ∮dT = 0. Heat is a path-dependent transfer and has inexact differential δQ; its cyclic integral need not vanish. For a heat-engine cycle ∮δQ = ∮δW = Wnet, generally nonzero. Hence the claimed universal equation ∮dQ = 0 is incorrect, (d). Some special cycles do have zero net heat; the point is that zero is not a state-function identity for heat.",
+      "sourceExplanation": "∮δQ ≠ 0; ∮dV = 0; ∮dP = 0; ∮dT = 0. Because V, P and T are properties of the system, whereas Q and work W are not properties of the system. Cyclic integration of the system properties will be equal to zero.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        },
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 211,
+      "source": {
+        "page": 33,
+        "pageEnd": 33,
+        "examLabels": [
+          "RPSC LECTURER 16.01.2016"
+        ]
+      },
+      "question": "Which of the following statements is correct for \"Energy\"",
+      "options": {
+        "a": "It isa point function",
+        "b": "It isa path function",
+        "c": "It is not a conserved quantity",
+        "d": "It can be measured by thermometer"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Energy is a point function, (a), and obeys conservation. The source classification is:\nEnergy → stored energy → internal energy → point function.\nEnergy → transient energy → work and heat → path functions.\nMore precisely, heat and work are modes of transfer, while the system’s energy is a stored state property. A thermometer measures temperature rather than total energy.",
+      "sourceExplanation": "Classification diagram: Energy branches into stored energy and transient energy. Stored energy → internal energy → point function. Transient energy → work, heat → path function.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        },
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 212,
+      "source": {
+        "page": 33,
+        "pageEnd": 33,
+        "examLabels": [
+          "GPSC ARTO 01.05.2016"
+        ]
+      },
+      "question": "Consider the following statements, which is the true statement?",
+      "options": {
+        "a": "Dashpot is an open system",
+        "b": "Throttling is a reversible process",
+        "c": "Turbine is an isolated system",
+        "d": "Isothermal expansion is an_ irreversible process"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "None of the supplied statements is generally true. A conventional sealed dashpot is a closed system; throttling is irreversible; and a turbine exchanges mass and work and is therefore not isolated. Isothermal expansion can be reversible or irreversible depending on how it is performed: slow frictionless expansion with infinitesimal driving differences is reversible, while expansion across finite pressure differences is irreversible. Constant temperature alone does not establish irreversibility. The source keys (d), but the literal statement in (d) is not a general truth. No correct unique option is supplied.",
+      "sourceExplanation": "Isothermal expansion means temperature as the process is constant is an irreversible process.",
+      "note": "Printed key (d) is not justified by the isothermal condition. Retained the source wording and every choice; no “can be” or other qualification has been inserted into the options.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Quasi-static processes and free expansion"
+        },
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Reversibility & Cycles",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 213,
+      "source": {
+        "page": 33,
+        "pageEnd": 34,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Which is not a thermometric property",
+      "options": {
+        "a": "Pressure",
+        "b": "Wavelength",
+        "c": "Resistance",
+        "d": "Flow rate"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "A thermometric property changes reproducibly with temperature and can be calibrated to measure it. Pressure at fixed gas volume, electrical resistance, thermocouple emf and features of thermal-radiation spectra are such properties. Ordinary flow rate is not a thermometric property, (d).\nThe source’s instrument/property pairs are:\n1. Constant-volume gas thermometer — pressure.\n2. Electrical resistance thermometer — resistance.\n3. Thermocouple — voltage (emf).\n4. Pyrometer — wavelength (more precisely, a temperature-dependent thermal-radiation quantity, such as spectral radiance or wavelength of peak emission).",
+      "sourceExplanation": "Flow rate is not a thermometric property. Examples:\nSome instrument — Thermometric property:\n(1) Constant-volume gas thermometer — pressure.\n(2) Electrical resistance thermometer — resistance.\n(3) Thermocouple — voltage (emf).\n(4) Pyrometer — wavelength.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "section": "Ideal gas law and van der Waals equation"
+        },
+        {
+          "title": "NIST: Radiation Thermometry",
+          "url": "https://www.nist.gov/programs-projects/radiation-thermometry",
+          "section": "Radiation thermometers and blackbody calibration"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 214,
+      "source": {
+        "page": 34,
+        "pageEnd": 34,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Which one is correct regarding the concept of continuum",
+      "options": {
+        "a": "Mean free path of gas in a container is equal to or greater than the dimension of container",
+        "b": "Mean free path of gas in a container is less than or greater than the dimension of container",
+        "c": "Mean free path has no significance in continuum approach",
+        "d": "Mean free path is essential for calculating pressure in continuum approach"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "A continuum description requires the molecular mean free path λ to be much smaller than the relevant macroscopic dimension L; the Knudsen number is Kn = λ/L, with the source’s criterion Kn < 0.01. None of the printed choices states this requirement. Choice (b) literally says “less than or greater than,” so it includes non-continuum conditions and cannot be treated as “much less than” without rewriting it. The printed key (b) conflicts with its correct short explanation. No unique correct native choice is available.",
+      "sourceExplanation": "Mean free path of gas in a container must be very small compared to system dimension, such that Kn < 0.01. Kn — Knudsen number.",
+      "note": "Visually verified the malformed (b): “less than or greater than the dimension of container.” This is a source defect, not OCR; the distractor has been preserved literally.",
+      "references": [
+        {
+          "title": "NASA: Knudsen Number",
+          "url": "https://ntrs.nasa.gov/api/citations/20030000770/downloads/20030000770.pdf",
+          "section": "Continuum: Kn < 0.01"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Pressure, Temperature, and RMS Speed",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+          "section": "Kinetic theory, molecular speed and mean free path"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Continuum & Molecular Models",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 215,
+      "source": {
+        "page": 34,
+        "pageEnd": 34,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "The heat-transfer and work-transfer values for four processes of a thermodynamic cycle are:\nProcess 1: heat 400 kJ; work 400 kJ.\nProcess 2: heat zero; work 350 kJ.\nProcess 3: heat −200 kJ; work −200 kJ.\nProcess 4: heat zero; work −350 kJ.\nThe thermal efficiency and work ratio for the cycle will be, respectively:",
+      "options": {
+        "a": "50% and 0.27",
+        "b": "33% and 0.27",
+        "c": "33% and 0.37",
+        "d": "50% and 0.37"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For the full cycle, Wnet = ΣW = 400 + 350 − 200 − 350 = 200 kJ; net heat is likewise 400 − 200 = 200 kJ, consistent with ΔUcycle = 0.\nHeat supplied Qin = 400 kJ, so thermal efficiency ηth = Wnet/Qin = 200/400 = 0.50 = 50%.\nGross positive work Wpositive = 400 + 350 = 750 kJ.\nWork ratio = Wnet/Wpositive = 200/750 = 0.2667 ≈ 0.27.\nThe pair is 50% and 0.27, (a).",
+      "sourceExplanation": "ηth = net work done/heat supplied\n= (400 + 350 − 200 − 350)/400\n= 200/400 = 50%.\nWork ratio = net work/positive work = Wnet/WT = 200/750.\nWork ratio = 0.27.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Cycles, Efficiency & Work Ratio",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 216,
+      "source": {
+        "page": 34,
+        "pageEnd": 34,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "A new temperature scale in degree L is to be defined. The boiling and freezing points of water on this scale are 500°L and 50°L respectively. What will be the reading on new scale corresponding to 60°C?",
+      "options": {
+        "a": "220°L",
+        "b": "320°L",
+        "c": "180°L",
+        "d": "280°L"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The scale is linear, with 0°C ↔ 50°L and 100°C ↔ 500°L. At 60°C,\n(60 − 0)/(100 − 0) = (L − 50)/(500 − 50).\n60/100 = (L − 50)/450.\n3/5 = (L − 50)/450.\n3 = (L − 50)/90.\n270 = L − 50.\nL = 270 + 50 = 320°L, (b).",
+      "sourceExplanation": "The scale sketch shows 100°C corresponding to 500°L, 0°C corresponding to 50°L, and 60°C corresponding to L.\n(60 − 0)/(100 − 0) = (L − 50°L)/(500°L − 50°L).\n60/100 = (L − 50°L)/450°L.\n3/5 = (L − 50°L)/450°L.\n3 = (L − 50°L)/90°L.\n270°L = L − 50°L.\nL = 270°L + 50°L.\nL = 320°L.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Exact temperature conversions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 217,
+      "source": {
+        "page": 34,
+        "pageEnd": 34,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "Which of the following statement is correct?",
+      "options": {
+        "a": "A sphere a cube and a thin circular plate of the same mass are made of the same material. If all of them are heated to the same high temperature the rate of cooling is maximum for the plate and minimum for the sphere.",
+        "b": "One mole of a monoatomic ideal gas is mixed with one mole of diatomic ideal gas. The molar specific heat of the mixture at constant volume is 2R. where R is the molar gas constant.",
+        "c": "Boilers are occasionally scrubbed by rapidly and artificially circulating water inside them to remove any thin water film which may have formed on their inside.",
+        "d": "The average kinetic energy of | kg of all ideal gases, at the same temperature is the same."
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "At ordinary temperatures, a monatomic ideal gas has molar Cᵥ = 3R/2 and a rigid diatomic ideal gas has molar Cᵥ = 5R/2. For one mole of each, total constant-volume heat capacity is (3R/2 + 5R/2) = 4R for two moles. The mixture molar heat capacity is 4R/2 = 2R. Thus (b) is true.\nChoice (a) is also true under the usual identical surface/emissivity/heat-transfer conditions: equal mass and material mean equal volume and heat capacity. A sphere has the smallest area for that volume, while a thin plate has a much larger exposed area; it cools fastest and the sphere slowest.\nChoice (c) incorrectly invokes removal of a thin water film rather than insulating deposits or vapor films. Choice (d) is false because the number of molecules in 1 kg varies with molar mass: translational kinetic energy is (3/2)mRₛT, not a universal value per kg. Since both (a) and (b) are correct in the standard setting, the single printed key (b) is not unique.",
+      "sourceExplanation": "One mole of a monoatomic ideal gas is mixed with one mole of diatomic ideal gas. The molar specific heat of the mixture at constant volume is 2R, where R is the molar gas constant.",
+      "note": "The supplied choice (a) is a valid surface-area cooling comparison as well as the valid mixture result (b). Preserved every long native choice and source answer rather than deleting the extra correct statement.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Pressure, Temperature, and RMS Speed",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+          "section": "Kinetic theory, molecular speed and mean free path"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Thermal Expansion",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+          "section": "Volume expansion and bimetallic strips"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 218,
+      "source": {
+        "page": 34,
+        "pageEnd": 34,
+        "examLabels": [
+          "GPSC Lect. 23.10.2016"
+        ]
+      },
+      "question": "Which one of the following is not a property of the system",
+      "options": {
+        "a": "Pressure",
+        "b": "Temperature",
+        "c": "Work transfer",
+        "d": "Entropy"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A system property depends on state, rather than the process used to reach that state. Pressure, temperature and entropy are properties. Work transfer depends on the path and is a boundary energy interaction, so it is not a property, (c). Examples of properties listed in the source include mass, temperature, volume and pressure.",
+      "sourceExplanation": "Properties of substances are things which depend only on point, such as mass, temperature, volume and pressure.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 219,
+      "source": {
+        "page": 34,
+        "pageEnd": 35,
+        "examLabels": [
+          "GPSC Lect. 23.10.2016"
+        ]
+      },
+      "question": "The increase in pressure",
+      "options": {
+        "a": "lowers the boiling point of a liquid",
+        "b": "raises the boiling point of a liquid",
+        "c": "does not affect the boiling point ofa liquid",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A liquid boils when its saturation vapor pressure equals the surrounding pressure. Saturation pressure increases with temperature in the ordinary liquid–vapor coexistence range; raising the applied pressure therefore raises the boiling temperature, (b).",
+      "sourceExplanation": "Increase in pressure raises the boiling point of a liquid.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "Boiling point, latent heat and calorimetry"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Calorimetry & Phase Change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 220,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "A thermometer works on the principle of",
+      "options": {
+        "a": "Law of stable equilibrium",
+        "b": "Zeroth law of thermodynamics",
+        "c": "First law of thermodynamics",
+        "d": "Second law of thermodynamics"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A thermometer comes to thermal equilibrium with the object being measured. The zeroth law ensures that equality of temperature defines thermal equilibrium and permits a third calibrated body to compare temperatures. Thus (b), the zeroth law of thermodynamics, is the operating basis.",
+      "sourceExplanation": "A thermometer works on the principle of zeroth law of thermodynamics.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 221,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3"
+        ]
+      },
+      "question": "Properties of substances like pressure, temperature and density in thermodynamics coordinates are",
+      "options": {
+        "a": "Cyclic function",
+        "b": "Point function",
+        "c": "Real Function",
+        "d": "Path function"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Pressure, temperature and density depend only on the equilibrium state and are point functions, (b). They have exact differentials. For example, ∫[1→2]dV = V₂ − V₁ = ΔV regardless of whether the system follows source path A or path B between the same endpoints. Other examples are enthalpy, volume and entropy.\nHeat and work depend on the process path; they are boundary interactions, have inexact differentials and are not properties. Their transfers are written ∫[1→2]δW = W₁₂ and ∫[1→2]δQ = Q₁₂, rather than changes in stored work or stored heat: W₁₂ ≠ ΔW = W₂ − W₁ and Q₁₂ ≠ ΔQ = Q₂ − Q₁. Entropy generation is also process-dependent, although entropy itself is a property.",
+      "sourceExplanation": "Point Functions—They depend on state only and not on process (how a system reaches that state), and they are exact differentials. Examples—pressure, temperature, enthalpy, volume, entropy, etc.\n∫[1→2]dV = V₂ − V₁ = ΔV. The P–V sketch shows two paths, Process A and Process B, between states 1 at V₁ and 2 at V₂.\nPath Functions—They depend on how a system reaches that state (i.e. process). So path functions are boundary phenomena and are inexact differentials. They are not properties of system. Examples—heat, work and entropy generation, etc.\n∫[1→2]δW = W₁₂ ≠ ΔW = W₂ − W₁; or ∫[1→2]δQ = Q₁₂ ≠ ΔQ = Q₂ − Q₁.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [
+        {
+          "page": 35,
+          "bbox": [
+            133,
+            385,
+            235,
+            471
+          ],
+          "placement": "explanation",
+          "alt": "P–V paths A and B joining the same states 1 and 2 at volumes V₁ and V₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 222,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II"
+        ]
+      },
+      "question": "Which one of the following is the extensive property of Thermodynamic System?",
+      "options": {
+        "a": "Heat",
+        "b": "Density",
+        "c": "Pressure",
+        "d": "Temperature"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "None of the supplied choices is an extensive property. Density, pressure and temperature are intensive properties. Heat is a path-dependent mode of energy transfer, so it is not a stored thermodynamic property at all. The source selects (a), heat, but that does not satisfy the question’s word “property.”\nActual extensive properties depend on system amount: mass, volume, internal energy, heat capacity, enthalpy, entropy, Helmholtz energy and Gibbs energy. Intensive properties are independent of amount: pressure, temperature, density, concentration, melting point, boiling point, surface tension and viscosity. The lists in the source are retained, but they do not make heat a state property.",
+      "sourceExplanation": "Extensive property—Depends on the mass of system. Examples—mass, volume, internal energy, heat capacity, enthalpy, entropy, Helmholtz energy, Gibbs energy.\nIntensive property—Independent of the mass of system. Examples—pressure, temperature, density, concentration, melting point, boiling point, surface tension, viscosity.",
+      "note": "The native key calls heat an extensive property; none of the four choices is an extensive state property. No replacement option introduced.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Intensive & Extensive Properties",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 223,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "CGPSC Poly. Lect. 22.05.2016"
+        ]
+      },
+      "question": "Match List-I with List-II and select the correct answer.\nList-I: A. Throttling process; B. Isentropic process; C. Free expansion; D. Isothermal process.\nList-II: 1. No work done; 2. No change in entropy; 3. Constant internal energy; 4. Constant enthalpy.\nCode is in order A, B, C, D.",
+      "options": {
+        "a": "4, 2, 1, 3",
+        "b": "1, 2, 4, 3",
+        "c": "4, 3, 1, 2",
+        "d": "1, 3, 4, 2",
+        "e": "None of the above"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Under the usual models, A–4: throttling is isenthalpic, h₁ = h₂ = h. B–2: isentropic means no entropy change, S = constant. C–1: free expansion has no external work, W = 0 (and Q = 0 if insulated). D–3: isothermal ideal-gas evolution has constant internal energy because U = f(T). Thus the code A, B, C, D = 4, 2, 1, 3 is (a). Isothermal constant-U behavior requires the ideal-gas assumption explicitly stated in the source explanation.",
+      "sourceExplanation": "Throttling process — constant enthalpy (h₁ = h₂ = h).\nIsentropic process — no change in entropy (S = constant).\nFree expansion — no work done [(W = 0, Q = 0)].\nIsothermal process — constant internal energy; U = f(T) for ideal gas.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Quasi-static processes and free expansion"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 224,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "Assam PSC CCE Pre 2015"
+        ]
+      },
+      "question": "As differentials, heat and work would be described mathematically as",
+      "options": {
+        "a": "exact",
+        "b": "inexact",
+        "c": "point function",
+        "d": "discontinuity"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Heat and work depend on the path followed between states, so their infinitesimal transfers are inexact differentials, conventionally written δQ and δW, (b). They cannot be obtained as differences between state values Q₂ − Q₁ or W₂ − W₁ because heat and work are not stored properties.",
+      "sourceExplanation": "As differentials, heat and work would be described mathematically as inexact, because they depend on the path followed by processes.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Properties & Path Functions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 225,
+      "source": {
+        "page": 35,
+        "pageEnd": 35,
+        "examLabels": [
+          "NPCIL ET, 2015"
+        ]
+      },
+      "question": "The amount of heat required to raise the temperature of the unit mass of gas through one degree at constant volume is called-",
+      "options": {
+        "a": "Specific heat at constant volume",
+        "b": "Specific heat at constant pressure",
+        "c": "Kilo Joule",
+        "d": "None of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The stated definition is specific heat at constant volume, Cᵥ, (a). For a mass m heated through ΔT with approximately constant Cᵥ, Q = mCᵥΔT. More generally Cᵥ = (∂u/∂T)ᵥ and Qᵥ = m∫CᵥdT in a closed simple-compressible constant-volume process without other work.",
+      "sourceExplanation": "The amount of heat required to raise the temperature of the unit mass of gas through one degree at constant volume is called specific heat at constant volume. Q = mCᵥΔT.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 226,
+      "source": {
+        "page": 35,
+        "pageEnd": 36,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "In free expansion of a ideal gas between two equilibrium states, the work transfer involved",
+      "options": {
+        "a": "can be calculated by joining the two states on p-v coordinates by any path and estimating the area below",
+        "b": "can be calculated by joining the two states by a quasi-static path and then finding the area below",
+        "c": "is zero",
+        "d": "is equal to heat generated by friction during expansion"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Free expansion is against zero opposing pressure, so W = ∫Pext dV = 0, (c). The expansion is irreversible and non-quasi-static; an arbitrary line joining the equilibrium endpoints on a P–V diagram does not represent the actual work. If the system is also insulated, Q = 0 and ideal-gas ΔU = 0, while entropy increases by ΔS = mR ln(V₂/V₁) > 0. The source’s expression contrasting Wfree = 0 with a nonzero ∫P dV warns against using a quasi-static system-pressure curve for a free expansion; an equilibrium pressure path is not defined during that expansion.",
+      "sourceExplanation": "In free expansion of a gas between two equilibrium states, work transfer involved is zero and heat transfer also zero. Free expansion is an irreversible process, so entropy is not constant for this process.\nWfree expansion = 0, but (∫P dV)free expansion ≠ 0.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Quasi-static processes and free expansion"
+        },
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Free Expansion",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 227,
+      "source": {
+        "page": 36,
+        "pageEnd": 36,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "The temperature in a process in which work is done by expanding a gas under adiabatic condition will",
+      "options": {
+        "a": "Increase",
+        "b": "Decrease",
+        "c": "Remain unchanged",
+        "d": "Decrease/increase depending on properties of gas"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For the intended ideal-gas closed-system process, neglecting changes in kinetic and potential energy, the first law is Q₁₂ = ΔU₁₂ + W₁₂. Adiabatic means Q₁₂ = 0. If the gas does positive work W₁₂ > 0, then ΔU₁₂ = −W₁₂ < 0. Since ΔU = mCᵥ(T₂ − T₁), T₂ < T₁: temperature decreases, (b). For a reversible path, mCᵥdT = −P dV and dT = −P dV/(mCᵥ) < 0 during expansion.\nThe printed diagram instead shows gas separated from vacuum by a removable barrier. That is free expansion, which does no work and leaves ideal-gas temperature unchanged; it does not illustrate the question’s specified work-producing expansion. The source also uses Cₚ and an extraneous pressure factor in its algebra; the derivation here uses Cᵥ correctly.",
+      "sourceExplanation": "For expansion of gas under adiabatic condition. The sketch has gas on the left, vacuum on the right, and a barrier between them.\nLet process 1–2 be adiabatic expansion of ideal gas, Q₁₂ = 0.\nWe know Q₁₂ = U₁₂ + W₁₂.\n−U₁₂ = W₁₂ ⇒ −mCₚdT = ∫[1→2]P dV.\ndT = −[P/(mCₚ)]∫[1→2]P dV ⇒ dT < 0.\nSo temperature will decrease during the adiabatic expansion.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Reversible and Irreversible Processes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-1-reversible-and-irreversible-processes",
+          "section": "Quasi-static processes and free expansion"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Adiabatic Processes",
+      "figures": [
+        {
+          "page": 36,
+          "bbox": [
+            141,
+            382,
+            226,
+            465
+          ],
+          "placement": "explanation",
+          "alt": "Source sketch of gas and vacuum separated by a barrier; this depicts free expansion and conflicts with the work-producing expansion assumed in the solution."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 228,
+      "source": {
+        "page": 36,
+        "pageEnd": 36,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "Which of the following is not the intensive property?",
+      "options": {
+        "a": "pressure",
+        "b": "heat",
+        "c": "density",
+        "d": "temperature"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Pressure, density and temperature are intensive properties, independent of system amount. Heat is a transfer across a boundary and is not a state property, so it is certainly not an intensive property; (b) is the intended and unique exception among the choices.\nOther intensive examples are viscosity and specific energy. Extensive state properties include volume, energy, entropy and enthalpy. The source’s additional listing of heat as an extensive property is inaccurate: heat transfer may scale with amount for a specified process, but it remains a path function.",
+      "sourceExplanation": "Intensive property: does not depend on mass. Examples—pressure, temperature, density, viscosity, specific energy, etc.\nExtensive property: depends on mass. Examples—volume, energy, entropy, enthalpy, heat, etc.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Changing the State of a System with Heat and Work",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node12.html",
+          "section": "Heat, work, system boundaries and reversibility"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Intensive & Extensive Properties",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 229,
+      "source": {
+        "page": 36,
+        "pageEnd": 36,
+        "examLabels": [
+          "ISRO Scientist/Engineer 11.10.2015"
+        ]
+      },
+      "question": "The difference between two specific heats is Cₚ − Cᵥ = R/J. This relation is valid for:",
+      "options": {
+        "a": "any gas",
+        "b": "perfect gases",
+        "c": "real gases",
+        "d": "pure gases"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Mayer’s relation Cₚ − Cᵥ = R is valid for an ideal gas, called a perfect gas here, (b). With mechanical and thermal units separated it is written Cₚ − Cᵥ = R/J, exactly as in the question. It follows by differentiating h = u + RT at fixed gas composition. A calorically perfect gas additionally approximates Cₚ and Cᵥ as independent of temperature; that constancy is stronger than the ideal-gas equation alone and is not necessary for Mayer’s relation.",
+      "sourceExplanation": "Cₚ − Cᵥ = R → “Ideal gas or Perfect gas”. All perfect gases are ideal gases, and for perfect gas Cₚ and Cᵥ do not change with temperature.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacities of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+          "section": "Internal energy, heat capacities and Mayer relationship"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Specific Heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "number": 230,
+      "source": {
+        "page": 36,
+        "pageEnd": 36,
+        "examLabels": [
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "Work output from a system is at the expense of internal energy is a non flow process carried out",
+      "options": {
+        "a": "at constant pressure",
+        "b": "at constant volume",
+        "c": "adiabatically",
+        "d": "polytropically"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a closed non-flow system with negligible kinetic and potential energy changes, ΔU = Q − W. If the process is adiabatic, Q = 0, so Wout = −ΔU: work output is supplied entirely by a decrease in internal energy. Hence (c). Constant volume gives no simple boundary-work output; other paths generally allow simultaneous heat transfer.",
+      "sourceExplanation": "Work output from a system at the expense of internal energy is a non-flow process carried out adiabatically.",
+      "note": "Question, every choice and complete explanation reconciled with the native scan. Independently checked the governing thermodynamic relationship.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: First Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "section": "Energy conservation and sign conventions"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, work, first law and ideal-gas relationships"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Adiabatic Processes",
       "figures": [],
       "transcriptionReviewed": true
     }

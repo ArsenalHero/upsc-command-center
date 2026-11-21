@@ -1,4 +1,4 @@
-# Engineering Mechanics source import
+# Mechanical source imports
 
 This importer is restricted to the selected 142-page PDF, printed pages 15–156.
 Its SHA-256 is `7e5ed55860f7f23dee3d581c0e5c6df9932d716613a54a619789a14417709fc0`.
@@ -90,16 +90,22 @@ Accuracy excludes disputed, skipped and structurally unresolved answers. Histori
 results retain their original answer snapshot. Fresh-only sets exclude previously
 checked/skipped items; users can deliberately revisit questions in saved review.
 
-## Thermodynamics questions 1–150
+## Complete Thermodynamics upload
 
 The Thermodynamics overlays use the attached second extract, identified by SHA-256
 `b7734b9ee9efc82e6b2fa960e8ebf0400f892fa6f19ecbed8bbe8a5ad8093c21`.
-Questions 1–150 start on printed pages 15–38, with the last explanation continuing
-onto page 39. The packager checks that boundary and requires a review of every item.
-Q122 has no printed answer choices and is presented as an ungraded study question.
+The latest HTML attachment contains all 940 questions across printed pages 15–165.
+Its SHA-256 is `184a26c92eb62efdcf6da1f8f049eab68e350d67b4a7e18d28236feb5016a11a`.
+The importer reads the literal BANK JSON without executing the uploaded scripts.
+Every question, choice and complete adjacent explanation is reconciled with the
+scans. The production subject includes the HTML provenance, native text, reviewed
+answers, and tight diagram crops. Full question and solution photographs from the
+HTML are not published. Missing choices and conflicting answers remain ungraded.
 
 ```sh
-python app/scripts/mechanical/package_thermodynamics.py --pdf '/path/to/MECH AE 02 FULL 35000-15-165(1).pdf'
+python app/scripts/mechanical/package_thermodynamics.py \
+  --pdf '/path/to/MECH AE 02 FULL 35000-15-165(1).pdf' \
+  --html '/path/to/Mechanical_Thermodynamics_940_Questions_FINAL_With_Explanations(1).html'
 npm --workspace app run test:mechanical
 npm run build
 ```

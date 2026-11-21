@@ -44,3 +44,11 @@
 @media(max-width:540px){.mechanical-practice{gap:16px}.mech-hero{padding:20px;gap:15px}.mech-hero h2{font-size:21px}.mech-hero .eyebrow{font-size:8px}.mech-hero-count{padding-left:12px}.mech-hero-count strong{font-size:28px}.mech-tabs{gap:0}.mech-tabs>button{flex:1;padding:11px 7px;justify-content:center;font-size:10px;gap:5px}.mech-tabs svg{width:13px}.mech-filter-grid{gap:13px}.mech-filters,.mech-question-list>article,.mech-question{padding:18px 15px}.mech-row-foot>div{width:100%;gap:12px}.mech-row-foot>div>.btn{margin-left:auto}.mech-set-builder{padding:18px;gap:15px}.mech-set-builder>div{flex-basis:100%}.mech-set-builder>.btn{width:100%;justify-content:center}.mech-set-heading{flex-wrap:wrap;padding:20px}.mech-question-actions>.btn{flex:1;justify-content:center}.mech-options>label{padding:11px;gap:8px}.mech-study-text{font-size:13px}.mech-question-text{font-size:14px}.mech-metric-grid{gap:10px}.mech-metric-grid>div{padding:17px}.mech-outcomes,.mech-subject-analysis,.mech-history{padding:18px}.mech-outcome-body{gap:18px}.mech-outcome-ring{flex-basis:132px;height:132px}.mech-review-shortcuts>.btn{flex:1;justify-content:center}.mech-history article>div:last-child{width:100%;justify-content:space-between}}
 
 .mech-review-coverage .mech-audit-link { display: block; width: fit-content; }
+
+/* Keep long native-text solutions and formula choices readable on every screen. */
+.mech-study-text,.mech-source-original>.mech-study-text,.mech-readonly-options>li,.mech-options>label{font-size:1rem;line-height:1.85}
+.mech-question-text{font-size:1.0625rem}
+.mech-question-preview{font-size:1rem;line-height:1.75;max-height:5.25em}
+.mech-subject-grid strong{font-size:1rem}
+.mech-subject-grid small,.mech-filter-grid>label,.mech-filter-grid :is(select,input),.mech-tabs>button,.mech-review-note,.mech-answer-status{font-size:.875rem}
+@media(max-width:540px){.mech-tabs>button{font-size:.8125rem}.mech-tabs svg{display:none}.mech-question-text{font-size:1rem}}

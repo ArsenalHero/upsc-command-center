@@ -686,6 +686,629 @@
       "subtopic": "Ideal & Real Gases",
       "figures": [],
       "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-28-76",
+      "number": 76,
+      "source": {
+        "page": 14,
+        "pageEnd": 14,
+        "examLabels": [
+          "BPSC Poly. Lect. 2016",
+          "VIZAG STEEL MT 2015"
+        ]
+      },
+      "question": "A reversible polytropic process is given by",
+      "options": {
+        "a": "T₁/T₂ = (ρ₁/ρ₂)^(n − 1)",
+        "b": "P₁/P₂ = (ρ₁/ρ₂)^(n − 1)",
+        "c": "T₁/T₂ = (P₁/P₂)^(n − 1)",
+        "d": "P₁/P₂ = (ρ₁/ρ₂)^((n − 1)/n)"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a fixed mass of ideal gas, PVⁿ = constant and PV/T = constant. Hence T₁/T₂ = (V₂/V₁)^(n − 1). Since ρ = m/V, V₂/V₁ = ρ₁/ρ₂, giving T₁/T₂ = (ρ₁/ρ₂)^(n − 1), the intended choice (a). The corresponding pressure relations are P₁/P₂ = (ρ₁/ρ₂)ⁿ and T₁/T₂ = (P₁/P₂)^((n − 1)/n).\nReversibility and the polytropic pressure-volume relation alone do not establish the ideal-gas equation of state. The source does not identify a gas model, so its temperature relation is conditional and the question is left ungraded.",
+      "note": "All four printed equation choices were transcribed from the native scan, including the density symbol ρ, every exponent and the numerator in (d). The source solution uses the unstated ideal-gas equation PV/T = constant; no ideal-gas condition has been inserted into the stem.",
+      "references": [
+        {
+          "title": "BCcampus: Introduction to Engineering Thermodynamics, Work",
+          "url": "https://pressbooks.bccampus.ca/thermo1/chapter/4-3-work/",
+          "section": "Polytropic process, ideal-gas qualifications and boundary-work integrals"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "PVⁿ = Constant (for polytropic process).\nPV/T = Constant.\nP₁V₁/T₁ = P₂V₂/T₂.\nP₁/P₂ = (V₂/V₁) × (T₁/T₂).\nP₁/P₂ = (V₂/V₁)ⁿ.\n(T₁/T₂) × (V₂/V₁) = (V₂/V₁)ⁿ.\nT₁/T₂ = (V₂/V₁)^(n − 1).\nV ∝ 1/ρ.\nT₁/T₂ = (ρ₁/ρ₂)^(n − 1)."
+    },
+    {
+      "id": "mech-thermodynamics-28-77",
+      "number": 77,
+      "source": {
+        "page": 14,
+        "pageEnd": 14,
+        "examLabels": [
+          "GATE 2021",
+          "APPSC Poly Lect. 13.03.2020"
+        ]
+      },
+      "question": "The vapour pressure (mm Hg) of solid NH₃ is given by\nln p = 23.05 − 3754/T\nand that of liquid ammonia is given by\nln p = 19.49 − 3063/T.\nWhere, T is in Kelvin. What will be the triple point temperature of NH₃?",
+      "options": {
+        "a": "140.3 K",
+        "b": "195.2 K",
+        "c": "225 K",
+        "d": "280 K"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "At the triple point, the solid-vapour and liquid-vapour equilibrium pressures are equal at the same temperature. Using the data in the printed question:\n23.05 − 3754/T = 19.49 − 3063/T,\n3.56 = 691/T, so T = 691/3.56 = 194.1011 K.\nNone of the four choices gives this value. The printed solution changes 23.05 to 23.03, which instead gives T = 691/3.54 = 195.1977 K and explains the intended answer (b), 195.2 K. That change is a source inconsistency, not a rounding step. Equal equilibrium temperature and pressure do not make every phase property identical: for example, the phases can have different density and enthalpy. The original data and choices are retained and the answer is withheld.",
+      "note": "Native scan confirms 23.05 in the stem and 23.03 in the worked equation. The source also prints 195.197 K = 195.23 K, an inconsistent final equality. These defects and the incorrect “all properties identical” statement are preserved in the complete sourceExplanation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+          "section": "Coexistence of three phases at the triple-point temperature and pressure"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given data:\nln p = 23.03 − 3754/T .......... (1)\nVapour pressure (mm Hg) of solid NH₃ is –\nFor liquid ammonia –\nln p = 19.49 − 3063/T .......... (2)\nAt triple point all three phases co-exist so all properties of substances should be identical.\nSubtracting equation (2) from equation (1):\n= 3.54 − 691/T = 0.\n⇒ T = 691/3.54.\n⇒ T = 195.197 K = 195.23 K."
+    },
+    {
+      "id": "mech-thermodynamics-28-78",
+      "number": 78,
+      "source": {
+        "page": 14,
+        "pageEnd": 14,
+        "examLabels": [
+          "TSPSC AEE 2017",
+          "CSE Pre-2006, 1995"
+        ]
+      },
+      "question": "A new temperature scale in degrees N is to be defined. The boiling and freezing points on this scale are 400°N and 100°N respectively. What will be the reading on new scale corresponding to 60°C?",
+      "options": {
+        "a": "280°N",
+        "b": "180°N",
+        "c": "220°N",
+        "d": "120°N"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given: boiling point = 400°N; freezing point = 100°N.\nThe source calibration diagram pairs 100°C with 400°N, 60°C with N°, and 0°C with 100°N.\n(60 − 0)/(100 − 0) = (N − 100)/(400 − 100).\n60/100 = (N − 100)/300.\nN − 100 = 180.\nN = 280°N.",
+      "note": "Independently calculated the linear calibration N = 100 + 3C. The genuine three-level calibration diagram is retained as a tight crop; its equations remain editable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Thermometers and Temperature Scales",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-2-thermometers-and-temperature-scales",
+          "section": "Affine temperature-scale conversion and the dilute constant-volume gas thermometer"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [
+        {
+          "page": 14,
+          "bbox": [
+            367,
+            532,
+            461,
+            586
+          ],
+          "placement": "explanation",
+          "alt": "Three-level temperature calibration: 100°C corresponds to 400°N, 60°C to N°, and 0°C to 100°N."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-28-79",
+      "number": 79,
+      "source": {
+        "page": 14,
+        "pageEnd": 15,
+        "examLabels": [
+          "CGPSC AE 15.01.2021",
+          "CGPSC AE 16.10.2016"
+        ]
+      },
+      "question": "Two gases having molecular weight 32 and 28 expand at constant pressure through the same temperature range. The ratio of work done by the two gases will be :",
+      "options": {
+        "a": "8:7",
+        "b": "7:6",
+        "c": "3:2",
+        "d": "7:8"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a fixed amount of ideal gas at constant pressure, W = P(V₂ − V₁) = m(Rᵤ/M)ΔT. Thus for the same temperature rise, W₁/W₂ = (m₁/m₂)(28/32) = (m₁/m₂)(7/8).\nThe printed answer (d), 7:8, follows for equal masses, or if the question is about specific work per unit mass. Equal numbers of moles instead give a ratio of 1:1. The stem specifies neither the amounts of the gases nor specific work and does not state an ideal-gas model. It therefore does not determine a unique total-work ratio.",
+      "note": "The complete given-data block and derivation continue at the top of PDF page 15. The source silently uses a per-unit-mass ideal-gas relation W = RΔT. Both the missing mass comparison and missing gas model are retained as source defects; answer null.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Given:\nGas A, (M_wt)_A = 32.\nGas B, (M_wt)_B = 28.\nWork done, W₁₋₂ = P(V₂ − V₁) = R(T₂ − T₁).\nW ∝ R.\nW ∝ Rᵤ/M_wt (Rᵤ = Universal Gas Constant).\nW₁/W₂ = (M_wt)₂/(M_wt)₁ = 28/32 = 7/8."
+    },
+    {
+      "id": "mech-thermodynamics-29-80",
+      "number": 80,
+      "source": {
+        "page": 15,
+        "pageEnd": 15,
+        "examLabels": [
+          "GPSC Engineer Class-II Pre-19.01.2020",
+          "APPSC AEE Screening Test 2016"
+        ]
+      },
+      "question": "The ratio of specific heat of a gas at constant pressure and the specific heat of the gas at constant volume",
+      "options": {
+        "a": "is always constant",
+        "b": "varies with temperature",
+        "c": "varies with pressure",
+        "d": "is not constant"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The heat-capacity ratio is γ = c_p/c_v. It is constant in a calorically perfect gas model with constant c_p and c_v. For a calorically imperfect ideal gas, the heat capacities and usually γ vary with temperature; for real gases, pressure or density can also matter. The source’s unconditional “always constant” claim is false. Without a specified model, no single offered statement holds for every gas. Moreover, (b) and (d) overlap when γ changes with temperature, so simply replacing the source key with (b) would not repair the single-answer question.",
+      "note": "Preserved all four native choices and the boxed definition γ = C_p/C_v, which OCR omitted. The stem supplies neither a calorically perfect approximation nor a temperature range; disputed/null.",
+      "references": [
+        {
+          "title": "NASA Glenn Research Center: Specific Heats",
+          "url": "https://www.grc.nasa.gov/www/k-12/airplane/specheat.html",
+          "section": "Ideal-gas relation c_p − c_v = R and the definition γ = c_p/c_v"
+        },
+        {
+          "title": "NASA Glenn Research Center: Stagnation Temperature – Real Gas Effects",
+          "url": "https://www.grc.nasa.gov/www/BGH/stagtmp.html",
+          "section": "The ratio of specific heats of a calorically imperfect gas is a function of temperature"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "The ratio of specific heat of a gas at constant pressure and the specific heat of the gas at constant volume is always constant.\nγ = C_p/C_v."
+    },
+    {
+      "id": "mech-thermodynamics-29-81",
+      "number": 81,
+      "source": {
+        "page": 15,
+        "pageEnd": 15,
+        "examLabels": [
+          "UPPSC AE 12.04.2016 Paper-II",
+          "CSE Pre-1998"
+        ]
+      },
+      "question": "Thermodynamic work is the product of",
+      "options": {
+        "a": "Two intensive",
+        "b": "Two extensive properties",
+        "c": "An intensive property and change in an extensive property",
+        "d": "An extensive property and change in an intensive property"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. : (c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For a quasistatic process, boundary work is calculated by W = ∫P dV.\nPressure P is an intensive property.\nVolume change dV is a change in an extensive property.\nThus the elementary pressure-volume work δW = P dV has the structure in choice (c): an intensive property multiplied by a change in an extensive property.",
+      "note": "Choice (c) is the intended generalised-force/displacement form of elementary thermodynamic work. A finite work is the path integral; it equals PΔV only when the relevant pressure is constant. The full source plot, including both volume-axis arrows and V₁/V₂ labels, was checked in its final crop.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        },
+        {
+          "title": "MIT Unified Engineering: Definitions and Fundamental Ideas of Thermodynamics",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node11.html",
+          "section": "Extensive and intensive properties"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [
+        {
+          "page": 15,
+          "bbox": [
+            128,
+            533,
+            236,
+            616
+          ],
+          "placement": "explanation",
+          "alt": "Quasistatic P–V expansion path from state 1 at V₁ to state 2 at V₂, illustrating W = ∫P dV."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-29-82",
+      "number": 82,
+      "source": {
+        "page": 15,
+        "pageEnd": 15,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3",
+          "UPPSC AE 12.04.2016 Paper-II"
+        ]
+      },
+      "question": "The maximum work by an expansion of a gas in a closed system is possible when process takes place at constant",
+      "options": {
+        "a": "Pressure",
+        "b": "Enthalpy",
+        "c": "Temperature",
+        "d": "Volume"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For quasistatic pressure-volume work, W = ∫P dV. The source sketch compares paths from the same initial point over the same volume interval V₁ to V₂, with every other expansion curve below the horizontal initial-pressure line. Within that restricted family, the constant-pressure path 1–2 has the largest area and therefore the greatest work. The zero-volume-change path has zero boundary work.\nThe question does not specify a common initial state, final volume, heat supply or bound on pressure. An expansion heated so that its pressure rises above the initial pressure can produce a larger integral than the depicted isobaric path. There is therefore no universal maximum-work process among these labels without further constraints; the printed answer (a) is conditional and the question is left ungraded.",
+      "note": "The complete explanation begins in the right column of PDF15 after the question at bottom left. Its graph and ordering W₁₋₂ > W₁₋₃ > W₁₋₄ > W₁₋₅ > W₁₋₆ are preserved. A maximum cannot be inferred from the process name alone.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        },
+        {
+          "title": "BCcampus: Introduction to Engineering Thermodynamics, Work",
+          "url": "https://pressbooks.bccampus.ca/thermo1/chapter/4-3-work/",
+          "section": "Polytropic process, ideal-gas qualifications and boundary-work integrals"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [
+        {
+          "page": 15,
+          "bbox": [
+            350,
+            108.5,
+            477,
+            212
+          ],
+          "placement": "explanation",
+          "alt": "Source comparison of P–V paths 1–2 through 1–6: an isobar, lower expansion curves and an isochore. The isobar has the largest work only within this depicted family."
+        }
+      ],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "We know that:\nWork done = ∫p dV.\nClosed system work on P–V diagram is the area under P–V; it should be projected on the volume axis, and the mathematical expression for closed system work is\n∫[V₁ to V₂] P dV.\n∴ W_closed ∫[V₁ to V₂] p dV.\nAccording to graph,\nW₁₋₂ > W₁₋₃ > W₁₋₄ > W₁₋₅ > W₁₋₆.\nSo, max work obtain in expansion process is isobaric process & min work about to zero in isochoric process."
+    },
+    {
+      "id": "mech-thermodynamics-29-83",
+      "number": 83,
+      "source": {
+        "page": 15,
+        "pageEnd": 15,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "GATE 1999"
+        ]
+      },
+      "question": "Consider the following statements about isolated system\n1. No heat is transferred\n2. No work is done\n3. No mass flows across the boundary of the system\n4. No chemical reaction takes place within the system\nOf above, which are correct",
+      "options": {
+        "a": "1 and 2",
+        "b": "1 and 3",
+        "c": "1, 2 and 3",
+        "d": "3 and 4"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c) :",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Isolated system: It is a special case of a closed system in which neither mass nor energy crosses the boundary of the system.\nOr: A system that does not interact with its surroundings, so its total energy and mass stay constant.\nSource examples: universe, thermal flask.\nTherefore statements 1, 2 and 3 are correct, giving (c).",
+      "note": "Heat, work and mass are excluded as transfers across the isolated system boundary. Internal work interactions and chemical reactions may still occur. A thermal flask is an approximate physical example; the thermodynamic definition requires ideal isolation.",
+      "references": [
+        {
+          "title": "BCcampus: Introduction to Engineering Thermodynamics, System and surroundings",
+          "url": "https://pressbooks.bccampus.ca/thermo1/chapter/system-and-surroundings/",
+          "section": "Closed, open and isolated systems"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-29-84",
+      "number": 84,
+      "source": {
+        "page": 15,
+        "pageEnd": 15,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "CSE Pre-2002"
+        ]
+      },
+      "question": "The velocity of sound in an ideal gas does not depend on",
+      "options": {
+        "a": "the specific heat ratio of the gas",
+        "b": "the molecular weight of the gas",
+        "c": "the temperature of the gas",
+        "d": "the density of the gas"
+      },
+      "sourceAnswer": "d",
+      "sourceAnswerMarker": "Ans. (d) :",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Velocity of sound in an ideal gas:\nC = √(γRT); C = f(γ, R, T),\nwhere γ is the specific heat ratio, R is the specific gas constant and T is absolute temperature.\nSince R = Rᵤ/M, the gas molecular weight enters through R. Density is not an independent variable in this expression, so (d) is correct.",
+      "note": "Independently verified a² = γp/ρ and p/ρ = RT. At a fixed temperature and composition, changing ideal-gas density and pressure together does not change the sound speed. The statement does not mean density and temperature are unrelated along every possible process.",
+      "references": [
+        {
+          "title": "NASA Glenn Research Center: Speed of Sound Derivation",
+          "url": "https://www.grc.nasa.gov/www/BGH/snddrv.html",
+          "section": "a² = γp/ρ = γRT and the equation of state"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-30-85",
+      "number": 85,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "TSPSC Managers, 2015",
+          "ESE 2013"
+        ]
+      },
+      "question": "The value of an extensive property is essentially dependent on :",
+      "options": {
+        "a": "Mass or extent of the system",
+        "b": "Interaction of system with its surroundings",
+        "c": "Path followed by the system is going from one state to another",
+        "d": "Nature of boundaries, rigid or flexible"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The value of an extensive property is essentially dependent on mass or extent of the system.",
+      "note": "Extensive properties are additive over subsystems; for otherwise identical homogeneous samples they scale with the amount of matter. This verifies (a). All four native choices, including the awkward wording of (c), are preserved.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Definitions and Fundamental Ideas of Thermodynamics",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node11.html",
+          "section": "Extensive and intensive properties"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Systems, Properties & Equilibrium",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-30-86",
+      "number": 86,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "APPSC Poly. Lect. 2013",
+          "ESE 1998"
+        ]
+      },
+      "question": "Match List I with List II and select the correct answer using the codes given below the lists:\nList I\nA. Bomb calorimeter\nB. Exhaust gas calorimeter\nC. Junker gas calorimeter\nD. Throttling calorimeter\nList II\ni. Pressure\nii. Enthalpy\niii. Volume\niv. Specific heat\nCode: A B C D",
+      "options": {
+        "a": "iii iv i ii",
+        "b": "ii iv i iii",
+        "c": "iii i iv ii",
+        "d": "iv iii ii i"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "List I — List II\nA) Bomb calorimeter — Volume\nB) Exhaust gas calorimeter — Specific heat\nC) Junker gas calorimeter — Pressure\nD) Throttling calorimeter — Enthalpy",
+      "note": "The conventional matching is A–iii, B–iv, C–i, D–ii, choice (a). The bomb is rigid (constant volume); an exhaust-gas calorimeter permits a specific-heat energy balance; a Junker gas calorimeter burns a flowing gaseous fuel at approximately constant pressure; the usual insulated, no-work throttle preserves enthalpy when kinetic/potential changes are negligible. Both lists and all four code rows are native text, not diagram crops.",
+      "references": [
+        {
+          "title": "UGC INFLIBNET e-PG Pathshala: Bomb Calorimetry",
+          "url": "https://ebooks.inflibnet.ac.in/esp02/chapter/bomb-calorimetry/",
+          "section": "Bomb vessel and Junker gas calorimeter construction and operation"
+        },
+        {
+          "title": "Assam Science and Technology University: NCRAST proceedings",
+          "url": "https://astu.ac.in/wp-content/uploads/NCRAST-BOOK-Full-PDF-Final.pdf",
+          "section": "Equation (6): specific heat of exhaust gas evaluated from an exhaust-gas calorimeter energy balance"
+        },
+        {
+          "title": "K. S. Rangasamy College of Engineering: Automotive Fuels and Lubricants",
+          "url": "https://ksrce.ac.in/admin/file_manager/source/Automobile/Innovation%20in%20Teaching/Automotive%20Fuels%20and%20Lubricants.pdf",
+          "section": "Junkers gas calorimeter: pressure-regulated fuel supply, burner and steady flow"
+        },
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Heat, Work & Energy",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-30-87",
+      "number": 87,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "TSPSC AEE 28.08.2017 (Civil/Mechanical)",
+          "CSE Pre-1999"
+        ]
+      },
+      "question": "The specific heat ratio k is given by the following expression :",
+      "options": {
+        "a": "1 + (C_p/R)",
+        "b": "1/[1 − (R/C_v)]",
+        "c": "1 + (R/C_v)",
+        "d": "1 + (C_v/R)"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For an ideal gas, C_p − C_v = R. Dividing by C_v gives C_p/C_v − 1 = R/C_v. Since k = C_p/C_v, this yields k = 1 + R/C_v, the intended choice (c). This identity uses a consistent molar or mass-specific basis for the two heat capacities and R. It does not require the heat capacities to be constant with temperature.\nFor a general real fluid, C_p − C_v is not universally R; the definition k = C_p/C_v alone does not imply any of the four formulas. Because the stem does not state an ideal-gas model, the printed key is conditional and the question is left ungraded.",
+      "note": "All four equation choices were read from the scan; particularly, choice (b) is 1/[1 − (R/C_v)], not a denominator involving C_p. No equation was invented or corrected inside the choices. Full printed derivation retained; missing ideal-gas condition disclosed.",
+      "references": [
+        {
+          "title": "NASA Glenn Research Center: Specific Heats",
+          "url": "https://www.grc.nasa.gov/www/k-12/airplane/specheat.html",
+          "section": "Ideal-gas relation c_p − c_v = R and the definition γ = c_p/c_v"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Ideal & Real Gases",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "C_p − C_v = R.\nC_p/C_v − 1 = R/C_v.\nk − 1 = R/C_v.\nk = 1 + R/C_v."
+    },
+    {
+      "id": "mech-thermodynamics-30-88",
+      "number": 88,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "GATE 2014"
+        ]
+      },
+      "question": "A certain amount of an ideal gas is initially at a pressure P₁ and temperature T₁. First, it undergoes a constant pressure process 1–2 such that T₂ = 3T₁/4. Then, it undergoes a constant volume process 2–3 such that T₃ = T₁/2. The ratio of the final volume to the initial volume of the ideal gas is",
+      "options": {
+        "a": "0.25",
+        "b": "0.75",
+        "c": "1.0",
+        "d": "1.5"
+      },
+      "sourceAnswer": "b",
+      "sourceAnswerMarker": "Ans. (b) :",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For process 1–2: constant pressure (P₁ = P₂).\nT₁/V₁ = T₂/V₂ ⇒ V₂ = (T₂/T₁)V₁.\nFor process 2–3: constant volume (V₃ = V₂).\nGiven T₂ = 3T₁/4,\nV₂ = [3T₁/(4T₁)]V₁ = (3/4)V₁.\nV₃/V₁ = V₂/V₁ = 3/4 = 0.75.",
+      "note": "Independently evaluated the two stages with the ideal-gas law. The specified T₃ changes the final pressure but not the volume in stage 2–3. The entire source derivation at the top of the right column is retained.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Thermodynamics Equation Compendium",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equation of state, quasi-static boundary work and the first law"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Thermodynamic Processes",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-30-89",
+      "number": 89,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "ESE 2012"
+        ]
+      },
+      "question": "The constant volume gas thermometer works on the principle that",
+      "options": {
+        "a": "At low pressure, the temperature of the gas is independent of its pressure at constant volume",
+        "b": "At high pressure, the temperature of the gas is independent of its pressure at constant volume",
+        "c": "At low pressure, the temperature of the gas is proportional to its pressure at constant volume",
+        "d": "At high pressure, the temperature of the gas is proportional to its pressure at constant volume"
+      },
+      "sourceAnswer": "c",
+      "sourceAnswerMarker": "Ans. (c) :",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The constant volume gas thermometer works on the principle that at low pressure, the temperature of gas is proportional to its pressure at constant volume.",
+      "note": "At fixed gas amount and volume, the dilute ideal-gas limit gives p/T = nRᵤ/V = constant, using absolute pressure and kelvin temperature. Measurements are extrapolated toward low density to reduce real-gas effects. This verifies (c).",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Thermometers and Temperature Scales",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-2-thermometers-and-temperature-scales",
+          "section": "Affine temperature-scale conversion and the dilute constant-volume gas thermometer"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-30-90",
+      "number": 90,
+      "source": {
+        "page": 16,
+        "pageEnd": 16,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2018, Paper-II",
+          "ESE 2002"
+        ]
+      },
+      "question": "The absolute zero pressure will be",
+      "options": {
+        "a": "when molecular momentum of the system becomes zero",
+        "b": "at sea level",
+        "c": "at the temperature of −273 K",
+        "d": "at the center of the earth"
+      },
+      "sourceAnswer": "a",
+      "sourceAnswerMarker": "Ans. (a) :",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Absolute pressure is referenced to a perfect vacuum. In classical ideal-gas kinetic theory, p = ρv_rms²/3. At a fixed nonzero density, zero pressure is the formal limit in which every molecule has zero random translational momentum; zero total vector momentum of the whole gas does not imply this. A stationary gas can have zero net momentum and positive pressure. Molecular impacts on the walls produce the pressure; the absence of intermolecular collisions by itself does not establish zero pressure.\nChoice (a) is the source’s intended classical statement but does not specify random momentum per molecule. The other choices do not define zero absolute pressure: sea-level pressure is nonzero, −273 K is not the ordinary gas-scale absolute zero, and the Earth’s centre is not a vacuum. The ambiguous source wording is retained and the question is left ungraded.",
+      "note": "Native scan confirms the minus sign and unit K in choice (c): −273 K. It was not rewritten as −273°C. The original source explanation confuses intermolecular collisions with wall collisions and molecular momentum with the system’s momentum; preserved in full.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Pressure, Temperature, and RMS Speed",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+          "section": "Molecular wall collisions and p = ρv_rms²/3"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Thermometers and Temperature Scales",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-2-thermometers-and-temperature-scales",
+          "section": "Affine temperature-scale conversion and the dilute constant-volume gas thermometer"
+        }
+      ],
+      "topic": "Basic Concepts & Zeroth Law of Thermodynamics",
+      "subtopic": "Temperature & Thermometry",
+      "figures": [],
+      "transcriptionReviewed": true,
+      "sourceExplanation": "Absolute zero pressure means there are no collisions between molecules to applied per unit area force occurs due to collision of molecules at absolute zero these is no momentum between molecules so no force developed. Atmospheric pressure is measured from absolute zero pressure."
     }
   ]
 }

@@ -19,6 +19,15 @@ SUBJECT = "thermodynamics"
 TITLE = "Thermodynamics"
 QUESTION_COUNT = 940
 LAST_SOURCE_PAGE = 151
+TOPICS = (
+    (1, "Basic Concepts & Zeroth Law of Thermodynamics"),
+    (303, "First Law of Thermodynamics"),
+    (434, "Second Law of Thermodynamics"),
+    (596, "Entropy"),
+    (683, "Availability and Irreversibility"),
+    (732, "Properties of Pure Substances, Gases and Gas Mixture"),
+    (893, "Thermodynamic Relations"),
+)
 HTML_SOURCE = {
     "file": "Mechanical_Thermodynamics_940_Questions_FINAL_With_Explanations(1).html",
     "sha256": "184a26c92eb62efdcf6da1f8f049eab68e350d67b4a7e18d28236feb5016a11a",
@@ -45,7 +54,9 @@ def uploaded_questions(path):
     start = text.index(marker) + len(marker)
     bank, _ = json.JSONDecoder().raw_decode(text[start:])
     assert [q["n"] for q in bank] == list(range(1, QUESTION_COUNT + 1)), "Incomplete uploaded bank."
-    assert all(q["stem"].strip() and q["explain"].strip() for q in bank), "Missing uploaded source text."
+    assert all(q["stem"].strip() and (q["explain"].strip() or q.get("aimg")) for q in bank), (
+        "Missing uploaded source text and solution scan."
+    )
     return bank
 
 
@@ -74,6 +85,9 @@ def question_record(review):
     first_page, last_page = provenance["page"], provenance["pageEnd"]
     assert 1 <= first_page <= last_page <= LAST_SOURCE_PAGE, f"Invalid source pages: Q{number}"
     assert review["transcriptionReviewed"] is True, f"Unreconciled source text: Q{number}"
+    assert review["topic"] == next(title for first, title in reversed(TOPICS) if number >= first), (
+        f"Use the printed section boundary: Q{number}"
+    )
     for field in ("question", "explanation", "topic", "subtopic", "note"):
         assert review[field].strip(), f"Missing {field}: Q{number}"
     assert status in ("verified", "corrected", "disputed"), f"Unknown review status: Q{number}"
@@ -130,6 +144,7 @@ def write_audit(questions, counts, figures, uploaded):
         "uploadReconciliation": {
             "source": HTML_SOURCE,
             "questionNumbers": [q["n"] for q in uploaded],
+            "explanationsReconstructedFromScan": [q["n"] for q in uploaded if not q["explain"].strip()],
             "fullQuestionPhotosPublished": 0,
             "fullExplanationPhotosPublished": 0,
         },

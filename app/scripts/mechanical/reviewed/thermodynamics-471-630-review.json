@@ -1701,6 +1701,1710 @@
       "subtopic": "Heat Pumps & Refrigerators",
       "figures": [],
       "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-98-511",
+      "number": 511,
+      "source": {
+        "page": 84,
+        "pageEnd": 84,
+        "printedPage": 98,
+        "examLabels": [
+          "AAI Jr. Executive 29.11.2018"
+        ]
+      },
+      "question": "An ideal Carnot engine operates between reservoirs at temperature 20 °C and 200 °C. If 10 kW of power is produced, the rate at which heat is rejected is approximately:",
+      "options": {
+        "a": "14.3 kJ/s",
+        "b": "12.3 kJ/s",
+        "c": "15.3 kJ/s",
+        "d": "16.3 kJ/s"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Tₗ = 20°C ≈ 293 K, Tₕ = 200°C ≈ 473 K and Ẇ = 10 kW.\nFor the Carnot engine, Ẇ = Q̇₁(1 − Tₗ/Tₕ).\n10 = Q̇₁[(473 − 293)/473], giving Q̇₁ = 26.28 kW approximately.\nThe heat rejected is Q̇₂ = Q̇₁ − Ẇ = 26.28 − 10 ≈ 16.28 kW ≈ 16.3 kJ/s.",
+      "sourceExplanation": "T₁ = 20°C = 20 + 273 = 293 K.\nT₂ = 200°C = 200 + 273 = 473 K.\nW = 10 kW; Q₂ = ?\nW = Q₁(1 − T₂/T₁).\n10 kW = Q₁[(473 − 293)/473].\nQ₁ = 26.27 kW.\nQ₂ = Q₁ − W = 16.27 kW.",
+      "note": "The source’s generic temperature-index formula reverses its earlier T₁/T₂ definitions; the substitution and answer use the correct hot/cold ratio. Explicit Tₕ and Tₗ labels remove that inconsistency.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-98-512",
+      "number": 512,
+      "source": {
+        "page": 84,
+        "pageEnd": 84,
+        "printedPage": 98,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 22.04.2018",
+          "CSE Pre-1995"
+        ]
+      },
+      "question": "A heat Engine gives an output of 3 kW when the input is 10000 joules/sec. The thermal efficiency of the engine is",
+      "options": {
+        "a": "30%",
+        "b": "20%",
+        "c": "40%",
+        "d": "76.7%"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The heat input rate is Q̇ᵢₙ = 10000 J/s = 10 kJ/s = 10 kW and the work output is Ẇₒᵤₜ = 3 kW.\nηₜₕ = Ẇₒᵤₜ/Q̇ᵢₙ = 3/10 = 0.3 = 30%.",
+      "sourceExplanation": "The heat input rate is Q̇ᵢₙ = 10000 J/s = 10 kJ/s = 10 kW and the work output is Ẇₒᵤₜ = 3 kW.\nηₜₕ = Ẇₒᵤₜ/Q̇ᵢₙ = 3/10 = 0.3 = 30%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-98-513",
+      "number": 513,
+      "source": {
+        "page": 84,
+        "pageEnd": 84,
+        "printedPage": 98,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "Which of the following devices complies with the Clausius statement of the second law of thermodynamics?",
+      "options": {
+        "a": "Closed-cycle gas turbine",
+        "b": "Internal combustion engine",
+        "c": "Steam power plant",
+        "d": "Domestic refrigerator"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "corrected",
+      "explanation": "A domestic refrigerator transfers heat from a cold space to warmer surroundings by receiving external work. It illustrates the Clausius statement: a cyclic device cannot have heat transfer from colder to hotter as its sole effect. Thus (d) is the intended device.\nThe other listed engines also comply with the second law when operating physically; the question uses “complies with” in the conventional sense of the device to which the Clausius formulation directly refers.",
+      "sourceExplanation": "The Clausius statement is related to refrigerators and heat pumps, not to heat engines.",
+      "note": "Clarified the wording: the Clausius and Kelvin–Planck statements are equivalent, so the source’s claim that the law is not related to heat engines is too strong.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Second-Law Statements",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-98-514",
+      "number": 514,
+      "source": {
+        "page": 84,
+        "pageEnd": 84,
+        "printedPage": 98,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "A thermodynamic cycle is composed of four processes. The heat added and the work done in each process are as follows:\nProcess | Heat transfer (J) | Work done (J)\n1–2 | 0 | 50 (by the gas)\n2–3 | 50 (from the gas) | 0\n3–4 | 0 | 20 (on the gas)\n4–1 | 80 (to the gas) | 0\nThe thermal efficiency of the cycle is:",
+      "options": {
+        "a": "20.3%",
+        "b": "37.5%",
+        "c": "40.3%",
+        "d": "62.5%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The printed table is:\nProcess | Heat transfer | Work done\n1–2 | 0 J | 50 J by the gas\n2–3 | 50 J from the gas | 0 J\n3–4 | 0 J | 20 J on the gas\n4–1 | 80 J to the gas | 0 J.\nThus heat rejected Q₂ = 50 J and heat added Q₁ = 80 J.\nη = 1 − Q₂/Q₁ = 1 − 50/80 = 37.5%.\nThe independent work balance agrees: Wₙₑₜ = 50 − 20 = 30 J and η = 30/80 = 37.5%.",
+      "sourceExplanation": "Heat rejected Q₂ = 50.\nHeat added Q₁ = 80.\nThermal efficiency η = 1 − Q₂/Q₁ = 1 − 50/80 = 37.5%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-98-515",
+      "number": 515,
+      "source": {
+        "page": 84,
+        "pageEnd": 85,
+        "printedPage": 98,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "Consider the following statements: 1. Heat pumps and air conditioners have the same mechanical components. 2. The same system can be used as heat pump in winter and as air conditioner in summer. 3. The capacity and efficiency of a heat pump fall significantly at high temperatures. Which of the above statements are correct?",
+      "options": {
+        "a": "1 and 2 only",
+        "b": "1 and 3 only",
+        "c": "2 and 3 only",
+        "d": "1,2 and3"
+      },
+      "sourceAnswer": "(d); note: UPSC option (b)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "Statements 1 and 2 are correct: heat pumps and air conditioners use the same basic mechanical components, and a reversible installation can heat a building in winter and cool it in summer.\nStatement 3 is incorrect as printed. In heating mode, heat-pump capacity and COP generally fall as the outdoor source temperature becomes low and the required temperature lift increases. They do not generally fall because the outdoor temperature becomes high. For a Carnot heat pump, COPₕₚ = Tₕ/(Tₕ − Tₗ), so raising the outdoor source temperature Tₗ at fixed indoor Tₕ increases COP.\nTherefore the checked answer is (a), 1 and 2 only.\nThe source’s discussion defines a heat pump as supplying heat to maintain a system above its surroundings and defines COP as desired heating effect divided by external work supplied. These definitions are correct but do not establish Statement 3.",
+      "sourceExplanation": "Heat pumps and air conditioners have the same mechanical components.\nTherefore it is not economical to have two separate systems to meet the heating and cooling requirements of a building. One system can be used as a heat pump in winter and an air conditioner in summer.\nA heat pump is a device used to maintain the temperature of a system higher than that of its surroundings by supplying heat to the system. To evaluate the performance of a heat pump, COP is calculated. It is defined as the ratio of desired effect to external work supplied.\nNote: The answer given by UPSC is option (b).",
+      "note": "Printed header (d) and printed note claiming UPSC (b) conflict. Physics of the statements as actually printed gives (a), since Statement 3 says “high temperatures.” Both source markers and the complete explanation/note are preserved.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-99-516",
+      "number": 516,
+      "source": {
+        "page": 85,
+        "pageEnd": 85,
+        "printedPage": 99,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "An engine works on the basis of Carnot cycle operating between temperatures of 800 K and 400 K. If the heat supplied is 100 kW, the output is",
+      "options": {
+        "a": "50 kW",
+        "b": "60 kW",
+        "c": "70kW",
+        "d": "80 kW"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given T₁ = 800 K, T₂ = 400 K, Q̇₁ = 100 kW, and Ẇ unknown.\nη = work output/heat supplied = Ẇ/Q̇₁ = 1 − T₂/T₁.\nẆ/100 = 1 − 400/800 = 0.5, so Ẇ = 50 kW.",
+      "sourceExplanation": "Given T₁ = 800 K, T₂ = 400 K, Q̇₁ = 100 kW, and Ẇ unknown.\nη = work output/heat supplied = Ẇ/Q̇₁ = 1 − T₂/T₁.\nẆ/100 = 1 − 400/800 = 0.5, so Ẇ = 50 kW.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 85,
+          "bbox": [
+            156,
+            331,
+            207,
+            417
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine E receives Q₁ from T₁, produces W and rejects Q₂ to T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-99-517",
+      "number": 517,
+      "source": {
+        "page": 85,
+        "pageEnd": 85,
+        "printedPage": 99,
+        "examLabels": [
+          "RPSC AE 2018"
+        ]
+      },
+      "question": "If the temperature of the source is increased, the efficiency of the Carnot engine-",
+      "options": {
+        "a": "decreases",
+        "b": "increases",
+        "c": "will be equal to the efficiency of a practical engine",
+        "d": "does not change"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a Carnot engine, ηc = 1 − Tₛᵢₙₖ/Tₛₒᵤᵣcₑ. At fixed sink temperature, increasing the absolute source temperature decreases Tₛᵢₙₖ/Tₛₒᵤᵣcₑ and therefore increases ηc.",
+      "sourceExplanation": "For a Carnot engine, ηc = 1 − Tₛᵢₙₖ/Tₛₒᵤᵣcₑ. At fixed sink temperature, increasing the absolute source temperature decreases Tₛᵢₙₖ/Tₛₒᵤᵣcₑ and therefore increases ηc.",
+      "note": "The source’s intended condition, unchanged sink temperature, is made explicit in the explanation.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-99-518",
+      "number": 518,
+      "source": {
+        "page": 85,
+        "pageEnd": 85,
+        "printedPage": 99,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "The coefficient of performance of a heat pump working on reversed Carnot cycle is 6. If this machine works as a refrigerator with work input of 10 kW, the refrigerating effect will be",
+      "options": {
+        "a": "35 kW",
+        "b": "40 kw",
+        "c": "45 kW",
+        "d": "50kW"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the same reversed cycle, COPₕₚ = 1 + COPᵣ.\nThus COPᵣ = 6 − 1 = 5.\nCOPᵣ = refrigerating effect/work input = Rₑ/10.\n5 = Rₑ/10, so Rₑ = 50 kW.",
+      "sourceExplanation": "For the same reversed cycle, COPₕₚ = 1 + COPᵣ.\nThus COPᵣ = 6 − 1 = 5.\nCOPᵣ = refrigerating effect/work input = Rₑ/10.\n5 = Rₑ/10, so Rₑ = 50 kW.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 85,
+          "bbox": [
+            387,
+            118,
+            439,
+            205
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Refrigerator R absorbs Q₂ from T₂ and work W, and rejects Q₁ to T₁."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-99-519",
+      "number": 519,
+      "source": {
+        "page": 85,
+        "pageEnd": 85,
+        "printedPage": 99,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "Two reversible engines are connected in series between a heat source and a sink. The efficiencies of these engines are 60% and 50%, respectively. If these two engines are replaced by a single reversible engine, the efficiency of this engine will be",
+      "options": {
+        "a": "60%",
+        "b": "70%",
+        "c": "80%",
+        "d": "90%"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given η₁ = 0.6 and η₂ = 0.5. The first engine rejects (1 − η₁)Qᵢₙ to the second, which rejects (1 − η₂)(1 − η₁)Qᵢₙ to the sink.\nThe combined efficiency is η₀ = 1 − (1 − η₁)(1 − η₂) = η₁ + η₂ − η₁η₂.\nη₀ = (0.6 + 0.5) − (0.6 × 0.5) = 0.8 = 80%. A single reversible engine between the same extreme temperatures has this same efficiency.",
+      "sourceExplanation": "Given η₁ = 0.6 and η₂ = 0.5.\nOverall efficiency of the combined engine:\nη₀ = η₁ + η₂ − η₁η₂\n= (0.6 + 0.5) − (0.6 × 0.5)\n= 0.8\n= 80%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Engines in Series",
+      "figures": [
+        {
+          "page": 85,
+          "bbox": [
+            356,
+            399,
+            471,
+            513
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Two engines E₁ and E₂ in series between T₁ and T₃ with intermediate T₂ and outputs W₁ and W₂; an equivalent single reversible engine produces W between T₁ and T₃."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-99-520",
+      "number": 520,
+      "source": {
+        "page": 85,
+        "pageEnd": 86,
+        "printedPage": 99,
+        "examLabels": [
+          "ESE 2018"
+        ]
+      },
+      "question": "What is the ratio of the efficiencies ηⅠ/ηⅡ for the two cycles shown in the T–s diagrams?",
+      "options": {
+        "a": "(T₁ + T₂)/(2T₁)",
+        "b": "(T₁ + T₂)/(2T₂)",
+        "c": "2T₂/(T₁ + T₂)",
+        "d": "2T₁/(T₁ + T₂)"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For the same entropy width ΔS = S₁ − S₂, both T–s triangles enclose the same work W = ½(T₁ − T₂)ΔS. The heat rejected by cycle II is larger than that rejected by cycle I.\nCycle I receives Qᵢₙ,Ⅰ = ½(T₁ − T₂)ΔS + T₂ΔS = ½(T₁ + T₂)ΔS.\nηⅠ = [½(T₁ − T₂)ΔS]/[½(T₁ − T₂)ΔS + T₂ΔS]\n   = [½(T₁ − T₂)]/[½(T₁ − T₂) + T₂]\n   = (T₁ − T₂)/(T₁ + T₂).\nCycle II receives Qᵢₙ,Ⅱ = T₁ΔS.\nηⅡ = [½(T₁ − T₂)ΔS]/[T₁ΔS] = (T₁ − T₂)/(2T₁).\nTherefore ηⅠ/ηⅡ = 2T₁/(T₁ + T₂).",
+      "sourceExplanation": "For the same entropy width ΔS = S₁ − S₂, both T–s triangles enclose the same work W = ½(T₁ − T₂)ΔS. The heat rejected by cycle II is larger than that rejected by cycle I.\nCycle I receives Qᵢₙ,Ⅰ = ½(T₁ − T₂)ΔS + T₂ΔS = ½(T₁ + T₂)ΔS.\nηⅠ = [½(T₁ − T₂)ΔS]/[½(T₁ − T₂)ΔS + T₂ΔS]\n   = [½(T₁ − T₂)]/[½(T₁ − T₂) + T₂]\n   = (T₁ − T₂)/(T₁ + T₂).\nCycle II receives Qᵢₙ,Ⅱ = T₁ΔS.\nηⅡ = [½(T₁ − T₂)ΔS]/[T₁ΔS] = (T₁ − T₂)/(2T₁).\nTherefore ηⅠ/ηⅡ = 2T₁/(T₁ + T₂).",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "T–s Cycle Areas",
+      "figures": [
+        {
+          "page": 85,
+          "bbox": [
+            349,
+            608,
+            477,
+            676
+          ],
+          "placement": "question",
+          "units": "pdf-points",
+          "alt": "T–s diagrams I and II: both triangular cycles span entropy S₂ to S₁ and temperatures T₂ to T₁. I has a descending upper sloping segment; II has a horizontal top at T₁ and ascending lower sloping segment."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-100-521",
+      "number": 521,
+      "source": {
+        "page": 86,
+        "pageEnd": 86,
+        "printedPage": 100,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2018, Paper-II",
+          "ESE 1993"
+        ]
+      },
+      "question": "One reversible heat engine operates between 1600 K and T₂ K, and another reversible heat engine operates between T₂ K and 400 K. If both engines have the same heat input and output, then temperature T₂ is equal to:",
+      "options": {
+        "a": "800K",
+        "b": "1000 K",
+        "c": "1200K",
+        "d": "1400K"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Both reversible engines have the same heat input and work output, so their efficiencies are equal.\nηⅠ = 1 − Q₂/Q₁ = ηⅡ.\n1 − T₂/1600 = 1 − 400/T₂.\nThus T₂² = 1600 × 400 and T₂ = √(1600 × 400) = 800 K.",
+      "sourceExplanation": "For the same heat input and output, ηⅠ = 1 − Q₂/Q₁ = ηⅡ.\n1 − T₂/1600 = 1 − 400/T₂.\nT₂ = √(1600 × 400) = 800 K.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-100-522",
+      "number": 522,
+      "source": {
+        "page": 86,
+        "pageEnd": 86,
+        "printedPage": 100,
+        "examLabels": [
+          "GPSC Executive Engineer 23.12.2018",
+          "GATE 2016"
+        ]
+      },
+      "question": "A reversible cycle receive 40 kJ of heat from one heat source at a temperature of 127°C and 37 kJ from another heat source at 97°C. The heat rejected (in kJ) to the heat sink at 47°C is",
+      "options": {
+        "a": "64kJ",
+        "b": "320 kJ",
+        "c": "640 kJ",
+        "d": "960 kJ"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The reservoir temperatures are T₁ = 127 + 273 = 400 K, T₂ = 97 + 273 = 370 K and T₃ = 47 + 273 = 320 K.\nFor a reversible cycle, Q₁/T₁ + Q₂/T₂ − Q₃/T₃ = 0.\n40/(127 + 273) + 37/(97 + 273) − Q₃/(47 + 273) = 0.\nThus Q₃ = 320(40/400 + 37/370) = 320(0.1 + 0.1) = 64 kJ.",
+      "sourceExplanation": "The reservoir temperatures are T₁ = 127 + 273 = 400 K, T₂ = 97 + 273 = 370 K and T₃ = 47 + 273 = 320 K.\nFor a reversible cycle, Q₁/T₁ + Q₂/T₂ − Q₃/T₃ = 0.\n40/(127 + 273) + 37/(97 + 273) − Q₃/(47 + 273) = 0.\nThus Q₃ = 320(40/400 + 37/370) = 320(0.1 + 0.1) = 64 kJ.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Multiple-Reservoir Reversible Cycles",
+      "figures": [
+        {
+          "page": 86,
+          "bbox": [
+            97,
+            561,
+            267,
+            633
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Reversible engine receives Q₁ = 40 kJ at 127°C and Q₂ = 37 kJ at 97°C and rejects Q₃ to a 47°C sink."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-100-523",
+      "number": 523,
+      "source": {
+        "page": 86,
+        "pageEnd": 86,
+        "printedPage": 100,
+        "examLabels": [
+          "GPSC EE Pre, 28.01.2017"
+        ]
+      },
+      "question": "A Scientist says that the efficiency of his heat engine, which works at source temperature 127°C and sink temperature 27°C is 26%, then",
+      "options": {
+        "a": "It is impossible",
+        "b": "It is quite possible",
+        "c": "It is possible but less probable",
+        "d": "Data incomplete"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Tₕ = 127°C ≈ 400 K, Tₗ = 27°C ≈ 300 K and claimed efficiency η = 26%.\nThe Carnot limit is ηc = 1 − Tₗ/Tₕ = 1 − 300/400 = 1 − 3/4 = 1 − 0.75 = 0.25 = 25%.\nBecause the claimed 26% exceeds 25%, the heat engine is impossible.",
+      "sourceExplanation": "Tₕ = 127°C ≈ 400 K, Tₗ = 27°C ≈ 300 K and claimed efficiency η = 26%.\nThe Carnot limit is ηc = 1 − Tₗ/Tₕ = 1 − 300/400 = 1 − 3/4 = 1 − 0.75 = 0.25 = 25%.\nBecause the claimed 26% exceeds 25%, the heat engine is impossible.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-100-524",
+      "number": 524,
+      "source": {
+        "page": 86,
+        "pageEnd": 86,
+        "printedPage": 100,
+        "examLabels": [
+          "Punjab PSC (Lect.) 06.08.2017"
+        ]
+      },
+      "question": "Choose the incorrect statement. The Second Law of Thermodynamics indicates that",
+      "options": {
+        "a": "complete conversion of low grade energy into high grade energy is impossible",
+        "b": "heat and work are not completely interchangeable",
+        "c": "reversible and irreversible are two distinct processes",
+        "d": "it is possible to transfer heat from low temperature to high temperature if heat extracted is exactly equal to work delivered"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The Kelvin–Planck statement rules out a cyclic engine that produces net work while exchanging heat with only a single fixed-temperature reservoir. The Clausius statement rules out a cyclic device whose sole effect is transferring heat from a cooler body to a hotter body.\nChoice (d) does not correctly state either law: transfer from cold to hot requires an external energy input or another compensating effect; it is not licensed merely by equating the heat extracted to “work delivered.” Therefore (d) is the intended incorrect statement.\nThe usual cyclic-engine qualification also applies to (a): the second law limits complete conversion of heat to work in a cycle, whereas a noncyclic isothermal ideal-gas expansion can convert its absorbed heat into work while changing the gas state.",
+      "sourceExplanation": "Second Law of Thermodynamics:\n• Kelvin–Planck statement: It is impossible for a heat engine to produce net work in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.\n• Clausius statement: It is impossible to construct a device which, operating in a cycle, will produce no effect other than the transfer of heat from a cooler body to a hotter body.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Second-Law Statements",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-100-525",
+      "number": 525,
+      "source": {
+        "page": 86,
+        "pageEnd": 87,
+        "printedPage": 100,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017"
+        ]
+      },
+      "question": "An inventor claims that heat engine will develop 9 kW receiving 17500 J/s of heat while working between temperatures of 130°C and — 40°C his claim",
+      "options": {
+        "a": "Is not possible",
+        "b": "Is possible",
+        "c": "Cannot be judged",
+        "d": "Is possible with further improvements"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Given T₁ = 130 + 273 = 403 K, T₂ = 273 − 40 = 233 K, output P = 9 kW, and heat input Q̇ₛ = 17500 J/s = 17.5 kW.\nThe claimed efficiency is η = P/Q̇ₛ = 9/17.5 ≈ 0.514.\nThe Carnot limit is ηc = (T₁ − T₂)/T₁ = (403 − 233)/403 ≈ 0.4218.\nSince η > ηc, the claim is impossible and violates the second law.",
+      "sourceExplanation": "Given T₁ = 130 + 273 = 403 K, T₂ = 273 − 40 = 233 K, output P = 9 kW, and heat input Q̇ₛ = 17500 J/s = 17.5 kW.\nThe claimed efficiency is η = P/Q̇ₛ = 9/17.5 ≈ 0.514.\nThe Carnot limit is ηc = (T₁ − T₂)/T₁ = (403 − 233)/403 ≈ 0.4218.\nSince η > ηc, the claim is impossible and violates the second law.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-101-526",
+      "number": 526,
+      "source": {
+        "page": 87,
+        "pageEnd": 87,
+        "printedPage": 101,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017",
+          "ESE 2012"
+        ]
+      },
+      "question": "An inventor states that his new conceptual engine, while operating between temperature limits of 377°C and 27°C, will reject 50% of heat absorbed from the source. What type of cycle will this engine have?",
+      "options": {
+        "a": "Carnot cycle",
+        "b": "Stirling cycle",
+        "c": "Impossible cycle",
+        "d": "Possible cycle"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Rejecting 50% of the heat absorbed implies ηₐ = 1 − Qᵣ/Qₛ = 1 − 0.5 = 0.50.\nT₂ = 27°C ≈ 300 K and T₁ = 377°C ≈ 650 K.\nηc = [(T₁ − T₂)/T₁] × 100% = [(650 − 300)/650] × 100% ≈ 53.85%.\nBecause ηₐ = 50% < ηc, the claimed performance is thermodynamically possible and corresponds to a possible irreversible cycle. It does not establish a particular cycle such as Carnot or Stirling.",
+      "sourceExplanation": "Given ηₐ = 50% → because 50% is absorbed.\nT₂ = 300 K, T₁ = 650 K.\nηc = [(T₁ − T₂)/T₁] × 100 = [(650 − 300)/650] × 100.\nηc = 53.84%.\nηₐcₜᵤₐₗ < ηcₐᵣₙₒₜ, so it is a possible cycle.",
+      "note": "Clarified that the 50% efficiency follows from the rejected fraction; the source’s phrase “because 50% absorbed” is imprecise.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-101-527",
+      "number": 527,
+      "source": {
+        "page": 87,
+        "pageEnd": 87,
+        "printedPage": 101,
+        "examLabels": [
+          "GPSC Asstt. Director of Transport 05.03.2017"
+        ]
+      },
+      "question": "For a given temperature T₁, as the difference between T₁ and T₂ increases, the COP of a Carnot heat pump:",
+      "options": {
+        "a": "Increases",
+        "b": "Decreases",
+        "c": "Does not change",
+        "d": "First decrease, then increases"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a Carnot heat pump, COPₕₚ = Tₕ/(Tₕ − Tc) = T₁/(T₁ − T₂).\nAt fixed T₁, increasing the temperature difference T₁ − T₂ increases the denominator while the numerator remains constant, so COP decreases.",
+      "sourceExplanation": "For a Carnot heat pump, COPₕₚ = Tₕ/(Tₕ − Tc) = T₁/(T₁ − T₂).\nAt fixed T₁, increasing the temperature difference T₁ − T₂ increases the denominator while the numerator remains constant, so COP decreases.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-101-528",
+      "number": 528,
+      "source": {
+        "page": 87,
+        "pageEnd": 87,
+        "printedPage": 101,
+        "examLabels": [
+          "ISRO Scientist/Engineer 17.12.2017"
+        ]
+      },
+      "question": "What is the maximum rate that a heat pump which uses 1 kW of electric power can supply heat to a house at 27°C when the outside temperature is 12°C",
+      "options": {
+        "a": "50 J/s",
+        "b": "25 kJ/s",
+        "c": "20kJ/s",
+        "d": "30J/s"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given Ẇ = 1 kW = 1 kJ/s, T₁ = 27 + 273 = 300 K and T₂ = 12 + 273 = 285 K.\nThe maximum performance is reversible: COPₕₚ = heating effect/work input = Q̇₁/Ẇ = Q̇₁/(Q̇₁ − Q̇₂) = T₁/(T₁ − T₂).\nCOPₕₚ = 300/(300 − 285) = 20.\nThus Q̇₁/Ẇ = 20 and Q̇₁ = 20Ẇ = 20 × 1 = 20 kJ/s.",
+      "sourceExplanation": "Given Ẇ = 1 kW = 1 kJ/s, T₁ = 27 + 273 = 300 K and T₂ = 12 + 273 = 285 K.\nThe maximum performance is reversible: COPₕₚ = heating effect/work input = Q̇₁/Ẇ = Q̇₁/(Q̇₁ − Q̇₂) = T₁/(T₁ − T₂).\nCOPₕₚ = 300/(300 − 285) = 20.\nThus Q̇₁/Ẇ = 20 and Q̇₁ = 20Ẇ = 20 × 1 = 20 kJ/s.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 87,
+          "bbox": [
+            156,
+            646,
+            210,
+            744
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat pump HP uses work W to absorb Q₂ from the outside at T₂ and deliver Q₁ to the house at T₁."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-101-529",
+      "number": 529,
+      "source": {
+        "page": 87,
+        "pageEnd": 87,
+        "printedPage": 101,
+        "examLabels": [
+          "ISRO Scientist/Engineer 07.05.2017"
+        ]
+      },
+      "question": "During January, at a location in Rohtang, winds at —6°C can be observed. Several meters below the ground, the temperature remains at 27°C. A scientist claims to have devised a power cycle exploiting this situation that has a thermal efficiency of 10%. Whether the claim is true?",
+      "options": {
+        "a": "True",
+        "b": "False",
+        "c": "Can't say",
+        "d": "Insufficient data"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The maximum reversible efficiency is ηᵢ = (Tₘₐₓ − Tₘᵢₙ)/Tₘₐₓ.\nUsing Tₘₐₓ = 27 + 273 = 300 K and Tₘᵢₙ = −6 + 273 = 267 K, ηᵢ = [27 − (−6)]/(27 + 273) = 33/300 = 0.11 = 11%.\nThe proposed 10% is less than the Carnot limit, so it is thermodynamically possible. This supports the intended “True” choice; it does not by itself prove that the scientist has constructed such a device.",
+      "sourceExplanation": "ηᵢdₑₐₗ = (Tₘₐₓ − Tₘᵢₙ)/Tₘₐₓ = [27 − (−6)]/(27 + 273) = (33/300) × 100 = 11%.\nηₛcᵢₑₙₜᵢₛₜ = 10% < ηᵢdₑₐₗ.\nThe scientist’s claim is true since a power cycle having 10% thermal efficiency is possible because Carnot efficiency is 11%.",
+      "note": "Distinguished compatibility with the second law from experimental proof of the inventor’s claim.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-101-530",
+      "number": 530,
+      "source": {
+        "page": 87,
+        "pageEnd": 87,
+        "printedPage": 101,
+        "examLabels": [
+          "UPSC JWM 2017"
+        ]
+      },
+      "question": "Which one of the following statements is correct?",
+      "options": {
+        "a": "A machine which violates Clausius statement will violate the first law of thermodynamics",
+        "b": "A machine which violates Kelvin-Plank statement will violate the first law of thermodynamics",
+        "c": "A machine which violates the second law of thermodynamics will violate the first law of thermodynamics",
+        "d": "A machine which violates Kelvin-Plank statement will violate the Clausius statement"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Kelvin–Planck statement: a cyclic heat engine cannot produce net work by exchanging heat only with a single fixed-temperature reservoir.\nClausius statement: a cyclic device cannot transfer heat from a cooler body to a hotter body as its sole effect, without external energy input.\nThe statements are equivalent: a machine violating Kelvin–Planck can be coupled to a refrigerator to create a Clausius violation. Thus (d) is correct. A violation of the second law need not violate energy conservation or the first law.",
+      "sourceExplanation": "Kelvin–Planck statement: a cyclic heat engine cannot produce net work by exchanging heat only with a single fixed-temperature reservoir.\nClausius statement: a cyclic device cannot transfer heat from a cooler body to a hotter body as its sole effect, without external energy input.\nThe statements are equivalent: a machine violating Kelvin–Planck can be coupled to a refrigerator to create a Clausius violation. Thus (d) is correct. A violation of the second law need not violate energy conservation or the first law.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Second-Law Statements",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-102-531",
+      "number": 531,
+      "source": {
+        "page": 88,
+        "pageEnd": 88,
+        "printedPage": 102,
+        "examLabels": [
+          "CGPSC Polytechnic Lecturer 2017"
+        ]
+      },
+      "question": "A heat pump operates between two heat reservoirs, one at 800 K and other at 400 K. What will be the coefficient of performance (COP) of the heat pump?",
+      "options": {
+        "a": "0.5",
+        "b": "1.0",
+        "c": "1.5",
+        "d": "2.0",
+        "e": "2.5"
+      },
+      "sourceAnswer": "(d)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For a reversible (Carnot) heat pump, COPₕₚ = T₁/(T₁ − T₂) = 800/(800 − 400) = 800/400 = 2. This is the maximum possible COP between these reservoirs and is the source’s intended option (d).\nThe question does not specify reversible/Carnot operation or maximum COP. Actual heat pumps between these same reservoirs can have lower COPs, including several of the other printed choices, so the actual COP cannot be determined uniquely.",
+      "sourceExplanation": "[COP]ₕ.ₚ. = T₁/(T₁ − T₂) = 800/(800 − 400).\n[COP]ₕ.ₚ. = 800/400 = 2.",
+      "note": "Missing reversible/maximum condition. Printed (d) is retained and grading disabled.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 88,
+          "bbox": [
+            151,
+            233,
+            214,
+            332
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat pump between T₁ = 800 K and T₂ = 400 K absorbs Q₂ and work W, and delivers Q₁."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-102-532",
+      "number": 532,
+      "source": {
+        "page": 88,
+        "pageEnd": 88,
+        "printedPage": 102,
+        "examLabels": [
+          "CGPSC Polytechnic Lecturer 2017"
+        ]
+      },
+      "question": "The efficiency η of a reversible heat engine receiving heat solely at T₁ and rejecting heat solely at T₂ is given by:",
+      "options": {
+        "a": "η = (T₁ − T₂)/T₂",
+        "b": "η = (T₂ − T₁)/T₂",
+        "c": "η = (T₁ − T₂)/T₁",
+        "d": "η = (T₂ − T₁)/T₁",
+        "e": "η = (T₂ − T₁)/T₁²"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The reversible heat-engine efficiency is ηᵣₑᵥ = W/Q₁ = (Q₁ − Q₂)/Q₁ = 1 − Q₂/Q₁.\nFor a reversible engine exchanging heat solely at T₁ and T₂, Q₁/Q₂ = T₁/T₂.\nTherefore ηᵣₑᵥ = 1 − T₂/T₁ = (T₁ − T₂)/T₁.",
+      "sourceExplanation": "The reversible heat-engine efficiency is ηᵣₑᵥ = W/Q₁ = (Q₁ − Q₂)/Q₁ = 1 − Q₂/Q₁.\nFor a reversible engine exchanging heat solely at T₁ and T₂, Q₁/Q₂ = T₁/T₂.\nTherefore ηᵣₑᵥ = 1 − T₂/T₁ = (T₁ − T₂)/T₁.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 88,
+          "bbox": [
+            153,
+            541,
+            211,
+            640
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Reversible heat engine receives Q₁ at T₁, produces W and rejects Q₂ at T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-102-533",
+      "number": 533,
+      "source": {
+        "page": 88,
+        "pageEnd": 88,
+        "printedPage": 102,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "A heat engine working on the Carnot cycle receives heat at the rate of 50 kW from a source at 1300K and rejects it to a sink at 400K. The heat rejected is",
+      "options": {
+        "a": "20.3 kW",
+        "b": "15.4kW",
+        "c": "12.4kW",
+        "d": "10.8 kW"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Given T₁ = 1300 K, T₂ = 400 K and Q̇₁ = 50 kW.\nη = work done/heat supplied = Ẇ/Q̇₁ = (T₁ − T₂)/T₁ for a Carnot engine.\n(Q̇₁ − Q̇₂)/Q̇₁ = (1300 − 400)/1300.\nThus 1 − Q̇₂/Q̇₁ = 9/13, so Q̇₂/Q̇₁ = 4/13 ≈ 0.30769.\nQ̇₂ = 50 × 0.30769 ≈ 15.38 kW ≈ 15.4 kW.",
+      "sourceExplanation": "Given T₁ = 1300 K, T₂ = 400 K and Q̇₁ = 50 kW.\nη = work done/heat supplied = Ẇ/Q̇₁ = (T₁ − T₂)/T₁ for a Carnot engine.\n(Q̇₁ − Q̇₂)/Q̇₁ = (1300 − 400)/1300.\nThus 1 − Q̇₂/Q̇₁ = 9/13, so Q̇₂/Q̇₁ = 4/13 ≈ 0.30769.\nQ̇₂ = 50 × 0.30769 ≈ 15.38 kW ≈ 15.4 kW.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 88,
+          "bbox": [
+            391,
+            212,
+            437,
+            280
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine E receives Q₁ at T₁, produces W and rejects Q₂ at T₂."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-102-534",
+      "number": 534,
+      "source": {
+        "page": 88,
+        "pageEnd": 88,
+        "printedPage": 102,
+        "examLabels": [
+          "ESE 2017"
+        ]
+      },
+      "question": "A reversible heat engine rejects 80% of the heat supplied during a cycle of operation. If the engine is reversed and operates as a refrigerator, then its coefficient of performance shall be",
+      "options": {
+        "a": "6",
+        "b": "5",
+        "c": "4",
+        "d": "3"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given Q₂ = 0.8Q₁. For the heat engine, Q₁ = W + Q₂, so W = Q₁ − Q₂ = 0.2Q₁.\nηₑ = W/Q₁ = 0.2Q₁/Q₁ = 0.2.\nWhen the reversible cycle is run as a refrigerator, COPᵣ = Q₂/W = 0.8Q₁/(0.2Q₁) = 4.\nEquivalently, 1 + COPᵣ = 1/ηₑ, giving COPᵣ = 1/0.2 − 1 = 4.",
+      "sourceExplanation": "Given Q₂ = 0.8Q₁. For the heat engine, Q₁ = W + Q₂, so W = Q₁ − Q₂ = 0.2Q₁.\nηₑ = W/Q₁ = 0.2Q₁/Q₁ = 0.2.\nWhen the reversible cycle is run as a refrigerator, COPᵣ = Q₂/W = 0.8Q₁/(0.2Q₁) = 4.\nEquivalently, 1 + COPᵣ = 1/ηₑ, giving COPᵣ = 1/0.2 − 1 = 4.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 88,
+          "bbox": [
+            335,
+            540,
+            380,
+            613
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Reversible engine receives Q₁ at T₁, rejects Q₂ at T₂, and delivers W; the cycle can be reversed."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-103-535",
+      "number": 535,
+      "source": {
+        "page": 89,
+        "pageEnd": 89,
+        "printedPage": 103,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 20.11.2017"
+        ]
+      },
+      "question": "A Carnot refrigeration cycle is used to estimate the energy requirement in an attempt to reduce the temperature of a specimen to absolute zero. Suppose that we want to remove 0.01 J of energy from the specimen when it is at 2 × 10⁻⁶ K. How much work is necessary if the high-temperature reservoir is at 20°C?",
+      "options": {
+        "a": "622 kJ",
+        "b": "864 kJ",
+        "c": "1170 kJ",
+        "d": "1465 kJ"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Given Tₗ = 2 × 10⁻⁶ K, Tₕ = 20°C ≈ 293 K and Qₗ = 0.01 J.\nFor the Carnot refrigerator, COP = Tₗ/(Tₕ − Tₗ) = Qₗ/W.\nThus W = Qₗ(Tₕ − Tₗ)/Tₗ. Since Tₕ ≫ Tₗ, this is approximately QₗTₕ/Tₗ.\nW ≈ (0.01 × 293)/(2 × 10⁻⁶) = 1465000 J = 1465 kJ.\nUsing the unapproximated difference at 293 K gives 1464999.99 J; the printed choice is unchanged.",
+      "sourceExplanation": "Given Tₗ = 2 × 10⁻⁶ K, Tₕ = 20°C ≈ 293 K and Qₗ = 0.01 J.\nFor the Carnot refrigerator, COP = Tₗ/(Tₕ − Tₗ) = Qₗ/W.\nThus W = Qₗ(Tₕ − Tₗ)/Tₗ. Since Tₕ ≫ Tₗ, this is approximately QₗTₕ/Tₗ.\nW ≈ (0.01 × 293)/(2 × 10⁻⁶) = 1465000 J = 1465 kJ.\nUsing the unapproximated difference at 293 K gives 1464999.99 J; the printed choice is unchanged.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 89,
+          "bbox": [
+            149,
+            255,
+            217,
+            352
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot refrigerator C.R. uses work W to extract Qₗ from the specimen at Tₗ and rejects Qₕ to Tₕ."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-103-536",
+      "number": 536,
+      "source": {
+        "page": 89,
+        "pageEnd": 89,
+        "printedPage": 103,
+        "examLabels": [
+          "CGPSC ARTO & TSI 07.01.2017"
+        ]
+      },
+      "question": "A carnot engine receives 1200kJ and 3600kJ heat from reservoirs which are at 600 K and x K respectively and rejects heat of 3200 kJ to the sink which is at 400 K. Calculate x in Celsius.",
+      "options": {
+        "a": "800",
+        "b": "600",
+        "c": "427",
+        "d": "327",
+        "e": "227"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a reversible cycle, the Clausius equality is ∮δQ/T = 0.\n1200/600 + 3600/x − 3200/400 = 0.\nThus 2 + 3600/x − 8 = 0, giving x = 600 K.\nIn Celsius, x ≈ 600 − 273 = 327°C.",
+      "sourceExplanation": "For a reversible cycle, the Clausius equality is ∮δQ/T = 0.\n1200/600 + 3600/x − 3200/400 = 0.\nThus 2 + 3600/x − 8 = 0, giving x = 600 K.\nIn Celsius, x ≈ 600 − 273 = 327°C.",
+      "note": "The printed “Carnot engine” exchanges heat with more than two source temperatures; the calculation uses the intended general reversible-cycle entropy balance. Here the resulting sources are both at 600 K.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "NIST: SI Units — Temperature",
+          "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "section": "Temperature Conversion (Exact)"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Multiple-Reservoir Reversible Cycles",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-103-537",
+      "number": 537,
+      "source": {
+        "page": 89,
+        "pageEnd": 89,
+        "printedPage": 103,
+        "examLabels": [
+          "WBPSC AE, 2017"
+        ]
+      },
+      "question": "A perfect heat engine works on the Carnot cycle between 1000° C and 200° C. The efficiency of the engine will be",
+      "options": {
+        "a": "80%",
+        "b": "60%",
+        "c": "42.8%",
+        "d": "37.2%"
+      },
+      "sourceAnswer": "(b)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Tₕ = 1000°C ≈ 1273 K and Tₗ = 200°C ≈ 473 K.\nηc = 1 − Tₗ/Tₕ = 1 − 473/1273 ≈ 0.6284 = 62.84%. The exact kelvin conversion gives 62.84% to the shown precision.\nThe source derivation also obtains 62.84%, but its marker selects (b), 60%. The question does not request coarse rounding, and none of its printed alternatives equals 62.84%. There is no correct unique printed choice.",
+      "sourceExplanation": "Tₕ = 1000°C = 1000 + 273 = 1273 K.\nTₗ = 200°C = 200 + 273 = 473 K.\nηcₐᵣₙₒₜ = 1 − Tₗ/Tₕ = 1 − 473/1273 = 1 − 0.371 = 0.6284.\nηcₐᵣₙₒₜ = 62.84%.",
+      "note": "Printed (b) gives 60%, inconsistent with the source’s own 62.84% derivation. No matching option; disabled grading.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-103-538",
+      "number": 538,
+      "source": {
+        "page": 89,
+        "pageEnd": 89,
+        "printedPage": 103,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "A reversible engine receives heat from a reservoir at 727°C and rejects heat at temperature T₂. A second reversible engine operating on a Carnot cycle receives the heat rejected by the first engine and rejects heat to a sink at 27°C. If the work output from each engine is equal, what is T₂?",
+      "options": {
+        "a": "775K",
+        "b": "650K",
+        "c": "750K",
+        "d": "625K"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For engine I, η₁ = (Tₕ − T₂)/Tₕ = (1000 − T₂)/1000 = W₁/Q₁.\nFor engine II, η₂ = (T₂ − 300)/T₂ = W₂/Q₂.\nThe engines are reversible and in series, so Q₂/Q₁ = T₂/1000. Therefore W₁ = Q₁(1000 − T₂)/1000 and W₂ = Q₂(T₂ − 300)/T₂ = Q₁(T₂ − 300)/1000.\nEqual work outputs give 1000 − T₂ = T₂ − 300.\nThus T₂ = (1000 + 300)/2 = 650 K.",
+      "sourceExplanation": "For engine I: η₁ = (Tₕ − Tₗ)/Tₕ = (1000 − T₂)/1000 = work output/heat supplied.\nFor engine II: η₂ = (T₂ − 300)/T₂ = work output/heat supplied.\nBoth engines have the same work output.\n1000 − T₂ = T₂ − 300.\nT₂ = 650 K.",
+      "note": "Expanded the printed equal-work step using the reversible series heat-flow ratio; this is why the arithmetic, rather than geometric, mean applies.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Engines in Series",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-103-539",
+      "number": 539,
+      "source": {
+        "page": 89,
+        "pageEnd": 89,
+        "printedPage": 103,
+        "examLabels": [
+          "GPSC ARTO 01.05.2016"
+        ]
+      },
+      "question": "If the ratio of higher to lower absolute temperature is 1.5. Then COP of a heat pump working on reversed Carnot cycle will be",
+      "options": {
+        "a": "6",
+        "b": "4",
+        "c": "3",
+        "d": "2"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "In the printed reversed Carnot P–V cycle, 4–1 and 2–3 are constant-temperature processes; 1–2 and 3–4 are isentropic.\nThe highest temperature is Tₕ and the lowest is Tₗ, with Tₕ/Tₗ = 1.5.\nCOPₕₚ = Tₕ/(Tₕ − Tₗ) = Tₕ/[Tₗ(Tₕ/Tₗ − 1)]\n      = 1.5/(1.5 − 1) = 3.",
+      "sourceExplanation": "In the printed reversed Carnot P–V cycle, 4–1 and 2–3 are constant-temperature processes; 1–2 and 3–4 are isentropic.\nThe highest temperature is Tₕ and the lowest is Tₗ, with Tₕ/Tₗ = 1.5.\nCOPₕₚ = Tₕ/(Tₕ − Tₗ) = Tₕ/[Tₗ(Tₕ/Tₗ − 1)]\n      = 1.5/(1.5 − 1) = 3.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 89,
+          "bbox": [
+            379,
+            560,
+            448,
+            631
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Reversed Carnot P–V loop with states 1, 2, 3, 4 and arrows indicating counterclockwise operation; 4–1 and 2–3 are isotherms."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-540",
+      "number": 540,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "GPSC ARTO 01.05.2016"
+        ]
+      },
+      "question": "A heat engine is supplied heat at the rate of 1700 kJ/min and gives an output of 9 kW. The rate of heat rejection will be",
+      "options": {
+        "a": "17.33 kJ/sec",
+        "b": "18.33 kJ/sec",
+        "c": "19.33 kJ/sec",
+        "d": "10.33 kJ/sec"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Heat supplied Q̇ₛ = 1700 kJ/min = 1700/60 = 28.33 kW. Work output Ẇ = 9 kW.\nSince Ẇ = Q̇ₛ − Q̇ᵣ, Q̇ᵣ = Q̇ₛ − Ẇ = 28.33 − 9 = 19.33 kW = 19.33 kJ/s.",
+      "sourceExplanation": "Heat supplied Q̇ₛ = 1700 kJ/min = 1700/60 = 28.33 kW. Work output Ẇ = 9 kW.\nSince Ẇ = Q̇ₛ − Q̇ᵣ, Q̇ᵣ = Q̇ₛ − Ẇ = 28.33 − 9 = 19.33 kW = 19.33 kJ/s.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-541",
+      "number": 541,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "Kerala PSC Asstt. Prof. 27.09.2016"
+        ]
+      },
+      "question": "An industrial heat pump operates between the temperatures of 27°C and -13°C. The rates of heat addition and heat rejection are 750 W and 1000W respectively. The COP for the heat pump is :",
+      "options": {
+        "a": "7.5",
+        "b": "6.5",
+        "c": "4.0",
+        "d": "3.0"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The heat pump absorbs Q̇ₛ = 750 W and rejects Q̇ᵣ = 1000 W.\nẆᵢₙ = Q̇ᵣ − Q̇ₛ = 1000 − 750 = 250 W.\nCOPₕₚ = Q̇ᵣ/Ẇᵢₙ = 1000/250 = 4.\nThe temperatures are not needed for this actual COP; they would be needed to evaluate the reversible upper limit.",
+      "sourceExplanation": "The heat pump absorbs Q̇ₛ = 750 W and rejects Q̇ᵣ = 1000 W.\nẆᵢₙ = Q̇ᵣ − Q̇ₛ = 1000 − 750 = 250 W.\nCOPₕₚ = Q̇ᵣ/Ẇᵢₙ = 1000/250 = 4.\nThe temperatures are not needed for this actual COP; they would be needed to evaluate the reversible upper limit.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Refrigerators and Heat Pumps",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+          "section": "Equations 4.3 and 4.4"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat Pumps & Refrigerators",
+      "figures": [
+        {
+          "page": 90,
+          "bbox": [
+            155,
+            360,
+            212,
+            440
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Heat pump absorbs 750 W from the 260 K reservoir and delivers 1000 W to the 300 K reservoir with input Win."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-542",
+      "number": 542,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3"
+        ]
+      },
+      "question": "A heat engine works on a Carnot cycle with a heat sink at a temperature of 27°C. What would be the temperature of the heat at source if efficiency of the engine is 10%?",
+      "options": {
+        "a": "100°C",
+        "b": "90°C",
+        "c": "60°C",
+        "d": "30°C"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Given sink temperature T₂ = 27 + 273 = 300 K.\nFor a reversible Carnot engine, η = 1 − T₂/T₁.\n10% = 10/100 = 1 − 300/T₁.\nThus T₁ = 300/0.9 = 333.33 K ≈ 333 K.\nThe source temperature is approximately 333 − 273 = 60°C. With exact conversion it is 60.35°C, so 60°C is the rounded choice.",
+      "sourceExplanation": "Given sink temperature T₂ = 27 + 273 = 300 K.\nFor a reversible Carnot engine, η = 1 − T₂/T₁.\n10% = 10/100 = 1 − 300/T₁.\nThus T₁ = 300/0.9 = 333.33 K ≈ 333 K.\nThe source temperature is approximately 333 − 273 = 60°C. With exact conversion it is 60.35°C, so 60°C is the rounded choice.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-543",
+      "number": 543,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "A engine works on Carnot cycle between 727°C and 227°C. The efficiency of the engine is",
+      "options": {
+        "a": "50%",
+        "b": "75.4%",
+        "c": "31.2%",
+        "d": "68.8%"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Tc = 227 + 273 = 500 K and Tₕ = 727 + 273 = 1000 K.\nη = 1 − Tc/Tₕ = 1 − 500/1000 = 0.5 = 50%.",
+      "sourceExplanation": "Tc = 227 + 273 = 500 K and Tₕ = 727 + 273 = 1000 K.\nη = 1 − Tc/Tₕ = 1 − 500/1000 = 0.5 = 50%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-544",
+      "number": 544,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "ISRO Scientist/Engineer 03.07.2016"
+        ]
+      },
+      "question": "A heat engine working with a thermal efficiency of 35% receives 2 kW of heat from a furnace. The waste heat rejected from the engine is",
+      "options": {
+        "a": "0.7 kW",
+        "b": "0.35 kW",
+        "c": "1.3kW",
+        "d": "1.65 kW"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Thermal efficiency ηₜₕ = 35% = 0.35 and heat input Q̇ₛ = 2 kW.\nηₜₕ = 1 − Q̇ᵣ/Q̇ₛ. Hence Q̇ᵣ/Q̇ₛ = 1 − 0.35 = 0.65.\nQ̇ᵣ = 2 × 0.65 = 1.3 kW.\nEquivalently, the useful output is 0.35 × 2 = 0.7 kW and the remaining 1.3 kW is rejected.",
+      "sourceExplanation": "Thermal efficiency = 35% = 0.35.\nQₛ = 2 kW; Qᵣ = ?\nηₜₕ = 1 − Qᵣ/Qₛ.\n0.35 = 1 − Qᵣ/(2 × 10³).\nQᵣ/2 = 1 − 0.35.\nQᵣ = 2 × 0.65.\nQᵣ = 1.3 kW.",
+      "note": "All printed algebra is retained. The source mixes watts and kilowatts in two adjacent equations; the checked explanation uses consistent kW throughout.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-104-545",
+      "number": 545,
+      "source": {
+        "page": 90,
+        "pageEnd": 90,
+        "printedPage": 104,
+        "examLabels": [
+          "APPSC AEE Screening Test 2016"
+        ]
+      },
+      "question": "If carnot engine rejects heat at temperature of 400 K and accepts at 750K. What shall be heat absorbed, if heat rejected is 1000 kJ.",
+      "options": {
+        "a": "946 kJ",
+        "b": "800 kJ",
+        "c": "1875 kJ",
+        "d": "750 kJ"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For the Carnot engine, the ideal and actual efficiencies coincide: ηᵢ = ηₐ.\nTherefore 1 − Tₗ/Tₕ = 1 − Qₗ/Qₕ, or Qₗ/Qₕ = Tₗ/Tₕ.\nGiven Tₕ = 750 K, Tₗ = 400 K and Qₗ = 1000 kJ,\nQₕ = 1000 × 750/400 = 1875 kJ.",
+      "sourceExplanation": "For the Carnot engine, the ideal and actual efficiencies coincide: ηᵢ = ηₐ.\nTherefore 1 − Tₗ/Tₕ = 1 − Qₗ/Qₕ, or Qₗ/Qₕ = Tₗ/Tₕ.\nGiven Tₕ = 750 K, Tₗ = 400 K and Qₗ = 1000 kJ,\nQₕ = 1000 × 750/400 = 1875 kJ.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [
+        {
+          "page": 90,
+          "bbox": [
+            374,
+            555,
+            455,
+            657
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Carnot engine E absorbs Qₕ at Tₕ = 750 K, produces W and rejects Qₗ = 1000 kJ at Tₗ = 400 K."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-105-546",
+      "number": 546,
+      "source": {
+        "page": 91,
+        "pageEnd": 91,
+        "printedPage": 105,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "The device that produces net work in a complete cycle by exchanging heat only with single thermal energy reservoir is known as:",
+      "options": {
+        "a": "PMM3",
+        "b": "Heat pump",
+        "c": "PMM2",
+        "d": "PMM1"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "The described device is a perpetual motion machine of the second kind, PMM2: it cyclically absorbs heat from one reservoir and converts it completely into net work. This would have 100% thermal efficiency and violates the Kelvin–Planck statement of the second law.\nFor comparison, PMM1 would create energy, violating the first law. Energy cannot be created or destroyed but can be converted between forms.\nThe source also describes PMM3 as an imaginary zero-friction machine. An ideal frictionless system can maintain existing motion without dissipation; zero friction alone does not permit an inexhaustible net work output.",
+      "sourceExplanation": "PMM-1: A perpetual motion machine of the first kind does not exist because it violates the first law of thermodynamics. Such a machine would produce energy by itself. According to energy conservation, energy cannot be created or destroyed, but can be converted from one form to another.\nPMM-2: Perpetual motion machines of the second kind violate the second law of thermodynamics, because they would continuously absorb heat from a single thermal reservoir and convert the absorbed heat completely into work. Such a machine would have 100% efficiency.\nPMM-3: A perpetual motion machine of the third kind is an imaginary machine that has zero friction.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Perpetual Motion Machines",
+      "figures": [
+        {
+          "page": 91,
+          "bbox": [
+            140,
+            248,
+            226,
+            308
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "PMM-1 sketch shows a dashed heat input Q and work output W."
+        },
+        {
+          "page": 91,
+          "bbox": [
+            124,
+            383,
+            215,
+            488
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Hypothetical PMM-2 absorbs Q from one heat source, delivers W = Q and rejects Qᵣ = 0."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-105-547",
+      "number": 547,
+      "source": {
+        "page": 91,
+        "pageEnd": 91,
+        "printedPage": 105,
+        "examLabels": [
+          "RPSC LECTURER 16.01.2016"
+        ]
+      },
+      "question": "Perpetual motion machine of second kind (PMM-I)) violates the",
+      "options": {
+        "a": "Zeroth law of thermodynamics",
+        "b": "First law of thermodynamics",
+        "c": "Second law of thermodynamics",
+        "d": "Third law of thermodynamics"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A perpetual motion machine of the second kind would convert heat absorbed from a single reservoir completely into cyclic work, with ηₕₑ = 100%, W = Qᵢₙ and Qₒᵤₜ = 0.\nThis violates the Kelvin–Planck statement of the second law of thermodynamics.",
+      "sourceExplanation": "A perpetual motion machine of the second kind (PMM-II) violates the second law of thermodynamics.\nηₕₑ = 100%.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Perpetual Motion Machines",
+      "figures": [
+        {
+          "page": 91,
+          "bbox": [
+            133,
+            628,
+            227,
+            742
+          ],
+          "placement": "explanation",
+          "units": "pdf-points",
+          "alt": "Hypothetical heat engine receives Qin from one source, delivers W = Qin and rejects Qout = 0."
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-105-548",
+      "number": 548,
+      "source": {
+        "page": 91,
+        "pageEnd": 91,
+        "printedPage": 105,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3",
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "What will be the thermal efficiency of heat engine if heat engine is supplied heat at the rate 30,000 J/s and gives out output of 9kW?",
+      "options": {
+        "a": "0.6",
+        "b": "0.5",
+        "c": "0.3",
+        "d": "0.4"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Thermal efficiency = work output/heat supplied.\nGiven Ẇ = 9 kW = 9 × 10³ J/s and Q̇ₐ = 30000 J/s,\nηₜₕ = (9 × 10³)/30000 = 0.3.",
+      "sourceExplanation": "Thermal efficiency = work output/heat supplied.\nGiven Ẇ = 9 kW = 9 × 10³ J/s and Q̇ₐ = 30000 J/s,\nηₜₕ = (9 × 10³)/30000 = 0.3.",
+      "note": "Question, options, printed key and complete adjacent explanation checked against the scan; result independently checked using the cited thermodynamic relations.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "First and second laws; ideal gases"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Heat-Engine Energy Balance",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-105-549",
+      "number": 549,
+      "source": {
+        "page": 91,
+        "pageEnd": 91,
+        "printedPage": 105,
+        "examLabels": [
+          "RPSC ADE 2016"
+        ]
+      },
+      "question": "Three carnot engines A, B and C having source temperatures of 750 K, 700 K and 650 K have sink temperatures respectively 400 K, 350 K and 300 K . Which engine is least efficient?",
+      "options": {
+        "a": "Engine A",
+        "b": "Engine B",
+        "c": "Engine C",
+        "d": "none of these"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "For A, Tₘₐₓ = 750 K and Tₘᵢₙ = 400 K; for B, 700 K and 350 K; for C, 650 K and 300 K.\nηₐ = (750 − 400)/750 = 350/750 ≈ 0.4667 = 46.67%.\nηᵦ = (700 − 350)/700 = 350/700 = 1/2 = 50%.\nηc = (650 − 300)/650 = 350/650 = 7/13 ≈ 53.85%.\nThus ηc > ηᵦ > ηₐ, and engine A is least efficient.",
+      "sourceExplanation": "For A: Tₘₐₓ = 750 K, Tₘᵢₙ = 400 K.\nFor B: Tₘₐₓ = 700 K, Tₘᵢₙ = 350 K.\nFor C: Tₘₐₓ = 650 K, Tₘᵢₙ = 300 K.\nηₐ = (Tₘₐₓ − Tₘᵢₙ)/Tₘₐₓ = 350/750 = 0.46 = 46%.\nηᵦ = (700 − 350)/700 = 350/700 = 1/2 = 50%.\nηc = (650 − 300)/650 = 350/650 = 7/13 = 53%.\nηc > ηᵦ > ηₐ; the least efficient engine is A.",
+      "note": "Source truncates rather than rounds two efficiencies. Recomputed them accurately; their ordering and option (a) are unchanged.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: The Carnot Cycle",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "section": "Carnot efficiency, principle, and reversed-cycle COP"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Carnot Engines & Efficiency",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-105-550",
+      "number": 550,
+      "source": {
+        "page": 91,
+        "pageEnd": 92,
+        "printedPage": 105,
+        "examLabels": [
+          "HPPSC Asstt. Prof. 20.11.2017",
+          "RPSC VPITI 14.02.2016"
+        ]
+      },
+      "question": "Which of the following second-law statement is incorrect",
+      "options": {
+        "a": "The entropy of an isolated system must remain constant or increase",
+        "b": "The entropy of a hot copper block decreases as it cools down",
+        "c": "If ice is melted in water in an insulated container, the net entropy decreases",
+        "d": "Work must be input if energy is transferred from a cold body to a hot body"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "For a closed fixed mass, the entropy balance is dS = δQ/Tᵦ + dSgₑₙ, where Tᵦ is the heat-transfer boundary temperature and dSgₑₙ ≥ 0.\nFor an isolated system, δQ = 0, so dS = dSgₑₙ ≥ 0: entropy remains constant for reversible behavior or increases with irreversibility. Thus (a) is correct.\nA hot copper block loses entropy as it cools, while its surroundings gain entropy; (b) is correct.\nMelting ice in warmer water inside an insulated container does not decrease the net entropy of the combined isolated system. Its total entropy increases for finite-temperature heat transfer, so (c) is incorrect.\nIn the ordinary refrigerator context, work must be supplied to transfer heat from cold to hot, as in (d).\nFor a general nonisolated closed system, δQ/Tᵦ may be positive, negative or zero, and the resulting entropy change may likewise be positive, negative or zero despite nonnegative entropy generation.",
+      "sourceExplanation": "dS = dQ/T + Sgₑₙ (fixed-mass entropy).\n(i) For an isolated/insulated system, dQ/T = 0.\ndS = Sgₑₙ > 0 (always). Hence entropy always increases.\n(ii) For a closed system, dQ/T can be positive, negative or zero.\nHence dS = dQ/T + Sgₑₙ.\nEntropy can be positive, negative or zero.",
+      "note": "Corrected the source’s strict “always increases” to nondecrease, since entropy generation may equal zero. Its final sign statement concerns entropy change, not absolute entropy. Answer (c) remains correct.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Entropy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+          "section": "Entropy balance and reversible reference paths"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Statements of the Second Law of Thermodynamics",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "section": "Kelvin and Clausius statements"
+        }
+      ],
+      "topic": "Second Law of Thermodynamics",
+      "subtopic": "Entropy Balance & Irreversibility",
+      "figures": [],
+      "transcriptionReviewed": true
     }
   ]
 }

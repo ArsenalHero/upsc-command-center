@@ -1490,11 +1490,11 @@
         "d": "Pv = RT"
       },
       "sourceAnswer": "(d)",
-      "answer": "d",
-      "status": "verified",
-      "explanation": "For specific volume v = V/m and the characteristic gas constant R, the ideal-gas equation is Pv = RT, choice (d). More generally Z = Pv/(RT), so an ideal gas has Z = 1. PV = mRT uses total volume, while PV = nRᵤT uses the universal molar constant. The real-gas expression Pv = ZRT in (b) also reduces to (d) if Z = 1; (d) is the canonical ideal-gas equation requested with these symbols.",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For specific volume v = V/m and the characteristic gas constant R, the ideal-gas equation is Pv = RT, choice (d). More generally Z = Pv/(RT), so an ideal gas has Z = 1. PV = mRT uses total volume, while PV = nRᵤT uses the universal molar constant. The real-gas expression Pv = ZRT in (b) also reduces to (d) if Z = 1; (d) is the canonical ideal-gas equation requested with these symbols. Because both (b) with Z = 1 and (d) can represent an ideal gas, the printed alternatives do not provide a unique one-answer key.",
       "sourceExplanation": "Compressibility factor Z = Pv/(RT). For ideal gas Z = 1. Then Pv = RT.",
-      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "note": "With Z = 1 for an ideal gas, both printed (b) and (d) are valid. Source chooses the canonical form (d), but the alternatives are not mutually exclusive.",
       "references": [
         {
           "title": "MIT Unified Engineering: Compendium of Equations",
@@ -1561,6 +1561,1623 @@
           "alt": "Generalized compressibility chart: Z versus reduced pressure with reduced-temperature curves"
         }
       ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-831",
+      "number": 831,
+      "source": {
+        "page": 136,
+        "pageEnd": 136,
+        "printedPage": 150,
+        "examLabels": [
+          "UPRVUNL AE 07.10.2016"
+        ]
+      },
+      "question": "Which of the following is true statement for phase diagram of pure substance?",
+      "options": {
+        "a": "Sublimation curve, fusion curve and vaporization curve meets at critical point",
+        "b": "Extreme points of vaporization curve are triple point and critical point",
+        "c": "Extreme points of fusion curve are triple point and critical point",
+        "d": "Fusion curve for water has positive slope"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "On a pure-substance phase diagram, the liquid–vapour saturation or vaporization curve extends from the triple point to the critical point, so (b) is correct. Sublimation, fusion and vaporization curves meet at the triple point, not at the critical point. Water’s ordinary fusion curve has negative slope. The source’s T–s phase-region sketch also labels solid, liquid, liquid–vapour and solid–vapour regions, the triple-point line and the critical point.",
+      "sourceExplanation": "In a phase diagram of pure substance, extreme points of the vaporization curve are triple point and critical point.\n[Phase-region sketch with critical point and triple-point line.]\nFusion curve for water has negative slope.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 136,
+          "bbox": [
+            111,
+            420,
+            250,
+            526
+          ],
+          "placement": "explanation",
+          "alt": "Source phase-region sketch with triple-point line and critical endpoint"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-832",
+      "number": 832,
+      "source": {
+        "page": 136,
+        "pageEnd": 136,
+        "printedPage": 150,
+        "examLabels": [
+          "APPSC AEE Mains 2016 Paper-III"
+        ]
+      },
+      "question": "Ifthe degree of saturation of air is zero, the air is said to be",
+      "options": {
+        "a": "superheated air",
+        "b": "unsaturated air",
+        "c": "saturated air",
+        "d": "atmospheric air"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "Degree of saturation of humid air is μ = ω/ω_sat at the same pressure and temperature, where ω is the water-vapour mass per unit dry-air mass. If μ = 0, then ω = 0: the air is dry and therefore unsaturated, choice (b). Saturated air has μ = 1. The source substitutes a temperature difference T₁ − T₂ for this mass-ratio definition and uses a pure-substance T–s dome; neither establishes the claimed saturated-air answer.",
+      "sourceExplanation": "If the degree of saturation of air is zero, the air is said to be saturated air.\n[T–s diagram with critical point, saturated-liquid line, saturated-vapour line and a constant-temperature line from 1 to 2.]\nWe know degree of saturation DOS = T₁ − T₂. When T₁ = T₂, DOS = 0. It means air is said to be saturated air.",
+      "note": "Corrected source key (c) to (b); the source confuses humidity degree of saturation with a temperature difference.",
+      "references": [
+        {
+          "title": "NPTEL Properties of Atmospheric Air",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112104113/lecture35/35_4.htm",
+          "section": "Humidity ratio and dew point"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Humid air",
+      "figures": [
+        {
+          "page": 136,
+          "bbox": [
+            113,
+            611,
+            258,
+            698
+          ],
+          "placement": "explanation",
+          "alt": "Source pure-substance saturation dome, incorrectly used to explain humid-air degree of saturation"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-833",
+      "number": 833,
+      "source": {
+        "page": 136,
+        "pageEnd": 136,
+        "printedPage": 150,
+        "examLabels": [
+          "Rajasthan AE (Nagar Nigam) 2016 Shift-3"
+        ]
+      },
+      "question": "What do you mean by antifreeze chemicals?",
+      "options": {
+        "a": "Substance that will not affect the freezing point of water",
+        "b": "Substance that evaporates the water",
+        "c": "Substance that lowers the freezing point of water",
+        "d": "Substance that increases freezing point of water"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "An antifreeze is an additive that lowers the freezing point of a water-based liquid, choice (c). This freezing-point depression allows use in colder conditions. Common antifreeze mixtures also raise the boiling point, allowing higher coolant operating temperatures.",
+      "sourceExplanation": "An antifreeze is an additive which lowers the\nfreezing point of water based liquid. An antifreeze\nmixture is used to achieve freezing point depression for\ncold environments common antifreeze increase the\nboiling point of the liquid allowing higher coolant\ntemperature.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Freezing and antifreeze",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-834",
+      "number": 834,
+      "source": {
+        "page": 136,
+        "pageEnd": 136,
+        "printedPage": 150,
+        "examLabels": [
+          "Nagaland PSC (CTSE) 2016, Paper-II"
+        ]
+      },
+      "question": "Consider the liquid vapour saturation curve of a pure substance on the P-T diagram. The magnitude to the slope of the tangent line to this curve at temperature T (in Kelvin) is",
+      "options": {
+        "a": "Proportion of the enthalpy of vaporization at that temperature",
+        "b": "Proportional to the square of temperature T",
+        "c": "Proportional to the temperature T",
+        "d": "Proportional to the volume change at the temperature"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The Clapeyron equation for liquid–vapour equilibrium is dP_sat/dT = h_fg/[T(v_g − v_f)]. Thus, with the denominator TΔv shown explicitly, the slope contains the enthalpy of vaporization as its numerator, which is the intended sense of (a). It is inversely, not directly, related to T and the volume change when the other quantities are held fixed. Along the actual saturation curve all these quantities vary with temperature; the source’s bare proportionality is shorthand for the full equation.",
+      "sourceExplanation": "For the liquid–vapour saturation curve of a pure substance on the P–T diagram, the magnitude of the slope of the tangent line at temperature T in kelvin is proportional to the enthalpy of vaporization at that temperature.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Clapeyron equation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-835",
+      "number": 835,
+      "source": {
+        "page": 136,
+        "pageEnd": 136,
+        "printedPage": 150,
+        "examLabels": [
+          "HPPSC AE (PWD) 10.09.2016"
+        ]
+      },
+      "question": "The mass of vapour in the system divided by the total system mass (the mass of vapour plus the mass of liquid) is defined as:",
+      "options": {
+        "a": "Quantity",
+        "b": "Quality",
+        "c": "Mass mix ratio",
+        "d": "Vapour mix ratio"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Quality, also called steam dryness fraction, is the mass of vapour divided by the total mass of the liquid–vapour mixture:\nx = m_vapour/m_total = m_vapour/(m_vapour + m_liquid).\nTherefore (b).",
+      "sourceExplanation": "The mass of vapour in the system divided by total system mass is known as quality. It is also known as dryness fraction of steam.\nQuality x = m_vapour/m_total = m_vapour/(m_vapour + m_liquid).",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-150-836",
+      "number": 836,
+      "source": {
+        "page": 136,
+        "pageEnd": 137,
+        "printedPage": 150,
+        "examLabels": [
+          "CGPSC Poly. Lect. 22.05.2016"
+        ]
+      },
+      "question": "The correct sequence of the decreasing order of the value of characteristic gas constants given is",
+      "options": {
+        "a": "hydrogen, nitrogen, air, carbon dioxide",
+        "b": "carbon dioxide, hydrogen, nitrogen, air",
+        "c": "air, nitrogen, carbon dioxide, hydrogen",
+        "d": "nitrogen, air, hydrogen, carbon dioxide",
+        "e": "None of the above"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "corrected",
+      "explanation": "The characteristic gas constant is R = Rᵤ/M, so it decreases as molar mass increases. The molecular molar masses are approximately H₂ = 2, N₂ = 28, air = 28.97 and CO₂ = 44 kg/kmol. Their specific constants are approximately 4.16, 0.297, 0.287 and 0.189 kJ/(kg·K), respectively. Hence the decreasing sequence is hydrogen, nitrogen, air, carbon dioxide, choice (a).",
+      "sourceExplanation": "Gas characteristic constant R = R̄/M, where M is molecular weight.\nFor hydrogen, M = 1; R_H₂ = R̄.\nFor nitrogen, M = 14; R_N₂ = R̄/14.\nFor air, M = 28; R_air = R̄/28.\nFor carbon dioxide, M = 44; R_CO₂ = R̄/44.",
+      "note": "The printed derivation incorrectly uses atomic masses for H₂ and N₂ and an approximate air mass of 28. Correct molecular masses give the same ordering.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas constants",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-837",
+      "number": 837,
+      "source": {
+        "page": 137,
+        "pageEnd": 137,
+        "printedPage": 151,
+        "examLabels": [
+          "UPRVUNL AE 21.08.2016"
+        ]
+      },
+      "question": "In a coupled separating and _ throttling calorimeter. 0.89 is the dryness fraction of steam in the separating unit and 0.93 is the dryness fraction in the throtting unit. What is the approximate value of the dryness fraction of the steam sample?",
+      "options": {
+        "a": "0.93",
+        "b": "0.89",
+        "c": "0.91",
+        "d": "0.83"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "For a combined separating and throttling calorimeter, original quality is x = x₁x₂. Given separator value x₁ = 0.89 and throttling value x₂ = 0.93,\nx = 0.89 × 0.93 = 0.8277 ≈ 0.83.\nThus (d).",
+      "sourceExplanation": "Separating calorimeter dryness fraction x₁ = 0.89. Throttling calorimeter dryness fraction x₂ = 0.93.\nApproximate value of dryness fraction x = x₁x₂ = 0.89 × 0.93 = 0.8277 ≈ 0.83.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam calorimeters",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-838",
+      "number": 838,
+      "source": {
+        "page": 137,
+        "pageEnd": 137,
+        "printedPage": 151,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II"
+        ]
+      },
+      "question": "The temperature above which vapour of the substance CANNOT be liquified, no matter how much pressure is applied is called",
+      "options": {
+        "a": "Absolute Temperature",
+        "b": "Critical Temperature",
+        "c": "Equilibrium Temperature",
+        "d": "Osmotic Temperature"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The critical temperature is the temperature above which a substance cannot be converted into a distinct liquid phase by increasing pressure alone, giving (b). The source’s P–v phase-region sketch marks the critical point, saturated-vapour line, saturated-solid line, triple-point line and solid–vapour region. Its water values are about 374°C and 221.1 bar; modern values are about 373.946°C and 220.64 bar.",
+      "sourceExplanation": "The temperature above which vapour of a substance cannot be liquefied no matter how much pressure is applied is called critical temperature.\n[P–v phase-region diagram with critical point and triple-point line.]\nP_critical = 221.1 bar.\nT_critical = 374°C.",
+      "note": "Correct definition and key preserved; clarified the outdated water critical-pressure number in the source.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 137,
+          "bbox": [
+            106,
+            537,
+            279,
+            663
+          ],
+          "placement": "explanation",
+          "alt": "Pressure–specific-volume phase-region sketch with critical point, saturated-vapour line and triple-point line"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-839",
+      "number": 839,
+      "source": {
+        "page": 137,
+        "pageEnd": 137,
+        "printedPage": 151,
+        "examLabels": [
+          "Rajasthan Nagar Nigam AE 2016, Shift-II"
+        ]
+      },
+      "question": "If one kg of steam sample contains 0.8kg of dry steam, then what will be it's dryness fraction?",
+      "options": {
+        "a": "0.6",
+        "b": "1",
+        "c": "0.8",
+        "d": "0.2"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Dryness fraction x = m_g/(m_g + m_l), where m_g is dry-vapour mass and m_l is liquid-water mass in wet steam. Here m_g = 0.8 kg, total mass = 1 kg, and m_l = 1 − 0.8 = 0.2 kg.\nx = 0.8/(0.8 + 0.2) = 0.8, choice (c).",
+      "sourceExplanation": "Dryness fraction x = m_g/(m_g + m_l). m_g = mass of actual dry steam; m_l = mass of water in steam. Given m_g = 0.8 kg; m_l = 1 − 0.8 = 0.2 kg.\nx = 0.8/(0.8 + 0.2) = 0.8.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-840",
+      "number": 840,
+      "source": {
+        "page": 137,
+        "pageEnd": 137,
+        "printedPage": 151,
+        "examLabels": [
+          "GPSC Asstt. Prof. 28.08.2016"
+        ]
+      },
+      "question": "The amount of heat absorbed when 1 kg of saturated liquid water boils at pressure P is Q,. The amount of heat released when 1 kg of saturated water vapour condenses at same pressure P is Q,, then",
+      "options": {
+        "a": "Q₁ = Q₂ for all values of P",
+        "b": "Q₁ > Q₂ for all values of P",
+        "c": "Q₁ < Q₂ for all values of P",
+        "d": "Q₁ > Q₂ or Q₁ < Q₂ depends upon value of pressure P"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "At the same saturation pressure, vaporization and condensation connect the same saturated-liquid and saturated-vapour states in opposite directions. The heat absorbed by 1 kg during constant-pressure vaporization is Q₁ = h_g − h_f = h_fg. The magnitude released during the reverse condensation is Q₂ = h_g − h_f. Thus Q₁ = Q₂ for every pressure where the liquid–vapour transition exists, choice (a).",
+      "sourceExplanation": "For the same saturated pressure, heat released and absorbed is the same from one state/phase to another. Q₁ is heat absorbed; Q₂ is heat released. Q₁ = Q₂ at the same pressure.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Latent heat",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-841",
+      "number": 841,
+      "source": {
+        "page": 137,
+        "pageEnd": 137,
+        "printedPage": 151,
+        "examLabels": [
+          "KPSC ADF 2015"
+        ]
+      },
+      "question": "In the Unary Phase diagram of water, the point at which ice, water and water vapour coexist in equilibrium, the degrees of freedom are:",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "At the triple point of water there is one component C = 1 and three coexisting phases P = 3. Gibbs’s phase rule P + F = C + 2 gives 3 + F = 1 + 2, so F = 0. Neither temperature nor pressure can be varied independently while all three phases remain in equilibrium. Hence (a).",
+      "sourceExplanation": "P + F = C + 2.\n3 + F = 1 + 2.\nF = 0.\nThe triple point at which ice, water and water vapour coexist in equilibrium has degree of freedom zero.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Phase rule",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-151-842",
+      "number": 842,
+      "source": {
+        "page": 137,
+        "pageEnd": 138,
+        "printedPage": 151,
+        "examLabels": [
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "Select the correct statement as per Charles's law.",
+      "options": {
+        "a": "PV = constant, if T is kept constant.",
+        "b": "V/T = constant, if P is kept constant.",
+        "c": "P/V = constant, if T is kept constant.",
+        "d": "T/P = constant, if T is kept constant."
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Charles’s law states that the volume of a fixed mass of perfect gas is directly proportional to its absolute temperature at constant absolute pressure. Therefore V ∝ T and V/T = constant, or V₁/T₁ = V₂/T₂ = V₃/T₃. Choice (b) states this condition.",
+      "sourceExplanation": "Charles’s law: The volume of a given mass of a perfect gas varies directly as its absolute temperature when the absolute pressure remains constant.\nV ∝ T; V/T = constant.\nV₁/T₁ = V₂/T₂ = V₃/T₃ = constant.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-843",
+      "number": 843,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "TSPSC AEE 2015"
+        ]
+      },
+      "question": "Which of the following gasses will have the maximum value of gas constant R",
+      "options": {
+        "a": "nitrogen",
+        "b": "carbon dioxide",
+        "c": "sulpher dioxide",
+        "d": "oxygen"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Specific gas constant R = Rᵤ/M, so R ∝ 1/M. The source’s molar-mass table is: N₂—28; CO₂—44; SO₂—64; O₂—32 kg/kmol. Nitrogen has the smallest molar mass and therefore the largest R among these gases, giving (a).",
+      "sourceExplanation": "Element | Molecular weight M\nNitrogen N₂ | 28\nCarbon dioxide CO₂ | 44\nSulphur dioxide SO₂ | 64\nOxygen O₂ | 32\nGas constant R = R̄/M, so R ∝ 1/M. Nitrogen has the maximum gas constant because its molecular weight is 28.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas constants",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-844",
+      "number": 844,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "TSPSC Managers, 2015"
+        ]
+      },
+      "question": "The process of converting ice directly to steam is called?",
+      "options": {
+        "a": "Equivalent evaporation",
+        "b": "Sublimation",
+        "c": "Condensation",
+        "d": "Critical evaporation"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The direct conversion of ice, a solid, into steam or water vapour without an intervening liquid phase is sublimation, choice (b).",
+      "sourceExplanation": "The process of converting ice directly to\nsteam is called sublimation process.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-845",
+      "number": 845,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "ISRO Scientist/Engineer (RAC) 29.11.2015"
+        ]
+      },
+      "question": "To convert volumetric analysis to gravimetric analysis, the relative volume of each constituent of the flue gases is-",
+      "options": {
+        "a": "multiplied by its molecular weight",
+        "b": "divided by its molecular weight",
+        "c": "multiplied by its density",
+        "d": "multiplied by its specific weight"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "For an ideal-gas mixture at common temperature and pressure, volume fraction equals mole fraction y_i. To obtain relative masses, multiply each relative volume by its molecular mass M_i, then normalize: w_i = y_iM_i/Σ(y_jM_j). This is the source’s intended method, (a). Multiplying each constituent volume by its density at the same conditions also gives its mass, since ρ_i = PM_i/(RᵤT); using specific weight gives proportional weights with the same common g. Thus (c), and after normalization (d), are physically equivalent routes. The printed choices do not provide a unique valid method.",
+      "sourceExplanation": "To convert volumetric analysis to gravimetric analysis, the relative volume of each constituent of the flue gases is multiplied by its molecular weight.",
+      "note": "Source (a) is the usual molar conversion, but (c) also directly converts volume to mass and (d) gives proportional weights. Preserved all printed alternatives; no unique one-answer key.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas mixtures",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-846",
+      "number": 846,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "GPSC AE 26.07.2015"
+        ]
+      },
+      "question": "The dryness fraction of steam within a turbine is not allowed to fall below",
+      "options": {
+        "a": "0.95",
+        "b": "0.50",
+        "c": "0.99",
+        "d": "0.90"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The conventional steam-turbine design limit in this question is a minimum quality of about 0.90, corresponding to about 10% moisture by mass. Excess liquid droplets cause blade erosion and losses, so turbine exhaust quality is usually kept around or above this range. Thus the intended choice is (d); the exact allowable limit depends on the turbine design. The source prints only the answer marker and supplies no explanatory derivation.",
+      "sourceExplanation": "",
+      "note": "Scan contains no explanation beyond Ans. (d). Added the engineering rationale and qualified the conventional threshold.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-847",
+      "number": 847,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "Assam PSC CCE Pre 2015"
+        ]
+      },
+      "question": "A pure substance cannot remain in liquid phase if it is below the",
+      "options": {
+        "a": "critical state",
+        "b": "triple point",
+        "c": "saturated liquid line",
+        "d": "saturated vapour line"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Below the triple-point pressure, a stable equilibrium liquid phase does not exist: heating then connects solid and vapour through sublimation. Thus the intended choice is (b). “Below” must refer to pressure rather than every temperature below the triple-point temperature; compression can stabilize liquid at some lower temperatures, and metastable supercooled liquid is a separate issue. The source compares pressure–temperature and pressure–specific-volume projections for substances that expand on freezing and substances that contract on freezing.",
+      "sourceExplanation": "According to the given diagrams for a substance that expands on freezing and a substance that contracts on freezing, a pure substance cannot remain in liquid phase if it is below the triple point.\nP–v–T surface and projections for a substance that expands on freezing: (a) three-dimensional view; (b) phase diagram; (c) p–v diagram.\nP–v–T surface and projections for a substance that contracts on freezing: (a) three-dimensional view; (b) phase diagram; (c) p–v diagram.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 138,
+          "bbox": [
+            318,
+            144,
+            519,
+            379
+          ],
+          "placement": "explanation",
+          "alt": "Source comparison of phase-diagram and P–v projections for substances expanding or contracting on freezing"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-848",
+      "number": 848,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "KPSC ADF 2015"
+        ]
+      },
+      "question": "During addition of latent heat, for a wet steam, there is change in :",
+      "options": {
+        "a": "temperature only",
+        "b": "temperature & pressure",
+        "c": "phase only",
+        "d": "temperature & phase"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "For equilibrium vaporization of wet steam at a fixed saturation pressure, latent heat converts liquid into vapour without changing temperature or pressure. The vapour mass fraction increases, so the change is in phase only among the listed choices, (c). Specific volume, enthalpy and entropy do change as quality increases.",
+      "sourceExplanation": "During addition of latent heat for a wet steam,\nthere is change in phase only and at constant\ntemperature and pressure.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Latent heat",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-849",
+      "number": 849,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "Assam PSC CCE Pre 2015"
+        ]
+      },
+      "question": "Which of the following expands in volume upon freezing?",
+      "options": {
+        "a": "Mercury",
+        "b": "Alcohol",
+        "c": "Water",
+        "d": "Chloroform"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "Water expands on freezing under ordinary conditions because ice is less dense than liquid water. Therefore the same mass occupies a larger volume as ice, choice (c).",
+      "sourceExplanation": "Water expands in volume upon freezing.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-850",
+      "number": 850,
+      "source": {
+        "page": 138,
+        "pageEnd": 138,
+        "printedPage": 152,
+        "examLabels": [
+          "GWSSB AAE, 27.12.2015"
+        ]
+      },
+      "question": "Sensible heat is the heat required to -",
+      "options": {
+        "a": "change liquid into vapour",
+        "b": "increase the temperature of a liquid or vapour",
+        "c": "none of three mentioned here.",
+        "d": "change vapour into liquid"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Sensible heat changes the temperature of a substance without a phase transition. It can increase or decrease the temperature of a liquid or vapour, as the source notes; the offered heating statement is (b). By contrast latent heat supplies or removes phase-change energy at the saturation condition.",
+      "sourceExplanation": "Sensible heat refers to the amount of energy\nneeded to increase or decrease the temperature of some\nsubstances, independent of phase change.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Sensible and latent heat",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-152-851",
+      "number": 851,
+      "source": {
+        "page": 138,
+        "pageEnd": 139,
+        "printedPage": 152,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II"
+        ]
+      },
+      "question": "For steam",
+      "options": {
+        "a": "The critical temperature is 221.2°C and critical pressure is 374.15 bar",
+        "b": "The critical temperature is 374.15°C and critical pressure is 221.2 bar",
+        "c": "The critical temperature is 221.2°C and critical pressure is 221.2 bar",
+        "d": "The critical temperature is 374.15°C and critical pressure is 374.15 bar"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "corrected",
+      "explanation": "The source identifies water’s critical values as T_c = 374.15°C, v_c = 0.003155 m³/kg and P_c = 221.2 bar, selecting (b). Modern accepted values are approximately T_c = 373.946°C and P_c = 220.64 bar, with v_c about 0.003106 m³/kg. Choice (b) is the intended approximate pair and is clearly distinct from the swapped or implausible other options; its numerical values are outdated.",
+      "sourceExplanation": "At critical point, critical temperature T_cr = 374.15°C, specific volume v_cr = 0.003155 m³/kg, critical pressure P_cr = 221.2 bar.",
+      "note": "Kept all historical printed choices and intended approximate option (b); corrected the source’s water critical constants in the reviewed explanation.",
+      "references": [
+        {
+          "title": "NIST Chemistry WebBook: Water",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Mask=4&Name=water",
+          "section": "Phase change data"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-852",
+      "number": 852,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "ESE 1994"
+        ]
+      },
+      "question": "The conversion of water from 40°C to steam at 200°C at a pressure of bar is best represented as",
+      "options": {
+        "a": "T–s diagram (a): initial liquid-heating portion, horizontal passage across the dome, then superheating.",
+        "b": "T–s diagram (b): rising straight segment across the dome, then descending along the vapour side.",
+        "c": "T–s diagram (c): liquid-side segment and horizontal passage across the dome, ending at saturated vapour.",
+        "d": "T–s diagram (d): lower-left segment and horizontal passage across the dome, ending at saturated vapour."
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The four printed choices are T–s sketches. For constant-pressure heating below the critical pressure, initially subcooled water heats toward the saturated-liquid line, vaporizes across the dome at constant saturation temperature, and then superheats to 200°C. Diagram (a) shows all three portions and is the intended source choice. However, the scan literally prints “at a pressure of bar” with the numerical pressure missing. Without a pressure one cannot establish the saturation temperature and hence the precise path from the stated endpoints; the original question is incomplete.",
+      "sourceExplanation": "",
+      "note": "The pressure numeral is absent in the native scan, not an OCR omission. Source provides only Ans. (a). All four genuine diagram options are preserved as native crops and readable descriptions.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 139,
+          "bbox": [
+            112,
+            226,
+            169,
+            271
+          ],
+          "placement": "question",
+          "alt": "Printed T–s choice (a)"
+        },
+        {
+          "page": 139,
+          "bbox": [
+            211,
+            226,
+            274,
+            272
+          ],
+          "placement": "question",
+          "alt": "Printed T–s choice (b)"
+        },
+        {
+          "page": 139,
+          "bbox": [
+            112,
+            273,
+            171,
+            313
+          ],
+          "placement": "question",
+          "alt": "Printed T–s choice (c)"
+        },
+        {
+          "page": 139,
+          "bbox": [
+            211,
+            273,
+            274,
+            313
+          ],
+          "placement": "question",
+          "alt": "Printed T–s choice (d)"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-853",
+      "number": 853,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "Kerala PSC AE 06.08.2015"
+        ]
+      },
+      "question": "Dryness fraction is the ratio of :",
+      "options": {
+        "a": "mass of dry steam to the mass of water vapour in suspension",
+        "b": "mass of water vapour in suspension to the mass of water vapour and mass of dry steam",
+        "c": "mass of dry steam to the mass of dry steam and mass of water vapour in suspension",
+        "d": "mass of water vapour in suspension to the mass of dry steam"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "corrected",
+      "explanation": "For wet steam, dryness fraction is x = m_s/(m_s + m_w), where m_s is dry-vapour mass and m_w is suspended liquid-water mass. The intended option is (c). The printed choices and prose incorrectly say “water vapour in suspension”; the suspended dispersed phase in wet steam is liquid water, not an additional vapour category. If read literally as two vapour masses, the definition would not describe quality.",
+      "sourceExplanation": "Dryness fraction: The term dryness fraction is related with the cut steam. It is defined as the ratio of mass of dry steam to the sum of mass of dry steam and mass of water vapour in suspension.\nx = m_s/(m_s + m_w).\nWhere x = dryness fraction; m_s = mass of steam; m_w = mass of water.",
+      "note": "Preserved the printed option wording; corrected the source’s suspended-water terminology using its own m_w definition.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Steam quality",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-854",
+      "number": 854,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "Nagaland PSC CTSE 2015 Paper-II",
+          "ESE 1994"
+        ]
+      },
+      "question": "Which one of the following statements is correct?",
+      "options": {
+        "a": "Pressure and temperature are independent during phase change",
+        "b": "An isothermal line is also a constant pressure line in the wet vapour region",
+        "c": "Entropy decreases during evaporation",
+        "d": "The term dryness fraction is used to specify the fraction by mass of liquid in a mixture of liquid and vapour"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Within the equilibrium wet-vapour region of a pure substance, saturation temperature fixes saturation pressure. An isothermal line is therefore also isobaric, making (b) correct. Pressure and temperature are dependent during the phase change; entropy increases during evaporation because s_fg = h_fg/T > 0; and dryness fraction denotes vapour, not liquid, mass fraction. The source prints only the key.",
+      "sourceExplanation": "",
+      "note": "Answer-only source; added the full property reasoning for all alternatives.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-855",
+      "number": 855,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "MPPSC State Forest Service Exam, 2014"
+        ]
+      },
+      "question": "A system comprising of a single phase, is known as",
+      "options": {
+        "a": "Open system",
+        "b": "Closed system",
+        "c": "Homogeneous system",
+        "d": "Heterogeneous system"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A system consisting of one phase is called homogeneous in this classification, choice (c). A heterogeneous system contains more than one phase. Whether the system is open or closed concerns mass transfer through its boundary rather than its number of phases.",
+      "sourceExplanation": "A system comprising a single phase is called\na homogeneous system.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Systems and phases",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-856",
+      "number": 856,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "Kerala LBS Centre For Sci. & Tech. Asstt. Prof. 2014"
+        ]
+      },
+      "question": "A state of a pure substance at which a phase change ends or begins is called",
+      "options": {
+        "a": "Critical state",
+        "b": "Saturated state",
+        "c": "Triple point",
+        "d": "Gibb's state"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "A saturated state is a boundary state at which a phase change begins or ends, giving (b). On the source T–s dome the saturated-liquid line marks x = 0: further energy addition at the saturation pressure starts vaporization. The saturated-vapour line marks x = 1: evaporation has just finished, and further heating at that pressure produces superheated vapour.",
+      "sourceExplanation": "The saturated state is a state where phase change begins or ends.\n[T–s diagram with saturated-liquid line and saturated-vapour line.]\nA saturated-liquid line is where any further addition of energy will cause a small portion of the liquid to convert to vapour. Similarly, at a saturated-vapour line, further heating results in a superheated-vapour state.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 139,
+          "bbox": [
+            351,
+            278,
+            465,
+            376
+          ],
+          "placement": "explanation",
+          "alt": "T–s dome with saturated-liquid and saturated-vapour boundaries"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-857",
+      "number": 857,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "TNPSC AE 2014"
+        ]
+      },
+      "question": "The heating of a gas at constant pressure is governed by",
+      "options": {
+        "a": "Boyle's law",
+        "b": "Charles's law",
+        "c": "Gay-Lussac law",
+        "d": "Joule's law"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "For a fixed mass of ideal gas heated at constant pressure, Charles’s law gives V/T = constant, so (b). Boyle’s law instead describes isothermal pressure–volume variation, PV = constant; the source calls this “heating at constant temperature,” which should be understood as an isothermal process with possible heat transfer. Gay-Lussac’s law describes constant-volume heating, P/T = constant.",
+      "sourceExplanation": "Charles’s law: heating of a gas at constant pressure.\nBoyle’s law: heating of a gas at constant temperature.\nGay-Lussac law: heating of a gas at constant volume.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Gas laws",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-153-858",
+      "number": 858,
+      "source": {
+        "page": 139,
+        "pageEnd": 139,
+        "printedPage": 153,
+        "examLabels": [
+          "TNPSC AE 2014"
+        ]
+      },
+      "question": "The heating of wet steam at constant temperature till it becomes dry saturated is similar to that of heating at a",
+      "options": {
+        "a": "constant volume",
+        "b": "constant pressure",
+        "c": "constant entropy",
+        "d": "constant enthalpy"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Wet steam is an equilibrium liquid–vapour mixture. At a fixed saturation temperature its pressure is the corresponding saturation pressure, so heating it until x = 1 at constant temperature is also constant-pressure evaporation, choice (b). The source T–s sketch shows the horizontal phase-change line P = constant and T = constant within the saturation dome.",
+      "sourceExplanation": "Heating wet steam at constant temperature until it becomes dry saturated is similar to heating at constant pressure.\n[T–s dome with critical point, saturated-vapour line and horizontal P = constant, T = constant line.]",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [
+        {
+          "page": 139,
+          "bbox": [
+            332,
+            649,
+            492,
+            740
+          ],
+          "placement": "explanation",
+          "alt": "T–s dome showing constant-pressure, constant-temperature heating of wet steam"
+        }
+      ],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-859",
+      "number": 859,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "CGPSC AE 26.04.2015 SHIFT-II"
+        ]
+      },
+      "question": "The kinetic energy lost in friction is transformed into heat which tends to",
+      "options": {
+        "a": "cool or condense the steam",
+        "b": "dry or superheat the steam",
+        "c": "increase the pressure of the steam",
+        "d": "reduce the dryness fraction",
+        "e": "decrease the specific volume of steam"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "Friction dissipates organized kinetic energy into internal energy. For steam, this dissipative heating tends to evaporate suspended liquid, increasing dryness, or to superheat already dry vapour. Thus (b) is the intended effect. Friction is an irreversible conversion of energy, so the source phrase “transformed into heat” describes heating within the fluid rather than heat necessarily crossing the system boundary.",
+      "sourceExplanation": "The kinetic energy lost in friction is transformed into heat which tends to dry or superheat the steam.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Irreversibility in steam flow",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-860",
+      "number": 860,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2013"
+        ]
+      },
+      "question": "Which of the following can be regarded as gas so that gas law could be applicable within the commonly encountered temperature limits ?",
+      "options": {
+        "a": "O₂, N₂, steam, CO₂",
+        "b": "O₂, N₂, water vapour",
+        "c": "SO₂, NH₃, CO₂, moisture",
+        "d": "O₂, N₂, H₂, air"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "At commonly encountered moderate pressures and temperatures, oxygen, nitrogen, hydrogen and air are often adequately represented by the ideal-gas equation, choice (d). The alternatives include steam, water vapour, ammonia, sulphur dioxide or moisture, whose states may be close enough to phase change that real-gas or saturation effects require care. Any ideal-gas approximation still depends on pressure, temperature and the required accuracy. The source provides only its key.",
+      "sourceExplanation": "",
+      "note": "Restored chemical subscripts from the scan; source is answer-only.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Ideal-gas approximation",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-861",
+      "number": 861,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "J&K PSC Civil Services Pre, 2013"
+        ]
+      },
+      "question": "Water boils when its vapour pressure :",
+      "options": {
+        "a": "equals that of the surroundings",
+        "b": "equals 760 mm of mercury",
+        "c": "equals to atmospheric pressure",
+        "d": "equals the pressure of water in the container"
+      },
+      "sourceAnswer": "(c)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Boiling occurs when a liquid’s saturation vapour pressure equals the local pressure imposed on it, normally the pressure of its surroundings. In an open vessel this is atmospheric pressure, so the source selects (c). Choice (a) expresses the more general surrounding-pressure condition and is also correct; (b) applies only at standard atmospheric pressure. Because the stem does not restrict the system to an open vessel and both (a) and (c) can describe the source’s assumed case, a unique key is not justified.",
+      "sourceExplanation": "Any liquid in an open container exposed to normal atmospheric pressure boils when its saturated vapour pressure becomes equal to 1 atmospheric pressure.",
+      "note": "Source assumes an open vessel without stating it in the question; options (a) and (c) overlap under that assumption.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-862",
+      "number": 862,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "JPSC AE 2013 Paper-V"
+        ]
+      },
+      "question": "When the fuel is burned and water is release in the liquid phase, the heating value of fuel is called",
+      "options": {
+        "a": "higher heating value",
+        "b": "lower heating value",
+        "c": "enthalpy of formation",
+        "d": "None the above"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "The higher heating value (gross calorific value) includes the latent heat recovered when the water in combustion products is condensed to liquid at the reference condition. The lower heating value leaves that water as vapour and excludes its condensation heat. Thus liquid water in the products corresponds to (a).",
+      "sourceExplanation": "higher heating value",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Heating values",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-863",
+      "number": 863,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "TNPSC AE 2013"
+        ]
+      },
+      "question": "The ratio of PV/(RT) is",
+      "options": {
+        "a": "Equations of state",
+        "b": "Compressibility factor",
+        "c": "Reduced properties",
+        "d": "Critical compressibility factor"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The ratio Pv/(RT), with specific volume and specific gas constant, is the compressibility factor Z. Equivalently, Z = PV/(nRᵤT) or, using molar volume, Z = Pv̄/(RᵤT). It is also the actual gas volume divided by ideal-gas volume at the same temperature, pressure and amount. Z = 1 for an ideal gas, giving (b).",
+      "sourceExplanation": "Compressibility factor Z, also known as compression factor or gas deviation factor, is a correction factor describing the deviation of a real gas from ideal-gas behaviour. It is the ratio of molar volume of a gas to the molar volume of an ideal gas at the same temperature and pressure.\nZ = PV/(RT).\nFor ideal gas Z = 1.",
+      "note": "The print does not define the volume or R basis; supplied the consistent specific, molar and total-volume forms without changing the option key.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Real gases and compressibility",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-864",
+      "number": 864,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "TNPSC AE 2013"
+        ]
+      },
+      "question": "A certain gas has Cₚ value of 1968 J/(kg·K) and Cᵥ value of 1507 J/(kg·K). The value of R is",
+      "options": {
+        "a": "0.461 kJ/(kg·K)",
+        "b": "1307 J/(kg·K)",
+        "c": "1",
+        "d": "461 kJ/(kg·K)"
+      },
+      "sourceAnswer": "(a)",
+      "answer": "a",
+      "status": "verified",
+      "explanation": "Mayer’s ideal-gas relation is cₚ − cᵥ = R. Hence R = 1968 − 1507 = 461 J/(kg·K) = 0.461 kJ/(kg·K), choice (a).",
+      "sourceExplanation": "Mayer’s formula: Cₚ − Cᵥ = R.\n1968 − 1507 = R.\nR = 461 J/(kg·K) = 0.461 kJ/(kg·K).",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        },
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Specific heats",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-865",
+      "number": 865,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "SJVN ET 2013"
+        ]
+      },
+      "question": "RMS velocity of hydrogen gas at NTP is:",
+      "options": {
+        "a": "526 m/s",
+        "b": "932 m/s",
+        "c": "1356 m/s",
+        "d": "1839 m/s"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "The root-mean-square molecular speed is c_rms = √(3RᵤT/M). Using the source’s NTP convention T ≈ 273 K and hydrogen M ≈ 2 kg/kmol, c_rms = √[(3 × 8314 × 273)/2] ≈ 1845 m/s. A more accurate hydrogen molar mass gives about 1838 m/s, matching the printed 1839 m/s in (d). The source supplies the value only; NTP here uses the 0°C convention.",
+      "sourceExplanation": "RMS velocity of hydrogen gas at NTP is\n1839 m/s.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Heat Capacity and Equipartition of Energy",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+        },
+        {
+          "title": "NIST Chemistry WebBook: Hydrogen",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=4",
+          "section": "Critical temperature"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Kinetic theory",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-866",
+      "number": 866,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-II"
+        ]
+      },
+      "question": "Triple point and critical point pressure of carbon dioxide are:-",
+      "options": {
+        "a": "4.58mm Hg and 221.2 bar respectively",
+        "b": "5.18 bar and 221.2 bar respectively",
+        "c": "1 bar and 50 bar respectively",
+        "d": "5.18 bar and 73.8 bar respectively"
+      },
+      "sourceAnswer": "(d)",
+      "answer": "d",
+      "status": "verified",
+      "explanation": "Carbon dioxide’s triple-point pressure is approximately 5.18 bar and its critical pressure approximately 73.8 bar, choice (d). The 221.2 bar values in other choices are historical approximate water critical-pressure values rather than CO₂ data.",
+      "sourceExplanation": "Triple point and critical point pressure of\ncarbon dioxide are 5.18 bar and 73.8 bar respectively.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NIST Chemistry WebBook: Carbon dioxide",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=4",
+          "section": "Triple-point and critical pressures"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Pure substances and phase change",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-867",
+      "number": 867,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "UKPSC AE-2013, Paper-I"
+        ]
+      },
+      "question": "Which one of the following is weaker than hydrogen bonds?",
+      "options": {
+        "a": "Ionic bond",
+        "b": "Vander Waals bond",
+        "c": "Covalent bond",
+        "d": "Metallic bond"
+      },
+      "sourceAnswer": "(b)",
+      "answer": "b",
+      "status": "verified",
+      "explanation": "The intended answer is van der Waals bonding, choice (b), referring to weak intermolecular attractions such as London dispersion compared with ordinary hydrogen bonds. Ionic, covalent and metallic bonding are generally stronger primary bonding categories. Bond-strength ranges can overlap, so this is the usual qualitative classification.",
+      "sourceExplanation": "Vander waals bond is weaker than hydrogen\nbonds.",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "OpenStax University Physics Volume 2: Molecular Model of an Ideal Gas",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Intermolecular interactions",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-868",
+      "number": 868,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "TNPSC AE (Industries) 09.06.2013"
+        ]
+      },
+      "question": "Which water becomes ice very fast when it is kept inside the freezer ?",
+      "options": {
+        "a": "Warm water",
+        "b": "Cold water",
+        "c": "Water with salt",
+        "d": "Water with ethanol"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "The source intends (a), referring to the Mpemba effect: under some experimental conditions initially warmer water can freeze before initially colder water. This is not a universal rule for water placed in a freezer. Freezing times depend on sample mass, initial temperatures, container geometry, evaporation, convection, supercooling and the chosen definition of freezing. Salt and ethanol also alter the freezing point. The question supplies none of those conditions, so it does not determine which sample freezes fastest.",
+      "sourceExplanation": "Warm water becomes ice very fast when it is kept inside the freezer and it is called Mpemba effect.",
+      "note": "Preserved source (a) as the intended Mpemba-effect claim, but no universal fastest-freezing choice follows from the stated data.",
+      "references": [
+        {
+          "title": "Klimov and Finkelstein: Accidental Origin of the Mpemba Effect in Freezing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43029269/",
+          "section": "Abstract; dependence on stochastic freezing onset"
+        },
+        {
+          "title": "OpenStax University Physics Volume 2: Phase Changes",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Freezing and Mpemba effect",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-869",
+      "number": 869,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "TRB Poly. Lect., 2012"
+        ]
+      },
+      "question": "Mollier chart is drawn between",
+      "options": {
+        "a": "temperature and pressure",
+        "b": "temperature and entropy",
+        "c": "enthalpy and entropy",
+        "d": "pressure and enthalpy"
+      },
+      "sourceAnswer": "(c)",
+      "answer": "c",
+      "status": "verified",
+      "explanation": "A Mollier chart plots enthalpy h against entropy s, so it is an h–s diagram and choice (c) is correct. Constant-pressure curves on that chart have slope (∂h/∂s)ₚ = T.",
+      "sourceExplanation": "Mollier chart is drawn between enthalpy (h)\n& entropy (s)",
+      "note": "Question, choices and complete adjacent explanation checked against the native PDF scan; formulas restored as readable text.",
+      "references": [
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Mollier diagram",
+      "figures": [],
+      "transcriptionReviewed": true
+    },
+    {
+      "id": "mech-thermodynamics-154-870",
+      "number": 870,
+      "source": {
+        "page": 140,
+        "pageEnd": 140,
+        "printedPage": 154,
+        "examLabels": [
+          "BPSC AE 2012 Paper-V"
+        ]
+      },
+      "question": "Under thermal equilibrium, flow of steam is",
+      "options": {
+        "a": "isentropic",
+        "b": "adiabatic",
+        "c": "hyperbolic",
+        "d": "polytropic"
+      },
+      "sourceAnswer": "(a)",
+      "answer": null,
+      "status": "disputed",
+      "explanation": "Thermal equilibrium means there is no net heat transfer caused by a temperature difference. It does not, by itself, determine the entropy change of a flowing steam stream. Isentropic flow additionally requires the relevant adiabatic and internally reversible idealization; friction, mixing and finite pressure losses can generate entropy even when a flow is insulated or thermally balanced. Thus the source’s asserted isentropic answer (a) does not follow from the stem, and none of the listed process labels is guaranteed.",
+      "sourceExplanation": "Under thermal equilibrium, flow of steam is isentropic.",
+      "note": "The source equates thermal equilibrium with isentropic flow without the needed reversibility and adiabatic assumptions. No unique checked option.",
+      "references": [
+        {
+          "title": "MIT Unified Engineering: Compendium of Equations",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/EquationCompendium.pdf",
+          "section": "Equations of state, energy, entropy, and quality"
+        },
+        {
+          "title": "NPTEL Classical Thermodynamics: Thermodynamic Relations I",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/112103016/module1/lec5/5.html",
+          "section": "Fundamental property equations and Maxwell relations"
+        }
+      ],
+      "topic": "Properties of Pure Substances, Gases and Gas Mixture",
+      "subtopic": "Equilibrium and flow processes",
+      "figures": [],
       "transcriptionReviewed": true
     }
   ]
